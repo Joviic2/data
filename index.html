@@ -94,6 +94,20 @@ summary{cursor:pointer}summary h2{margin:0}
 @media(max-width:700px){nav{position:fixed;left:0;right:0;bottom:0;z-index:20;margin:0;padding:6px 6px calc(6px + env(safe-area-inset-bottom,0px));background:var(--card);border-top:1px solid var(--bd)}nav button{padding:8px 10px;font-size:.9rem}main{padding-bottom:84px}}
 .rnav{display:flex;align-items:center;gap:8px;margin-bottom:8px}.rnav .mid{flex:1;text-align:center}.rnav select{width:auto;max-width:100%;margin-top:4px}
 .dt{display:inline-block;width:11px;height:11px;border-radius:50%;flex:none}
+
+:root:not([data-theme="light"]),:root[data-theme="dark"]{--bg:#0b0e14;--card:rgba(22,27,38,.72);--tx:#e6edf6;--mu:#8b97ab;--bd:rgba(255,255,255,.08);--ac:#06b6d4;--acbg:rgba(6,182,212,.12);--ok:#22c55e;--no:#ec4899;--in:rgba(255,255,255,.04)}
+:root[data-theme="light"]{--ac:#1e3a8a;--acbg:#e3e9fb}
+body{background:radial-gradient(1200px 600px at 20% -10%,rgba(6,182,212,.10),transparent),var(--bg)}
+.card{backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);transition:box-shadow .25s,border-color .25s}.card:hover{border-color:var(--ac);box-shadow:0 0 15px rgba(6,182,212,.18)}
+nav button[aria-selected=true]{background:var(--ac);border-color:var(--ac);color:#04121a;box-shadow:0 0 12px rgba(6,182,212,.4)}
+.mcs{display:grid;gap:12px;grid-template-columns:repeat(auto-fill,minmax(300px,1fr))}.mc h3{margin:6px 0 10px}
+.ob{display:flex;flex-direction:column;align-items:flex-start;gap:2px;padding:10px 12px;border:1px solid var(--bd);border-radius:12px;background:var(--in);color:var(--tx);font:600 .95rem Barlow,sans-serif;cursor:pointer;width:100%}
+.ob b{font:700 1.5rem "Barlow Condensed",sans-serif}.ob small{color:var(--mu)}.ob.best{border-color:var(--ok);background:rgba(34,197,94,.1);box-shadow:0 0 14px rgba(34,197,94,.25)}.ob.best b{color:var(--ok)}
+.chips{display:flex;gap:6px;overflow-x:auto;padding-bottom:8px;margin-bottom:10px}.chip{flex:none;padding:5px 12px;border-radius:99px;border:1px solid var(--bd);background:transparent;color:var(--mu);font:600 .85rem Barlow,sans-serif;cursor:pointer}.chip.on{border-color:var(--ac);color:var(--ac);background:var(--acbg)}
+.star{background:none;border:0;font-size:1.4rem;color:#f5c542;cursor:pointer;margin-left:auto}
+.lv{display:inline-block;width:9px;height:9px;border-radius:50%;background:var(--ok);margin-right:5px;animation:pl 1.2s infinite}@keyframes pl{50%{opacity:.25}}
+.ar{font-style:normal;font-size:.8rem;margin-left:4px;animation:fd 6s forwards}.ar.up{color:var(--ok)}.ar.dn{color:var(--no)}@keyframes fd{70%{opacity:1}to{opacity:0}}
+#md{position:fixed;inset:0;background:rgba(0,0,0,.6);backdrop-filter:blur(4px);display:none;z-index:50;padding:16px;overflow:auto}#md .card{max-width:760px;margin:6vh auto}
 </style></head><body><main>
 <h1>Euroleague Value Analyzer</h1>
 <p class="sub">Sezona 2026/27. Podaci se čitaju uživo iz tvog GitHub repoa. <span id="stamp"></span> <button class="btn sm" id="refresh" type="button">Osveži</button></p>
@@ -102,7 +116,6 @@ summary{cursor:pointer}summary h2{margin:0}
 <nav role="tablist" id="tabs"></nav>
 
 <section id="t3">
- <div class="card" id="news" hidden></div>
  <div class="card" id="scn"></div>
  <div class="card"><h2>Tabela Euroleague 2026/27</h2>
  <p class="sub">Računa se iz svih odigranih utakmica. ORTG i DRTG su poeni na 100 poseda (poseda iz boxscore-a), NET je razlika. Klikni na tim za detalje.</p>
@@ -114,6 +127,10 @@ summary{cursor:pointer}summary h2{margin:0}
  <div id="tv"></div>
 </section>
 <section id="t6" hidden><div id="gl"></div></section>
+<section id="t8" hidden><div id="sb"></div></section>
+<section id="t9" hidden><div id="kv"></div></section>
+<section id="t10" hidden><div id="fv"></div></section>
+<section id="t11" hidden><div class="card" id="news" hidden></div></section>
 <section id="t7" hidden>
  <div class="card"><h2>Value Screener</h2>
  <p class="sub">Model prolazi kroz sve mečeve iz data/odds.json (pobednik, hendikep, ukupno) i izlistava najbolju kvotu po izboru gde je EV iznad praga.</p>
@@ -590,10 +607,10 @@ $("side").onclick=e=>{
 $("side").onkeydown=e=>{if(e.key=="Enter")e.target.click()};
 
 // ================= TABOVI I INICIJALIZACIJA =================
-const tabs=[["Tabela",3],["Timovi",4],["Utakmice",6],["Igrač",5],["Analiza meča",0],["Rejting",1],["Bankroll",2],["Screener",7]];
+const tabs=[["Tabela",3],["Timovi",4],["Utakmice",6],["Igrač",5],["Analiza meča",0],["Rejting",1],["Bankroll",2],["Kvote",9],["Screener",7],["Surebet",8],["Omiljeni",10],["Vesti",11]];
 $("tabs").innerHTML=tabs.map((t,j)=>`<button role="tab" aria-selected="${j==0}" data-t="${t[1]}">${t[0]}</button>`).join("");
-function show(i){i=+i;document.querySelectorAll("#tabs button").forEach(b=>b.setAttribute("aria-selected",b.dataset.t==i));[0,1,2,3,4,5,6,7].forEach(k=>$("t"+k).hidden=k!=i);
- if(!D)return;if(i==1){ratingTab();refTab()}if(i==2)bk();if(i==4)teamView();if(i==5)chart();if(i==6)gamesTab();if(i==7)screen();window.scrollTo(0,0)}
+function show(i){i=+i;document.querySelectorAll("#tabs button").forEach(b=>b.setAttribute("aria-selected",b.dataset.t==i));[0,1,2,3,4,5,6,7,8,9,10,11].forEach(k=>$("t"+k).hidden=k!=i);
+ if(!D)return;if(i==1){ratingTab();refTab()}if(i==2)bk();if(i==4)teamView();if(i==5)chart();if(i==6)gamesTab();if(i==7||i==8)screen();if(i==9)k_cards($("kv"),0);if(i==10)k_cards($("fv"),1);window.scrollTo(0,0)}
 $("tabs").onclick=e=>{const i=e.target.dataset.t;if(i!=null)show(i)};
 
 function fillSelect(id,html){const cur=$(id).value;$(id).innerHTML=html;if([...$(id).options].some(o=>o.value==cur))$(id).value=cur}
@@ -817,32 +834,58 @@ function screen(){
  const el=$("scr");if(!el)return;
  if(!D){return}
  if(!OD||!OD.events||!OD.events.length){el.innerHTML='<div class="note">Nema kvota (data/odds.json). Proveri da je GitHub Action prošao i da je ODDS_API_KEY postavljen.</div>';return}
- R=ratings();const thr=+$("sth").value/100,B=bank(),best=new Map(),sure=[];let used=0;
+ R=ratings();const thr=+$("sth").value/100,B=bank(),best=[],sure=[];let used=0;
  OD.events.forEach(e=>{
   const h=codeOf(e.h),a=codeOf(e.a);if(!h||!a||h==a||!R[h]||!R[a])return;
   let r;try{r=modelFor(h,a,e.start?new Date(e.start):new Date())}catch(x){return}
-  used++;const N=r.mg.length,pr=(arr,fn)=>arr.filter(fn).length/N,mt=nm(h)+" - "+nm(a),pw=pr(r.mg,x=>x>0);
-  const add=(mk,pick,o,p,bk)=>{if(!o||o<=1)return;const k=[e.h,e.a,mk,pick].join("|"),c=best.get(k);if(!c||o>c.o)best.set(k,{mt,mk,pick,o,p,bk,ev:p*o-1,st:e.start})};
+  used++;const N=r.mg.length,pr=(arr,fn)=>arr.filter(fn).length/N,mt=nm(h)+" - "+nm(a),M={};
+  const reg=(k,mA,mB,nA,nB,pA,b,oA,oB)=>{if(!oA||!oB)return;const m=M[k]=M[k]||{mA,mB,nA,nB,pA,fr:[],bo:[0,0],bb:["",""]};m.fr.push((1/oA)/(1/oA+1/oB));if(oA>m.bo[0]){m.bo[0]=oA;m.bb[0]=b.title}if(oB>m.bo[1]){m.bo[1]=oB;m.bb[1]=b.title}};
   let b1=0,b2=0,k1="",k2="";
   e.b.forEach(b=>{
-   if(b.h2h){add("Pobednik",nm(h),b.h2h[0],pw,b.title);add("Pobednik",nm(a),b.h2h[1],1-pw,b.title);
+   if(b.h2h){reg("h","Pobednik","Pobednik",nm(h),nm(a),pr(r.mg,x=>x>0),b,b.h2h[0],b.h2h[1]);
     if(b.h2h[0]>b1){b1=b.h2h[0];k1=b.title}if(b.h2h[1]>b2){b2=b.h2h[1];k2=b.title}}
-   if(b.sp&&b.sp[0]!=null){const l=b.sp[0],pc=pr(r.mg,x=>x+l>0);add("Hendikep "+sg(l),nm(h),b.sp[1],pc,b.title);add("Hendikep "+sg(-l),nm(a),b.sp[2],1-pc,b.title)}
-   if(b.tt&&b.tt[0]!=null){const l=b.tt[0],po=pr(r.tt,x=>x>l);add("Ukupno "+l,"Više",b.tt[1],po,b.title);add("Ukupno "+l,"Manje",b.tt[2],1-po,b.title)}});
-  if(b1&&b2&&1/b1+1/b2<1)sure.push({mt,b1,k1,b2,k2,pf:(1/(1/b1+1/b2)-1)*100,h:nm(h),a:nm(a)})});
- SCR=[...best.values()].filter(x=>x.ev>=thr).sort((x,y)=>y.ev-x.ev);
+   if(b.sp&&b.sp[0]!=null){const l=b.sp[0];reg("s"+l,"Hendikep "+sg(l),"Hendikep "+sg(-l),nm(h),nm(a),pr(r.mg,x=>x+l>0),b,b.sp[1],b.sp[2])}
+   if(b.tt&&b.tt[0]!=null){const l=b.tt[0];reg("t"+l,"Ukupno "+l,"Ukupno "+l,"Više","Manje",pr(r.tt,x=>x>l),b,b.tt[1],b.tt[2])}});
+  Object.values(M).forEach(m=>{if(m.fr.length<3)return;const fair=m.fr.reduce((x,y)=>x+y,0)/m.fr.length,p=.3*m.pA+.7*fair;
+   [[m.mA,m.nA,p,0],[m.mB,m.nB,1-p,1]].forEach(([mk,pick,q,j])=>{const o=m.bo[j],ev=q*o-1;if(ev>0&&ev<=.12)best.push({mt,mk,pick,o,p:q,bk:m.bb[j],ev,st:e.start})})});
+  if(b1&&b2&&1/b1+1/b2<1)sure.push({mt,b1,k1,b2,k2,pf:(1/(1/b1+1/b2)-1)*100})});
+ SCR=best.filter(x=>x.ev>=thr).sort((x,y)=>y.ev-x.ev);
  const dt=s=>s?new Date(s).toLocaleString("sr-Latn",{day:"2-digit",month:"2-digit",hour:"2-digit",minute:"2-digit"}):"";
  const top=SCR.slice(0,3).map(x=>`<div class="stat"><span>${esc(x.mt)}</span><div class="num ok">+${f(x.ev*100,1)}% EV</div><span>${esc(x.mk)}: ${esc(x.pick)} @ ${f(x.o,2)} (${esc(x.bk)})</span></div>`).join("");
  el.innerHTML=(top?`<div class="card"><h3 style="margin-top:0">Top 3 value tipa</h3><div class="grid w">${top}</div></div>`:"")+
  `<div class="card"><h3 style="margin-top:0">Svi tipovi sa EV ≥ ${f(thr*100,0)}% (${SCR.length})</h3>`+
  (SCR.length?`<div class="scroll"><table><tr><th>Početak</th><th>Utakmica</th><th>Tržište</th><th>Izbor</th><th class="r">Model</th><th class="r">Kvota</th><th>Kladionica</th><th class="r">EV</th><th class="r">Ulog</th><th></th></tr>`+
   SCR.map((x,i)=>`<tr><td>${esc(dt(x.st))}</td><td>${esc(x.mt)}</td><td>${esc(x.mk)}</td><td>${esc(x.pick)}</td><td class="r">${f(x.p*100)}%</td><td class="r">${f(x.o,2)}</td><td>${esc(x.bk)}</td><td class="r ok">+${f(x.ev*100,1)}% ${evb(x.ev)}</td><td class="r">${f(stake(x.p,x.o,B),2)}</td><td><button class="btn sm" data-sa="${i}" type="button">Dodaj</button></td></tr>`).join("")+`</table></div>`:`<p class="mu">Nema tipova iznad praga${used?"":" (nijedan meč iz kvota nije prepoznat u tvom modelu)"}.</p>`)+
- `<div class="note warn">EV iznad ~15% je obično greška modela, povreda koju model ne zna ili stara kvota, a ne prava prilika. Proveri pre nego što ulažeš. Ukupno analizirano mečeva: ${used}/${OD.events.length}.</div></div>`+
- `<div class="card"><h3 style="margin-top:0">Surebet (pobednik, najbolje kvote)</h3>`+(sure.length?`<div class="scroll"><table><tr><th>Utakmica</th><th>Domaćin</th><th>Gost</th><th class="r">Profit</th></tr>`+sure.map(x=>`<tr><td>${esc(x.mt)}</td><td>${f(x.b1,2)} (${esc(x.k1)})</td><td>${f(x.b2,2)} (${esc(x.k2)})</td><td class="r ok">+${f(x.pf,2)}%</td></tr>`).join("")+`</table></div>`:`<p class="mu">Trenutno nema arbitraže.</p>`)+`</div>`}
+ `<div class="note warn">Verovatnoća je mešavina modela (30%) i tržišnog konsenzusa bez provizije (70%), traže se bar 3 kladionice, a EV iznad 12% se odbacuje kao greška. Realan edge u klađenju je 2 do 6%. Ukupno analizirano mečeva: ${used}/${OD.events.length}.</div></div>`;
+ $("sb").innerHTML=`<div class="card"><h2>Surebet</h2>`+(sure.length?`<div class="scroll"><table><tr><th>Utakmica</th><th>Domaćin</th><th>Gost</th><th class="r">Profit</th></tr>`+sure.map(x=>`<tr><td>${esc(x.mt)}</td><td>${f(x.b1,2)} (${esc(x.k1)})</td><td>${f(x.b2,2)} (${esc(x.k2)})</td><td class="r ok">+${f(x.pf,2)}%</td></tr>`).join("")+`</table></div>`:`<p class="mu">Trenutno nema arbitraže.</p>`)+`</div>`}
 $("sth").onchange=screen;
 $("scr").onclick=e=>{const b=e.target.closest("[data-sa]");if(!b)return;const x=SCR[+b.dataset.sa];if(!x)return;
  S.bets.push({d:new Date().toISOString().slice(0,10),m:x.mt,pick:x.mk+" | "+x.pick,odds:x.o,stake:Math.round(stake(x.p,x.o,bank())*100)/100,p:x.p,res:"C"});save();alert("Dodato u evidenciju (tab Bankroll).")};
-loadOdds();loadNews();
+
+// ================= KVOTE, OMILJENI, MODAL, INDIKATORI =================
+let k_CH=new Set(),k_FAV=new Set(),k_PV={},k_MS=0;
+try{k_FAV=new Set(JSON.parse(localStorage.getItem("elfav")||"[]"));k_PV=JSON.parse(localStorage.getItem("elpv")||"{}")}catch(e){}
+const k_eid=e=>e.id||e.h+"|"+e.a;
+function k_cnt(s){const d=(new Date(s)-Date.now())/6e4;if(isNaN(d)||d<-170)return"";if(d<=0)return'<span class="lv"></span>LIVE';return d<60?"Počinje za "+Math.round(d)+" min":d<1440?"Za "+Math.floor(d/60)+"h "+Math.round(d%60)+"min":new Date(s).toLocaleDateString("sr-Latn",{day:"2-digit",month:"2-digit"})}
+const k_arw=(k,v)=>{const p=k_PV[k];return p&&v>p?'<i class="ar up">▲</i>':p&&v<p?'<i class="ar dn">▼</i>':""};
+function k_snap(){if(!OD||!OD.events)return;const n={};OD.events.forEach(e=>e.b.forEach(b=>{if(b.h2h){n[k_eid(e)+b.key+0]=b.h2h[0];n[k_eid(e)+b.key+1]=b.h2h[1]}}));try{localStorage.setItem("elpv",JSON.stringify(n))}catch(x){}}
+function k_cards(el,fo){
+ if(!el)return;if(!OD||!OD.events||!OD.events.length){el.innerHTML='<div class="note">Nema kvota (data/odds.json).</div>';return}
+ const bks=[...new Set(OD.events.flatMap(e=>e.b.map(b=>b.title)))].sort();
+ const ev=OD.events.map((e,i)=>({e,i})).filter(x=>!fo||k_FAV.has(k_eid(x.e))||k_FAV.has(x.e.h)||k_FAV.has(x.e.a));
+ el.innerHTML=`<div class="chips">${bks.map(t=>`<button class="chip${!k_CH.size||k_CH.has(t)?" on":""}" data-bk="${esc(t)}" type="button">${esc(t)}</button>`).join("")}</div>`+
+ (ev.length?`<div class="mcs">`+ev.map(({e,i})=>{const bs=e.b.filter(b=>b.h2h&&(!k_CH.size||k_CH.has(b.title)));let bh=null,ba=null;bs.forEach(b=>{if(!bh||b.h2h[0]>bh.h2h[0])bh=b;if(!ba||b.h2h[1]>ba.h2h[1])ba=b});
+  const btn=(b,j,n)=>b?`<button class="ob best" data-md="${i}" type="button"><span>${j?"2":"1"} · ${esc(n)}</span><b>${f(b.h2h[j],2)}${k_arw(k_eid(e)+b.key+j,b.h2h[j])}</b><small>${esc(b.title)}</small></button>`:`<div class="ob mu">Nema kvote</div>`;
+  return`<div class="card mc"><div class="head"><span>🏀 Euroleague</span><span class="pill">${k_cnt(e.start)}</span><button class="star" data-fv="${esc(k_eid(e))}" aria-label="Omiljeno" type="button">${k_FAV.has(k_eid(e))?"★":"☆"}</button></div><h3>${esc(e.h)} - ${esc(e.a)}</h3><div class="grid">${btn(bh,0,e.h)}${btn(ba,1,e.a)}</div><div style="margin-top:10px"><button class="btn sm" data-md="${i}" type="button">Sve kladionice (${bs.length})</button></div></div>`}).join("")+`</div>`:`<div class="note">${fo?"Klikni ☆ na meču u tabu Kvote da ga sačuvaš ovde.":"Nema mečeva."}</div>`)}
+function k_modal(i){const e=OD.events[i],md=$("md")||document.body.appendChild(Object.assign(document.createElement("div"),{id:"md"}));
+ const bs=e.b.filter(b=>b.h2h&&(!k_CH.size||k_CH.has(b.title))).sort((x,y)=>k_MS==2?(y.h2h[1]-x.h2h[1]):(y.h2h[0]-x.h2h[0])),mx=[Math.max(...bs.map(b=>b.h2h[0])),Math.max(...bs.map(b=>b.h2h[1]))];
+ md.innerHTML=`<div class="card"><div class="head"><h2 style="margin:0">${esc(e.h)} - ${esc(e.a)}</h2><button class="btn sm" data-x="1" style="margin-left:auto" type="button">Zatvori</button></div><div class="scroll"><table><tr><th>Kladionica</th><th class="r"><button class="chip on" data-ms="1" type="button">1 ▼</button></th><th class="r"><button class="chip on" data-ms="2" type="button">2 ▼</button></th><th class="r">Marža</th></tr>${bs.map(b=>`<tr><td>${esc(b.title)}</td><td class="r${b.h2h[0]==mx[0]?" ok":""}">${f(b.h2h[0],2)}${k_arw(k_eid(e)+b.key+0,b.h2h[0])}</td><td class="r${b.h2h[1]==mx[1]?" ok":""}">${f(b.h2h[1],2)}${k_arw(k_eid(e)+b.key+1,b.h2h[1])}</td><td class="r mu">${f((1/b.h2h[0]+1/b.h2h[1]-1)*100,1)}%</td></tr>`).join("")}</table></div></div>`;md.style.display="block";md.dataset.i=i}
+document.addEventListener("click",e=>{const t=e.target.closest("[data-bk],[data-fv],[data-md],[data-ms],[data-x]"),md=$("md");
+ if(md&&e.target==md){md.style.display="none";return}if(!t)return;const d=t.dataset;
+ if(d.x){md.style.display="none";return}if(d.ms){k_MS=+d.ms;k_modal(+md.dataset.i);return}if(d.md!=null){k_modal(+d.md);return}
+ if(d.bk){k_CH.has(d.bk)?k_CH.delete(d.bk):k_CH.add(d.bk)}if(d.fv){k_FAV.has(d.fv)?k_FAV.delete(d.fv):k_FAV.add(d.fv);try{localStorage.setItem("elfav",JSON.stringify([...k_FAV]))}catch(x){}}
+ if(!$("t9").hidden)k_cards($("kv"),0);if(!$("t10").hidden)k_cards($("fv"),1)});
+loadOdds().then(()=>{if(!$("t9").hidden)k_cards($("kv"),0);setTimeout(k_snap,4000)});loadNews();
 bk();
 load(true);
 </script></main></body></html>
