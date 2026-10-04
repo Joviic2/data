@@ -405,13 +405,13 @@ function extras(t,id,G,pi){
  const S2=G.reduce((a,x)=>{[["pts",5],["m2",6],["a2",7],["m3",8],["a3",9],["mf",10],["af",11]].forEach(([k,i])=>a[k]+=x.p[i]);return a},{pts:0,m2:0,a2:0,m3:0,a3:0,mf:0,af:0});
  const row=(l,pts,mm,aa,key)=>{const pc=aa?mm/aa*100:null,al=od?od[key]:null,rk=od?1+TEAMS.filter(c=>{const x=oppStats(c);return x&&x[key]<al}).length:0;
   return`<tr><td><b>${l}</b></td><td class=r>${f(pts/G.length)} (${S2.pts?f(pts/S2.pts*100,0):0}%)</td><td class=r>${pc==null?"-":f(pc)+"%"}</td><td class=r>${al==null?"-":f(al)+"%"}</td><td class=r>${rk?`<span class="rk" style="background:hsl(${(rk-1)/Math.max(1,n-1)*110} 70% 40%)">${rk}.</span>`:"-"}</td></tr>`};
- let h=`<div class="card crt" id="crt"></div><div class="card"><h2>Odakle dobija poene vs ${esc(nm(opp))}</h2><div class="scroll"><table><tr><th>Izvor</th><th class=r>Poena po utakmici (udeo)</th><th class=r>Igrač %</th><th class=r>Protivnik dozvoljava</th><th class=r>Rang odbrane</th></tr>${row("2P",2*S2.m2,S2.m2,S2.a2,"2P%")}${row("3P",3*S2.m3,S2.m3,S2.a3,"3P%")}${row("Slobodna bacanja",S2.mf,S2.mf,S2.af,"FT%")}</table></div>
+ let h=`<div class="card crt" id="crt"></div><div class="card" id="ptc"></div><div class="card"><h2>Odakle dobija poene vs ${esc(nm(opp))}</h2><div class="scroll"><table><tr><th>Izvor</th><th class=r>Poena po utakmici (udeo)</th><th class=r>Igrač %</th><th class=r>Protivnik dozvoljava</th><th class=r>Rang odbrane</th></tr>${row("2P",2*S2.m2,S2.m2,S2.a2,"2P%")}${row("3P",3*S2.m3,S2.m3,S2.a3,"3P%")}${row("Slobodna bacanja",S2.mf,S2.mf,S2.af,"FT%")}</table></div>
  <div class="note">Rang 1. (crveno) = najteža odbrana lige za taj šut, poslednji (zeleno) = najlakše se postiže.</div></div>`;
  const R2=similar(t,id,pi.pos,opp,fn),hit=R2.filter(x=>x.res>x.line).length,hp=R2.length?hit/R2.length*100:0;
  h+=`<div class="card"><h2>Slični igrači (${esc(pi.pos||"?")}) protiv ${esc(nm(opp))}: ${lab}</h2>`+(R2.length?`<div class="grid"><div class="stat"><span>AVG DIFF</span><div class="num ${avg(R2.map(x=>x.d))>=0?"ok":"no"}">${sg(+f(avg(R2.map(x=>x.d))))}</div></div><div class="stat"><span>AVG DIFF %</span><div class="num ${avg(R2.map(x=>x.pc))>=0?"ok":"no"}">${sg(+f(avg(R2.map(x=>x.pc)),0))}%</div></div><div class="stat"><span>HIT RATE</span><div class="num ${hp>=50?"ok":"no"}">${f(hp,0)}% (${hit}/${R2.length})</div></div></div>
  <div class="scroll" style="margin-top:12px"><table><tr><th>Datum</th><th>Tim</th><th>Igrač</th><th class=r>Linija</th><th class=r>Rez.</th><th class=r>Diff %</th></tr>${R2.slice(0,10).map(x=>`<tr><td>${fd(x.dt).slice(0,6)}</td><td>${esc(nm(x.team))}</td><td>${esc(x.name)}</td><td class=r>${x.line}</td><td class=r>${x.res}</td><td class=r><span class="rk" style="background:var(--${x.pc>=0?"ok":"no"});color:#fff">${sg(+f(x.pc,0))}%</span></td></tr>`).join("")}</table></div>`:(pi.pos?'<span class="mu">Nema dovoljno igrača iste pozicije sa 3+ utakmice protiv ovog tima.</span>':'<span class="mu">Igrač nema upisanu poziciju u rosteru, pa se slični igrači ne mogu odrediti.</span>'))+
  `<div class="note">Linija = sezonski prosek tog igrača (bez te utakmice), zaokružen na .5, jer prave linije kladionice nemamo. Diff % = (rezultat − linija) / linija. Računa se samo iz utakmica sa boxscore-om, igrači sa 10+ minuta.</div></div>`;
- $("pex").innerHTML=h;ensureShots();courtRender()}
+ $("pex").innerHTML=h;ensureShots();courtRender();ptRender()}
 function chart(skip){
  if(!D)return;const t=$("ptm").value,id=$("ppl").value,G=id?pgames(t,id):[];
  if(!G.length){sideRender();$("pph").innerHTML='<span class="mu">Ovaj igrač još nema odigranu utakmicu sa boxscore podacima.</span>';$("pch").innerHTML="";$("pst").innerHTML="";$("pex").innerHTML="";return}
@@ -441,16 +441,17 @@ function zoneOf(x,y,is3){
 function parseShots(j){
  const A=Array.isArray(j)?j:(Object.values(j||{}).find(Array.isArray)||[]),o=[];
  A.forEach(r=>{const g=ks=>{for(const q of ks)if(r[q]!=null)return r[q]};
-  const act=String(g(["ID_ACTION","id_action","action","ACTION"])||"").toUpperCase().trim();if(!/^[23]FG[MA]$/.test(act))return;
-  const x=+g(["COORD_X","coord_x","x","X"]),y=+g(["COORD_Y","coord_y","y","Y"]);if(isNaN(x)||isNaN(y)||y<-200)return;
-  o.push({t:String(g(["TEAM","team"])||"").trim(),p:String(g(["ID_PLAYER","id_player","player_id"])||"").trim(),m:act[3]=="M",z:zoneOf(x,y,act[0]=="3")})});
+  const act=String(g(["ID_ACTION","id_action","action","ACTION"])||"").toUpperCase().trim();if(!/^([23]FG|FT)[MA]$/.test(act))return;
+  const ft=act[0]=="F",fl=k=>String(g([k,k.toLowerCase()])||"")=="1";let z=null;
+  if(!ft){const x=+g(["COORD_X","coord_x","x","X"]),y=+g(["COORD_Y","coord_y","y","Y"]);if(isNaN(x)||isNaN(y)||y<-200)return;z=zoneOf(x,y,act[0]=="3")}
+  o.push({t:String(g(["TEAM","team"])||"").trim(),p:String(g(["ID_PLAYER","id_player","player_id"])||"").trim(),m:act.endsWith("M"),z,ft,pts:+g(["POINTS","points"])||0,fb:fl("FASTBREAK"),sc:fl("SECOND_CHANCE"),to:fl("POINTS_OFF_TURNOVER")})});
  return o}
 async function ensureShots(){
  const todo=D.games.filter(g=>!SH.has(g.n)&&!SHF.has(g.n));
  if(!todo.length){SHL=true;return}
  if(SHB)return;SHB=true;
  await Promise.all(todo.map(async g=>{try{SH.set(g.n,parseShots(await getJSON("data/shots_"+g.n+".json")))}catch(e){SHF.add(g.n)}}));
- SHB=false;SHL=true;courtRender()}
+ SHB=false;SHL=true;courtRender();ptRender()}
 const zacc=()=>Object.fromEntries(ZN.map(z=>[z,{a:0,m:0}]));
 const zfg=o=>o.a?o.m/o.a*100:null;
 function courtRender(){
@@ -458,7 +459,7 @@ function courtRender(){
  const id=String($("ppl").value).trim(),opp=$("pop").value,hd=`<div class="crtw"><div><h2 style="margin:0">Šut po zonama</h2><div class="sub" style="margin:0">Sezona 2026/27</div></div><div class="stb">${[["p","Igrač"],["v","VS"],["o","Odbrana protivnika"]].map(x=>`<button type="button" data-cm="${x[0]}" aria-selected="${CM==x[0]}">${x[1]}</button>`).join("")}</div></div>`;
  if(!SHL){el.innerHTML=hd+'<p class="mu">Učitavam šuteve...</p>';return}
  const P=zacc(),def={},LG=zacc();let tot=0;
- D.games.forEach(g=>{(SH.get(g.n)||[]).forEach(r=>{tot++;const dt=r.t==g.h?g.a:r.t==g.a?g.h:null;
+ D.games.forEach(g=>{(SH.get(g.n)||[]).forEach(r=>{tot++;if(!r.z)return;const dt=r.t==g.h?g.a:r.t==g.a?g.h:null;
   if(dt){const d=def[dt]||(def[dt]=zacc());d[r.z].a++;LG[r.z].a++;if(r.m){d[r.z].m++;LG[r.z].m++}}
   if(r.p==id){P[r.z].a++;if(r.m)P[r.z].m++}})});
  if(!tot){el.innerHTML=hd+`<div class="note warn">Ne nalazim fajlove sa šutevima (probao sam data/shots_&lt;broj utakmice&gt;.json). Pošalji mi imena fajlova i prvih 30 linija jednog, pa ću povezati tačno.</div>`;return}
@@ -478,6 +479,21 @@ function courtRender(){
  const leg={p:"FG% igrača | broj šuteva. Boja: bolje (zeleno) ili lošije (crveno) od proseka lige u toj zoni.",v:"Razlika: FG% igrača minus FG% koji "+nm(opp)+" dozvoljava | rang odbrane. Zeleno = igrač ima prednost.",o:"FG% koji "+nm(opp)+" dozvoljava | rang (1. = najteža odbrana lige, crveno)."}[CM];
  el.innerHTML=hd+svg+`<div class="note">${esc(leg)} Bledo = mali uzorak.</div>`}
 
+function ptRender(){
+ const el=$("ptc");if(!el||!D)return;const H="<h2>Tip poena (iz play-by-play oznaka)</h2>";
+ if(!SHL){el.innerHTML=H+'<p class="mu">Učitavam...</p>';return}
+ const id=String($("ppl").value).trim(),opp=$("pop").value,G=pgames($("ptm").value,$("ppl").value).length;
+ const C=[["Tranzicija (brzi napad)",r=>r.fb],["Druga šansa",r=>r.sc],["Posle izgubljenih lopti",r=>r.to],["Slobodna bacanja",r=>r.ft],["Ostalo iz igre",r=>!r.ft&&!r.fb&&!r.sc&&!r.to]];
+ const mine=C.map(()=>0),al={},gp={};let tot=0,n=0;
+ D.games.forEach(g=>{const rows=SH.get(g.n);if(!rows||!rows.length)return;[g.h,g.a].forEach(t=>{gp[t]=(gp[t]||0)+1;if(!al[t])al[t]=C.map(()=>0)});
+  rows.forEach(r=>{n++;if(!r.pts)return;const dt=r.t==g.h?g.a:r.t==g.a?g.h:null;if(r.p==id)tot+=r.pts;
+   C.forEach(([,f],i)=>{if(f(r)){if(dt)al[dt][i]+=r.pts;if(r.p==id)mine[i]+=r.pts}})})});
+ if(!n){el.innerHTML=H+'<p class="mu">Nema šuteva za prikaz.</p>';return}
+ const tm=Object.keys(al).filter(t=>gp[t]),hue=r=>`hsl(${(r-1)/Math.max(1,tm.length-1)*110} 70% 40%)`;
+ el.innerHTML=H+`<div class="scroll"><table><tr><th>Tip</th><th class=r>Igrač: poena po utakmici (udeo)</th><th class=r>${esc(nm(opp))} dozvoljava po utakmici</th><th class=r>Rang odbrane</th></tr>`+C.map(([l],i)=>{
+  const v=al[opp]&&gp[opp]?al[opp][i]/gp[opp]:null,rk=v==null?null:1+tm.filter(t=>al[t][i]/gp[t]<v).length;
+  return`<tr><td><b>${l}</b></td><td class=r>${G?f(mine[i]/G):"-"} (${tot?f(mine[i]/tot*100,0):0}%)</td><td class=r>${v==null?"-":f(v)}</td><td class=r>${rk?`<span class="rk" style="background:${hue(rk)}">${rk}.</span>`:"-"}</td></tr>`}).join("")+
+ `</table></div><div class="note">Oznake brzog napada, druge šanse i poena posle izgubljenih lopti dolaze iz play-by-play-a i mogu se preklapati (isti koš može biti u dve kategorije). Rang 1. (crveno) = tim koji u toj kategoriji dozvoljava najmanje poena. Pravi play type (Spot Up, PnR Roll Man, Post Up) nije u javnim podacima.</div>`}
 // ================= SIDEBAR (utakmice, timovi, igrači) =================
 let SQ="",SO=new Set();
 function sideData(){const m={},fn=mfn(PMK);D.games.forEach(g=>{if(!g.box)return;["h","a"].forEach(sd=>{const t=sd=="h"?g.h:g.a;g.box[sd].p.forEach(p=>{if(p[4]<=0)return;const a=(m[t]||(m[t]={}))[p[0]]||(m[t][p[0]]={n:p[1],min:0,v:0,gp:0});a.min+=p[4];a.v+=fn(p);a.gp++})})});return m}
