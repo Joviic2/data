@@ -1,50 +1,50 @@
-"""
-Korak 5: kvote kladionica -> data/odds.json (The Odds API, sport basketball_euroleague).
-Kljuc ide u GitHub: Settings > Secrets and variables > Actions > New repository secret, ime ODDS_API_KEY.
-Da potrosnja kredita ostane mala, kvote se osvezavaju najvise jednom u MIN_AGE_H sati.
-"""
-import json, os, time
-from pathlib import Path
-import requests
+"""Povlaci Euroleague kvote sa the-odds-api.com i snima data/odds.json
+u formatu koji index.html vec ocekuje:
+{fetched, remaining, events:[{h, a, start, b:[{key,title,h2h:[1,2],sp:[linija,dom,gost],tt:[linija,vise,manje]}]}]}
+Kljuc se cita iz okruzenja (GitHub Secret ODDS_API_KEY), nikad iz fajla."""
+import os, sys, json, time, requests
 
-OUT = Path("data/odds.json"); KEY = os.environ.get("ODDS_API_KEY"); MIN_AGE_H = 6
-URL = "https://api.the-odds-api.com/v4/sports/basketball_euroleague/odds/"
+API_KEY = os.environ.get("ODDS_API_KEY", "").strip()
+if not API_KEY:
+    sys.exit("Nedostaje ODDS_API_KEY (GitHub Secret). Ostavljam stari data/odds.json.")
 
+SPORT = os.environ.get("ODDS_SPORT", "basketball_euroleague")
+REGIONS = os.environ.get("ODDS_REGIONS", "eu")  # 1 region x 3 trzista = 3 kredita po pozivu
 
-def main():
-    if not KEY:
-        print("Nema ODDS_API_KEY, preskacem."); return
-    if OUT.exists():
-        try:
-            if time.time() - json.loads(OUT.read_text(encoding="utf-8"))["fetched"] < MIN_AGE_H * 3600:
-                print("Kvote su sveze."); return
-        except Exception:
-            pass
-    for mk in ("h2h,spreads,totals", "h2h"):      # ako hendikep/total nisu dostupni, probaj samo pobednika
-        r = requests.get(URL, params={"apiKey": KEY, "regions": "eu", "markets": mk, "oddsFormat": "decimal"}, timeout=30)
-        if r.status_code == 200: break
-        print("odds", mk, r.status_code, r.text[:200])
-    else:
-        return
-    ev = []
-    for e in r.json():
-        h, a, books = e["home_team"], e["away_team"], []
-        for b in e.get("bookmakers", []):
-            row = {"key": b["key"], "title": b["title"]}
-            for m in b.get("markets", []):
-                o = {x["name"]: x for x in m["outcomes"]}
-                if m["key"] == "h2h":
-                    row["h2h"] = [o.get(h, {}).get("price"), o.get(a, {}).get("price")]
-                elif m["key"] == "spreads" and h in o and a in o:
-                    row["sp"] = [o[h].get("point"), o[h]["price"], o[a]["price"]]
-                elif m["key"] == "totals" and "Over" in o and "Under" in o:
-                    row["tt"] = [o["Over"].get("point"), o["Over"]["price"], o["Under"]["price"]]
+r = requests.get(
+    f"https://api.the-odds-api.com/v4/sports/{SPORT}/odds",
+    params={
+        "apiKey": API_KEY,
+        "regions": REGIONS,
+        "markets": "h2h,spreads,totals",
+        "oddsFormat": "decimal",
+    },
+    timeout=30,
+)
+if r.status_code != 200:
+    sys.exit(f"Odds API greska {r.status_code}: {r.text[:200]}. Ostavljam stari data/odds.json.")
+
+remaining = r.headers.get("x-requests-remaining")
+events = []
+for ev in r.json():
+    home, away = ev["home_team"], ev["away_team"]
+    books = []
+    for bk in ev.get("bookmakers", []):
+        row = {"key": bk["key"], "title": bk["title"]}
+        for mk in bk.get("markets", []):
+            o = {x["name"]: x for x in mk["outcomes"]}
+            if mk["key"] == "h2h" and home in o and away in o:
+                row["h2h"] = [o[home]["price"], o[away]["price"]]
+            elif mk["key"] == "spreads" and home in o and away in o:
+                row["sp"] = [o[home].get("point"), o[home]["price"], o[away]["price"]]
+            elif mk["key"] == "totals" and "Over" in o and "Under" in o:
+                row["tt"] = [o["Over"].get("point"), o["Over"]["price"], o["Under"]["price"]]
+        if "h2h" in row or "sp" in row or "tt" in row:
             books.append(row)
-        ev.append({"h": h, "a": a, "t": e["commence_time"], "b": books})
-    OUT.write_text(json.dumps({"fetched": time.time(), "remaining": r.headers.get("x-requests-remaining"), "events": ev},
-                              ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
-    print(f"odds.json: {len(ev)} utakmica, preostalo kredita: {r.headers.get('x-requests-remaining')}")
+    events.append({"id": ev["id"], "h": home, "a": away, "start": ev["commence_time"], "b": books})
 
-
-if __name__ == "__main__":
-    main()
+out = {"fetched": int(time.time()), "remaining": remaining, "events": events}
+os.makedirs("data", exist_ok=True)
+with open("data/odds.json", "w", encoding="utf-8") as f:
+    json.dump(out, f, ensure_ascii=False)
+print(f"OK: {len(events)} utakmica, preostalo kredita: {remaining}")
