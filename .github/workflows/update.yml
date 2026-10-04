@@ -27,6 +27,10 @@ jobs:
         continue-on-error: true
       - run: python fetch_pbp.py
         continue-on-error: true
+      - run: python fetch_odds.py
+        continue-on-error: true
+        env:
+          ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
       - name: Commit data
         run: |
           git config user.name "data-bot"
