@@ -111,9 +111,9 @@ nav button[aria-selected=true]{background:var(--ac);border-color:var(--ac);color
 
 :root:not([data-theme="light"]),:root[data-theme="dark"]{--bg:#07090e;--card:rgba(18,24,38,.75);--bd:rgba(255,255,255,.07);--ac:#00f2fe;--acbg:rgba(0,242,254,.1);--ok:#10b981;--no:#f43f5e}
 nav#tabs{display:none}main{max-width:900px;padding-top:0}
-#dh{position:fixed;right:0;top:50%;transform:translateY(-50%);z-index:40;width:30px;height:64px;border:1px solid var(--bd);border-right:0;border-radius:12px 0 0 12px;background:var(--card);backdrop-filter:blur(10px);color:var(--ac);cursor:pointer;font-size:1rem}
-#dw{position:fixed;top:0;right:0;bottom:0;width:230px;z-index:39;background:var(--card);backdrop-filter:blur(16px);border-left:1px solid var(--bd);padding:16px 12px;display:flex;flex-direction:column;gap:6px;transform:translateX(100%);transition:transform .25s;overflow:auto}
-#dw.open{transform:none;box-shadow:-10px 0 30px rgba(0,0,0,.4)}#dw h3{margin:4px 8px 8px;color:var(--mu)}
+#mnb{position:fixed;left:0;top:50%;transform:translateY(-50%);z-index:40;width:30px;height:64px;border:1px solid var(--bd);border-left:0;border-radius:0 12px 12px 0;background:var(--card);backdrop-filter:blur(10px);color:var(--ac);cursor:pointer;font-size:1rem}
+#dw{position:fixed;top:0;left:0;bottom:0;width:230px;z-index:39;background:var(--card);backdrop-filter:blur(16px);border-right:1px solid var(--bd);padding:16px 12px;display:flex;flex-direction:column;gap:6px;transform:translateX(-100%);transition:transform .25s;overflow:auto}
+#dw.open{transform:none;box-shadow:10px 0 30px rgba(0,0,0,.4)}#dw h3{margin:4px 8px 8px;color:var(--mu)}
 #dw button{text-align:left;padding:10px 12px;border:1px solid transparent;border-radius:10px;background:transparent;color:var(--tx);font:600 1rem Barlow,sans-serif;cursor:pointer}
 #dw button:hover{background:var(--in)}#dw button[aria-selected=true]{border-color:var(--ac);color:var(--ac);background:var(--acbg)}
 .tk{overflow:hidden;white-space:nowrap;border-bottom:1px solid var(--bd);margin:0 -16px 14px;padding:7px 0;font:600 .85rem Barlow,sans-serif;color:var(--mu)}.tk div{display:inline-block;padding-left:100%;animation:tk 40s linear infinite}.tk b{color:var(--ok);margin:0 4px}.tk span{margin-right:28px}@keyframes tk{to{transform:translateX(-100%)}}
@@ -122,6 +122,8 @@ nav#tabs{display:none}main{max-width:900px;padding-top:0}
 .neo{text-shadow:0 0 14px currentColor}.gz{display:flex;align-items:center;gap:12px}
 .mh{display:flex;align-items:center;justify-content:center;gap:18px;padding:18px 8px 10px;text-align:center}.mh h2{margin:0;font-size:1.6rem}.vs{color:var(--mu);font:700 1rem "Barlow Condensed"}
 .brs{display:flex;align-items:flex-end;gap:3px;height:70px}.brs i{flex:1;border-radius:3px 3px 0 0;min-height:3px}
+.hm{display:inline-block;width:15px;height:15px;border-radius:4px;margin:1px;background:rgba(255,255,255,.1)}.hm.W{background:var(--ok);box-shadow:0 0 7px var(--ok)}.hm.L{background:rgba(244,63,94,.35)}
+input[type=range]{padding:0;accent-color:var(--ac);margin:8px 0}
 </style></head><body><main>
 <h1>Euroleague Value Analyzer</h1>
 <p class="sub">Sezona 2026/27. Podaci se čitaju uživo iz tvog GitHub repoa. <span id="stamp"></span> <button class="btn sm" id="refresh" type="button">Osveži</button></p>
@@ -149,7 +151,7 @@ nav#tabs{display:none}main{max-width:900px;padding-top:0}
  <div class="card"><h2>Value Screener</h2>
  <p class="sub">Model prolazi kroz sve mečeve iz data/odds.json (pobednik, hendikep, ukupno) i izlistava najbolju kvotu po izboru gde je EV iznad praga.</p>
  <div class="grid"><div><label for="sth">Minimalni EV</label><select id="sth"><option value="3">3%</option><option value="5" selected>5%</option><option value="8">8%</option></select></div></div></div>
- <div id="scr"></div>
+ <div id="slip"></div><div id="scr"></div>
 </section>
 <section id="t5" hidden>
  <div class="pl2"><aside class="card side" id="side"><input id="sq" type="search" placeholder="Traži igrača ili tim..." aria-label="Pretraga"><div id="sl"></div></aside><div>
@@ -627,9 +629,9 @@ $("tabs").innerHTML=tabs.map((t,j)=>`<button role="tab" aria-selected="${j==0}" 
 function show(i){i=+i;document.querySelectorAll("#tabs button,#dw button[data-t]").forEach(b=>b.setAttribute("aria-selected",b.dataset.t==i));[0,1,2,3,4,5,6,7,8,9,10,11].forEach(k=>$("t"+k).hidden=k!=i);
  if(!D)return;if(i==1){ratingTab();refTab()}if(i==2)bk();if(i==4)teamView();if(i==5)chart();if(i==6)gamesTab();if(i==7||i==8)screen();if(i==9)k_cards($("kv"),0);if(i==10)k_cards($("fv"),1);window.scrollTo(0,0)}
 $("tabs").onclick=e=>{const i=e.target.dataset.t;if(i!=null)show(i)};
-document.body.insertAdjacentHTML("beforeend",'<button id="dh" type="button" aria-label="Meni">◀</button><aside id="dw"><h3>Meni</h3>'+tabs.map(t=>`<button data-t="${t[1]}" type="button">${t[0]}</button>`).join("")+"</aside>");
-$("dh").onclick=()=>{const o=$("dw").classList.toggle("open");$("dh").textContent=o?"▶":"◀"};
-$("dw").onclick=e=>{const i=e.target.dataset.t;if(i!=null){show(i);$("dw").classList.remove("open");$("dh").textContent="◀"}};
+document.body.insertAdjacentHTML("beforeend",'<button id="mnb" type="button" aria-label="Meni">▶</button><aside id="dw"><h3>Meni</h3>'+tabs.map(t=>`<button data-t="${t[1]}" type="button">${t[0]}</button>`).join("")+"</aside>");
+$("mnb").onclick=()=>{const o=$("dw").classList.toggle("open");$("mnb").textContent=o?"◀":"▶"};
+$("dw").onclick=e=>{const i=e.target.dataset.t;if(i!=null){show(i);$("dw").classList.remove("open");$("mnb").textContent="▶"}};
 
 function fillSelect(id,html){const cur=$(id).value;$(id).innerHTML=html;if([...$(id).options].some(o=>o.value==cur))$(id).value=cur}
 function init(first){
@@ -873,7 +875,7 @@ function screen(){
  el.innerHTML=(top?`<div class="card"><h3 style="margin-top:0">Top 3 value tipa</h3><div class="grid w">${top}</div></div>`:"")+
  `<div class="card"><h3 style="margin-top:0">Svi tipovi sa EV ≥ ${f(thr*100,0)}% (${SCR.length})</h3>`+
  (SCR.length?`<div class="scroll"><table><tr><th>Početak</th><th>Utakmica</th><th>Tržište</th><th>Izbor</th><th class="r">Model</th><th class="r">Kvota</th><th>Kladionica</th><th class="r">EV</th><th class="r">Ulog</th><th></th></tr>`+
-  SCR.map((x,i)=>`<tr><td>${esc(dt(x.st))}</td><td>${esc(x.mt)}</td><td>${esc(x.mk)}</td><td>${esc(x.pick)}</td><td class="r">${f(x.p*100)}%</td><td class="r">${f(x.o,2)}</td><td>${esc(x.bk)}</td><td class="r ok">+${f(x.ev*100,1)}% ${evb(x.ev)}</td><td class="r">${f(stake(x.p,x.o,B),2)}</td><td><button class="btn sm" data-sa="${i}" type="button">Dodaj</button></td></tr>`).join("")+`</table></div>`:`<p class="mu">Nema tipova iznad praga${used?"":" (nijedan meč iz kvota nije prepoznat u tvom modelu)"}.</p>`)+
+  SCR.map((x,i)=>`<tr><td>${esc(dt(x.st))}</td><td>${esc(x.mt)}</td><td>${esc(x.mk)}</td><td>${esc(x.pick)}</td><td class="r">${f(x.p*100)}%</td><td class="r">${f(x.o,2)}</td><td>${esc(x.bk)}</td><td class="r ok">+${f(x.ev*100,1)}% ${evb(x.ev)}</td><td class="r">${f(stake(x.p,x.o,B),2)}</td><td><button class="btn sm" data-sl="${i}" type="button">+ Listić</button> <button class="btn sm" data-sa="${i}" type="button">Bankroll</button></td></tr>`).join("")+`</table></div>`:`<p class="mu">Nema tipova iznad praga${used?"":" (nijedan meč iz kvota nije prepoznat u tvom modelu)"}.</p>`)+
  `<div class="note warn">Verovatnoća je mešavina modela (30%) i tržišnog konsenzusa bez provizije (70%), traže se bar 3 kladionice, a EV iznad 12% se odbacuje kao greška. Realan edge u klađenju je 2 do 6%. Ukupno analizirano mečeva: ${used}/${OD.events.length}.</div></div>`;
  $("sb").innerHTML=`<div class="card"><h2>Surebet</h2>`+(sure.length?`<div class="scroll"><table><tr><th>Utakmica</th><th>Domaćin</th><th>Gost</th><th class="r">Profit</th></tr>`+sure.map(x=>`<tr><td>${esc(x.mt)}</td><td>${f(x.b1,2)} (${esc(x.k1)})</td><td>${f(x.b2,2)} (${esc(x.k2)})</td><td class="r ok">+${f(x.pf,2)}%</td></tr>`).join("")+`</table></div>`:`<p class="mu">Trenutno nema arbitraže.</p>`)+`</div>`}
 $("sth").onchange=screen;
@@ -903,10 +905,24 @@ document.addEventListener("click",e=>{const t=e.target.closest("[data-bk],[data-
  if(d.x){md.style.display="none";return}if(d.ms){k_MS=+d.ms;k_modal(+md.dataset.i);return}if(d.md!=null){k_modal(+d.md);return}
  if(d.bk){k_CH.has(d.bk)?k_CH.delete(d.bk):k_CH.add(d.bk)}if(d.fv){k_FAV.has(d.fv)?k_FAV.delete(d.fv):k_FAV.add(d.fv);try{localStorage.setItem("elfav",JSON.stringify([...k_FAV]))}catch(x){}}
  if(!$("t9").hidden)k_cards($("kv"),0);if(!$("t10").hidden)k_cards($("fv"),1)});
+
+let xSLIP=[],xSST=10;
+function xslR(u){const el=$("slip");if(!el)return;const o=xSLIP.reduce((p,x)=>p*x.o,1);if(u&&$("xpw")){$("xpw").textContent=f(xSST*o,2);return}
+ if(!xSLIP.length){el.innerHTML="";return}const pr=xSLIP.reduce((p,x)=>p*x.p,1),cor=new Set(xSLIP.map(x=>x.mt)).size<xSLIP.length;
+ el.innerHTML=`<div class="card" style="border-color:var(--ac)"><h3 style="margin-top:0">Listić (${xSLIP.length})</h3>${xSLIP.map((x,i)=>`<div class="head" style="padding:4px 0"><span>${esc(x.mt)}: <b>${esc(x.pick)}</b> @ ${f(x.o,2)}</span><button class="chip" data-sr="${i}" style="margin-left:auto" type="button">✕</button></div>`).join("")}${cor?'<div class="note warn">Dva tipa sa iste utakmice su korelisana, pa prava šansa nije običan proizvod.</div>':""}<div class="grid"><div class="stat"><span>Ukupna kvota</span><div class="num">${f(o,2)}</div></div><div class="stat"><span>Šansa (model)</span><div class="num">${f(pr*100,1)}%</div></div><div><label for="xst">Ulog</label><input id="xst" type="number" value="${xSST}"></div><div class="stat"><span>Mogući dobitak</span><div class="num ok" id="xpw">${f(xSST*o,2)}</div></div></div><button class="btn sm" data-cp="1" type="button" style="margin-top:10px">Kopiraj listić</button></div>`}
+document.addEventListener("click",e=>{const t=e.target.closest("[data-sl],[data-sr],[data-cp]");if(!t)return;const d=t.dataset;
+ if(d.sl!=null){const x=SCR[+d.sl];if(x&&!xSLIP.includes(x))xSLIP.push(x)}if(d.sr!=null)xSLIP.splice(+d.sr,1);
+ if(d.cp&&navigator.clipboard)navigator.clipboard.writeText(xSLIP.map(x=>x.mt+": "+x.pick+" @ "+f(x.o,2)).join("\\n"));xslR()});
 /*NEW*/
 // ================= DASHBOARD, TICKER, TILT, GRBOVI =================
 const kb=n=>{try{const c=codeOf(n);return c?badge(c):""}catch(e){return""}};
-function mhead(h,a){const el=$("mh");if(el)el.innerHTML=`<div class="mh">${badge(h,1)}<h2>${esc(nm(h))}</h2><span class="vs">VS</span><h2>${esc(nm(a))}</h2>${badge(a,1)}</div>`}
+const xform=t=>{const g=D.games.filter(x=>x.h==t||x.a==t).sort((x,y)=>x.dt>y.dt?1:-1).slice(-10),w=g.map(x=>x.h==t?x.hs>x.as:x.as>x.hs);return`<div>${w.map(v=>`<i class="hm ${v?"W":"L"}"></i>`).join("")}<div class="mu" style="font-size:.8rem">forma ${w.filter(Boolean).length}/${w.length}</div></div>`};
+function mhead(h,a){const el=$("mh");if(el){el.innerHTML=`<div class="mh">${badge(h,1)}<div><h2>${esc(nm(h))}</h2>${xform(h)}</div><span class="vs">VS</span><div><h2>${esc(nm(a))}</h2>${xform(a)}</div>${badge(a,1)}</div><div class="card" id="dst"></div>`;xdist()}}
+let xSL=-5.5;
+function xdist(){const el=$("dst");if(!el||!MCC.r)return;const mg=MCC.r.mg,bins={},ks=[];mg.forEach(x=>{const k=Math.max(-30,Math.min(30,Math.round(x/2)*2));bins[k]=(bins[k]||0)+1});for(let k=-30;k<=30;k+=2)ks.push(k);const mx=Math.max(...ks.map(k=>bins[k]||0));
+ el.innerHTML=`<h3 style="margin-top:0">Distribucija razlike (${esc(nm($("h").value))} minus ${esc(nm($("a").value))})</h3><div class="brs" style="height:90px">${ks.map(k=>`<i data-k="${k}" style="height:${(bins[k]||0)/mx*100}%"></i>`).join("")}</div><label for="xsl">Hendikep domaćina: <b id="xsv"></b></label><input id="xsl" type="range" min="-20" max="20" step="0.5" value="${xSL}"><div class="grid"><div class="stat"><span>Šansa da pokrije</span><div class="num" id="xsp"></div></div><div class="stat"><span>Fer kvota</span><div class="num" id="xsf"></div></div></div>`;xslU()}
+function xslU(){if(!MCC.r||!$("xsv"))return;const mg=MCC.r.mg,p=mg.filter(x=>x+xSL>0).length/mg.length;$("xsv").textContent=sg(xSL);$("xsp").textContent=f(p*100,1)+"%";$("xsf").textContent=f(1/Math.max(p,.001),2);document.querySelectorAll("#dst .brs i").forEach(i=>{i.style.background=+i.dataset.k+xSL>0?"var(--ok)":"rgba(255,255,255,.15)"})}
+document.addEventListener("input",e=>{if(e.target.id=="xsl"){xSL=+e.target.value;xslU()}if(e.target.id=="xst"){xSST=+e.target.value||0;xslR(1)}});
 function dash(){const el=$("dash");if(!el||!D)return;
  const bt=S.bets.filter(b=>b.res=="W"||b.res=="L"),pf=b=>b.res=="W"?b.stake*(b.odds-1):-b.stake,tot=bt.reduce((s,b)=>s+pf(b),0),stk=bt.reduce((s,b)=>s+b.stake,0),roi=stk?tot/stk*100:0,u=S.b0?tot/(S.b0/100):0,
  t3=SCR.slice(0,3),avg=t3.length?t3.reduce((s,x)=>s+x.ev,0)/t3.length*100:0,sc=Math.min(100,Math.round(avg*12)),C=2*Math.PI*34,mx=Math.max(1,...bt.map(b=>Math.abs(pf(b)))),col=v=>v>=0?"var(--ok)":"var(--no)";
