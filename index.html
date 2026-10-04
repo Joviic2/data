@@ -49,6 +49,27 @@ tr[data-team],tr[data-g]{cursor:pointer}tr[data-team]:hover,tr[data-g]:hover{bac
 #pch{width:100%;max-height:340px;touch-action:none;cursor:ns-resize;background:var(--in);border:1px solid var(--bd);border-radius:8px}
 .live{display:inline-block;width:9px;height:9px;border-radius:50%;background:var(--ok);margin-right:6px}
 .live.off{background:var(--no)}
+.fc{position:relative;display:inline-grid;place-items:center;width:44px;height:44px;border-radius:50%;background:var(--in);border:1px solid var(--bd);font:700 .9rem "Barlow Condensed";overflow:hidden;flex:none;color:var(--mu)}
+.fc img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top;background:var(--in)}
+.fc.lg{width:84px;height:84px;font-size:1.4rem}
+.pgrid{display:grid;gap:10px;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));margin-top:12px}
+.plc{display:flex;flex-direction:column;align-items:center;text-align:center;gap:3px;padding:12px 8px;background:var(--in);border:1px solid var(--bd);border-radius:10px;cursor:pointer;font-size:.85rem}
+.plc:hover{border-color:var(--ac)}.plc b{font-size:1rem}
+.gm{display:grid;grid-template-columns:96px 1fr auto 1fr;align-items:center;gap:8px;padding:10px 6px;border-bottom:1px solid var(--bd);cursor:pointer}
+.gm:hover{background:var(--in)}.gm.hd{cursor:default;border:0}.gm.hd:hover{background:none}
+.gd{color:var(--mu);font-size:.85rem}.gt{display:flex;align-items:center;font-weight:600}.gt.r{justify-content:flex-end;text-align:right}.gt.l{color:var(--mu);font-weight:500}
+.gs{font:700 1.5rem "Barlow Condensed";padding:0 8px;white-space:nowrap}
+@media(max-width:560px){.gm{grid-template-columns:1fr auto 1fr}.gd{grid-column:1/-1}}
+.mts{display:flex;gap:6px;overflow-x:auto;margin:14px 0 10px}
+.mts button,.stb button{padding:7px 14px;border:1px solid var(--bd);background:var(--in);color:var(--tx);border-radius:99px;font:600 .9rem Barlow,sans-serif;cursor:pointer;white-space:nowrap}
+.mts button[aria-selected=true],.stb button[aria-selected=true]{background:var(--tx);color:var(--bg);border-color:var(--tx)}
+.stb{display:flex;gap:6px;margin:12px 0}
+.rk{display:inline-block;min-width:30px;text-align:center;padding:1px 8px;border-radius:6px;color:#fff;font-weight:700}
+.cmp{display:grid;grid-template-columns:70px 1fr 70px;gap:8px;align-items:center;margin:8px 0;text-align:center}
+.cmp span{font-size:.8rem;color:var(--mu)}.cmp b{font:700 1.2rem "Barlow Condensed"}
+.cb{display:flex;height:8px;border-radius:4px;overflow:hidden;margin-top:3px;background:var(--bd)}.cb i{display:block;background:var(--ac)}.cb i+i{background:var(--mu)}
+summary{cursor:pointer}summary h2{margin:0}
+.big{font:700 2.6rem/1 "Barlow Condensed"}
 </style></head><body><main>
 <h1>Euroleague Value Analyzer</h1>
 <p class="sub">Sezona 2026/27. Podaci se čitaju uživo iz tvog GitHub repoa. <span id="stamp"></span> <button class="btn sm" id="refresh" type="button">Osveži</button></p>
@@ -65,25 +86,18 @@ tr[data-team],tr[data-g]{cursor:pointer}tr[data-team]:hover,tr[data-g]:hover{bac
  <div class="card"><div class="grid"><div><label for="tm">Tim</label><select id="tm"></select></div></div></div>
  <div id="tv"></div>
 </section>
-<section id="t6" hidden>
- <div class="card"><h2>Utakmice</h2>
- <p class="sub">Klikni na utakmicu za boxscore.</p>
- <div class="scroll"><table id="gl"></table></div></div>
-</section>
+<section id="t6" hidden><div id="gl"></div></section>
 <section id="t5" hidden>
- <div class="card"><h2>Props: poslednje utakmice</h2>
- <div class="grid">
+ <div class="card"><div class="grid">
   <div><label for="ptm">Tim</label><select id="ptm"></select></div>
   <div><label for="ppl">Igrač</label><select id="ppl"></select></div>
-  <div><label for="pmt">Statistika</label><select id="pmt"></select></div>
-  <div><label for="pln">Linija kladionice (prevuci žutu liniju)</label><input id="pln" type="number" step="0.5" value="80"></div>
-  <div><label for="po">Kvota Over (opciono)</label><input id="po" type="number" step="0.01" min="1.01"></div>
-  <div><label for="pu">Kvota Under (opciono)</label><input id="pu" type="number" step="0.01" min="1.01"></div>
-  <div><label for="pcu">Moji brojevi (npr. 82, 91, 77)</label><input id="pcu" type="text" placeholder="poslednjih 10, odvojeno zarezom"></div>
- </div>
- <svg id="pch" viewBox="0 0 640 300" role="img" aria-label="Grafikon poslednjih utakmica" style="margin-top:12px"></svg>
- <div class="grid" id="pst" style="margin-top:12px"></div>
- <div class="note">Zeleno = iznad linije (Over), crveno = ispod (Under). Uzorak je mali dok traje početak sezone. Ako nalepiš brojeve u polje "Moji brojevi", oni zamenjuju podatke sa sajta. Kod igrača se računaju samo utakmice u kojima je igrao.</div></div>
+  <div><label for="pop">Protivnik (za analizu ispod)</label><select id="pop"></select></div>
+  <div><label for="pln">Linija (prevuci žutu liniju)</label><input id="pln" type="number" step="0.5" value="10"></div>
+ </div></div>
+ <div class="card"><div id="pph"></div><div id="pmt" class="mts"></div>
+  <svg id="pch" viewBox="0 0 640 300" role="img" aria-label="Poslednje utakmice igrača"></svg>
+  <div class="grid" id="pst" style="margin-top:12px"></div></div>
+ <div id="pex"></div>
 </section>
 <section id="t0" hidden>
  <div class="card">
@@ -97,8 +111,7 @@ tr[data-team],tr[data-g]{cursor:pointer}tr[data-team]:hover,tr[data-g]:hover{bac
   </div>
   <div class="grid" style="margin-top:12px" id="kpi"></div>
  </div>
- <div class="card">
-  <h2>Kvote</h2>
+ <details class="card" open><summary><h2 style="display:inline">Kvote i EV</h2></summary>
   <div class="grid">
    <div><label for="o1">Pobeda domaćin</label><input id="o1" type="number" step="0.01" min="1.01" value="1.90"></div>
    <div><label for="o2">Pobeda gost</label><input id="o2" type="number" step="0.01" min="1.01" value="1.90"></div>
@@ -109,8 +122,8 @@ tr[data-team],tr[data-g]{cursor:pointer}tr[data-team]:hover,tr[data-g]:hover{bac
   <div class="scroll" style="margin-top:12px"><table id="res"></table></div>
   <div class="note">EV preko 10% obično znači da model ne vidi nešto (povrede, rotacija). Proveri povrede ispod i podesi korekciju.</div>
   <div class="grid"><div><label for="pk">Opklada za evidenciju</label><select id="pk"></select></div><div style="align-self:end"><button class="btn" id="add" type="button">Dodaj u evidenciju</button></div></div>
- </div>
- <div class="card"><h2>Povrede i status</h2><div class="grid w" id="inj"></div></div>
+ </details>
+ <details class="card"><summary><h2 style="display:inline">Povrede i status</h2></summary><div class="grid w" id="inj" style="margin-top:10px"></div></details>
 </section>
 
 <section id="t1" hidden>
@@ -158,6 +171,7 @@ const nm=c=>NAME_OVR[c]||(D&&D.clubs[c]&&D.clubs[c].short)||c;
 function phi(x){const t=1/(1+.2316419*Math.abs(x)),d=.3989423*Math.exp(-x*x/2),p=d*t*(.3193815+t*(-.3565638+t*(1.781478+t*(-1.821256+t*1.330274))));return x>0?1-p:p}
 const hue=t=>[...t].reduce((a,c)=>a*31+c.charCodeAt(0),7)%360;
 const badge=(t,lg)=>{const cr=D&&D.clubs[t]&&D.clubs[t].crest;return`<span class="bd${lg?" lg":""}" style="background:hsl(${hue(t)} 55% 38%)">${esc(t)}${cr?`<img src="${esc(cr)}" alt="" loading="lazy" onerror="this.remove()">`:""}</span>`};
+const face=(src,name,lg)=>`<span class="fc${lg?" lg":""}">${esc((name||"?").split(" ").map(w=>w[0]).slice(0,2).join(""))}${src?`<img src="${esc(src)}" alt="" loading="lazy" onerror="this.remove()">`:""}</span>`;
 const fd=s=>s?s.slice(8,10)+"."+s.slice(5,7)+". "+s.slice(11,16):"";
 const fdu=u=>{try{return new Date(u).toLocaleString("sr-Latn",{weekday:"short",day:"2-digit",month:"2-digit",hour:"2-digit",minute:"2-digit",timeZone:"Europe/Belgrade"})}catch(e){return u||""}};
 
@@ -246,14 +260,27 @@ function boxTable(g,side){
  return`<h3>${esc(nm(t))} <span class="mu">trener: ${esc(b.coach||"-")}</span></h3><div class="scroll"><table><tr><th>#</th><th>Igrač</th><th class=r>MIN</th><th class=r>PTS</th><th class=r>2P</th><th class=r>3P</th><th class=r>FT</th><th class=r>REB</th><th class=r>AST</th><th class=r>STL</th><th class=r>TOV</th><th class=r>PIR</th><th class=r>+/-</th></tr>`+
  L.map(p=>`<tr${p[3]?' style="font-weight:700"':""}><td>${esc(p[2])}</td><td>${esc(p[1])}</td><td class=r>${f(p[4],0)}</td><td class=r>${p[5]}</td><td class=r>${p[6]}/${p[7]}</td><td class=r>${p[8]}/${p[9]}</td><td class=r>${p[10]}/${p[11]}</td><td class=r>${p[14]}</td><td class=r>${p[15]}</td><td class=r>${p[16]}</td><td class=r>${p[17]}</td><td class=r>${p[20]}</td><td class=r>${p[21]??""}</td></tr>`).join("")+
  `<tr><td></td><td><b>Ukupno</b></td><td></td><td class=r><b>${tt.pts}</b></td><td class=r>${tt.fg2m}/${tt.fg2a}</td><td class=r>${tt.fg3m}/${tt.fg3a}</td><td class=r>${tt.ftm}/${tt.fta}</td><td class=r>${tt.tr}</td><td class=r>${tt.ast}</td><td class=r>${tt.stl}</td><td class=r>${tt.tov}</td><td class=r>${tt.pir}</td><td></td></tr></table></div>`}
+let GV=null,GT="box";
 function gamesTab(){
+ if(GV!=null){const g=D.games.find(x=>x.n==GV);if(g)return gameDetail(g);GV=null}
  const G=D.games.slice().sort((a,b)=>(b.dt||"").localeCompare(a.dt||"")||b.n-a.n);
- let h="<tr><th>Kolo</th><th>Datum</th><th>Domaćin</th><th class=r>Rez.</th><th>Gost</th><th>Četvrtine</th></tr>";
- G.forEach(g=>{
-  h+=`<tr data-g="${g.n}" tabindex="0"><td>${g.round}</td><td>${fd(g.dt)}</td><td class="${g.hs>g.as?"ok":""}">${esc(nm(g.h))}</td><td class=r><b>${g.hs}:${g.as}</b>${g.live?' <span class="pill">uživo</span>':""}</td><td class="${g.as>g.hs?"ok":""}">${esc(nm(g.a))}</td><td class="mu">${g.q?g.q.h.join("-")+" | "+g.q.a.join("-"):""}</td></tr>`;
-  if(OPEN.has(g.n))h+=`<tr><td colspan="6">${g.box?boxTable(g,"h")+boxTable(g,"a"):'<span class="mu">Boxscore još nije preuzet.</span>'}</td></tr>`});
- $("gl").innerHTML=h}
-$("gl").onclick=e=>{const tr=e.target.closest("tr[data-g]");if(!tr)return;const n=+tr.dataset.g;OPEN.has(n)?OPEN.delete(n):OPEN.add(n);gamesTab()};
+ let h='<div class="card"><h2>Utakmice</h2><p class="sub">Klikni na utakmicu za boxscore, četvrtine i analitiku.</p>',rd=null;
+ G.forEach(g=>{if(g.round!=rd){rd=g.round;h+=`<h3>Kolo ${g.round}</h3>`}
+  h+=`<div class="gm" data-g="${g.n}" tabindex="0"><span class="gd">${fd(g.dt)}</span><span class="gt r${g.hs<g.as?" l":""}">${esc(nm(g.h))}${badge(g.h).replace("margin-right:8px","")}</span><b class="gs">${g.hs} : ${g.as}${g.live?' <span class="pill">uživo</span>':""}</b><span class="gt${g.as<g.hs?" l":""}">${badge(g.a)}${esc(nm(g.a))}</span></div>`});
+ $("gl").innerHTML=h+"</div>"}
+function gameDetail(g){
+ const T=[["box","Boxscore"],["q","Četvrtine"],["an","Analitika"]];
+ let h=`<div class="card"><button class="btn sm" data-back="1" type="button">← Sve utakmice</button>
+ <div class="gm hd" style="margin-top:8px"><span class="gd">Kolo ${g.round}<br>${fd(g.dt)}</span><span class="gt r">${esc(nm(g.h))}${badge(g.h)}</span><b class="gs" style="font-size:2.2rem">${g.hs} : ${g.as}</b><span class="gt">${badge(g.a)}${esc(nm(g.a))}</span></div>
+ <div class="stb">${T.map(t=>`<button type="button" data-gt="${t[0]}" aria-selected="${t[0]==GT}">${t[1]}</button>`).join("")}</div>`;
+ if(GT=="box")h+=g.box?boxTable(g,"h")+boxTable(g,"a"):'<span class="mu">Boxscore još nije preuzet.</span>';
+ if(GT=="q")h+=g.q?`<div class="scroll"><table><tr><th></th>${g.q.h.map((_,i)=>`<th class=r>${i<4?"Q"+(i+1):"OT"+(i-3)}</th>`).join("")}<th class=r>Ukupno</th></tr>`+[["h",g.h],["a",g.a]].map(([k,c])=>`<tr><td><b>${esc(nm(c))}</b></td>${g.q[k].map(v=>`<td class=r>${v}</td>`).join("")}<td class=r><b>${k=="h"?g.hs:g.as}</b></td></tr>`).join("")+"</table></div>":'<span class="mu">Nema podataka o četvrtinama.</span>';
+ if(GT=="an"){if(!g.box)h+='<span class="mu">Boxscore još nije preuzet.</span>';else{
+  const A=g.box.h.tot,B=g.box.a.tot,mv=t=>({PTS:t.pts,"2P%":t.fg2m/t.fg2a*100,"3P%":t.fg3m/t.fg3a*100,"FT%":t.ftm/t.fta*100,REB:t.tr,AST:t.ast,STL:t.stl,TOV:t.tov,PIR:t.pir,ORTG:t.pts/poss(t)*100}),a=mv(A),b=mv(B);
+  h+=Object.keys(a).map(k=>{const pa=a[k]/(a[k]+b[k])*100,fx=k.includes("%")||k=="ORTG"?1:0;return`<div class="cmp"><b>${f(a[k],fx)}</b><div><span>${k}</span><div class="cb"><i style="width:${pa}%"></i><i style="width:${100-pa}%"></i></div></div><b>${f(b[k],fx)}</b></div>`}).join("")}}
+ $("gl").innerHTML=h+"</div>"}
+$("gl").onclick=e=>{if(e.target.closest("[data-back]")){GV=null;gamesTab();return}const s=e.target.closest("[data-gt]");if(s){GT=s.dataset.gt;gamesTab();return}const r=e.target.closest("[data-g]");if(r){GV=+r.dataset.g;GT="box";gamesTab();window.scrollTo(0,0)}};
+$("gl").onkeydown=e=>{if(e.key=="Enter"){const r=e.target.closest("[data-g]");if(r){GV=+r.dataset.g;GT="box";gamesTab()}}};
 
 // ================= DETALJ TIMA =================
 function playerAgg(t){
@@ -273,7 +300,7 @@ function teamView(){
  const coach=(ro.coach&&ro.coach.name)||(lastG&&lastG.box&&lastG.box[lastG.h==t?"h":"a"].coach)||"-";
  const order=TEAMS.map(c=>({c,n:net(c)})).filter(x=>x.n!=null).sort((a,b)=>b.n-a.n),nr=order.findIndex(x=>x.c==t)+1;
  let h=`<div class="card"><div class="head">${badge(t,1)}<div><h2 style="margin:0">${esc(cl.name||nm(t))}</h2><div class="sub" style="margin:0">${esc(cl.city||"")}${cl.country?", "+esc(cl.country):""} | ${s.w}-${s.l}${o&&d?` | ORTG ${f(o.ORTG)} | DRTG ${f(d.ORTG)} | NET ${sg(+f(o.ORTG-d.ORTG))}${nr?` (${nr}. u ligi)`:""}`:""}</div></div></div>
-  <div class="grid w" style="margin-top:12px"><div class="stat"><span>Glavni trener</span><div class="num">${esc(coach)}</div>${ro.coach&&ro.coach.country?`<span>${esc(ro.coach.country)}</span>`:""}</div>
+  <div class="grid w" style="margin-top:12px"><div class="stat"><span>Glavni trener</span><div class="head" style="gap:10px;flex-wrap:nowrap">${face(ro.coach&&(ro.coach.photo||ro.coach.image),coach,1)}<div class="num">${esc(coach)}</div></div>${ro.coach&&ro.coach.country?`<span>${esc(ro.coach.country)}</span>`:""}</div>
   <div class="stat"><span>Pomoćni treneri</span><div>${esc((ro.assistants||[]).join(", ")||"-")}</div></div>
   <div class="stat"><span>Forma</span><div>${s.form.slice(-5).map(r=>`<span class="dot ${r}">${r}</span>`).join("")||"-"}</div></div></div></div>`;
  // sledeće utakmice
@@ -292,15 +319,15 @@ function teamView(){
  rows.sort((x,y)=>(y.a?y.a.min/y.a.gp:-1)-(x.a?x.a.min/x.a.gp:-1));
  const lead=(k,lab)=>{const c=rows.filter(r=>r.a).map(r=>({n:r.p.name,v:r.a[k]/r.a.gp})).sort((x,y)=>y.v-x.v)[0];return c?`<div class="stat"><span>${lab}</span><div class="num">${f(c.v)}</div><span>${esc(c.n)}</span></div>`:""};
  h+=`<div class="card"><h2>Roster i sezonski prosek</h2>`+(rows.some(r=>r.a)?`<div class="grid">${lead("pts","Najviše poena")}${lead("tr","Najviše skokova")}${lead("ast","Najviše asistencija")}${lead("pir","Najbolji PIR")}</div>`:"")+
-  `<div class="scroll" style="margin-top:12px"><table><tr><th>#</th><th>Igrač</th><th>Poz.</th><th class=r>Vis.</th><th class=r>G</th><th class=r>MIN</th><th class=r>PTS</th><th class=r>REB</th><th class=r>AST</th><th class=r>PIR</th><th class=r>3P</th></tr>`+
-  rows.map(({p,a})=>`<tr><td>${esc(p.no)}</td><td>${p.photo?`<img class="avatar" src="${esc(p.photo)}" alt="" loading="lazy" onerror="this.remove()">`:""}${esc(p.name)}${p.country?` <span class="mu">${esc(p.country)}</span>`:""}</td><td>${esc(p.pos||"")}</td><td class=r>${p.h||"-"}</td>${a?`<td class=r>${a.gp}</td><td class=r>${f(a.min/a.gp)}</td><td class=r>${f(a.pts/a.gp)}</td><td class=r>${f(a.tr/a.gp)}</td><td class=r>${f(a.ast/a.gp)}</td><td class=r>${f(a.pir/a.gp)}</td><td class=r>${a.fg3m}/${a.fg3a}</td>`:'<td class=r>0</td><td colspan=7 class="mu">nije igrao</td>'}</tr>`).join("")+`</table></div>
-  <div class="note">Sortirano po minutaži, pa su prvi u listi nosioci igre. Roster dolazi iz Euroleague API-ja (aktivni igrači prijavljeni za sezonu).</div></div>`;
+  `<div class="pgrid">${rows.map(({p,a})=>`<div class="plc" data-pl="${esc(a?a.id:p.id)}" tabindex="0">${face(p.photo,p.name,1)}<b>${esc(p.name)}</b><span class="mu">${esc((p.no?"#"+p.no+" ":"")+(p.pos||""))}</span>${a?`<span>${f(a.pts/a.gp)} PTS · ${f(a.tr/a.gp)} REB · ${f(a.ast/a.gp)} AST</span>`:'<span class="mu">nije igrao</span>'}</div>`).join("")}</div><details style="margin-top:12px"><summary class="mu">Tabela sa detaljima</summary><div class="scroll"><table><tr><th>#</th><th>Igrač</th><th>Poz.</th><th class=r>Vis.</th><th class=r>G</th><th class=r>MIN</th><th class=r>PTS</th><th class=r>REB</th><th class=r>AST</th><th class=r>PIR</th><th class=r>3P</th></tr>`+
+  rows.map(({p,a})=>`<tr><td>${esc(p.no)}</td><td>${p.photo?`<img class="avatar" src="${esc(p.photo)}" alt="" loading="lazy" onerror="this.remove()">`:""}${esc(p.name)}${p.country?` <span class="mu">${esc(p.country)}</span>`:""}</td><td>${esc(p.pos||"")}</td><td class=r>${p.h||"-"}</td>${a?`<td class=r>${a.gp}</td><td class=r>${f(a.min/a.gp)}</td><td class=r>${f(a.pts/a.gp)}</td><td class=r>${f(a.tr/a.gp)}</td><td class=r>${f(a.ast/a.gp)}</td><td class=r>${f(a.pir/a.gp)}</td><td class=r>${a.fg3m}/${a.fg3a}</td>`:'<td class=r>0</td><td colspan=7 class="mu">nije igrao</td>'}</tr>`).join("")+`</table></div></details>
+  <div class="note">Klikni na igrača za profil. Sortirano po minutaži, pa su prvi u listi nosioci igre. Roster dolazi iz Euroleague API-ja (aktivni igrači prijavljeni za sezonu).</div></div>`;
  h+=`<div class="card"><h2>Povrede i status</h2><div class="grid w">${injBlock(t)}</div></div>`;
  if(o&&d)h+=`<div class="card"><h2>Statistika tima</h2>${cards(t,false,ownStats)}<h2 style="margin-top:16px">Statistika protivnika protiv tima</h2>${cards(t,true,oppStats)}<div class="note">Mesto je rang među svim timovima po vrednosti (1. = najviša vrednost u ligi). Boja pokazuje da li je to dobro (zeleno) ili loše (crveno) za ovaj tim.</div></div>
   <div class="card"><h2>Šut</h2><div class="scroll"><table><tr><th></th><th class=r>2P%</th><th class=r>3P%</th><th class=r>FT%</th><th class=r>Udeo trojki u šutevima</th></tr>
   <tr><td>${esc(nm(t))}</td><td class=r>${f(o["2P%"])}</td><td class=r>${f(o["3P%"])}</td><td class=r>${f(o["FT%"])}</td><td class=r>${f(o["3PA%"])}%</td></tr>
   <tr><td>Protivnici protiv tima</td><td class=r>${f(d["2P%"])}</td><td class=r>${f(d["3P%"])}</td><td class=r>${f(d["FT%"])}</td><td class=r>${f(d["3PA%"])}%</td></tr></table></div>
-  <div class="note">Šut po zonama terena još nije uključen: podaci o šutevima se već skidaju u repo (shots_*.json), a mapa zona se dodaje u sledećem koraku.</div></div>`;
+  <div class="note">Mapa šuta po zonama dolazi kad povežemo shots fajlove. Za igrača pogledaj tab Igrač.</div></div>`;
  $("tv").innerHTML=h}
 
 // ================= ANALIZA MEČA =================
@@ -326,37 +353,60 @@ function bk(){const B=bank(),pl=B-S.b0,st=S.bets.filter(b=>b.res=="W"||b.res=="L
  $("bk").innerHTML=[["Bankroll",f(B,2)],["Profit",(pl>=0?"+":"")+f(pl,2)],["ROI",stk?f(pl/stk*100)+"%":"-"],["Hit rate",st.length?f(w/st.length*100)+"%":"-"]].map(x=>`<div class="stat"><span>${x[0]}</span><div class="num">${x[1]}</div></div>`).join("");
  $("bt").innerHTML="<tr><th>Datum</th><th>Utakmica</th><th>Izbor</th><th>Kvota</th><th>Ulog</th><th>Model</th><th>Ishod</th><th></th></tr>"+(S.bets.length?S.bets.map((b,i)=>`<tr><td>${esc(b.d)}</td><td>${esc(b.m)}</td><td>${esc(b.pick)}</td><td>${f(b.odds,2)}</td><td><input aria-label="Ulog" data-i="${i}" data-k="stake" type="number" step="1" value="${b.stake}" style="width:80px"></td><td>${f(b.p*100)}%</td><td><select aria-label="Ishod" data-i="${i}" data-k="res">${[["C","čeka"],["W","pobeda"],["L","gubitak"],["P","povrat"]].map(o=>`<option value="${o[0]}"${b.res==o[0]?" selected":""}>${o[1]}</option>`).join("")}</select></td><td><button data-del="${i}" class="btn sm" type="button">Obriši</button></td></tr>`).join(""):"<tr><td colspan=8>Još nema opklada. Dodaj ih iz taba Analiza meča.</td></tr>")}
 
-// ================= PROPS =================
-const TM=[["pts","Poeni tima"],["opp","Primljeni poeni"],["tot","Ukupno poena"],["mar","Razlika"]];
-const PM=[["pts","Poeni"],["tr","Skokovi"],["ast","Asistencije"],["pir","PIR"],["fg3m","Trojke pogođene"],["min","Minuti"]];
-const PIDX={min:4,pts:5,fg3m:8,tr:14,ast:15,pir:20};
-function fillPlayers(){
- const t=$("ptm").value,cur=$("ppl").value,names=new Map();
- D.games.forEach(g=>{if(!g.box||(g.h!=t&&g.a!=t))return;g.box[g.h==t?"h":"a"].p.forEach(p=>names.set(p[0],p[1]))});
- $("ppl").innerHTML=`<option value="">Ceo tim</option>`+[...names].sort((a,b)=>a[1].localeCompare(b[1])).map(([id,n])=>`<option value="${esc(id)}">${esc(n)}</option>`).join("");
- if(names.has(cur))$("ppl").value=cur;fillMetric()}
-function fillMetric(){const pl=$("ppl").value,cur=$("pmt").value,L=pl?PM:TM;$("pmt").innerHTML=L.map(([v,l])=>`<option value="${v}">${l}</option>`).join("");if(L.some(x=>x[0]==cur))$("pmt").value=cur}
-function series(){const t=$("ptm").value,m=$("pmt").value,pl=$("ppl").value,cu=$("pcu").value.trim();
- if(cu)return cu.split(/[ ,;]+/).map(Number).filter(x=>!isNaN(x)&&x!=="").slice(-10).map((v,i)=>({v,l:"#"+(i+1)}));
+// ================= IGRAČ / PROPS =================
+const MET=[["pts","Poeni",p=>p[5]],["ast","Asistencije",p=>p[15]],["reb","Skokovi",p=>p[14]],["fg3m","Trojke",p=>p[8]],["pa","Pts+Ast",p=>p[5]+p[15]],["pr","Pts+Reb",p=>p[5]+p[14]],["par","Pts+Reb+Ast",p=>p[5]+p[14]+p[15]],["ra","Reb+Ast",p=>p[14]+p[15]],["pir","PIR",p=>p[20]]];
+let PMK="pts";
+const mfn=k=>MET.find(x=>x[0]==k)[2];
+const pinfo=(t,id)=>((D.rosters[t]||{}).players||[]).find(p=>p.id==id)||{};
+function pgames(t,id){const o=[];D.games.slice().sort((a,b)=>(a.dt||"").localeCompare(b.dt||"")).forEach(g=>{if(!g.box||(g.h!=t&&g.a!=t))return;const hm=g.h==t,p=g.box[hm?"h":"a"].p.find(x=>x[0]==id);if(p&&p[4]>0)o.push({g,p,hm,op:hm?g.a:g.h})});return o}
+function fillPlayers(reset){
+ const t=$("ptm").value,cur=$("ppl").value,m=new Map();
+ D.games.forEach(g=>{if(!g.box||(g.h!=t&&g.a!=t))return;g.box[g.h==t?"h":"a"].p.forEach(p=>{if(p[4]>0){const a=m.get(p[0])||{n:p[1],min:0};a.min+=p[4];m.set(p[0],a)}})});
+ $("ppl").innerHTML=[...m].sort((a,b)=>b[1].min-a[1].min).map(([id,a])=>`<option value="${esc(id)}">${esc(a.n)}</option>`).join("");
+ if(m.has(cur))$("ppl").value=cur;
+ const ops=TEAMS.filter(c=>c!=t),cp=$("pop").value,done=new Set(D.games.map(g=>g.n)),nx=(D.fixtures||[]).find(x=>!done.has(x.n)&&(x.h==t||x.a==t));
+ $("pop").innerHTML=ops.map(c=>`<option value="${c}">${esc(nm(c))}</option>`).join("");
+ $("pop").value=(!reset&&ops.includes(cp))?cp:(nx?(nx.h==t?nx.a:nx.h):ops[0])}
+function autoLine(){const G=pgames($("ptm").value,$("ppl").value);if(G.length)$("pln").value=Math.round(G.reduce((a,x)=>a+mfn(PMK)(x.p),0)/G.length*2)/2;chart()}
+const avg=a=>a.length?a.reduce((x,y)=>x+y,0)/a.length:0;
+function similar(t,id,pos,opp,fn){
  const out=[];
- D.games.filter(g=>g.h==t||g.a==t).forEach(g=>{const hm=g.h==t,my=hm?g.hs:g.as,op=hm?g.as:g.hs,o=nm(hm?g.a:g.h).slice(0,7),lab=(hm?"vs ":"@ ")+o;
-  if(pl){if(!g.box)return;const p=g.box[hm?"h":"a"].p.find(x=>x[0]==pl);if(p)out.push({v:m=="min"?Math.round(p[4]):p[PIDX[m]],l:lab})}
-  else out.push({v:m=="pts"?my:m=="tot"?my+op:m=="opp"?op:my-op,l:lab})});
- return out}
-function autoLine(){const d=series();if(d.length)$("pln").value=Math.round(d.reduce((a,x)=>a+x.v,0)/d.length*2)/2;chart()}
-function chart(){const d=series(),L=+$("pln").value||0,W=640,H=300,pt=18,pb=34;
- if(!d.length){$("pch").innerHTML="";$("pst").innerHTML="";return}
- const vs=d.map(x=>x.v),lo=Math.min(0,...vs,L),hi=(Math.max(...vs,L)*1.1)||1;CH={hi,lo,pt,H,pb};
- const y=v=>pt+(hi-v)/(hi-lo)*(H-pt-pb),gap=(W-40)/d.length,bw=Math.min(46,gap-8);
- const bars=d.map((x,i)=>{const cx=30+gap*i+gap/2,c=x.v>L?"var(--ok)":x.v<L?"var(--no)":"var(--mu)",a=y(0),b=y(x.v),top=Math.min(a,b);return`<rect x="${cx-bw/2}" y="${top}" width="${bw}" height="${Math.max(2,Math.abs(a-b))}" rx="4" fill="${c}"/><text x="${cx}" y="${top-5}" text-anchor="middle" font-size="14" font-weight="700" fill="var(--tx)">${x.v}</text><text x="${cx}" y="${H-12}" text-anchor="middle" font-size="11" fill="var(--mu)">${esc(x.l)}</text>`}).join("");
- $("pch").innerHTML=bars+`<line x1="14" x2="${W-6}" y1="${y(L)}" y2="${y(L)}" stroke="#f5c400" stroke-width="3" stroke-dasharray="7 5"/><rect x="${W-62}" y="${y(L)-12}" width="56" height="22" rx="5" fill="#f5c400"/><text x="${W-34}" y="${y(L)+4}" text-anchor="middle" font-size="13" font-weight="700" fill="#1a1204">${L}</text>`;
- const n=vs.length,ov=vs.filter(v=>v>L).length,un=vs.filter(v=>v<L).length,oo=+$("po").value,uo=+$("pu").value,hr=x=>f(x/n*100,0)+"%";
- $("pst").innerHTML=[["Over (iznad linije)",`${ov}/${n} (${hr(ov)})`],["Under (ispod linije)",`${un}/${n} (${hr(un)})`],["Prosek",f(vs.reduce((a,b)=>a+b,0)/n)],["Max / Min",Math.max(...vs)+" / "+Math.min(...vs)],...(oo>1?[["Over: kvota implicira / hit rate",f(100/oo,0)+"% / "+hr(ov)]]:[]),...(uo>1?[["Under: kvota implicira / hit rate",f(100/uo,0)+"% / "+hr(un)]]:[])].map(x=>`<div class="stat"><span>${x[0]}</span><div class="num">${x[1]}</div></div>`).join("")}
-const pc=$("pch"),mv=e=>{if(!CH.H||(!e.buttons&&e.pointerType!="touch"))return;const r=pc.getBoundingClientRect(),yy=(e.clientY-r.top)/r.height*CH.H,v=CH.hi-(yy-CH.pt)/(CH.H-CH.pt-CH.pb)*(CH.hi-CH.lo);$("pln").value=Math.round(v*2)/2;chart()};
-pc.onpointerdown=e=>{pc.setPointerCapture(e.pointerId);mv(e)};pc.onpointermove=mv;
+ D.games.forEach(g=>{if(!g.box||(g.h!=opp&&g.a!=opp))return;const sd=g.h==opp?"a":"h",ot=sd=="h"?g.h:g.a;
+  g.box[sd].p.forEach(p=>{if(p[0]==id||p[4]<10)return;const inf=pinfo(ot,p[0]);if(!pos||inf.pos!=pos)return;
+   const res=fn(p),oth=pgames(ot,p[0]).filter(x=>x.g.n!=g.n).map(x=>fn(x.p));if(oth.length<3)return;
+   const line=Math.round(avg(oth)*2)/2;if(!line)return;out.push({dt:g.dt||"",team:ot,name:p[1],line,res,d:res-line,pc:(res-line)/line*100})})});
+ return out.sort((a,b)=>b.dt.localeCompare(a.dt))}
+function extras(t,id,G,pi){
+ const opp=$("pop").value,fn=mfn(PMK),lab=MET.find(x=>x[0]==PMK)[1],od=opp?oppStats(opp):null,n=TEAMS.length;
+ const S2=G.reduce((a,x)=>{[["pts",5],["m2",6],["a2",7],["m3",8],["a3",9],["mf",10],["af",11]].forEach(([k,i])=>a[k]+=x.p[i]);return a},{pts:0,m2:0,a2:0,m3:0,a3:0,mf:0,af:0});
+ const row=(l,pts,mm,aa,key)=>{const pc=aa?mm/aa*100:null,al=od?od[key]:null,rk=od?1+TEAMS.filter(c=>{const x=oppStats(c);return x&&x[key]<al}).length:0;
+  return`<tr><td><b>${l}</b></td><td class=r>${f(pts/G.length)} (${S2.pts?f(pts/S2.pts*100,0):0}%)</td><td class=r>${pc==null?"-":f(pc)+"%"}</td><td class=r>${al==null?"-":f(al)+"%"}</td><td class=r>${rk?`<span class="rk" style="background:hsl(${(rk-1)/Math.max(1,n-1)*110} 70% 40%)">${rk}.</span>`:"-"}</td></tr>`};
+ let h=`<div class="card"><h2>Odakle dobija poene vs ${esc(nm(opp))}</h2><div class="scroll"><table><tr><th>Izvor</th><th class=r>Poena po utakmici (udeo)</th><th class=r>Igrač %</th><th class=r>Protivnik dozvoljava</th><th class=r>Rang odbrane</th></tr>${row("2P",2*S2.m2,S2.m2,S2.a2,"2P%")}${row("3P",3*S2.m3,S2.m3,S2.a3,"3P%")}${row("Slobodna bacanja",S2.mf,S2.mf,S2.af,"FT%")}</table></div>
+ <div class="note">Rang 1. (crveno) = najteža odbrana lige za taj šut, poslednji (zeleno) = najlakše se postiže. Mapa šuta po zonama dolazi kad povežemo shots fajlove.</div></div>`;
+ const R2=similar(t,id,pi.pos,opp,fn),hit=R2.filter(x=>x.res>x.line).length,hp=R2.length?hit/R2.length*100:0;
+ h+=`<div class="card"><h2>Slični igrači (${esc(pi.pos||"?")}) protiv ${esc(nm(opp))}: ${lab}</h2>`+(R2.length?`<div class="grid"><div class="stat"><span>AVG DIFF</span><div class="num ${avg(R2.map(x=>x.d))>=0?"ok":"no"}">${sg(+f(avg(R2.map(x=>x.d))))}</div></div><div class="stat"><span>AVG DIFF %</span><div class="num ${avg(R2.map(x=>x.pc))>=0?"ok":"no"}">${sg(+f(avg(R2.map(x=>x.pc)),0))}%</div></div><div class="stat"><span>HIT RATE</span><div class="num ${hp>=50?"ok":"no"}">${f(hp,0)}% (${hit}/${R2.length})</div></div></div>
+ <div class="scroll" style="margin-top:12px"><table><tr><th>Datum</th><th>Tim</th><th>Igrač</th><th class=r>Linija</th><th class=r>Rez.</th><th class=r>Diff %</th></tr>${R2.slice(0,10).map(x=>`<tr><td>${fd(x.dt).slice(0,6)}</td><td>${esc(nm(x.team))}</td><td>${esc(x.name)}</td><td class=r>${x.line}</td><td class=r>${x.res}</td><td class=r><span class="rk" style="background:var(--${x.pc>=0?"ok":"no"});color:#fff">${sg(+f(x.pc,0))}%</span></td></tr>`).join("")}</table></div>`:'<span class="mu">Nema dovoljno igrača iste pozicije sa 3+ utakmice protiv ovog tima.</span>')+
+ `<div class="note">Linija = sezonski prosek tog igrača (bez te utakmice), zaokružen na .5, jer prave linije kladionice nemamo. Diff % = (rezultat − linija) / linija. Računa se samo iz utakmica sa boxscore-om, igrači sa 10+ minuta.</div></div>`;
+ $("pex").innerHTML=h}
+function chart(skip){
+ if(!D)return;const t=$("ptm").value,id=$("ppl").value,G=id?pgames(t,id):[];
+ if(!G.length){$("pph").innerHTML='<span class="mu">Nema odigranih utakmica sa boxscore podacima.</span>';$("pch").innerHTML="";$("pst").innerHTML="";$("pex").innerHTML="";return}
+ const L=+$("pln").value||0,pi=pinfo(t,id),W=640,H=300,pt=18,pb=34,fn=mfn(PMK),nmP=pi.name||$("ppl").selectedOptions[0].text;
+ const d=G.map(x=>({v:fn(x.p),l:(x.hm?"":"@")+x.op})),vs=d.map(x=>x.v),n=vs.length,ov=vs.filter(v=>v>L).length,hr=ov/n*100,A=k=>f(avg(G.map(x=>mfn(k)(x.p))));
+ $("pph").innerHTML=`<div class="head" style="gap:14px;flex-wrap:nowrap">${face(pi.photo,nmP,1)}<div style="flex:1"><h2 style="margin:0">${esc(nmP)}</h2><div class="sub" style="margin:0"><span class="head">${badge(t)}${esc(nm(t))}${pi.pos?` · ${esc(pi.pos)}`:""}${pi.no?` · #${esc(pi.no)}`:""}</span></div></div><div style="text-align:right"><span class="mu" style="font-size:.8rem">HIT RATE</span><div class="big ${hr>=50?"ok":"no"}">${f(hr,0)}%</div><span class="mu">${ov}/${n} iznad ${L}</span></div></div>
+ <div class="grid" style="margin-top:12px">${[["PTS",A("pts")],["AST",A("ast")],["REB",A("reb")],["3PM",A("fg3m")],["MIN",f(avg(G.map(x=>x.p[4])))]].map(x=>`<div class="stat"><span>AVG ${x[0]}</span><div class="num">${x[1]}</div></div>`).join("")}</div>`;
+ $("pmt").innerHTML=MET.map(x=>`<button type="button" data-m="${x[0]}" aria-selected="${x[0]==PMK}">${x[1]}</button>`).join("");
+ const lo=Math.min(0,...vs,L),hi=(Math.max(...vs,L)*1.1)||1;CH={hi,lo,pt,H,pb};
+ const y=v=>pt+(hi-v)/(hi-lo)*(H-pt-pb),gap=(W-40)/n,bw=Math.min(46,gap-8);
+ $("pch").innerHTML=d.map((x,i)=>{const cx=30+gap*i+gap/2,c=x.v>L?"var(--ok)":x.v<L?"var(--no)":"var(--mu)",a=y(0),b=y(x.v),top=Math.min(a,b);return`<rect x="${cx-bw/2}" y="${top}" width="${bw}" height="${Math.max(2,Math.abs(a-b))}" rx="4" fill="${c}"/><text x="${cx}" y="${top-5}" text-anchor="middle" font-size="14" font-weight="700" fill="var(--tx)">${x.v}</text><text x="${cx}" y="${H-12}" text-anchor="middle" font-size="11" fill="var(--mu)">${esc(x.l)}</text>`}).join("")+`<line x1="14" x2="${W-6}" y1="${y(L)}" y2="${y(L)}" stroke="#f5c400" stroke-width="3" stroke-dasharray="7 5"/><rect x="${W-62}" y="${y(L)-12}" width="56" height="22" rx="5" fill="#f5c400"/><text x="${W-34}" y="${y(L)+4}" text-anchor="middle" font-size="13" font-weight="700" fill="#1a1204">${L}</text>`;
+ $("pst").innerHTML=[["Over",`${ov}/${n}`],["Under",`${vs.filter(v=>v<L).length}/${n}`],["Prosek",f(avg(vs))],["Max / Min",Math.max(...vs)+" / "+Math.min(...vs)]].map(x=>`<div class="stat"><span>${x[0]}</span><div class="num">${x[1]}</div></div>`).join("");
+ if(!skip)extras(t,id,G,pi)}
+const pc=$("pch"),mv=e=>{if(!CH.H||(!e.buttons&&e.pointerType!="touch"))return;const r=pc.getBoundingClientRect(),yy=(e.clientY-r.top)/r.height*CH.H,v=CH.hi-(yy-CH.pt)/(CH.H-CH.pt-CH.pb)*(CH.hi-CH.lo);$("pln").value=Math.round(v*2/1)/2;chart(true)};
+pc.onpointerdown=e=>{pc.setPointerCapture(e.pointerId);mv(e)};pc.onpointermove=mv;pc.onpointerup=()=>chart();
+$("t5").onclick=e=>{const b=e.target.closest("[data-m]");if(b){PMK=b.dataset.m;autoLine()}};
 
 // ================= TABOVI I INICIJALIZACIJA =================
-const tabs=[["Tabela",3],["Timovi",4],["Utakmice",6],["Props",5],["Analiza meča",0],["Rejting",1],["Bankroll",2]];
+const tabs=[["Tabela",3],["Timovi",4],["Utakmice",6],["Igrač",5],["Analiza meča",0],["Rejting",1],["Bankroll",2]];
 $("tabs").innerHTML=tabs.map((t,j)=>`<button role="tab" aria-selected="${j==0}" data-t="${t[1]}">${t[0]}</button>`).join("");
 function show(i){i=+i;document.querySelectorAll("#tabs button").forEach(b=>b.setAttribute("aria-selected",b.dataset.t==i));[0,1,2,3,4,5,6].forEach(k=>$("t"+k).hidden=k!=i);
  if(!D)return;if(i==1)ratingTab();if(i==2)bk();if(i==4)teamView();if(i==5)chart();if(i==6)gamesTab();window.scrollTo(0,0)}
@@ -383,8 +433,8 @@ $("add").onclick=()=>{const r=rows[$("pk").value];if(!r)return;S.bets.push({d:ne
 $("bt").onchange=e=>{const i=e.target.dataset.i;if(i==null)return;const k=e.target.dataset.k;S.bets[i][k]=k=="stake"?+e.target.value:e.target.value;save();bk()};
 $("bt").onclick=e=>{const i=e.target.dataset.del;if(i==null)return;S.bets.splice(i,1);save();bk()};
 $("tm").onchange=teamView;
-$("ptm").onchange=()=>{fillPlayers();autoLine()};$("ppl").onchange=()=>{fillMetric();autoLine()};$("pmt").onchange=autoLine;$("pcu").oninput=autoLine;
-["pln","po","pu"].forEach(i=>$(i).oninput=chart);
+$("ptm").onchange=()=>{fillPlayers(true);autoLine()};$("ppl").onchange=autoLine;$("pop").onchange=()=>chart();$("pln").oninput=()=>chart();
+$("tv").onclick=e=>{const c=e.target.closest("[data-pl]");if(!c)return;$("ptm").value=$("tm").value;fillPlayers(true);$("ppl").value=c.dataset.pl;show(5);autoLine()};
 bk();
 load(true);
 </script></main></body></html>
