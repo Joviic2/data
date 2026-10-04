@@ -2,11 +2,15 @@ name: Update data
 
 on:
   schedule:
-    - cron: "0 */3 * * *"   # svaka 3 sata
+    - cron: "*/15 * * * *"   # svakih 15 minuta (GitHub zna da kasni nekoliko minuta)
   workflow_dispatch:         # dugme za rucno pokretanje
 
 permissions:
   contents: write
+
+concurrency:
+  group: update-data
+  cancel-in-progress: false
 
 jobs:
   update:
@@ -18,9 +22,10 @@ jobs:
           python-version: "3.12"
       - run: pip install requests
       - run: python fetch_data.py
+      - run: python build_site.py
       - name: Commit data
         run: |
           git config user.name "data-bot"
           git config user.email "data-bot@users.noreply.github.com"
           git add -A data
-          git diff --cached --quiet || (git commit -m "Update data" && git push)
+          git diff --cached --quiet || (git commit -m "Update data" && git pull --rebase && git push)
