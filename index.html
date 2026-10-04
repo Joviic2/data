@@ -125,11 +125,18 @@ nav#tabs{display:none}main{max-width:900px;padding-top:0}
 .hm{display:inline-block;width:15px;height:15px;border-radius:4px;margin:1px;background:rgba(255,255,255,.1)}.hm.W{background:var(--ok);box-shadow:0 0 7px var(--ok)}.hm.L{background:rgba(244,63,94,.35)}
 input[type=range]{padding:0;accent-color:var(--ac);margin:8px 0}
 .pl2{grid-template-columns:1fr!important}.side{position:static!important;max-height:none!important}
-#sl{display:grid;gap:8px;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));max-height:340px;overflow:auto;margin-top:10px}#smt{margin-bottom:10px}#pmt{display:none}
+#sl{display:grid;gap:8px;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));max-height:340px;overflow:auto;margin-top:10px}#smt{display:none}#pmt{display:flex}
 .vb{animation:gw 2s infinite}@keyframes gw{50%{box-shadow:0 0 12px var(--ok)}}
 .cmp{display:grid;grid-template-columns:1fr minmax(120px,auto) 1fr;gap:8px;align-items:center;margin:8px 0;font-size:.9rem}.cmp .b{height:8px;border-radius:4px;background:rgba(255,255,255,.1);overflow:hidden}.cmp .b i{display:block;height:100%}
 @media(min-width:1500px){#t5 .pl2>div>.card:first-child{position:fixed;left:calc(50vw - 730px);top:140px;width:270px;z-index:5;border-color:var(--ac)}}
 #sl{max-height:460px}.dr{display:flex;gap:4px}.dr>button:first-child{flex:1}.dr>button+button{padding:4px 8px!important;text-align:center!important}
+
+/* Igrač tab: leva kolona = lista igrača (skrol), desno = detalji */
+body.wide main{max-width:1560px}
+#t5 .pl2{grid-template-columns:360px minmax(0,1fr)!important;gap:18px;align-items:start}
+#t5 .side{position:sticky!important;top:8px;height:calc(100vh - 24px);max-height:none!important;display:flex;flex-direction:column;padding:12px}
+#t5 #sl{display:flex;flex-direction:column;gap:6px;flex:1;min-height:0;max-height:none;overflow-y:auto;overflow-x:hidden;margin-top:10px;padding-right:4px}
+#t5 #pmt{flex-wrap:wrap;overflow:visible;margin:14px 0 6px}
 </style></head><body><main>
 <h1>Euroleague Value Analyzer</h1>
 <p class="sub">Sezona 2026/27. Podaci se čitaju uživo iz tvog GitHub repoa. <span id="stamp"></span> <button class="btn sm" id="refresh" type="button">Osveži</button></p>
@@ -161,7 +168,7 @@ input[type=range]{padding:0;accent-color:var(--ac);margin:8px 0}
 </section>
 <section id="t5" hidden>
  <div class="pl2"><aside class="card side" id="side"><div id="smt" class="mts"></div><input id="sq" type="search" placeholder="Traži igrača ili tim..." aria-label="Pretraga"><div id="sl"></div></aside><div>
- <div class="card"><div class="grid">
+ <div class="card" hidden><div class="grid">
   <div hidden><label for="ptm">Tim</label><select id="ptm"></select></div>
   <div hidden><label for="ppl">Igrač</label><select id="ppl"></select></div>
   <div hidden><label for="pop">Protivnik (za analizu ispod)</label><select id="pop"></select></div>
@@ -511,7 +518,7 @@ function chart(skip){
 const pc=$("pch"),mv=e=>{if(!CH.H||(!e.buttons&&e.pointerType!="touch"))return;const r=pc.getBoundingClientRect(),yy=(e.clientY-r.top)/r.height*CH.H,v=CH.hi-(yy-CH.pt)/(CH.H-CH.pt-CH.pb)*(CH.hi-CH.lo);$("pln").value=Math.round(v*2/1)/2;chart(true)};
 pc.onpointerdown=e=>{pc.setPointerCapture(e.pointerId);mv(e)};pc.onpointermove=mv;pc.onpointerup=()=>chart();
 $("pex").onclick=e=>{const b=e.target.closest("[data-cm]");if(b){CM=b.dataset.cm;courtRender()}};
-$("t5").onclick=e=>{const b=e.target.closest("[data-m]");if(b){PMK=b.dataset.m;autoLine();return}const q=e.target.closest("[data-pm]");if(q){PMODE=q.dataset.pm;padvRender(pgames($("ptm").value,$("ppl").value))}};
+$("t5").onclick=e=>{const b=e.target.closest("[data-m]");if(b){PMK=b.dataset.m;autoLine();try{history.replaceState(null,"","?tab=5&stat="+PMK)}catch(x){}return}const q=e.target.closest("[data-pm]");if(q){PMODE=q.dataset.pm;padvRender(pgames($("ptm").value,$("ppl").value))}};
 
 // ================= ŠUT PO ZONAMA (court) =================
 const ZN=["rim","paint","mid","c3l","c3r","ab3"];
@@ -633,7 +640,7 @@ $("side").onkeydown=e=>{if(e.key=="Enter")e.target.click()};
 const tabs=[["Vesti",11],["Kvote",9],["Screener",7],["Surebet",8],["Omiljeni",10],["Analiza meča",0],["Utakmice",6],["Tabela",3],["Timovi",4],["Igrač",5],["Rejting",1],["Bankroll",2]];
 $("tabs").innerHTML=tabs.map((t,j)=>`<button role="tab" aria-selected="${j==0}" data-t="${t[1]}">${t[0]}</button>`).join("");
 function show(i){i=+i;try{history.replaceState(null,"","?tab="+i+(i==5?"&stat="+PMK:""))}catch(e){}document.querySelectorAll("#tabs button,#dw button[data-t]").forEach(b=>b.setAttribute("aria-selected",b.dataset.t==i));[0,1,2,3,4,5,6,7,8,9,10,11].forEach(k=>$("t"+k).hidden=k!=i);
- if(!D)return;if(i==1){ratingTab();refTab()}if(i==2)bk();if(i==4)teamView();if(i==5)chart();if(i==6)gamesTab();if(i==7||i==8)screen();if(i==9)k_cards($("kv"),0);if(i==10)k_cards($("fv"),1);if(i==5)setTimeout(zoneLeaders,400);window.scrollTo(0,0)}
+ if(!D)return;if(i==1){ratingTab();refTab()}if(i==2)bk();if(i==4)teamView();if(i==5)chart();if(i==6)gamesTab();if(i==7||i==8)screen();if(i==9)k_cards($("kv"),0);if(i==10)k_cards($("fv"),1);if(i==5)setTimeout(zoneLeaders,400);document.body.classList.toggle("wide",i==5);window.scrollTo(0,0)}
 $("tabs").onclick=e=>{const i=e.target.dataset.t;if(i!=null)show(i)};
 document.body.insertAdjacentHTML("beforeend",'<button id="mnb" type="button" aria-label="Meni">▶</button><aside id="dw"><h3>Meni</h3>'+tabs.map(t=>`<button data-t="${t[1]}" type="button">${t[0]}</button>`).join("")+"</aside>");
 $("mnb").onclick=()=>{const o=$("dw").classList.toggle("open");$("mnb").textContent=o?"◀":"▶"};
