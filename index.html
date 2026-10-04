@@ -176,6 +176,7 @@ input::placeholder{color:var(--mu);opacity:1}
 .sc2{display:grid;gap:10px;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));margin:8px 0}.sc2 .stat b{font-size:1.6rem}
 .plain{background:var(--in);border:1px solid var(--bd);border-radius:10px;padding:12px 14px;margin:10px 0;font-size:.92rem;line-height:1.5}.plain b.g{color:var(--ok)}.plain b.r{color:var(--no)}
 #mnb{transition:left .25s}#mnb.open{left:230px}
+#bkb{position:fixed;top:8px;right:12px;z-index:35;display:flex;gap:8px;align-items:center;background:var(--card);border:1px solid var(--ac);border-radius:99px;padding:4px 14px;font-size:.85rem;backdrop-filter:blur(10px)}#bkb input{width:84px;padding:2px 8px;margin:0}#bkb label{margin:0}@media(max-width:700px){#bkn{display:none}}
 </style></head><body><main>
 <h1>Euroleague Value Analyzer</h1>
 <p class="sub">Sezona 2026/27. Podaci se čitaju uživo iz tvog GitHub repoa. <span id="stamp"></span> <button class="btn sm" id="refresh" type="button">Osveži</button></p>
@@ -1031,6 +1032,35 @@ function simRender(h,a){const el=$("sim3"),sl=$("hcs");if(!el||!MCC.r)return;if(
  el.innerHTML=`<div class="sc2"><div class="stat"><span>Predviđeni rezultat</span><div><b>${esc(nm(h))} ${Math.round(ph)}</b></div><div><b>${esc(nm(a))} ${Math.round(pa)}</b></div></div><div class="stat"><span>Šansa za pobedu</span><div>${esc(nm(h))}: <b>${f(pw)}%</b></div><div>${esc(nm(a))}: <b>${f(100-pw)}%</b></div><span>Produžetak: ${f(ot*100)}%</span></div><div class="stat"><span>Ukupno poena</span><div>Prosek: <b>${f(tm,0)}</b></div><div class="mu">Max ${mxx} · Min ${mn}</div></div></div>
  <h3>Razlika u poenima (grupe po 12)</h3>${histHtml(B)}<h3>Ukupno poena u meču (grupe po 12)</h3>${histHtml(T)}
  <div class="mu" style="font-size:.8rem">${N.toLocaleString("sr-Latn")} simuliranih mečeva.</div>`}
+
+
+// ================= KVOTE: SLAJDER LINIJA + GLOBALNI BANKROLL =================
+let k_MK="h2h",k_LI=null,k_INFO=null;const k_old=k_modal,k_dv=(x,y)=>x>1&&y>1?(1/x)/(1/x+1/y):null,k_sg=v=>(v>0?"+":"")+v;
+const k_chips=()=>`<div class="chips" style="margin:8px 0">${[["h2h","Pobednik"],["sp","Hendikep"],["tt","Ukupno poena"]].map(([k,l])=>`<button type="button" class="chip" data-mk="${k}"${k_MK==k?' style="border-color:var(--ac)"':""}>${l}</button>`).join("")}</div>`;
+k_modal=function(i){
+ if(k_MK=="h2h"){k_old(i);const c=$("md").querySelector(".card .scroll");if(c)c.insertAdjacentHTML("beforebegin",k_chips());return}
+ const e=OD.events[i],md=$("md"),key=k_MK,bs=e.b.filter(b=>b[key]&&b[key][0]!=null&&(!k_CH.size||k_CH.has(b.title)));let m=null;try{R=ratings();m=R[codeOf(e.h)].r-R[codeOf(e.a)].r+S.hca}catch(x){}
+ const L=[...new Set(bs.map(b=>b[key][0]))].sort((x,y)=>x-y);
+ const head=`<div class="head"><h2 style="margin:0">${esc(e.h)} - ${esc(e.a)}</h2><button class="btn sm" data-x="1" style="margin-left:auto" type="button">Zatvori</button></div>${k_chips()}`;
+ if(!L.length){md.innerHTML=`<div class="card">${head}<div class="note warn">Nijedna izabrana kladionica nema ovo tržište.</div></div>`;md.style.display="block";md.dataset.i=i;return}
+ const info=L.map(l=>{const S2=bs.filter(b=>b[key][0]==l),q=S2.map(b=>k_dv(b[key][1],b[key][2])).filter(x=>x!=null),pm=q.length?avg(q):.5,pa=key=="sp"&&m!=null?.3*phi((m+l)/S.sig)+.7*pm:pm,bo=Math.max(...S2.map(b=>b[key][1])),bu=Math.max(...S2.map(b=>b[key][2]));return{l,S2,pm,pa,bo,bu,evA:pa*bo-1,evB:(1-pa)*bu-1}});
+ if(md.dataset.i!=i||k_INFO&&k_INFO.key!=key||k_LI==null||k_LI>=L.length)k_LI=info.reduce((bi,x,j)=>Math.abs(x.pm-.5)<Math.abs(info[bi].pm-.5)?j:bi,0);
+ k_INFO={info,e,key,m};
+ md.innerHTML=`<div class="card">${head}<label for="kml">Linija: <b id="kll"></b> <span class="mu">(pomeraj klizač, ${L.length} linija)</span></label><input id="kml" type="range" min="0" max="${L.length-1}" step="1" value="${k_LI}"><div id="kmr"></div></div>`;md.style.display="block";md.dataset.i=i;k_mr()};
+function k_mr(){const{info,e,key,m}=k_INFO||{};if(!info)return;const x=info[k_LI],el=$("kmr");if(!el)return;$("kll").textContent=(key=="sp"?e.h+" ":"")+k_sg(x.l);
+ const nA=key=="sp"?e.h:"Više",nB=key=="sp"?e.a:"Manje",B=bank(),sd=[...x.S2].sort((a,b)=>b[key][1]-a[key][1]),
+ side=(n,o,p,ev)=>{const who=x.S2.find(b=>b[key][n=="A"?1:2]==o),ok=ev>0&&ev<=.2;return`<div class="stat"><span>${esc(n=="A"?nA:nB)} @ ${f(o,2)} <small>(${esc(who?who.title:"")})</small></span><div class="num ${ev>0?"ok":"no"}">${ev>0?"+":""}${f(ev*100)}% EV</div><span>šansa ${f(p*100)}% · fer kvota ${f(1/p,2)}</span><br><span class="${ok?"ok":"mu"}">${ok?"Ulog: "+f(stake(p,o,B),2)+" ("+f(stake(p,o,B)/B*100,1)+"% bankrola)":ev>.2?"EV preko 20% je skoro sigurno greška, ne igraj":"Bez prednosti, ne igraj"}</span></div>`};
+ const best=info.flatMap((z,j)=>[{j,s:nA,o:z.bo,ev:z.evA},{j,s:nB,o:z.bu,ev:z.evB}]).filter(c=>c.ev>.02&&c.ev<=.2).sort((a,b)=>b.ev-a.ev)[0];
+ el.innerHTML=`<div class="scroll"><table><tr><th>Kladionica</th><th class=r>${esc(nA)}</th><th class=r>${esc(nB)}</th><th class=r>Marža</th></tr>${sd.map(b=>`<tr><td>${esc(b.title)}</td><td class="r${b[key][1]==x.bo?" ok":""}">${f(b[key][1],2)}</td><td class="r${b[key][2]==x.bu?" ok":""}">${f(b[key][2],2)}</td><td class="r mu">${f((1/b[key][1]+1/b[key][2]-1)*100,1)}%</td></tr>`).join("")}</table></div>
+ <div class="grid" style="margin-top:10px">${side("A",x.bo,x.pa,x.evA)}${side("B",x.bu,1-x.pa,x.evB)}</div>
+ <div class="plain">${x.S2.length<3?`<b class="r">Samo ${x.S2.length} kladionica nudi ovu liniju</b>, pa je tržišna šansa slabo potvrđena. `:""}Šansa je tržišni konsenzus bez marže${key=="sp"&&m!=null?" pomešan sa modelom (30%)":""}. ${best?`Najbolja vrednost u svim linijama: <b class="g">${esc(best.s)} ${key=="sp"?k_sg(info[best.j].l):info[best.j].l} @ ${f(best.o,2)}</b> (EV ${f(best.ev*100)}%). <button class="btn sm" data-ml="${best.j}" type="button">Idi na tu liniju</button>`:"Ni jedna linija nema realnu prednost (EV 2-20%)."}</div>`}
+document.addEventListener("click",e=>{const c=e.target.closest("[data-mk],[data-ml]");if(!c)return;if(c.dataset.mk){k_MK=c.dataset.mk;k_modal(+$("md").dataset.i)}else if(c.dataset.ml!=null){k_LI=+c.dataset.ml;$("kml").value=k_LI;k_mr()}});
+document.addEventListener("input",e=>{if(e.target.id=="kml"){k_LI=+e.target.value;k_mr()}});
+// globalni bankroll
+document.body.insertAdjacentHTML("beforeend",'<div id="bkb"><label for="bkq">Bankroll</label><input id="bkq" type="number" min="0" step="10"><span id="bkn" class="mu"></span></div>');
+function bkbSync(){const q=$("bkq");if(document.activeElement!==q)q.value=S.b0;$("bkn").textContent="sada "+f(bank(),2)+" · Kelly "+f(S.kf*100,0)+"%, max "+f(S.mx,0)+"%"}
+$("bkq").oninput=()=>{const v=parseFloat($("bkq").value);if(!(v>=0))return;S.b0=v;save();const b=$("b0");if(b)b.value=v;if(D){calc();try{scnRender()}catch(x){}try{ratingTab()}catch(x){}}bk();bkbSync()};
+{const o=bk;bk=function(){o();bkbSync()}}bkbSync();
 
 // ================= DODACI 5: kola, kvote, vesti =================
 const glOld=$("gl").onclick,gkOld=$("gl").onkeydown;
