@@ -221,10 +221,11 @@ body.wide main{max-width:1560px}
    <div><label for="o3">Kvota hendikep domaćin</label><input id="o3" type="number" step="0.01" min="1.01" value="1.90"></div>
    <div><label for="o4">Kvota hendikep gost</label><input id="o4" type="number" step="0.01" min="1.01" value="1.90"></div>
   </div>
-  <div class="scroll" style="margin-top:12px"><table id="res"></table></div>
+  <div class="scroll" style="margin-top:12px"><table id="res"></table></div><div id="evw"></div>
   <div class="note">EV preko 10% obično znači da model ne vidi nešto (povrede, rotacija). Proveri povrede ispod i podesi korekciju.</div>
   <div class="grid"><div><label for="pk">Opklada za evidenciju</label><select id="pk"></select></div><div style="align-self:end"><button class="btn" id="add" type="button">Dodaj u evidenciju</button></div></div>
  </details>
+ <div class="card" id="vrdc"><h2>Verdikt i provere</h2><div id="vrd"></div></div>
  <div class="card"><h2>Kvote kladionica</h2><div id="odc"></div><div style="margin-top:10px"><a class="btn sm" href="https://superbet.rs" target="_blank" rel="noopener" style="text-decoration:none;display:inline-block">Otvori Superbet</a></div></div>
  <div class="card"><h2>Poređenje timova</h2><div id="rdr" class="crt"></div></div>
  <div class="card"><h2>Stil i tempo</h2><div class="grid"><div><label for="pth">Granica sporog tempa (poseda)</label><input id="pth" type="number" value="68"></div></div><div class="scroll" style="margin-top:10px"><table id="sty"></table></div><div id="sty2"></div></div>
@@ -470,7 +471,7 @@ function calc(){
  rows=[["Pobednik",nm(h),p,+$("o1").value],["Pobednik",nm(a),1-p,+$("o2").value],["Hendikep "+(ln>0?"+":"")+ln,nm(h),pc,+$("o3").value],["Hendikep "+(-ln>0?"+":"")+(-ln),nm(a),1-pc,+$("o4").value]];
  $("res").innerHTML="<tr><th>Tržište</th><th>Izbor</th><th>Model</th><th>Kvota</th><th>Implicitno</th><th>EV</th><th>Ulog</th></tr>"+rows.map(r=>{const ev=r[2]*r[3]-1;return`<tr><td>${esc(r[0])}</td><td>${esc(r[1])}</td><td>${f(r[2]*100)}%</td><td>${f(r[3],2)}</td><td>${f(100/r[3])}%</td><td class="${ev>0?"ok":"no"}">${ev>0?"+":""}${f(ev*100)}% ${evb(ev)}</td><td>${ev>0?f(stake(r[2],r[3],B),2):"-"}</td></tr>`}).join("");
  const pk=$("pk").value;$("pk").innerHTML=rows.map((r,i)=>`<option value="${i}">${esc(r[0])} | ${esc(r[1])}</option>`).join("");if(pk)$("pk").value=pk;
- $("inj").innerHTML=injBlock(h)+injBlock(a);mcRender(h,a,m);radar(h,a);styleRender(h,a);halves(h,a);oddsRender(h,a);mhead(h,a)}
+ $("inj").innerHTML=injBlock(h)+injBlock(a);mcRender(h,a,m);radar(h,a);styleRender(h,a);halves(h,a);oddsRender(h,a);try{verdict(h,a,m)}catch(e){console.error(e)}mhead(h,a)}
 function ratingTab(){
  R=ratings();const o=TEAMS.slice().sort((x,y)=>R[y].r-R[x].r);
  $("rt").innerHTML="<tr><th>#</th><th>Tim</th><th>Rejting</th><th>Prošla sezona</th><th>Utakmica</th><th>Pace</th></tr>"+o.map((t,i)=>`<tr><td>${i+1}</td><td>${esc(nm(t))}</td><td class="${R[t].r>=0?"ok":"no"}">${R[t].r>=0?"+":""}${f(R[t].r)}</td><td>${f(R[t].p)}</td><td>${R[t].n}</td><td>${ownStats(t)?f(ownStats(t).PACE):"-"}</td></tr>`).join("");
@@ -848,6 +849,80 @@ function refImpact(){const el=$("rfi"),sel=["rf1","rf2","rf3"].map(i=>$(i).value
  el.innerHTML=`<div class="note">Uticaj sudijske trojke: <b>${sg(+f(pf))}</b> faula, <b>${sg(+f(ft))}</b> slobodnih bacanja, <b>${sg(+f(pt))}</b> poena po utakmici u odnosu na prosek lige. ${pf>2?"Pogoduje Over-u na slobodna bacanja i faulove, a centri češće dolaze u foul trouble.":pf<-2?"Pušta jaču igru: manje faula i slobodnih bacanja, pa Under na faulove.":"Blizu proseka lige."}</div>`}
 ["rf1","rf2","rf3"].forEach(i=>$(i).onchange=refImpact);$("pth").oninput=()=>styleRender($("h").value,$("a").value);
 if("serviceWorker"in navigator&&location.protocol.startsWith("http"))navigator.serviceWorker.register("sw.js").catch(()=>{});
+
+
+// ================= VERDIKT, PROVERE I HENDIKEP LESTVICA =================
+function fxDt(h,a){const fx=(D.fixtures||[]).find(x=>x.h==h&&x.a==a&&!D.games.some(g=>g.n==x.n));return fx?new Date(fx.utc):new Date()}
+function formOf(t,k=5){return D.games.filter(g=>g.dt&&g.hs!=null&&g.as!=null&&(g.h==t||g.a==t)).sort((x,y)=>x.dt.localeCompare(y.dt)).slice(-k).map(g=>g.h==t?g.hs-g.as:g.as-g.hs)}
+function verdict(h,a,m){
+ const el=$("vrd"),ew=$("evw");if(!el||!MCC.r)return;
+ const{mg,tt}=MCC.r,N=mg.length,cnt=(x,fn)=>{let c=0;for(let i=0;i<x.length;i++)if(fn(x[i]))c++;return c/N};
+ let mu=0,tm=0;for(let i=0;i<N;i++){mu+=mg[i];tm+=tt[i]}mu/=N;tm/=N;
+ const ln=+$("ln").value||0,O=[1,2,3,4].map(i=>+$("o"+i).value||0),B=bank(),nh=nm(h),na=nm(a),sgn=v=>(v>0?"+":"")+v;
+ const dv=(x,y)=>x>1&&y>1?(1/x)/(1/x+1/y):null,pc=x=>f(x*100)+"%";
+ const oe=OEV&&OEV.b&&OEV.b.length?OEV:null,enough=R[h].n>=8&&R[a].n>=8;
+ let fh=null,nb=0;if(oe){const q=oe.b.filter(b=>b.h2h&&b.h2h[0]&&b.h2h[1]).map(b=>dv(b.h2h[0],b.h2h[1]));nb=q.length;if(q.length>=3)fh=avg(q)}
+ const pnW=phi(m/S.sig),pnH=L=>phi((m+L)/S.sig),rows=[];
+ // dodaj izbor: p = MC verovatnoca, push = verovatnoca vracanja uloga, pn = normalni model, pm = tržišna verovatnoća bez marže
+ const add=(mk,sel,p,push,pn,pm,odds)=>{if(!(odds>1))return;
+  const pb=pm==null?p:.3*p+.7*pm,evm=p*odds+push-1,evc=pb*odds+push-1,
+  ck=[["Normalni model i Monte Carlo se slažu (do 6 p.p.)",pn==null?null:Math.abs(p-pn)<=.06],
+   ["Tržište se slaže sa modelom (do 10 p.p.)",pm==null?null:Math.abs(p-pm)<=.10],
+   ["Bar 8 odigranih mečeva po timu",enough],
+   ["EV između 3% i 20% (preko 20% je skoro uvek greška u unosu ili povreda)",evm>=.03&&evm<=.2],
+   ["EV ostaje pozitivan posle korekcije ka tržištu",evc>0]].filter(c=>c[1]!=null),
+  fails=ck.filter(c=>!c[1]),real=pm==null||Math.abs(p-pm)<=.25,rec=real&&evm>=.03&&evc>0&&fails.length<=1;
+  rows.push({mk,sel,p,push,pm,odds,evm,evc,ck,fails,real,rec,pb,fair:p>0?(1-push)/p:99})};
+ add("Pobednik",nh,cnt(mg,x=>x>0),0,pnW,fh!=null?fh:dv(O[0],O[1]),O[0]);
+ add("Pobednik",na,cnt(mg,x=>x<0),0,1-pnW,fh!=null?1-fh:(dv(O[0],O[1])==null?null:1-dv(O[0],O[1])),O[1]);
+ const pmH=dv(O[2],O[3]),pH=cnt(mg,x=>x+ln>0),pA=cnt(mg,x=>x+ln<0),pu=cnt(mg,x=>x+ln==0);
+ add("Hendikep "+sgn(ln),nh,pH,pu,pnH(ln),pmH,O[2]);
+ add("Hendikep "+sgn(-ln),na,pA,pu,1-pnH(ln),pmH==null?null:1-pmH,O[3]);
+ if(oe){ // tržišne linije iz data/odds.json (najbolja kvota među kladionicama)
+  const mode=a=>{const c={};a.forEach(v=>c[v]=(c[v]||0)+1);return +Object.keys(c).sort((x,y)=>c[y]-c[x]||Math.abs(x)-Math.abs(y))[0]};
+  const sp=oe.b.filter(b=>b.sp&&b.sp[0]!=null);
+  if(sp.length){const L=mode(sp.map(b=>b.sp[0])),S2=sp.filter(b=>b.sp[0]==L),pm=avg(S2.map(b=>dv(b.sp[1],b.sp[2])).filter(x=>x!=null)),ph=cnt(mg,x=>x+L>0),pa=cnt(mg,x=>x+L<0),pp=cnt(mg,x=>x+L==0);
+   if(L!=ln){add("Hendikep "+sgn(L)+" (tržišna linija)",nh,ph,pp,pnH(L),pm,Math.max(0,...S2.map(b=>b.sp[1]||0)));add("Hendikep "+sgn(-L)+" (tržišna linija)",na,pa,pp,1-pnH(L),1-pm,Math.max(0,...S2.map(b=>b.sp[2]||0)))}}
+  const T=oe.b.filter(b=>b.tt);
+  if(T.length){const L=mode(T.map(b=>b.tt[0])),T2=T.filter(b=>b.tt[0]==L),pm=avg(T2.map(b=>dv(b.tt[1],b.tt[2])).filter(x=>x!=null)),po=cnt(tt,x=>x>L),pu2=cnt(tt,x=>x<L),pp=cnt(tt,x=>x==L);
+   add("Ukupno "+L,"Više",po,pp,null,pm,Math.max(0,...T2.map(b=>b.tt[1]||0)));add("Ukupno "+L,"Manje",pu2,pp,null,1-pm,Math.max(0,...T2.map(b=>b.tt[2]||0)))}}
+ const rec=rows.filter(r=>r.rec).sort((x,y)=>y.evc-x.evc),top=rec[0],bad=rows.filter(r=>!r.real);
+ // upozorenje: nerealna kvota (npr. +20 uz kvotu 1.90)
+ const warn=bad.map(r=>`<b>${esc(r.mk)} ${esc(r.sel)}</b>: model daje ${pc(r.p)}, a upisana kvota ${f(r.odds,2)} znači da je kladionica procenila ${pc(r.pm)}. Fer kvota za tu šansu je oko <b>${f(r.fair,2)}</b>.`);
+ const wh=warn.length?`<div class="note warn" style="display:block!important"><b>⚠ Nerealna kvota ili nešto što model ne vidi.</b> Kladionica nikad ne daje istu kvotu (~1.90) na liniju koja je mnogo pomerena od fer linije. ${warn.join("<br>")}<br>Proveri da li si kvotu upisao za baš tu liniju, i povrede/rotaciju. Ovakav "EV" ne igraj.</div>`:"";
+ if(ew)ew.innerHTML=wh;
+ const fmtEv=e=>`<span class="${e>0?"ok":"no"}">${e>0?"+":""}${f(e*100)}%</span>`;
+ const conf=r=>r.fails.length==0?"Visoka":r.fails.length==1?"Srednja":"Niska";
+ const tbl=`<div class="scroll"><table><tr><th>Tržište</th><th>Izbor</th><th class=r>Model (MC)</th><th class=r>Tržište</th><th class=r>Kvota</th><th class=r>Fer kvota</th><th class=r>EV model</th><th class=r>EV korigovan</th><th>Pouzdanost</th><th>Ulog</th></tr>${rows.map(r=>`<tr${r.rec?' style="background:var(--acbg)"':""}><td>${esc(r.mk)}</td><td>${esc(r.sel)}${r.rec?' <span class="vb">IGRAJ</span>':""}</td><td class=r>${pc(r.p)}</td><td class=r>${r.pm==null?"-":pc(r.pm)}</td><td class=r>${f(r.odds,2)}</td><td class=r>${f(r.fair,2)}</td><td class=r>${fmtEv(r.evm)}</td><td class=r>${fmtEv(r.evc)}</td><td class="${r.fails.length>1||!r.real?"no":""}">${r.real?conf(r):"Nerealna"}<br><span class="mu" style="font-size:.75rem">${r.ck.length-r.fails.length}/${r.ck.length} provera${r.fails.length?" · pada: "+r.fails.map(c=>esc(c[0].split(" (")[0])).join("; "):""}</span></td><td>${r.rec?f(stake(r.pb,r.odds,B),2):"-"}</td></tr>`).join("")}</table></div>`;
+ const head=top?`<div class="note" style="display:block!important;border-left-color:var(--ok)"><b>Preporuka:</b> ${esc(top.mk)} · ${esc(top.sel)} @ ${f(top.odds,2)}. Model ${pc(top.p)}, fer kvota ${f(top.fair,2)}, EV ${f(top.evm*100)}% (korigovan ${f(top.evc*100)}%), pouzdanost ${conf(top)}.${rec.length>1?" Ima još "+(rec.length-1)+" izbor"+(rec.length>2?"a":"")+" koji prolaze provere (obeleženi u tabeli).":""}</div>`:`<div class="note" style="display:block!important"><b>Nema preporuke.</b> Nijedan izbor ne prolazi sve provere (EV bar 3%, pozitivan posle korekcije ka tržištu, realna kvota, slaganje modela). Preskoči meč ili unesi tačnije kvote i povrede.</div>`;
+ // lestvica hendikepa
+ const lines=[];for(let l=-19.5;l<=19.5;l+=1)lines.push(l);if(!lines.includes(ln))lines.push(ln);lines.sort((x,y)=>x-y);
+ const fairL=-mu,ladder=lines.map(l=>{const ph=cnt(mg,x=>x+l>0),pa=cnt(mg,x=>x+l<0),pp=1-ph-pa,fa=ph>.002?(1-pp)/ph:null,fb=pa>.002?(1-pp)/pa:null,mx=Math.max(ph,pa),rk=mx>=.85?"Gotovo sigurno, kvota minimalna":mx>=.65?"Jači favorit":"Izjednačeno",me=l==ln;
+  return`<tr${me?' style="background:var(--acbg)"':""}><td>${sgn(l)}${me?" ← tvoja linija":""}</td><td class=r>${pc(ph)}</td><td class=r>${fa?f(fa,2):"-"}</td><td class=r>${pc(pa)}</td><td class=r>${fb?f(fb,2):"-"}</td><td class=mu>${rk}${pp>.001?` · vraćanje ${pc(pp)}`:""}</td></tr>`}).join("");
+ // faktori
+ const dt=fxDt(h,a),cH=$("dh").checked,cF=$("fat").checked,hc=cH?hcaT(h):S.hca,FH=fatigue(h,dt,h),FA=fatigue(a,dt,h),fh5=formOf(h),fa5=formOf(a),
+  h2h=D.games.filter(g=>(g.h==h&&g.a==a)||(g.h==a&&g.a==h)).sort((x,y)=>(x.dt||"").localeCompare(y.dt||"")),oh=ownStats(h),oa=ownStats(a),
+  pace=oh&&oa?(oh.PACE+oa.PACE)/2:S.pace,mtt=oe?oe.b.filter(b=>b.tt).map(b=>b.tt[0]):[],
+  fr=(k,v,u)=>`<tr><td>${k}</td><td>${v}</td><td class=r>${u?'<span class="ok">Da</span>':'<span class="mu">Ne, samo informativno</span>'}</td></tr>`,
+  a5=x=>x.length?sgn(+f(avg(x)))+" ("+x.map(v=>sgn(v)).join(", ")+")":"nema podataka";
+ const fac=`<div class="scroll"><table><tr><th>Faktor</th><th>Vrednost</th><th class=r>Ulazi u model</th></tr>
+ ${fr("Rejting (prilagođena neto razlika po meču)",`${esc(nh)} ${sgn(+f(R[h].r))} (${R[h].n} mečeva) · ${esc(na)} ${sgn(+f(R[a].r))} (${R[a].n} mečeva)`,1)}
+ ${fr("Prednost domaćeg terena",`${f(hc)} poena${cH?" (dinamički, po timu)":" (ligaški prosek)"}`,1)}
+ ${fr("Zamor, odmor i putovanje",cF?`${esc(nh)} ${f(FH.adj)} (odmor ${FH.rest==null?"-":FH.rest} d, ${FH.n5} meča u 5 dana) · ${esc(na)} ${f(FA.adj)} (odmor ${FA.rest==null?"-":FA.rest} d, ${FA.km} km)`:"isključeno u opcijama",cF)}
+ ${fr("Korekcija za povrede",`${esc(nh)} ${sgn(+$("ah").value||0)} · ${esc(na)} ${sgn(+$("aa").value||0)} poena (unosiš ručno gore, proveri blok Povrede)`,1)}
+ ${fr("Tempo i efikasnost napada/odbrane",`tempo ${f(pace)} poseda, očekivano ukupno ${f(tm)} poena`,1)}
+ ${fr("Tržišni konsenzus",fh!=null?`${nb} kladionica, ${esc(nh)} ${pc(fh)} bez marže (ulazi sa težinom 70%)`:oe?"manje od 3 kladionice sa kvotama":"nema data/odds.json, koristi se samo tvoj unos kvota",fh!=null)}
+ ${fr("Tržišna linija ukupnih poena",mtt.length?`${f(avg(mtt))} (model ${f(tm)}, razlika ${sgn(+f(tm-avg(mtt)))})`:"nema",!!mtt.length)}
+ ${fr("Forma, poslednjih 5 (razlika po meču)",`${esc(nh)} ${a5(fh5)} · ${esc(na)} ${a5(fa5)}`,0)}
+ ${fr("Međusobni mečevi ove sezone",h2h.length?h2h.map(g=>`${esc(nm(g.h))} ${g.hs}:${g.as} ${esc(nm(g.a))}`).join(", "):"nisu igrali",0)}
+ ${fr("Sudije",'biraš ih niže u sekciji "Uticaj sudija", ne menjaju proračun',0)}
+ </table></div>`;
+ el.innerHTML=`${wh}${head}<h3>Svi izbori, jasno</h3>${tbl}
+ <div class="note" style="display:block!important"><b>Kako čitati:</b> <b>Model</b> je šansa iz 10.000 simuliranih mečeva. <b>Tržište</b> je šansa koju kladionica podrazumeva kad se izbaci marža. <b>Fer kvota</b> je 1 ÷ šansa; kvota ispod nje je gubitak, iznad je vrednost. <b>EV korigovan</b> meša model (30%) i tržište (70%) i zato je strožiji. "IGRAJ" dobija samo izbor sa EV od bar 3%, pozitivnim korigovanim EV, realnom kvotom i najviše jednom palom proverom. Nijedna analiza ne garantuje dobitak, ulog je samo deo bankrola.</div>
+ <h3>Zašto +20 izgleda "najsigurnije"</h3>
+ <div style="border-left:4px solid var(--ac);padding:8px 12px;border-radius:6px;background:var(--in);font-size:.92rem">Što je hendikep veći, to je šansa da prođe veća, ali i kvota pada skoro srazmerno. Fer linija ovog meča je oko <b>${esc(nh)} ${sgn(+f(fairL))}</b> (kod nje je šansa 50%). Kad pomeriš liniju, a kvotu ostaviš 1.90, program poredi 95% šanse sa kvotom koja bi trebalo da bude oko 1.05 i izbaci lažni ogroman EV. Prava kladionica bi za tu liniju dala ~1.05. Sigurnost i vrednost nisu isto: "sigurno" je kad je šansa visoka, a "vredno" je kad je kvota viša od fer kvote.</div>
+ <h3>Lestvica hendikepa ${esc(nh)} (domaćin)</h3><div class="scroll" style="max-height:360px;overflow:auto"><table><tr><th>Linija</th><th class=r>${esc(nh)} prolazi</th><th class=r>Fer kvota</th><th class=r>${esc(na)} prolazi</th><th class=r>Fer kvota</th><th>Rizik</th></tr>${ladder}</table></div>
+ <h3>Šta je uračunato</h3>${fac}`}
 
 // ================= DODACI 5: kola, kvote, vesti =================
 const glOld=$("gl").onclick,gkOld=$("gl").onkeydown;
