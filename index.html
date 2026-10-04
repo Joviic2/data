@@ -114,6 +114,12 @@ summary{cursor:pointer}summary h2{margin:0}
  <div id="tv"></div>
 </section>
 <section id="t6" hidden><div id="gl"></div></section>
+<section id="t7" hidden>
+ <div class="card"><h2>Value Screener</h2>
+ <p class="sub">Model prolazi kroz sve mečeve iz data/odds.json (pobednik, hendikep, ukupno) i izlistava najbolju kvotu po izboru gde je EV iznad praga.</p>
+ <div class="grid"><div><label for="sth">Minimalni EV</label><select id="sth"><option value="3">3%</option><option value="5" selected>5%</option><option value="8">8%</option></select></div></div></div>
+ <div id="scr"></div>
+</section>
 <section id="t5" hidden>
  <div class="pl2"><aside class="card side" id="side"><input id="sq" type="search" placeholder="Traži igrača ili tim..." aria-label="Pretraga"><div id="sl"></div></aside><div>
  <div class="card"><div class="grid">
@@ -584,10 +590,10 @@ $("side").onclick=e=>{
 $("side").onkeydown=e=>{if(e.key=="Enter")e.target.click()};
 
 // ================= TABOVI I INICIJALIZACIJA =================
-const tabs=[["Tabela",3],["Timovi",4],["Utakmice",6],["Igrač",5],["Analiza meča",0],["Rejting",1],["Bankroll",2]];
+const tabs=[["Tabela",3],["Timovi",4],["Utakmice",6],["Igrač",5],["Analiza meča",0],["Rejting",1],["Bankroll",2],["Screener",7]];
 $("tabs").innerHTML=tabs.map((t,j)=>`<button role="tab" aria-selected="${j==0}" data-t="${t[1]}">${t[0]}</button>`).join("");
-function show(i){i=+i;document.querySelectorAll("#tabs button").forEach(b=>b.setAttribute("aria-selected",b.dataset.t==i));[0,1,2,3,4,5,6].forEach(k=>$("t"+k).hidden=k!=i);
- if(!D)return;if(i==1){ratingTab();refTab()}if(i==2)bk();if(i==4)teamView();if(i==5)chart();if(i==6)gamesTab();window.scrollTo(0,0)}
+function show(i){i=+i;document.querySelectorAll("#tabs button").forEach(b=>b.setAttribute("aria-selected",b.dataset.t==i));[0,1,2,3,4,5,6,7].forEach(k=>$("t"+k).hidden=k!=i);
+ if(!D)return;if(i==1){ratingTab();refTab()}if(i==2)bk();if(i==4)teamView();if(i==5)chart();if(i==6)gamesTab();if(i==7)screen();window.scrollTo(0,0)}
 $("tabs").onclick=e=>{const i=e.target.dataset.t;if(i!=null)show(i)};
 
 function fillSelect(id,html){const cur=$(id).value;$(id).innerHTML=html;if([...$(id).options].some(o=>o.value==cur))$(id).value=cur}
@@ -787,8 +793,9 @@ function oddsRender(h,a){const el=$("odc");if(!el)return;
  const ev=OD.events.find(e=>codeOf(e.h)==h&&codeOf(e.a)==a);OEV=ev;
  if(!ev||!ev.b.length||!MCC.r){el.innerHTML='<p class="mu">Izvor nema kvote za ovu utakmicu.</p>';return}
  const r=MCC.r,N=r.mg.length,pr=(x,fn)=>x.filter(fn).length/N,pw=pr(r.mg,x=>x>0),c=e=>`<span class="${e>0?"ok":"no"}">${e>0?"+":""}${f(e*100)}%</span> ${evb(e)}`,cell=(o,p)=>o?`${f(o,2)} ${c(p*o-1)}`:"-";
+ const M0=Math.max(0,...ev.b.map(b=>b.h2h&&b.h2h[0]||0)),M1=Math.max(0,...ev.b.map(b=>b.h2h&&b.h2h[1]||0)),bst=(t,y)=>y?"<b>"+t+"</b>":t;
  el.innerHTML=`<div class="scroll"><table><tr><th>Kladionica</th><th>1</th><th>2</th><th>Hendikep (domaćin)</th><th>Ukupno</th><th></th></tr>`+ev.b.map((b,i)=>{const hh=b.h2h||[],sp=b.sp,tt=b.tt,ph=sp?pr(r.mg,x=>x+sp[0]>0):0,po=tt?pr(r.tt,x=>x>tt[0]):0;
-  return`<tr><td>${esc(b.title)}${b.key=="superbet"?" ★":""}</td><td>${cell(hh[0],pw)}</td><td>${cell(hh[1],1-pw)}</td><td>${sp?sg(sp[0])+": "+cell(sp[1],ph)+" | "+cell(sp[2],1-ph):"-"}</td><td>${tt?tt[0]+": Više "+cell(tt[1],po)+" | Manje "+cell(tt[2],1-po):"-"}</td><td><button class="btn sm" data-ap="${i}" type="button">Primeni</button></td></tr>`}).join("")+`</table></div><div class="note">EV računa Monte Carlo model. Kvote od ${esc(new Date(OD.fetched*1000).toLocaleString("sr-Latn"))}${OD.remaining?`, preostalo API kredita: ${esc(OD.remaining)}`:""}. Primeni upisuje pobednika i hendikep u polja za kvote.</div>`}
+  return`<tr><td>${esc(b.title)}${b.key=="superbet"?" ★":""}</td><td>${bst(cell(hh[0],pw),hh[0]&&hh[0]==M0)}</td><td>${bst(cell(hh[1],1-pw),hh[1]&&hh[1]==M1)}</td><td>${sp?sg(sp[0])+": "+cell(sp[1],ph)+" | "+cell(sp[2],1-ph):"-"}</td><td>${tt?tt[0]+": Više "+cell(tt[1],po)+" | Manje "+cell(tt[2],1-po):"-"}</td><td><button class="btn sm" data-ap="${i}" type="button">Primeni</button></td></tr>`}).join("")+`</table></div><div class="note">EV računa Monte Carlo model. Kvote od ${esc(new Date(OD.fetched*1000).toLocaleString("sr-Latn"))}${OD.remaining?`, preostalo API kredita: ${esc(OD.remaining)}`:""}. Primeni upisuje pobednika i hendikep u polja za kvote.</div>`}
 $("odc").onclick=e=>{const b=e.target.closest("[data-ap]");if(!b||!OEV)return;const x=OEV.b[+b.dataset.ap];if(x.h2h){$("o1").value=x.h2h[0]||"";$("o2").value=x.h2h[1]||""}if(x.sp){$("ln").value=x.sp[0];$("o3").value=x.sp[1];$("o4").value=x.sp[2]}calc()};
 async function loadNews(){const el=$("news");if(!el)return;let items=null;
  try{const c=JSON.parse(sessionStorage.getItem("elnews")||"null");if(c&&Date.now()-c.t<6e5)items=c.i}catch(e){}
@@ -797,6 +804,44 @@ async function loadNews(){const el=$("news");if(!el)return;let items=null;
  if(!items.length){el.hidden=true;return}
  const inj=/injur|ruled out|surgery|sidelined|out for/i;
  el.innerHTML=`<h2>Vesti</h2><ul style="list-style:none;padding:0;margin:0">${items.slice(0,8).map(i=>`<li style="padding:6px 0;border-bottom:1px solid var(--bd)"><span class="mu" style="font-size:.8rem">${esc(i.s)} · ${esc(String(i.d).slice(5,16))}</span>${inj.test(i.t)?' <span class="pill">povreda?</span>':""}<br><a href="${/^https?:/.test(i.l)?esc(i.l):"#"}" target="_blank" rel="noopener" style="color:var(--tx)">${esc(i.t)}</a></li>`).join("")}</ul><div class="note">Vesti dolaze preko rss2json.com. Povrede koje model treba da zna unesi u data/injuries.json.</div>`;el.hidden=false}
+
+// ================= VALUE SCREENER + SUREBET (svi mečevi iz data/odds.json) =================
+let SCR=[];
+function modelFor(h,a,dt){
+ const cH=$("dh").checked,cF=$("fat").checked,hc=cH?hcaT(h):S.hca;let adj=0;
+ if(cF){try{adj=fatigue(h,dt,h).adj-fatigue(a,dt,h).adj}catch(e){}}
+ const m=R[h].r-R[a].r+hc+adj,oh=ownStats(h),oa=ownStats(a),dH=oppStats(h),dA=oppStats(a);
+ const pace=oh&&oa?(oh.PACE+oa.PACE)/2:S.pace,T=pace*((oh&&dA?oh.ORTG+dA.ORTG:216)+(oa&&dH?oa.ORTG+dH.ORTG:216))/200;
+ return sim((T+m)/2/pace,(T-m)/2/pace,pace)}
+function screen(){
+ const el=$("scr");if(!el)return;
+ if(!D){return}
+ if(!OD||!OD.events||!OD.events.length){el.innerHTML='<div class="note">Nema kvota (data/odds.json). Proveri da je GitHub Action prošao i da je ODDS_API_KEY postavljen.</div>';return}
+ R=ratings();const thr=+$("sth").value/100,B=bank(),best=new Map(),sure=[];let used=0;
+ OD.events.forEach(e=>{
+  const h=codeOf(e.h),a=codeOf(e.a);if(!h||!a||h==a||!R[h]||!R[a])return;
+  let r;try{r=modelFor(h,a,e.start?new Date(e.start):new Date())}catch(x){return}
+  used++;const N=r.mg.length,pr=(arr,fn)=>arr.filter(fn).length/N,mt=nm(h)+" - "+nm(a),pw=pr(r.mg,x=>x>0);
+  const add=(mk,pick,o,p,bk)=>{if(!o||o<=1)return;const k=[e.h,e.a,mk,pick].join("|"),c=best.get(k);if(!c||o>c.o)best.set(k,{mt,mk,pick,o,p,bk,ev:p*o-1,st:e.start})};
+  let b1=0,b2=0,k1="",k2="";
+  e.b.forEach(b=>{
+   if(b.h2h){add("Pobednik",nm(h),b.h2h[0],pw,b.title);add("Pobednik",nm(a),b.h2h[1],1-pw,b.title);
+    if(b.h2h[0]>b1){b1=b.h2h[0];k1=b.title}if(b.h2h[1]>b2){b2=b.h2h[1];k2=b.title}}
+   if(b.sp&&b.sp[0]!=null){const l=b.sp[0],pc=pr(r.mg,x=>x+l>0);add("Hendikep "+sg(l),nm(h),b.sp[1],pc,b.title);add("Hendikep "+sg(-l),nm(a),b.sp[2],1-pc,b.title)}
+   if(b.tt&&b.tt[0]!=null){const l=b.tt[0],po=pr(r.tt,x=>x>l);add("Ukupno "+l,"Više",b.tt[1],po,b.title);add("Ukupno "+l,"Manje",b.tt[2],1-po,b.title)}});
+  if(b1&&b2&&1/b1+1/b2<1)sure.push({mt,b1,k1,b2,k2,pf:(1/(1/b1+1/b2)-1)*100,h:nm(h),a:nm(a)})});
+ SCR=[...best.values()].filter(x=>x.ev>=thr).sort((x,y)=>y.ev-x.ev);
+ const dt=s=>s?new Date(s).toLocaleString("sr-Latn",{day:"2-digit",month:"2-digit",hour:"2-digit",minute:"2-digit"}):"";
+ const top=SCR.slice(0,3).map(x=>`<div class="stat"><span>${esc(x.mt)}</span><div class="num ok">+${f(x.ev*100,1)}% EV</div><span>${esc(x.mk)}: ${esc(x.pick)} @ ${f(x.o,2)} (${esc(x.bk)})</span></div>`).join("");
+ el.innerHTML=(top?`<div class="card"><h3 style="margin-top:0">Top 3 value tipa</h3><div class="grid w">${top}</div></div>`:"")+
+ `<div class="card"><h3 style="margin-top:0">Svi tipovi sa EV ≥ ${f(thr*100,0)}% (${SCR.length})</h3>`+
+ (SCR.length?`<div class="scroll"><table><tr><th>Početak</th><th>Utakmica</th><th>Tržište</th><th>Izbor</th><th class="r">Model</th><th class="r">Kvota</th><th>Kladionica</th><th class="r">EV</th><th class="r">Ulog</th><th></th></tr>`+
+  SCR.map((x,i)=>`<tr><td>${esc(dt(x.st))}</td><td>${esc(x.mt)}</td><td>${esc(x.mk)}</td><td>${esc(x.pick)}</td><td class="r">${f(x.p*100)}%</td><td class="r">${f(x.o,2)}</td><td>${esc(x.bk)}</td><td class="r ok">+${f(x.ev*100,1)}% ${evb(x.ev)}</td><td class="r">${f(stake(x.p,x.o,B),2)}</td><td><button class="btn sm" data-sa="${i}" type="button">Dodaj</button></td></tr>`).join("")+`</table></div>`:`<p class="mu">Nema tipova iznad praga${used?"":" (nijedan meč iz kvota nije prepoznat u tvom modelu)"}.</p>`)+
+ `<div class="note warn">EV iznad ~15% je obično greška modela, povreda koju model ne zna ili stara kvota, a ne prava prilika. Proveri pre nego što ulažeš. Ukupno analizirano mečeva: ${used}/${OD.events.length}.</div></div>`+
+ `<div class="card"><h3 style="margin-top:0">Surebet (pobednik, najbolje kvote)</h3>`+(sure.length?`<div class="scroll"><table><tr><th>Utakmica</th><th>Domaćin</th><th>Gost</th><th class="r">Profit</th></tr>`+sure.map(x=>`<tr><td>${esc(x.mt)}</td><td>${f(x.b1,2)} (${esc(x.k1)})</td><td>${f(x.b2,2)} (${esc(x.k2)})</td><td class="r ok">+${f(x.pf,2)}%</td></tr>`).join("")+`</table></div>`:`<p class="mu">Trenutno nema arbitraže.</p>`)+`</div>`}
+$("sth").onchange=screen;
+$("scr").onclick=e=>{const b=e.target.closest("[data-sa]");if(!b)return;const x=SCR[+b.dataset.sa];if(!x)return;
+ S.bets.push({d:new Date().toISOString().slice(0,10),m:x.mt,pick:x.mk+" | "+x.pick,odds:x.o,stake:Math.round(stake(x.p,x.o,bank())*100)/100,p:x.p,res:"C"});save();alert("Dodato u evidenciju (tab Bankroll).")};
 loadOdds();loadNews();
 bk();
 load(true);
