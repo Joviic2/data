@@ -116,7 +116,8 @@ def build_rosters():
             })
         elif t == "E":
             r["coach"] = {"name": pretty(per.get("name")), "country": (per.get("country") or {}).get("name"),
-                          "born": (per.get("birthDate") or "")[:10] or None}
+                          "born": (per.get("birthDate") or "")[:10] or None,
+                          "photo": (p.get("images") or {}).get("headshot")}
         elif t == "A":
             r["assistants"].append(pretty(per.get("name")))
     for r in ros.values():
