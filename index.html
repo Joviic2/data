@@ -149,6 +149,12 @@ body.wide main{max-width:1560px}
 #t5 #padv .sth{margin-top:10px!important}
 #t5 .stat{padding:7px 10px}#t5 #padv .num{font-size:1.2rem!important}
 #t5 #pch{max-height:250px}
+
+/* info krugić (i) umesto dugih objašnjenja */
+.ib{display:inline-grid;place-items:center;width:20px;height:20px;padding:0;margin-left:8px;vertical-align:middle;border-radius:50%;border:1.5px solid var(--ac);background:transparent;color:var(--ac);font:italic 700 .8rem Georgia,serif;cursor:pointer;line-height:1;transition:background .15s,color .15s}
+.ib:hover,.ib[aria-expanded=true]{background:var(--ac);color:var(--bg)}
+#tip{position:fixed;z-index:200;max-width:400px;background:var(--card);color:var(--tx);border:1px solid var(--ac);border-radius:10px;padding:12px 14px;box-shadow:0 14px 44px rgba(0,0,0,.55);font:500 .92rem/1.5 Barlow,system-ui,sans-serif}
+#tip hr{border:0;border-top:1px solid var(--bd);margin:8px 0}
 </style></head><body><main>
 <h1>Euroleague Value Analyzer</h1>
 <p class="sub">Sezona 2026/27. Podaci se čitaju uživo iz tvog GitHub repoa. <span id="stamp"></span> <button class="btn sm" id="refresh" type="button">Osveži</button></p>
@@ -997,4 +1003,32 @@ let _n=0;const _iv=setInterval(()=>{if((D&&(OD||_n>8))||++_n>30){clearInterval(_
 loadOdds().then(()=>{if(!$("t9").hidden)k_cards($("kv"),0);setTimeout(k_snap,4000)});loadNews();
 bk();
 load(true);
-</script></main></body></html>
+</script></main><script>
+// Objašnjenja (.note i opisi ispod naslova) postaju krugić (i) na kraju naslova; klik otvara iskačući opis.
+(function(){
+ const pop=document.createElement("div");pop.id="tip";pop.hidden=true;pop.setAttribute("role","tooltip");document.body.appendChild(pop);
+ let cur=null;const close=()=>{pop.hidden=true;if(cur)cur.setAttribute("aria-expanded","false");cur=null};
+ const headingFor=(el,sc)=>{let h=null;sc.querySelectorAll("h2,h3").forEach(x=>{if(x.compareDocumentPosition(el)&Node.DOCUMENT_POSITION_FOLLOWING)h=x});return h};
+ function run(){
+  if(cur&&!document.contains(cur))close();
+  document.querySelectorAll(".note:not(.warn):not([data-ifd]),h2+p.sub:not([data-ifd])").forEach(n=>{
+   if(!n.textContent.trim())return;
+   const h=n.matches("p.sub")?n.previousElementSibling:headingFor(n,n.closest(".card,section")||document.body);
+   if(!h||!/^H[23]$/.test(h.tagName))return;
+   n.dataset.ifd="1";n.hidden=true;
+   let b=h.querySelector(":scope>.ib");
+   if(!b){b=document.createElement("button");b.type="button";b.className="ib";b.textContent="i";b.setAttribute("aria-label","Objašnjenje");b.setAttribute("aria-expanded","false");b._ns=[];h.appendChild(b)}
+   b._ns.push(n)})}
+ document.addEventListener("click",e=>{const b=e.target.closest(".ib");
+  if(b){e.preventDefault();e.stopPropagation();if(cur===b){close();return}
+   close();cur=b;b.setAttribute("aria-expanded","true");pop.innerHTML=b._ns.map(n=>n.innerHTML).join("<hr>");pop.hidden=false;
+   const r=b.getBoundingClientRect(),w=Math.min(400,innerWidth-24);pop.style.width=w+"px";
+   pop.style.left=Math.min(Math.max(12,r.left-8),innerWidth-w-12)+"px";pop.style.top=(r.bottom+8)+"px";
+   if(r.bottom+8+pop.offsetHeight>innerHeight-12)pop.style.top=Math.max(12,r.top-pop.offsetHeight-8)+"px";return}
+  if(!e.target.closest("#tip"))close()},true);
+ document.addEventListener("keydown",e=>{if(e.key=="Escape")close()});
+ window.addEventListener("scroll",close,true);
+ let q=0;new MutationObserver(()=>{if(q)return;q=requestAnimationFrame(()=>{q=0;run()})}).observe(document.body,{childList:true,subtree:true});run();
+})();
+</script>
+</body></html>
