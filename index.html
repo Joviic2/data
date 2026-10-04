@@ -124,6 +124,10 @@ nav#tabs{display:none}main{max-width:900px;padding-top:0}
 .brs{display:flex;align-items:flex-end;gap:3px;height:70px}.brs i{flex:1;border-radius:3px 3px 0 0;min-height:3px}
 .hm{display:inline-block;width:15px;height:15px;border-radius:4px;margin:1px;background:rgba(255,255,255,.1)}.hm.W{background:var(--ok);box-shadow:0 0 7px var(--ok)}.hm.L{background:rgba(244,63,94,.35)}
 input[type=range]{padding:0;accent-color:var(--ac);margin:8px 0}
+.pl2{grid-template-columns:1fr!important}.side{position:static!important;max-height:none!important}
+#sl{display:grid;gap:8px;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));max-height:340px;overflow:auto;margin-top:10px}#smt{margin-bottom:10px}#pmt{display:none}
+.vb{animation:gw 2s infinite}@keyframes gw{50%{box-shadow:0 0 12px var(--ok)}}
+.cmp{display:grid;grid-template-columns:1fr minmax(120px,auto) 1fr;gap:8px;align-items:center;margin:8px 0;font-size:.9rem}.cmp .b{height:8px;border-radius:4px;background:rgba(255,255,255,.1);overflow:hidden}.cmp .b i{display:block;height:100%}
 </style></head><body><main>
 <h1>Euroleague Value Analyzer</h1>
 <p class="sub">Sezona 2026/27. Podaci se čitaju uživo iz tvog GitHub repoa. <span id="stamp"></span> <button class="btn sm" id="refresh" type="button">Osveži</button></p>
@@ -154,7 +158,7 @@ input[type=range]{padding:0;accent-color:var(--ac);margin:8px 0}
  <div id="slip"></div><div id="scr"></div>
 </section>
 <section id="t5" hidden>
- <div class="pl2"><aside class="card side" id="side"><input id="sq" type="search" placeholder="Traži igrača ili tim..." aria-label="Pretraga"><div id="sl"></div></aside><div>
+ <div class="pl2"><aside class="card side" id="side"><div id="smt" class="mts"></div><input id="sq" type="search" placeholder="Traži igrača ili tim..." aria-label="Pretraga"><div id="sl"></div></aside><div>
  <div class="card"><div class="grid">
   <div hidden><label for="ptm">Tim</label><select id="ptm"></select></div>
   <div hidden><label for="ppl">Igrač</label><select id="ppl"></select></div>
@@ -607,15 +611,15 @@ function tcourt(){
 // ================= SIDEBAR (utakmice, timovi, igrači) =================
 let SQ="",SO=new Set();
 function sideData(){const m={},fn=mfn(PMK);D.games.forEach(g=>{if(!g.box)return;["h","a"].forEach(sd=>{const t=sd=="h"?g.h:g.a;g.box[sd].p.forEach(p=>{if(p[4]<=0)return;const a=(m[t]||(m[t]={}))[p[0]]||(m[t][p[0]]={n:p[1],min:0,v:0,gp:0});a.min+=p[4];a.v+=fn(p);a.gp++})})});return m}
+function spk(v){if(v.length<2)return"";const mx=Math.max(...v),mn=Math.min(...v),r=mx-mn||1,pts=v.map((x,i)=>(i*40/(v.length-1)).toFixed(1)+","+(15-(x-mn)/r*13).toFixed(1)).join(" "),c=v[v.length-1]>=avg(v)?"var(--ok)":"var(--no)";return`<svg width="44" height="16" viewBox="0 0 40 16" aria-hidden="true"><polyline points="${pts}" fill="none" stroke="${c}" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/></svg>`}
 function sideRender(){
- if(!D)return;const M=sideData(),q=SQ.trim().toLowerCase(),cur=$("ppl").value,ct=$("ptm").value;
- const plist=(t,opp)=>{const L=Object.entries(M[t]||{}).sort((a,b)=>b[1].min-a[1].min).filter(([id,a])=>!q||a.n.toLowerCase().includes(q)||nm(t).toLowerCase().includes(q));
-  return`<div class="sth">${esc(nm(t))}</div>`+(L.length?L.map(([id,a])=>{const pi=pinfo(t,id);return`<div class="sp${t==ct&&id==cur?" on":""}" data-pk="${esc(t+"|"+id+"|"+(opp||""))}" tabindex="0">${face(pi.photo,a.n)}<div class="spn"><b>${esc(a.n)}</b>${pi.pos?`<span class="pill" style="margin:0">${esc(pi.pos)}</span>`:""}</div><span class="num spv">${f(a.v/a.gp)}</span></div>`}).join(""):'<div class="mu sps">Nema odigranih utakmica.</div>')};
- const tb=(t,o)=>`<button type="button" class="tbd" data-tm="${t}|${o||""}">${badge(t)}<span>${esc(nm(t))}</span></button>`,fl=fixList();
- let h="";
- if(fl.length)h+='<div class="sth">Sledeće kolo</div>'+fl.map(x=>{const k="g"+x.n,op=q||SO.has(k)||x.h==ct||x.a==ct;return`<div><div class="sgh" data-tg="${k}" tabindex="0">${tb(x.h,x.a)}<span class="gd">${esc(fdu(x.utc))}</span>${tb(x.a,x.h)}</div>${op?plist(x.h,x.a)+plist(x.a,x.h):""}</div>`}).join("");
- h+='<div class="sth">Svi timovi</div>'+TEAMS.filter(t=>!q||nm(t).toLowerCase().includes(q)||Object.values(M[t]||{}).some(a=>a.n.toLowerCase().includes(q))).map(t=>{const k="t"+t;return`<div><div class="sgh" data-tg="${k}" style="grid-template-columns:1fr">${tb(t,"")}</div>${q||SO.has(k)?plist(t,""):""}</div>`}).join("");
- $("sl").innerHTML=h}
+ if(!D)return;const M=sideData(),q=SQ.trim().toLowerCase(),cur=$("ppl").value,ct=$("ptm").value,fn=mfn(PMK),fl=fixList(),rows=[];
+ const add=(t,opp)=>Object.entries(M[t]||{}).forEach(([id,a])=>{if(q&&!a.n.toLowerCase().includes(q)&&!nm(t).toLowerCase().includes(q))return;rows.push({t,id,a,opp,v:a.v/a.gp})});
+ if(fl.length)fl.forEach(x=>{add(x.h,x.a);add(x.a,x.h)});else TEAMS.forEach(t=>add(t,""));
+ rows.sort((x,y)=>y.v-x.v);
+ $("smt").innerHTML=MET.map(x=>`<button type="button" data-sm="${x[0]}" aria-selected="${x[0]==PMK}">${x[1]}</button>`).join("");
+ $("sl").innerHTML=rows.length?rows.map(r=>{const pi=pinfo(r.t,r.id),l5=pgames(r.t,r.id).slice(-5).map(x=>fn(x.p));return`<div class="sp${r.t==ct&&r.id==cur?" on":""}" data-pk="${esc(r.t+"|"+r.id+"|"+r.opp)}" tabindex="0">${face(pi.photo,r.a.n)}<div class="spn"><b>${esc(r.a.n)}</b><span class="mu" style="font-size:.78rem">${esc(nm(r.t))}${r.opp?" · vs "+esc(nm(r.opp)):""}</span></div>${spk(l5)}<span class="num spv">${f(r.v)}</span></div>`}).join(""):'<div class="mu sps">Nema igrača.</div>'}
+$("smt").onclick=e=>{const b=e.target.closest("[data-sm]");if(!b)return;PMK=b.dataset.sm;autoLine();sideRender();try{history.replaceState(null,"","?tab=5&stat="+PMK)}catch(x){}};
 $("sq").oninput=e=>{SQ=e.target.value;sideRender()};
 $("side").onclick=e=>{
  const pk=e.target.closest("[data-pk]");if(pk){const[t,id,o]=pk.dataset.pk.split("|");$("ptm").value=t;fillPlayers(true);$("ppl").value=id;if(o)$("pop").value=o;autoLine();return}
@@ -626,7 +630,7 @@ $("side").onkeydown=e=>{if(e.key=="Enter")e.target.click()};
 // ================= TABOVI I INICIJALIZACIJA =================
 const tabs=[["Vesti",11],["Kvote",9],["Screener",7],["Surebet",8],["Omiljeni",10],["Analiza meča",0],["Utakmice",6],["Tabela",3],["Timovi",4],["Igrač",5],["Rejting",1],["Bankroll",2]];
 $("tabs").innerHTML=tabs.map((t,j)=>`<button role="tab" aria-selected="${j==0}" data-t="${t[1]}">${t[0]}</button>`).join("");
-function show(i){i=+i;document.querySelectorAll("#tabs button,#dw button[data-t]").forEach(b=>b.setAttribute("aria-selected",b.dataset.t==i));[0,1,2,3,4,5,6,7,8,9,10,11].forEach(k=>$("t"+k).hidden=k!=i);
+function show(i){i=+i;try{history.replaceState(null,"","?tab="+i+(i==5?"&stat="+PMK:""))}catch(e){}document.querySelectorAll("#tabs button,#dw button[data-t]").forEach(b=>b.setAttribute("aria-selected",b.dataset.t==i));[0,1,2,3,4,5,6,7,8,9,10,11].forEach(k=>$("t"+k).hidden=k!=i);
  if(!D)return;if(i==1){ratingTab();refTab()}if(i==2)bk();if(i==4)teamView();if(i==5)chart();if(i==6)gamesTab();if(i==7||i==8)screen();if(i==9)k_cards($("kv"),0);if(i==10)k_cards($("fv"),1);window.scrollTo(0,0)}
 $("tabs").onclick=e=>{const i=e.target.dataset.t;if(i!=null)show(i)};
 document.body.insertAdjacentHTML("beforeend",'<button id="mnb" type="button" aria-label="Meni">▶</button><aside id="dw"><h3>Meni</h3>'+tabs.map(t=>`<button data-t="${t[1]}" type="button">${t[0]}</button>`).join("")+"</aside>");
@@ -916,8 +920,9 @@ document.addEventListener("click",e=>{const t=e.target.closest("[data-sl],[data-
 /*NEW*/
 // ================= DASHBOARD, TICKER, TILT, GRBOVI =================
 const kb=n=>{try{const c=codeOf(n);return c?badge(c):""}catch(e){return""}};
+const xcmp=(h,a)=>{try{const oh=ownStats(h),oa=ownStats(a),dh=oppStats(h),da=oppStats(a),R=[["Pace",oh.PACE,oa.PACE,0],["ORTG",oh.ORTG,oa.ORTG,0],["DRTG",dh.ORTG,da.ORTG,1]];return`<div class="card"><h3 style="margin-top:0">Poređenje timova</h3>${R.map(([n,x,y,lo])=>{const mx=Math.max(x,y)||1,g=lo?x<y:x>y;return`<div class="cmp"><div class="b" style="direction:rtl"><i style="width:${x/mx*100}%;background:${g?"var(--ok)":"rgba(255,255,255,.3)"}"></i></div><span style="text-align:center"><b>${f(x,1)}</b> ${n} <b>${f(y,1)}</b></span><div class="b"><i style="width:${y/mx*100}%;background:${!g?"var(--ok)":"rgba(255,255,255,.3)"}"></i></div></div>`}).join("")}<div class="mu" style="font-size:.8rem">Zeleno je prednost. Kod DRTG manje je bolje.</div></div>`}catch(e){return""}};
 const xform=t=>{const g=D.games.filter(x=>x.h==t||x.a==t).sort((x,y)=>x.dt>y.dt?1:-1).slice(-10),w=g.map(x=>x.h==t?x.hs>x.as:x.as>x.hs);return`<div>${w.map(v=>`<i class="hm ${v?"W":"L"}"></i>`).join("")}<div class="mu" style="font-size:.8rem">forma ${w.filter(Boolean).length}/${w.length}</div></div>`};
-function mhead(h,a){const el=$("mh");if(el){el.innerHTML=`<div class="mh">${badge(h,1)}<div><h2>${esc(nm(h))}</h2>${xform(h)}</div><span class="vs">VS</span><div><h2>${esc(nm(a))}</h2>${xform(a)}</div>${badge(a,1)}</div><div class="card" id="dst"></div>`;xdist()}}
+function mhead(h,a){const el=$("mh");if(el){el.innerHTML=`<div class="mh">${badge(h,1)}<div><h2>${esc(nm(h))}</h2>${xform(h)}</div><span class="vs">VS</span><div><h2>${esc(nm(a))}</h2>${xform(a)}</div>${badge(a,1)}</div>${xcmp(h,a)}<div class="card" id="dst"></div>`;xdist()}}
 let xSL=-5.5;
 function xdist(){const el=$("dst");if(!el||!MCC.r)return;const mg=MCC.r.mg,bins={},ks=[];mg.forEach(x=>{const k=Math.max(-30,Math.min(30,Math.round(x/2)*2));bins[k]=(bins[k]||0)+1});for(let k=-30;k<=30;k+=2)ks.push(k);const mx=Math.max(...ks.map(k=>bins[k]||0));
  el.innerHTML=`<h3 style="margin-top:0">Distribucija razlike (${esc(nm($("h").value))} minus ${esc(nm($("a").value))})</h3><div class="brs" style="height:90px">${ks.map(k=>`<i data-k="${k}" style="height:${(bins[k]||0)/mx*100}%"></i>`).join("")}</div><label for="xsl">Hendikep domaćina: <b id="xsv"></b></label><input id="xsl" type="range" min="-20" max="20" step="0.5" value="${xSL}"><div class="grid"><div class="stat"><span>Šansa da pokrije</span><div class="num" id="xsp"></div></div><div class="stat"><span>Fer kvota</span><div class="num" id="xsf"></div></div></div>`;xslU()}
@@ -934,7 +939,7 @@ function dash(){const el=$("dash");if(!el||!D)return;
 function tick(){let el=$("tk");if(!el){document.querySelector("main").insertAdjacentHTML("afterbegin",'<div id="tk" class="tk"></div>');el=$("tk")}
  const t=SCR.slice(0,8).map(x=>`<span>${esc(x.pick)} <b>${f(x.o,2)}</b>+${f(x.ev*100,1)}%</span>`).join("");el.innerHTML=t?`<div>${t}${t}</div>`:"";el.hidden=!t}
 document.addEventListener("mousemove",e=>{const c=e.target.closest&&e.target.closest(".mc");document.querySelectorAll(".mc.tl").forEach(x=>{if(x!==c){x.style.transform="";x.classList.remove("tl")}});if(!c)return;const r=c.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;c.classList.add("tl");c.style.transform=`perspective(700px) rotateY(${x*8}deg) rotateX(${-y*8}deg)`});
-let _n=0;const _iv=setInterval(()=>{if((D&&(OD||_n>8))||++_n>30){clearInterval(_iv);try{screen()}catch(e){}dash();tick();show(11)}},500);
+let _n=0;const _iv=setInterval(()=>{if((D&&(OD||_n>8))||++_n>30){clearInterval(_iv);try{screen()}catch(e){}dash();tick();{const q=new URLSearchParams(location.search);if(MET.some(x=>x[0]==q.get("stat")))PMK=q.get("stat");show(q.get("tab")||11)}}},500);
 loadOdds().then(()=>{if(!$("t9").hidden)k_cards($("kv"),0);setTimeout(k_snap,4000)});loadNews();
 bk();
 load(true);
