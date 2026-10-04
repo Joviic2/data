@@ -175,6 +175,7 @@ input::placeholder{color:var(--mu);opacity:1}
 .hist i{display:block;width:100%;border-radius:4px 4px 0 0}.hist span{font-size:.72rem;color:var(--mu)}.hist em{font-style:normal;font-size:.62rem;color:var(--mu);position:absolute;bottom:-18px;white-space:nowrap}
 .sc2{display:grid;gap:10px;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));margin:8px 0}.sc2 .stat b{font-size:1.6rem}
 .plain{background:var(--in);border:1px solid var(--bd);border-radius:10px;padding:12px 14px;margin:10px 0;font-size:.92rem;line-height:1.5}.plain b.g{color:var(--ok)}.plain b.r{color:var(--no)}
+#mnb{transition:left .25s}#mnb.open{left:230px}
 </style></head><body><main>
 <h1>Euroleague Value Analyzer</h1>
 <p class="sub">Sezona 2026/27. Podaci se čitaju uživo iz tvog GitHub repoa. <span id="stamp"></span> <button class="btn sm" id="refresh" type="button">Osveži</button></p>
@@ -704,8 +705,8 @@ function show(i){i=+i;try{history.replaceState(null,"","?tab="+i+(i==5?"&stat="+
  if(!D)return;if(i==1){ratingTab();refTab()}if(i==2)bk();if(i==4)teamView();if(i==5)chart();if(i==6)gamesTab();if(i==7||i==8)screen();if(i==9)k_cards($("kv"),0);if(i==10)k_cards($("fv"),1);if(i==5)setTimeout(zoneLeaders,400);document.body.classList.toggle("wide",i==5);window.scrollTo(0,0)}
 $("tabs").onclick=e=>{const i=e.target.dataset.t;if(i!=null)show(i)};
 document.body.insertAdjacentHTML("beforeend",'<button id="mnb" type="button" aria-label="Meni">▶</button><aside id="dw"><h3>Meni</h3>'+tabs.map(t=>`<button data-t="${t[1]}" type="button">${t[0]}</button>`).join("")+"</aside>");
-$("mnb").onclick=()=>{const o=$("dw").classList.toggle("open");$("mnb").textContent=o?"◀":"▶"};
-$("dw").onclick=e=>{const i=e.target.dataset.t;if(i!=null){show(i);$("dw").classList.remove("open");$("mnb").textContent="▶"}};
+$("mnb").onclick=()=>{const o=$("dw").classList.toggle("open");$("mnb").classList.toggle("open",o);$("mnb").textContent=o?"◀":"▶"};document.addEventListener("click",e=>{if($("dw").classList.contains("open")&&!e.target.closest("#dw,#mnb")){$("dw").classList.remove("open");$("mnb").classList.remove("open");$("mnb").textContent="▶"}});
+$("dw").onclick=e=>{const i=e.target.dataset.t;if(i!=null){show(i);$("dw").classList.remove("open");$("mnb").classList.remove("open");$("mnb").textContent="▶"}};
 
 function fillSelect(id,html){const cur=$(id).value;$(id).innerHTML=html;if([...$(id).options].some(o=>o.value==cur))$(id).value=cur}
 function init(first){
@@ -1200,10 +1201,10 @@ load(true);
    n.dataset.ifd="1";n.hidden=true;
    let b=h.querySelector(":scope>.ib");
    if(!b){b=document.createElement("button");b.type="button";b.className="ib";b.textContent="i";b.setAttribute("aria-label","Objašnjenje");b.setAttribute("aria-expanded","false");b._ns=[];h.appendChild(b)}
-   b._ns.push(n)})}
+   b._ns=b._ns.filter(x=>x.isConnected);b._ns.push(n)})}
  document.addEventListener("click",e=>{const b=e.target.closest(".ib");
   if(b){e.preventDefault();e.stopPropagation();if(cur===b){close();return}
-   close();cur=b;b.setAttribute("aria-expanded","true");pop.innerHTML=b._ns.map(n=>n.innerHTML).join("<hr>");pop.hidden=false;
+   close();cur=b;b.setAttribute("aria-expanded","true");pop.innerHTML=[...new Set(b._ns.filter(n=>n.isConnected).map(n=>n.innerHTML))].join("<hr>");pop.hidden=false;
    const r=b.getBoundingClientRect(),w=Math.min(400,innerWidth-24);pop.style.width=w+"px";
    pop.style.left=Math.min(Math.max(12,r.left-8),innerWidth-w-12)+"px";pop.style.top=(r.bottom+8)+"px";
    if(r.bottom+8+pop.offsetHeight>innerHeight-12)pop.style.top=Math.max(12,r.top-pop.offsetHeight-8)+"px";return}
