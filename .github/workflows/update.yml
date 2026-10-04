@@ -32,6 +32,10 @@ jobs:
         env:
           ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
           APISPORTS_KEY: ${{ secrets.APISPORTS_KEY }}
+      - run: python fetch_apisports.py
+        continue-on-error: true
+        env:
+          APISPORTS_KEY: ${{ secrets.APISPORTS_KEY }}
       - name: Commit data
         run: |
           git config user.name "data-bot"
