@@ -168,6 +168,13 @@ select option:checked,select option:hover{background-color:#06b6d4;color:#04121a
 :root[data-theme="light"] select option,:root[data-theme="light"] select optgroup{background-color:#fff;color:#111}
 :root[data-theme="light"] select option:checked{background-color:#1e3a8a;color:#fff}
 input::placeholder{color:var(--mu);opacity:1}
+#t5 #pcc{grid-column:1/-1}
+.pc .t span.mu{display:flex;align-items:center;gap:4px;flex-wrap:wrap}.pc .bd{width:22px;height:22px;font-size:.55rem;margin:0}
+.mb{display:flex;align-items:flex-end;gap:2px;height:30px;margin-top:8px}.mb i{flex:1;border-radius:2px 2px 0 0;opacity:.85}
+.hist{display:flex;gap:6px;align-items:flex-end;height:170px;margin:12px 0 26px}.hist>div{flex:1;display:flex;flex-direction:column;justify-content:flex-end;align-items:center;height:100%;position:relative;min-width:0}
+.hist i{display:block;width:100%;border-radius:4px 4px 0 0}.hist span{font-size:.72rem;color:var(--mu)}.hist em{font-style:normal;font-size:.62rem;color:var(--mu);position:absolute;bottom:-18px;white-space:nowrap}
+.sc2{display:grid;gap:10px;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));margin:8px 0}.sc2 .stat b{font-size:1.6rem}
+.plain{background:var(--in);border:1px solid var(--bd);border-radius:10px;padding:12px 14px;margin:10px 0;font-size:.92rem;line-height:1.5}.plain b.g{color:var(--ok)}.plain b.r{color:var(--no)}
 </style></head><body><main>
 <h1>Euroleague Value Analyzer</h1>
 <p class="sub">Sezona 2026/27. Podaci se čitaju uživo iz tvog GitHub repoa. <span id="stamp"></span> <button class="btn sm" id="refresh" type="button">Osveži</button></p>
@@ -209,7 +216,7 @@ input::placeholder{color:var(--mu);opacity:1}
  <div class="card"><div id="pph"></div><div id="pmt" class="mts"></div>
   <svg id="pch" viewBox="0 0 640 300" role="img" aria-label="Poslednje utakmice igrača"></svg>
   <div class="grid" id="pst" style="margin-top:12px"></div></div>
- <div class="card"><h2>Prop kartice tima</h2><p class="sub">Linija je sezonski prosek zaokružen na .5 (nemamo kladioničke linije), projekcija meša zadnjih 5 sa sezonom i koriguje za odbranu protivnika protiv pozicije. Klik na karticu otvara igrača.</p><div class="chips" id="pcf"></div><div class="pcs" id="pcs"></div></div>
+ <div class="card" id="pcc"><h2>Prop kartice tima</h2><p class="sub">Linija je sezonski prosek zaokružen na .5 (nemamo kladioničke linije), projekcija meša zadnjih 5 sa sezonom i koriguje za odbranu protivnika protiv pozicije. Klik na karticu otvara igrača.</p><div class="chips" id="pcf"></div><div class="pcs" id="pcs"></div></div>
  <div class="card" id="padv"></div><div class="card"><h2>Props model i vrednost</h2><div class="grid"><div><label for="pov">Kvota Over</label><input id="pov" type="number" step="0.01" value="1.85"></div><div><label for="pun">Kvota Under</label><input id="pun" type="number" step="0.01" value="1.85"></div></div><div id="ppo" style="margin-top:12px"></div><div style="margin-top:12px"><button class="btn sm" id="pshare" type="button">Podeli analizu (slika)</button></div></div>
  <div class="card"><h2>Vs pozicija</h2><div id="ppd"></div></div>
  <div class="card"><h2>DvP matrica (odbrana protiv pozicije)</h2><div id="dvp"></div></div>
@@ -241,7 +248,8 @@ input::placeholder{color:var(--mu);opacity:1}
   <div class="note">EV preko 10% obično znači da model ne vidi nešto (povrede, rotacija). Proveri povrede ispod i podesi korekciju.</div>
   <div class="grid"><div><label for="pk">Opklada za evidenciju</label><select id="pk"></select></div><div style="align-self:end"><button class="btn" id="add" type="button">Dodaj u evidenciju</button></div></div>
  </details>
- <div class="card" id="vrdc"><h2>Verdikt i provere</h2><div id="vrd"></div></div>
+ <div class="card" id="simc"><h2>Simulacija meča</h2><div class="grid"><div><label for="hcs">Prednost domaćeg terena: <b id="hcl"></b> poena</label><input id="hcs" type="range" min="0" max="8" step="0.5"></div></div><div id="sim3"></div></div>
+<div class="card" id="vrdc"><h2>Verdikt i provere</h2><div id="vrd"></div></div>
  <div class="card"><h2>Kvote kladionica</h2><div id="odc"></div><div style="margin-top:10px"><a class="btn sm" href="https://superbet.rs" target="_blank" rel="noopener" style="text-decoration:none;display:inline-block">Otvori Superbet</a></div></div>
  <div class="card"><h2>Poređenje timova</h2><div id="rdr" class="crt"></div></div>
  <div class="card"><h2>Stil i tempo</h2><div class="grid"><div><label for="pth">Granica sporog tempa (poseda)</label><input id="pth" type="number" value="68"></div></div><div class="scroll" style="margin-top:10px"><table id="sty"></table></div><div id="sty2"></div></div>
@@ -489,10 +497,11 @@ function calc(){
  if(!D)return;R=ratings();const h=$("h").value,a=$("a").value;if(h==a){$("res").innerHTML="<tr><td>Izaberi dva različita tima.</td></tr>";return}
  const m=R[h].r-R[a].r+S.hca+(+$("ah").value)-(+$("aa").value),p=phi(m/S.sig),ln=+$("ln").value,pc=phi((m+ln)/S.sig),B=bank();
  $("kpi").innerHTML=[[nm(h)+" očekivana razlika",(m>=0?"+":"")+f(m)],["Šansa "+nm(h),f(p*100)+"%"],["Šansa "+nm(a),f((1-p)*100)+"%"],["Neizvesnost ishoda (σ)","±"+f(S.sig)+" poena"]].map(x=>`<div class="stat"><span>${esc(x[0])}</span><div class="num">${x[1]}</div></div>`).join("");
- rows=[["Pobednik",nm(h),p,+$("o1").value],["Pobednik",nm(a),1-p,+$("o2").value],["Hendikep "+(ln>0?"+":"")+ln,nm(h),pc,+$("o3").value],["Hendikep "+(-ln>0?"+":"")+(-ln),nm(a),1-pc,+$("o4").value]];
- $("res").innerHTML="<tr><th>Tržište</th><th>Izbor</th><th>Model</th><th>Kvota</th><th>Implicitno</th><th>EV</th><th>Ulog</th></tr>"+rows.map(r=>{const ev=r[2]*r[3]-1;return`<tr><td>${esc(r[0])}</td><td>${esc(r[1])}</td><td>${f(r[2]*100)}%</td><td>${f(r[3],2)}</td><td>${f(100/r[3])}%</td><td class="${ev>0?"ok":"no"}">${ev>0?"+":""}${f(ev*100)}% ${evb(ev)}</td><td>${ev>0?f(stake(r[2],r[3],B),2):"-"}</td></tr>`}).join("");
+ const mkp=(x,y)=>x>1&&y>1?(1/x)/(1/x+1/y):null,mw=mkp(+$("o1").value,+$("o2").value),mh=mkp(+$("o3").value,+$("o4").value);
+ rows=[["Pobednik",nm(h),p,+$("o1").value,mw],["Pobednik",nm(a),1-p,+$("o2").value,mw==null?null:1-mw],["Hendikep "+(ln>0?"+":"")+ln,nm(h),pc,+$("o3").value,mh],["Hendikep "+(-ln>0?"+":"")+(-ln),nm(a),1-pc,+$("o4").value,mh==null?null:1-mh]];
+ $("res").innerHTML="<tr><th>Tržište</th><th>Izbor</th><th>Model</th><th>Kvota</th><th>Implicitno</th><th>EV (korigovan)</th><th>Ulog</th></tr>"+rows.map(r=>{const pb=r[4]==null?r[2]:.3*r[2]+.7*r[4],ev=pb*r[3]-1,raw=r[2]*r[3]-1;return`<tr><td>${esc(r[0])}</td><td>${esc(r[1])}</td><td>${f(r[2]*100)}%</td><td>${f(r[3],2)}</td><td>${f(100/r[3])}%</td><td class="${ev>0?"ok":"no"}">${ev>0?"+":""}${f(ev*100)}% ${evb(ev)}<br><span class="mu" style="font-size:.72rem;font-weight:400">sirovi model ${raw>0?"+":""}${f(raw*100)}%${raw>.2?' <span class="no">⚠ sumnjivo</span>':""}</span></td><td>${ev>0.01&&raw<=.2?f(stake(pb,r[3],B),2):"-"}</td></tr>`}).join("");
  const pk=$("pk").value;$("pk").innerHTML=rows.map((r,i)=>`<option value="${i}">${esc(r[0])} | ${esc(r[1])}</option>`).join("");if(pk)$("pk").value=pk;
- $("inj").innerHTML=injBlock(h)+injBlock(a);mcRender(h,a,m);radar(h,a);styleRender(h,a);halves(h,a);oddsRender(h,a);try{verdict(h,a,m)}catch(e){console.error(e)}mhead(h,a)}
+ $("inj").innerHTML=injBlock(h)+injBlock(a);mcRender(h,a,m);radar(h,a);styleRender(h,a);halves(h,a);oddsRender(h,a);try{simRender(h,a)}catch(e){console.error(e)}try{verdict(h,a,m)}catch(e){console.error(e)}mhead(h,a)}
 function ratingTab(){
  R=ratings();const o=TEAMS.slice().sort((x,y)=>R[y].r-R[x].r);
  $("rt").innerHTML="<tr><th>#</th><th>Tim</th><th>Rejting</th><th>Prošla sezona</th><th>Utakmica</th><th>Pace</th></tr>"+o.map((t,i)=>`<tr><td>${i+1}</td><td>${esc(nm(t))}</td><td class="${R[t].r>=0?"ok":"no"}">${R[t].r>=0?"+":""}${f(R[t].r)}</td><td>${f(R[t].p)}</td><td>${R[t].n}</td><td>${ownStats(t)?f(ownStats(t).PACE):"-"}</td></tr>`).join("");
@@ -564,7 +573,7 @@ function chart(skip){
  $("pch").innerHTML=d.map((x,i)=>{const cx=30+gap*i+gap/2,c=x.v>L?"var(--ok)":x.v<L?"var(--no)":"var(--mu)",a=y(0),b=y(x.v),top=Math.min(a,b);return`<rect x="${cx-bw/2}" y="${top}" width="${bw}" height="${Math.max(2,Math.abs(a-b))}" rx="4" fill="${c}"/><text x="${cx}" y="${top-5}" text-anchor="middle" font-size="14" font-weight="700" fill="var(--tx)">${x.v}</text><text x="${cx}" y="${H-12}" text-anchor="middle" font-size="11" fill="var(--mu)">${esc(x.l)}</text>`}).join("")+`<line x1="14" x2="${W-6}" y1="${y(L)}" y2="${y(L)}" stroke="#f5c400" stroke-width="3" stroke-dasharray="7 5"/><rect x="${W-62}" y="${y(L)-12}" width="56" height="22" rx="5" fill="#f5c400"/><text x="${W-34}" y="${y(L)+4}" text-anchor="middle" font-size="13" font-weight="700" fill="#1a1204">${L}</text>`;
  $("pst").innerHTML=[["Over",`${ov}/${n}`],["Under",`${vs.filter(v=>v<L).length}/${n}`],["Prosek",f(avg(vs))],["Max / Min",Math.max(...vs)+" / "+Math.min(...vs)],["Medijana",f(med(vs))],["σ (std. dev.)",f(sdv(vs))]].map(x=>`<div class="stat"><span>${x[0]}</span><div class="num">${x[1]}</div></div>`).join("");
  if(!skip){extras(t,id,G,pi);padvRender(G);sideRender()}ppRender(G,t,id,vs,L);posRender();scaleRender()}
-const pc=$("pch"),mv=e=>{if(!CH.H||(!e.buttons&&e.pointerType!="touch"))return;const r=pc.getBoundingClientRect(),yy=(e.clientY-r.top)/r.height*CH.H,v=CH.hi-(yy-CH.pt)/(CH.H-CH.pt-CH.pb)*(CH.hi-CH.lo);{const G=pgames($("ptm").value,$("ppl").value),vl=G.map(x=>mfn(PMK)(x.p)),mx=Math.max(0,...vl),lo=PMK=="pir"?Math.min(0,...vl)-5:0,hi=Math.max(mx*1.6,mx+5);v=Math.min(hi,Math.max(lo,v))}
+const pc=$("pch"),mv=e=>{if(!CH.H||(!e.buttons&&e.pointerType!="touch"))return;const r=pc.getBoundingClientRect(),yy=(e.clientY-r.top)/r.height*CH.H;let v=CH.hi-(yy-CH.pt)/(CH.H-CH.pt-CH.pb)*(CH.hi-CH.lo);{const G=pgames($("ptm").value,$("ppl").value),vl=G.map(x=>mfn(PMK)(x.p)),mx=Math.max(0,...vl),lo=PMK=="pir"?Math.min(0,...vl)-5:0,hi=Math.max(mx*1.6,mx+5);v=Math.min(hi,Math.max(lo,v))}
  $("pln").value=Math.round(v*2/1)/2;chart(true)};
 pc.onpointerdown=e=>{pc.setPointerCapture(e.pointerId);mv(e)};pc.onpointermove=mv;pc.onpointerup=()=>chart();
 $("pex").onclick=e=>{const b=e.target.closest("[data-cm]");if(b){CM=b.dataset.cm;courtRender()}};
@@ -714,7 +723,7 @@ function init(first){
 }
 $("fx").onchange=()=>{const x=(window.FL||[])[$("fx").value];if(x){$("h").value=x.h;$("a").value=x.a;calc()}};
 ["h","a","ah","aa","o1","o2","ln","o3","o4"].forEach(i=>$(i).oninput=calc);
-[["hca","hca"],["sig","sig"],["pace","pace"],["n0","n0"],["b0","b0"],["kf","kf"],["mx","mx"]].forEach(([i,k])=>{$(i).value=S[k];$(i).oninput=()=>{S[k]=+$(i).value||S[k];save();if(D){calc();ratingTab();teamView()}bk()}});
+[["hca","hca"],["sig","sig"],["pace","pace"],["n0","n0"],["b0","b0"],["kf","kf"],["mx","mx"]].forEach(([i,k])=>{$(i).value=S[k];$(i).oninput=()=>{const nv=parseFloat($(i).value);S[k]=(k=="hca"&&!isNaN(nv))?nv:(+$(i).value||S[k]);save();if(D){calc();ratingTab();teamView()}bk()}});
 $("add").onclick=()=>{const r=rows[$("pk").value];if(!r)return;S.bets.push({d:new Date().toISOString().slice(0,10),m:nm($("h").value)+" - "+nm($("a").value),pick:r[0]+" | "+r[1],odds:r[3],stake:Math.round(stake(r[2],r[3],bank())*100)/100,p:r[2],res:"C"});save();bk();alert("Dodato u evidenciju (tab Bankroll).")};
 $("bt").onchange=e=>{const i=e.target.dataset.i;if(i==null)return;const k=e.target.dataset.k;S.bets[i][k]=k=="stake"?+e.target.value:e.target.value;save();bkSum()};
 $("bt").onclick=e=>{const i=e.target.dataset.del;if(i==null)return;S.bets.splice(i,1);save();bk()};
@@ -901,7 +910,7 @@ function verdict(h,a,m){
    ["Bar 8 odigranih mečeva po timu",enough],
    ["EV između 3% i 20% (preko 20% je skoro uvek greška u unosu ili povreda)",evm>=.03&&evm<=.2],
    ["EV ostaje pozitivan posle korekcije ka tržištu",evc>0],...xc].filter(c=>c[1]!=null),
-  fails=ck.filter(c=>!c[1]),real=pm==null||Math.abs(p-pm)<=.25,rec=real&&evm>=.03&&evc>0&&fails.length<=1;
+  fails=ck.filter(c=>!c[1]),real=pm==null||Math.abs(p-pm)<=.25,rec=real&&evm>=.03&&evm<=.2&&evc>0&&fails.length<=1;
   rows.push({mk,sel,p,push,pm,odds,evm,evc,ck,fails,real,rec,pb,fair:p>0?(1-push)/p:99})};
  add("Pobednik",nh,cnt(mg,x=>x>0),0,pnW,fh!=null?fh:dv(O[0],O[1]),O[0]);
  add("Pobednik",na,cnt(mg,x=>x<0),0,1-pnW,fh!=null?1-fh:(dv(O[0],O[1])==null?null:1-dv(O[0],O[1])),O[1]);
@@ -947,7 +956,9 @@ function verdict(h,a,m){
  ${fr("Međusobni mečevi ove sezone",h2h.length?h2h.map(g=>`${esc(nm(g.h))} ${g.hs}:${g.as} ${esc(nm(g.a))}`).join(", "):"nisu igrali",0)}
  ${fr("Sudije",'biraš ih niže u sekciji "Uticaj sudija", ne menjaju proračun',0)}
  </table></div>`;
- el.innerHTML=`${head}<h3>Svi izbori</h3>${tbl}
+ const sus=rows.filter(r=>r.evm>.2),mxr=rows.slice().sort((x,y)=>y.evc-x.evc)[0];
+ const plain=`<div class="plain"><b>Šta da uzmeš, prostim jezikom</b><br>${top?`<b class="g">UZMI:</b> ${esc(top.mk)} ${esc(top.sel)} na kvoti ${f(top.odds,2)}. Kladionica računa da je šansa ${pc(1/top.odds)}, a naš model i tržište zajedno kažu oko ${pc(top.pb)}. Zato je kvota veća od fer (${f(top.fair,2)}). Na 100 din očekivana dobit je oko ${f(top.evc*100,0)} din, ali to je prosek kroz mnogo opklada, ne garancija za ovaj meč.`:`<b class="r">NE UZIMAJ NIŠTA na ovom meču</b> sa ovim kvotama. Ni jedan izbor nema dovoljno pouzdanu prednost.`}${sus.length?`<br><b class="r">Pazi:</b> ${sus.map(r=>esc(r.mk)+" "+esc(r.sel)).join(", ")} pokazuje EV preko 20% (model ${sus.map(r=>pc(r.p)).join(", ")}). Tržište nikad ne greši toliko. Skoro uvek je to povreda ili rotacija koju model ne vidi, ili kvota upisana za drugu liniju. Zato je ne igraj, a korigovani EV gore je realniji.`:""}<br><span class="mu">Kako čitati kvotu: kvota 1.90 znači da kladionica daje 52.6% šanse. Igraš samo ako je tvoja stvarna šansa veća od toga. "Edge" je razlika između tvoje šanse i njene, a izbor sa najvišim korigovanim EV nije uvek najsigurniji.</span></div>`;
+ el.innerHTML=`${head}${plain}<h3>Svi izbori</h3>${tbl}
  <div class="note"><b>Kako čitati:</b> <b>Model</b> je šansa iz 10.000 simuliranih mečeva. <b>Tržište</b> je šansa koju kladionica podrazumeva kad se izbaci marža. <b>Fer kvota</b> je 1 ÷ šansa; kvota ispod nje je gubitak, iznad je vrednost. <b>EV korigovan</b> meša model (30%) i tržište (70%) i zato je strožiji. "IGRAJ" dobija samo izbor sa EV od bar 3%, pozitivnim korigovanim EV, realnom kvotom i najviše jednom palom proverom. Nijedna analiza ne garantuje dobitak, ulog je samo deo bankrola. Edge: JAK od 8%, BLAG 3-8%, MINIMALAN do 3%. Nerealna kvota znači da se model i kladionica razilaze preko 25 p.p., pa je kvota verovatno upisana za drugu liniju ili model ne zna za povredu. Ukupni poeni se usklađuju 70% ka tržišnoj liniji.</div>
  <h3>Zašto +20 izgleda "najsigurnije"</h3>
  <div class="note">Što je hendikep veći, to je šansa da prođe veća, ali i kvota pada skoro srazmerno. Fer linija ovog meča je oko <b>${esc(nh)} ${sgn(+f(fairL))}</b> (kod nje je šansa 50%). Kad pomeriš liniju, a kvotu ostaviš 1.90, program poredi 95% šanse sa kvotom koja bi trebalo da bude oko 1.05 i izbaci lažni ogroman EV. Prava kladionica bi za tu liniju dala ~1.05. Sigurnost i vrednost nisu isto: "sigurno" je kad je šansa visoka, a "vredno" je kad je kvota viša od fer kvote.</div>
@@ -1001,11 +1012,24 @@ function propCards(){const el=$("pcs");if(!el||!D)return;const t=$("ptm").value,
   return`<div class="pc${c.pl.id==cur?" sel":""}${cat?(up?" s1":" s2"):""}" data-pc="${esc(c.pl.id)}" tabindex="0"><div class="t">${face(c.pl.photo,c.pl.name)}<div><b>${esc(c.pl.name)}</b><span class="mu" style="font-size:.78rem">${esc(c.ps||"")} · ${badge(t)}${op?" vs "+badge(op):""}</span></div><div class="eg ${cat?(up?"ok":"no"):"mu"}">${cat?cat+"<br>"+(up?"OVER":"UNDER"):"NEUTRALNO"}</div></div>
   <div class="ln"><span>LINIJA<br><b>${f(c.L)}</b></span><span style="text-align:right">PROJEKCIJA<br><b class="${cat?(up?"ok":"no"):""}">${f(c.proj)}</b></span></div>
   <div class="bar2"><i style="width:${c.proj/mx(c)*100}%;background:${up?"var(--ok)":"var(--no)"}"></i><u style="left:${c.L/mx(c)*100}%"></u></div>
-  <div class="hb">${bd("L5",c.h5)}${bd("L10",c.h10)}${bd("SEZ",c.hs)}${bd("H2H",c.hh,c.nh)}</div></div>`}).join(""):'<p class="mu">Nema igrača za ovaj filter.</p>'}
+  <div class="hb">${bd("L5",c.h5)}${bd("L10",c.h10)}${bd("SEZ",c.hs)}${bd("H2H",c.hh,c.nh)}</div><div class="mb" title="Poslednjih 10 mečeva, zeleno = iznad linije">${c.v.slice(-10).map(x=>`<i style="height:${Math.max(8,x/mx(c)*100)}%;background:${x>c.L?"var(--ok)":"var(--no)"}"></i>`).join("")}</div></div>`}).join(""):'<p class="mu">Nema igrača za ovaj filter.</p>'}
 document.addEventListener("click",e=>{const b=e.target.closest("[data-pcf]");if(b){PCF=b.dataset.pcf;propCards();return}
  const c=e.target.closest("[data-pc]");if(c){$("ppl").value=c.dataset.pc;$("ppl").dispatchEvent(new Event("change"));window.scrollTo({top:$("pph").getBoundingClientRect().top+scrollY-70,behavior:"smooth"})}});
 document.addEventListener("keydown",e=>{if(e.key=="Enter"&&e.target.matches&&e.target.matches("[data-pc]"))e.target.click()});
 {const o=chart;chart=function(k){o(k);try{propCards()}catch(e){console.error(e)}}}
+
+
+// ================= SIMULACIJA (3StepsBasket stil) =================
+function histHtml(it){const mx=Math.max(1,...it.map(x=>x.v));return`<div class="hist">${it.map(x=>`<div><span>${f(x.v,0)}%</span><i style="height:${Math.max(1,x.v/mx*100)}%;background:${x.c}"></i><em>${x.l}</em></div>`).join("")}</div>`}
+function simRender(h,a){const el=$("sim3"),sl=$("hcs");if(!el||!MCC.r)return;if(sl){if(document.activeElement!==sl)sl.value=S.hca;$("hcl").textContent=f(S.hca,1);sl.oninput=()=>{const x=$("hca");if(x){x.value=sl.value;x.dispatchEvent(new Event("input"))}}}
+ const{mg,tt,ot}=MCC.r,N=mg.length;let mu=0,tm=0,mn=1e9,mxx=0;for(let i=0;i<N;i++){mu+=mg[i];tm+=tt[i];mn=Math.min(mn,tt[i]);mxx=Math.max(mxx,tt[i])}mu/=N;tm/=N;
+ const cnt=fn=>{let c=0;for(let i=0;i<N;i++)if(fn(mg[i]))c++;return c/N*100},ch=`hsl(${hue(h)} 55% 45%)`,ca=`hsl(${hue(a)} 55% 45%)`,
+ B=[0,12,24,36].map(k=>({v:cnt(x=>x>k&&x<=k+12),c:ch,l:nm(h)+" "+k+"-"+(k+12)})).concat([0,12,24,36].map(k=>({v:cnt(x=>x<-k&&x>=-k-12),c:ca,l:nm(a)+" "+k+"-"+(k+12)}))).sort((x,y)=>y.v-x.v),
+ lo=Math.floor(mn/12)*12,T=[];for(let k=lo;k<=mxx;k+=12){let c=0;for(let i=0;i<N;i++)if(tt[i]>=k&&tt[i]<k+12)c++;T.push({v:c/N*100,c:"#3b82f6",l:k+"-"+(k+11)})}
+ const pw=cnt(x=>x>0),ph=(tm+mu)/2,pa=(tm-mu)/2;
+ el.innerHTML=`<div class="sc2"><div class="stat"><span>Predviđeni rezultat</span><div><b>${esc(nm(h))} ${Math.round(ph)}</b></div><div><b>${esc(nm(a))} ${Math.round(pa)}</b></div></div><div class="stat"><span>Šansa za pobedu</span><div>${esc(nm(h))}: <b>${f(pw)}%</b></div><div>${esc(nm(a))}: <b>${f(100-pw)}%</b></div><span>Produžetak: ${f(ot*100)}%</span></div><div class="stat"><span>Ukupno poena</span><div>Prosek: <b>${f(tm,0)}</b></div><div class="mu">Max ${mxx} · Min ${mn}</div></div></div>
+ <h3>Razlika u poenima (grupe po 12)</h3>${histHtml(B)}<h3>Ukupno poena u meču (grupe po 12)</h3>${histHtml(T)}
+ <div class="mu" style="font-size:.8rem">${N.toLocaleString("sr-Latn")} simuliranih mečeva.</div>`}
 
 // ================= DODACI 5: kola, kvote, vesti =================
 const glOld=$("gl").onclick,gkOld=$("gl").onkeydown;
