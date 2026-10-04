@@ -1,0 +1,798 @@
+{
+ "season": "E2026",
+ "run_at": "2026-10-04T14:03:40.816333+00:00",
+ "checks": [
+  {
+   "name": "results",
+   "url": "https://api-live.euroleague.net/v1/results",
+   "params": {
+    "seasonCode": "E2026"
+   },
+   "status": 200,
+   "bytes": 11480,
+   "content_type": "application/xml; charset=utf-8",
+   "preview": "<results xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\"><game><round>RS</round><gameday>2</gameday><date>Sep 29, 2026</date><time>19:45</time><gamen"
+  },
+  {
+   "name": "boxscore_17",
+   "url": "https://live.euroleague.net/api/Boxscore",
+   "params": {
+    "gamecode": "17",
+    "seasoncode": "E2026"
+   },
+   "status": 200,
+   "bytes": 13703,
+   "content_type": "application/json; charset=utf-8",
+   "preview": "{\"Live\":false,\"Referees\":\"HORDOV, TOMISLAV, PETEK, SASO, BOUBERT, MAXIME\",\"Attendance\":\"8133\",\"ByQuarter\":[{\"Team\":\"FENERBAHCE TARFIN ISTANBUL\",\"Quarter1\":31,\"Quarter2\":19,\"Quarter3\":25,\"Quarter4\":25}"
+  },
+  {
+   "name": "shots_17",
+   "url": "https://live.euroleague.net/api/Points",
+   "params": {
+    "gamecode": "17",
+    "seasoncode": "E2026"
+   },
+   "status": 200,
+   "bytes": 47787,
+   "content_type": "application/json; charset=utf-8",
+   "preview": "{\"Rows\":[{\"NUM_ANOT\":14,\"TEAM\":\"MUN       \",\"ID_PLAYER\":\"P014732   \",\"PLAYER\":\"BEAUCHAMP, MARJON\",\"ID_ACTION\":\"3FGA\",\"ACTION\":\"Missed Three Pointer\",\"POINTS\":0,\"COORD_X\":-194,\"COORD_Y\":677,\"ZONE\":\"H\","
+  },
+  {
+   "name": "boxscore_12",
+   "url": "https://live.euroleague.net/api/Boxscore",
+   "params": {
+    "gamecode": "12",
+    "seasoncode": "E2026"
+   },
+   "status": 200,
+   "bytes": 13702,
+   "content_type": "application/json; charset=utf-8",
+   "preview": "{\"Live\":false,\"Referees\":\"GARCIA, JUAN CARLOS, DIFALLAH, MEHDI, BISSANG, JOSEPH\",\"Attendance\":\"14247\",\"ByQuarter\":[{\"Team\":\"CRVENA ZVEZDA MERIDIANBET BELGRADE\",\"Quarter1\":18,\"Quarter2\":17,\"Quarter3\":2"
+  },
+  {
+   "name": "shots_12",
+   "url": "https://live.euroleague.net/api/Points",
+   "params": {
+    "gamecode": "12",
+    "seasoncode": "E2026"
+   },
+   "status": 200,
+   "bytes": 56401,
+   "content_type": "application/json; charset=utf-8",
+   "preview": "{\"Rows\":[{\"NUM_ANOT\":7,\"TEAM\":\"HTA       \",\"ID_PLAYER\":\"P012788   \",\"PLAYER\":\"OTURU, DAN\",\"ID_ACTION\":\"2FGM\",\"ACTION\":\"Two Pointer\",\"POINTS\":2,\"COORD_X\":0,\"COORD_Y\":0,\"ZONE\":\"A\",\"FASTBREAK\":\"0\",\"SECON"
+  },
+  {
+   "name": "boxscore_24",
+   "url": "https://live.euroleague.net/api/Boxscore",
+   "params": {
+    "gamecode": "24",
+    "seasoncode": "E2026"
+   },
+   "status": 200,
+   "bytes": 13663,
+   "content_type": "application/json; charset=utf-8",
+   "preview": "{\"Live\":false,\"Referees\":\"HORDOV, TOMISLAV, TRAWICKI, TOMASZ, OBRKNEZEVIC, UROS\",\"Attendance\":\"3746\",\"ByQuarter\":[{\"Team\":\"PARIS BASKETBALL\",\"Quarter1\":17,\"Quarter2\":24,\"Quarter3\":20,\"Quarter4\":21},{\""
+  },
+  {
+   "name": "shots_24",
+   "url": "https://live.euroleague.net/api/Points",
+   "params": {
+    "gamecode": "24",
+    "seasoncode": "E2026"
+   },
+   "status": 200,
+   "bytes": 55076,
+   "content_type": "application/json; charset=utf-8",
+   "preview": "{\"Rows\":[{\"NUM_ANOT\":13,\"TEAM\":\"ZAL       \",\"ID_PLAYER\":\"P011987   \",\"PLAYER\":\"EDWARDS, CARSEN\",\"ID_ACTION\":\"3FGA\",\"ACTION\":\"Missed Three Pointer\",\"POINTS\":0,\"COORD_X\":514,\"COORD_Y\":539,\"ZONE\":\"I\",\"FA"
+  },
+  {
+   "name": "boxscore_14",
+   "url": "https://live.euroleague.net/api/Boxscore",
+   "params": {
+    "gamecode": "14",
+    "seasoncode": "E2026"
+   },
+   "status": 200,
+   "bytes": 13672,
+   "content_type": "application/json; charset=utf-8",
+   "preview": "{\"Live\":false,\"Referees\":\"PUKL,SASA, PEREZ, EMILIO, KARDUM, LUKA\",\"Attendance\":\"15267\",\"ByQuarter\":[{\"Team\":\"ZALGIRIS KAUNAS\",\"Quarter1\":24,\"Quarter2\":20,\"Quarter3\":19,\"Quarter4\":28},{\"Team\":\"OLYMPIAC"
+  },
+  {
+   "name": "shots_14",
+   "url": "https://live.euroleague.net/api/Points",
+   "params": {
+    "gamecode": "14",
+    "seasoncode": "E2026"
+   },
+   "status": 200,
+   "bytes": 51807,
+   "content_type": "application/json; charset=utf-8",
+   "preview": "{\"Rows\":[{\"NUM_ANOT\":6,\"TEAM\":\"OLY       \",\"ID_PLAYER\":\"P009048   \",\"PLAYER\":\"MILLER-MCINTYRE, CODI\",\"ID_ACTION\":\"3FGA\",\"ACTION\":\"Missed Three Pointer\",\"POINTS\":0,\"COORD_X\":-677,\"COORD_Y\":6,\"ZONE\":\"H\""
+  },
+  {
+   "name": "boxscore_25",
+   "url": "https://live.euroleague.net/api/Boxscore",
+   "params": {
+    "gamecode": "25",
+    "seasoncode": "E2026"
+   },
+   "status": 200,
+   "bytes": 13633,
+   "content_type": "application/json; charset=utf-8",
+   "preview": "{\"Live\":false,\"Referees\":\"RYZHYK, BORYS, ROSSI, MICHELE, PANTHER, ANNE\",\"Attendance\":\"8500\",\"ByQuarter\":[{\"Team\":\"BESIKTAS ISTANBUL\",\"Quarter1\":17,\"Quarter2\":23,\"Quarter3\":22,\"Quarter4\":20},{\"Team\":\"F"
+  },
+  {
+   "name": "shots_25",
+   "url": "https://live.euroleague.net/api/Points",
+   "params": {
+    "gamecode": "25",
+    "seasoncode": "E2026"
+   },
+   "status": 200,
+   "bytes": 57093,
+   "content_type": "application/json; charset=utf-8",
+   "preview": "{\"Rows\":[{\"NUM_ANOT\":14,\"TEAM\":\"BES       \",\"ID_PLAYER\":\"P014786   \",\"PLAYER\":\"NOWELL, JAYLEN\",\"ID_ACTION\":\"2FGA\",\"ACTION\":\"Missed Two Pointer\",\"POINTS\":0,\"COORD_X\":131,\"COORD_Y\":207,\"ZONE\":\"E\",\"FASTB"
+  },
+  {
+   "name": "boxscore_26",
+   "url": "https://live.euroleague.net/api/Boxscore",
+   "params": {
+    "gamecode": "26",
+    "seasoncode": "E2026"
+   },
+   "status": 200,
+   "bytes": 13662,
+   "content_type": "application/json; charset=utf-8",
+   "preview": "{\"Live\":false,\"Referees\":\"LATISEVS, OLEGS, RADOJKOVIC, JOSIP, GRACIN, FRANKO\",\"Attendance\":\"8125\",\"ByQuarter\":[{\"Team\":\"LDLC ASVEL VILLEURBANNE\",\"Quarter1\":33,\"Quarter2\":28,\"Quarter3\":16,\"Quarter4\":15"
+  },
+  {
+   "name": "shots_26",
+   "url": "https://live.euroleague.net/api/Points",
+   "params": {
+    "gamecode": "26",
+    "seasoncode": "E2026"
+   },
+   "status": 200,
+   "bytes": 57901,
+   "content_type": "application/json; charset=utf-8",
+   "preview": "{\"Rows\":[{\"NUM_ANOT\":29,\"TEAM\":\"ASV       \",\"ID_PLAYER\":\"P015166   \",\"PLAYER\":\"CROWDER, JAE\",\"ID_ACTION\":\"2FGM\",\"ACTION\":\"Two Pointer\",\"POINTS\":2,\"COORD_X\":-163,\"COORD_Y\":257,\"ZONE\":\"D\",\"FASTBREAK\":\"0"
+  },
+  {
+   "name": "boxscore_7",
+   "url": "https://live.euroleague.net/api/Boxscore",
+   "params": {
+    "gamecode": "7",
+    "seasoncode": "E2026"
+   },
+   "status": 200,
+   "bytes": 13728,
+   "content_type": "application/json; charset=utf-8",
+   "preview": "{\"Live\":false,\"Referees\":\"PEREZ, EMILIO, ATTARD, MANUEL, UDYANSKYY, EDUARD\",\"Attendance\":\"17013\",\"ByQuarter\":[{\"Team\":\"PANATHINAIKOS AKTOR ATHENS\",\"Quarter1\":31,\"Quarter2\":11,\"Quarter3\":27,\"Quarter4\":"
+  },
+  {
+   "name": "shots_7",
+   "url": "https://live.euroleague.net/api/Points",
+   "params": {
+    "gamecode": "7",
+    "seasoncode": "E2026"
+   },
+   "status": 200,
+   "bytes": 53184,
+   "content_type": "application/json; charset=utf-8",
+   "preview": "{\"Rows\":[{\"NUM_ANOT\":20,\"TEAM\":\"PAN       \",\"ID_PLAYER\":\"P008084   \",\"PLAYER\":\"MANTZOUKAS, ELEFTHERIOS\",\"ID_ACTION\":\"3FGM\",\"ACTION\":\"Three Pointer\",\"POINTS\":3,\"COORD_X\":-595,\"COORD_Y\":439,\"ZONE\":\"H\",\""
+  },
+  {
+   "name": "boxscore_8",
+   "url": "https://live.euroleague.net/api/Boxscore",
+   "params": {
+    "gamecode": "8",
+    "seasoncode": "E2026"
+   },
+   "status": 200,
+   "bytes": 13649,
+   "content_type": "application/json; charset=utf-8",
+   "preview": "{\"Live\":false,\"Referees\":\"DIFALLAH, MEHDI, FOUFIS, IOANNIS, KARDUM, LUKA\",\"Attendance\":\"5103\",\"ByQuarter\":[{\"Team\":\"BESIKTAS ISTANBUL\",\"Quarter1\":27,\"Quarter2\":24,\"Quarter3\":20,\"Quarter4\":23},{\"Team\":"
+  },
+  {
+   "name": "shots_8",
+   "url": "https://live.euroleague.net/api/Points",
+   "params": {
+    "gamecode": "8",
+    "seasoncode": "E2026"
+   },
+   "status": 200,
+   "bytes": 54669,
+   "content_type": "application/json; charset=utf-8",
+   "preview": "{\"Rows\":[{\"NUM_ANOT\":19,\"TEAM\":\"BES       \",\"ID_PLAYER\":\"P014207   \",\"PLAYER\":\"OMORUYI, EUGENE\",\"ID_ACTION\":\"3FGA\",\"ACTION\":\"Missed Three Pointer\",\"POINTS\":0,\"COORD_X\":-457,\"COORD_Y\":552,\"ZONE\":\"H\",\"F"
+  },
+  {
+   "name": "boxscore_23",
+   "url": "https://live.euroleague.net/api/Boxscore",
+   "params": {
+    "gamecode": "23",
+    "seasoncode": "E2026"
+   },
+   "status": 200,
+   "bytes": 13664,
+   "content_type": "application/json; charset=utf-8",
+   "preview": "{\"Live\":false,\"Referees\":\"PERUGA, CARLOS, BELOSEVIC, ILIJA, HADZIC, DENIS\",\"Attendance\":\"5167\",\"ByQuarter\":[{\"Team\":\"VIRTUS BOLOGNA\",\"Quarter1\":33,\"Quarter2\":16,\"Quarter3\":26,\"Quarter4\":21},{\"Team\":\"O"
+  },
+  {
+   "name": "shots_23",
+   "url": "https://live.euroleague.net/api/Points",
+   "params": {
+    "gamecode": "23",
+    "seasoncode": "E2026"
+   },
+   "status": 200,
+   "bytes": 56473,
+   "content_type": "application/json; charset=utf-8",
+   "preview": "{\"Rows\":[{\"NUM_ANOT\":4,\"TEAM\":\"OLY       \",\"ID_PLAYER\":\"P003469   \",\"PLAYER\":\"VEZENKOV, SASHA\",\"ID_ACTION\":\"3FGM\",\"ACTION\":\"Three Pointer\",\"POINTS\":3,\"COORD_X\":476,\"COORD_Y\":564,\"ZONE\":\"I\",\"FASTBREAK\""
+  },
+  {
+   "name": "boxscore_1",
+   "url": "https://live.euroleague.net/api/Boxscore",
+   "params": {
+    "gamecode": "1",
+    "seasoncode": "E2026"
+   },
+   "status": 200,
+   "bytes": 13718,
+   "content_type": "application/json; charset=utf-8",
+   "preview": "{\"Live\":false,\"Referees\":\"PERUGA, CARLOS, BAENA, ALBERTO, GIOVANNETTI, GUIDO\",\"Attendance\":\"16420\",\"ByQuarter\":[{\"Team\":\"CRVENA ZVEZDA MERIDIANBET BELGRADE\",\"Quarter1\":21,\"Quarter2\":24,\"Quarter3\":12,\""
+  },
+  {
+   "name": "shots_1",
+   "url": "https://live.euroleague.net/api/Points",
+   "params": {
+    "gamecode": "1",
+    "seasoncode": "E2026"
+   },
+   "status": 200,
+   "bytes": 54920,
+   "content_type": "application/json; charset=utf-8",
+   "preview": "{\"Rows\":[{\"NUM_ANOT\":7,\"TEAM\":\"ZAL       \",\"ID_PLAYER\":\"P000898   \",\"PLAYER\":\"VALANCIUNAS, JONAS\",\"ID_ACTION\":\"2FGA\",\"ACTION\":\"Missed Two Pointer\",\"POINTS\":0,\"COORD_X\":62,\"COORD_Y\":238,\"ZONE\":\"E\",\"FAS"
+  },
+  {
+   "name": "boxscore_20",
+   "url": "https://live.euroleague.net/api/Boxscore",
+   "params": {
+    "gamecode": "20",
+    "seasoncode": "E2026"
+   },
+   "status": 200,
+   "bytes": 13272,
+   "content_type": "application/json; charset=utf-8",
+   "preview": "{\"Live\":false,\"Referees\":\"JAVOR, DAMIR, JOVCIC, MILIVOJE, ALIAGA, JORDI\",\"Attendance\":\"15733\",\"ByQuarter\":[{\"Team\":\"PANATHINAIKOS AKTOR ATHENS\",\"Quarter1\":25,\"Quarter2\":31,\"Quarter3\":24,\"Quarter4\":22}"
+  },
+  {
+   "name": "shots_20",
+   "url": "https://live.euroleague.net/api/Points",
+   "params": {
+    "gamecode": "20",
+    "seasoncode": "E2026"
+   },
+   "status": 200,
+   "bytes": 52107,
+   "content_type": "application/json; charset=utf-8",
+   "preview": "{\"Rows\":[{\"NUM_ANOT\":15,\"TEAM\":\"PAN       \",\"ID_PLAYER\":\"P011204   \",\"PLAYER\":\"GRANT, JERIAN\",\"ID_ACTION\":\"2FGM\",\"ACTION\":\"Two Pointer\",\"POINTS\":2,\"COORD_X\":263,\"COORD_Y\":370,\"ZONE\":\"G\",\"FASTBREAK\":\"0"
+  },
+  {
+   "name": "boxscore_13",
+   "url": "https://live.euroleague.net/api/Boxscore",
+   "params": {
+    "gamecode": "13",
+    "seasoncode": "E2026"
+   },
+   "status": 200,
+   "bytes": 13632,
+   "content_type": "application/json; charset=utf-8",
+   "preview": "{\"Live\":false,\"Referees\":\"LATISEVS, OLEGS, PASTUSIAK, PIOTR, CICI, GENTIAN\",\"Attendance\":\"7313\",\"ByQuarter\":[{\"Team\":\"DUBAI BASKETBALL\",\"Quarter1\":23,\"Quarter2\":29,\"Quarter3\":24,\"Quarter4\":18},{\"Team\""
+  },
+  {
+   "name": "shots_13",
+   "url": "https://live.euroleague.net/api/Points",
+   "params": {
+    "gamecode": "13",
+    "seasoncode": "E2026"
+   },
+   "status": 200,
+   "bytes": 52877,
+   "content_type": "application/json; charset=utf-8",
+   "preview": "{\"Rows\":[{\"NUM_ANOT\":46,\"TEAM\":\"BAR       \",\"ID_PLAYER\":\"P007464   \",\"PLAYER\":\"PARRA, JOEL\",\"ID_ACTION\":\"3FGM\",\"ACTION\":\"Three Pointer\",\"POINTS\":3,\"COORD_X\":-501,\"COORD_Y\":514,\"ZONE\":\"H\",\"FASTBREAK\":\""
+  },
+  {
+   "name": "boxscore_16",
+   "url": "https://live.euroleague.net/api/Boxscore",
+   "params": {
+    "gamecode": "16",
+    "seasoncode": "E2026"
+   },
+   "status": 200,
+   "bytes": 13642,
+   "content_type": "application/json; charset=utf-8",
+   "preview": "{\"Live\":false,\"Referees\":\"RYZHYK, BORYS, BAENA, ALBERTO, DRAGOJEVIC, IGOR\",\"Attendance\":\"6950\",\"ByQuarter\":[{\"Team\":\"ARMANI OLIMPIA MILAN\",\"Quarter1\":30,\"Quarter2\":17,\"Quarter3\":19,\"Quarter4\":21},{\"Te"
+  },
+  {
+   "name": "shots_16",
+   "url": "https://live.euroleague.net/api/Points",
+   "params": {
+    "gamecode": "16",
+    "seasoncode": "E2026"
+   },
+   "status": 200,
+   "bytes": 54067,
+   "content_type": "application/json; charset=utf-8",
+   "preview": "{\"Rows\":[{\"NUM_ANOT\":14,\"TEAM\":\"MIL       \",\"ID_PLAYER\":\"P004004   \",\"PLAYER\":\"GUDURIC, MARKO\",\"ID_ACTION\":\"3FGA\",\"ACTION\":\"Missed Three Pointer\",\"POINTS\":0,\"COORD_X\":-664,\"COORD_Y\":106,\"ZONE\":\"H\",\"FA"
+  },
+  {
+   "name": "boxscore_30",
+   "url": "https://live.euroleague.net/api/Boxscore",
+   "params": {
+    "gamecode": "30",
+    "seasoncode": "E2026"
+   },
+   "status": 200,
+   "bytes": 13740,
+   "content_type": "application/json; charset=utf-8",
+   "preview": "{\"Live\":false,\"Referees\":\"GARCIA, JUAN CARLOS, BAENA, ALBERTO, CELIK, HUSEYIN\",\"Attendance\":\"17003\",\"ByQuarter\":[{\"Team\":\"PANATHINAIKOS AKTOR ATHENS\",\"Quarter1\":25,\"Quarter2\":18,\"Quarter3\":25,\"Quarter"
+  },
+  {
+   "name": "shots_30",
+   "url": "https://live.euroleague.net/api/Points",
+   "params": {
+    "gamecode": "30",
+    "seasoncode": "E2026"
+   },
+   "status": 200,
+   "bytes": 51260,
+   "content_type": "application/json; charset=utf-8",
+   "preview": "{\"Rows\":[{\"NUM_ANOT\":9,\"TEAM\":\"PAN       \",\"ID_PLAYER\":\"P007866   \",\"PLAYER\":\"MITOGLOU, KONSTANTINOS\",\"ID_ACTION\":\"2FGM\",\"ACTION\":\"Two Pointer\",\"POINTS\":2,\"COORD_X\":-125,\"COORD_Y\":69,\"ZONE\":\"B\",\"FASTB"
+  },
+  {
+   "name": "boxscore_18",
+   "url": "https://live.euroleague.net/api/Boxscore",
+   "params": {
+    "gamecode": "18",
+    "seasoncode": "E2026"
+   },
+   "status": 200,
+   "bytes": 13688,
+   "content_type": "application/json; charset=utf-8",
+   "preview": "{\"Live\":false,\"Referees\":\"PERUGA, CARLOS, FOUFIS, IOANNIS, MANUEL, SERGIO\",\"Attendance\":\"5680\",\"ByQuarter\":[{\"Team\":\"PARIS BASKETBALL\",\"Quarter1\":18,\"Quarter2\":22,\"Quarter3\":23,\"Quarter4\":16},{\"Team\":"
+  },
+  {
+   "name": "shots_18",
+   "url": "https://live.euroleague.net/api/Points",
+   "params": {
+    "gamecode": "18",
+    "seasoncode": "E2026"
+   },
+   "status": 200,
+   "bytes": 48412,
+   "content_type": "application/json; charset=utf-8",
+   "preview": "{\"Rows\":[{\"NUM_ANOT\":10,\"TEAM\":\"PRS       \",\"ID_PLAYER\":\"P012640   \",\"PLAYER\":\"HIFI, NADIR\",\"ID_ACTION\":\"2FGA\",\"ACTION\":\"Missed Two Pointer\",\"POINTS\":0,\"COORD_X\":12,\"COORD_Y\":150,\"ZONE\":\"C\",\"FASTBREAK"
+  },
+  {
+   "name": "boxscore_21",
+   "url": "https://live.euroleague.net/api/Boxscore",
+   "params": {
+    "gamecode": "21",
+    "seasoncode": "E2026"
+   },
+   "status": 200,
+   "bytes": 13684,
+   "content_type": "application/json; charset=utf-8",
+   "preview": "{\"Live\":false,\"Referees\":\"VILIUS, GYTIS, BITTNER, STEVE, MANUEL, SERGIO\",\"Attendance\":\"14081\",\"ByQuarter\":[{\"Team\":\"CRVENA ZVEZDA MERIDIANBET BELGRADE\",\"Quarter1\":19,\"Quarter2\":18,\"Quarter3\":19,\"Quart"
+  },
+  {
+   "name": "shots_21",
+   "url": "https://live.euroleague.net/api/Points",
+   "params": {
+    "gamecode": "21",
+    "seasoncode": "E2026"
+   },
+   "status": 200,
+   "bytes": 54022,
+   "content_type": "application/json; charset=utf-8",
+   "preview": "{\"Rows\":[{\"NUM_ANOT\":11,\"TEAM\":\"RED       \",\"ID_PLAYER\":\"P011305   \",\"PLAYER\":\"CARTER, TYSON\",\"ID_ACTION\":\"2FGA\",\"ACTION\":\"Missed Two Pointer\",\"POINTS\":0,\"COORD_X\":-138,\"COORD_Y\":150,\"ZONE\":\"B\",\"FASTB"
+  },
+  {
+   "name": "boxscore_27",
+   "url": "https://live.euroleague.net/api/Boxscore",
+   "params": {
+    "gamecode": "27",
+    "seasoncode": "E2026"
+   },
+   "status": 200,
+   "bytes": 13699,
+   "content_type": "application/json; charset=utf-8",
+   "preview": "{\"Live\":false,\"Referees\":\"MOGULKOC, EMIN, JOVCIC, MILIVOJE, CALIC, STEFAN\",\"Attendance\":\"7283\",\"ByQuarter\":[{\"Team\":\"KOSNER BASKONIA VITORIA-GASTEIZ\",\"Quarter1\":26,\"Quarter2\":18,\"Quarter3\":21,\"Quarter"
+  },
+  {
+   "name": "shots_27",
+   "url": "https://live.euroleague.net/api/Points",
+   "params": {
+    "gamecode": "27",
+    "seasoncode": "E2026"
+   },
+   "status": 200,
+   "bytes": 50069,
+   "content_type": "application/json; charset=utf-8",
+   "preview": "{\"Rows\":[{\"NUM_ANOT\":14,\"TEAM\":\"BAS       \",\"ID_PLAYER\":\"P012700   \",\"PLAYER\":\"STEWART, DJ\",\"ID_ACTION\":\"2FGM\",\"ACTION\":\"Two Pointer\",\"POINTS\":2,\"COORD_X\":-426,\"COORD_Y\":244,\"ZONE\":\"F\",\"FASTBREAK\":\"0\""
+  },
+  {
+   "name": "boxscore_22",
+   "url": "https://live.euroleague.net/api/Boxscore",
+   "params": {
+    "gamecode": "22",
+    "seasoncode": "E2026"
+   },
+   "status": 200,
+   "bytes": 13646,
+   "content_type": "application/json; charset=utf-8",
+   "preview": "{\"Live\":false,\"Referees\":\"PUKL,SASA, PETEK, SASO, GIOVANNETTI, GUIDO\",\"Attendance\":\"0\",\"ByQuarter\":[{\"Team\":\"HAPOEL IBI TEL AVIV\",\"Quarter1\":29,\"Quarter2\":34,\"Quarter3\":12,\"Quarter4\":27},{\"Team\":\"REAL"
+  },
+  {
+   "name": "shots_22",
+   "url": "https://live.euroleague.net/api/Points",
+   "params": {
+    "gamecode": "22",
+    "seasoncode": "E2026"
+   },
+   "status": 200,
+   "bytes": 56490,
+   "content_type": "application/json; charset=utf-8",
+   "preview": "{\"Rows\":[{\"NUM_ANOT\":9,\"TEAM\":\"HTA       \",\"ID_PLAYER\":\"P012096   \",\"PLAYER\":\"CABOCLO, BRUNO\",\"ID_ACTION\":\"3FGM\",\"ACTION\":\"Three Pointer\",\"POINTS\":3,\"COORD_X\":-514,\"COORD_Y\":495,\"ZONE\":\"H\",\"FASTBREAK\""
+  },
+  {
+   "name": "boxscore_28",
+   "url": "https://live.euroleague.net/api/Boxscore",
+   "params": {
+    "gamecode": "28",
+    "seasoncode": "E2026"
+   },
+   "status": 200,
+   "bytes": 13691,
+   "content_type": "application/json; charset=utf-8",
+   "preview": "{\"Live\":false,\"Referees\":\"DIFALLAH, MEHDI, BISSANG, JOSEPH, PITSILKAS, VASSILIS\",\"Attendance\":\"11500\",\"ByQuarter\":[{\"Team\":\"FC BAYERN MUNICH\",\"Quarter1\":27,\"Quarter2\":20,\"Quarter3\":18,\"Quarter4\":19},{"
+  },
+  {
+   "name": "shots_28",
+   "url": "https://live.euroleague.net/api/Points",
+   "params": {
+    "gamecode": "28",
+    "seasoncode": "E2026"
+   },
+   "status": 200,
+   "bytes": 51256,
+   "content_type": "application/json; charset=utf-8",
+   "preview": "{\"Rows\":[{\"NUM_ANOT\":6,\"TEAM\":\"MUN       \",\"ID_PLAYER\":\"P003958   \",\"PLAYER\":\"THIEMANN, JOHANNES\",\"ID_ACTION\":\"FTM\",\"ACTION\":\"Free Throw In\",\"POINTS\":1,\"COORD_X\":-1,\"COORD_Y\":-1,\"ZONE\":\" \",\"FASTBREAK\""
+  },
+  {
+   "name": "boxscore_19",
+   "url": "https://live.euroleague.net/api/Boxscore",
+   "params": {
+    "gamecode": "19",
+    "seasoncode": "E2026"
+   },
+   "status": 200,
+   "bytes": 13673,
+   "content_type": "application/json; charset=utf-8",
+   "preview": "{\"Live\":false,\"Referees\":\"CORTES, CARLOS, UDYANSKYY, EDUARD, TIGANIS, IOANNIS\",\"Attendance\":\"427\",\"ByQuarter\":[{\"Team\":\"MACCABI RAPYD TEL AVIV\",\"Quarter1\":19,\"Quarter2\":27,\"Quarter3\":17,\"Quarter4\":30}"
+  },
+  {
+   "name": "shots_19",
+   "url": "https://live.euroleague.net/api/Points",
+   "params": {
+    "gamecode": "19",
+    "seasoncode": "E2026"
+   },
+   "status": 200,
+   "bytes": 53282,
+   "content_type": "application/json; charset=utf-8",
+   "preview": "{\"Rows\":[{\"NUM_ANOT\":4,\"TEAM\":\"TEL       \",\"ID_PLAYER\":\"P010781   \",\"PLAYER\":\"LUNDBERG, IFFE\",\"ID_ACTION\":\"2FGA\",\"ACTION\":\"Missed Two Pointer\",\"POINTS\":0,\"COORD_X\":81,\"COORD_Y\":106,\"ZONE\":\"C\",\"FASTBRE"
+  },
+  {
+   "name": "boxscore_5",
+   "url": "https://live.euroleague.net/api/Boxscore",
+   "params": {
+    "gamecode": "5",
+    "seasoncode": "E2026"
+   },
+   "status": 200,
+   "bytes": 13719,
+   "content_type": "application/json; charset=utf-8",
+   "preview": "{\"Live\":false,\"Referees\":\"HORDOV, TOMISLAV, SUKYS, ARTURAS, KOLJENSIC, MILOS\",\"Attendance\":\"6848\",\"ByQuarter\":[{\"Team\":\"KOSNER BASKONIA VITORIA-GASTEIZ\",\"Quarter1\":29,\"Quarter2\":17,\"Quarter3\":14,\"Quar"
+  },
+  {
+   "name": "shots_5",
+   "url": "https://live.euroleague.net/api/Points",
+   "params": {
+    "gamecode": "5",
+    "seasoncode": "E2026"
+   },
+   "status": 200,
+   "bytes": 59620,
+   "content_type": "application/json; charset=utf-8",
+   "preview": "{\"Rows\":[{\"NUM_ANOT\":15,\"TEAM\":\"BAS       \",\"ID_PLAYER\":\"P014152   \",\"PLAYER\":\"SIMMONS, KOBI\",\"ID_ACTION\":\"3FGM\",\"ACTION\":\"Three Pointer\",\"POINTS\":3,\"COORD_X\":-18,\"COORD_Y\":784,\"ZONE\":\"H\",\"FASTBREAK\":"
+  },
+  {
+   "name": "boxscore_9",
+   "url": "https://live.euroleague.net/api/Boxscore",
+   "params": {
+    "gamecode": "9",
+    "seasoncode": "E2026"
+   },
+   "status": 200,
+   "bytes": 13675,
+   "content_type": "application/json; charset=utf-8",
+   "preview": "{\"Live\":false,\"Referees\":\"GARCIA, JUAN CARLOS, JOVCIC, MILIVOJE, CALIC, STEFAN\",\"Attendance\":\"8850\",\"ByQuarter\":[{\"Team\":\"FENERBAHCE TARFIN ISTANBUL\",\"Quarter1\":23,\"Quarter2\":16,\"Quarter3\":20,\"Quarter"
+  },
+  {
+   "name": "shots_9",
+   "url": "https://live.euroleague.net/api/Points",
+   "params": {
+    "gamecode": "9",
+    "seasoncode": "E2026"
+   },
+   "status": 200,
+   "bytes": 52553,
+   "content_type": "application/json; charset=utf-8",
+   "preview": "{\"Rows\":[{\"NUM_ANOT\":8,\"TEAM\":\"ULK       \",\"ID_PLAYER\":\"P014124   \",\"PLAYER\":\"HORTON TUCKER, TALEN\",\"ID_ACTION\":\"2FGA\",\"ACTION\":\"Missed Two Pointer\",\"POINTS\":0,\"COORD_X\":-156,\"COORD_Y\":43,\"ZONE\":\"B\",\""
+  },
+  {
+   "name": "boxscore_11",
+   "url": "https://live.euroleague.net/api/Boxscore",
+   "params": {
+    "gamecode": "11",
+    "seasoncode": "E2026"
+   },
+   "status": 200,
+   "bytes": 13648,
+   "content_type": "application/json; charset=utf-8",
+   "preview": "{\"Live\":false,\"Referees\":\"NEDOVIC, MILAN, RACYS, SAULIUS, TSAROUCHA, VASILIKI\",\"Attendance\":\"8087\",\"ByQuarter\":[{\"Team\":\"ANADOLU EFES ISTANBUL\",\"Quarter1\":27,\"Quarter2\":26,\"Quarter3\":19,\"Quarter4\":22}"
+  },
+  {
+   "name": "shots_11",
+   "url": "https://live.euroleague.net/api/Points",
+   "params": {
+    "gamecode": "11",
+    "seasoncode": "E2026"
+   },
+   "status": 200,
+   "bytes": 54011,
+   "content_type": "application/json; charset=utf-8",
+   "preview": "{\"Rows\":[{\"NUM_ANOT\":6,\"TEAM\":\"MAD       \",\"ID_PLAYER\":\"P015244   \",\"PLAYER\":\"SMITH JR, NICK\",\"ID_ACTION\":\"FTM\",\"ACTION\":\"Free Throw In\",\"POINTS\":1,\"COORD_X\":-1,\"COORD_Y\":-1,\"ZONE\":\" \",\"FASTBREAK\":\"0\""
+  },
+  {
+   "name": "boxscore_6",
+   "url": "https://live.euroleague.net/api/Boxscore",
+   "params": {
+    "gamecode": "6",
+    "seasoncode": "E2026"
+   },
+   "status": 200,
+   "bytes": 13680,
+   "content_type": "application/json; charset=utf-8",
+   "preview": "{\"Live\":false,\"Referees\":\"NEDOVIC, MILAN, ROSSI, MICHELE, VYKLICKY, ROBERT\",\"Attendance\":\"7105\",\"ByQuarter\":[{\"Team\":\"LDLC ASVEL VILLEURBANNE\",\"Quarter1\":19,\"Quarter2\":23,\"Quarter3\":20,\"Quarter4\":22},"
+  },
+  {
+   "name": "shots_6",
+   "url": "https://live.euroleague.net/api/Points",
+   "params": {
+    "gamecode": "6",
+    "seasoncode": "E2026"
+   },
+   "status": 200,
+   "bytes": 47589,
+   "content_type": "application/json; charset=utf-8",
+   "preview": "{\"Rows\":[{\"NUM_ANOT\":14,\"TEAM\":\"ASV       \",\"ID_PLAYER\":\"P013900   \",\"PLAYER\":\"GACH, BOTH\",\"ID_ACTION\":\"2FGA\",\"ACTION\":\"Missed Two Pointer\",\"POINTS\":0,\"COORD_X\":-125,\"COORD_Y\":106,\"ZONE\":\"B\",\"FASTBREA"
+  },
+  {
+   "name": "boxscore_10",
+   "url": "https://live.euroleague.net/api/Boxscore",
+   "params": {
+    "gamecode": "10",
+    "seasoncode": "E2026"
+   },
+   "status": 200,
+   "bytes": 13689,
+   "content_type": "application/json; charset=utf-8",
+   "preview": "{\"Live\":false,\"Referees\":\"LOTTERMOSER, ROBERT, ALIAGA, JORDI, BISSUEL, THOMAS\",\"Attendance\":\"13783\",\"ByQuarter\":[{\"Team\":\"PARTIZAN MOZZART BET BELGRADE\",\"Quarter1\":20,\"Quarter2\":22,\"Quarter3\":21,\"Quar"
+  },
+  {
+   "name": "shots_10",
+   "url": "https://live.euroleague.net/api/Points",
+   "params": {
+    "gamecode": "10",
+    "seasoncode": "E2026"
+   },
+   "status": 200,
+   "bytes": 45858,
+   "content_type": "application/json; charset=utf-8",
+   "preview": "{\"Rows\":[{\"NUM_ANOT\":4,\"TEAM\":\"PAR       \",\"ID_PLAYER\":\"P010390   \",\"PLAYER\":\"HAYES, KEVARRIUS\",\"ID_ACTION\":\"2FGA\",\"ACTION\":\"Missed Two Pointer\",\"POINTS\":0,\"COORD_X\":-156,\"COORD_Y\":112,\"ZONE\":\"B\",\"FAS"
+  },
+  {
+   "name": "boxscore_3",
+   "url": "https://live.euroleague.net/api/Boxscore",
+   "params": {
+    "gamecode": "3",
+    "seasoncode": "E2026"
+   },
+   "status": 200,
+   "bytes": 13646,
+   "content_type": "application/json; charset=utf-8",
+   "preview": "{\"Live\":false,\"Referees\":\"MOGULKOC, EMIN, SILVA, SERGIO, CELIK, HUSEYIN\",\"Attendance\":\"0\",\"ByQuarter\":[{\"Team\":\"HAPOEL IBI TEL AVIV\",\"Quarter1\":21,\"Quarter2\":18,\"Quarter3\":18,\"Quarter4\":27},{\"Team\":\"F"
+  },
+  {
+   "name": "shots_3",
+   "url": "https://live.euroleague.net/api/Points",
+   "params": {
+    "gamecode": "3",
+    "seasoncode": "E2026"
+   },
+   "status": 200,
+   "bytes": 52871,
+   "content_type": "application/json; charset=utf-8",
+   "preview": "{\"Rows\":[{\"NUM_ANOT\":14,\"TEAM\":\"MUN       \",\"ID_PLAYER\":\"P013278   \",\"PLAYER\":\"WILEY, AUSTIN\",\"ID_ACTION\":\"2FGA\",\"ACTION\":\"Missed Two Pointer\",\"POINTS\":0,\"COORD_X\":87,\"COORD_Y\":138,\"ZONE\":\"C\",\"FASTBRE"
+  },
+  {
+   "name": "boxscore_4",
+   "url": "https://live.euroleague.net/api/Boxscore",
+   "params": {
+    "gamecode": "4",
+    "seasoncode": "E2026"
+   },
+   "status": 200,
+   "bytes": 13615,
+   "content_type": "application/json; charset=utf-8",
+   "preview": "{\"Live\":false,\"Referees\":\"PUKL,SASA, BOUBERT, MAXIME, TIGANIS, IOANNIS\",\"Attendance\":\"5621\",\"ByQuarter\":[{\"Team\":\"FC BARCELONA\",\"Quarter1\":16,\"Quarter2\":29,\"Quarter3\":18,\"Quarter4\":26},{\"Team\":\"ANADOL"
+  },
+  {
+   "name": "shots_4",
+   "url": "https://live.euroleague.net/api/Points",
+   "params": {
+    "gamecode": "4",
+    "seasoncode": "E2026"
+   },
+   "status": 200,
+   "bytes": 51354,
+   "content_type": "application/json; charset=utf-8",
+   "preview": "{\"Rows\":[{\"NUM_ANOT\":17,\"TEAM\":\"IST       \",\"ID_PLAYER\":\"P012609   \",\"PLAYER\":\"MALCOLM, COLLIN\",\"ID_ACTION\":\"2FGM\",\"ACTION\":\"Two Pointer\",\"POINTS\":2,\"COORD_X\":-119,\"COORD_Y\":37,\"ZONE\":\"B\",\"FASTBREAK\":"
+  },
+  {
+   "name": "boxscore_2",
+   "url": "https://live.euroleague.net/api/Boxscore",
+   "params": {
+    "gamecode": "2",
+    "seasoncode": "E2026"
+   },
+   "status": 200,
+   "bytes": 13653,
+   "content_type": "application/json; charset=utf-8",
+   "preview": "{\"Live\":false,\"Referees\":\"RYZHYK, BORYS, KONSTANTINOVS, KRISTAPS, PEERANDI, RAIN\",\"Attendance\":\"7269\",\"ByQuarter\":[{\"Team\":\"DUBAI BASKETBALL\",\"Quarter1\":20,\"Quarter2\":18,\"Quarter3\":25,\"Quarter4\":15},{"
+  },
+  {
+   "name": "shots_2",
+   "url": "https://live.euroleague.net/api/Points",
+   "params": {
+    "gamecode": "2",
+    "seasoncode": "E2026"
+   },
+   "status": 200,
+   "bytes": 52103,
+   "content_type": "application/json; charset=utf-8",
+   "preview": "{\"Rows\":[{\"NUM_ANOT\":66,\"TEAM\":\"MAD       \",\"ID_PLAYER\":\"P005791   \",\"PLAYER\":\"TAVARES, WALTER\",\"ID_ACTION\":\"2FGA\",\"ACTION\":\"Missed Two Pointer\",\"POINTS\":0,\"COORD_X\":-25,\"COORD_Y\":238,\"ZONE\":\"D\",\"FAST"
+  },
+  {
+   "name": "boxscore_15",
+   "url": "https://live.euroleague.net/api/Boxscore",
+   "params": {
+    "gamecode": "15",
+    "seasoncode": "E2026"
+   },
+   "status": 200,
+   "bytes": 13708,
+   "content_type": "application/json; charset=utf-8",
+   "preview": "{\"Live\":false,\"Referees\":\"BELOSEVIC, ILIJA, LOTTERMOSER, ROBERT, SHEMMESH, SEFFI\",\"Attendance\":\"12156\",\"ByQuarter\":[{\"Team\":\"VALENCIA BASKET\",\"Quarter1\":26,\"Quarter2\":26,\"Quarter3\":31,\"Quarter4\":28},{"
+  },
+  {
+   "name": "shots_15",
+   "url": "https://live.euroleague.net/api/Points",
+   "params": {
+    "gamecode": "15",
+    "seasoncode": "E2026"
+   },
+   "status": 200,
+   "bytes": 58949,
+   "content_type": "application/json; charset=utf-8",
+   "preview": "{\"Rows\":[{\"NUM_ANOT\":15,\"TEAM\":\"PAM       \",\"ID_PLAYER\":\"P012738   \",\"PLAYER\":\"REUVERS, NATHAN\",\"ID_ACTION\":\"FTM\",\"ACTION\":\"Free Throw In\",\"POINTS\":1,\"COORD_X\":-1,\"COORD_Y\":-1,\"ZONE\":\" \",\"FASTBREAK\":\""
+  },
+  {
+   "name": "boxscore_29",
+   "url": "https://live.euroleague.net/api/Boxscore",
+   "params": {
+    "gamecode": "29",
+    "seasoncode": "E2026"
+   },
+   "status": 200,
+   "bytes": 13687,
+   "content_type": "application/json; charset=utf-8",
+   "preview": "{\"Live\":false,\"Referees\":\"PEREZ, EMILIO, LOTTERMOSER, ROBERT, ALIAGA, JORDI\",\"Attendance\":\"8497\",\"ByQuarter\":[{\"Team\":\"FENERBAHCE TARFIN ISTANBUL\",\"Quarter1\":26,\"Quarter2\":16,\"Quarter3\":13,\"Quarter4\":"
+  },
+  {
+   "name": "shots_29",
+   "url": "https://live.euroleague.net/api/Points",
+   "params": {
+    "gamecode": "29",
+    "seasoncode": "E2026"
+   },
+   "status": 200,
+   "bytes": 48399,
+   "content_type": "application/json; charset=utf-8",
+   "preview": "{\"Rows\":[{\"NUM_ANOT\":4,\"TEAM\":\"DUB       \",\"ID_PLAYER\":\"P011231   \",\"PLAYER\":\"BLOSSOMGAME, JARON\",\"ID_ACTION\":\"2FGA\",\"ACTION\":\"Missed Two Pointer\",\"POINTS\":0,\"COORD_X\":-81,\"COORD_Y\":25,\"ZONE\":\"B\",\"FAS"
+  },
+  {
+   "name": "v1_teams",
+   "url": "https://api-live.euroleague.net/v1/teams",
+   "params": {
+    "seasonCode": "E2026"
+   },
+   "status": 200,
+   "bytes": 454311,
+   "content_type": "application/xml; charset=utf-8",
+   "preview": "<clubs xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\"><club code=\"IST\" tvcode=\"EFS\"><name>Anadolu Efes Istanbul</name><clubname>Anadolu Efes Istanbu"
+  },
+  {
+   "name": "v1_standings",
+   "url": "https://api-live.euroleague.net/v1/standings",
+   "params": {
+    "seasonCode": "E2026"
+   },
+   "status": 200,
+   "bytes": 4622,
+   "content_type": "application/xml; charset=utf-8",
+   "preview": "<standings xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\"><group name=\"Regular Season\" round=\"RS\" gamenumber=\"3\"><team><name>Panathinaikos AKTOR Ath"
+  },
+  {
+   "name": "v2_clubs",
+   "url": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2026/clubs",
+   "params": null,
+   "status": 200,
+   "bytes": 13698,
+   "content_type": "application/json; charset=utf-8",
+   "preview": "{\"data\":[{\"code\":\"IST\",\"name\":\"Anadolu Efes Istanbul\",\"abbreviatedName\":\"Anadolu Efes\",\"editorialName\":\"Efes\",\"tvCode\":\"EFS\",\"isVirtual\":false,\"images\":{\"crest\":\"https://media-cdn.cortextech.io/1dU3kp"
+  },
+  {
+   "name": "v2_people",
+   "url": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2026/people",
+   "params": null,
+   "status": 200,
+   "bytes": 585220,
+   "content_type": "application/json; charset=utf-8",
+   "preview": "{\"data\":[{\"person\":{\"code\":\"CTB\",\"name\":\"COLLET, VINCENT\",\"alias\":\"COLLET, VINCENT\",\"aliasRaw\":\"COLLET, VINCENT\",\"passportName\":\"VINCENT FLORENT ANTOINE\",\"passportSurname\":\"COLLET\",\"jerseyName\":\"\",\"ab"
+  },
+  {
+   "name": "v2_games",
+   "url": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2026/games",
+   "params": null,
+   "status": 200,
+   "bytes": 695852,
+   "content_type": "application/json; charset=utf-8",
+   "preview": "{\"data\":[{\"id\":\"b4377faa-0f7f-445d-a2c6-d66d20f60f54\",\"identifier\":\"E2026_379\",\"gameCode\":379,\"season\":{\"name\":\"EuroLeague 2026-27\",\"code\":\"E2026\",\"alias\":\"2026-27\",\"competitionCode\":\"E\",\"year\":2026,\""
+  },
+  {
+   "name": "v2_standings",
+   "url": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2026/standings",
+   "params": null,
+   "status": 404,
+   "bytes": 0,
+   "content_type": null,
+   "preview": ""
+  }
+ ],
+ "games_found": 30,
+ "games_played": 30,
+ "summary": "66 od 67 poziva uspelo"
+}
