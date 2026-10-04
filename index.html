@@ -1274,6 +1274,355 @@ function xdrw(){$("dw").innerHTML='<h3>Meni</h3>'+xord().filter(i=>xED||!xT.h.in
 $("dw").addEventListener("click",e=>{const d=e.target.dataset;if(d.up!=null){const o=xord(),k=o.indexOf(+d.up);if(k>0)[o[k-1],o[k]]=[o[k],o[k-1]];xT.o=o}else if(d.hd!=null){const v=+d.hd;xT.h=xT.h.includes(v)?xT.h.filter(x=>x!=v):[...xT.h,v]}else if(d.ed)xED=!xED;else return;try{localStorage.setItem("eltabs",JSON.stringify(xT))}catch(x){}xdrw()});
 xdrw();
 function xhist(){try{const H=JSON.parse(localStorage.getItem("elhist")||"[]"),d=new Date().toISOString().slice(0,10),have=new Set(H.map(x=>x.k));SCR.slice(0,10).forEach(x=>{const k=d+x.mt+x.mk+x.pick;if(!have.has(k))H.push({k,d,mt:x.mt,mk:x.mk,pick:x.pick,o:x.o,p:+x.p.toFixed(4),st:x.st})});localStorage.setItem("elhist",JSON.stringify(H.slice(-1000)))}catch(e){}}
+// ===== API ADAPTER =====
+/* API adapter: API-Sports Basketball + The Odds API. Ključeve upisuješ preko dugmeta "API" (dole levo). */
+(() => {
+"use strict";
+
+// ----------------------------- KONFIGURACIJA -------------------------------
+const CFG = {
+  // !!! Ključ u frontendu je vidljiv svakome. Za javni sajt koristi proxy
+  // (Cloudflare Worker / Netlify function) i upiši njegov URL u baseUrl.
+  apiKey: "",
+  baseUrl: "https://v1.basketball.api-sports.io",
+  season: "2026-2027",                     // API-Sports format sezone
+
+  // ID-evi liga u API-Sports. PROVERI sa /leagues?search=... ; ako je null,
+  // adapter ga sam pronađe po imenu i keširaju u localStorage.
+  leagueIds:    { euroleague: 120, acb: 117, aba: null },
+  leagueSearch: { euroleague: "Euroleague", acb: "ACB", aba: "ABA League" },
+  leagueMatch:  { euroleague: /^euroleague$/i, acb: /^(liga )?acb$/i, aba: /aba/i },
+
+  withBox: true,              // povuci boxscore po igraču (1 poziv po utakmici!)
+  maxBoxPerRefresh: 10,       // limit novih boxscore poziva po osvežavanju
+  includeLive: false,         // true = utakmice u toku idu u D.games (kvari model)
+  minIntervalMs: 5 * 60 * 1000,   // ne zovi /games češće od ovoga (kvota API-ja)
+  tz: "Europe/Belgrade",
+
+  odds: {
+    apiKey: "",
+    base: "https://api.the-odds-api.com/v4",
+    regions: "eu",
+    // ako ključ nije poznat, adapter ga traži preko /sports (besplatan poziv)
+    sportKeys: { euroleague: "basketball_euroleague", acb: null, aba: null },
+    sportMatch: { euroleague: /euroleague/i, acb: /acb|spain/i, aba: /aba|adriatic/i },
+    minIntervalMs: 60 * 60 * 1000,  // 3 market-a = 3 kredita po pozivu!
+  },
+};
+
+// Dodatni aliasi da API nazivi pogode tvoje kodove (PRIOR, NAME_OVR koriste kodove)
+const ALIASES = {
+  MIL: ["armani", "milan"], MUN: ["bayern"], IST: ["efes"], ULK: ["fenerbahce"],
+  BES: ["besiktas"], ZAL: ["zalgiris"], RED: ["crvena", "red star"],
+  ASV: ["asvel", "villeurbanne"], TEL: ["maccabi"], PAM: ["valencia"],
+};
+
+// ----------------------------- POMOĆNE FUNKCIJE -----------------------------
+const LS = {
+  get(k) { try { return JSON.parse(localStorage.getItem(k)); } catch (e) { return null; } },
+  set(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch (e) {} },
+};
+CFG.apiKey = LS.get("apib:key") || CFG.apiKey;
+CFG.odds.apiKey = LS.get("apib:okey") || CFG.odds.apiKey;
+const norm = s => String(s || "").normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().trim();
+const n0 = v => (v == null || v === "" || isNaN(+v)) ? 0 : +v;
+const parseMin = m => {
+  if (m == null || m === "") return 0;
+  if (typeof m === "number") return m;
+  const [a, b] = String(m).split(":");
+  return n0(a) + n0(b) / 60;
+};
+const localDT = ts => new Date(ts * 1000)
+  .toLocaleString("sv-SE", { timeZone: CFG.tz }).replace(" ", "T").slice(0, 16); // "2026-10-05T19:30"
+
+async function api(path, params = {}) {
+  if (!CFG.apiKey) throw new Error("CFG.apiKey nije podešen");
+  const u = new URL(CFG.baseUrl + path);
+  Object.entries(params).forEach(([k, v]) => u.searchParams.set(k, v));
+  const r = await fetch(u, { headers: { "x-apisports-key": CFG.apiKey } });
+  if (!r.ok) throw new Error(path + " → HTTP " + r.status);
+  const j = await r.json();
+  const e = j.errors;                       // [] kad nema greške, {} sa porukama kad ima
+  if (e && (Array.isArray(e) ? e.length : Object.keys(e).length))
+    throw new Error(path + ": " + JSON.stringify(e));
+  return j.response || [];
+}
+
+async function leagueId(lg) {
+  if (CFG.leagueIds[lg]) return CFG.leagueIds[lg];
+  const ck = "apib:lid:" + lg, c = LS.get(ck);
+  if (c) return c;
+  const res = await api("/leagues", { search: CFG.leagueSearch[lg] });
+  const hit = res.find(x => CFG.leagueMatch[lg].test(x.name));
+  if (!hit) throw new Error("Liga '" + lg + "' nije pronađena u API-ju");
+  LS.set(ck, hit.id);
+  return hit.id;
+}
+
+// ----------------------------- KODOVI TIMOVA --------------------------------
+// API daje numerički id i pun naziv; aplikacija koristi 3-slovni kod (ULK, RED...)
+function makeCoder(teams) {
+  const byId = new Map(), used = new Set();
+  const cands = code => [NAME_OVR[code], ...(ALIASES[code] || [])].filter(Boolean).map(norm);
+  const known = Object.keys(NAME_OVR);
+  teams.slice().sort((a, b) => a.id - b.id).forEach(t => {
+    const nn = norm(t.name);
+    let code = known.find(c => !used.has(c) && cands(c).some(x => nn.includes(x)));
+    if (!code) {
+      const base = nn.replace(/[^a-z0-9]/g, "").slice(0, 3).toUpperCase().padEnd(3, "X");
+      code = base;
+      for (let i = 1; used.has(code) || known.includes(code); i++) code = base.slice(0, 2) + i;
+    }
+    used.add(code);
+    byId.set(t.id, code);
+  });
+  return id => byId.get(id);
+}
+
+// ----------------------------- BOXSCORE -------------------------------------
+const SUMK = ["pts", "fg2m", "fg2a", "fg3m", "fg3a", "ftm", "fta", "or", "dr", "tr", "ast", "stl", "tov", "blk", "pf", "pir"];
+
+// Red igrača u formatu koji aplikacija očekuje:
+// [id, ime, broj, starter, min, pts, 2PM, 2PA, 3PM, 3PA, FTM, FTA, OR, DR, TR, AST, STL, TOV, BLK, PF, PIR, +/-]
+// TODO: proveri nazive polja u odgovoru /games/statistics/players za svoj plan.
+const pk = (o, ...ns) => { for (const n of ns) if (o && o[n] != null) return o[n]; return null; };
+function mapPlayer(e) {
+  const fg = e.field_goals || {}, tp = e.threepoint_goals || e.three_points || {}, ft = e.freethrows_goals || e.free_throws || {}, rb = e.rebounds || {};
+  const fgm = n0(pk(fg, "total", "made")), fga = n0(pk(fg, "attempts", "attempted")), m3 = n0(pk(tp, "total", "made")), a3 = n0(pk(tp, "attempts", "attempted"));
+  const ftm = n0(pk(ft, "total", "made")), fta = n0(pk(ft, "attempts", "attempted"));
+  const or = n0(pk(rb, "offence", "offensive", "offense")), dr = n0(pk(rb, "defense", "defensive", "defence")), tr = n0(pk(rb, "total")) || or + dr;
+  const pts = n0(e.points), ast = n0(e.assists), stl = n0(e.steals), blk = n0(e.blocks);
+  const tov = n0(pk(e, "turnovers")), pf = n0(pk(e, "fouls", "personal_fouls"));
+  const pir = pts + tr + ast + stl + blk - (fga - fgm) - (fta - ftm) - tov - pf;   // PIR bez faulova protiv/blokova protiv
+  const pl = e.player || {};
+  return [
+    pl.id, pl.name, pk(pl, "number") ?? "", (e.type === "starters" || e.starter) ? 1 : 0,
+    parseMin(e.minutes), pts, fgm - m3, fga - a3, m3, a3, ftm, fta,
+    or, dr, tr, ast, stl, tov, blk, pf, pir, pk(e, "plus_minus") ?? "",
+  ];
+}
+function mapSide(entries) {
+  const p = entries.map(mapPlayer);
+  const IDX = { pts: 5, fg2m: 6, fg2a: 7, fg3m: 8, fg3a: 9, ftm: 10, fta: 11, or: 12, dr: 13, tr: 14, ast: 15, stl: 16, tov: 17, blk: 18, pf: 19, pir: 20 };
+  const tot = {};
+  SUMK.forEach(k => tot[k] = p.reduce((s, r) => s + n0(r[IDX[k]]), 0));
+  return { coach: "", p, tot };
+}
+let boxBroken = false;
+async function getBox(g, budget) {
+  const ck = "apib:box:" + g.id, c = LS.get(ck);
+  if (c) return c;
+  if (boxBroken || budget.left <= 0) return null;
+  budget.left--;
+  try {
+    const rows = await api("/games/statistics/players", { id: g.id });
+    const H = rows.filter(r => r.team && r.team.id === g.teams.home.id);
+    const A = rows.filter(r => r.team && r.team.id === g.teams.away.id);
+    if (!H.length || !A.length) return null;
+    const box = { h: mapSide(H), a: mapSide(A) };
+    LS.set(ck, box);                        // završena utakmica se više ne menja
+    return box;
+  } catch (e) {
+    console.warn("[API] boxscore nedostupan:", e.message);
+    boxBroken = true;                       // ne troši kvotu ako endpoint ne radi
+    return null;
+  }
+}
+
+// ----------------------------- GLAVNO MAPIRANJE -----------------------------
+const FIN = new Set(["FT", "AOT"]);
+const LIVE = new Set(["Q1", "Q2", "Q3", "Q4", "OT", "BT", "HT"]);
+
+async function buildSite(lg) {
+  const lid = await leagueId(lg);
+  const raw = (await api("/games", { league: lid, season: CFG.season }))
+    .filter(g => g.teams && g.teams.home && g.teams.away && g.teams.home.id && g.teams.away.id)
+    .sort((a, b) => a.timestamp - b.timestamp);
+
+  const teamMap = new Map();
+  raw.forEach(g => [g.teams.home, g.teams.away].forEach(t => teamMap.set(t.id, t)));
+  const code = makeCoder([...teamMap.values()]);
+
+  // clubs: { KOD: {name, short, crest} }
+  const clubs = {};
+  teamMap.forEach(t => { clubs[code(t.id)] = { name: t.name, short: t.name, crest: t.logo || "" }; });
+
+  // kolo: iz API polja "week" ako ima broj, inače redni broj utakmice tima
+  const cnt = {};
+  const roundOf = (g, h, a) => {
+    const w = parseInt(String(g.week ?? "").replace(/\D/g, ""), 10);
+    const r = w > 0 ? w : Math.max(cnt[h] || 0, cnt[a] || 0) + 1;
+    cnt[h] = cnt[a] = r;
+    return r;
+  };
+
+  const games = [], fixtures = [], budget = { left: CFG.maxBoxPerRefresh };
+  for (const g of raw) {
+    const h = code(g.teams.home.id), a = code(g.teams.away.id);
+    const round = roundOf(g, h, a), st = g.status && g.status.short;
+    const hs = g.scores.home.total, as = g.scores.away.total;
+
+    if (FIN.has(st) && hs != null && as != null) {
+      const q = g.scores.home.quarter_1 != null
+        ? { h: qScores(g.scores.home), a: qScores(g.scores.away) } : undefined;
+      const game = { n: g.id, round, dt: localDT(g.timestamp), h, a, hs: +hs, as: +as, q };
+      if (CFG.withBox) { const b = await getBox(g, budget); if (b) game.box = b; }
+      games.push(game);
+    } else if (LIVE.has(st) && CFG.includeLive && hs != null && as != null) {
+      games.push({ n: g.id, round, dt: localDT(g.timestamp), h, a, hs: +hs, as: +as, live: true });
+    } else if (st !== "CANC" && st !== "PST") {
+      fixtures.push({ n: g.id, round, h, a, utc: new Date(g.timestamp * 1000).toISOString() });
+    }
+  }
+
+  // rosters: izvedeni iz boxscore-a (/players endpoint nije obavezan)
+  const rosters = {};
+  games.forEach(g => g.box && ["h", "a"].forEach(sd => {
+    const t = g[sd], R = rosters[t] || (rosters[t] = { players: [], assistants: [] });
+    g.box[sd].p.forEach(p => {
+      const ex = R.players.find(x => x.id == p[0]);
+      if (ex) ex.no = p[2] || ex.no;
+      else R.players.push({ id: p[0], name: p[1], no: p[2], pos: "" });
+    });
+  }));
+
+  return { updated: new Date().toISOString(), clubs, games, fixtures, rosters };
+}
+function qScores(s) {
+  const a = [s.quarter_1, s.quarter_2, s.quarter_3, s.quarter_4];
+  if (s.over_time != null) a.push(s.over_time);
+  return a.map(n0);
+}
+
+// ----------------------------- KVOTE (The Odds API) -------------------------
+async function oddsSportKey(lg) {
+  const O = CFG.odds;
+  if (O.sportKeys[lg]) return O.sportKeys[lg];
+  const ck = "apib:osk:" + lg, c = LS.get(ck);
+  if (c) return c;
+  const r = await fetch(`${O.base}/sports?apiKey=${encodeURIComponent(O.apiKey)}`);   // ne troši kredite
+  if (!r.ok) throw new Error("odds /sports → " + r.status);
+  const hit = (await r.json()).find(s => s.key.startsWith("basketball_") && O.sportMatch[lg].test(s.key + " " + s.title));
+  if (!hit) return null;
+  LS.set(ck, hit.key);
+  return hit.key;
+}
+
+// The Odds API -> { fetched, remaining, events:[{id,h,a,start,b:[{key,title,h2h,sp,tt}]}] }
+function mapOdds(events, remaining) {
+  return {
+    fetched: Math.floor(Date.now() / 1000),
+    remaining: remaining || "",
+    events: events.map(ev => ({
+      id: ev.id, h: ev.home_team, a: ev.away_team, start: ev.commence_time,
+      b: (ev.bookmakers || []).map(bk => {
+        const M = k => (bk.markets || []).find(m => m.key === k);
+        const price = (m, name) => { const o = m && m.outcomes.find(x => x.name === name); return o ? o.price : null; };
+        const h2h = M("h2h"), sp = M("spreads"), tt = M("totals");
+        const spH = sp && sp.outcomes.find(x => x.name === ev.home_team);
+        const ov = tt && tt.outcomes.find(x => x.name === "Over");
+        return {
+          key: bk.key, title: bk.title,
+          h2h: h2h ? [price(h2h, ev.home_team), price(h2h, ev.away_team)] : null,
+          sp: spH ? [spH.point, spH.price, price(sp, ev.away_team)] : null,   // [hendikep domaćina, kvota dom, kvota gost]
+          tt: ov ? [ov.point, ov.price, price(tt, "Under")] : null,           // [linija, over, under]
+        };
+      }),
+    })),
+  };
+}
+async function fetchOdds(lg) {
+  const O = CFG.odds, ck = "apib:odds:" + lg, c = LS.get(ck);
+  if (c && Date.now() - c.at < O.minIntervalMs) return c.data;
+  const key = await oddsSportKey(lg);
+  if (!key) return null;
+  const u = `${O.base}/sports/${key}/odds?regions=${O.regions}&markets=h2h,spreads,totals&oddsFormat=decimal&apiKey=${encodeURIComponent(O.apiKey)}`;
+  const r = await fetch(u);
+  if (!r.ok) throw new Error("odds → HTTP " + r.status);
+  const data = mapOdds(await r.json(), r.headers.get("x-requests-remaining"));
+  LS.set(ck, { at: Date.now(), data });
+  return data;
+}
+
+// ----------------------------- OSVEŽAVANJE SVIH TABOVA ----------------------
+// init() ponovo računa statistiku i iscrtava Tabelu, Utakmice, Timove, Rejting,
+// Bankroll, Analizu meča i Screener. show() zatim osvežava i tabove koji se
+// iscrtavaju tek na otvaranje (Kvote, Omiljeni...).
+function refreshActiveTab() {
+  const cur = document.querySelector('#tabs button[aria-selected="true"]');
+  if (cur && D) { const y = window.scrollY; show(cur.dataset.t); window.scrollTo(0, y); }
+}
+function refreshAllTabs(first) {
+  init(!!first);
+  refreshActiveTab();
+}
+
+// ----------------------------- UKLAPANJE U load() / loadOdds() --------------
+const _load = window.load, _loadOdds = window.loadOdds;
+const sig = d => d.games.length + "|" + d.fixtures.length + "|" + d.games.reduce((s, g) => s + g.hs * 3 + g.as, 0)
+  + "|" + d.games.filter(g => g.box).length;
+
+window.load = async function (first) {
+  if (!CFG.apiKey) return _load(first);
+  try {
+    const ck = "apib:site:" + LG, cached = LS.get(ck);
+    let d;
+    if (!first && cached && Date.now() - cached.at < CFG.minIntervalMs) d = cached.data;
+    else { d = await buildSite(LG); LS.set(ck, { at: Date.now(), data: d }); }
+
+    let inj = INJ;   // povrede/analitika i dalje iz GitHub JSON-a (opciono)
+    try { inj = await getJSON(lp("data/injuries.json")); } catch (e) {}
+    try { AN = await getJSON(lp("data/analytics.json")); } catch (e) {}
+    $("err").hidden = true; INJ = inj;
+
+    const changed = !D || sig(d) !== D._sig;
+    d._sig = sig(d);
+    if (D && !changed) d.updated = D.updated;
+    D = d; XLD[LG] = d; XV++;
+    if (first || changed) refreshAllTabs(first);
+
+    $("stamp").innerHTML = `<span class="live"></span>${D.games.length} utakmica (API), podaci iz `
+      + esc(new Date(D.updated).toLocaleString("sr-Latn", { day: "2-digit", month: "2-digit", hour: "2-digit", minute: "2-digit" })) + ".";
+  } catch (e) {
+    console.warn("[API] fallback na GitHub JSON:", e.message);
+    return _load(first);
+  }
+};
+
+window.loadOdds = async function () {
+  if (!CFG.odds.apiKey) return _loadOdds();
+  try {
+    const o = await fetchOdds(LG);
+    if (!o) return _loadOdds();
+    OD = o;
+    if (D) { calc(); refreshActiveTab(); }
+  } catch (e) {
+    console.warn("[API] kvote fallback:", e.message);
+    return _loadOdds();
+  }
+};
+
+// Dugme "API" (dole levo): ključevi se unose jednom i pamte u pregledaču
+if (typeof document !== "undefined" && document.body) {
+  const b = document.createElement("button");
+  b.type = "button"; b.textContent = "API" + (CFG.apiKey ? " ✓" : "");
+  b.style.cssText = "position:fixed;left:8px;bottom:8px;z-index:50;padding:6px 10px;border-radius:8px;border:1px solid var(--bd);background:var(--card);color:var(--tx);font:600 .85rem Barlow,sans-serif;cursor:pointer";
+  b.onclick = () => {
+    const k = prompt("API-Sports Basketball ključ (prazno = obriši):", CFG.apiKey || "");
+    if (k === null) return;
+    const o = prompt("The Odds API ključ (opciono, prazno = obriši):", CFG.odds.apiKey || "");
+    LS.set("apib:key", k.trim()); LS.set("apib:okey", (o || "").trim());
+    Object.keys(localStorage).filter(x => x.startsWith("apib:site") || x.startsWith("apib:odds")).forEach(x => localStorage.removeItem(x));
+    location.reload();
+  };
+  document.body.appendChild(b);
+}
+
+// Za ručno testiranje iz konzole: BasketAPI.buildSite("acb").then(console.log)
+window.BasketAPI = { CFG, buildSite, mapOdds, fetchOdds, refreshAllTabs };
+})();
+
+// ===== KRAJ API ADAPTERA =====
 setInterval(()=>{try{const n={};OD&&OD.events.forEach(e=>e.b.forEach(b=>{if(b.h2h){n[k_eid(e)+b.key+0]=b.h2h[0];n[k_eid(e)+b.key+1]=b.h2h[1]}}));k_PV=n}catch(e){}
  loadOdds().then(()=>{try{screen();dash();tick();xhist()}catch(e){}if(!$("t9").hidden)k_cards($("kv"),0);if(!$("t10").hidden)k_cards($("fv"),1)})},3e5);
 let _n=0;const _iv=setInterval(()=>{if((D&&(OD||_n>8))||++_n>30){clearInterval(_iv);try{screen()}catch(e){}dash();tick();xhist();xapply();{const q=new URLSearchParams(location.search);if(MET.some(x=>x[0]==q.get("stat")))PMK=q.get("stat");show(q.get("tab")||11)}}},500);
