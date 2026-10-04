@@ -185,6 +185,11 @@ input::placeholder{color:var(--mu);opacity:1}
 #more>summary h2::after{content:" ▾";color:var(--mu)}
 #more[open]>summary h2::after{content:" ▴"}
 #more>.card,#more>details.card{margin-top:12px}
+#md table{min-width:0}
+#t5 table{min-width:0}#t5 .scroll{overflow-x:visible}#t5 .chips,#t5 .mts{flex-wrap:wrap;overflow:visible}
+#t5 .card:has(#ppd),#t5 .card:has(#dvp),#t5 .card:has(#psc),#t5 #zl,#t5 #crt,#t5 #ptc{grid-column:1/-1}
+#t5 .pl2>div:nth-child(2)>.card,#t5 #pex>.card{order:5!important}
+#t5 .card:has(#pph){order:1!important}#t5 #pcc.card{order:2!important}#t5 #padv.card{order:3!important}#t5 #crt.card{order:4!important}
 </style></head><body><main>
 <h1>Euroleague Value Analyzer</h1>
 <p class="sub">Sezona 2026/27. Podaci se čitaju uživo iz tvog GitHub repoa. <span id="stamp"></span> <button class="btn sm" id="refresh" type="button">Osveži</button></p>
@@ -246,8 +251,9 @@ input::placeholder{color:var(--mu);opacity:1}
   </div>
   <div class="grid" style="margin-top:12px" id="kpi"></div>
  </div>
- <details class="card" open><summary><h2 style="display:inline">Kvote i EV</h2></summary>
-  <div class="grid">
+ <details class="card" open><summary><h2 style="display:inline">Kvote i EV (prave kvote kladionica)</h2></summary>
+  <p class="mu" style="margin:8px 0">Koriste se prave kvote kladionica iz kartice "Kvote kladionica" ispod. Klikni "Primeni" kod kladionice i tabela pokazuje EV za nju. Ništa se ne unosi ručno.</p>
+  <div class="grid" hidden>
    <div><label for="o1">Pobeda domaćin</label><input id="o1" type="number" step="0.01" min="1.01" value="1.90"></div>
    <div><label for="o2">Pobeda gost</label><input id="o2" type="number" step="0.01" min="1.01" value="1.90"></div>
    <div><label for="ln">Hendikep domaćina (npr. -4.5)</label><input id="ln" type="number" step="0.5" value="-4.5"></div>
@@ -267,7 +273,7 @@ input::placeholder{color:var(--mu);opacity:1}
  <div class="card"><h2>Stil i tempo</h2><div class="grid"><div><label for="pth">Granica sporog tempa (poseda)</label><input id="pth" type="number" value="68"></div></div><div class="scroll" style="margin-top:10px"><table id="sty"></table></div><div id="sty2"></div></div>
  <div class="card"><h2>1. i 2. poluvreme</h2><div class="scroll"><table id="hh"></table></div><div class="note">1H -3.5 prolazi = udeo utakmica u kojima je tim posle 2. četvrtine vodio sa 4 ili više. Poluvremena ne uključuju produžetke.</div></div>
  <div class="card"><h2>Uticaj sudija</h2><div class="grid"><div><label for="rf1">Sudija 1</label><select id="rf1"></select></div><div><label for="rf2">Sudija 2</label><select id="rf2"></select></div><div><label for="rf3">Sudija 3</label><select id="rf3"></select></div></div><div id="rfi" style="margin-top:10px"></div></div>
- <details class="card" open><summary><h2 style="display:inline">Monte Carlo, HCA i zamor</h2></summary><div class="grid" style="margin:10px 0"><label style="display:flex;gap:8px;align-items:center"><input type="checkbox" id="dh" checked style="width:auto">Dinamički HCA po timu</label><label style="display:flex;gap:8px;align-items:center"><input type="checkbox" id="fat" checked style="width:auto">Primeni zamor i putovanje</label></div><div id="mco"></div></details>
+ <details class="card" open><summary><h2 style="display:inline">Monte Carlo, HCA i zamor</h2></summary><div class="grid" style="margin:10px 0"><label style="display:flex;gap:8px;align-items:center"><input type="checkbox" id="dh" checked style="width:auto">Dinamički HCA po timu</label><label style="display:flex;gap:8px;align-items:center"><input type="checkbox" id="fat" checked style="width:auto">Primeni zamor i putovanje</label><label style="display:flex;gap:8px;align-items:center"><input type="checkbox" id="frm" checked style="width:auto">Forma iz zadnjih 5 utakmica</label></div><div id="mco"></div></details>
  </details>
 </section>
 
@@ -1270,6 +1276,47 @@ load(true);
 document.addEventListener("keydown",e=>{if(e.key!="Escape")return;const g=$("gs"),r=$("gsr");if(g&&(g.value||(r&&!r.hidden))){g.value="";if(r)r.hidden=true;g.blur()}});
 document.addEventListener("click",e=>{const r=$("gsr");if(r&&!r.hidden&&!e.target.closest("#gs,#gsr"))r.hidden=true});
 $("plq").onclick=e=>{const b=e.target.closest("[data-pl]");if(!b)return;const v=Math.round(((+$("pln").value||0)+(+b.dataset.pl))*2)/2;$("pln").value=v;chart()};
+
+// ================= POPRAVKE: slajder linije (model + prave kvote) i forma =================
+const k_prev=k_modal;let k_INF=null,k_VK=null,k_V=0;
+function k_p(r,key,l){const A=key=="sp"?r.mg:r.tt,N=A.length;let c=0;for(let i=0;i<N;i++){const d=key=="sp"?A[i]+l:A[i]-l;c+=d>0?1:d==0?.5:0}return c/N}
+k_modal=function(i){
+ if(k_MK=="h2h")return k_prev(i);
+ const e=OD.events[i],md=$("md"),key=k_MK,bs=e.b.filter(b=>b[key]&&b[key][0]!=null&&(!k_CH.size||k_CH.has(b.title)));
+ const L=[...new Set(bs.map(b=>b[key][0]))].sort((x,y)=>x-y);
+ const head=`<div class="head"><h2 style="margin:0">${esc(e.h)} - ${esc(e.a)}</h2><button class="btn sm" data-x="1" style="margin-left:auto" type="button">Zatvori</button></div>${k_chips()}`;
+ let r=null;try{R=ratings();r=modelFor(codeOf(e.h),codeOf(e.a),fxDt(codeOf(e.h),codeOf(e.a)))}catch(x){}
+ md.style.display="block";
+ if(!r){md.innerHTML=`<div class="card">${head}<div class="note warn">Model ne prepoznaje jedan od timova (${esc(e.h)} / ${esc(e.a)}), pa ne može da računa šansu za proizvoljnu liniju.</div></div>`;md.dataset.i=i;return}
+ let tm=0;for(let j=0;j<r.tt.length;j++)tm+=r.tt[j];tm=Math.round(tm/r.tt.length*2)/2;
+ const pmOf=l=>{const q=bs.filter(b=>b[key][0]==l).map(b=>k_dv(b[key][1],b[key][2])).filter(x=>x!=null);return q.length?avg(q):.5};
+ const start=L.length?L.reduce((b,x)=>Math.abs(pmOf(x)-.5)<Math.abs(pmOf(b)-.5)?x:b,L[0]):(key=="sp"?0:tm);
+ if(md.dataset.i!=i||k_VK!=key)k_V=start;k_VK=key;
+ const lo=key=="sp"?-25:Math.floor(Math.min(tm,...L)-25),hi=key=="sp"?25:Math.ceil(Math.max(tm,...L)+25);k_V=Math.min(hi,Math.max(lo,k_V));
+ k_INF={e,key,r,bs,L,pmOf};
+ md.innerHTML=`<div class="card">${head}<label for="kml">Linija: <b id="kll"></b></label><input id="kml" type="range" min="${lo}" max="${hi}" step="0.5" value="${k_V}"><div class="mu" style="font-size:.8rem">Prave linije kladionica (klik za skok):</div><div class="chips" style="margin-top:6px">${L.map(x=>`<button type="button" class="chip" data-ml="${x}">${key=="sp"?k_sg(x):x}</button>`).join("")||'<span class="mu">nema</span>'}</div><div id="kmr"></div></div>`;
+ md.dataset.i=i;k_mr()};
+k_mr=function(){
+ const I=k_INF;if(!I||!$("kml"))return;const{e,key,r,bs,L,pmOf}=I,l=+$("kml").value;k_V=l;
+ const sp=key=="sp",nA=sp?e.h:"Više",nB=sp?e.a:"Manje",p=Math.min(.999,Math.max(.001,k_p(r,key,l))),S2=bs.filter(b=>b[key][0]==l);
+ $("kll").textContent=sp?e.h+" "+k_sg(l):"ukupno "+l+" poena";
+ let h=`<div class="grid" style="margin-top:10px"><div class="stat"><span>Šansa modela: ${esc(nA)}</span><div class="num">${f(p*100)}%</div><span>fer kvota ${f(1/p,2)}</span></div><div class="stat"><span>Šansa modela: ${esc(nB)}</span><div class="num">${f((1-p)*100)}%</div><span>fer kvota ${f(1/(1-p),2)}</span></div></div>`;
+ if(S2.length){
+  const pa=.3*p+.7*pmOf(l),bo=Math.max(...S2.map(b=>b[key][1])),bu=Math.max(...S2.map(b=>b[key][2])),B=bank(),
+  side=(n,o,pr)=>{const ev=pr*o-1,ok=ev>0&&ev<=.2;return`<div class="stat"><span>${esc(n)} @ ${f(o,2)} (najbolja kvota)</span><div class="num ${ev>0?"ok":"no"}">${ev>0?"+":""}${f(ev*100)}% EV</div><span>procena ${f(pr*100)}%</span><br><span class="${ok?"ok":"mu"}">${ok?"Predlog uloga: "+f(stake(pr,o,B),2):ev>.2?"EV preko 20% je skoro sigurno greška modela":"Bez prednosti"}</span></div>`};
+  h+=`<div class="scroll" style="margin-top:10px"><table><tr><th>Kladionica</th><th class="r">${esc(nA)}</th><th class="r">${esc(nB)}</th><th class="r">Marža</th></tr>${[...S2].sort((a,b)=>b[key][1]-a[key][1]).map(b=>`<tr><td>${esc(b.title)}</td><td class="r${b[key][1]==bo?" ok":""}">${f(b[key][1],2)}</td><td class="r${b[key][2]==bu?" ok":""}">${f(b[key][2],2)}</td><td class="r mu">${f((1/b[key][1]+1/b[key][2]-1)*100,1)}%</td></tr>`).join("")}</table></div><div class="grid" style="margin-top:10px">${side(nA,bo,pa)}${side(nB,bu,1-pa)}</div><div class="plain">EV = model (30%) usklađen sa tržišnim konsenzusom (70%) na ovoj liniji, prema najboljoj pravoj kvoti.</div>`}
+ else{const nr=L.length?L.reduce((b,x)=>Math.abs(x-l)<Math.abs(b-l)?x:b,L[0]):null;
+  h+=`<div class="plain"><b>Nijedna kladionica ne nudi ovu liniju</b>, pa nema prave kvote ni EV-a. Fer kvota je samo procena modela, ne kvota kladionice. ${nr!=null?`Najbliža prava linija: <button class="btn sm" data-ml="${nr}" type="button">${sp?k_sg(nr):nr}</button>`:""}</div>`}
+ h+=`<div class="note">Visoka šansa nije vrednost: velike linije (npr. -20 ili +20) imaju veliku šansu, ali je kvota blizu 1.00 pa je EV nula ili negativan. Pogledaj fer kvotu naspram prave.</div>`;
+ $("kmr").innerHTML=h};
+function formAdj(t){const g=D.games.filter(x=>x.dt&&x.hs!=null&&x.as!=null&&(x.h==t||x.a==t));if(g.length<6)return 0;const all=avg(g.map(x=>x.h==t?x.hs-x.as:x.as-x.hs)),f5=avg(formOf(t,5));return Math.max(-2,Math.min(2,.2*(f5-all)))}
+modelFor=function(h,a,dt){
+ const cH=$("dh").checked,cF=$("fat").checked,cM=$("frm")&&$("frm").checked,hc=cH?hcaT(h):S.hca;let adj=0;
+ if(cF){try{adj=fatigue(h,dt,h).adj-fatigue(a,dt,h).adj}catch(e){}}
+ if(cM){try{adj+=formAdj(h)-formAdj(a)}catch(e){}}
+ const m=R[h].r-R[a].r+hc+adj,oh=ownStats(h),oa=ownStats(a),dH=oppStats(h),dA=oppStats(a),pace=oh&&oa?(oh.PACE+oa.PACE)/2:S.pace,T=pace*((oh&&dA?oh.ORTG+dA.ORTG:216)+(oa&&dH?oa.ORTG+dH.ORTG:216))/200;
+ return sim((T+m)/2/pace,(T-m)/2/pace,pace)};
+$("frm").onchange=calc;
 </script></main><script>
 // Objašnjenja (.note i opisi ispod naslova) postaju krugić (i) na kraju naslova; klik otvara iskačući opis.
 (function(){
