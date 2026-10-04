@@ -25,10 +25,11 @@ jobs:
       - run: python build_site.py
       - run: python fetch_shots.py
         continue-on-error: true
+      - run: python fetch_pbp.py
+        continue-on-error: true
       - name: Commit data
         run: |
           git config user.name "data-bot"
           git config user.email "data-bot@users.noreply.github.com"
           git add -A data
           git diff --cached --quiet || (git commit -m "Update data" && git pull --rebase && git push)
-          
