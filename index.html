@@ -453,7 +453,7 @@ function roundBlock(r,title){
   else{const x=i.x,p=R[x.h]&&R[x.a]?winP(x.h,x.a):null;h+=`<div class="gm" data-fx="${esc(x.h+"|"+x.a)}" tabindex="0"><span class="gd">${esc(i.tm)}${p!=null?" · "+f(p*100,0)+"%":""}</span><span class="gt r">${esc(nm(x.h))}${badge(x.h)}</span><b class="gs" style="font-size:1rem">Analiza ▶</b><span class="gt">${badge(x.a)}${esc(nm(x.a))}</span></div>`}});
  return h+"</div>"}
 function gameDetail(g){
- const T=[["box","Boxscore"],["q","Četvrtine"],["an","Analitika"]];
+ const T=[["box","Boxscore"],["q","Četvrtine"],["an","Analitika"],["sh","Mapa šuta"]];
  let h=`<div class="card"><button class="btn sm" data-back="1" type="button">← Sve utakmice</button>
  <div class="gm hd" style="margin-top:8px"><span class="gd">Kolo ${g.round}<br>${fd(g.dt)}</span><span class="gt r">${esc(nm(g.h))}${badge(g.h)}</span><b class="gs" style="font-size:2.2rem">${g.hs} : ${g.as}</b><span class="gt">${badge(g.a)}${esc(nm(g.a))}</span></div>
  <div class="stb">${T.map(t=>`<button type="button" data-gt="${t[0]}" aria-selected="${t[0]==GT}">${t[1]}</button>`).join("")}</div>`;
@@ -462,8 +462,21 @@ function gameDetail(g){
  if(GT=="an"){if(!g.box)h+='<span class="mu">Boxscore još nije preuzet.</span>';else{
   const A=g.box.h.tot,B=g.box.a.tot,mv=t=>({PTS:t.pts,"2P%":t.fg2m/t.fg2a*100,"3P%":t.fg3m/t.fg3a*100,"FT%":t.ftm/t.fta*100,REB:t.tr,AST:t.ast,STL:t.stl,TOV:t.tov,PIR:t.pir,ORTG:t.pts/poss(t)*100}),a=mv(A),b=mv(B);
   h+=Object.keys(a).map(k=>{const pa=a[k]/(a[k]+b[k])*100,fx=k.includes("%")||k=="ORTG"?1:0;return`<div class="cmp"><b>${f(a[k],fx)}</b><div><span>${k}</span><div class="cb"><i style="width:${pa}%"></i><i style="width:${100-pa}%"></i></div></div><b>${f(b[k],fx)}</b></div>`}).join("")}}
+ if(GT=="sh")h+=gameShots(g);
  $("gl").innerHTML=h+"</div>"}
-$("gl").onclick=e=>{if(e.target.closest("[data-back]")){GV=null;gamesTab();return}const s=e.target.closest("[data-gt]");if(s){GT=s.dataset.gt;gamesTab();return}const r=e.target.closest("[data-g]");if(r){GV=+r.dataset.g;GT="box";gamesTab();window.scrollTo(0,0)}};
+let GSS="h";
+function gameShots(g){
+ const hd=`<div class="stb">${[["h",nm(g.h)],["a",nm(g.a)]].map(x=>`<button type="button" data-gs="${x[0]}" aria-selected="${GSS==x[0]}">${esc(x[1])}</button>`).join("")}</div>`;
+ if(!SHL)return hd+'<p class="mu">Učitavam šuteve...</p>';
+ const rows=SH.get(g.n);
+ if(!rows||!rows.length)return hd+'<div class="note warn">Nema podataka o šutevima za ovu utakmicu (data/'+(LG=="euroleague"?"":LG+"/")+'shots_'+g.n+'.json).</div>';
+ const LGA=zacc();D.games.forEach(q=>(SH.get(q.n)||[]).forEach(r=>{if(r.z){LGA[r.z].a++;if(r.m)LGA[r.z].m++}}));
+ const tc=GSS=="h"?g.h:g.a,A=zacc();rows.forEach(r=>{if(r.z&&r.t==tc){A[r.z].a++;if(r.m)A[r.z].m++}});
+ const hue=v=>`hsl(${Math.max(0,Math.min(120,v))} 62% 46%)`,tot=ZN.reduce((a,z)=>a+A[z].a,0);
+ const I=Object.fromEntries(ZN.map(z=>{const p=zfg(A[z]),lg=zfg(LGA[z]);return[z,p==null?{c:"#8a8f98",t:"0/0",w:1}:{c:hue(60+(p-lg)*4),t:A[z].m+"/"+A[z].a+" "+f(p,0)+"%",w:A[z].a<3}]}));
+ if(!tot)return hd+'<div class="note warn">Za ovaj tim nema šuteva sa koordinatama.</div>';
+ return hd+'<div class="crt">'+courtSvg(I)+'</div><div class="note">Pogođeno/pokušano i FG% po zonama u ovoj utakmici. Boja: bolje (zeleno) ili lošije (crveno) od proseka lige u toj zoni. Bledo = mali uzorak.</div>'}
+$("gl").onclick=e=>{const gs=e.target.closest("[data-gs]");if(gs){GSS=gs.dataset.gs;gamesTab();return}if(e.target.closest("[data-back]")){GV=null;gamesTab();return}const s=e.target.closest("[data-gt]");if(s){GT=s.dataset.gt;gamesTab();return}const r=e.target.closest("[data-g]");if(r){GV=+r.dataset.g;GT="box";gamesTab();window.scrollTo(0,0)}};
 $("gl").onkeydown=e=>{if(e.key=="Enter"){const r=e.target.closest("[data-g]");if(r){GV=+r.dataset.g;GT="box";gamesTab()}}};
 
 // ================= DETALJ TIMA =================
@@ -520,6 +533,19 @@ function fixList(){
  const done=new Set(D.games.map(g=>g.n)),left=(D.fixtures||[]).filter(x=>!done.has(x.n));
  if(!left.length)return[];
  const r=Math.min(...left.map(x=>x.round));return left.filter(x=>x.round==r)}
+// Sve utakmice tekućeg kola (odigrane + predstojeće). Tekuće kolo = kolo najbližeg neodigranog meča po vremenu
+// (a ne najmanje kolo, jer odložene utakmice iz starijih kola inače "otmu" listu).
+function curRound(){
+ const done=new Set(D.games.map(g=>g.n)),left=(D.fixtures||[]).filter(x=>!done.has(x.n)&&x.round);
+ if(left.length){const now=Date.now()-4*36e5,up=left.filter(x=>x.utc&&new Date(x.utc).getTime()>=now).sort((a,b)=>a.utc.localeCompare(b.utc));
+  return up.length?up[0].round:Math.min(...left.map(x=>x.round))}
+ const rs=D.games.map(g=>g.round).filter(Boolean);return rs.length?Math.max(...rs):null}
+function roundGames(){
+ if(!D)return[];const r=curRound();if(r==null)return[];
+ const done=new Set(D.games.map(g=>g.n)),seen=new Set(),out=[];
+ D.games.filter(g=>g.round==r).forEach(g=>{seen.add(g.n);out.push({n:g.n,h:g.h,a:g.a,played:true})});
+ (D.fixtures||[]).filter(x=>x.round==r&&!done.has(x.n)&&!seen.has(x.n)).forEach(x=>out.push({n:x.n,h:x.h,a:x.a,played:false}));
+ return out.filter(x=>TEAMS.includes(x.h)&&TEAMS.includes(x.a))}
 function calc(){
  if(!D)return;R=ratings();const h=$("h").value,a=$("a").value;if(h==a){$("res").innerHTML="<tr><td>Izaberi dva različita tima.</td></tr>";return}
  const m=R[h].r-R[a].r+S.hca+(+$("ah").value)-(+$("aa").value),p=phi(m/S.sig),ln=+$("ln").value,pc=phi((m+ln)/S.sig),B=bank();
@@ -630,7 +656,7 @@ async function ensureShots(){
  if(!todo.length){SHL=true;return}
  if(SHB)return;SHB=true;
  await Promise.all(todo.map(async g=>{try{SH.set(g.n,parseShots(await getJSON(lp("data/shots_"+g.n+".json"))))}catch(e){SHF.add(g.n)}}));
- SHB=false;SHL=true;courtRender();ptRender();tcourt();zoneLeaders()}
+ SHB=false;SHL=true;courtRender();ptRender();tcourt();zoneLeaders();if(GV!=null&&GT=="sh")gamesTab()}
 const zacc=()=>Object.fromEntries(ZN.map(z=>[z,{a:0,m:0,pts:0}]));
 const zfg=o=>o.a?o.m/o.a*100:null;
 function courtRender(){
@@ -715,7 +741,8 @@ function spk(v){if(v.length<2)return"";const mx=Math.max(...v),mn=Math.min(...v)
 function sideRender(){
  if(!D)return;const M=sideData(),q=SQ.trim().toLowerCase(),cur=$("ppl").value,ct=$("ptm").value,fn=mfn(PMK),fl=fixList(),rows=[];
  const add=(t,opp)=>Object.entries(M[t]||{}).forEach(([id,a])=>{if(q&&!a.n.toLowerCase().includes(q)&&!nm(t).toLowerCase().includes(q))return;rows.push({t,id,a,opp,v:a.v/a.gp})});
- if(fl.length)fl.forEach(x=>{add(x.h,x.a);add(x.a,x.h)});else TEAMS.forEach(t=>add(t,""));
+ const rg=roundGames();
+ if(rg.length)rg.forEach(x=>{add(x.h,x.a);add(x.a,x.h)});else TEAMS.forEach(t=>add(t,""));
  rows.sort((x,y)=>y.v-x.v);
  $("smt").innerHTML=MET.map(x=>`<button type="button" data-sm="${x[0]}" aria-selected="${x[0]==PMK}">${x[1]}</button>`).join("");
  $("sl").innerHTML=rows.length?rows.map(r=>{const pi=pinfo(r.t,r.id),l5=pgames(r.t,r.id).slice(-5).map(x=>fn(x.p));return`<div class="sp${r.t==ct&&r.id==cur?" on":""}" data-pk="${esc(r.t+"|"+r.id+"|"+r.opp)}" tabindex="0">${face(pi.photo,r.a.n)}<div class="spn"><b>${esc(r.a.n)}</b><span class="mu" style="font-size:.78rem">${esc(nm(r.t))}${r.opp?" · vs "+esc(nm(r.opp)):""}</span></div>${spk(l5)}<span class="num spv">${f(r.v)}</span></div>`}).join(""):'<div class="mu sps">Nema igrača.</div>'}
@@ -731,7 +758,7 @@ $("side").onkeydown=e=>{if(e.key=="Enter")e.target.click()};
 const tabs=[["Vesti",11],["Kvote",9],["Screener",7],["Surebet",8],["Omiljeni",10],["Analiza meča",0],["Utakmice",6],["Tabela",3],["Timovi",4],["Igrač",5],["Rejting",1],["Bankroll",2]];
 $("tabs").innerHTML=tabs.map((t,j)=>`<button role="tab" aria-selected="${j==0}" data-t="${t[1]}">${t[0]}</button>`).join("");
 function show(i){i=+i;try{history.replaceState(null,"","?tab="+i+(i==5?"&stat="+PMK:""))}catch(e){}document.querySelectorAll("#tabs button,#dw button[data-t]").forEach(b=>b.setAttribute("aria-selected",b.dataset.t==i));[0,1,2,3,4,5,6,7,8,9,10,11].forEach(k=>$("t"+k).hidden=k!=i);
- if(!D)return;if(i==1){ratingTab();refTab()}if(i==2)bk();if(i==4)teamView();if(i==5)chart();if(i==6)gamesTab();if(i==7||i==8)screen();if(i==9)k_cards($("kv"),0);if(i==10)k_cards($("fv"),1);if(i==5)setTimeout(zoneLeaders,400);document.body.classList.toggle("wide",i==5);window.scrollTo(0,0)}
+ if(!D)return;if(i==1){ratingTab();refTab()}if(i==2)bk();if(i==4)teamView();if(i==5)chart();if(i==6){gamesTab();ensureShots()}if(i==7||i==8)screen();if(i==9)k_cards($("kv"),0);if(i==10)k_cards($("fv"),1);if(i==5)setTimeout(zoneLeaders,400);document.body.classList.toggle("wide",i==5);window.scrollTo(0,0)}
 $("tabs").onclick=e=>{const i=e.target.dataset.t;if(i!=null)show(i)};
 document.body.insertAdjacentHTML("beforeend",'<button id="mnb" type="button" aria-label="Meni">▶</button><aside id="dw"><h3>Meni</h3>'+tabs.map(t=>`<button data-t="${t[1]}" type="button">${t[0]}</button>`).join("")+"</aside>");
 $("mnb").onclick=()=>{const o=$("dw").classList.toggle("open");$("mnb").classList.toggle("open",o);$("mnb").textContent=o?"◀":"▶"};document.addEventListener("click",e=>{if($("dw").classList.contains("open")&&!e.target.closest("#dw,#mnb")){$("dw").classList.remove("open");$("mnb").classList.remove("open");$("mnb").textContent="▶"}});
@@ -1806,3 +1833,4 @@ async function loadXL(force){let any=false;for(const lg of Object.keys(LEAGUES))
 lgPills();setTimeout(loadXL,2500);setInterval(()=>{XMISS.clear();loadXL(true)},REFRESH_MS*5);
 </script>
 </body></html>
+
