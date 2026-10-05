@@ -3,7 +3,9 @@ name: Update data
 on:
   push:
     paths:
-      - "fetch_lkl.py"
+      - "fetch_acb.py"
+      - "index.html"
+      - "fetch_lnb.py"
       - "requirements.txt"
       - ".github/workflows/update.yml"
   schedule:
@@ -31,7 +33,7 @@ jobs:
         with:
           path: ~/.cache/ms-playwright
           key: playwright-chromium-${{ runner.os }}-${{ hashFiles('requirements.txt') }}
-      - name: Install Chromium for official LKL protocols
+      - name: Install Chromium for ACB Live stats
         run: python -m playwright install chromium
       - run: python fetch_data.py
       - run: python build_site.py
@@ -46,9 +48,6 @@ jobs:
       - run: python fetch_aba.py
       - name: Scrape ACB calendar and boxscores
         run: python fetch_acb.py
-      - name: Scrape LKL calendar and player protocols
-        run: python fetch_lkl.py
-        continue-on-error: true
       - name: Commit data
         run: |
           git config user.name "data-bot"
