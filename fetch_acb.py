@@ -10,6 +10,7 @@ from pathlib import Path
 from urllib.parse import urljoin
 import requests
 from bs4 import BeautifulSoup
+from playwright.sync_api import sync_playwright
 
 CALENDAR = "https://acb.com/es/liga/calendario"
 LIVE = "https://live.acb.com"
