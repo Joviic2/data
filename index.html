@@ -192,6 +192,20 @@ input::placeholder{color:var(--mu);opacity:1}
 #t5 .card:has(#pph){order:1!important}#t5 #pcc.card{order:2!important}#t5 #padv.card{order:3!important}#t5 #crt.card{order:4!important}
 .vb2{display:inline-block;margin:4px 0 2px;padding:1px 9px;border-radius:99px;font:700 .75rem Barlow,sans-serif;font-style:normal}.vb2.up{background:#16a34a;color:#fff;box-shadow:0 0 10px #16a34a88}.vb2.dn{background:var(--in);color:var(--mu)}
 .ob{transition:transform .15s,box-shadow .15s}.ob:hover{transform:translateY(-2px);box-shadow:0 6px 18px #0006}
+
+/* popravka preklapanja kartica u tabu Igrač: tabele ostaju unutar kartice */
+#t5 .pl2>div:nth-child(2)>.card,#t5 #pex>.card{min-width:0;overflow-x:auto}
+#t5 .card table{min-width:0!important;width:100%}
+#t5 .card th,#t5 .card td{white-space:normal}
+#t5 #prr{grid-column:1/-1;order:1}
+/* preporuka */
+.rv{display:inline-block;padding:2px 14px;margin-left:10px;border-radius:99px;font:700 1rem "Barlow Condensed",sans-serif;letter-spacing:.05em;vertical-align:middle}
+.rv.go{background:var(--ok);color:#06210f}.rv.mid{background:#f5c542;color:#1a1204}.rv.bad{background:var(--no);color:#fff}
+.rcs{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:12px 0}
+.rcs .stat{padding:12px 14px}.rcs .num{font-size:1.5rem!important}
+.rwy{list-style:none;padding:0;margin:6px 0 12px;display:grid;grid-template-columns:1fr 1fr;gap:6px 18px}
+.rwy li{padding-left:24px;position:relative;font-size:.93rem}.rwy li:before{position:absolute;left:0;font-weight:700}
+.rwy .t:before{content:"✓";color:var(--ok)}.rwy .w:before{content:"!";color:#f5c542}.rwy .f:before{content:"✗";color:var(--no)}
 </style></head><body><main>
 <h1>Euroleague Value Analyzer</h1>
 <div class="mts" id="lgs" style="margin:8px 0"></div>
@@ -236,7 +250,7 @@ input::placeholder{color:var(--mu);opacity:1}
   <svg id="pch" viewBox="0 0 640 300" role="img" aria-label="Poslednje utakmice igrača"></svg>
   <div class="grid" id="pst" style="margin-top:12px"></div></div>
  <div class="card" id="pcc"><h2>Prop kartice tima</h2><p class="sub">Linija je sezonski prosek zaokružen na .5 (nemamo kladioničke linije), projekcija meša zadnjih 5 sa sezonom i koriguje za odbranu protivnika protiv pozicije. Klik na karticu otvara igrača.</p><div class="chips" id="pcf"></div><div class="pcs" id="pcs"></div></div>
- <div class="card" id="padv"></div><div class="card"><h2>Props model i vrednost</h2><div class="grid"><div><label for="pov">Kvota Over</label><input id="pov" type="number" step="0.01" value="1.85"></div><div><label for="pun">Kvota Under</label><input id="pun" type="number" step="0.01" value="1.85"></div></div><div id="ppo" style="margin-top:12px"></div><div style="margin-top:12px"><button class="btn sm" id="pshare" type="button">Podeli analizu (slika)</button></div></div>
+ <div class="card" id="prr"></div><div class="card" id="padv"></div><div class="card"><h2>Props model i vrednost</h2><div class="grid"><div><label for="pov">Kvota Over</label><input id="pov" type="number" step="0.01" value="1.85"></div><div><label for="pun">Kvota Under</label><input id="pun" type="number" step="0.01" value="1.85"></div></div><div id="ppo" style="margin-top:12px"></div><div style="margin-top:12px"><button class="btn sm" id="pshare" type="button">Podeli analizu (slika)</button></div></div>
  <div class="card"><h2>Vs pozicija</h2><div id="ppd"></div></div>
  <div class="card"><h2>DvP matrica (odbrana protiv pozicije)</h2><div id="dvp"></div></div>
  <div class="card"><h2>Korigovana projekcija kad saigrač ne igra</h2><label for="pout">Saigrač koji izostaje</label><select id="pout"></select><div id="psc" style="margin-top:12px"></div></div><div class="card" id="zl"></div><div id="pex"></div>
@@ -616,7 +630,7 @@ function propCard(G,L){
  <div class="mu" style="font-size:.85rem">Linija <b style="color:#f5c542">${f(L)}</b> · Projekcija <b>${f(proj)}</b> · ${cat?`<b class="${ed>0?"ok":"no"}">${cat} ${ed>0?"OVER":"UNDER"} EDGE (${sg(+f(proj-L))})</b>`:"<b>NEUTRALNO</b>"} · samo mečevi sa ${MINV()}+ min.</div></div>`}
 function chart(skip){
  if(!D)return;const t=$("ptm").value,id=$("ppl").value,G=id?pgames(t,id):[];
- if(!G.length){sideRender();$("pph").innerHTML='<span class="mu">Ovaj igrač još nema odigranu utakmicu sa boxscore podacima.</span>';$("pch").innerHTML="";$("pst").innerHTML="";$("pex").innerHTML="";$("padv").innerHTML="";return}
+ if(!G.length){sideRender();$("pph").innerHTML='<span class="mu">Ovaj igrač još nema odigranu utakmicu sa boxscore podacima.</span>';$("pch").innerHTML="";$("pst").innerHTML="";$("pex").innerHTML="";$("padv").innerHTML="";$("prr").innerHTML="";return}
  const L=+$("pln").value||0,pi=pinfo(t,id),W=640,H=300,pt=18,pb=34,fn=mfn(PMK),nmP=pi.name||$("ppl").selectedOptions[0].text;
  const d=G.map(x=>({v:fn(x.p),l:(x.hm?"":"@")+x.op})),vs=d.map(x=>x.v),n=vs.length,ov=vs.filter(v=>v>L).length,hr=ov/n*100,A=k=>f(avg(G.map(x=>mfn(k)(x.p))));
   const shoot=G.reduce((a,x)=>{a.m2+=x.p[6];a.a2+=x.p[7];a.m3+=x.p[8];a.a3+=x.p[9];a.mf+=x.p[6]+x.p[8];a.af+=x.p[7]+x.p[9];a.ftm+=x.p[10];a.fta+=x.p[11];return a},{m2:0,a2:0,m3:0,a3:0,mf:0,af:0,ftm:0,fta:0});
@@ -628,7 +642,7 @@ function chart(skip){
  const y=v=>pt+(hi-v)/(hi-lo)*(H-pt-pb),gap=(W-40)/n,bw=Math.min(46,gap-8);
  $("pch").innerHTML=d.map((x,i)=>{const cx=30+gap*i+gap/2,c=x.v>L?"var(--ok)":x.v<L?"var(--no)":"var(--mu)",a=y(0),b=y(x.v),top=Math.min(a,b);return`<rect x="${cx-bw/2}" y="${top}" width="${bw}" height="${Math.max(2,Math.abs(a-b))}" rx="4" fill="${c}"/><text x="${cx}" y="${top-5}" text-anchor="middle" font-size="14" font-weight="700" fill="var(--tx)">${x.v}</text><text x="${cx}" y="${H-12}" text-anchor="middle" font-size="11" fill="var(--mu)">${esc(x.l)}</text>`}).join("")+`<line x1="14" x2="${W-6}" y1="${y(L)}" y2="${y(L)}" stroke="#f5c400" stroke-width="3" stroke-dasharray="7 5"/><rect x="${W-62}" y="${y(L)-12}" width="56" height="22" rx="5" fill="#f5c400"/><text x="${W-34}" y="${y(L)+4}" text-anchor="middle" font-size="13" font-weight="700" fill="#1a1204">${L}</text>`;
  $("pst").innerHTML=[["Over",hrc(ov,n)],["Under",hrc(vs.filter(v=>v<L).length,n)],["L5 Over",hrc(vs.slice(-5).filter(v=>v>L).length,Math.min(5,n))],["L10 Over",hrc(vs.slice(-10).filter(v=>v>L).length,Math.min(10,n))],["Prosek",f(avg(vs))],["Max / Min",Math.max(...vs)+" / "+Math.min(...vs)],["Medijana",f(med(vs))],["σ (std. dev.)",f(sdv(vs))]].map(x=>`<div class="stat"><span>${x[0]}</span><div class="num">${x[1]}</div></div>`).join("");
- if(!skip){extras(t,id,G,pi);padvRender(G);sideRender()}ppRender(G,t,id,vs,L);posRender();scaleRender()}
+ if(!skip){extras(t,id,G,pi);padvRender(G);sideRender()}ppRender(G,t,id,vs,L);posRender();scaleRender();if(!skip)recRender(t,id,G)}
 const pc=$("pch"),mv=e=>{if(!CH.H||(!e.buttons&&e.pointerType!="touch"))return;const r=pc.getBoundingClientRect(),yy=(e.clientY-r.top)/r.height*CH.H;let v=CH.hi-(yy-CH.pt)/(CH.H-CH.pt-CH.pb)*(CH.hi-CH.lo);{const G=pgames($("ptm").value,$("ppl").value),vl=G.map(x=>mfn(PMK)(x.p)),mx=Math.max(0,...vl),lo=PMK=="pir"?Math.min(0,...vl)-5:0,hi=Math.max(mx*1.6,mx+5);v=Math.min(hi,Math.max(lo,v))}
  $("pln").value=Math.round(v*2/1)/2;chart(true)};
 pc.onpointerdown=e=>{pc.setPointerCapture(e.pointerId);mv(e)};pc.onpointermove=mv;pc.onpointerup=()=>chart();
@@ -1831,6 +1845,74 @@ async function loadXL(force){let any=false;for(const lg of Object.keys(LEAGUES))
   try{const d=await getJSON(lp("data/site.json",lg));if(d&&d.games){XLD[lg]=d;XV++;any=true}}catch(e){XMISS.add(lg)}}
  if(any&&D){xfApply();try{standings();teamView();calc()}catch(e){}}}
 lgPills();setTimeout(loadXL,2500);setInterval(()=>{XMISS.clear();loadXL(true)},REFRESH_MS*5);
+</script>
+<script>
+// ===== Preporuka opklade po igraču (najvrednija, najsigurnija, igraj/izbegavaj sa razlozima) =====
+const clampN=(x,a,b)=>Math.max(a,Math.min(b,x));
+function injOf(t,name){
+ const tk=dia(String(name||"")).split(/[^a-z]+/).filter(w=>w.length>=3).sort((a,b)=>b.length-a.length)[0];if(!tk)return null;
+ for(const s of(INJ.teams&&INJ.teams[t])||[]){const np=dia(String(s).split(":")[0]);
+  if(np.includes(tk)){const st=dia(s);return{s,lv:/\bvan\b|operacij|ahil|acl/.test(st)?2:/sumnjiv|doubt/.test(st)?1.5:/neizvesno|nisu igrali|odluka/.test(st)?1:0}}}
+ return null}
+const RCOMP={pts:["pts"],ast:["ast"],reb:["reb"],fg3m:["pts"],pa:["pts","ast"],pr:["pts","reb"],par:["pts","reb","ast"],ra:["reb","ast"],pir:["pts","reb","ast"]};
+function recCalc(t,id,G){
+ const ps=posOf(t,id),dn=new Set(D.games.map(g=>g.n)),nf=(D.fixtures||[]).find(x=>!dn.has(x.n)&&(x.h==t||x.a==t)),
+  opp=nf?(nf.h==t?nf.a:nf.h):$("pop").value,name=pinfo(t,id).name||"",
+  mm=nf&&R[nf.h]&&R[nf.a]?R[nf.h].r-R[nf.a].r+S.hca:0,bl=nf?1-phi((14-mm)/S.sig)+phi((-14-mm)/S.sig):0,
+  rk={pts:pdRank(opp,ps,"pts"),reb:pdRank(opp,ps,"reb"),ast:pdRank(opp,ps,"ast")},
+  ow=ownStats(t),od=ownStats(opp),pace=ow&&od?clampN((ow.PACE+od.PACE)/2/ow.PACE,.93,1.07):1,
+  FT=nf&&nf.utc?fatigue(t,new Date(nf.utc),nf.h):null,
+  mn=G.map(x=>x.p[4]),mS=avg(mn),m5=avg(mn.slice(-5)),mcv=mS?sdv(mn)/mS:0,n=G.length,
+  own=injOf(t,name),M=mates(t,id),outs=M.filter(m=>{const q=injOf(t,m.n);return q&&q.lv==2});
+ let tmF=1;if(outs.length){const oth=M.filter(m=>!outs.includes(m)).reduce((a,m)=>a+m.am,0)+mS;tmF=clampN(1+outs.reduce((a,m)=>a+m.am,0)/oth,1,1.25)}
+ const mf=n>=5?clampN(m5/mS,.88,1.08):1;
+ const rows=MET.map(([k,lab,fn])=>{
+  const v=G.map(x=>fn(x.p)),mu=avg(v),base=n>=5?.5*mu+.5*avg(v.slice(-5)):mu,cnt=CNT.has(k),
+   pf=avg(RCOMP[k].map(c=>rk[c]&&rk[c].lg?clampN(rk[c].v/rk[c].lg,.88,1.12):1)),
+   proj=Math.max(.05,base*pf*pace*mf*tmF),sd0=sdv(v),prs=Math.max(.3*proj,k=="fg3m"?.8:1.5),sd=Math.sqrt((n*sd0*sd0+4*prs*prs)/(n+4)),
+   po=L=>cnt?1-pcdf(Math.floor(L),proj,Math.max(sd*sd,proj*1.0001)):1-phi((Math.floor(L)+.5-proj)/sd),
+   Lb=Math.round(base-.5)+.5,pO=po(Lb),over=pO>=.5,pb=over?pO:1-pO,side=L=>over?po(L):1-po(L),hit=(L,a)=>a.filter(x=>over?x>L:x<L).length;
+  let be=null,sf=null;const mxL=Math.max(Lb*2+4,10);
+  for(let L=.5;L<=mxL;L+=1){const q=side(L);
+   if(over){if(q>=.55)be=L;if(q>=.75)sf=L}else{if(q>=.55&&be==null)be=L;if(q>=.75&&sf==null)sf=L}}
+  const pSf=sf==null?null:side(sf),cv=sd0/Math.max(mu,1),rel=Math.min(1,n/8)*(cv>.6?.75:1);
+  const okm=cnt?Lb>=1.5:Lb>=4.5;
+  return{k,lab,n,mu,proj,Lb,over,pb,be,sf,pSf,okm,hLb:hit(Lb,v),h5:hit(Lb,v.slice(-5)),hSf:sf==null?0:hit(sf,v),val:(pb-.5)*rel,rel}});
+ const bv=rows.filter(r=>r.okm&&r.pb>=.56&&n>=3).sort((a,b)=>b.val-a.val)[0]||null,
+  bs=rows.filter(r=>r.okm&&r.pSf!=null&&1/r.pSf>=1.15).sort((a,b)=>(b.pSf*.5+b.hSf/b.n*.5)*Math.min(1,b.n/8)-(a.pSf*.5+a.hSf/a.n*.5)*Math.min(1,a.n/8))[0]||null;
+ const why=[];let hard=false;
+ if(own&&own.lv==2){hard=true;why.push([false,`Na listi povreda: ${own.s}. Ne igrati dok se ne potvrdi da igra (proveri da li izostanak još važi).`])}
+ else if(own&&own.lv>=1)why.push(["w",`Na listi povreda: ${own.s}.`]);
+ if(n<3){hard=true;why.push([false,`Samo ${n} utakmica sa ${MINV()}+ minuta: nema osnove za procenu.`])}
+ else if(n<5)why.push(["w",`Mali uzorak (${n} utakmice), procena je nepouzdana.`]);
+ else why.push([true,`Uzorak ${n} utakmica.`]);
+ why.push([n<5||m5>=mS*.93?true:"w",`Minutaža: sezona ${f(mS)}, poslednjih 5 ${f(m5)} min.`+(n>=5&&m5<mS*.93?" Uloga u rotaciji se smanjuje.":"")]);
+ if(mS<15)why.push(["w",`Nizak prosek minuta (${f(mS)}) znači veliku varijansu učinka.`]);
+ if(mcv>.3)why.push(["w",`Minutaža je nestabilna (varijacija ${f(mcv*100,0)}%).`]);
+ const ov=bv?bv.over:true,r=rk.pts;if(r){const th=Math.ceil(r.n/3),easy=ov?r.rk<=th:r.rk>r.n-th,hard2=ov?r.rk>r.n-th:r.rk<=th;why.push([easy?true:hard2?false:"w",`${nm(opp)} protiv pozicije ${ps} dozvoljava ${f(r.v)} poena (liga ${f(r.lg)}), rang ${r.rk}. od ${r.n}.`+(easy?" Povoljan duel za ovaj izbor.":hard2?" Težak duel za ovaj izbor.":"")])}
+ if(nf)why.push([ov?(bl<.25?true:false):(bl>=.25?true:"w"),`Šansa za razliku od 14+ poena je ${f(bl*100,0)}%.`+(bl>=.25?(ov?" Nosioci mogu da sede u 4. četvrtini, to ide protiv Over-a.":" Rano gašenje nosilaca ide u prilog Under-u."):"")]);
+ if(FT)why.push([FT.adj<=-1?"w":true,`Zamor tima: ${FT.rest==null?"-":FT.rest} dana odmora, ${FT.km} km putovanja, ${FT.n5} utakmica u 5 dana.`]);
+ if(outs.length)why.push([true,`Saigrač van: ${outs.map(m=>m.n).join(", ")}. Očekuje se veća uloga (minutaža x${f(tmF,2)}).`]);
+ if(bv)why.push([bv.pb>=.6?true:"w",`Najjača prednost: ${bv.over?"Over":"Under"} ${bv.Lb} ${bv.lab}, model ${f(bv.pb*100,0)}% (projekcija ${f(bv.proj)}).`]);
+ else why.push([false,"Model nigde ne vidi jasnu prednost (sva tržišta ispod 56%)."]);
+ const bad=why.filter(x=>x[0]===false).length,warn=why.filter(x=>x[0]=="w").length,neg=bad*2+warn;
+ let vd="mid";
+ if(hard||!bv||bad>=2)vd="bad";else if(bv&&bv.pb>=.6&&n>=5&&bad==0&&neg<=2)vd="go";
+ return{name,opp,n,rows,bv,bs,why,vd,rel:n>=8?"visoka":n>=5?"srednja":"niska"}}
+function recRender(t,id,G){
+ const el=$("prr");if(!el||!D)return;if(!G||!G.length){el.innerHTML="";return}
+ const c=recCalc(t,id,G),B={go:["IGRAJ","go"],mid:["OPREZ","mid"],bad:["IZBEGAVAJ","bad"]}[c.vd],sd=r=>r.over?"Over":"Under";
+ const v=c.bv,s=c.bs;
+ const tv=v?`<div class="stat"><span>NAJVREDNIJA</span><div class="num ok">${sd(v)} ${v.Lb} ${esc(v.lab)}</div><span>model ${f(v.pb*100,0)}% | fer kvota ${f(1/v.pb,2)} | igraj ako je kvota ≥ ${f(1.05/v.pb,2)}<br>Procena linije ${v.Lb}, vredi dok je linija ${v.over?"≤":"≥"} ${v.be==null?"-":v.be} | sezona ${v.hLb}/${v.n}, L5 ${v.h5}/${Math.min(5,v.n)}</span></div>`
+  :`<div class="stat"><span>NAJVREDNIJA</span><div class="num">Nema jasne prednosti</div><span>Nijedno tržište nije iznad 56% po modelu.</span></div>`;
+ const ts=s?`<div class="stat"><span>NAJSIGURNIJA</span><div class="num">${sd(s)} ${s.sf} ${esc(s.lab)}</div><span>model ${f(s.pSf*100,0)}% | fer kvota ${f(1/s.pSf,2)} | igraj samo ako je kvota ≥ ${f(1.05/s.pSf,2)}<br>sezona ${s.hSf}/${s.n} prošlo | nizak povrat, uzimaj samo uz dovoljno visoku kvotu</span></div>`
+  :`<div class="stat"><span>NAJSIGURNIJA</span><div class="num">Nema sigurne linije</div><span>Nijedna linija nema 75%+ po modelu.</span></div>`;
+ const tb=c.rows.map(r=>`<tr${r==v?' style="background:var(--acbg)"':""}><td>${esc(r.lab)}${r.okm?"":' <span class="mu">(nerealna linija)</span>'}</td><td class=r>${f(r.proj)}</td><td class=r>${r.Lb}</td><td class=r>${sd(r)} ${f(r.pb*100,0)}%</td><td class=r>${r.be==null?"-":(r.over?"≤ ":"≥ ")+r.be}</td><td class=r>${r.sf==null?"-":sd(r)+" "+r.sf+" ("+f(r.pSf*100,0)+"%)"}</td><td class=r>${r.hLb}/${r.n}</td></tr>`).join("");
+ el.innerHTML=`<div class="crtw"><h2>Preporuka: ${esc(c.name)}<span class="rv ${B[1]}">${B[0]}</span></h2><span class="mu">protivnik ${esc(nm(c.opp))} | pouzdanost ${c.rel}</span></div>
+ <div class="note">Prave linije kladionica za igrače nemamo, pa je linija procena (mešavina sezonskog proseka i poslednjih 5). Projekcija = prosek korigovan za protivnika po poziciji, tempo, minutažu i saigrače koji ne igraju. Verovatnoće dolaze iz negativne binomne/Poisson (AST, REB, 3PM) ili normalne raspodele, sa skupljanjem varijanse kad je uzorak mali. "Vredi dok je linija" je granica gde je šansa još 55%+ (EV oko +5% pri kvoti 1.91), a "igraj ako je kvota ≥" je fer kvota plus 5%. Ovo je procena, ne garancija: pre igranja proveri sastav i povrede.</div>
+ <div class="rcs">${tv}${ts}</div>
+ <h3>Zašto</h3><ul class="rwy">${c.why.map(w=>`<li class="${w[0]===true?"t":w[0]===false?"f":"w"}">${esc(w[1])}</li>`).join("")}</ul>
+ <div class="scroll"><table><tr><th>Tržište</th><th class=r>Projekcija</th><th class=r>Proc. linija</th><th class=r>Strana</th><th class=r>Vredi dok je linija</th><th class=r>Sigurna linija</th><th class=r>Sezona (proc. linija)</th></tr>${tb}</table></div>`}
 </script>
 </body></html>
 
