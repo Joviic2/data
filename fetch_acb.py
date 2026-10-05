@@ -122,7 +122,7 @@ def parse_box(url,game,browser):
     try:
         page.goto(url,wait_until="domcontentloaded",timeout=60000)
         page.locator("table").first.wait_for(state="visible",timeout=25000)
-        page.wait_for_function("""document.querySelectorAll('a[href*="/liga/jugadores/"]').length >= 8""",timeout=15000)
+        page.wait_for_function("""document.querySelectorAll('table a[href*="/liga/jugadores/"]').length >= 16""",timeout=20000)
         tables=page.locator("table").evaluate_all("""ts => ts.map(t => Array.from(t.querySelectorAll('tr')).map(r => ({
           v:Array.from(r.cells).map(c => c.innerText.trim()),
           href:r.querySelector('a[href*="/liga/jugadores/"]')?.getAttribute('href')||null,
