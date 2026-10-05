@@ -1,0 +1,138 @@
+{
+ "code": "BOR",
+ "name": "Borac Mozzart",
+ "short": "Borac",
+ "club_id": "43",
+ "crest": "https://www.aba-liga.com/images/club/100x100/43.png",
+ "record": {
+  "gp": 1,
+  "w": 0,
+  "l": 1,
+  "pf": 81,
+  "pa": 87,
+  "pf_avg": 81.0,
+  "pa_avg": 87.0
+ },
+ "games": [
+  {
+   "n": 15,
+   "round": 2,
+   "dt": "2026-10-02T16:30:00Z",
+   "home": true,
+   "opp": "SIR",
+   "pf": 81,
+   "pa": 87,
+   "result": "L"
+  }
+ ],
+ "roster": [
+  {
+   "id": "2125",
+   "name": "Novak J.",
+   "no": "30",
+   "pos": "",
+   "photo": "https://www.aba-liga.com/stats/img/foto/2125.png",
+   "gp": 1,
+   "min_avg": 36.8,
+   "pts_avg": 16.0,
+   "reb_avg": 8.0,
+   "ast_avg": 2.0
+  },
+  {
+   "id": "2393",
+   "name": "Jošilo M.",
+   "no": "10",
+   "pos": "",
+   "photo": "https://www.aba-liga.com/stats/img/foto/2393.png",
+   "gp": 1,
+   "min_avg": 30.4,
+   "pts_avg": 11.0,
+   "reb_avg": 4.0,
+   "ast_avg": 0.0
+  },
+  {
+   "id": "5648",
+   "name": "Spear K.",
+   "no": "2",
+   "pos": "",
+   "photo": "https://www.aba-liga.com/stats/img/foto/5648.png",
+   "gp": 1,
+   "min_avg": 27.5,
+   "pts_avg": 21.0,
+   "reb_avg": 8.0,
+   "ast_avg": 3.0
+  },
+  {
+   "id": "5610",
+   "name": "Roy Jr A.",
+   "no": "9",
+   "pos": "",
+   "photo": "https://www.aba-liga.com/stats/img/foto/5610.png",
+   "gp": 1,
+   "min_avg": 23.6,
+   "pts_avg": 8.0,
+   "reb_avg": 1.0,
+   "ast_avg": 1.0
+  },
+  {
+   "id": "2755",
+   "name": "Čarapić U.",
+   "no": "44",
+   "pos": "",
+   "photo": "https://www.aba-liga.com/stats/img/foto/2755.png",
+   "gp": 1,
+   "min_avg": 23.4,
+   "pts_avg": 12.0,
+   "reb_avg": 1.0,
+   "ast_avg": 0.0
+  },
+  {
+   "id": "3783",
+   "name": "Ćurčić M. Đ.",
+   "no": "11",
+   "pos": "",
+   "photo": "https://www.aba-liga.com/stats/img/foto/3783.png",
+   "gp": 1,
+   "min_avg": 23.0,
+   "pts_avg": 8.0,
+   "reb_avg": 0.0,
+   "ast_avg": 2.0
+  },
+  {
+   "id": "2544",
+   "name": "Radovanović M.",
+   "no": "6",
+   "pos": "",
+   "photo": "https://www.aba-liga.com/stats/img/foto/2544.png",
+   "gp": 1,
+   "min_avg": 15.3,
+   "pts_avg": 2.0,
+   "reb_avg": 3.0,
+   "ast_avg": 1.0
+  },
+  {
+   "id": "3006",
+   "name": "Živanović B.",
+   "no": "7",
+   "pos": "",
+   "photo": "https://www.aba-liga.com/stats/img/foto/3006.png",
+   "gp": 1,
+   "min_avg": 11.8,
+   "pts_avg": 3.0,
+   "reb_avg": 0.0,
+   "ast_avg": 0.0
+  },
+  {
+   "id": "3281",
+   "name": "Mušikić M.",
+   "no": "33",
+   "pos": "",
+   "photo": "https://www.aba-liga.com/stats/img/foto/3281.png",
+   "gp": 1,
+   "min_avg": 8.3,
+   "pts_avg": 0.0,
+   "reb_avg": 0.0,
+   "ast_avg": 2.0
+  }
+ ]
+}

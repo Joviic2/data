@@ -1,0 +1,162 @@
+{
+ "code": "SBR",
+ "name": "Slovan Bratislava",
+ "short": "Slovan",
+ "club_id": "110",
+ "crest": "https://www.aba-liga.com/images/club/100x100/110.png",
+ "record": {
+  "gp": 1,
+  "w": 0,
+  "l": 1,
+  "pf": 89,
+  "pa": 97,
+  "pf_avg": 89.0,
+  "pa_avg": 97.0
+ },
+ "games": [
+  {
+   "n": 14,
+   "round": 2,
+   "dt": "2026-10-03T15:00:00Z",
+   "home": false,
+   "opp": "IGO",
+   "pf": 89,
+   "pa": 97,
+   "result": "L"
+  }
+ ],
+ "roster": [
+  {
+   "id": "5690",
+   "name": "Ford Q.",
+   "no": "12",
+   "pos": "",
+   "photo": "https://www.aba-liga.com/stats/img/foto/5690.png",
+   "gp": 1,
+   "min_avg": 31.0,
+   "pts_avg": 6.0,
+   "reb_avg": 2.0,
+   "ast_avg": 2.0
+  },
+  {
+   "id": "2853",
+   "name": "Drežnjak M.",
+   "no": "23",
+   "pos": "",
+   "photo": "https://www.aba-liga.com/stats/img/foto/2853.png",
+   "gp": 1,
+   "min_avg": 25.1,
+   "pts_avg": 9.0,
+   "reb_avg": 2.0,
+   "ast_avg": 1.0
+  },
+  {
+   "id": "5627",
+   "name": "Buie D.",
+   "no": "7",
+   "pos": "",
+   "photo": "https://www.aba-liga.com/stats/img/foto/5627.png",
+   "gp": 1,
+   "min_avg": 25.0,
+   "pts_avg": 17.0,
+   "reb_avg": 0.0,
+   "ast_avg": 5.0
+  },
+  {
+   "id": "5709",
+   "name": "Buchanan T.",
+   "no": "2",
+   "pos": "",
+   "photo": "https://www.aba-liga.com/stats/img/foto/5709.png",
+   "gp": 1,
+   "min_avg": 24.2,
+   "pts_avg": 18.0,
+   "reb_avg": 1.0,
+   "ast_avg": 2.0
+  },
+  {
+   "id": "2562",
+   "name": "Nikolić Z.",
+   "no": "19",
+   "pos": "",
+   "photo": "https://www.aba-liga.com/stats/img/foto/2562.png",
+   "gp": 1,
+   "min_avg": 24.0,
+   "pts_avg": 24.0,
+   "reb_avg": 8.0,
+   "ast_avg": 1.0
+  },
+  {
+   "id": "5711",
+   "name": "Bluiett T.",
+   "no": "15",
+   "pos": "",
+   "photo": "https://www.aba-liga.com/stats/img/foto/5711.png",
+   "gp": 1,
+   "min_avg": 21.6,
+   "pts_avg": 6.0,
+   "reb_avg": 1.0,
+   "ast_avg": 1.0
+  },
+  {
+   "id": "4795",
+   "name": "Skeens B.",
+   "no": "22",
+   "pos": "",
+   "photo": "https://www.aba-liga.com/stats/img/foto/4795.png",
+   "gp": 1,
+   "min_avg": 17.9,
+   "pts_avg": 7.0,
+   "reb_avg": 3.0,
+   "ast_avg": 0.0
+  },
+  {
+   "id": "4209",
+   "name": "Bačvić N.",
+   "no": "18",
+   "pos": "",
+   "photo": "https://www.aba-liga.com/stats/img/foto/4209.png",
+   "gp": 1,
+   "min_avg": 15.5,
+   "pts_avg": 0.0,
+   "reb_avg": 2.0,
+   "ast_avg": 4.0
+  },
+  {
+   "id": "5611",
+   "name": "Kováč B.",
+   "no": "13",
+   "pos": "",
+   "photo": "https://www.aba-liga.com/stats/img/foto/5611.png",
+   "gp": 1,
+   "min_avg": 11.3,
+   "pts_avg": 0.0,
+   "reb_avg": 1.0,
+   "ast_avg": 1.0
+  },
+  {
+   "id": "5549",
+   "name": "Pavelka T.",
+   "no": "20",
+   "pos": "",
+   "photo": "https://www.aba-liga.com/stats/img/foto/5549.png",
+   "gp": 1,
+   "min_avg": 3.5,
+   "pts_avg": 2.0,
+   "reb_avg": 0.0,
+   "ast_avg": 0.0
+  },
+  {
+   "id": "5545",
+   "name": "Abrhám D.",
+   "no": "14",
+   "pos": "",
+   "photo": "https://www.aba-liga.com/stats/img/foto/5545.png",
+   "gp": 1,
+   "min_avg": 0.8,
+   "pts_avg": 0.0,
+   "reb_avg": 0.0,
+   "ast_avg": 0.0
+  }
+ ]
+}

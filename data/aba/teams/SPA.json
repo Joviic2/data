@@ -1,0 +1,150 @@
+{
+ "code": "SPA",
+ "name": "Spartak Office Shoes",
+ "short": "Spartak",
+ "club_id": "91",
+ "crest": "https://www.aba-liga.com/images/club/100x100/91.png",
+ "record": {
+  "gp": 1,
+  "w": 0,
+  "l": 1,
+  "pf": 79,
+  "pa": 95,
+  "pf_avg": 79.0,
+  "pa_avg": 95.0
+ },
+ "games": [
+  {
+   "n": 20,
+   "round": 2,
+   "dt": "2026-10-03T17:00:00Z",
+   "home": true,
+   "opp": "BOS",
+   "pf": 79,
+   "pa": 95,
+   "result": "L"
+  }
+ ],
+ "roster": [
+  {
+   "id": "2112",
+   "name": "Nikolić D.",
+   "no": "34",
+   "pos": "",
+   "photo": "https://www.aba-liga.com/stats/img/foto/2112.png",
+   "gp": 1,
+   "min_avg": 28.3,
+   "pts_avg": 14.0,
+   "reb_avg": 4.0,
+   "ast_avg": 1.0
+  },
+  {
+   "id": "3168",
+   "name": "Gegić A.",
+   "no": "20",
+   "pos": "",
+   "photo": "https://www.aba-liga.com/stats/img/foto/3168.png",
+   "gp": 1,
+   "min_avg": 27.1,
+   "pts_avg": 11.0,
+   "reb_avg": 3.0,
+   "ast_avg": 3.0
+  },
+  {
+   "id": "5636",
+   "name": "Pipkins J.",
+   "no": "5",
+   "pos": "",
+   "photo": "https://www.aba-liga.com/stats/img/foto/5636.png",
+   "gp": 1,
+   "min_avg": 25.9,
+   "pts_avg": 15.0,
+   "reb_avg": 1.0,
+   "ast_avg": 0.0
+  },
+  {
+   "id": "2640",
+   "name": "Ilić D.",
+   "no": "22",
+   "pos": "",
+   "photo": "https://www.aba-liga.com/stats/img/foto/2640.png",
+   "gp": 1,
+   "min_avg": 22.3,
+   "pts_avg": 9.0,
+   "reb_avg": 5.0,
+   "ast_avg": 1.0
+  },
+  {
+   "id": "2983",
+   "name": "Drobnjak I.",
+   "no": "4",
+   "pos": "",
+   "photo": "https://www.aba-liga.com/stats/img/foto/2983.png",
+   "gp": 1,
+   "min_avg": 20.8,
+   "pts_avg": 13.0,
+   "reb_avg": 3.0,
+   "ast_avg": 2.0
+  },
+  {
+   "id": "2335",
+   "name": "Lazarević S.",
+   "no": "9",
+   "pos": "",
+   "photo": "https://www.aba-liga.com/stats/img/foto/2335.png",
+   "gp": 1,
+   "min_avg": 19.1,
+   "pts_avg": 6.0,
+   "reb_avg": 2.0,
+   "ast_avg": 2.0
+  },
+  {
+   "id": "2046",
+   "name": "Omić A.",
+   "no": "24",
+   "pos": "",
+   "photo": "https://www.aba-liga.com/stats/img/foto/2046.png",
+   "gp": 1,
+   "min_avg": 17.3,
+   "pts_avg": 4.0,
+   "reb_avg": 4.0,
+   "ast_avg": 0.0
+  },
+  {
+   "id": "2860",
+   "name": "Jeremić M.",
+   "no": "6",
+   "pos": "",
+   "photo": "https://www.aba-liga.com/stats/img/foto/2860.png",
+   "gp": 1,
+   "min_avg": 16.2,
+   "pts_avg": 1.0,
+   "reb_avg": 0.0,
+   "ast_avg": 1.0
+  },
+  {
+   "id": "4705",
+   "name": "Tofoski M.",
+   "no": "12",
+   "pos": "",
+   "photo": "https://www.aba-liga.com/stats/img/foto/4705.png",
+   "gp": 1,
+   "min_avg": 11.8,
+   "pts_avg": 3.0,
+   "reb_avg": 0.0,
+   "ast_avg": 0.0
+  },
+  {
+   "id": "2982",
+   "name": "Cerovina L.",
+   "no": "13",
+   "pos": "",
+   "photo": "https://www.aba-liga.com/stats/img/foto/2982.png",
+   "gp": 1,
+   "min_avg": 11.1,
+   "pts_avg": 3.0,
+   "reb_avg": 2.0,
+   "ast_avg": 1.0
+  }
+ ]
+}

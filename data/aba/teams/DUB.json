@@ -1,0 +1,174 @@
+{
+ "code": "DUB",
+ "name": "Dubai Basketball",
+ "short": "Dubai",
+ "club_id": "95",
+ "crest": "https://www.aba-liga.com/images/club/100x100/95.png",
+ "record": {
+  "gp": 1,
+  "w": 1,
+  "l": 0,
+  "pf": 85,
+  "pa": 70,
+  "pf_avg": 85.0,
+  "pa_avg": 70.0
+ },
+ "games": [
+  {
+   "n": 17,
+   "round": 2,
+   "dt": "2026-10-04T18:00:00Z",
+   "home": false,
+   "opp": "ILI",
+   "pf": 85,
+   "pa": 70,
+   "result": "W"
+  }
+ ],
+ "roster": [
+  {
+   "id": "2083",
+   "name": "Dangubić N.",
+   "no": "2",
+   "pos": "",
+   "photo": "https://www.aba-liga.com/stats/img/foto/2083.png",
+   "gp": 1,
+   "min_avg": 30.3,
+   "pts_avg": 3.0,
+   "reb_avg": 1.0,
+   "ast_avg": 1.0
+  },
+  {
+   "id": "5623",
+   "name": "Mintz D.",
+   "no": "6",
+   "pos": "",
+   "photo": "https://www.aba-liga.com/stats/img/foto/5623.png",
+   "gp": 1,
+   "min_avg": 23.1,
+   "pts_avg": 20.0,
+   "reb_avg": 3.0,
+   "ast_avg": 0.0
+  },
+  {
+   "id": "5737",
+   "name": "Walkup T.",
+   "no": "44",
+   "pos": "",
+   "photo": "https://www.aba-liga.com/stats/img/foto/5737.png",
+   "gp": 1,
+   "min_avg": 21.9,
+   "pts_avg": 0.0,
+   "reb_avg": 0.0,
+   "ast_avg": 7.0
+  },
+  {
+   "id": "3653",
+   "name": "Petrušev F.",
+   "no": "30",
+   "pos": "",
+   "photo": "https://www.aba-liga.com/stats/img/foto/3653.png",
+   "gp": 1,
+   "min_avg": 20.3,
+   "pts_avg": 5.0,
+   "reb_avg": 2.0,
+   "ast_avg": 1.0
+  },
+  {
+   "id": "5734",
+   "name": "Shengelia T.",
+   "no": "23",
+   "pos": "",
+   "photo": "https://www.aba-liga.com/stats/img/foto/5734.png",
+   "gp": 1,
+   "min_avg": 19.9,
+   "pts_avg": 11.0,
+   "reb_avg": 2.0,
+   "ast_avg": 3.0
+  },
+  {
+   "id": "3361",
+   "name": "Kondić K.",
+   "no": "11",
+   "pos": "",
+   "photo": "https://www.aba-liga.com/stats/img/foto/3361.png",
+   "gp": 1,
+   "min_avg": 18.1,
+   "pts_avg": 10.0,
+   "reb_avg": 1.0,
+   "ast_avg": 2.0
+  },
+  {
+   "id": "3152",
+   "name": "Kamenjaš K.",
+   "no": "34",
+   "pos": "",
+   "photo": "https://www.aba-liga.com/stats/img/foto/3152.png",
+   "gp": 1,
+   "min_avg": 15.3,
+   "pts_avg": 11.0,
+   "reb_avg": 8.0,
+   "ast_avg": 0.0
+  },
+  {
+   "id": "5567",
+   "name": "Diakite M.",
+   "no": "21",
+   "pos": "",
+   "photo": "https://www.aba-liga.com/stats/img/foto/5567.png",
+   "gp": 1,
+   "min_avg": 14.4,
+   "pts_avg": 6.0,
+   "reb_avg": 5.0,
+   "ast_avg": 0.0
+  },
+  {
+   "id": "5731",
+   "name": "Okobo E.",
+   "no": "0",
+   "pos": "",
+   "photo": "https://www.aba-liga.com/stats/img/foto/5731.png",
+   "gp": 1,
+   "min_avg": 10.0,
+   "pts_avg": 8.0,
+   "reb_avg": 1.0,
+   "ast_avg": 2.0
+  },
+  {
+   "id": "5732",
+   "name": "Blossomgame J.",
+   "no": "4",
+   "pos": "",
+   "photo": "https://www.aba-liga.com/stats/img/foto/5732.png",
+   "gp": 1,
+   "min_avg": 10.0,
+   "pts_avg": 3.0,
+   "reb_avg": 4.0,
+   "ast_avg": 0.0
+  },
+  {
+   "id": "5137",
+   "name": "Bacon JR D.",
+   "no": "3",
+   "pos": "",
+   "photo": "https://www.aba-liga.com/stats/img/foto/5137.png",
+   "gp": 1,
+   "min_avg": 9.7,
+   "pts_avg": 5.0,
+   "reb_avg": 1.0,
+   "ast_avg": 1.0
+  },
+  {
+   "id": "2101",
+   "name": "Prepelič K.",
+   "no": "7",
+   "pos": "",
+   "photo": "https://www.aba-liga.com/stats/img/foto/2101.png",
+   "gp": 1,
+   "min_avg": 6.9,
+   "pts_avg": 3.0,
+   "reb_avg": 0.0,
+   "ast_avg": 0.0
+  }
+ ]
+}

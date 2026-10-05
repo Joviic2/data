@@ -1,0 +1,150 @@
+{
+ "code": "IGO",
+ "name": "Igokea m:tel",
+ "short": "Igokea",
+ "club_id": "30",
+ "crest": "https://www.aba-liga.com/images/club/100x100/30.png",
+ "record": {
+  "gp": 1,
+  "w": 1,
+  "l": 0,
+  "pf": 97,
+  "pa": 89,
+  "pf_avg": 97.0,
+  "pa_avg": 89.0
+ },
+ "games": [
+  {
+   "n": 14,
+   "round": 2,
+   "dt": "2026-10-03T15:00:00Z",
+   "home": true,
+   "opp": "SBR",
+   "pf": 97,
+   "pa": 89,
+   "result": "W"
+  }
+ ],
+ "roster": [
+  {
+   "id": "5695",
+   "name": "Penn R.",
+   "no": "13",
+   "pos": "",
+   "photo": "https://www.aba-liga.com/stats/img/foto/5695.png",
+   "gp": 1,
+   "min_avg": 33.2,
+   "pts_avg": 18.0,
+   "reb_avg": 3.0,
+   "ast_avg": 9.0
+  },
+  {
+   "id": "2937",
+   "name": "Manojlović N.",
+   "no": "55",
+   "pos": "",
+   "photo": "https://www.aba-liga.com/stats/img/foto/2937.png",
+   "gp": 1,
+   "min_avg": 23.1,
+   "pts_avg": 9.0,
+   "reb_avg": 7.0,
+   "ast_avg": 3.0
+  },
+  {
+   "id": "5642",
+   "name": "Armotrading J.",
+   "no": "3",
+   "pos": "",
+   "photo": "https://www.aba-liga.com/stats/img/foto/5642.png",
+   "gp": 1,
+   "min_avg": 20.9,
+   "pts_avg": 6.0,
+   "reb_avg": 2.0,
+   "ast_avg": 0.0
+  },
+  {
+   "id": "3336",
+   "name": "Stefanović L.",
+   "no": "1",
+   "pos": "",
+   "photo": "https://www.aba-liga.com/stats/img/foto/3336.png",
+   "gp": 1,
+   "min_avg": 20.5,
+   "pts_avg": 5.0,
+   "reb_avg": 2.0,
+   "ast_avg": 2.0
+  },
+  {
+   "id": "2708",
+   "name": "Lazić A.",
+   "no": "8",
+   "pos": "",
+   "photo": "https://www.aba-liga.com/stats/img/foto/2708.png",
+   "gp": 1,
+   "min_avg": 20.1,
+   "pts_avg": 7.0,
+   "reb_avg": 3.0,
+   "ast_avg": 1.0
+  },
+  {
+   "id": "5459",
+   "name": "Pierre-Louis N.",
+   "no": "11",
+   "pos": "",
+   "photo": "https://www.aba-liga.com/stats/img/foto/5459.png",
+   "gp": 1,
+   "min_avg": 19.4,
+   "pts_avg": 15.0,
+   "reb_avg": 2.0,
+   "ast_avg": 2.0
+  },
+  {
+   "id": "3512",
+   "name": "Topolović Đ.",
+   "no": "15",
+   "pos": "",
+   "photo": "https://www.aba-liga.com/stats/img/foto/3512.png",
+   "gp": 1,
+   "min_avg": 17.6,
+   "pts_avg": 16.0,
+   "reb_avg": 7.0,
+   "ast_avg": 0.0
+  },
+  {
+   "id": "3551",
+   "name": "Kovačević P.",
+   "no": "14",
+   "pos": "",
+   "photo": "https://www.aba-liga.com/stats/img/foto/3551.png",
+   "gp": 1,
+   "min_avg": 16.7,
+   "pts_avg": 14.0,
+   "reb_avg": 3.0,
+   "ast_avg": 0.0
+  },
+  {
+   "id": "4152",
+   "name": "Delalić H.",
+   "no": "9",
+   "pos": "",
+   "photo": "https://www.aba-liga.com/stats/img/foto/4152.png",
+   "gp": 1,
+   "min_avg": 16.2,
+   "pts_avg": 2.0,
+   "reb_avg": 0.0,
+   "ast_avg": 1.0
+  },
+  {
+   "id": "1076",
+   "name": "Milosavljević D.",
+   "no": "21",
+   "pos": "",
+   "photo": "https://www.aba-liga.com/stats/img/foto/1076.png",
+   "gp": 1,
+   "min_avg": 12.4,
+   "pts_avg": 5.0,
+   "reb_avg": 5.0,
+   "ast_avg": 1.0
+  }
+ ]
+}

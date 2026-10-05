@@ -1,0 +1,162 @@
+{
+ "code": "BUD",
+ "name": "Budućnost VOLI",
+ "short": "Budućnost",
+ "club_id": "12",
+ "crest": "https://www.aba-liga.com/images/club/100x100/12.png",
+ "record": {
+  "gp": 1,
+  "w": 1,
+  "l": 0,
+  "pf": 77,
+  "pa": 72,
+  "pf_avg": 77.0,
+  "pa_avg": 72.0
+ },
+ "games": [
+  {
+   "n": 13,
+   "round": 2,
+   "dt": "2026-10-02T18:30:00Z",
+   "home": false,
+   "opp": "KRK",
+   "pf": 77,
+   "pa": 72,
+   "result": "W"
+  }
+ ],
+ "roster": [
+  {
+   "id": "4104",
+   "name": "Ferrell Jr K.",
+   "no": "11",
+   "pos": "",
+   "photo": "https://www.aba-liga.com/stats/img/foto/4104.png",
+   "gp": 1,
+   "min_avg": 27.6,
+   "pts_avg": 17.0,
+   "reb_avg": 0.0,
+   "ast_avg": 5.0
+  },
+  {
+   "id": "5139",
+   "name": "Molinar Jones I.",
+   "no": "10",
+   "pos": "",
+   "photo": "https://www.aba-liga.com/stats/img/foto/5139.png",
+   "gp": 1,
+   "min_avg": 26.2,
+   "pts_avg": 10.0,
+   "reb_avg": 3.0,
+   "ast_avg": 2.0
+  },
+  {
+   "id": "5073",
+   "name": "Bouteille A.",
+   "no": "83",
+   "pos": "",
+   "photo": "https://www.aba-liga.com/stats/img/foto/5073.png",
+   "gp": 1,
+   "min_avg": 26.1,
+   "pts_avg": 8.0,
+   "reb_avg": 7.0,
+   "ast_avg": 0.0
+  },
+  {
+   "id": "5053",
+   "name": "Boutsiele J.",
+   "no": "16",
+   "pos": "",
+   "photo": "https://www.aba-liga.com/stats/img/foto/5053.png",
+   "gp": 1,
+   "min_avg": 25.6,
+   "pts_avg": 12.0,
+   "reb_avg": 4.0,
+   "ast_avg": 0.0
+  },
+  {
+   "id": "4781",
+   "name": "Morgan J.",
+   "no": "15",
+   "pos": "",
+   "photo": "https://www.aba-liga.com/stats/img/foto/4781.png",
+   "gp": 1,
+   "min_avg": 22.1,
+   "pts_avg": 11.0,
+   "reb_avg": 13.0,
+   "ast_avg": 2.0
+  },
+  {
+   "id": "5647",
+   "name": "Smith J.",
+   "no": "0",
+   "pos": "",
+   "photo": "https://www.aba-liga.com/stats/img/foto/5647.png",
+   "gp": 1,
+   "min_avg": 15.2,
+   "pts_avg": 4.0,
+   "reb_avg": 1.0,
+   "ast_avg": 0.0
+  },
+  {
+   "id": "3750",
+   "name": "Jovanović Đ.",
+   "no": "13",
+   "pos": "",
+   "photo": "https://www.aba-liga.com/stats/img/foto/3750.png",
+   "gp": 1,
+   "min_avg": 14.2,
+   "pts_avg": 7.0,
+   "reb_avg": 0.0,
+   "ast_avg": 1.0
+  },
+  {
+   "id": "5537",
+   "name": "Shayok M.",
+   "no": "1",
+   "pos": "",
+   "photo": "https://www.aba-liga.com/stats/img/foto/5537.png",
+   "gp": 1,
+   "min_avg": 13.8,
+   "pts_avg": 0.0,
+   "reb_avg": 2.0,
+   "ast_avg": 0.0
+  },
+  {
+   "id": "5072",
+   "name": "Kovliar O.",
+   "no": "50",
+   "pos": "",
+   "photo": "https://www.aba-liga.com/stats/img/foto/5072.png",
+   "gp": 1,
+   "min_avg": 12.1,
+   "pts_avg": 2.0,
+   "reb_avg": 3.0,
+   "ast_avg": 3.0
+  },
+  {
+   "id": "2668",
+   "name": "Đorđević S.",
+   "no": "45",
+   "pos": "",
+   "photo": "https://www.aba-liga.com/stats/img/foto/2668.png",
+   "gp": 1,
+   "min_avg": 11.7,
+   "pts_avg": 6.0,
+   "reb_avg": 6.0,
+   "ast_avg": 1.0
+  },
+  {
+   "id": "2560",
+   "name": "Hadžibegović E.",
+   "no": "8",
+   "pos": "",
+   "photo": "https://www.aba-liga.com/stats/img/foto/2560.png",
+   "gp": 1,
+   "min_avg": 5.5,
+   "pts_avg": 0.0,
+   "reb_avg": 0.0,
+   "ast_avg": 0.0
+  }
+ ]
+}

@@ -1,0 +1,150 @@
+{
+ "code": "ILI",
+ "name": "Perspektiva Ilirija",
+ "short": "Ilirija",
+ "club_id": "92",
+ "crest": "https://www.aba-liga.com/images/club/100x100/92.png",
+ "record": {
+  "gp": 1,
+  "w": 0,
+  "l": 1,
+  "pf": 70,
+  "pa": 85,
+  "pf_avg": 70.0,
+  "pa_avg": 85.0
+ },
+ "games": [
+  {
+   "n": 17,
+   "round": 2,
+   "dt": "2026-10-04T18:00:00Z",
+   "home": true,
+   "opp": "DUB",
+   "pf": 70,
+   "pa": 85,
+   "result": "L"
+  }
+ ],
+ "roster": [
+  {
+   "id": "5708",
+   "name": "Todorović  S.",
+   "no": "7",
+   "pos": "",
+   "photo": "https://www.aba-liga.com/stats/img/foto/5708.png",
+   "gp": 1,
+   "min_avg": 24.6,
+   "pts_avg": 11.0,
+   "reb_avg": 3.0,
+   "ast_avg": 1.0
+  },
+  {
+   "id": "4434",
+   "name": "Shelton C.",
+   "no": "20",
+   "pos": "",
+   "photo": "https://www.aba-liga.com/stats/img/foto/4434.png",
+   "gp": 1,
+   "min_avg": 23.9,
+   "pts_avg": 9.0,
+   "reb_avg": 4.0,
+   "ast_avg": 4.0
+  },
+  {
+   "id": "1175",
+   "name": "Murić E.",
+   "no": "8",
+   "pos": "",
+   "photo": "https://www.aba-liga.com/stats/img/foto/1175.png",
+   "gp": 1,
+   "min_avg": 23.2,
+   "pts_avg": 15.0,
+   "reb_avg": 5.0,
+   "ast_avg": 0.0
+  },
+  {
+   "id": "5581",
+   "name": "Hrabar V.",
+   "no": "11",
+   "pos": "",
+   "photo": "https://www.aba-liga.com/stats/img/foto/5581.png",
+   "gp": 1,
+   "min_avg": 23.2,
+   "pts_avg": 11.0,
+   "reb_avg": 3.0,
+   "ast_avg": 0.0
+  },
+  {
+   "id": "5484",
+   "name": "Dean H.",
+   "no": "18",
+   "pos": "",
+   "photo": "https://www.aba-liga.com/stats/img/foto/5484.png",
+   "gp": 1,
+   "min_avg": 20.8,
+   "pts_avg": 2.0,
+   "reb_avg": 3.0,
+   "ast_avg": 0.0
+  },
+  {
+   "id": "5260",
+   "name": "Boisa L.",
+   "no": "55",
+   "pos": "",
+   "photo": "https://www.aba-liga.com/stats/img/foto/5260.png",
+   "gp": 1,
+   "min_avg": 20.0,
+   "pts_avg": 9.0,
+   "reb_avg": 0.0,
+   "ast_avg": 1.0
+  },
+  {
+   "id": "5620",
+   "name": "Hargrove C.",
+   "no": "13",
+   "pos": "",
+   "photo": "https://www.aba-liga.com/stats/img/foto/5620.png",
+   "gp": 1,
+   "min_avg": 19.2,
+   "pts_avg": 7.0,
+   "reb_avg": 4.0,
+   "ast_avg": 0.0
+  },
+  {
+   "id": "5725",
+   "name": "Jones J.",
+   "no": "21",
+   "pos": "",
+   "photo": "https://www.aba-liga.com/stats/img/foto/5725.png",
+   "gp": 1,
+   "min_avg": 17.2,
+   "pts_avg": 6.0,
+   "reb_avg": 0.0,
+   "ast_avg": 2.0
+  },
+  {
+   "id": "4501",
+   "name": "Čibej M.",
+   "no": "5",
+   "pos": "",
+   "photo": "https://www.aba-liga.com/stats/img/foto/4501.png",
+   "gp": 1,
+   "min_avg": 16.1,
+   "pts_avg": 0.0,
+   "reb_avg": 4.0,
+   "ast_avg": 3.0
+  },
+  {
+   "id": "4890",
+   "name": "Faganel L.",
+   "no": "9",
+   "pos": "",
+   "photo": "https://www.aba-liga.com/stats/img/foto/4890.png",
+   "gp": 1,
+   "min_avg": 11.8,
+   "pts_avg": 0.0,
+   "reb_avg": 2.0,
+   "ast_avg": 1.0
+  }
+ ]
+}

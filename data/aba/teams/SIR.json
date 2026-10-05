@@ -1,0 +1,138 @@
+{
+ "code": "SIR",
+ "name": "HKK Široki TT Kabeli",
+ "short": "Široki",
+ "club_id": "6",
+ "crest": "https://www.aba-liga.com/images/club/100x100/6.png",
+ "record": {
+  "gp": 1,
+  "w": 1,
+  "l": 0,
+  "pf": 87,
+  "pa": 81,
+  "pf_avg": 87.0,
+  "pa_avg": 81.0
+ },
+ "games": [
+  {
+   "n": 15,
+   "round": 2,
+   "dt": "2026-10-02T16:30:00Z",
+   "home": false,
+   "opp": "BOR",
+   "pf": 87,
+   "pa": 81,
+   "result": "W"
+  }
+ ],
+ "roster": [
+  {
+   "id": "2850",
+   "name": "Zubac J.",
+   "no": "31",
+   "pos": "",
+   "photo": "https://www.aba-liga.com/stats/img/foto/2850.png",
+   "gp": 1,
+   "min_avg": 29.9,
+   "pts_avg": 9.0,
+   "reb_avg": 8.0,
+   "ast_avg": 0.0
+  },
+  {
+   "id": "4788",
+   "name": "Persons T.",
+   "no": "2",
+   "pos": "",
+   "photo": "https://www.aba-liga.com/stats/img/foto/4788.png",
+   "gp": 1,
+   "min_avg": 28.8,
+   "pts_avg": 18.0,
+   "reb_avg": 6.0,
+   "ast_avg": 4.0
+  },
+  {
+   "id": "1101",
+   "name": "Bilinovac J.",
+   "no": "11",
+   "pos": "",
+   "photo": "https://www.aba-liga.com/stats/img/foto/1101.png",
+   "gp": 1,
+   "min_avg": 28.1,
+   "pts_avg": 13.0,
+   "reb_avg": 3.0,
+   "ast_avg": 0.0
+  },
+  {
+   "id": "5724",
+   "name": "Lewis C.",
+   "no": "40",
+   "pos": "",
+   "photo": "https://www.aba-liga.com/stats/img/foto/5724.png",
+   "gp": 1,
+   "min_avg": 25.2,
+   "pts_avg": 19.0,
+   "reb_avg": 2.0,
+   "ast_avg": 3.0
+  },
+  {
+   "id": "3051",
+   "name": "Bošnjak M.",
+   "no": "34",
+   "pos": "",
+   "photo": "https://www.aba-liga.com/stats/img/foto/3051.png",
+   "gp": 1,
+   "min_avg": 20.8,
+   "pts_avg": 8.0,
+   "reb_avg": 6.0,
+   "ast_avg": 1.0
+  },
+  {
+   "id": "5646",
+   "name": "Ola-Joseph J.",
+   "no": "1",
+   "pos": "",
+   "photo": "https://www.aba-liga.com/stats/img/foto/5646.png",
+   "gp": 1,
+   "min_avg": 19.6,
+   "pts_avg": 8.0,
+   "reb_avg": 1.0,
+   "ast_avg": 0.0
+  },
+  {
+   "id": "2357",
+   "name": "Žganec K.",
+   "no": "9",
+   "pos": "",
+   "photo": "https://www.aba-liga.com/stats/img/foto/2357.png",
+   "gp": 1,
+   "min_avg": 19.2,
+   "pts_avg": 7.0,
+   "reb_avg": 3.0,
+   "ast_avg": 4.0
+  },
+  {
+   "id": "3728",
+   "name": "Vujanović D.",
+   "no": "44",
+   "pos": "",
+   "photo": "https://www.aba-liga.com/stats/img/foto/3728.png",
+   "gp": 1,
+   "min_avg": 15.8,
+   "pts_avg": 0.0,
+   "reb_avg": 1.0,
+   "ast_avg": 2.0
+  },
+  {
+   "id": "2849",
+   "name": "Karačić I.",
+   "no": "21",
+   "pos": "",
+   "photo": "https://www.aba-liga.com/stats/img/foto/2849.png",
+   "gp": 1,
+   "min_avg": 12.4,
+   "pts_avg": 5.0,
+   "reb_avg": 1.0,
+   "ast_avg": 0.0
+  }
+ ]
+}
