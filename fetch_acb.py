@@ -61,8 +61,8 @@ def parse_calendar(html):
     if not rounds: raise RuntimeError("ACB calendar containers not found; page layout may have changed")
     games=[]; clubs={}
     for rndnode in rounds:
-        mr=re.search(r"calendar-round-(\d+)",rndnode.get("id",""))
-        round_no=int(mr[1])-6014 if mr else None
+        rm=re.search(r"JORNADA\s+(\d+)",clean(rndnode.get_text(" ",strip=True)),re.I)
+        round_no=int(rm[1]) if rm else None
         for a in rndnode.select('a[href*="/partidos/"][href*="/estadisticas"]'):
             # Walk to the closest match card containing exactly two distinct team anchors.
             card=a; found=None
