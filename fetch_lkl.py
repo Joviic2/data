@@ -112,7 +112,6 @@ def extract_pages(path, max_pages=40):
             names = (team_name(teams[0]), team_name(teams[1]))
             for c, nm in zip((hc, ac), names):
                 clubs.setdefault(c, {"name":nm, "short":c, "crest":None})
-                img = teams[(hc, ac).index(c)].find("img", src=True) if False else None
             for side, c, a in (("h", hc, teams[0]), ("a", ac, teams[1])):
                 image = a.find("img", src=True)
                 if image:
