@@ -140,7 +140,7 @@ def scrape_shots(url,game,browser):
             "els => els.map(e=>e.id)")
         players=[]
         for cid in controls:
-            m=re.fullmatch(r"checkbox-(home|away)-(\\d+)",cid or "")
+            m=re.fullmatch(r"checkbox-(home|away)-(\d+)",cid or "")
             if m and (m[1],m[2]) not in players: players.append((m[1],m[2]))
         events=[]
         scale=100/((617.5-32.5)/28)  # official court viewBox: 585 px = 28 m
