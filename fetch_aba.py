@@ -1,155 +1,268 @@
 #!/usr/bin/env python3
-"""ABA liga (aba-liga.com) -> data/aba/site.json
-
-Čita zvanični KALENDAR (rezultati + raspored). Pristojno ponašanje:
-  - poštuje robots.txt (ako zabranjuje, skripta staje),
-  - jedan zahtev po pokretanju (kalendar), pauza između zahteva,
-  - ne osvežava ligu češće od MIN_AGE_MIN minuta,
-  - jasan User-Agent.
-Samo standardna biblioteka. Test lokalno:  python fetch_aba.py --file calendar.html --out /tmp/site.json
 """
-import json, os, re, sys, time, urllib.request, urllib.robotparser
+fetch_aba.py - ABA liga (aba-liga.com) -> JSON fajlovi koje cita Value Analyzer.
+
+POKRETANJE
+  python fetch_aba.py                 # preuzme sta fali (kalendar uvek, boxscore samo novih utakmica)
+  python fetch_aba.py --force         # ponovo parsira sve utakmice
+  python fetch_aba.py --offline       # ne ide na net, koristi samo raw/ kes (za testiranje)
+  python fetch_aba.py --season 26 --league-id 1 --out data/aba
+
+STRUKTURA IZLAZA (sve za jednu ligu je u jednom folderu: data/<liga>/)
+  data/aba/
+    site.json            <- JEDINO ovo cita aplikacija (sastavlja se iz ostalog)
+    calendar.json        <- ceo raspored + rezultati, kolo po kolo (parsirano iz kalendara)
+    positions.json       <- OPCIONO, ti ga pises: {"5648":"Guard"}  (pozicije igraca)
+    games/<broj>.json    <- jedna utakmica = jedan fajl (rezultat po cetvrtinama + ceo boxscore)
+    teams/<KOD>.json     <- jedan tim = jedan fajl (bilans, utakmice, roster sa prosecima)
+    raw/                 <- originalni HTML kako je preuzet (kes, moze u .gitignore)
+"""
+import argparse, json, re, sys, time
 from datetime import datetime, timezone
-from html.parser import HTMLParser
+from pathlib import Path
 from zoneinfo import ZoneInfo
+import requests
+from bs4 import BeautifulSoup
 
 BASE = "https://www.aba-liga.com"
-UA = "EuroleagueValueAnalyzer/1.0 (licna upotreba; https://github.com/Joviic2/data)"
+LEAGUE = {"key": "aba", "name": "ABA League", "season_label": "2026/27"}
+UA = {"User-Agent": "Mozilla/5.0 (compatible; ValueAnalyzerBot/1.0; +personal use)"}
 TZ = ZoneInfo("Europe/Belgrade")
-MIN_AGE = int(os.environ.get("MIN_AGE_MIN", "60"))
-DEFAULT_TIME = (18, 0)        # za utakmice kojima je poznat samo datum (placeholder)
 
+# redosled kolona u boxscore redu posle broja i imena (ABA tabela)
+KEYS = ["min", "pts", "pct", "fg2m", "fg2a", "fg2p", "fg3m", "fg3a", "fg3p", "ftm", "fta", "ftp",
+        "dr", "or", "tr", "ast", "stl", "tov", "blk", "blka", "pf", "pfd", "paint", "sec", "fb", "pm", "val"]
+ADV = {"paint", "sec", "fb"}          # kolone "Points from" - na starim mecevima mogu da fale
+SUMK = ["pts", "fg2m", "fg2a", "fg3m", "fg3a", "ftm", "fta", "or", "dr", "tr", "ast", "stl", "tov", "blk", "pf", "pir"]
+# kolone niza igraca u site.json (isto kao Euroleague: indeksi 0-21 su fiksni)
+PCOLS = ["id", "name", "no", "starter", "min", "pts", "fg2m", "fg2a", "fg3m", "fg3a", "ftm", "fta", "or", "dr", "tr",
+         "ast", "stl", "tov", "blk", "pf", "pir", "pm", "blk_against", "fouls_drawn", "pts_paint", "pts_2nd", "pts_fb"]
 SHORT = {"BOR": "Borac", "BOS": "Bosna", "BUD": "Budućnost", "CIB": "Cibona", "CLU": "U-BT Cluj", "COL": "Cedevita Olimpija",
          "CZV": "Crvena zvezda", "DUB": "Dubai", "FMP": "FMP", "IGO": "Igokea", "ILI": "Ilirija", "KRK": "Krka",
          "MEG": "Mega", "PAR": "Partizan", "SBR": "Slovan", "SCD": "SC Derby", "SIR": "Široki", "SPA": "Spartak",
          "VIE": "Vienna", "ZAD": "Zadar"}
 
-def season_id(today=None):
-    d = today or datetime.now(TZ)
-    return int(os.environ.get("ABA_SEASON") or (d.year - 2000 if d.month >= 7 else d.year - 2001))   # 2026/27 -> 26
+S = requests.Session(); S.headers.update(UA)
+def log(*a): print(*a, flush=True)
 
-# ----------------------------------------------------------------- parser kalendara
-class Cal(HTMLParser):
-    """Vraća listu redova: {round_label, id, codes[2], names[2], result, when, group}."""
-    def __init__(self):
-        super().__init__(convert_charrefs=True)
-        self.rows, self.label = [], ""
-        self.in_title = self.in_tr = False
-        self.cells, self.cur = [], None
-        self.p = None          # "xs" | "full" | None
-        self.xs, self.full, self.href = [], [], None
-        self.in_span = False
 
-    def handle_starttag(self, tag, a):
-        a = dict(a); cls = a.get("class", "") or ""
-        if tag == "h4" and "panel-title" in cls: self.in_title, self.label = True, ""
-        elif tag == "tr": self.in_tr, self.cells = True, []; self.xs, self.full, self.href = [], [], None
-        elif tag == "td" and self.in_tr: self.cur = {"cls": cls, "t": []}; self.cells.append(self.cur)
-        elif tag == "p" and self.cur is not None and len(self.cells) == 1:
-            self.p = "xs" if "visible-xs" in cls else "full" if "hidden-xs" in cls else None
-        elif tag == "span" and self.p:
-            self.in_span = True
-            (self.xs if self.p == "xs" else self.full).append("\x00")      # separator domaćin/gost (ne ':' jer ime ima "m:tel")
-        elif tag == "a" and self.cur is not None and len(self.cells) == 1 and self.href is None:
-            self.href = a.get("href")
+# ---------------------------------------------------------------- mreza / kes
+def http_get(url):
+    last = None
+    for i in range(4):
+        try:
+            r = S.get(url, timeout=30)
+            if r.status_code == 200:
+                time.sleep(0.6)  # ljubazno prema sajtu
+                return r.text
+            last = f"HTTP {r.status_code}"
+            if r.status_code == 404: break
+        except requests.RequestException as e:
+            last = str(e)
+        time.sleep(2 * (i + 1))
+    raise RuntimeError(f"{url} -> {last}")
 
-    def handle_endtag(self, tag):
-        if tag == "h4": self.in_title = False
-        elif tag == "span": self.in_span = False
-        elif tag == "p": self.p = None
-        elif tag == "td": self.cur = None
-        elif tag == "tr" and self.in_tr:
-            self.in_tr = False
-            if len(self.cells) >= 3: self._row()
+def load_html(url, cache, offline, refresh):
+    if cache.exists() and (offline or not refresh):
+        return cache.read_text("utf-8")
+    if offline: raise FileNotFoundError(f"nema u kesu: {cache}")
+    return http_get(url)
 
-    def handle_data(self, d):
-        if self.in_title: self.label += d
-        if self.cur is None or self.in_span: return
-        if len(self.cells) == 1 and self.p: (self.xs if self.p == "xs" else self.full).append(d)
-        self.cur["t"].append(d)
+def save(path, obj):
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(json.dumps(obj, ensure_ascii=False, indent=1), "utf-8")
 
-    def _row(self):
-        norm = lambda l: re.sub(r"\s+", " ", "".join(l)).strip()
-        split = lambda l: [x.strip() for x in re.sub(r"[ \t\r\n]+", " ", "".join(l)).split("\x00")]
-        m = re.search(r"/match/(\d+)/", self.href or "")
-        codes, names = split(self.xs), split(self.full)
-        self.rows.append({"label": norm([self.label]), "id": int(m.group(1)) if m else None,
-                          "codes": codes, "names": names,
-                          "result": norm(self.cells[1]["t"]), "when": norm(self.cells[2]["t"]),
-                          "group": norm(self.cells[4]["t"]) if len(self.cells) > 4 else ""})
 
-# ----------------------------------------------------------------- pretvaranje u format aplikacije
-def parse_when(s):
-    """'Friday, 02.10.2026 18:30 CET' -> (datetime lokalno, tačno_vreme) ; 'TBA' -> None"""
-    m = re.search(r"(\d{2})\.(\d{2})\.(\d{4})", s)
-    if not m or " - " in s: return None
-    d, mo, y = map(int, m.groups())
-    t = re.search(r"(\d{2}):(\d{2})", s[m.end():])
-    hh, mm = (int(t.group(1)), int(t.group(2))) if t else DEFAULT_TIME
-    return datetime(y, mo, d, hh, mm, tzinfo=TZ), bool(t)
+# ---------------------------------------------------------------- pomocne
+def num(s, d=0):
+    s = (s or "").strip().replace(",", ".")
+    try: return float(s) if "." in s else int(s)
+    except ValueError: return d
 
-def build(rows, old):
-    clubs = dict(old.get("clubs", {}))
-    games, fixtures = [], []
-    for r in rows:
-        mround = re.fullmatch(r"ROUND (\d+)", r["label"].strip(), re.I)
-        if not mround or r["id"] is None: continue            # samo regularni deo; plej-of/plej-aut dodajemo kad krene
-        if len(r["codes"]) != 2 or not all(r["codes"]) or len(r["names"]) != 2: continue
-        h, a = r["codes"]; rnd = int(mround.group(1))
-        for c, n in zip((h, a), r["names"]):
-            clubs.setdefault(c, {"name": n, "short": SHORT.get(c, n), "crest": ""})
-        w = parse_when(r["when"])
-        sc = re.search(r"(\d+)\s*:\s*(\d+)", r["result"])
-        if sc:
-            dt = w[0].strftime("%Y-%m-%dT%H:%M") if w else ""
-            games.append({"n": r["id"], "round": rnd, "dt": dt, "h": h, "a": a, "hs": int(sc.group(1)), "as": int(sc.group(2))})
-        elif w:                                                # zakazana, još neodigrana
-            fixtures.append({"n": r["id"], "round": rnd, "h": h, "a": a,
-                             "utc": w[0].astimezone(timezone.utc).strftime("%Y-%m-%dT%H:%M:%S.000Z")})
-    # sačuvaj boxscore ako je već povučen (kad ga dodamo)
-    box = {g["n"]: g["box"] for g in old.get("games", []) if g.get("box")}
-    for g in games:
-        if g["n"] in box: g["box"] = box[g["n"]]
-    site = {k: v for k, v in old.items()}
-    site.update({"updated": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"), "clubs": clubs,
-                 "games": sorted(games, key=lambda g: (g["dt"], g["n"])),
-                 "fixtures": sorted(fixtures, key=lambda f: (f["utc"], f["n"]))})
-    site.setdefault("rosters", {})
+def minutes(s):
+    m = re.match(r"\s*(\d+):(\d+)", s or "")
+    return round(int(m[1]) + int(m[2]) / 60, 2) if m else 0
+
+def to_utc(txt):
+    """'Friday, 02.10.2026 18:30 CET' -> ('2026-10-02T16:30:00Z', True). Bez sata: 12:00, False."""
+    m = re.search(r"(\d{2})\.(\d{2})\.(\d{4})(?:\s+(\d{1,2}):(\d{2}))?", txt or "")
+    if not m: return None, False
+    d, mo, y, h, mi = m.groups()
+    dt = datetime(int(y), int(mo), int(d), int(h or 12), int(mi or 0), tzinfo=TZ).astimezone(timezone.utc)
+    return dt.strftime("%Y-%m-%dT%H:%M:%SZ"), h is not None
+
+
+# ---------------------------------------------------------------- 1) KALENDAR
+def parse_calendar(html, season, lid):
+    soup = BeautifulSoup(html, "html.parser")
+    ids = {}  # naziv kluba -> club_id iz menija "Teams"
+    for a in soup.select('a[href*="/team/"]'):
+        m = re.search(rf"/team/(\d+)/{season}/{lid}/0/", a.get("href", ""))
+        if m: ids.setdefault(a.get_text(strip=True), m.group(1))
+    games, clubs = [], {}
+    for panel in soup.select("div.panel"):
+        h = panel.select_one(".panel-title a")
+        label = re.sub(r"\s+", " ", h.get_text(" ", strip=True)) if h else ""
+        m = re.match(r"ROUND\s+(\d+)", label, re.I)
+        rnd = int(m[1]) if m else None
+        for tr in panel.select("tbody tr"):
+            tds = tr.find_all("td")
+            a, ax = tr.select_one("p.hidden-xs a"), tr.select_one("p.visible-xs a")
+            if len(tds) < 4 or not a or not ax: continue
+            names = [t for t in a.stripped_strings if t != ":"]
+            codes = [t for t in ax.stripped_strings if t != ":"]
+            mm = re.search(r"/match/(\d+)/\d+/\d+/\w+/q1/\d+/home/([^/]*)/", a.get("href", ""))
+            if len(names) != 2 or len(codes) != 2 or not mm: continue  # TBD utakmice (plej-of) nemaju timove
+            sc = re.search(r"(\d+)\s*:\s*(\d+)", tds[1].get_text())
+            utc, known = to_utc(tds[2].get_text(" ", strip=True))
+            for c, n in zip(codes, names):
+                clubs.setdefault(c, {"name": n, "short": SHORT.get(c, n), "club_id": ids.get(n),
+                                     "crest": f"{BASE}/images/club/100x100/{ids[n]}.png" if n in ids else None})
+            games.append({"n": int(mm[1]), "slug": mm[2], "round": rnd, "phase": label, "h": codes[0], "a": codes[1],
+                          "hs": int(sc[1]) if sc else None, "as": int(sc[2]) if sc else None,
+                          "utc": utc, "time_known": known, "group": tds[-1].get_text(strip=True) or None})
+    return {"games": games, "clubs": clubs}
+
+
+# ---------------------------------------------------------------- 2) BOXSCORE
+def parse_row(vals):
+    if len(vals) == len(KEYS): keys = KEYS
+    elif len(vals) == len(KEYS) - len(ADV): keys = [k for k in KEYS if k not in ADV]
+    else: raise ValueError(f"neocekivan broj kolona: {len(vals)}")
+    d = {k: (minutes(v) if k == "min" else num(v)) for k, v in zip(keys, vals)}
+    for k in ADV: d.setdefault(k, 0)
+    return d
+
+def parse_box(html, season, lid):
+    soup = BeautifulSoup(html, "html.parser")
+    tabs = soup.select("table.match_boxscore_team_table")
+    if len(tabs) < 2: return None  # boxscore jos nije objavljen
+    q = []
+    t = soup.select_one("#match_cetrtine_rezultat")
+    if t and len(t.find_all("tr")) >= 2:
+        for c in t.find_all("tr")[1].find_all("td"):
+            m = re.match(r"\s*(\d+)\s*:\s*(\d+)", c.get_text())
+            if m: q.append((int(m[1]), int(m[2])))
+    box = {}
+    comp = soup.select_one("table.match_boxscore_teams_compare_table")
+    crow = [r for r in (comp.select("tbody tr") if comp else []) if len(r.find_all("td")) > 20]
+    for side, tab, i in (("h", tabs[0], 0), ("a", tabs[1], 1)):
+        players = []
+        for tr in tab.select("tbody tr"):
+            tds = tr.find_all("td")
+            link = tds[1].find("a") if len(tds) > 1 else None
+            if len(tds) < 5 or not link: continue  # DNP red ima samo 4 celije
+            d = parse_row([x.get_text(strip=True) for x in tds[2:]])
+            if d["min"] <= 0: continue
+            pid = re.search(r"/player/(\d+)/", link["href"])[1]
+            players.append([pid, link.get_text(strip=True), tds[0].get_text(strip=True),
+                            1 if "*" in tds[1].get_text() else 0, d["min"], d["pts"], d["fg2m"], d["fg2a"], d["fg3m"],
+                            d["fg3a"], d["ftm"], d["fta"], d["or"], d["dr"], d["tr"], d["ast"], d["stl"], d["tov"],
+                            d["blk"], d["pf"], d["val"], d["pm"], d["blka"], d["pfd"], d["paint"], d["sec"], d["fb"]])
+        if i < len(crow):  # ukupno tima sa stranice (ukljucuje timske skokove/izgubljene)
+            tt = parse_row([x.get_text(strip=True) for x in crow[i].find_all("td")[2:]]) if False else \
+                 parse_row([x.get_text(strip=True) for x in crow[i].find_all("td")[1:]])
+            tot = {k: tt[k] for k in SUMK if k != "pir"}; tot["pir"] = tt["val"]
+        else:
+            tot = {k: sum(p[PCOLS.index(k)] for p in players) for k in SUMK}
+        box[side] = {"p": players, "tot": tot}
+    info = soup.select_one("#basic_match_info")
+    venue = re.search(r"Venue:\s*(.+)", info.get_text("\n", strip=True)) if info else None
+    people = soup.select_one(".col-md-12 .smallCaps")
+    refs = re.search(r"Referees:\s*(.+)", " ".join(soup.get_text(" ", strip=True).split()))
+    clubs = {}
+    for a in soup.select('#match_clubs_and_results_info_table a[href^="/team/"]'):
+        m = re.search(r"/team/(\d+)/", a["href"])
+        if m and a.get_text(strip=True): clubs[a.get_text(strip=True)] = m[1]
+    return {"q": {"h": [x[0] for x in q], "a": [x[1] for x in q]}, "box": box,
+            "venue": venue[1].strip() if venue else None, "club_ids": clubs}
+
+
+# ---------------------------------------------------------------- 3) SASTAVLJANJE
+def team_file(code, club, games, roster):
+    gl, w, l, pf, pa = [], 0, 0, 0, 0
+    for g in sorted(games, key=lambda x: x["dt"] or ""):
+        if code not in (g["h"], g["a"]): continue
+        home = g["h"] == code
+        f_, a_ = (g["hs"], g["as"]) if home else (g["as"], g["hs"])
+        won = f_ > a_; w += won; l += not won; pf += f_; pa += a_
+        gl.append({"n": g["n"], "round": g["round"], "dt": g["dt"], "home": home, "opp": g["a"] if home else g["h"],
+                   "pf": f_, "pa": a_, "result": "W" if won else "L"})
+    n = len(gl) or 1
+    return {"code": code, **club, "record": {"gp": len(gl), "w": w, "l": l, "pf": pf, "pa": pa,
+            "pf_avg": round(pf / n, 1), "pa_avg": round(pa / n, 1)}, "games": gl,
+            "roster": sorted(roster, key=lambda p: -p["min_avg"])}
+
+def build(out, cal, parsed, season, lid):
+    pos = {}
+    if (out / "positions.json").exists():
+        pos = json.loads((out / "positions.json").read_text("utf-8"))
+    games, fixtures, rosters, pstat = [], [], {}, {}
+    for g in cal["games"]:
+        p = parsed.get(g["n"])
+        if g["hs"] is not None and p:
+            games.append({"n": g["n"], "round": g["round"], "h": g["h"], "a": g["a"], "hs": g["hs"], "as": g["as"],
+                          "dt": g["utc"], "q": p["q"], "box": p["box"]})
+            for side, code in (("h", g["h"]), ("a", g["a"])):
+                for r in p["box"][side]["p"]:
+                    s = pstat.setdefault((code, r[0]), {"id": r[0], "name": r[1], "no": r[2], "gp": 0, "min": 0, "pts": 0, "reb": 0, "ast": 0})
+                    s["gp"] += 1; s["min"] += r[4]; s["pts"] += r[5]; s["reb"] += r[14]; s["ast"] += r[15]; s["no"] = r[2]
+        elif g["hs"] is None:
+            fixtures.append({"n": g["n"], "round": g["round"], "h": g["h"], "a": g["a"], "utc": g["utc"]})
+    for (code, pid), s in pstat.items():
+        n = s["gp"]
+        rosters.setdefault(code, {"players": [], "assistants": []})["players"].append(
+            {"id": pid, "name": s["name"], "no": s["no"], "pos": pos.get(pid, ""),
+             "photo": f"{BASE}/stats/img/foto/{pid}.png", "gp": n, "min_avg": round(s["min"] / n, 1),
+             "pts_avg": round(s["pts"] / n, 1), "reb_avg": round(s["reb"] / n, 1), "ast_avg": round(s["ast"] / n, 1)})
+    games.sort(key=lambda x: x["dt"] or ""); fixtures.sort(key=lambda x: x["utc"] or "")
+    for code, club in cal["clubs"].items():
+        save(out / "teams" / f"{code}.json", team_file(code, club, games, rosters.get(code, {}).get("players", [])))
+    site_ros = {c: {"players": [{k: p[k] for k in ("id", "name", "no", "pos", "photo")} for p in r["players"]], "assistants": []}
+                for c, r in rosters.items()}
+    site = {"updated": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
+            "league": {**LEAGUE, "season": season, "league_id": lid, "player_columns": PCOLS},
+            "clubs": cal["clubs"], "rosters": site_ros, "games": games, "fixtures": fixtures}
+    save(out / "site.json", site)
     return site
 
-# ----------------------------------------------------------------- mreža
-def get(url):
-    rp = urllib.robotparser.RobotFileParser(BASE + "/robots.txt")
-    try: rp.read()
-    except Exception: pass                                      # nema robots.txt = dozvoljeno
-    if rp.default_entry is not None or rp.entries:
-        if not rp.can_fetch(UA, url): sys.exit(f"robots.txt ne dozvoljava {url} - prekidam.")
-    time.sleep(2)
-    req = urllib.request.Request(url, headers={"User-Agent": UA, "Accept-Language": "en"})
-    with urllib.request.urlopen(req, timeout=30) as r: return r.read().decode("utf-8", "replace")
 
-def fresh(path):
-    try:
-        with open(path, encoding="utf8") as f: u = json.load(f)["updated"]
-        return (datetime.now(timezone.utc) - datetime.strptime(u, "%Y-%m-%dT%H:%M:%SZ").replace(tzinfo=timezone.utc)).total_seconds() / 60 < MIN_AGE
-    except Exception: return False
-
-def main():
-    a = sys.argv[1:]
-    out = a[a.index("--out") + 1] if "--out" in a else "data/aba/site.json"
-    if "--file" in a: html = open(a[a.index("--file") + 1], encoding="utf8").read()
-    else:
-        if fresh(out): print(f"aba: osveženo pre manje od {MIN_AGE} min, preskačem"); return
-        html = get(f"{BASE}/calendar/{season_id()}/1/")
-    p = Cal(); p.feed(html)
-    old = {}
-    try:
-        with open(out, encoding="utf8") as f: old = json.load(f)
+def main(argv=None):
+    try: sys.stdout.reconfigure(encoding="utf-8")
     except Exception: pass
-    site = build(p.rows, old)
-    if not site["games"] and not site["fixtures"]: sys.exit("aba: nijedna utakmica nije pročitana (promenjen HTML?).")
-    os.makedirs(os.path.dirname(out) or ".", exist_ok=True)
-    with open(out, "w", encoding="utf8") as f: json.dump(site, f, ensure_ascii=False, separators=(",", ":"))
-    print(f"aba: {len(site['games'])} odigranih, {len(site['fixtures'])} predstojećih, {len(site['clubs'])} klubova -> {out}")
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--season", type=int, default=26); ap.add_argument("--league-id", type=int, default=1)
+    ap.add_argument("--out", default="data/aba"); ap.add_argument("--force", action="store_true")
+    ap.add_argument("--offline", action="store_true")
+    a = ap.parse_args(argv); out = Path(a.out)
+    html = load_html(f"{BASE}/calendar/{a.season}/{a.league_id}/", out / "raw" / "calendar.html", a.offline, True)
+    cal = parse_calendar(html, a.season, a.league_id)
+    if not cal["games"]: sys.exit("Kalendar je prazan - proveri --season / --league-id ili je sajt promenio HTML.")
+    save(out / "calendar.json", cal)
+    done = [g for g in cal["games"] if g["hs"] is not None]
+    log(f"Kalendar: {len(cal['games'])} utakmica, odigrano {len(done)}, klubova {len(cal['clubs'])}")
+    parsed, bad = {}, 0
+    for g in done:
+        gp = out / "games" / f"{g['n']}.json"
+        if gp.exists() and not a.force:
+            parsed[g["n"]] = json.loads(gp.read_text("utf-8")); continue
+        url = f"{BASE}/match/{g['n']}/{a.season}/{a.league_id}/Boxscore/q1/1/home/{g['slug']}/"
+        raw = out / "raw" / f"box_{g['n']}.html"
+        try:
+            h = load_html(url, raw, a.offline, a.force)
+            p = parse_box(h, a.season, a.league_id)
+            if not p: log(f"  #{g['n']} {g['h']}-{g['a']}: boxscore jos nije objavljen"); bad += 1; continue
+            hs = sum(x[5] for x in p["box"]["h"]["p"]); as_ = sum(x[5] for x in p["box"]["a"]["p"])
+            if (hs, as_) != (g["hs"], g["as"]):
+                log(f"  UPOZORENJE #{g['n']}: zbir poena igraca {hs}:{as_} != rezultat {g['hs']}:{g['as']}")
+            raw.parent.mkdir(parents=True, exist_ok=True); raw.write_text(h, "utf-8")
+            save(gp, {**{k: g[k] for k in ("n", "round", "phase", "group", "h", "a", "hs", "as")}, "dt": g["utc"],
+                      "columns": PCOLS, "source": url, **p})
+            parsed[g["n"]] = json.loads(gp.read_text("utf-8")); log(f"  #{g['n']} {g['h']} {g['hs']}:{g['as']} {g['a']}  OK")
+        except Exception as e:
+            log(f"  #{g['n']} {g['h']}-{g['a']}: GRESKA {e}"); bad += 1
+    site = build(out, cal, parsed, a.season, a.league_id)
+    log(f"Gotovo: {len(site['games'])} utakmica sa boxscore-om, {len(site['fixtures'])} predstojecih, {bad} problema -> {out/'site.json'}")
 
-if __name__ == "__main__": main()
+if __name__ == "__main__":
+    main()
