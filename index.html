@@ -544,13 +544,16 @@ function bkTable(){
 const MET=[["pts","Poeni",p=>p[5]],["ast","Asistencije",p=>p[15]],["reb","Skokovi",p=>p[14]],["fg3m","Trojke",p=>p[8]],["pa","Pts+Ast",p=>p[5]+p[15]],["pr","Pts+Reb",p=>p[5]+p[14]],["par","Pts+Reb+Ast",p=>p[5]+p[14]+p[15]],["ra","Reb+Ast",p=>p[14]+p[15]],["pir","PIR",p=>p[20]]];
 let PMK="pts";
 const mfn=k=>MET.find(x=>x[0]==k)[2];
-const pinfo=(t,id)=>((D.rosters[t]||{}).players||[]).find(p=>p.id==id)||{};
+const pinfo=(t,id)=>((D.rosters[t]||{}).players||[]).find(p=>String(p.id)===String(id))||{};
 const MINV=()=>{const e=document.getElementById("pmn");return e?+e.value||0:0};
 function pgames(t,id){const o=[];D.games.slice().sort((a,b)=>(a.dt||"").localeCompare(b.dt||"")).forEach(g=>{if(!g.box||(g.h!=t&&g.a!=t))return;const hm=g.h==t,p=g.box[hm?"h":"a"].p.find(x=>x[0]==id);if(p&&p[4]>0&&p[4]>=MINV())o.push({g,p,hm,op:hm?g.a:g.h})});return o}
 function fillPlayers(reset){
- const t=$("ptm").value,cur=$("ppl").value,m=new Map();
- D.games.forEach(g=>{if(!g.box||(g.h!=t&&g.a!=t))return;g.box[g.h==t?"h":"a"].p.forEach(p=>{if(p[4]>0){const a=m.get(p[0])||{n:p[1],min:0};a.min+=p[4];m.set(p[0],a)}})});
- $("ppl").innerHTML=[...m].sort((a,b)=>b[1].min-a[1].min).map(([id,a])=>`<option value="${esc(id)}">${esc(a.n)}</option>`).join("");
+ const t=$("ptm").value,cur=String($("ppl").value||""),m=new Map();
+ // Begin with the complete official roster, then fold in every available game
+ // boxscore so players from all matches in the current round are selectable.
+ (D.rosters[t]?.players||[]).forEach(p=>m.set(String(p.id),{n:p.name||"",min:0}));
+ D.games.forEach(g=>{if(!g.box||(g.h!=t&&g.a!=t))return;g.box[g.h==t?"h":"a"].p.forEach(p=>{const id=String(p[0]),a=m.get(id)||{n:p[1],min:0};a.n=p[1]||a.n;if(p[4]>0)a.min+=p[4];m.set(id,a)})});
+ $("ppl").innerHTML=[...m].sort((a,b)=>b[1].min-a[1].min||a[1].n.localeCompare(b[1].n)).map(([id,a])=>`<option value="${esc(id)}">${esc(a.n)}</option>`).join("");
  if(m.has(cur))$("ppl").value=cur;
  const ops=TEAMS.filter(c=>c!=t),cp=$("pop").value,done=new Set(D.games.map(g=>g.n)),nx=(D.fixtures||[]).find(x=>!done.has(x.n)&&(x.h==t||x.a==t));
  $("pop").innerHTML=ops.map(c=>`<option value="${c}">${esc(nm(c))}</option>`).join("");
@@ -591,7 +594,9 @@ function chart(skip){
  const L=+$("pln").value||0,pi=pinfo(t,id),W=640,H=300,pt=18,pb=34,fn=mfn(PMK),nmP=pi.name||$("ppl").selectedOptions[0].text;
  const d=G.map(x=>({v:fn(x.p),l:(x.hm?"":"@")+x.op})),vs=d.map(x=>x.v),n=vs.length,ov=vs.filter(v=>v>L).length,hr=ov/n*100,A=k=>f(avg(G.map(x=>mfn(k)(x.p))));
  $("pph").innerHTML=`<div class="head" style="gap:14px;flex-wrap:nowrap">${face(pi.photo,nmP,1)}<div style="flex:1"><h2 style="margin:0">${esc(nmP)}</h2><div class="sub" style="margin:0"><span class="head">${badge(t)}${esc(nm(t))}${pi.pos?` · ${esc(pi.pos)}`:""}${pi.no?` · #${esc(pi.no)}`:""}</span></div></div><div style="text-align:right"><span class="mu" style="font-size:.8rem">HIT RATE</span><div class="big ${hr>=50?"ok":"no"}">${f(hr,0)}%</div><span class="mu">${ov}/${n} iznad ${L}</span></div></div>
- <div class="grid" style="margin-top:12px">${[["PTS",A("pts")],["AST",A("ast")],["REB",A("reb")],["3PM",A("fg3m")],["MIN",f(avg(G.map(x=>x.p[4])))]].map(x=>`<div class="stat"><span>AVG ${x[0]}</span><div class="num">${x[1]}</div></div>`).join("")}</div>`;$("pph").insertAdjacentHTML("beforeend",propCard(G,L));
+ const shoot=G.reduce((a,x)=>{a.m2+=x.p[6];a.a2+=x.p[7];a.m3+=x.p[8];a.a3+=x.p[9];a.mf+=x.p[6]+x.p[8];a.af+=x.p[7]+x.p[9];a.ftm+=x.p[10];a.fta+=x.p[11];a.pts+=x.p[5];return a},{m2:0,a2:0,m3:0,a3:0,mf:0,af:0,ftm:0,fta:0,pts:0});
+ const pct=(m,a)=>a?f(100*m/a,1)+"%":"-";
+ <div class="grid" style="margin-top:12px">${[["PTS",A("pts")],["AST",A("ast")],["REB",A("reb")],["2FG%",pct(shoot.m2,shoot.a2)],["3FG%",pct(shoot.m3,shoot.a3)],["FT%",pct(shoot.ftm,shoot.fta)],["eFG%",shoot.af?f(100*(shoot.mf+.5*shoot.m3)/shoot.af,1)+"%":"-"],["MIN",f(avg(G.map(x=>x.p[4])))]].map(x=>`<div class="stat"><span>AVG ${x[0]}</span><div class="num">${x[1]}</div></div>`).join("")}</div>`;$("pph").insertAdjacentHTML("beforeend",propCard(G,L));
  $("pmt").innerHTML=MET.map(x=>`<button type="button" data-m="${x[0]}" aria-selected="${x[0]==PMK}">${x[1]}</button>`).join("");
  const lo=Math.min(0,...vs,L),hi=(Math.max(...vs,L)*1.1)||1;CH={hi,lo,pt,H,pb};
  const y=v=>pt+(hi-v)/(hi-lo)*(H-pt-pb),gap=(W-40)/n,bw=Math.min(46,gap-8);
