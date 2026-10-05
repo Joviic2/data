@@ -151,7 +151,7 @@ def parse_box(url,game,browser):
         sp.close()
     photo_by_id={}
     for row in photos:
-        m=re.search(r"-(\\d+)(?:/|$)",row.get("href") or "")
+        m=re.search(r"-(\d+)(?:/|$)",row.get("href") or "")
         if m and row.get("photo"): photo_by_id[m[1]]=urljoin(LIVE,row["photo"])
 
     tables=[t for t in tables if t and max((len(row["v"]) for row in t),default=0)>=22 and any(row.get("href") for row in t)]
