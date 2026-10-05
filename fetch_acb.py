@@ -136,6 +136,13 @@ def scrape_shots(url,game,browser):
         for side in ("home","away"):
             switch=page.locator("#switch-"+side).filter(visible=True).first
             if switch.get_attribute("aria-checked")=="true": switch.click()
+        # Diagnose the ACB headless interstitial before interacting with the chart.
+        modal=page.locator(".modal:visible").first
+        if modal.count():
+            details=modal.inner_text(timeout=3000).replace("\n"," ")[:500]
+            buttons=modal.locator("button").evaluate_all(
+                "els=>els.map(b=>({text:(b.innerText||'').trim(),label:b.getAttribute('aria-label'),title:b.title}))")
+            raise RuntimeError(f"ACB_MODAL_DIAGNOSTIC text={details!r} buttons={buttons!r}")
         controls=page.locator('[id^="checkbox-home-"],[id^="checkbox-away-"]').evaluate_all(
             "els => els.map(e=>e.id)")
         players=[]
