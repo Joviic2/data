@@ -50,9 +50,12 @@ def parse_date(text):
 def team_anchors(node):
     out=[]
     for a in node.select('a[href*="/es/liga/equipos/"]'):
-        name=clean(a.get("aria-label") or a.get("title") or a.get_text(" ",strip=True))
-        if name and not re.search(r"logo$",name,re.I) and name not in [x[0] for x in out]:
-            out.append((name,urljoin("https://acb.com",a.get("href",""))))
+        im=a.find("img")
+        raw=clean((im.get("alt") if im else None) or a.get("aria-label") or a.get("title") or a.get_text(" ",strip=True))
+        name=next((known for known in CODES if raw.lower().startswith(known.lower())),raw)
+        crest=urljoin("https://acb.com",im.get("src","")) if im and im.get("src") else None
+        if name and name not in [x[0] for x in out]:
+            out.append((name,urljoin("https://acb.com",a.get("href","")),crest))
     return out
 
 def parse_calendar(html):
@@ -88,8 +91,10 @@ def parse_calendar(html):
             if dt and mt: dt=dt.replace(hour=int(mt[1]),minute=int(mt[2]))
             hname,aname=teams[0][0],teams[1][0]
             hc,ac=team_code(hname),team_code(aname)
-            clubs.setdefault(hc,{"name":hname,"short":hc,"crest":None})
-            clubs.setdefault(ac,{"name":aname,"short":ac,"crest":None})
+            clubs.setdefault(hc,{"name":hname,"short":hc,"crest":teams[0][2]})
+            clubs.setdefault(ac,{"name":aname,"short":ac,"crest":teams[1][2]})
+            if teams[0][2]: clubs[hc]["crest"]=teams[0][2]
+            if teams[1][2]: clubs[ac]["crest"]=teams[1][2]
             item={"n":int(mid[1]),"round":round_no,"h":hc,"a":ac,"utc":dt.strftime("%Y-%m-%dT%H:%M:%SZ") if dt else None,"url":href}
             if score: item.update(hs=int(score[1]),as_=int(score[2]))
             games.append(item)
@@ -108,37 +113,40 @@ def parse_minutes(s):
     m=re.search(r"(\d+):(\d+)",clean(s))
     return round(int(m[1])+int(m[2])/60,2) if m else 0
 
-def parse_box(url,game):
-    soup=BeautifulSoup(get(url),"html.parser")
-    tables=[]
-    for table in soup.find_all("table"):
-        rows=table.find_all("tr")
-        if rows and len(rows[0].find_all(["th","td"]))>=22: tables.append(table)
+def parse_box(url,game,browser):
+    page=browser.new_page()
+    try:
+        page.goto(url,wait_until="domcontentloaded",timeout=60000)
+        page.locator("table").first.wait_for(state="visible",timeout=25000)
+        tables=page.locator("table").evaluate_all("""ts => ts.map(t => Array.from(t.querySelectorAll('tr')).map(r => ({
+          v:Array.from(r.cells).map(c => c.innerText.trim()),
+          href:r.querySelector('a[href*="/liga/jugadores/"]')?.getAttribute('href')||null
+        })))""")
+    finally:
+        page.close()
+    tables=[t for t in tables if t and len(t[0]["v"])>=22]
     if len(tables)<2: return None
     box={}
     for side,table in zip(("h","a"),tables[:2]):
         players=[]
-        for tr in table.find_all("tr")[1:]:
-            cells=tr.find_all(["td","th"])
-            if len(cells)<22: continue
-            player_link=cells[0].find("a",href=True)
-            label=clean(cells[0].get_text(" ",strip=True))
-            if not player_link or label.lower() in ("team","totals"): continue
-            idm=re.search(r"-(\d+)(?:/|$)",player_link.get("href",""))
-            pid=idm[1] if idm else re.sub(r"\D","",player_link.get("href",""))
+        for tr in table[1:]:
+            vals=tr["v"]
+            if len(vals)<22 or not tr["href"]: continue
+            label=clean(vals[0])
+            if label.lower() in ("team","totals","equipo"): continue
+            m=re.search(r"-(\d+)(?:/|$)",tr["href"])
+            pid=m[1] if m else tr["href"].rstrip("/").split("/")[-1]
+            f2m,f2a=made_attempt(vals[3]); f3m,f3a=made_attempt(vals[5]); ftm,fta=made_attempt(vals[7])
             number=re.match(r"\s*(\d+)",label)
             name=clean(re.sub(r"^\d+\s*","",label))
-            vals=[clean(c.get_text(" ",strip=True)) for c in cells]
-            fg2m,fg2a=made_attempt(vals[3]); fg3m,fg3a=made_attempt(vals[5]); ftm,fta=made_attempt(vals[7])
-            row=[pid,name,number[1] if number else "",1 if "starter" in str(cells[0]).lower() else 0,
-                 parse_minutes(vals[1]),num(vals[2]),fg2m,fg2a,fg3m,fg3a,ftm,fta,
-                 num(vals[10]),num(vals[9]),num(vals[11]),num(vals[12]),num(vals[14]),num(vals[13]),
-                 num(vals[15]),num(vals[17]),num(vals[21]),num(vals[20])]
+            row=[pid,name,number[1] if number else "",int("*" in label),parse_minutes(vals[1]),num(vals[2]),
+                 f2m,f2a,f3m,f3a,ftm,fta,num(vals[10]),num(vals[9]),num(vals[11]),num(vals[12]),
+                 num(vals[14]),num(vals[13]),num(vals[15]),num(vals[18]),num(vals[21]),num(vals[20])]
             if row[4]>0: players.append(row)
         if not players: return None
         tot={k:0 for k in ("pts","fg2m","fg2a","fg3m","fg3a","ftm","fta","or","dr","tr","ast","stl","tov","blk","pf","pir")}
-        for p in players:
-            for k,i in {"pts":5,"fg2m":6,"fg2a":7,"fg3m":8,"fg3a":9,"ftm":10,"fta":11,"or":12,"dr":13,"tr":14,"ast":15,"stl":16,"tov":17,"blk":18,"pf":19,"pir":20}.items(): tot[k]+=num(p[i])
+        for pl in players:
+            for k,i in {"pts":5,"fg2m":6,"fg2a":7,"fg3m":8,"fg3a":9,"ftm":10,"fta":11,"or":12,"dr":13,"tr":14,"ast":15,"stl":16,"tov":17,"blk":18,"pf":19,"pir":20}.items(): tot[k]+=num(pl[i])
         box[side]={"coach":"","p":players,"tot":tot}
     return {"q":None,"box":box}
 
@@ -147,15 +155,18 @@ def main():
     games,clubs=parse_calendar(get(CALENDAR))
     if not games: raise RuntimeError("ACB calendar parsed zero games; refusing to overwrite site.json")
     done=[]; fixtures=[]
-    for g in games:
-        if "hs" not in g:
-            fixtures.append({"n":g["n"],"round":g["round"],"h":g["h"],"a":g["a"],"utc":g["utc"]})
-            continue
-        parsed=None
-        try: parsed=parse_box(g["url"],g)
-        except Exception as e: print(f"boxscore {g['n']} failed: {e}")
-        item={"n":g["n"],"round":g["round"],"h":g["h"],"a":g["a"],"hs":g["hs"],"as":g["as_"],"dt":g["utc"],"q":None,"box":parsed["box"] if parsed else None}
-        done.append(item)
+    with sync_playwright() as pw:
+        browser=pw.chromium.launch(headless=True)
+        for g in games:
+            if "hs" not in g:
+                fixtures.append({"n":g["n"],"round":g["round"],"h":g["h"],"a":g["a"],"utc":g["utc"]})
+                continue
+            parsed=None
+            try: parsed=parse_box(g["url"],g,browser)
+            except Exception as e: print(f"boxscore {g['n']} failed: {e}")
+            item={"n":g["n"],"round":g["round"],"h":g["h"],"a":g["a"],"hs":g["hs"],"as":g["as_"],"dt":g["utc"],"q":None,"box":parsed["box"] if parsed else None}
+            done.append(item)
+        browser.close()
     site={"season":"E2026","updated":datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
           "cols":PCOLS,"league":{"key":"acb","name":"ACB","season_label":"2026/27","season":"E2026","player_columns":PCOLS},
           "clubs":clubs,"rosters":{},"games":done,"fixtures":fixtures}
