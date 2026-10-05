@@ -1,6 +1,11 @@
 name: Update data
 
 on:
+  push:
+    paths:
+      - "fetch_lkl.py"
+      - "requirements.txt"
+      - ".github/workflows/update.yml"
   schedule:
     - cron: "*/15 * * * *"   # svakih 15 minuta (GitHub zna da kasni nekoliko minuta)
   workflow_dispatch:         # dugme za rucno pokretanje
