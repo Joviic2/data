@@ -21,6 +21,13 @@ jobs:
         with:
           python-version: "3.12"
       - run: pip install -r requirements.txt
+      - name: Cache Playwright Chromium
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/ms-playwright
+          key: playwright-chromium-${{ runner.os }}-${{ hashFiles('requirements.txt') }}
+      - name: Install Chromium for official LKL protocols
+        run: python -m playwright install chromium
       - run: python fetch_data.py
       - run: python build_site.py
       - run: python fetch_shots.py
@@ -34,12 +41,14 @@ jobs:
       - run: python fetch_aba.py
       - name: Scrape ACB calendar and boxscores
         run: python fetch_acb.py
-      - name: Refresh LKL, LNB and BBL (API-Sports)
+      - name: Scrape LKL calendar and player protocols
+        run: python fetch_lkl.py
+      - name: Refresh LNB and BBL (API-Sports fallback)
         run: python fetch_apisports.py
         continue-on-error: true
         env:
           APISPORTS_KEY: ${{ secrets.APISPORTS_KEY }}
-          LEAGUES: lkl,lnb,bbl
+          LEAGUES: lnb,bbl
           MIN_AGE_MIN: "240"
           MAX_BOX: "3"
       - name: Commit data
