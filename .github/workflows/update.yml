@@ -22,6 +22,7 @@ concurrency:
 jobs:
   update:
     runs-on: ubuntu-latest
+    timeout-minutes: 40
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -46,9 +47,12 @@ jobs:
         env:
           ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
       - run: python fetch_aba.py
+        continue-on-error: true
       - name: Scrape ACB calendar and boxscores
         run: python fetch_acb.py
+        continue-on-error: true
       - name: Commit data
+        if: always()
         run: |
           git config user.name "data-bot"
           git config user.email "data-bot@users.noreply.github.com"
