@@ -183,6 +183,20 @@ def scrape_shots(url,game,browser):
     finally:
         page.close()
 
+def shots_match_box(shots,game,box):
+    try:
+        for side in ("h","a"):
+            team=game[side]
+            for p in box[side]["p"]:
+                rows=[r for r in shots if str(r.get("TEAM"))==team and str(r.get("ID_PLAYER"))==str(p[0])]
+                fg=[r for r in rows if str(r.get("ID_ACTION","")).startswith(("2FG","3FG"))]
+                ft=[r for r in rows if str(r.get("ID_ACTION","")).startswith("FT")]
+                made=sum(str(r.get("ID_ACTION","")).endswith("M") for r in fg)
+                if (made,len(fg))!=(p[6]+p[8],p[7]+p[9]): return False
+                if len(ft)!=p[11] or sum(str(r.get("ID_ACTION","")).endswith("M") for r in ft)!=p[10]: return False
+        return True
+    except Exception: return False
+
 def parse_box(url,game,browser):
     page=browser.new_page()
     try:
@@ -268,14 +282,24 @@ def main():
             if parsed:
                 player_meta.update({side+"|"+str(pid):data for side,players in parsed["meta"].items() for pid,data in players.items()})
                 try:
-                    sg=dict(g); sg["_box"]=parsed["box"]
-                    shots=scrape_shots(g["url"],sg,browser)
-                    for side in ("h","a"):
-                        for pl in parsed["box"][side]["p"]:
-                            for ix in range(pl[11]):
-                                made=ix<pl[10]
-                                shots.append({"TEAM":g[side],"ID_PLAYER":str(pl[0]),"ID_ACTION":"FTM" if made else "FTA",
-                                              "COORD_X":0,"COORD_Y":0,"POINTS":1 if made else 0})
+                    cached=OUT.parent/f"shots_{g['n']}.json"
+                    shots=None
+                    if cached.exists():
+                        try:
+                            candidate=json.loads(cached.read_text("utf-8"))
+                            if shots_match_box(candidate,g,parsed["box"]):
+                                shots=candidate
+                                print(f"ACB shot chart {g['n']}: reused verified cached map")
+                        except Exception: pass
+                    if shots is None:
+                        sg=dict(g); sg["_box"]=parsed["box"]
+                        shots=scrape_shots(g["url"],sg,browser)
+                        for side in ("h","a"):
+                            for pl in parsed["box"][side]["p"]:
+                                for ix in range(pl[11]):
+                                    made=ix<pl[10]
+                                    shots.append({"TEAM":g[side],"ID_PLAYER":str(pl[0]),"ID_ACTION":"FTM" if made else "FTA",
+                                                  "COORD_X":0,"COORD_Y":0,"POINTS":1 if made else 0})
                     shot_data[str(g["n"])]=shots
                     print(f"ACB shot chart {g['n']}: {len(shots)} attempts, verified against official boxscore")
                 except Exception as e: print(f"ACB shot chart {g['n']} skipped: {e}")
