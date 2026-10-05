@@ -126,7 +126,7 @@ def parse_box(url,game,browser):
         tables=page.locator("table").evaluate_all("""ts => ts.map(t => Array.from(t.querySelectorAll('tr')).map(r => ({
           v:Array.from(r.cells).map(c => c.innerText.trim()),
           href:r.querySelector('a[href*="/liga/jugadores/"]')?.getAttribute('href')||null,
-          photo:r.querySelector('img')?.getAttribute('src')||null
+          photo:r.querySelector('img')?.getAttribute('src')||r.querySelector('img')?.getAttribute('data-src')||r.querySelector('img')?.getAttribute('data-lazy-src')||null
         })))""")
     finally:
         page.close()
@@ -144,7 +144,9 @@ def parse_box(url,game,browser):
             pid=m[1] if m else tr["href"].rstrip("/").split("/")[-1]
             f2m,f2a=made_attempt(vals[3]); f3m,f3a=made_attempt(vals[5]); ftm,fta=made_attempt(vals[7])
             number=re.match(r"\s*(\d+)",label)
-            name=clean(re.sub(r"^\d+\s*","",label))
+            slug=re.search(r"/liga/jugadores/([^/?#]+)",tr["href"])
+            profile_name=re.sub(r"-\d+$","",slug[1]).replace("-"," ").title() if slug else ""
+            name=profile_name or clean(re.sub(r"^\d+\s*","",label))
             row=[pid,name,number[1] if number else "",int("*" in label),parse_minutes(vals[1]),num(vals[2]),
                  f2m,f2a,f3m,f3a,ftm,fta,num(vals[10]),num(vals[9]),num(vals[11]),num(vals[12]),
                  num(vals[14]),num(vals[13]),num(vals[15]),num(vals[18]),num(vals[21]),num(vals[20])]
