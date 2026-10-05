@@ -154,7 +154,7 @@ def scrape_shots(url,game,browser):
             for marker in markers:
                 # ACB draws a made attempt as a filled, classed marker and a miss
                 # as a white, unclassed outer circle plus a smaller decorative ring.
-                if marker["fill"].upper() not in ("#FFFFFF","#083C8E","#951F00"): continue
+                if not marker["className"] and marker["fill"].upper()!="#FFFFFF": continue
                 made="--entered" in marker["className"]
                 hoop=32.5 if marker["x"]<=325 else 617.5
                 x=(marker["y"]-175)*scale
