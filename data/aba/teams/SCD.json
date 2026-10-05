@@ -5,14 +5,170 @@
  "club_id": "74",
  "crest": "https://www.aba-liga.com/images/club/100x100/74.png",
  "record": {
-  "gp": 0,
+  "gp": 1,
   "w": 0,
-  "l": 0,
-  "pf": 0,
-  "pa": 0,
-  "pf_avg": 0.0,
-  "pa_avg": 0.0
+  "l": 1,
+  "pf": 65,
+  "pa": 79,
+  "pf_avg": 65.0,
+  "pa_avg": 79.0
  },
- "games": [],
- "roster": []
+ "games": [
+  {
+   "n": 19,
+   "round": 2,
+   "dt": "2026-10-05T18:30:00Z",
+   "home": false,
+   "opp": "ZAD",
+   "pf": 65,
+   "pa": 79,
+   "result": "L"
+  }
+ ],
+ "roster": [
+  {
+   "id": "5649",
+   "name": "Wesson JR K.",
+   "no": "8",
+   "pos": "",
+   "photo": "https://www.aba-liga.com/stats/img/foto/5649.png",
+   "gp": 1,
+   "min_avg": 31.2,
+   "pts_avg": 9.0,
+   "reb_avg": 5.0,
+   "ast_avg": 0.0
+  },
+  {
+   "id": "2633",
+   "name": "Jordano A.",
+   "no": "2",
+   "pos": "",
+   "photo": "https://www.aba-liga.com/stats/img/foto/2633.png",
+   "gp": 1,
+   "min_avg": 29.5,
+   "pts_avg": 8.0,
+   "reb_avg": 1.0,
+   "ast_avg": 1.0
+  },
+  {
+   "id": "5103",
+   "name": "Davis J.",
+   "no": "13",
+   "pos": "",
+   "photo": "https://www.aba-liga.com/stats/img/foto/5103.png",
+   "gp": 1,
+   "min_avg": 28.9,
+   "pts_avg": 14.0,
+   "reb_avg": 5.0,
+   "ast_avg": 1.0
+  },
+  {
+   "id": "2669",
+   "name": "Uskoković A.",
+   "no": "23",
+   "pos": "",
+   "photo": "https://www.aba-liga.com/stats/img/foto/2669.png",
+   "gp": 1,
+   "min_avg": 24.5,
+   "pts_avg": 2.0,
+   "reb_avg": 2.0,
+   "ast_avg": 10.0
+  },
+  {
+   "id": "3036",
+   "name": "Pavićević M.",
+   "no": "9",
+   "pos": "",
+   "photo": "https://www.aba-liga.com/stats/img/foto/3036.png",
+   "gp": 1,
+   "min_avg": 18.8,
+   "pts_avg": 15.0,
+   "reb_avg": 3.0,
+   "ast_avg": 1.0
+  },
+  {
+   "id": "3583",
+   "name": "Šaranović N.",
+   "no": "10",
+   "pos": "",
+   "photo": "https://www.aba-liga.com/stats/img/foto/3583.png",
+   "gp": 1,
+   "min_avg": 15.8,
+   "pts_avg": 0.0,
+   "reb_avg": 4.0,
+   "ast_avg": 1.0
+  },
+  {
+   "id": "2483",
+   "name": "Pavlićević N.",
+   "no": "4",
+   "pos": "",
+   "photo": "https://www.aba-liga.com/stats/img/foto/2483.png",
+   "gp": 1,
+   "min_avg": 15.1,
+   "pts_avg": 2.0,
+   "reb_avg": 4.0,
+   "ast_avg": 2.0
+  },
+  {
+   "id": "3819",
+   "name": "Anđušić F.",
+   "no": "5",
+   "pos": "",
+   "photo": "https://www.aba-liga.com/stats/img/foto/3819.png",
+   "gp": 1,
+   "min_avg": 14.9,
+   "pts_avg": 7.0,
+   "reb_avg": 6.0,
+   "ast_avg": 0.0
+  },
+  {
+   "id": "4778",
+   "name": "Penn E.",
+   "no": "11",
+   "pos": "",
+   "photo": "https://www.aba-liga.com/stats/img/foto/4778.png",
+   "gp": 1,
+   "min_avg": 9.8,
+   "pts_avg": 3.0,
+   "reb_avg": 1.0,
+   "ast_avg": 0.0
+  },
+  {
+   "id": "4001",
+   "name": "Radošić O.",
+   "no": "3",
+   "pos": "",
+   "photo": "https://www.aba-liga.com/stats/img/foto/4001.png",
+   "gp": 1,
+   "min_avg": 8.7,
+   "pts_avg": 3.0,
+   "reb_avg": 1.0,
+   "ast_avg": 0.0
+  },
+  {
+   "id": "5436",
+   "name": "Radović I.",
+   "no": "1",
+   "pos": "",
+   "photo": "https://www.aba-liga.com/stats/img/foto/5436.png",
+   "gp": 1,
+   "min_avg": 1.8,
+   "pts_avg": 2.0,
+   "reb_avg": 0.0,
+   "ast_avg": 0.0
+  },
+  {
+   "id": "5023",
+   "name": "Rakočević L.",
+   "no": "7",
+   "pos": "",
+   "photo": "https://www.aba-liga.com/stats/img/foto/5023.png",
+   "gp": 1,
+   "min_avg": 0.8,
+   "pts_avg": 0.0,
+   "reb_avg": 0.0,
+   "ast_avg": 0.0
+  }
+ ]
 }
