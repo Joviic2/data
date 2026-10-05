@@ -81,7 +81,8 @@ def parse_calendar(html):
             href=urljoin(LIVE,a.get("href"))
             mid=re.search(r"-(\d+)/(?:estadisticas|previa)",href)
             if not mid: continue
-            text=clean(card.get_text(" ",strip=True))
+            href=re.sub(r"/(?:estadisticas|previa|resumen|cronica|jugadas|estadisticas-avanzadas)(?:\?.*)?$","/estadisticas",href)
+            text=clean(card.get_text(" ",strip=True)
             score=re.search(r"(?<!\d)(\d{1,3})\s*[-–]\s*(\d{1,3})(?!\d)",text)
             date_heading=[]
             for heading in a.find_all_previous(["h2","h3","h4"]):
