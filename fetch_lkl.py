@@ -77,7 +77,7 @@ def team_name(a):
 def extract_pages(path, max_pages=40):
     found = {}
     for page in range(1, max_pages + 1):
-        url = f"{BASE}/index.php/{path}?page={page}"
+        url = f"{BASE}/index.php/{path}" + (f"?page={page}" if page > 1 else "")
         r = S.get(url, timeout=35)
         r.raise_for_status()
         soup = BeautifulSoup(r.text, "html.parser")
