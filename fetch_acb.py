@@ -181,7 +181,15 @@ def scrape_shots(url,game,browser):
                 events.append({"TEAM":game["h" if side=="home" else "a"],"ID_PLAYER":pid,
                                "ID_ACTION":action,"COORD_X":round(x,1),"COORD_Y":round(y,1),
                                "POINTS":(3 if three else 2) if made else 0})
-            if control.get_attribute("aria-checked")=="true": control.click()
+            if control.get_attribute("aria-checked")=="true":
+                try:
+                    control.click(timeout=5000)
+                except Exception as click_error:
+                    modal=page.locator(".modal:visible").first
+                    details=modal.inner_text(timeout=3000).replace("\n"," ")[:1000] if modal.count() else "no visible .modal"
+                    buttons=modal.locator("button").evaluate_all(
+                        "els=>els.map(b=>({text:(b.innerText||'').trim(),label:b.getAttribute('aria-label'),title:b.title}))") if modal.count() else []
+                    raise RuntimeError(f"ACB_MODAL_DIAGNOSTIC deactivate={str(click_error)[:300]} text={details!r} buttons={buttons!r}")
         # Guard against a changed ACB chart or a partial page: publish only if
         # each player's shot totals exactly match the official boxscore.
         expected={}
