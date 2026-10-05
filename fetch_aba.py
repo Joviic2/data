@@ -18,7 +18,7 @@ STRUKTURA IZLAZA (sve za jednu ligu je u jednom folderu: data/<liga>/)
     raw/                 <- originalni HTML kako je preuzet (kes, moze u .gitignore)
 """
 import argparse, json, re, sys, time
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from zoneinfo import ZoneInfo
 import requests
@@ -242,14 +242,18 @@ def main(argv=None):
     done = [g for g in cal["games"] if g["hs"] is not None]
     log(f"Kalendar: {len(cal['games'])} utakmica, odigrano {len(done)}, klubova {len(cal['clubs'])}")
     parsed, bad = {}, 0
+    refresh_after = datetime.now(timezone.utc) - timedelta(days=7)
     for g in done:
         gp = out / "games" / f"{g['n']}.json"
-        if gp.exists() and not a.force:
+        # Re-read recent games because the league may publish or correct the boxscore
+        # after the final score first appears. Older boxscores stay cached.
+        recent = bool(g["utc"] and datetime.fromisoformat(g["utc"].replace("Z", "+00:00")) >= refresh_after)
+        if gp.exists() and not a.force and not recent:
             parsed[g["n"]] = json.loads(gp.read_text("utf-8")); continue
         url = f"{BASE}/match/{g['n']}/{a.season}/{a.league_id}/Boxscore/q1/1/home/{g['slug']}/"
         raw = out / "raw" / f"box_{g['n']}.html"
         try:
-            h = load_html(url, raw, a.offline, a.force)
+            h = load_html(url, raw, a.offline, a.force or recent)
             p = parse_box(h, a.season, a.league_id)
             if not p: log(f"  #{g['n']} {g['h']}-{g['a']}: boxscore jos nije objavljen"); bad += 1; continue
             hs = sum(x[5] for x in p["box"]["h"]["p"]); as_ = sum(x[5] for x in p["box"]["a"]["p"])
