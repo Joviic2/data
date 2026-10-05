@@ -79,7 +79,10 @@ def parse_calendar(html):
             if not mid: continue
             text=clean(card.get_text(" ",strip=True))
             score=re.search(r"(?<!\d)(\d{1,3})\s*[-–]\s*(\d{1,3})(?!\d)",text)
-            date_heading=[h for h in rndnode.find_all(["h2","h3","h4"]) if h.sourceline and a.sourceline and h.sourceline<a.sourceline]
+            date_heading=[]
+            for heading in a.find_all_previous(["h2","h3","h4"]):
+                if heading in rndnode.find_all(["h2","h3","h4"]):
+                    date_heading=[heading]; break
             dt=parse_date(date_heading[-1].get_text(" ",strip=True)) if date_heading else None
             mt=re.search(r"(\d{1,2}):(\d{2})\s*h?",text)
             if dt and mt: dt=dt.replace(hour=int(mt[1]),minute=int(mt[2]))
