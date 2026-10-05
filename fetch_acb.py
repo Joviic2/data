@@ -130,8 +130,7 @@ def parse_box(url,game,browser):
         })))""")
     finally:
         page.close()
-    print(f"ACB table debug {url}: {[(len(t),max((len(row['v']) for row in t),default=0),sum(bool(row.get('href')) for row in t)) for t in tables]}")
-    tables=[t for t in tables if t and max((len(row["v"]) for row in t),default=0)>=22]
+    tables=[t for t in tables if t and max((len(row["v"]) for row in t),default=0)>=22 and any(row.get("href") for row in t)]
     if len(tables)<2: return None
     box={}; meta={}
     for side,table in zip(("h","a"),tables[:2]):
@@ -152,9 +151,7 @@ def parse_box(url,game,browser):
             if row[4]>0:
                 players.append(row)
                 meta[side][str(pid)]={"photo":urljoin(LIVE,tr["photo"])} if tr.get("photo") else {}
-        if not players:
-            print(f"ACB player rows debug {url} {side}: {len(table)} rows")
-            return None
+        if not players: return None
         tot={k:0 for k in ("pts","fg2m","fg2a","fg3m","fg3a","ftm","fta","or","dr","tr","ast","stl","tov","blk","pf","pir")}
         for pl in players:
             for k,i in {"pts":5,"fg2m":6,"fg2a":7,"fg3m":8,"fg3a":9,"ftm":10,"fta":11,"or":12,"dr":13,"tr":14,"ast":15,"stl":16,"tov":17,"blk":18,"pf":19,"pir":20}.items(): tot[k]+=num(pl[i])
