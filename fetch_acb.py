@@ -66,7 +66,7 @@ def parse_calendar(html):
     for rndnode in rounds:
         rm=re.search(r"JORNADA\s+(\d+)",clean(rndnode.get_text(" ",strip=True)),re.I)
         round_no=int(rm[1]) if rm else None
-        for a in rndnode.select('a[href*="/partidos/"][href*="/estadisticas"]'):
+        for a in rndnode.select('a[href*="/partidos/"]'):
             # Walk to the closest match card containing exactly two distinct team anchors.
             card=a; found=None
             for _ in range(7):
@@ -78,7 +78,7 @@ def parse_calendar(html):
             if not found: continue
             card,teams=found
             href=urljoin(LIVE,a.get("href"))
-            mid=re.search(r"-(\d+)/estadisticas",href)
+            mid=re.search(r"-(\d+)/(?:estadisticas|previa)",href)
             if not mid: continue
             text=clean(card.get_text(" ",strip=True))
             score=re.search(r"(?<!\d)(\d{1,3})\s*[-–]\s*(\d{1,3})(?!\d)",text)
