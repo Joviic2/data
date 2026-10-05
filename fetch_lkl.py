@@ -15,7 +15,6 @@ from pathlib import Path
 from urllib.parse import urljoin
 from zoneinfo import ZoneInfo
 
-import requests
 from bs4 import BeautifulSoup
 from playwright.sync_api import sync_playwright
 
@@ -30,8 +29,6 @@ MONTHS = {"sausio":1,"vasario":2,"kovo":3,"balandžio":4,"gegužės":5,"birželi
 CODES = {"ZAL":"ZAL","ŽAL":"ZAL","JUV":"JUV","LIE":"LIE","NEP":"NEP","NEV":"NEV",
          "RYT":"RYT","ŠIA":"SIA","SIA":"SIA","TAU":"TAU","GAR":"GAR","JON":"JON"}
 TZ = ZoneInfo("Europe/Vilnius")
-S = requests.Session()
-S.headers.update({"User-Agent":"Mozilla/5.0 (compatible; ValueAnalyzer/1.0)"})
 
 def clean(x):
     return re.sub(r"\s+", " ", str(x or "")).strip()
@@ -74,13 +71,19 @@ def team_name(a):
     text = clean(a.get_text(" ", strip=True))
     return re.sub(r"\b[A-ZŽŠČ]{2,4}\b", "", text).strip() or text
 
-def extract_pages(path, max_pages=40):
+def extract_pages(path, browser, max_pages=40):
     found = {}
     for page in range(1, max_pages + 1):
         url = f"{BASE}/index.php/{path}" + (f"?page={page}" if page > 1 else "")
-        r = S.get(url, timeout=35)
-        r.raise_for_status()
-        soup = BeautifulSoup(r.text, "html.parser")
+        page = browser.new_page()
+        try:
+            response = page.goto(url, wait_until="domcontentloaded", timeout=45000)
+            if response is not None and response.status >= 400:
+                raise RuntimeError(f"LKL returned HTTP {response.status} for {url}")
+            html = page.content()
+        finally:
+            page.close()
+        soup = BeautifulSoup(html, "html.parser")
         selector = ".schedule-holder[data-championship='lkl']" if path == "tvarkarastis" else ".results-holder[data-championship='lkl']"
         holder = soup.select_one(selector)
         if holder is None:
@@ -226,8 +229,13 @@ def fetch_box(browser, url):
 def main():
     global clubs
     clubs = {}
-    games = extract_pages("tvarkarastis")
-    results = extract_pages("rezultatai")
+    with sync_playwright() as p:
+        browser = p.chromium.launch(headless=True)
+        try:
+            games = extract_pages("tvarkarastis", browser)
+            results = extract_pages("rezultatai", browser)
+        finally:
+            browser.close()
     for gid, g in results.items():
         if gid in games:
             games[gid].update({k:v for k,v in g.items() if k in ("hs","as","url","season_id")})
