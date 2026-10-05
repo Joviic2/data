@@ -130,6 +130,30 @@ def parse_box(url,game,browser):
         })))""")
     finally:
         page.close()
+    # ACB Live summary tables contain the official player headshots; the stats
+    # table used above omits them. Join photos by the stable ACB player id.
+    summary=url.replace("/estadisticas","/resumen")
+    sp=browser.new_page()
+    try:
+        sp.goto(summary,wait_until="domcontentloaded",timeout=60000)
+        sp.locator('table a[href*="/liga/jugadores/"]').first.wait_for(state="visible",timeout=25000)
+        photos=sp.locator("table").evaluate_all("""ts => ts.flatMap(t =>
+          Array.from(t.querySelectorAll('tr')).map(r => {
+            const a=r.querySelector('a[href*="/liga/jugadores/"]');
+            const im=r.querySelector('img');
+            return a ? {href:a.getAttribute('href'),
+              photo:im?.currentSrc||im?.getAttribute('src')||im?.getAttribute('data-src')||im?.getAttribute('data-lazy-src')||null} : null
+          }).filter(Boolean))""")
+    except Exception as e:
+        print(f"boxscore {game['n']}: player photos unavailable: {e}")
+        photos=[]
+    finally:
+        sp.close()
+    photo_by_id={}
+    for row in photos:
+        m=re.search(r"-(\\d+)(?:/|$)",row.get("href") or "")
+        if m and row.get("photo"): photo_by_id[m[1]]=urljoin(LIVE,row["photo"])
+
     tables=[t for t in tables if t and max((len(row["v"]) for row in t),default=0)>=22 and any(row.get("href") for row in t)]
     if len(tables)<2: return None
     box={}; meta={}
@@ -152,7 +176,8 @@ def parse_box(url,game,browser):
                  num(vals[14]),num(vals[13]),num(vals[15]),num(vals[18]),num(vals[21]),num(vals[20])]
             if row[4]>0:
                 players.append(row)
-                meta[side][str(pid)]={"photo":urljoin(LIVE,tr["photo"])} if tr.get("photo") else {}
+                photo=photo_by_id.get(str(pid)) or (urljoin(LIVE,tr["photo"]) if tr.get("photo") else None)
+                meta[side][str(pid)]={"photo":photo} if photo else {}
         if not players: return None
         tot={k:0 for k in ("pts","fg2m","fg2a","fg3m","fg3a","ftm","fta","or","dr","tr","ast","stl","tov","blk","pf","pir")}
         for pl in players:
