@@ -125,7 +125,7 @@ def shot_zone(x,y,is_three):
 
 def scrape_shots(url,game,browser):
     """Read ACB Live's official per-player shot chart and normalize to app schema."""
-    page=browser.new_page()
+    page=browser.new_page(viewport={"width":1920,"height":1080})
     try:
         summary=url.replace("/estadisticas","/resumen")
         page.goto(summary,wait_until="domcontentloaded",timeout=60000)
@@ -136,7 +136,8 @@ def scrape_shots(url,game,browser):
         for side in ("home","away"):
             switch=page.locator("#switch-"+side).filter(visible=True).first
             if switch.get_attribute("aria-checked")=="true": switch.click()
-        # Diagnose the ACB headless interstitial before interacting with the chart.
+        page.wait_for_timeout(1000)
+        # Read any ACB dialog after the team filters have activated it.
         modal=page.locator(".modal:visible").first
         if modal.count():
             details=modal.inner_text(timeout=3000).replace("\n"," ")[:500]
@@ -153,7 +154,15 @@ def scrape_shots(url,game,browser):
         scale=100/((617.5-32.5)/28)  # official court viewBox: 585 px = 28 m
         for side,pid in players:
             control=page.locator(f'#checkbox-{side}-{pid}').filter(visible=True).first
-            if control.get_attribute("aria-checked")!="true": control.click()
+            if control.get_attribute("aria-checked")!="true":
+                try:
+                    control.click(timeout=5000)
+                except Exception as click_error:
+                    modal=page.locator(".modal:visible").first
+                    details=modal.inner_text(timeout=3000).replace("\n"," ")[:500] if modal.count() else "no visible .modal"
+                    buttons=modal.locator("button").evaluate_all(
+                        "els=>els.map(b=>({text:(b.innerText||'').trim(),label:b.getAttribute('aria-label'),title:b.title}))") if modal.count() else []
+                    raise RuntimeError(f"ACB_MODAL_DIAGNOSTIC click={str(click_error)[:300]} text={details!r} buttons={buttons!r}")
             page.wait_for_timeout(60)
             markers=page.locator('svg[viewBox="0 0 650 350"] circle[r="8.5"]').evaluate_all(
               """els=>els.map(e=>({x:+e.getAttribute('cx'),y:+e.getAttribute('cy'),
@@ -309,7 +318,9 @@ def main():
                                                   "COORD_X":0,"COORD_Y":0,"POINTS":1 if made else 0})
                     shot_data[str(g["n"])]=shots
                     print(f"ACB shot chart {g['n']}: {len(shots)} attempts, verified against official boxscore")
-                except Exception as e: print(f"ACB shot chart {g['n']} skipped: {e}")
+                except Exception as e:
+                    print(f"ACB shot chart {g['n']} skipped: {e}")
+                    if "ACB_MODAL_DIAGNOSTIC" in str(e): raise
             else: print(f"boxscore {g['n']}: no player tables on official page {g['url']}")
             item={"n":g["n"],"round":g["round"],"h":g["h"],"a":g["a"],"hs":g["hs"],"as":g["as_"],"dt":g["utc"],"q":None,"box":parsed["box"] if parsed else None}
             done.append(item)
