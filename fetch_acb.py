@@ -79,6 +79,7 @@ def parse_calendar(html):
             if not found: continue
             card,teams=found
             href=urljoin(LIVE,a.get("href"))
+            href=re.sub(r"(https?://live\\.acb\\.com)/partidos/",r"\\1/es/partidos/",href)
             mid=re.search(r"-(\d+)/(?:estadisticas|previa)",href)
             if not mid: continue
             href=re.sub(r"/(?:estadisticas|previa|resumen|cronica|jugadas|estadisticas-avanzadas)(?:\?.*)?$","/estadisticas",href)
