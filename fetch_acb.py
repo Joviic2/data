@@ -120,15 +120,16 @@ def parse_box(url,game,browser):
         page.locator("table").first.wait_for(state="visible",timeout=25000)
         tables=page.locator("table").evaluate_all("""ts => ts.map(t => Array.from(t.querySelectorAll('tr')).map(r => ({
           v:Array.from(r.cells).map(c => c.innerText.trim()),
-          href:r.querySelector('a[href*="/liga/jugadores/"]')?.getAttribute('href')||null
+          href:r.querySelector('a[href*="/liga/jugadores/"]')?.getAttribute('href')||null,
+          photo:r.querySelector('img')?.getAttribute('src')||null
         })))""")
     finally:
         page.close()
     tables=[t for t in tables if t and len(t[0]["v"])>=22]
     if len(tables)<2: return None
-    box={}
+    box={}; meta={}
     for side,table in zip(("h","a"),tables[:2]):
-        players=[]
+        players=[]; meta[side]={}
         for tr in table[1:]:
             vals=tr["v"]
             if len(vals)<22 or not tr["href"]: continue
@@ -142,19 +143,21 @@ def parse_box(url,game,browser):
             row=[pid,name,number[1] if number else "",int("*" in label),parse_minutes(vals[1]),num(vals[2]),
                  f2m,f2a,f3m,f3a,ftm,fta,num(vals[10]),num(vals[9]),num(vals[11]),num(vals[12]),
                  num(vals[14]),num(vals[13]),num(vals[15]),num(vals[18]),num(vals[21]),num(vals[20])]
-            if row[4]>0: players.append(row)
+            if row[4]>0:
+                players.append(row)
+                meta[side][str(pid)]={"photo":urljoin(LIVE,tr["photo"])} if tr.get("photo") else {}
         if not players: return None
         tot={k:0 for k in ("pts","fg2m","fg2a","fg3m","fg3a","ftm","fta","or","dr","tr","ast","stl","tov","blk","pf","pir")}
         for pl in players:
             for k,i in {"pts":5,"fg2m":6,"fg2a":7,"fg3m":8,"fg3a":9,"ftm":10,"fta":11,"or":12,"dr":13,"tr":14,"ast":15,"stl":16,"tov":17,"blk":18,"pf":19,"pir":20}.items(): tot[k]+=num(pl[i])
         box[side]={"coach":"","p":players,"tot":tot}
-    return {"q":None,"box":box}
+    return {"q":None,"box":box,"meta":meta}
 
 def main():
     OUT.parent.mkdir(parents=True,exist_ok=True)
     games,clubs=parse_calendar(get(CALENDAR))
     if not games: raise RuntimeError("ACB calendar parsed zero games; refusing to overwrite site.json")
-    done=[]; fixtures=[]
+    done=[]; fixtures=[]; player_meta={}
     with sync_playwright() as pw:
         browser=pw.chromium.launch(headless=True)
         for g in games:
@@ -164,6 +167,7 @@ def main():
             parsed=None
             try: parsed=parse_box(g["url"],g,browser)
             except Exception as e: print(f"boxscore {g['n']} failed: {e}")
+            if parsed: player_meta.update({side+"|"+str(pid):data for side,players in parsed["meta"].items() for pid,data in players.items()})
             item={"n":g["n"],"round":g["round"],"h":g["h"],"a":g["a"],"hs":g["hs"],"as":g["as_"],"dt":g["utc"],"q":None,"box":parsed["box"] if parsed else None}
             done.append(item)
         browser.close()
@@ -178,7 +182,7 @@ def main():
             known={str(p["id"]) for p in roster}
             for row in g["box"][side]["p"]:
                 if str(row[0]) not in known:
-                    roster.append({"id":row[0],"name":row[1],"no":row[2],"pos":""}); known.add(str(row[0]))
+                    roster.append({"id":row[0],"name":row[1],"no":row[2],"pos":"","photo":player_meta.get(side+"|"+str(row[0]),{}).get("photo")}); known.add(str(row[0]))
     OUT.write_text(json.dumps(site,ensure_ascii=False,separators=(",",":")),"utf-8")
     print(f"ACB 2026/27: {len(clubs)} clubs, {len(done)} played games, {sum(bool(g['box']) for g in done)} boxscores, {len(fixtures)} fixtures")
 
