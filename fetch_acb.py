@@ -103,6 +103,7 @@ def parse_calendar(html):
     return sorted(uniq.values(),key=lambda g:(g.get("utc") or "",g["n"])),clubs
 
 def num(s):
+    if isinstance(s,(int,float)): return int(s)
     m=re.search(r"-?\d+",clean(s).replace("\u2212","-"))
     return int(m[0]) if m else 0
 
