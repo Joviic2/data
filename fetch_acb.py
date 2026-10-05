@@ -127,7 +127,7 @@ def parse_box(url,game,browser):
         })))""")
     finally:
         page.close()
-    tables=[t for t in tables if t and len(t[0]["v"])>=22]
+    tables=[t for t in tables if t and max((len(row["v"]) for row in t),default=0)>=22]
     if len(tables)<2: return None
     box={}; meta={}
     for side,table in zip(("h","a"),tables[:2]):
