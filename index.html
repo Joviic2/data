@@ -333,7 +333,7 @@ const fdu=u=>{try{return new Date(u).toLocaleString("sr-Latn",{weekday:"short",d
 
 // ================= UČITAVANJE PODATAKA =================
 // ================= LIGE =================
-const LEAGUES={euroleague:["Euroleague","EL"],aba:["ABA Liga","ABA"],acb:["ACB","ACB"],lkl:["LKL","LKL"],lnb:["LNB","LNB"],bbl:["BBL","BBL"]};
+const LEAGUES={euroleague:["Euroleague","EL"],aba:["ABA Liga","ABA"],acb:["ACB","ACB"],lnb:["LNB","LNB"],bbl:["BBL","BBL"]};
 let LG="euroleague";try{LG=new URLSearchParams(location.search).get("lg")||localStorage.getItem("ellg")||"euroleague"}catch(e){}
 if(!LEAGUES[LG])LG="euroleague";
 const lp=(n,l=LG)=>l=="euroleague"?n:n.replace(/^data\//,"data/"+l+"/");
