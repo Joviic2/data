@@ -121,6 +121,7 @@ def parse_box(url,game,browser):
     try:
         page.goto(url,wait_until="domcontentloaded",timeout=60000)
         page.locator("table").first.wait_for(state="visible",timeout=25000)
+        page.wait_for_function("document.querySelectorAll('a[href*=\\"/liga/jugadores/\\"]').length >= 8",timeout=15000)
         tables=page.locator("table").evaluate_all("""ts => ts.map(t => Array.from(t.querySelectorAll('tr')).map(r => ({
           v:Array.from(r.cells).map(c => c.innerText.trim()),
           href:r.querySelector('a[href*="/liga/jugadores/"]')?.getAttribute('href')||null,
@@ -171,6 +172,7 @@ def main():
             try: parsed=parse_box(g["url"],g,browser)
             except Exception as e: print(f"boxscore {g['n']} failed: {e}")
             if parsed: player_meta.update({side+"|"+str(pid):data for side,players in parsed["meta"].items() for pid,data in players.items()})
+            else: print(f"boxscore {g['n']}: no player tables on official page {g['url']}")
             item={"n":g["n"],"round":g["round"],"h":g["h"],"a":g["a"],"hs":g["hs"],"as":g["as_"],"dt":g["utc"],"q":None,"box":parsed["box"] if parsed else None}
             done.append(item)
         browser.close()
