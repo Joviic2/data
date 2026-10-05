@@ -5,14 +5,170 @@
  "club_id": "22",
  "crest": "https://www.aba-liga.com/images/club/100x100/22.png",
  "record": {
-  "gp": 0,
-  "w": 0,
+  "gp": 1,
+  "w": 1,
   "l": 0,
-  "pf": 0,
-  "pa": 0,
-  "pf_avg": 0.0,
-  "pa_avg": 0.0
+  "pf": 83,
+  "pa": 59,
+  "pf_avg": 83.0,
+  "pa_avg": 59.0
  },
- "games": [],
- "roster": []
+ "games": [
+  {
+   "n": 16,
+   "round": 2,
+   "dt": "2026-10-05T16:30:00Z",
+   "home": true,
+   "opp": "MEG",
+   "pf": 83,
+   "pa": 59,
+   "result": "W"
+  }
+ ],
+ "roster": [
+  {
+   "id": "5629",
+   "name": "Thompson E.",
+   "no": "5",
+   "pos": "",
+   "photo": "https://www.aba-liga.com/stats/img/foto/5629.png",
+   "gp": 1,
+   "min_avg": 28.2,
+   "pts_avg": 21.0,
+   "reb_avg": 7.0,
+   "ast_avg": 1.0
+  },
+  {
+   "id": "4181",
+   "name": "Nakić M.",
+   "no": "7",
+   "pos": "",
+   "photo": "https://www.aba-liga.com/stats/img/foto/4181.png",
+   "gp": 1,
+   "min_avg": 22.5,
+   "pts_avg": 8.0,
+   "reb_avg": 2.0,
+   "ast_avg": 1.0
+  },
+  {
+   "id": "2627",
+   "name": "Tanasković N.",
+   "no": "10",
+   "pos": "",
+   "photo": "https://www.aba-liga.com/stats/img/foto/2627.png",
+   "gp": 1,
+   "min_avg": 22.1,
+   "pts_avg": 14.0,
+   "reb_avg": 6.0,
+   "ast_avg": 2.0
+  },
+  {
+   "id": "5643",
+   "name": "Lauvergne J.",
+   "no": "77",
+   "pos": "",
+   "photo": "https://www.aba-liga.com/stats/img/foto/5643.png",
+   "gp": 1,
+   "min_avg": 21.9,
+   "pts_avg": 10.0,
+   "reb_avg": 5.0,
+   "ast_avg": 3.0
+  },
+  {
+   "id": "3091",
+   "name": "Sy B.",
+   "no": "95",
+   "pos": "",
+   "photo": "https://www.aba-liga.com/stats/img/foto/3091.png",
+   "gp": 1,
+   "min_avg": 20.7,
+   "pts_avg": 8.0,
+   "reb_avg": 2.0,
+   "ast_avg": 0.0
+  },
+  {
+   "id": "5653",
+   "name": "Allman K.",
+   "no": "0",
+   "pos": "",
+   "photo": "https://www.aba-liga.com/stats/img/foto/5653.png",
+   "gp": 1,
+   "min_avg": 18.4,
+   "pts_avg": 7.0,
+   "reb_avg": 4.0,
+   "ast_avg": 3.0
+  },
+  {
+   "id": "4807",
+   "name": "Jones C.",
+   "no": "1",
+   "pos": "",
+   "photo": "https://www.aba-liga.com/stats/img/foto/4807.png",
+   "gp": 1,
+   "min_avg": 16.6,
+   "pts_avg": 2.0,
+   "reb_avg": 0.0,
+   "ast_avg": 5.0
+  },
+  {
+   "id": "2931",
+   "name": "Lakić A.",
+   "no": "19",
+   "pos": "",
+   "photo": "https://www.aba-liga.com/stats/img/foto/2931.png",
+   "gp": 1,
+   "min_avg": 14.4,
+   "pts_avg": 0.0,
+   "reb_avg": 2.0,
+   "ast_avg": 2.0
+  },
+  {
+   "id": "5650",
+   "name": "Hayes K.",
+   "no": "13",
+   "pos": "",
+   "photo": "https://www.aba-liga.com/stats/img/foto/5650.png",
+   "gp": 1,
+   "min_avg": 14.1,
+   "pts_avg": 6.0,
+   "reb_avg": 8.0,
+   "ast_avg": 1.0
+  },
+  {
+   "id": "5554",
+   "name": "Pajola A.",
+   "no": "66",
+   "pos": "",
+   "photo": "https://www.aba-liga.com/stats/img/foto/5554.png",
+   "gp": 1,
+   "min_avg": 13.4,
+   "pts_avg": 2.0,
+   "reb_avg": 1.0,
+   "ast_avg": 5.0
+  },
+  {
+   "id": "4257",
+   "name": "Vildoza L.",
+   "no": "3",
+   "pos": "",
+   "photo": "https://www.aba-liga.com/stats/img/foto/4257.png",
+   "gp": 1,
+   "min_avg": 7.2,
+   "pts_avg": 5.0,
+   "reb_avg": 0.0,
+   "ast_avg": 0.0
+  },
+  {
+   "id": "5473",
+   "name": "Jekiri T.",
+   "no": "23",
+   "pos": "",
+   "photo": "https://www.aba-liga.com/stats/img/foto/5473.png",
+   "gp": 1,
+   "min_avg": 0.4,
+   "pts_avg": 0.0,
+   "reb_avg": 0.0,
+   "ast_avg": 0.0
+  }
+ ]
 }

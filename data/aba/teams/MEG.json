@@ -5,14 +5,170 @@
  "club_id": "33",
  "crest": "https://www.aba-liga.com/images/club/100x100/33.png",
  "record": {
-  "gp": 0,
+  "gp": 1,
   "w": 0,
-  "l": 0,
-  "pf": 0,
-  "pa": 0,
-  "pf_avg": 0.0,
-  "pa_avg": 0.0
+  "l": 1,
+  "pf": 59,
+  "pa": 83,
+  "pf_avg": 59.0,
+  "pa_avg": 83.0
  },
- "games": [],
- "roster": []
+ "games": [
+  {
+   "n": 16,
+   "round": 2,
+   "dt": "2026-10-05T16:30:00Z",
+   "home": false,
+   "opp": "PAR",
+   "pf": 59,
+   "pa": 83,
+   "result": "L"
+  }
+ ],
+ "roster": [
+  {
+   "id": "4665",
+   "name": "Lučić A.",
+   "no": "77",
+   "pos": "",
+   "photo": "https://www.aba-liga.com/stats/img/foto/4665.png",
+   "gp": 1,
+   "min_avg": 29.0,
+   "pts_avg": 14.0,
+   "reb_avg": 2.0,
+   "ast_avg": 1.0
+  },
+  {
+   "id": "5658",
+   "name": "Nzambi Maniema L.",
+   "no": "10",
+   "pos": "",
+   "photo": "https://www.aba-liga.com/stats/img/foto/5658.png",
+   "gp": 1,
+   "min_avg": 27.3,
+   "pts_avg": 6.0,
+   "reb_avg": 1.0,
+   "ast_avg": 1.0
+  },
+  {
+   "id": "5660",
+   "name": "Paunov L.",
+   "no": "28",
+   "pos": "",
+   "photo": "https://www.aba-liga.com/stats/img/foto/5660.png",
+   "gp": 1,
+   "min_avg": 26.9,
+   "pts_avg": 7.0,
+   "reb_avg": 6.0,
+   "ast_avg": 0.0
+  },
+  {
+   "id": "4260",
+   "name": "Srzentić O.",
+   "no": "23",
+   "pos": "",
+   "photo": "https://www.aba-liga.com/stats/img/foto/4260.png",
+   "gp": 1,
+   "min_avg": 23.2,
+   "pts_avg": 5.0,
+   "reb_avg": 3.0,
+   "ast_avg": 0.0
+  },
+  {
+   "id": "3629",
+   "name": "Bošković M.",
+   "no": "5",
+   "pos": "",
+   "photo": "https://www.aba-liga.com/stats/img/foto/3629.png",
+   "gp": 1,
+   "min_avg": 22.3,
+   "pts_avg": 2.0,
+   "reb_avg": 5.0,
+   "ast_avg": 1.0
+  },
+  {
+   "id": "4661",
+   "name": "Bačko P.",
+   "no": "15",
+   "pos": "",
+   "photo": "https://www.aba-liga.com/stats/img/foto/4661.png",
+   "gp": 1,
+   "min_avg": 20.3,
+   "pts_avg": 7.0,
+   "reb_avg": 3.0,
+   "ast_avg": 1.0
+  },
+  {
+   "id": "4346",
+   "name": "Vojinović A.",
+   "no": "8",
+   "pos": "",
+   "photo": "https://www.aba-liga.com/stats/img/foto/4346.png",
+   "gp": 1,
+   "min_avg": 17.6,
+   "pts_avg": 12.0,
+   "reb_avg": 7.0,
+   "ast_avg": 0.0
+  },
+  {
+   "id": "4020",
+   "name": "Mušicki A.",
+   "no": "7",
+   "pos": "",
+   "photo": "https://www.aba-liga.com/stats/img/foto/4020.png",
+   "gp": 1,
+   "min_avg": 11.0,
+   "pts_avg": 0.0,
+   "reb_avg": 0.0,
+   "ast_avg": 1.0
+  },
+  {
+   "id": "5381",
+   "name": "Bjelica P.",
+   "no": "22",
+   "pos": "",
+   "photo": "https://www.aba-liga.com/stats/img/foto/5381.png",
+   "gp": 1,
+   "min_avg": 9.5,
+   "pts_avg": 2.0,
+   "reb_avg": 4.0,
+   "ast_avg": 0.0
+  },
+  {
+   "id": "4883",
+   "name": "Šuput U.",
+   "no": "88",
+   "pos": "",
+   "photo": "https://www.aba-liga.com/stats/img/foto/4883.png",
+   "gp": 1,
+   "min_avg": 8.5,
+   "pts_avg": 4.0,
+   "reb_avg": 1.0,
+   "ast_avg": 0.0
+  },
+  {
+   "id": "4694",
+   "name": "Hrelja T.",
+   "no": "11",
+   "pos": "",
+   "photo": "https://www.aba-liga.com/stats/img/foto/4694.png",
+   "gp": 1,
+   "min_avg": 3.4,
+   "pts_avg": 0.0,
+   "reb_avg": 0.0,
+   "ast_avg": 0.0
+  },
+  {
+   "id": "4887",
+   "name": "Šuput M.",
+   "no": "3",
+   "pos": "",
+   "photo": "https://www.aba-liga.com/stats/img/foto/4887.png",
+   "gp": 1,
+   "min_avg": 1.1,
+   "pts_avg": 0.0,
+   "reb_avg": 0.0,
+   "ast_avg": 0.0
+  }
+ ]
 }
