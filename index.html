@@ -206,6 +206,9 @@ input::placeholder{color:var(--mu);opacity:1}
 .rwy{list-style:none;padding:0;margin:6px 0 12px;display:grid;grid-template-columns:1fr 1fr;gap:6px 18px}
 .rwy li{padding-left:24px;position:relative;font-size:.93rem}.rwy li:before{position:absolute;left:0;font-weight:700}
 .rwy .t:before{content:"✓";color:var(--ok)}.rwy .w:before{content:"!";color:#f5c542}.rwy .f:before{content:"✗";color:var(--no)}
+.evx .num{font-size:1.5rem}.evbox{border-radius:10px;padding:14px 16px;margin-top:12px;border:1px solid var(--bd);border-left-width:6px}
+.evbox.g{border-color:var(--ok);background:#16a34a14}.evbox.y{border-color:#f5c542;background:#f5c54212}.evbox.r{border-color:var(--no);background:#dc262612}
+.evbox h3{margin:0 0 6px;font-size:1.2rem}
 </style></head><body><main>
 <h1>Euroleague Value Analyzer</h1>
 <div class="mts" id="lgs" style="margin:8px 0"></div>
@@ -249,6 +252,16 @@ input::placeholder{color:var(--mu);opacity:1}
  <div class="card"><div id="pph"></div><div id="pmt" class="mts"></div>
   <svg id="pch" viewBox="0 0 640 300" role="img" aria-label="Poslednje utakmice igrača"></svg>
   <div class="grid" id="pst" style="margin-top:12px"></div></div>
+ <div class="card evx" id="evc"><h2>Ručni EV kalkulator (kladionice bez kvota u bazi, npr. Superbet)</h2>
+ <p class="sub">Upiši granicu i kvote kladionice. Poredi se sa projekcijom modela za izabranog igrača (zadnjih 5 + sezona, raspodela po tipu statistike).</p>
+ <div class="grid">
+  <div><label for="emk">Tržište / statistika</label><select id="emk"></select></div>
+  <div><label for="eln">Granica kladionice</label><input id="eln" type="number" step="0.5" inputmode="decimal" placeholder="npr. 16.5"></div>
+  <div><label for="eov">Moja kvota (Over)</label><input id="eov" type="number" step="0.01" inputmode="decimal" placeholder="npr. 1.90"></div>
+  <div><label for="eun">Moja kvota (Under)</label><input id="eun" type="number" step="0.01" inputmode="decimal" placeholder="npr. 1.85"></div>
+ </div>
+ <div style="margin-top:12px"><button class="btn" id="ebt" type="button">Izračunaj vrednost (+EV)</button></div>
+ <div id="eres" aria-live="polite"></div></div>
  <div class="card" id="pcc"><h2>Prop kartice tima</h2><p class="sub">Linija je sezonski prosek zaokružen na .5 (nemamo kladioničke linije), projekcija meša zadnjih 5 sa sezonom i koriguje za odbranu protivnika protiv pozicije. Klik na karticu otvara igrača.</p><div class="chips" id="pcf"></div><div class="pcs" id="pcs"></div></div>
  <div class="card" id="prr"></div><div class="card" id="padv"></div><div class="card"><h2>Props model i vrednost</h2><div class="grid"><div><label for="pov">Kvota Over</label><input id="pov" type="number" step="0.01" value="1.85"></div><div><label for="pun">Kvota Under</label><input id="pun" type="number" step="0.01" value="1.85"></div></div><div id="ppo" style="margin-top:12px"></div><div style="margin-top:12px"><button class="btn sm" id="pshare" type="button">Podeli analizu (slika)</button></div></div>
  <div class="card"><h2>Vs pozicija</h2><div id="ppd"></div></div>
@@ -642,7 +655,44 @@ function chart(skip){
  const y=v=>pt+(hi-v)/(hi-lo)*(H-pt-pb),gap=(W-40)/n,bw=Math.min(46,gap-8);
  $("pch").innerHTML=d.map((x,i)=>{const cx=30+gap*i+gap/2,c=x.v>L?"var(--ok)":x.v<L?"var(--no)":"var(--mu)",a=y(0),b=y(x.v),top=Math.min(a,b);return`<rect x="${cx-bw/2}" y="${top}" width="${bw}" height="${Math.max(2,Math.abs(a-b))}" rx="4" fill="${c}"/><text x="${cx}" y="${top-5}" text-anchor="middle" font-size="14" font-weight="700" fill="var(--tx)">${x.v}</text><text x="${cx}" y="${H-12}" text-anchor="middle" font-size="11" fill="var(--mu)">${esc(x.l)}</text>`}).join("")+`<line x1="14" x2="${W-6}" y1="${y(L)}" y2="${y(L)}" stroke="#f5c400" stroke-width="3" stroke-dasharray="7 5"/><rect x="${W-62}" y="${y(L)-12}" width="56" height="22" rx="5" fill="#f5c400"/><text x="${W-34}" y="${y(L)+4}" text-anchor="middle" font-size="13" font-weight="700" fill="#1a1204">${L}</text>`;
  $("pst").innerHTML=[["Over",hrc(ov,n)],["Under",hrc(vs.filter(v=>v<L).length,n)],["L5 Over",hrc(vs.slice(-5).filter(v=>v>L).length,Math.min(5,n))],["L10 Over",hrc(vs.slice(-10).filter(v=>v>L).length,Math.min(10,n))],["Prosek",f(avg(vs))],["Max / Min",Math.max(...vs)+" / "+Math.min(...vs)],["Medijana",f(med(vs))],["σ (std. dev.)",f(sdv(vs))]].map(x=>`<div class="stat"><span>${x[0]}</span><div class="num">${x[1]}</div></div>`).join("");
- if(!skip){extras(t,id,G,pi);padvRender(G);sideRender()}ppRender(G,t,id,vs,L);posRender();scaleRender();if(!skip)recRender(t,id,G)}
+ evSync();if(!skip){extras(t,id,G,pi);padvRender(G);sideRender()}ppRender(G,t,id,vs,L);posRender();scaleRender();if(!skip)recRender(t,id,G)}
+
+// ================= RUČNI EV KALKULATOR (props, kladionice bez kvota u bazi) =================
+// Čista funkcija: ulaz su vrednosti po utakmici, granica i obe kvote; vraća sve što se prikazuje (ili {err}).
+function evCalc(vs,mk,L,oo,ou){
+ if(!Array.isArray(vs)||vs.length<3)return{err:"Premalo utakmica za procenu (treba bar 3 sa boxscore-om)."};
+ if(!isFinite(L)||L<=0)return{err:"Upiši granicu kladionice (npr. 16.5)."};
+ if(!(oo>1)||!(ou>1))return{err:"Upiši obe kvote (veće od 1.00)."};
+ const season=avg(vs),l5=avg(vs.slice(-5)),proj=vs.length>=5?.5*season+.5*l5:season,sd=Math.max(sdv(vs),.5),cnt=CNT.has(mk),fl=Math.floor(L);
+ const pOv=m=>Math.min(.999,Math.max(.001,cnt?1-pcdf(fl,m,sd*sd):1-phi((fl+.5-m)/sd)));
+ const po=pOv(proj),pu=1-po,io=1/oo,iu=1/ou,ovr=io+iu,nvo=io/ovr,nvu=iu/ovr,eo=po*oo-1,eu=pu*ou-1;
+ let be=null;for(let l=Math.max(.5,Math.floor(proj-20)+.5);l<=proj+20;l+=.5){const p=cnt?1-pcdf(Math.floor(l),proj,sd*sd):1-phi((Math.floor(l)+.5-proj)/sd);if(p*oo-1>=0)be=l}
+ return{proj,sd,season,l5,po,pu,nvo,nvu,marg:(ovr-1)*100,eo,eu,diff:proj-L,beO:be,dist:cnt?(sd*sd>proj*1.05?"negativna binomna":"Poisson"):"normalna"}}
+function evRender(){
+ const el=$("eres");if(!el)return;const c=pctx();
+ if(!c){el.innerHTML='<div class="evbox y"><b>Izaberi igrača sa odigranim utakmicama.</b></div>';return}
+ const mk=$("emk").value,lab=(MET.find(x=>x[0]==mk)||[0,mk])[1],fn=mfn(mk),vs=c.G.filter(x=>x.p[4]>=MINV()).map(x=>fn(x.p)),
+ L=parseFloat($("eln").value),oo=parseFloat($("eov").value),ou=parseFloat($("eun").value),r=evCalc(vs,mk,L,oo,ou);
+ if(r.err){el.innerHTML=`<div class="evbox y"><b>${esc(r.err)}</b></div>`;return}
+ const over=r.eo>=r.eu,e=over?r.eo:r.eu,side=over?"OVER":"UNDER",odds=over?oo:ou,pw=over?r.po:r.pu,nv=over?r.nvo:r.nvu,cls=e>.05?"g":e>0?"y":"r",
+ sg2=x=>(x>0?"+":"")+f(x*100,1)+"%",B=bank(),stk=e>0?stake(pw,odds,B):0;
+ const head=e>.05?`VREDNOST! ${sg2(e)} EV - Preporuka: ${side} ${L}`:e>0?`Mala prednost: ${sg2(e)} EV (${side} ${L})`:`Nema vrednosti: najbolja strana je ${sg2(e)} EV`;
+ const txt=`Model projicira ${f(r.proj)} (${esc(lab)}), granica u kladionici ${L} daje ${sg(+f(Math.abs(r.diff)))} poena ${r.diff>=0?"prednosti za Over":"prednosti za Under"}. `+
+  (e>0?`Uz kvotu ${f(odds,2)} opklada ${side} je matematički isplativa: model daje ${f(pw*100,1)}% naspram ${f(nv*100,1)}% koliko kladionica stvarno nudi bez marže. ${stk>0?`Predlog uloga (Kelly ${f(S.kf*100,0)}%, max ${S.mx}%): ${f(stk,2)}.`:""}${e>.2?" Oprez: EV preko 20% obično znači da je granica daleko od uobičajene ili da model ne vidi povredu, ulogu ili taktiku. Proveri pre klađenja.":""}`:
+  `Uz te kvote ni Over (${sg2(r.eo)}) ni Under (${sg2(r.eu)}) nemaju prednost: model daje ${f(pw*100,1)}% a kvota ${f(odds,2)} traži bar ${f(100/odds,1)}%.`);
+ const tile=(t,v,sub,cl)=>`<div class="stat"><span>${t}</span><div class="num ${cl||""}">${v}</div>${sub?`<span>${sub}</span>`:""}</div>`;
+ el.innerHTML=`<div class="evbox ${cls}"><h3 class="${cls=="g"?"ok":cls=="r"?"no":""}">${head}</h3><div>${txt}</div></div>
+ <div class="grid" style="margin-top:12px">${tile("Projekcija modela",f(r.proj),"sezona "+f(r.season)+", zadnjih 5 "+f(r.l5))}
+ ${tile("Over "+L+" (model)",f(r.po*100,1)+"%","fer kvota "+f(1/r.po,2))}
+ ${tile("Under "+L+" (model)",f(r.pu*100,1)+"%","fer kvota "+f(1/r.pu,2))}
+ ${tile("Kladionica bez marže",f(r.nvo*100,1)+"% / "+f(r.nvu*100,1)+"%","Over / Under, marža "+f(r.marg,1)+"%")}
+ ${tile("EV Over @ "+f(oo,2),sg2(r.eo),"",r.eo>0?"ok":"no")}${tile("EV Under @ "+f(ou,2),sg2(r.eu),"",r.eu>0?"ok":"no")}</div>
+ <div class="note">EV = P(model) × kvota − 1. Raspodela: ${r.dist} (σ ${f(r.sd)}), ${vs.length} utakmica sa ${MINV()}+ min. ${r.beO!=null?`Over ima +EV uz ovu kvotu do granice ${r.beO}.`:"Over nema +EV ni na jednoj granici uz ovu kvotu."} Model je procena iz prošlih utakmica; ne vidi povrede, odmor ni taktiku, pa preporuka nije garancija.</div>`}
+let EKEY="";
+function evSync(){const t=$("ptm").value,id=$("ppl").value,k=t+"|"+id;const sel=$("emk");if(!sel.options.length)sel.innerHTML=MET.map(x=>`<option value="${x[0]}">${x[1]}</option>`).join("");
+ if(document.activeElement!==sel)sel.value=PMK;if(k!=EKEY){EKEY=k;$("eres").innerHTML=""}}
+$("ebt").onclick=evRender;["eln","eov","eun"].forEach(i=>$(i).addEventListener("keydown",e=>{if(e.key=="Enter")evRender()}));
+$("emk").onchange=()=>{if($("eres").innerHTML)evRender()};
 const pc=$("pch"),mv=e=>{if(!CH.H||(!e.buttons&&e.pointerType!="touch"))return;const r=pc.getBoundingClientRect(),yy=(e.clientY-r.top)/r.height*CH.H;let v=CH.hi-(yy-CH.pt)/(CH.H-CH.pt-CH.pb)*(CH.hi-CH.lo);{const G=pgames($("ptm").value,$("ppl").value),vl=G.map(x=>mfn(PMK)(x.p)),mx=Math.max(0,...vl),lo=PMK=="pir"?Math.min(0,...vl)-5:0,hi=Math.max(mx*1.6,mx+5);v=Math.min(hi,Math.max(lo,v))}
  $("pln").value=Math.round(v*2/1)/2;chart(true)};
 pc.onpointerdown=e=>{pc.setPointerCapture(e.pointerId);mv(e)};pc.onpointermove=mv;pc.onpointerup=()=>chart();
