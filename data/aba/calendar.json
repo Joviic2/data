@@ -664,6 +664,19 @@
    "group": "A"
   },
   {
+   "n": 59,
+   "slug": "bc-vienna-bosna-bh-telecom",
+   "round": 6,
+   "phase": "ROUND 6 ",
+   "h": "VIE",
+   "a": "BOS",
+   "hs": null,
+   "as": null,
+   "utc": "2026-10-30T19:00:00Z",
+   "time_known": true,
+   "group": "B"
+  },
+  {
    "n": 52,
    "slug": "buducnost-voli-borac-mozzart",
    "round": 6,
@@ -688,19 +701,6 @@
    "utc": "2026-10-31T11:00:00Z",
    "time_known": false,
    "group": "A"
-  },
-  {
-   "n": 59,
-   "slug": "bc-vienna-bosna-bh-telecom",
-   "round": 6,
-   "phase": "ROUND 6 ",
-   "h": "VIE",
-   "a": "BOS",
-   "hs": null,
-   "as": null,
-   "utc": "2026-10-31T16:00:00Z",
-   "time_known": true,
-   "group": "B"
   },
   {
    "n": 51,
