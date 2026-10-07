@@ -1,6 +1,6 @@
 {
  "season": "E2026",
- "run_at": "2026-10-07T14:46:22.050676+00:00",
+ "run_at": "2026-10-07T15:25:38.039467+00:00",
  "checks": [
   {
    "name": "results",
@@ -387,7 +387,7 @@
    "url": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2026/people",
    "params": null,
    "status": 200,
-   "bytes": 585687,
+   "bytes": 585789,
    "content_type": "application/json; charset=utf-8",
    "preview": "{\"data\":[{\"person\":{\"code\":\"CTB\",\"name\":\"COLLET, VINCENT\",\"alias\":\"COLLET, VINCENT\",\"aliasRaw\":\"COLLET, VINCENT\",\"passportName\":\"VINCENT FLORENT ANTOINE\",\"passportSurname\":\"COLLET\",\"jerseyName\":\"\",\"ab"
   },
