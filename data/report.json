@@ -1,6 +1,6 @@
 {
  "season": "E2026",
- "run_at": "2026-10-07T21:00:13.944505+00:00",
+ "run_at": "2026-10-07T21:22:24.233461+00:00",
  "checks": [
   {
    "name": "results",
@@ -36,18 +36,6 @@
    "bytes": 56401,
    "content_type": "application/json; charset=utf-8",
    "preview": "{\"Rows\":[{\"NUM_ANOT\":7,\"TEAM\":\"HTA       \",\"ID_PLAYER\":\"P012788   \",\"PLAYER\":\"OTURU, DAN\",\"ID_ACTION\":\"2FGM\",\"ACTION\":\"Two Pointer\",\"POINTS\":2,\"COORD_X\":0,\"COORD_Y\":0,\"ZONE\":\"A\",\"FASTBREAK\":\"0\",\"SECON"
-  },
-  {
-   "name": "boxscore_31",
-   "url": "https://live.euroleague.net/api/Boxscore",
-   "params": {
-    "gamecode": "31",
-    "seasoncode": "E2026"
-   },
-   "status": 200,
-   "bytes": 13646,
-   "content_type": "application/json; charset=utf-8",
-   "preview": "{\"Live\":false,\"Referees\":\"RYZHYK, BORYS, RACYS, SAULIUS, TSAROUCHA, VASILIKI\",\"Attendance\":\"6628\",\"ByQuarter\":[{\"Team\":\"PARIS BASKETBALL\",\"Quarter1\":21,\"Quarter2\":22,\"Quarter3\":34,\"Quarter4\":19},{\"Tea"
   },
   {
    "name": "shots_31",
@@ -438,5 +426,5 @@
  ],
  "games_found": 31,
  "games_played": 31,
- "summary": "37 od 37 poziva uspelo"
+ "summary": "36 od 36 poziva uspelo"
 }
