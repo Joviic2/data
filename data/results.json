@@ -81,6 +81,22 @@
  },
  {
   "round": "RS",
+  "gameday": "4",
+  "date": "Oct 08, 2026",
+  "time": "18:00",
+  "gamenumber": "32",
+  "gamecode": "E2026_32",
+  "group": "Regular Season",
+  "hometeam": "MACCABI RAPYD TEL AVIV",
+  "homecode": "TEL",
+  "homescore": "97",
+  "awayteam": "ARMANI OLIMPIA MILAN",
+  "awaycode": "MIL",
+  "awayscore": "79",
+  "played": "true"
+ },
+ {
+  "round": "RS",
   "gameday": "3",
   "date": "Oct 02, 2026",
   "time": "19:00",
@@ -493,6 +509,22 @@
   "awayteam": "DUBAI BASKETBALL",
   "awaycode": "DUB",
   "awayscore": "66",
+  "played": "true"
+ },
+ {
+  "round": "RS",
+  "gameday": "4",
+  "date": "Oct 08, 2026",
+  "time": "18:00",
+  "gamenumber": "37",
+  "gamecode": "E2026_37",
+  "group": "Regular Season",
+  "hometeam": "DUBAI BASKETBALL",
+  "homecode": "DUB",
+  "homescore": "58",
+  "awayteam": "CRVENA ZVEZDA MERIDIANBET BELGRADE",
+  "awaycode": "RED",
+  "awayscore": "77",
   "played": "true"
  }
 ]

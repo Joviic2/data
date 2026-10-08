@@ -1,6 +1,6 @@
 {
  "season": "E2026",
- "run_at": "2026-10-08T17:58:12.764626+00:00",
+ "run_at": "2026-10-08T18:23:36.259191+00:00",
  "checks": [
   {
    "name": "results",
@@ -9,7 +9,7 @@
     "seasonCode": "E2026"
    },
    "status": 200,
-   "bytes": 11858,
+   "bytes": 12628,
    "content_type": "application/xml; charset=utf-8",
    "preview": "<results xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\"><game><round>RS</round><gameday>2</gameday><date>Sep 29, 2026</date><time>19:45</time><gamen"
   },
@@ -72,6 +72,30 @@
    "bytes": 51807,
    "content_type": "application/json; charset=utf-8",
    "preview": "{\"Rows\":[{\"NUM_ANOT\":6,\"TEAM\":\"OLY       \",\"ID_PLAYER\":\"P009048   \",\"PLAYER\":\"MILLER-MCINTYRE, CODI\",\"ID_ACTION\":\"3FGA\",\"ACTION\":\"Missed Three Pointer\",\"POINTS\":0,\"COORD_X\":-677,\"COORD_Y\":6,\"ZONE\":\"H\""
+  },
+  {
+   "name": "boxscore_32",
+   "url": "https://live.euroleague.net/api/Boxscore",
+   "params": {
+    "gamecode": "32",
+    "seasoncode": "E2026"
+   },
+   "status": 200,
+   "bytes": 13651,
+   "content_type": "application/json; charset=utf-8",
+   "preview": "{\"Live\":false,\"Referees\":\"LATISEVS, OLEGS, FOUFIS, IOANNIS, PANTHER, ANNE\",\"Attendance\":\"254\",\"ByQuarter\":[{\"Team\":\"MACCABI RAPYD TEL AVIV\",\"Quarter1\":24,\"Quarter2\":27,\"Quarter3\":23,\"Quarter4\":23},{\"T"
+  },
+  {
+   "name": "shots_32",
+   "url": "https://live.euroleague.net/api/Points",
+   "params": {
+    "gamecode": "32",
+    "seasoncode": "E2026"
+   },
+   "status": 200,
+   "bytes": 51946,
+   "content_type": "application/json; charset=utf-8",
+   "preview": "{\"Rows\":[{\"NUM_ANOT\":7,\"TEAM\":\"TEL       \",\"ID_PLAYER\":\"P011219   \",\"PLAYER\":\"SORKIN, ROMAN\",\"ID_ACTION\":\"2FGM\",\"ACTION\":\"Two Pointer\",\"POINTS\":2,\"COORD_X\":-100,\"COORD_Y\":112,\"ZONE\":\"B\",\"FASTBREAK\":\"0"
   },
   {
    "name": "shots_25",
@@ -386,6 +410,30 @@
    "preview": "{\"Rows\":[{\"NUM_ANOT\":4,\"TEAM\":\"DUB       \",\"ID_PLAYER\":\"P011231   \",\"PLAYER\":\"BLOSSOMGAME, JARON\",\"ID_ACTION\":\"2FGA\",\"ACTION\":\"Missed Two Pointer\",\"POINTS\":0,\"COORD_X\":-81,\"COORD_Y\":25,\"ZONE\":\"B\",\"FAS"
   },
   {
+   "name": "boxscore_37",
+   "url": "https://live.euroleague.net/api/Boxscore",
+   "params": {
+    "gamecode": "37",
+    "seasoncode": "E2026"
+   },
+   "status": 200,
+   "bytes": 13700,
+   "content_type": "application/json; charset=utf-8",
+   "preview": "{\"Live\":false,\"Referees\":\"PUKL,SASA, ATTARD, MANUEL, PADROS, ARNAU\",\"Attendance\":\"5270\",\"ByQuarter\":[{\"Team\":\"DUBAI BASKETBALL\",\"Quarter1\":21,\"Quarter2\":10,\"Quarter3\":15,\"Quarter4\":12},{\"Team\":\"CRVENA"
+  },
+  {
+   "name": "shots_37",
+   "url": "https://live.euroleague.net/api/Points",
+   "params": {
+    "gamecode": "37",
+    "seasoncode": "E2026"
+   },
+   "status": 200,
+   "bytes": 49300,
+   "content_type": "application/json; charset=utf-8",
+   "preview": "{\"Rows\":[{\"NUM_ANOT\":6,\"TEAM\":\"RED       \",\"ID_PLAYER\":\"P014029   \",\"PLAYER\":\"IZUNDU, EBUKA\",\"ID_ACTION\":\"2FGM\",\"ACTION\":\"Two Pointer\",\"POINTS\":2,\"COORD_X\":-94,\"COORD_Y\":69,\"ZONE\":\"B\",\"FASTBREAK\":\"0\","
+  },
+  {
    "name": "v2_clubs",
    "url": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2026/clubs",
    "params": null,
@@ -408,7 +456,7 @@
    "url": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2026/games",
    "params": null,
    "status": 200,
-   "bytes": 700594,
+   "bytes": 700619,
    "content_type": "application/json; charset=utf-8",
    "preview": "{\"data\":[{\"id\":\"b4377faa-0f7f-445d-a2c6-d66d20f60f54\",\"identifier\":\"E2026_379\",\"gameCode\":379,\"season\":{\"name\":\"EuroLeague 2026-27\",\"code\":\"E2026\",\"alias\":\"2026-27\",\"competitionCode\":\"E\",\"year\":2026,\""
   },
@@ -424,7 +472,7 @@
    "preview": "<standings xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\"><group name=\"Regular Season\" round=\"RS\" gamenumber=\"4\"><team><name>Panathinaikos AKTOR Ath"
   }
  ],
- "games_found": 31,
- "games_played": 31,
- "summary": "36 od 36 poziva uspelo"
+ "games_found": 33,
+ "games_played": 33,
+ "summary": "40 od 40 poziva uspelo"
 }
