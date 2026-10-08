@@ -1,6 +1,6 @@
 {
  "season": "E2026",
- "run_at": "2026-10-08T20:47:21.107468+00:00",
+ "run_at": "2026-10-08T21:14:56.189314+00:00",
  "checks": [
   {
    "name": "results",
@@ -9,7 +9,7 @@
     "seasonCode": "E2026"
    },
    "status": 200,
-   "bytes": 13388,
+   "bytes": 14140,
    "content_type": "application/xml; charset=utf-8",
    "preview": "<results xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\"><game><round>RS</round><gameday>2</gameday><date>Sep 29, 2026</date><time>19:45</time><gamen"
   },
@@ -24,6 +24,30 @@
    "bytes": 47787,
    "content_type": "application/json; charset=utf-8",
    "preview": "{\"Rows\":[{\"NUM_ANOT\":14,\"TEAM\":\"MUN       \",\"ID_PLAYER\":\"P014732   \",\"PLAYER\":\"BEAUCHAMP, MARJON\",\"ID_ACTION\":\"3FGA\",\"ACTION\":\"Missed Three Pointer\",\"POINTS\":0,\"COORD_X\":-194,\"COORD_Y\":677,\"ZONE\":\"H\","
+  },
+  {
+   "name": "boxscore_34",
+   "url": "https://live.euroleague.net/api/Boxscore",
+   "params": {
+    "gamecode": "34",
+    "seasoncode": "E2026"
+   },
+   "status": 200,
+   "bytes": 13645,
+   "content_type": "application/json; charset=utf-8",
+   "preview": "{\"Live\":false,\"Referees\":\"HORDOV, TOMISLAV, ZAMOJSKI, JAKUB, BOUBERT, MAXIME\",\"Attendance\":\"10850\",\"ByQuarter\":[{\"Team\":\"VALENCIA BASKET\",\"Quarter1\":29,\"Quarter2\":18,\"Quarter3\":27,\"Quarter4\":19},{\"Tea"
+  },
+  {
+   "name": "shots_34",
+   "url": "https://live.euroleague.net/api/Points",
+   "params": {
+    "gamecode": "34",
+    "seasoncode": "E2026"
+   },
+   "status": 200,
+   "bytes": 53122,
+   "content_type": "application/json; charset=utf-8",
+   "preview": "{\"Rows\":[{\"NUM_ANOT\":12,\"TEAM\":\"HTA       \",\"ID_PLAYER\":\"P008987   \",\"PLAYER\":\"LEDAY, ZACH\",\"ID_ACTION\":\"2FGA\",\"ACTION\":\"Missed Two Pointer\",\"POINTS\":0,\"COORD_X\":-87,\"COORD_Y\":181,\"ZONE\":\"B\",\"FASTBREA"
   },
   {
    "name": "shots_12",
@@ -290,18 +314,6 @@
    "preview": "{\"Rows\":[{\"NUM_ANOT\":15,\"TEAM\":\"BAS       \",\"ID_PLAYER\":\"P014152   \",\"PLAYER\":\"SIMMONS, KOBI\",\"ID_ACTION\":\"3FGM\",\"ACTION\":\"Three Pointer\",\"POINTS\":3,\"COORD_X\":-18,\"COORD_Y\":784,\"ZONE\":\"H\",\"FASTBREAK\":"
   },
   {
-   "name": "boxscore_36",
-   "url": "https://live.euroleague.net/api/Boxscore",
-   "params": {
-    "gamecode": "36",
-    "seasoncode": "E2026"
-   },
-   "status": 200,
-   "bytes": 13770,
-   "content_type": "application/json; charset=utf-8",
-   "preview": "{\"Live\":false,\"Referees\":\"BELOSEVIC, ILIJA, PERUGA, CARLOS, SUKYS, ARTURAS\",\"Attendance\":\"18768\",\"ByQuarter\":[{\"Team\":\"PANATHINAIKOS AKTOR ATHENS\",\"Quarter1\":27,\"Quarter2\":19,\"Quarter3\":21,\"Quarter4\":"
-  },
-  {
    "name": "shots_36",
    "url": "https://live.euroleague.net/api/Points",
    "params": {
@@ -348,6 +360,30 @@
    "bytes": 47589,
    "content_type": "application/json; charset=utf-8",
    "preview": "{\"Rows\":[{\"NUM_ANOT\":14,\"TEAM\":\"ASV       \",\"ID_PLAYER\":\"P013900   \",\"PLAYER\":\"GACH, BOTH\",\"ID_ACTION\":\"2FGA\",\"ACTION\":\"Missed Two Pointer\",\"POINTS\":0,\"COORD_X\":-125,\"COORD_Y\":106,\"ZONE\":\"B\",\"FASTBREA"
+  },
+  {
+   "name": "boxscore_35",
+   "url": "https://live.euroleague.net/api/Boxscore",
+   "params": {
+    "gamecode": "35",
+    "seasoncode": "E2026"
+   },
+   "status": 200,
+   "bytes": 13678,
+   "content_type": "application/json; charset=utf-8",
+   "preview": "{\"Live\":false,\"Referees\":\"MOGULKOC, EMIN, KOLJENSIC, MILOS, KOWALSKI, MARCIN\",\"Attendance\":\"8579\",\"ByQuarter\":[{\"Team\":\"REAL MADRID\",\"Quarter1\":27,\"Quarter2\":26,\"Quarter3\":18,\"Quarter4\":15},{\"Team\":\"P"
+  },
+  {
+   "name": "shots_35",
+   "url": "https://live.euroleague.net/api/Points",
+   "params": {
+    "gamecode": "35",
+    "seasoncode": "E2026"
+   },
+   "status": 200,
+   "bytes": 55623,
+   "content_type": "application/json; charset=utf-8",
+   "preview": "{\"Rows\":[{\"NUM_ANOT\":69,\"TEAM\":\"PAR       \",\"ID_PLAYER\":\"P006739   \",\"PLAYER\":\"PAJOLA, ALESSANDRO\",\"ID_ACTION\":\"3FGA\",\"ACTION\":\"Missed Three Pointer\",\"POINTS\":0,\"COORD_X\":169,\"COORD_Y\":815,\"ZONE\":\"I\","
   },
   {
    "name": "shots_10",
@@ -468,7 +504,7 @@
    "url": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2026/games",
    "params": null,
    "status": 200,
-   "bytes": 700647,
+   "bytes": 700674,
    "content_type": "application/json; charset=utf-8",
    "preview": "{\"data\":[{\"id\":\"b4377faa-0f7f-445d-a2c6-d66d20f60f54\",\"identifier\":\"E2026_379\",\"gameCode\":379,\"season\":{\"name\":\"EuroLeague 2026-27\",\"code\":\"E2026\",\"alias\":\"2026-27\",\"competitionCode\":\"E\",\"year\":2026,\""
   },
@@ -484,7 +520,7 @@
    "preview": "<standings xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\"><group name=\"Regular Season\" round=\"RS\" gamenumber=\"4\"><team><name>Panathinaikos AKTOR Ath"
   }
  ],
- "games_found": 35,
- "games_played": 35,
- "summary": "41 od 41 poziva uspelo"
+ "games_found": 37,
+ "games_played": 37,
+ "summary": "44 od 44 poziva uspelo"
 }
