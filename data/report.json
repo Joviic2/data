@@ -1,6 +1,6 @@
 {
  "season": "E2026",
- "run_at": "2026-10-08T20:22:50.147451+00:00",
+ "run_at": "2026-10-08T20:47:21.107468+00:00",
  "checks": [
   {
    "name": "results",
@@ -9,7 +9,7 @@
     "seasonCode": "E2026"
    },
    "status": 200,
-   "bytes": 12997,
+   "bytes": 13388,
    "content_type": "application/xml; charset=utf-8",
    "preview": "<results xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\"><game><round>RS</round><gameday>2</gameday><date>Sep 29, 2026</date><time>19:45</time><gamen"
   },
@@ -290,6 +290,30 @@
    "preview": "{\"Rows\":[{\"NUM_ANOT\":15,\"TEAM\":\"BAS       \",\"ID_PLAYER\":\"P014152   \",\"PLAYER\":\"SIMMONS, KOBI\",\"ID_ACTION\":\"3FGM\",\"ACTION\":\"Three Pointer\",\"POINTS\":3,\"COORD_X\":-18,\"COORD_Y\":784,\"ZONE\":\"H\",\"FASTBREAK\":"
   },
   {
+   "name": "boxscore_36",
+   "url": "https://live.euroleague.net/api/Boxscore",
+   "params": {
+    "gamecode": "36",
+    "seasoncode": "E2026"
+   },
+   "status": 200,
+   "bytes": 13770,
+   "content_type": "application/json; charset=utf-8",
+   "preview": "{\"Live\":false,\"Referees\":\"BELOSEVIC, ILIJA, PERUGA, CARLOS, SUKYS, ARTURAS\",\"Attendance\":\"18768\",\"ByQuarter\":[{\"Team\":\"PANATHINAIKOS AKTOR ATHENS\",\"Quarter1\":27,\"Quarter2\":19,\"Quarter3\":21,\"Quarter4\":"
+  },
+  {
+   "name": "shots_36",
+   "url": "https://live.euroleague.net/api/Points",
+   "params": {
+    "gamecode": "36",
+    "seasoncode": "E2026"
+   },
+   "status": 200,
+   "bytes": 51544,
+   "content_type": "application/json; charset=utf-8",
+   "preview": "{\"Rows\":[{\"NUM_ANOT\":29,\"TEAM\":\"PAN       \",\"ID_PLAYER\":\"P007866   \",\"PLAYER\":\"MITOGLOU, KONSTANTINOS\",\"ID_ACTION\":\"2FGM\",\"ACTION\":\"Two Pointer\",\"POINTS\":2,\"COORD_X\":-81,\"COORD_Y\":37,\"ZONE\":\"B\",\"FASTB"
+  },
+  {
    "name": "shots_9",
    "url": "https://live.euroleague.net/api/Points",
    "params": {
@@ -398,18 +422,6 @@
    "preview": "{\"Rows\":[{\"NUM_ANOT\":4,\"TEAM\":\"DUB       \",\"ID_PLAYER\":\"P011231   \",\"PLAYER\":\"BLOSSOMGAME, JARON\",\"ID_ACTION\":\"2FGA\",\"ACTION\":\"Missed Two Pointer\",\"POINTS\":0,\"COORD_X\":-81,\"COORD_Y\":25,\"ZONE\":\"B\",\"FAS"
   },
   {
-   "name": "boxscore_33",
-   "url": "https://live.euroleague.net/api/Boxscore",
-   "params": {
-    "gamecode": "33",
-    "seasoncode": "E2026"
-   },
-   "status": 200,
-   "bytes": 13662,
-   "content_type": "application/json; charset=utf-8",
-   "preview": "{\"Live\":false,\"Referees\":\"VILIUS, GYTIS, TRAWICKI, TOMASZ, PEERANDI, RAIN\",\"Attendance\":\"10374\",\"ByQuarter\":[{\"Team\":\"FC BAYERN MUNICH\",\"Quarter1\":21,\"Quarter2\":22,\"Quarter3\":25,\"Quarter4\":19},{\"Team\""
-  },
-  {
    "name": "shots_33",
    "url": "https://live.euroleague.net/api/Points",
    "params": {
@@ -456,7 +468,7 @@
    "url": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2026/games",
    "params": null,
    "status": 200,
-   "bytes": 700633,
+   "bytes": 700647,
    "content_type": "application/json; charset=utf-8",
    "preview": "{\"data\":[{\"id\":\"b4377faa-0f7f-445d-a2c6-d66d20f60f54\",\"identifier\":\"E2026_379\",\"gameCode\":379,\"season\":{\"name\":\"EuroLeague 2026-27\",\"code\":\"E2026\",\"alias\":\"2026-27\",\"competitionCode\":\"E\",\"year\":2026,\""
   },
@@ -472,7 +484,7 @@
    "preview": "<standings xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\"><group name=\"Regular Season\" round=\"RS\" gamenumber=\"4\"><team><name>Panathinaikos AKTOR Ath"
   }
  ],
- "games_found": 34,
- "games_played": 34,
- "summary": "40 od 40 poziva uspelo"
+ "games_found": 35,
+ "games_played": 35,
+ "summary": "41 od 41 poziva uspelo"
 }
