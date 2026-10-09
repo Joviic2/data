@@ -1,26 +1,106 @@
 {
-  "updated": "2026-10-04",
-  "note": "Ručno uneseno iz prethodne sesije. Menjaj ovaj fajl u GitHub-u kad se status promeni.",
-  "teams": {
-    "IST": ["Mike James: van do kraja sezone (Ahil)", "Cordinier: van (operacija)", "Papagiannis: van (ACL)"],
-    "MIL": ["Guduric: očekuje se (lični razlozi)"],
-    "BES": ["Jeffries: neizvesno (prelom zgloba šake)"],
-    "RED": ["Baldwin Jr.: neizvesno (leđa)", "Djurisic: neizvesno (kvadriceps)", "Motley: neizvesno (prepone)"],
-    "DUB": ["Anderson: van do 6. kola (zadnja loža)", "Jaiteh: van (Ahil)", "Musa: van do 4. kola (koleno)", "Prepelic: neizvesno"],
-    "MUN": ["Beauchamp, da Silva: neizvesno (nepoznato)"],
-    "BAR": ["Evbuomwan: van (rame)", "Makoundou: van do 6. kola (koleno)", "Nebo: van do 5. kola (list)"],
-    "ULK": ["Larkin: neizvesno (povreda)"],
-    "HTA": ["Ennis: van (Ahil)", "Coffey: neizvesno", "Ginat: neizvesno (koleno)"],
-    "BAS": ["Sedekerskis: neizvesno"],
-    "ASV": ["Dossou-Yovo: van do novembra", "Washington Jr.: neizvesno (članak)"],
-    "TEL": ["Theis: neizvesno (članak)"],
-    "OLY": ["Milutinov: neizvesno (tendinitis)"],
-    "PAN": ["Nunn: van do 4. kola (meniskus)", "Sloukas: van do 4. kola", "Fall: neizvesno (zadnja loža)", "Hernangomez: neizvesno (prepone)"],
-    "PRS": ["Ntilikina, Tarpey: neizvesno"],
-    "PAR": ["Marinkovic: van (Ahil)", "Willis: van do 6. kola (članak)", "Stevens: sumnjiv (šaka)"],
-    "MAD": ["Garuba: van (ACL)", "Llull, Sarr, Shulga, Procida: nisu igrali (odluka trenera)"],
-    "PAM": [],
-    "VIR": ["Kokila: neizvesno (butna mišić)"],
-    "ZAL": ["Williams-Goss: van do 4. kola (zadnja loža)", "Saben Lee: neizvesno (zadnja loža)"]
-  }
+ "updated": "2026-10-09 (BasketNews, 06:38; kola 4-5)",
+ "teams": {
+  "IST": [
+   "Isaia Cordinier: van, neodređeno (rehabilitacija posle operacije)",
+   "Mike James: van do kraja sezone (ahilova tetiva, operacija)",
+   "Georgios Papagiannis: van, neodređeno (povreda levog kolena, ACL)",
+   "Cameron Payne: sumnjiv, odluka u terminu (kolo 4, novi igrač)",
+   "Ruzgar Fenemen: neizvesno (nisu igrali kola 1-3, odluka trenera)",
+   "D. Karutasu: neizvesno (nisu igrali kola 1-3, odluka trenera)",
+   "David Mutaf: neizvesno (nisu igrali kola 1-3, odluka trenera)"
+  ],
+  "MIL": [
+   "Nicola Akele: van, kolo 4 (odluka trenera)",
+   "Diego Flaccadori: van, kolo 4 (odluka trenera)",
+   "Stefano Tonut: van, kolo 4 (povreda leve šake)"
+  ],
+  "BES": [
+   "DaQuan Jeffries: sumnjiv, kolo 4 (prelom levog zgloba)",
+   "Yagiz Aksu: neizvesno, kolo 4 (nisu igrali kola 1-3, odluka trenera)"
+  ],
+  "RED": [
+   "Andrej Bjelic: van, kolo 4 (odluka trenera)",
+   "Nikola Djurisic: van, kolo 4 (povreda kvadricepsa)",
+   "Stefan Miljenovic: van, kolo 4 (nije putovao, odluka trenera)",
+   "Johnathan Motley: van, kola 4-8 (povreda prepone)"
+  ],
+  "DUB": [
+   "Justin Anderson: van, kola 1-6 (povreda zadnje lože)",
+   "Mouhammadou Jaiteh: van, neodređeno (rehabilitacija posle ahilove tetive)",
+   "Dzanan Musa: sumnjiv, kolo 5 (povreda kolena)",
+   "Klemen Prepelic: neizvesno, kolo 5 (nisu igrali kola 1-4, neobjavljen razlog)"
+  ],
+  "MUN": [
+   "Kilian Fischer: neizvesno, kolo 5 (nisu igrali kola 2-4, odluka trenera)",
+   "Miles Norris: neizvesno, kolo 5 (propustio kolo 4, stomatološki zahvat)"
+  ],
+  "BAR": [
+   "Yoan Makoundou: van, kola 1-6 (povreda levog kolena)",
+   "Justin Minaya: van, kola 4-6 (povreda aduktora desne noge)",
+   "Tosan Evbuomwan: sumnjiv, odluka u terminu (kolo 4, levo rame)",
+   "Josh Nebo: sumnjiv, odluka u terminu (kolo 4, desni list)",
+   "Abdu Kone: neizvesno, kolo 4 (nisu igrali kola 1-3, odluka trenera)"
+  ],
+  "ULK": [
+   "Shane Larkin: neizvesno, kolo 5 (nisu igrali kola 1-4, kondicija)",
+   "Onuralp Bitim: neizvesno, kolo 5 (nisu igrali kola 1-4, odluka trenera)",
+   "Melih Mahmutoglu: neizvesno, kolo 5 (nisu igrali kola 1-4, odluka trenera)"
+  ],
+  "HTA": [
+   "Tyler Ennis: van, dugoročno (pocepana ahilova tetiva)",
+   "Amir Coffey: sumnjiv, kolo 5 (neobjavljena povreda, nije igrao kola 1-4)",
+   "Tomer Ginat: sumnjiv, kolo 5 (povreda kolena, nije igrao kola 1-4)"
+  ],
+  "BAS": [
+   "Clement Frisch: neizvesno, kolo 4 (nije bio u 12 u kolu 3, odluka trenera)",
+   "Pedro Souza: neizvesno, kolo 4 (nisu igrali kola 2-3, odluka trenera)"
+  ],
+  "ASV": [
+   "Mathis Dossou-Yovo: van, kola 1-9 (povreda aduktora, do novembra)",
+   "TyTy Washington Jr.: sumnjiv, kolo 5 (povreda članka, nije igrao kola 1-4)",
+   "Edwin Jackson: neizvesno, kolo 5 (nisu igrali kola 1-4, odluka trenera)"
+  ],
+  "TEL": [
+   "Gur Lavi: sumnjiv, kolo 5 (neobjavljena povreda, nije igrao kola 1-4)",
+   "John Dibartolomeo: neizvesno, kolo 5 (propustio kolo 4, odluka trenera)",
+   "Amit Ebo: neizvesno, kolo 5 (propustio kolo 4, odluka trenera)"
+  ],
+  "OLY": [
+   "Nikolaos Plotas: van, kola 4-12 (povreda lakta, šest nedelja)",
+   "Georgios Bourneles: neizvesno, kolo 4 (nisu igrali kola 1-3, odluka trenera)",
+   "Antonios Karagiannidis: neizvesno, kolo 4 (nisu igrali kola 1-3, odluka trenera)",
+   "Omiros Netzipoglou: neizvesno, kolo 4 (nisu igrali kola 1-3, odluka trenera)",
+   "George Papas: neizvesno, kolo 4 (nisu igrali kola 1-3, odluka trenera)"
+  ],
+  "PAN": [
+   "Kendrick Nunn: sumnjiv, kolo 5 (povreda meniskusa, nije igrao kola 1-4)",
+   "Kostas Sloukas: sumnjiv, kolo 5 (rehabilitacija posle povrede noge, nije igrao kola 1-4)",
+   "Juan Hernangomez: sumnjiv, kolo 5 (prepone, mišićni spazam, propustio kola 2-4)",
+   "Iason Varvaritis: neizvesno, kolo 5 (nisu igrali kola 1-4, odluka trenera)"
+  ],
+  "PRS": [
+   "Jared Rhoden: sumnjiv, kolo 5 (neobjavljena povreda, propustio kolo 4)",
+   "Frank Ntilikina: neizvesno, kolo 5 (propustio kola 3-4, odluka trenera)",
+   "Maozinha Pereira: neizvesno, kolo 5 (nisu igrali kola 1-4, odluka trenera)"
+  ],
+  "PAR": [
+   "Uros Danilovic: van, kolo 4 (odluka trenera)",
+   "Lamar Stevens: van, kolo 4 (povreda šake, nije putovao)",
+   "Vanja Marinkovic: van, neodređeno (povratak posle operacije ahilove tetive)",
+   "Derek Willis: van, kola 2-6 (povreda članka, procena za 3-4 nedelje)"
+  ],
+  "MAD": [
+   "Usman Garuba: van, dugoročno (pocepan ACL)",
+   "Gabriel Deck: sumnjiv, kolo 5 (povreda levog ramena, propustio kolo 4)",
+   "Sergio Llull: neizvesno, kolo 5 (nisu igrali kola 1-4, odluka trenera)",
+   "Gabriele Procida: neizvesno, kolo 5 (nisu igrali kola 2-4, odluka trenera)",
+   "Olivier Sarr: neizvesno, kolo 5 (nisu igrali kola 1-4, odluka trenera)",
+   "Max Shulga: neizvesno, kolo 5 (nisu igrali kola 1-4, odluka trenera)"
+  ],
+  "PAM": [
+   "Mouhamadou Gueye: neizvesno, kolo 5 (nisu igrali kola 2-4, odluka trenera)",
+   "Lucas Mari: neizvesno, kolo 5 (nisu igrali kola 2-4, odluka trenera)"
+  ]
+ }
 }
