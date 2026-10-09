@@ -2210,6 +2210,23 @@ function tevDeep(c){
  return`<div class="deep">${out.join("")}</div>`}
 
 tevUI();
+
+// ================= MOZZART KVOTE (data/odds_mozzart.json, puni ih lokalni fetch_mozzart.py) =================
+async function mozMerge(){
+ try{
+  if(LG!="euroleague"||!D)return;
+  const M=await getJSON(lp("data/odds_mozzart.json"));
+  if(!M||!Array.isArray(M.events)||Date.now()/1000-(M.fetched||0)>7200)return; // starije od 2h se ignorise
+  if(!OD||!OD.events)OD={fetched:M.fetched,remaining:"",events:[]};
+  M.events.forEach(m=>{
+   const h=codeOf(m.h),a=codeOf(m.a);if(!h||!a||h==a)return;
+   let ev=OD.events.find(e=>codeOf(e.h)==h&&codeOf(e.a)==a);
+   if(!ev){ev={id:"mozzart|"+h+"|"+a,h:m.h,a:m.a,start:m.start,b:[]};OD.events.push(ev)}
+   ev.b=ev.b.filter(b=>b.key!="mozzart");
+   (m.b||[]).forEach(b=>ev.b.push({key:"mozzart",title:"Mozzart",h2h:b.h2h||null,sp:b.sp||null,tt:b.tt||null}))});
+  OD.moz=M.fetched;
+ }catch(e){}}
+{const _lo2=window.loadOdds;window.loadOdds=async function(){await _lo2();await mozMerge();if(D)try{calc()}catch(e){}}}
 </script></main><script>
 // Objašnjenja (.note i opisi ispod naslova) postaju krugić (i) na kraju naslova; klik otvara iskačući opis.
 (function(){
