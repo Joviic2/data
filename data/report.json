@@ -1,6 +1,6 @@
 {
  "season": "E2026",
- "run_at": "2026-10-09T20:35:01.402073+00:00",
+ "run_at": "2026-10-09T20:58:32.431356+00:00",
  "checks": [
   {
    "name": "results",
@@ -9,7 +9,7 @@
     "seasonCode": "E2026"
    },
    "status": 200,
-   "bytes": 14518,
+   "bytes": 15271,
    "content_type": "application/xml; charset=utf-8",
    "preview": "<results xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\"><game><round>RS</round><gameday>2</gameday><date>Sep 29, 2026</date><time>19:45</time><gamen"
   },
@@ -60,6 +60,30 @@
    "bytes": 53931,
    "content_type": "application/json; charset=utf-8",
    "preview": "{\"Rows\":[{\"NUM_ANOT\":13,\"TEAM\":\"ASV       \",\"ID_PLAYER\":\"P013900   \",\"PLAYER\":\"GACH, BOTH\",\"ID_ACTION\":\"2FGA\",\"ACTION\":\"Missed Two Pointer\",\"POINTS\":0,\"COORD_X\":-163,\"COORD_Y\":238,\"ZONE\":\"D\",\"FASTBREA"
+  },
+  {
+   "name": "boxscore_39",
+   "url": "https://live.euroleague.net/api/Boxscore",
+   "params": {
+    "gamecode": "39",
+    "seasoncode": "E2026"
+   },
+   "status": 200,
+   "bytes": 13632,
+   "content_type": "application/json; charset=utf-8",
+   "preview": "{\"Live\":false,\"Referees\":\"NEDOVIC, MILAN, PETEK, SASO, THEPENIER, HUGUES\",\"Attendance\":\"4346\",\"ByQuarter\":[{\"Team\":\"FC BARCELONA\",\"Quarter1\":18,\"Quarter2\":23,\"Quarter3\":24,\"Quarter4\":16},{\"Team\":\"ZALG"
+  },
+  {
+   "name": "shots_39",
+   "url": "https://live.euroleague.net/api/Points",
+   "params": {
+    "gamecode": "39",
+    "seasoncode": "E2026"
+   },
+   "status": 200,
+   "bytes": 47974,
+   "content_type": "application/json; charset=utf-8",
+   "preview": "{\"Rows\":[{\"NUM_ANOT\":16,\"TEAM\":\"ZAL       \",\"ID_PLAYER\":\"P000898   \",\"PLAYER\":\"VALANCIUNAS, JONAS\",\"ID_ACTION\":\"2FGM\",\"ACTION\":\"Two Pointer\",\"POINTS\":2,\"COORD_X\":0,\"COORD_Y\":25,\"ZONE\":\"A\",\"FASTBREAK\":"
   },
   {
    "name": "shots_24",
@@ -228,6 +252,30 @@
    "bytes": 48412,
    "content_type": "application/json; charset=utf-8",
    "preview": "{\"Rows\":[{\"NUM_ANOT\":10,\"TEAM\":\"PRS       \",\"ID_PLAYER\":\"P012640   \",\"PLAYER\":\"HIFI, NADIR\",\"ID_ACTION\":\"2FGA\",\"ACTION\":\"Missed Two Pointer\",\"POINTS\":0,\"COORD_X\":12,\"COORD_Y\":150,\"ZONE\":\"C\",\"FASTBREAK"
+  },
+  {
+   "name": "boxscore_38",
+   "url": "https://live.euroleague.net/api/Boxscore",
+   "params": {
+    "gamecode": "38",
+    "seasoncode": "E2026"
+   },
+   "status": 200,
+   "bytes": 13694,
+   "content_type": "application/json; charset=utf-8",
+   "preview": "{\"Live\":false,\"Referees\":\"JAVOR, DAMIR, BISSUEL, THOMAS, SILVA, SERGIO\",\"Attendance\":\"7351\",\"ByQuarter\":[{\"Team\":\"KOSNER BASKONIA VITORIA-GASTEIZ\",\"Quarter1\":20,\"Quarter2\":31,\"Quarter3\":20,\"Quarter4\":"
+  },
+  {
+   "name": "shots_38",
+   "url": "https://live.euroleague.net/api/Points",
+   "params": {
+    "gamecode": "38",
+    "seasoncode": "E2026"
+   },
+   "status": 200,
+   "bytes": 55018,
+   "content_type": "application/json; charset=utf-8",
+   "preview": "{\"Rows\":[{\"NUM_ANOT\":14,\"TEAM\":\"BES       \",\"ID_PLAYER\":\"P013383   \",\"PLAYER\":\"GABRIEL, WENYEN\",\"ID_ACTION\":\"2FGM\",\"ACTION\":\"Two Pointer\",\"POINTS\":2,\"COORD_X\":0,\"COORD_Y\":18,\"ZONE\":\"A\",\"FASTBREAK\":\"0\""
   },
   {
    "name": "shots_21",
@@ -492,7 +540,7 @@
    "url": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2026/games",
    "params": null,
    "status": 200,
-   "bytes": 700692,
+   "bytes": 700718,
    "content_type": "application/json; charset=utf-8",
    "preview": "{\"data\":[{\"id\":\"b4377faa-0f7f-445d-a2c6-d66d20f60f54\",\"identifier\":\"E2026_379\",\"gameCode\":379,\"season\":{\"name\":\"EuroLeague 2026-27\",\"code\":\"E2026\",\"alias\":\"2026-27\",\"competitionCode\":\"E\",\"year\":2026,\""
   },
@@ -508,7 +556,7 @@
    "preview": "<standings xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\"><group name=\"Regular Season\" round=\"RS\" gamenumber=\"4\"><team><name>Panathinaikos AKTOR Ath"
   }
  ],
- "games_found": 38,
- "games_played": 38,
- "summary": "43 od 43 poziva uspelo"
+ "games_found": 40,
+ "games_played": 40,
+ "summary": "47 od 47 poziva uspelo"
 }
