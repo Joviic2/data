@@ -611,7 +611,7 @@ function roundGames(){
  (D.fixtures||[]).filter(x=>x.round==r&&!done.has(x.n)&&!seen.has(x.n)).forEach(x=>out.push({n:x.n,h:x.h,a:x.a,played:false}));
  return out.filter(x=>TEAMS.includes(x.h)&&TEAMS.includes(x.a))}
 function calc(){
- if(!D)return;R=ratings();const h=$("h").value,a=$("a").value;if(h==a){$("res").innerHTML="<tr><td>Izaberi dva različita tima.</td></tr>";return}
+ if(!D)return;try{tevLab()}catch(e){}R=ratings();const h=$("h").value,a=$("a").value;if(h==a){$("res").innerHTML="<tr><td>Izaberi dva različita tima.</td></tr>";return}
  const m=R[h].r-R[a].r+S.hca+(+$("ah").value)-(+$("aa").value),p=phi(m/S.sig),ln=+$("ln").value,pc=phi((m+ln)/S.sig),B=bank();
  $("kpi").innerHTML=[[nm(h)+" očekivana razlika",(m>=0?"+":"")+f(m)],["Šansa "+nm(h),f(p*100)+"%"],["Šansa "+nm(a),f((1-p)*100)+"%"],["Neizvesnost ishoda (σ)","±"+f(S.sig)+" poena"]].map(x=>`<div class="stat"><span>${esc(x[0])}</span><div class="num">${x[1]}</div></div>`).join("");
  const mkp=(x,y)=>x>1&&y>1?(1/x)/(1/x+1/y):null,mw=mkp(+$("o1").value,+$("o2").value),mh=mkp(+$("o3").value,+$("o4").value);
@@ -2117,7 +2117,7 @@ function tevModel(h,a,mk,sc){
  if(((INJ.teams||{})[h]||[]).length||((INJ.teams||{})[a]||[]).length)rl("U bazi postoje upisane povrede: proveri karticu Povrede i status i podesi korekciju poena.");
  return{pF,proj,projLab,dist,steps,risks,tiles,w,nmin,step,sm,hn,an,base}}
 function tevRender(){
- const el=$("tevr");if(!el||!D)return;const h=$("h").value,a=$("a").value,mk=$("tmk").value,sc=$("tsc").value;
+ const el=$("tevr");if(!el||!D)return;try{tevLab()}catch(e){}const h=$("h").value,a=$("a").value,mk=$("tmk").value,sc=$("tsc").value;
  const msg=t=>{el.innerHTML=`<div class="evbox y"><b>${esc(t)}</b></div>`};
  if(h==a)return msg("Izaberi dva različita tima.");
  if(mk.startsWith("p_"))return tevPlayer(el,h,a,mk.slice(2));
