@@ -5,13 +5,13 @@
  "club_id": "43",
  "crest": "https://www.aba-liga.com/images/club/100x100/43.png",
  "record": {
-  "gp": 1,
-  "w": 0,
+  "gp": 2,
+  "w": 1,
   "l": 1,
-  "pf": 81,
-  "pa": 87,
-  "pf_avg": 81.0,
-  "pa_avg": 87.0
+  "pf": 175,
+  "pa": 170,
+  "pf_avg": 87.5,
+  "pa_avg": 85.0
  },
  "games": [
   {
@@ -23,6 +23,16 @@
    "pf": 81,
    "pa": 87,
    "result": "L"
+  },
+  {
+   "n": 24,
+   "round": 3,
+   "dt": "2026-10-10T17:00:00Z",
+   "home": false,
+   "opp": "IGO",
+   "pf": 94,
+   "pa": 83,
+   "result": "W"
   }
  ],
  "roster": [
@@ -32,11 +42,11 @@
    "no": "30",
    "pos": "",
    "photo": "https://www.aba-liga.com/stats/img/foto/2125.png",
-   "gp": 1,
-   "min_avg": 36.8,
-   "pts_avg": 16.0,
-   "reb_avg": 8.0,
-   "ast_avg": 2.0
+   "gp": 2,
+   "min_avg": 32.4,
+   "pts_avg": 11.5,
+   "reb_avg": 5.5,
+   "ast_avg": 5.5
   },
   {
    "id": "2393",
@@ -56,23 +66,11 @@
    "no": "2",
    "pos": "",
    "photo": "https://www.aba-liga.com/stats/img/foto/5648.png",
-   "gp": 1,
-   "min_avg": 27.5,
-   "pts_avg": 21.0,
-   "reb_avg": 8.0,
-   "ast_avg": 3.0
-  },
-  {
-   "id": "5610",
-   "name": "Roy Jr A.",
-   "no": "9",
-   "pos": "",
-   "photo": "https://www.aba-liga.com/stats/img/foto/5610.png",
-   "gp": 1,
-   "min_avg": 23.6,
-   "pts_avg": 8.0,
-   "reb_avg": 1.0,
-   "ast_avg": 1.0
+   "gp": 2,
+   "min_avg": 29.4,
+   "pts_avg": 21.5,
+   "reb_avg": 6.5,
+   "ast_avg": 2.0
   },
   {
    "id": "2755",
@@ -80,23 +78,23 @@
    "no": "44",
    "pos": "",
    "photo": "https://www.aba-liga.com/stats/img/foto/2755.png",
-   "gp": 1,
-   "min_avg": 23.4,
-   "pts_avg": 12.0,
-   "reb_avg": 1.0,
-   "ast_avg": 0.0
+   "gp": 2,
+   "min_avg": 25.6,
+   "pts_avg": 13.5,
+   "reb_avg": 2.5,
+   "ast_avg": 1.5
   },
   {
-   "id": "3783",
-   "name": "Ćurčić M. Đ.",
-   "no": "11",
+   "id": "5610",
+   "name": "Roy Jr A.",
+   "no": "9",
    "pos": "",
-   "photo": "https://www.aba-liga.com/stats/img/foto/3783.png",
-   "gp": 1,
-   "min_avg": 23.0,
-   "pts_avg": 8.0,
-   "reb_avg": 0.0,
-   "ast_avg": 2.0
+   "photo": "https://www.aba-liga.com/stats/img/foto/5610.png",
+   "gp": 2,
+   "min_avg": 25.4,
+   "pts_avg": 14.0,
+   "reb_avg": 1.5,
+   "ast_avg": 1.5
   },
   {
    "id": "2544",
@@ -104,23 +102,35 @@
    "no": "6",
    "pos": "",
    "photo": "https://www.aba-liga.com/stats/img/foto/2544.png",
+   "gp": 2,
+   "min_avg": 18.9,
+   "pts_avg": 6.0,
+   "reb_avg": 5.5,
+   "ast_avg": 1.0
+  },
+  {
+   "id": "2928",
+   "name": "Simović R.",
+   "no": "8",
+   "pos": "",
+   "photo": "https://www.aba-liga.com/stats/img/foto/2928.png",
    "gp": 1,
-   "min_avg": 15.3,
-   "pts_avg": 2.0,
+   "min_avg": 18.2,
+   "pts_avg": 7.0,
    "reb_avg": 3.0,
    "ast_avg": 1.0
   },
   {
-   "id": "3006",
-   "name": "Živanović B.",
-   "no": "7",
+   "id": "3783",
+   "name": "Ćurčić M. Đ.",
+   "no": "11",
    "pos": "",
-   "photo": "https://www.aba-liga.com/stats/img/foto/3006.png",
-   "gp": 1,
-   "min_avg": 11.8,
-   "pts_avg": 3.0,
+   "photo": "https://www.aba-liga.com/stats/img/foto/3783.png",
+   "gp": 2,
+   "min_avg": 14.9,
+   "pts_avg": 5.0,
    "reb_avg": 0.0,
-   "ast_avg": 0.0
+   "ast_avg": 2.0
   },
   {
    "id": "3281",
@@ -128,11 +138,35 @@
    "no": "33",
    "pos": "",
    "photo": "https://www.aba-liga.com/stats/img/foto/3281.png",
-   "gp": 1,
-   "min_avg": 8.3,
-   "pts_avg": 0.0,
-   "reb_avg": 0.0,
+   "gp": 2,
+   "min_avg": 14.6,
+   "pts_avg": 3.5,
+   "reb_avg": 1.5,
    "ast_avg": 2.0
+  },
+  {
+   "id": "3006",
+   "name": "Živanović B.",
+   "no": "7",
+   "pos": "",
+   "photo": "https://www.aba-liga.com/stats/img/foto/3006.png",
+   "gp": 2,
+   "min_avg": 11.8,
+   "pts_avg": 3.5,
+   "reb_avg": 0.0,
+   "ast_avg": 1.0
+  },
+  {
+   "id": "5310",
+   "name": "Roganović L.",
+   "no": "88",
+   "pos": "",
+   "photo": "https://www.aba-liga.com/stats/img/foto/5310.png",
+   "gp": 1,
+   "min_avg": 5.3,
+   "pts_avg": 0.0,
+   "reb_avg": 2.0,
+   "ast_avg": 0.0
   }
  ]
 }
