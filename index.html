@@ -413,7 +413,7 @@ const fdu=u=>{try{return new Date(u).toLocaleString("sr-Latn",{weekday:"short",d
 
 // ================= UČITAVANJE PODATAKA =================
 // Minimalni uzorak: odigrane utakmice po timu (screener, EV modeli) i po igracu (propsi). Nize = radi ranije u sezoni, ali je procena manje pouzdana.
-const MINTG=1,MINPG=2;
+const MINTG=2,MINPG=2;
 // ================= LIGE =================
 const LEAGUES={euroleague:["Euroleague","EL"],aba:["ABA Liga","ABA"],acb:["ACB","ACB"],lnb:["LNB","LNB"],bbl:["BBL","BBL"]};
 let LG="euroleague";try{LG=new URLSearchParams(location.search).get("lg")||localStorage.getItem("ellg")||"euroleague"}catch(e){}
@@ -1447,13 +1447,13 @@ function screenInner(){
  const el=$("scr");if(!el)return;
  if(!D){return}
  if(!OD||!OD.events||!OD.events.length){el.innerHTML='<div class="note">Nema kvota (data/odds.json). Proveri da je GitHub Action prošao i da je ODDS_API_KEY postavljen.</div>';return}
- R=ratings();const ONLY=$("sbk").value,nk=new Set(OD.events.flatMap(e=>e.b.map(b=>b.key))),MINB=nk.size>=3?3:1,thr=+$("sth").value/100,B=bank(),best=[],sure=[],NPL={},skipN=0;let PL={};try{PL=JSON.parse(localStorage.getItem("elpl")||"{}")}catch(e){}let used=0;
+ R=ratings();const ONLY=$("sbk").value,nk=new Set(OD.events.flatMap(e=>e.b.map(b=>b.key))),MINB=nk.size>=3?3:1,thr=+$("sth").value/100,B=bank(),best=[],sure=[],NPL={},skipN=0,minN=99;let PL={};try{PL=JSON.parse(localStorage.getItem("elpl")||"{}")}catch(e){}let used=0;
  OD.events.forEach(e=>{
   const h=codeOf(e.h),a=codeOf(e.a);if(!h||!a||h==a||!R[h]||!R[a]){unk.push(e.h+" - "+e.a);return}
   if(e.start&&new Date(e.start)<new Date()){RS.past++;RS.sk.push([e.h+" - "+e.a,"već počela ili odigrana"]);return}
   let r;try{r=modelFor(h,a,e.start?new Date(e.start):new Date())}catch(x){return}
-  {const nG=t=>D.games.filter(g=>g.box&&(g.h==t||g.a==t)).length;if(Math.min(nG(h),nG(a))<5){skipN++;return}if((((INJ.teams||{})[h]||[]).length+((INJ.teams||{})[a]||[]).length)&&!(+$("ah").value||+$("aa").value)){skipN++;return}}
-  used++;const N=r.mg.length,pr=(arr,fn)=>arr.filter(fn).length/N,mt=nm(h)+" - "+nm(a),M={},PF={};
+  let ngm=0;{const nG=t=>D.games.filter(g=>g.box&&(g.h==t||g.a==t)).length;ngm=Math.min(nG(h),nG(a));if(ngm<MINTG){skipN++;return}if((((INJ.teams||{})[h]||[]).length+((INJ.teams||{})[a]||[]).length)&&!(+$("ah").value||+$("aa").value)){skipN++;return}}
+  used++;minN=Math.min(minN,ngm);const N=r.mg.length,pr=(arr,fn)=>arr.filter(fn).length/N,mt=nm(h)+" - "+nm(a),M={},PF={};
   const reg=(k,mA,mB,nA,nB,pA,b,oA,oB)=>{if(!oA||!oB)return;const m=M[k]=M[k]||{mA,mB,nA,nB,pA,fam:k[0],l:k=="h"?0:parseFloat(k.slice(1)),fr:[],bo:[0,0],bb:["",""]};if(b.key=="pinnacle")PF[k[0]]={l:m.l,pA:(1/oA)/(1/oA+1/oB)};m.fr.push((1/oA)/(1/oA+1/oB));if(oA>m.bo[0]&&(!ONLY||b.key==ONLY)){m.bo[0]=oA;m.bb[0]=b.title}if(oB>m.bo[1]&&(!ONLY||b.key==ONLY)){m.bo[1]=oB;m.bb[1]=b.title}};
   let b1=0,b2=0,k1="",k2="";
   e.b.concat(e.alt||[]).forEach(b=>{
@@ -1479,7 +1479,7 @@ function screenInner(){
  `<div class="card"><h3 style="margin-top:0">Svi tipovi sa EV ≥ ${f(thr*100,0)}% (${SCR.length})</h3>`+
  (SCR.length?`<div class="scroll"><table><tr><th>Početak</th><th>Utakmica</th><th>Tržište</th><th>Izbor</th><th class="r">Model</th><th class="r">Kvota</th><th>Kladionica</th><th class="r">EV</th><th class="r">EV vs Pinnacle</th><th class="r">Ulog</th><th></th></tr>`+
   SCR.map((x,i)=>`<tr><td>${esc(dt(x.st))}</td><td>${esc(x.mt)}</td><td>${esc(x.mk)}</td><td>${esc(x.pick)}${x.mv?` <span class="no" title="Pinnacle je pomerio liniju">⚡ ${esc(x.mv)}</span>`:""}</td><td class="r">${f(x.p*100)}%</td><td class="r">${f(x.o,2)}</td><td>${esc(x.bk)}</td><td class="r ok">+${f(x.ev*100,1)}% ${evb(x.ev)}</td><td class="r ${x.evS>0?"ok":"mu"}">${x.evS==null?"-":(x.evS>0?"+":"")+f(x.evS*100,1)+"%"}</td><td class="r">${f(stake(x.p,x.o,B),2)}</td><td><button class="btn sm" data-vi="${i}" type="button">Zašto?</button> <button class="btn sm" data-sl="${i}" type="button">+ Listić</button> <button class="btn sm" data-sa="${i}" type="button">Bankroll</button></td></tr>`).join("")+`</table></div>`:`<p class="mu">Nema tipova iznad praga${used?"":" (nijedan meč iz kvota nije prepoznat u tvom modelu)"}.</p>`)+
- `<div class="note warn">${MINB==1?"Imaš kvote samo jedne kladionice, pa je referenca njena kvota bez marže i model: tipova će biti malo, a EV je gruba procena, igraj manjim ulogom. ":""}Referenca je Pinnacle bez marže (ako ga ima, pa je težina modela 20%), inače konsenzus kladionica (težina modela 27%). Linije se uporeduju sa Pinnacleovom, a ⚡ znači da je Pinnacle pomerio liniju od prošlog osvežavanja. EV iznad 12% se odbacuje kao greška. Realan edge u klađenju je 2 do 6%. Ukupno analizirano mečeva: ${used}/${OD.events.length}. Sakriveno kao nepouzdano (uzorak manji od 5 utakmica ili neuračunate povrede): ${skipN}.</div></div>`;
+ `<div class="note warn">${MINB==1?"Imaš kvote samo jedne kladionice, pa je referenca njena kvota bez marže i model: tipova će biti malo, a EV je gruba procena, igraj manjim ulogom. ":""}${minN<5?`Rani deo sezone: najmanji uzorak je ${minN} utakmica po timu, pa je model manje pouzdan i EV treba čitati kao grubu procenu. `:""}Referenca je Pinnacle bez marže (ako ga ima, pa je težina modela 20%), inače konsenzus kladionica (težina modela 27%). Linije se uporeduju sa Pinnacleovom, a ⚡ znači da je Pinnacle pomerio liniju od prošlog osvežavanja. EV iznad 12% se odbacuje kao greška. Realan edge u klađenju je 2 do 6%. Ukupno analizirano mečeva: ${used}/${OD.events.length}. Sakriveno kao nepouzdano (uzorak manji od 5 utakmica ili neuračunate povrede): ${skipN}.</div></div>`;
  $("sb").innerHTML=`<div class="card"><h2>Surebet</h2>`+(sure.length?`<div class="scroll"><table><tr><th>Utakmica</th><th>Domaćin</th><th>Gost</th><th class="r">Profit</th></tr>`+sure.map(x=>`<tr><td>${esc(x.mt)}</td><td>${f(x.b1,2)} (${esc(x.k1)})</td><td>${f(x.b2,2)} (${esc(x.k2)})</td><td class="r ok">+${f(x.pf,2)}%</td></tr>`).join("")+`</table></div>`:`<p class="mu">Trenutno nema arbitraže.</p>`)+`</div>`}
 $("sth").onchange=screen;try{$("sbk").value=localStorage.getItem("elsbk")||""}catch(e){}$("sbk").onchange=()=>{try{localStorage.setItem("elsbk",$("sbk").value)}catch(e){}screen()};
 $("scr").onclick=e=>{const b=e.target.closest("[data-sa]");if(!b)return;const x=SCR[+b.dataset.sa];if(!x)return;
