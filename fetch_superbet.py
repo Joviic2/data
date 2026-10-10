@@ -27,19 +27,29 @@ URL = ("https://production-superbet-offer-rs.freetls.fastly.net/sb-rs/api/v3/sr-
        "?startDate={s}&endDate={e}&index=active-prematch&sports=4")
 DETAIL = ("https://production-superbet-offer-rs.freetls.fastly.net/sb-rs/api/v3/sr-Latn-RS/events"
           "?events={id}&includeOnly=fixture,inPlayStats,inPlayStatsMetadata,markets,priceboosts,results,superbets")
-# kljucne reci traze se u imenu turnira iz feeda (bez dijakritika, malim slovima); "no" iskljucuje (zenske, druge divizije...)
+# kljucne reci traze se u imenu turnira iz feeda (bez dijakritika, malim slovima). Element moze biti i tuple = SVE reci moraju biti prisutne.
+# Kratke reci (do 3 slova: lnb, bbl, acb, aba) traze se kao cela rec. "no" iskljucuje (zenske, druge divizije, kupovi...).
+# Dodatne reci bez menjanja koda:  --alias lnb="lnb pro a" --alias bbl="nemacka 1"
 LEAGUES = {
     "euroleague": {"site": "data/site.json", "out": "data/odds_superbet.json",
-                   "names": ("euroleague", "euroliga", "evroliga"), "no": ("eurocup", "evrokup", "zensk", "women", "u18", "u20")},
+                   "names": ["euroleague", "euroliga", "evroliga"], "no": ["eurocup", "evrokup", "zensk", "women", "u18", "u20"]},
     "aba": {"site": "data/aba/site.json", "out": "data/aba/odds_superbet.json",
-            "names": ("aba liga", "aba league", "aba 1", "jadransk", "adriatic"), "no": ("aba 2", "aba2", "zensk", "women", "u19", "u21")},
+            "names": ["aba liga", "aba league", "aba 1", "jadransk", "adriatic", ("aba", "liga")], "no": ["aba 2", "aba2", "zensk", "women", "u19", "u21"]},
     "acb": {"site": "data/acb/site.json", "out": "data/acb/odds_superbet.json",
-            "names": ("acb", "liga endesa"), "no": ("leb", "copa", "supercopa", "zensk", "women", "u22")},
+            "names": ["acb", "liga endesa", "spanija", "spain", "spanish"], "no": ["leb", "copa", "kup", "cup", "supercopa", "zensk", "women", "u22"]},
     "lnb": {"site": "data/lnb/site.json", "out": "data/lnb/odds_superbet.json",
-            "names": ("lnb", "betclic elite", "pro a"), "no": ("pro b", "espoirs", "zensk", "women", "u21")},
+            "names": ["lnb", "betclic elite", "francuska", "france", "french", ("pro a", "franc")],
+            "no": ["pro b", "espoirs", "zensk", "women", "u21", "kup", "cup", "coupe", "leaders"]},
     "bbl": {"site": "data/bbl/site.json", "out": "data/bbl/odds_superbet.json",
-            "names": ("bbl", "basketball bundesliga", "easycredit"), "no": ("pro a", "pro b", "zensk", "women", "u19", "nbbl")},
+            "names": ["bbl", "bundesliga", "nemacka", "germany", "german", "easycredit"],
+            "no": ["pro a", "pro b", "2. ", "zensk", "women", "u19", "nbbl", "kup", "pokal", "cup", "regionalliga", "franc"]},
 }
+
+
+def kw_hit(text, kw):
+    if isinstance(kw, tuple):
+        return all(kw_hit(text, k) for k in kw)
+    return bool(re.search(r"(?<![a-z0-9])" + re.escape(kw) + r"(?![a-z0-9])", text)) if len(kw) <= 3 and kw.isalpha() else kw in text
 PROP_STATS = (("pts", ("poen", "point", "pts")), ("reb", ("skok", "rebound", "reb")), ("ast", ("asist", "assist", "ast")))
 PROP_HINT = ("igrač", "igrac", "player")
 PROP_NAME_KEYS = ("player", "player_name", "playername", "competitor", "participant", "name")
@@ -323,7 +333,7 @@ def tour_text(ev):
 def classify(r, text):
     """(liga, nacin) ili (None, razlog)."""
     L = league_data()
-    hit = [lg for lg, c in LEAGUES.items() if any(w in text for w in c["names"]) and not any(w in text for w in c["no"])]
+    hit = [lg for lg, c in LEAGUES.items() if any(kw_hit(text, w) for w in c["names"]) and not any(kw_hit(text, w) for w in c["no"])]
     if len(hit) == 1:
         return hit[0], "ime"
     th, ta, t0 = tokens(r["h"]), tokens(r["a"]), to_ms(r.get("start"))
@@ -365,11 +375,125 @@ def assign(out, diag, overrides):
     return seen
 
 
+HINT = ("tournament", "competition", "league", "category", "country", "region", "sport")
+
+
+def raw_events(j, out=None):
+    """Svaki dict sa kljucem 'fixture' (i bez markets), da vidimo i mecove koje parser odbaci."""
+    out = [] if out is None else out
+    if isinstance(j, dict):
+        if "fixture" in j:
+            out.append(j)
+        else:
+            for v in j.values():
+                raw_events(v, out)
+    elif isinstance(j, list):
+        for v in j:
+            raw_events(v, out)
+    return out
+
+
+def flat(o, pre=""):
+    if isinstance(o, dict):
+        for k, v in o.items():
+            yield from flat(v, f"{pre}{k}.")
+    elif isinstance(o, (str, int, float)) and not isinstance(o, bool):
+        yield pre[:-1], o
+
+
+# Podsetnik za citanje ID-jeva (feed ne salje imena turnira): reci iz imena klubova koje "provlacimo" kroz svaki turnir.
+# Samo savet u ispisu, NE koristi se za automatsku dodelu lige (za to sluzi --comp ili data/superbet_comps.json).
+HINTS = {
+    "LNB (Francuska)": ("asvel", "villeurbanne", "monaco", "paris basket", "le mans", "nanterre", "strasbourg", "limoges", "dijon", "chalon",
+                        "boulazac", "cholet", "gravelines", "portel", "bourg", "nancy", "orleans", "roanne", "levallois", "vichy", "fos provence",
+                        "evreux", "rouen", "saint-chamond", "blois", "poitiers", "saint-quentin"),
+    "BBL (Nemacka)": ("bayern", "alba berlin", "ulm", "telekom", "bonn", "chemnitz", "niners", "rostock", "seawolves", "ludwigsburg", "riesen",
+                      "wurzburg", "gottingen", "hamburg", "towers", "heidelberg", "oldenburg", "bamberg", "brose", "braunschweig", "lowen",
+                      "trier", "vechta", "crailsheim", "merlins", "skyliners", "frankfurt", "tubingen", "tigers", "bremerhaven", "bayreuth"),
+    "TBSL (Turska)": ("galatasaray", "fenerbahce", "besiktas", "anadolu efes", "trabzonspor", "tofas", "bahcesehir", "turk telekom", "karsiyaka",
+                      "bursaspor", "manisa", "petkim", "aliaga", "samsunspor", "gaziantep", "merkezefendi", "yalova", "mersin", "uskudar", "buyukcekmece"),
+    "ACB (Spanija)": ("real madrid", "barca", "barcelona", "baskonia", "valencia", "unicaja", "joventut", "obradoiro", "manresa", "andorra", "bilbao",
+                      "tenerife", "girona", "zaragoza", "murcia", "lleida", "burgos", "breogan", "coruna"),
+    "ABA (Jadran)": ("partizan", "crvena zvezda", "zvezda", "buducnost", "cedevita", "olimpija", "mega", "split", "dubrava", "igokea", "borac", "spartak", "studentski"),
+}
+
+
+def raw_report(j, a, parsed):
+    """--leagues: SVI tournament_id iz sirovog feeda (pre filtriranja): broj mecova, primeri mecova, savet lige i trenutna dodela."""
+    evs = raw_events(j)
+    print(f"SIROV FEED: {len(evs)} dogadjaja (sa 'fixture'); {sum(1 for e in evs if not e.get('markets'))} bez trzista\n")
+    cur = collections.defaultdict(collections.Counter)
+    for r in parsed:
+        cur[r["comp"]][r["lg"] or "-"] += 1
+    G = {}
+    for e in evs:
+        fx = e.get("fixture") or {}
+        tid = fx.get("tournament_id", "?")
+        g = G.setdefault(str(tid), {"n": 0, "ok": 0, "names": [], "ex": [], "cat": fx.get("category_id")})
+        g["n"] += 1
+        g["ok"] += 1 if e.get("markets") else 0
+        nm_ = fx.get("event_name", "?")
+        g["names"].append(nm_)
+        if len(g["ex"]) < 3:
+            g["ex"].append(f"{nm_} ({str(fx.get('utc_date', ''))[5:16].replace('T', ' ')})")
+    rows = []
+    for tid, g in G.items():
+        women = all("(Ž)" in n or "(W)" in n or "(Z)" in n for n in g["names"])
+        score = {}
+        for lab, words in HINTS.items():
+            m = sum(1 for n in g["names"] if any(w in norm(n) for w in words))
+            if m:
+                score[lab] = m
+        best = max(score.items(), key=lambda x: x[1]) if score else None
+        rows.append({"id": tid, "n": g["n"], "ok": g["ok"], "ex": g["ex"], "women": women, "cat": g["cat"], "hint": best,
+                     "cur": ", ".join(f"{k}:{v}" for k, v in cur.get("t" + tid, collections.Counter()).most_common())})
+    line = lambda r: (f"  id={r['id']:<7} {r['n']:3d} mec. ({r['ok']} sa trz.) kat={r['cat']} {'[ZENSKA] ' if r['women'] else ''}"
+                      f"{('dodeljeno: ' + r['cur'] + ' ') if r['cur'] else ''}| " + " / ".join(r["ex"]))
+    full = [line(r) for r in sorted(rows, key=lambda r: int(r["id"]) if str(r["id"]).isdigit() else 0)]
+    os.makedirs("data", exist_ok=True)
+    open(os.path.join("data", "superbet_turniri.txt"), "w", encoding="utf-8").write("\n".join(full) + "\n")
+    print(f"SVI TURNIRI IZ FEEDA: {len(rows)} (sortirano po ID-ju; ista lista je u data/superbet_turniri.txt):")
+    print("\n".join(full))
+    print(f"\n{'=' * 100}\nPREDLOG PO KLUBOVIMA (samo savet; ne dodeljuje se automatski). Muski turniri, najpre oni sa najvise pogodaka:")
+    shown = False
+    for lab in HINTS:
+        cand = sorted([r for r in rows if r["hint"] and r["hint"][0] == lab and not r["women"]], key=lambda r: -r["hint"][1])
+        for r in cand[:6]:
+            shown = True
+            print(f"  {lab:16} id={r['id']:<7} {r['hint'][1]}/{r['n']} mecova se poklapa sa klubovima | {' / '.join(r['ex'])}")
+    if not shown:
+        print("  nijedan turnir nema klubove iz podsetnika.")
+    print("\nKad nadjes ID:   py fetch_superbet.py --comp lnb=ID --comp bbl=ID1,ID2     (ili trajno u data/superbet_comps.json: {\"lnb\":[ID],\"bbl\":[ID]})")
+    if a.grep:
+        w = norm(a.grep)
+        print(f"\nPRETRAGA '{a.grep}' u celom feedu (putanja = vrednost):")
+        hits = []
+
+        def walk(o, path):
+            if isinstance(o, dict):
+                for k, v in o.items():
+                    if w in norm(k):
+                        hits.append((path + "/" + str(k), "(kljuc)"))
+                    walk(v, path + "/" + str(k))
+            elif isinstance(o, list):
+                for i, v in enumerate(o):
+                    walk(v, path + f"[{i}]")
+            elif w in norm(o):
+                hits.append((path, str(o)))
+        walk(j, "")
+        for pth, v in hits[:60]:
+            print(f"  {pth[-110:]} = {v[:100]}")
+        print(f"  ukupno pogodaka: {len(hits)}" + (" (prikazano 60)" if len(hits) > 60 else ""))
+    if a.raw:
+        json.dump(j, open(os.path.join("data", "superbet_feed.json"), "w", encoding="utf-8"), ensure_ascii=False)
+        print("\nSirov feed snimljen u data/superbet_feed.json.")
+
+
 def run(a=None):
     now = datetime.datetime.now(datetime.timezone.utc)
     s = now.strftime("%Y-%m-%dT00:00:00.000Z")
     e = (now + datetime.timedelta(days=60)).strftime("%Y-%m-%dT00:00:00.000Z")
-    j = get(URL.format(s=s, e=e))
+    j = get(URL.format(s=s, e=e).replace("index=active-prematch", "index=" + (a.index if a else "active-prematch")).replace("sports=4", "sports=" + str(a.sports if a else 4)))
     diag, out = collections.Counter(), []
     for ev in events_in(j):
         diag["mecevi"] += 1
@@ -378,18 +502,32 @@ def run(a=None):
             r["eid"] = event_id(ev)
             r["_tour"] = tour_text(ev)
             out.append(r)
-    overrides = {}                                  # --comp aba=t123,acb=t456  (ili samo broj = Evroliga)
-    for part in (a.comp if a else "").split(","):
-        part = part.strip()
-        if part:
-            lg, _, cid = part.partition("=") if "=" in part else ("euroleague", "", part)
-            overrides["t" + cid.strip().lstrip("t")] = lg.strip()
+    overrides = {}                                  # --comp lnb=123 --comp bbl=456,457  (bez "lg=" = Evroliga); + data/superbet_comps.json
+    try:
+        for lg, ids in json.load(open(os.path.join("data", "superbet_comps.json"), encoding="utf-8")).items():
+            for i in (ids if isinstance(ids, list) else [ids]):
+                overrides["t" + str(i).strip().lstrip("t")] = lg
+    except (OSError, ValueError, AttributeError):
+        pass
+    for arg in (a.comp if a else []):
+        for part in str(arg).split(";"):
+            part = part.strip()
+            if part:
+                lg, _, ids = part.partition("=") if "=" in part else ("euroleague", "", part)
+                for i in ids.split(","):
+                    if i.strip():
+                        overrides["t" + i.strip().lstrip("t")] = lg.strip()
+    bad = [lg for lg in overrides.values() if lg not in LEAGUES]
+    if bad:
+        sys.exit(f"nepoznata liga u mapiranju: {sorted(set(bad))}; dozvoljene: {list(LEAGUES)}")
     seen = assign(out, diag, overrides)
+    if a and (a.leagues or a.grep or a.raw):
+        raw_report(j, a, out)
     if a and a.leagues:
-        print("TURNIRI U FEEDU (tekst turnira -> liga: broj mecova):")
+        print("\nDODELA LIGA (samo mecevi sa prepoznatim kvotama; tekst turnira -> liga: broj mecova):")
         for t, c in sorted(seen.items(), key=lambda x: -sum(x[1].values())):
             print(f"  {t[:70]!r:75} -> " + ", ".join(f"{k}: {v}" for k, v in c.most_common()))
-    if a and a.detail:      # detalj (hendikep, ukupno, igraci) za mecove prepoznatih liga u narednih --hours sati, maks. --max po prolazu
+    if a and a.detail and not (a.leagues or a.grep or a.raw):      # detalj (hendikep, ukupno, igraci) za mecove prepoznatih liga u narednih --hours sati, maks. --max po prolazu
         lim = (now + datetime.timedelta(hours=a.hours)).timestamp() * 1000
         pick = [x for x in out if x["lg"] and (to_ms(x["start"]) or 0) <= lim and (to_ms(x["start"]) or 0) >= now.timestamp() * 1000 - 3 * 3600e3]
         pick.sort(key=lambda x: x["start"] or "")
@@ -454,6 +592,9 @@ def once(a):
         ev, diag = run(a)
     except urllib.error.HTTPError as ex:
         sys.exit(f"HTTP {ex.code}: feed odbija zahtev. Ne zaobilazim; pokusaj kasnije ili sa svoje masine.")
+    if a.leagues or a.grep or a.raw:
+        print("\n(dijagnostika: ne pisem fajlove sa kvotama)")
+        return
     mine = [e for e in ev if e.get("lg")]
     print(f"{datetime.datetime.now():%H:%M:%S} mecevi u feedu {diag['mecevi']}, sa prepoznatim kvotama {len(ev)}, u nasim ligama {len(mine)}")
     for e in mine[:40]:
@@ -474,13 +615,24 @@ if __name__ == "__main__":
     ap = argparse.ArgumentParser()
     ap.add_argument("--loop", type=int, default=0, help="sekundi izmedju prolaza (min 300)")
     ap.add_argument("--detail", default=DETAIL, help="URL detalja meca sa {id}; '' = iskljuceno")
-    ap.add_argument("--comp", default="", help="rucno mapiranje turnira: aba=t123,acb=t456 (comp oznaka je u polju comp u fajlu); bez ovoga liga se prepoznaje automatski")
+    ap.add_argument("--comp", action="append", default=[], help="mapiranje po tournament_id: --comp lnb=123 --comp bbl=456,457 (moze vise puta); trajno u data/superbet_comps.json")
     ap.add_argument("--hours", type=int, default=96, help="detalj (hendikep/ukupno/props) samo za mecove u narednih N sati")
     ap.add_argument("--max", type=int, default=120, help="najvise detalj-poziva po prolazu (razmak 1.5-3 s izmedju)")
-    ap.add_argument("--leagues", action="store_true", help="ispisi svaki turnir iz feeda i u koju ligu je dodeljen")
+    ap.add_argument("--leagues", action="store_true", help="dijagnostika: ispisi SVE turnire iz sirovog feeda (ID, ime, broj mecova) i dodelu liga; ne pise fajlove")
+    ap.add_argument("--grep", default="", help="dijagnostika: nadji tekst u celom sirovom feedu (npr. --grep lnb ili --grep bundesliga) i ispisi putanju polja")
+    ap.add_argument("--raw", action="store_true", help="dijagnostika: snimi ceo sirov feed u data/superbet_feed.json")
+    ap.add_argument("--alias", action="append", default=[], help="dodaj kljucnu rec za ligu: --alias lnb=\"lnb pro a\" (moze vise puta)")
+    ap.add_argument("--sports", default="4", help="id sporta u feedu (kosarka = 4)")
+    ap.add_argument("--index", default="active-prematch", help="index feeda (npr. active-prematch)")
     ap.add_argument("--dump", action="store_true", help="snimi sirov detalj prvog meca (data/superbet_dump.json) i ispisi imena svih trzista")
     ap.add_argument("--push", action="store_true", help="git commit+push samo fajlova sa kvotama")
     a = ap.parse_args()
+    for al in a.alias:
+        lg, _, kw = al.partition("=")
+        if lg.strip() in LEAGUES and kw.strip():
+            LEAGUES[lg.strip()]["names"].append(norm(kw.strip()))
+        else:
+            sys.exit(f"--alias {al!r}: ocekujem liga=tekst, liga je jedna od {list(LEAGUES)}")
     if not a.loop:
         once(a)
     else:
