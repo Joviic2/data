@@ -21,7 +21,7 @@ Upisuju se u svaki mec kao  "player_props":[{"p":"Ime Prezime","s":"pts|reb|ast"
 ("main" = linija najblizа 50/50 za tog igraca i statistiku, ostale su alternativne). Kombinovana trzista (poeni+skokovi...) se preskacu.
 Ako Superbet imenuje trzista drugacije nego sto parser ocekuje, pokreni:  python fetch_superbet.py --dump
 (snimi sirov odgovor detalja prvog meca u data/superbet_dump.json i ispise sva imena trzista)."""
-import argparse, collections, datetime, json, os, random, re, subprocess, sys, time, unicodedata, urllib.request, urllib.error
+import argparse, collections, datetime, json, math, os, random, re, subprocess, sys, time, unicodedata, urllib.request, urllib.error
 
 URL = ("https://production-superbet-offer-rs.freetls.fastly.net/sb-rs/api/v3/sr-Latn-RS/events"
        "?startDate={s}&endDate={e}&index=active-prematch&sports=4")
@@ -202,6 +202,7 @@ def parse_props(ev, diag):
             out.append({"p": g["p"], "s": g["s"], "l": g["l"], "o": g["o"], "u": g["u"], "main": i == 0})
     for (_, stat), lines in ms_got.items():     # milestone linije: Under se procenjuje (book ~106%), main = Over najblizi 2.00
         best = sorted(lines.items(), key=lambda kv: abs(kv[1][1] - 2.0))[:4]
+        best += [kv for kv in sorted(lines.items(), reverse=True)[:2] if kv not in best]      # + 2 najvise linije (za Under vrednost na visokim pragovima)
         for i, (ln, (who, po)) in enumerate(best):
             pu = 1.06 - 1 / po
             if pu <= 0.05:
@@ -594,6 +595,10 @@ def run(a=None):
                 diag["detalj_prazan"] += 1
     for r in out:
         r.pop("_how", None), r.pop("_text", None)
+    try:
+        annotate(out, a.analytics if a else AN_DEFAULT, diag)
+    except Exception as ex:                          # analitika nikad ne sme da obori preuzimanje kvota
+        print("UPOZORENJE: analitika preskocena:", ex)
     if a and a.detail and MKT:                      # sva imena trzista iz detalja po ligi: vidi se sta Superbet zaista nudi za igrace
         os.makedirs("data", exist_ok=True)
         with open(os.path.join("data", "superbet_trzista.txt"), "w", encoding="utf-8") as fh:
@@ -603,6 +608,195 @@ def run(a=None):
             print("\nTRZISTA IGRACA koja parser prepoznaje po ligama:", dict(collections.Counter(lg for (lg, n_) in MKT if prop_stat(n_))))
             print("Sva imena trzista: data/superbet_trzista.txt (liga, broj mecova, prepoznato, ime)")
     return out, diag
+
+
+# ===================== ANALITIKA (faza 1: umor/odmor + rotacije/minutaza) =====================
+# Sve konstante su HEURISTIKE (nisu kalibrisane na istoriji klada); menjaj ih ovde pa proveri na backtestu.
+AN_DEFAULT = "aba"                              # lige za koje se racuna (--analytics aba,acb ; "" = iskljuceno)
+GAME_H = 2.0                                    # trajanje meca (sati) pri racunanju odmora
+REST_PEN = ((24, 3.0), (36, 2.2), (48, 1.5), (60, 0.8), (72, 0.4))      # odmor ispod X sati -> penal u poenima razlike
+AWAY_X_PEN = {"euroleague": 0.8}                # prethodni mec bio GOSTOVANJE u drugom takmicenju (Evroliga) -> dodatni penal
+AWAY_X_DEFAULT = 0.5
+DENSE_PEN = 0.8                                 # 3+ meca u 7 dana
+MAX_PEN = 4.0
+WINP_PER_PT = 0.03                              # ~3% verovatnoce pobede po poenu razlike (oko 50:50)
+CONG_H = 72                                     # "dva fronta": mec u drugom takmicenju ranije/kasnije od N sati
+ROT_PRIOR = 0.92                                # prior: nosioci igre igraju ~8% manje minuta uz Evropu
+ROT_PRIOR_BENCH = 0.97
+SIG_EDGE = 0.04                                 # prag signala: model mora biti bar 4 p.p. iznad kladionicke verovatnoce (bilo 10 p.p. za OVER)
+SIG_EDGE_UNDER = 0.08                           # UNDER bez "dva fronta" trazi veci prag (model je tu sumovitiji)
+ROT_K = 3                                       # tezina priora (u "mecevima")
+MIN_STARTER = 22                                # prosek minuta od kojeg je igrac "nosilac"
+SD_MIN = {"pts": 2.5, "reb": 1.3, "ast": 1.2}
+SD_REL = {"pts": 0.32, "reb": 0.50, "ast": 0.55}
+BOX_IDX = {"min": 4, "pts": 5, "reb": 14, "ast": 15}      # indeksi u box[side].p (isti kao u index.htmlu)
+
+
+def _site(lg):
+    try:
+        return json.load(open(LEAGUES[lg]["site"], encoding="utf-8"))
+    except (OSError, ValueError):
+        return None
+
+
+def build_context(feed):
+    """Raspored svih timova iz svih site.json + feeda (sve lige i takmicenja) i istorija igraca iz boxscore-a."""
+    sched, hist = [], {}
+    for lg in LEAGUES:
+        d = _site(lg)
+        if not d:
+            continue
+        clubs = {k: (v.get("name") or "") + " " + (v.get("short") or "") for k, v in (d.get("clubs") or {}).items()}
+        for g in (d.get("games") or []) + (d.get("fixtures") or []):
+            ms = to_ms(g.get("utc") or g.get("dt"))
+            if not ms or g.get("h") not in clubs or g.get("a") not in clubs:
+                continue
+            for me, op, home in ((g["h"], g["a"], True), (g["a"], g["h"], False)):
+                sched.append({"tok": tokens(clubs[me]), "ms": ms, "home": home, "lg": lg, "opp": clubs[op].strip()})
+        teams = {}
+        for g in d.get("games") or []:
+            box, ms = g.get("box"), to_ms(g.get("utc") or g.get("dt"))
+            if not box or not ms:
+                continue
+            for side, code in (("h", g.get("h")), ("a", g.get("a"))):
+                if code not in clubs or not (box.get(side) or {}).get("p"):
+                    continue
+                t = teams.setdefault(code, {"tok": tokens(clubs[code]), "pl": {}})
+                for p in box[side]["p"]:
+                    try:
+                        row = tuple(float(p[BOX_IDX[k]] or 0) for k in ("min", "pts", "reb", "ast"))
+                    except (TypeError, ValueError, IndexError):
+                        continue
+                    pl = t["pl"].setdefault(str(p[0]), {"name": str(p[1]), "tk": {w for w in re.split(r"[^a-z]+", norm(p[1])) if len(w) >= 2}, "g": []})
+                    pl["g"].append((ms,) + row)
+        hist[lg] = list(teams.values())
+    for r in feed:                                  # feed: i takmicenja koja nemamo u site.json (EuroCup, ...)
+        ms = to_ms(r.get("start"))
+        if not ms:
+            continue
+        for me, op, home in ((r["h"], r["a"], True), (r["a"], r["h"], False)):
+            tk = tokens(me)
+            if tk and not any(share(tk, e["tok"]) and abs(e["ms"] - ms) < 6 * 3600e3 for e in sched):
+                sched.append({"tok": tk, "ms": ms, "home": home, "lg": r.get("lg") or "ostalo", "opp": op})
+    return {"sched": sched, "hist": hist}
+
+
+def team_entries(ctx, tk):
+    return sorted((e for e in ctx["sched"] if share(tk, e["tok"])), key=lambda e: e["ms"])
+
+
+def rest_pen(h):
+    for lim, pen in REST_PEN:
+        if h < lim:
+            return pen
+    return 0.0
+
+
+def team_load(ctx, tk, start, lg):
+    """Odmor/umor tima pred mecem u ligi lg."""
+    H = 3.6e6
+    es = team_entries(ctx, tk)
+    prev = [e for e in es if e["ms"] <= start - 3 * H]
+    nxt = [e for e in es if e["ms"] >= start + 3 * H]
+    p, n = (prev[-1] if prev else None), (nxt[0] if nxt else None)
+    out = {"rest_h": None, "pen": 0.0, "prev": None, "next": None, "cong": False, "dbl": any(e["lg"] != lg for e in es), "n7": 1 + sum(1 for e in prev if e["ms"] > start - 7 * 24 * H)}
+    if p:
+        rest = round((start - p["ms"]) / H - GAME_H, 1)
+        pen = rest_pen(rest)
+        if p["lg"] != lg and not p["home"]:
+            pen += AWAY_X_PEN.get(p["lg"], AWAY_X_DEFAULT)
+        out.update(rest_h=rest, prev={"lg": p["lg"], "opp": p["opp"], "away": not p["home"], "ago_h": round((start - p["ms"]) / H, 1)})
+        out["pen"] = pen
+    if out["n7"] >= 3:
+        out["pen"] += DENSE_PEN
+    out["pen"] = round(min(MAX_PEN, out["pen"]), 2)
+    if n:
+        out["next"] = {"lg": n["lg"], "opp": n["opp"], "away": not n["home"], "in_h": round((n["ms"] - start) / H, 1)}
+    out["cong"] = bool((p and p["lg"] != lg and (start - p["ms"]) / H <= CONG_H) or (n and n["lg"] != lg and (n["ms"] - start) / H <= CONG_H))
+    return out
+
+
+def _cong_at(es, ms, lg):
+    H = 3.6e6
+    return any(e["lg"] != lg and abs(e["ms"] - ms) <= CONG_H * H and abs(e["ms"] - ms) > 3 * H for e in es)
+
+
+def _phi(z):
+    return 0.5 * (1 + math.erf(z / math.sqrt(2)))
+
+
+def find_player(team, name):
+    tk = {w for w in re.split(r"[^a-z]+", norm(name)) if len(w) >= 2}
+    best, score = None, 0
+    for pl in team["pl"].values():
+        sc = len(tk & pl["tk"])
+        long_hit = any(len(w) >= 5 and w in pl["tk"] for w in tk)
+        if (sc >= 2 or (sc >= 1 and long_hit)) and sc > score:
+            best, score = pl, sc
+    return best
+
+
+def rotation(pl, es, lg, cong_now, stat, line, o, u):
+    rows = [(ms, m, pts, reb, ast, _cong_at(es, ms, lg)) for ms, m, pts, reb, ast in pl["g"] if m >= 5]
+    if len(rows) < 4:
+        return None
+    nc = [r[1] for r in rows if not r[5]]
+    cg = [r[1] for r in rows if r[5]]
+    base = sum(nc) / len(nc) if len(nc) >= 3 else sum(r[1] for r in rows) / len(rows)
+    ratio = (sum(cg) / len(cg) / base) if cg and base else 1.0
+    prior = ROT_PRIOR if base >= MIN_STARTER else ROT_PRIOR_BENCH
+    f = (len(cg) * ratio + ROT_K * prior) / (len(cg) + ROT_K)
+    exp_min = base * (f if cong_now else 1.0)
+    i = {"pts": 2, "reb": 3, "ast": 4}[stat]
+    tm = sum(r[1] for r in rows)
+    rate = sum(r[i] for r in rows) / tm if tm else 0
+    proj = rate * exp_min
+    sd = max(SD_MIN[stat], SD_REL[stat] * proj)
+    po = 1 - _phi((line - proj) / sd)
+    book_o = (1 / o) / 1.06
+    book_u = (1 / u) / 1.06
+    sig = None
+    if po > book_o + SIG_EDGE:
+        sig = "OVER"
+    elif (1 - po) > book_u + (SIG_EDGE if cong_now else SIG_EDGE_UNDER):
+        sig = "UNDER"
+    return {"min": round(exp_min, 1), "base": round(base, 1), "f": round(f, 2), "n": len(cg), "proj": round(proj, 1), "po": round(po, 3),
+            "ev_o": round(po * o - 1, 3), "ev_u": round((1 - po) * u - 1, 3), "cong": bool(cong_now), "sig": sig}
+
+
+def annotate(feed, leagues, diag):
+    """Dodaje svakom meču iz lige 'an' (odmor/umor) i svakoj prop liniji 'rot' (minutaza/projekcija)."""
+    leagues = [x.strip() for x in str(leagues or "").split(",") if x.strip() in LEAGUES]
+    if not leagues:
+        return
+    ctx = build_context(feed)
+    diag["an_raspored"] = len(ctx["sched"])
+    for r in feed:
+        lg = r.get("lg")
+        start = to_ms(r.get("start"))
+        if lg not in leagues or not start:
+            continue
+        th, ta = tokens(r["h"]), tokens(r["a"])
+        L = [team_load(ctx, th, start, lg), team_load(ctx, ta, start, lg)]
+        if L[0]["prev"] is None and L[1]["prev"] is None:
+            diag["an_bez_rasporeda"] += 1
+            continue
+        edge = round(L[1]["pen"] - L[0]["pen"], 2)         # + = prednost domacina (gost umorniji)
+        r["an"] = {"rest_h": [L[0]["rest_h"], L[1]["rest_h"]], "pen": [L[0]["pen"], L[1]["pen"]], "edge_pts": edge, "dp_home": round(edge * WINP_PER_PT, 3),
+                   "dbl": [L[0]["dbl"], L[1]["dbl"]], "cong": [L[0]["cong"], L[1]["cong"]], "prev": [L[0]["prev"], L[1]["prev"]], "next": [L[0]["next"], L[1]["next"]]}
+        diag["an_mecevi"] += 1
+        teams = [next((t for t in ctx["hist"].get(lg, []) if share(tk, t["tok"])), None) for tk in (th, ta)]
+        for p in r.get("player_props") or []:
+            for i, tk in enumerate((th, ta)):
+                pl = find_player(teams[i], p["p"]) if teams[i] else None
+                if pl:
+                    rot = rotation(pl, team_entries(ctx, tk), lg, L[i]["cong"], p["s"], p["l"], p["o"], p["u"])
+                    if rot:
+                        rot["team"] = "h" if i == 0 else "a"
+                        p["rot"] = rot
+                        diag["an_rot"] += 1
+                        diag["an_sig_" + str(rot["sig"])] += 1
+                    break
 
 
 def write(events):
@@ -709,6 +903,10 @@ def once(a):
     for e in mine[:40]:
         b = e["b"][0]
         print(f"  [{e['lg']}] {e['h']} - {e['a']} | {e['start']} | 1/2 {b['h2h']} | hend {b['sp']} | ukupno {b['tt']} | igraci {len(e.get('player_props', []))}")
+        if e.get("an"):
+            x = e["an"]
+            print(f"      odmor h {x['rest_h']} | penal {x['pen']} | prednost domacina {x['edge_pts']:+} poena | signali: "
+                  + (", ".join(f"{p['p']} {p['s']} {p['l']} {p['rot']['sig']}" for p in e.get("player_props", []) if p.get("rot", {}).get("sig") and p.get("main")) or "-"))
     bad = [(k, v) for k, v in diag.most_common(14) if k != "mecevi"]
     if bad:
         print("Neprepoznato/dijagnostika:", bad)
@@ -734,6 +932,7 @@ if __name__ == "__main__":
     ap.add_argument("--sports", default="4", help="id sporta u feedu (kosarka = 4)")
     ap.add_argument("--index", default="active-prematch", help="index feeda (npr. active-prematch)")
     ap.add_argument("--dump", action="store_true", help="snimi sirov detalj prvog meca (data/superbet_dump.json) i ispisi imena svih trzista")
+    ap.add_argument("--analytics", default=AN_DEFAULT, help="lige za koje se racuna odmor/umor i rotacije (npr. aba,acb); '' = iskljuceno")
     ap.add_argument("--push", action="store_true", help="git commit+push samo fajlova sa kvotama")
     a = ap.parse_args()
     for al in a.alias:
