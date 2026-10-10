@@ -222,6 +222,8 @@ input::placeholder{color:var(--mu);opacity:1}
 .evx .num{font-size:1.5rem}.evbox{border-radius:10px;padding:14px 16px;margin-top:12px;border:1px solid var(--bd);border-left-width:6px}
 .evbox.g{border-color:var(--ok);background:#16a34a14}.evbox.y{border-color:#f5c542;background:#f5c54212}.evbox.r{border-color:var(--no);background:#dc262612}
 .evbox h3{margin:0 0 6px;font-size:1.2rem}
+.ovw{color:var(--ac);font-weight:700}
+#t12 h2{margin-top:6px}#t12 .pill{margin-left:6px;white-space:nowrap}#t12 details summary{padding:4px 0}
 </style></head><body><main>
 <h1>Euroleague Value Analyzer</h1>
 <div class="mts" id="lgs" style="margin:8px 0"></div>
@@ -246,6 +248,7 @@ input::placeholder{color:var(--mu);opacity:1}
 </section>
 <section id="t6" hidden><div id="gl"><p class="mu" style="padding:14px">Učitavam podatke…</p></div></section>
 <section id="t8" hidden><div id="sb"></div></section>
+<section id="t12" hidden><div id="ov"></div></section>
 <section id="t9" hidden><div id="kv"></div></section>
 <section id="t10" hidden><div id="fv"></div></section>
 <section id="t11"><div id="dash"></div><div class="card" id="news" hidden></div></section>
@@ -949,10 +952,10 @@ $("side").onclick=e=>{
 $("side").onkeydown=e=>{if(e.key=="Enter")e.target.click()};
 
 // ================= TABOVI I INICIJALIZACIJA =================
-const tabs=[["Vesti",11],["Kvote",9],["Screener",7],["Surebet",8],["Omiljeni",10],["Analiza meča",0],["Utakmice",6],["Tabela",3],["Timovi",4],["Igrač",5],["Rejting",1],["Bankroll",2]];
+const tabs=[["Vesti",11],["Pregled",12],["Kvote",9],["Screener",7],["Surebet",8],["Omiljeni",10],["Analiza meča",0],["Utakmice",6],["Tabela",3],["Timovi",4],["Igrač",5],["Rejting",1],["Bankroll",2]];
 $("tabs").innerHTML=tabs.map((t,j)=>`<button role="tab" aria-selected="${j==0}" data-t="${t[1]}">${t[0]}</button>`).join("");
-function show(i){i=+i;try{history.replaceState(null,"","?tab="+i+(i==5?"&stat="+PMK:""))}catch(e){}document.querySelectorAll("#tabs button,#dw button[data-t]").forEach(b=>b.setAttribute("aria-selected",b.dataset.t==i));[0,1,2,3,4,5,6,7,8,9,10,11].forEach(k=>$("t"+k).hidden=k!=i);
- if(!D)return;if(i==1){ratingTab();refTab()}if(i==2)bk();if(i==4)teamView();if(i==5)chart();if(i==6){gamesTab();ensureShots()}if(i==7||i==8)screen();if(i==9)k_cards($("kv"),0);if(i==10)k_cards($("fv"),1);if(i==5)setTimeout(zoneLeaders,400);document.body.classList.toggle("wide",i==5||i==0);window.scrollTo(0,0)}
+function show(i){i=+i;try{history.replaceState(null,"","?tab="+i+(i==5?"&stat="+PMK:""))}catch(e){}document.querySelectorAll("#tabs button,#dw button[data-t]").forEach(b=>b.setAttribute("aria-selected",b.dataset.t==i));[0,1,2,3,4,5,6,7,8,9,10,11,12].forEach(k=>$("t"+k).hidden=k!=i);
+ if(i==12)ovInit();if(!D)return;if(i==1){ratingTab();refTab()}if(i==2)bk();if(i==4)teamView();if(i==5)chart();if(i==6){gamesTab();ensureShots()}if(i==7||i==8)screen();if(i==9)k_cards($("kv"),0);if(i==10)k_cards($("fv"),1);if(i==5)setTimeout(zoneLeaders,400);document.body.classList.toggle("wide",i==5||i==0);window.scrollTo(0,0)}
 $("tabs").onclick=e=>{const i=e.target.dataset.t;if(i!=null)show(i)};
 document.body.insertAdjacentHTML("beforeend",'<button id="mnb" type="button" aria-label="Meni">▶</button><aside id="dw"><h3>Meni</h3>'+tabs.map(t=>`<button data-t="${t[1]}" type="button">${t[0]}</button>`).join("")+"</aside>");
 $("mnb").onclick=()=>{const o=$("dw").classList.toggle("open");$("mnb").classList.toggle("open",o);$("mnb").textContent=o?"◀":"▶"};document.addEventListener("click",e=>{if($("dw").classList.contains("open")&&!e.target.closest("#dw,#mnb")){$("dw").classList.remove("open");$("mnb").classList.remove("open");$("mnb").textContent="▶"}});
@@ -2490,6 +2493,71 @@ if(location.protocol=="file:")setTimeout(()=>{if(!D)fileHint()},4000);
 </script>
 <script>
 function keyOut(t){const o=[];try{Object.values(playerAgg(t)).forEach(p=>{if(p.gp>=2&&p.min/p.gp>=16){const q=injOf(t,p.name);if(q&&q.lv>=1.5)o.push(p.name+" ("+f(p.min/p.gp,0)+" min)")}})}catch(e){}return o}
+</script>
+<script>
+// ================= PREGLED: sve lige po danima (odmor, penali, OVER/UNDER prop signali) =================
+// Čita data/odds_superbet.json (Evroliga) i data/<liga>/odds_superbet.json, nezavisno od lige izabrane gore.
+const OVL=["euroleague","aba","acb","lnb","bbl"],OVS={lg:"all",day:"all",sig:"all",data:null,busy:false},OVSL={pts:"Poeni",reb:"Skokovi",ast:"Asist."};
+async function ovInit(force){
+ const el=$("ov");if(!el||OVS.busy)return;
+ if(OVS.data&&!force){ovRender();return}
+ OVS.busy=true;el.innerHTML='<p class="mu">Učitavam kvote za sve lige…</p>';
+ const res=await Promise.all(OVL.map(async l=>{try{return[l,await getJSON(lp("data/odds_superbet.json",l))]}catch(e){return[l,null]}}));
+ OVS.data=res;OVS.busy=false;ovRender()}
+const ovDk=ms=>{const d=new Date(ms);return d.getFullYear()+"-"+String(d.getMonth()+1).padStart(2,"0")+"-"+String(d.getDate()).padStart(2,"0")};
+const ovT=ms=>new Date(ms).toLocaleTimeString("sr-Latn-RS",{hour:"2-digit",minute:"2-digit"});
+const ovD=ms=>new Date(ms).toLocaleDateString("sr-Latn-RS",{weekday:"long",day:"numeric",month:"numeric"});
+const ovSig=m=>(m.player_props||[]).filter(p=>p.rot&&p.rot.sig&&p.main);
+const ovEv=p=>p.rot.sig=="OVER"?p.rot.ev_o:p.rot.ev_u;
+const ovOdds=(a,line)=>Array.isArray(a)?(line?"L "+a[0]+" · "+a.slice(1).map(x=>f(x,2)).join(" / "):a.map(x=>x==null?"-":f(x,2)).join(" / ")):"-";
+function ovSigRow(p,m,withMatch){
+ const r=p.rot,cls=r.sig=="OVER"?"ok":"no",ev=ovEv(p),tm=r.team=="h"?m.h:m.a;
+ return `<tr><td>${esc(p.p)}<span class="pill">${esc(tm)}</span></td>${withMatch?`<td class="mu">${esc(m.h)} - ${esc(m.a)}</td>`:""}<td>${OVSL[p.s]||esc(p.s)}</td><td class="r">${p.l}</td><td class="r">${f(p.o,2)} / ${f(p.u,2)}</td><td class="r">${f(r.proj)}</td><td class="r">${f(r.min,0)} <span class="mu">(${f(r.base,0)})</span></td><td class="r">${f(r.po*100,0)}%</td><td class="r"><b class="${cls}">${r.sig}</b>${r.cong?' <span class="pill">2 fronta</span>':""}</td><td class="r ${ev>0?"ok":"no"}">${sg(+f(ev*100,0))}%</td></tr>`}
+const ovHead=w=>`<tr><th>Igrač</th>${w?"<th>Meč</th>":""}<th>Stat</th><th class="r">Linija</th><th class="r">Kvota O / U</th><th class="r">Proj.</th><th class="r">Min (sezona)</th><th class="r">Model Over</th><th class="r">Signal</th><th class="r">EV</th></tr>`;
+function ovRest(m){
+ const an=m.an;if(!an)return '<p class="mu" style="margin:8px 0 0">Nema analitike odmora za ovaj meč (liga nije u <code>--analytics</code> ili nema rasporeda timova).</p>';
+ const side=i=>{const r=an.rest_h[i],p=an.pen[i],pv=an.prev[i],nx=an.next[i],c=r==null?"mu":r<24?"no":r<48?"ovw":"ok";
+  return `<div class="stat"><span>${esc(i?m.a:m.h)} ${i?"(gost)":"(domaćin)"}</span><div class="num ${c}">${r==null?"-":f(r,0)+" h"}</div><span>odmor | penal ${p?"-"+f(p,1)+" p.":"0"}${an.cong[i]?" | dva fronta":an.dbl[i]?" | igra i drugo takmičenje":""}</span>${pv?`<br><span>prethodno: ${esc(pv.lg)} ${pv.away?"@":"vs"} ${esc(pv.opp)}, pre ${f(pv.ago_h,0)} h</span>`:""}${nx?`<br><span>sledeće: ${esc(nx.lg)} ${nx.away?"@":"vs"} ${esc(nx.opp)}, za ${f(nx.in_h,0)} h</span>`:""}</div>`};
+ const e=an.edge_pts,ed=e>0?`Prednost domaćina ${sg(e)} poena`:e<0?`Prednost gosta ${sg(-e)} poena`:"Bez razlike u umoru",
+  cl=Math.abs(e)>=1.5?(e>0?"ok":"no"):"mu";
+ return `<div class="grid w" style="margin-top:8px">${side(0)}${side(1)}</div><div class="${cl}" style="margin-top:6px"><b>${ed}</b> <span class="mu">(≈ ${sg(+f(an.dp_home*100,1))} p.p. šanse za pobedu domaćina)</span></div>`}
+function ovMatch(m){
+ const b=(m.b||[])[0]||{},sl=ovSig(m),pp=m.player_props||[];
+ const all=pp.slice().sort((x,y)=>(x.p>y.p?1:-1)||(x.s>y.s?1:-1));
+ return `<div class="card"><div class="head"><b class="num" style="font-size:1.25rem">${ovT(m.ms)}</b><span class="pill">${esc((LEAGUES[m.lg]||[m.lg])[1])}</span><h3 style="margin:0 6px">${esc(m.h)} - ${esc(m.a)}</h3></div>
+ <div class="mu" style="font-size:.9rem">1/2: ${ovOdds(b.h2h)} | hendikep: ${ovOdds(b.sp,1)} | ukupno: ${ovOdds(b.tt,1)}</div>
+ ${ovRest(m)}
+ <h3>Prop signali${sl.length?` (${sl.length})`:""}</h3>
+ ${sl.length?`<div class="scroll"><table>${ovHead(0)}${sl.map(p=>ovSigRow(p,m,0)).join("")}</table></div>`:`<p class="mu" style="margin:0">${pp.length?"Nema signala na glavnim linijama.":"Superbet još nema igračka tržišta za ovaj meč (pojavljuju se ~48h pre starta)."}</p>`}
+ ${pp.length?`<details style="margin-top:8px"><summary class="mu">Sve prop linije (${pp.length})</summary><div class="scroll"><table><tr><th>Igrač</th><th>Stat</th><th class="r">Linija</th><th class="r">Kvota O / U</th><th class="r">Proj.</th><th class="r">Model Over</th><th class="r">EV O / U</th></tr>${all.map(p=>{const r=p.rot;return `<tr${p.main?' style="background:var(--acbg)"':""}><td>${esc(p.p)}</td><td>${OVSL[p.s]||esc(p.s)}</td><td class="r">${p.l}${p.main?" ●":""}</td><td class="r">${f(p.o,2)} / ${f(p.u,2)}</td><td class="r">${r?f(r.proj):"-"}</td><td class="r">${r?f(r.po*100,0)+"%":"-"}</td><td class="r">${r?sg(+f(r.ev_o*100,0))+"% / "+sg(+f(r.ev_u*100,0))+"%":"-"}</td></tr>`}).join("")}</table></div></details>`:""}</div>`}
+function ovRender(){
+ const el=$("ov"),now=Date.now()-3*36e5,all=[];
+ (OVS.data||[]).forEach(([l,j])=>{if(!j||!Array.isArray(j.events))return;j.events.forEach(m=>{const ms=m.start?new Date(m.start).getTime():0;if(ms&&ms>=now)all.push({...m,lg:m.lg||l,ms})})});
+ all.sort((a,b)=>a.ms-b.ms);
+ const inLg=m=>OVS.lg=="all"||m.lg==OVS.lg,days=[...new Set(all.filter(inLg).map(m=>ovDk(m.ms)))];
+ if(OVS.day!="all"&&!days.includes(OVS.day))OVS.day="all";
+ const vis=all.filter(m=>inLg(m)&&(OVS.day=="all"||ovDk(m.ms)==OVS.day)&&(OVS.sig=="all"||ovSig(m).some(p=>p.rot.sig==OVS.sig)));
+ const sigs=vis.flatMap(m=>ovSig(m).filter(p=>OVS.sig=="all"||p.rot.sig==OVS.sig).map(p=>({p,m}))).sort((x,y)=>ovEv(y.p)-ovEv(x.p)),
+  nProps=vis.reduce((a,m)=>a+(m.player_props||[]).length,0),nAn=vis.filter(m=>m.an).length;
+ const chip=(a,k,v,t)=>`<button type="button" data-${a}="${k}" aria-selected="${v==k}">${t}</button>`,
+  cnt=l=>all.filter(m=>m.lg==l).length;
+ const stamp=(OVS.data||[]).map(([l,j])=>`${esc(LEAGUES[l][1])}: ${j&&j.fetched?new Date(j.fetched*1e3).toLocaleString("sr-Latn-RS",{day:"numeric",month:"numeric",hour:"2-digit",minute:"2-digit"}):'<span class="no">nema fajla</span>'}`).join(" | ");
+ let body="",last="";
+ vis.forEach(m=>{const d=ovDk(m.ms);if(d!=last){last=d;body+=`<h2 style="margin-top:18px;text-transform:capitalize">${esc(ovD(m.ms))}</h2>`}body+=ovMatch(m)});
+ el.innerHTML=`<div class="crtw"><div><h1>Pregled</h1><p class="sub">Sve lige po danima: odmor i penali timova, Superbet prop linije i OVER/UNDER signali.</p></div><button type="button" class="btn sm" data-or="1">Osveži</button></div>
+ <div class="mts">${chip("ol","all",OVS.lg,"Sve lige ("+all.length+")")}${OVL.map(l=>chip("ol",l,OVS.lg,esc(LEAGUES[l][1])+" ("+cnt(l)+")")).join("")}</div>
+ <div class="mts">${chip("od","all",OVS.day,"Svi dani")}${days.map(d=>chip("od",d,OVS.day,esc(ovD(new Date(d+"T12:00").getTime()).replace(/\.$/,"")))).join("")}</div>
+ <div class="mts">${chip("os","all",OVS.sig,"Svi mečevi")}${chip("os","OVER",OVS.sig,"Sa OVER signalom")}${chip("os","UNDER",OVS.sig,"Sa UNDER signalom")}</div>
+ <div class="grid"><div class="stat"><span>Mečeva</span><div class="num">${vis.length}</div></div><div class="stat"><span>Prop linija</span><div class="num">${nProps}</div></div><div class="stat"><span>Signala</span><div class="num ${sigs.length?"ok":""}">${sigs.length}</div></div><div class="stat"><span>Sa analitikom odmora</span><div class="num">${nAn}/${vis.length}</div></div></div>
+ <p class="mu" style="font-size:.8rem">Osveženo: ${stamp}</p>
+ ${sigs.length?`<div class="card"><h2>Top signali (po EV)</h2><div class="scroll"><table>${ovHead(1)}${sigs.slice(0,12).map(x=>ovSigRow(x.p,x.m,1)).join("")}</table></div></div>`:""}
+ ${body||'<div class="note warn">Nema mečeva za izabrani filter. Proveri da li su <code>data/&lt;liga&gt;/odds_superbet.json</code> fajlovi u repou.</div>'}
+ <div class="note">Odmor = sati od kraja prethodnog meča; penal je heuristika u poenima razlike (kraći odmor, gostovanje u drugom takmičenju, 3+ meča u 7 dana). Signal UNDER izlazi kad nosilac igre ima "dva fronta" i model je ispod kladioničke verovatnoće, OVER kad je model bar 10 p.p. iznad. Konstante nisu kalibrisane na istoriji, pa pre klađenja proveri sastav i povrede.</div>`}
+$("ov").onclick=e=>{const g=a=>e.target.closest("[data-"+a+"]");let b;
+ if(b=g("ol")){OVS.lg=b.dataset.ol;OVS.day="all";ovRender()}
+ else if(b=g("od")){OVS.day=b.dataset.od;ovRender()}
+ else if(b=g("os")){OVS.sig=b.dataset.os;ovRender()}
+ else if(g("or"))ovInit(true)};
 </script>
 </body></html>
 
