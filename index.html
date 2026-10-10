@@ -2535,6 +2535,11 @@ function ovMatch(m){
 const OVSA={pts:"poena",reb:"skokova",ast:"asistencija"},ovCl=(x,a,b)=>Math.max(a,Math.min(b,x));
 function ovTipsOf(m){
  const T=[],mev=OVS.minev,an=m.an,b0=(m.b||[])[0]||{};
+ // Prefer picks computed by quant_model.py; retain legacy feed-derived signals for older data files.
+ if(Array.isArray(m.tips)){
+  m.tips.forEach(t=>{const ev=Number(t&&t.ev);if(!t||!Number.isFinite(ev)||ev<mev)return;T.push({kind:t.k||"h2h",ev,od:Number(t.odds)||0,m,model:true,txt:t.txt||"Tip",why:Array.isArray(t.why)?t.why.join(" · "):String(t.why||""),warn:!!t.warn})});
+  return T.sort((x,y)=>y.ev-x.ev)
+ }
  (m.player_props||[]).forEach(p=>{const r=p.rot;if(!r||!p.main)return;
   [["OVER",r.ev_o,p.o],["UNDER",r.ev_u,p.u]].forEach(([side,ev,od])=>{if(ev>=mev)T.push({kind:"prop",ev,side,p,od,m,why:`Min ${f(r.min,0)} (sezona ${f(r.base,0)})${r.cong?", dva fronta":""}`})})});
  if(an&&an.dp_home!=null){
@@ -2548,10 +2553,11 @@ function ovTipsOf(m){
  return T.sort((x,y)=>y.ev-x.ev)}
 function ovTipLine(x){
  const ev=`EV: ${sg(+f(x.ev*100,1))}%`;
+ if(x.model)return `${esc(x.txt)} | kvota ${f(x.od,2)} | ${ev}`;
  if(x.kind=="prop")return `${esc(x.p.p)} - ${x.side} ${x.p.l} ${OVSA[x.p.s]||esc(x.p.s)} | Proj: ${f(x.p.rot.proj)} | kvota ${f(x.od,2)} | ${ev}`;
  if(x.kind=="sp")return `${esc(x.t)} ${sg(x.L)} (Hendikep) | kvota ${f(x.od,2)} | ${ev}`;
  return `${esc(x.t)} pobeda (1/2) | kvota ${f(x.od,2)} | ${ev}`}
-function ovTip(x,showM){return `<div class="tip"><div>🎯 <b>PREPORUKA:</b> ${ovTipLine(x)}${x.ev>.3?' <span class="pill">⚠ neobično visok EV, proveri</span>':""}</div><div class="mu" style="font-size:.85rem">${showM?ovT(x.m.ms)+" · "+esc((LEAGUES[x.m.lg]||[x.m.lg])[1])+" · "+esc(x.m.h)+" - "+esc(x.m.a)+" · ":""}${esc(x.why)}</div></div>`}
+function ovTip(x,showM){return `<div class="tip"><div>🎯 <b>PREPORUKA:</b> ${ovTipLine(x)}${(x.warn||x.ev>.3)?' <span class="pill">⚠ neobično visok EV, proveri</span>':""}</div><div class="mu" style="font-size:.85rem">${showM?ovT(x.m.ms)+" · "+esc((LEAGUES[x.m.lg]||[x.m.lg])[1])+" · "+esc(x.m.h)+" - "+esc(x.m.a)+" · ":""}${esc(x.why)}</div></div>`}
 const ovTipBoxes=m=>ovTipsOf(m).map(x=>ovTip(x,0)).join("");
 function ovTipsBox(tips){return `<div class="tipw"><h2>🎯 Tipovi (${tips.length}) <span class="mu" style="font-size:1rem">EV ≥ ${f(OVS.minev*100,0)}%</span></h2>${tips.length?tips.slice(0,40).map(x=>ovTip(x,1)).join(""):'<div class="note">Nema tipova sa EV iznad praga za izabrani prikaz. Probaj "Svi dani" ili niži prag.</div>'}</div>`}
 function ovRender(){
