@@ -251,7 +251,7 @@ input::placeholder{color:var(--mu);opacity:1}
 <section id="t11"><div id="dash"></div><div class="card" id="news" hidden></div></section>
 <section id="t7" hidden>
  <div class="card"><h2>Value Screener</h2>
- <p class="sub">Model prolazi kroz sve mečeve iz data/odds.json (pobednik, hendikep, ukupno) i izlistava najbolju kvotu po izboru gde je EV iznad praga.</p>
+ <p class="sub">Model prolazi kroz sve mečeve sa Superbeta (data/odds_superbet.json: pobednik, hendikep, ukupno, i alternativne linije) i izlistava izbore gde je EV iznad praga. Ispod je tabela svih linija.</p>
  <div class="grid"><div><label for="sth">Minimalni EV</label><select id="sth"><option value="3">3%</option><option value="5" selected>5%</option><option value="8">8%</option></select></div><div><label for="sbk">Kladionica za ulog</label><select id="sbk"><option value="">Sve</option><option value="superbet">Samo Superbet</option></select></div><div><label for="sin">Mečevi sa povredama</label><select id="sin"><option value="">Sakrij ako ključni igrač nedostaje</option><option value="1">Prikaži sa oznakom ⚠</option></select></div></div></div>
  <div id="slip"></div><div id="scr"></div>
 </section>
@@ -1212,7 +1212,7 @@ function verdict(h,a,m){
  add("Hendikep "+sgn(ln),nh,pH,pu,pnH(ln),pmH,O[2]);
  add("Hendikep "+sgn(-ln),na,pA,pu,1-pnH(ln),pmH==null?null:1-pmH,O[3]);
  const manual=rows.slice();
- if(oe){ // tržišne linije iz data/odds.json (najbolja kvota među kladionicama)
+ if(oe){ // tržišne linije sa Superbeta (data/odds_superbet.json)
   const mode=a=>{const c={};a.forEach(v=>c[v]=(c[v]||0)+1);return +Object.keys(c).sort((x,y)=>c[y]-c[x]||Math.abs(x)-Math.abs(y))[0]};
   const sp=oe.b.filter(b=>b.sp&&b.sp[0]!=null);
   if(sp.length){const L=mode(sp.map(b=>b.sp[0])),S2=sp.filter(b=>b.sp[0]==L),pm=avg(S2.map(b=>dv(b.sp[1],b.sp[2])).filter(x=>x!=null)),ph=cnt(mg,x=>x+L>0),pa=cnt(mg,x=>x+L<0),pp=cnt(mg,x=>x+L==0);
@@ -1245,7 +1245,7 @@ function verdict(h,a,m){
  ${fr("Zamor, odmor i putovanje",cF?`${esc(nh)} ${f(FH.adj)} (odmor ${FH.rest==null?"-":FH.rest} d, ${FH.n5} meča u 5 dana) · ${esc(na)} ${f(FA.adj)} (odmor ${FA.rest==null?"-":FA.rest} d, ${FA.km} km)`:"isključeno u opcijama",cF)}
  ${fr("Korekcija za povrede",`${esc(nh)} ${sgn(+$("ah").value||0)} · ${esc(na)} ${sgn(+$("aa").value||0)} poena (unosiš ručno gore, proveri blok Povrede)`,1)}
  ${fr("Tempo i efikasnost napada/odbrane",`tempo ${f(pace)} poseda, očekivano ukupno ${f(tm)} poena`,1)}
- ${fr("Tržišni konsenzus",fh!=null?`${nb} kladionica, ${esc(nh)} ${pc(fh)} bez marže (ulazi sa težinom 70%)`:oe?"manje od 3 kladionice sa kvotama":"nema data/odds.json, koristi se samo tvoj unos kvota",fh!=null)}
+ ${fr("Tržišni konsenzus",fh!=null?`${nb} kladionica, ${esc(nh)} ${pc(fh)} bez marže (ulazi sa težinom 70%)`:oe?"samo Superbet, jedna kladionica (njena kvota bez marže je referenca)":"nema Superbet kvota",fh!=null)}
  ${fr("Tržišna linija ukupnih poena",mtt.length?`${f(avg(mtt))} (model ${f(tm)}, razlika ${sgn(+f(tm-avg(mtt)))})`:"nema",!!mtt.length)}
  ${fr("Forma, poslednjih 5 (razlika po meču)",`${esc(nh)} ${a5(fh5)} · ${esc(na)} ${a5(fa5)}`,0)}
  ${fr("Međusobni mečevi ove sezone",h2h.length?h2h.map(g=>`${esc(nm(g.h))} ${g.hs}:${g.as} ${esc(nm(g.a))}`).join(", "):"nisu igrali",0)}
@@ -1332,7 +1332,7 @@ let k_MK="h2h",k_LI=null,k_INFO=null;const k_old=k_modal,k_dv=(x,y)=>x>1&&y>1?(1
 const k_chips=()=>`<div class="chips" style="margin:8px 0">${[["h2h","Pobednik"],["sp","Hendikep"],["tt","Ukupno poena"]].map(([k,l])=>`<button type="button" class="chip" data-mk="${k}"${k_MK==k?' style="border-color:var(--ac)"':""}>${l}</button>`).join("")}</div>`;
 k_modal=function(i){
  if(k_MK=="h2h"){k_old(i);const c=$("md").querySelector(".card .scroll");if(c)c.insertAdjacentHTML("beforebegin",k_chips());return}
- const e=OD.events[i],md=$("md"),key=k_MK,bs=e.b.filter(b=>b[key]&&b[key][0]!=null&&(!k_CH.size||k_CH.has(b.title)));let m=null;try{R=ratings();m=R[codeOf(e.h)].r-R[codeOf(e.a)].r+S.hca}catch(x){}
+ const e=OD.events[i],md=$("md"),key=k_MK,bs=e.b.concat(e.alt||[]).filter(b=>b[key]&&b[key][0]!=null&&(!k_CH.size||k_CH.has(b.title)));let m=null;try{R=ratings();m=R[codeOf(e.h)].r-R[codeOf(e.a)].r+S.hca}catch(x){}
  const L=[...new Set(bs.map(b=>b[key][0]))].sort((x,y)=>x-y);
  const head=`<div class="head"><h2 style="margin:0">${esc(e.h)} - ${esc(e.a)}</h2><button class="btn sm" data-x="1" style="margin-left:auto" type="button">Zatvori</button></div>${k_chips()}`;
  if(!L.length){md.innerHTML=`<div class="card">${head}<div class="note warn">Nijedna izabrana kladionica nema ovo tržište.</div></div>`;md.style.display="block";md.dataset.i=i;return}
@@ -1364,16 +1364,16 @@ $("gl").onchange=e=>{if(e.target.id=="rsel"){RD=+e.target.value;gamesTab()}};
 let OD=null,OEV=null,AF="";
 const toks=s=>dia(s).split(/[^a-z0-9]+/).filter(w=>w.length>=4);
 function codeOf(name){const T=new Set(toks(name));let best=null,bs=0;TEAMS.forEach(c=>{const cl=D.clubs[c]||{},sc=new Set([...toks(nm(c)),...toks(cl.name||""),...toks(cl.short||"")]);let s=0;sc.forEach(w=>{if(T.has(w))s++});if(s>bs){bs=s;best=c}});return best}
-async function loadOdds(){try{OD=await getJSON(lp("data/odds.json"))}catch(e){OD=null}if(D)calc()}
+async function loadOdds(){await sbLoad();if(D)calc()}
 function oddsRender(h,a){const el=$("odc");if(!el)return;
- if(!OD||!OD.events){el.innerHTML='<p class="mu">Nema kvota (data/odds.json). Dodaj ODDS_API_KEY u GitHub Secrets i fetch_odds.py u repo. Do tada kvote unosiš ručno gore.</p>';return}
+ if(!OD||!OD.events){el.innerHTML='<p class="mu">Nema Superbet kvota (data/odds_superbet.json). Pokreni fetch_superbet.py (python fetch_superbet.py --loop 600 --push) i proveri da je fajl u repou.</p>';return}
  const ev=OD.events.find(e=>codeOf(e.h)==h&&codeOf(e.a)==a);OEV=ev;if(ev&&ev.b.length&&AF!=h+a){AF=h+a;const H=Math.max(0,...ev.b.map(b=>b.h2h&&b.h2h[0]||0)),A=Math.max(0,...ev.b.map(b=>b.h2h&&b.h2h[1]||0)),sb=ev.b.find(b=>b.sp&&b.sp[0]!=null);if(H)$("o1").value=H;if(A)$("o2").value=A;if(sb){$("ln").value=sb.sp[0];$("o3").value=sb.sp[1];$("o4").value=sb.sp[2]}setTimeout(calc,0)}
- if(!ev||!ev.b.length||!MCC.r){el.innerHTML='<p class="mu">Izvor nema kvote za ovu utakmicu.</p>';return}
+ if(!ev||!ev.b.length||!MCC.r){el.innerHTML='<p class="mu">Superbet nema kvote za ovu utakmicu.</p>';return}
  const r=MCC.r,N=r.mg.length,pr=(x,fn)=>x.filter(fn).length/N,pw0=pr(r.mg,x=>x>0),fh=(()=>{const a=ev.b.filter(b=>b.h2h&&b.h2h[0]&&b.h2h[1]).map(b=>(1/b.h2h[0])/(1/b.h2h[0]+1/b.h2h[1]));return a.length>=3?a.reduce((x,y)=>x+y,0)/a.length:null})(),pw=fh==null?pw0:.3*pw0+.7*fh,bl=(p,o1,o2)=>o1&&o2?.3*p+.7*(1/o1)/(1/o1+1/o2):p,c=e=>`<span class="${e>0?"ok":"no"}">${e>0?"+":""}${f(e*100)}%</span> ${evb(e)}`,cell=(o,p)=>o?`${f(o,2)} ${c(p*o-1)}`:"-";
  const M0=Math.max(0,...ev.b.map(b=>b.h2h&&b.h2h[0]||0)),M1=Math.max(0,...ev.b.map(b=>b.h2h&&b.h2h[1]||0)),bst=(t,y)=>y?"<b>"+t+"</b>":t;
- el.innerHTML=`<div class="scroll"><table><tr><th>Kladionica</th><th>1</th><th>2</th><th>Hendikep (domaćin)</th><th>Ukupno</th><th></th></tr>`+ev.b.map((b,i)=>{const hh=b.h2h||[],sp=b.sp,tt=b.tt,ph=sp?bl(pr(r.mg,x=>x+sp[0]>0),sp[1],sp[2]):0,po=tt?bl(pr(r.tt,x=>x>tt[0]),tt[1],tt[2]):0;
-  return`<tr><td>${esc(b.title)}${b.key=="superbet"?" ★":""}</td><td>${bst(cell(hh[0],pw),hh[0]&&hh[0]==M0)}</td><td>${bst(cell(hh[1],1-pw),hh[1]&&hh[1]==M1)}</td><td>${sp?sg(sp[0])+": "+cell(sp[1],ph)+" | "+cell(sp[2],1-ph):"-"}</td><td>${tt?tt[0]+": Više "+cell(tt[1],po)+" | Manje "+cell(tt[2],1-po):"-"}</td><td><button class="btn sm" data-ap="${i}" type="button">Primeni</button></td></tr>`}).join("")+`</table></div><div class="note">EV računa Monte Carlo model usklađen sa tržišnim konsenzusom (30/70). Kvote od ${esc(new Date(OD.fetched*1000).toLocaleString("sr-Latn"))}${OD.remaining?`, preostalo API kredita: ${esc(OD.remaining)}`:""}. Primeni upisuje pobednika i hendikep u polja za kvote.</div>`}
-$("odc").onclick=e=>{const b=e.target.closest("[data-ap]");if(!b||!OEV)return;const x=OEV.b[+b.dataset.ap];if(x.h2h){$("o1").value=x.h2h[0]||"";$("o2").value=x.h2h[1]||""}if(x.sp){$("ln").value=x.sp[0];$("o3").value=x.sp[1];$("o4").value=x.sp[2]}calc()};
+ el.innerHTML=`<div class="scroll"><table><tr><th>Kladionica</th><th>1</th><th>2</th><th>Hendikep (domaćin)</th><th>Ukupno</th><th></th></tr>`+ev.b.concat(ev.alt||[]).map((b,i)=>{const hh=b.h2h||[],sp=b.sp,tt=b.tt,ph=sp?bl(pr(r.mg,x=>x+sp[0]>0),sp[1],sp[2]):0,po=tt?bl(pr(r.tt,x=>x>tt[0]),tt[1],tt[2]):0;
+  return`<tr><td>${esc(b.title)}${b.key=="superbet"?" ★":""}</td><td>${bst(cell(hh[0],pw),hh[0]&&hh[0]==M0)}</td><td>${bst(cell(hh[1],1-pw),hh[1]&&hh[1]==M1)}</td><td>${sp?sg(sp[0])+": "+cell(sp[1],ph)+" | "+cell(sp[2],1-ph):"-"}</td><td>${tt?tt[0]+": Više "+cell(tt[1],po)+" | Manje "+cell(tt[2],1-po):"-"}</td><td><button class="btn sm" data-ap="${i}" type="button">Primeni</button></td></tr>`}).join("")+`</table></div><div class="note">EV računa Monte Carlo model usklađen sa tržišnim konsenzusom (30/70). Kvote sa Superbeta od ${esc(new Date(OD.fetched*1000).toLocaleString("sr-Latn"))}. Primeni upisuje pobednika i hendikep u polja za kvote.</div>`}
+$("odc").onclick=e=>{const b=e.target.closest("[data-ap]");if(!b||!OEV)return;const x=OEV.b.concat(OEV.alt||[])[+b.dataset.ap];if(x.h2h){$("o1").value=x.h2h[0]||"";$("o2").value=x.h2h[1]||""}if(x.sp){$("ln").value=x.sp[0];$("o3").value=x.sp[1];$("o4").value=x.sp[2]}calc()};
 async function loadNews(){const el=$("news");if(!el)return;let items=null;
  try{const c=JSON.parse(sessionStorage.getItem("elnews")||"null");if(c&&Date.now()-c.t<6e5)items=c.i}catch(e){}
  if(!items){items=[];await Promise.all(["https://www.euroleaguebasketball.net/rss/euroleague/news/","https://www.eurohoops.net/en/feed/"].map(async u=>{try{const d=await(await fetch("https://api.rss2json.com/v1/api.json?rss_url="+encodeURIComponent(u))).json();if(d.status=="ok")d.items.slice(0,8).forEach(i=>items.push({t:i.title,l:i.link,d:i.pubDate,s:u.includes("eurohoops")?"Eurohoops":"Euroleague"}))}catch(e){}}));
@@ -1382,7 +1382,27 @@ async function loadNews(){const el=$("news");if(!el)return;let items=null;
  const inj=/injur|ruled out|surgery|sidelined|out for/i;
  el.innerHTML=`<h2>Vesti</h2><ul style="list-style:none;padding:0;margin:0">${items.slice(0,8).map(i=>`<li style="padding:6px 0;border-bottom:1px solid var(--bd)"><span class="mu" style="font-size:.8rem">${esc(i.s)} · ${esc(String(i.d).slice(5,16))}</span>${inj.test(i.t)?' <span class="pill">povreda?</span>':""}<br><a href="${/^https?:/.test(i.l)?esc(i.l):"#"}" target="_blank" rel="noopener" style="color:var(--tx)">${esc(i.t)}</a></li>`).join("")}</ul><div class="note">Vesti dolaze preko rss2json.com. Povrede koje model treba da zna unesi u data/injuries.json.</div>`;el.hidden=false}
 
-// ================= VALUE SCREENER + SUREBET (svi mečevi iz data/odds.json) =================
+
+// ================= SCREENER: SVE LINIJE SA SUPERBETA =================
+const SCA={pos:false,main:true,q:"",srt:"t",all:false};
+function scaHtml(unk){
+ return`<div class="card" id="scc"><h3 style="margin-top:0">Sve linije sa Superbeta</h3><div id="scs"></div>
+ <div class="chips" style="margin:10px 0"><button type="button" class="chip" data-sca="pos">Samo pozitivan EV (model)</button><button type="button" class="chip" data-sca="main">Samo glavne linije</button><button type="button" class="chip" data-sca="srt">Sortiranje: po meču</button><input id="scaq" type="search" placeholder="Traži tim..." style="max-width:220px"></div>
+ <div class="scroll" id="scat"></div><div class="note">Model = šansa iz simulacije. Superbet = njegova šansa bez marže. Fer kvota = 1 / model. EV (model) je očekivana dobit kad bi model bio potpuno u pravu, a EV (kombinovano) meša model sa Superbetom (strožije). Pozitivan EV (model) bez pozitivnog kombinovanog znači da se model i Superbet razilaze, ali to nije dovoljno da se igra. Linije označene sa ~ nisu glavna linija Superbeta (alternativne linije).</div></div><div id="scall" hidden></div>`}
+function scaRender(){
+ const T=$("scat");if(!T||!window.SCALL)return;const{ALL,unk,RS,used,total}=window.SCALL,B=bank(),q=SCA.q.trim().toLowerCase(),
+  dt=s=>s?new Date(s).toLocaleString("sr-Latn",{day:"2-digit",month:"2-digit",hour:"2-digit",minute:"2-digit"}):"",sp=x=>(x>0?"+":"")+f(x*100,1)+"%";
+ let L=ALL.filter(x=>(!SCA.main||x.main)&&(!SCA.pos||x.evM>0)&&(!q||x.mt.toLowerCase().includes(q)));
+ L=SCA.srt=="ev"?L.sort((a,b)=>b.evM-a.evM):L.sort((a,b)=>(a.st||"").localeCompare(b.st||"")||a.mt.localeCompare(b.mt)||(a.main===b.main?0:a.main?-1:1)||a.mk.localeCompare(b.mk));
+ const shown=SCA.all?L:L.slice(0,250);
+ document.querySelectorAll("[data-sca]").forEach(b=>{const k=b.dataset.sca;b.style.borderColor=(k=="pos"&&SCA.pos)||(k=="main"&&SCA.main)?"var(--ac)":"";if(k=="srt")b.textContent="Sortiranje: "+(SCA.srt=="ev"?"po EV (model)":"po meču")});
+ const sk=RS.sk.length?`<li><b>Preskočeno za tipove:</b> ${RS.sk.map(x=>esc(x[0])+" ("+esc(x[1])+")").join("; ")}. Njihove linije su ipak u tabeli ispod.</li>`:"",un=unk.length?`<li><b>Nisu prepoznati u modelu (nema tima u tvojoj ligi):</b> ${unk.slice(0,12).map(esc).join("; ")}${unk.length>12?" ...":""}</li>`:"";
+ $("scs").innerHTML=`<p class="mu" style="margin:0 0 6px">Superbet feed: ${total} mečeva, prepoznato u modelu ${used}, linija u tabeli ${ALL.length}.</p>${sk||un?`<ul style="margin:0 0 6px 18px;font-size:.88rem">${sk}${un}</ul>`:""}`;
+ T.innerHTML=shown.length?`<table><tr><th>Početak</th><th>Utakmica</th><th>Tržište</th><th>Izbor</th><th class=r>Model</th><th class=r>Superbet</th><th class=r>Kvota</th><th class=r>Fer kvota</th><th class=r>EV (model)</th><th class=r>EV (komb.)</th><th></th></tr>${shown.map(x=>{const big=Math.abs(x.p-x.pm)>.25;return`<tr><td>${esc(dt(x.st))}</td><td>${esc(x.mt)}</td><td>${x.main?"":"~ "}${esc(x.mk)}</td><td>${esc(x.pick)}${x.inj?' <span class="wr" title="Ključni igrač je van ili neizvestan, a nije uračunat u model">⚠</span>':""}${x.smp?' <span class="wr" title="Premalo odigranih utakmica">uzorak</span>':""}</td><td class=r>${f(x.pm*100,1)}%</td><td class=r>${f(x.pf*100,1)}%</td><td class=r>${f(x.o,2)}</td><td class=r>${f(1/Math.max(.001,x.pm),2)}</td><td class="r ${big?"mu":x.evM>0?"ok":"no"}">${big?"nerealno":sp(x.evM)}</td><td class="r ${x.ev>0?"ok":"no"}">${sp(x.ev)}</td><td>${x.ev>.03&&x.ev<=.12&&!x.inj&&!x.smp?'<span class="vb">VALUE</span>':""}</td></tr>`}).join("")}</table>${L.length>shown.length?`<div style="margin-top:8px"><button class="btn sm" type="button" data-sca="all">Prikaži svih ${L.length}</button></div>`:""}`:'<p class="mu">Nema linija za ovaj filter.</p>'}
+document.addEventListener("click",e=>{const b=e.target.closest("[data-sca]");if(!b)return;const k=b.dataset.sca;if(k=="pos")SCA.pos=!SCA.pos;else if(k=="main")SCA.main=!SCA.main;else if(k=="srt")SCA.srt=SCA.srt=="ev"?"t":"ev";else if(k=="all")SCA.all=true;scaRender()});
+document.addEventListener("input",e=>{if(e.target.id=="scaq"){SCA.q=e.target.value;scaRender()}});
+
+// ================= VALUE SCREENER (Superbet, data/odds_superbet.json) =================
 let SCR=[];
 function modelFor(h,a,dt){
  const cH=$("dh").checked,cF=$("fat").checked,hc=cH?hcaT(h):S.hca;let adj=0;
@@ -1393,24 +1413,24 @@ function modelFor(h,a,dt){
 function screenInner(){
  const el=$("scr");if(!el)return;
  if(!D){return}
- if(!OD||!OD.events||!OD.events.length){el.innerHTML='<div class="note">Nema kvota (data/odds.json). Proveri da je GitHub Action prošao i da je ODDS_API_KEY postavljen.</div>';return}
- R=ratings();const ONLY=$("sbk").value,nk=new Set(OD.events.flatMap(e=>e.b.map(b=>b.key))),MINB=nk.size>=3?3:1,thr=+$("sth").value/100,B=bank(),best=[],sure=[],NPL={},RS={past:0,smp:0,inj:0,nobk:0,flag:0,injn:[]};let skipN=0,minN=99,PL={};try{PL=JSON.parse(localStorage.getItem("elpl")||"{}")}catch(e){}let used=0;
+ if(!OD||!OD.events||!OD.events.length){el.innerHTML='<div class="note warn"><b>Nema Superbet kvota.</b> Fajl data/odds_superbet.json ne postoji ili je prazan. Pokreni <code>python fetch_superbet.py --loop 600 --push</code> na svom računaru (ili kao korak u GitHub Action-u) i osveži stranicu.</div>';return}
+ R=ratings();const ONLY=$("sbk").value,nk=new Set(OD.events.flatMap(e=>e.b.map(b=>b.key))),MINB=nk.size>=3?3:1,thr=+$("sth").value/100,B=bank(),best=[],ALL=[],unk=[],sure=[],NPL={},RS={past:0,smp:0,inj:0,nobk:0,flag:0,injn:[],sk:[]};let skipN=0,minN=99,PL={};try{PL=JSON.parse(localStorage.getItem("elpl")||"{}")}catch(e){}let used=0;
  OD.events.forEach(e=>{
-  const h=codeOf(e.h),a=codeOf(e.a);if(!h||!a||h==a||!R[h]||!R[a])return;
-  if(e.start&&new Date(e.start)<new Date()){RS.past++;return}
+  const h=codeOf(e.h),a=codeOf(e.a);if(!h||!a||h==a||!R[h]||!R[a]){unk.push(e.h+" - "+e.a);return}
+  if(e.start&&new Date(e.start)<new Date()){RS.past++;RS.sk.push([e.h+" - "+e.a,"već počela ili odigrana"]);return}
   let r;try{r=modelFor(h,a,e.start?new Date(e.start):new Date())}catch(x){return}
-  let ngm=0,fl=false;{const nG=t=>D.games.filter(g=>g.box&&(g.h==t||g.a==t)).length;ngm=Math.min(nG(h),nG(a));if(ngm<MINTG){skipN++;RS.smp++;return}const ko=[...keyOut(h),...keyOut(a)];if(ko.length&&!(+$("ah").value||+$("aa").value)){if(!$("sin").value){skipN++;RS.inj++;RS.injn.push(...ko.slice(0,2));return}fl=true;RS.flag++}}
+  let ngm=0,fl=false,hide=false;{const nG=t=>D.games.filter(g=>g.box&&(g.h==t||g.a==t)).length;ngm=Math.min(nG(h),nG(a));if(ngm<MINTG){skipN++;RS.smp++;hide=true;RS.sk.push([e.h+" - "+e.a,"premalo odigranih utakmica ("+ngm+")"])}const ko=[...keyOut(h),...keyOut(a)];if(ko.length&&!(+$("ah").value||+$("aa").value)){fl=true;if(!$("sin").value){skipN++;RS.inj++;RS.injn.push(...ko.slice(0,2));hide=true;RS.sk.push([e.h+" - "+e.a,"ključni igrač van: "+ko.slice(0,2).join(", ")])}else RS.flag++}}
   if(ONLY&&!e.b.some(b=>b.key==ONLY))RS.nobk++;
   used++;minN=Math.min(minN,ngm);const N=r.mg.length,pr=(arr,fn)=>arr.filter(fn).length/N,mt=nm(h)+" - "+nm(a),M={},PF={};
-  const reg=(k,mA,mB,nA,nB,pA,b,oA,oB)=>{if(!oA||!oB)return;const m=M[k]=M[k]||{mA,mB,nA,nB,pA,fam:k[0],l:k=="h"?0:parseFloat(k.slice(1)),fr:[],bo:[0,0],bb:["",""]};if(b.key=="pinnacle")PF[k[0]]={l:m.l,pA:(1/oA)/(1/oA+1/oB)};m.fr.push((1/oA)/(1/oA+1/oB));if(oA>m.bo[0]&&(!ONLY||b.key==ONLY)){m.bo[0]=oA;m.bb[0]=b.title}if(oB>m.bo[1]&&(!ONLY||b.key==ONLY)){m.bo[1]=oB;m.bb[1]=b.title}};
+  const reg=(k,mA,mB,nA,nB,pA,b,oA,oB)=>{if(!oA||!oB)return;const m=M[k]=M[k]||{mA,mB,nA,nB,pA,fam:k[0],l:k=="h"?0:parseFloat(k.slice(1)),fr:[],bo:[0,0],bb:["",""]};if(b.key=="pinnacle")PF[k[0]]={l:m.l,pA:(1/oA)/(1/oA+1/oB)};if(!b.alt)m.main=true;m.fr.push((1/oA)/(1/oA+1/oB));if(oA>m.bo[0]&&(!ONLY||b.key==ONLY)){m.bo[0]=oA;m.bb[0]=b.title}if(oB>m.bo[1]&&(!ONLY||b.key==ONLY)){m.bo[1]=oB;m.bb[1]=b.title}};
   let b1=0,b2=0,k1="",k2="";
-  e.b.forEach(b=>{
+  e.b.concat(e.alt||[]).forEach(b=>{
    if(b.h2h){reg("h","Pobednik","Pobednik",nm(h),nm(a),pr(r.mg,x=>x>0),b,b.h2h[0],b.h2h[1]);
     if(b.h2h[0]>b1){b1=b.h2h[0];k1=b.title}if(b.h2h[1]>b2){b2=b.h2h[1];k2=b.title}}
    if(b.sp&&b.sp[0]!=null){const l=b.sp[0];reg("s"+l,"Hendikep "+sg(l),"Hendikep "+sg(-l),nm(h),nm(a),pr(r.mg,x=>x+l>0),b,b.sp[1],b.sp[2])}
    if(b.tt&&b.tt[0]!=null){const l=b.tt[0];reg("t"+l,"Ukupno "+l,"Ukupno "+l,"Više","Manje",pr(r.tt,x=>x>l),b,b.tt[1],b.tt[2])}});
   Object.values(M).forEach(m=>{const pf=PF[m.fam];if(m.fr.length<MINB&&!pf)return;let fair=m.fr.reduce((x,y)=>x+y,0)/m.fr.length;if(pf){if(m.fam=="h")fair=pf.pA;else{const sd=m.fam=="s"?11.5:13,z=xinv(pf.pA);fair=m.fam=="s"?phi(z+(m.l-pf.l)/sd):phi(z+(pf.l-m.l)/sd)}NPL[e.id+m.fam]=pf.l}const old=pf?PL[e.id+m.fam]:null,mv=pf&&old!=null&&Math.abs(old-pf.l)>.01?old+"→"+pf.l:"",p=xmix(m.pA,fair,pf?"sharp":"game");
-   [[m.mA,m.nA,p,0],[m.mB,m.nB,1-p,1]].forEach(([mk,pick,q,j])=>{const o=m.bo[j],ev=q*o-1;if(ev>0&&ev<=.12)best.push({inj:fl,mt,mk,pick,o,p:q,bk:m.bb[j],ev,st:e.start,h,a,pm:j?1-m.pA:m.pA,pf:j?1-fair:fair,nb:m.fr.length,evS:PF[m.fam]?(j?1-fair:fair)*o-1:null,mv})})});
+   [[m.mA,m.nA,p,0],[m.mB,m.nB,1-p,1]].forEach(([mk,pick,q,j])=>{const o=m.bo[j],ev=q*o-1,qm=j?1-m.pA:m.pA;ALL.push({mt,mk,pick,o,p:q,pm:qm,pf:j?1-fair:fair,ev,evM:qm*o-1,main:!!m.main,st:e.start,inj:fl,smp:ngm<MINTG});if(!hide&&ev>0&&ev<=.12)best.push({inj:fl,mt,mk,pick,o,p:q,bk:m.bb[j],ev,st:e.start,h,a,pm:j?1-m.pA:m.pA,pf:j?1-fair:fair,nb:m.fr.length,evS:PF[m.fam]?(j?1-fair:fair)*o-1:null,mv})})});
   if(b1&&b2&&1/b1+1/b2<1)sure.push({mt,b1,k1,b2,k2,pf:(1/(1/b1+1/b2)-1)*100})});
  try{localStorage.setItem("elpl",JSON.stringify(Object.assign(PL,NPL)))}catch(e){}SCR=best.filter(x=>x.ev>=thr).sort((x,y)=>y.ev-x.ev);
  const dt=s=>s?new Date(s).toLocaleString("sr-Latn",{day:"2-digit",month:"2-digit",hour:"2-digit",minute:"2-digit"}):"";
@@ -1418,8 +1438,8 @@ function screenInner(){
  if(RS.past)wl.push(`${RS.past} meč(eva) iz kvota je već počelo ili je odigrano, pa se preskače.`);
  if(RS.smp)wl.push(`${RS.smp} meč(eva) preskočeno: manje od ${MINTG} odigranih utakmica po timu.`);
  if(RS.inj)wl.push(`${RS.inj} meč(eva) sakriveno jer je ključni igrač van ili neizvestan (${[...new Set(RS.injn)].slice(0,4).map(esc).join(", ")}), a to nije uračunato u model. Izaberi "Prikaži sa oznakom ⚠" iznad ili upiši korekciju povreda u tabu Analiza meča.`);
- if(ONLY&&RS.nobk)wl.push(`Nema kvota "${esc(ONLY)}" u bazi za ${RS.nobk} meč(eva), pa ulog po toj kladionici ne može da se izračuna. Superbet nije u Odds API: njegove kvote moraju da dođu iz data/odds_superbet.json, ili ih proveri Ručnim EV kalkulatorom u tabu Igrač.`);
- if(age!=null&&age>=12)wl.push(`Kvote su stare ${f(age,0)} h (osvežene ${esc(new Date(OD.fetched*1000).toLocaleString("sr-Latn"))}); Odds API krediti preostali: ${esc(String(OD.remaining))}. Bez novih kvota nema novih tipova.`);
+ if(ONLY&&RS.nobk)wl.push(`Nema kvota "${esc(ONLY)}" u bazi za ${RS.nobk} meč(eva), pa ulog po toj kladionici ne može da se izračuna.`);
+ if(age!=null&&age>=3)wl.push(`Superbet kvote su stare ${f(age,0)} h (osvežene ${esc(new Date(OD.fetched*1000).toLocaleString("sr-Latn"))}). Pokreni fetch_superbet.py da ih osvežiš; stare kvote mogu da se razlikuju od onih koje sada vidiš na Superbetu.`);
  if(RS.flag)wl.push(`${RS.flag} meč(eva) je prikazano sa ⚠: povrede ključnih igrača nisu uračunate u model.`);
  const whyHtml=wl.length&&(!SCR.length||RS.past+RS.smp+RS.inj+RS.nobk>0)?`<div class="note warn"><b>${SCR.length?"Zašto neki mečevi nisu u listi":"Zašto nema tipova"}:</b><ul style="margin:6px 0 0 18px">${wl.map(x=>`<li>${x}</li>`).join("")}</ul></div>`:"";
  const top=SCR.filter(x=>!x.inj).slice(0,3).map(x=>`<div class="stat"><span>${esc(x.mt)}</span><div class="num ok">+${f(x.ev*100,1)}% EV</div><span>${esc(x.mk)}: ${esc(x.pick)} @ ${f(x.o,2)} (${esc(x.bk)})</span></div>`).join("");
@@ -1427,7 +1447,8 @@ function screenInner(){
  `<div class="card"><h3 style="margin-top:0">Svi tipovi sa EV ≥ ${f(thr*100,0)}% (${SCR.length})</h3>`+
  (SCR.length?`<div class="scroll"><table><tr><th>Početak</th><th>Utakmica</th><th>Tržište</th><th>Izbor</th><th class="r">Model</th><th class="r">Kvota</th><th>Kladionica</th><th class="r">EV</th><th class="r">EV vs Pinnacle</th><th class="r">Ulog</th><th></th></tr>`+
   SCR.map((x,i)=>`<tr><td>${esc(dt(x.st))}</td><td>${esc(x.mt)}</td><td>${esc(x.mk)}</td><td>${esc(x.pick)}${x.inj?' <span class="wr" title="Ključni igrač je van ili neizvestan, a nije uračunat u model">⚠ povrede</span>':""}${x.mv?` <span class="no" title="Pinnacle je pomerio liniju">⚡ ${esc(x.mv)}</span>`:""}</td><td class="r">${f(x.p*100)}%</td><td class="r">${f(x.o,2)}</td><td>${esc(x.bk)}</td><td class="r ok">+${f(x.ev*100,1)}% ${evb(x.ev)}</td><td class="r ${x.evS>0?"ok":"mu"}">${x.evS==null?"-":(x.evS>0?"+":"")+f(x.evS*100,1)+"%"}</td><td class="r">${f(stake(x.p,x.o,B),2)}</td><td><button class="btn sm" data-vi="${i}" type="button">Zašto?</button> <button class="btn sm" data-sl="${i}" type="button">+ Listić</button> <button class="btn sm" data-sa="${i}" type="button">Bankroll</button></td></tr>`).join("")+`</table></div>`:`<p class="mu">Nema tipova iznad praga${used?"":" (nijedan meč iz kvota nije prepoznat u tvom modelu)"}.</p>`)+
- `<div class="note warn">${MINB==1?"Imaš kvote samo jedne kladionice, pa je referenca njena kvota bez marže i model: tipova će biti malo, a EV je gruba procena, igraj manjim ulogom. ":""}${minN<5?`Rani deo sezone: najmanji uzorak je ${minN} utakmica po timu, pa je model manje pouzdan i EV treba čitati kao grubu procenu. `:""}Referenca je Pinnacle bez marže (ako ga ima, pa je težina modela 20%), inače konsenzus kladionica (težina modela 27%). Linije se uporeduju sa Pinnacleovom, a ⚡ znači da je Pinnacle pomerio liniju od prošlog osvežavanja. EV iznad 12% se odbacuje kao greška. Realan edge u klađenju je 2 do 6%. Ukupno analizirano mečeva: ${used}/${OD.events.length}. Sakriveno kao nepouzdano (uzorak manji od 5 utakmica ili neuračunate povrede): ${skipN}.</div></div>`;
+ `<div class="note warn">Referenca je Superbet: kvota koja se igra i tržišna šansa (bez marže) su sa Superbeta, pomešane sa modelom (težina modela ${f((XW.game||.27)*100,0)}%). Pošto je to jedna kladionica, EV je gruba procena: prava prednost postoji samo kad se model i Superbet jako razilaze. ${minN<5?`Rani deo sezone: najmanji uzorak je ${minN} utakmica po timu, pa je model manje pouzdan. `:""}EV iznad 12% se odbacuje kao greška. Realan edge u klađenju je 2 do 6%. Analizirano mečeva: ${used}/${OD.events.length}. Tabela ispod prikazuje SVE linije sa Superbeta, uključujući one bez prednosti.</div></div>`;
+el.insertAdjacentHTML("beforeend",scaHtml(unk));window.SCALL={ALL,unk,RS,used,total:OD.events.length};scaRender();
  $("sb").innerHTML=`<div class="card"><h2>Surebet</h2>`+(sure.length?`<div class="scroll"><table><tr><th>Utakmica</th><th>Domaćin</th><th>Gost</th><th class="r">Profit</th></tr>`+sure.map(x=>`<tr><td>${esc(x.mt)}</td><td>${f(x.b1,2)} (${esc(x.k1)})</td><td>${f(x.b2,2)} (${esc(x.k2)})</td><td class="r ok">+${f(x.pf,2)}%</td></tr>`).join("")+`</table></div>`:`<p class="mu">Trenutno nema arbitraže.</p>`)+`</div>`}
 function screen(){try{screenInner()}catch(e){const el=$("scr");if(el)el.innerHTML='<div class="note warn"><b>Screener nije uspeo da se izračuna:</b> '+esc(e.message)+' <span class="mu">('+esc(((e.stack||"").split("\n")[1]||"").trim())+')</span>. Pošalji mi ovu poruku.</div>'}}
 $("sth").onchange=screen;$("sin").onchange=screen;try{$("sbk").value=localStorage.getItem("elsbk")||""}catch(e){}$("sbk").onchange=()=>{try{localStorage.setItem("elsbk",$("sbk").value)}catch(e){}screen()};
@@ -1442,7 +1463,7 @@ function k_cnt(s){const d=(new Date(s)-Date.now())/6e4;if(isNaN(d)||d<-170)retur
 const k_arw=(k,v)=>{const p=k_PV[k];return p&&v>p?'<i class="ar up">▲</i>':p&&v<p?'<i class="ar dn">▼</i>':""};
 function k_snap(){if(!OD||!OD.events)return;const n={};OD.events.forEach(e=>e.b.forEach(b=>{if(b.h2h){n[k_eid(e)+b.key+0]=b.h2h[0];n[k_eid(e)+b.key+1]=b.h2h[1]}}));try{localStorage.setItem("elpv",JSON.stringify(n))}catch(x){}}
 function k_cards(el,fo){
- if(!el)return;if(!OD||!OD.events||!OD.events.length){el.innerHTML='<div class="note">Nema kvota (data/odds.json).</div>';return}
+ if(!el)return;if(!OD||!OD.events||!OD.events.length){el.innerHTML='<div class="note warn">Nema Superbet kvota (data/odds_superbet.json). Pokreni fetch_superbet.py.</div>';return}
  const bks=[...new Set(OD.events.flatMap(e=>e.b.map(b=>b.title)))].sort();
  const ev=OD.events.map((e,i)=>({e,i})).filter(x=>!fo||k_FAV.has(k_eid(x.e))||k_FAV.has(x.e.h)||k_FAV.has(x.e.a));
  el.innerHTML=`<div class="chips">${bks.map(t=>`<button class="chip${!k_CH.size||k_CH.has(t)?" on":""}" data-bk="${esc(t)}" type="button">${esc(t)}</button>`).join("")}</div>`+
@@ -1573,7 +1594,7 @@ document.addEventListener("mousemove",e=>{const c=e.target.closest&&e.target.clo
 
 
 // ================= JEZIK (SR / EN) =================
-const XD={"Vesti": "News", "Kvote": "Odds", "Omiljeni": "Favorites", "Analiza meča": "Match analysis", "Utakmice": "Games", "Tabela": "Standings", "Timovi": "Teams", "Igrač": "Player", "Rejting": "Rating", "Meni": "Menu", "Uredi meni": "Edit menu", "Gotovo": "Done", "Poeni": "Points", "Asistencije": "Assists", "Skokovi": "Rebounds", "Trojke": "Threes", "Osveži": "Refresh", "Tim": "Team", "Domaćin": "Home", "Gost": "Away", "Zatvori": "Close", "Listić": "Betslip", "Ulog": "Stake", "Model": "Model", "Kvota": "Odds", "Izbor": "Pick", "Tržište": "Market", "Početak": "Start", "Utakmica": "Game", "Kladionica": "Bookmaker", "Pobednik": "Winner", "Hendikep": "Handicap", "Više": "Over", "Manje": "Under", "Dodaj": "Add", "Evidencija": "Log", "Sudije": "Referees", "Sve zone": "All zones", "Šutevi": "Shots", "Pogodaka": "Made", "Marža": "Margin", "Profit": "Profit", "Bankroll": "Bankroll", "Pod košem": "At the rim", "Reket": "Paint", "Poludistanca": "Mid-range", "Leva ugaona trojka": "Left corner 3", "Desna ugaona trojka": "Right corner 3", "Trojka (luk)": "Above-break 3"},XP=[["Sezona 2026/27. Podaci se čitaju uživo iz tvog GitHub repoa.", "Season 2026/27. Data is read live from your GitHub repo."], ["Računa se iz svih odigranih utakmica.", "Calculated from all games played."], ["Klikni na tim za detalje.", "Click a team for details."], ["Model prolazi kroz sve mečeve iz data/odds.json (pobednik, hendikep, ukupno) i izlistava najbolju kvotu po izboru gde je EV iznad praga.", "The model scans every match in data/odds.json (winner, handicap, total) and lists the best price per pick where EV is above the threshold."], ["Minimalni EV", "Minimum EV"], ["Protivnik (za analizu ispod)", "Opponent (for analysis below)"], ["Linija (prevuci žutu liniju)", "Line (drag the yellow line)"], ["Props model i vrednost", "Props model and value"], ["Kvota Over", "Over odds"], ["Kvota Under", "Under odds"], ["Podeli analizu (slika)", "Share analysis (image)"], ["Vs pozicija", "Vs position"], ["Korigovana projekcija kad saigrač ne igra", "Adjusted projection when a teammate is out"], ["Saigrač koji izostaje", "Teammate who is out"], ["Sledeće kolo", "Next round"], ["Korekcija povreda domaćin (poeni)", "Home injury adjustment (points)"], ["Korekcija povreda gost (poeni)", "Away injury adjustment (points)"], ["Kvote i EV", "Odds and EV"], ["Pobeda domaćin", "Home win"], ["Pobeda gost", "Away win"], ["Kvota hendikep domaćin", "Home handicap odds"], ["Kvota hendikep gost", "Away handicap odds"], ["Opklada za evidenciju", "Bet for the log"], ["Dodaj u evidenciju", "Add to log"], ["Kvote kladionica", "Bookmaker odds"], ["Otvori Superbet", "Open Superbet"], ["Poređenje timova", "Team comparison"], ["Stil i tempo", "Style and pace"], ["Uticaj sudija", "Referee impact"], ["Povrede i status", "Injuries and status"], ["Rejting timova", "Team ratings"], ["Podešavanja modela", "Model settings"], ["Prednost domaćeg", "Home advantage"], ["Standardna devijacija", "Standard deviation"], ["Kelly razlomak", "Kelly fraction"], ["Početni bankroll", "Starting bankroll"], ["Max ulog", "Max stake"], ["Alat za analizu, ne garancija profita. Klađenje nosi rizik gubitka, ulaži samo ono što možeš da izgubiš.", "An analysis tool, not a guarantee of profit. Betting carries risk of loss, only stake what you can afford to lose."], ["Brza pretraga: igrač ili tim", "Quick search: player or team"], ["Traži igrača ili tim", "Search player or team"], ["Top 3 value tipa", "Top 3 value picks"], ["Učinak opklada", "Betting performance"], ["Danas za tebe", "Today for you"], ["Svi tipovi sa EV", "All picks with EV"], ["Poslednje utakmice", "Recent games"], ["Roster i sezonski prosek", "Roster and season average"], ["Statistika tima", "Team stats"], ["Šut po zonama", "Shooting by zone"], ["Najbolji po zoni", "Zone leaders"], ["Napredna statistika", "Advanced stats"], ["Mapa šuta tima", "Team shot map"], ["Petorke i On/Off", "Lineups and On/Off"], ["Sve kladionice", "All bookmakers"], ["Ukupna kvota", "Total odds"], ["Šansa (model)", "Probability (model)"], ["Mogući dobitak", "Potential win"], ["Kopiraj listić", "Copy betslip"], ["Šansa da pokrije", "Cover probability"], ["Fer kvota", "Fair odds"], ["Distribucija razlike", "Margin distribution"], ["Hendikep domaćina", "Home handicap"], ["Nema kvota", "No odds"], ["Počinje za", "Starts in"], ["Nema mečeva.", "No matches."], ["Učitavam šuteve...", "Loading shots..."], ["Ne mogu da učitam", "Cannot load"], ["završenih opklada", "settled bets"], ["Još nema završenih opklada.", "No settled bets yet."], ["Trenutno nema arbitraže.", "No arbitrage right now."], ["Uredi meni", "Edit menu"], ["Omiljeni", "Favorites"]];
+const XD={"Vesti": "News", "Kvote": "Odds", "Omiljeni": "Favorites", "Analiza meča": "Match analysis", "Utakmice": "Games", "Tabela": "Standings", "Timovi": "Teams", "Igrač": "Player", "Rejting": "Rating", "Meni": "Menu", "Uredi meni": "Edit menu", "Gotovo": "Done", "Poeni": "Points", "Asistencije": "Assists", "Skokovi": "Rebounds", "Trojke": "Threes", "Osveži": "Refresh", "Tim": "Team", "Domaćin": "Home", "Gost": "Away", "Zatvori": "Close", "Listić": "Betslip", "Ulog": "Stake", "Model": "Model", "Kvota": "Odds", "Izbor": "Pick", "Tržište": "Market", "Početak": "Start", "Utakmica": "Game", "Kladionica": "Bookmaker", "Pobednik": "Winner", "Hendikep": "Handicap", "Više": "Over", "Manje": "Under", "Dodaj": "Add", "Evidencija": "Log", "Sudije": "Referees", "Sve zone": "All zones", "Šutevi": "Shots", "Pogodaka": "Made", "Marža": "Margin", "Profit": "Profit", "Bankroll": "Bankroll", "Pod košem": "At the rim", "Reket": "Paint", "Poludistanca": "Mid-range", "Leva ugaona trojka": "Left corner 3", "Desna ugaona trojka": "Right corner 3", "Trojka (luk)": "Above-break 3"},XP=[["Sezona 2026/27. Podaci se čitaju uživo iz tvog GitHub repoa.", "Season 2026/27. Data is read live from your GitHub repo."], ["Računa se iz svih odigranih utakmica.", "Calculated from all games played."], ["Klikni na tim za detalje.", "Click a team for details."], ["Model prolazi kroz sve mečeve sa Superbeta (data/odds_superbet.json: pobednik, hendikep, ukupno, i alternativne linije) i izlistava izbore gde je EV iznad praga. Ispod je tabela svih linija.", "The model scans every match in data/odds.json (winner, handicap, total) and lists the best price per pick where EV is above the threshold."], ["Minimalni EV", "Minimum EV"], ["Protivnik (za analizu ispod)", "Opponent (for analysis below)"], ["Linija (prevuci žutu liniju)", "Line (drag the yellow line)"], ["Props model i vrednost", "Props model and value"], ["Kvota Over", "Over odds"], ["Kvota Under", "Under odds"], ["Podeli analizu (slika)", "Share analysis (image)"], ["Vs pozicija", "Vs position"], ["Korigovana projekcija kad saigrač ne igra", "Adjusted projection when a teammate is out"], ["Saigrač koji izostaje", "Teammate who is out"], ["Sledeće kolo", "Next round"], ["Korekcija povreda domaćin (poeni)", "Home injury adjustment (points)"], ["Korekcija povreda gost (poeni)", "Away injury adjustment (points)"], ["Kvote i EV", "Odds and EV"], ["Pobeda domaćin", "Home win"], ["Pobeda gost", "Away win"], ["Kvota hendikep domaćin", "Home handicap odds"], ["Kvota hendikep gost", "Away handicap odds"], ["Opklada za evidenciju", "Bet for the log"], ["Dodaj u evidenciju", "Add to log"], ["Kvote kladionica", "Bookmaker odds"], ["Otvori Superbet", "Open Superbet"], ["Poređenje timova", "Team comparison"], ["Stil i tempo", "Style and pace"], ["Uticaj sudija", "Referee impact"], ["Povrede i status", "Injuries and status"], ["Rejting timova", "Team ratings"], ["Podešavanja modela", "Model settings"], ["Prednost domaćeg", "Home advantage"], ["Standardna devijacija", "Standard deviation"], ["Kelly razlomak", "Kelly fraction"], ["Početni bankroll", "Starting bankroll"], ["Max ulog", "Max stake"], ["Alat za analizu, ne garancija profita. Klađenje nosi rizik gubitka, ulaži samo ono što možeš da izgubiš.", "An analysis tool, not a guarantee of profit. Betting carries risk of loss, only stake what you can afford to lose."], ["Brza pretraga: igrač ili tim", "Quick search: player or team"], ["Traži igrača ili tim", "Search player or team"], ["Top 3 value tipa", "Top 3 value picks"], ["Učinak opklada", "Betting performance"], ["Danas za tebe", "Today for you"], ["Svi tipovi sa EV", "All picks with EV"], ["Poslednje utakmice", "Recent games"], ["Roster i sezonski prosek", "Roster and season average"], ["Statistika tima", "Team stats"], ["Šut po zonama", "Shooting by zone"], ["Najbolji po zoni", "Zone leaders"], ["Napredna statistika", "Advanced stats"], ["Mapa šuta tima", "Team shot map"], ["Petorke i On/Off", "Lineups and On/Off"], ["Sve kladionice", "All bookmakers"], ["Ukupna kvota", "Total odds"], ["Šansa (model)", "Probability (model)"], ["Mogući dobitak", "Potential win"], ["Kopiraj listić", "Copy betslip"], ["Šansa da pokrije", "Cover probability"], ["Fer kvota", "Fair odds"], ["Distribucija razlike", "Margin distribution"], ["Hendikep domaćina", "Home handicap"], ["Nema kvota", "No odds"], ["Počinje za", "Starts in"], ["Nema mečeva.", "No matches."], ["Učitavam šuteve...", "Loading shots..."], ["Ne mogu da učitam", "Cannot load"], ["završenih opklada", "settled bets"], ["Još nema završenih opklada.", "No settled bets yet."], ["Trenutno nema arbitraže.", "No arbitrage right now."], ["Uredi meni", "Edit menu"], ["Omiljeni", "Favorites"]];
 let xL="sr";try{xL=localStorage.getItem("ellang")||"sr"}catch(e){}
 let xBusy=0,xt=0;
 const xtr=t=>{const k=t.trim();if(k&&XD[k])return t.replace(k,XD[k]);let r=t;for(const [a,b] of XP)if(r.includes(a))r=r.split(a).join(b);return r};
@@ -1914,7 +1935,7 @@ window.load = async function (first) {
 };
 
 window.loadOdds = async function () {
-  if (!CFG.odds.apiKey) return _loadOdds();
+  return _loadOdds(); // kvote su samo Superbet
   try {
     const o = await fetchOdds(LG);
     if (!o) return _loadOdds();
@@ -1964,7 +1985,7 @@ const k_prev=k_modal;let k_INF=null,k_VK=null,k_V=0;
 function k_p(r,key,l){const A=key=="sp"?r.mg:r.tt,N=A.length;let c=0;for(let i=0;i<N;i++){const d=key=="sp"?A[i]+l:A[i]-l;c+=d>0?1:d==0?.5:0}return c/N}
 k_modal=function(i){
  if(k_MK=="h2h")return k_prev(i);
- const e=OD.events[i],md=$("md"),key=k_MK,bs=e.b.filter(b=>b[key]&&b[key][0]!=null&&(!k_CH.size||k_CH.has(b.title)));
+ const e=OD.events[i],md=$("md"),key=k_MK,bs=e.b.concat(e.alt||[]).filter(b=>b[key]&&b[key][0]!=null&&(!k_CH.size||k_CH.has(b.title)));
  const L=[...new Set(bs.map(b=>b[key][0]))].sort((x,y)=>x-y);
  const head=`<div class="head"><h2 style="margin:0">${esc(e.h)} - ${esc(e.a)}</h2><button class="btn sm" data-x="1" style="margin-left:auto" type="button">Zatvori</button></div>${k_chips()}`;
  let r=null;try{R=ratings();r=modelFor(codeOf(e.h),codeOf(e.a),fxDt(codeOf(e.h),codeOf(e.a)))}catch(x){}
@@ -2223,29 +2244,21 @@ function tevDeep(c){
   let wy="";window.TEVALT=null;try{wy=tevAltWhy(ok.length?ok[0]:best,h,a,ok.length>0)}catch(x){console.error(x)}
   if(ok.length&&window.TEVALT&&TEVALT.ok<TEVALT.tot-1)verdict=`<p style="margin:7px 0"><b class="no">Najbolje od ponuđenog je ${esc(ok[0].mk)} · ${esc(ok[0].sel)} @ ${f(ok[0].odds,2)} (EV ${sg3(ok[0].evc)}), ali ne preporučujem da ga igraš slepo:</b> samo ${TEVALT.ok} od ${TEVALT.tot} provera prolazi (vidi ispod). Brojke izgledaju dobro, ali iza njih ne stoji dovoljno podataka.</p>`;
   out.push(`<h3>Šta je bolje za ovaj meč</h3>${verdict}${wy}<div class="scroll"><table><tr><th>Tržište</th><th>Izbor</th><th class=r>Kvota (najbolja)</th><th class=r>Model</th><th class=r>Tržište</th><th class=r>Fer kvota</th><th class=r>EV</th><th>Ocena</th></tr>${alt.map(x=>`<tr><td>${esc(x.mk)}</td><td>${esc(x.sel)}</td><td class=r>${f(x.odds,2)}</td><td class=r>${pc(x.p)}</td><td class=r>${x.pm==null?"-":pc(x.pm)}</td><td class=r>${f(x.fair,2)}</td><td class="r ${x.evc>0?"ok":"no"}">${sg3(x.evc)}</td><td>${!x.real?'<span class="no">nerealno</span>':x.evc>=.03&&x.evc<=.2?'<span class="ok">IGRAJ</span>':x.evc>.2?'<span class="no">sumnjivo</span>':x.evc>0?'<span class="mu">minimalno</span>':'<span class="no">bez prednosti</span>'}</td></tr>`).join("")}</table></div><p class="mu" style="margin:7px 0;font-size:.85rem">Ovo su prave kvote kladionica iz data/odds.json (najbolja kvota među njima), računate Monte Carlo modelom uskladjenim 30/70 sa tržištem. Isti proračun je u Verdiktu iznad.</p>`)}
- else out.push(`<h3>Šta je bolje za ovaj meč</h3><p class="mu" style="margin:7px 0">Nema pravih kvota kladionica za ovaj meč u data/odds.json, pa ne mogu da poredim druga tržišta. Kad kvote stignu, ovde se pojavi poređenje svih tržišta.</p>`);
+ else out.push(`<h3>Šta je bolje za ovaj meč</h3><p class="mu" style="margin:7px 0">Nema Superbet kvota za ovaj meč u data/odds_superbet.json, pa ne mogu da poredim druga tržišta. Kad kvote stignu, ovde se pojavi poređenje svih tržišta.</p>`);
  return`<div class="deep">${out.join("")}</div>`}
 
 tevUI();
 
-// ================= DODATNE KLADIONICE (Superbet, Mozzart): data/odds_*.json, pune ih fetch_superbet.py / fetch_mozzart.py =================
-const XSRC=[["data/odds_superbet.json","Superbet","superbet"],["data/odds_mozzart.json","Mozzart","mozzart"]];
-async function mozMerge(){
- if(!D)return;
- for(const [file,title,key] of XSRC){try{
-  const M=await getJSON(file);
-  if(!M||!Array.isArray(M.events)||Date.now()/1000-(M.fetched||0)>7200)continue; // starije od 2h se ignorise
-  if(!OD||!OD.events)OD={fetched:M.fetched,remaining:"",events:[]};
-  M.events.forEach(m=>{
-   const h=codeOf(m.h),a=codeOf(m.a);if(!h||!a||h==a)return;
-   const t0=m.start?Date.parse(m.start):NaN,near=u=>{const t=Date.parse(u);return isNaN(t)||isNaN(t0)||Math.abs(t-t0)<=14*36e5};
-   let ev=OD.events.find(e=>codeOf(e.h)==h&&codeOf(e.a)==a&&near(e.start));
-   if(!ev){const fx=(D.fixtures||[]).find(x=>x.h==h&&x.a==a&&near(x.utc)); // novi dogadjaj samo ako je to stvarno evroligaski mec
-    if(!fx)return;ev={id:key+"|"+h+"|"+a,h:m.h,a:m.a,start:m.start||fx.utc,b:[]};OD.events.push(ev)}
-   ev.b=ev.b.filter(b=>b.key!=key);
-   (m.b||[]).forEach((b,i)=>ev.b.push({key,title:i?title+" (alt. linija)":title,h2h:b.h2h||null,sp:b.sp||null,tt:b.tt||null}))});
- }catch(e){}}}
-{const _lo2=window.loadOdds;window.loadOdds=async function(){await _lo2();await mozMerge();if(D)try{calc()}catch(e){}}}
+// ================= KVOTE: SAMO SUPERBET (data/odds_superbet.json, puni ga fetch_superbet.py) =================
+// Glavna linija ide u ev.b (jedan red "Superbet"), alternativne linije u ev.alt, da sve ostalo na sajtu radi sa pravom tržišnom linijom.
+async function sbLoad(){
+ let M=null;try{M=await getJSON("data/odds_superbet.json")}catch(e){}
+ if(!M||!Array.isArray(M.events)){OD=null;return}
+ OD={fetched:M.fetched||0,remaining:"",source:"superbet",events:M.events.map(m=>{const bb=m.b||[],b0=bb[0]||{};
+  return{id:"sb|"+(m.eid||m.h+"|"+m.a),h:m.h,a:m.a,start:m.start,comp:m.comp,
+   b:[{key:"superbet",title:"Superbet",h2h:b0.h2h||null,sp:b0.sp||null,tt:b0.tt||null}],
+   alt:bb.slice(1).map(x=>({key:"superbet",title:"Superbet (alt. linija)",alt:true,h2h:null,sp:x.sp||null,tt:x.tt||null}))}})}}
+window.loadOdds=async function(){await sbLoad();if(D)try{calc()}catch(e){}};
 </script></main><script>
 // Objašnjenja (.note i opisi ispod naslova) postaju krugić (i) na kraju naslova; klik otvara iskačući opis.
 (function(){
