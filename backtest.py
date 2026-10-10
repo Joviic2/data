@@ -21,7 +21,7 @@ def _mean(x):
 
 
 # ------------------------------------------------------------------ 1) mecevi
-def walk_forward(L, min_train=40, **kw):
+def walk_forward(L, min_train=8, **kw):
     games, rows = L.games, []
     for d in sorted({int(g["t"] // 86400) for g in games}):
         start = d * 86400
@@ -43,13 +43,20 @@ def walk_forward(L, min_train=40, **kw):
             if int(g["t"] // 86400) != d:
                 continue
             p = M.predict(g["h"], g["a"], M._rd(i, g))
-            if not p or n[g["h"]] < 3 or n[g["a"]] < 3:
-                continue
-            nh, na = (pf[g["h"]] + pa[g["a"]] * 0 + 0) / n[g["h"]], (pf[g["a"]]) / n[g["a"]]
-            nm = ((pf[g["h"]] - pa[g["h"]]) / n[g["h"]] - (pf[g["a"]] - pa[g["a"]]) / n[g["a"]]) + hm
-            nt = (pf[g["h"]] / n[g["h"]] + pa[g["a"]] / n[g["a"]]) / 2 + (pf[g["a"]] / n[g["a"]] + pa[g["h"]] / n[g["h"]]) / 2
+            cold = p is None
+            # A club absent from the training window gets a neutral league prior,
+            # rather than silently dropping the game from a small-sample backtest.
+            if cold:
+                p = {"margin": hm, "total": tm}
+            league_pts = tm / 2.0
+            h_for = pf[g["h"]] / n[g["h"]] if n[g["h"]] else league_pts
+            a_for = pf[g["a"]] / n[g["a"]] if n[g["a"]] else league_pts
+            h_against = pa[g["h"]] / n[g["h"]] if n[g["h"]] else league_pts
+            a_against = pa[g["a"]] / n[g["a"]] if n[g["a"]] else league_pts
+            nm = (h_for - h_against) - (a_for - a_against) + hm
+            nt = (h_for + a_against + a_for + h_against) / 2
             rows.append({"m": g["hs"] - g["as"], "t": g["hs"] + g["as"], "pm": p["margin"], "pt": p["total"], "sd": M.sd_m,
-                         "nm": nm, "nt": nt, "base_m": hm, "base_t": tm})
+                         "nm": nm, "nt": nt, "base_m": hm, "base_t": tm, "cold": cold})
     return rows
 
 
@@ -59,7 +66,7 @@ def summarize(rows):
     n = len(rows)
     ll = lambda p, y: -math.log(clamp(p) if y else clamp(1 - p))
     clamp = lambda p: min(1 - 1e-6, max(1e-6, p))
-    out = {"n": n}
+    out = {"n": n, "cold_start": sum(bool(r.get("cold")) for r in rows)}
     for name, pm, pt in (("model", "pm", "pt"), ("naivni (prosek tima)", "nm", "nt"), ("samo liga", "base_m", "base_t")):
         mae_m = _mean(abs(r["m"] - r[pm]) for r in rows)
         mae_t = _mean(abs(r["t"] - r[pt]) for r in rows)
@@ -85,6 +92,8 @@ def show(res, title):
     print(f"{'':24s}" + "".join(f"{k:>20s}" for k in keys))
     for nm in ("model", "naivni (prosek tima)", "samo liga"):
         print(f"{nm:24s}" + "".join(f"{res[nm][k]:20.3f}" for k in keys))
+    if res.get("cold_start"):
+        print(f"Napomena: {res['cold_start']} utakmica koristi neutralni liga-prior za tim bez istorije u trening prozoru.")
     print("kalibracija modela (predvidjena verovatnoca pobede domacina -> stvarna):")
     for b, n, p, y in res["kalibracija"]:
         print(f"   {b * 10:3d}-{b * 10 + 10:<3d}%  n={n:4d}  pred {p * 100:5.1f}%  stvarno {y * 100:5.1f}%")
@@ -257,7 +266,8 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--league", default="aba")
     ap.add_argument("--root", default=".")
-    ap.add_argument("--min-train", type=int, default=40)
+    ap.add_argument("--min-train", type=int, default=None,
+                    help="istorijske utakmice po walk-forward koraku (podrazumevano automatski, minimum 8)")
     ap.add_argument("--grid", action="store_true")
     ap.add_argument("--props", action="store_true")
     ap.add_argument("--odds", default="")
@@ -265,13 +275,22 @@ def main():
     ap.add_argument("--min-ev", type=float, default=None)
     a = ap.parse_args()
     L = Q.League(a.league, a.root)
-    print(f"{a.league}: {len(L.games)} odigranih utakmica sa boxscore-om")
-    if len(L.games) < a.min_train + 10:
-        sys.exit("Premalo utakmica za backtest (smanji --min-train ili sacekaj vise kola).")
+    n_games = len(L.games)
+    print(f"{a.league}: {n_games} odigranih utakmica sa boxscore-om")
+    if n_games < 9:
+        sys.exit("Modelu treba najmanje 8 utakmica za trening i jos jedna za proveru.")
+    if a.min_train is None:
+        min_train = min(40, max(8, n_games // 2))
+    else:
+        min_train = max(8, a.min_train)
+        if min_train >= n_games:
+            min_train = max(8, n_games - 1)
+            print(f"UPOZORENJE: prag je prilagodjen na {min_train}; model zahteva najmanje 8 trening-utakmica.")
+    print(f"Walk-forward trening po koraku: {min_train} utakmica (minimum modela: 8).")
     if a.grid:
         out = []
         for hl, rg, fb in itertools.product((40, 75, 120), (2.0, 4.0, 8.0), (0.0, 0.3, 0.5)):
-            r = summarize(walk_forward(L, a.min_train, HL_TEAM=hl, RIDGE=rg, FF_BLEND=fb))
+            r = summarize(walk_forward(L, min_train, HL_TEAM=hl, RIDGE=rg, FF_BLEND=fb))
             if r:
                 out.append((r["model"]["log-loss"], r["model"]["MAE razlika"], r["model"]["MAE zbir"], hl, rg, fb))
         print("\nHL_TEAM RIDGE FF_BLEND |  log-loss  MAE razlika  MAE zbir   (sortirano po log-loss)")
@@ -279,13 +298,26 @@ def main():
             print(f"{hl:7d} {rg:5.1f} {fb:8.1f} | {ll:8.4f} {mm:11.3f} {mt:9.3f}")
         print("Oprez: biranje najboljeg parametra na istom uzorku daje optimisticku sliku; menjaj CFG samo ako je razlika jasna i stabilna.")
         return
-    r = summarize(walk_forward(L, a.min_train))
+    r = summarize(walk_forward(L, min_train))
     if r:
         show(r, "walk-forward predikcija meceva")
+    else:
+        print("Nema evaluabilnih meceva; treba vise ranijih utakmica po timu ili boxscore podataka.")
     if a.props:
-        show_props(props_bt(L, a.min_train))
-    if a.odds:
-        show_bets(odds_replay(L, a.odds, a.league, a.bet_at, a.min_ev))
+        props = props_bt(L, min_train)
+        if any(props.values()):
+            show_props(props)
+        else:
+            print("Props backtest preskocen: nema dovoljno istorije igraca (najmanje 5 nastupa po igracu).")
+    odds_path = a.odds or os.path.join(a.root, "data", *( [a.league] if a.league != "euroleague" else [] ), "odds_history.jsonl")
+    if a.odds or os.path.isfile(odds_path):
+        if os.path.isfile(odds_path):
+            print(f"Ucitavam Superbet istoriju: {odds_path}")
+            show_bets(odds_replay(L, odds_path, a.league, a.bet_at, a.min_ev))
+        else:
+            print(f"Nema istorije kvota: {odds_path}")
+    else:
+        print(f"ROI backtest ce se ukljuciti kad scraper napravi {odds_path}.")
 
 
 if __name__ == "__main__":

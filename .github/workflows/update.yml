@@ -6,6 +6,10 @@ on:
       - "fetch_acb.py"
       - "index.html"
       - "fetch_lnb.py"
+      - "fetch_superbet.py"
+      - "quant_model.py"
+      - "backtest.py"
+      - "data/superbet_comps.json"
       - "alerts.py"
       - "clv_log.py"
       - "learn_weights.py"
@@ -44,10 +48,6 @@ jobs:
         continue-on-error: true
       - run: python fetch_pbp.py
         continue-on-error: true
-      - run: python fetch_odds.py
-        continue-on-error: true
-        env:
-          ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
       - run: pip install numpy requests
       - name: CLV log (otvorene i zatvarajuce Pinnacle linije)
         run: python clv_log.py
@@ -64,6 +64,9 @@ jobs:
       - run: python fetch_aba.py
       - name: Scrape ACB calendar and boxscores
         run: python fetch_acb.py
+      - name: Fetch Superbet odds, quant picks and history
+        run: python fetch_superbet.py --analytics aba,acb,lnb,bbl
+        continue-on-error: true
       - name: Commit data
         run: |
           git config user.name "data-bot"
