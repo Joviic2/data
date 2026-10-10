@@ -19,9 +19,6 @@ CFG = {
     "DVP_AMP": 1.5,
     "MULT_DAMP": {"pts": 0.15, "reb": 0.55, "ast": 0.55},
     "SHRINK_PTS": 0.25,
-    # H2H corrections remain deliberately small and Bayesian-shrunk.
-    "H2H_TEAM_WEIGHT": 0.18, "H2H_TEAM_PRIOR": 4.0,
-    "H2H_PLAYER_PRIOR": 4.0, "H2H_PLAYER_CAP": 0.12,
 }
 ZN = ("rim", "paint", "mid", "c3l", "c3r", "ab3")
 STATS = ("pts", "reb", "ast")
@@ -133,35 +130,8 @@ def poss(t):
     return t["fg2a"] + t["fg3a"] + 0.44 * t["fta"] - t.get("or", 0) + t["tov"]
 
 
-def _tot_ok(t, score=None):
-    if not isinstance(t, dict) or not all(k in t for k in ("fg2m", "fg2a", "fg3m", "fg3a", "fta", "tov", "pts")):
-        return False
-    try:
-        values = {k: float(t[k]) for k in ("fg2m", "fg2a", "fg3m", "fg3a", "fta", "tov", "pts")}
-    except (TypeError, ValueError):
-        return False
-    if any(not math.isfinite(v) or v < 0 for v in values.values()):
-        return False
-    if values["fg2m"] > values["fg2a"] or values["fg3m"] > values["fg3a"]:
-        return False
-    # Reject the common scrape failure where a hidden season table is mistaken
-    # for the match report and its player totals no longer equal the scoreboard.
-    calculated = 2 * values["fg2m"] + 3 * values["fg3m"] + values["ftm"] if "ftm" in t else None
-    if calculated is not None and abs(calculated - values["pts"]) > 2.0:
-        return False
-    return score is None or abs(values["pts"] - float(score)) <= 2.0
-
-
-def _box_matches_score(box, side, score):
-    team = (box.get(side) or {})
-    if not _tot_ok(team.get("tot"), score):
-        return False
-    players = team.get("p") or []
-    if players:
-        player_points = sum(_f(p, 5) for p in players)
-        if abs(player_points - float(score)) > 2.0:
-            return False
-    return True
+def _tot_ok(t):
+    return isinstance(t, dict) and all(k in t for k in ("fg2m", "fg2a", "fg3m", "fg3a", "fta", "tov", "pts"))
 
 
 def solve(A, b):
@@ -239,31 +209,17 @@ class League:
         self.fixtures = site.get("fixtures") or []
         self.inj = (_load(os.path.join(self.dir, "injuries.json")) or {}).get("teams") or {}
         self._shots = {}
-        # sync_data.py archives prior seasons before a source scraper replaces
-        # site.json. Merge the archive first and let the current site version win.
-        archived = _load(os.path.join(self.dir, "history_games.json")) or []
-        if isinstance(archived, dict):
-            archived = archived.get("games") or []
-        merged = {}
-        for g in list(archived) + list(site.get("games") or []):
-            date = str(g.get("utc") or g.get("dt") or "")[:10]
-            key = f"{date}|{g.get('h')}|{g.get('a')}" if date and g.get("h") and g.get("a") else str(g.get("source_id") or g.get("n"))
-            merged[key] = g
         self.games = []
-        for g in merged.values():
+        for g in site.get("games") or []:
             t = parse_ts(g.get("utc") or g.get("dt"))
             b = g.get("box") or {}
             if t is None or g.get("hs") is None or g.get("as") is None or not b.get("h") or not b.get("a"):
                 continue
             th, ta = b["h"].get("tot"), b["a"].get("tot")
-            if not (_box_matches_score(b, "h", g["hs"]) and _box_matches_score(b, "a", g["as"])):
+            if not (_tot_ok(th) and _tot_ok(ta)):
                 continue
-            q = g.get("q") or {}
-            qh, qa = q.get("h") or [], q.get("a") or []
-            if len(qh) < 4 or len(qh) != len(qa) or abs(sum(_f(qh, j) for j in range(len(qh))) - float(g["hs"])) > 2 or abs(sum(_f(qa, j) for j in range(len(qa))) - float(g["as"])) > 2:
-                q = None
             self.games.append({"n": g.get("n"), "t": t, "h": g["h"], "a": g["a"], "hs": float(g["hs"]), "as": float(g["as"]),
-                               "q": q, "box": b, "th": th, "ta": ta})
+                               "q": g.get("q"), "box": b, "th": th, "ta": ta})
         self.games.sort(key=lambda x: x["t"])
         self._prep()
 
@@ -319,20 +275,6 @@ class League:
         return self._shots[n]
 
     def team_code(self, name):
-        raw = norm(name).strip()
-        # Superbet uses several alternate spellings for ABA clubs.  Resolve
-        # exact team names first (also handles short names such as FMP), then
-        # known aliases before falling back to fuzzy token matching.
-        aliases = {
-            "studentski centar": "SCD",
-            "sc derby": "SCD",
-            "studentski centar podgorica": "SCD",
-        } if self.lg == "aba" else {}
-        if raw in aliases and aliases[raw] in self.clubs:
-            return aliases[raw]
-        for c, v in self.clubs.items():
-            if raw and raw in {norm(v.get("name") or "").strip(), norm(v.get("short") or "").strip()}:
-                return c
         tk = toks(name)
         best, sc = None, 0
         for c, v in self.clubs.items():
@@ -353,7 +295,6 @@ class Model:
     def __init__(self, L, gs, asof, cfg):
         self.L, self.cfg, self.asof, self.n = L, cfg, asof, len(gs)
         self.ok = self.n >= 8
-        self.h2h = {}
         if not self.ok:
             return
         W = lambda t: 0.5 ** ((asof - t) / 86400.0 / cfg["HL_TEAM"])
@@ -374,39 +315,6 @@ class Model:
         self._factors(gs, W)
         self._tinfo(obs)
         self._sd(gs, W)
-        self._build_h2h(gs, W)
-
-    def _build_h2h(self, gs, W):
-        """Learn small matchup residuals from games available before asof."""
-        grouped = collections.defaultdict(list)
-        for i, g in gs:
-            pair = tuple(sorted((g["h"], g["a"])))
-            if pair[0] == pair[1]:
-                continue
-            base = self.predict(g["h"], g["a"], self._rd(i, g))
-            if not base:
-                continue
-            direction = 1.0 if g["h"] == pair[0] else -1.0
-            minutes = max(40.0, float(g.get("mins") or 40.0))
-            scale = 40.0 / minutes
-            grouped[pair].append({
-                "w": W(g["t"]),
-                "margin": direction * ((g["hs"] - g["as"]) * scale - base["margin"]),
-                "total": (g["hs"] + g["as"]) * scale - base["total"],
-                "pace": g["Pn"] - base["P"],
-            })
-        for pair, rows in grouped.items():
-            sw = sum(r["w"] for r in rows)
-            sw2 = sum(r["w"] ** 2 for r in rows)
-            neff = sw * sw / sw2 if sw2 else 0.0
-            shrink = neff / (neff + self.cfg["H2H_TEAM_PRIOR"])
-            mean = lambda key: sum(r["w"] * r[key] for r in rows) / sw if sw else 0.0
-            self.h2h[pair] = {
-                "n": len(rows), "neff": neff,
-                "margin": clamp(mean("margin"), -10.0, 10.0) * shrink * self.cfg["H2H_TEAM_WEIGHT"],
-                "total": clamp(mean("total"), -12.0, 12.0) * shrink * self.cfg["H2H_TEAM_WEIGHT"],
-                "pace": clamp(mean("pace"), -5.0, 5.0) * shrink * self.cfg["H2H_TEAM_WEIGHT"],
-            }
 
     def _fit_eff(self, obs):
         c, T = self.cfg, self.T
@@ -568,19 +476,7 @@ class Model:
         adj = self.dev.get(h, 0.0) + self.rest_beta * rd
         eh, ea = nh + self.h + adj / 2, na - self.h - adj / 2
         ph, pa = P * eh / 100, P * ea / 100
-        base_margin, base_total = ph - pa, ph + pa
-        pair = tuple(sorted((h, a)))
-        hx = self.h2h.get(pair)
-        sign = 1.0 if h == pair[0] else -1.0
-        h2h = {"n": 0, "margin": 0.0, "total": 0.0, "pace": 0.0}
-        if hx:
-            h2h = {"n": hx["n"], "margin": sign * hx["margin"], "total": hx["total"], "pace": hx["pace"]}
-            P = clamp(P + h2h["pace"], 55.0, 95.0)
-        margin = base_margin + h2h["margin"]
-        total = base_total + h2h["total"]
-        ph, pa = (total + margin) / 2, (total - margin) / 2
-        return {"P": P, "eff_h": eh, "eff_a": ea, "pts_h": ph, "pts_a": pa, "margin": margin, "total": total,
-                "h2h": h2h,
+        return {"P": P, "eff_h": eh, "eff_a": ea, "pts_h": ph, "pts_a": pa, "margin": ph - pa, "total": ph + pa,
                 "rest_pts": P * self.rest_beta * rd / 100, "hca_team": P * self.dev.get(h, 0.0) / 100}
 
     def _sd(self, gs, W):
@@ -607,10 +503,8 @@ class Props:
         recs = [r for r in L.prec if r["t"] < asof and r["min"] >= 4]
         self.recs = recs
         self.byp = collections.defaultdict(list)
-        self.by_player_opp = collections.defaultdict(list)
         for r in recs:
             self.byp[r["id"]].append(r)
-            self.by_player_opp[(norm(r["name"]), r["opp"])].append(r)
         age = lambda r: (asof - r["t"]) / 86400.0
         self.w = lambda r: 0.5 ** (age(r) / c["HL_PLAYER"]) * (c["GT_W"] if r["blow"] else 1.0)
         pos_of = {}
@@ -685,32 +579,6 @@ class Props:
         up = self.pri.get(pos, self.pri["?"])["usg"] or 1.0
         dev = (rel - 1) * clamp(usg / up, 0.6, 1.5)
         return 1 + dev, rel
-
-    def h2h_player(self, player, opp, base_rates):
-        """Opponent-specific per-minute rates, shrunk toward the player's norm."""
-        rows = sorted(self.by_player_opp.get((norm(player), opp), []), key=lambda r: r["t"])[-4:]
-        if not rows:
-            return {s: (1.0, None) for s in STATS}
-        ws = [self.w(r) for r in rows]
-        sw, sw2 = sum(ws), sum(w * w for w in ws)
-        neff = sw * sw / sw2 if sw2 else 0.0
-        shrink = neff / (neff + self.c["H2H_PLAYER_PRIOR"])
-        result = {}
-        for stat in STATS:
-            hmins = sum(w * r["min"] for w, r in zip(ws, rows))
-            hrate = sum(w * r[stat] for w, r in zip(ws, rows)) / hmins if hmins else 0.0
-            baseline = base_rates.get(stat, 0.0)
-            raw = hrate / baseline if baseline > 0 else 1.0
-            mult = clamp(1.0 + (raw - 1.0) * shrink, 1.0 - self.c["H2H_PLAYER_CAP"], 1.0 + self.c["H2H_PLAYER_CAP"])
-            note = None
-            if len(rows) >= 2 and abs(raw - 1.0) >= 0.03:
-                club = self.L.clubs.get(opp) or {}
-                opponent = club.get("short") or club.get("name") or opp
-                direction = "iznad" if raw >= 1.0 else "ispod"
-                note = (f"H2H istorija vs {opponent}: {abs(raw * 100 - 100):.0f}% {direction} proseka u poslednja "
-                        f"{len(rows)} meča (shrink korekcija {mult * 100 - 100:+.0f}%)")
-            result[stat] = (mult, note)
-        return result
 
     def _blowout(self):
         xs = {"st": [], "bn": []}
@@ -853,7 +721,6 @@ class Props:
         adj_mins = clamp(mins * ie["mmult"], 5.0, c["MAXMIN"])
 
         stats_dict = {}
-        h2h_rates = self.h2h_player(p["name"], opp, p["rate"])
         for s in STATS:
             base_rate = p["rate"][s]
             if s == "pts":
@@ -882,15 +749,11 @@ class Props:
                 mult = 1.0 + (mult - 1.0) * c["MULT_DAMP"][s]
                 proj = naive_val * mult
 
-            h2h_mult, h2h_note = h2h_rates[s]
-            proj *= h2h_mult
-
             sd = max(0.5, p["cv"][s] * max(proj, 0.5))
             stats_dict[s] = {
                 "mu": round(proj, 2), "sd": round(sd, 2), "dvp": round(dm, 2),
                 "dvp_rel": round(dvp_rel, 2) if dvp_rel is not None else 1.0,
-                "spat": round(spat_val, 2), "zone": zone_info, "inj": ie["notes"],
-                "h2h_mult": round(h2h_mult, 3), "h2h_note": h2h_note
+                "spat": round(spat_val, 2), "zone": zone_info, "inj": ie["notes"]
             }
 
         return {
@@ -941,9 +804,6 @@ def match_tips(ev, mp, M, hn, an, cfg):
     why = [f"Model {hn[0]} {mp['pts_h']:.1f} : {mp['pts_a']:.1f} {hn[1]} (tempo {mp['P']:.1f}, razlika {mp['margin']:+.1f})"]
     if abs(mp["rest_pts"]) >= 0.5:
         why.append(f"Odmor (iz podataka) {mp['rest_pts']:+.1f} p.")
-    hx = mp.get("h2h") or {}
-    if hx.get("n", 0) >= 2:
-        why.append(f"H2H ({hx['n']} mečeva): tempo {hx['pace']:+.1f}, margina {hx['margin']:+.1f}, zbir {hx['total']:+.1f} p. posle shrinkage-a")
     h2h = b0.get("h2h")
     if h2h and h2h[0] and h2h[1]:
         pm = phi(mp["margin"] / sm)
@@ -980,207 +840,17 @@ def match_tips(ev, mp, M, hn, an, cfg):
     return tips
 
 
-def _score_only_teams(lg, root, site):
-    """Build conservative team scoring profiles without inventing boxscore data."""
-    rows = []
-    path = os.path.join(root, "data", lg, "team_stats.json")
-    saved = _load(path) or {}
-    number = lambda x, default=0.0: (float(x) if x not in (None, "") else default)
-    if isinstance(saved.get("teams"), list):
-        rows = [x for x in saved["teams"] if number(x.get("gp")) > 0 and number(x.get("ppg")) > 0]
-    if rows:
-        return rows, saved.get("source", "team stats"), saved.get("updated")
-    # ACB publishes scores before the official player boxscore is available.
-    if lg == "acb":
-        agg = collections.defaultdict(lambda: {"pf": 0.0, "pa": 0.0, "gp": 0})
-        for g in site.get("games") or []:
-            if g.get("hs") is None or g.get("as") is None:
-                continue
-            t = parse_ts(g.get("utc") or g.get("dt"))
-            if t is None or t > time.time() + 86400:
-                continue
-            h, a = g.get("h"), g.get("a")
-            if not h or not a:
-                continue
-            agg[h]["pf"] += float(g["hs"]); agg[h]["pa"] += float(g["as"]); agg[h]["gp"] += 1
-            agg[a]["pf"] += float(g["as"]); agg[a]["pa"] += float(g["hs"]); agg[a]["gp"] += 1
-        clubs = site.get("clubs") or {}
-        rows = [{"code": c, "name": (clubs.get(c) or {}).get("name", c), "gp": v["gp"],
-                 "ppg": v["pf"] / v["gp"], "papg": v["pa"] / v["gp"],
-                 "logo": (clubs.get(c) or {}).get("crest")}
-                for c, v in agg.items() if v["gp"]]
-        return rows, "ACB zvanični rezultati (score-only)", None
-    return [], None, None
-
-
-def _annotate_score_only(events, lg, root, cfg, dg):
-    site = _load(os.path.join(root, "data", lg, "site.json")) or {}
-    rows, source, updated = _score_only_teams(lg, root, site)
-    if not rows:
-        dg["nema_timskih_statistika"] += 1
-        return
-    byname = {norm(r.get("name")): r for r in rows}
-    bycode = {str(r.get("code")): r for r in rows if r.get("code")}
-    clubs = site.get("clubs") or {}
-    def find(name):
-        key = norm(name)
-        if key in byname: return byname[key]
-        for code, club in clubs.items():
-            cn = norm(club.get("name") or "")
-            if key and (key in cn or cn in key) and code in bycode: return bycode[code]
-        hits = [r for r in rows if norm(r.get("name")) and
-                (norm(r.get("name")) in key or key in norm(r.get("name")))]
-        if len(hits) == 1: return hits[0]
-        nt=toks(name); ranked=sorted(((tscore(nt,toks(r.get("name") or "")),r) for r in rows),key=lambda x:x[0],reverse=True)
-        if ranked and ranked[0][0]>=1 and (len(ranked)==1 or ranked[0][0]>ranked[1][0]):
-            return ranked[0][1]
-        return None
-    num = lambda x, default=0.0: (float(x) if x not in (None, "") else default)
-    usable = [r for r in rows if num(r.get("gp")) > 0]
-    league_ppg = sum(num(r.get("ppg")) * num(r.get("gp")) for r in usable) / max(1, sum(num(r.get("gp")) for r in usable))
-    history = _load(os.path.join(root, "data", lg, "history_games.json")) or []
-    if isinstance(history, dict): history = history.get("games") or []
-    history = list(history) + list(site.get("games") or [])
-    history_by_id = {}
-    for game in history:
-        date = str(game.get("utc") or game.get("dt") or "")[:10]
-        key = f"{date}|{game.get('h')}|{game.get('a')}" if date and game.get("h") and game.get("a") else str(game.get("source_id") or game.get("n"))
-        history_by_id[key] = game
-    def code_for_row(row):
-        if row.get("code"): return str(row["code"])
-        for code, club in clubs.items():
-            if find(club.get("name") or club.get("short") or "") is row: return str(code)
-        return None
-    def h2h_adjust(home_row, away_row, home_code, away_code, event_time):
-        selected = []
-        for game in history_by_id.values():
-            if game.get("hs") is None or game.get("as") is None: continue
-            gt = parse_ts(game.get("utc") or game.get("dt"))
-            if gt is None or gt >= event_time: continue
-            gh, ga = str(game.get("h") or ""), str(game.get("a") or "")
-            if (gh, ga) == (home_code, away_code): direction = 1.0
-            elif (gh, ga) == (away_code, home_code): direction = -1.0
-            else: continue
-            rh, ra = find((clubs.get(gh) or {}).get("name") or gh), find((clubs.get(ga) or {}).get("name") or ga)
-            if not rh or not ra: continue
-            rh_att = (num(rh.get("ppg")) * num(rh.get("gp")) + league_ppg * 3) / (num(rh.get("gp")) + 3)
-            ra_att = (num(ra.get("ppg")) * num(ra.get("gp")) + league_ppg * 3) / (num(ra.get("gp")) + 3)
-            rh_def, ra_def = num(rh.get("papg"), league_ppg) or league_ppg, num(ra.get("papg"), league_ppg) or league_ppg
-            exp_h, exp_a = (rh_att + ra_def) / 2 + 1.5, (ra_att + rh_def) / 2 - 1.5
-            age = max(0.0, (event_time - gt) / 86400.0)
-            w = 0.5 ** (age / 365.0)
-            mr = direction * ((num(game.get("hs")) - num(game.get("as"))) - (exp_h - exp_a))
-            tr = num(game.get("hs")) + num(game.get("as")) - exp_h - exp_a
-            selected.append((w, mr, tr))
-        if len(selected) < 2: return {"n":len(selected),"margin":0.0,"total":0.0}
-        sw=sum(x[0] for x in selected); shrink=len(selected)/(len(selected)+4.0)
-        m=sum(w*x for w,x,_ in selected)/sw; t=sum(w*x for w,_,x in selected)/sw
-        scale=.18*shrink
-        return {"n":len(selected),"margin":clamp(m,-10,10)*scale,"total":clamp(t,-12,12)*scale}
-    now = time.time()
-    for ev in events:
-        if ev.get("lg") != lg: continue
-        hs, aws = find(ev.get("h", "")), find(ev.get("a", ""))
-        if not hs or not aws: dg["tim_nije_prepoznat"] += 1; continue
-        nh, na = num(hs.get("gp")), num(aws.get("gp"))
-        # Shrink early-season samples toward league scoring average.
-        shrink = lambda r: (num(r.get("ppg")) * num(r.get("gp")) + league_ppg * 3) / (num(r.get("gp")) + 3)
-        h_att, a_att = shrink(hs), shrink(aws)
-        h_def = num(hs.get("papg"), league_ppg)
-        a_def = num(aws.get("papg"), league_ppg)
-        # If defense is not in the source, explicitly use the league baseline.
-        if h_def <= 0: h_def = league_ppg
-        if a_def <= 0: a_def = league_ppg
-        ph = (h_att + a_def) / 2 + 1.5
-        pa = (a_att + h_def) / 2 - 1.5
-        event_time = parse_ts(ev.get("start")) or now
-        home_code, away_code = code_for_row(hs), code_for_row(aws)
-        hist_h2h = h2h_adjust(hs, aws, home_code, away_code, event_time) if home_code and away_code else {"n":0,"margin":0.0,"total":0.0}
-        if hist_h2h["n"] >= 2:
-            ph += (hist_h2h["total"] + hist_h2h["margin"]) / 2
-            pa += (hist_h2h["total"] - hist_h2h["margin"]) / 2
-        # Blend scoring estimates toward market-implied total/margin as a prior;
-        # market is not counted as independent evidence in the explanation.
-        b = (ev.get("b") or [{}])[0]
-        market_h2h = b.get("h2h")
-        if market_h2h and all(num(x) > 1 for x in market_h2h):
-            pmkt = _devig2(*market_h2h)
-            sample = min(nh, na)
-            pmod = phi((ph - pa) / (13.5 + 1.25 * max(0.0, 5.0 - sample)))
-            market_weight = clamp(.75 - .10 * sample, .35, .75)
-            pwin = (1.0 - market_weight) * pmod + market_weight * pmkt
-        else:
-            sample = min(nh, na)
-            pwin = phi((ph - pa) / (13.5 + 1.25 * max(0.0, 5.0 - sample)))
-        total = ph + pa
-        why = [f"Projekcija {ph:.1f}–{pa:.1f} iz timskog učinka ({int(nh)} / {int(na)} utakmica u uzorku)",
-               f"Napad: {hs.get('name', ev.get('h'))} {h_att:.1f} poena/m; {aws.get('name', ev.get('a'))} {a_att:.1f} poena/m"]
-        if hist_h2h["n"] >= 2:
-            why.append(f"H2H ({hist_h2h['n']} prethodna meča): shrunk korekcija margine {hist_h2h['margin']:+.1f} i zbira {hist_h2h['total']:+.1f} p.")
-        if hs.get("papg") is not None and aws.get("papg") is not None:
-            why.append(f"Odbrana prima {h_def:.1f} / {a_def:.1f} poena po utakmici")
-        else:
-            why.append("Odbrambeni podaci nisu dostupni za oba tima; procena je smanjeno pouzdana")
-        ev["q"] = {"model": "team-score", "source": source, "updated": updated,
-                   "pts": [round(ph, 1), round(pa, 1)], "margin": round(ph-pa, 1), "total": round(total, 1),
-                   "P": None, "p_home": round(pwin, 3), "n": int(min(nh, na)), "h2h": hist_h2h,
-                   "teams_n": [int(nh), int(na)], "why": why,
-                   "confidence": "insufficient" if min(nh, na) < 3 else "low" if min(nh, na) < 5 else "medium"}
-        # Score-only profiles support only full-game markets; no player props.
-        best = {}
-        # Team-level low-confidence candidates are allowed from 3 games; player
-        # props remain unavailable until real boxscores have enough history.
-        enough = min(nh, na) >= 3 and hs.get("papg") is not None and aws.get("papg") is not None
-        def keep(key, tip):
-            if enough and (key not in best or tip["ev"] > best[key]["ev"]): best[key] = tip
-        for b in ev.get("b") or []:
-            if b.get("h2h") and all(num(x) > 1 for x in b["h2h"]):
-                for i, side in enumerate((ev.get("h"), ev.get("a"))):
-                    p = pwin if i == 0 else 1-pwin; od = b["h2h"][i]; edge = ev_of(p, 0, od)
-                    if edge >= cfg["MIN_EV"]:
-                        keep(("h2h",i),_tip("h2h", f"{side} pobeda (1/2)", p, p, od, edge, why=why+[f"Model verovatnoća {p:.1%}; kvota {od:.2f}"], cfg=cfg))
-            sp = b.get("sp")
-            if sp and sp[0] is not None and sp[1] and sp[2]:
-                line, oh, oa = sp
-                margin_sd = 13.5 + 1.25 * max(0.0, 5.0 - min(nh, na))
-                p_home = 1-phi((-line-(ph-pa))/margin_sd)
-                for side, name, p, od, ln in (("h",ev.get("h"),p_home,oh,line),("a",ev.get("a"),1-p_home,oa,-line)):
-                    edge=ev_of(p,0,od)
-                    if od <= cfg["MAX_ODDS_ALT"] and edge >= cfg["MIN_EV"]:
-                        keep(("sp",side),_tip("sp",f"{name} {ln:+g} (hendikep)",p,p,od,edge,why=why+[f"Procena hendikepa {ph-pa:+.1f} poena"],extra={"line":ln},cfg=cfg))
-            tt=b.get("tt")
-            if tt and tt[0] is not None and tt[1] and tt[2]:
-                line,oo,ou=tt; total_sd=16.0+1.5*max(0.0,5.0-min(nh,na)); over=1-phi((line-total)/total_sd)
-                for side,name,p,od in (("o","OVER",over,oo),("u","UNDER",1-over,ou)):
-                    edge=ev_of(p,0,od)
-                    if od<=cfg["MAX_ODDS_ALT"] and edge>=cfg["MIN_EV"]:
-                        keep(("tt",side),_tip("tt",f"{name} {line:g} poena (ukupno)",p,p,od,edge,why=why+[f"Projektovani zbir {total:.1f} prema granici {line:g}"],extra={"line":line,"side":name},cfg=cfg))
-        if not enough:
-            why.append("Uzorak timskih utakmica manji od 5 po timu; model prikazuje projekciju, ali ne izdaje bet preporuku")
-        elif min(nh, na) < 5:
-            why.append("Nizak nivo pouzdanosti: timski uzorak je 3–4 utakmice; kvota dobija veću težinu, a ulog se umanjuje")
-            for tip in best.values():
-                tip["confidence"] = "low"
-                tip["warn"] = True
-                tip["kelly"] = round(tip.get("kelly", 0.0) * min(nh, na) / 5.0, 4)
-        ev["q"]["why"] = why
-        ev["tips"] = sorted(best.values(),key=lambda x:-x["ev"])
-        dg["mecevi_sa_modelom"] += 1; dg["tipova"] += len(best)
-
-
 def annotate_events(events, lg, root=".", cfg=None, log=print, asof=None, league=None):
     cfg = cfg or CFG
     L = league or League(lg, root)
     dg = collections.Counter()
     if not L.games:
         dg["nema_site_json"] += 1
-        _annotate_score_only(events, lg, root, cfg, dg)
         return dg
     asof = asof or time.time()
     M = L.fit(asof)
     if not M.ok:
         dg["premalo_utakmica"] += 1
-        _annotate_score_only(events, lg, root, cfg, dg)
         return dg
     PR = Props(L, M, asof)
     dg["utakmica_u_modelu"] = M.n
@@ -1207,7 +877,6 @@ def annotate_events(events, lg, root=".", cfg=None, log=print, asof=None, league
                    "ff": {"h": {k: ti[h][k] for k in ("efg", "tov", "orb", "ftr", "efg_d", "tov_d", "orb_d", "ftr_d")},
                           "a": {k: ti[a][k] for k in ("efg", "tov", "orb", "ftr", "efg_d", "tov_d", "orb_d", "ftr_d")}, "edge": round(ffe, 2)},
                    "rest_pts": round(mp["rest_pts"], 2), "hca": round(M.h * mp["P"] / 100, 2), "n": M.n}
-        ev["q"]["h2h"] = mp.get("h2h")
         tips = match_tips(ev, mp, M, (ev["h"], ev["a"]), an, cfg)
         outs = {}
         for tm in (h, a):
@@ -1239,7 +908,7 @@ def annotate_events(events, lg, root=".", cfg=None, log=print, asof=None, league
             side, e, od, p_m, p_f = ("OVER", eo, pp["o"], po, fo) if eo >= eu else ("UNDER", eu, pp["u"], pu, fu)
             pp["q"] = {"proj": S["mu"], "sd": S["sd"], "po": round(po, 3), "pu": round(pu, 3), "ev_o": round(eo, 4), "ev_u": round(eu, 4),
                        "min": pr["min"], "base_min": pr["base_min"], "usg": pr["usg"], "dvp": S["dvp"], "dvp_rel": S["dvp_rel"], "pace": pr["pace"],
-                       "spat": S["spat"], "h2h_mult": S["h2h_mult"], "h2h_note": S.get("h2h_note"), "inj": pr["inj_mult"], "inj_notes": S["inj"], "n": pr["n"], "pos": pr["pos"], "side": side if e >= cfg["MIN_EV"] else None,
+                       "spat": S["spat"], "inj": pr["inj_mult"], "inj_notes": S["inj"], "n": pr["n"], "pos": pr["pos"], "side": side if e >= cfg["MIN_EV"] else None,
                        "team": "h" if home else "a"}
             if pp.get("main") and e >= cfg["MIN_EV"] or (cfg["USE_ALT_PROPS"] and e >= cfg["MIN_EV"] and od <= cfg["MAX_ODDS_ALT"]):
                 why = [f"Proj {S['mu']:.1f} (sd {S['sd']:.1f}) vs linija {pp['l']}", f"Min {pr['min']:.0f} (sezona {pr['base_min']:.0f}), USG {pr['usg']:.0f}%"]
@@ -1247,8 +916,6 @@ def annotate_events(events, lg, root=".", cfg=None, log=print, asof=None, league
                     why.append(f"Protivnik vs {pr['pos']}: {S['dvp_rel'] * 100 - 100:+.0f}%")
                 if S.get("zone") and st == "pts" and abs(S["spat"] - 1) >= 0.02:
                     why.append(f"Zona {S['zone']['z']}: odbrana {S['zone']['m'] * 100 - 100:+.0f}% vs liga")
-                if S.get("h2h_note"):
-                    why.append(S["h2h_note"])
                 why += S["inj"]
                 tips.append(_tip("prop", f"{pp['p']} - {side} {pp['l']} {SLAB[st]}", p_m, p_f, od, e, why=why,
                                  extra={"proj": S["mu"], "line": pp["l"], "side": side, "stat": st, "pid": pl["id"], "pname": pp["p"]}, cfg=cfg))

@@ -559,9 +559,6 @@ def run(a=None):
     if bad:
         sys.exit(f"nepoznata liga u mapiranju: {sorted(set(bad))}; dozvoljene: {list(LEAGUES)}")
     seen = assign(out, diag, overrides)
-    only_lg = getattr(a, "only_lg", None) if a else None
-    if only_lg:
-        out = [r for r in out if r.get("lg") == only_lg]
     hit = collections.Counter(r["comp"] for r in out)
     for cid, lg in overrides.items():
         print(f"  mapiranje {lg} <- tournament_id {cid[1:]}: {hit.get(cid, 0)} mecova sa prepoznatim kvotama")
@@ -816,16 +813,14 @@ def annotate(feed, leagues, diag):
                     break
 
 
-def write(events, only_lgs=None):
-    """Pise aktuelne kvote, istoriju i objedinjeni tips.json za pregled sajta."""
+def write(events):
+    """Pise aktuelne kvote i append-only Superbet snimke za istorijski ROI replay."""
     by = collections.defaultdict(list)
     for e in events:
         if e.get("lg"):
             by[e["lg"]].append(e)
     files = []
     for lg, c in LEAGUES.items():
-        if only_lgs and lg not in only_lgs:
-            continue
         if not by.get(lg) and lg not in league_data():
             continue                      # liga nije u repou i nema kvota: ne pravim prazan fajl
         os.makedirs(os.path.dirname(c["out"]), exist_ok=True)
@@ -847,49 +842,7 @@ def write(events, only_lgs=None):
                 fh.write(json.dumps(row, ensure_ascii=False, separators=(",", ":")) + "\n")
         files.append(history)
         print(f"  {lg}: {len(by.get(lg, []))} meceva, {sum(len(e.get('player_props', [])) for e in by.get(lg, []))} prop linija -> {c['out']} + istorija")
-    files.append(write_tips())
     return files
-
-
-def write_tips():
-    """Build data/tips.json from the latest per-league odds and model outputs."""
-    # Read every league file so a one-league refresh never erases the others.
-    snapshot = {"version": 1, "updated": int(time.time()), "source": "fetch_superbet.py + quant_model.py",
-                "bankroll_note": "Kelly is a bankroll fraction; stake is calculated in the browser from its current bankroll.",
-                "leagues": {}, "matches": [], "recommendations": []}
-    for lg, cfg in LEAGUES.items():
-        try:
-            with open(cfg["out"], encoding="utf-8") as fh:
-                saved = json.load(fh)
-        except (OSError, ValueError):
-            continue
-        if not isinstance(saved, dict) or not isinstance(saved.get("events"), list):
-            continue
-        snapshot["leagues"][lg] = {"fetched": saved.get("fetched"), "source": saved.get("source"),
-                                   "events": saved["events"]}
-        for event in saved["events"]:
-            row = dict(event)
-            row["lg"] = row.get("lg") or lg
-            snapshot["matches"].append(row)
-            for pick in row.get("tips") or []:
-                try:
-                    ev = float(pick.get("ev"))
-                except (TypeError, ValueError, AttributeError):
-                    continue
-                if ev <= 0:
-                    continue
-                snapshot["recommendations"].append({**pick, "lg": row["lg"], "h": row.get("h"),
-                    "a": row.get("a"), "start": row.get("start"), "match": f"{row.get('h', '?')} - {row.get('a', '?')}"})
-    snapshot["matches"].sort(key=lambda x: str(x.get("start") or ""))
-    snapshot["recommendations"].sort(key=lambda x: float(x.get("ev") or 0), reverse=True)
-    tips_path = os.path.join("data", "tips.json")
-    os.makedirs(os.path.dirname(tips_path), exist_ok=True)
-    tmp = tips_path + ".tmp"
-    with open(tmp, "w", encoding="utf-8") as fh:
-        json.dump(snapshot, fh, ensure_ascii=False, separators=(",", ":"))
-    os.replace(tmp, tips_path)
-    print(f"  objedinjeni prikaz: {len(snapshot['matches'])} meceva, {len(snapshot['recommendations'])} +EV preporuka -> {tips_path}")
-    return tips_path
 
 
 def git(*c):
@@ -986,8 +939,7 @@ def once(a):
     if not mine:
         print("Nista prepoznato ni u jednoj nasoj ligi: ne pisem fajlove.")
         return
-    only_lg = getattr(a, "only_lg", None)
-    files = write(mine, [only_lg] if only_lg else None)
+    files = write(mine)
     if a.push and files:
         push(files)
 
@@ -1007,8 +959,6 @@ if __name__ == "__main__":
     ap.add_argument("--index", default="active-prematch", help="index feeda (npr. active-prematch)")
     ap.add_argument("--dump", action="store_true", help="snimi sirov detalj prvog meca (data/superbet_dump.json) i ispisi imena svih trzista")
     ap.add_argument("--analytics", default=AN_DEFAULT, help="lige za koje se racuna odmor/umor i rotacije (npr. aba,acb); '' = iskljuceno")
-    ap.add_argument("--only-lg", choices=tuple(LEAGUES), help="povuci i upiši samo jednu ligu; ostale odds fajlove ne dira")
-    ap.add_argument("--rebuild-tips", action="store_true", help="napravi data/tips.json iz postojećih odds_superbet.json fajlova bez novog feed poziva")
     ap.add_argument("--push", action="store_true", help="git commit+push samo fajlova sa kvotama")
     a = ap.parse_args()
     for al in a.alias:
@@ -1017,9 +967,6 @@ if __name__ == "__main__":
             LEAGUES[lg.strip()]["names"].append(norm(kw.strip()))
         else:
             sys.exit(f"--alias {al!r}: ocekujem liga=tekst, liga je jedna od {list(LEAGUES)}")
-    if a.rebuild_tips:
-        write_tips()
-        raise SystemExit(0)
     if not a.loop:
         once(a)
     else:
