@@ -5,13 +5,13 @@
  "club_id": "1",
  "crest": "https://www.aba-liga.com/images/club/100x100/1.png",
  "record": {
-  "gp": 1,
-  "w": 1,
+  "gp": 2,
+  "w": 2,
   "l": 0,
-  "pf": 95,
-  "pa": 79,
-  "pf_avg": 95.0,
-  "pa_avg": 79.0
+  "pf": 195,
+  "pa": 170,
+  "pf_avg": 97.5,
+  "pa_avg": 85.0
  },
  "games": [
   {
@@ -23,6 +23,16 @@
    "pf": 95,
    "pa": 79,
    "result": "W"
+  },
+  {
+   "n": 29,
+   "round": 3,
+   "dt": "2026-10-10T15:00:00Z",
+   "home": false,
+   "opp": "SCD",
+   "pf": 100,
+   "pa": 91,
+   "result": "W"
   }
  ],
  "roster": [
@@ -32,23 +42,11 @@
    "no": "4",
    "pos": "",
    "photo": "https://www.aba-liga.com/stats/img/foto/5624.png",
-   "gp": 1,
-   "min_avg": 28.1,
-   "pts_avg": 10.0,
+   "gp": 2,
+   "min_avg": 29.8,
+   "pts_avg": 18.0,
    "reb_avg": 3.0,
    "ast_avg": 2.0
-  },
-  {
-   "id": "2504",
-   "name": "Vrabac A.",
-   "no": "7",
-   "pos": "",
-   "photo": "https://www.aba-liga.com/stats/img/foto/2504.png",
-   "gp": 1,
-   "min_avg": 24.8,
-   "pts_avg": 10.0,
-   "reb_avg": 2.0,
-   "ast_avg": 1.0
   },
   {
    "id": "5727",
@@ -56,23 +54,11 @@
    "no": "11",
    "pos": "",
    "photo": "https://www.aba-liga.com/stats/img/foto/5727.png",
-   "gp": 1,
-   "min_avg": 24.3,
-   "pts_avg": 14.0,
-   "reb_avg": 6.0,
+   "gp": 2,
+   "min_avg": 26.2,
+   "pts_avg": 21.0,
+   "reb_avg": 7.0,
    "ast_avg": 1.0
-  },
-  {
-   "id": "2496",
-   "name": "Talić D.",
-   "no": "19",
-   "pos": "",
-   "photo": "https://www.aba-liga.com/stats/img/foto/2496.png",
-   "gp": 1,
-   "min_avg": 22.4,
-   "pts_avg": 18.0,
-   "reb_avg": 3.0,
-   "ast_avg": 3.0
   },
   {
    "id": "5700",
@@ -80,23 +66,47 @@
    "no": "2",
    "pos": "",
    "photo": "https://www.aba-liga.com/stats/img/foto/5700.png",
-   "gp": 1,
-   "min_avg": 22.3,
-   "pts_avg": 11.0,
+   "gp": 2,
+   "min_avg": 23.4,
+   "pts_avg": 15.0,
    "reb_avg": 1.0,
-   "ast_avg": 4.0
+   "ast_avg": 2.5
   },
   {
-   "id": "3215",
-   "name": "Atić E.",
-   "no": "5",
+   "id": "2496",
+   "name": "Talić D.",
+   "no": "19",
    "pos": "",
-   "photo": "https://www.aba-liga.com/stats/img/foto/3215.png",
-   "gp": 1,
-   "min_avg": 18.8,
-   "pts_avg": 7.0,
+   "photo": "https://www.aba-liga.com/stats/img/foto/2496.png",
+   "gp": 2,
+   "min_avg": 22.2,
+   "pts_avg": 10.5,
    "reb_avg": 3.0,
+   "ast_avg": 6.5
+  },
+  {
+   "id": "2504",
+   "name": "Vrabac A.",
+   "no": "7",
+   "pos": "",
+   "photo": "https://www.aba-liga.com/stats/img/foto/2504.png",
+   "gp": 2,
+   "min_avg": 21.3,
+   "pts_avg": 8.0,
+   "reb_avg": 4.0,
    "ast_avg": 1.0
+  },
+  {
+   "id": "5698",
+   "name": "Hawkins R.",
+   "no": "44",
+   "pos": "",
+   "photo": "https://www.aba-liga.com/stats/img/foto/5698.png",
+   "gp": 2,
+   "min_avg": 18.7,
+   "pts_avg": 3.5,
+   "reb_avg": 2.5,
+   "ast_avg": 0.5
   },
   {
    "id": "5728",
@@ -104,11 +114,23 @@
    "no": "14",
    "pos": "",
    "photo": "https://www.aba-liga.com/stats/img/foto/5728.png",
-   "gp": 1,
-   "min_avg": 17.8,
-   "pts_avg": 7.0,
-   "reb_avg": 4.0,
+   "gp": 2,
+   "min_avg": 18.1,
+   "pts_avg": 4.5,
+   "reb_avg": 2.5,
    "ast_avg": 3.0
+  },
+  {
+   "id": "3215",
+   "name": "Atić E.",
+   "no": "5",
+   "pos": "",
+   "photo": "https://www.aba-liga.com/stats/img/foto/3215.png",
+   "gp": 2,
+   "min_avg": 16.4,
+   "pts_avg": 4.5,
+   "reb_avg": 3.0,
+   "ast_avg": 1.0
   },
   {
    "id": "3717",
@@ -123,15 +145,15 @@
    "ast_avg": 2.0
   },
   {
-   "id": "5698",
-   "name": "Hawkins R.",
-   "no": "44",
+   "id": "5470",
+   "name": "Islamović A.",
+   "no": "33",
    "pos": "",
-   "photo": "https://www.aba-liga.com/stats/img/foto/5698.png",
+   "photo": "https://www.aba-liga.com/stats/img/foto/5470.png",
    "gp": 1,
-   "min_avg": 15.4,
-   "pts_avg": 3.0,
-   "reb_avg": 3.0,
+   "min_avg": 11.7,
+   "pts_avg": 5.0,
+   "reb_avg": 0.0,
    "ast_avg": 0.0
   },
   {
@@ -140,10 +162,10 @@
    "no": "3",
    "pos": "",
    "photo": "https://www.aba-liga.com/stats/img/foto/5723.png",
-   "gp": 1,
-   "min_avg": 10.6,
-   "pts_avg": 6.0,
-   "reb_avg": 2.0,
+   "gp": 2,
+   "min_avg": 10.3,
+   "pts_avg": 5.5,
+   "reb_avg": 1.5,
    "ast_avg": 0.0
   }
  ]
