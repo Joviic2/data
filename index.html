@@ -2545,11 +2545,12 @@ function ovModelRows(m){
 function ovAnalysis(m){
  const q=m.q,tips=ovTipsOf(m),an=m.an,mev=OVS.minev;
  if(!q){
+  if(tips.length)return `<div style="margin-top:10px"><h3 style="margin:0 0 6px">Analiza i preporuka</h3>${tips.slice(0,4).map(x=>ovTip(x,0,1)).join("")}<div class="mu" style="font-size:.82rem;margin-top:6px">Procena iz Superbet kvota i umora. Napredni model (box score i igrači) još nije pokrenut za ovu ligu: pokreni <code>python annotate_odds.py</code>.</div></div>`;
   return `<div class="note" style="display:block!important;margin-top:10px"><b>Nema modela za ovu ligu.</b> U repou nema odigranih utakmica sa rezultatima za ${esc((LEAGUES[m.lg]||[m.lg])[0])} (potreban je <code>data/${m.lg=="euroleague"?"":m.lg+"/"}site.json</code> sa rezultatima), pa ne mogu da procenim ko je jači. Prikazujem samo Superbet linije, odmor i signale za igrače ako ih ima. Bez modela nema preporuke za pobednika, hendikep i ukupne poene.</div>${tips.map(x=>ovTip(x,0)).join("")}`}
  const R=ovModelRows(m),good=R.filter(r=>r.evc>=mev&&r.evc<=.2&&r.evm>=mev).sort((a,b)=>b.evc-a.evc),top=tips[0];
  const best=R.slice().sort((a,b)=>b.evc-a.evc)[0];
  const tbl=R.length?`<div class="scroll"><table><tr><th>Tržište</th><th>Izbor</th><th class="r">Model</th><th class="r">Superbet (fer)</th><th class="r">Kvota</th><th class="r">EV model</th><th class="r">EV korigovan</th></tr>${R.map(r=>`<tr${top&&!top.kind.startsWith("prop")&&r===good[0]?' style="background:var(--acbg)"':""}><td>${esc(r.mk)}</td><td>${esc(r.pick)}</td><td class="r">${ovPc(r.pm)}</td><td class="r">${ovPc(r.pk)}</td><td class="r">${f(r.od,2)}</td><td class="r ${r.evm>0?"ok":"no"}">${ovSp(r.evm)}${r.evm>.2?" ⚠":""}</td><td class="r ${r.evc>0?"ok":"no"}">${ovSp(r.evc)}</td></tr>`).join("")}</table></div>`:"";
- const verdict=tips.length?tips.slice(0,3).map(x=>ovTip(x,0)).join(""):
+ const verdict=tips.length?tips.slice(0,3).map(x=>ovTip(x,0,1)).join(""):
   `<div class="tip" style="border-color:var(--bd)"><div><b style="color:var(--mu)">NEMA PREPORUKE</b> za ovaj meč${best?`: najbolji izbor je ${esc(best.mk)} ${esc(best.pick)} @ ${f(best.od,2)}, ali je korigovani EV ${ovSp(best.evc)} (prag je ${f(mev*100,0)}%).`:"."}</div><div class="mu" style="font-size:.85rem">${best?(best.evm>.2?"Model se jako razilazi od Superbeta (EV modela preko 20%), a u ranoj sezoni se tome ne veruje slepo.":best.evm<mev?"Model i Superbet se skoro slažu, pa nema prednosti koju bi vredelo igrati.":"Kvota je blizu fer vrednosti posle korekcije ka tržištu."):"Nema dovoljno linija na Superbetu."}</div></div>`;
  const w=R.w!=null?R.w:.5,ng=q.ng?` (${q.ng[0]} i ${q.ng[1]} utakmica za ova dva tima)`:"";
  const expl=[`Model procenjuje rezultat ${esc(m.h)} <b>${f(q.pts[0])} : ${f(q.pts[1])}</b> ${esc(m.a)}, razlika ${sg(+f(q.margin))}, ukupno ${f(q.total)}. Razlika je napadački i odbrambeni rejting oba tima${q.simple?" iz rezultata utakmica (nema statistike igrača u ovoj ligi)":" iz box score-a (efikasnost napada i odbrane na 100 posesija, tempo)"} plus prednost domaćeg terena (${sg(+f(q.hca))} p.).`,
@@ -2574,27 +2575,49 @@ function ovTipsOf(m){
  const T=[],mev=OVS.minev,an=m.an,b0=(m.b||[])[0]||{};
  // Prefer picks computed by quant_model.py; retain legacy feed-derived signals for older data files.
  if(Array.isArray(m.tips)){
-  m.tips.forEach(t=>{const ev=Number(t&&t.ev);if(!t||!Number.isFinite(ev)||ev<mev)return;T.push({kind:t.k||"h2h",ev,od:Number(t.odds)||0,m,model:true,txt:t.txt||"Tip",why:Array.isArray(t.why)?t.why.join(" · "):String(t.why||""),warn:!!t.warn})});
+  m.tips.forEach(t=>{const ev=Number(t&&t.ev);if(!t||!Number.isFinite(ev)||ev<mev)return;T.push({kind:t.k||"h2h",ev,od:Number(t.odds)||0,m,model:true,txt:t.txt||"Tip",why:Array.isArray(t.why)?t.why.join(" · "):String(t.why||""),whyL:Array.isArray(t.why)?t.why:[],p:t.p,pm:t.pm,kelly:t.kelly,warn:!!t.warn})});
   return T.sort((x,y)=>y.ev-x.ev)
  }
  (m.player_props||[]).forEach(p=>{const r=p.rot;if(!r||!p.main)return;
-  [["OVER",r.ev_o,p.o],["UNDER",r.ev_u,p.u]].forEach(([side,ev,od])=>{if(ev>=mev)T.push({kind:"prop",ev,side,p,od,m,why:`Min ${f(r.min,0)} (sezona ${f(r.base,0)})${r.cong?", dva fronta":""}`})})});
+  [["OVER",r.ev_o,p.o],["UNDER",r.ev_u,p.u]].forEach(([side,ev,od])=>{if(ev>=mev)T.push({kind:"prop",ev,side,p,od,m,pf:side=="OVER"?r.po:1-r.po,why:`Min ${f(r.min,0)} (sezona ${f(r.base,0)})${r.cong?", dva fronta":""}`})})});
  if(an&&an.dp_home!=null){
   const sh=an.dp_home,sw=(ph)=>ovCl(ph+sh*4*ph*(1-ph),.02,.98),why=`Odmor ${an.rest_h[0]==null?"-":f(an.rest_h[0],0)} h vs ${an.rest_h[1]==null?"-":f(an.rest_h[1],0)} h, umor ${sg(an.edge_pts)} p.`;
   if(Array.isArray(b0.h2h)&&b0.h2h[0]&&b0.h2h[1]){const[oh,oa]=b0.h2h,ph=(1/oh)/(1/oh+1/oa),p=sw(ph);
-   [[m.h,p,oh],[m.a,1-p,oa]].forEach(([t,pp,od])=>{const ev=pp*od-1;if(ev>=mev)T.push({kind:"h2h",ev,t,od,m,why})})}
+   [[m.h,p,oh,ph],[m.a,1-p,oa,1-ph]].forEach(([t,pp,od,pk])=>{const ev=pp*od-1;if(ev>=mev)T.push({kind:"h2h",ev,t,od,m,why,p:pp,pk})})}
   const bs={};
   (m.b||[]).forEach(b=>{if(!b.sp||b.sp[0]==null||!b.sp[1]||!b.sp[2])return;const L=b.sp[0],ph=(1/b.sp[1])/(1/b.sp[1]+1/b.sp[2]),p=sw(ph);
-   [["h",m.h,L,p,b.sp[1]],["a",m.a,-L,1-p,b.sp[2]]].forEach(([s,t,l,pp,od])=>{const ev=pp*od-1;if(od<=2.5&&ev>=mev&&(!bs[s]||ev>bs[s].ev))bs[s]={kind:"sp",ev,t,L:l,od,m,why}})});
+   [["h",m.h,L,p,b.sp[1],ph],["a",m.a,-L,1-p,b.sp[2],1-ph]].forEach(([s,t,l,pp,od,pk])=>{const ev=pp*od-1;if(od<=2.5&&ev>=mev&&(!bs[s]||ev>bs[s].ev))bs[s]={kind:"sp",ev,t,L:l,od,m,why,p:pp,pk}})});
   Object.values(bs).forEach(x=>T.push(x))}
  return T.sort((x,y)=>y.ev-x.ev)}
+
+// Analiza jedne preporuke: odakle dolazi šansa, poređenje sa Superbetom i šta je uračunato (isto što model daje u preporuci iznad)
+function ovTipWhy(x){
+ const L=[],pc=v=>f(v*100,1)+"%",fair=x.od>1&&x.p?1/x.od:null,m=x.m,an=m.an;
+ L.push(`Kvota ${f(x.od,2)} znači da Superbet računa šansu od <b>${pc(1/x.od)}</b> (uz maržu)${x.pk!=null?`, a bez marže oko <b>${pc(x.pk)}</b>`:""}.`);
+ if(x.model){
+  if(x.pm!=null)L.push(`Naš model daje <b>${pc(x.pm)}</b>${x.p!=null?`, a posle mešanja sa Superbetom konačna šansa je <b>${pc(x.p)}</b>`:""}.`);
+  (x.whyL||[]).forEach(w=>L.push(esc(w)));
+  if(x.kelly)L.push(`Kelly ulog (četvrtina, limit 2% bankrola): <b>${f(x.kelly*100,1)}%</b> bankrola.`);
+ }else if(x.kind=="prop"){
+  const r=x.p.rot;
+  L.push(`Linija je <b>${x.p.l}</b>, a model projektuje <b>${f(r.proj)}</b> (šansa za ${x.side} je ${pc(x.pf)}).`);
+  L.push(`Minutaža: očekuje se ${f(r.min,0)} min, sezonski prosek ${f(r.base,0)} min.${r.cong?" Tim igra na dva fronta, pa je rotacija izvesnija.":""}`);
+  if(x.p.u_est)L.push(`Under kvota je procenjena iz over kvote (Superbet je ne daje), pa je EV za Under manje pouzdan.`);
+ }else{
+  if(x.p!=null)L.push(`Posle korekcije za umor (odmor i putovanje) šansa je <b>${pc(x.p)}</b>.`);
+  if(an)L.push(`Odmor: ${esc(m.h)} ${an.rest_h[0]==null?"-":f(an.rest_h[0],0)+" h"}, ${esc(m.a)} ${an.rest_h[1]==null?"-":f(an.rest_h[1],0)+" h"}. Penal umora: ${f(an.pen[0],1)} / ${f(an.pen[1],1)} p., razlika ${sg(an.edge_pts)} p. u korist ${an.edge_pts>=0?esc(m.h):esc(m.a)}.`);
+  if(an&&(an.dbl[0]||an.dbl[1]||an.cong[0]||an.cong[1]))L.push(`Raspored: ${an.dbl[0]||an.cong[0]?esc(m.h)+" igra i drugo takmičenje. ":""}${an.dbl[1]||an.cong[1]?esc(m.a)+" igra i drugo takmičenje.":""}`);
+  L.push(`Ovo je procena samo iz kvota i umora (≈3% šanse po poenu razlike u odmoru). Nema ocene snage timova iz box score-a, pa je slabija od modela sa statistikom.`)}
+ L.push(`EV = šansa × kvota − 1 = <b>${sg(+f(x.ev*100,1))}%</b>. Na 100 din očekivana dobit je oko ${f(x.ev*100,0)} din, ali to je prosek kroz mnogo opklada.`);
+ if(x.ev>.2||x.warn)L.push(`<b class="r">Neobično visok EV:</b> skoro uvek znači da model ne vidi povredu, rotaciju ili da je linija drugačija. Proveri sastav pre uloga.`);
+ return `<ul style="margin:6px 0 0 18px;font-size:.88rem">${L.map(v=>`<li style="margin:3px 0">${v}</li>`).join("")}</ul>`}
 function ovTipLine(x){
  const ev=`EV: ${sg(+f(x.ev*100,1))}%`;
  if(x.model)return `${esc(x.txt)} | kvota ${f(x.od,2)} | ${ev}`;
  if(x.kind=="prop")return `${esc(x.p.p)} - ${x.side} ${x.p.l} ${OVSA[x.p.s]||esc(x.p.s)} | Proj: ${f(x.p.rot.proj)} | kvota ${f(x.od,2)} | ${ev}`;
  if(x.kind=="sp")return `${esc(x.t)} ${sg(x.L)} (Hendikep) | kvota ${f(x.od,2)} | ${ev}`;
  return `${esc(x.t)} pobeda (1/2) | kvota ${f(x.od,2)} | ${ev}`}
-function ovTip(x,showM){return `<div class="tip"><div>🎯 <b>PREPORUKA:</b> ${ovTipLine(x)}${(x.warn||x.ev>.3)?' <span class="pill">⚠ neobično visok EV, proveri</span>':""}</div><div class="mu" style="font-size:.85rem">${showM?ovT(x.m.ms)+" · "+esc((LEAGUES[x.m.lg]||[x.m.lg])[1])+" · "+esc(x.m.h)+" - "+esc(x.m.a)+" · ":""}${esc(x.why)}</div></div>`}
+function ovTip(x,showM,open){return `<div class="tip"><div>🎯 <b>PREPORUKA:</b> ${ovTipLine(x)}${(x.warn||x.ev>.3)?' <span class="pill">⚠ neobično visok EV, proveri</span>':""}</div><div class="mu" style="font-size:.85rem">${showM?ovT(x.m.ms)+" · "+esc((LEAGUES[x.m.lg]||[x.m.lg])[1])+" · "+esc(x.m.h)+" - "+esc(x.m.a)+" · ":""}${esc(x.why)}</div><details${open?" open":""} style="margin-top:6px"><summary class="mu" style="cursor:pointer">Analiza ove preporuke</summary>${ovTipWhy(x)}</details></div>`}
 const ovTipBoxes=m=>ovTipsOf(m).map(x=>ovTip(x,0)).join("");
 function ovTipsBox(tips){return `<div class="tipw"><h2>🎯 Tipovi (${tips.length}) <span class="mu" style="font-size:1rem">EV ≥ ${f(OVS.minev*100,0)}%</span></h2>${tips.length?tips.slice(0,40).map(x=>ovTip(x,1)).join(""):'<div class="note">Nema tipova sa EV iznad praga za izabrani prikaz. Probaj "Svi dani" ili niži prag.</div>'}</div>`}
 function ovRender(){
