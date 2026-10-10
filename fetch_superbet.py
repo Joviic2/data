@@ -503,12 +503,16 @@ def run(a=None):
             r["_tour"] = tour_text(ev)
             out.append(r)
     overrides = {}                                  # --comp lnb=123 --comp bbl=456,457  (bez "lg=" = Evroliga); + data/superbet_comps.json
+    cpath = os.path.abspath(os.path.join("data", "superbet_comps.json"))
     try:
-        for lg, ids in json.load(open(os.path.join("data", "superbet_comps.json"), encoding="utf-8")).items():
+        for lg, ids in json.load(open(cpath, encoding="utf-8")).items():
             for i in (ids if isinstance(ids, list) else [ids]):
                 overrides["t" + str(i).strip().lstrip("t")] = lg
-    except (OSError, ValueError, AttributeError):
-        pass
+        print(f"mapiranje turnira iz {cpath}: " + ", ".join(f"{v}<-{k}" for k, v in overrides.items()))
+    except OSError:
+        print(f"UPOZORENJE: nema {cpath} (mapiranje LNB/BBL po tournament_id se ne ucitava; skripta trazi data/ u folderu iz kog je pokrenuta)")
+    except (ValueError, AttributeError) as ex:
+        print(f"UPOZORENJE: {cpath} nije ispravan JSON ({ex}); ocekujem npr. {{\"lnb\":[217],\"bbl\":[350]}}")
     for arg in (a.comp if a else []):
         for part in str(arg).split(";"):
             part = part.strip()
@@ -521,6 +525,9 @@ def run(a=None):
     if bad:
         sys.exit(f"nepoznata liga u mapiranju: {sorted(set(bad))}; dozvoljene: {list(LEAGUES)}")
     seen = assign(out, diag, overrides)
+    hit = collections.Counter(r["comp"] for r in out)
+    for cid, lg in overrides.items():
+        print(f"  mapiranje {lg} <- tournament_id {cid[1:]}: {hit.get(cid, 0)} mecova sa prepoznatim kvotama")
     if a and (a.leagues or a.grep or a.raw):
         raw_report(j, a, out)
     if a and a.leagues:
@@ -573,18 +580,42 @@ def write(events):
     return files
 
 
+def git(*c):
+    return subprocess.run(("git",) + c, capture_output=True, text=True)
+
+
 def push(files):
-    run_ = lambda *c: subprocess.run(c, capture_output=True, text=True)
-    run_("git", "add", *files)
-    if run_("git", "diff", "--cached", "--quiet", "--", *files).returncode == 0:
-        return
-    run_("git", "commit", "-m", "Superbet odds", "--", *files)
+    """commit samo fajlova sa kvotama + pull --rebase (nasi fajlovi pobedjuju u konfliktu) + push; ispisuje pravi razlog ako ne uspe."""
+    if git("rev-parse", "--is-inside-work-tree").stdout.strip() != "true":
+        print("push: ovaj folder nije git repo (pokreni skriptu iz korena repoa)")
+        return False
+    branch = git("rev-parse", "--abbrev-ref", "HEAD").stdout.strip()
+    if not branch or branch == "HEAD":
+        branch = "main"
+    git("add", *files)
+    if git("diff", "--cached", "--quiet", "--", *files).returncode == 0:
+        print("push: nema promena u fajlovima sa kvotama")
+        return True
+    r = git("commit", "-m", "Superbet odds", "--", *files)
+    if r.returncode:
+        print("push: commit nije uspeo:", (r.stderr or r.stdout).strip()[-400:])
+        return False
+    err = ""
     for i in range(3):
-        run_("git", "pull", "--rebase", "--autostash", "origin", "main")
-        if run_("git", "push", "origin", "HEAD:main").returncode == 0:
-            return
+        r = git("pull", "--rebase", "--autostash", "-X", "theirs", "origin", branch)    # u rebase-u "theirs" = nasi novi fajlovi
+        if r.returncode:
+            err = "pull --rebase: " + (r.stderr or r.stdout).strip()[-400:]
+            git("rebase", "--abort")
+        else:
+            r = git("push", "origin", "HEAD:" + branch)
+            if r.returncode == 0:
+                print(f"push: ok ({branch})")
+                return True
+            err = "push: " + (r.stderr or r.stdout).strip()[-400:]
         time.sleep(5 * (i + 1))
-    print("push nije uspeo")
+    print("push nije uspeo.", err)
+    print("Provera: git status ; git log origin/" + branch + "..HEAD ; da li je grana '" + branch + "' i da li imas pravo upisa (git push --dry-run).")
+    return False
 
 
 def once(a):
