@@ -252,7 +252,7 @@ input::placeholder{color:var(--mu);opacity:1}
 <section id="t7" hidden>
  <div class="card"><h2>Value Screener</h2>
  <p class="sub">Model prolazi kroz sve mečeve iz data/odds.json (pobednik, hendikep, ukupno) i izlistava najbolju kvotu po izboru gde je EV iznad praga.</p>
- <div class="grid"><div><label for="sth">Minimalni EV</label><select id="sth"><option value="3">3%</option><option value="5" selected>5%</option><option value="8">8%</option></select></div><div><label for="sbk">Kladionica za ulog</label><select id="sbk"><option value="">Sve</option><option value="superbet">Samo Superbet</option></select></div></div></div>
+ <div class="grid"><div><label for="sth">Minimalni EV</label><select id="sth"><option value="3">3%</option><option value="5" selected>5%</option><option value="8">8%</option></select></div><div><label for="sbk">Kladionica za ulog</label><select id="sbk"><option value="">Sve</option><option value="superbet">Samo Superbet</option></select></div><div><label for="sin">Mečevi sa povredama</label><select id="sin"><option value="">Sakrij ako ključni igrač nedostaje</option><option value="1">Prikaži sa oznakom ⚠</option></select></div></div></div>
  <div id="slip"></div><div id="scr"></div>
 </section>
 <section id="t5" hidden>
@@ -1390,15 +1390,17 @@ function modelFor(h,a,dt){
  const m=R[h].r-R[a].r+hc+adj,oh=ownStats(h),oa=ownStats(a),dH=oppStats(h),dA=oppStats(a);
  const pace=oh&&oa?(oh.PACE+oa.PACE)/2:S.pace,T=pace*((oh&&dA?oh.ORTG+dA.ORTG:216)+(oa&&dH?oa.ORTG+dH.ORTG:216))/200;
  return sim((T+m)/2/pace,(T-m)/2/pace,pace)}
-function screen(){
+function screenInner(){
  const el=$("scr");if(!el)return;
  if(!D){return}
  if(!OD||!OD.events||!OD.events.length){el.innerHTML='<div class="note">Nema kvota (data/odds.json). Proveri da je GitHub Action prošao i da je ODDS_API_KEY postavljen.</div>';return}
- R=ratings();const ONLY=$("sbk").value,nk=new Set(OD.events.flatMap(e=>e.b.map(b=>b.key))),MINB=nk.size>=3?3:1,thr=+$("sth").value/100,B=bank(),best=[],sure=[],NPL={};let skipN=0,minN=99,PL={};try{PL=JSON.parse(localStorage.getItem("elpl")||"{}")}catch(e){}let used=0;
+ R=ratings();const ONLY=$("sbk").value,nk=new Set(OD.events.flatMap(e=>e.b.map(b=>b.key))),MINB=nk.size>=3?3:1,thr=+$("sth").value/100,B=bank(),best=[],sure=[],NPL={},RS={past:0,smp:0,inj:0,nobk:0,flag:0,injn:[]};let skipN=0,minN=99,PL={};try{PL=JSON.parse(localStorage.getItem("elpl")||"{}")}catch(e){}let used=0;
  OD.events.forEach(e=>{
   const h=codeOf(e.h),a=codeOf(e.a);if(!h||!a||h==a||!R[h]||!R[a])return;
+  if(e.start&&new Date(e.start)<new Date()){RS.past++;return}
   let r;try{r=modelFor(h,a,e.start?new Date(e.start):new Date())}catch(x){return}
-  let ngm=0;{const nG=t=>D.games.filter(g=>g.box&&(g.h==t||g.a==t)).length;ngm=Math.min(nG(h),nG(a));if(ngm<MINTG){skipN++;return}if((((INJ.teams||{})[h]||[]).length+((INJ.teams||{})[a]||[]).length)&&!(+$("ah").value||+$("aa").value)){skipN++;return}}
+  let ngm=0,fl=false;{const nG=t=>D.games.filter(g=>g.box&&(g.h==t||g.a==t)).length;ngm=Math.min(nG(h),nG(a));if(ngm<MINTG){skipN++;RS.smp++;return}const ko=[...keyOut(h),...keyOut(a)];if(ko.length&&!(+$("ah").value||+$("aa").value)){if(!$("sin").value){skipN++;RS.inj++;RS.injn.push(...ko.slice(0,2));return}fl=true;RS.flag++}}
+  if(ONLY&&!e.b.some(b=>b.key==ONLY))RS.nobk++;
   used++;minN=Math.min(minN,ngm);const N=r.mg.length,pr=(arr,fn)=>arr.filter(fn).length/N,mt=nm(h)+" - "+nm(a),M={},PF={};
   const reg=(k,mA,mB,nA,nB,pA,b,oA,oB)=>{if(!oA||!oB)return;const m=M[k]=M[k]||{mA,mB,nA,nB,pA,fam:k[0],l:k=="h"?0:parseFloat(k.slice(1)),fr:[],bo:[0,0],bb:["",""]};if(b.key=="pinnacle")PF[k[0]]={l:m.l,pA:(1/oA)/(1/oA+1/oB)};m.fr.push((1/oA)/(1/oA+1/oB));if(oA>m.bo[0]&&(!ONLY||b.key==ONLY)){m.bo[0]=oA;m.bb[0]=b.title}if(oB>m.bo[1]&&(!ONLY||b.key==ONLY)){m.bo[1]=oB;m.bb[1]=b.title}};
   let b1=0,b2=0,k1="",k2="";
@@ -1408,18 +1410,27 @@ function screen(){
    if(b.sp&&b.sp[0]!=null){const l=b.sp[0];reg("s"+l,"Hendikep "+sg(l),"Hendikep "+sg(-l),nm(h),nm(a),pr(r.mg,x=>x+l>0),b,b.sp[1],b.sp[2])}
    if(b.tt&&b.tt[0]!=null){const l=b.tt[0];reg("t"+l,"Ukupno "+l,"Ukupno "+l,"Više","Manje",pr(r.tt,x=>x>l),b,b.tt[1],b.tt[2])}});
   Object.values(M).forEach(m=>{const pf=PF[m.fam];if(m.fr.length<MINB&&!pf)return;let fair=m.fr.reduce((x,y)=>x+y,0)/m.fr.length;if(pf){if(m.fam=="h")fair=pf.pA;else{const sd=m.fam=="s"?11.5:13,z=xinv(pf.pA);fair=m.fam=="s"?phi(z+(m.l-pf.l)/sd):phi(z+(pf.l-m.l)/sd)}NPL[e.id+m.fam]=pf.l}const old=pf?PL[e.id+m.fam]:null,mv=pf&&old!=null&&Math.abs(old-pf.l)>.01?old+"→"+pf.l:"",p=xmix(m.pA,fair,pf?"sharp":"game");
-   [[m.mA,m.nA,p,0],[m.mB,m.nB,1-p,1]].forEach(([mk,pick,q,j])=>{const o=m.bo[j],ev=q*o-1;if(ev>0&&ev<=.12)best.push({mt,mk,pick,o,p:q,bk:m.bb[j],ev,st:e.start,h,a,pm:j?1-m.pA:m.pA,pf:j?1-fair:fair,nb:m.fr.length,evS:PF[m.fam]?(j?1-fair:fair)*o-1:null,mv})})});
+   [[m.mA,m.nA,p,0],[m.mB,m.nB,1-p,1]].forEach(([mk,pick,q,j])=>{const o=m.bo[j],ev=q*o-1;if(ev>0&&ev<=.12)best.push({inj:fl,mt,mk,pick,o,p:q,bk:m.bb[j],ev,st:e.start,h,a,pm:j?1-m.pA:m.pA,pf:j?1-fair:fair,nb:m.fr.length,evS:PF[m.fam]?(j?1-fair:fair)*o-1:null,mv})})});
   if(b1&&b2&&1/b1+1/b2<1)sure.push({mt,b1,k1,b2,k2,pf:(1/(1/b1+1/b2)-1)*100})});
  try{localStorage.setItem("elpl",JSON.stringify(Object.assign(PL,NPL)))}catch(e){}SCR=best.filter(x=>x.ev>=thr).sort((x,y)=>y.ev-x.ev);
  const dt=s=>s?new Date(s).toLocaleString("sr-Latn",{day:"2-digit",month:"2-digit",hour:"2-digit",minute:"2-digit"}):"";
- const top=SCR.slice(0,3).map(x=>`<div class="stat"><span>${esc(x.mt)}</span><div class="num ok">+${f(x.ev*100,1)}% EV</div><span>${esc(x.mk)}: ${esc(x.pick)} @ ${f(x.o,2)} (${esc(x.bk)})</span></div>`).join("");
- el.innerHTML=(top?`<div class="card"><h3 style="margin-top:0">Top 3 value tipa</h3><div class="grid w">${top}</div></div>`:"")+
+ const age=OD.fetched?(Date.now()/1000-OD.fetched)/3600:null,wl=[];
+ if(RS.past)wl.push(`${RS.past} meč(eva) iz kvota je već počelo ili je odigrano, pa se preskače.`);
+ if(RS.smp)wl.push(`${RS.smp} meč(eva) preskočeno: manje od ${MINTG} odigranih utakmica po timu.`);
+ if(RS.inj)wl.push(`${RS.inj} meč(eva) sakriveno jer je ključni igrač van ili neizvestan (${[...new Set(RS.injn)].slice(0,4).map(esc).join(", ")}), a to nije uračunato u model. Izaberi "Prikaži sa oznakom ⚠" iznad ili upiši korekciju povreda u tabu Analiza meča.`);
+ if(ONLY&&RS.nobk)wl.push(`Nema kvota "${esc(ONLY)}" u bazi za ${RS.nobk} meč(eva), pa ulog po toj kladionici ne može da se izračuna. Superbet nije u Odds API: njegove kvote moraju da dođu iz data/odds_superbet.json, ili ih proveri Ručnim EV kalkulatorom u tabu Igrač.`);
+ if(age!=null&&age>=12)wl.push(`Kvote su stare ${f(age,0)} h (osvežene ${esc(new Date(OD.fetched*1000).toLocaleString("sr-Latn"))}); Odds API krediti preostali: ${esc(String(OD.remaining))}. Bez novih kvota nema novih tipova.`);
+ if(RS.flag)wl.push(`${RS.flag} meč(eva) je prikazano sa ⚠: povrede ključnih igrača nisu uračunate u model.`);
+ const whyHtml=wl.length&&(!SCR.length||RS.past+RS.smp+RS.inj+RS.nobk>0)?`<div class="note warn"><b>${SCR.length?"Zašto neki mečevi nisu u listi":"Zašto nema tipova"}:</b><ul style="margin:6px 0 0 18px">${wl.map(x=>`<li>${x}</li>`).join("")}</ul></div>`:"";
+ const top=SCR.filter(x=>!x.inj).slice(0,3).map(x=>`<div class="stat"><span>${esc(x.mt)}</span><div class="num ok">+${f(x.ev*100,1)}% EV</div><span>${esc(x.mk)}: ${esc(x.pick)} @ ${f(x.o,2)} (${esc(x.bk)})</span></div>`).join("");
+ el.innerHTML=whyHtml+(top?`<div class="card"><h3 style="margin-top:0">Top 3 value tipa</h3><div class="grid w">${top}</div></div>`:"")+
  `<div class="card"><h3 style="margin-top:0">Svi tipovi sa EV ≥ ${f(thr*100,0)}% (${SCR.length})</h3>`+
  (SCR.length?`<div class="scroll"><table><tr><th>Početak</th><th>Utakmica</th><th>Tržište</th><th>Izbor</th><th class="r">Model</th><th class="r">Kvota</th><th>Kladionica</th><th class="r">EV</th><th class="r">EV vs Pinnacle</th><th class="r">Ulog</th><th></th></tr>`+
-  SCR.map((x,i)=>`<tr><td>${esc(dt(x.st))}</td><td>${esc(x.mt)}</td><td>${esc(x.mk)}</td><td>${esc(x.pick)}${x.mv?` <span class="no" title="Pinnacle je pomerio liniju">⚡ ${esc(x.mv)}</span>`:""}</td><td class="r">${f(x.p*100)}%</td><td class="r">${f(x.o,2)}</td><td>${esc(x.bk)}</td><td class="r ok">+${f(x.ev*100,1)}% ${evb(x.ev)}</td><td class="r ${x.evS>0?"ok":"mu"}">${x.evS==null?"-":(x.evS>0?"+":"")+f(x.evS*100,1)+"%"}</td><td class="r">${f(stake(x.p,x.o,B),2)}</td><td><button class="btn sm" data-vi="${i}" type="button">Zašto?</button> <button class="btn sm" data-sl="${i}" type="button">+ Listić</button> <button class="btn sm" data-sa="${i}" type="button">Bankroll</button></td></tr>`).join("")+`</table></div>`:`<p class="mu">Nema tipova iznad praga${used?"":" (nijedan meč iz kvota nije prepoznat u tvom modelu)"}.</p>`)+
+  SCR.map((x,i)=>`<tr><td>${esc(dt(x.st))}</td><td>${esc(x.mt)}</td><td>${esc(x.mk)}</td><td>${esc(x.pick)}${x.inj?' <span class="wr" title="Ključni igrač je van ili neizvestan, a nije uračunat u model">⚠ povrede</span>':""}${x.mv?` <span class="no" title="Pinnacle je pomerio liniju">⚡ ${esc(x.mv)}</span>`:""}</td><td class="r">${f(x.p*100)}%</td><td class="r">${f(x.o,2)}</td><td>${esc(x.bk)}</td><td class="r ok">+${f(x.ev*100,1)}% ${evb(x.ev)}</td><td class="r ${x.evS>0?"ok":"mu"}">${x.evS==null?"-":(x.evS>0?"+":"")+f(x.evS*100,1)+"%"}</td><td class="r">${f(stake(x.p,x.o,B),2)}</td><td><button class="btn sm" data-vi="${i}" type="button">Zašto?</button> <button class="btn sm" data-sl="${i}" type="button">+ Listić</button> <button class="btn sm" data-sa="${i}" type="button">Bankroll</button></td></tr>`).join("")+`</table></div>`:`<p class="mu">Nema tipova iznad praga${used?"":" (nijedan meč iz kvota nije prepoznat u tvom modelu)"}.</p>`)+
  `<div class="note warn">${MINB==1?"Imaš kvote samo jedne kladionice, pa je referenca njena kvota bez marže i model: tipova će biti malo, a EV je gruba procena, igraj manjim ulogom. ":""}${minN<5?`Rani deo sezone: najmanji uzorak je ${minN} utakmica po timu, pa je model manje pouzdan i EV treba čitati kao grubu procenu. `:""}Referenca je Pinnacle bez marže (ako ga ima, pa je težina modela 20%), inače konsenzus kladionica (težina modela 27%). Linije se uporeduju sa Pinnacleovom, a ⚡ znači da je Pinnacle pomerio liniju od prošlog osvežavanja. EV iznad 12% se odbacuje kao greška. Realan edge u klađenju je 2 do 6%. Ukupno analizirano mečeva: ${used}/${OD.events.length}. Sakriveno kao nepouzdano (uzorak manji od 5 utakmica ili neuračunate povrede): ${skipN}.</div></div>`;
  $("sb").innerHTML=`<div class="card"><h2>Surebet</h2>`+(sure.length?`<div class="scroll"><table><tr><th>Utakmica</th><th>Domaćin</th><th>Gost</th><th class="r">Profit</th></tr>`+sure.map(x=>`<tr><td>${esc(x.mt)}</td><td>${f(x.b1,2)} (${esc(x.k1)})</td><td>${f(x.b2,2)} (${esc(x.k2)})</td><td class="r ok">+${f(x.pf,2)}%</td></tr>`).join("")+`</table></div>`:`<p class="mu">Trenutno nema arbitraže.</p>`)+`</div>`}
-$("sth").onchange=screen;try{$("sbk").value=localStorage.getItem("elsbk")||""}catch(e){}$("sbk").onchange=()=>{try{localStorage.setItem("elsbk",$("sbk").value)}catch(e){}screen()};
+function screen(){try{screenInner()}catch(e){const el=$("scr");if(el)el.innerHTML='<div class="note warn"><b>Screener nije uspeo da se izračuna:</b> '+esc(e.message)+' <span class="mu">('+esc(((e.stack||"").split("\n")[1]||"").trim())+')</span>. Pošalji mi ovu poruku.</div>'}}
+$("sth").onchange=screen;$("sin").onchange=screen;try{$("sbk").value=localStorage.getItem("elsbk")||""}catch(e){}$("sbk").onchange=()=>{try{localStorage.setItem("elsbk",$("sbk").value)}catch(e){}screen()};
 $("scr").onclick=e=>{const b=e.target.closest("[data-sa]");if(!b)return;const x=SCR[+b.dataset.sa];if(!x)return;
  S.bets.push({d:new Date().toISOString().slice(0,10),m:x.mt,pick:x.mk+" | "+x.pick,odds:x.o,stake:Math.round(stake(x.p,x.o,bank())*100)/100,p:x.p,res:"C"});save();alert("Dodato u evidenciju (tab Bankroll).")};
 
@@ -2438,6 +2449,9 @@ $("lcf").onchange=async e=>{
  if(LOCALF.has("data/site.json")){$("lcl").hidden=true}else{$("lcn").textContent+=", ali nema data/site.json. Izaberi folder data (ili folder koji ga sadrži)."}
  await load(true);try{loadOdds()}catch(x){}};
 if(location.protocol=="file:")setTimeout(()=>{if(!D)fileHint()},4000);
+</script>
+<script>
+function keyOut(t){const o=[];try{Object.values(playerAgg(t)).forEach(p=>{if(p.gp>=2&&p.min/p.gp>=16){const q=injOf(t,p.name);if(q&&q.lv>=1.5)o.push(p.name+" ("+f(p.min/p.gp,0)+" min)")}})}catch(e){}return o}
 </script>
 </body></html>
 
