@@ -949,7 +949,15 @@ def annotate_scores(events, lg, root=".", cfg=None, log=print):
     L = League(lg, root)
     site = _load(os.path.join(L.dir, "site.json")) or {}
     G = []
-    for g in site.get("games") or []:
+    hist = _load(os.path.join(L.dir, "history_games.json")) or []        # arhiva iz sync_data.py (dopunjuje site.json)
+    if isinstance(hist, dict):
+        hist = hist.get("games") or []
+    seen_g = set()
+    for g in list(site.get("games") or []) + list(hist):
+        k = (str(g.get("utc") or g.get("dt") or "")[:10], g.get("h"), g.get("a"))
+        if k in seen_g:
+            continue
+        seen_g.add(k)
         try:
             hs, as_ = float(g.get("hs")), float(g.get("as"))
         except (TypeError, ValueError):

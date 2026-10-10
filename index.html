@@ -408,14 +408,21 @@ async function getJSON(name){
  for(const u of urls){try{const r=await fetch(u,{cache:"no-store"});if(r.ok){const j=await r.json();try{localStorage.setItem("c:"+name,JSON.stringify(j))}catch(e){}return j}last=new Error(u+" → "+r.status)}catch(e){last=e}}
  try{const c=localStorage.getItem("c:"+name);if(c)return JSON.parse(c)}catch(e){}
  throw last}
+// Liga bez site.json (npr. LNB/BBL dok se ne napravi): iz Superbet fajla pravimo minimalan raspored, da Analiza meča bar prikaže prave kvote
+async function synthSite(){
+ const M=await getJSON(lp("data/odds_superbet.json"));if(!M||!Array.isArray(M.events)||!M.events.length)throw new Error("nema ni Superbet fajla");
+ const clubs={},used=new Set(),code=n=>{const k=Object.keys(clubs).find(c=>clubs[c].name==n);if(k)return k;let c=String(n).normalize("NFD").replace(/[^A-Za-z]/g,"").slice(0,3).toUpperCase()||"UNK",i=2;while(used.has(c))c=c.slice(0,2)+(i++);used.add(c);clubs[c]={name:n,short:n};return c};
+ const fixtures=M.events.map((e,i)=>({n:i+1,round:1,h:code(e.h),a:code(e.a),utc:e.start||null}));
+ return{season:"2026/27",updated:new Date(M.fetched?M.fetched*1e3:Date.now()).toISOString(),cols:[],clubs,rosters:{},games:[],fixtures,synth:true}}
 async function load(first){
  try{
-  const d=await getJSON(lp("data/site.json"));
+  let d;try{d=await getJSON(lp("data/site.json"))}catch(e0){if(LG=="euroleague")throw e0;d=await synthSite()}
   let inj=INJ;try{inj=await getJSON(lp("data/injuries.json"))}catch(e){}
   try{AN=await getJSON(lp("data/analytics.json"))}catch(e){}
   $("err").hidden=true;INJ=inj;
   const changed=!D||d.updated!==D.updated;
   D=d;XLD[LG]=d;XV++;if(first||changed)init(first);
+  if(D.synth){$("err").hidden=false;$("err").textContent="Za "+LEAGUES[LG][0]+" nema odigranih utakmica ni box score-a u repou (nema data/"+LG+"/site.json), pa model ne može da proceni snagu timova. Prikazujem prave Superbet kvote i raspored; preporuke dolaze tek kad sync_data.py napravi site.json sa rezultatima."}
   $("stamp").innerHTML=`<span class="live"></span>${D.games.length} utakmica, podaci iz ${esc(new Date(D.updated).toLocaleString("sr-Latn",{day:"2-digit",month:"2-digit",hour:"2-digit",minute:"2-digit"}))}.`;
  }catch(e){
   $("stamp").innerHTML=`<span class="live off"></span>nema podataka.`;fileHint();
@@ -1257,8 +1264,8 @@ function verdict(h,a,m){
  ${fr("Sudije",'biraš ih niže u sekciji "Uticaj sudija", ne menjaju proračun',0)}
  </table></div>`;
  const sus=rows.filter(r=>r.evm>.2),mxr=rows.slice().sort((x,y)=>y.evc-x.evc)[0];
- const plain=`<div class="plain"><b>Šta da uzmeš, prostim jezikom</b><br>${top?`<b class="g">UZMI:</b> ${esc(top.mk)} ${esc(top.sel)} na kvoti ${f(top.odds,2)}. Kladionica računa da je šansa ${pc(1/top.odds)}, a naš model i tržište zajedno kažu oko ${pc(top.pb)}. Zato je kvota veća od fer (${f(top.fair,2)}). Na 100 din očekivana dobit je oko ${f(top.evc*100,0)} din, ali to je prosek kroz mnogo opklada, ne garancija za ovaj meč.`:`<b class="r">NE UZIMAJ NIŠTA na ovom meču</b> sa ovim kvotama. Ni jedan izbor nema dovoljno pouzdanu prednost.`}${top&&top.early?`<br><span class="mu">⚠ Blago upozorenje: rani deo sezone (${Math.min(R[h].n,R[a].n)} utakmica po timu, manje od 8), pa je procena manje stabilna. Preporuka ostaje jer je EV pozitivan i posle korekcije ka tržištu, ali ulog drži manjim.</span>`:""}${sus.length?`<br><b class="r">Pazi:</b> ${sus.map(r=>esc(r.mk)+" "+esc(r.sel)).join(", ")} pokazuje EV preko 20% (model ${sus.map(r=>pc(r.p)).join(", ")}). Tržište nikad ne greši toliko. Skoro uvek je to povreda ili rotacija koju model ne vidi, ili kvota upisana za drugu liniju. Zato je ne igraj, a korigovani EV gore je realniji.`:""}<br><span class="mu">Kako čitati kvotu: kvota 1.90 znači da kladionica daje 52.6% šanse. Igraš samo ako je tvoja stvarna šansa veća od toga. "Edge" je razlika između tvoje šanse i njene, a izbor sa najvišim korigovanim EV nije uvek najsigurniji.</span></div>`;
- el.innerHTML=`${head}${plain}<h3>Svi izbori</h3>${tbl}
+ const plain=`<div class="plain"><b>Šta da uzmeš, prostim jezikom</b><br>${top?`<b class="g">UZMI:</b> ${esc(top.mk)} ${esc(top.sel)} na kvoti ${f(top.odds,2)}. Kladionica računa da je šansa ${pc(1/top.odds)}, a naš model i tržište zajedno kažu oko ${pc(top.pb)}. Zato je kvota veća od fer (${f(top.fair,2)}). Na 100 din očekivana dobit je oko ${f(top.evc*100,0)} din, ali to je prosek kroz mnogo opklada, ne garancija za ovaj meč.${oe&&oe.q&&typeof ovTipsOf=="function"&&!ovTipsOf(oe).some(t=>t.kind!="prop")?`<br><b class="r">⚠ Dva modela se ne slažu:</b> napredni model (box score i igrači, kartica ispod) ne vidi prednost ni na jednom timskom izboru, pa ovu preporuku tretiraj kao slabu i igraj samo mali ulog ili preskoči.`:oe&&oe.q?`<br><span class="mu">Napredni model (kartica ispod) takođe ima preporuke za ovaj meč.</span>`:""}`:`<b class="r">NE UZIMAJ NIŠTA na ovom meču</b> sa ovim kvotama. Ni jedan izbor nema dovoljno pouzdanu prednost.`}${top&&top.early?`<br><span class="mu">⚠ Blago upozorenje: rani deo sezone (${Math.min(R[h].n,R[a].n)} utakmica po timu, manje od 8), pa je procena manje stabilna. Preporuka ostaje jer je EV pozitivan i posle korekcije ka tržištu, ali ulog drži manjim.</span>`:""}${sus.length?`<br><b class="r">Pazi:</b> ${sus.map(r=>esc(r.mk)+" "+esc(r.sel)).join(", ")} pokazuje EV preko 20% (model ${sus.map(r=>pc(r.p)).join(", ")}). Tržište nikad ne greši toliko. Skoro uvek je to povreda ili rotacija koju model ne vidi, ili kvota upisana za drugu liniju. Zato je ne igraj, a korigovani EV gore je realniji.`:""}<br><span class="mu">Kako čitati kvotu: kvota 1.90 znači da kladionica daje 52.6% šanse. Igraš samo ako je tvoja stvarna šansa veća od toga. "Edge" je razlika između tvoje šanse i njene, a izbor sa najvišim korigovanim EV nije uvek najsigurniji.</span></div>`;
+ el.innerHTML=`${head}${plain}${oe&&(oe.q||(oe.tips&&oe.tips.length))&&typeof ovAnalysis=="function"?`<div class="card" style="margin:10px 0"><h3 style="margin:0">Model sa box score-ova i statistike igrača</h3><p class="mu" style="margin:4px 0">Isti proračun kao u tabu Pregled: Python model (quant_model.py) iz rezultata, box score-a i igračkih statistika, mešan sa Superbetom.</p>${ovAnalysis(oe)}</div>`:""}<h3>Svi izbori</h3>${tbl}
  <div class="note"><b>Kako čitati:</b> <b>Model</b> je šansa iz 10.000 simuliranih mečeva. <b>Tržište</b> je šansa koju kladionica podrazumeva kad se izbaci marža. <b>Fer kvota</b> je 1 ÷ šansa; kvota ispod nje je gubitak, iznad je vrednost. <b>EV korigovan</b> meša model (30%) i tržište (70%) i zato je strožiji. "IGRAJ" dobija samo izbor sa EV od bar 3%, pozitivnim korigovanim EV, realnom kvotom i najviše jednom palom proverom. Nijedna analiza ne garantuje dobitak, ulog je samo deo bankrola. Edge: JAK od 8%, BLAG 3-8%, MINIMALAN do 3%. Nerealna kvota znači da se model i kladionica razilaze preko 25 p.p., pa je kvota verovatno upisana za drugu liniju ili model ne zna za povredu. Ukupni poeni se usklađuju 70% ka tržišnoj liniji.</div>
  <h3>Zašto +20 izgleda "najsigurnije"</h3>
  <div class="note">Što je hendikep veći, to je šansa da prođe veća, ali i kvota pada skoro srazmerno. Fer linija ovog meča je oko <b>${esc(nh)} ${sgn(+f(fairL))}</b> (kod nje je šansa 50%). Kad pomeriš liniju, a kvotu ostaviš 1.90, program poredi 95% šanse sa kvotom koja bi trebalo da bude oko 1.05 i izbaci lažni ogroman EV. Prava kladionica bi za tu liniju dala ~1.05. Sigurnost i vrednost nisu isto: "sigurno" je kad je šansa visoka, a "vredno" je kad je kvota viša od fer kvote.</div>
@@ -2274,7 +2281,7 @@ async function sbLoad(){
  if(!M||!Array.isArray(M.events)){OD=null;return}
  M.events.forEach(m=>(m.player_props||[]).forEach(p=>SBP.push({...p,h:m.h,a:m.a,start:m.start})));
  OD={fetched:M.fetched||0,remaining:"",source:"superbet",events:M.events.map(m=>{const bb=m.b||[],b0=bb[0]||{};
-  return{id:"sb|"+(m.eid||m.h+"|"+m.a),h:m.h,a:m.a,start:m.start,comp:m.comp,
+  return{id:"sb|"+(m.eid||m.h+"|"+m.a),h:m.h,a:m.a,start:m.start,comp:m.comp,lg:m.lg||LG,q:m.q,tips:m.tips,an:m.an,player_props:m.player_props,
    b:[{key:"superbet",title:"Superbet",h2h:b0.h2h||null,sp:b0.sp||null,tt:b0.tt||null}],
    alt:bb.slice(1).map(x=>({key:"superbet",title:"Superbet (alt. linija)",alt:true,h2h:null,sp:x.sp||null,tt:x.tt||null}))}})}}
 window.loadOdds=async function(){await sbLoad();if(D)try{calc()}catch(e){}};
