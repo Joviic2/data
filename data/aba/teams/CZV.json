@@ -5,13 +5,13 @@
  "club_id": "18",
  "crest": "https://www.aba-liga.com/images/club/100x100/18.png",
  "record": {
-  "gp": 1,
-  "w": 0,
+  "gp": 2,
+  "w": 1,
   "l": 1,
-  "pf": 89,
-  "pa": 90,
-  "pf_avg": 89.0,
-  "pa_avg": 90.0
+  "pf": 190,
+  "pa": 181,
+  "pf_avg": 95.0,
+  "pa_avg": 90.5
  },
  "games": [
   {
@@ -23,6 +23,16 @@
    "pf": 89,
    "pa": 90,
    "result": "L"
+  },
+  {
+   "n": 21,
+   "round": 3,
+   "dt": "2026-10-10T19:00:00Z",
+   "home": true,
+   "opp": "BUD",
+   "pf": 101,
+   "pa": 91,
+   "result": "W"
   }
  ],
  "roster": [
@@ -32,11 +42,11 @@
    "no": "1",
    "pos": "",
    "photo": "https://www.aba-liga.com/stats/img/foto/5618.png",
-   "gp": 1,
-   "min_avg": 25.2,
-   "pts_avg": 19.0,
-   "reb_avg": 2.0,
-   "ast_avg": 7.0
+   "gp": 2,
+   "min_avg": 25.5,
+   "pts_avg": 16.0,
+   "reb_avg": 1.5,
+   "ast_avg": 8.0
   },
   {
    "id": "5076",
@@ -56,10 +66,34 @@
    "no": "11",
    "pos": "",
    "photo": "https://www.aba-liga.com/stats/img/foto/5183.png",
-   "gp": 1,
-   "min_avg": 22.4,
-   "pts_avg": 7.0,
+   "gp": 2,
+   "min_avg": 21.9,
+   "pts_avg": 10.5,
    "reb_avg": 1.0,
+   "ast_avg": 3.0
+  },
+  {
+   "id": "5077",
+   "name": "Ojeleye S.",
+   "no": "37",
+   "pos": "",
+   "photo": "https://www.aba-liga.com/stats/img/foto/5077.png",
+   "gp": 1,
+   "min_avg": 21.4,
+   "pts_avg": 9.0,
+   "reb_avg": 1.0,
+   "ast_avg": 2.0
+  },
+  {
+   "id": "5074",
+   "name": "Nwora J.",
+   "no": "33",
+   "pos": "",
+   "photo": "https://www.aba-liga.com/stats/img/foto/5074.png",
+   "gp": 2,
+   "min_avg": 20.8,
+   "pts_avg": 17.5,
+   "reb_avg": 3.5,
    "ast_avg": 2.0
   },
   {
@@ -68,10 +102,10 @@
    "no": "44",
    "pos": "",
    "photo": "https://www.aba-liga.com/stats/img/foto/5536.png",
-   "gp": 1,
-   "min_avg": 19.5,
-   "pts_avg": 7.0,
-   "reb_avg": 6.0,
+   "gp": 2,
+   "min_avg": 19.1,
+   "pts_avg": 11.5,
+   "reb_avg": 4.5,
    "ast_avg": 1.0
   },
   {
@@ -92,23 +126,11 @@
    "no": "7",
    "pos": "",
    "photo": "https://www.aba-liga.com/stats/img/foto/2535.png",
-   "gp": 1,
-   "min_avg": 18.0,
-   "pts_avg": 2.0,
-   "reb_avg": 6.0,
-   "ast_avg": 0.0
-  },
-  {
-   "id": "3755",
-   "name": "Izundu E.",
-   "no": "15",
-   "pos": "",
-   "photo": "https://www.aba-liga.com/stats/img/foto/3755.png",
-   "gp": 1,
-   "min_avg": 17.6,
-   "pts_avg": 9.0,
-   "reb_avg": 3.0,
-   "ast_avg": 0.0
+   "gp": 2,
+   "min_avg": 17.9,
+   "pts_avg": 2.5,
+   "reb_avg": 5.0,
+   "ast_avg": 1.0
   },
   {
    "id": "5291",
@@ -123,28 +145,16 @@
    "ast_avg": 3.0
   },
   {
-   "id": "5074",
-   "name": "Nwora J.",
-   "no": "33",
+   "id": "5677",
+   "name": "Weiler Babb N.",
+   "no": "3",
    "pos": "",
-   "photo": "https://www.aba-liga.com/stats/img/foto/5074.png",
+   "photo": "https://www.aba-liga.com/stats/img/foto/5677.png",
    "gp": 1,
-   "min_avg": 15.9,
-   "pts_avg": 11.0,
-   "reb_avg": 2.0,
-   "ast_avg": 1.0
-  },
-  {
-   "id": "4412",
-   "name": "Miljenović S.",
-   "no": "2",
-   "pos": "",
-   "photo": "https://www.aba-liga.com/stats/img/foto/4412.png",
-   "gp": 1,
-   "min_avg": 11.4,
-   "pts_avg": 2.0,
-   "reb_avg": 0.0,
-   "ast_avg": 0.0
+   "min_avg": 14.1,
+   "pts_avg": 3.0,
+   "reb_avg": 1.0,
+   "ast_avg": 4.0
   },
   {
    "id": "3548",
@@ -152,11 +162,47 @@
    "no": "23",
    "pos": "",
    "photo": "https://www.aba-liga.com/stats/img/foto/3548.png",
-   "gp": 1,
-   "min_avg": 8.9,
-   "pts_avg": 6.0,
+   "gp": 2,
+   "min_avg": 13.5,
+   "pts_avg": 5.0,
    "reb_avg": 1.0,
+   "ast_avg": 1.5
+  },
+  {
+   "id": "3755",
+   "name": "Izundu E.",
+   "no": "15",
+   "pos": "",
+   "photo": "https://www.aba-liga.com/stats/img/foto/3755.png",
+   "gp": 2,
+   "min_avg": 12.3,
+   "pts_avg": 7.5,
+   "reb_avg": 3.0,
+   "ast_avg": 0.5
+  },
+  {
+   "id": "2540",
+   "name": "Dobrić O.",
+   "no": "13",
+   "pos": "",
+   "photo": "https://www.aba-liga.com/stats/img/foto/2540.png",
+   "gp": 1,
+   "min_avg": 11.2,
+   "pts_avg": 7.0,
+   "reb_avg": 0.0,
    "ast_avg": 0.0
+  },
+  {
+   "id": "4412",
+   "name": "Miljenović S.",
+   "no": "2",
+   "pos": "",
+   "photo": "https://www.aba-liga.com/stats/img/foto/4412.png",
+   "gp": 2,
+   "min_avg": 9.7,
+   "pts_avg": 2.0,
+   "reb_avg": 1.0,
+   "ast_avg": 0.5
   },
   {
    "id": "5687",
@@ -164,10 +210,10 @@
    "no": "24",
    "pos": "",
    "photo": "https://www.aba-liga.com/stats/img/foto/5687.png",
-   "gp": 1,
-   "min_avg": 2.5,
+   "gp": 2,
+   "min_avg": 6.5,
    "pts_avg": 0.0,
-   "reb_avg": 1.0,
+   "reb_avg": 3.0,
    "ast_avg": 0.0
   }
  ]

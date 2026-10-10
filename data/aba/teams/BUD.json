@@ -5,13 +5,13 @@
  "club_id": "12",
  "crest": "https://www.aba-liga.com/images/club/100x100/12.png",
  "record": {
-  "gp": 1,
+  "gp": 2,
   "w": 1,
-  "l": 0,
-  "pf": 77,
-  "pa": 72,
-  "pf_avg": 77.0,
-  "pa_avg": 72.0
+  "l": 1,
+  "pf": 168,
+  "pa": 173,
+  "pf_avg": 84.0,
+  "pa_avg": 86.5
  },
  "games": [
   {
@@ -23,6 +23,16 @@
    "pf": 77,
    "pa": 72,
    "result": "W"
+  },
+  {
+   "n": 21,
+   "round": 3,
+   "dt": "2026-10-10T19:00:00Z",
+   "home": false,
+   "opp": "CZV",
+   "pf": 91,
+   "pa": 101,
+   "result": "L"
   }
  ],
  "roster": [
@@ -32,23 +42,11 @@
    "no": "11",
    "pos": "",
    "photo": "https://www.aba-liga.com/stats/img/foto/4104.png",
-   "gp": 1,
-   "min_avg": 27.6,
-   "pts_avg": 17.0,
-   "reb_avg": 0.0,
-   "ast_avg": 5.0
-  },
-  {
-   "id": "5139",
-   "name": "Molinar Jones I.",
-   "no": "10",
-   "pos": "",
-   "photo": "https://www.aba-liga.com/stats/img/foto/5139.png",
-   "gp": 1,
-   "min_avg": 26.2,
-   "pts_avg": 10.0,
-   "reb_avg": 3.0,
-   "ast_avg": 2.0
+   "gp": 2,
+   "min_avg": 28.4,
+   "pts_avg": 13.0,
+   "reb_avg": 0.5,
+   "ast_avg": 5.5
   },
   {
    "id": "5073",
@@ -56,22 +54,10 @@
    "no": "83",
    "pos": "",
    "photo": "https://www.aba-liga.com/stats/img/foto/5073.png",
-   "gp": 1,
-   "min_avg": 26.1,
+   "gp": 2,
+   "min_avg": 22.4,
    "pts_avg": 8.0,
-   "reb_avg": 7.0,
-   "ast_avg": 0.0
-  },
-  {
-   "id": "5053",
-   "name": "Boutsiele J.",
-   "no": "16",
-   "pos": "",
-   "photo": "https://www.aba-liga.com/stats/img/foto/5053.png",
-   "gp": 1,
-   "min_avg": 25.6,
-   "pts_avg": 12.0,
-   "reb_avg": 4.0,
+   "reb_avg": 5.5,
    "ast_avg": 0.0
   },
   {
@@ -92,11 +78,23 @@
    "no": "0",
    "pos": "",
    "photo": "https://www.aba-liga.com/stats/img/foto/5647.png",
-   "gp": 1,
-   "min_avg": 15.2,
-   "pts_avg": 4.0,
-   "reb_avg": 1.0,
-   "ast_avg": 0.0
+   "gp": 2,
+   "min_avg": 21.9,
+   "pts_avg": 11.0,
+   "reb_avg": 5.5,
+   "ast_avg": 0.5
+  },
+  {
+   "id": "5139",
+   "name": "Molinar Jones I.",
+   "no": "10",
+   "pos": "",
+   "photo": "https://www.aba-liga.com/stats/img/foto/5139.png",
+   "gp": 2,
+   "min_avg": 21.5,
+   "pts_avg": 10.5,
+   "reb_avg": 2.0,
+   "ast_avg": 3.5
   },
   {
    "id": "3750",
@@ -104,11 +102,47 @@
    "no": "13",
    "pos": "",
    "photo": "https://www.aba-liga.com/stats/img/foto/3750.png",
-   "gp": 1,
-   "min_avg": 14.2,
-   "pts_avg": 7.0,
-   "reb_avg": 0.0,
+   "gp": 2,
+   "min_avg": 20.1,
+   "pts_avg": 9.0,
+   "reb_avg": 1.0,
    "ast_avg": 1.0
+  },
+  {
+   "id": "3737",
+   "name": "Magee F.",
+   "no": "3",
+   "pos": "",
+   "photo": "https://www.aba-liga.com/stats/img/foto/3737.png",
+   "gp": 1,
+   "min_avg": 16.8,
+   "pts_avg": 9.0,
+   "reb_avg": 2.0,
+   "ast_avg": 0.0
+  },
+  {
+   "id": "5053",
+   "name": "Boutsiele J.",
+   "no": "16",
+   "pos": "",
+   "photo": "https://www.aba-liga.com/stats/img/foto/5053.png",
+   "gp": 2,
+   "min_avg": 16.0,
+   "pts_avg": 6.0,
+   "reb_avg": 3.0,
+   "ast_avg": 0.0
+  },
+  {
+   "id": "2668",
+   "name": "Đorđević S.",
+   "no": "45",
+   "pos": "",
+   "photo": "https://www.aba-liga.com/stats/img/foto/2668.png",
+   "gp": 2,
+   "min_avg": 15.2,
+   "pts_avg": 11.0,
+   "reb_avg": 7.5,
+   "ast_avg": 0.5
   },
   {
    "id": "5537",
@@ -116,11 +150,11 @@
    "no": "1",
    "pos": "",
    "photo": "https://www.aba-liga.com/stats/img/foto/5537.png",
-   "gp": 1,
-   "min_avg": 13.8,
-   "pts_avg": 0.0,
-   "reb_avg": 2.0,
-   "ast_avg": 0.0
+   "gp": 2,
+   "min_avg": 13.1,
+   "pts_avg": 3.0,
+   "reb_avg": 1.5,
+   "ast_avg": 0.5
   },
   {
    "id": "5072",
@@ -135,25 +169,25 @@
    "ast_avg": 3.0
   },
   {
-   "id": "2668",
-   "name": "Đorđević S.",
-   "no": "45",
-   "pos": "",
-   "photo": "https://www.aba-liga.com/stats/img/foto/2668.png",
-   "gp": 1,
-   "min_avg": 11.7,
-   "pts_avg": 6.0,
-   "reb_avg": 6.0,
-   "ast_avg": 1.0
-  },
-  {
    "id": "2560",
    "name": "Hadžibegović E.",
    "no": "8",
    "pos": "",
    "photo": "https://www.aba-liga.com/stats/img/foto/2560.png",
+   "gp": 2,
+   "min_avg": 11.7,
+   "pts_avg": 1.5,
+   "reb_avg": 3.0,
+   "ast_avg": 1.5
+  },
+  {
+   "id": "2482",
+   "name": "Slavković A.",
+   "no": "7",
+   "pos": "",
+   "photo": "https://www.aba-liga.com/stats/img/foto/2482.png",
    "gp": 1,
-   "min_avg": 5.5,
+   "min_avg": 8.6,
    "pts_avg": 0.0,
    "reb_avg": 0.0,
    "ast_avg": 0.0
