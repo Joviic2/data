@@ -227,6 +227,8 @@ input::placeholder{color:var(--mu);opacity:1}
 <div class="mts" id="lgs" style="margin:8px 0"></div>
 <p class="sub"><b id="lgn">Euroleague</b> · sezona 2026/27. Podaci se čitaju uživo iz tvog GitHub repoa. <span id="stamp"></span> <button class="btn sm" id="refresh" type="button">Osveži</button></p>
 <div class="note warn" id="err" hidden></div>
+<div class="note warn" id="lcl" hidden><b>Stranica je otvorena kao fajl (file://), pa browser blokira čitanje data foldera.</b><br>Najlakše: dvaput klikni <code>pokreni.bat</code> (pokreće lokalni server i otvara sajt), ili jednom izaberi svoj <code>data</code> folder ovde:
+ <input type="file" id="lcf" webkitdirectory multiple style="margin-top:8px"> <span id="lcn"></span></div>
 <input id="gs" type="search" placeholder="Brza pretraga: igrač ili tim (npr. Pan)" autocomplete="off" aria-label="Brza pretraga"><div class="card" id="gsr" hidden style="padding:6px;margin-top:6px"></div>
 <div class="mts" id="qf" style="margin:8px 0"><button type="button" data-qf="today" aria-selected="false">Danas</button><button type="button" data-qf="value" aria-selected="false">Top Value Bets</button><button type="button" data-qf="over" aria-selected="false">Props Over</button></div><div class="card" id="qfp" hidden></div>
 <nav role="tablist" id="tabs"></nav>
@@ -393,7 +395,9 @@ let LG="euroleague";try{LG=new URLSearchParams(location.search).get("lg")||local
 if(!LEAGUES[LG])LG="euroleague";
 const lp=(n,l=LG)=>l=="euroleague"?n:n.replace(/^data\//,"data/"+l+"/");
 const XLD={};let XV=0;
+const LOCALF=new Map();
 async function getJSON(name){
+ const lf=LOCALF.get(String(name).split("?")[0]);if(lf){try{return JSON.parse(await lf.text())}catch(e){}}
  const urls=[name+"?t="+Date.now(),RAW_BASE+name+"?t="+Date.now()];
  let last;
  for(const u of urls){try{const r=await fetch(u,{cache:"no-store"});if(r.ok){const j=await r.json();try{localStorage.setItem("c:"+name,JSON.stringify(j))}catch(e){}return j}last=new Error(u+" → "+r.status)}catch(e){last=e}}
@@ -409,7 +413,7 @@ async function load(first){
   D=d;XLD[LG]=d;XV++;if(first||changed)init(first);
   $("stamp").innerHTML=`<span class="live"></span>${D.games.length} utakmica, podaci iz ${esc(new Date(D.updated).toLocaleString("sr-Latn",{day:"2-digit",month:"2-digit",hour:"2-digit",minute:"2-digit"}))}.`;
  }catch(e){
-  $("stamp").innerHTML=`<span class="live off"></span>nema podataka.`;
+  $("stamp").innerHTML=`<span class="live off"></span>nema podataka.`;fileHint();
   $("err").hidden=false;$("err").textContent="Ne mogu da učitam "+lp("data/site.json")+" ("+e.message+"). "+(LG=="euroleague"?"Proveri da je GitHub Action prošao i da je build_site.py napravio fajl.":"Za ovu ligu još nema podataka: napravi ga sa import_results.py "+LG+".");
  }}
 $("refresh").onclick=async()=>{const b=$("refresh"),x=b.textContent;b.disabled=true;b.textContent="Osvežavam…";try{await load(false)}finally{b.disabled=false;b.textContent=x}};
@@ -1390,7 +1394,7 @@ function screen(){
  const el=$("scr");if(!el)return;
  if(!D){return}
  if(!OD||!OD.events||!OD.events.length){el.innerHTML='<div class="note">Nema kvota (data/odds.json). Proveri da je GitHub Action prošao i da je ODDS_API_KEY postavljen.</div>';return}
- R=ratings();const ONLY=$("sbk").value,nk=new Set(OD.events.flatMap(e=>e.b.map(b=>b.key))),MINB=nk.size>=3?3:1,thr=+$("sth").value/100,B=bank(),best=[],sure=[],NPL={},skipN=0,minN=99;let PL={};try{PL=JSON.parse(localStorage.getItem("elpl")||"{}")}catch(e){}let used=0;
+ R=ratings();const ONLY=$("sbk").value,nk=new Set(OD.events.flatMap(e=>e.b.map(b=>b.key))),MINB=nk.size>=3?3:1,thr=+$("sth").value/100,B=bank(),best=[],sure=[],NPL={};let skipN=0,minN=99,PL={};try{PL=JSON.parse(localStorage.getItem("elpl")||"{}")}catch(e){}let used=0;
  OD.events.forEach(e=>{
   const h=codeOf(e.h),a=codeOf(e.a);if(!h||!a||h==a||!R[h]||!R[a])return;
   let r;try{r=modelFor(h,a,e.start?new Date(e.start):new Date())}catch(x){return}
@@ -2423,6 +2427,17 @@ function recRender(t,id,G){
  <div class="rcs">${tv}${ts}</div>
  <h3>Zašto</h3><ul class="rwy">${c.why.map(w=>`<li class="${w[0]===true?"t":w[0]===false?"f":"w"}">${esc(w[1])}</li>`).join("")}</ul>
  <div class="scroll"><table><tr><th>Tržište</th><th class=r>Projekcija</th><th class=r>Proc. linija</th><th class=r>Strana</th><th class=r>Vredi dok je linija</th><th class=r>Sigurna linija</th><th class=r>Sezona (proc. linija)</th></tr>${tb}</table></div>`}
+</script>
+<script>
+// Lokalno (file://): browser blokira fetch() za data/*.json. Izbor foldera zaobilazi blokadu.
+function fileHint(){if(location.protocol=="file:")$("lcl").hidden=false}
+$("lcf").onchange=async e=>{
+ LOCALF.clear();
+ for(const f of e.target.files){if(!/\.json$/i.test(f.name))continue;const p=f.webkitRelativePath||f.name,m=p.match(/(?:^|\/)(data\/.*)$/);LOCALF.set(m?m[1]:"data/"+p.split("/").slice(1).join("/"),f)}
+ $("lcn").textContent=LOCALF.size+" fajlova";
+ if(LOCALF.has("data/site.json")){$("lcl").hidden=true}else{$("lcn").textContent+=", ali nema data/site.json. Izaberi folder data (ili folder koji ga sadrži)."}
+ await load(true);try{loadOdds()}catch(x){}};
+if(location.protocol=="file:")setTimeout(()=>{if(!D)fileHint()},4000);
 </script>
 </body></html>
 
