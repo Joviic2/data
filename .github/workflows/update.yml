@@ -12,7 +12,6 @@ on:
       - "sync_data.py"
       - "index.html"
       - "fetch_lnb.py"
-      - "fetch_bbl.py"
       - "fetch_superbet.py"
       - "quant_model.py"
       - "backtest.py"
@@ -65,6 +64,12 @@ jobs:
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
       - name: Ucenje tezina (Ridge + CV)
         run: python learn_weights.py
+        continue-on-error: true
+      - run: python fetch_aba.py
+      - name: Scrape ACB calendar and boxscores
+        run: python fetch_acb.py
+      - name: Fetch Superbet odds, quant picks and history
+        run: python fetch_superbet.py --analytics aba,acb,lnb,bbl
         continue-on-error: true
       - name: Commit data
         run: |
