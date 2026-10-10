@@ -50,9 +50,12 @@ def kw_hit(text, kw):
     if isinstance(kw, tuple):
         return all(kw_hit(text, k) for k in kw)
     return bool(re.search(r"(?<![a-z0-9])" + re.escape(kw) + r"(?![a-z0-9])", text)) if len(kw) <= 3 and kw.isalpha() else kw in text
-PROP_STATS = (("pts", ("poen", "point", "pts")), ("reb", ("skok", "rebound", "reb")), ("ast", ("asist", "assist", "ast")))
-PROP_HINT = ("igrač", "igrac", "player")
-PROP_NAME_KEYS = ("player", "player_name", "playername", "competitor", "participant", "name")
+# regex po CELIM recima: ranije je "ast"/"reb" kao podniz pogadjao imena igraca (npr. Rebic, Castro) i trziste se odbacivalo
+PROP_STATS = (("pts", r"\b(poen\w*|points?|pts)\b"), ("reb", r"\b(skok\w*|rebounds?|rebs?)\b"), ("ast", r"\b(asist\w*|assists?|asts?)\b"))
+PROP_HINT = ("igrac", "player")
+PROP_NAME_KEYS = ("player", "player_name", "playername", "competitor", "participant", "athlete", "name")
+PROP_STRIP = re.compile(r"(?i)\b(ukupno|ukupan|broj|vise|više|manje|over|under|preko|ispod|iznad|igrac|igrač|igraca|igrača|player|poena|poeni|poen|points?|pts|"
+                        r"skokova|skokovi|skok|rebounds?|rebs?|asistencija|asistencije|asist|assists?|asts?|na meču|na mecu|meču|mecu|utakmici|utakmica|za|na|u|i)\b")
 SKIP = ("poluvreme", "half", "četvrt", "cetvrt", "quarter", "tim ", "tima", "igrač", "igrac", "1. pol", "2. pol")
 
 
@@ -108,59 +111,79 @@ def line_of(odd, mname):
         v = num(md.get(k))
         if v is not None:
             return v
-    nums = re.findall(r"[-+]?\d+(?:[.,]\d+)?", str(md.get("info", "")) + " " + mname)
-    return num(nums[-1]) if nums else None
+    for src in (str(md.get("info", "")), str(md.get("name", "")), str(odd.get("name", "")), mname):   # linija zna da bude u imenu ishoda ("Više 24.5")
+        nums = re.findall(r"(?<![\w.])[-+]?\d+(?:[.,]\d+)?(?![\w])", src)
+        if nums:
+            return num(nums[-1])
+    return None
 
 
 def prop_stat(mname):
     """'pts'/'reb'/'ast' ako je trziste igraca za TACNO jednu statistiku, inace None (kombinacije i timska trzista se preskacu)."""
-    m = mname.lower()
-    if any(x in m for x in ("poluvreme", "half", "četvrt", "cetvrt", "quarter", "1. pol", "2. pol", "prvi ", "drugi ")):
+    m = norm(mname)
+    if any(x in m for x in ("poluvreme", "half", "cetvrt", "quarter", "1. pol", "2. pol", "prvi ", "drugi ")):
         return None
-    hit = [k for k, ws in PROP_STATS if any(w in m for w in ws)]
-    if len(hit) != 1 or re.search(r"\+|\bi\b|\band\b|dabl|double|triple", m):
+    hit = [k for k, rx in PROP_STATS if re.search(rx, m)]
+    if len(hit) != 1 or re.search(r"\+|\band\b|dabl|double|triple", m):      # kombinovana trzista (poeni + skokovi...) se preskacu
         return None
-    if re.search(r"\btim\b|\btima\b|\bteam\b|ukupno poena na|ukupno poena u", m) and not any(h in m for h in PROP_HINT):
+    if re.search(r"\btim\b|\btima\b|\bteam\b|ukupno poena (na|u)\b", m) and not any(h in m for h in PROP_HINT):
         return None
     return hit[0]
+
+
+def clean_name(s):
+    n = PROP_STRIP.sub(" ", str(s or ""))
+    n = re.sub(r"[·•:|\-–—()/\d.,+_]+", " ", n)
+    n = " ".join(n.split())
+    return n if len(n) > 3 and re.search(r"[^\W\d_]{2}", n) else None
 
 
 def prop_player(mk, o, mname):
     """Ime igraca: specifier/metadata kosa -> ime trzista bez reci o statistici -> info."""
     md = o.get("metadata") or {}
     sp_ = md.get("specifiers") or {}
-    for src in (sp_, mk.get("metadata") or {}, mk):
-        for k in PROP_NAME_KEYS[:5]:
+    for src in (sp_, md, mk.get("metadata") or {}, mk):
+        for k in PROP_NAME_KEYS[:6]:                       # "name" iz odds/metadata se ne uzima direktno (to je "Više"/"Manje"), samo ostali kljucevi
             v = src.get(k) if isinstance(src, dict) else None
-            if isinstance(v, str) and len(v) > 3:
+            if isinstance(v, str) and len(v) > 3 and ":" not in v and re.search(r"[^\W\d_]{2}", v) and v.strip().lower() not in ("over", "under", "više", "vise", "manje"):
                 return v.strip()
-    n = re.sub(r"(?i)\b(ukupno|ukupan|broj|više|vise|manje|over|under|igrač|igrac|player|poena|poeni|points?|skokova|skokovi|skok|rebounds?|asistencija|asistencije|asists?|assists?|igrača|igraca|na meču|na mecu)\b", " ", mname)
-    n = re.sub(r"[·•:|\-–—()/\d.,+]+", " ", n)
-    n = " ".join(n.split())
-    if len(n) > 3:
-        return n
-    info = str(md.get("info", ""))
-    info = " ".join(re.sub(r"[·•:|\d.,+()\-]+", " ", re.sub(r"(?i)više|vise|manje|over|under|preko|ispod", " ", info)).split())
-    return info if len(info) > 3 else None
+    for cand in (mname, md.get("name"), o.get("name"), md.get("info")):      # ime igraca ugradjeno u tekst trzista/ishoda
+        n = clean_name(cand)
+        if n:
+            return n
+    return None
 
 
 def parse_props(ev, diag):
     """[{p,s,l,o,u,main}] iz trzista igraca jednog meca."""
     got = {}
+    ms_got = {}
     for mk in ev.get("markets") or []:
         mname = mk.get("name", "")
         stat = prop_stat(mname)
         if stat is None:
             continue
-        for o in mk.get("odds") or []:
-            p = num(o.get("price"))
+        for o in (mk.get("odds") or mk.get("outcomes") or []):
+            p = num(o.get("price", o.get("odds")))
             if p is None or not 1.01 < p <= 30 or o.get("status", 1) != 1 or o.get("display") is False:
                 continue
             md = o.get("metadata") or {}
-            code = str(md.get("code", md.get("name", ""))).strip().lower()
-            nm = (str(md.get("name", "")) + " " + str(md.get("info", ""))).lower()
-            side = ("o" if code in ("+", "o", "over") or any(x in nm for x in ("više", "vise", "over", "preko"))
-                    else "u" if code in ("-", "u", "under") or any(x in nm for x in ("manje", "under", "ispod")) else None)
+            code = norm(md.get("code", md.get("name", ""))).strip()
+            ms = (md.get("specifiers") or {}).get("milestone")
+            if ms is not None:                    # Superbet: "Ime 5+" = N ili vise (samo Over strana) -> linija N-0.5
+                try:
+                    mv = float(str(ms).replace(",", "."))
+                except ValueError:
+                    mv = None
+                who = prop_player(mk, o, mname)
+                if mv is None or not who:
+                    diag["prop_neprepoznat:" + mname[:45]] += 1
+                    continue
+                ms_got.setdefault((who.lower(), stat), {})[mv - 0.5] = (who, p)
+                continue
+            nm = norm(str(md.get("name", "")) + " " + str(md.get("info", "")) + " " + str(o.get("name", "")))
+            side = ("o" if code in ("+", "o", "over") or re.search(r"\b(vise|over|preko|iznad)\b", nm)
+                    else "u" if code in ("-", "u", "under") or re.search(r"\b(manje|under|ispod)\b", nm) else None)
             ln = line_of(o, mname)
             who = prop_player(mk, o, mname)
             if not side or ln is None or not who or not 0.5 <= ln <= 60:
@@ -177,6 +200,13 @@ def parse_props(ev, diag):
         lst.sort(key=lambda g: abs(1 / g["o"] - 1 / g["u"]))
         for i, g in enumerate(lst[:4]):
             out.append({"p": g["p"], "s": g["s"], "l": g["l"], "o": g["o"], "u": g["u"], "main": i == 0})
+    for (_, stat), lines in ms_got.items():     # milestone linije: Under se procenjuje (book ~106%), main = Over najblizi 2.00
+        best = sorted(lines.items(), key=lambda kv: abs(kv[1][1] - 2.0))[:4]
+        for i, (ln, (who, po)) in enumerate(best):
+            pu = 1.06 - 1 / po
+            if pu <= 0.05:
+                continue
+            out.append({"p": who, "s": stat, "l": ln, "o": po, "u": round(1 / pu, 2), "main": i == 0, "u_est": True})
     out.sort(key=lambda g: (g["p"], g["s"], not g["main"], g["l"]))
     diag["prop_linija"] += len(out)
     return out
@@ -298,6 +328,7 @@ def to_ms(x):
 
 
 _data = None
+MKT = collections.Counter()
 
 
 def league_data():
@@ -543,11 +574,17 @@ def run(a=None):
         for r in [x for x in pick if x.get("eid") not in (None, "")][:a.max]:
             time.sleep(random.uniform(1.5, 3))
             jd = get(a.detail.format(id=r["eid"], s=s, e=e))      # 403/429 prekida ceo prolaz
+            for x in events_in(jd):
+                for m in x.get("markets") or []:
+                    MKT[(r["lg"], m.get("name", ""))] += 1
             if a.dump and not diag["dump"]:
                 diag["dump"] = 1
                 json.dump(jd, open(os.path.join("data", "superbet_dump.json"), "w", encoding="utf-8"), ensure_ascii=False)
                 names = sorted({m.get("name", "") for x in events_in(jd) for m in x.get("markets") or []})
                 print(f"DUMP {r['h']} - {r['a']} ({r['lg']}): {len(names)} trzista:\n  " + "\n  ".join(names))
+            if a.dump and r["lg"] != "euroleague" and diag["dump_" + r["lg"]] == 0 and any(prop_stat(m.get("name", "")) for x in events_in(jd) for m in x.get("markets") or []):
+                diag["dump_" + r["lg"]] = 1          # po jedan dump sa player marketima za svaku ligu
+                json.dump(jd, open(os.path.join("data", f"superbet_dump_{r['lg']}.json"), "w", encoding="utf-8"), ensure_ascii=False)
             ds = [parse_event(x, diag) for x in (events_in(jd) or [])]
             ds = [x for x in ds if x]
             if ds:
@@ -557,6 +594,14 @@ def run(a=None):
                 diag["detalj_prazan"] += 1
     for r in out:
         r.pop("_how", None), r.pop("_text", None)
+    if a and a.detail and MKT:                      # sva imena trzista iz detalja po ligi: vidi se sta Superbet zaista nudi za igrace
+        os.makedirs("data", exist_ok=True)
+        with open(os.path.join("data", "superbet_trzista.txt"), "w", encoding="utf-8") as fh:
+            for (lg, nm_), n in sorted(MKT.items(), key=lambda x: (x[0][0] or "", x[0][1])):
+                fh.write(f"{lg}\t{n}\t{'PROP:' + prop_stat(nm_) if prop_stat(nm_) else ''}\t{nm_}\n")
+        if a.dump:
+            print("\nTRZISTA IGRACA koja parser prepoznaje po ligama:", dict(collections.Counter(lg for (lg, n_) in MKT if prop_stat(n_))))
+            print("Sva imena trzista: data/superbet_trzista.txt (liga, broj mecova, prepoznato, ime)")
     return out, diag
 
 
@@ -584,6 +629,37 @@ def git(*c):
     return subprocess.run(("git",) + c, capture_output=True, text=True)
 
 
+def clear_stuck_state(files):
+    """Ako je ostao nedovrsen merge/rebase, commit pada sa 'fatal: cannot do a partial commit during a merge'.
+    Fajlove sa kvotama prvo sacuvamo u memoriji (abort ume da ih vrati na staro), pa ih upisemo nazad posle aborta."""
+    def active(name):
+        p = git("rev-parse", "--git-path", name).stdout.strip()
+        return bool(p) and os.path.exists(p)
+    merging, rebasing = active("MERGE_HEAD"), active("rebase-merge") or active("rebase-apply")
+    if not (merging or rebasing):
+        return True
+    saved = {}
+    for f in files:
+        try:
+            saved[f] = open(f, "rb").read()
+        except OSError:
+            pass
+    if merging:
+        print("push: nasao nedovrsen merge, radim git merge --abort")
+        if git("merge", "--abort").returncode:
+            git("reset", "--merge")
+    if rebasing:
+        print("push: nasao nedovrsen rebase, radim git rebase --abort")
+        git("rebase", "--abort")
+    for f, data in saved.items():
+        os.makedirs(os.path.dirname(f) or ".", exist_ok=True)
+        open(f, "wb").write(data)
+    if active("MERGE_HEAD") or active("rebase-merge") or active("rebase-apply"):
+        print("push: merge/rebase se nije ugasio; resi rucno (git status), pa pokreni ponovo")
+        return False
+    return True
+
+
 def push(files):
     """commit samo fajlova sa kvotama + pull --rebase (nasi fajlovi pobedjuju u konfliktu) + push; ispisuje pravi razlog ako ne uspe."""
     if git("rev-parse", "--is-inside-work-tree").stdout.strip() != "true":
@@ -592,6 +668,8 @@ def push(files):
     branch = git("rev-parse", "--abbrev-ref", "HEAD").stdout.strip()
     if not branch or branch == "HEAD":
         branch = "main"
+    if not clear_stuck_state(files):
+        return False
     git("add", *files)
     if git("diff", "--cached", "--quiet", "--", *files).returncode == 0:
         print("push: nema promena u fajlovima sa kvotama")
