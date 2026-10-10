@@ -852,6 +852,10 @@ def annotate_events(events, lg, root=".", cfg=None, log=print, asof=None, league
         dg["premalo_utakmica"] += 1
         return dg
     PR = Props(L, M, asof)
+    gcnt = collections.Counter()                       # odigrane utakmice po timu: sa malo utakmica model dobija malu tezinu, Superbet veliku
+    for g in L.games:
+        gcnt[g["h"]] += 1
+        gcnt[g["a"]] += 1
     dg["utakmica_u_modelu"] = M.n
     dg["sut_podaci"] = int(PR.has_shots)
     for ev in events:
@@ -876,7 +880,13 @@ def annotate_events(events, lg, root=".", cfg=None, log=print, asof=None, league
                    "ff": {"h": {k: ti[h][k] for k in ("efg", "tov", "orb", "ftr", "efg_d", "tov_d", "orb_d", "ftr_d")},
                           "a": {k: ti[a][k] for k in ("efg", "tov", "orb", "ftr", "efg_d", "tov_d", "orb_d", "ftr_d")}, "edge": round(ffe, 2)},
                    "rest_pts": round(mp["rest_pts"], 2), "hca": round(M.h * mp["P"] / 100, 2), "n": M.n}
-        tips = match_tips(ev, mp, M, (ev["h"], ev["a"]), an, cfg)
+        ngm = min(gcnt[h], gcnt[a])
+        wm = min(0.5, ngm / (ngm + 10.0))
+        ev["q"]["w"], ev["q"]["ng"] = round(wm, 3), [gcnt[h], gcnt[a]]
+        tips = match_tips(ev, mp, M, (ev["h"], ev["a"]), an, dict(cfg, W_MKT_MATCH=1 - wm))
+        if wm < 0.5:
+            for t in tips:
+                t["why"] = (t.get("why") or []) + [f"Malo utakmica ({gcnt[h]} i {gcnt[a]}): model ima {wm * 100:.0f}% tezine, Superbet {100 - wm * 100:.0f}%"]
         outs = {}
         for tm in (h, a):
             for pl in PR.prof.values():
@@ -918,6 +928,100 @@ def annotate_events(events, lg, root=".", cfg=None, log=print, asof=None, league
                 why += S["inj"]
                 tips.append(_tip("prop", f"{pp['p']} - {side} {pp['l']} {SLAB[st]}", p_m, p_f, od, e, why=why,
                                  extra={"proj": S["mu"], "line": pp["l"], "side": side, "stat": st, "pid": pl["id"], "pname": pp["p"]}))
+        tips.sort(key=lambda t: -t["ev"])
+        ev["tips"] = tips
+        dg["mecevi_sa_modelom"] += 1
+        dg["tipova"] += len(tips)
+    return dg
+
+# ---------------------------------------------------------------------------------------------------------------------------
+# REZERVNI MODEL SAMO NA REZULTATIMA (za lige bez box score-a, npr. ACB kad site.json nema statistiku igraca).
+# Ridge regresija: razlika = rejting_domacina - rejting_gosta + HCA, zbir = prosek + skor_tima_h + skor_tima_a.
+# Daje samo timska trzista (pobednik, hendikep, ukupno), uz jasno upozorenje o malom uzorku. Igracki propsi ostaju bez modela.
+class _SM:
+    def __init__(self, sd_m, sd_t):
+        self.sd_m, self.sd_t = sd_m, sd_t
+
+
+def annotate_scores(events, lg, root=".", cfg=None, log=print):
+    cfg = cfg or CFG
+    dg = collections.Counter()
+    L = League(lg, root)
+    site = _load(os.path.join(L.dir, "site.json")) or {}
+    G = []
+    for g in site.get("games") or []:
+        try:
+            hs, as_ = float(g.get("hs")), float(g.get("as"))
+        except (TypeError, ValueError):
+            continue
+        if g.get("h") and g.get("a"):
+            G.append((g["h"], g["a"], hs, as_))
+    if len(G) < 8:
+        dg["rezultata_premalo"] = len(G)
+        return dg
+    teams = sorted({x for g in G for x in g[:2]})
+    ix = {t: i for i, t in enumerate(teams)}
+    n = len(teams)
+    lam = cfg["RIDGE"]
+
+    def ridge(rows, ys, size, lam_v, free):
+        A = [[0.0] * size for _ in range(size)]
+        b = [0.0] * size
+        for r, y in zip(rows, ys):
+            for i, vi in r:
+                b[i] += vi * y
+                for j, vj in r:
+                    A[i][j] += vi * vj
+        for i in range(size):
+            if i not in free:
+                A[i][i] += lam_v
+        return solve(A, b)
+    # razlika: n rejtinga + HCA (nije kaznjen)
+    rows_m = [[(ix[h], 1.0), (ix[a], -1.0), (n, 1.0)] for h, a, _, _ in G]
+    y_m = [hs - as_ for _, _, hs, as_ in G]
+    sol_m = ridge(rows_m, y_m, n + 1, lam, {n})
+    # zbir: prosek (nije kaznjen) + doprinos svakog tima
+    mu_t = sum(hs + as_ for _, _, hs, as_ in G) / len(G)
+    rows_t = [[(ix[h], 1.0), (ix[a], 1.0)] for h, a, _, _ in G]
+    y_t = [hs + as_ - mu_t for _, _, hs, as_ in G]
+    sol_t = ridge(rows_t, y_t, n, lam, set())
+    if not sol_m or not sol_t:
+        dg["resavanje_nije_uspelo"] += 1
+        return dg
+    res_m = [y - (sol_m[ix[h]] - sol_m[ix[a]] + sol_m[n]) for (h, a, _, _), y in zip(G, y_m)]
+    res_t = [y - (sol_t[ix[h]] + sol_t[ix[a]]) for (h, a, _, _), y in zip(G, y_t)]
+    N = len(G)
+    sd_m = math.sqrt((sum(r * r for r in res_m) + cfg["SD_PRIOR_N"] * cfg["SD_M_PRIOR"] ** 2) / (N + cfg["SD_PRIOR_N"]))
+    sd_t = math.sqrt((sum(r * r for r in res_t) + cfg["SD_PRIOR_N"] * cfg["SD_T_PRIOR"] ** 2) / (N + cfg["SD_PRIOR_N"]))
+    M = _SM(sd_m, sd_t)
+    cnt = collections.Counter()
+    for h, a, _, _ in G:
+        cnt[h] += 1
+        cnt[a] += 1
+    for ev in events:
+        if ev.get("lg") != lg:
+            continue
+        h, a = L.team_code(ev.get("h")), L.team_code(ev.get("a"))
+        if not h or not a or h == a or h not in ix or a not in ix:
+            dg["tim_nije_prepoznat"] += 1
+            continue
+        an = ev.get("an") or {}
+        rh = an.get("rest_h") or [None, None]
+        rd = clamp((rh[0] - rh[1]) / 24.0, -cfg["REST_CLIP"], cfg["REST_CLIP"]) if rh[0] is not None and rh[1] is not None else 0.0
+        rest_pts = 0.5 * rd
+        margin = sol_m[ix[h]] - sol_m[ix[a]] + sol_m[n] + rest_pts
+        total = mu_t + sol_t[ix[h]] + sol_t[ix[a]]
+        mp = {"P": 0.0, "pts_h": (total + margin) / 2, "pts_a": (total - margin) / 2, "margin": margin, "total": total, "rest_pts": rest_pts}
+        ev["q"] = {"h": h, "a": a, "simple": True, "w": round(min(0.5, min(cnt[h], cnt[a]) / (min(cnt[h], cnt[a]) + 10.0)), 3), "pts": [round(mp["pts_h"], 1), round(mp["pts_a"], 1)], "margin": round(margin, 1), "total": round(total, 1),
+                   "sd_m": round(sd_m, 1), "sd_t": round(sd_t, 1), "rest_pts": round(rest_pts, 2), "hca": round(sol_m[n], 2), "n": N, "ng": [cnt[h], cnt[a]]}
+        why_extra = [f"Model samo na rezultatima ({N} utakmica lige, {cnt[h]} i {cnt[a]} za ova dva tima), bez statistike igraca, pa je procena gruba"]
+        wm = min(0.5, min(cnt[h], cnt[a]) / (min(cnt[h], cnt[a]) + 10.0))       # tezina modela raste sa brojem odigranih utakmica
+        cfg2 = dict(cfg, W_MKT_MATCH=1 - wm)
+        why_extra.append(f"Tezina modela {wm * 100:.0f}% a Superbet {100 - wm * 100:.0f}% (premalo utakmica da bi se model vise slusao)")
+        tips = match_tips(ev, mp, M, (ev["h"], ev["a"]), an, cfg2)
+        for t in tips:
+            t["why"] = (t.get("why") or []) + why_extra
+            t["simple"] = True
         tips.sort(key=lambda t: -t["ev"])
         ev["tips"] = tips
         dg["mecevi_sa_modelom"] += 1

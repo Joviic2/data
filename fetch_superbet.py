@@ -913,6 +913,18 @@ def once(a):
     if not mine:
         print("Nista prepoznato ni u jednoj nasoj ligi: ne pisem fajlove.")
         return
+    try:        # kvantitativni model (tipovi + obrazlozenje); ako lige nemaju box score, rezervni model na rezultatima
+        import quant_model as Q
+        for lg in sorted({e["lg"] for e in mine}):
+            try:
+                dg = Q.annotate_events(mine, lg)
+                if not dg.get("mecevi_sa_modelom"):
+                    dg = Q.annotate_scores(mine, lg)
+                print(f"  model [{lg}]: {dict(dg)}")
+            except Exception as ex:
+                print(f"  model [{lg}] greska: {ex}")
+    except ImportError:
+        print("  quant_model.py nije pronadjen: tipovi iz modela se ne racunaju")
     files = write(mine)
     if a.push and files:
         push(files)

@@ -393,7 +393,7 @@ const fdu=u=>{try{return new Date(u).toLocaleString("sr-Latn",{weekday:"short",d
 
 // ================= UČITAVANJE PODATAKA =================
 // Minimalni uzorak: odigrane utakmice po timu (screener, EV modeli) i po igracu (propsi). Nize = radi ranije u sezoni, ali je procena manje pouzdana.
-const MINTG=2,MINPG=2;
+const MINTG=1,MINPG=2;
 // ================= LIGE =================
 const LEAGUES={euroleague:["Euroleague","EL"],aba:["ABA Liga","ABA"],acb:["ACB","ACB"],lnb:["LNB","LNB"],bbl:["BBL","BBL"]};
 let LG="euroleague";try{LG=new URLSearchParams(location.search).get("lg")||localStorage.getItem("ellg")||"euroleague"}catch(e){}
@@ -1207,9 +1207,9 @@ function verdict(h,a,m){
   ck=[["Normalni model i Monte Carlo se slažu (do 6 p.p.)",pn==null?null:Math.abs(p-pn)<=.06],
    [enough?"Tržište se slaže sa modelom (do 10 p.p.)":"Tržište se slaže sa modelom (do 15 p.p., rani deo sezone)",pm==null?null:Math.abs(p-pm)<=(enough?.10:.15)],
    ["Bar 8 odigranih mečeva po timu (rani deo sezone: samo blago upozorenje)",enough,"soft"],
-   ["EV između 3% i 20% (preko 20% je skoro uvek greška u unosu ili povreda)",evm>=.03&&evm<=.2],
+   ["EV modela između 3% i 20% (preko 20% model i tržište se jako razilaze: gledaj korigovani EV)",evm>=.03&&evm<=.2,"soft"],
    ["EV ostaje pozitivan posle korekcije ka tržištu",evc>0],...xc].filter(c=>c[1]!=null),
-  fails=ck.filter(c=>!c[1]&&c[2]!="soft"),real=pm==null||Math.abs(p-pm)<=.25,rec=real&&evm>=.03&&evm<=.2&&evc>0&&fails.length<=(enough?1:2);
+  fails=ck.filter(c=>!c[1]&&c[2]!="soft"),real=pm==null||Math.abs(p-pm)<=.25,rec=real&&evm>=.03&&evc>=.02&&evc<=.15&&fails.length<=(enough?1:2);
   rows.push({mk,sel,p,push,pm,odds,evm,evc,ck,fails,real,rec,early:!enough,pb,fair:p>0?(1-push)/p:99})};
  add("Pobednik",nh,cnt(mg,x=>x>0),0,pnW,fh!=null?fh:dv(O[0],O[1]),O[0]);
  add("Pobednik",na,cnt(mg,x=>x<0),0,1-pnW,fh!=null?1-fh:(dv(O[0],O[1])==null?null:1-dv(O[0],O[1])),O[1]);
@@ -1424,7 +1424,7 @@ function screenInner(){
   const h=codeOf(e.h),a=codeOf(e.a);if(!h||!a||h==a||!R[h]||!R[a]){unk.push(e.h+" - "+e.a);return}
   if(e.start&&new Date(e.start)<new Date()){RS.past++;RS.sk.push([e.h+" - "+e.a,"već počela ili odigrana"]);return}
   let r;try{r=modelFor(h,a,e.start?new Date(e.start):new Date())}catch(x){return}
-  let ngm=0,fl=false,hide=false;{const nG=t=>D.games.filter(g=>g.box&&(g.h==t||g.a==t)).length;ngm=Math.min(nG(h),nG(a));if(ngm<MINTG){skipN++;RS.smp++;hide=true;RS.sk.push([e.h+" - "+e.a,"premalo odigranih utakmica ("+ngm+")"])}const ko=[...keyOut(h),...keyOut(a)];if(ko.length&&!(+$("ah").value||+$("aa").value)){fl=true;if(!$("sin").value){skipN++;RS.inj++;RS.injn.push(...ko.slice(0,2));hide=true;RS.sk.push([e.h+" - "+e.a,"ključni igrač van: "+ko.slice(0,2).join(", ")])}else RS.flag++}}
+  let ngm=0,fl=false,hide=false;{const nG=t=>D.games.filter(g=>(g.box||(g.hs!=null&&g.as!=null))&&(g.h==t||g.a==t)).length;ngm=Math.min(nG(h),nG(a));if(ngm<MINTG){skipN++;RS.smp++;hide=true;RS.sk.push([e.h+" - "+e.a,"premalo odigranih utakmica ("+ngm+")"])}const ko=[...keyOut(h),...keyOut(a)];if(ko.length&&!(+$("ah").value||+$("aa").value)){fl=true;if(!$("sin").value){skipN++;RS.inj++;RS.injn.push(...ko.slice(0,2));hide=true;RS.sk.push([e.h+" - "+e.a,"ključni igrač van: "+ko.slice(0,2).join(", ")])}else RS.flag++}}
   if(ONLY&&!e.b.some(b=>b.key==ONLY))RS.nobk++;
   used++;minN=Math.min(minN,ngm);const N=r.mg.length,pr=(arr,fn)=>arr.filter(fn).length/N,mt=nm(h)+" - "+nm(a),M={},PF={};
   const reg=(k,mA,mB,nA,nB,pA,b,oA,oB)=>{if(!oA||!oB)return;const m=M[k]=M[k]||{mA,mB,nA,nB,pA,fam:k[0],l:k=="h"?0:parseFloat(k.slice(1)),fr:[],bo:[0,0],bb:["",""]};if(b.key=="pinnacle")PF[k[0]]={l:m.l,pA:(1/oA)/(1/oA+1/oB)};if(!b.alt)m.main=true;m.fr.push((1/oA)/(1/oA+1/oB));if(oA>m.bo[0]&&(!ONLY||b.key==ONLY)){m.bo[0]=oA;m.bb[0]=b.title}if(oB>m.bo[1]&&(!ONLY||b.key==ONLY)){m.bo[1]=oB;m.bb[1]=b.title}};
@@ -1557,7 +1557,7 @@ document.addEventListener("click",e=>{if(e.target.closest("[data-ack]")){xAck.ad
 function xdbRender(h,a){let el=$("mdb");if(!el){const sc=$("scm");if(!sc)return;sc.insertAdjacentHTML("beforebegin",'<div id="mdb"></div>');el=$("mdb")}
  const mt=nm(h)+" - "+nm(a),tips=(typeof SCR!=="undefined"?SCR:[]).filter(x=>x.mt==mt).slice(0,3),ev=(OD&&OD.events||[]).find(e=>codeOf(e.h)==h&&codeOf(e.a)==a),
  inj=t=>((INJ.teams||{})[t]||[]).length,mx=j=>ev?Math.max(0,...ev.b.map(b=>b.h2h&&b.h2h[j]||0)):0,dt=fxDt(h,a);let fh=null,fa=null,sm=null;try{fh=fatigue(h,dt,h);fa=fatigue(a,dt,h)}catch(e){}try{sm=shotMatch(h,a)}catch(e){}
- const nG=t=>D.games.filter(g=>g.box&&(g.h==t||g.a==t)).length,lowN=Math.min(nG(h),nG(a))<5,sg=v=>(v>=0?"+":"")+f(v,1);
+ const nG=t=>D.games.filter(g=>(g.box||(g.hs!=null&&g.as!=null))&&(g.h==t||g.a==t)).length,lowN=Math.min(nG(h),nG(a))<5,sg=v=>(v>=0?"+":"")+f(v,1);
  el.innerHTML=`<div class="card"><h2>Dashboard meča</h2><p class="sub">Sve na jednom mestu i sinhronizovano sa izabranim mečom.</p><div class="grid">
  <div class="stat"><span>Najbolja kvota</span><div class="num">${mx(0)?f(mx(0),2):"-"} / ${mx(1)?f(mx(1),2):"-"}</div><span>${esc(nm(h))} / ${esc(nm(a))}</span></div>
  <div class="stat"><span>Odmor i putovanje</span><div class="num">${fh?(fh.rest==null?"-":fh.rest)+" / "+(fa.rest==null?"-":fa.rest)+" d":"-"}</div><span>${fh?f(fh.km,0)+" / "+f(fa.km,0)+" km":""}</span></div>
@@ -2505,6 +2505,7 @@ async function ovInit(force){
  if(OVS.data&&!force){ovRender();return}
  OVS.busy=true;el.innerHTML='<p class="mu">Učitavam kvote za sve lige…</p>';
  const res=await Promise.all(OVL.map(async l=>{try{return[l,await getJSON(lp("data/odds_superbet.json",l))]}catch(e){return[l,null]}}));
+ res.forEach(([l,j])=>{if(j&&Array.isArray(j.events))j.events.forEach(m=>(m.player_props||[]).forEach(p=>{if(!p.rot&&p.q&&p.q.proj!=null)p.rot={...p.q,sig:p.q.side||null,base:p.q.base_min}}))});
  OVS.data=res;OVS.busy=false;ovRender()}
 const ovDk=ms=>{const d=new Date(ms);return d.getFullYear()+"-"+String(d.getMonth()+1).padStart(2,"0")+"-"+String(d.getDate()).padStart(2,"0")};
 const ovT=ms=>new Date(ms).toLocaleTimeString("sr-Latn-RS",{hour:"2-digit",minute:"2-digit"});
@@ -2523,12 +2524,41 @@ function ovRest(m){
  const e=an.edge_pts,ed=e>0?`Prednost domaćina ${sg(e)} poena`:e<0?`Prednost gosta ${sg(-e)} poena`:"Bez razlike u umoru",
   cl=Math.abs(e)>=1.5?(e>0?"ok":"no"):"mu";
  return `<div class="grid w" style="margin-top:8px">${side(0)}${side(1)}</div><div class="${cl}" style="margin-top:6px"><b>${ed}</b> <span class="mu">(≈ ${sg(+f(an.dp_home*100,1))} p.p. šanse za pobedu domaćina)</span></div>`}
+
+// Pun pregled meča: model vs Superbet po tržištima, preporuka (ili jasan razlog zašto je nema) i objašnjenje šta je uračunato.
+const ovDv=(a,b)=>a>1&&b>1?(1/a)/(1/a+1/b):null,ovPc=x=>f(x*100,0)+"%",ovSp=x=>(x>0?"+":"")+f(x*100,1)+"%";
+function ovModelRows(m){
+ const q=m.q,b0=(m.b||[])[0]||{};if(!q||q.margin==null)return[];
+ const w=q.w!=null?q.w:.5,R=[];
+ const add=(mk,pick,pm,pk,od,note)=>{if(pm==null||pk==null||!(od>1))return;const pf=w*pm+(1-w)*pk;R.push({mk,pick,pm,pk,od,evm:pm*od-1,evc:pf*od-1,pf,note})};
+ if(Array.isArray(b0.h2h)&&b0.h2h[0]&&b0.h2h[1]){const pm=phi(q.margin/q.sd_m),pk=ovDv(b0.h2h[0],b0.h2h[1]);add("Pobednik",m.h,pm,pk,b0.h2h[0]);add("Pobednik",m.a,1-pm,1-pk,b0.h2h[1])}
+ if(Array.isArray(b0.sp)&&b0.sp[0]!=null){const L=b0.sp[0],pm=phi((L+q.margin)/q.sd_m),pk=ovDv(b0.sp[1],b0.sp[2]);add("Hendikep "+sg(L),m.h,pm,pk,b0.sp[1]);add("Hendikep "+sg(-L),m.a,1-pm,1-pk,b0.sp[2])}
+ if(Array.isArray(b0.tt)&&b0.tt[0]!=null){const L=b0.tt[0],pm=1-phi((L-q.total)/q.sd_t),pk=ovDv(b0.tt[1],b0.tt[2]);add("Ukupno "+L,"Više",pm,pk,b0.tt[1]);add("Ukupno "+L,"Manje",1-pm,1-pk,b0.tt[2])}
+ R.w=w;return R}
+function ovAnalysis(m){
+ const q=m.q,tips=ovTipsOf(m),an=m.an,mev=OVS.minev;
+ if(!q){
+  return `<div class="note" style="display:block!important;margin-top:10px"><b>Nema modela za ovu ligu.</b> U repou nema odigranih utakmica sa rezultatima za ${esc((LEAGUES[m.lg]||[m.lg])[0])} (potreban je <code>data/${m.lg=="euroleague"?"":m.lg+"/"}site.json</code> sa rezultatima), pa ne mogu da procenim ko je jači. Prikazujem samo Superbet linije, odmor i signale za igrače ako ih ima. Bez modela nema preporuke za pobednika, hendikep i ukupne poene.</div>${tips.map(x=>ovTip(x,0)).join("")}`}
+ const R=ovModelRows(m),good=R.filter(r=>r.evc>=mev&&r.evc<=.2&&r.evm>=mev).sort((a,b)=>b.evc-a.evc),top=tips[0];
+ const best=R.slice().sort((a,b)=>b.evc-a.evc)[0];
+ const tbl=R.length?`<div class="scroll"><table><tr><th>Tržište</th><th>Izbor</th><th class="r">Model</th><th class="r">Superbet (fer)</th><th class="r">Kvota</th><th class="r">EV model</th><th class="r">EV korigovan</th></tr>${R.map(r=>`<tr${top&&!top.kind.startsWith("prop")&&r===good[0]?' style="background:var(--acbg)"':""}><td>${esc(r.mk)}</td><td>${esc(r.pick)}</td><td class="r">${ovPc(r.pm)}</td><td class="r">${ovPc(r.pk)}</td><td class="r">${f(r.od,2)}</td><td class="r ${r.evm>0?"ok":"no"}">${ovSp(r.evm)}${r.evm>.2?" ⚠":""}</td><td class="r ${r.evc>0?"ok":"no"}">${ovSp(r.evc)}</td></tr>`).join("")}</table></div>`:"";
+ const verdict=tips.length?tips.slice(0,3).map(x=>ovTip(x,0)).join(""):
+  `<div class="tip" style="border-color:var(--bd)"><div><b style="color:var(--mu)">NEMA PREPORUKE</b> za ovaj meč${best?`: najbolji izbor je ${esc(best.mk)} ${esc(best.pick)} @ ${f(best.od,2)}, ali je korigovani EV ${ovSp(best.evc)} (prag je ${f(mev*100,0)}%).`:"."}</div><div class="mu" style="font-size:.85rem">${best?(best.evm>.2?"Model se jako razilazi od Superbeta (EV modela preko 20%), a u ranoj sezoni se tome ne veruje slepo.":best.evm<mev?"Model i Superbet se skoro slažu, pa nema prednosti koju bi vredelo igrati.":"Kvota je blizu fer vrednosti posle korekcije ka tržištu."):"Nema dovoljno linija na Superbetu."}</div></div>`;
+ const w=R.w!=null?R.w:.5,ng=q.ng?` (${q.ng[0]} i ${q.ng[1]} utakmica za ova dva tima)`:"";
+ const expl=[`Model procenjuje rezultat ${esc(m.h)} <b>${f(q.pts[0])} : ${f(q.pts[1])}</b> ${esc(m.a)}, razlika ${sg(+f(q.margin))}, ukupno ${f(q.total)}. Razlika je napadački i odbrambeni rejting oba tima${q.simple?" iz rezultata utakmica (nema statistike igrača u ovoj ligi)":" iz box score-a (efikasnost napada i odbrane na 100 posesija, tempo)"} plus prednost domaćeg terena (${sg(+f(q.hca))} p.).`,
+  `Uzorak: ${q.n} utakmica lige${ng}.${w<.5?" Uzorak je mali, zato model ima samo "+f(w*100,0)+"% težine, a Superbet "+f((1-w)*100,0)+"%.":""}`,
+  `Superbet fer šansa je njegova kvota bez marže. Konačna šansa = ${f(w*100,0)}% model + ${f((1-w)*100,0)}% Superbet. EV = šansa × kvota − 1; korigovan EV koristi tu mešavinu, pa je strožiji od sirovog EV modela.`,
+  an&&an.pen&&(an.pen[0]||an.pen[1])?`Umor je uračunat: penal ${esc(m.h)} ${f(an.pen[0],1)} p., ${esc(m.a)} ${f(an.pen[1],1)} p. (odmor ${an.rest_h&&an.rest_h[0]!=null?f(an.rest_h[0],0):"-"} h vs ${an.rest_h&&an.rest_h[1]!=null?f(an.rest_h[1],0):"-"} h).`:`Umor: nema razlike u odmoru koja bi pomerila procenu.`,
+  q.ff&&q.ff.edge!=null&&Math.abs(q.ff.edge)>=.3?`Četiri faktora (šut, izgubljene lopte, skokovi u napadu, penali): ${q.ff.edge>0?esc(m.h):esc(m.a)} ima prednost od ${f(Math.abs(q.ff.edge),1)} p.`:"",
+  `Preporuka se daje samo kad su korigovani EV i sirovi EV modela iznad ${f(mev*100,0)}%; sirov EV preko 20% se smatra greškom ili povredom koju model ne vidi. Proveri sastav pre uloga.`].filter(Boolean);
+ return `<div style="margin-top:10px"><h3 style="margin:0 0 6px">Analiza i preporuka</h3>${verdict}${tbl}<details style="margin-top:8px"><summary class="mu">Šta se računa i zašto</summary><ul style="margin:8px 0 0 18px;font-size:.9rem">${expl.map(x=>`<li style="margin:4px 0">${x}</li>`).join("")}</ul></details></div>`}
 function ovMatch(m){
  const b=(m.b||[])[0]||{},sl=ovSig(m),pp=m.player_props||[];
  const all=pp.slice().sort((x,y)=>(x.p>y.p?1:-1)||(x.s>y.s?1:-1));
  return `<div class="card"><div class="head"><b class="num" style="font-size:1.25rem">${ovT(m.ms)}</b><span class="pill">${esc((LEAGUES[m.lg]||[m.lg])[1])}</span><h3 style="margin:0 6px">${esc(m.h)} - ${esc(m.a)}</h3></div>
  <div class="mu" style="font-size:.9rem">1/2: ${ovOdds(b.h2h)} | hendikep: ${ovOdds(b.sp,1)} | ukupno: ${ovOdds(b.tt,1)}</div>
- ${ovTipBoxes(m)}${ovRest(m)}
+ ${ovAnalysis(m)}
+ <details style="margin-top:8px"><summary class="mu">Odmor, penali i raspored</summary>${ovRest(m)}</details>
  <h3>Prop signali${sl.length?` (${sl.length})`:""}</h3>
  ${sl.length?`<div class="scroll"><table>${ovHead(0)}${sl.map(p=>ovSigRow(p,m,0)).join("")}</table></div>`:`<p class="mu" style="margin:0">${pp.length?"Nema prop signala po pragu skripte.":"Superbet još nema igračka tržišta za ovaj meč (pojavljuju se ~48h pre starta)."}</p>`}
  ${pp.length?`<details style="margin-top:8px"><summary class="mu">Sve prop linije (${pp.length})</summary><div class="scroll"><table><tr><th>Igrač</th><th>Stat</th><th class="r">Linija</th><th class="r">Kvota O / U</th><th class="r">Proj.</th><th class="r">Model Over</th><th class="r">EV O / U</th></tr>${all.map(p=>{const r=p.rot;return `<tr${p.main?' style="background:var(--acbg)"':""}><td>${esc(p.p)}</td><td>${OVSL[p.s]||esc(p.s)}</td><td class="r">${p.l}${p.main?" ●":""}</td><td class="r">${f(p.o,2)} / ${f(p.u,2)}</td><td class="r">${r?f(r.proj):"-"}</td><td class="r">${r?f(r.po*100,0)+"%":"-"}</td><td class="r">${r?sg(+f(r.ev_o*100,0))+"% / "+sg(+f(r.ev_u*100,0))+"%":"-"}</td></tr>`}).join("")}</table></div></details>`:""}</div>`}
