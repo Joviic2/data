@@ -250,7 +250,7 @@ input::placeholder{color:var(--mu);opacity:1}
 <section id="t7" hidden>
  <div class="card"><h2>Value Screener</h2>
  <p class="sub">Model prolazi kroz sve mečeve iz data/odds.json (pobednik, hendikep, ukupno) i izlistava najbolju kvotu po izboru gde je EV iznad praga.</p>
- <div class="grid"><div><label for="sth">Minimalni EV</label><select id="sth"><option value="3">3%</option><option value="5" selected>5%</option><option value="8">8%</option></select></div></div></div>
+ <div class="grid"><div><label for="sth">Minimalni EV</label><select id="sth"><option value="3">3%</option><option value="5" selected>5%</option><option value="8">8%</option></select></div><div><label for="sbk">Kladionica za ulog</label><select id="sbk"><option value="">Sve</option><option value="superbet">Samo Superbet</option></select></div></div></div>
  <div id="slip"></div><div id="scr"></div>
 </section>
 <section id="t5" hidden>
@@ -385,6 +385,8 @@ const fd=s=>s?s.slice(8,10)+"."+s.slice(5,7)+". "+s.slice(11,16):"";
 const fdu=u=>{try{return new Date(u).toLocaleString("sr-Latn",{weekday:"short",day:"2-digit",month:"2-digit",hour:"2-digit",minute:"2-digit",timeZone:"Europe/Belgrade"})}catch(e){return u||""}};
 
 // ================= UČITAVANJE PODATAKA =================
+// Minimalni uzorak: odigrane utakmice po timu (screener, EV modeli) i po igracu (propsi). Nize = radi ranije u sezoni, ali je procena manje pouzdana.
+const MINTG=2,MINPG=2;
 // ================= LIGE =================
 const LEAGUES={euroleague:["Euroleague","EL"],aba:["ABA Liga","ABA"],acb:["ACB","ACB"],lnb:["LNB","LNB"],bbl:["BBL","BBL"]};
 let LG="euroleague";try{LG=new URLSearchParams(location.search).get("lg")||localStorage.getItem("ellg")||"euroleague"}catch(e){}
@@ -1099,7 +1101,7 @@ function scaleRender(){const el=$("psc"),c=pctx();if(!el)return;if(!c){el.innerH
  el.innerHTML=`<div class="grid"><div class="stat"><span>Minutaža</span><div class="num">${f(mn,0)} → ${f(m2,0)}</div></div><div class="stat"><span>${esc(c.lab)} prosek</span><div class="num">${f(c.mu)} → ${f(mu2)}</div><span>nova linija ~${Math.round(mu2*2)/2}</span></div><div class="stat"><span>Over ${c.L}</span><div class="num">${f(p0*100,0)}% → ${f(p1*100,0)}%</div></div><div class="stat"><span>EV Over / Under (korigovano)</span><div class="num" style="font-size:1.4rem">${e(eo)} / ${e(eu)}</div></div></div><div class="note">Izvor: ${src}. Projekcija pretpostavlja da stopa učinka po minutu ostaje ista, a usage raste sa minutažom. Sve je procena iz boxscore-a, ne zvanični USG%.</div>`}
 function scan(N=5){posData();const out=[],lg=avg(TEAMS.map(ownStats).filter(Boolean).map(x=>x.PACE));
  fixList().forEach(fx=>[[fx.h,fx.a],[fx.a,fx.h]].forEach(([t,op])=>{const ow=ownStats(t),od=ownStats(op);
-  Object.values(playerAgg(t)).forEach(p=>{if(p.gp<3||p.min/p.gp<18)return;const vs=pgames(t,p.id).map(x=>x.p[5]),mu=avg(vs),sd=Math.max(sdv(vs),1.5),r=pdRank(op,posOf(t,p.id),"pts"),
+  Object.values(playerAgg(t)).forEach(p=>{if(p.gp<MINPG||p.min/p.gp<18)return;const vs=pgames(t,p.id).map(x=>x.p[5]),mu=avg(vs),sd=Math.max(sdv(vs),1.5),r=pdRank(op,posOf(t,p.id),"pts"),
    pf=r&&r.lg?Math.max(.85,Math.min(1.15,r.v/r.lg)):1,pc=ow&&od?Math.max(.9,Math.min(1.1,(ow.PACE+od.PACE)/2/ow.PACE)):1,pj=mu*pf*pc,L=Math.round(mu*2)/2,po=1-phi((Math.floor(L)+.5-pj)/sd);
    out.push({id:p.id,n:p.name,t,op,L,pj,po,pf})})}));
  return out.sort((a,b)=>Math.abs(b.po-.5)-Math.abs(a.po-.5)).slice(0,N)}
@@ -1289,7 +1291,7 @@ document.addEventListener("click",e=>{const b=e.target.closest("[data-scf]");if(
 let PCF="all";
 function propCards(){const el=$("pcs");if(!el||!D)return;const t=$("ptm").value,op=$("pop").value,fn=mfn(PMK),cur=$("ppl").value,
  col=h=>h==null?"var(--mu)":h>=70?"var(--ok)":h>=50?"#f5c542":"var(--no)",hr=(a,L)=>a.length?a.filter(x=>x>L).length/a.length*100:null;
- let C=((D.rosters[t]||{}).players||[]).map(pl=>{const G=pgames(t,pl.id);if(G.length<3)return null;const v=G.map(x=>fn(x.p)),a=avg(v),l5=v.slice(-5),L=Math.round(a*2)/2||.5,ps=posOf(t,pl.id);
+ let C=((D.rosters[t]||{}).players||[]).map(pl=>{const G=pgames(t,pl.id);if(G.length<MINPG)return null;const v=G.map(x=>fn(x.p)),a=avg(v),l5=v.slice(-5),L=Math.round(a*2)/2||.5,ps=posOf(t,pl.id);
   let k=1;if(op&&ps&&["pts","reb","ast"].includes(PMK)){const r=pdRank(op,ps,PMK);if(r&&r.lg)k=1+(r.v/r.lg-1)*.5}
   const proj=(v.length>=5?.5*a+.5*avg(l5):a)*k,ed=(proj-L)/Math.max(L,1),hv=G.filter(x=>x.op==op).map(x=>fn(x.p));
   return{pl,G,v,a,L,proj,ed,k,ps,h5:hr(l5,L),h10:hr(v.slice(-10),L),hs:hr(v,L),hh:hr(hv,L),nh:hv.length,mn:avg(G.map(x=>x.p[4]))}}).filter(Boolean).sort((x,y)=>y.mn-x.mn).slice(0,12);
@@ -1388,20 +1390,20 @@ function screen(){
  const el=$("scr");if(!el)return;
  if(!D){return}
  if(!OD||!OD.events||!OD.events.length){el.innerHTML='<div class="note">Nema kvota (data/odds.json). Proveri da je GitHub Action prošao i da je ODDS_API_KEY postavljen.</div>';return}
- R=ratings();const thr=+$("sth").value/100,B=bank(),best=[],sure=[],NPL={},skipN=0;let PL={};try{PL=JSON.parse(localStorage.getItem("elpl")||"{}")}catch(e){}let used=0;
+ R=ratings();const ONLY=$("sbk").value,nk=new Set(OD.events.flatMap(e=>e.b.map(b=>b.key))),MINB=nk.size>=3?3:1,thr=+$("sth").value/100,B=bank(),best=[],sure=[],NPL={},skipN=0,minN=99;let PL={};try{PL=JSON.parse(localStorage.getItem("elpl")||"{}")}catch(e){}let used=0;
  OD.events.forEach(e=>{
   const h=codeOf(e.h),a=codeOf(e.a);if(!h||!a||h==a||!R[h]||!R[a])return;
   let r;try{r=modelFor(h,a,e.start?new Date(e.start):new Date())}catch(x){return}
-  {const nG=t=>D.games.filter(g=>g.box&&(g.h==t||g.a==t)).length;if(Math.min(nG(h),nG(a))<5){skipN++;return}if((((INJ.teams||{})[h]||[]).length+((INJ.teams||{})[a]||[]).length)&&!(+$("ah").value||+$("aa").value)){skipN++;return}}
-  used++;const N=r.mg.length,pr=(arr,fn)=>arr.filter(fn).length/N,mt=nm(h)+" - "+nm(a),M={},PF={};
-  const reg=(k,mA,mB,nA,nB,pA,b,oA,oB)=>{if(!oA||!oB)return;const m=M[k]=M[k]||{mA,mB,nA,nB,pA,fam:k[0],l:k=="h"?0:parseFloat(k.slice(1)),fr:[],bo:[0,0],bb:["",""]};if(b.key=="pinnacle")PF[k[0]]={l:m.l,pA:(1/oA)/(1/oA+1/oB)};m.fr.push((1/oA)/(1/oA+1/oB));if(oA>m.bo[0]){m.bo[0]=oA;m.bb[0]=b.title}if(oB>m.bo[1]){m.bo[1]=oB;m.bb[1]=b.title}};
+  let ngm=0;{const nG=t=>D.games.filter(g=>g.box&&(g.h==t||g.a==t)).length;ngm=Math.min(nG(h),nG(a));if(ngm<MINTG){skipN++;return}if((((INJ.teams||{})[h]||[]).length+((INJ.teams||{})[a]||[]).length)&&!(+$("ah").value||+$("aa").value)){skipN++;return}}
+  used++;minN=Math.min(minN,ngm);const N=r.mg.length,pr=(arr,fn)=>arr.filter(fn).length/N,mt=nm(h)+" - "+nm(a),M={},PF={};
+  const reg=(k,mA,mB,nA,nB,pA,b,oA,oB)=>{if(!oA||!oB)return;const m=M[k]=M[k]||{mA,mB,nA,nB,pA,fam:k[0],l:k=="h"?0:parseFloat(k.slice(1)),fr:[],bo:[0,0],bb:["",""]};if(b.key=="pinnacle")PF[k[0]]={l:m.l,pA:(1/oA)/(1/oA+1/oB)};m.fr.push((1/oA)/(1/oA+1/oB));if(oA>m.bo[0]&&(!ONLY||b.key==ONLY)){m.bo[0]=oA;m.bb[0]=b.title}if(oB>m.bo[1]&&(!ONLY||b.key==ONLY)){m.bo[1]=oB;m.bb[1]=b.title}};
   let b1=0,b2=0,k1="",k2="";
   e.b.forEach(b=>{
    if(b.h2h){reg("h","Pobednik","Pobednik",nm(h),nm(a),pr(r.mg,x=>x>0),b,b.h2h[0],b.h2h[1]);
     if(b.h2h[0]>b1){b1=b.h2h[0];k1=b.title}if(b.h2h[1]>b2){b2=b.h2h[1];k2=b.title}}
    if(b.sp&&b.sp[0]!=null){const l=b.sp[0];reg("s"+l,"Hendikep "+sg(l),"Hendikep "+sg(-l),nm(h),nm(a),pr(r.mg,x=>x+l>0),b,b.sp[1],b.sp[2])}
    if(b.tt&&b.tt[0]!=null){const l=b.tt[0];reg("t"+l,"Ukupno "+l,"Ukupno "+l,"Više","Manje",pr(r.tt,x=>x>l),b,b.tt[1],b.tt[2])}});
-  Object.values(M).forEach(m=>{const pf=PF[m.fam];if(m.fr.length<3&&!pf)return;let fair=m.fr.reduce((x,y)=>x+y,0)/m.fr.length;if(pf){if(m.fam=="h")fair=pf.pA;else{const sd=m.fam=="s"?11.5:13,z=xinv(pf.pA);fair=m.fam=="s"?phi(z+(m.l-pf.l)/sd):phi(z+(pf.l-m.l)/sd)}NPL[e.id+m.fam]=pf.l}const old=pf?PL[e.id+m.fam]:null,mv=pf&&old!=null&&Math.abs(old-pf.l)>.01?old+"→"+pf.l:"",p=xmix(m.pA,fair,pf?"sharp":"game");
+  Object.values(M).forEach(m=>{const pf=PF[m.fam];if(m.fr.length<MINB&&!pf)return;let fair=m.fr.reduce((x,y)=>x+y,0)/m.fr.length;if(pf){if(m.fam=="h")fair=pf.pA;else{const sd=m.fam=="s"?11.5:13,z=xinv(pf.pA);fair=m.fam=="s"?phi(z+(m.l-pf.l)/sd):phi(z+(pf.l-m.l)/sd)}NPL[e.id+m.fam]=pf.l}const old=pf?PL[e.id+m.fam]:null,mv=pf&&old!=null&&Math.abs(old-pf.l)>.01?old+"→"+pf.l:"",p=xmix(m.pA,fair,pf?"sharp":"game");
    [[m.mA,m.nA,p,0],[m.mB,m.nB,1-p,1]].forEach(([mk,pick,q,j])=>{const o=m.bo[j],ev=q*o-1;if(ev>0&&ev<=.12)best.push({mt,mk,pick,o,p:q,bk:m.bb[j],ev,st:e.start,h,a,pm:j?1-m.pA:m.pA,pf:j?1-fair:fair,nb:m.fr.length,evS:PF[m.fam]?(j?1-fair:fair)*o-1:null,mv})})});
   if(b1&&b2&&1/b1+1/b2<1)sure.push({mt,b1,k1,b2,k2,pf:(1/(1/b1+1/b2)-1)*100})});
  try{localStorage.setItem("elpl",JSON.stringify(Object.assign(PL,NPL)))}catch(e){}SCR=best.filter(x=>x.ev>=thr).sort((x,y)=>y.ev-x.ev);
@@ -1411,9 +1413,9 @@ function screen(){
  `<div class="card"><h3 style="margin-top:0">Svi tipovi sa EV ≥ ${f(thr*100,0)}% (${SCR.length})</h3>`+
  (SCR.length?`<div class="scroll"><table><tr><th>Početak</th><th>Utakmica</th><th>Tržište</th><th>Izbor</th><th class="r">Model</th><th class="r">Kvota</th><th>Kladionica</th><th class="r">EV</th><th class="r">EV vs Pinnacle</th><th class="r">Ulog</th><th></th></tr>`+
   SCR.map((x,i)=>`<tr><td>${esc(dt(x.st))}</td><td>${esc(x.mt)}</td><td>${esc(x.mk)}</td><td>${esc(x.pick)}${x.mv?` <span class="no" title="Pinnacle je pomerio liniju">⚡ ${esc(x.mv)}</span>`:""}</td><td class="r">${f(x.p*100)}%</td><td class="r">${f(x.o,2)}</td><td>${esc(x.bk)}</td><td class="r ok">+${f(x.ev*100,1)}% ${evb(x.ev)}</td><td class="r ${x.evS>0?"ok":"mu"}">${x.evS==null?"-":(x.evS>0?"+":"")+f(x.evS*100,1)+"%"}</td><td class="r">${f(stake(x.p,x.o,B),2)}</td><td><button class="btn sm" data-vi="${i}" type="button">Zašto?</button> <button class="btn sm" data-sl="${i}" type="button">+ Listić</button> <button class="btn sm" data-sa="${i}" type="button">Bankroll</button></td></tr>`).join("")+`</table></div>`:`<p class="mu">Nema tipova iznad praga${used?"":" (nijedan meč iz kvota nije prepoznat u tvom modelu)"}.</p>`)+
- `<div class="note warn">Referenca je Pinnacle bez marže (ako ga ima, pa je težina modela 20%), inače konsenzus kladionica (težina modela 27%). Linije se uporeduju sa Pinnacleovom, a ⚡ znači da je Pinnacle pomerio liniju od prošlog osvežavanja. EV iznad 12% se odbacuje kao greška. Realan edge u klađenju je 2 do 6%. Ukupno analizirano mečeva: ${used}/${OD.events.length}. Sakriveno kao nepouzdano (uzorak manji od 5 utakmica ili neuračunate povrede): ${skipN}.</div></div>`;
+ `<div class="note warn">${MINB==1?"Imaš kvote samo jedne kladionice, pa je referenca njena kvota bez marže i model: tipova će biti malo, a EV je gruba procena, igraj manjim ulogom. ":""}${minN<5?`Rani deo sezone: najmanji uzorak je ${minN} utakmica po timu, pa je model manje pouzdan i EV treba čitati kao grubu procenu. `:""}Referenca je Pinnacle bez marže (ako ga ima, pa je težina modela 20%), inače konsenzus kladionica (težina modela 27%). Linije se uporeduju sa Pinnacleovom, a ⚡ znači da je Pinnacle pomerio liniju od prošlog osvežavanja. EV iznad 12% se odbacuje kao greška. Realan edge u klađenju je 2 do 6%. Ukupno analizirano mečeva: ${used}/${OD.events.length}. Sakriveno kao nepouzdano (uzorak manji od 5 utakmica ili neuračunate povrede): ${skipN}.</div></div>`;
  $("sb").innerHTML=`<div class="card"><h2>Surebet</h2>`+(sure.length?`<div class="scroll"><table><tr><th>Utakmica</th><th>Domaćin</th><th>Gost</th><th class="r">Profit</th></tr>`+sure.map(x=>`<tr><td>${esc(x.mt)}</td><td>${f(x.b1,2)} (${esc(x.k1)})</td><td>${f(x.b2,2)} (${esc(x.k2)})</td><td class="r ok">+${f(x.pf,2)}%</td></tr>`).join("")+`</table></div>`:`<p class="mu">Trenutno nema arbitraže.</p>`)+`</div>`}
-$("sth").onchange=screen;
+$("sth").onchange=screen;try{$("sbk").value=localStorage.getItem("elsbk")||""}catch(e){}$("sbk").onchange=()=>{try{localStorage.setItem("elsbk",$("sbk").value)}catch(e){}screen()};
 $("scr").onclick=e=>{const b=e.target.closest("[data-sa]");if(!b)return;const x=SCR[+b.dataset.sa];if(!x)return;
  S.bets.push({d:new Date().toISOString().slice(0,10),m:x.mt,pick:x.mk+" | "+x.pick,odds:x.o,stake:Math.round(stake(x.p,x.o,bank())*100)/100,p:x.p,res:"C"});save();alert("Dodato u evidenciju (tab Bankroll).")};
 
@@ -1520,7 +1522,7 @@ function xdbRender(h,a){let el=$("mdb");if(!el){const sc=$("scm");if(!sc)return;
  <div class="stat"><span>Odmor i putovanje</span><div class="num">${fh?(fh.rest==null?"-":fh.rest)+" / "+(fa.rest==null?"-":fa.rest)+" d":"-"}</div><span>${fh?f(fh.km,0)+" / "+f(fa.km,0)+" km":""}</span></div>
  <div class="stat"><span>Šut-matchup</span><div class="num ${sm&&sm.adj>=0?"ok":"no"}">${sm?sg(sm.adj)+" poena":"-"}</div><span>${sm?"prednost "+esc(nm(sm.adj>=0?h:a)):"nema šuteva"}</span></div>
  <div class="stat"><span>Povrede u bazi</span><div class="num ${inj(h)+inj(a)?"no":"ok"}">${inj(h)} / ${inj(a)}</div><span>${inj(h)+inj(a)?"upiši korekciju iznad":"nema upisanih"}</span></div></div>
- ${lowN?'<div class="note warn">Uzorak je manji od 5 utakmica, pa je EV isključen dok se ne skupi više podataka.</div>':""}
+ ${lowN?'<div class="note warn">Mali uzorak (manje od 5 utakmica po timu): EV je gruba procena jer je model manje pouzdan.</div>':""}
  ${tips.length?`<h3>Value tipovi za ovaj meč</h3>`+tips.map(x=>`<div style="padding:5px 0;border-bottom:1px solid var(--bd)"><b>${esc(x.mk)}: ${esc(x.pick)}</b> @ ${f(x.o,2)} <span class="mu">(${esc(x.bk)})</span> <span class="ok">+${f(x.ev*100,1)}% EV</span></div>`).join(""):'<p class="mu">Nema pouzdanih value tipova za ovaj meč (ili Screener još nije izračunat).</p>'}</div>`}
 (()=>{const ev=$("evc");if(ev&&!ev.closest("details")){const dt=document.createElement("details");dt.innerHTML='<summary class="mu" style="cursor:pointer;margin:6px 0">Ručni EV kalkulator igrača (isti izbor postoji u Analiza meča pod "Igrač: ...")</summary>';ev.parentNode.insertBefore(dt,ev);dt.appendChild(ev)}})();
 setTimeout(()=>{try{getJSON(lp("data/model_weights.json")).then(w=>{if(w&&w.status=="ok"&&w.weights)Object.assign(XW,w.weights)}).catch(()=>{})}catch(e){}},1500);
@@ -1996,7 +1998,7 @@ function tevCalc(pF,L,o1,o2,w,step){
 function tevModel(h,a,mk,sc){
  const dt=fxDt(h,a),steps=[],risks=[],tiles=[];R=ratings();
  const nH=D.games.filter(g=>g.box&&(g.h==h||g.a==h)).length,nA=D.games.filter(g=>g.box&&(g.h==a||g.a==a)).length,nmin=Math.min(nH,nA);
- if(nmin<5)return{err:"Uzorak je manji od 5 utakmica po timu, pa je EV isključen (0%) jer procena nije pouzdana."};
+ if(nmin<MINTG)return{err:"Nema dovoljno odigranih utakmica po timu ("+nmin+"), minimum je "+MINTG+"."};
  const w=Math.min(.8,nmin/(nmin+8));
  const cH=$("dh").checked,cF=$("fat").checked,cM=$("frm")&&$("frm").checked,hc=cH?hcaT(h):S.hca,man0=(+$("ah").value||0)-(+$("aa").value||0),SMX=xSMon?(()=>{try{return shotMatch(h,a)}catch(e){return null}})():null,smd=SMX?Math.max(-4,Math.min(4,SMX.adj))*.15:0,smT=SMX?Math.max(-3,Math.min(3,(SMX.A.tot+SMX.B.tot)*.15)):0,man=man0+smd;
  let fa=0,fm=0,fH=null,fA=null;if(cF){try{fH=fatigue(h,dt,h);fA=fatigue(a,dt,h);fa=fH.adj-fA.adj}catch(e){}}
@@ -2108,7 +2110,7 @@ function tevPlayer(el,h,a,k){
  const[t,id]=v.split("|"),op=t==h?a:h,L=parseFloat($("tln").value),oo=parseFloat($("to1").value),ou=parseFloat($("to2").value);
  if(!isFinite(L)||L<=0)return msg("Upiši granicu kladionice (npr. 16.5).");
  if(!(oo>1)||!(ou>1))return msg("Upiši obe kvote (veće od 1.00).");
- const G=pgames(t,id);if(G.length<3)return msg("Premalo utakmica sa boxscore-om za ovog igrača (treba bar 3, sa filterom minuta iz taba Igrač).");
+ const G=pgames(t,id);if(G.length<MINPG)return msg("Premalo utakmica sa boxscore-om za ovog igrača (treba bar "+MINPG+", sa filterom minuta iz taba Igrač).");
  let gt="";try{R=ratings();const r0=modelFor(h,a,fxDt(h,a)),N=r0.mg.length;let sm=0,st=0;for(let i=0;i<N;i++){sm+=r0.mg[i];st+=r0.tt[i]}sm/=N;st/=N;
   gt=`<b>Meč ${esc(nm(h))} - ${esc(nm(a))}:</b> model očekuje razliku ${sm>=0?esc(nm(h)):esc(nm(a))} ${f(Math.abs(sm))}, ukupno oko ${f(st,0)} poena.`}catch(e){}
  const c={t,id,G,name:pinfo(t,id).name||v};
@@ -2211,21 +2213,23 @@ function tevDeep(c){
 
 tevUI();
 
-// ================= MOZZART KVOTE (data/odds_mozzart.json, puni ih lokalni fetch_mozzart.py) =================
+// ================= DODATNE KLADIONICE (Superbet, Mozzart): data/odds_*.json, pune ih fetch_superbet.py / fetch_mozzart.py =================
+const XSRC=[["data/odds_superbet.json","Superbet","superbet"],["data/odds_mozzart.json","Mozzart","mozzart"]];
 async function mozMerge(){
- try{
-  if(LG!="euroleague"||!D)return;
-  const M=await getJSON(lp("data/odds_mozzart.json"));
-  if(!M||!Array.isArray(M.events)||Date.now()/1000-(M.fetched||0)>7200)return; // starije od 2h se ignorise
+ if(!D)return;
+ for(const [file,title,key] of XSRC){try{
+  const M=await getJSON(file);
+  if(!M||!Array.isArray(M.events)||Date.now()/1000-(M.fetched||0)>7200)continue; // starije od 2h se ignorise
   if(!OD||!OD.events)OD={fetched:M.fetched,remaining:"",events:[]};
   M.events.forEach(m=>{
    const h=codeOf(m.h),a=codeOf(m.a);if(!h||!a||h==a)return;
-   let ev=OD.events.find(e=>codeOf(e.h)==h&&codeOf(e.a)==a);
-   if(!ev){ev={id:"mozzart|"+h+"|"+a,h:m.h,a:m.a,start:m.start,b:[]};OD.events.push(ev)}
-   ev.b=ev.b.filter(b=>b.key!="mozzart");
-   (m.b||[]).forEach(b=>ev.b.push({key:"mozzart",title:"Mozzart",h2h:b.h2h||null,sp:b.sp||null,tt:b.tt||null}))});
-  OD.moz=M.fetched;
- }catch(e){}}
+   const t0=m.start?Date.parse(m.start):NaN,near=u=>{const t=Date.parse(u);return isNaN(t)||isNaN(t0)||Math.abs(t-t0)<=14*36e5};
+   let ev=OD.events.find(e=>codeOf(e.h)==h&&codeOf(e.a)==a&&near(e.start));
+   if(!ev){const fx=(D.fixtures||[]).find(x=>x.h==h&&x.a==a&&near(x.utc)); // novi dogadjaj samo ako je to stvarno evroligaski mec
+    if(!fx)return;ev={id:key+"|"+h+"|"+a,h:m.h,a:m.a,start:m.start||fx.utc,b:[]};OD.events.push(ev)}
+   ev.b=ev.b.filter(b=>b.key!=key);
+   (m.b||[]).forEach((b,i)=>ev.b.push({key,title:i?title+" (alt. linija)":title,h2h:b.h2h||null,sp:b.sp||null,tt:b.tt||null}))});
+ }catch(e){}}}
 {const _lo2=window.loadOdds;window.loadOdds=async function(){await _lo2();await mozMerge();if(D)try{calc()}catch(e){}}}
 </script></main><script>
 // Objašnjenja (.note i opisi ispod naslova) postaju krugić (i) na kraju naslova; klik otvara iskačući opis.
@@ -2302,7 +2306,7 @@ function valueWhy(x){const dt=x.st?new Date(x.st):new Date(),h=x.h,a=x.a;let r;t
  if(fs&&fp)checks.push([fs.adj<=-1?false:fp.adj<=-1?true:"w",`Zamor: ${esc(nm(side))} ima ${fs.rest==null?"-":fs.rest} dana od prošle utakmice i ${fs.km} km putovanja, protivnik ${fp.rest==null?"-":fp.rest} dana i ${fp.km} km.`+(fs.adj<=-1?" Izabrani tim je umorniji.":fp.adj<=-1?" Protivnik je umorniji.":"")]);
  checks.push([null,inj.length?"Unete povrede (ručni unos): "+esc(inj.join("; ")):"Nema ručno unetih povreda, a model ih sam ne zna. Proveri sastav pre igranja."]);
  whyModal(esc(x.mt),`${esc(x.mk)} · <b>${esc(x.pick)}</b> @ ${f(x.o,2)}`,[["Šansa (model + tržište)",f(x.p*100)+"%"],["Kvota znači",f(1/x.o*100)+"%",`fer kvota ${f(1/x.p,2)}`],["EV","+"+f(x.ev*100,1)+"%"],["Predloženi ulog",f(stake(x.p,x.o,B),2),"Kelly sa limitom"],["Očekivana razlika",sg(+f(em))+" ("+esc(nm(h))+")"],["Očekivano poena",f(et)]],checks,"Procena je statistička i ne garantuje dobitak. Šansa meša model (30%) i tržišni konsenzus (70%). Pre igranja proveri povrede i sastav.");}
-function propWhy(x){const G=pgames(x.t,x.id);if(G.length<3)return;const vs=G.map(y=>y.p[5]),mu=avg(vs),n=vs.length,L=x.L,ov=x.po>=.5,po=ov?x.po:1-x.po,
+function propWhy(x){const G=pgames(x.t,x.id);if(G.length<MINPG)return;const vs=G.map(y=>y.p[5]),mu=avg(vs),n=vs.length,L=x.L,ov=x.po>=.5,po=ov?x.po:1-x.po,
  hit=a=>a.length?a.filter(v=>ov?v>L:v<L).length:0,h5=vs.slice(-5),h10=vs.slice(-10),mn=G.map(y=>y.p[4]),ps=posOf(x.t,x.id),r=pdRank(x.op,ps,"pts"),H2=G.filter(y=>y.op==x.op).map(y=>y.p[5]),
  nf=(D.fixtures||[]).find(y=>!D.games.some(g=>g.n==y.n)&&((y.h==x.t&&y.a==x.op)||(y.a==x.t&&y.h==x.op))),dt=nf&&nf.utc?new Date(nf.utc):new Date(),FT=fatigue(x.t,dt,nf?nf.h:x.t),
  mm=nf&&R[nf.h]&&R[nf.a]?R[nf.h].r-R[nf.a].r+S.hca:0,bl=nf?1-phi((14-mm)/S.sig)+phi((-14-mm)/S.sig):0,sd=ov?"Over":"Under",pc=(k,m)=>m?k/m:0,
@@ -2384,12 +2388,12 @@ function recCalc(t,id,G){
   const pSf=sf==null?null:side(sf),cv=sd0/Math.max(mu,1),rel=Math.min(1,n/8)*(cv>.6?.75:1);
   const okm=cnt?Lb>=1.5:Lb>=4.5;
   return{k,lab,n,mu,proj,Lb,over,pb,be,sf,pSf,okm,hLb:hit(Lb,v),h5:hit(Lb,v.slice(-5)),hSf:sf==null?0:hit(sf,v),val:(pb-.5)*rel,rel}});
- const bv=rows.filter(r=>r.okm&&r.pb>=.56&&n>=3).sort((a,b)=>b.val-a.val)[0]||null,
+ const bv=rows.filter(r=>r.okm&&r.pb>=.56&&n>=MINPG).sort((a,b)=>b.val-a.val)[0]||null,
   bs=rows.filter(r=>r.okm&&r.pSf!=null&&1/r.pSf>=1.15).sort((a,b)=>(b.pSf*.5+b.hSf/b.n*.5)*Math.min(1,b.n/8)-(a.pSf*.5+a.hSf/a.n*.5)*Math.min(1,a.n/8))[0]||null;
  const why=[];let hard=false;
  if(own&&own.lv==2){hard=true;why.push([false,`Na listi povreda: ${own.s}. Ne igrati dok se ne potvrdi da igra (proveri da li izostanak još važi).`])}
  else if(own&&own.lv>=1)why.push(["w",`Na listi povreda: ${own.s}.`]);
- if(n<3){hard=true;why.push([false,`Samo ${n} utakmica sa ${MINV()}+ minuta: nema osnove za procenu.`])}
+ if(n<MINPG){hard=true;why.push([false,`Samo ${n} utakmica sa ${MINV()}+ minuta: nema osnove za procenu.`])}
  else if(n<5)why.push(["w",`Mali uzorak (${n} utakmice), procena je nepouzdana.`]);
  else why.push([true,`Uzorak ${n} utakmica.`]);
  why.push([n<5||m5>=mS*.93?true:"w",`Minutaža: sezona ${f(mS)}, poslednjih 5 ${f(m5)} min.`+(n>=5&&m5<mS*.93?" Uloga u rotaciji se smanjuje.":"")]);
