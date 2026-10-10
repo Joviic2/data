@@ -5,13 +5,13 @@
  "club_id": "6",
  "crest": "https://www.aba-liga.com/images/club/100x100/6.png",
  "record": {
-  "gp": 1,
-  "w": 1,
+  "gp": 2,
+  "w": 2,
   "l": 0,
-  "pf": 87,
-  "pa": 81,
-  "pf_avg": 87.0,
-  "pa_avg": 81.0
+  "pf": 157,
+  "pa": 150,
+  "pf_avg": 78.5,
+  "pa_avg": 75.0
  },
  "games": [
   {
@@ -23,6 +23,16 @@
    "pf": 87,
    "pa": 81,
    "result": "W"
+  },
+  {
+   "n": 22,
+   "round": 3,
+   "dt": "2026-10-10T19:00:00Z",
+   "home": true,
+   "opp": "COL",
+   "pf": 70,
+   "pa": 69,
+   "result": "W"
   }
  ],
  "roster": [
@@ -32,10 +42,10 @@
    "no": "31",
    "pos": "",
    "photo": "https://www.aba-liga.com/stats/img/foto/2850.png",
-   "gp": 1,
-   "min_avg": 29.9,
-   "pts_avg": 9.0,
-   "reb_avg": 8.0,
+   "gp": 2,
+   "min_avg": 32.0,
+   "pts_avg": 8.5,
+   "reb_avg": 5.5,
    "ast_avg": 0.0
   },
   {
@@ -44,23 +54,11 @@
    "no": "2",
    "pos": "",
    "photo": "https://www.aba-liga.com/stats/img/foto/4788.png",
-   "gp": 1,
-   "min_avg": 28.8,
-   "pts_avg": 18.0,
+   "gp": 2,
+   "min_avg": 29.5,
+   "pts_avg": 17.5,
    "reb_avg": 6.0,
-   "ast_avg": 4.0
-  },
-  {
-   "id": "1101",
-   "name": "Bilinovac J.",
-   "no": "11",
-   "pos": "",
-   "photo": "https://www.aba-liga.com/stats/img/foto/1101.png",
-   "gp": 1,
-   "min_avg": 28.1,
-   "pts_avg": 13.0,
-   "reb_avg": 3.0,
-   "ast_avg": 0.0
+   "ast_avg": 6.0
   },
   {
    "id": "5724",
@@ -68,10 +66,10 @@
    "no": "40",
    "pos": "",
    "photo": "https://www.aba-liga.com/stats/img/foto/5724.png",
-   "gp": 1,
-   "min_avg": 25.2,
-   "pts_avg": 19.0,
-   "reb_avg": 2.0,
+   "gp": 2,
+   "min_avg": 27.4,
+   "pts_avg": 17.0,
+   "reb_avg": 1.0,
    "ast_avg": 3.0
   },
   {
@@ -80,11 +78,11 @@
    "no": "34",
    "pos": "",
    "photo": "https://www.aba-liga.com/stats/img/foto/3051.png",
-   "gp": 1,
-   "min_avg": 20.8,
-   "pts_avg": 8.0,
-   "reb_avg": 6.0,
-   "ast_avg": 1.0
+   "gp": 2,
+   "min_avg": 25.6,
+   "pts_avg": 13.5,
+   "reb_avg": 6.5,
+   "ast_avg": 2.0
   },
   {
    "id": "5646",
@@ -92,10 +90,22 @@
    "no": "1",
    "pos": "",
    "photo": "https://www.aba-liga.com/stats/img/foto/5646.png",
-   "gp": 1,
-   "min_avg": 19.6,
-   "pts_avg": 8.0,
-   "reb_avg": 1.0,
+   "gp": 2,
+   "min_avg": 20.9,
+   "pts_avg": 5.0,
+   "reb_avg": 1.5,
+   "ast_avg": 0.0
+  },
+  {
+   "id": "1101",
+   "name": "Bilinovac J.",
+   "no": "11",
+   "pos": "",
+   "photo": "https://www.aba-liga.com/stats/img/foto/1101.png",
+   "gp": 2,
+   "min_avg": 20.1,
+   "pts_avg": 6.5,
+   "reb_avg": 1.5,
    "ast_avg": 0.0
   },
   {
@@ -104,23 +114,11 @@
    "no": "9",
    "pos": "",
    "photo": "https://www.aba-liga.com/stats/img/foto/2357.png",
-   "gp": 1,
-   "min_avg": 19.2,
-   "pts_avg": 7.0,
+   "gp": 2,
+   "min_avg": 17.5,
+   "pts_avg": 6.5,
    "reb_avg": 3.0,
    "ast_avg": 4.0
-  },
-  {
-   "id": "3728",
-   "name": "Vujanović D.",
-   "no": "44",
-   "pos": "",
-   "photo": "https://www.aba-liga.com/stats/img/foto/3728.png",
-   "gp": 1,
-   "min_avg": 15.8,
-   "pts_avg": 0.0,
-   "reb_avg": 1.0,
-   "ast_avg": 2.0
   },
   {
    "id": "2849",
@@ -128,11 +126,23 @@
    "no": "21",
    "pos": "",
    "photo": "https://www.aba-liga.com/stats/img/foto/2849.png",
-   "gp": 1,
-   "min_avg": 12.4,
-   "pts_avg": 5.0,
+   "gp": 2,
+   "min_avg": 13.5,
+   "pts_avg": 2.5,
    "reb_avg": 1.0,
    "ast_avg": 0.0
+  },
+  {
+   "id": "3728",
+   "name": "Vujanović D.",
+   "no": "44",
+   "pos": "",
+   "photo": "https://www.aba-liga.com/stats/img/foto/3728.png",
+   "gp": 2,
+   "min_avg": 13.5,
+   "pts_avg": 1.5,
+   "reb_avg": 1.0,
+   "ast_avg": 1.0
   }
  ]
 }

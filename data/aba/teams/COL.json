@@ -5,13 +5,13 @@
  "club_id": "66",
  "crest": "https://www.aba-liga.com/images/club/100x100/66.png",
  "record": {
-  "gp": 1,
+  "gp": 2,
   "w": 1,
-  "l": 0,
-  "pf": 89,
-  "pa": 76,
-  "pf_avg": 89.0,
-  "pa_avg": 76.0
+  "l": 1,
+  "pf": 158,
+  "pa": 146,
+  "pf_avg": 79.0,
+  "pa_avg": 73.0
  },
  "games": [
   {
@@ -23,43 +23,29 @@
    "pf": 89,
    "pa": 76,
    "result": "W"
+  },
+  {
+   "n": 22,
+   "round": 3,
+   "dt": "2026-10-10T19:00:00Z",
+   "home": false,
+   "opp": "SIR",
+   "pf": 69,
+   "pa": 70,
+   "result": "L"
   }
  ],
  "roster": [
-  {
-   "id": "5682",
-   "name": "Kirkwood N.",
-   "no": "22",
-   "pos": "",
-   "photo": "https://www.aba-liga.com/stats/img/foto/5682.png",
-   "gp": 1,
-   "min_avg": 29.9,
-   "pts_avg": 12.0,
-   "reb_avg": 5.0,
-   "ast_avg": 4.0
-  },
-  {
-   "id": "5608",
-   "name": "Cowan A.",
-   "no": "1",
-   "pos": "",
-   "photo": "https://www.aba-liga.com/stats/img/foto/5608.png",
-   "gp": 1,
-   "min_avg": 28.6,
-   "pts_avg": 18.0,
-   "reb_avg": 3.0,
-   "ast_avg": 3.0
-  },
   {
    "id": "5474",
    "name": "Hurt M.",
    "no": "21",
    "pos": "",
    "photo": "https://www.aba-liga.com/stats/img/foto/5474.png",
-   "gp": 1,
-   "min_avg": 24.7,
-   "pts_avg": 21.0,
-   "reb_avg": 4.0,
+   "gp": 2,
+   "min_avg": 27.0,
+   "pts_avg": 22.5,
+   "reb_avg": 4.5,
    "ast_avg": 0.0
   },
   {
@@ -68,11 +54,23 @@
    "no": "6",
    "pos": "",
    "photo": "https://www.aba-liga.com/stats/img/foto/5741.png",
-   "gp": 1,
-   "min_avg": 23.4,
-   "pts_avg": 3.0,
-   "reb_avg": 2.0,
-   "ast_avg": 5.0
+   "gp": 2,
+   "min_avg": 26.2,
+   "pts_avg": 8.0,
+   "reb_avg": 1.5,
+   "ast_avg": 3.0
+  },
+  {
+   "id": "5608",
+   "name": "Cowan A.",
+   "no": "1",
+   "pos": "",
+   "photo": "https://www.aba-liga.com/stats/img/foto/5608.png",
+   "gp": 2,
+   "min_avg": 22.9,
+   "pts_avg": 12.5,
+   "reb_avg": 1.5,
+   "ast_avg": 2.0
   },
   {
    "id": "4772",
@@ -80,58 +78,10 @@
    "no": "24",
    "pos": "",
    "photo": "https://www.aba-liga.com/stats/img/foto/4772.png",
-   "gp": 1,
-   "min_avg": 21.2,
-   "pts_avg": 5.0,
-   "reb_avg": 4.0,
-   "ast_avg": 0.0
-  },
-  {
-   "id": "5685",
-   "name": "Osifo O.",
-   "no": "14",
-   "pos": "",
-   "photo": "https://www.aba-liga.com/stats/img/foto/5685.png",
-   "gp": 1,
-   "min_avg": 13.2,
-   "pts_avg": 2.0,
-   "reb_avg": 2.0,
-   "ast_avg": 1.0
-  },
-  {
-   "id": "2077",
-   "name": "Blažič J.",
-   "no": "11",
-   "pos": "",
-   "photo": "https://www.aba-liga.com/stats/img/foto/2077.png",
-   "gp": 1,
-   "min_avg": 12.9,
-   "pts_avg": 5.0,
-   "reb_avg": 1.0,
-   "ast_avg": 1.0
-  },
-  {
-   "id": "4403",
-   "name": "Kroflič U.",
-   "no": "23",
-   "pos": "",
-   "photo": "https://www.aba-liga.com/stats/img/foto/4403.png",
-   "gp": 1,
-   "min_avg": 11.9,
-   "pts_avg": 14.0,
-   "reb_avg": 1.0,
-   "ast_avg": 0.0
-  },
-  {
-   "id": "5640",
-   "name": "Johnson J.",
-   "no": "34",
-   "pos": "",
-   "photo": "https://www.aba-liga.com/stats/img/foto/5640.png",
-   "gp": 1,
-   "min_avg": 11.9,
+   "gp": 2,
+   "min_avg": 20.2,
    "pts_avg": 4.0,
-   "reb_avg": 3.0,
+   "reb_avg": 4.0,
    "ast_avg": 0.0
   },
   {
@@ -140,11 +90,71 @@
    "no": "3",
    "pos": "",
    "photo": "https://www.aba-liga.com/stats/img/foto/3049.png",
-   "gp": 1,
-   "min_avg": 11.2,
-   "pts_avg": 2.0,
-   "reb_avg": 1.0,
+   "gp": 2,
+   "min_avg": 19.5,
+   "pts_avg": 3.0,
+   "reb_avg": 2.5,
    "ast_avg": 2.0
+  },
+  {
+   "id": "5682",
+   "name": "Kirkwood N.",
+   "no": "22",
+   "pos": "",
+   "photo": "https://www.aba-liga.com/stats/img/foto/5682.png",
+   "gp": 2,
+   "min_avg": 19.5,
+   "pts_avg": 7.5,
+   "reb_avg": 3.0,
+   "ast_avg": 2.0
+  },
+  {
+   "id": "4403",
+   "name": "Kroflič U.",
+   "no": "23",
+   "pos": "",
+   "photo": "https://www.aba-liga.com/stats/img/foto/4403.png",
+   "gp": 2,
+   "min_avg": 18.8,
+   "pts_avg": 11.0,
+   "reb_avg": 3.0,
+   "ast_avg": 0.0
+  },
+  {
+   "id": "5640",
+   "name": "Johnson J.",
+   "no": "34",
+   "pos": "",
+   "photo": "https://www.aba-liga.com/stats/img/foto/5640.png",
+   "gp": 2,
+   "min_avg": 16.1,
+   "pts_avg": 4.5,
+   "reb_avg": 8.0,
+   "ast_avg": 0.0
+  },
+  {
+   "id": "5685",
+   "name": "Osifo O.",
+   "no": "14",
+   "pos": "",
+   "photo": "https://www.aba-liga.com/stats/img/foto/5685.png",
+   "gp": 2,
+   "min_avg": 12.0,
+   "pts_avg": 1.0,
+   "reb_avg": 2.5,
+   "ast_avg": 1.0
+  },
+  {
+   "id": "2077",
+   "name": "Blažič J.",
+   "no": "11",
+   "pos": "",
+   "photo": "https://www.aba-liga.com/stats/img/foto/2077.png",
+   "gp": 2,
+   "min_avg": 9.7,
+   "pts_avg": 3.5,
+   "reb_avg": 1.0,
+   "ast_avg": 0.5
   },
   {
    "id": "5213",
@@ -156,6 +166,18 @@
    "min_avg": 9.0,
    "pts_avg": 3.0,
    "reb_avg": 3.0,
+   "ast_avg": 0.0
+  },
+  {
+   "id": "5645",
+   "name": "Gainey J.",
+   "no": "4",
+   "pos": "",
+   "photo": "https://www.aba-liga.com/stats/img/foto/5645.png",
+   "gp": 1,
+   "min_avg": 5.3,
+   "pts_avg": 0.0,
+   "reb_avg": 1.0,
    "ast_avg": 0.0
   },
   {
