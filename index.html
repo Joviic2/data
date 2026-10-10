@@ -1107,7 +1107,7 @@ function scan(N=5){posData();const out=[],lg=avg(TEAMS.map(ownStats).filter(Bool
  fixList().forEach(fx=>[[fx.h,fx.a],[fx.a,fx.h]].forEach(([t,op])=>{const ow=ownStats(t),od=ownStats(op);
   Object.values(playerAgg(t)).forEach(p=>{if(p.gp<MINPG||p.min/p.gp<18)return;const vs=pgames(t,p.id).map(x=>x.p[5]),mu=avg(vs),sd=Math.max(sdv(vs),1.5),r=pdRank(op,posOf(t,p.id),"pts"),
    pf=r&&r.lg?Math.max(.85,Math.min(1.15,r.v/r.lg)):1,pc=ow&&od?Math.max(.9,Math.min(1.1,(ow.PACE+od.PACE)/2/ow.PACE)):1,pj=mu*pf*pc,L=Math.round(mu*2)/2,po=1-phi((Math.floor(L)+.5-pj)/sd);
-   out.push({id:p.id,n:p.name,t,op,L,pj,po,pf})})}));
+   out.push({id:p.id,n:p.name,t,op,L,pj,po,pf,st:fx.utc})})}));
  return out.sort((a,b)=>Math.abs(b.po-.5)-Math.abs(a.po-.5)).slice(0,N)}
 let SCN=[];
 function scnRender(){const el=$("scn");if(!el||!D)return;SCN=scan();
@@ -2297,15 +2297,21 @@ function k_pw(e){try{const h=codeOf(e.h),a=codeOf(e.a);if(!h||!a||h==a||!R[h]||!
  const r=modelFor(h,a,e.start?new Date(e.start):new Date()),p=r.mg.filter(x=>x>0).length/r.mg.length;KPW.set(k,p);return p}catch(x){return null}}
 function k_vb(o,pm,j){if(pm==null||!o)return"";const ev=(j?1-pm:pm)*o-1;return`<em class="vb2 ${ev>0?"up":"dn"}">${ev>0?"VALUE +"+f(ev*100,1)+"%":f(ev*100,1)+"%"}</em>`}
 let QF=null;
+const DAYN=["Nedelja","Ponedeljak","Utorak","Sreda","Četvrtak","Petak","Subota"];
+// grupisanje po danu odrzavanja utakmice: [{k,lab,items}], najbolji `per` po danu (lista je vec sortirana po vrednosti)
+function byDay(L,per){const M=new Map();L.forEach(x=>{const k=x.st?ISO(x.st):"?";if(!M.has(k))M.set(k,[]);if(M.get(k).length<per)M.get(k).push(x)});
+ return[...M.entries()].sort((a,b)=>a[0]=="?"?1:b[0]=="?"?-1:a[0].localeCompare(b[0])).map(([k,items])=>({k,items,lab:k=="?"?"Datum nepoznat":DAYN[new Date(k+"T12:00:00").getDay()]+" "+k.slice(8,10)+"."+k.slice(5,7)+"."}))}
+const dayHead=(g,n)=>`<h3 style="margin:14px 0 4px;display:flex;align-items:baseline;gap:8px;border-top:1px solid var(--bd);padding-top:10px">${esc(g.lab)}<span class="mu" style="font-size:.78rem;font-weight:400">${g.items.length} ${n}</span></h3>`;
 const qfT=u=>{try{return new Date(u).toLocaleTimeString("sr-Latn",{hour:"2-digit",minute:"2-digit",timeZone:"Europe/Belgrade"})}catch(e){return""}};
 function qfRender(){const el=$("qfp");document.querySelectorAll("[data-qf]").forEach(b=>b.setAttribute("aria-selected",String(b.dataset.qf==QF)));if(!QF||!D){el.hidden=true;return}
  let h="";
  if(QF=="today"){const done=new Set(D.games.map(g=>g.n)),fx=(D.fixtures||[]).filter(x=>!done.has(x.n)&&x.utc),td=ISO(new Date()),dy=[...new Set(fx.map(x=>ISO(x.utc)))].filter(d=>d>=td).sort()[0];
   if(!dy)h='<p class="mu">Nema predstojećih utakmica.</p>';else h=`<h3 style="margin-top:0">${dy==td?"Danas":"Prvi sledeći dan: "+esc(dy.slice(8,10)+"."+dy.slice(5,7)+".")}</h3>`+fx.filter(x=>ISO(x.utc)==dy).sort((a,b)=>a.utc.localeCompare(b.utc)).map(x=>{const p=R[x.h]&&R[x.a]?phi((R[x.h].r-R[x.a].r+S.hca)/S.sig):null;
    return`<div class="gm" data-qm="${esc(x.h+"|"+x.a)}" tabindex="0"><span class="gd">${esc(qfT(x.utc))}${p!=null?" · "+f(p*100,0)+"%":""}</span><span class="gt r">${esc(nm(x.h))}</span><b class="gs" style="font-size:1rem">Analiza ▶</b><span class="gt">${esc(nm(x.a))}</span></div>`}).join("")}
- else if(QF=="value"){if(!SCR||!SCR.length)try{screen()}catch(e){}const L=(SCR||[]).map((x,i0)=>({...x,i0,ev:x.p*x.o-1})).filter(x=>isFinite(x.ev)).sort((a,b)=>b.ev-a.ev).slice(0,5);
-  h=L.length?`<h3 style="margin-top:0">Top Value Bets</h3>`+L.map(x=>`<div class="head" data-vi="${x.i0}" tabindex="0" style="cursor:pointer;padding:6px 0;border-bottom:1px solid var(--bd)"><span>${esc(x.mt)}: <b>${esc(x.pick)}</b> @ ${f(x.o,2)}</span><span class="vb2 up" style="margin-left:auto">+${f(x.ev*100,1)}% EV</span></div>`).join("")+'<div class="note">Isti izračun kao Value Screener (Monte Carlo model), prag EV podešavaš tamo.</div>':'<p class="mu">Nema value tipova (nema kvota ili nijedan tip ne prelazi prag).</p>'}
- else{const L=QPL=scan(60).filter(x=>x.po>=.6).slice(0,6);h=L.length?`<h3 style="margin-top:0">Props Over</h3>`+L.map((x,i)=>`<div class="head" data-qi="${i}" tabindex="0" style="padding:6px 0;border-bottom:1px solid var(--bd);cursor:pointer"><span><b>${esc(x.n)}</b> Over ${x.L} PTS vs ${esc(nm(x.op))}</span><span class="vb2 up" style="margin-left:auto">${f(x.po*100,0)}%</span></div>`).join("")+'<div class="note">Linija je sezonski prosek, % je šansa po modelu (protivnik po poziciji i tempo). Klik otvara obrazloženje.</div>':'<p class="mu">Nema jakih Over signala.</p>'}
+ else if(QF=="value"){if(!SCR||!SCR.length)try{screen()}catch(e){}const L=(SCR||[]).map((x,i0)=>({...x,i0,ev:x.p*x.o-1})).filter(x=>isFinite(x.ev)).sort((a,b)=>b.ev-a.ev),G=byDay(L,5);
+  h=G.length?`<h3 style="margin:0">Top Value Bets po danima</h3>`+G.map(g=>dayHead(g,"tipova")+g.items.map(x=>`<div class="head" data-vi="${x.i0}" tabindex="0" style="cursor:pointer;padding:6px 0;border-bottom:1px solid var(--bd)"><span>${esc(qfT(x.st))} · ${esc(x.mt)}: <b>${esc(x.pick)}</b> @ ${f(x.o,2)}</span><span class="vb2 up" style="margin-left:auto">+${f(x.ev*100,1)}% EV</span></div>`).join("")).join("")+'<div class="note">Najbolji EV tipovi za svaki dan kola (po datumu utakmice). Isti izračun kao Value Screener (Monte Carlo model), prag EV podešavaš tamo.</div>':'<p class="mu">Nema value tipova (nema kvota ili nijedan tip ne prelazi prag).</p>'}
+ else{const G=byDay(scan(400).filter(x=>x.po>=.6).sort((a,b)=>b.po-a.po),6);QPL=[];G.forEach(g=>g.items.forEach(x=>QPL.push(x)));let qi=0;
+  h=G.length?`<h3 style="margin:0">Props Over po danima</h3>`+G.map(g=>dayHead(g,"propsa")+g.items.map(x=>`<div class="head" data-qi="${qi++}" tabindex="0" style="padding:6px 0;border-bottom:1px solid var(--bd);cursor:pointer"><span>${esc(qfT(x.st))} · <b>${esc(x.n)}</b> Over ${x.L} PTS vs ${esc(nm(x.op))}</span><span class="vb2 up" style="margin-left:auto">${f(x.po*100,0)}%</span></div>`).join("")).join("")+'<div class="note">Najjači Over signali za svaki dan kola. Linija je sezonski prosek, % je šansa po modelu (protivnik po poziciji i tempo). Klik otvara obrazloženje.</div>':'<p class="mu">Nema jakih Over signala.</p>'}
  el.innerHTML=h;el.hidden=false}
 document.addEventListener("click",e=>{const b=e.target.closest("[data-qf]");if(b){QF=QF==b.dataset.qf?null:b.dataset.qf;qfRender();return}
  const m=e.target.closest("[data-qm]");if(m){const[h,a]=m.dataset.qm.split("|");$("h").value=h;$("a").value=a;show(0);calc();QF=null;qfRender();return}
