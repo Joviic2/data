@@ -2898,7 +2898,7 @@ function fbMid(kpi,tipRow){
  if(!d.p||!Array.isArray(d.p.rows))return kpi+`<div class="card">${hd}<div class="note warn" style="display:block">Nema <code>data/${esc(k)}/predictions.json</code> u repou. Za sada ga pravi samo <code>football_poisson.py</code> za Premier League; ostale lige traže svoj folder i svoju verziju skripti.</div></div>`;
  const bar=`<div class="mts">${[["danas","Danas"],["sutra","Sutra"],["sve","Sve"]].map(([a,l])=>`<button type="button" data-ff="${a}" aria-selected="${FBF==a}">${l}</button>`).join("")}<span class="mu" style="align-self:center">EV ≥</span>${[0,.03,.05,.08].map(v=>`<button type="button" data-fev="${v}" aria-selected="${FBEV==v}">${Math.round(v*100)}%</button>`).join("")}<button type="button" class="btn sm" data-fbr="1">Osveži</button></div>`;
  const up=d.p.updated?new Date(d.p.updated):null,skp=(d.p.skipped||[]).filter(x=>fbDay(x.start?new Date(x.start):null)),age=up&&!isNaN(up)?(Date.now()-up)/36e5:null;
- const st=`<p class="mu" style="font-size:.85rem;margin:4px 0">predictions.json: ${age==null?"?":f(age,1)+" h staro"}${age>12?' <b class="no">(staro: pokreni fetch_superbet_football.py pa football_poisson.py i pushuj)</b>':""} ${d.p.source=="statshub"?` izvor: Statshub (xG udeo ${d.p.beta})`:' <b class="no">izvor: stari CSV (bez xG i povreda): pokreni statshub_football.py</b>'} · ${FBF=="sve"?"svi dani":FBF}: ${FBM.length} utakmica${skp.length?`<br><b class="no">Preskočeno (ekipa nije prepoznata u modelu, dodaj u ALIAS): ${skp.map(x=>esc(x.h+" - "+x.a)).join(", ")}</b>`:""}</p>`;
+ const st=`<p class="mu" style="font-size:.85rem;margin:4px 0">predictions.json${fbFxStat(d.p)}: ${age==null?"?":f(age,1)+" h staro"}${age>12?' <b class="no">(staro: pokreni fetch_superbet_football.py pa football_poisson.py i pushuj)</b>':""} ${d.p.source=="statshub"?` izvor: Statshub (xG udeo ${d.p.beta})`:' <b class="no">izvor: stari CSV (bez xG i povreda): pokreni statshub_football.py</b>'} · ${FBF=="sve"?"svi dani":FBF}: ${FBM.length} utakmica${skp.length?`<br><b class="no">Preskočeno (ekipa nije prepoznata u modelu, dodaj u ALIAS): ${skp.map(x=>esc(x.h+" - "+x.a)).join(", ")}</b>`:""}</p>`;
  const top=HT.slice().sort((a,b)=>b.ev-a.ev).slice(0,5);
  const topH=top.length?`<div class="card"><h2>Najbolji tipovi (${FBF=="sve"?"svi dani":FBF})</h2>${top.map(x=>tipRow(x,x.i)).join("")}</div>`:"";
  const od=(m,mk,pk)=>{const r=m.rows.find(x=>x.market==mk&&x.pick==pk);return r?r.odds:null},pm=(m,mk,pk)=>{const r=m.rows.find(x=>x.market==mk&&x.pick==pk);return r?Math.round(r.p_model*100)+"%":"-"};
@@ -2913,6 +2913,7 @@ function fbMid(kpi,tipRow){
 </script>
 <script>
 // ===== Fudbal: redovi za momentum / stil / motivaciju / sudiju / vreme (podaci iz context[].factors, fb_factors.py) =====
+function fbFxStat(p){return p.factors_on===undefined?' <b class="no">(STARI fajl: nema faktora, pokreni novi football_poisson.py)</b>':p.factors_on?" (faktori uključeni)":' <b class="no">(faktori ISKLJUČENI)</b>'}
 function fbFxRows(F,pc){
  if(!F)return"";
  const r=(k,a,b)=>`<tr><td><b>${k}</b></td><td>${a}</td><td>${b}</td></tr>`,r2=(k,v)=>`<tr><td><b>${k}</b></td><td colspan="2">${v}</td></tr>`;
