@@ -1,7 +1,9 @@
 #!/usr/bin/env python3
 """Premier liga: Poissonov model (Maher, opciono Dixon-Coles) + EV protiv Superbet kvota.
 
-Podaci o rezultatima: football-data.co.uk (E0.csv, kolone Date,HomeTeam,AwayTeam,FTHG,FTAG).
+IZVOR (podrazumevano): Statshub preko statshub_football.py -> data/epl/statshub_data.json (rezultati svih takmicenja, xG, povrede, odmor, forma, stil, H2H).
+  python statshub_football.py ; python football_poisson.py --backtest 80 (izaberi --beta) ; python football_poisson.py --beta 0.5
+Stari izvor (--source csv): football-data.co.uk (E0.csv, kolone Date,HomeTeam,AwayTeam,FTHG,FTAG).
   python football_poisson.py --download                 # skida tekucu i proslu sezonu u data/epl/ (ili stavi CSV sam)
   python football_poisson.py                            # predikcije za meceve iz data/epl/odds_superbet.json + EV
   python football_poisson.py --match "Arsenal,Chelsea"  # samo model, bez kvota
@@ -10,12 +12,14 @@ Model: gol-ocekivanja  lamH = mu*H*att[dom]*def[gost],  lamA = mu*att[gost]*def[
     sto je bitno rano u sezoni; proslosezonski podaci popunjavaju prazninu, a novajlije imaju samo ovosezonske.
   - --rho je Dixon-Coles korekcija za male rezultate (0 = cist Poisson).
 EV: p = w*model + (1-w)*tržište bez marže (Superbet kvote jedne kladionice nisu pouzdana referenca), EV = p*kvota-1.
+Trzista: samo 1X2, Golovi 1.5/2.5/3.5 i GG/NG (sve ostalo se ignorise).
 Ovo je statisticki model bez povreda, sastava i rotacije; EV je procena, ne garancija."""
 import argparse, csv, difflib, glob, io, json, math, os, re, sys, unicodedata, urllib.request
 from datetime import date, datetime
 
 FD = "https://www.football-data.co.uk/mmz4281/{s}/E0.csv"
 D = os.path.join("data", "epl")
+OU_LINES = (1.5, 2.5, 3.5)
 ODDS, OUT = os.path.join(D, "odds_superbet.json"), os.path.join(D, "predictions.json")
 # kanonska imena = imena iz football-data (bez dijakritika, malim slovima, bez apostrofa); levo su varijante iz drugih izvora
 ALIAS = {"manchester city": "man city", "mancester siti": "man city", "manchester united": "man united", "man utd": "man united",
@@ -37,6 +41,8 @@ def canon(name, known):
     n = nrm(name)
     n = ALIAS.get(n, n)
     if n in known: return n
+    pre = sorted((k for k in known if n.startswith(k + " ") or k.startswith(n + " ")), key=len, reverse=True)   # "hull city" -> "hull", "ipswich town" -> "ipswich"
+    if pre and (len(pre) == 1 or len(pre[0]) > len(pre[1])): return pre[0]
     m = difflib.get_close_matches(n, list(known), 1, 0.75)
     return m[0] if m else None
 
@@ -109,9 +115,9 @@ def probs(G):
     return {"x12": [p1, px, 1 - p1 - px], "over": over, "btts": sum(G[i][j] for i in range(1, n) for j in range(1, n))}
 
 
-def predict(mod, h, a, rho):
-    lh = mod["mu"] * mod["H"] * mod["att"].get(h, 1.0) * mod["def"].get(a, 1.0)
-    la = mod["mu"] * mod["att"].get(a, 1.0) * mod["def"].get(h, 1.0)
+def predict(mod, h, a, rho, mh=1.0, ma=1.0):
+    lh = mod["mu"] * mod["H"] * mod["att"].get(h, 1.0) * mod["def"].get(a, 1.0) * mh
+    la = mod["mu"] * mod["att"].get(a, 1.0) * mod["def"].get(h, 1.0) * ma
     G = grid(lh, la, rho)
     return lh, la, G, probs(G)
 
@@ -154,6 +160,71 @@ def fair(odds):
     return [1 / o / s for o in odds]
 
 
+# ======================= STATSHUB: ucitavanje, xG, kontekst (povrede, odmor, forma, stil, H2H), backtest =======================
+SH = os.path.join(D, "statshub_data.json")
+
+
+def load_statshub(path=SH):
+    """(M, SD): M = utakmice u istom formatu kao load() + xh/xa (xG) + ts; SD = ceo JSON (profili timova)."""
+    SD = json.load(open(path, encoding="utf-8"))
+    M = [{"d": datetime.strptime(m["d"], "%Y-%m-%d").date(), "ts": m["ts"], "h": m["h"], "a": m["a"], "hg": m["hg"], "ag": m["ag"], "xh": m.get("xh"), "xa": m.get("xa")} for m in SD["matches"]]
+    return M, SD
+
+
+def eff(M, beta):
+    """Efektivni golovi = beta*xG + (1-beta)*golovi (samo gde xG postoji): xG je manje sumovit pokazatelj snage od golova."""
+    if not beta: return M
+    return [{**m, "hg": beta * m["xh"] + (1 - beta) * m["hg"], "ag": beta * m["xa"] + (1 - beta) * m["ag"]} if m.get("xh") is not None else m for m in M]
+
+
+def h2h(M, h, a, n=6):
+    r = sorted((m for m in M if {m["h"], m["a"]} == {h, a}), key=lambda m: m["ts"])[-n:]
+    if not r: return None
+    gh = sum(m["hg"] if m["h"] == h else m["ag"] for m in r); ga = sum(m["ag"] if m["h"] == h else m["hg"] for m in r)
+    return {"n": len(r), "h_win": sum(1 for m in r if (m["hg"] > m["ag"]) == (m["h"] == h) and m["hg"] != m["ag"]), "draw": sum(1 for m in r if m["hg"] == m["ag"]),
+            "gh": gh, "ga": ga, "avg_goals": round((gh + ga) / len(r), 2), "last": [f"{m['d']} {m['h']} {m['hg']}:{m['ag']} {m['a']}" for m in r[-3:]]}
+
+
+def team_ctx(SD, key_, start_ms, att_k, def_k, rest_pen):
+    """Multiplikatori za ocekivane golove ekipe: napad (povrede igraca koji nose xG+xA, kratak odmor) i odbrana (nedostupni defanzivci/golman)."""
+    t = (SD.get("teams") or {}).get(key_)
+    if not t: return {"att": 1.0, "conc": 1.0, "rest": None, "out": [], "games": 0}
+    byid = {p["id"]: p for p in t.get("players") or []}
+    att_s = def_s = 0.0; out = []
+    for u in t.get("unav") or []:
+        st = str(u.get("status") or "").lower()
+        w = 1.0 if st == "out" else 0.4 if st in ("doubtful", "questionable", "uncertain") else 0.0
+        p = byid.get(u.get("id"))
+        if not w or not p: continue
+        att_s += w * p["att"]
+        if p["pos"] in ("D", "G"): def_s += w * min(1.0, p["min10"] / 900.0)
+        out.append({"n": u.get("n"), "pos": u.get("pos"), "status": st, "att": p["att"], "min10": p["min10"], "reason": u.get("reason")})
+    rest = round((start_ms / 1000 - t["last"]["ts"]) / 86400, 1) if t.get("last") and start_ms else None
+    att = 1 - att_k * min(att_s, 0.35)
+    if rest is not None and 0 <= rest < 3.5: att *= 1 - rest_pen
+    return {"att": round(att, 4), "conc": round(1 + def_k * min(def_s, 2.0), 4), "rest": rest, "out": out, "games": t.get("games", 0),
+            "form": t.get("form"), "style": (t.get("style") or {}).get("labels"), "xg": (t.get("style") or {}).get("xg"), "next": t.get("next")}
+
+
+def backtest(M, K, betas, a):
+    """Walk-forward: za svaku od poslednjih K utakmica uci samo iz ranijih; log-loss za 1X2 i preko 2.5. Manje = bolje."""
+    ms = sorted(M, key=lambda m: m["ts"]); test = ms[-K:]
+    print(f"\nBACKTEST: {len(test)} utakmica, halflife {a.halflife}, k {a.k}, rho {a.rho}")
+    for beta in betas:
+        l12 = lo = n = 0
+        for m in test:
+            tr = [x for x in ms if x["ts"] < m["ts"] - 3600]
+            if len(tr) < 40: continue
+            mod = fit(eff(tr, beta), m["d"], a.halflife, a.k)
+            if m["h"] not in mod["att"] or m["a"] not in mod["att"]: continue
+            _, _, G, P = predict(mod, m["h"], m["a"], a.rho)
+            res = 0 if m["hg"] > m["ag"] else 1 if m["hg"] == m["ag"] else 2
+            l12 -= math.log(max(1e-9, P["x12"][res]))
+            po = P["over"](2); lo -= math.log(max(1e-9, po if m["hg"] + m["ag"] > 2 else 1 - po)); n += 1
+        if n: print(f"  beta (udeo xG) {beta:<4}: log-loss 1X2 {l12 / n:.4f} | preko/ispod 2.5 {lo / n:.4f}   (n={n})")
+    print("  Nasumicno (1/3,1/3,1/3) daje 1.0986 za 1X2; trziste obicno ~0.97-1.00. Uzmi beta sa najmanjim log-lossom, ali samo ako je razlika veca od sumova (n < 100 je mali uzorak).")
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--download", action="store_true", help="skini E0.csv za tekucu i proslu sezonu u data/epl/")
@@ -162,6 +233,16 @@ def main():
     ap.add_argument("--halflife", type=float, default=180.0); ap.add_argument("--k", type=float, default=4.0)
     ap.add_argument("--rho", type=float, default=0.0); ap.add_argument("--w", type=float, default=0.35, help="tezina modela u odnosu na trziste")
     ap.add_argument("--h1", type=float, default=0.45, help="udeo golova u 1. poluvremenu (za HT/FT)"); ap.add_argument("--min-ev", type=float, default=0.03); ap.add_argument("--all", action="store_true", help="prikazi sve izbore, ne samo EV iznad praga")
+    ap.add_argument("--keep-sus", action="store_true", help="zadrzi i sumnjive izbore (model i trziste se razilaze >15 pp ili sirovi EV >25%%); podrazumevano se izbacuju")
+    ap.add_argument("--source", choices=["auto", "statshub", "csv"], default="auto", help="izvor rezultata: Statshub (xG, povrede, forma...) ili stari football-data CSV")
+    ap.add_argument("--refresh", action="store_true", help="prvo osvezi Statshub podatke (statshub_football.py)")
+    ap.add_argument("--offline", action="store_true", help="uz --refresh: samo iz kesa")
+    ap.add_argument("--beta", type=float, default=0.5, help="udeo xG u 'efektivnim golovima' pri ucenju snage ekipa (0 = samo golovi); odredi ga sa --backtest")
+    ap.add_argument("--att-k", type=float, default=0.5, help="koliko se napad smanjuje po udelu xG+xA koji nose nedostupni igraci (0 = ne primenjuj povrede)")
+    ap.add_argument("--def-k", type=float, default=0.06, help="povecanje primljenih golova po nedostupnom bekovi/golmanu (udeo minuta)")
+    ap.add_argument("--rest-pen", type=float, default=0.02, help="umanjenje napada kad je odmor manji od 3.5 dana (0 = iskljuceno)")
+    ap.add_argument("--backtest", type=int, default=0, metavar="K", help="walk-forward na poslednjih K utakmica, poredi beta vrednosti (npr. --backtest 80)")
+    ap.add_argument("--betas", default="0,0.25,0.5,0.75,1")
     a = ap.parse_args()
     today = date.today()
     cur = season_code(today); prev = f"{int(cur[:2]) - 1:02d}{int(cur[:2]):02d}"
@@ -173,12 +254,26 @@ def main():
                 open(os.path.join(D, f"E0_{s}.csv"), "wb").write(urllib.request.urlopen(urllib.request.Request(FD.format(s=s), headers={"User-Agent": "Mozilla/5.0"}), timeout=30).read())
                 print("skinuto", s)
             except Exception as e: print("nije uspelo", s, e)
-    files = [os.path.join(D, f"E0_{s}.csv") for s in seasons if os.path.exists(os.path.join(D, f"E0_{s}.csv"))] + glob.glob(os.path.join(D, "results*.csv"))
-    M = load(files)
-    if len(M) < 20: sys.exit(f"Premalo utakmica ({len(M)}). Pokreni sa --download ili stavi E0 CSV u {D}/ (fajlovi: {files})")
+    if a.refresh:
+        import types, statshub_football as sf
+        sf.build(types.SimpleNamespace(offline=a.offline, ttl=6.0, limit=60, tournament=sf.TOURN, season=sf.SEASON, no_upcoming=False))
+    Mraw = None
+    SD, use_sh = None, a.source == "statshub" or (a.source == "auto" and os.path.exists(SH))
+    if use_sh:
+        if not os.path.exists(SH): sys.exit(f"Nema {SH}. Pokreni: python statshub_football.py (ili --refresh)")
+        M, SD = load_statshub()
+        print(f"Izvor: Statshub ({SD.get('updated')}), {sum(1 for m in M if m['xh'] is not None)} utakmica sa xG")
+        if a.backtest: backtest(M, a.backtest, [float(x) for x in a.betas.split(",")], a); return
+        Mraw = M
+        M = eff(M, a.beta)
+    else:
+        files = [os.path.join(D, f"E0_{s}.csv") for s in seasons if os.path.exists(os.path.join(D, f"E0_{s}.csv"))] + glob.glob(os.path.join(D, "results*.csv"))
+        M = load(files)
+    if len(M) < 20: sys.exit(f"Premalo utakmica ({len(M)}). Pokreni statshub_football.py (ili --download za stari CSV izvor)")
     mod = fit(M, today, a.halflife, a.k); known = set(mod["att"])
-    print(f"Model: {len(M)} utakmica, {len(known)} ekipa, mu {mod['mu']:.2f}, domaci faktor {mod['H']:.2f}")
-    rows, out = [], []
+    print(f"Model: {len(M)} utakmica, {len(known)} ekipa, mu {mod['mu']:.2f}, domaci faktor {mod['H']:.2f}" + (f", beta xG {a.beta}" if use_sh else ""))
+    ctxs = []
+    rows, out, skipped, dropped = [], [], [], 0
     if a.match:
         h, g = [canon(x, known) for x in a.match.split(",")]
         todo = [{"h": h, "a": g, "H": h, "A": g, "start": None, "x12": None, "ou": [], "btts": None}]
@@ -188,61 +283,48 @@ def main():
         todo = []
         for e in ev:
             h, g = canon(e["h"], known), canon(e["a"], known)
-            if not (h and g): print("  ne prepoznajem ekipu:", e["h"], "-", e["a"], "(dodaj u ALIAS)"); continue
+            if not (h and g): print("  ne prepoznajem ekipu:", e["h"], "-", e["a"], "(dodaj u ALIAS)"); skipped.append({"h": e["h"], "a": e["a"], "start": e.get("start")}); continue
             todo.append({**e, "H": e["h"], "A": e["a"], "h": h, "a": g})
     for e in todo:
-        lh, la, G, P = predict(mod, e["h"], e["a"], a.rho)
+        mh = ma = 1.0; cx = None
+        if SD:
+            try: st_ms = datetime.fromisoformat(str(e.get("start")).replace("Z", "+00:00")).timestamp() * 1000
+            except (TypeError, ValueError): st_ms = None
+            ch, ca = team_ctx(SD, e["h"], st_ms, a.att_k, a.def_k, a.rest_pen), team_ctx(SD, e["a"], st_ms, a.att_k, a.def_k, a.rest_pen)
+            mh, ma = ch["att"] * ca["conc"], ca["att"] * ch["conc"]
+            cx = {"h": e["H"], "a": e["A"], "start": e.get("start"), "mult": [round(mh, 3), round(ma, 3)], "home": ch, "away": ca, "h2h": h2h(Mraw, e["h"], e["a"]) if Mraw else None}
+        lh, la, G, P = predict(mod, e["h"], e["a"], a.rho, mh, ma)
+        if cx:
+            cx["lam"] = [round(lh, 3), round(la, 3)]; ctxs.append(cx)
+            print(f"\n{e['H']} - {e['A']}: forma {ch['form']['str'] if ch.get('form') else '?'} / {ca['form']['str'] if ca.get('form') else '?'} | odmor {ch['rest']}d / {ca['rest']}d"
+                  f" | nedostupni {[u['n'] for u in ch['out']]} / {[u['n'] for u in ca['out']]} | stil {ch.get('style')} / {ca.get('style')}")
         print(f"\n{e['H']} - {e['A']}  {e.get('start') or ''}\n  ocekivani golovi {lh:.2f}:{la:.2f} | 1X2 {P['x12'][0]*100:.0f}/{P['x12'][1]*100:.0f}/{P['x12'][2]*100:.0f}% | GG {P['btts']*100:.0f}% | preko 2.5 {P['over'](2)*100:.0f}%")
         best = max(((i, j, G[i][j]) for i in range(len(G)) for j in range(len(G))), key=lambda t: t[2])
         print(f"  najverovatniji rezultat {best[0]}:{best[1]} ({best[2]*100:.1f}%)")
         sel = []   # (trziste, izbor, kvota, p_model, p_trziste)
-        if e.get("x12"):
+        if e.get("x12") and len(e["x12"]) == 3 and all(o and o > 1.01 for o in e["x12"]) and 1.0 <= sum(1 / o for o in e["x12"]) <= 1.25:
             f = fair(e["x12"])
             sel += [("1X2", n, e["x12"][i], P["x12"][i], f[i]) for i, n in enumerate(("1", "X", "2"))]
         for L, o, u in e.get("ou") or []:
+            if L not in OU_LINES or not (o and u and 1.0 <= 1 / o + 1 / u <= 1.2): continue      # samo linije 1.5/2.5/3.5; nelogicna marza = pogresno uparene kvote
             f = fair([o, u]); po = P["over"](L)
             sel += [(f"Golovi {L}", "Vise", o, po, f[0]), (f"Golovi {L}", "Manje", u, 1 - po, f[1])]
-        if e.get("btts"):
+        if e.get("btts") and len(e["btts"]) == 2 and all(o and o > 1.01 for o in e["btts"]) and 1.0 <= sum(1 / o for o in e["btts"]) <= 1.2:
             f = fair(e["btts"]); sel += [("GG/NG", "GG", e["btts"][0], P["btts"], f[0]), ("GG/NG", "NG", e["btts"][1], 1 - P["btts"], f[1])]
-        nn = len(G)
-        if e.get("dc"):
-            o3 = e["dc"]; sm = sum(1 / o for o in o3); x = P["x12"]
-            pdc = [x[0] + x[1], x[0] + x[2], x[1] + x[2]]
-            sel += [("Dupla sansa", nm_, o3[i], pdc[i], 2 * (1 / o3[i]) / sm) for i, nm_ in enumerate(("1X", "12", "X2"))]
-        for L, oh, oa in e.get("ah") or []:           # azijski/2-way hendikep; L = hendikep domacina; push = vracen ulog
-            w_, pu_, l_ = wpl(G, L, "ah"); c = w_ / (w_ + l_) if w_ + l_ > 0 else .5; f = fair([oh, oa])
-            sel += [(f"AH {L:+g}", "1", oh, c, f[0], pu_), (f"AH {L:+g}", "2", oa, 1 - c, f[1], pu_)]
-        for L, ov_, un_ in e.get("ouah") or []:        # azijski ukupno golova
-            w_, pu_, l_ = wpl(G, L, "ou"); c = w_ / (w_ + l_) if w_ + l_ > 0 else .5; f = fair([ov_, un_])
-            sel += [(f"AU {L:g}", "Vise", ov_, c, f[0], pu_), (f"AU {L:g}", "Manje", un_, 1 - c, f[1], pu_)]
-        for hc, o1, ox, o2 in e.get("eh") or []:       # 3-way hendikep: domacinu se dodaje hc golova
-            pr = [0.0, 0.0, 0.0]
-            for i in range(nn):
-                for j in range(nn):
-                    d = i - j + hc; pr[0 if d > 0 else 1 if d == 0 else 2] += G[i][j]
-            f = fair([o1, ox, o2])
-            sel += [(f"EH {hc:+d}", nm_, o, pr[k], f[k]) for k, (nm_, o) in enumerate(zip(("1", "X", "2"), (o1, ox, o2)))]
-        R_ = e.get("range") or []
-        if R_:
-            f = fair([x[2] for x in R_])
-            for k, (lo, hi, o) in enumerate(R_):
-                sel.append(("Raspon", f"{lo}-{hi}" if hi < 99 else f"{lo}+", o, sum(G[i][j] for i in range(nn) for j in range(nn) if lo <= i + j <= hi), f[k]))
-        for thr, y_, n_ in e.get("bttsx") or []:
-            py = sum(G[i][j] for i in range(1, nn) for j in range(1, nn) if i + j >= thr)
-            if n_: f = fair([y_, n_]); sel += [(f"GG&{thr}+", "Da", y_, py, f[0]), (f"GG&{thr}+", "Ne", n_, 1 - py, f[1])]
-            else: sel.append((f"GG&{thr}+", "Da", y_, py, 1 / y_))
-        if e.get("htft"):
-            hp = htft_probs(lh, la, a.h1); tot_ = sum(1 / o for o in e["htft"].values())
-            sel += [("HT/FT", k.upper(), o, hp.get(k, 0.0), (1 / o) / tot_) for k, o in e["htft"].items()]
+        # Namerno SAMO 1X2, Golovi 1.5/2.5/3.5 i GG/NG. Kombinovane i specijalne igre (GG ili N+, GG&N+, HT/FT, DC, AH, EH, raspon, tacan rezultat...)
+        # iz Superbet JSON-a se ignorisu: njihovo mapiranje izlaza je nepouzdano.
         for t_ in sel:
             mk, pick, o, pm, pf = t_[:5]; pp = t_[5] if len(t_) > 5 else 0.0
             p = a.w * pm + (1 - a.w) * pf; ev_ = (1 - pp) * (p * o - 1); evr = (1 - pp) * (pm * o - 1)
-            row = {"h": e["H"], "a": e["A"], "start": e.get("start"), "market": mk, "pick": pick, "odds": o, "p_model": round(pm, 4), "p_market": round(pf, 4), "p": round(p, 4), "push": round(pp, 4), "ev": round(ev_, 4), "ev_raw": round(evr, 4)}
+            row = {"h": e["H"], "a": e["A"], "start": e.get("start"), "market": mk, "pick": pick, "odds": o, "p_model": round(pm, 4), "p_market": round(pf, 4), "p": round(p, 4), "push": round(pp, 4), "ev": round(ev_, 4), "ev_raw": round(evr, 4), "sus": abs(pm - pf) > 0.15 or evr > 0.25}
+            if row["sus"] and not a.keep_sus:         # model i trziste se previse razilaze (npr. novajlije bez istorije): nepouzdano, ne izbacujemo tip
+                dropped += 1
+                continue
             out.append(row)
             if a.all or ev_ >= a.min_ev: print(f"  {mk:<12} {pick:<6} kvota {o:<5.2f} model {pm*100:4.1f}% trziste {pf*100:4.1f}%{f' vracen ulog {pp*100:.0f}%' if pp else ''} -> EV {ev_*100:+5.1f}% (sirovi model {evr*100:+.1f}%){'  (PROVERI liniju/kvotu)' if evr > 0.25 else ''}")
     if not a.match:
-        json.dump({"updated": datetime.now().isoformat(timespec="seconds"), "w": a.w, "rows": out}, open(OUT, "w", encoding="utf-8"), ensure_ascii=False, separators=(",", ":"))
-        print(f"\nupisano {len(out)} izbora u {OUT}")
+        json.dump({"updated": datetime.now().isoformat(timespec="seconds"), "w": a.w, "source": "statshub" if SD else "csv", "beta": a.beta if SD else None, "rows": out, "skipped": skipped, "context": ctxs}, open(OUT, "w", encoding="utf-8"), ensure_ascii=False, separators=(",", ":"))
+        print(f"\nupisano {len(out)} izbora u {OUT}" + (f" (izbaceno {dropped} sumnjivih: model i trziste se previse razilaze; --keep-sus ih vraca)" if dropped else ""))
 
 
 if __name__ == "__main__":

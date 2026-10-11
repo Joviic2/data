@@ -1,150 +1,162 @@
 fajl	status	bajtova	url	kljucevi
-001__api_unique_tournament_23_95836_events_.json	200	20871	https://www.statshub.com/api/unique-tournament/23/95836/events	['data']
-002__api_unique_tournament_23_95836_standing_.json	200	19960	https://www.statshub.com/api/unique-tournament/23/95836/standing	['data']
-003__api_unique_tournament_23_95836_cup_tree_.json	200	13	https://www.statshub.com/api/unique-tournament/23/95836/cup-tree	['data']
-004_NEXT_DATA__leagues_italy_serie_a_23.json	200	2627	https://www.statshub.com/leagues/italy/serie-a/23	__NEXT_DATA__
-005__api_team_2697_tournaments_and_seasons_.json	200	1665	https://www.statshub.com/api/team/2697/tournaments-and-seasons	['7', '23', '328', '341', '357']
-006__api_team_2697_event_statistics_eventType_all_statisticKey_goals_eventHalf_ALL_l.json	200	6819	https://www.statshub.com/api/team/2697/event-statistics?eventType=all&statisticKey=goals&eventHalf=ALL&limit=20	['data']
-007__api_team_2697_upcoming_events_page_1_limit_10.json	200	6117	https://www.statshub.com/api/team/2697/upcoming-events?page=1&limit=10	['data', 'pagination']
-008__api_team_2697_players_performance_tournamentId_limit_20_location_both.json	200	463454	https://www.statshub.com/api/team/2697/players/performance?tournamentId=&limit=20&location=both	['data', 'events', 'currentFixturePlayerStats', 'unavailability']
-009__api_tournament_7_96518_standing_.json	200	148549	https://www.statshub.com/api/tournament/7/96518/standing	['data']
-010__api_team_2697_event_statistics_eventType_all_statisticKey_goals_eventHalf_ALL_t.json	200	6819	https://www.statshub.com/api/team/2697/event-statistics?eventType=all&statisticKey=goals&eventHalf=ALL&tournamentIds=7,23,328,341,357&limit=20	['data']
-011__api_team_2697_events_tournamentId_7_seasonId_96518.json	200	11	https://www.statshub.com/api/team/2697/events?tournamentId=7&seasonId=96518	['data']
-012__api_team_2697_statistics_uniqueTournamentId_7_seasonId_96518.json	200	2664	https://www.statshub.com/api/team/2697/statistics?uniqueTournamentId=7&seasonId=96518	['data']
-013__api_team_2697_statistics_uniqueTournamentId_7_seasonId_96518.json	200	2664	https://www.statshub.com/api/team/2697/statistics?uniqueTournamentId=7&seasonId=96518	['data']
-014__api_team_2697_players_performance_tournamentId_7_23_328_341_357_limit_20_locati.json	200	463454	https://www.statshub.com/api/team/2697/players/performance?tournamentId=7,23,328,341,357&limit=20&location=both	['data', 'events', 'currentFixturePlayerStats', 'unavailability']
-015__api_team_2888_upcoming_events_limit_10.json	200	6664	https://www.statshub.com/api/team/2888/upcoming-events?limit=10	['data', 'pagination']
-016__api_player_16206_tournaments_and_seasons_.json	200	5464	https://www.statshub.com/api/player/16206/tournaments-and-seasons	['1', '7', '11', '16', '23', '27', '35', '38', '217', '326', '328', '341']
-017_NEXT_DATA__team_inter_802.json	200	2730	https://www.statshub.com/team/inter/802	__NEXT_DATA__
-018__api_events_opponent_rankings_eventIds_16285030_16285021_16285009_16285003_16284.json	200	1350	https://www.statshub.com/api/events/opponent-rankings?eventIds=16285030,16285021,16285009,16285003,16284972,16283050&statType=goals&teamId=2697	['data']
-019__api_events_opponent_rankings_eventIds_16938768_statType_goals_teamId_2697.json	200	241	https://www.statshub.com/api/events/opponent-rankings?eventIds=16938768&statType=goals&teamId=2697	['data']
-020__api_events_opponent_rankings_eventIds_16055661_15526668_statType_goals_teamId_2.json	200	462	https://www.statshub.com/api/events/opponent-rankings?eventIds=16055661,15526668&statType=goals&teamId=2697	['data']
-021__api_events_opponent_rankings_eventIds_13980079_13980067_13980090_13980084_13980.json	200	2497	https://www.statshub.com/api/events/opponent-rankings?eventIds=13980079,13980067,13980090,13980084,13980104,13981744,13981736,13981720,13981715,13981705,13981700&statType=goals&teamId=2697	['data']
-greska	https://www.statshub.com/api/event/0/player-odds?statType=goals&teamId=2697	Response.body: Protocol error (Network.getResponseBody): No resource with given identifier found
+001__api_tournament_1_96668_events_.json	200	21110	https://www.statshub.com/api/tournament/1/96668/events	['data']
+002__api_tournament_1_96668_standing_.json	200	50400	https://www.statshub.com/api/tournament/1/96668/standing	['data']
+003__api_tournament_1_96668_rounds_.json	200	201	https://www.statshub.com/api/tournament/1/96668/rounds	['data']
+004__api_tournament_1_96668_standing_betting_trends_.json	200	125319	https://www.statshub.com/api/tournament/1/96668/standing/betting-trends	['data', 'trendsVersion']
+005__api_tournament_1_96668_10_events_.json	200	21134	https://www.statshub.com/api/tournament/1/96668/10/events	['data']
+006_NEXT_DATA__leagues_england_premier_league_17.json	200	5495	https://www.statshub.com/leagues/england/premier-league/17	__NEXT_DATA__
+007__api_team_17_tournaments_and_seasons_.json	200	2500	https://www.statshub.com/api/team/17/tournaments-and-seasons	['7', '17', '19', '21', '346', '357', '465']
+008__api_team_17_event_statistics_eventType_all_statisticKey_goals_eventHalf_ALL_lim.json	200	7450	https://www.statshub.com/api/team/17/event-statistics?eventType=all&statisticKey=goals&eventHalf=ALL&limit=20	['data']
+009__api_team_17_upcoming_events_page_1_limit_10.json	200	6593	https://www.statshub.com/api/team/17/upcoming-events?page=1&limit=10	['data', 'pagination']
+010__api_team_17_players_performance_tournamentId_limit_20_location_both.json	200	404162	https://www.statshub.com/api/team/17/players/performance?tournamentId=&limit=20&location=both	['data', 'events', 'currentFixturePlayerStats', 'unavailability']
+011__api_tournament_7_96518_standing_.json	200	148549	https://www.statshub.com/api/tournament/7/96518/standing	['data']
+012__api_team_17_event_statistics_eventType_all_statisticKey_goals_eventHalf_ALL_tou.json	200	7450	https://www.statshub.com/api/team/17/event-statistics?eventType=all&statisticKey=goals&eventHalf=ALL&tournamentIds=7,17,19,21,346,357,465&limit=20	['data']
+013__api_team_17_statistics_uniqueTournamentId_7_seasonId_96518.json	200	2659	https://www.statshub.com/api/team/17/statistics?uniqueTournamentId=7&seasonId=96518	['data']
+014__api_team_17_statistics_uniqueTournamentId_7_seasonId_96518.json	200	2659	https://www.statshub.com/api/team/17/statistics?uniqueTournamentId=7&seasonId=96518	['data']
+015__api_team_17_players_performance_tournamentId_7_17_19_21_346_357_465_limit_20_lo.json	200	404162	https://www.statshub.com/api/team/17/players/performance?tournamentId=7,17,19,21,346,357,465&limit=20&location=both	['data', 'events', 'currentFixturePlayerStats', 'unavailability']
+016__api_team_17_events_tournamentId_7_seasonId_96518.json	200	11	https://www.statshub.com/api/team/17/events?tournamentId=7&seasonId=96518	['data']
+017__api_team_44_upcoming_events_limit_10.json	200	6330	https://www.statshub.com/api/team/44/upcoming-events?limit=10	['data', 'pagination']
+018__api_player_128383_tournaments_and_seasons_.json	200	7236	https://www.statshub.com/api/player/128383/tournaments-and-seasons	['7', '8', '16', '17', '19', '21', '34', '37', '131', '133', '295', '329']
+019_NEXT_DATA__team_manchester_city_16.json	200	2761	https://www.statshub.com/team/manchester-city/16	__NEXT_DATA__
+020__api_events_opponent_rankings_eventIds_16074990_15957606_15697198_statType_goals.json	200	708	https://www.statshub.com/api/events/opponent-rankings?eventIds=16074990,15957606,15697198&statType=goals&teamId=17	['data']
+021__api_events_opponent_rankings_eventIds_14023961_14023936_15999228_14023946_14023.json	200	1838	https://www.statshub.com/api/events/opponent-rankings?eventIds=14023961,14023936,15999228,14023946,14023930,14024003,14025039,14023998&statType=goals&teamId=17	['data']
+022__api_events_opponent_rankings_eventIds_15489359_statType_goals_teamId_17.json	200	238	https://www.statshub.com/api/events/opponent-rankings?eventIds=15489359&statType=goals&teamId=17	['data']
+023__api_events_opponent_rankings_eventIds_16950636_statType_goals_teamId_17.json	200	247	https://www.statshub.com/api/events/opponent-rankings?eventIds=16950636&statType=goals&teamId=17	['data']
+024__api_events_opponent_rankings_eventIds_16363867_16363645_16363263_16363252_16363.json	200	1188	https://www.statshub.com/api/events/opponent-rankings?eventIds=16363867,16363645,16363263,16363252,16363243&statType=goals&teamId=17	['data']
+025__api_events_opponent_rankings_eventIds_16248427_statType_goals_teamId_17.json	200	233	https://www.statshub.com/api/events/opponent-rankings?eventIds=16248427&statType=goals&teamId=17	['data']
+026__api_events_opponent_rankings_eventIds_16938854_statType_goals_teamId_17.json	200	236	https://www.statshub.com/api/events/opponent-rankings?eventIds=16938854&statType=goals&teamId=17	['data']
+greska	https://www.statshub.com/api/team/17/players/performance?tournamentId=7,8,16,17,19,21,34,37,131,133,295,329,330,335,340,346,357,465,679,851,17015&limit=20&location=both&status=finished	Response.body: Protocol error (Network.getResponseBody): No resource with given identifier found
 Response body is not available for a response that was navigated away from. Read response.body() before triggering any navigation.
-greska	https://www.statshub.com/api/event/0/player-odds?statType=saves&teamId=2697	Response.body: Protocol error (Network.getResponseBody): No resource with given identifier found
+greska	https://www.statshub.com/api/player/128383/performance?tournamentId=7,8,16,17,19,21,34,37,131,133,295,329,330,335,340,346,357,465,679,851,17015&limit=20&location=both&startedMatch=true&includeNational=true	Response.body: Protocol error (Network.getResponseBody): No resource with given identifier found
 Response body is not available for a response that was navigated away from. Read response.body() before triggering any navigation.
-greska	https://www.statshub.com/api/player/16206/performance?tournamentId=1,7,11,16,23,27,35,38,217,326,328,341,357,465,679,851,10783,17015&limit=60&location=both&startedMatch=true&includeNational=true	Response.body: Protocol error (Network.getResponseBody): No resource with given identifier found
+greska	https://www.statshub.com/api/event/0/player-odds?statType=saves&teamId=17	Response.body: Protocol error (Network.getResponseBody): No resource with given identifier found
 Response body is not available for a response that was navigated away from. Read response.body() before triggering any navigation.
-greska	https://www.statshub.com/api/player/16206/performance?tournamentId=1,7,11,16,23,27,35,38,217,326,328,341,357,465,679,851,10783,17015&limit=20&location=both&startedMatch=true&includeNational=true	Response.body: Protocol error (Network.getResponseBody): No resource with given identifier found
+greska	https://www.statshub.com/api/player/128383/performance?tournamentId=7,8,16,17,19,21,34,37,131,133,295,329,330,335,340,346,357,465,679,851,17015&limit=60&location=both&startedMatch=true&includeNational=true	Response.body: Protocol error (Network.getResponseBody): No resource with given identifier found
 Response body is not available for a response that was navigated away from. Read response.body() before triggering any navigation.
-greska	https://www.statshub.com/api/team/2697/players/performance?tournamentId=1,7,11,16,23,27,35,38,217,326,328,341,357,465,679,851,10783,17015&limit=20&location=both&status=finished	Response.body: Protocol error (Network.getResponseBody): No resource with given identifier found
+greska	https://www.statshub.com/api/team/17/players/performance?tournamentId=7,8,16,17,19,21,34,37,131,133,295,329,330,335,340,346,357,465,679,851,17015&limit=60&location=both&status=finished	Response.body: Protocol error (Network.getResponseBody): No resource with given identifier found
 Response body is not available for a response that was navigated away from. Read response.body() before triggering any navigation.
-greska	https://www.statshub.com/api/team/2697/players/performance?tournamentId=1,7,11,16,23,27,35,38,217,326,328,341,357,465,679,851,10783,17015&limit=60&location=both&status=finished	Response.body: Protocol error (Network.getResponseBody): No resource with given identifier found
+greska	https://www.statshub.com/api/event/0/player-odds?statType=goals&teamId=17	Response.body: Protocol error (Network.getResponseBody): No resource with given identifier found
 Response body is not available for a response that was navigated away from. Read response.body() before triggering any navigation.
-022__api_team_2699_tournaments_and_seasons_.json	200	1773	https://www.statshub.com/api/team/2699/tournaments-and-seasons	['7', '23', '328', '341', '679', '851', '17015']
-023__api_team_2699_players_performance_tournamentId_limit_20_location_both.json	200	475375	https://www.statshub.com/api/team/2699/players/performance?tournamentId=&limit=20&location=both	['data', 'events', 'currentFixturePlayerStats', 'unavailability']
-024__api_team_2699_event_statistics_eventType_all_statisticKey_goals_eventHalf_ALL_l.json	200	6795	https://www.statshub.com/api/team/2699/event-statistics?eventType=all&statisticKey=goals&eventHalf=ALL&limit=20	['data']
-025__api_team_2699_upcoming_events_page_1_limit_10.json	200	5917	https://www.statshub.com/api/team/2699/upcoming-events?page=1&limit=10	['data', 'pagination']
-026__api_tournament_23_95836_standing_.json	200	49457	https://www.statshub.com/api/tournament/23/95836/standing	['data']
-027__api_team_2699_statistics_uniqueTournamentId_7_seasonId_52162.json	200	2727	https://www.statshub.com/api/team/2699/statistics?uniqueTournamentId=7&seasonId=52162	['data']
-028__api_team_2699_event_statistics_eventType_all_statisticKey_goals_eventHalf_ALL_t.json	200	6795	https://www.statshub.com/api/team/2699/event-statistics?eventType=all&statisticKey=goals&eventHalf=ALL&tournamentIds=7,23,328,341,679,851,17015&limit=20	['data']
-029__api_team_2699_players_performance_tournamentId_7_23_328_341_679_851_17015_limit.json	200	475375	https://www.statshub.com/api/team/2699/players/performance?tournamentId=7,23,328,341,679,851,17015&limit=20&location=both	['data', 'events', 'currentFixturePlayerStats', 'unavailability']
-030__api_team_2687_upcoming_events_limit_10.json	200	6174	https://www.statshub.com/api/team/2687/upcoming-events?limit=10	['data', 'pagination']
-031__api_team_2699_events_tournamentId_7_seasonId_52162.json	200	11	https://www.statshub.com/api/team/2699/events?tournamentId=7&seasonId=52162	['data']
-032__api_player_35428_tournaments_and_seasons_.json	200	5550	https://www.statshub.com/api/player/35428/tournaments-and-seasons	['1', '7', '11', '16', '17', '19', '21', '23', '27', '328', '341', '357']
-033_NEXT_DATA__team_lazio_804.json	200	2703	https://www.statshub.com/team/lazio/804	__NEXT_DATA__
-034__api_events_opponent_rankings_eventIds_16285033_16285028_16285012_16285006_16284.json	200	1357	https://www.statshub.com/api/events/opponent-rankings?eventIds=16285033,16285028,16285012,16285006,16284971,16283049&statType=goals&teamId=2699	['data']
-035__api_events_opponent_rankings_eventIds_13980072_13980063_13980090_13980094_13980.json	200	2485	https://www.statshub.com/api/events/opponent-rankings?eventIds=13980072,13980063,13980090,13980094,13980112,13980101,13981738,13981729,13981713,13981707,13981699&statType=goals&teamId=2699	['data']
-036__api_events_opponent_rankings_eventIds_16055661_15532694_statType_goals_teamId_2.json	200	464	https://www.statshub.com/api/events/opponent-rankings?eventIds=16055661,15532694&statType=goals&teamId=2699	['data']
-037__api_events_opponent_rankings_eventIds_16390491_statType_goals_teamId_2699.json	200	240	https://www.statshub.com/api/events/opponent-rankings?eventIds=16390491&statType=goals&teamId=2699	['data']
-greska	https://www.statshub.com/api/player/35428/performance?tournamentId=1,7,11,16,17,19,21,23,27,328,341,357,465,679,851,10783,17015&limit=20&location=both&startedMatch=true&includeNational=true	Response.body: Protocol error (Network.getResponseBody): No resource with given identifier found
+027__api_team_42_tournaments_and_seasons_.json	200	2135	https://www.statshub.com/api/team/42/tournaments-and-seasons	['7', '17', '19', '21', '346', '679']
+028__api_team_42_players_performance_tournamentId_limit_20_location_both.json	200	411515	https://www.statshub.com/api/team/42/players/performance?tournamentId=&limit=20&location=both	['data', 'events', 'currentFixturePlayerStats', 'unavailability']
+029__api_team_42_event_statistics_eventType_all_statisticKey_goals_eventHalf_ALL_lim.json	200	7480	https://www.statshub.com/api/team/42/event-statistics?eventType=all&statisticKey=goals&eventHalf=ALL&limit=20	['data']
+030__api_team_42_upcoming_events_page_1_limit_10.json	200	6292	https://www.statshub.com/api/team/42/upcoming-events?page=1&limit=10	['data', 'pagination']
+031__api_team_1643_upcoming_events_limit_10.json	200	6174	https://www.statshub.com/api/team/1643/upcoming-events?limit=10	['data', 'pagination']
+032__api_team_42_event_statistics_eventType_all_statisticKey_goals_eventHalf_ALL_tou.json	200	7480	https://www.statshub.com/api/team/42/event-statistics?eventType=all&statisticKey=goals&eventHalf=ALL&tournamentIds=7,17,19,21,346,679&limit=20	['data']
+033__api_team_42_statistics_uniqueTournamentId_7_seasonId_96518.json	200	2656	https://www.statshub.com/api/team/42/statistics?uniqueTournamentId=7&seasonId=96518	['data']
+034__api_team_42_statistics_uniqueTournamentId_7_seasonId_96518.json	200	2656	https://www.statshub.com/api/team/42/statistics?uniqueTournamentId=7&seasonId=96518	['data']
+035__api_team_42_players_performance_tournamentId_7_17_19_21_346_679_limit_20_locati.json	200	411515	https://www.statshub.com/api/team/42/players/performance?tournamentId=7,17,19,21,346,679&limit=20&location=both	['data', 'events', 'currentFixturePlayerStats', 'unavailability']
+036__api_player_135256_tournaments_and_seasons_.json	200	4364	https://www.statshub.com/api/player/135256/tournaments-and-seasons	['1', '7', '11', '16', '17', '18', '19', '21', '27', '346', '679', '851']
+037__api_team_42_events_tournamentId_7_seasonId_96518.json	200	11	https://www.statshub.com/api/team/42/events?tournamentId=7&seasonId=96518	['data']
+038_NEXT_DATA__team_arsenal_41.json	200	2725	https://www.statshub.com/team/arsenal/41	__NEXT_DATA__
+039__api_events_opponent_rankings_eventIds_15632636_15632635_15632633_15632631_statT.json	200	974	https://www.statshub.com/api/events/opponent-rankings?eventIds=15632636,15632635,15632633,15632631&statType=goals&teamId=42	['data']
+040__api_events_opponent_rankings_eventIds_16248427_statType_goals_teamId_42.json	200	249	https://www.statshub.com/api/events/opponent-rankings?eventIds=16248427&statType=goals&teamId=42	['data']
+041__api_events_opponent_rankings_eventIds_14023963_14023950_14023942_14023931_14025.json	200	1650	https://www.statshub.com/api/events/opponent-rankings?eventIds=14023963,14023950,14023942,14023931,14025045,14025039,14025021&statType=goals&teamId=42	['data']
+042__api_events_opponent_rankings_eventIds_16363871_16363650_16363646_16363257_16363.json	200	1420	https://www.statshub.com/api/events/opponent-rankings?eventIds=16363871,16363650,16363646,16363257,16363245,16363633&statType=goals&teamId=42	['data']
+043__api_events_opponent_rankings_eventIds_16950631_statType_goals_teamId_42.json	200	248	https://www.statshub.com/api/events/opponent-rankings?eventIds=16950631&statType=goals&teamId=42	['data']
+044__api_events_opponent_rankings_eventIds_16938985_statType_goals_teamId_42.json	200	231	https://www.statshub.com/api/events/opponent-rankings?eventIds=16938985&statType=goals&teamId=42	['data']
+greska	https://www.statshub.com/api/team/42/players/performance?tournamentId=1,7,11,16,17,18,19,21,27,346,679,851,10783&limit=20&location=both&status=finished	Response.body: Protocol error (Network.getResponseBody): No resource with given identifier found
 Response body is not available for a response that was navigated away from. Read response.body() before triggering any navigation.
-greska	https://www.statshub.com/api/event/0/player-odds?statType=goals&teamId=2699	Response.body: Protocol error (Network.getResponseBody): No resource with given identifier found
+greska	https://www.statshub.com/api/player/135256/performance?tournamentId=1,7,11,16,17,18,19,21,27,346,679,851,10783&limit=20&location=both&startedMatch=true&includeNational=true	Response.body: Protocol error (Network.getResponseBody): No resource with given identifier found
 Response body is not available for a response that was navigated away from. Read response.body() before triggering any navigation.
-greska	https://www.statshub.com/api/team/2699/players/performance?tournamentId=1,7,11,16,17,19,21,23,27,328,341,357,465,679,851,10783,17015&limit=20&location=both&status=finished	Response.body: Protocol error (Network.getResponseBody): No resource with given identifier found
+greska	https://www.statshub.com/api/team/42/players/performance?tournamentId=1,7,11,16,17,18,19,21,27,346,679,851,10783&limit=60&location=both&status=finished	Response.body: Protocol error (Network.getResponseBody): No resource with given identifier found
 Response body is not available for a response that was navigated away from. Read response.body() before triggering any navigation.
-greska	https://www.statshub.com/api/player/35428/performance?tournamentId=1,7,11,16,17,19,21,23,27,328,341,357,465,679,851,10783,17015&limit=60&location=both&startedMatch=true&includeNational=true	Response.body: Protocol error (Network.getResponseBody): No resource with given identifier found
+greska	https://www.statshub.com/api/player/135256/performance?tournamentId=1,7,11,16,17,18,19,21,27,346,679,851,10783&limit=60&location=both&startedMatch=true&includeNational=true	Response.body: Protocol error (Network.getResponseBody): No resource with given identifier found
 Response body is not available for a response that was navigated away from. Read response.body() before triggering any navigation.
-greska	https://www.statshub.com/api/team/2699/players/performance?tournamentId=1,7,11,16,17,19,21,23,27,328,341,357,465,679,851,10783,17015&limit=60&location=both&status=finished	Response.body: Protocol error (Network.getResponseBody): No resource with given identifier found
+greska	https://www.statshub.com/api/event/0/player-odds?statType=goals&teamId=42	Response.body: Protocol error (Network.getResponseBody): No resource with given identifier found
 Response body is not available for a response that was navigated away from. Read response.body() before triggering any navigation.
-038__api_team_2793_events_status_finished_limit_5.json	200	10514	https://www.statshub.com/api/team/2793/events?status=finished&limit=5	['data']
-039__api_team_2692_events_status_finished_limit_5.json	200	10489	https://www.statshub.com/api/team/2692/events?status=finished&limit=5	['data']
-040__api_event_16285035_team_lineup_teamId_2692_heatmap_false.json	200	11	https://www.statshub.com/api/event/16285035/team-lineup?teamId=2692&heatmap=false	['data']
-041__api_event_16285035_team_lineup_teamId_2793_heatmap_false.json	200	11	https://www.statshub.com/api/event/16285035/team-lineup?teamId=2793&heatmap=false	['data']
-042__api_event_16285035_predicted_teams_lineup_.json	200	4243	https://www.statshub.com/api/event/16285035/predicted-teams-lineup	['homeTeam', 'awayTeam']
-043__api_team_2692_tournaments_and_seasons_.json	200	1542	https://www.statshub.com/api/team/2692/tournaments-and-seasons	['7', '23', '328', '341', '679']
-044__api_team_2793_tournaments_and_seasons_.json	200	915	https://www.statshub.com/api/team/2793/tournaments-and-seasons	['23', '53', '328']
-045__api_event_16285035_extra_stats_.json	200	122	https://www.statshub.com/api/event/16285035/extra-stats	['data', 'hasExtraStats', 'message', 'matchStatus']
-046__api_tournament_21_95836_events_.json	200	20871	https://www.statshub.com/api/tournament/21/95836/events	['data']
-047__api_team_2793_players_performance_tournamentId_23_53_328_limit_20_location_both.json	200	485326	https://www.statshub.com/api/team/2793/players/performance?tournamentId=23,53,328&limit=20&location=both&fixtureId=16285035	['data', 'events', 'currentFixturePlayerStats', 'unavailability']
-048__api_team_2692_players_performance_tournamentId_23_53_328_limit_20_location_both.json	200	442991	https://www.statshub.com/api/team/2692/players/performance?tournamentId=23,53,328&limit=20&location=both&fixtureId=16285035	['data', 'events', 'currentFixturePlayerStats', 'unavailability']
-049__api_event_16285035_odds_movements_market_shots.json	200	166907	https://www.statshub.com/api/event/16285035/odds-movements?market=shots	['eventId', 'market', 'series']
-050__api_events_opponent_rankings_eventIds_13980074_13980078_13980073_13980087_13980.json	200	2976	https://www.statshub.com/api/events/opponent-rankings?eventIds=13980074,13980078,13980073,13980087,13980110,13980103,13981737,13981730,13981719,13981711,13981699,13981689,13981681&statType=shots&teamId=2793	['data']
-051__api_events_opponent_rankings_eventIds_16285020_16285013_16284978_16284974_16283.json	200	1143	https://www.statshub.com/api/events/opponent-rankings?eventIds=16285020,16285013,16284978,16284974,16283041&statType=shots&teamId=2793	['data']
-052__api_events_opponent_rankings_eventIds_16860534_16390493_statType_shots_teamId_2.json	200	471	https://www.statshub.com/api/events/opponent-rankings?eventIds=16860534,16390493&statType=shots&teamId=2793	['data']
-053__api_events_opponent_rankings_eventIds_16285035_statType_shots_teamId_2793.json	200	231	https://www.statshub.com/api/events/opponent-rankings?eventIds=16285035&statType=shots&teamId=2793	['data']
-054__api_team_2793_performance_tournamentId_23_2C328_limit_30_location_both.json	200	70824	https://www.statshub.com/api/team/2793/performance?tournamentId=23%2C328&limit=30&location=both	['data']
-055__api_event_16285035_player_odds_statType_shots_teamId_2793.json	200	129626	https://www.statshub.com/api/event/16285035/player-odds?statType=shots&teamId=2793	['data', 'cacheKey', 'bookmakerSummary']
-056_NEXT_DATA__fixture_sassuolo_vs_milan_mv3e3q_416611.json	200	4818	https://www.statshub.com/fixture/sassuolo-vs-milan-mv3e3q/416611	__NEXT_DATA__
-057__api_team_2692_event_statistics_eventType_all_statisticKey_goals_eventHalf_ALL_l.json	200	6803	https://www.statshub.com/api/team/2692/event-statistics?eventType=all&statisticKey=goals&eventHalf=ALL&limit=20	['data']
-058__api_team_2793_event_statistics_eventType_all_statisticKey_goals_eventHalf_ALL_l.json	200	6928	https://www.statshub.com/api/team/2793/event-statistics?eventType=all&statisticKey=goals&eventHalf=ALL&limit=20	['data']
-059__api_team_2692_event_statistics_eventType_all_statisticKey_goals_eventHalf_ALL_t.json	200	6774	https://www.statshub.com/api/team/2692/event-statistics?eventType=all&statisticKey=goals&eventHalf=ALL&tournamentIds=23,53,328&limit=20	['data']
-060__api_team_2793_event_statistics_eventType_all_statisticKey_goals_eventHalf_ALL_t.json	200	6928	https://www.statshub.com/api/team/2793/event-statistics?eventType=all&statisticKey=goals&eventHalf=ALL&tournamentIds=23,53,328&limit=20	['data']
-061__api_team_2793_last_lineup_.json	200	3579	https://www.statshub.com/api/team/2793/last-lineup	['data', 'eventId', 'timestamp', 'latestFinishedEventId', 'fellBack', 'match']
-062__api_event_16285035_player_odds_statType_fouls_teamId_2793.json	200	83555	https://www.statshub.com/api/event/16285035/player-odds?statType=fouls&teamId=2793	['data', 'cacheKey', 'bookmakerSummary']
-063__api_team_2692_last_lineup_.json	200	3575	https://www.statshub.com/api/team/2692/last-lineup	['data', 'eventId', 'timestamp', 'latestFinishedEventId', 'fellBack', 'match']
-064__api_event_16285035_player_odds_statType_wasFouled_teamId_2692.json	200	55242	https://www.statshub.com/api/event/16285035/player-odds?statType=wasFouled&teamId=2692	['data', 'cacheKey', 'bookmakerSummary']
-065__api_event_16285035_formations_.json	404	46	https://www.statshub.com/api/event/16285035/formations	['error']
-066__api_event_16285035_predicted_formations_.json	200	220	https://www.statshub.com/api/event/16285035/predicted-formations	['data']
-greska	https://www.statshub.com/api/player/44241/tournaments-and-seasons	Response.body: Protocol error (Network.getResponseBody): No resource with given identifier found
+045__api_team_48_events_status_finished_limit_5.json	200	10604	https://www.statshub.com/api/team/48/events?status=finished&limit=5	['data']
+046__api_event_16363914_team_lineup_teamId_11_heatmap_false.json	200	11	https://www.statshub.com/api/event/16363914/team-lineup?teamId=11&heatmap=false	['data']
+047__api_team_11_events_status_finished_limit_5.json	200	10768	https://www.statshub.com/api/team/11/events?status=finished&limit=5	['data']
+048__api_event_16363914_team_lineup_teamId_48_heatmap_false.json	200	11	https://www.statshub.com/api/event/16363914/team-lineup?teamId=48&heatmap=false	['data']
+049__api_team_48_tournaments_and_seasons_.json	200	1394	https://www.statshub.com/api/team/48/tournaments-and-seasons	['17', '19', '21']
+050__api_team_11_tournaments_and_seasons_.json	200	1276	https://www.statshub.com/api/team/11/tournaments-and-seasons	['17', '18', '19', '21']
+051__api_event_16363914_extra_stats_.json	200	122	https://www.statshub.com/api/event/16363914/extra-stats	['data', 'hasExtraStats', 'message', 'matchStatus']
+052__api_event_16363914_predicted_teams_lineup_.json	200	71	https://www.statshub.com/api/event/16363914/predicted-teams-lineup	['homeTeam', 'awayTeam']
+053__api_team_48_players_performance_tournamentId_17_19_21_limit_20_location_both_fi.json	200	398475	https://www.statshub.com/api/team/48/players/performance?tournamentId=17,19,21&limit=20&location=both&fixtureId=16363914	['data', 'events', 'currentFixturePlayerStats', 'unavailability']
+054__api_team_11_players_performance_tournamentId_17_19_21_limit_20_location_both_fi.json	200	365354	https://www.statshub.com/api/team/11/players/performance?tournamentId=17,19,21&limit=20&location=both&fixtureId=16363914	['data', 'events', 'currentFixturePlayerStats', 'unavailability']
+055__api_events_opponent_rankings_eventIds_14023967_14023955_14023937_14023930_14023.json	200	3074	https://www.statshub.com/api/events/opponent-rankings?eventIds=14023967,14023955,14023937,14023930,14023934,14025035,14025022,14024017,14023987,14023941,14023977,15238290,14025191&statType=shots&teamId=48	['data']
+056__api_events_opponent_rankings_eventIds_16992612_16798259_statType_shots_teamId_4.json	200	501	https://www.statshub.com/api/events/opponent-rankings?eventIds=16992612,16798259&statType=shots&teamId=48	['data']
+057__api_events_opponent_rankings_eventIds_16363651_16363647_16363259_16363247_16363.json	200	1208	https://www.statshub.com/api/events/opponent-rankings?eventIds=16363651,16363647,16363259,16363247,16363635&statType=shots&teamId=48	['data']
+058__api_team_48_performance_tournamentId_17_2C21_limit_30_location_both.json	200	71686	https://www.statshub.com/api/team/48/performance?tournamentId=17%2C21&limit=30&location=both	['data']
+059__api_events_opponent_rankings_eventIds_16363914_statType_shots_teamId_48.json	200	249	https://www.statshub.com/api/events/opponent-rankings?eventIds=16363914&statType=shots&teamId=48	['data']
+060__api_event_16363914_odds_movements_market_shots.json	200	56	https://www.statshub.com/api/event/16363914/odds-movements?market=shots	['eventId', 'market', 'series']
+061__api_event_16363914_player_odds_statType_shots_teamId_48.json	200	115	https://www.statshub.com/api/event/16363914/player-odds?statType=shots&teamId=48	['data']
+062_NEXT_DATA__fixture_everton_vs_coventry_city_mup4vd_490174.json	200	7762	https://www.statshub.com/fixture/everton-vs-coventry-city-mup4vd/490174	__NEXT_DATA__
+063__api_team_11_event_statistics_eventType_all_statisticKey_goals_eventHalf_ALL_lim.json	200	7459	https://www.statshub.com/api/team/11/event-statistics?eventType=all&statisticKey=goals&eventHalf=ALL&limit=20	['data']
+064__api_team_48_event_statistics_eventType_all_statisticKey_goals_eventHalf_ALL_lim.json	200	7268	https://www.statshub.com/api/team/48/event-statistics?eventType=all&statisticKey=goals&eventHalf=ALL&limit=20	['data']
+065__api_team_48_event_statistics_eventType_all_statisticKey_goals_eventHalf_ALL_tou.json	200	7268	https://www.statshub.com/api/team/48/event-statistics?eventType=all&statisticKey=goals&eventHalf=ALL&tournamentIds=17,19,21&limit=20	['data']
+066__api_team_11_event_statistics_eventType_all_statisticKey_goals_eventHalf_ALL_tou.json	200	7351	https://www.statshub.com/api/team/11/event-statistics?eventType=all&statisticKey=goals&eventHalf=ALL&tournamentIds=17,19,21&limit=20	['data']
+067__api_team_48_last_lineup_.json	200	3401	https://www.statshub.com/api/team/48/last-lineup	['data', 'eventId', 'timestamp', 'latestFinishedEventId', 'fellBack', 'match']
+068__api_event_16363914_formations_.json	404	46	https://www.statshub.com/api/event/16363914/formations	['error']
+069__api_team_11_last_lineup_.json	200	3194	https://www.statshub.com/api/team/11/last-lineup	['data', 'eventId', 'timestamp', 'latestFinishedEventId', 'fellBack', 'match']
+070__api_event_16363914_player_odds_statType_wasFouled_teamId_11.json	200	115	https://www.statshub.com/api/event/16363914/player-odds?statType=wasFouled&teamId=11	['data']
+071__api_event_16363914_player_odds_statType_fouls_teamId_48.json	200	115	https://www.statshub.com/api/event/16363914/player-odds?statType=fouls&teamId=48	['data']
+072__api_event_16363914_predicted_formations_.json	200	11	https://www.statshub.com/api/event/16363914/predicted-formations	['data']
+073__api_team_48_last_formation_.json	200	246	https://www.statshub.com/api/team/48/last-formation	['data']
+074__api_team_11_last_formation_.json	200	257	https://www.statshub.com/api/team/11/last-formation	['data']
+greska	https://www.statshub.com/api/player/76632/tournaments-and-seasons	Response.body: Protocol error (Network.getResponseBody): No resource with given identifier found
 Response body is not available for a response that was navigated away from. Read response.body() before triggering any navigation.
-greska	https://www.statshub.com/api/player/44241/performance?tournamentId=23,53,328&limit=20&location=both&startedMatch=true&includeNational=true	Response.body: Protocol error (Network.getResponseBody): No resource with given identifier found
+greska	https://www.statshub.com/api/player/76632/performance?tournamentId=1,11,16,17,19,21,27,334,851,10783&limit=20&location=both&startedMatch=true&includeNational=true	Response.body: Protocol error (Network.getResponseBody): No resource with given identifier found
 Response body is not available for a response that was navigated away from. Read response.body() before triggering any navigation.
-greska	https://www.statshub.com/api/team/2793/players/performance?tournamentId=23,53,328&limit=20&location=both&status=finished&fixtureId=16285035	Response.body: Protocol error (Network.getResponseBody): No resource with given identifier found
+greska	https://www.statshub.com/api/player/76632/performance?tournamentId=1,11,16,17,19,21,27,334,851,10783&limit=60&location=both&startedMatch=true&includeNational=true	Response.body: Protocol error (Network.getResponseBody): No resource with given identifier found
 Response body is not available for a response that was navigated away from. Read response.body() before triggering any navigation.
-greska	https://www.statshub.com/api/player/44241/performance?tournamentId=23,53,328&limit=60&location=both&startedMatch=true&includeNational=true	Response.body: Protocol error (Network.getResponseBody): No resource with given identifier found
+greska	https://www.statshub.com/api/player/76632/performance?tournamentId=17,19,21&limit=20&location=both&startedMatch=true&includeNational=true	Response.body: Protocol error (Network.getResponseBody): No resource with given identifier found
 Response body is not available for a response that was navigated away from. Read response.body() before triggering any navigation.
-greska	https://www.statshub.com/api/team/2793/players/performance?tournamentId=23,53,328&limit=60&location=both&status=finished&fixtureId=16285035	Response.body: Protocol error (Network.getResponseBody): No resource with given identifier found
+greska	https://www.statshub.com/api/team/48/players/performance?tournamentId=17,19,21&limit=20&location=both&status=finished&fixtureId=16363914	Response.body: Protocol error (Network.getResponseBody): No resource with given identifier found
 Response body is not available for a response that was navigated away from. Read response.body() before triggering any navigation.
-greska	https://www.statshub.com/api/player/44241/performance?tournamentId=1,7,11,16,17,19,21,23,27,34,53,328,335,346,357,465,679,851,10783,17015&limit=20&location=both&startedMatch=true&includeNational=true	Response.body: Protocol error (Network.getResponseBody): No resource with given identifier found
+greska	https://www.statshub.com/api/team/48/players/performance?tournamentId=1,11,16,17,19,21,27,334,851,10783&limit=20&location=both&status=finished&fixtureId=16363914	Response.body: Protocol error (Network.getResponseBody): No resource with given identifier found
 Response body is not available for a response that was navigated away from. Read response.body() before triggering any navigation.
-greska	https://www.statshub.com/api/player/44241/performance?tournamentId=1,7,11,16,17,19,21,23,27,34,53,328,335,346,357,465,679,851,10783,17015&limit=60&location=both&startedMatch=true&includeNational=true	Response.body: Protocol error (Network.getResponseBody): No resource with given identifier found
+greska	https://www.statshub.com/api/team/48/players/performance?tournamentId=1,11,16,17,19,21,27,334,851,10783&limit=20&location=both&fixtureId=16363914	Response.body: Protocol error (Network.getResponseBody): No resource with given identifier found
 Response body is not available for a response that was navigated away from. Read response.body() before triggering any navigation.
-greska	https://www.statshub.com/api/team/2793/players/performance?tournamentId=1,7,11,16,17,19,21,23,27,34,53,328,335,346,357,465,679,851,10783,17015&limit=20&location=both&status=finished&fixtureId=16285035	Response.body: Protocol error (Network.getResponseBody): No resource with given identifier found
+greska	https://www.statshub.com/api/team/48/players/performance?tournamentId=17,19,21&limit=60&location=both&status=finished&fixtureId=16363914	Response.body: Protocol error (Network.getResponseBody): No resource with given identifier found
 Response body is not available for a response that was navigated away from. Read response.body() before triggering any navigation.
-greska	https://www.statshub.com/api/team/2793/players/performance?tournamentId=1,7,11,16,17,19,21,23,27,34,53,328,335,346,357,465,679,851,10783,17015&limit=20&location=both&fixtureId=16285035	Response.body: Protocol error (Network.getResponseBody): No resource with given identifier found
+greska	https://www.statshub.com/api/player/76632/performance?tournamentId=17,19,21&limit=60&location=both&startedMatch=true&includeNational=true	Response.body: Protocol error (Network.getResponseBody): No resource with given identifier found
 Response body is not available for a response that was navigated away from. Read response.body() before triggering any navigation.
-greska	https://www.statshub.com/api/team/2793/players/performance?tournamentId=1,7,11,16,17,19,21,23,27,34,53,328,335,346,357,465,679,851,10783,17015&limit=60&location=both&status=finished&fixtureId=16285035	Response.body: Protocol error (Network.getResponseBody): No resource with given identifier found
+greska	https://www.statshub.com/api/team/11/players/performance?tournamentId=1,11,16,17,19,21,27,334,851,10783&limit=20&location=both&fixtureId=16363914	Response.body: Protocol error (Network.getResponseBody): No resource with given identifier found
 Response body is not available for a response that was navigated away from. Read response.body() before triggering any navigation.
-greska	https://www.statshub.com/api/team/2692/players/performance?tournamentId=1,7,11,16,17,19,21,23,27,34,53,328,335,346,357,465,679,851,10783,17015&limit=20&location=both&fixtureId=16285035	Response.body: Protocol error (Network.getResponseBody): No resource with given identifier found
+greska	https://www.statshub.com/api/team/48/players/performance?tournamentId=1,11,16,17,19,21,27,334,851,10783&limit=60&location=both&status=finished&fixtureId=16363914	Response.body: Protocol error (Network.getResponseBody): No resource with given identifier found
 Response body is not available for a response that was navigated away from. Read response.body() before triggering any navigation.
-067__api_event_16285029_team_lineup_teamId_2719_heatmap_false.json	200	11	https://www.statshub.com/api/event/16285029/team-lineup?teamId=2719&heatmap=false	['data']
-068__api_team_2687_tournaments_and_seasons_.json	200	1714	https://www.statshub.com/api/team/2687/tournaments-and-seasons	['7', '23', '328', '341', '357', '679']
-069__api_event_16285029_team_lineup_teamId_2687_heatmap_false.json	200	11	https://www.statshub.com/api/event/16285029/team-lineup?teamId=2687&heatmap=false	['data']
-070__api_team_2687_events_status_finished_limit_5.json	200	10532	https://www.statshub.com/api/team/2687/events?status=finished&limit=5	['data']
-071__api_event_16285029_predicted_teams_lineup_.json	200	4224	https://www.statshub.com/api/event/16285029/predicted-teams-lineup	['homeTeam', 'awayTeam']
-072__api_team_2719_tournaments_and_seasons_.json	200	915	https://www.statshub.com/api/team/2719/tournaments-and-seasons	['23', '53', '328']
-073__api_team_2719_events_status_finished_limit_5.json	200	10508	https://www.statshub.com/api/team/2719/events?status=finished&limit=5	['data']
-074__api_event_16285029_extra_stats_.json	200	122	https://www.statshub.com/api/event/16285029/extra-stats	['data', 'hasExtraStats', 'message', 'matchStatus']
-075__api_team_2719_players_performance_tournamentId_23_53_328_limit_20_location_both.json	200	472650	https://www.statshub.com/api/team/2719/players/performance?tournamentId=23,53,328&limit=20&location=both&fixtureId=16285029	['data', 'events', 'currentFixturePlayerStats', 'unavailability']
-076__api_team_2687_players_performance_tournamentId_23_53_328_limit_20_location_both.json	200	458600	https://www.statshub.com/api/team/2687/players/performance?tournamentId=23,53,328&limit=20&location=both&fixtureId=16285029	['data', 'events', 'currentFixturePlayerStats', 'unavailability']
-077__api_events_opponent_rankings_eventIds_13980071_13980060_13980088_13980082_13980.json	200	2954	https://www.statshub.com/api/events/opponent-rankings?eventIds=13980071,13980060,13980088,13980082,13980111,13981744,13981735,13981730,13981717,13981706,13981693,13981687,13981674&statType=shots&teamId=2719	['data']
-078__api_events_opponent_rankings_eventIds_16285027_16285010_16284997_16284972_16283.json	200	1137	https://www.statshub.com/api/events/opponent-rankings?eventIds=16285027,16285010,16284997,16284972,16283043&statType=shots&teamId=2719	['data']
-079__api_team_2719_performance_tournamentId_23_2C328_limit_30_location_both.json	200	69869	https://www.statshub.com/api/team/2719/performance?tournamentId=23%2C328&limit=30&location=both	['data']
-080__api_events_opponent_rankings_eventIds_16285029_statType_shots_teamId_2719.json	200	239	https://www.statshub.com/api/events/opponent-rankings?eventIds=16285029&statType=shots&teamId=2719	['data']
-081__api_event_16285029_player_odds_statType_shots_teamId_2719.json	200	129370	https://www.statshub.com/api/event/16285029/player-odds?statType=shots&teamId=2719	['data', 'cacheKey', 'bookmakerSummary']
-082__api_event_16285029_odds_movements_market_shots.json	200	114661	https://www.statshub.com/api/event/16285029/odds-movements?market=shots	['eventId', 'market', 'series']
-083__api_events_opponent_rankings_eventIds_16851490_16775577_statType_shots_teamId_2.json	200	480	https://www.statshub.com/api/events/opponent-rankings?eventIds=16851490,16775577&statType=shots&teamId=2719	['data']
-084_NEXT_DATA__fixture_cagliari_vs_juventus_mv3e3p_416610.json	200	4824	https://www.statshub.com/fixture/cagliari-vs-juventus-mv3e3p/416610	__NEXT_DATA__
-085__api_team_2687_event_statistics_eventType_all_statisticKey_goals_eventHalf_ALL_l.json	200	6999	https://www.statshub.com/api/team/2687/event-statistics?eventType=all&statisticKey=goals&eventHalf=ALL&limit=20	['data']
-086__api_team_2719_event_statistics_eventType_all_statisticKey_goals_eventHalf_ALL_l.json	200	6908	https://www.statshub.com/api/team/2719/event-statistics?eventType=all&statisticKey=goals&eventHalf=ALL&limit=20	['data']
-087__api_team_2687_event_statistics_eventType_all_statisticKey_goals_eventHalf_ALL_t.json	200	6892	https://www.statshub.com/api/team/2687/event-statistics?eventType=all&statisticKey=goals&eventHalf=ALL&tournamentIds=23,53,328&limit=20	['data']
-088__api_team_2719_event_statistics_eventType_all_statisticKey_goals_eventHalf_ALL_t.json	200	6908	https://www.statshub.com/api/team/2719/event-statistics?eventType=all&statisticKey=goals&eventHalf=ALL&tournamentIds=23,53,328&limit=20	['data']
-089__api_team_2687_last_lineup_.json	200	3573	https://www.statshub.com/api/team/2687/last-lineup	['data', 'eventId', 'timestamp', 'latestFinishedEventId', 'fellBack', 'match']
-090__api_team_2719_last_lineup_.json	200	3358	https://www.statshub.com/api/team/2719/last-lineup	['data', 'eventId', 'timestamp', 'latestFinishedEventId', 'fellBack', 'match']
-091__api_event_16285029_player_odds_statType_wasFouled_teamId_2687.json	200	67465	https://www.statshub.com/api/event/16285029/player-odds?statType=wasFouled&teamId=2687	['data', 'cacheKey', 'bookmakerSummary']
-092__api_event_16285029_player_odds_statType_fouls_teamId_2719.json	200	88071	https://www.statshub.com/api/event/16285029/player-odds?statType=fouls&teamId=2719	['data', 'cacheKey', 'bookmakerSummary']
-093__api_event_16285029_formations_.json	404	46	https://www.statshub.com/api/event/16285029/formations	['error']
-094__api_event_16285029_predicted_formations_.json	200	226	https://www.statshub.com/api/event/16285029/predicted-formations	['data']
-095__api_player_105905_tournaments_and_seasons_.json	200	4248	https://www.statshub.com/api/player/105905/tournaments-and-seasons	['7', '13', '16', '23', '53', '270', '328', '341', '465', '637', '679', '851']
-greska	https://www.statshub.com/api/team/2719/players/performance?tournamentId=23,53,328&limit=20&location=both&status=finished&fixtureId=16285029	Response.body: Target page, context or browser has been closed
-greska	https://www.statshub.com/api/team/2719/players/performance?tournamentId=23,53,328&limit=60&location=both&status=finished&fixtureId=16285029	Response.body: Target page, context or browser has been closed
-greska	https://www.statshub.com/api/player/105905/performance?tournamentId=23,53,328&limit=20&location=both&startedMatch=true&includeNational=true	Response.body: Target page, context or browser has been closed
-greska	https://www.statshub.com/api/player/105905/performance?tournamentId=23,53,328&limit=60&location=both&startedMatch=true&includeNational=true	Response.body: Target page, context or browser has been closed
-greska	https://www.statshub.com/api/player/105905/performance?tournamentId=7,13,16,23,53,270,328,341,465,637,679,851,1848,17015&limit=20&location=both&startedMatch=true&includeNational=true	Response.body: Target page, context or browser has been closed
-greska	https://www.statshub.com/api/player/105905/performance?tournamentId=7,13,16,23,53,270,328,341,465,637,679,851,1848,17015&limit=60&location=both&startedMatch=true&includeNational=true	Response.body: Target page, context or browser has been closed
-greska	https://www.statshub.com/api/team/2719/players/performance?tournamentId=7,13,16,23,53,270,328,341,465,637,679,851,1848,17015&limit=20&location=both&status=finished&fixtureId=16285029	Response.body: Target page, context or browser has been closed
-greska	https://www.statshub.com/api/team/2719/players/performance?tournamentId=7,13,16,23,53,270,328,341,465,637,679,851,1848,17015&limit=20&location=both&fixtureId=16285029	Response.body: Target page, context or browser has been closed
-greska	https://www.statshub.com/api/team/2719/players/performance?tournamentId=7,13,16,23,53,270,328,341,465,637,679,851,1848,17015&limit=60&location=both&status=finished&fixtureId=16285029	Response.body: Target page, context or browser has been closed
-greska	https://www.statshub.com/api/team/2687/players/performance?tournamentId=7,13,16,23,53,270,328,341,465,637,679,851,1848,17015&limit=20&location=both&fixtureId=16285029	Response.body: Target page, context or browser has been closed
+075__api_team_34_events_status_finished_limit_5.json	200	10604	https://www.statshub.com/api/team/34/events?status=finished&limit=5	['data']
+076__api_team_33_events_status_finished_limit_5.json	200	10734	https://www.statshub.com/api/team/33/events?status=finished&limit=5	['data']
+077__api_team_34_tournaments_and_seasons_.json	200	1477	https://www.statshub.com/api/team/34/tournaments-and-seasons	['17', '18', '19', '21']
+078__api_team_33_tournaments_and_seasons_.json	200	2146	https://www.statshub.com/api/team/33/tournaments-and-seasons	['7', '17', '19', '21', '465', '679', '17015']
+079__api_event_16363917_team_lineup_teamId_34_heatmap_false.json	200	11	https://www.statshub.com/api/event/16363917/team-lineup?teamId=34&heatmap=false	['data']
+080__api_event_16363917_predicted_teams_lineup_.json	200	71	https://www.statshub.com/api/event/16363917/predicted-teams-lineup	['homeTeam', 'awayTeam']
+081__api_event_16363917_team_lineup_teamId_33_heatmap_false.json	200	11	https://www.statshub.com/api/event/16363917/team-lineup?teamId=33&heatmap=false	['data']
+082__api_event_16363917_extra_stats_.json	200	122	https://www.statshub.com/api/event/16363917/extra-stats	['data', 'hasExtraStats', 'message', 'matchStatus']
+083__api_team_34_players_performance_tournamentId_17_18_19_21_limit_20_location_both.json	200	401293	https://www.statshub.com/api/team/34/players/performance?tournamentId=17,18,19,21&limit=20&location=both&fixtureId=16363917	['data', 'events', 'currentFixturePlayerStats', 'unavailability']
+084__api_team_33_players_performance_tournamentId_17_18_19_21_limit_20_location_both.json	200	401150	https://www.statshub.com/api/team/33/players/performance?tournamentId=17,18,19,21&limit=20&location=both&fixtureId=16363917	['data', 'events', 'currentFixturePlayerStats', 'unavailability']
+085__api_events_opponent_rankings_eventIds_14023968_14023954_14023944_14023940_14025.json	200	2171	https://www.statshub.com/api/events/opponent-rankings?eventIds=14023968,14023954,14023944,14023940,14025044,14025036,14025024,14024018,14023991&statType=shots&teamId=34	['data']
+086__api_events_opponent_rankings_eventIds_15957607_15697561_15556599_statType_shots.json	200	723	https://www.statshub.com/api/events/opponent-rankings?eventIds=15957607,15697561,15556599&statType=shots&teamId=34	['data']
+087__api_events_opponent_rankings_eventIds_16363871_16363866_16363644_16363258_16363.json	200	1445	https://www.statshub.com/api/events/opponent-rankings?eventIds=16363871,16363866,16363644,16363258,16363266,16363238&statType=shots&teamId=34	['data']
+088__api_events_opponent_rankings_eventIds_16950621_16798258_statType_shots_teamId_3.json	200	488	https://www.statshub.com/api/events/opponent-rankings?eventIds=16950621,16798258&statType=shots&teamId=34	['data']
+089__api_events_opponent_rankings_eventIds_16363917_statType_shots_teamId_34.json	200	257	https://www.statshub.com/api/events/opponent-rankings?eventIds=16363917&statType=shots&teamId=34	['data']
+090__api_team_34_performance_tournamentId_17_2C21_2C19_limit_30_location_both.json	200	72074	https://www.statshub.com/api/team/34/performance?tournamentId=17%2C21%2C19&limit=30&location=both	['data']
+091__api_event_16363917_odds_movements_market_shots.json	200	56	https://www.statshub.com/api/event/16363917/odds-movements?market=shots	['eventId', 'market', 'series']
+092__api_event_16363917_player_odds_statType_shots_teamId_34.json	200	115	https://www.statshub.com/api/event/16363917/player-odds?statType=shots&teamId=34	['data']
+093_NEXT_DATA__fixture_leeds_united_vs_tottenham_hotspur_mup4vd_490175.json	200	7879	https://www.statshub.com/fixture/leeds-united-vs-tottenham-hotspur-mup4vd/490175	__NEXT_DATA__
+094__api_team_33_event_statistics_eventType_all_statisticKey_goals_eventHalf_ALL_lim.json	200	7766	https://www.statshub.com/api/team/33/event-statistics?eventType=all&statisticKey=goals&eventHalf=ALL&limit=20	['data']
+095__api_team_33_event_statistics_eventType_all_statisticKey_goals_eventHalf_ALL_tou.json	200	7638	https://www.statshub.com/api/team/33/event-statistics?eventType=all&statisticKey=goals&eventHalf=ALL&tournamentIds=17,18,19,21&limit=20	['data']
+096__api_team_34_event_statistics_eventType_all_statisticKey_goals_eventHalf_ALL_lim.json	200	7451	https://www.statshub.com/api/team/34/event-statistics?eventType=all&statisticKey=goals&eventHalf=ALL&limit=20	['data']
+097__api_team_34_event_statistics_eventType_all_statisticKey_goals_eventHalf_ALL_tou.json	200	7451	https://www.statshub.com/api/team/34/event-statistics?eventType=all&statisticKey=goals&eventHalf=ALL&tournamentIds=17,18,19,21&limit=20	['data']
+098__api_event_16363917_formations_.json	404	46	https://www.statshub.com/api/event/16363917/formations	['error']
+099__api_team_34_last_lineup_.json	200	3578	https://www.statshub.com/api/team/34/last-lineup	['data', 'eventId', 'timestamp', 'latestFinishedEventId', 'fellBack', 'match']
+100__api_team_33_last_lineup_.json	200	3605	https://www.statshub.com/api/team/33/last-lineup	['data', 'eventId', 'timestamp', 'latestFinishedEventId', 'fellBack', 'match']
+101__api_event_16363917_player_odds_statType_fouls_teamId_34.json	200	115	https://www.statshub.com/api/event/16363917/player-odds?statType=fouls&teamId=34	['data']
+102__api_event_16363917_player_odds_statType_wasFouled_teamId_33.json	200	115	https://www.statshub.com/api/event/16363917/player-odds?statType=wasFouled&teamId=33	['data']
+103__api_event_16363917_predicted_formations_.json	200	11	https://www.statshub.com/api/event/16363917/predicted-formations	['data']
+104__api_team_34_last_formation_.json	200	246	https://www.statshub.com/api/team/34/last-formation	['data']
+105__api_team_33_last_formation_.json	200	261	https://www.statshub.com/api/team/33/last-formation	['data']
+greska	https://www.statshub.com/api/player/123689/tournaments-and-seasons	Response.body: Target page, context or browser has been closed
+greska	https://www.statshub.com/api/event/16363917/player-odds?statType=saves&teamId=34	Response.body: Target page, context or browser has been closed
+greska	https://www.statshub.com/api/team/34/players/performance?tournamentId=17,18,19,21&limit=20&location=both&status=finished&fixtureId=16363917	Response.body: Target page, context or browser has been closed
+greska	https://www.statshub.com/api/team/34/players/performance?tournamentId=17,18,19,21&limit=60&location=both&status=finished&fixtureId=16363917	Response.body: Target page, context or browser has been closed
+greska	https://www.statshub.com/api/player/123689/performance?tournamentId=17,18,19,21&limit=20&location=both&startedMatch=true&includeNational=true	Response.body: Target page, context or browser has been closed
+greska	https://www.statshub.com/api/player/123689/performance?tournamentId=1,7,11,16,17,18,19,21,24,27,334,346,679,851,10783&limit=20&location=both&startedMatch=true&includeNational=true	Response.body: Target page, context or browser has been closed
+greska	https://www.statshub.com/api/player/123689/performance?tournamentId=1,7,11,16,17,18,19,21,24,27,334,346,679,851,10783&limit=60&location=both&startedMatch=true&includeNational=true	Response.body: Target page, context or browser has been closed
+greska	https://www.statshub.com/api/player/123689/performance?tournamentId=17,18,19,21&limit=60&location=both&startedMatch=true&includeNational=true	Response.body: Target page, context or browser has been closed
+greska	https://www.statshub.com/api/team/34/players/performance?tournamentId=1,7,11,16,17,18,19,21,24,27,334,346,679,851,10783&limit=20&location=both&status=finished&fixtureId=16363917	Response.body: Target page, context or browser has been closed
+greska	https://www.statshub.com/api/team/34/players/performance?tournamentId=1,7,11,16,17,18,19,21,24,27,334,346,679,851,10783&limit=20&location=both&fixtureId=16363917	Response.body: Target page, context or browser has been closed
+greska	https://www.statshub.com/api/team/34/players/performance?tournamentId=1,7,11,16,17,18,19,21,24,27,334,346,679,851,10783&limit=60&location=both&status=finished&fixtureId=16363917	Response.body: Target page, context or browser has been closed
+greska	https://www.statshub.com/api/team/33/players/performance?tournamentId=1,7,11,16,17,18,19,21,24,27,334,346,679,851,10783&limit=20&location=both&fixtureId=16363917	Response.body: Target page, context or browser has been closed
