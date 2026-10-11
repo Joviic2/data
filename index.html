@@ -2731,43 +2731,60 @@ sportBar();
 <script>
 // ===== Fudbal: danasnje utakmice, kvote i value tipovi (data/<liga>/odds_superbet.json + predictions.json iz football_poisson.py) =====
 let FBD={},FBF="danas",FBEV=.03,FBM=[];
+const fbBad=r=>r.sus||r.ev_raw>.25||Math.abs(r.p_model-r.p_market)>.15;   // model i trziste se previse razilaze = skoro sigurno pogresno uparena kvota
+function fbDay(st){const n=new Date();return FBF=="sve"||(st&&(FBF=="danas"?st.toDateString()==n.toDateString():st.toDateString()==new Date(+n+864e5).toDateString()))}
 async function fbLoad(k){
  if(FBD[k])return;FBD[k]={loading:1};
- const g=async n=>{try{return await getJSON("data/"+k+"/"+n)}catch(e){return null}};
- const[o,p]=await Promise.all([g("odds_superbet.json"),g("predictions.json")]);
- FBD[k]={o,p};if(SPORT=="fb"&&FBSEL==k)homeRender()}
+ let p=null;try{p=await getJSON("data/"+k+"/predictions.json")}catch(e){}
+ FBD[k]={p};if(SPORT=="fb"&&FBSEL==k)homeRender()}
 function fbPlab(r,e){return/^(1X2|AH|EH)/.test(r.market)?(r.pick=="1"?e.h:r.pick=="2"?e.a:"Nerešeno"):r.pick=="Vise"?"Preko":r.pick=="Manje"?"Ispod":r.pick}
 function fbTipList(){
- const d=FBD[FBSEL]||{},ev=(d.o&&d.o.events)||[],rows=(d.p&&d.p.rows)||[],now=new Date(),by={},T=[];
- rows.forEach(r=>{const k=r.h+"|"+r.a+"|"+(r.start||"");(by[k]||(by[k]=[])).push(r)});
+ const d=FBD[FBSEL]||{},rows=(d.p&&d.p.rows)||[],now=new Date(),G={},T=[];
+ rows.forEach(r=>{const k=r.h+"|"+r.a+"|"+(r.start||"");(G[k]||(G[k]={e:{h:r.h,a:r.a,start:r.start},rows:[],tips:[]})).rows.push(r)});
  FBM=[];
- ev.forEach(e=>{const st=e.start?new Date(e.start):null;
-  if(FBF=="danas"&&!(st&&st.toDateString()==now.toDateString()))return;
-  if(FBF=="sutra"&&!(st&&st.toDateString()==new Date(+now+864e5).toDateString()))return;
-  if(st&&st<new Date(+now-2*36e5))return;
-  FBM.push({e,st,rows:by[e.h+"|"+e.a+"|"+(e.start||"")]||[],tips:[]})});
+ Object.values(G).forEach(g=>{const e=g.e,st=e.start?new Date(e.start):null;
+  if(!fbDay(st))return;
+  if(FBF!="danas"&&st&&st<new Date(+now-3*36e5))return;
+  FBM.push({e,st,rows:g.rows,tips:[],started:!!(st&&st<now)})});
  FBM.sort((a,b)=>(a.st||0)-(b.st||0));
- FBM.forEach(m=>{m.rows.filter(r=>r.ev>=FBEV).sort((a,b)=>b.ev-a.ev).slice(0,4).forEach(r=>{
+ FBM.forEach(m=>{if(m.started){m.hid=0;return}m.hid=m.rows.filter(r=>r.ev>=FBEV&&r.ev>0&&fbBad(r)).length;m.rows.filter(r=>r.ev>=FBEV&&r.ev>0&&!fbBad(r)).sort((a,b)=>b.ev-a.ev).slice(0,4).forEach(r=>{
   const x={pick:fbPlab(r,m.e),mk:r.market+(r.ev_raw>.25?" · ⚠ PROVERI liniju":""),mt:m.e.h+" - "+m.e.a,st:m.e.start,o:r.odds,p:r.p,ev:r.ev,bk:"Superbet",i:T.length};
   T.push(x);m.tips.push(x)})});
  return T}
+function fbCtx(m,d){
+ const L=(d.p&&d.p.context)||[],C=L.find(c=>c.h==m.e.h&&c.a==m.e.a&&(c.start||"")==(m.e.start||""))||L.find(c=>c.h==m.e.h&&c.a==m.e.a);
+ if(!C||!C.home||!C.away)return"";
+ const H=C.home,A=C.away,
+  fm=x=>x.form&&x.form.str?x.form.str.split("").map(c=>`<b class="${c=="W"?"ok":c=="L"?"no":"mu"}">${c}</b>`).join(" ")+` <span class="mu">(${x.form.pts} bod., ${x.form.gf}:${x.form.ga}${x.form.nx?`, xG ${f(x.form.xgf/x.form.nx,2)}/m`:""})</span>`:"-",
+  out=x=>x.out&&x.out.length?x.out.slice(0,6).map(u=>`${esc(u.n||"?")} <span class="mu">(${esc(u.pos||"")}${u.status&&u.status!="out"?", upitan":""}${u.reason?", "+esc(u.reason):""})</span>`).join(", "):'<span class="mu">nema prijavljenih</span>',
+  rs=x=>x.rest==null?"-":f(x.rest,1)+" d"+(x.rest<3.5?' <b class="no">⚠ kratak odmor</b>':""),
+  sty=x=>x.style&&x.style.length?x.style.map(esc).join(", "):'<span class="mu">bez izraženog stila</span>',
+  pc=v=>(v>=1?"+":"")+f((v-1)*100,1)+"%",
+  row=(k,a,b)=>`<tr><td><b>${k}</b></td><td>${a}</td><td>${b}</td></tr>`,
+  mu=C.mult||[1,1],hh=C.h2h;
+ const h2=hh&&hh.n?`<p class="mu" style="margin:8px 0 0;font-size:.88rem"><b>H2H</b> (poslednjih ${hh.n}): ${esc(m.e.h)} ${hh.h_win} pob., ${hh.draw} nere., ${esc(m.e.a)} ${hh.n-hh.h_win-hh.draw} pob. · golovi ${hh.gh}:${hh.ga} · prosek ${f(hh.avg_goals,2)} gola/meč${hh.last&&hh.last.length?"<br>"+hh.last.map(esc).join(" · "):""}</p>`:"";
+ return`<details style="margin:6px 0"><summary class="mu" style="cursor:pointer">Kontekst: forma, povrede, odmor, stil, H2H</summary><div class="scroll"><table><tr><th></th><th>${esc(m.e.h)}</th><th>${esc(m.e.a)}</th></tr>
+  ${row("Forma (5)",fm(H),fm(A))}${row("Odmor",rs(H),rs(A))}${row("Nedostupni",out(H),out(A))}${row("Stil igre",sty(H),sty(A))}${row("xG po meču (10)",H.xg!=null?f(H.xg,2):"-",A.xg!=null?f(A.xg,2):"-")}
+  ${row("Korekcija očekivanih golova",pc(mu[0]),pc(mu[1]))}</table></div>
+  <p class="mu" style="margin:6px 0 0;font-size:.88rem">Očekivani golovi posle korekcija (povrede, odmor): <b>${C.lam?f(C.lam[0],2)+" : "+f(C.lam[1],2):"-"}</b>. Forma i stil su informativni, ne menjaju račun; xG, povrede i odmor menjaju.</p>${h2}</details>`}
 function fbMid(kpi,tipRow){
  const k=FBSEL,nm=(FBL.find(x=>x[0]==k)||[0,""])[1],d=FBD[k],hd=`<h2>⚽ ${esc(nm)}</h2>`;
  if(!d||d.loading)return kpi+`<div class="card">${hd}<p class="mu">Učitavam kvote i model…</p></div>`;
- if(!d.o||!Array.isArray(d.o.events))return kpi+`<div class="card">${hd}<div class="note warn" style="display:block">Nema <code>data/${esc(k)}/odds_superbet.json</code>. Za sada je povezana samo Premier League (<code>fetch_superbet_football.py</code> pa <code>football_poisson.py</code>); ostale lige traže isti par skripti i svoj folder.</div></div>`;
- const bar=`<div class="mts">${[["danas","Danas"],["sutra","Sutra"],["sve","Sve"]].map(([a,l])=>`<button type="button" data-ff="${a}" aria-selected="${FBF==a}">${l}</button>`).join("")}<span class="mu" style="align-self:center">EV ≥</span>${[.03,.05,.08].map(v=>`<button type="button" data-fev="${v}" aria-selected="${FBEV==v}">${Math.round(v*100)}%</button>`).join("")}<button type="button" class="btn sm" data-fbr="1">Osveži</button></div>`;
- const age=d.o.fetched?(Date.now()/1e3-d.o.fetched)/3600:null;
- const st=`<p class="mu" style="font-size:.85rem;margin:4px 0">Kvote: ${age==null?"?":f(age,1)+" h staro"}${age>6?' <b class="no">(stare, pokreni fetch_superbet_football.py)</b>':""} · model: ${d.p?esc(d.p.updated||"ok"):'<b class="no">nema predictions.json, pokreni python football_poisson.py</b>'}</p>`;
+ if(!d.p||!Array.isArray(d.p.rows))return kpi+`<div class="card">${hd}<div class="note warn" style="display:block">Nema <code>data/${esc(k)}/predictions.json</code> u repou. Za sada ga pravi samo <code>football_poisson.py</code> za Premier League; ostale lige traže svoj folder i svoju verziju skripti.</div></div>`;
+ const bar=`<div class="mts">${[["danas","Danas"],["sutra","Sutra"],["sve","Sve"]].map(([a,l])=>`<button type="button" data-ff="${a}" aria-selected="${FBF==a}">${l}</button>`).join("")}<span class="mu" style="align-self:center">EV ≥</span>${[0,.03,.05,.08].map(v=>`<button type="button" data-fev="${v}" aria-selected="${FBEV==v}">${Math.round(v*100)}%</button>`).join("")}<button type="button" class="btn sm" data-fbr="1">Osveži</button></div>`;
+ const up=d.p.updated?new Date(d.p.updated):null,skp=(d.p.skipped||[]).filter(x=>fbDay(x.start?new Date(x.start):null)),age=up&&!isNaN(up)?(Date.now()-up)/36e5:null;
+ const st=`<p class="mu" style="font-size:.85rem;margin:4px 0">predictions.json: ${age==null?"?":f(age,1)+" h staro"}${age>12?' <b class="no">(staro: pokreni fetch_superbet_football.py pa football_poisson.py i pushuj)</b>':""} ${d.p.source=="statshub"?` izvor: Statshub (xG udeo ${d.p.beta})`:' <b class="no">izvor: stari CSV (bez xG i povreda): pokreni statshub_football.py</b>'} · ${FBF=="sve"?"svi dani":FBF}: ${FBM.length} utakmica${skp.length?`<br><b class="no">Preskočeno (ekipa nije prepoznata u modelu, dodaj u ALIAS): ${skp.map(x=>esc(x.h+" - "+x.a)).join(", ")}</b>`:""}</p>`;
  const top=HT.slice().sort((a,b)=>b.ev-a.ev).slice(0,5);
  const topH=top.length?`<div class="card"><h2>Najbolji tipovi (${FBF=="sve"?"svi dani":FBF})</h2>${top.map(x=>tipRow(x,x.i)).join("")}</div>`:"";
- const pm=(m,mk,pk)=>{const r=m.rows.find(x=>x.market==mk&&x.pick==pk);return r?Math.round(r.p_model*100)+"%":"-"};
- const cards=FBM.map(m=>{const e=m.e,o3=e.x12,ou=(e.ou||[]).find(x=>x[0]==2.5);
-  return`<div class="card"><div class="head"><b class="num" style="font-size:1.2rem">${m.st?m.st.toLocaleString("sr-Latn-RS",{weekday:"short",hour:"2-digit",minute:"2-digit"}):""}</b><h3 style="margin:0 8px">${esc(e.h)} - ${esc(e.a)}</h3></div>
-  <div class="mu" style="margin:6px 0">${o3?`1 <b>${f(o3[0],2)}</b> · X <b>${f(o3[1],2)}</b> · 2 <b>${f(o3[2],2)}</b>`:"nema 1X2"}${ou?` · Preko 2.5 <b>${f(ou[1],2)}</b> / Ispod <b>${f(ou[2],2)}</b>`:""}${e.btts?` · GG <b>${f(e.btts[0],2)}</b> / NG <b>${f(e.btts[1],2)}</b>`:""}</div>
-  ${m.rows.length?`<div class="mu" style="font-size:.9rem;margin-bottom:6px">Model: 1/X/2 ${pm(m,"1X2","1")} / ${pm(m,"1X2","X")} / ${pm(m,"1X2","2")} · GG ${pm(m,"GG/NG","GG")} · Preko 2.5 ${pm(m,"Golovi 2.5","Vise")}</div>`:'<div class="note warn" style="display:block">Model nije prepoznao ekipe (dodaj ih u ALIAS u football_poisson.py).</div>'}
-  ${m.tips.length?m.tips.map(x=>tipRow(x,x.i)).join(""):`<p class="mu" style="margin:0">Nema +EV tipa ≥ ${Math.round(FBEV*100)}% za ovaj meč.</p>`}</div>`}).join("");
- const none=!FBM.length?`<div class="note" style="display:block">Nema utakmica za filter „${FBF}“ (${d.o.events.length} u fajlu). ${FBF!="sve"?'Probaj „Sve“.':""}</div>`:"";
- return kpi+`<div class="card">${hd}${bar}${st}</div>${topH}${none}${cards}<p class="mu" style="font-size:.85rem">EV = 35% model + 65% tržište bez marže (<code>--w</code> u football_poisson.py). Model je Poisson bez povreda i sastava; procena, ne garancija.</p>`}
+ const od=(m,mk,pk)=>{const r=m.rows.find(x=>x.market==mk&&x.pick==pk);return r?r.odds:null},pm=(m,mk,pk)=>{const r=m.rows.find(x=>x.market==mk&&x.pick==pk);return r?Math.round(r.p_model*100)+"%":"-"};
+ const cards=FBM.map(m=>{const e=m.e,x1=od(m,"1X2","1"),xx=od(m,"1X2","X"),x2=od(m,"1X2","2"),o3=x1&&xx&&x2?[x1,xx,x2]:null,ov=od(m,"Golovi 2.5","Vise"),un=od(m,"Golovi 2.5","Manje"),ou=ov&&un?[2.5,ov,un]:null,gg=od(m,"GG/NG","GG"),ng=od(m,"GG/NG","NG");
+  return`<div class="card"><div class="head"><b class="num" style="font-size:1.2rem">${m.st?m.st.toLocaleString("sr-Latn-RS",{weekday:"short",hour:"2-digit",minute:"2-digit"}):""}</b><h3 style="margin:0 8px">${esc(e.h)} - ${esc(e.a)}</h3>${m.started?'<span class="pill">počela</span>':""}</div>
+  <div class="mu" style="margin:6px 0">${o3?`1 <b>${f(o3[0],2)}</b> · X <b>${f(o3[1],2)}</b> · 2 <b>${f(o3[2],2)}</b>`:"nema 1X2"}${ou?` · Preko 2.5 <b>${f(ou[1],2)}</b> / Ispod <b>${f(ou[2],2)}</b>`:""}${gg&&ng?` · GG <b>${f(gg,2)}</b> / NG <b>${f(ng,2)}</b>`:""}</div>
+  ${m.rows.length?`<div class="mu" style="font-size:.9rem;margin-bottom:6px">Model: 1/X/2 ${pm(m,"1X2","1")} / ${pm(m,"1X2","X")} / ${pm(m,"1X2","2")} · GG ${pm(m,"GG/NG","GG")} · Preko 2.5 ${pm(m,"Golovi 2.5","Vise")}</div>`:'<div class="mu">Nema modela za ovaj meč.</div>'}
+  ${fbCtx(m,d)}
+  ${m.tips.length?m.tips.map(x=>tipRow(x,x.i)).join(""):`<p class="mu" style="margin:0">${m.started?"Utakmica je počela, prematch kvote više ne važe.":"Nema +EV tipa ≥ "+Math.round(FBEV*100)+"% za ovaj meč."}</p>${(()=>{const b=m.started?null:m.rows.filter(r=>!fbBad(r)).sort((x,y)=>y.ev-x.ev)[0];return b?`<p class="mu" style="font-size:.85rem;margin:4px 0 0">Najbliže pragu: <b>${esc(fbPlab(b,m.e))}</b> ${esc(b.market)} @ ${f(b.odds,2)} (EV ${b.ev>=0?"+":""}${f(b.ev*100,1)}%)</p>`:""})()}`}${m.hid?`<p class="mu" style="font-size:.85rem;margin:6px 0 0">Sakriveno ${m.hid} sumnjivih izbora (model i tržište se razilaze za više od 15 p.p., najčešće je pogrešno uparena kvota, a ne prava prilika).</p>`:""}</div>`}).join("");
+ const none=!FBM.length?`<div class="note" style="display:block">Nema utakmica za filter „${FBF}“ (${(d.p.rows||[]).length} izbora u fajlu). ${FBF!="sve"?'Probaj „Sve“.':""}</div>`:"";
+ return kpi+`<div class="card">${hd}${bar}${st}</div>${topH}${none}${cards}<p class="mu" style="font-size:.85rem">EV = 35% model + 65% tržište bez marže (<code>--w</code> u football_poisson.py). Poisson model uči iz Statshub rezultata i xG-a, uračunava prijavljene povrede i kratak odmor, ali ne zna konačne sastave ni vesti iz poslednjeg sata; procena, ne garancija.</p>`}
 </script>
 </body></html>
 
