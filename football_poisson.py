@@ -323,6 +323,12 @@ def main():
             out.append(row)
             if a.all or ev_ >= a.min_ev: print(f"  {mk:<12} {pick:<6} kvota {o:<5.2f} model {pm*100:4.1f}% trziste {pf*100:4.1f}%{f' vracen ulog {pp*100:.0f}%' if pp else ''} -> EV {ev_*100:+5.1f}% (sirovi model {evr*100:+.1f}%){'  (PROVERI liniju/kvotu)' if evr > 0.25 else ''}")
     if not a.match:
+        try:                                          # tekstualno objasnjenje svakog tipa (label, meaning, why, risk) za "Zasto?" prozorcic
+            from fb_explain import explain_row, ctx_for
+            for r_ in out:
+                r_.update(explain_row(r_, r_["h"], r_["a"], ctx_for({"context": ctxs}, r_["h"], r_["a"], r_.get("start"))))
+        except ImportError:
+            print("UPOZORENJE: fb_explain.py nije pored football_poisson.py - tipovi ce biti bez objasnjenja iz JSON-a (sajt koristi rezervno objasnjenje)")
         json.dump({"updated": datetime.now().isoformat(timespec="seconds"), "w": a.w, "source": "statshub" if SD else "csv", "beta": a.beta if SD else None, "rows": out, "skipped": skipped, "context": ctxs}, open(OUT, "w", encoding="utf-8"), ensure_ascii=False, separators=(",", ":"))
         print(f"\nupisano {len(out)} izbora u {OUT}" + (f" (izbaceno {dropped} sumnjivih: model i trziste se previse razilaze; --keep-sus ih vraca)" if dropped else ""))
 
