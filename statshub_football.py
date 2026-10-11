@@ -13,17 +13,19 @@ import argparse, collections, json, math, os, random, re, sys, time, unicodedata
 from datetime import datetime, timezone
 
 BASE = "https://www.statshub.com"
-D = os.path.join("data", "epl")
+from fb_leagues import CUR
+D = os.path.join("data", CUR["dir"])
 CACHE = os.path.join(D, "statshub")
 OUT = os.path.join(D, "statshub_data.json")
-TOURN, SEASON = 1, 96668                      # PL 26/27 (iz probe: /api/tournament/1/96668/events); --season za sledecu sezonu
-PL_UT = 17                                    # uniqueTournamentId Premier lige
+TOURN, SEASON = CUR["tourn"], CUR["season"]                      # PL 26/27 (iz probe: /api/tournament/1/96668/events); --season za sledecu sezonu
+PL_UT = CUR["ut"]                                    # uniqueTournamentId Premier lige
 ALIAS = {"manchester city": "man city", "manchester united": "man united", "tottenham hotspur": "tottenham", "newcastle united": "newcastle",
          "wolverhampton wanderers": "wolves", "wolverhampton": "wolves", "west ham united": "west ham", "brighton hove albion": "brighton",
          "brighton and hove albion": "brighton", "leeds united": "leeds", "nottingham forest": "nottm forest", "leicester city": "leicester",
          "afc bournemouth": "bournemouth", "west bromwich albion": "west brom", "ipswich town": "ipswich", "sheffield united": "sheffield utd",
          "norwich city": "norwich", "luton town": "luton", "coventry city": "coventry", "hull city": "hull", "stoke city": "stoke",
          "swansea city": "swansea", "cardiff city": "cardiff", "birmingham city": "birmingham", "blackburn rovers": "blackburn"}
+ALIAS.update(CUR["alias"])
 STAT = ("expectedGoals", "expectedAssists", "shots", "onTargetScoringAttempt", "shotOffTarget", "blockedScoringAttempt", "touches", "totalPass",
         "accuratePass", "totalLongBalls", "totalCross", "totalTackle", "interceptionWon", "totalClearance", "aerialWon", "duelWon", "duelLost",
         "bigChanceCreated", "keyPass", "fouls", "wasFouled", "saves", "goals", "minutesPlayed")
@@ -63,7 +65,25 @@ class Client:
         self.pw = sync_playwright().start()
         self.br = self.pw.chromium.launch(headless=True)
         self.page = self.br.new_context(locale="en-GB").new_page()
-        self.page.goto(f"{BASE}/leagues/england/premier-league/17", wait_until="domcontentloaded", timeout=60000)
+        self.found, self.apis, self.bodies, self.status = [], [], [], None
+
+        def _on(r):
+            if "/api/" in r.url:
+                self.apis.append(r.url)
+                if "/api/tournament/" in r.url:
+                    self.found.append(r.url)
+                try:                                  # telo JSON-a: trazimo tournamentId/seasonId i u odgovorima (ne samo u adresama)
+                    if "json" in r.headers.get("content-type", ""):
+                        self.bodies.append((r.url, r.text()[:400000]))
+                except Exception:
+                    pass
+        self.page.on("response", _on)
+        resp = self.page.goto(BASE + CUR["path"], wait_until="domcontentloaded", timeout=60000)
+        self.status = resp.status if resp else None
+        try:
+            self.page.wait_for_load_state("networkidle", timeout=15000)
+        except Exception:
+            pass
         time.sleep(2)
 
     def get(self, path):
@@ -143,18 +163,41 @@ def team_pack(j, tid):
     return evs, per, pl, un
 
 
+def teams_in(o, out, parent=""):
+    """Timovi iz tabele (standing): dict {"team": {...}} ili bilo koji dict sa id+name+slug/shortName/nameCode."""
+    if isinstance(o, dict):
+        if o.get("id") is not None and isinstance(o.get("name"), str) and (parent == "team" or any(k in o for k in ("slug", "shortName", "nameCode"))):
+            if isinstance(o["id"], int):
+                out[o["id"]] = o["name"]
+        for k, v in o.items():
+            teams_in(v, out, k)
+    elif isinstance(o, list):
+        for v in o:
+            teams_in(v, out, parent)
+
+
 def discover(cl, tourn, season):
-    """{statshub_id: ime} svih timova lige: iz /events (tekuce kolo) i, ako treba, prethodnih kola."""
+    """{statshub_id: ime} svih timova lige. Redom: /unique-tournament/<ut>/<s>/standing (sva ekipa), /events (tekuce kolo), stari /tournament/... putevi, pa kola."""
     teams = {}
-    for path in [f"/api/tournament/{tourn}/{season}/events"] + [f"/api/tournament/{tourn}/{season}/{r}/events" for r in range(1, 9)]:
-        j = cl.get(path)
+    ut = CUR["ut"]
+    def add(j):
         for it in events_in(j or {}):
             for side in ("homeTeam", "awayTeam"):
                 t = it[side]
                 if t.get("id") is not None and t.get("name"):
                     teams[t["id"]] = t["name"]
-        if len(teams) >= 20:
+    for base in (f"/api/unique-tournament/{ut}/{season}", f"/api/tournament/{tourn}/{season}"):
+        if len(teams) >= 16:
             break
+        teams_in(cl.get(base + "/standing") or {}, teams)
+        add(cl.get(base + "/events"))
+    if len(teams) < 16:      # poslednje: kola
+        rj = cl.get(f"/api/tournament/{tourn}/{season}/rounds") or {}
+        nums = sorted({int(x) for x in re.findall(r'"round":\s*(\d+)', json.dumps(rj))}) or list(range(1, 9))
+        for r in nums[-10:]:
+            add(cl.get(f"/api/tournament/{tourn}/{season}/{r}/events"))
+            if len(teams) >= 18:
+                break
     return teams
 
 
@@ -280,14 +323,116 @@ def build(a):
     return out
 
 
+IDS = os.path.join(D, "statshub_ids.json")
+
+
+def resolve_ids(offline=False):
+    """(tournament, season): iz podesavanja lige, iz kesa data/<liga>/statshub_ids.json, ili sa stranice lige (mrezni pozivi /api/tournament/<t>/<s>/...)."""
+    if TOURN and SEASON:
+        return TOURN, SEASON
+    try:
+        j = json.load(open(IDS, encoding="utf-8"))
+        if j.get("tournament") and j.get("season"):
+            return j["tournament"], j["season"]
+    except (OSError, ValueError):
+        pass
+    if offline:
+        sys.exit("Nepoznati tournament/season za ovu ligu. Pokreni bez --offline ili zadaj --tournament i --season.")
+    cl = Client()
+    cl._open()
+    pat = re.compile(r"/api/tournament/(\d+)/(\d+)/")
+    pairs_of = lambda: collections.Counter(m.groups() for u in cl.found for m in [pat.search(u)] if m)
+    pairs, note = pairs_of(), ""
+    if not pairs:   # adresa (slug) mozda ne postoji: nadji link lige na /leagues pa otvori njega
+        try:
+            cl.page.goto(BASE + "/leagues", wait_until="domcontentloaded", timeout=60000)
+            time.sleep(3)
+            hrefs = cl.page.evaluate("() => [...document.querySelectorAll('a[href]')].map(a => a.getAttribute('href'))")
+            cand = [h for h in dict.fromkeys(hrefs) if re.search(r"/leagues/.*/%d/?$" % CUR["ut"], h or "")]
+            note = f"link lige na /leagues: {cand[:3]}"
+            if cand:
+                cl.page.goto(cand[0] if cand[0].startswith("http") else BASE + cand[0], wait_until="domcontentloaded", timeout=60000)
+                try:
+                    cl.page.wait_for_load_state("networkidle", timeout=15000)
+                except Exception:
+                    pass
+                time.sleep(2)
+            pairs = pairs_of()
+        except Exception as e:
+            note += f" | greska: {e}"
+    if not pairs:   # klik po tabovima lige (Fixtures/Table/Matches...) pa opet pogledaj mrezne pozive
+        for t in ("Fixtures", "Matches", "Table", "Standings", "Teams", "Overview", "Results"):
+            try:
+                cl.page.get_by_text(t, exact=True).first.click(timeout=2500)
+                cl.page.wait_for_load_state("networkidle", timeout=10000)
+                time.sleep(1.5)
+            except Exception:
+                pass
+            pairs = pairs_of()
+            if pairs:
+                break
+    if not pairs:   # telo API odgovora: {"tournamentId":..,"seasonId":..} ili uniqueTournament.id==ut + season.id
+        cnt = collections.Counter()
+        for u, b in cl.bodies:
+            for m in re.finditer(r'"(?:tournamentId|tournament_id)":\s*(\d+)[^{}]{0,300}?"(?:seasonId|season_id)":\s*(\d+)', b):
+                cnt[m.groups()] += 1
+            for m in re.finditer(r'"(?:seasonId|season_id)":\s*(\d+)[^{}]{0,300}?"(?:tournamentId|tournament_id)":\s*(\d+)', b):
+                cnt[(m.group(2), m.group(1))] += 1
+        for u in cl.apis:
+            m = re.search(r"/(?:tournament|tournaments|league)/(\d+)/(?:season/)?(\d+)", u)
+            if m:
+                cnt[m.groups()] += 1
+        if cnt:
+            pairs, note = cnt, note + " | ID-jevi iz tela/adresa API poziva"
+    if not pairs:   # poslednja nada: brojevi iz HTML-a stranice (ne snima se, jer je manje pouzdano)
+        try:
+            html = cl.page.content()
+            tt = collections.Counter(re.findall(r'"tournamentId":(\d+)', html)).most_common(1)
+            ss = collections.Counter(re.findall(r'"seasonId":(\d+)', html)).most_common(1)
+            if tt and ss:
+                pairs = collections.Counter({(tt[0][0], ss[0][0]): 1})
+                print(f"UPOZORENJE: brojevi uzeti iz HTML-a stranice (tournament={tt[0][0]}, season={ss[0][0]}), ne iz API poziva. Proveri rezultat.")
+                IDS_SAVE = False
+            else:
+                IDS_SAVE = True
+        except Exception:
+            IDS_SAVE = True
+    else:
+        IDS_SAVE = True
+    if not pairs:
+        os.makedirs(D, exist_ok=True)
+        dg, cur_url = os.path.join(D, "statshub_discovery.txt"), cl.page.url
+        open(dg, "w", encoding="utf-8").write(f"HTTP status stranice lige: {cl.status}\nadresa posle otvaranja: {cur_url}\n{note}\n\nAPI pozivi koje je stranica napravila ({len(cl.apis)}):\n" + "\n".join(dict.fromkeys(cl.apis)) + "\n\n--- kljucevi/uzorak tela ---\n" + "\n".join(f"{u}\n   {b[:300]}" for u, b in cl.bodies[:40]))
+        try:
+            cl.br.close(); cl.pw.stop()
+        except Exception:
+            pass
+        sys.exit(f"Nisam nasao tournament/season (HTTP {cl.status}, {cur_url}). Dijagnostika je u {dg}, posalji mi taj fajl. "
+                 f"Ili zadaj rucno: --tournament X --season Y (statshub_probe.py --league {CUR['path']}, pa index.txt).")
+    try:
+        cl.br.close(); cl.pw.stop()
+    except Exception:
+        pass
+    t, s = (int(x) for x in pairs.most_common(1)[0][0])
+    os.makedirs(D, exist_ok=True)
+    if IDS_SAVE:
+        json.dump({"tournament": t, "season": s}, open(IDS, "w"))
+    print(f"pronadjeno: tournament={t}, season={s} (sacuvano u {IDS})")
+    return t, s
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--offline", action="store_true", help="samo iz kesa u data/epl/statshub/")
     ap.add_argument("--ttl", type=float, default=6.0, help="kes vazi N sati")
     ap.add_argument("--limit", type=int, default=60, help="koliko poslednjih mecova po timu (sajt koristi 20 i 60)")
-    ap.add_argument("--tournament", type=int, default=TOURN); ap.add_argument("--season", type=int, default=SEASON)
+    ap.add_argument("--tournament", type=int, default=None); ap.add_argument("--season", type=int, default=None); ap.add_argument("--league", default="epl", help="epl | laliga")
     ap.add_argument("--no-upcoming", action="store_true")
-    build(ap.parse_args())
+    a = ap.parse_args()
+    if a.tournament is None or a.season is None:
+        t, s = resolve_ids(a.offline)
+        a.tournament, a.season = a.tournament or t, a.season or s
+    build(a)
 
 
 if __name__ == "__main__":

@@ -1,0 +1,10 @@
+HTTP status stranice lige: 200
+adresa posle otvaranja: https://www.statshub.com/leagues
+link lige na /leagues: []
+
+API pozivi koje je stranica napravila (8):
+https://www.statshub.com/api/unique-tournament/34/96127/cup-tree
+https://www.statshub.com/api/unique-tournament/34/96127/standing
+https://www.statshub.com/api/unique-tournament/34/96127/events
+https://o4511626424745984.ingest.de.sentry.io/api/4511626446045264/envelope/?sentry_version=7&sentry_key=ecd421b8d6df1f4cdcfc618899f02cb2&sentry_client=sentry.javascript.nextjs%2F8.55.0
+https://gateway.umami.is/api/send

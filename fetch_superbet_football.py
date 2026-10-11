@@ -14,7 +14,8 @@ import argparse, collections, datetime, glob, json, os, random, re, sys, time, u
 from football_poisson import canon, nrm, load as load_results
 from fetch_superbet import get, events_in, num, line_of, event_id, push, DETAIL, URL
 
-OUT = os.path.join("data", "epl", "odds_superbet.json")
+from fb_leagues import CUR
+OUT = os.path.join("data", CUR["dir"], "odds_superbet.json")
 FEED = URL.replace("sports=4", "sports={sp}")
 SKIP = ("poluvreme", "1. pol", "2. pol", "half", "&", " i ", "kombin", "tim ", "tima", "domaćin", "domacin", "gost", "korner", "karton",
         "penal", "azijsk", "strelac", "igrač", "igrac", "tačan rezultat", "tacan rezultat", "dupla", "hendikep", "bez remi", "minut")
@@ -301,11 +302,11 @@ def epl_teams():
     """Klubovi tekuce Premier lige iz data/epl/E0_*.csv (football_poisson.py --download); prazan skup ako fajla nema."""
     global _known
     if _known is None:
-        sh = os.path.join("data", "epl", "statshub_data.json")      # klubovi tekuce PL iz Statshub-a (statshub_football.py); inace stari CSV
+        sh = os.path.join("data", CUR["dir"], "statshub_data.json")      # klubovi tekuce PL iz Statshub-a (statshub_football.py); inace stari CSV
         if os.path.exists(sh):
             _known = set(json.load(open(sh, encoding="utf-8")).get("teams", {}))
         else:
-            fs = sorted(glob.glob(os.path.join("data", "epl", "E0_*.csv")))
+            fs = sorted(glob.glob(os.path.join("data", CUR["dir"], CUR["csv"] + "_*.csv")))
             _known = {m[k] for m in load_results(fs[-1:]) for k in ("h", "a")} if fs else set()
     return _known
 
@@ -473,17 +474,18 @@ def once(a):
             json.dump(dict(sorted(unk.items(), key=lambda kv: -kv[1]["mecova"])), fh, ensure_ascii=False, indent=1)
         print(f"Nepoznatih trzista: {len(unk)} (sva imena + primer izlaza: {os.path.join(os.path.dirname(OUT), 'unknown_markets.json')})")
     with open(OUT + ".tmp", "w", encoding="utf-8") as fh:
-        json.dump({"fetched": int(time.time()), "source": "superbet.rs", "league": "epl", "comp": comp, "events": evs}, fh, ensure_ascii=False, separators=(",", ":"))
+        json.dump({"fetched": int(time.time()), "source": "superbet.rs", "league": CUR["code"], "comp": comp, "events": evs}, fh, ensure_ascii=False, separators=(",", ":"))
     os.replace(OUT + ".tmp", OUT)
     if a.push: push([OUT])
 
 
 if __name__ == "__main__":
     ap = argparse.ArgumentParser()
+    ap.add_argument("--league", default="epl", help="epl | laliga")
     ap.add_argument("--loop", type=int, default=0, help="sekundi izmedju prolaza (min 300)")
     ap.add_argument("--probe", action="store_true", help="ispisi sports id -> primeri mecova (nadji id za fudbal)")
     ap.add_argument("--tournaments", action="store_true", help="spisak svih turnira (tournament_id, broj mecova, primeri) za izabrani sport")
-    ap.add_argument("--struct", nargs="?", const="premier|premijer|engleska|england|fudbal|football", default="", help="trazi turnire po imenu u stablu (regex), npr. --struct \"premier|engleska\"")
+    ap.add_argument("--struct", nargs="?", const=CUR["struct"], default="", help="trazi turnire po imenu u stablu (regex), npr. --struct \"premier|engleska\"")
     ap.add_argument("--sports", default="5", help="id sporta u feedu (fudbal = 5, proveri sa --probe)")
     ap.add_argument("--tournament", default="", help="tournament_id Premier lige, npr. 106 (iz --struct: .data.tournaments)")
     ap.add_argument("--category", default="", help="id kategorije, npr. 45 = cela Engleska; automatski dodaje filter po klubovima Premier lige")
