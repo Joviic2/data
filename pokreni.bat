@@ -1,0 +1,6 @@
+@echo off
+rem Pokreće lokalni server u ovom folderu i otvara sajt. Zatvori prozor da ugasiš server.
+cd /d "%~dp0"
+start "" "http://localhost:8000/index.html"
+python -m http.server 8000 || py -m http.server 8000
+pause

@@ -14,6 +14,8 @@ from playwright.sync_api import sync_playwright
 
 CALENDAR = "https://acb.com/es/liga/calendario"
 LIVE = "https://live.acb.com"
+API = "https://api2.acb.com/api/matchdata"
+API_KEY = "0dd94928-6f57-4c08-a3bd-b1b2f092976e"  # public key used by ACB Live
 OUT = Path("data/acb/site.json")
 HEADERS = {"User-Agent": "Mozilla/5.0 (compatible; ValueAnalyzer/1.0)"}
 SESSION = requests.Session()
@@ -34,6 +36,14 @@ def get(url):
     r=SESSION.get(url,timeout=35); r.raise_for_status()
     time.sleep(.35)
     return r.text
+
+def api_json(path):
+    """Fetch ACB Live's public match-data endpoint (same API as its website)."""
+    r=SESSION.get(f"{API}/{path}",headers={"X-APIKEY":API_KEY},timeout=35)
+    if r.status_code==204: return None
+    r.raise_for_status()
+    time.sleep(.2)
+    return r.json()
 
 def clean(s): return re.sub(r"\s+"," ",s or "").strip()
 
@@ -123,95 +133,48 @@ def shot_zone(x,y,is_three):
     if (x*x+y*y)**0.5<=125: return "rim"
     return "paint" if abs(x)<=245 and y<=580 else "mid"
 
-def scrape_shots(url,game,browser):
-    """Read ACB Live's official per-player shot chart and normalize to app schema."""
-    page=browser.new_page(viewport={"width":1920,"height":1080})
-    try:
-        summary=url.replace("/estadisticas","/resumen")
-        page.goto(summary,wait_until="domcontentloaded",timeout=60000)
-        page.wait_for_function("""document.querySelector('svg[viewBox="0 0 650 350"] circle[r="8.5"]') &&
-          document.querySelector('[id^="checkbox-home-"]') && document.querySelector('[id^="checkbox-away-"]')""",timeout=30000)
-        # The chart initially selects every player. Clear both teams, then turn on
-        # one official player filter at a time to retain the player id on each shot.
-        for side in ("home","away"):
-            switch=page.locator("#switch-"+side).filter(visible=True).first
-            if switch.get_attribute("aria-checked")=="true": switch.click()
-        page.wait_for_timeout(1000)
-        # Read any ACB dialog after the team filters have activated it.
-        modal=page.locator(".modal:visible").first
-        if modal.count():
-            details=modal.inner_text(timeout=3000).replace("\n"," ")[:500]
-            buttons=modal.locator("button").evaluate_all(
-                "els=>els.map(b=>({text:(b.innerText||'').trim(),label:b.getAttribute('aria-label'),title:b.title}))")
-            raise RuntimeError(f"ACB_MODAL_DIAGNOSTIC text={details!r} buttons={buttons!r}")
-        controls=page.locator('[id^="checkbox-home-"],[id^="checkbox-away-"]').evaluate_all(
-            "els => els.map(e=>e.id)")
-        players=[]
-        for cid in controls:
-            m=re.fullmatch(r"checkbox-(home|away)-(\d+)",cid or "")
-            if m and (m[1],m[2]) not in players: players.append((m[1],m[2]))
-        events=[]
-        scale=100/((617.5-32.5)/28)  # official court viewBox: 585 px = 28 m
-        for side,pid in players:
-            control=page.locator(f'#checkbox-{side}-{pid}').filter(visible=True).first
-            if control.get_attribute("aria-checked")!="true":
-                try:
-                    control.click(timeout=5000)
-                except Exception as click_error:
-                    modal=page.locator(".modal:visible").first
-                    details=modal.inner_text(timeout=3000).replace("\n"," ")[:500] if modal.count() else "no visible .modal"
-                    buttons=modal.locator("button").evaluate_all(
-                        "els=>els.map(b=>({text:(b.innerText||'').trim(),label:b.getAttribute('aria-label'),title:b.title}))") if modal.count() else []
-                    raise RuntimeError(f"ACB_MODAL_DIAGNOSTIC click={str(click_error)[:300]} text={details!r} buttons={buttons!r}")
-            page.wait_for_timeout(60)
-            markers=page.locator('svg[viewBox="0 0 650 350"] circle[r="8.5"]').evaluate_all(
-              """els=>els.map(e=>({x:+e.getAttribute('cx'),y:+e.getAttribute('cy'),
-                className:e.getAttribute('class')||'',fill:e.getAttribute('fill')||''}))""")
-            for marker in markers:
-                # ACB draws a made attempt as a filled, classed marker and a miss
-                # as a white, unclassed outer circle plus a smaller decorative ring.
-                if not marker["className"] and marker["fill"].upper()!="#FFFFFF": continue
-                made="--entered" in marker["className"]
-                hoop=32.5 if marker["x"]<=325 else 617.5
-                x=(marker["y"]-175)*scale
-                y=abs(marker["x"]-hoop)*scale
-                # FIBA line: 6.75 m arc and 6.60 m corner segment (0.90 m from baseline).
-                three=(abs(x)>=660 and y>=90) or (x*x+y*y)**0.5>=675
-                action=("3FG" if three else "2FG")+("M" if made else "A")
-                events.append({"TEAM":game["h" if side=="home" else "a"],"ID_PLAYER":pid,
-                               "ID_ACTION":action,"COORD_X":round(x,1),"COORD_Y":round(y,1),
-                               "POINTS":(3 if three else 2) if made else 0})
-            if control.get_attribute("aria-checked")=="true":
-                try:
-                    control.click(timeout=5000)
-                except Exception as click_error:
-                    modal=page.locator(".modal:visible").first
-                    details=modal.inner_text(timeout=3000).replace("\n"," ")[:1000] if modal.count() else "no visible .modal"
-                    buttons=modal.locator("button").evaluate_all(
-                        "els=>els.map(b=>({text:(b.innerText||'').trim(),label:b.getAttribute('aria-label'),title:b.title}))") if modal.count() else []
-                    raise RuntimeError(f"ACB_MODAL_DIAGNOSTIC deactivate={str(click_error)[:300]} text={details!r} buttons={buttons!r}")
-        # Guard against a changed ACB chart or a partial page: publish only if
-        # each player's shot totals exactly match the official boxscore.
-        expected={}
-        for sd in ("h","a"):
-            if not game.get("_box") or not game["_box"].get(sd): continue
-            for p in game["_box"][sd]["p"]:
-                expected[(game[sd],str(p[0]))]=(p[6]+p[8],p[7]+p[9])
-        actual={}
-        for e in events:
-            k=(e["TEAM"],e["ID_PLAYER"]);m,a=actual.get(k,(0,0));actual[k]=(m+int(e["ID_ACTION"].endswith("M")),a+1)
-        for k,counts in expected.items():
-            if actual.get(k,(0,0))!=counts:
-                raise RuntimeError(f"shot chart/boxscore mismatch for player {k[1]}: chart {actual.get(k,(0,0))}, box {counts}")
-        return events
-    finally:
-        page.close()
+def scrape_shots(url,game,browser=None):
+    """Download official ACB shot coordinates directly, without browser scraping."""
+    data=api_json(f"MatchShots/match-shots?matchId={game['n']}")
+    if not data: return None
+    # ACB coordinates are millimetres from the basket; convert to centimetres
+    # used by the site's zone classifier. API event types distinguish 2/3/FT.
+    actions={92:("FTM",1),96:("FTA",0),93:("2FGM",2),97:("2FGA",0),
+             100:("2FGM",2),94:("3FGM",3),98:("3FGA",0)}
+    events=[]
+    for shot in data.get("shotPoints") or []:
+        spec=actions.get(shot.get("playType"))
+        # ACB reports blocked field-goal attempts as event 533 (no x/y),
+        # while the boxscore still includes them in FGA. Keep them by zone.
+        if shot.get("playType")==533:
+            spec=("3FGA" if int(shot.get("points") or 2)==3 else "2FGA",0)
+        if not spec: continue
+        action,points=spec
+        is_ft=action.startswith("FT")
+        player_id=str(shot.get("playerLicenseId") or "")
+        events.append({"TEAM":game["h"] if shot.get("local") else game["a"],
+                       "ID_PLAYER":player_id,
+                       "ID_ACTION":action,"COORD_X":0 if is_ft else round(float(shot.get("posY") or 0)/10,1),
+                       "COORD_Y":0 if is_ft else round(float(shot.get("posX") or 0)/10,1),
+                       "POINTS":points if action.endswith("M") else 0,
+                       "QUARTER":shot.get("quarter"),"ZONE":shot.get("zone")})
+    if game.get("_box") and not shots_match_box(events,game,game["_box"]):
+        raise RuntimeError(f"ACB API shot totals do not match boxscore for game {game['n']}")
+    return events
 
 def shots_match_box(shots,game,box):
     try:
         for side in ("h","a"):
             team=game[side]
-            for p in box[side]["p"]:
+            team_rows=[r for r in shots if str(r.get("TEAM"))==team]
+            team_fg=[r for r in team_rows if str(r.get("ID_ACTION"," ")).startswith(("2FG","3FG"))]
+            team_ft=[r for r in team_rows if str(r.get("ID_ACTION"," ")).startswith("FT")]
+            players=box[side]["p"]
+            expected_fg=(sum(p[6]+p[8] for p in players),sum(p[7]+p[9] for p in players))
+            expected_ft=(sum(p[10] for p in players),sum(p[11] for p in players))
+            if (sum(str(r.get("ID_ACTION","")).endswith("M") for r in team_fg),len(team_fg))!=expected_fg: return False
+            if (sum(str(r.get("ID_ACTION","")).endswith("M") for r in team_ft),len(team_ft))!=expected_ft: return False
+            for p in players:
                 rows=[r for r in shots if str(r.get("TEAM"))==team and str(r.get("ID_PLAYER"))==str(p[0])]
                 fg=[r for r in rows if str(r.get("ID_ACTION","")).startswith(("2FG","3FG"))]
                 ft=[r for r in rows if str(r.get("ID_ACTION","")).startswith("FT")]
@@ -221,84 +184,98 @@ def shots_match_box(shots,game,box):
         return True
     except Exception: return False
 
-def parse_box(url,game,browser):
-    page=browser.new_page()
-    try:
-        page.goto(url,wait_until="domcontentloaded",timeout=60000)
-        page.locator("table").first.wait_for(state="visible",timeout=25000)
-        page.wait_for_function("""document.querySelectorAll('table a[href*="/liga/jugadores/"]').length >= 16""",timeout=20000)
-        tables=page.locator("table").evaluate_all("""ts => ts.map(t => Array.from(t.querySelectorAll('tr')).map(r => ({
-          v:Array.from(r.cells).map(c => c.innerText.trim()),
-          href:r.querySelector('a[href*="/liga/jugadores/"]')?.getAttribute('href')||null,
-          photo:r.querySelector('img')?.getAttribute('src')||r.querySelector('img')?.getAttribute('data-src')||r.querySelector('img')?.getAttribute('data-lazy-src')||null
-        })))""")
-    finally:
-        page.close()
-    # ACB Live summary tables contain the official player headshots; the stats
-    # table used above omits them. Join photos by the stable ACB player id.
-    summary=url.replace("/estadisticas","/resumen")
-    sp=browser.new_page()
-    try:
-        sp.goto(summary,wait_until="domcontentloaded",timeout=60000)
-        sp.locator('table a[href*="/liga/jugadores/"]').first.wait_for(state="visible",timeout=25000)
-        photos=sp.locator("table").evaluate_all("""ts => ts.flatMap(t =>
-          Array.from(t.querySelectorAll('tr')).map(r => {
-            const a=r.querySelector('a[href*="/liga/jugadores/"]');
-            const im=r.querySelector('img');
-            return a ? {href:a.getAttribute('href'),
-              photo:im?.currentSrc||im?.getAttribute('src')||im?.getAttribute('data-src')||im?.getAttribute('data-lazy-src')||null} : null
-          }).filter(Boolean))""")
-    except Exception as e:
-        print(f"boxscore {game['n']}: player photos unavailable: {e}")
-        photos=[]
-    finally:
-        sp.close()
-    photo_by_id={}
-    for row in photos:
-        m=re.search(r"-(\d+)(?:/|$)",row.get("href") or "")
-        if m and row.get("photo"): photo_by_id[m[1]]=urljoin(LIVE,row["photo"])
-
-    tables=[t for t in tables if t and max((len(row["v"]) for row in t),default=0)>=22 and any(row.get("href") for row in t)]
-    if len(tables)<2: return None
-    box={}; meta={}
-    for side,table in zip(("h","a"),tables[:2]):
+def parse_box(url,game,browser=None):
+    """Read official ACB boxscore JSON; HTML is only a JS skeleton now."""
+    data=api_json(f"Result/boxscores?matchId={game['n']}")
+    if not data or not data.get("teamBoxscores"): return None
+    role_map={"base":"PG","escolta":"SG","alero":"SF","ala-pivot":"PF","pivot":"C"}
+    box={}; meta={}; quarter_scores={"h":[],"a":[]}
+    totals_keys={"pts":"points","fg2m":"twoPointersMade","fg2a":"twoPointersAttempted",
+        "fg3m":"threePointersMade","fg3a":"threePointersAttempted","ftm":"freeThrowsMade",
+        "fta":"freeThrowsAttempted","or":"offRebounds","dr":"defRebounds","tr":"totalRebounds",
+        "ast":"assists","stl":"steals","tov":"turnovers","blk":"blocks","pf":"personalFouls","pir":"rating"}
+    teams=data["teamBoxscores"]
+    if len(teams)!=2: return None
+    for side,team_data in zip(("h","a"),teams):
+        periods={int(p.get("quarter",0)):p.get("stats") or {} for p in team_data.get("statsByPeriods") or []}
+        aggregate=periods.get(0) or {}
         players=[]; meta[side]={}
-        for tr in table[1:]:
-            vals=tr["v"]
-            if len(vals)<22 or not tr["href"]: continue
-            label=clean(vals[0])
-            if label.lower() in ("team","totals","equipo"): continue
-            m=re.search(r"-(\d+)(?:/|$)",tr["href"])
-            pid=m[1] if m else tr["href"].rstrip("/").split("/")[-1]
-            f2m,f2a=made_attempt(vals[3]); f3m,f3a=made_attempt(vals[5]); ftm,fta=made_attempt(vals[7])
-            number=re.match(r"\s*(\d+)",label)
-            slug=re.search(r"/liga/jugadores/([^/?#]+)",tr["href"])
-            profile_name=re.sub(r"-\d+$","",slug[1]).replace("-"," ").title() if slug else ""
-            name=profile_name or clean(re.sub(r"^\d+\s*","",label))
-            row=[pid,name,number[1] if number else "",int("*" in label),parse_minutes(vals[1]),num(vals[2]),
-                 f2m,f2a,f3m,f3a,ftm,fta,num(vals[10]),num(vals[9]),num(vals[11]),num(vals[12]),
-                 num(vals[14]),num(vals[13]),num(vals[15]),num(vals[18]),num(vals[21]),num(vals[20])]
-            if row[4]>0:
-                players.append(row)
-                photo=photo_by_id.get(str(pid)) or (urljoin(LIVE,tr["photo"]) if tr.get("photo") else None)
-                meta[side][str(pid)]={"photo":photo} if photo else {}
+        for entry in aggregate.get("players") or []:
+            p=entry.get("player") or {}
+            pid=str(p.get("id") or "")
+            if not pid: continue
+            mins=parse_minutes(entry.get("playTime") or "")
+            role=clean(p.get("gameRole") or "").lower().replace("á","a").replace("í","i")
+            row=[pid,p.get("firstInitialAndLastName") or p.get("nickname") or "",
+                 p.get("shirtNumber") or "",int(bool(entry.get("isStarted"))),mins,
+                 int(entry.get("points") or 0),int(entry.get("twoPointersMade") or 0),
+                 int(entry.get("twoPointersAttempted") or 0),int(entry.get("threePointersMade") or 0),
+                 int(entry.get("threePointersAttempted") or 0),int(entry.get("freeThrowsMade") or 0),
+                 int(entry.get("freeThrowsAttempted") or 0),int(entry.get("offRebounds") or 0),
+                 int(entry.get("defRebounds") or 0),int(entry.get("totalRebounds") or 0),
+                 int(entry.get("assists") or 0),int(entry.get("steals") or 0),
+                 int(entry.get("turnovers") or 0),int(entry.get("blocks") or 0),
+                 int(entry.get("personalFouls") or 0),int(entry.get("rating") or 0),
+                 int(entry.get("plusMinus") or 0)]
+            players.append(row)
+            meta[side][pid]={"photo":p.get("headshotImageUrl"),"pos":role_map.get(role,"")}
         if not players: return None
-        tot={k:0 for k in ("pts","fg2m","fg2a","fg3m","fg3a","ftm","fta","or","dr","tr","ast","stl","tov","blk","pf","pir")}
-        for pl in players:
-            for k,i in {"pts":5,"fg2m":6,"fg2a":7,"fg3m":8,"fg3a":9,"ftm":10,"fta":11,"or":12,"dr":13,"tr":14,"ast":15,"stl":16,"tov":17,"blk":18,"pf":19,"pir":20}.items(): tot[k]+=num(pl[i])
-        box[side]={"coach":"","p":players,"tot":tot}
-    return {"q":None,"box":box,"meta":meta}
+        totals={k:sum(int((entry.get(k_api) or 0)) for entry in aggregate.get("players") or [])
+                for k,k_api in totals_keys.items()}
+        box[side]={"coach":team_data.get("headCoach") or "","p":players,"tot":totals}
+        quarter_scores[side]=[int((periods.get(q,{}).get("total") or {}).get("points") or 0)
+                              for q in sorted(k for k in periods if k>0)]
+    return {"q":quarter_scores,"box":box,"meta":meta}
 
 def main():
     OUT.parent.mkdir(parents=True,exist_ok=True)
+    oldsite={}
+    try: oldsite=json.loads(OUT.read_text("utf-8"))
+    except (OSError,ValueError): pass
+    oldgames={str(g.get("n")):g for g in oldsite.get("games",[]) if isinstance(g,dict)}
+    oldrosters=oldsite.get("rosters") or {}
     games,clubs=parse_calendar(get(CALENDAR))
     if not games: raise RuntimeError("ACB calendar parsed zero games; refusing to overwrite site.json")
     done=[]; fixtures=[]; player_meta={}; shot_data={}
+    # Only open the browser if a new/corrected boxscore or missing shot map needs work.
+    pending=[]
+    for g in games:
+        if "hs" not in g: continue
+        old=oldgames.get(str(g["n"]))
+        cached_box=bool(old and old.get("box") and old.get("hs")==g["hs"] and old.get("as")==g["as_"])
+        shotfile=OUT.parent/f"shots_{g['n']}.json"
+        valid_shots=False
+        if cached_box and shotfile.exists():
+            try: valid_shots=shots_match_box(json.loads(shotfile.read_text("utf-8")),g,old["box"])
+            except (OSError,ValueError,KeyError,TypeError): pass
+        if not cached_box or not valid_shots: pending.append(g)
+    browser=None
     with sync_playwright() as pw:
-        browser=pw.chromium.launch(headless=True)
         for g in games:
             if "hs" not in g:
                 fixtures.append({"n":g["n"],"round":g["round"],"h":g["h"],"a":g["a"],"utc":g["utc"]})
+                continue
+            old=oldgames.get(str(g["n"]))
+            if old and old.get("box") and old.get("hs")==g["hs"] and old.get("as")==g["as_"]:
+                item=dict(old); item.update({"round":g["round"],"h":g["h"],"a":g["a"],"hs":g["hs"],"as":g["as_"],"dt":g["utc"]})
+                done.append(item)
+                shotfile=OUT.parent/f"shots_{g['n']}.json"
+                if shotfile.exists():
+                    try:
+                        candidate=json.loads(shotfile.read_text("utf-8"))
+                        if shots_match_box(candidate,g,item["box"]): shot_data[str(g["n"])]=candidate
+                    except (OSError,ValueError): pass
+                # Existing verified boxscores and shot maps are left untouched.
+                if str(g["n"]) in shot_data: continue
+                # Boxscore is cached but chart is missing; fetch only the chart.
+                try:
+                    sg=dict(g); sg["_box"]=item["box"]
+                    shots=scrape_shots(g["url"],sg,browser)
+                    if shots is None: print(f"ACB shot chart {g['n']}: official feed has no chart yet")
+                    else:
+                        shot_data[str(g["n"])]=shots
+                        print(f"ACB shot chart {g['n']}: {len(shots)} attempts, verified against cached official boxscore")
+                except Exception as e: print(f"ACB shot chart {g['n']} skipped: {e}")
                 continue
             parsed=None
             try: parsed=parse_box(g["url"],g,browser)
@@ -318,33 +295,37 @@ def main():
                     if shots is None:
                         sg=dict(g); sg["_box"]=parsed["box"]
                         shots=scrape_shots(g["url"],sg,browser)
-                        for side in ("h","a"):
-                            for pl in parsed["box"][side]["p"]:
-                                for ix in range(pl[11]):
-                                    made=ix<pl[10]
-                                    shots.append({"TEAM":g[side],"ID_PLAYER":str(pl[0]),"ID_ACTION":"FTM" if made else "FTA",
-                                                  "COORD_X":0,"COORD_Y":0,"POINTS":1 if made else 0})
-                    shot_data[str(g["n"])]=shots
-                    print(f"ACB shot chart {g['n']}: {len(shots)} attempts, verified against official boxscore")
+                    if shots is None: print(f"ACB shot chart {g['n']}: official feed has no chart yet")
+                    else:
+                        shot_data[str(g["n"])]=shots
+                        print(f"ACB shot chart {g['n']}: {len(shots)} attempts, verified against official boxscore")
                 except Exception as e:
                     print(f"ACB shot chart {g['n']} skipped: {e}")
                     if "ACB_MODAL_DIAGNOSTIC" in str(e): raise
-            else: print(f"boxscore {g['n']}: no player tables on official page {g['url']}")
-            item={"n":g["n"],"round":g["round"],"h":g["h"],"a":g["a"],"hs":g["hs"],"as":g["as_"],"dt":g["utc"],"q":None,"box":parsed["box"] if parsed else None}
+            else: print(f"boxscore {g['n']}: no official ACB API boxscore yet ({g['url']})")
+            item={"n":g["n"],"round":g["round"],"h":g["h"],"a":g["a"],"hs":g["hs"],"as":g["as_"],"dt":g["utc"],"q":parsed["q"] if parsed else None,"box":parsed["box"] if parsed else None}
             done.append(item)
-        browser.close()
+        if browser: browser.close()
     site={"season":"E2026","updated":datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
           "cols":PCOLS,"league":{"key":"acb","name":"ACB","season_label":"2026/27","season":"E2026","player_columns":PCOLS},
-          "clubs":clubs,"rosters":{},"games":done,"fixtures":fixtures}
+          "clubs":clubs,"rosters":oldrosters,"games":done,"fixtures":fixtures}
     # Derive player lists for app screens from all available boxscores.
     for g in done:
         if not g["box"]: continue
         for side in ("h","a"):
             code=g[side]; roster=site["rosters"].setdefault(code,{"players":[],"assistants":[]})["players"]
-            known={str(p["id"]) for p in roster}
+            by_id={str(p["id"]):p for p in roster}
             for row in g["box"][side]["p"]:
-                if str(row[0]) not in known:
-                    roster.append({"id":row[0],"name":row[1],"no":row[2],"pos":"","photo":player_meta.get(side+"|"+str(row[0]),{}).get("photo")}); known.add(str(row[0]))
+                pdata=player_meta.get(side+"|"+str(row[0]),{})
+                if str(row[0]) not in by_id:
+                    player={"id":row[0],"name":row[1],"no":row[2],"pos":pdata.get("pos", ""),"photo":pdata.get("photo")}
+                    roster.append(player); by_id[str(row[0])]=player
+                else:
+                    player=by_id[str(row[0])]
+                    player["name"]=player.get("name") or row[1]
+                    player["no"]=player.get("no") or row[2]
+                    player["pos"]=player.get("pos") or pdata.get("pos", "")
+                    player["photo"]=player.get("photo") or pdata.get("photo")
     OUT.write_text(json.dumps(site,ensure_ascii=False,separators=(",",":")),"utf-8")
     for gid,shots in shot_data.items():
         OUT.parent.joinpath(f"shots_{gid}.json").write_text(json.dumps(shots,ensure_ascii=False,separators=(",",":")),"utf-8")

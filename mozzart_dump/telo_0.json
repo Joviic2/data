@@ -1,0 +1,2340 @@
+{
+ "url": "https://www.mozzartbet.com/casino/get-by-category?type=page&id=301",
+ "data": {
+  "status": "OK",
+  "category": [
+   {
+    "id": 13368,
+    "gameName": "Turbo Storm Tempest",
+    "desktopId": "kg_5599",
+    "mobileId": "kg_5599",
+    "minBet": null,
+    "maxBet": null,
+    "volatility": null,
+    "numberOfLines": null,
+    "provider": {
+     "id": 301,
+     "pageId": 1041,
+     "name": "Ruby Play",
+     "platformCode": "RUBY",
+     "translations": [],
+     "assets": [
+      "https://cdn.mozzartbet.com/public/casino-admin-1/1775567492964_7421787703_blob"
+     ]
+    },
+    "gameType": {
+     "id": 2,
+     "pageId": 59,
+     "name": "vsl",
+     "translations": []
+    },
+    "tags": [],
+    "pages": null,
+    "rtp": null,
+    "position": null,
+    "latestWinInfo": null,
+    "questUUID": null,
+    "challengeUUID": null,
+    "omegaMobileIdentifier": "RUBY-kg_5599",
+    "omegaDesktopIdentifier": "RUBY-kg_5599",
+    "desktop_image": "https://cdn.mozzartbet.com/public/casino-admin-1/1789044865505_3088238830_tempest_desk.webp",
+    "mobile_image": "https://cdn.mozzartbet.com/public/casino-admin-1/1789044865567_2613153223_tempest_mob.webp"
+   },
+   {
+    "id": 9531,
+    "gameName": "40 Super Hot Bell Link",
+    "desktopId": "FSHBLSlot",
+    "mobileId": "FSHBLSlot",
+    "minBet": null,
+    "maxBet": null,
+    "volatility": null,
+    "numberOfLines": null,
+    "provider": {
+     "id": 541,
+     "pageId": 1601,
+     "name": "EGT Digital Bell Link",
+     "platformCode": "EGT_DIGITAL",
+     "translations": [],
+     "assets": [
+      "https://cdn.mozzartbet.com/public/casino-admin-1/1774859444198_8396951581_blob"
+     ]
+    },
+    "gameType": {
+     "id": 2,
+     "pageId": 59,
+     "name": "vsl",
+     "translations": []
+    },
+    "tags": [],
+    "pages": null,
+    "rtp": null,
+    "position": null,
+    "latestWinInfo": null,
+    "questUUID": "ec490276-267a-4f37-a93a-4771fbd3128f",
+    "challengeUUID": null,
+    "omegaMobileIdentifier": "EGT_DIGITAL-FSHBLSlot",
+    "omegaDesktopIdentifier": "EGT_DIGITAL-FSHBLSlot",
+    "desktop_image": "https://cdn.mozzartbet.com/public/casino-admin-1/1772111326195_2383199398_40SH_Desktop.webp",
+    "mobile_image": "https://cdn.mozzartbet.com/public/casino-admin-1/1772111326273_9166620415_40SH_Mobile.webp"
+   },
+   {
+    "id": 11571,
+    "gameName": "Cash Connection – Golden Sizzling Hot",
+    "desktopId": "19663",
+    "mobileId": "19663",
+    "minBet": null,
+    "maxBet": null,
+    "volatility": null,
+    "numberOfLines": null,
+    "provider": {
+     "id": 12,
+     "pageId": 76,
+     "name": "Greentube",
+     "platformCode": "GREENTUBE",
+     "translations": [],
+     "assets": [
+      "https://cdn.mozzartbet.com/public/casino-admin-1/1758202546662_6339577173_blob"
+     ]
+    },
+    "gameType": {
+     "id": 2,
+     "pageId": 59,
+     "name": "vsl",
+     "translations": []
+    },
+    "tags": [],
+    "pages": null,
+    "rtp": null,
+    "position": null,
+    "latestWinInfo": null,
+    "questUUID": "ec490276-267a-4f37-a93a-4771fbd3128f",
+    "challengeUUID": null,
+    "omegaMobileIdentifier": "GREENTUBE-19663",
+    "omegaDesktopIdentifier": "GREENTUBE-19663",
+    "desktop_image": "https://cdn.mozzartbet.com/public/casino-admin-1/1784011759778_9255925173_253x159px_(2)_-_2026-07-14T084652.243.webp",
+    "mobile_image": "https://cdn.mozzartbet.com/public/casino-admin-1/1784011759869_6919962921_256x256px_(3)_-_2026-07-14T084819.653.webp"
+   },
+   {
+    "id": 13321,
+    "gameName": "Coink Bank",
+    "desktopId": "CoinkBank",
+    "mobileId": "CoinkBank",
+    "minBet": null,
+    "maxBet": null,
+    "volatility": null,
+    "numberOfLines": null,
+    "provider": {
+     "id": 5,
+     "pageId": 69,
+     "name": "Fazi",
+     "platformCode": "FAZI",
+     "translations": [],
+     "assets": [
+      "https://cdn.mozzartbet.com/public/casino-admin-1/1787140833476_8886558922_blob"
+     ]
+    },
+    "gameType": {
+     "id": 2,
+     "pageId": 59,
+     "name": "vsl",
+     "translations": []
+    },
+    "tags": [],
+    "pages": null,
+    "rtp": null,
+    "position": null,
+    "latestWinInfo": null,
+    "questUUID": "ec490276-267a-4f37-a93a-4771fbd3128f",
+    "challengeUUID": "9a5a41a4-bf3f-4bb9-ac89-55c4d67510b6",
+    "omegaMobileIdentifier": "FAZI-CoinkBank",
+    "omegaDesktopIdentifier": "FAZI-CoinkBank",
+    "desktop_image": "https://cdn.mozzartbet.com/public/casino-admin-1/1788865058062_5850358501_253x159px_(2)_-_2026-09-08T125406.982.webp",
+    "mobile_image": "https://cdn.mozzartbet.com/public/casino-admin-1/1788865058152_158674310_256x256px_(3)_-_2026-09-08T125425.056.webp"
+   },
+   {
+    "id": 7461,
+    "gameName": "Gates of Olympia",
+    "desktopId": "gatesofolympia",
+    "mobileId": "gatesofolympia",
+    "minBet": null,
+    "maxBet": null,
+    "volatility": null,
+    "numberOfLines": null,
+    "provider": {
+     "id": 19,
+     "pageId": 99,
+     "name": "Expanse",
+     "platformCode": "EXPANSE",
+     "translations": [],
+     "assets": [
+      "https://cdn.mozzartbet.com/public/casino-admin-1/1789460597428_9441819541_1787140859769_3107424968_blob.svg"
+     ]
+    },
+    "gameType": {
+     "id": 2,
+     "pageId": 59,
+     "name": "vsl",
+     "translations": []
+    },
+    "tags": [],
+    "pages": null,
+    "rtp": null,
+    "position": null,
+    "latestWinInfo": null,
+    "questUUID": null,
+    "challengeUUID": "4846b0f0-1580-4a6e-834c-e2c8f87ba381",
+    "omegaMobileIdentifier": "EXPANSE-gatesofolympia",
+    "omegaDesktopIdentifier": "EXPANSE-gatesofolympia",
+    "desktop_image": "https://cdn.mozzartbet.com/public/casino-admin-1/1750336399285_9511915966_Gates_of_Olympia__253x159px.webp",
+    "mobile_image": "https://cdn.mozzartbet.com/public/casino-admin-1/1750336399355_4467473538_Gates_of_Olympia_256x256px.webp"
+   },
+   {
+    "id": 11711,
+    "gameName": "Burning Coins 100",
+    "desktopId": "endorphina2_BurningCoins100@ENDORPHINA",
+    "mobileId": "endorphina2_BurningCoins100@ENDORPHINA",
+    "minBet": null,
+    "maxBet": null,
+    "volatility": null,
+    "numberOfLines": null,
+    "provider": {
+     "id": 4,
+     "pageId": 68,
+     "name": "Endorphina",
+     "platformCode": "ENDORPHINA",
+     "translations": [],
+     "assets": [
+      "https://cdn.mozzartbet.com/public/casino-admin-1/1787140797091_28286092_blob"
+     ]
+    },
+    "gameType": {
+     "id": 2,
+     "pageId": 59,
+     "name": "vsl",
+     "translations": []
+    },
+    "tags": [],
+    "pages": null,
+    "rtp": null,
+    "position": null,
+    "latestWinInfo": null,
+    "questUUID": "ec490276-267a-4f37-a93a-4771fbd3128f",
+    "challengeUUID": null,
+    "omegaMobileIdentifier": "ENDORPHINA-endorphina2_BurningCoins100@ENDORPHINA",
+    "omegaDesktopIdentifier": "ENDORPHINA-endorphina2_BurningCoins100@ENDORPHINA",
+    "desktop_image": "https://cdn.mozzartbet.com/public/casino-admin-1/1782991149364_9817739196_253x159px_(2)_-_2026-07-02T131819.451.webp",
+    "mobile_image": "https://cdn.mozzartbet.com/public/casino-admin-1/1782991149453_2500696835_256x256px_(3)_-_2026-07-02T131837.586.webp"
+   },
+   {
+    "id": 8114,
+    "gameName": "Book of Adventure Super Stake Edition",
+    "desktopId": "STK_BOOK_OF_ADVENTURE_SUPERSTAKE_EDITION",
+    "mobileId": "STK_BOOK_OF_ADVENTURE_SUPERSTAKE_EDITION",
+    "minBet": null,
+    "maxBet": null,
+    "volatility": null,
+    "numberOfLines": null,
+    "provider": {
+     "id": 381,
+     "pageId": 1221,
+     "name": "Stakelogic",
+     "platformCode": "ORYX_CAS",
+     "translations": [],
+     "assets": [
+      "https://cdn.mozzartbet.com/public/casino-admin-1/1754550053892_1505717310_Stakelogic.png"
+     ]
+    },
+    "gameType": {
+     "id": 2,
+     "pageId": 59,
+     "name": "vsl",
+     "translations": []
+    },
+    "tags": [],
+    "pages": null,
+    "rtp": null,
+    "position": null,
+    "latestWinInfo": null,
+    "questUUID": null,
+    "challengeUUID": null,
+    "omegaMobileIdentifier": "ORYX_CAS-STK_BOOK_OF_ADVENTURE_SUPERSTAKE_EDITION",
+    "omegaDesktopIdentifier": "ORYX_CAS-STK_BOOK_OF_ADVENTURE_SUPERSTAKE_EDITION",
+    "desktop_image": "https://cdn.mozzartbet.com/public/casino-admin-1/1760356477265_623751168_Book_of_Adventure_Super_253x159px_copy.webp",
+    "mobile_image": "https://cdn.mozzartbet.com/public/casino-admin-1/1760356477342_7814843749_Book_of_Adventure_Super_256x256px_copy.webp"
+   },
+   {
+    "id": 10833,
+    "gameName": "4 Pots Riches: Super Wheel",
+    "desktopId": "four_pots_riches_super_wheel",
+    "mobileId": "four_pots_riches_super_wheel_mob",
+    "minBet": null,
+    "maxBet": null,
+    "volatility": null,
+    "numberOfLines": null,
+    "provider": {
+     "id": 11,
+     "pageId": 75,
+     "name": "Playson",
+     "platformCode": "PLAYSON",
+     "translations": [],
+     "assets": [
+      "https://cdn.mozzartbet.com/public/casino-admin-1/1770199838793_8045427173_playsonlogobelinovi.png"
+     ]
+    },
+    "gameType": {
+     "id": 2,
+     "pageId": 59,
+     "name": "vsl",
+     "translations": []
+    },
+    "tags": [],
+    "pages": null,
+    "rtp": null,
+    "position": null,
+    "latestWinInfo": null,
+    "questUUID": "ec490276-267a-4f37-a93a-4771fbd3128f",
+    "challengeUUID": null,
+    "omegaMobileIdentifier": "PLAYSON-four_pots_riches_super_wheel_mob",
+    "omegaDesktopIdentifier": "PLAYSON-four_pots_riches_super_wheel",
+    "desktop_image": "https://cdn.mozzartbet.com/public/casino-admin-1/1781768420989_4752230405_253x159px_(2)_(77).webp",
+    "mobile_image": "https://cdn.mozzartbet.com/public/casino-admin-1/1781768421053_5416827028_256x256px_(3)_(77).webp"
+   },
+   {
+    "id": 13461,
+    "gameName": "Le Vampire",
+    "desktopId": "rlx.hacksaw.hacksaw.2582",
+    "mobileId": "rlx.hacksaw.hacksaw.2582",
+    "minBet": null,
+    "maxBet": null,
+    "volatility": null,
+    "numberOfLines": null,
+    "provider": {
+     "id": 3,
+     "pageId": 67,
+     "name": "Hacksaw",
+     "platformCode": "RELAX",
+     "translations": [],
+     "assets": [
+      "https://cdn.mozzartbet.com/public/casino-admin-1/1715934966537_5357449833_hacksaw.svg"
+     ]
+    },
+    "gameType": {
+     "id": 2,
+     "pageId": 59,
+     "name": "vsl",
+     "translations": []
+    },
+    "tags": [],
+    "pages": null,
+    "rtp": null,
+    "position": null,
+    "latestWinInfo": null,
+    "questUUID": null,
+    "challengeUUID": null,
+    "omegaMobileIdentifier": "RELAX-rlx.hacksaw.hacksaw.2582",
+    "omegaDesktopIdentifier": "RELAX-rlx.hacksaw.hacksaw.2582",
+    "desktop_image": "https://cdn.mozzartbet.com/public/casino-admin-1/1790752930505_1927850419_Le_Vampire_253x159px_copy.webp",
+    "mobile_image": "https://cdn.mozzartbet.com/public/casino-admin-1/1790752930601_9055438360_Le_Vampire_256x256px_copy.webp"
+   },
+   {
+    "id": 12753,
+    "gameName": "Raging Gods: Olympus 2 Power Combo",
+    "desktopId": "ragingGodsOlympus2PowerComboDesktop",
+    "mobileId": "ragingGodsOlympus2PowerCombo",
+    "minBet": null,
+    "maxBet": null,
+    "volatility": null,
+    "numberOfLines": null,
+    "provider": {
+     "id": 7,
+     "pageId": 71,
+     "name": "Games Global",
+     "platformCode": "QFIRE_CAS",
+     "translations": [],
+     "assets": [
+      "https://cdn.mozzartbet.com/public/casino-admin-1/1726501305386_3540408502_1715935034064_4223313614_gamesGlobal.svg"
+     ]
+    },
+    "gameType": {
+     "id": 2,
+     "pageId": 59,
+     "name": "vsl",
+     "translations": []
+    },
+    "tags": [],
+    "pages": null,
+    "rtp": null,
+    "position": null,
+    "latestWinInfo": null,
+    "questUUID": null,
+    "challengeUUID": null,
+    "omegaMobileIdentifier": "QFIRE_CAS-ragingGodsOlympus2PowerCombo",
+    "omegaDesktopIdentifier": "QFIRE_CAS-ragingGodsOlympus2PowerComboDesktop",
+    "desktop_image": "https://cdn.mozzartbet.com/public/casino-admin-1/1785419428662_1991236598_brankic1.webp",
+    "mobile_image": "https://cdn.mozzartbet.com/public/casino-admin-1/1785419428732_191889060_brankic.webp"
+   },
+   {
+    "id": 11319,
+    "gameName": "40 Burning Hot Buy Bonus",
+    "desktopId": "5180",
+    "mobileId": "5180",
+    "minBet": null,
+    "maxBet": null,
+    "volatility": null,
+    "numberOfLines": null,
+    "provider": {
+     "id": 702,
+     "pageId": 2142,
+     "name": "Amusnet",
+     "platformCode": "AMUSNET",
+     "translations": [],
+     "assets": [
+      "https://cdn.mozzartbet.com/public/casino-admin-1/1785225599890_9723430937_blob"
+     ]
+    },
+    "gameType": {
+     "id": 2,
+     "pageId": 59,
+     "name": "vsl",
+     "translations": []
+    },
+    "tags": [],
+    "pages": null,
+    "rtp": null,
+    "position": null,
+    "latestWinInfo": null,
+    "questUUID": "ec490276-267a-4f37-a93a-4771fbd3128f",
+    "challengeUUID": null,
+    "omegaMobileIdentifier": "AMUSNET-5180",
+    "omegaDesktopIdentifier": "AMUSNET-5180",
+    "desktop_image": "https://cdn.mozzartbet.com/public/casino-admin-1/1786630665050_5789002616_unnamed.webp",
+    "mobile_image": "https://cdn.mozzartbet.com/public/casino-admin-1/1786630665120_3535938456_unnamed.webp"
+   },
+   {
+    "id": 9258,
+    "gameName": "Poseidon's Trident Strike",
+    "desktopId": "SlotMachine_PoseidonsTridentStrike",
+    "mobileId": "SlotMachine_PoseidonsTridentStrike",
+    "minBet": null,
+    "maxBet": null,
+    "volatility": null,
+    "numberOfLines": null,
+    "provider": {
+     "id": 10,
+     "pageId": 74,
+     "name": "Spinomenal",
+     "platformCode": "SPINOMENAL",
+     "translations": [],
+     "assets": [
+      "https://cdn.mozzartbet.com/public/casino-admin-1/1758203065036_6503470995_spinomenal.svg"
+     ]
+    },
+    "gameType": {
+     "id": 2,
+     "pageId": 59,
+     "name": "vsl",
+     "translations": []
+    },
+    "tags": [],
+    "pages": null,
+    "rtp": null,
+    "position": null,
+    "latestWinInfo": null,
+    "questUUID": null,
+    "challengeUUID": null,
+    "omegaMobileIdentifier": "SPINOMENAL-SlotMachine_PoseidonsTridentStrike",
+    "omegaDesktopIdentifier": "SPINOMENAL-SlotMachine_PoseidonsTridentStrike",
+    "desktop_image": "https://cdn.mozzartbet.com/public/casino-admin-1/1772629051609_11398586_Poseidon's_Trident_Strike_253x159px_copy.webp",
+    "mobile_image": "https://cdn.mozzartbet.com/public/casino-admin-1/1772629051651_2939203725_Poseidon's_Trident_Strike_256x256px_copy.webp"
+   },
+   {
+    "id": 10223,
+    "gameName": "Golden Crown Hold and Win",
+    "desktopId": "GoldenCrownHoldAndWin",
+    "mobileId": "GoldenCrownHoldAndWin",
+    "minBet": null,
+    "maxBet": null,
+    "volatility": null,
+    "numberOfLines": null,
+    "provider": {
+     "id": 5,
+     "pageId": 69,
+     "name": "Fazi",
+     "platformCode": "FAZI",
+     "translations": [],
+     "assets": [
+      "https://cdn.mozzartbet.com/public/casino-admin-1/1787140833476_8886558922_blob"
+     ]
+    },
+    "gameType": {
+     "id": 2,
+     "pageId": 59,
+     "name": "vsl",
+     "translations": []
+    },
+    "tags": [],
+    "pages": null,
+    "rtp": null,
+    "position": null,
+    "latestWinInfo": null,
+    "questUUID": "ec490276-267a-4f37-a93a-4771fbd3128f",
+    "challengeUUID": "9a5a41a4-bf3f-4bb9-ac89-55c4d67510b6",
+    "omegaMobileIdentifier": "FAZI-GoldenCrownHoldAndWin",
+    "omegaDesktopIdentifier": "FAZI-GoldenCrownHoldAndWin",
+    "desktop_image": "https://cdn.mozzartbet.com/public/casino-admin-1/1776254724061_6080030818_Golden_Crown_Hold_and_Win_-_253x159px-Recovered.webp",
+    "mobile_image": "https://cdn.mozzartbet.com/public/casino-admin-1/1776254724151_2678994237_Golden_Crown_Hold_and_Win_-_256x256px_copy.webp"
+   },
+   {
+    "id": 11454,
+    "gameName": "100 Extra Crown Buy Bonus",
+    "desktopId": "5085",
+    "mobileId": "5085",
+    "minBet": null,
+    "maxBet": null,
+    "volatility": null,
+    "numberOfLines": null,
+    "provider": {
+     "id": 702,
+     "pageId": 2142,
+     "name": "Amusnet",
+     "platformCode": "AMUSNET",
+     "translations": [],
+     "assets": [
+      "https://cdn.mozzartbet.com/public/casino-admin-1/1785225599890_9723430937_blob"
+     ]
+    },
+    "gameType": {
+     "id": 2,
+     "pageId": 59,
+     "name": "vsl",
+     "translations": []
+    },
+    "tags": [],
+    "pages": null,
+    "rtp": null,
+    "position": null,
+    "latestWinInfo": null,
+    "questUUID": "ec490276-267a-4f37-a93a-4771fbd3128f",
+    "challengeUUID": null,
+    "omegaMobileIdentifier": "AMUSNET-5085",
+    "omegaDesktopIdentifier": "AMUSNET-5085",
+    "desktop_image": "https://cdn.mozzartbet.com/public/casino-admin-1/1758633421993_2404514009_100_Extra_Crown_Buy_Bonus_253x159px_copy.webp",
+    "mobile_image": "https://cdn.mozzartbet.com/public/casino-admin-1/1758633422047_8518668573_100_Extra_Crown_Buy_Bonus_256x256px_copy.webp"
+   },
+   {
+    "id": 8984,
+    "gameName": "Mad Hit Diamonds",
+    "desktopId": "rp_140",
+    "mobileId": "rp_140",
+    "minBet": null,
+    "maxBet": null,
+    "volatility": null,
+    "numberOfLines": null,
+    "provider": {
+     "id": 301,
+     "pageId": 1041,
+     "name": "Ruby Play",
+     "platformCode": "RUBY",
+     "translations": [],
+     "assets": [
+      "https://cdn.mozzartbet.com/public/casino-admin-1/1775567492964_7421787703_blob"
+     ]
+    },
+    "gameType": {
+     "id": 2,
+     "pageId": 59,
+     "name": "vsl",
+     "translations": []
+    },
+    "tags": [],
+    "pages": null,
+    "rtp": null,
+    "position": null,
+    "latestWinInfo": null,
+    "questUUID": null,
+    "challengeUUID": null,
+    "omegaMobileIdentifier": "RUBY-rp_140",
+    "omegaDesktopIdentifier": "RUBY-rp_140",
+    "desktop_image": "https://cdn.mozzartbet.com/public/casino-admin-1/1766413099694_4652575047_Mad_Hit_Diamonds_253x159px_copy.webp",
+    "mobile_image": "https://cdn.mozzartbet.com/public/casino-admin-1/1766413099779_6373119397_Mad_Hit_Diamonds_256x256px_copy.webp"
+   },
+   {
+    "id": 10271,
+    "gameName": "Sweet Bonanza 2500",
+    "desktopId": "vs20swbon2500",
+    "mobileId": "vs20swbon2500",
+    "minBet": null,
+    "maxBet": null,
+    "volatility": null,
+    "numberOfLines": null,
+    "provider": {
+     "id": 1,
+     "pageId": 49,
+     "name": "Pragmatic",
+     "platformCode": "PRAGMATIC_CASINO",
+     "translations": [],
+     "assets": [
+      "https://cdn.mozzartbet.com/public/casino-admin-1/1787140816239_7481093109_blob"
+     ]
+    },
+    "gameType": {
+     "id": 2,
+     "pageId": 59,
+     "name": "vsl",
+     "translations": []
+    },
+    "tags": [],
+    "pages": null,
+    "rtp": null,
+    "position": null,
+    "latestWinInfo": null,
+    "questUUID": null,
+    "challengeUUID": null,
+    "omegaMobileIdentifier": "PRAGMATIC_CASINO-vs20swbon2500",
+    "omegaDesktopIdentifier": "PRAGMATIC_CASINO-vs20swbon2500",
+    "desktop_image": "https://cdn.mozzartbet.com/public/casino-admin-1/1777545991475_4643765615_Sweet_Bonanza_2500_253x159px_copy.webp",
+    "mobile_image": "https://cdn.mozzartbet.com/public/casino-admin-1/1777545991679_9148978544_Sweet_Bonanza_2500_256x256px_copy.webp"
+   },
+   {
+    "id": 2733,
+    "gameName": "Mozzart Joker",
+    "desktopId": "endorphina2_MozzartJoker@ENDORPHINA",
+    "mobileId": "endorphina2_MozzartJoker@ENDORPHINA",
+    "minBet": null,
+    "maxBet": null,
+    "volatility": null,
+    "numberOfLines": null,
+    "provider": {
+     "id": 4,
+     "pageId": 68,
+     "name": "Endorphina",
+     "platformCode": "ENDORPHINA",
+     "translations": [],
+     "assets": [
+      "https://cdn.mozzartbet.com/public/casino-admin-1/1787140797091_28286092_blob"
+     ]
+    },
+    "gameType": {
+     "id": 2,
+     "pageId": 59,
+     "name": "vsl",
+     "translations": []
+    },
+    "tags": [],
+    "pages": null,
+    "rtp": null,
+    "position": null,
+    "latestWinInfo": null,
+    "questUUID": "ec490276-267a-4f37-a93a-4771fbd3128f",
+    "challengeUUID": null,
+    "omegaMobileIdentifier": "ENDORPHINA-endorphina2_MozzartJoker@ENDORPHINA",
+    "omegaDesktopIdentifier": "ENDORPHINA-endorphina2_MozzartJoker@ENDORPHINA",
+    "desktop_image": "https://cdn.mozzartbet.com/public/casino-admin-1/1713520324650_7120210802_Mozzart_Joker.webp",
+    "mobile_image": "https://cdn.mozzartbet.com/public/casino-admin-1/1713528058922_1834835071_Mozzart_Joker_256x256_copy.webp"
+   },
+   {
+    "id": 13702,
+    "gameName": "Gates of Olympus 2500",
+    "desktopId": "vs20olympmmd",
+    "mobileId": "vs20olympmmd",
+    "minBet": null,
+    "maxBet": null,
+    "volatility": null,
+    "numberOfLines": null,
+    "provider": {
+     "id": 1,
+     "pageId": 49,
+     "name": "Pragmatic",
+     "platformCode": "PRAGMATIC_CASINO",
+     "translations": [],
+     "assets": [
+      "https://cdn.mozzartbet.com/public/casino-admin-1/1787140816239_7481093109_blob"
+     ]
+    },
+    "gameType": {
+     "id": 2,
+     "pageId": 59,
+     "name": "vsl",
+     "translations": []
+    },
+    "tags": [],
+    "pages": null,
+    "rtp": null,
+    "position": null,
+    "latestWinInfo": null,
+    "questUUID": null,
+    "challengeUUID": null,
+    "omegaMobileIdentifier": "PRAGMATIC_CASINO-vs20olympmmd",
+    "omegaDesktopIdentifier": "PRAGMATIC_CASINO-vs20olympmmd",
+    "desktop_image": "https://cdn.mozzartbet.com/public/casino-admin-1/1790605005348_7618268894_gates_2500_desk.webp",
+    "mobile_image": "https://cdn.mozzartbet.com/public/casino-admin-1/1790605005427_9762101307_gates_2500_mob.webp"
+   },
+   {
+    "id": 10,
+    "gameName": "Joker Stoker",
+    "desktopId": "endorphina2_JokerStoker@ENDORPHINA",
+    "mobileId": "endorphina2_JokerStoker@ENDORPHINA",
+    "minBet": null,
+    "maxBet": null,
+    "volatility": null,
+    "numberOfLines": null,
+    "provider": {
+     "id": 4,
+     "pageId": 68,
+     "name": "Endorphina",
+     "platformCode": "ENDORPHINA",
+     "translations": [],
+     "assets": [
+      "https://cdn.mozzartbet.com/public/casino-admin-1/1787140797091_28286092_blob"
+     ]
+    },
+    "gameType": {
+     "id": 2,
+     "pageId": 59,
+     "name": "vsl",
+     "translations": []
+    },
+    "tags": [],
+    "pages": null,
+    "rtp": null,
+    "position": null,
+    "latestWinInfo": null,
+    "questUUID": "ec490276-267a-4f37-a93a-4771fbd3128f",
+    "challengeUUID": "4846b0f0-1580-4a6e-834c-e2c8f87ba381",
+    "omegaMobileIdentifier": "ENDORPHINA-endorphina2_JokerStoker@ENDORPHINA",
+    "omegaDesktopIdentifier": "ENDORPHINA-endorphina2_JokerStoker@ENDORPHINA",
+    "desktop_image": "https://cdn.mozzartbet.com/public/img/casino/games/medium/Joker-stoker-desktop-icon.webp",
+    "mobile_image": "https://cdn.mozzartbet.com/public/img/casino/games/mobile/Joker-stoker-mob-icon.webp"
+   },
+   {
+    "id": 12903,
+    "gameName": "40 Power Hot Golden Coins Link",
+    "desktopId": "8000",
+    "mobileId": "8000",
+    "minBet": null,
+    "maxBet": null,
+    "volatility": null,
+    "numberOfLines": null,
+    "provider": {
+     "id": 702,
+     "pageId": 2142,
+     "name": "Amusnet",
+     "platformCode": "AMUSNET",
+     "translations": [],
+     "assets": [
+      "https://cdn.mozzartbet.com/public/casino-admin-1/1785225599890_9723430937_blob"
+     ]
+    },
+    "gameType": {
+     "id": 2,
+     "pageId": 59,
+     "name": "vsl",
+     "translations": []
+    },
+    "tags": [],
+    "pages": null,
+    "rtp": null,
+    "position": null,
+    "latestWinInfo": null,
+    "questUUID": "ec490276-267a-4f37-a93a-4771fbd3128f",
+    "challengeUUID": null,
+    "omegaMobileIdentifier": "AMUSNET-8000",
+    "omegaDesktopIdentifier": "AMUSNET-8000",
+    "desktop_image": "https://cdn.mozzartbet.com/public/casino-admin-1/1786356408437_1580207428_blob",
+    "mobile_image": "https://cdn.mozzartbet.com/public/casino-admin-1/1786356408512_4471387687_blob"
+   },
+   {
+    "id": 12143,
+    "gameName": "Crime King 1000",
+    "desktopId": "617",
+    "mobileId": "617",
+    "minBet": null,
+    "maxBet": null,
+    "volatility": null,
+    "numberOfLines": null,
+    "provider": {
+     "id": 702,
+     "pageId": 2142,
+     "name": "Amusnet",
+     "platformCode": "AMUSNET",
+     "translations": [],
+     "assets": [
+      "https://cdn.mozzartbet.com/public/casino-admin-1/1785225599890_9723430937_blob"
+     ]
+    },
+    "gameType": {
+     "id": 2,
+     "pageId": 59,
+     "name": "vsl",
+     "translations": []
+    },
+    "tags": [],
+    "pages": null,
+    "rtp": null,
+    "position": null,
+    "latestWinInfo": null,
+    "questUUID": "ec490276-267a-4f37-a93a-4771fbd3128f",
+    "challengeUUID": null,
+    "omegaMobileIdentifier": "AMUSNET-617",
+    "omegaDesktopIdentifier": "AMUSNET-617",
+    "desktop_image": "https://cdn.mozzartbet.com/public/casino-admin-1/1784709228789_1991193810_Crime_King_1000_253x159px.webp",
+    "mobile_image": "https://cdn.mozzartbet.com/public/casino-admin-1/1784709228845_1947664458_Crime_King_1000_256x256px.webp"
+   },
+   {
+    "id": 9062,
+    "gameName": "Sugar Rush Super Scatter",
+    "desktopId": "vs20sugrushss",
+    "mobileId": "vs20sugrushss",
+    "minBet": null,
+    "maxBet": null,
+    "volatility": null,
+    "numberOfLines": null,
+    "provider": {
+     "id": 1,
+     "pageId": 49,
+     "name": "Pragmatic",
+     "platformCode": "PRAGMATIC_CASINO",
+     "translations": [],
+     "assets": [
+      "https://cdn.mozzartbet.com/public/casino-admin-1/1787140816239_7481093109_blob"
+     ]
+    },
+    "gameType": {
+     "id": 2,
+     "pageId": 59,
+     "name": "vsl",
+     "translations": []
+    },
+    "tags": [],
+    "pages": null,
+    "rtp": null,
+    "position": null,
+    "latestWinInfo": null,
+    "questUUID": null,
+    "challengeUUID": null,
+    "omegaMobileIdentifier": "PRAGMATIC_CASINO-vs20sugrushss",
+    "omegaDesktopIdentifier": "PRAGMATIC_CASINO-vs20sugrushss",
+    "desktop_image": "https://cdn.mozzartbet.com/public/casino-admin-1/1768476625246_2769445434_Sugar_Rush_Super_Scatter_253x159px.webp",
+    "mobile_image": "https://cdn.mozzartbet.com/public/casino-admin-1/1768476625339_5516233684_Sugar_Rush_Super_Scatter_256x256px.webp"
+   },
+   {
+    "id": 13106,
+    "gameName": "Ra vs Osiris",
+    "desktopId": "vs15raos",
+    "mobileId": "vs15raos",
+    "minBet": null,
+    "maxBet": null,
+    "volatility": null,
+    "numberOfLines": null,
+    "provider": {
+     "id": 1,
+     "pageId": 49,
+     "name": "Pragmatic",
+     "platformCode": "PRAGMATIC_CASINO",
+     "translations": [],
+     "assets": [
+      "https://cdn.mozzartbet.com/public/casino-admin-1/1787140816239_7481093109_blob"
+     ]
+    },
+    "gameType": {
+     "id": 2,
+     "pageId": 59,
+     "name": "vsl",
+     "translations": []
+    },
+    "tags": [],
+    "pages": null,
+    "rtp": null,
+    "position": null,
+    "latestWinInfo": null,
+    "questUUID": null,
+    "challengeUUID": null,
+    "omegaMobileIdentifier": "PRAGMATIC_CASINO-vs15raos",
+    "omegaDesktopIdentifier": "PRAGMATIC_CASINO-vs15raos",
+    "desktop_image": "https://cdn.mozzartbet.com/public/casino-admin-1/1788426398640_1311963370_unnamed.webp",
+    "mobile_image": "https://cdn.mozzartbet.com/public/casino-admin-1/1788426398717_6904242343_unnamed.webp"
+   },
+   {
+    "id": 13201,
+    "gameName": "Crazy Red Nest Quest",
+    "desktopId": "5282",
+    "mobileId": "5282",
+    "minBet": null,
+    "maxBet": null,
+    "volatility": null,
+    "numberOfLines": null,
+    "provider": {
+     "id": 702,
+     "pageId": 2142,
+     "name": "Amusnet",
+     "platformCode": "AMUSNET",
+     "translations": [],
+     "assets": [
+      "https://cdn.mozzartbet.com/public/casino-admin-1/1785225599890_9723430937_blob"
+     ]
+    },
+    "gameType": {
+     "id": 2,
+     "pageId": 59,
+     "name": "vsl",
+     "translations": []
+    },
+    "tags": [],
+    "pages": null,
+    "rtp": null,
+    "position": null,
+    "latestWinInfo": null,
+    "questUUID": "ec490276-267a-4f37-a93a-4771fbd3128f",
+    "challengeUUID": null,
+    "omegaMobileIdentifier": "AMUSNET-5282",
+    "omegaDesktopIdentifier": "AMUSNET-5282",
+    "desktop_image": "https://cdn.mozzartbet.com/public/casino-admin-1/1789551022822_781337084_Crazy_Red_Nest_Quest_253x159px.webp",
+    "mobile_image": "https://cdn.mozzartbet.com/public/casino-admin-1/1789551022947_8763521062_Crazy_Red_Nest_Quest_256x256px.webp"
+   },
+   {
+    "id": 12807,
+    "gameName": "Le Sortudo",
+    "desktopId": "rlx.hacksaw.hacksaw.2613",
+    "mobileId": "rlx.hacksaw.hacksaw.2613",
+    "minBet": null,
+    "maxBet": null,
+    "volatility": null,
+    "numberOfLines": null,
+    "provider": {
+     "id": 3,
+     "pageId": 67,
+     "name": "Hacksaw",
+     "platformCode": "RELAX",
+     "translations": [],
+     "assets": [
+      "https://cdn.mozzartbet.com/public/casino-admin-1/1715934966537_5357449833_hacksaw.svg"
+     ]
+    },
+    "gameType": {
+     "id": 2,
+     "pageId": 59,
+     "name": "vsl",
+     "translations": []
+    },
+    "tags": [],
+    "pages": null,
+    "rtp": null,
+    "position": null,
+    "latestWinInfo": null,
+    "questUUID": null,
+    "challengeUUID": null,
+    "omegaMobileIdentifier": "RELAX-rlx.hacksaw.hacksaw.2613",
+    "omegaDesktopIdentifier": "RELAX-rlx.hacksaw.hacksaw.2613",
+    "desktop_image": "https://cdn.mozzartbet.com/public/casino-admin-1/1785843209405_1850921217_253x159px_(2)_-_2026-08-04T133216.892.webp",
+    "mobile_image": "https://cdn.mozzartbet.com/public/casino-admin-1/1785843209478_4354390576_256x256px_(3)_-_2026-08-04T133240.044.webp"
+   },
+   {
+    "id": 7813,
+    "gameName": "2025 Hit Slot",
+    "desktopId": "endorphina2_2025HitSlot@ENDORPHINA",
+    "mobileId": "endorphina2_2025HitSlot@ENDORPHINA",
+    "minBet": null,
+    "maxBet": null,
+    "volatility": null,
+    "numberOfLines": null,
+    "provider": {
+     "id": 4,
+     "pageId": 68,
+     "name": "Endorphina",
+     "platformCode": "ENDORPHINA",
+     "translations": [],
+     "assets": [
+      "https://cdn.mozzartbet.com/public/casino-admin-1/1787140797091_28286092_blob"
+     ]
+    },
+    "gameType": {
+     "id": 2,
+     "pageId": 59,
+     "name": "vsl",
+     "translations": []
+    },
+    "tags": [],
+    "pages": null,
+    "rtp": null,
+    "position": null,
+    "latestWinInfo": null,
+    "questUUID": "ec490276-267a-4f37-a93a-4771fbd3128f",
+    "challengeUUID": null,
+    "omegaMobileIdentifier": "ENDORPHINA-endorphina2_2025HitSlot@ENDORPHINA",
+    "omegaDesktopIdentifier": "ENDORPHINA-endorphina2_2025HitSlot@ENDORPHINA",
+    "desktop_image": "https://cdn.mozzartbet.com/public/casino-admin-1/1752586993550_3200315994_viber_image_2025-07-15_14-34-06-837.webp",
+    "mobile_image": "https://cdn.mozzartbet.com/public/casino-admin-1/1752586993645_6609633307_viber_image_2025-07-15_14-34-07-222.webp"
+   },
+   {
+    "id": 11826,
+    "gameName": "Bonus Epic Wild Extralines",
+    "desktopId": "BonusEpicWildExtralines",
+    "mobileId": "BonusEpicWildExtralines",
+    "minBet": null,
+    "maxBet": null,
+    "volatility": null,
+    "numberOfLines": null,
+    "provider": {
+     "id": 5,
+     "pageId": 69,
+     "name": "Fazi",
+     "platformCode": "FAZI",
+     "translations": [],
+     "assets": [
+      "https://cdn.mozzartbet.com/public/casino-admin-1/1787140833476_8886558922_blob"
+     ]
+    },
+    "gameType": {
+     "id": 2,
+     "pageId": 59,
+     "name": "vsl",
+     "translations": []
+    },
+    "tags": [],
+    "pages": null,
+    "rtp": null,
+    "position": null,
+    "latestWinInfo": null,
+    "questUUID": "ec490276-267a-4f37-a93a-4771fbd3128f",
+    "challengeUUID": "9a5a41a4-bf3f-4bb9-ac89-55c4d67510b6",
+    "omegaMobileIdentifier": "FAZI-BonusEpicWildExtralines",
+    "omegaDesktopIdentifier": "FAZI-BonusEpicWildExtralines",
+    "desktop_image": "https://cdn.mozzartbet.com/public/casino-admin-1/1783500627273_7833868399_Bonus_Epic_Wild_Extralines_253x159px.webp",
+    "mobile_image": "https://cdn.mozzartbet.com/public/casino-admin-1/1783500627358_1651096066_Bonus_Epic_Wild_Extralines_256x256px.webp"
+   },
+   {
+    "id": 67,
+    "gameName": "Turbo Hot 40",
+    "desktopId": "TurboHot40",
+    "mobileId": "TurboHot40",
+    "minBet": null,
+    "maxBet": null,
+    "volatility": null,
+    "numberOfLines": null,
+    "provider": {
+     "id": 5,
+     "pageId": 69,
+     "name": "Fazi",
+     "platformCode": "FAZI",
+     "translations": [],
+     "assets": [
+      "https://cdn.mozzartbet.com/public/casino-admin-1/1787140833476_8886558922_blob"
+     ]
+    },
+    "gameType": {
+     "id": 2,
+     "pageId": 59,
+     "name": "vsl",
+     "translations": []
+    },
+    "tags": [],
+    "pages": null,
+    "rtp": null,
+    "position": null,
+    "latestWinInfo": null,
+    "questUUID": "ec490276-267a-4f37-a93a-4771fbd3128f",
+    "challengeUUID": "9a5a41a4-bf3f-4bb9-ac89-55c4d67510b6",
+    "omegaMobileIdentifier": "FAZI-TurboHot40",
+    "omegaDesktopIdentifier": "FAZI-TurboHot40",
+    "desktop_image": "https://cdn.mozzartbet.com/public/img/casino/games/medium/Turbo-hot-40-Desktop-icon.webp",
+    "mobile_image": "https://cdn.mozzartbet.com/public/img/casino/games/mobile/Turbo-hot-40-mobile-icon.webp"
+   },
+   {
+    "id": 2736,
+    "gameName": "Gates of Olympus 1000",
+    "desktopId": "vs20olympx",
+    "mobileId": "vs20olympx",
+    "minBet": null,
+    "maxBet": null,
+    "volatility": null,
+    "numberOfLines": null,
+    "provider": {
+     "id": 1,
+     "pageId": 49,
+     "name": "Pragmatic",
+     "platformCode": "PRAGMATIC_CASINO",
+     "translations": [],
+     "assets": [
+      "https://cdn.mozzartbet.com/public/casino-admin-1/1787140816239_7481093109_blob"
+     ]
+    },
+    "gameType": {
+     "id": 2,
+     "pageId": 59,
+     "name": "vsl",
+     "translations": []
+    },
+    "tags": [],
+    "pages": null,
+    "rtp": null,
+    "position": null,
+    "latestWinInfo": null,
+    "questUUID": null,
+    "challengeUUID": null,
+    "omegaMobileIdentifier": "PRAGMATIC_CASINO-vs20olympx",
+    "omegaDesktopIdentifier": "PRAGMATIC_CASINO-vs20olympx",
+    "desktop_image": "https://cdn.mozzartbet.com/public/img/casino/games/medium/Gates-of-Olympus-1000-253x159px.webp",
+    "mobile_image": "https://cdn.mozzartbet.com/public/img/casino/games/mobile/Gates-of-Olympus-1000-256x256px.webp"
+   },
+   {
+    "id": 11603,
+    "gameName": "Fury of Anubis",
+    "desktopId": "vs20wraanu",
+    "mobileId": "vs20wraanu",
+    "minBet": null,
+    "maxBet": null,
+    "volatility": null,
+    "numberOfLines": null,
+    "provider": {
+     "id": 1,
+     "pageId": 49,
+     "name": "Pragmatic",
+     "platformCode": "PRAGMATIC_CASINO",
+     "translations": [],
+     "assets": [
+      "https://cdn.mozzartbet.com/public/casino-admin-1/1787140816239_7481093109_blob"
+     ]
+    },
+    "gameType": {
+     "id": 2,
+     "pageId": 59,
+     "name": "vsl",
+     "translations": []
+    },
+    "tags": [],
+    "pages": null,
+    "rtp": null,
+    "position": null,
+    "latestWinInfo": null,
+    "questUUID": null,
+    "challengeUUID": null,
+    "omegaMobileIdentifier": "PRAGMATIC_CASINO-vs20wraanu",
+    "omegaDesktopIdentifier": "PRAGMATIC_CASINO-vs20wraanu",
+    "desktop_image": "https://cdn.mozzartbet.com/public/casino-admin-1/1782381432360_6117550127_253x159px_(2)_-_2026-06-25T115528.921.webp",
+    "mobile_image": "https://cdn.mozzartbet.com/public/casino-admin-1/1782381432466_178749360_256x256px_(3)_-_2026-06-25T115653.126.webp"
+   },
+   {
+    "id": 10109,
+    "gameName": "Wild Hot 40 Deluxe",
+    "desktopId": "WildHot40Deluxe",
+    "mobileId": "WildHot40Deluxe",
+    "minBet": null,
+    "maxBet": null,
+    "volatility": null,
+    "numberOfLines": null,
+    "provider": {
+     "id": 5,
+     "pageId": 69,
+     "name": "Fazi",
+     "platformCode": "FAZI",
+     "translations": [],
+     "assets": [
+      "https://cdn.mozzartbet.com/public/casino-admin-1/1787140833476_8886558922_blob"
+     ]
+    },
+    "gameType": {
+     "id": 2,
+     "pageId": 59,
+     "name": "vsl",
+     "translations": []
+    },
+    "tags": [],
+    "pages": null,
+    "rtp": null,
+    "position": null,
+    "latestWinInfo": null,
+    "questUUID": "ec490276-267a-4f37-a93a-4771fbd3128f",
+    "challengeUUID": "9a5a41a4-bf3f-4bb9-ac89-55c4d67510b6",
+    "omegaMobileIdentifier": "FAZI-WildHot40Deluxe",
+    "omegaDesktopIdentifier": "FAZI-WildHot40Deluxe",
+    "desktop_image": "https://cdn.mozzartbet.com/public/casino-admin-1/1779175900645_9430214638_Wild_Hot_40_Deluxe_253x159px_copy.webp",
+    "mobile_image": "https://cdn.mozzartbet.com/public/casino-admin-1/1779175900726_3589443368_Wild_Hot_40_Deluxe_256x256px_copy.webp"
+   },
+   {
+    "id": 11704,
+    "gameName": "Le Prechaun",
+    "desktopId": "rlx.hacksaw.hacksaw.2413",
+    "mobileId": "rlx.hacksaw.hacksaw.2413",
+    "minBet": null,
+    "maxBet": null,
+    "volatility": null,
+    "numberOfLines": null,
+    "provider": {
+     "id": 3,
+     "pageId": 67,
+     "name": "Hacksaw",
+     "platformCode": "RELAX",
+     "translations": [],
+     "assets": [
+      "https://cdn.mozzartbet.com/public/casino-admin-1/1715934966537_5357449833_hacksaw.svg"
+     ]
+    },
+    "gameType": {
+     "id": 2,
+     "pageId": 59,
+     "name": "vsl",
+     "translations": []
+    },
+    "tags": [],
+    "pages": null,
+    "rtp": null,
+    "position": null,
+    "latestWinInfo": null,
+    "questUUID": null,
+    "challengeUUID": null,
+    "omegaMobileIdentifier": "RELAX-rlx.hacksaw.hacksaw.2413",
+    "omegaDesktopIdentifier": "RELAX-rlx.hacksaw.hacksaw.2413",
+    "desktop_image": "https://cdn.mozzartbet.com/public/casino-admin-1/1784108578245_2172428554_le_prechaun_253x159px.webp",
+    "mobile_image": "https://cdn.mozzartbet.com/public/casino-admin-1/1784108578333_2533018620_le_prechaun_256x256px.webp"
+   },
+   {
+    "id": 8877,
+    "gameName": "Wild Hot 40 Hold&Win",
+    "desktopId": "WildHot40HoldAndWin",
+    "mobileId": "WildHot40HoldAndWin",
+    "minBet": null,
+    "maxBet": null,
+    "volatility": null,
+    "numberOfLines": null,
+    "provider": {
+     "id": 5,
+     "pageId": 69,
+     "name": "Fazi",
+     "platformCode": "FAZI",
+     "translations": [],
+     "assets": [
+      "https://cdn.mozzartbet.com/public/casino-admin-1/1787140833476_8886558922_blob"
+     ]
+    },
+    "gameType": {
+     "id": 2,
+     "pageId": 59,
+     "name": "vsl",
+     "translations": []
+    },
+    "tags": [],
+    "pages": null,
+    "rtp": null,
+    "position": null,
+    "latestWinInfo": null,
+    "questUUID": "ec490276-267a-4f37-a93a-4771fbd3128f",
+    "challengeUUID": "9a5a41a4-bf3f-4bb9-ac89-55c4d67510b6",
+    "omegaMobileIdentifier": "FAZI-WildHot40HoldAndWin",
+    "omegaDesktopIdentifier": "FAZI-WildHot40HoldAndWin",
+    "desktop_image": "https://cdn.mozzartbet.com/public/casino-admin-1/1764938573685_5301195990_Wild_Hot_40_Hold&Win_253x159px_copy.webp",
+    "mobile_image": "https://cdn.mozzartbet.com/public/casino-admin-1/1764938573762_5612708243_Wild_Hot_40_Hold&Win_256x256px_copy.webp"
+   },
+   {
+    "id": 307,
+    "gameName": "Coin Strike: Hold and Win",
+    "desktopId": "coin_strike",
+    "mobileId": "coin_strike_mob",
+    "minBet": null,
+    "maxBet": null,
+    "volatility": null,
+    "numberOfLines": null,
+    "provider": {
+     "id": 11,
+     "pageId": 75,
+     "name": "Playson",
+     "platformCode": "PLAYSON",
+     "translations": [],
+     "assets": [
+      "https://cdn.mozzartbet.com/public/casino-admin-1/1770199838793_8045427173_playsonlogobelinovi.png"
+     ]
+    },
+    "gameType": {
+     "id": 2,
+     "pageId": 59,
+     "name": "vsl",
+     "translations": []
+    },
+    "tags": [],
+    "pages": null,
+    "rtp": null,
+    "position": null,
+    "latestWinInfo": null,
+    "questUUID": "ec490276-267a-4f37-a93a-4771fbd3128f",
+    "challengeUUID": null,
+    "omegaMobileIdentifier": "PLAYSON-coin_strike_mob",
+    "omegaDesktopIdentifier": "PLAYSON-coin_strike",
+    "desktop_image": "https://cdn.mozzartbet.com/public/img/casino/games/medium/Coin-Strike-Hold-and-Win-Desktop-icon.webp",
+    "mobile_image": "https://cdn.mozzartbet.com/public/img/casino/games/mobile/Coin-Strike-Hold-and-Win-Mob-icon.webp"
+   },
+   {
+    "id": 8409,
+    "gameName": "Sweet Rush Bonanza",
+    "desktopId": "vs20swrbon",
+    "mobileId": "vs20swrbon",
+    "minBet": null,
+    "maxBet": null,
+    "volatility": null,
+    "numberOfLines": null,
+    "provider": {
+     "id": 1,
+     "pageId": 49,
+     "name": "Pragmatic",
+     "platformCode": "PRAGMATIC_CASINO",
+     "translations": [],
+     "assets": [
+      "https://cdn.mozzartbet.com/public/casino-admin-1/1787140816239_7481093109_blob"
+     ]
+    },
+    "gameType": {
+     "id": 2,
+     "pageId": 59,
+     "name": "vsl",
+     "translations": []
+    },
+    "tags": [],
+    "pages": null,
+    "rtp": null,
+    "position": null,
+    "latestWinInfo": null,
+    "questUUID": null,
+    "challengeUUID": null,
+    "omegaMobileIdentifier": "PRAGMATIC_CASINO-vs20swrbon",
+    "omegaDesktopIdentifier": "PRAGMATIC_CASINO-vs20swrbon",
+    "desktop_image": "https://cdn.mozzartbet.com/public/casino-admin-1/1759228089106_504848294_Sweet_Rush_Bonanza_253x159px.webp",
+    "mobile_image": "https://cdn.mozzartbet.com/public/casino-admin-1/1759228089189_1386443323_Sweet_Rush_Bonanza_256x256px.webp"
+   },
+   {
+    "id": 1278,
+    "gameName": "Roaring Forties™",
+    "desktopId": "207",
+    "mobileId": "207",
+    "minBet": null,
+    "maxBet": null,
+    "volatility": null,
+    "numberOfLines": null,
+    "provider": {
+     "id": 12,
+     "pageId": 76,
+     "name": "Greentube",
+     "platformCode": "GREENTUBE",
+     "translations": [],
+     "assets": [
+      "https://cdn.mozzartbet.com/public/casino-admin-1/1758202546662_6339577173_blob"
+     ]
+    },
+    "gameType": {
+     "id": 2,
+     "pageId": 59,
+     "name": "vsl",
+     "translations": []
+    },
+    "tags": [],
+    "pages": null,
+    "rtp": null,
+    "position": null,
+    "latestWinInfo": null,
+    "questUUID": "ec490276-267a-4f37-a93a-4771fbd3128f",
+    "challengeUUID": null,
+    "omegaMobileIdentifier": "GREENTUBE-207",
+    "omegaDesktopIdentifier": "GREENTUBE-207",
+    "desktop_image": "https://cdn.mozzartbet.com/public/img/casino/games/medium/roaring_forties_desk.webp",
+    "mobile_image": "https://cdn.mozzartbet.com/public/img/casino/games/mobile/roaring_forties_mob.webp"
+   },
+   {
+    "id": 9061,
+    "gameName": "Prestige Crown",
+    "desktopId": "endorphina2_PrestigeCrown@ENDORPHINA",
+    "mobileId": "endorphina2_PrestigeCrown@ENDORPHINA",
+    "minBet": null,
+    "maxBet": null,
+    "volatility": null,
+    "numberOfLines": null,
+    "provider": {
+     "id": 4,
+     "pageId": 68,
+     "name": "Endorphina",
+     "platformCode": "ENDORPHINA",
+     "translations": [],
+     "assets": [
+      "https://cdn.mozzartbet.com/public/casino-admin-1/1787140797091_28286092_blob"
+     ]
+    },
+    "gameType": {
+     "id": 2,
+     "pageId": 59,
+     "name": "vsl",
+     "translations": []
+    },
+    "tags": [],
+    "pages": null,
+    "rtp": null,
+    "position": null,
+    "latestWinInfo": null,
+    "questUUID": "ec490276-267a-4f37-a93a-4771fbd3128f",
+    "challengeUUID": null,
+    "omegaMobileIdentifier": "ENDORPHINA-endorphina2_PrestigeCrown@ENDORPHINA",
+    "omegaDesktopIdentifier": "ENDORPHINA-endorphina2_PrestigeCrown@ENDORPHINA",
+    "desktop_image": "https://cdn.mozzartbet.com/public/casino-admin-1/1767700288475_9130354721_prestigecrowndesk.webp",
+    "mobile_image": "https://cdn.mozzartbet.com/public/casino-admin-1/1767700288546_5516354040_prestigecrownmob.webp"
+   },
+   {
+    "id": 10562,
+    "gameName": "Chance Machine 90s",
+    "desktopId": "endorphina2_ChanceMachine90s@ENDORPHINA",
+    "mobileId": "endorphina2_ChanceMachine90s@ENDORPHINA",
+    "minBet": null,
+    "maxBet": null,
+    "volatility": null,
+    "numberOfLines": null,
+    "provider": {
+     "id": 4,
+     "pageId": 68,
+     "name": "Endorphina",
+     "platformCode": "ENDORPHINA",
+     "translations": [],
+     "assets": [
+      "https://cdn.mozzartbet.com/public/casino-admin-1/1787140797091_28286092_blob"
+     ]
+    },
+    "gameType": {
+     "id": 2,
+     "pageId": 59,
+     "name": "vsl",
+     "translations": []
+    },
+    "tags": [],
+    "pages": null,
+    "rtp": null,
+    "position": null,
+    "latestWinInfo": null,
+    "questUUID": "ec490276-267a-4f37-a93a-4771fbd3128f",
+    "challengeUUID": null,
+    "omegaMobileIdentifier": "ENDORPHINA-endorphina2_ChanceMachine90s@ENDORPHINA",
+    "omegaDesktopIdentifier": "ENDORPHINA-endorphina2_ChanceMachine90s@ENDORPHINA",
+    "desktop_image": "https://cdn.mozzartbet.com/public/casino-admin-1/1786344391438_8827137080_253x159px_(2)_-_2026-08-10T084515.776.webp",
+    "mobile_image": "https://cdn.mozzartbet.com/public/casino-admin-1/1786344391509_8879849799_256x256px_(3)_-_2026-08-10T084540.559.webp"
+   },
+   {
+    "id": 10326,
+    "gameName": "Le Digger",
+    "desktopId": "rlx.hacksaw.hacksaw.2229",
+    "mobileId": "rlx.hacksaw.hacksaw.2229",
+    "minBet": null,
+    "maxBet": null,
+    "volatility": null,
+    "numberOfLines": null,
+    "provider": {
+     "id": 3,
+     "pageId": 67,
+     "name": "Hacksaw",
+     "platformCode": "RELAX",
+     "translations": [],
+     "assets": [
+      "https://cdn.mozzartbet.com/public/casino-admin-1/1715934966537_5357449833_hacksaw.svg"
+     ]
+    },
+    "gameType": {
+     "id": 2,
+     "pageId": 59,
+     "name": "vsl",
+     "translations": []
+    },
+    "tags": [],
+    "pages": null,
+    "rtp": null,
+    "position": null,
+    "latestWinInfo": null,
+    "questUUID": null,
+    "challengeUUID": null,
+    "omegaMobileIdentifier": "RELAX-rlx.hacksaw.hacksaw.2229",
+    "omegaDesktopIdentifier": "RELAX-rlx.hacksaw.hacksaw.2229",
+    "desktop_image": "https://cdn.mozzartbet.com/public/casino-admin-1/1778747527785_9051218357_Le_Digger_253x159px_copy.webp",
+    "mobile_image": "https://cdn.mozzartbet.com/public/casino-admin-1/1778747527864_5024575446_Le_Digger_256x256px_copy.webp"
+   },
+   {
+    "id": 19,
+    "gameName": "Wild Lucky Clover 2",
+    "desktopId": "WildLuckyClover2",
+    "mobileId": "WildLuckyClover2",
+    "minBet": null,
+    "maxBet": null,
+    "volatility": null,
+    "numberOfLines": null,
+    "provider": {
+     "id": 5,
+     "pageId": 69,
+     "name": "Fazi",
+     "platformCode": "FAZI",
+     "translations": [],
+     "assets": [
+      "https://cdn.mozzartbet.com/public/casino-admin-1/1787140833476_8886558922_blob"
+     ]
+    },
+    "gameType": {
+     "id": 2,
+     "pageId": 59,
+     "name": "vsl",
+     "translations": []
+    },
+    "tags": [],
+    "pages": null,
+    "rtp": null,
+    "position": null,
+    "latestWinInfo": null,
+    "questUUID": "ec490276-267a-4f37-a93a-4771fbd3128f",
+    "challengeUUID": "9a5a41a4-bf3f-4bb9-ac89-55c4d67510b6",
+    "omegaMobileIdentifier": "FAZI-WildLuckyClover2",
+    "omegaDesktopIdentifier": "FAZI-WildLuckyClover2",
+    "desktop_image": "https://cdn.mozzartbet.com/public/casino-admin-1/1730201494673_7764156226_Wild_Lucky_Clover_2_253x159px_copy.webp",
+    "mobile_image": "https://cdn.mozzartbet.com/public/casino-admin-1/1730201494753_6965632285_Wild_Lucky_Clover_2_256x256px_copy.webp"
+   },
+   {
+    "id": 10701,
+    "gameName": "Le Hooligan",
+    "desktopId": "rlx.hacksaw.hacksaw.2470",
+    "mobileId": "rlx.hacksaw.hacksaw.2470",
+    "minBet": null,
+    "maxBet": null,
+    "volatility": null,
+    "numberOfLines": null,
+    "provider": {
+     "id": 3,
+     "pageId": 67,
+     "name": "Hacksaw",
+     "platformCode": "RELAX",
+     "translations": [],
+     "assets": [
+      "https://cdn.mozzartbet.com/public/casino-admin-1/1715934966537_5357449833_hacksaw.svg"
+     ]
+    },
+    "gameType": {
+     "id": 2,
+     "pageId": 59,
+     "name": "vsl",
+     "translations": []
+    },
+    "tags": [],
+    "pages": null,
+    "rtp": null,
+    "position": null,
+    "latestWinInfo": null,
+    "questUUID": null,
+    "challengeUUID": null,
+    "omegaMobileIdentifier": "RELAX-rlx.hacksaw.hacksaw.2470",
+    "omegaDesktopIdentifier": "RELAX-rlx.hacksaw.hacksaw.2470",
+    "desktop_image": "https://cdn.mozzartbet.com/public/casino-admin-1/1780914136791_6612737139_unnamed_(9).webp",
+    "mobile_image": "https://cdn.mozzartbet.com/public/casino-admin-1/1780914137010_9089161153_unnamed_(10).webp"
+   },
+   {
+    "id": 7784,
+    "gameName": "25 Coins™ Grand Gold Edition",
+    "desktopId": "459",
+    "mobileId": "459",
+    "minBet": null,
+    "maxBet": null,
+    "volatility": null,
+    "numberOfLines": null,
+    "provider": {
+     "id": 18,
+     "pageId": 98,
+     "name": "Wazdan",
+     "platformCode": "WAZDAN",
+     "translations": [],
+     "assets": [
+      "https://cdn.mozzartbet.com/public/casino-admin-1/1751886205913_1612928445_wazdan.png"
+     ]
+    },
+    "gameType": {
+     "id": 2,
+     "pageId": 59,
+     "name": "vsl",
+     "translations": []
+    },
+    "tags": [],
+    "pages": null,
+    "rtp": null,
+    "position": null,
+    "latestWinInfo": null,
+    "questUUID": null,
+    "challengeUUID": null,
+    "omegaMobileIdentifier": "WAZDAN-459",
+    "omegaDesktopIdentifier": "WAZDAN-459",
+    "desktop_image": "https://cdn.mozzartbet.com/public/casino-admin-1/1752565869462_9774187318_25_Coins_Grand_Gold_253x159px_copy.webp",
+    "mobile_image": "https://cdn.mozzartbet.com/public/casino-admin-1/1752565869522_7002720079_25_Coins_Grand_Gold_256x256px_copy.webp"
+   },
+   {
+    "id": 11336,
+    "gameName": "Diamond Plus Football Edition",
+    "desktopId": "495",
+    "mobileId": "495",
+    "minBet": null,
+    "maxBet": null,
+    "volatility": null,
+    "numberOfLines": null,
+    "provider": {
+     "id": 702,
+     "pageId": 2142,
+     "name": "Amusnet",
+     "platformCode": "AMUSNET",
+     "translations": [],
+     "assets": [
+      "https://cdn.mozzartbet.com/public/casino-admin-1/1785225599890_9723430937_blob"
+     ]
+    },
+    "gameType": {
+     "id": 2,
+     "pageId": 59,
+     "name": "vsl",
+     "translations": []
+    },
+    "tags": [],
+    "pages": null,
+    "rtp": null,
+    "position": null,
+    "latestWinInfo": null,
+    "questUUID": "ec490276-267a-4f37-a93a-4771fbd3128f",
+    "challengeUUID": null,
+    "omegaMobileIdentifier": "AMUSNET-495",
+    "omegaDesktopIdentifier": "AMUSNET-495",
+    "desktop_image": "https://cdn.mozzartbet.com/public/casino-admin-1/1720081419106_2719013566_Diamond_Plus_Football_Edition_253x159_copy.webp",
+    "mobile_image": "https://cdn.mozzartbet.com/public/casino-admin-1/1720081419192_8823935181_Diamond_Plus_Football_Edition_256x256_copy.webp"
+   },
+   {
+    "id": 9161,
+    "gameName": "Le Fisherman",
+    "desktopId": "rlx.hacksaw.hacksaw.2057",
+    "mobileId": "rlx.hacksaw.hacksaw.2057",
+    "minBet": null,
+    "maxBet": null,
+    "volatility": null,
+    "numberOfLines": null,
+    "provider": {
+     "id": 3,
+     "pageId": 67,
+     "name": "Hacksaw",
+     "platformCode": "RELAX",
+     "translations": [],
+     "assets": [
+      "https://cdn.mozzartbet.com/public/casino-admin-1/1715934966537_5357449833_hacksaw.svg"
+     ]
+    },
+    "gameType": {
+     "id": 2,
+     "pageId": 59,
+     "name": "vsl",
+     "translations": []
+    },
+    "tags": [],
+    "pages": null,
+    "rtp": null,
+    "position": null,
+    "latestWinInfo": null,
+    "questUUID": null,
+    "challengeUUID": null,
+    "omegaMobileIdentifier": "RELAX-rlx.hacksaw.hacksaw.2057",
+    "omegaDesktopIdentifier": "RELAX-rlx.hacksaw.hacksaw.2057",
+    "desktop_image": "https://cdn.mozzartbet.com/public/casino-admin-1/1770206508669_3159524387_Le_Fisherman_253x159px_copy.webp",
+    "mobile_image": "https://cdn.mozzartbet.com/public/casino-admin-1/1770206508745_6992877951_Le_Fisherman_256x256px_copy.webp"
+   },
+   {
+    "id": 11446,
+    "gameName": "Candy Palace 1000",
+    "desktopId": "5309",
+    "mobileId": "5309",
+    "minBet": null,
+    "maxBet": null,
+    "volatility": null,
+    "numberOfLines": null,
+    "provider": {
+     "id": 702,
+     "pageId": 2142,
+     "name": "Amusnet",
+     "platformCode": "AMUSNET",
+     "translations": [],
+     "assets": [
+      "https://cdn.mozzartbet.com/public/casino-admin-1/1785225599890_9723430937_blob"
+     ]
+    },
+    "gameType": {
+     "id": 2,
+     "pageId": 59,
+     "name": "vsl",
+     "translations": []
+    },
+    "tags": [],
+    "pages": null,
+    "rtp": null,
+    "position": null,
+    "latestWinInfo": null,
+    "questUUID": "ec490276-267a-4f37-a93a-4771fbd3128f",
+    "challengeUUID": null,
+    "omegaMobileIdentifier": "AMUSNET-5309",
+    "omegaDesktopIdentifier": "AMUSNET-5309",
+    "desktop_image": "https://cdn.mozzartbet.com/public/casino-admin-1/1786630938263_132593474_unnamed.webp",
+    "mobile_image": "https://cdn.mozzartbet.com/public/casino-admin-1/1786630938342_4341416301_unnamed.webp"
+   },
+   {
+    "id": 11455,
+    "gameName": "Cocktail Rush Buy Bonus",
+    "desktopId": "5090",
+    "mobileId": "5090",
+    "minBet": null,
+    "maxBet": null,
+    "volatility": null,
+    "numberOfLines": null,
+    "provider": {
+     "id": 702,
+     "pageId": 2142,
+     "name": "Amusnet",
+     "platformCode": "AMUSNET",
+     "translations": [],
+     "assets": [
+      "https://cdn.mozzartbet.com/public/casino-admin-1/1785225599890_9723430937_blob"
+     ]
+    },
+    "gameType": {
+     "id": 2,
+     "pageId": 59,
+     "name": "vsl",
+     "translations": []
+    },
+    "tags": [],
+    "pages": null,
+    "rtp": null,
+    "position": null,
+    "latestWinInfo": null,
+    "questUUID": "ec490276-267a-4f37-a93a-4771fbd3128f",
+    "challengeUUID": null,
+    "omegaMobileIdentifier": "AMUSNET-5090",
+    "omegaDesktopIdentifier": "AMUSNET-5090",
+    "desktop_image": "https://cdn.mozzartbet.com/public/casino-admin-1/1774342300693_5271298500_Cocktail_Rush_Buy_Bonus_-_253x159px_copy.webp",
+    "mobile_image": "https://cdn.mozzartbet.com/public/casino-admin-1/1774342300775_2001660501_Cocktail_Rush_Buy_Bonus_-_256x256px_copy.webp"
+   },
+   {
+    "id": 8261,
+    "gameName": "Voltage Blitz Rapid",
+    "desktopId": "kg_5515",
+    "mobileId": "kg_5515",
+    "minBet": null,
+    "maxBet": null,
+    "volatility": null,
+    "numberOfLines": null,
+    "provider": {
+     "id": 301,
+     "pageId": 1041,
+     "name": "Ruby Play",
+     "platformCode": "RUBY",
+     "translations": [],
+     "assets": [
+      "https://cdn.mozzartbet.com/public/casino-admin-1/1775567492964_7421787703_blob"
+     ]
+    },
+    "gameType": {
+     "id": 2,
+     "pageId": 59,
+     "name": "vsl",
+     "translations": []
+    },
+    "tags": [],
+    "pages": null,
+    "rtp": null,
+    "position": null,
+    "latestWinInfo": null,
+    "questUUID": null,
+    "challengeUUID": null,
+    "omegaMobileIdentifier": "RUBY-kg_5515",
+    "omegaDesktopIdentifier": "RUBY-kg_5515",
+    "desktop_image": "https://cdn.mozzartbet.com/public/casino-admin-1/1757313829967_8023061658_Voltage_Blitz_Rapid_253x159px_copy.webp",
+    "mobile_image": "https://cdn.mozzartbet.com/public/casino-admin-1/1757313830046_5677117552_Voltage_Blitz_Rapid_256x256px_copy.webp"
+   },
+   {
+    "id": 10061,
+    "gameName": "Jelly Express",
+    "desktopId": "vs20payanyvol",
+    "mobileId": "vs20payanyvol",
+    "minBet": null,
+    "maxBet": null,
+    "volatility": null,
+    "numberOfLines": null,
+    "provider": {
+     "id": 1,
+     "pageId": 49,
+     "name": "Pragmatic",
+     "platformCode": "PRAGMATIC_CASINO",
+     "translations": [],
+     "assets": [
+      "https://cdn.mozzartbet.com/public/casino-admin-1/1787140816239_7481093109_blob"
+     ]
+    },
+    "gameType": {
+     "id": 2,
+     "pageId": 59,
+     "name": "vsl",
+     "translations": []
+    },
+    "tags": [],
+    "pages": null,
+    "rtp": null,
+    "position": null,
+    "latestWinInfo": null,
+    "questUUID": null,
+    "challengeUUID": null,
+    "omegaMobileIdentifier": "PRAGMATIC_CASINO-vs20payanyvol",
+    "omegaDesktopIdentifier": "PRAGMATIC_CASINO-vs20payanyvol",
+    "desktop_image": "https://cdn.mozzartbet.com/public/casino-admin-1/1774862912788_9462169328_Jelly_Express_253x159px_copy.webp",
+    "mobile_image": "https://cdn.mozzartbet.com/public/casino-admin-1/1774862912875_4752030842_Jelly_Express_256x256px_copy.webp"
+   },
+   {
+    "id": 10549,
+    "gameName": "3 Cursed Chests Hold & Win",
+    "desktopId": "rlx.hacksaw.hacksaw.2296",
+    "mobileId": "rlx.hacksaw.hacksaw.2296",
+    "minBet": null,
+    "maxBet": null,
+    "volatility": null,
+    "numberOfLines": null,
+    "provider": {
+     "id": 3,
+     "pageId": 67,
+     "name": "Hacksaw",
+     "platformCode": "RELAX",
+     "translations": [],
+     "assets": [
+      "https://cdn.mozzartbet.com/public/casino-admin-1/1715934966537_5357449833_hacksaw.svg"
+     ]
+    },
+    "gameType": {
+     "id": 2,
+     "pageId": 59,
+     "name": "vsl",
+     "translations": []
+    },
+    "tags": [],
+    "pages": null,
+    "rtp": null,
+    "position": null,
+    "latestWinInfo": null,
+    "questUUID": null,
+    "challengeUUID": null,
+    "omegaMobileIdentifier": "RELAX-rlx.hacksaw.hacksaw.2296",
+    "omegaDesktopIdentifier": "RELAX-rlx.hacksaw.hacksaw.2296",
+    "desktop_image": "https://cdn.mozzartbet.com/public/casino-admin-1/1779869291623_2086379359_253x159px_(2)_(21).webp",
+    "mobile_image": "https://cdn.mozzartbet.com/public/casino-admin-1/1779869291702_5471126624_256x256px_(3)_(22).webp"
+   },
+   {
+    "id": 10523,
+    "gameName": "Gates of Arabia - Extra Spin",
+    "desktopId": "gatesofarabiaextraspin",
+    "mobileId": "gatesofarabiaextraspin",
+    "minBet": null,
+    "maxBet": null,
+    "volatility": null,
+    "numberOfLines": null,
+    "provider": {
+     "id": 19,
+     "pageId": 99,
+     "name": "Expanse",
+     "platformCode": "EXPANSE",
+     "translations": [],
+     "assets": [
+      "https://cdn.mozzartbet.com/public/casino-admin-1/1789460597428_9441819541_1787140859769_3107424968_blob.svg"
+     ]
+    },
+    "gameType": {
+     "id": 2,
+     "pageId": 59,
+     "name": "vsl",
+     "translations": []
+    },
+    "tags": [],
+    "pages": null,
+    "rtp": null,
+    "position": null,
+    "latestWinInfo": null,
+    "questUUID": null,
+    "challengeUUID": null,
+    "omegaMobileIdentifier": "EXPANSE-gatesofarabiaextraspin",
+    "omegaDesktopIdentifier": "EXPANSE-gatesofarabiaextraspin",
+    "desktop_image": "https://cdn.mozzartbet.com/public/casino-admin-1/1778502619196_5397722391_Gates_of_Arabia_253x159px_(2)_1.webp",
+    "mobile_image": "https://cdn.mozzartbet.com/public/casino-admin-1/1778502619273_4830072358_Gates_of_Arabia_256x256px_(3)_1.webp"
+   },
+   {
+    "id": 8712,
+    "gameName": "Coins Of the Hood 10.000 ways",
+    "desktopId": "ASL_COH_EU",
+    "mobileId": "ASL_COH_EU",
+    "minBet": null,
+    "maxBet": null,
+    "volatility": null,
+    "numberOfLines": null,
+    "provider": {
+     "id": 121,
+     "pageId": 621,
+     "name": "Atomic Slot Lab",
+     "platformCode": "ORYX_CAS",
+     "translations": [],
+     "assets": [
+      "https://cdn.mozzartbet.com/public/casino-admin-1/1775567430019_1363423111_blob"
+     ]
+    },
+    "gameType": {
+     "id": 2,
+     "pageId": 59,
+     "name": "vsl",
+     "translations": []
+    },
+    "tags": [],
+    "pages": null,
+    "rtp": null,
+    "position": null,
+    "latestWinInfo": null,
+    "questUUID": null,
+    "challengeUUID": null,
+    "omegaMobileIdentifier": "ORYX_CAS-ASL_COH_EU",
+    "omegaDesktopIdentifier": "ORYX_CAS-ASL_COH_EU",
+    "desktop_image": "https://cdn.mozzartbet.com/public/casino-admin-1/1764233189797_411068959_Coins_Of_the_Hood_10.000_ways_253x159px_copy.webp",
+    "mobile_image": "https://cdn.mozzartbet.com/public/casino-admin-1/1764233189865_749857881_Coins_Of_the_Hood_10.000_ways_256x256px_copy.webp"
+   },
+   {
+    "id": 12,
+    "gameName": "Mozzart Hot 40",
+    "desktopId": "BurstingHot40Mozzart",
+    "mobileId": "BurstingHot40Mozzart",
+    "minBet": null,
+    "maxBet": null,
+    "volatility": null,
+    "numberOfLines": null,
+    "provider": {
+     "id": 5,
+     "pageId": 69,
+     "name": "Fazi",
+     "platformCode": "FAZI",
+     "translations": [],
+     "assets": [
+      "https://cdn.mozzartbet.com/public/casino-admin-1/1787140833476_8886558922_blob"
+     ]
+    },
+    "gameType": {
+     "id": 2,
+     "pageId": 59,
+     "name": "vsl",
+     "translations": []
+    },
+    "tags": [],
+    "pages": null,
+    "rtp": null,
+    "position": null,
+    "latestWinInfo": null,
+    "questUUID": "ec490276-267a-4f37-a93a-4771fbd3128f",
+    "challengeUUID": "9a5a41a4-bf3f-4bb9-ac89-55c4d67510b6",
+    "omegaMobileIdentifier": "FAZI-BurstingHot40Mozzart",
+    "omegaDesktopIdentifier": "FAZI-BurstingHot40Mozzart",
+    "desktop_image": "https://cdn.mozzartbet.com/public/img/casino/games/medium/253x159.webp",
+    "mobile_image": "https://cdn.mozzartbet.com/public/casino-admin-1/1715067424305_3466978815_Mozzart_Hot_40_Mob.webp"
+   },
+   {
+    "id": 9291,
+    "gameName": "Mummy's Jewels 100",
+    "desktopId": "vswaysmjwl2",
+    "mobileId": "vswaysmjwl2",
+    "minBet": null,
+    "maxBet": null,
+    "volatility": null,
+    "numberOfLines": null,
+    "provider": {
+     "id": 1,
+     "pageId": 49,
+     "name": "Pragmatic",
+     "platformCode": "PRAGMATIC_CASINO",
+     "translations": [],
+     "assets": [
+      "https://cdn.mozzartbet.com/public/casino-admin-1/1787140816239_7481093109_blob"
+     ]
+    },
+    "gameType": {
+     "id": 2,
+     "pageId": 59,
+     "name": "vsl",
+     "translations": []
+    },
+    "tags": [],
+    "pages": null,
+    "rtp": null,
+    "position": null,
+    "latestWinInfo": null,
+    "questUUID": null,
+    "challengeUUID": null,
+    "omegaMobileIdentifier": "PRAGMATIC_CASINO-vswaysmjwl2",
+    "omegaDesktopIdentifier": "PRAGMATIC_CASINO-vswaysmjwl2",
+    "desktop_image": "https://cdn.mozzartbet.com/public/casino-admin-1/1771846169693_9140785046_Mummy's_Jewels_100_253x159px_copy.webp",
+    "mobile_image": "https://cdn.mozzartbet.com/public/casino-admin-1/1771846169828_4520131864_Mummy's_Jewels_100_256x256px_copy.webp"
+   },
+   {
+    "id": 9142,
+    "gameName": "Zeus vs Hades – Gods of War 250",
+    "desktopId": "vs15zeushadseq",
+    "mobileId": "vs15zeushadseq",
+    "minBet": null,
+    "maxBet": null,
+    "volatility": null,
+    "numberOfLines": null,
+    "provider": {
+     "id": 1,
+     "pageId": 49,
+     "name": "Pragmatic",
+     "platformCode": "PRAGMATIC_CASINO",
+     "translations": [],
+     "assets": [
+      "https://cdn.mozzartbet.com/public/casino-admin-1/1787140816239_7481093109_blob"
+     ]
+    },
+    "gameType": {
+     "id": 2,
+     "pageId": 59,
+     "name": "vsl",
+     "translations": []
+    },
+    "tags": [],
+    "pages": null,
+    "rtp": null,
+    "position": null,
+    "latestWinInfo": null,
+    "questUUID": null,
+    "challengeUUID": null,
+    "omegaMobileIdentifier": "PRAGMATIC_CASINO-vs15zeushadseq",
+    "omegaDesktopIdentifier": "PRAGMATIC_CASINO-vs15zeushadseq",
+    "desktop_image": "https://cdn.mozzartbet.com/public/casino-admin-1/1770026723379_9651416238_Zeus_vs_Hades_–_Gods_of_War_250_253x159px_copy.webp",
+    "mobile_image": "https://cdn.mozzartbet.com/public/casino-admin-1/1770026723467_5503709575_Zeus_vs_Hades_–_Gods_of_War_250_256x256px_copy.webp"
+   },
+   {
+    "id": 9680,
+    "gameName": "Thunder Coins XXL Multicoin",
+    "desktopId": "thunder_coins_xxl_multicoin",
+    "mobileId": "thunder_coins_xxl_multicoin_mob",
+    "minBet": null,
+    "maxBet": null,
+    "volatility": null,
+    "numberOfLines": null,
+    "provider": {
+     "id": 11,
+     "pageId": 75,
+     "name": "Playson",
+     "platformCode": "PLAYSON",
+     "translations": [],
+     "assets": [
+      "https://cdn.mozzartbet.com/public/casino-admin-1/1770199838793_8045427173_playsonlogobelinovi.png"
+     ]
+    },
+    "gameType": {
+     "id": 2,
+     "pageId": 59,
+     "name": "vsl",
+     "translations": []
+    },
+    "tags": [],
+    "pages": null,
+    "rtp": null,
+    "position": null,
+    "latestWinInfo": null,
+    "questUUID": "ec490276-267a-4f37-a93a-4771fbd3128f",
+    "challengeUUID": null,
+    "omegaMobileIdentifier": "PLAYSON-thunder_coins_xxl_multicoin_mob",
+    "omegaDesktopIdentifier": "PLAYSON-thunder_coins_xxl_multicoin",
+    "desktop_image": "https://cdn.mozzartbet.com/public/casino-admin-1/1773914916440_9002923333_Thunder_Coins_XXL_MULTICOIN_253x159px_copy.webp",
+    "mobile_image": "https://cdn.mozzartbet.com/public/casino-admin-1/1773914916526_1003420158_Thunder_Coins_XXL_MULTICOIN_256x256px_copy.webp"
+   },
+   {
+    "id": 9757,
+    "gameName": "2026 Hit Slot",
+    "desktopId": "endorphina2_2026HitSlot@ENDORPHINA",
+    "mobileId": "endorphina2_2026HitSlot@ENDORPHINA",
+    "minBet": null,
+    "maxBet": null,
+    "volatility": null,
+    "numberOfLines": null,
+    "provider": {
+     "id": 4,
+     "pageId": 68,
+     "name": "Endorphina",
+     "platformCode": "ENDORPHINA",
+     "translations": [],
+     "assets": [
+      "https://cdn.mozzartbet.com/public/casino-admin-1/1787140797091_28286092_blob"
+     ]
+    },
+    "gameType": {
+     "id": 2,
+     "pageId": 59,
+     "name": "vsl",
+     "translations": []
+    },
+    "tags": [],
+    "pages": null,
+    "rtp": null,
+    "position": null,
+    "latestWinInfo": null,
+    "questUUID": "ec490276-267a-4f37-a93a-4771fbd3128f",
+    "challengeUUID": null,
+    "omegaMobileIdentifier": "ENDORPHINA-endorphina2_2026HitSlot@ENDORPHINA",
+    "omegaDesktopIdentifier": "ENDORPHINA-endorphina2_2026HitSlot@ENDORPHINA",
+    "desktop_image": "https://cdn.mozzartbet.com/public/casino-admin-1/1773151820223_7562236528_2026_Hit_Slot_253x159px_copy.webp",
+    "mobile_image": "https://cdn.mozzartbet.com/public/casino-admin-1/1773151820290_9918157938_2026_Hit_Slot_256x256px_copy.webp"
+   },
+   {
+    "id": 53,
+    "gameName": "Wild Hot 40",
+    "desktopId": "WildHot40",
+    "mobileId": "WildHot40",
+    "minBet": null,
+    "maxBet": null,
+    "volatility": null,
+    "numberOfLines": null,
+    "provider": {
+     "id": 5,
+     "pageId": 69,
+     "name": "Fazi",
+     "platformCode": "FAZI",
+     "translations": [],
+     "assets": [
+      "https://cdn.mozzartbet.com/public/casino-admin-1/1787140833476_8886558922_blob"
+     ]
+    },
+    "gameType": {
+     "id": 2,
+     "pageId": 59,
+     "name": "vsl",
+     "translations": []
+    },
+    "tags": [],
+    "pages": null,
+    "rtp": null,
+    "position": null,
+    "latestWinInfo": null,
+    "questUUID": "ec490276-267a-4f37-a93a-4771fbd3128f",
+    "challengeUUID": "9a5a41a4-bf3f-4bb9-ac89-55c4d67510b6",
+    "omegaMobileIdentifier": "FAZI-WildHot40",
+    "omegaDesktopIdentifier": "FAZI-WildHot40",
+    "desktop_image": "https://cdn.mozzartbet.com/public/img/casino/games/medium/Wild-hot-40-Desktop-icon.webp",
+    "mobile_image": "https://cdn.mozzartbet.com/public/img/casino/games/mobile/Wild-hot-40-Mob-icon.webp"
+   },
+   {
+    "id": 9762,
+    "gameName": "Le Bunny",
+    "desktopId": "rlx.hacksaw.hacksaw.2195",
+    "mobileId": "rlx.hacksaw.hacksaw.2195",
+    "minBet": null,
+    "maxBet": null,
+    "volatility": null,
+    "numberOfLines": null,
+    "provider": {
+     "id": 3,
+     "pageId": 67,
+     "name": "Hacksaw",
+     "platformCode": "RELAX",
+     "translations": [],
+     "assets": [
+      "https://cdn.mozzartbet.com/public/casino-admin-1/1715934966537_5357449833_hacksaw.svg"
+     ]
+    },
+    "gameType": {
+     "id": 2,
+     "pageId": 59,
+     "name": "vsl",
+     "translations": []
+    },
+    "tags": [],
+    "pages": null,
+    "rtp": null,
+    "position": null,
+    "latestWinInfo": null,
+    "questUUID": null,
+    "challengeUUID": null,
+    "omegaMobileIdentifier": "RELAX-rlx.hacksaw.hacksaw.2195",
+    "omegaDesktopIdentifier": "RELAX-rlx.hacksaw.hacksaw.2195",
+    "desktop_image": "https://cdn.mozzartbet.com/public/casino-admin-1/1774428131909_1817878727_Le_Bunny_253x159px_copy.webp",
+    "mobile_image": "https://cdn.mozzartbet.com/public/casino-admin-1/1774428131990_1911561019_Le_Bunny_256x256px_copy.webp"
+   },
+   {
+    "id": 3959,
+    "gameName": "Ze Zeus",
+    "desktopId": "rlx.hacksaw.hacksaw.1508",
+    "mobileId": "rlx.hacksaw.hacksaw.1508",
+    "minBet": null,
+    "maxBet": null,
+    "volatility": null,
+    "numberOfLines": null,
+    "provider": {
+     "id": 3,
+     "pageId": 67,
+     "name": "Hacksaw",
+     "platformCode": "RELAX",
+     "translations": [],
+     "assets": [
+      "https://cdn.mozzartbet.com/public/casino-admin-1/1715934966537_5357449833_hacksaw.svg"
+     ]
+    },
+    "gameType": {
+     "id": 2,
+     "pageId": 59,
+     "name": "vsl",
+     "translations": []
+    },
+    "tags": [],
+    "pages": null,
+    "rtp": null,
+    "position": null,
+    "latestWinInfo": null,
+    "questUUID": null,
+    "challengeUUID": null,
+    "omegaMobileIdentifier": "RELAX-rlx.hacksaw.hacksaw.1508",
+    "omegaDesktopIdentifier": "RELAX-rlx.hacksaw.hacksaw.1508",
+    "desktop_image": "https://cdn.mozzartbet.com/public/casino-admin-1/1720097978228_8969469143_Ze_Zeus_253x159_copy.webp",
+    "mobile_image": "https://cdn.mozzartbet.com/public/casino-admin-1/1720097978309_4159114602_Ze_Zeus_256x256_copy.webp"
+   },
+   {
+    "id": 10108,
+    "gameName": "Piggy Prizes™ Wand of Riches™ Buy Bonus",
+    "desktopId": "17153",
+    "mobileId": "17153",
+    "minBet": null,
+    "maxBet": null,
+    "volatility": null,
+    "numberOfLines": null,
+    "provider": {
+     "id": 12,
+     "pageId": 76,
+     "name": "Greentube",
+     "platformCode": "GREENTUBE",
+     "translations": [],
+     "assets": [
+      "https://cdn.mozzartbet.com/public/casino-admin-1/1758202546662_6339577173_blob"
+     ]
+    },
+    "gameType": {
+     "id": 2,
+     "pageId": 59,
+     "name": "vsl",
+     "translations": []
+    },
+    "tags": [],
+    "pages": null,
+    "rtp": null,
+    "position": null,
+    "latestWinInfo": null,
+    "questUUID": "ec490276-267a-4f37-a93a-4771fbd3128f",
+    "challengeUUID": null,
+    "omegaMobileIdentifier": "GREENTUBE-17153",
+    "omegaDesktopIdentifier": "GREENTUBE-17153",
+    "desktop_image": "https://cdn.mozzartbet.com/public/casino-admin-1/1775475389098_9391203954_ppwor_desk.webp",
+    "mobile_image": "https://cdn.mozzartbet.com/public/casino-admin-1/1775475389178_3235049269_ppwor_mob.webp"
+   },
+   {
+    "id": 3144,
+    "gameName": "Mozzart Wild 40",
+    "desktopId": "MozzartWild40",
+    "mobileId": "MozzartWild40",
+    "minBet": null,
+    "maxBet": null,
+    "volatility": null,
+    "numberOfLines": null,
+    "provider": {
+     "id": 5,
+     "pageId": 69,
+     "name": "Fazi",
+     "platformCode": "FAZI",
+     "translations": [],
+     "assets": [
+      "https://cdn.mozzartbet.com/public/casino-admin-1/1787140833476_8886558922_blob"
+     ]
+    },
+    "gameType": {
+     "id": 2,
+     "pageId": 59,
+     "name": "vsl",
+     "translations": []
+    },
+    "tags": [],
+    "pages": null,
+    "rtp": null,
+    "position": null,
+    "latestWinInfo": null,
+    "questUUID": "ec490276-267a-4f37-a93a-4771fbd3128f",
+    "challengeUUID": "9a5a41a4-bf3f-4bb9-ac89-55c4d67510b6",
+    "omegaMobileIdentifier": "FAZI-MozzartWild40",
+    "omegaDesktopIdentifier": "FAZI-MozzartWild40",
+    "desktop_image": "https://cdn.mozzartbet.com/public/img/casino/games/medium/Wild-Hot-40-253x159pxmozz.webp",
+    "mobile_image": "https://cdn.mozzartbet.com/public/img/casino/games/mobile/Wild-Hot-40-256x256pxmozz.webp"
+   },
+   {
+    "id": 8110,
+    "gameName": "4 Pots Riches: Hold and Win",
+    "desktopId": "4_pots_riches",
+    "mobileId": "4_pots_riches_mob",
+    "minBet": null,
+    "maxBet": null,
+    "volatility": null,
+    "numberOfLines": null,
+    "provider": {
+     "id": 11,
+     "pageId": 75,
+     "name": "Playson",
+     "platformCode": "PLAYSON",
+     "translations": [],
+     "assets": [
+      "https://cdn.mozzartbet.com/public/casino-admin-1/1770199838793_8045427173_playsonlogobelinovi.png"
+     ]
+    },
+    "gameType": {
+     "id": 2,
+     "pageId": 59,
+     "name": "vsl",
+     "translations": []
+    },
+    "tags": [],
+    "pages": null,
+    "rtp": null,
+    "position": null,
+    "latestWinInfo": null,
+    "questUUID": "ec490276-267a-4f37-a93a-4771fbd3128f",
+    "challengeUUID": null,
+    "omegaMobileIdentifier": "PLAYSON-4_pots_riches_mob",
+    "omegaDesktopIdentifier": "PLAYSON-4_pots_riches",
+    "desktop_image": "https://cdn.mozzartbet.com/public/casino-admin-1/1754573100277_8709007360_4_Pots_Riches_Hold_and_Win_253x159px_copy.webp",
+    "mobile_image": "https://cdn.mozzartbet.com/public/casino-admin-1/1754573100360_8085909024_4_Pots_Riches_Hold_and_Win_256x256px_copy.webp"
+   },
+   {
+    "id": 2768,
+    "gameName": "Le Bandit",
+    "desktopId": "rlx.hacksaw.hacksaw.1310",
+    "mobileId": "rlx.hacksaw.hacksaw.1310",
+    "minBet": null,
+    "maxBet": null,
+    "volatility": null,
+    "numberOfLines": null,
+    "provider": {
+     "id": 3,
+     "pageId": 67,
+     "name": "Hacksaw",
+     "platformCode": "RELAX",
+     "translations": [],
+     "assets": [
+      "https://cdn.mozzartbet.com/public/casino-admin-1/1715934966537_5357449833_hacksaw.svg"
+     ]
+    },
+    "gameType": {
+     "id": 2,
+     "pageId": 59,
+     "name": "vsl",
+     "translations": []
+    },
+    "tags": [],
+    "pages": null,
+    "rtp": null,
+    "position": null,
+    "latestWinInfo": null,
+    "questUUID": null,
+    "challengeUUID": null,
+    "omegaMobileIdentifier": "RELAX-rlx.hacksaw.hacksaw.1310",
+    "omegaDesktopIdentifier": "RELAX-rlx.hacksaw.hacksaw.1310",
+    "desktop_image": "https://cdn.mozzartbet.com/public/img/casino/games/medium/LeBandit_desktop.webp",
+    "mobile_image": "https://cdn.mozzartbet.com/public/casino-admin-1/1741960502614_5958346874_le_bandit.webp"
+   }
+  ],
+  "pageName": "Mozzart preporučuje"
+ }
+}

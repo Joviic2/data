@@ -10,7 +10,7 @@ Liga meca se odredjuje redom: (1) ime turnira u feedu, (2) mec postoji u raspore
 Pokretanje (iz korena repoa):
   python fetch_superbet.py                  # jedan prolaz
   python fetch_superbet.py --loop 600 --push  # na svojoj masini: svakih ~10 min + git push samo tog fajla
-Svaki prolaz cuva i odds_history.jsonl po ligi; za automatsko osvezavanje lokalno koristi --loop 600 --push.
+Moze i u GitHub Action-u (korak 'python fetch_superbet.py'), ako te njihov feed ne blokira sa tih adresa.
 Ako dobijes 403/429 ili prazan odgovor: STANI, ne zaobilazi. Drzi razmak >= 5 min i proveri uslove koriscenja Superbet-a.
 Hendikep i ukupno se citaju iz detalja meca (events?events=<id>), samo za mecove Evrolige (prepoznaju se po data/site.json).
 Ovaj feed (index=active-prematch) vraca samo "preselected" trziste (pobednik). Hendikep i ukupno su u odgovoru
@@ -22,8 +22,6 @@ Upisuju se u svaki mec kao  "player_props":[{"p":"Ime Prezime","s":"pts|reb|ast"
 Ako Superbet imenuje trzista drugacije nego sto parser ocekuje, pokreni:  python fetch_superbet.py --dump
 (snimi sirov odgovor detalja prvog meca u data/superbet_dump.json i ispise sva imena trzista)."""
 import argparse, collections, datetime, json, math, os, random, re, subprocess, sys, time, unicodedata, urllib.request, urllib.error
-
-import quant_model as Q
 
 URL = ("https://production-superbet-offer-rs.freetls.fastly.net/sb-rs/api/v3/sr-Latn-RS/events"
        "?startDate={s}&endDate={e}&index=active-prematch&sports=4")
@@ -559,9 +557,6 @@ def run(a=None):
     if bad:
         sys.exit(f"nepoznata liga u mapiranju: {sorted(set(bad))}; dozvoljene: {list(LEAGUES)}")
     seen = assign(out, diag, overrides)
-    only_lg = getattr(a, "only_lg", None) if a else None
-    if only_lg:
-        out = [r for r in out if r.get("lg") == only_lg]
     hit = collections.Counter(r["comp"] for r in out)
     for cid, lg in overrides.items():
         print(f"  mapiranje {lg} <- tournament_id {cid[1:]}: {hit.get(cid, 0)} mecova sa prepoznatim kvotama")
@@ -603,19 +598,7 @@ def run(a=None):
     try:
         annotate(out, a.analytics if a else AN_DEFAULT, diag)
     except Exception as ex:                          # analitika nikad ne sme da obori preuzimanje kvota
-        print("UPOZORENJE: odmor/rotacija preskocena:", ex)
-    for lg in LEAGUES:
-        league_events = [event for event in out if event.get("lg") == lg]
-        if not league_events:
-            continue
-        try:
-            model_diag = Q.annotate_events(league_events, lg, root=".")
-            diag["quant_mecevi"] += model_diag.get("mecevi_sa_modelom", 0)
-            diag["quant_tipovi"] += model_diag.get("tipova", 0)
-            if model_diag.get("premalo_utakmica"):
-                print(f"  {lg}: quant model ceka najmanje 8 zavrsenih utakmica (ima {model_diag.get('utakmica_u_modelu', 0)})")
-        except Exception as ex:
-            print(f"UPOZORENJE: quant model preskocen za {lg}: {ex}")
+        print("UPOZORENJE: analitika preskocena:", ex)
     if a and a.detail and MKT:                      # sva imena trzista iz detalja po ligi: vidi se sta Superbet zaista nudi za igrace
         os.makedirs("data", exist_ok=True)
         with open(os.path.join("data", "superbet_trzista.txt"), "w", encoding="utf-8") as fh:
@@ -816,16 +799,14 @@ def annotate(feed, leagues, diag):
                     break
 
 
-def write(events, only_lgs=None):
-    """Pise aktuelne kvote, istoriju i objedinjeni tips.json za pregled sajta."""
+def write(events):
+    """Pise po jedan fajl za svaku ligu (samo za lige ciji site.json postoji ili koje imaju mecove). Vraca listu fajlova."""
     by = collections.defaultdict(list)
     for e in events:
         if e.get("lg"):
             by[e["lg"]].append(e)
     files = []
     for lg, c in LEAGUES.items():
-        if only_lgs and lg not in only_lgs:
-            continue
         if not by.get(lg) and lg not in league_data():
             continue                      # liga nije u repou i nema kvota: ne pravim prazan fajl
         os.makedirs(os.path.dirname(c["out"]), exist_ok=True)
@@ -834,62 +815,8 @@ def write(events, only_lgs=None):
             json.dump({"fetched": int(time.time()), "source": "superbet.rs", "league": lg, "events": by.get(lg, [])}, f, ensure_ascii=False, separators=(",", ":"))
         os.replace(tmp, c["out"])
         files.append(c["out"])
-        history = os.path.join(os.path.dirname(c["out"]), "odds_history.jsonl")
-        stamp = int(time.time())
-        with open(history, "a", encoding="utf-8") as fh:
-            for e in by.get(lg, []):
-                if not e.get("b") and not e.get("player_props"):
-                    continue
-                row = {"ts": stamp, "lg": lg, "h": e.get("h"), "a": e.get("a"),
-                       "start": e.get("start"), "b": e.get("b") or [],
-                       "pp": [[p.get("p"), p.get("s"), p.get("l"), p.get("o"), p.get("u"), bool(p.get("main"))]
-                              for p in e.get("player_props") or []]}
-                fh.write(json.dumps(row, ensure_ascii=False, separators=(",", ":")) + "\n")
-        files.append(history)
-        print(f"  {lg}: {len(by.get(lg, []))} meceva, {sum(len(e.get('player_props', [])) for e in by.get(lg, []))} prop linija -> {c['out']} + istorija")
-    files.append(write_tips())
+        print(f"  {lg}: {len(by.get(lg, []))} mecova, {sum(len(e.get('player_props', [])) for e in by.get(lg, []))} prop linija -> {c['out']}")
     return files
-
-
-def write_tips():
-    """Build data/tips.json from the latest per-league odds and model outputs."""
-    # Read every league file so a one-league refresh never erases the others.
-    snapshot = {"version": 1, "updated": int(time.time()), "source": "fetch_superbet.py + quant_model.py",
-                "bankroll_note": "Kelly is a bankroll fraction; stake is calculated in the browser from its current bankroll.",
-                "leagues": {}, "matches": [], "recommendations": []}
-    for lg, cfg in LEAGUES.items():
-        try:
-            with open(cfg["out"], encoding="utf-8") as fh:
-                saved = json.load(fh)
-        except (OSError, ValueError):
-            continue
-        if not isinstance(saved, dict) or not isinstance(saved.get("events"), list):
-            continue
-        snapshot["leagues"][lg] = {"fetched": saved.get("fetched"), "source": saved.get("source"),
-                                   "events": saved["events"]}
-        for event in saved["events"]:
-            row = dict(event)
-            row["lg"] = row.get("lg") or lg
-            snapshot["matches"].append(row)
-            for pick in row.get("tips") or []:
-                try:
-                    ev = float(pick.get("ev"))
-                except (TypeError, ValueError, AttributeError):
-                    continue
-                if ev <= 0:
-                    continue
-                snapshot["recommendations"].append({**pick, "lg": row["lg"], "h": row.get("h"),
-                    "a": row.get("a"), "start": row.get("start"), "match": f"{row.get('h', '?')} - {row.get('a', '?')}"})
-    snapshot["matches"].sort(key=lambda x: str(x.get("start") or ""))
-    snapshot["recommendations"].sort(key=lambda x: float(x.get("ev") or 0), reverse=True)
-    tips_path = os.path.join("data", "tips.json")
-    os.makedirs(os.path.dirname(tips_path), exist_ok=True)
-    tmp = tips_path + ".tmp"
-    with open(tmp, "w", encoding="utf-8") as fh:
-        json.dump(snapshot, fh, ensure_ascii=False, separators=(",", ":"))
-    os.replace(tmp, tips_path)
-    print(f"  objedinjeni prikaz: {len(snapshot['matches'])} meceva, {len(snapshot['recommendations'])} +EV preporuka -> {tips_path}")
-    return tips_path
 
 
 def git(*c):
@@ -986,8 +913,19 @@ def once(a):
     if not mine:
         print("Nista prepoznato ni u jednoj nasoj ligi: ne pisem fajlove.")
         return
-    only_lg = getattr(a, "only_lg", None)
-    files = write(mine, [only_lg] if only_lg else None)
+    try:        # kvantitativni model (tipovi + obrazlozenje); ako lige nemaju box score, rezervni model na rezultatima
+        import quant_model as Q
+        for lg in sorted({e["lg"] for e in mine}):
+            try:
+                dg = Q.annotate_events(mine, lg)
+                if not dg.get("mecevi_sa_modelom"):
+                    dg = Q.annotate_scores(mine, lg)
+                print(f"  model [{lg}]: {dict(dg)}")
+            except Exception as ex:
+                print(f"  model [{lg}] greska: {ex}")
+    except ImportError:
+        print("  quant_model.py nije pronadjen: tipovi iz modela se ne racunaju")
+    files = write(mine)
     if a.push and files:
         push(files)
 
@@ -1007,8 +945,6 @@ if __name__ == "__main__":
     ap.add_argument("--index", default="active-prematch", help="index feeda (npr. active-prematch)")
     ap.add_argument("--dump", action="store_true", help="snimi sirov detalj prvog meca (data/superbet_dump.json) i ispisi imena svih trzista")
     ap.add_argument("--analytics", default=AN_DEFAULT, help="lige za koje se racuna odmor/umor i rotacije (npr. aba,acb); '' = iskljuceno")
-    ap.add_argument("--only-lg", choices=tuple(LEAGUES), help="povuci i upiši samo jednu ligu; ostale odds fajlove ne dira")
-    ap.add_argument("--rebuild-tips", action="store_true", help="napravi data/tips.json iz postojećih odds_superbet.json fajlova bez novog feed poziva")
     ap.add_argument("--push", action="store_true", help="git commit+push samo fajlova sa kvotama")
     a = ap.parse_args()
     for al in a.alias:
@@ -1017,9 +953,6 @@ if __name__ == "__main__":
             LEAGUES[lg.strip()]["names"].append(norm(kw.strip()))
         else:
             sys.exit(f"--alias {al!r}: ocekujem liga=tekst, liga je jedna od {list(LEAGUES)}")
-    if a.rebuild_tips:
-        write_tips()
-        raise SystemExit(0)
     if not a.loop:
         once(a)
     else:

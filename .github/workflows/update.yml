@@ -4,8 +4,15 @@ on:
   push:
     paths:
       - "fetch_acb.py"
+      - "fetch_aba.py"
+      - "fetch_data.py"
+      - "build_site.py"
+      - "fetch_shots.py"
+      - "fetch_team_stats.py"
+      - "sync_data.py"
       - "index.html"
       - "fetch_lnb.py"
+      - "fetch_bbl.py"
       - "fetch_superbet.py"
       - "quant_model.py"
       - "backtest.py"
@@ -42,9 +49,7 @@ jobs:
           key: playwright-chromium-${{ runner.os }}-${{ hashFiles('requirements.txt') }}
       - name: Install Chromium for ACB Live stats
         run: python -m playwright install chromium
-      - run: python fetch_data.py
-      - run: python build_site.py
-      - run: python fetch_shots.py
+      - run: python sync_data.py --all
         continue-on-error: true
       - run: python fetch_pbp.py
         continue-on-error: true
@@ -60,12 +65,6 @@ jobs:
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
       - name: Ucenje tezina (Ridge + CV)
         run: python learn_weights.py
-        continue-on-error: true
-      - run: python fetch_aba.py
-      - name: Scrape ACB calendar and boxscores
-        run: python fetch_acb.py
-      - name: Fetch Superbet odds, quant picks and history
-        run: python fetch_superbet.py --analytics aba,acb,lnb,bbl
         continue-on-error: true
       - name: Commit data
         run: |

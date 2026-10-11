@@ -76,8 +76,11 @@ def main():
             continue
         for kind, ep in (("boxscore", "Boxscore"), ("shots", "Points")):
             target = RAW / f"{kind}_{code}.json"
-            if target.exists() and is_final(target):
-                continue
+            if target.exists():
+                if kind == "boxscore" and is_final(target):
+                    continue
+                if kind == "shots" and target.stat().st_size > 50:
+                    continue
             fetch(f"{kind}_{code}", f"https://live.euroleague.net/api/{ep}",
                   {"gamecode": code, "seasoncode": SEASON}, f"{kind}_{code}.json")
 
