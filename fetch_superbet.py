@@ -10,7 +10,7 @@ Liga meca se odredjuje redom: (1) ime turnira u feedu, (2) mec postoji u raspore
 Pokretanje (iz korena repoa):
   python fetch_superbet.py                  # jedan prolaz
   python fetch_superbet.py --loop 600 --push  # na svojoj masini: svakih ~10 min + git push samo tog fajla
-Svaki prolaz cuva i odds_history.jsonl po ligi; za automatsko osvezavanje lokalno koristi --loop 600 --push.
+Moze i u GitHub Action-u (korak 'python fetch_superbet.py'), ako te njihov feed ne blokira sa tih adresa.
 Ako dobijes 403/429 ili prazan odgovor: STANI, ne zaobilazi. Drzi razmak >= 5 min i proveri uslove koriscenja Superbet-a.
 Hendikep i ukupno se citaju iz detalja meca (events?events=<id>), samo za mecove Evrolige (prepoznaju se po data/site.json).
 Ovaj feed (index=active-prematch) vraca samo "preselected" trziste (pobednik). Hendikep i ukupno su u odgovoru
@@ -22,8 +22,6 @@ Upisuju se u svaki mec kao  "player_props":[{"p":"Ime Prezime","s":"pts|reb|ast"
 Ako Superbet imenuje trzista drugacije nego sto parser ocekuje, pokreni:  python fetch_superbet.py --dump
 (snimi sirov odgovor detalja prvog meca u data/superbet_dump.json i ispise sva imena trzista)."""
 import argparse, collections, datetime, json, math, os, random, re, subprocess, sys, time, unicodedata, urllib.request, urllib.error
-
-import quant_model as Q
 
 URL = ("https://production-superbet-offer-rs.freetls.fastly.net/sb-rs/api/v3/sr-Latn-RS/events"
        "?startDate={s}&endDate={e}&index=active-prematch&sports=4")
@@ -600,19 +598,7 @@ def run(a=None):
     try:
         annotate(out, a.analytics if a else AN_DEFAULT, diag)
     except Exception as ex:                          # analitika nikad ne sme da obori preuzimanje kvota
-        print("UPOZORENJE: odmor/rotacija preskocena:", ex)
-    for lg in LEAGUES:
-        league_events = [event for event in out if event.get("lg") == lg]
-        if not league_events:
-            continue
-        try:
-            model_diag = Q.annotate_events(league_events, lg, root=".")
-            diag["quant_mecevi"] += model_diag.get("mecevi_sa_modelom", 0)
-            diag["quant_tipovi"] += model_diag.get("tipova", 0)
-            if model_diag.get("premalo_utakmica"):
-                print(f"  {lg}: quant model ceka najmanje 8 zavrsenih utakmica (ima {model_diag.get('utakmica_u_modelu', 0)})")
-        except Exception as ex:
-            print(f"UPOZORENJE: quant model preskocen za {lg}: {ex}")
+        print("UPOZORENJE: analitika preskocena:", ex)
     if a and a.detail and MKT:                      # sva imena trzista iz detalja po ligi: vidi se sta Superbet zaista nudi za igrace
         os.makedirs("data", exist_ok=True)
         with open(os.path.join("data", "superbet_trzista.txt"), "w", encoding="utf-8") as fh:
@@ -814,7 +800,7 @@ def annotate(feed, leagues, diag):
 
 
 def write(events):
-    """Pise aktuelne kvote i append-only Superbet snimke za istorijski ROI replay."""
+    """Pise po jedan fajl za svaku ligu (samo za lige ciji site.json postoji ili koje imaju mecove). Vraca listu fajlova."""
     by = collections.defaultdict(list)
     for e in events:
         if e.get("lg"):
@@ -829,19 +815,7 @@ def write(events):
             json.dump({"fetched": int(time.time()), "source": "superbet.rs", "league": lg, "events": by.get(lg, [])}, f, ensure_ascii=False, separators=(",", ":"))
         os.replace(tmp, c["out"])
         files.append(c["out"])
-        history = os.path.join(os.path.dirname(c["out"]), "odds_history.jsonl")
-        stamp = int(time.time())
-        with open(history, "a", encoding="utf-8") as fh:
-            for e in by.get(lg, []):
-                if not e.get("b") and not e.get("player_props"):
-                    continue
-                row = {"ts": stamp, "lg": lg, "h": e.get("h"), "a": e.get("a"),
-                       "start": e.get("start"), "b": e.get("b") or [],
-                       "pp": [[p.get("p"), p.get("s"), p.get("l"), p.get("o"), p.get("u"), bool(p.get("main"))]
-                              for p in e.get("player_props") or []]}
-                fh.write(json.dumps(row, ensure_ascii=False, separators=(",", ":")) + "\n")
-        files.append(history)
-        print(f"  {lg}: {len(by.get(lg, []))} meceva, {sum(len(e.get('player_props', [])) for e in by.get(lg, []))} prop linija -> {c['out']} + istorija")
+        print(f"  {lg}: {len(by.get(lg, []))} mecova, {sum(len(e.get('player_props', [])) for e in by.get(lg, []))} prop linija -> {c['out']}")
     return files
 
 
@@ -939,6 +913,18 @@ def once(a):
     if not mine:
         print("Nista prepoznato ni u jednoj nasoj ligi: ne pisem fajlove.")
         return
+    try:        # kvantitativni model (tipovi + obrazlozenje); ako lige nemaju box score, rezervni model na rezultatima
+        import quant_model as Q
+        for lg in sorted({e["lg"] for e in mine}):
+            try:
+                dg = Q.annotate_events(mine, lg)
+                if not dg.get("mecevi_sa_modelom"):
+                    dg = Q.annotate_scores(mine, lg)
+                print(f"  model [{lg}]: {dict(dg)}")
+            except Exception as ex:
+                print(f"  model [{lg}] greska: {ex}")
+    except ImportError:
+        print("  quant_model.py nije pronadjen: tipovi iz modela se ne racunaju")
     files = write(mine)
     if a.push and files:
         push(files)

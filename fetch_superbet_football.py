@@ -13,11 +13,8 @@ Izlaz po mecu: {"h","a","start","comp","x12":[1,X,2],"ou":[[linija,vise,manje],.
 import argparse, collections, datetime, glob, json, os, random, re, sys, time, unicodedata, urllib.error
 from football_poisson import canon, nrm, load as load_results
 from fetch_superbet import get, events_in, num, line_of, event_id, push, DETAIL, URL
-try: from fetch_superbet import tour_text
-except ImportError: tour_text = lambda ev: ""
 
-from fb_leagues import CUR
-OUT = os.path.join("data", CUR["dir"], "odds_superbet.json")
+OUT = os.path.join("data", "epl", "odds_superbet.json")
 FEED = URL.replace("sports=4", "sports={sp}")
 SKIP = ("poluvreme", "1. pol", "2. pol", "half", "&", " i ", "kombin", "tim ", "tima", "domaćin", "domacin", "gost", "korner", "karton",
         "penal", "azijsk", "strelac", "igrač", "igrac", "tačan rezultat", "tacan rezultat", "dupla", "hendikep", "bez remi", "minut")
@@ -38,9 +35,6 @@ MAX_OTHER, MAX_OUTS = 60, 40
 def kind_of(name):
     m = low(name)
     half = any(s in m for s in HALF)
-    if re.fullmatch(r"oba tima daju gol ili \d\+", m.strip()): return "bttsor"
-    if m.strip() == "oba tima daju gol u bilo kom poluvremenu": return "bttsh"
-    if m.strip() == "tacan rezultat": return "cs"
     if "oba tima daju gol" in m:
         if half: return None
         if re.search(r"&\s*\d\s*\+", m): return "bttsx"
@@ -140,9 +134,7 @@ def parse_fb(ev, diag):
         diag["bez_imena"] += 1
         return None
     x12, ou, btts = {}, collections.defaultdict(dict), {}
-    ou_prio = {}
-    tm_tok = {w for p_ in parts for w in re.split(r"[^a-z0-9]+", low(p_)) if len(w) >= 4}     # reci iz imena klubova
-    X = {"dc": {}, "ah": {}, "ouah": {}, "eh": {}, "range": {}, "bttsx": {}, "htft": {}, "bttsor": {}, "bttsh": None, "cs": {}}
+    X = {"dc": {}, "ah": {}, "ouah": {}, "eh": {}, "range": {}, "bttsx": {}, "htft": {}}
     other = []
     for mk in ev.get("markets") or []:
         mname = mk.get("name", "")
@@ -153,24 +145,6 @@ def parse_fb(ev, diag):
             if L and len(L) <= MAX_OUTS and len(other) < MAX_OTHER:
                 other.append({"m": mname, "o": [[o["c"], o["n"], o["i"][:50], o["p"], lines_of(o["x"], mname)] for o in L]})
             continue
-        if kind == "btts":
-            # Glavno trziste je tacno "Oba tima daju gol". Varijante ("ili preko 3.5", "2+ gola svaki"...) imaju drugacije kvote i ne smeju da ga prepisu.
-            if not re.fullmatch(r"oba tima daju gol\W*(\(\s*gg\s*(/?\s*ng)?\s*\))?", low(mname).strip()):
-                diag["btts_odbaceno:" + mname[:45]] += 1
-                continue
-            if "y" in btts and "n" in btts:
-                continue
-            diag["btts_koristi:" + mname[:45]] += 1
-        prio = 0
-        if kind == "ou":
-            # Glavno trziste je "Ukupno golova" (tacno ime). Sve ostalo sa tim recima (timski ukupni, "ukljucujuci produzetke"...) nije glavno:
-            # ako sadrzi ime kluba odbacujemo ga, a inace moze samo da popuni linije kojih glavno trziste nema.
-            ml = low(mname).strip()
-            exact = bool(re.fullmatch(r"ukupno (broj )?golova( ?\(.*\))?", ml)) and "produz" not in ml
-            if not exact and any(t in ml for t in tm_tok):
-                diag["ou_timski:" + mname[:45]] += 1
-                continue
-            prio = 0 if exact else 1
         if kind in ("x12", "btts", "ou"):
             groups = collections.defaultdict(dict)
             pos = []
@@ -195,11 +169,8 @@ def parse_fb(ev, diag):
             for g in groups.values():
                 if "o" in g and "u" in g:
                     ln = g["o"][1]
-                    if 0.5 <= ln <= 7.5 and (ln * 2) % 1 == 0 and 1.0 <= 1 / g["o"][0] + 1 / g["u"][0] <= 1.2:   # marza van 0-20% = pogresno uparene kvote
-                        if ln not in ou_prio or prio < ou_prio[ln]:
-                            ou[ln] = {"o": g["o"][0], "u": g["u"][0]}
-                            ou_prio[ln] = prio
-                            diag[f"ou_koristi:{mname[:40]}"] += 1
+                    if 0.5 <= ln <= 7.5 and (ln * 2) % 1 == 0:
+                        ou[ln] = {"o": g["o"][0], "u": g["u"][0]}
         elif kind == "dc":
             d = {}
             for o in L:
@@ -241,21 +212,6 @@ def parse_fb(ev, diag):
             for o in L:
                 r_ = rng_of(o)
                 if r_: X["range"][r_] = o["p"]
-        elif kind in ("bttsor", "bttsh"):
-            y = n_ = None
-            for o in L:
-                if o["c"] in ("da", "gg", "yes", "y") or o["n"] in ("da", "gg", "yes"): y = o["p"]
-                elif o["c"] in ("ne", "ng", "no", "n") or o["n"] in ("ne", "ng", "no"): n_ = o["p"]
-            if y is not None and n_ is not None and 1.0 <= 1 / y + 1 / n_ <= 1.2:
-                if kind == "bttsh": X["bttsh"] = [y, n_]
-                else: X["bttsor"][int(re.search(r"(\d)\+", low(mname)).group(1))] = [y, n_]
-        elif kind == "cs":
-            for o in L:
-                for t in (o["n"], o["c"], o["i"]):
-                    m_ = re.fullmatch(r"\s*(\d+)\s*[:\-]\s*(\d+)\s*", str(t))
-                    if m_:
-                        X["cs"][(int(m_.group(1)), int(m_.group(2)))] = o["p"]
-                        break
         elif kind == "bttsx":
             m_ = re.search(r"&\s*(\d)\s*\+", mname)
             y = n_ = None
@@ -270,28 +226,27 @@ def parse_fb(ev, diag):
                 if k: X["htft"][k] = o["p"]
     Xr = [x12["1"], x12["x"], x12["2"]] if all(k in x12 for k in "1x2") else None
     OU = [[l, v["o"], v["u"]] for l, v in sorted(ou.items())]
-    B = [btts["y"], btts["n"]] if "y" in btts and "n" in btts and 1.0 <= 1 / btts["y"] + 1 / btts["n"] <= 1.2 else None
+    B = [btts["y"], btts["n"]] if "y" in btts and "n" in btts else None
     ex = {"dc": [X["dc"]["1x"], X["dc"]["12"], X["dc"]["x2"]] if X["dc"] else None,
           "ah": [[l] + v for l, v in sorted(X["ah"].items())],
           "ouah": [[l] + v for l, v in sorted(X["ouah"].items())],
           "eh": [[l] + v for l, v in sorted(X["eh"].items())],
           "range": [[lo, hi, p] for (lo, hi), p in sorted(X["range"].items())],
           "bttsx": [[t] + v for t, v in sorted(X["bttsx"].items())],
-          "htft": X["htft"] or None, "bttsor": [[t] + v for t, v in sorted(X["bttsor"].items())], "bttsh": X["bttsh"],
-          "cs": [[h_, a_, p_] for (h_, a_), p_ in sorted(X["cs"].items())], "other": other}
+          "htft": X["htft"] or None, "other": other}
     if not (Xr or OU or B or any(ex[k] for k in ex if k != "other")):
         diag["bez_kvota"] += 1
         return None
     ids = ids_of(ev)
     tid = next((v for k, v in ids.items() if re.search("tournament", k, re.I)), "")
-    return {"h": parts[0].strip(), "a": parts[1].strip(), "start": f.get("utc_date"), "comp": f"t{tid}", "ids": ids, "tt": tour_text(ev),
+    return {"h": parts[0].strip(), "a": parts[1].strip(), "start": f.get("utc_date"), "comp": f"t{tid}", "ids": ids,
             "x12": Xr, "ou": OU, "btts": B, "eid": event_id(ev), **ex}
 
 
 def merge(r, d):
     ou = {x[0]: x for x in r["ou"] + d["ou"]}
     r.update(x12=r["x12"] or d["x12"], btts=r["btts"] or d["btts"], ou=[ou[k] for k in sorted(ou)])
-    for k in ("dc", "ah", "ouah", "eh", "range", "bttsx", "htft", "bttsor", "bttsh", "cs", "other"):   # detalj ima sva trzista, pa ima prednost
+    for k in ("dc", "ah", "ouah", "eh", "range", "bttsx", "htft", "other"):   # detalj ima sva trzista, pa ima prednost
         if d.get(k): r[k] = d[k]
     return r
 
@@ -304,12 +259,8 @@ def epl_teams():
     """Klubovi tekuce Premier lige iz data/epl/E0_*.csv (football_poisson.py --download); prazan skup ako fajla nema."""
     global _known
     if _known is None:
-        sh = os.path.join("data", CUR["dir"], "statshub_data.json")      # klubovi tekuce PL iz Statshub-a (statshub_football.py); inace stari CSV
-        if os.path.exists(sh):
-            _known = set(json.load(open(sh, encoding="utf-8")).get("teams", {}))
-        else:
-            fs = sorted(glob.glob(os.path.join("data", CUR["dir"], CUR["csv"] + "_*.csv")))
-            _known = {m[k] for m in load_results(fs[-1:]) for k in ("h", "a")} if fs else set()
+        fs = sorted(glob.glob(os.path.join("data", "epl", "E0_*.csv")))
+        _known = {m[k] for m in load_results(fs[-1:]) for k in ("h", "a")} if fs else set()
     return _known
 
 
@@ -330,38 +281,6 @@ def show_sample(raw):
             print("    trziste:", mk.get("name"), "|", od)
         if not ev.get("markets"):
             print("    (nema polja markets; kljucevi:", list(ev)[:12], ")")
-
-
-CUP_EXTRA_NOT = re.compile(r"\beal\b|\bafc\b|\bcaf\b|concacaf|conmebol|\bofc\b|e ?comp|battle|\bgt\b|utakmice na dan|asian|azij|afric|volta|\bu ?\d\d\b|\((z|w)\)|\bzene\b|\bwomen\b|fifa|svet", re.I)
-
-
-def cup_ids(code):
-    """Id-jevi turnira iz Superbet stabla ciji naziv odgovara evropskom takmicenju (npr. 'Liga Šampiona', 'UEFA - Liga Šampiona'), bez kvalifikacija,
-    zena, azijskih/africkih/e-sport 'Liga Sampiona' i slicnih. Snima ih i u data/superbet_comps_fb.json da ih koristi i fb_live.py."""
-    from fb_leagues import CUP_TXT, CUP_NOT
-    rx, nx = re.compile(CUP_TXT[code], re.I), re.compile(CUP_NOT, re.I)
-    found = {}
-    def walk(o, path=""):
-        if isinstance(o, dict):
-            ln = o.get("localNames")
-            if isinstance(ln, dict) and ".tournaments" in path:
-                nm = " / ".join(str(v) for v in ln.values()); l = low(nm)
-                if rx.search(l) and not nx.search(l) and not CUP_EXTRA_NOT.search(l):
-                    if code == "el" and re.search(r"konferenc|conference", l): return
-                    if o.get("id") not in (None, ""): found[str(o["id"])] = nm
-            for k, v in o.items(): walk(v, f"{path}.{k}")
-        elif isinstance(o, list):
-            for i, v in enumerate(o): walk(v, f"{path}[{i}]")
-    walk(get(STRUCT))
-    plain = {i: n for i, n in found.items() if not re.search(r"\bgr\.? ?[a-h0-9]\b", low(n))}   # od ove sezone je jedna tabela (faza lige): 'Gr.A..H' su stare grupe/drugi turniri
-    if plain: found = plain
-    try:
-        fn = os.path.join("data", "superbet_comps_fb.json")
-        cur = json.load(open(fn, encoding="utf-8")) if os.path.exists(fn) else {}
-        if found and sorted(map(str, cur.get(code) or [])) != sorted(found):
-            cur[code] = sorted(found); os.makedirs("data", exist_ok=True); json.dump(cur, open(fn, "w", encoding="utf-8"), ensure_ascii=False)
-    except Exception: pass
-    return found
 
 
 def diag_ids(allv):
@@ -465,27 +384,13 @@ def once(a):
         print("Neprepoznato:", diag.most_common(8))
         return
     explicit = a.tournament or a.category or a.comp
-    if CUR.get("cup") and not explicit:
-        # evropski kup: turnir se prepoznaje po nazivu turnira iz feeda (ne po klubovima, jer bi inace usli i domaci ligaski mecevi istih klubova)
-        from fb_leagues import CUP_TXT, CUP_NOT
-        rx, nx = re.compile(CUP_TXT[CUR["code"]], re.I), re.compile(CUP_NOT, re.I)
-        mine = lambda r: bool(rx.search(r.get("tt") or "")) and not nx.search(r.get("tt") or "") and not BAD.search(r["h"]) and not BAD.search(r["a"])
-        if CUR["code"] == "el": mine = (lambda f: (lambda r: f(r) and not re.search(r"konferenc|conference", r.get("tt") or "", re.I)))(mine)
-        ids_ = {}
-        try: ids_ = cup_ids(CUR["code"])
-        except Exception as ex_: print("  stablo turnira nije procitano:", ex_)
-        by_id = lambda r: any(v in ids_ for k, v in r["ids"].items() if re.search("tournament", k, re.I)) and not BAD.search(r["h"]) and not BAD.search(r["a"])
-        evs = [r for r in allv if mine(r) or by_id(r)]
-        if ids_: print(f"  turniri iz Superbet stabla ({len(ids_)}): " + "; ".join(f"{i} {n}" for i, n in list(ids_.items())[:8]) + f" -> mečeva u feedu: {len(evs)}")
-        if not evs:
-            print(f"Nijedan meč u feedu nema turnir '{CUR['name']}' u nazivu (feed ima {len(allv)} fudbalskih). Turnire vidiš sa: py fetch_superbet_football.py --league {CUR['code']} --struct ; zatim --comp <id>")
-    elif explicit:
+    if explicit:
         if a.tournament: hit = lambda r: any(v == str(a.tournament) for k, v in r["ids"].items() if re.search("tournament", k, re.I))
         elif a.category: hit = lambda r: any(v == str(a.category) for k, v in r["ids"].items() if re.search("categor", k, re.I))
         else: hit = lambda r: str(a.comp) in r["ids"].values()
         evs = [r for r in allv if hit(r)]
         if a.category or a.clubs:       # kategorija "Engleska" ima i Championship, kupove, zenske... pa dodatno filtriramo po klubovima
-            if not epl_teams(): print("Upozorenje: nema data/epl/statshub_data.json (pokreni statshub_football.py), pa nema filtera po klubovima.")
+            if not epl_teams(): print("Upozorenje: nema data/epl/E0_*.csv (pokreni football_poisson.py --download), pa nema filtera po klubovima.")
             evs = [r for r in evs if club_ok(r) is not False]
     elif epl_teams():
         evs = [r for r in allv if club_ok(r)]
@@ -504,7 +409,7 @@ def once(a):
         diag["detalj_ok" if ds else "detalj_prazan"] += 1
         if ds: merge(r, ds[0])
     for r in evs:
-        r.pop("eid", None); r.pop("ids", None); r.pop("tt", None)
+        r.pop("eid", None); r.pop("ids", None)
     print(f"{datetime.datetime.now():%H:%M:%S} comp {comp}: {len(evs)} mecova (od {len(allv)} fudbalskih), detalj {len(todo)}")
     for r in evs[:20]:
         print(f"  {r['h']} - {r['a']} | {r['start']} | 1X2 {r['x12']} | ukupno {len(r['ou'])} lin | GG/NG {r['btts']} | DC {bool(r.get('dc'))} AH {len(r.get('ah') or [])} AU {len(r.get('ouah') or [])} EH {len(r.get('eh') or [])} rasp {len(r.get('range') or [])} G&{len(r.get('bttsx') or [])} HT/FT {len(r.get('htft') or {})} ostalo {len(r.get('other') or [])}")
@@ -512,37 +417,18 @@ def once(a):
     if bad: print("Neprepoznato:", bad)
     if not evs: return
     os.makedirs(os.path.dirname(OUT), exist_ok=True)
-    unk = {}
-    for r in evs:                                   # sva trzista koja jos ne razumemo: ime, broj mecova, primer izlaza (kod, ime, info, kvota, linija)
-        for o in r.get("other") or []:
-            u = unk.setdefault(o["m"], {"mecova": 0, "primer": o["o"][:12]})
-            u["mecova"] += 1
-    if unk:
-        with open(os.path.join(os.path.dirname(OUT), "unknown_markets.json"), "w", encoding="utf-8") as fh:
-            json.dump(dict(sorted(unk.items(), key=lambda kv: -kv[1]["mecova"])), fh, ensure_ascii=False, indent=1)
-        print(f"Nepoznatih trzista: {len(unk)} (sva imena + primer izlaza: {os.path.join(os.path.dirname(OUT), 'unknown_markets.json')})")
     with open(OUT + ".tmp", "w", encoding="utf-8") as fh:
-        json.dump({"fetched": int(time.time()), "source": "superbet.rs", "league": CUR["code"], "comp": comp, "events": evs}, fh, ensure_ascii=False, separators=(",", ":"))
+        json.dump({"fetched": int(time.time()), "source": "superbet.rs", "league": "epl", "comp": comp, "events": evs}, fh, ensure_ascii=False, separators=(",", ":"))
     os.replace(OUT + ".tmp", OUT)
-    out_files = [OUT]
-    try:                                            # Drop tracker: snimak kvota + kretanje (fb_odds_track.py)
-        import fb_odds_track
-        mv = fb_odds_track.record(os.path.dirname(OUT), evs)
-        sh = [k for k, v in mv.items() if v["sharp"]]
-        print(f"Kretanje kvota: {len(mv)} meceva sa istorijom, {len(sh)} izrazitih pomeranja" + (": " + "; ".join(sh[:5]) if sh else ""))
-        out_files += [os.path.join(os.path.dirname(OUT), f) for f in ("odds_history.json", "odds_moves.json")]
-    except Exception as ex:
-        print("Drop tracker preskocen:", ex)
-    if a.push: push(out_files)
+    if a.push: push([OUT])
 
 
 if __name__ == "__main__":
     ap = argparse.ArgumentParser()
-    ap.add_argument("--league", default="epl", help="epl | laliga")
     ap.add_argument("--loop", type=int, default=0, help="sekundi izmedju prolaza (min 300)")
     ap.add_argument("--probe", action="store_true", help="ispisi sports id -> primeri mecova (nadji id za fudbal)")
     ap.add_argument("--tournaments", action="store_true", help="spisak svih turnira (tournament_id, broj mecova, primeri) za izabrani sport")
-    ap.add_argument("--struct", nargs="?", const=CUR["struct"], default="", help="trazi turnire po imenu u stablu (regex), npr. --struct \"premier|engleska\"")
+    ap.add_argument("--struct", nargs="?", const="premier|premijer|engleska|england|fudbal|football", default="", help="trazi turnire po imenu u stablu (regex), npr. --struct \"premier|engleska\"")
     ap.add_argument("--sports", default="5", help="id sporta u feedu (fudbal = 5, proveri sa --probe)")
     ap.add_argument("--tournament", default="", help="tournament_id Premier lige, npr. 106 (iz --struct: .data.tournaments)")
     ap.add_argument("--category", default="", help="id kategorije, npr. 45 = cela Engleska; automatski dodaje filter po klubovima Premier lige")

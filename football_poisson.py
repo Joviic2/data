@@ -1,9 +1,7 @@
 #!/usr/bin/env python3
 """Premier liga: Poissonov model (Maher, opciono Dixon-Coles) + EV protiv Superbet kvota.
 
-IZVOR (podrazumevano): Statshub preko statshub_football.py -> data/epl/statshub_data.json (rezultati svih takmicenja, xG, povrede, odmor, forma, stil, H2H).
-  python statshub_football.py ; python football_poisson.py --backtest 80 (izaberi --beta) ; python football_poisson.py --beta 0.5
-Stari izvor (--source csv): football-data.co.uk (E0.csv, kolone Date,HomeTeam,AwayTeam,FTHG,FTAG).
+Podaci o rezultatima: football-data.co.uk (E0.csv, kolone Date,HomeTeam,AwayTeam,FTHG,FTAG).
   python football_poisson.py --download                 # skida tekucu i proslu sezonu u data/epl/ (ili stavi CSV sam)
   python football_poisson.py                            # predikcije za meceve iz data/epl/odds_superbet.json + EV
   python football_poisson.py --match "Arsenal,Chelsea"  # samo model, bez kvota
@@ -12,19 +10,12 @@ Model: gol-ocekivanja  lamH = mu*H*att[dom]*def[gost],  lamA = mu*att[gost]*def[
     sto je bitno rano u sezoni; proslosezonski podaci popunjavaju prazninu, a novajlije imaju samo ovosezonske.
   - --rho je Dixon-Coles korekcija za male rezultate (0 = cist Poisson).
 EV: p = w*model + (1-w)*tržište bez marže (Superbet kvote jedne kladionice nisu pouzdana referenca), EV = p*kvota-1.
-Trzista: samo 1X2, Golovi 1.5/2.5/3.5 i GG/NG (sve ostalo se ignorise).
 Ovo je statisticki model bez povreda, sastava i rotacije; EV je procena, ne garancija."""
 import argparse, csv, difflib, glob, io, json, math, os, re, sys, unicodedata, urllib.request
-from fb_leagues import CUR
-try:
-    import fb_factors as FX
-except ImportError:
-    FX = None
 from datetime import date, datetime
 
-FD = "https://www.football-data.co.uk/mmz4281/{s}/" + CUR["csv"] + ".csv"
-D = os.path.join("data", CUR["dir"])
-OU_LINES = (1.5, 2.5, 3.5)
+FD = "https://www.football-data.co.uk/mmz4281/{s}/E0.csv"
+D = os.path.join("data", "epl")
 ODDS, OUT = os.path.join(D, "odds_superbet.json"), os.path.join(D, "predictions.json")
 # kanonska imena = imena iz football-data (bez dijakritika, malim slovima, bez apostrofa); levo su varijante iz drugih izvora
 ALIAS = {"manchester city": "man city", "mancester siti": "man city", "manchester united": "man united", "man utd": "man united",
@@ -37,48 +28,15 @@ ALIAS = {"manchester city": "man city", "mancester siti": "man city", "mancheste
          "liverpul": "liverpool", "fulam": "fulham", "west bromwich albion": "west brom", "ipswich town": "ipswich"}
 
 
-ALIAS.update(CUR["alias"])
-try:                                                  # UEFA: zajednicki recnik imena klubova (Statshub / Superbet / srpski prepisi) iz svih liga
-    import fb_eu
-    if fb_eu.is_cup(CUR): ALIAS.update({nrm_k: v for nrm_k, v in fb_eu.eu_alias().items()})
-except ImportError:
-    fb_eu = None
-
-
 def nrm(s):
     s = "".join(c for c in unicodedata.normalize("NFD", str(s).lower()) if unicodedata.category(c) != "Mn")
     return re.sub(r"\s+", " ", re.sub(r"\b(fc|afc|cf)\b", " ", re.sub(r"[^a-z0-9 ]", "" if "'" in s else " ", s.replace("'", "")))).strip()
 
 
-CUP = {}   # popunjava cup_load() za Ligu sampiona/Evrope/Konferencije: {"M": {liga: utakmice}, "alias": {liga: {...}}, "league_of": {kljuc: liga}, "strength": {...}}
-
-
-def canon_cup(name, known):
-    """Ime iz Superbet-a -> kljuc ekipe iz jedne od domacih liga (feeders). Svaka liga ima svoje aliase; ekipe iz liga koje nemamo vracaju None."""
-    n0 = nrm(name)
-    for L, al in CUP["alias"].items():
-        n = al.get(n0, n0)
-        if n in known and CUP["league_of"].get(n) == L: return n
-    for L, al in CUP["alias"].items():
-        n = al.get(n0, n0)
-        ks = [k for k in known if CUP["league_of"].get(k) == L]
-        pre = sorted((k for k in ks if len(k) >= 4 and (n.startswith(k + " ") or k.startswith(n + " "))), key=len, reverse=True)
-        if pre and (len(pre) == 1 or len(pre[0]) > len(pre[1])): return pre[0]
-    best = None
-    for L, al in CUP["alias"].items():
-        n = al.get(n0, n0)
-        m = difflib.get_close_matches(n, [k for k in known if CUP["league_of"].get(k) == L], 1, 0.88)
-        if m and (best is None or difflib.SequenceMatcher(None, n, m[0]).ratio() > best[0]): best = (difflib.SequenceMatcher(None, n, m[0]).ratio(), m[0])
-    return best[1] if best else None
-
-
 def canon(name, known):
-    if CUP: return canon_cup(name, known)
     n = nrm(name)
     n = ALIAS.get(n, n)
     if n in known: return n
-    pre = sorted((k for k in known if n.startswith(k + " ") or k.startswith(n + " ")), key=len, reverse=True)   # "hull city" -> "hull", "ipswich town" -> "ipswich"
-    if pre and (len(pre) == 1 or len(pre[0]) > len(pre[1])): return pre[0]
     m = difflib.get_close_matches(n, list(known), 1, 0.75)
     return m[0] if m else None
 
@@ -106,7 +64,7 @@ def load(files):
 
 
 def fit(M, today, halflife=180.0, k=4.0):
-    w = [0.5 ** (max(0, (today - m["d"]).days) / halflife) * m.get("w", 1.0) for m in M]
+    w = [0.5 ** (max(0, (today - m["d"]).days) / halflife) for m in M]
     T = sorted({m["h"] for m in M} | {m["a"] for m in M})
     W, Gh, Ga = sum(w), sum(x * m["hg"] for x, m in zip(w, M)), sum(x * m["ag"] for x, m in zip(w, M))
     l0, mu, H = (Gh + Ga) / (2 * W), Ga / W, Gh / Ga
@@ -151,14 +109,9 @@ def probs(G):
     return {"x12": [p1, px, 1 - p1 - px], "over": over, "btts": sum(G[i][j] for i in range(1, n) for j in range(1, n))}
 
 
-def lam_of(mod, h, a):
-    """Osnovna gol-ocekivanja (bez multiplikatora): domacin, gost."""
-    return mod["mu"] * mod["H"] * mod["att"].get(h, 1.0) * mod["def"].get(a, 1.0), mod["mu"] * mod["att"].get(a, 1.0) * mod["def"].get(h, 1.0)
-
-
-def predict(mod, h, a, rho, mh=1.0, ma=1.0):
-    lh = mod["mu"] * mod["H"] * mod["att"].get(h, 1.0) * mod["def"].get(a, 1.0) * mh
-    la = mod["mu"] * mod["att"].get(a, 1.0) * mod["def"].get(h, 1.0) * ma
+def predict(mod, h, a, rho):
+    lh = mod["mu"] * mod["H"] * mod["att"].get(h, 1.0) * mod["def"].get(a, 1.0)
+    la = mod["mu"] * mod["att"].get(a, 1.0) * mod["def"].get(h, 1.0)
     G = grid(lh, la, rho)
     return lh, la, G, probs(G)
 
@@ -201,182 +154,15 @@ def fair(odds):
     return [1 / o / s for o in odds]
 
 
-# ======================= STATSHUB: ucitavanje, xG, kontekst (povrede, odmor, forma, stil, H2H), backtest =======================
-SH = os.path.join(D, "statshub_data.json")
-
-
-def load_statshub(path=SH, dom_w=1.0):
-    """(M, SD): M = utakmice u istom formatu kao load() + xh/xa (xG) + ts; SD = ceo JSON (profili timova).
-    dom_w: samo za UEFA (SD["cup"]): tezina NE-evropskih meceva (domace lige protivnika) pri ucenju snage; evropske utakmice imaju tezinu 1."""
-    SD = json.load(open(path, encoding="utf-8"))
-    M = [{"d": datetime.strptime(m["d"], "%Y-%m-%d").date(), "ts": m["ts"], "h": m["h"], "a": m["a"], "hg": m["hg"], "ag": m["ag"], "xh": m.get("xh"), "xa": m.get("xa"),
-          "w": 1.0 if (not SD.get("cup") or m.get("eu")) else dom_w} for m in SD["matches"]]
-    return M, SD
-
-
-def cup_load(beta):
-    """Evropska takmicenja nemaju svoj Statshub fajl: snaga ekipa se uci iz domacih liga (CUR['feeders'], data/<liga>/statshub_data.json), a razlika u kvalitetu
-    liga je CUR['strength'] (pretpostavka, menja se u fb_leagues.py). Vraca (M, SD) spojene preko svih liga koje imaju podatke."""
-    from fb_leagues import LEAGUES
-    Mall, teams, matches, bylg, alias, lg_of, used = [], {}, [], {}, {}, {}, []
-    for L in CUR.get("feeders") or []:
-        path = os.path.join("data", L, "statshub_data.json")
-        if not os.path.exists(path): print(f"  (nema {path}: ekipe iz lige '{L}' se preskacu; pokreni osvezi.bat za tu ligu)"); continue
-        M, SD_ = load_statshub(path)
-        bylg[L] = eff(M, beta)
-        al = dict(ALIAS) if L == "epl" else {}
-        al.update(LEAGUES[L].get("alias") or {})
-        alias[L] = {nrm(k): nrm(v) for k, v in al.items()}
-        for k, v in (SD_.get("teams") or {}).items(): teams[k] = v; lg_of[k] = L
-        Mall += M; matches += SD_["matches"]; used.append(L)
-    if not used: sys.exit("Nijedna domaca liga nema data/<liga>/statshub_data.json: prvo pokreni osvezi.bat za epl/laliga/sa/bl/l1.")
-    CUP.update(M=bylg, alias=alias, league_of=lg_of, strength=CUR.get("strength") or {})
-    print(f"Evropsko takmicenje: snaga ekipa iz liga {', '.join(used)} (jacina liga: " + ", ".join(f"{L} {CUP['strength'].get(L, 1.0):g}" for L in used) + ")")
-    return Mall, {"updated": datetime.now().isoformat(timespec="seconds"), "teams": teams, "matches": matches}
-
-
-def fit_any(M, today, halflife, k):
-    """Obican fit; za evropska takmicenja fit po domacoj ligi pa spajanje uz jacinu lige (napad * s, odbrana / s)."""
-    if not CUP: return fit(M, today, halflife, k)
-    att, dfn, mus, Hs = {}, {}, [], []
-    for L, Ml in CUP["M"].items():
-        if len(Ml) < 20: continue
-        m_ = fit(Ml, today, halflife, k); s_ = CUP["strength"].get(L, 1.0)
-        for t, v in m_["att"].items(): att[t] = v * s_
-        for t, v in m_["def"].items(): dfn[t] = v / s_
-        mus.append(m_["mu"]); Hs.append(m_["H"])
-    return {"att": att, "def": dfn, "mu": sum(mus) / len(mus), "H": sum(Hs) / len(Hs)}
-
-
-def eff(M, beta):
-    """Efektivni golovi = beta*xG + (1-beta)*golovi (samo gde xG postoji): xG je manje sumovit pokazatelj snage od golova."""
-    if not beta: return M
-    return [{**m, "hg": beta * m["xh"] + (1 - beta) * m["hg"], "ag": beta * m["xa"] + (1 - beta) * m["ag"]} if m.get("xh") is not None else m for m in M]
-
-
-def h2h(M, h, a, n=6):
-    r = sorted((m for m in M if {m["h"], m["a"]} == {h, a}), key=lambda m: m["ts"])[-n:]
-    if not r: return None
-    gh = sum(m["hg"] if m["h"] == h else m["ag"] for m in r); ga = sum(m["ag"] if m["h"] == h else m["hg"] for m in r)
-    return {"n": len(r), "h_win": sum(1 for m in r if (m["hg"] > m["ag"]) == (m["h"] == h) and m["hg"] != m["ag"]), "draw": sum(1 for m in r if m["hg"] == m["ag"]),
-            "gh": gh, "ga": ga, "avg_goals": round((gh + ga) / len(r), 2), "last": [f"{m['d']} {m['h']} {m['hg']}:{m['ag']} {m['a']}" for m in r[-3:]]}
-
-
-def team_ctx(SD, key_, start_ms, att_k, def_k, rest_pen, inj_min=450.0):
-    """Multiplikatori za ocekivane golove ekipe: napad (povrede igraca koji nose xG+xA, kratak odmor) i odbrana (nedostupni defanzivci/golman)."""
-    t = (SD.get("teams") or {}).get(key_)
-    if not t: return {"att": 1.0, "conc": 1.0, "rest": None, "out": [], "games": 0}
-    byid = {p["id"]: p for p in t.get("players") or []}
-    att_s = def_s = 0.0; out = []
-    for u in t.get("unav") or []:
-        st = str(u.get("status") or "").lower()
-        w = 1.0 if st == "out" else 0.4 if st in ("doubtful", "questionable", "uncertain") else 0.0
-        p = byid.get(u.get("id"))
-        if not w or not p: continue
-        att_s += w * p["att"] * (min(1.0, p["min10"] / inj_min) if inj_min else 1.0)   # dugorocno povredjeni (nisu igrali poslednjih 10) vec su u formi tima: ne racunaj dvaput
-        if p["pos"] in ("D", "G"): def_s += w * min(1.0, p["min10"] / 900.0)
-        out.append({"n": u.get("n"), "pos": u.get("pos"), "status": st, "att": p["att"], "min10": p["min10"], "reason": u.get("reason")})
-    rest = round((start_ms / 1000 - t["last"]["ts"]) / 86400, 1) if t.get("last") and start_ms else None
-    att = 1 - att_k * min(att_s, 0.35)
-    if rest is not None and 0 <= rest < 3.5: att *= 1 - rest_pen
-    return {"att": round(att, 4), "conc": round(1 + def_k * min(def_s, 2.0), 4), "rest": rest, "out": out, "games": t.get("games", 0),
-            "form": t.get("form"), "style": (t.get("style") or {}).get("labels"), "xg": (t.get("style") or {}).get("xg"), "next": t.get("next")}
-
-
-def backtest(M, K, betas, a):
-    """Walk-forward: za svaku od poslednjih K utakmica uci samo iz ranijih; log-loss za 1X2 i preko 2.5. Manje = bolje."""
-    ms = sorted(M, key=lambda m: m["ts"]); test = ms[-K:]
-    print(f"\nBACKTEST: {len(test)} utakmica, halflife {a.halflife}, k {a.k}, rho {a.rho}")
-    for beta in betas:
-        l12 = lo = n = 0
-        for m in test:
-            tr = [x for x in ms if x["ts"] < m["ts"] - 3600]
-            if len(tr) < 40: continue
-            mod = fit(eff(tr, beta), m["d"], a.halflife, a.k)
-            if m["h"] not in mod["att"] or m["a"] not in mod["att"]: continue
-            _, _, G, P = predict(mod, m["h"], m["a"], a.rho)
-            res = 0 if m["hg"] > m["ag"] else 1 if m["hg"] == m["ag"] else 2
-            l12 -= math.log(max(1e-9, P["x12"][res]))
-            po = P["over"](2); lo -= math.log(max(1e-9, po if m["hg"] + m["ag"] > 2 else 1 - po)); n += 1
-        if n: print(f"  beta (udeo xG) {beta:<4}: log-loss 1X2 {l12 / n:.4f} | preko/ispod 2.5 {lo / n:.4f}   (n={n})")
-    print("  Nasumicno (1/3,1/3,1/3) daje 1.0986 za 1X2; trziste obicno ~0.97-1.00. Uzmi beta sa najmanjim log-lossom, ali samo ako je razlika veca od sumova (n < 100 je mali uzorak).")
-
-
-def backtest_cfg(M, K, a, beta):
-    """Walk-forward: poredi udeo kratkog modela (recent-w) i momentum (mom-k). Ispisuje log-loss i PRISTRASNOST: srednja predvidjena verovatnoca 'preko 2.5' minus stvarna ucestalost.
-    Negativna pristrasnost = model gura Under (potcenjuje golove); preporuceni --lam-scale je odnos stvarnog i predvidjenog prosecnog broja golova."""
-    if not FX: print("fb_factors.py nije pored football_poisson.py"); return
-    ms = sorted(M, key=lambda m: m["ts"]); test = ms[-K:]
-    cfgs = [(0.0, 0.0, 0.0), (0.3, 0.0, 0.0), (0.0, 0.25, 0.0), (0.3, 0.25, 0.0), (0.3, 0.25, a.opp_k), (0.5, 0.25, 0.0), (0.3, 0.5, 0.0)]
-    print(f"\nBACKTEST KONFIGURACIJA: {len(test)} utakmica, beta {beta}, halflife {a.halflife}/{a.halflife_short}")
-    print(f"  {'recent-w':>8} {'mom-k':>6} {'opp-k':>6} | {'LL 1X2':>7} {'LL o2.5':>8} | {'P(o2.5)':>8} {'stvarno':>8} {'bias':>7} | {'gol pred':>8} {'gol stv':>8} | n")
-    base_scale = None
-    for rw, mk, ok in cfgs:
-        l12 = lo = n = 0; po_s = ov_s = tp = ta = 0.0
-        for m in test:
-            tr = [x for x in ms if x["ts"] < m["ts"] - 3600]
-            if len(tr) < 40: continue
-            trE = eff(tr, beta); ml = fit(trE, m["d"], a.halflife, a.k)
-            if m["h"] not in ml["att"] or m["a"] not in ml["att"]: continue
-            msh = fit(trE, m["d"], a.halflife_short, a.k_short) if rw else None
-            def lam(h_, g_, ml=ml, msh=msh, rw=rw):
-                x, y = lam_of(ml, h_, g_)
-                if msh:
-                    sx, sy = lam_of(msh, h_, g_); x, y = (1 - rw) * x + rw * sx, (1 - rw) * y + rw * sy
-                return x, y
-            lh, la = lam(m["h"], m["a"])
-            if mk:
-                Pm = dict(FX.PARAMS, mom_k=mk, opp_k=ok)
-                mh_, ma_ = FX.momentum(tr, beta, lam, m["h"], Pm), FX.momentum(tr, beta, lam, m["a"], Pm)
-                lh *= mh_["att"] * ma_["conc"] * ((1 + Pm["collapse_k"]) if ma_["collapse"] else 1)
-                la *= ma_["att"] * mh_["conc"] * ((1 + Pm["collapse_k"]) if mh_["collapse"] else 1)
-            G = grid(lh * a.lam_scale, la * a.lam_scale, a.rho); Pr = probs(G)
-            res = 0 if m["hg"] > m["ag"] else 1 if m["hg"] == m["ag"] else 2
-            l12 -= math.log(max(1e-9, Pr["x12"][res]))
-            po = Pr["over"](2); ov = m["hg"] + m["ag"] > 2
-            lo -= math.log(max(1e-9, po if ov else 1 - po)); po_s += po; ov_s += ov; tp += lh * a.lam_scale + la * a.lam_scale; ta += m["hg"] + m["ag"]; n += 1
-        if n:
-            if base_scale is None: base_scale = ta / tp
-            print(f"  {rw:>8} {mk:>6} {ok:>6} | {l12 / n:7.4f} {lo / n:8.4f} | {po_s / n:8.3f} {ov_s / n:8.3f} {(po_s - ov_s) / n:+7.3f} | {tp / n:8.2f} {ta / n:8.2f} | {n}")
-    if base_scale: print(f"\n  Osnovna konfiguracija: stvarni/predvidjeni golovi = {base_scale:.3f} -> --lam-scale {base_scale:.3f} ispravlja sistematsku pristrasnost (ako je dalje od 1.0 za vise od ~3%).")
-    print("  Biraj konfiguraciju sa najmanjim log-lossom, ali samo ako je razlika veca od suma (n < 150 je mali uzorak). Stil, sudija, motivacija i vreme se ne mogu backtestovati (nema istorije).")
-
-
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--league", default="epl", help="epl | laliga")
     ap.add_argument("--download", action="store_true", help="skini E0.csv za tekucu i proslu sezonu u data/epl/")
     ap.add_argument("--seasons", default="", help="npr. 2627,2526 (podrazumevano tekuca + prosla)")
     ap.add_argument("--match", default="", help='"Domacin,Gost" bez kvota')
     ap.add_argument("--halflife", type=float, default=180.0); ap.add_argument("--k", type=float, default=4.0)
     ap.add_argument("--rho", type=float, default=0.0); ap.add_argument("--w", type=float, default=0.35, help="tezina modela u odnosu na trziste")
     ap.add_argument("--h1", type=float, default=0.45, help="udeo golova u 1. poluvremenu (za HT/FT)"); ap.add_argument("--min-ev", type=float, default=0.03); ap.add_argument("--all", action="store_true", help="prikazi sve izbore, ne samo EV iznad praga")
-    ap.add_argument("--keep-sus", action="store_true", help="zadrzi i sumnjive izbore (model i trziste se razilaze >15 pp ili sirovi EV >25%%); podrazumevano se izbacuju")
-    ap.add_argument("--source", choices=["auto", "statshub", "csv"], default="auto", help="izvor rezultata: Statshub (xG, povrede, forma...) ili stari football-data CSV")
-    ap.add_argument("--refresh", action="store_true", help="prvo osvezi Statshub podatke (statshub_football.py)")
-    ap.add_argument("--offline", action="store_true", help="uz --refresh: samo iz kesa")
-    ap.add_argument("--beta", type=float, default=0.5, help="udeo xG u 'efektivnim golovima' pri ucenju snage ekipa (0 = samo golovi); odredi ga sa --backtest")
-    ap.add_argument("--att-k", type=float, default=0.5, help="koliko se napad smanjuje po udelu xG+xA koji nose nedostupni igraci (0 = ne primenjuj povrede)")
-    ap.add_argument("--def-k", type=float, default=0.06, help="povecanje primljenih golova po nedostupnom bekovi/golmanu (udeo minuta)")
-    ap.add_argument("--rest-pen", type=float, default=0.02, help="umanjenje napada kad je odmor manji od 3.5 dana (0 = iskljuceno)")
-    ap.add_argument("--backtest", type=int, default=0, metavar="K", help="walk-forward na poslednjih K utakmica, poredi beta vrednosti (npr. --backtest 80)")
-    ap.add_argument("--betas", default="0,0.25,0.5,0.75,1")
-    PD = FX.PARAMS if FX else {}
-    ap.add_argument("--inj-min", type=float, default=450.0, help="minuta u poslednjih 10 mecova za koje se igracev izostanak racuna u punom iznosu (0 = stari nacin; manje = dugorocno povredjeni se ne racunaju dvaput)")
-    ap.add_argument("--recent-w", type=float, default=0.30, help="udeo KRATKOG modela (skorija forma) u ocekivanim golovima; 0 = samo dugi model")
-    ap.add_argument("--halflife-short", type=float, default=45.0); ap.add_argument("--k-short", type=float, default=6.0)
-    ap.add_argument("--lam-scale", type=float, default=1.0, help="mnozi oba ocekivana gola; uzmi preporuku iz --backtest K --bt-grid ako model sistematski potcenjuje golove")
-    ap.add_argument("--no-factors", action="store_true", help="iskljuci fb_factors.py (momentum, stil, sudija, motivacija, vreme)"); ap.add_argument("--no-weather", action="store_true")
-    ap.add_argument("--dom-w", type=float, default=0.6, help="UEFA: tezina domacih (ne-evropskih) utakmica u ucenju snage ekipa (1 = ravnopravno; manje = slabije lige manje naduvavaju rejting)")
-    ap.add_argument("--opp-k", type=float, default=PD.get("opp_k", .25), help="momentum: tezina meca raste/pada sa jacinom protivnika (0 = iskljuceno; pobeda protiv jakog vredi vise)")
-    ap.add_argument("--mom-k", type=float, default=PD.get("mom_k", .25)); ap.add_argument("--style-k", type=float, default=PD.get("style_k", .03)); ap.add_argument("--mot-k", type=float, default=PD.get("mot_k", .04))
-    ap.add_argument("--ref-k", type=float, default=PD.get("ref_k", .015)); ap.add_argument("--wx-k", type=float, default=PD.get("wx_k", .02))
-    ap.add_argument("--under-rule", choices=["block", "demote", "off"], default="block", help="Under/NG na mecu gde je tim u naletu ili ima raspad odbrane: block = ne preporucuj, demote = spusti EV za --under-pen")
-    ap.add_argument("--under-pen", type=float, default=0.04)
-    ap.add_argument("--ref", action="append", default=[], help='sudija meca: "domacin,gost=Ime Prezime" (moze vise puta; ili data/<liga>/referees.json)')
-    ap.add_argument("--bt-grid", action="store_true", help="uz --backtest K: poredi recent-w / momentum konfiguracije i ispisi pristrasnost Under/Over i preporuceni --lam-scale")
     a = ap.parse_args()
-    if FX is None and not a.no_factors: print("\n!!! UPOZORENJE: fb_factors.py nije u istom folderu kao football_poisson.py -> momentum, stil, sudija, motivacija, vreme i blokada Under tipova NISU uracunati !!!\n")
     today = date.today()
     cur = season_code(today); prev = f"{int(cur[:2]) - 1:02d}{int(cur[:2]):02d}"
     seasons = a.seasons.split(",") if a.seasons else [cur, prev]
@@ -384,56 +170,15 @@ def main():
     if a.download:
         for s in seasons:
             try:
-                open(os.path.join(D, f"{CUR['csv']}_{s}.csv"), "wb").write(urllib.request.urlopen(urllib.request.Request(FD.format(s=s), headers={"User-Agent": "Mozilla/5.0"}), timeout=30).read())
+                open(os.path.join(D, f"E0_{s}.csv"), "wb").write(urllib.request.urlopen(urllib.request.Request(FD.format(s=s), headers={"User-Agent": "Mozilla/5.0"}), timeout=30).read())
                 print("skinuto", s)
             except Exception as e: print("nije uspelo", s, e)
-    if a.refresh:
-        import types, statshub_football as sf
-        sf.build(types.SimpleNamespace(offline=a.offline, ttl=6.0, limit=60, tournament=sf.resolve_ids(a.offline)[0], season=sf.resolve_ids(a.offline)[1], no_upcoming=False))
-    Mraw = None
-    SD, use_sh = None, a.source == "statshub" or (a.source == "auto" and os.path.exists(SH))
-    net = False
-    if CUR.get("cup") and os.path.exists(SH):
-        try: net = bool(json.load(open(SH, encoding="utf-8")).get("cup"))
-        except (OSError, ValueError): net = False
-    if CUR.get("cup") and net:                            # UEFA po timovima: ucesnici + protivnici iz svih takmicenja (statshub_football.py)
-        if a.backtest: sys.exit("Backtest za evropska takmicenja nije podrzan; uradi ga na domacim ligama (--league epl --backtest 80).")
-        M, SD = load_statshub(dom_w=a.dom_w); use_sh = True; Mraw = M; M = eff(M, a.beta)
-        print(f"Izvor: Statshub UEFA mreza ({SD.get('updated')}): {len(M)} utakmica, {sum(1 for m in M if m.get('w', 1) < 1)} domacih (tezina {a.dom_w}), {sum(1 for m in Mraw if m['xh'] is not None)} sa xG")
-    elif CUR.get("cup"):
-        if a.backtest: sys.exit("Backtest za evropska takmicenja nije podrzan; uradi ga na domacim ligama (--league epl --backtest 80).")
-        print("  (nema UEFA podataka po timovima: pokreni statshub_football.py --league " + CUR["code"] + "; koristim stari nacin preko domacih liga)")
-        M, SD = cup_load(a.beta); use_sh = True; Mraw = M; M = eff(M, a.beta); a.no_factors = True
-        print("  (faktori forme/stila/sudije/motivacije se u ovom nacinu ne racunaju; ostaju xG, povrede i odmor)")
-    elif use_sh:
-        if not os.path.exists(SH): sys.exit(f"Nema {SH}. Pokreni: python statshub_football.py (ili --refresh)")
-        M, SD = load_statshub()
-        print(f"Izvor: Statshub ({SD.get('updated')}), {sum(1 for m in M if m['xh'] is not None)} utakmica sa xG")
-        if a.backtest:
-            backtest_cfg(M, a.backtest, a, a.beta) if a.bt_grid else backtest(M, a.backtest, [float(x) for x in a.betas.split(",")], a)
-            return
-        Mraw = M
-        M = eff(M, a.beta)
-    else:
-        files = [os.path.join(D, f"{CUR['csv']}_{s}.csv") for s in seasons if os.path.exists(os.path.join(D, f"{CUR['csv']}_{s}.csv"))] + glob.glob(os.path.join(D, "results*.csv"))
-        M = load(files)
-    if len(M) < 20: sys.exit(f"Premalo utakmica ({len(M)}). Pokreni statshub_football.py (ili --download za stari CSV izvor)")
-    mod = fit_any(M, today, a.halflife, a.k); known = set(mod["att"])
-    print(f"Model: {len(M)} utakmica, {len(known)} ekipa, mu {mod['mu']:.2f}, domaci faktor {mod['H']:.2f}" + (f", beta xG {a.beta}" if use_sh else ""))
-    ctxs = []
-    rows, out, skipped, dropped = [], [], [], 0
-    mod_s = fit_any(M, today, a.halflife_short, a.k_short) if a.recent_w > 0 else None
-    def blend_lam(h_, g_):
-        x, y = lam_of(mod, h_, g_)
-        if mod_s:
-            sx, sy = lam_of(mod_s, h_, g_); x, y = (1 - a.recent_w) * x + a.recent_w * sx, (1 - a.recent_w) * y + a.recent_w * sy
-        return x, y
-    FP = dict(FX.PARAMS, mom_k=a.mom_k, opp_k=a.opp_k, style_k=a.style_k, mot_k=a.mot_k, ref_k=a.ref_k, wx_k=a.wx_k) if FX else None
-    fcfg = {"dir": D, "csv": CUR["csv"], "league": CUR["code"], "ut": None if CUR.get("cup") else CUR.get("ut"), "today": today, "ref": {}, "wx_off": a.no_weather}
-    for r_ in a.ref:
-        k_, _, nm_ = r_.partition("=")
-        pr_ = [canon(x.strip(), known) for x in k_.split(",")]
-        if len(pr_) == 2 and all(pr_) and nm_.strip(): fcfg["ref"][f"{pr_[0]}|{pr_[1]}"] = nm_.strip()
+    files = [os.path.join(D, f"E0_{s}.csv") for s in seasons if os.path.exists(os.path.join(D, f"E0_{s}.csv"))] + glob.glob(os.path.join(D, "results*.csv"))
+    M = load(files)
+    if len(M) < 20: sys.exit(f"Premalo utakmica ({len(M)}). Pokreni sa --download ili stavi E0 CSV u {D}/ (fajlovi: {files})")
+    mod = fit(M, today, a.halflife, a.k); known = set(mod["att"])
+    print(f"Model: {len(M)} utakmica, {len(known)} ekipa, mu {mod['mu']:.2f}, domaci faktor {mod['H']:.2f}")
+    rows, out = [], []
     if a.match:
         h, g = [canon(x, known) for x in a.match.split(",")]
         todo = [{"h": h, "a": g, "H": h, "A": g, "start": None, "x12": None, "ou": [], "btts": None}]
@@ -443,82 +188,61 @@ def main():
         todo = []
         for e in ev:
             h, g = canon(e["h"], known), canon(e["a"], known)
-            if not (h and g): print("  ne prepoznajem ekipu:", e["h"], "-", e["a"], "(dodaj u ALIAS)"); skipped.append({"h": e["h"], "a": e["a"], "start": e.get("start")}); continue
+            if not (h and g): print("  ne prepoznajem ekipu:", e["h"], "-", e["a"], "(dodaj u ALIAS)"); continue
             todo.append({**e, "H": e["h"], "A": e["a"], "h": h, "a": g})
     for e in todo:
-        mh = ma = 1.0; cx = None
-        if SD:
-            try: st_ms = datetime.fromisoformat(str(e.get("start")).replace("Z", "+00:00")).timestamp() * 1000
-            except (TypeError, ValueError): st_ms = None
-            ch, ca = team_ctx(SD, e["h"], st_ms, a.att_k, a.def_k, a.rest_pen, a.inj_min), team_ctx(SD, e["a"], st_ms, a.att_k, a.def_k, a.rest_pen, a.inj_min)
-            mh, ma = ch["att"] * ca["conc"], ca["att"] * ch["conc"]
-            cx = {"h": e["H"], "a": e["A"], "hk": e["h"], "ak": e["a"], "start": e.get("start"), "mult": [round(mh, 3), round(ma, 3)], "home": ch, "away": ca, "h2h": h2h(Mraw, e["h"], e["a"]) if Mraw else None}
-        F = None
-        if cx and FX and not a.no_factors:
-            F = FX.all_factors(SD, Mraw, a.beta, blend_lam, {**e, "h": e["h"], "a": e["a"]}, ch, ca, fcfg, FP)
-            mh *= F["mult"][0] * F["total"]; ma *= F["mult"][1] * F["total"]; cx["factors"] = F
-        lh0, la0 = blend_lam(e["h"], e["a"])
-        lh, la = lh0 * mh * a.lam_scale, la0 * ma * a.lam_scale
-        G = grid(lh, la, a.rho); P = probs(G)
-        if cx:
-            cx["lam"] = [round(lh, 3), round(la, 3)]; ctxs.append(cx)
-            if F:
-                for n_ in F["notes"][:8]: print("   *", n_)
-                if F["under_block"]: print("   ! Under/NG:", a.under_rule, "-", "; ".join(F["under_block"]))
-            print(f"\n{e['H']} - {e['A']}: forma {ch['form']['str'] if ch.get('form') else '?'} / {ca['form']['str'] if ca.get('form') else '?'} | odmor {ch['rest']}d / {ca['rest']}d"
-                  f" | nedostupni {[u['n'] for u in ch['out']]} / {[u['n'] for u in ca['out']]} | stil {ch.get('style')} / {ca.get('style')}")
+        lh, la, G, P = predict(mod, e["h"], e["a"], a.rho)
         print(f"\n{e['H']} - {e['A']}  {e.get('start') or ''}\n  ocekivani golovi {lh:.2f}:{la:.2f} | 1X2 {P['x12'][0]*100:.0f}/{P['x12'][1]*100:.0f}/{P['x12'][2]*100:.0f}% | GG {P['btts']*100:.0f}% | preko 2.5 {P['over'](2)*100:.0f}%")
         best = max(((i, j, G[i][j]) for i in range(len(G)) for j in range(len(G))), key=lambda t: t[2])
         print(f"  najverovatniji rezultat {best[0]}:{best[1]} ({best[2]*100:.1f}%)")
         sel = []   # (trziste, izbor, kvota, p_model, p_trziste)
-        if e.get("x12") and len(e["x12"]) == 3 and all(o and o > 1.01 for o in e["x12"]) and 1.0 <= sum(1 / o for o in e["x12"]) <= 1.25:
+        if e.get("x12"):
             f = fair(e["x12"])
             sel += [("1X2", n, e["x12"][i], P["x12"][i], f[i]) for i, n in enumerate(("1", "X", "2"))]
         for L, o, u in e.get("ou") or []:
-            if L not in OU_LINES or not (o and u and 1.0 <= 1 / o + 1 / u <= 1.2): continue      # samo linije 1.5/2.5/3.5; nelogicna marza = pogresno uparene kvote
             f = fair([o, u]); po = P["over"](L)
             sel += [(f"Golovi {L}", "Vise", o, po, f[0]), (f"Golovi {L}", "Manje", u, 1 - po, f[1])]
-        if e.get("btts") and len(e["btts"]) == 2 and all(o and o > 1.01 for o in e["btts"]) and 1.0 <= sum(1 / o for o in e["btts"]) <= 1.2:
+        if e.get("btts"):
             f = fair(e["btts"]); sel += [("GG/NG", "GG", e["btts"][0], P["btts"], f[0]), ("GG/NG", "NG", e["btts"][1], 1 - P["btts"], f[1])]
-        # Namerno SAMO 1X2, Golovi 1.5/2.5/3.5 i GG/NG. Kombinovane i specijalne igre (GG ili N+, GG&N+, HT/FT, DC, AH, EH, raspon, tacan rezultat...)
-        # iz Superbet JSON-a se ignorisu: njihovo mapiranje izlaza je nepouzdano.
+        nn = len(G)
+        if e.get("dc"):
+            o3 = e["dc"]; sm = sum(1 / o for o in o3); x = P["x12"]
+            pdc = [x[0] + x[1], x[0] + x[2], x[1] + x[2]]
+            sel += [("Dupla sansa", nm_, o3[i], pdc[i], 2 * (1 / o3[i]) / sm) for i, nm_ in enumerate(("1X", "12", "X2"))]
+        for L, oh, oa in e.get("ah") or []:           # azijski/2-way hendikep; L = hendikep domacina; push = vracen ulog
+            w_, pu_, l_ = wpl(G, L, "ah"); c = w_ / (w_ + l_) if w_ + l_ > 0 else .5; f = fair([oh, oa])
+            sel += [(f"AH {L:+g}", "1", oh, c, f[0], pu_), (f"AH {L:+g}", "2", oa, 1 - c, f[1], pu_)]
+        for L, ov_, un_ in e.get("ouah") or []:        # azijski ukupno golova
+            w_, pu_, l_ = wpl(G, L, "ou"); c = w_ / (w_ + l_) if w_ + l_ > 0 else .5; f = fair([ov_, un_])
+            sel += [(f"AU {L:g}", "Vise", ov_, c, f[0], pu_), (f"AU {L:g}", "Manje", un_, 1 - c, f[1], pu_)]
+        for hc, o1, ox, o2 in e.get("eh") or []:       # 3-way hendikep: domacinu se dodaje hc golova
+            pr = [0.0, 0.0, 0.0]
+            for i in range(nn):
+                for j in range(nn):
+                    d = i - j + hc; pr[0 if d > 0 else 1 if d == 0 else 2] += G[i][j]
+            f = fair([o1, ox, o2])
+            sel += [(f"EH {hc:+d}", nm_, o, pr[k], f[k]) for k, (nm_, o) in enumerate(zip(("1", "X", "2"), (o1, ox, o2)))]
+        R_ = e.get("range") or []
+        if R_:
+            f = fair([x[2] for x in R_])
+            for k, (lo, hi, o) in enumerate(R_):
+                sel.append(("Raspon", f"{lo}-{hi}" if hi < 99 else f"{lo}+", o, sum(G[i][j] for i in range(nn) for j in range(nn) if lo <= i + j <= hi), f[k]))
+        for thr, y_, n_ in e.get("bttsx") or []:
+            py = sum(G[i][j] for i in range(1, nn) for j in range(1, nn) if i + j >= thr)
+            if n_: f = fair([y_, n_]); sel += [(f"GG&{thr}+", "Da", y_, py, f[0]), (f"GG&{thr}+", "Ne", n_, 1 - py, f[1])]
+            else: sel.append((f"GG&{thr}+", "Da", y_, py, 1 / y_))
+        if e.get("htft"):
+            hp = htft_probs(lh, la, a.h1); tot_ = sum(1 / o for o in e["htft"].values())
+            sel += [("HT/FT", k.upper(), o, hp.get(k, 0.0), (1 / o) / tot_) for k, o in e["htft"].items()]
         for t_ in sel:
             mk, pick, o, pm, pf = t_[:5]; pp = t_[5] if len(t_) > 5 else 0.0
             p = a.w * pm + (1 - a.w) * pf; ev_ = (1 - pp) * (p * o - 1); evr = (1 - pp) * (pm * o - 1)
-            row = {"h": e["H"], "a": e["A"], "hk": e["h"], "ak": e["a"], "start": e.get("start"), "market": mk, "pick": pick, "odds": o, "p_model": round(pm, 4), "p_market": round(pf, 4), "p": round(p, 4), "push": round(pp, 4), "ev": round(ev_, 4), "ev_raw": round(evr, 4), "sus": abs(pm - pf) > 0.15 or evr > 0.25}
-            if row["sus"] and not a.keep_sus:         # model i trziste se previse razilaze (npr. novajlije bez istorije): nepouzdano, ne izbacujemo tip
-                dropped += 1
-                continue
-            if F and F["under_block"] and pick in ("Manje", "NG") and a.under_rule != "off":      # "ne diraj hot tim": ekipa u naletu lomi statistiku
-                row["block_reason"] = "; ".join(F["under_block"])
-                if a.under_rule == "block": row["blocked"] = True
-                else: row["ev"] = round(row["ev"] - a.under_pen, 4); row["demoted"] = True
+            row = {"h": e["H"], "a": e["A"], "start": e.get("start"), "market": mk, "pick": pick, "odds": o, "p_model": round(pm, 4), "p_market": round(pf, 4), "p": round(p, 4), "push": round(pp, 4), "ev": round(ev_, 4), "ev_raw": round(evr, 4)}
             out.append(row)
             if a.all or ev_ >= a.min_ev: print(f"  {mk:<12} {pick:<6} kvota {o:<5.2f} model {pm*100:4.1f}% trziste {pf*100:4.1f}%{f' vracen ulog {pp*100:.0f}%' if pp else ''} -> EV {ev_*100:+5.1f}% (sirovi model {evr*100:+.1f}%){'  (PROVERI liniju/kvotu)' if evr > 0.25 else ''}")
     if not a.match:
-        try:                                          # tekstualno objasnjenje svakog tipa (label, meaning, why, risk) za "Zasto?" prozorcic
-            from fb_explain import explain_row, ctx_for
-            for r_ in out:
-                r_.update(explain_row(r_, r_["h"], r_["a"], ctx_for({"context": ctxs}, r_["h"], r_["a"], r_.get("start"))))
-        except ImportError:
-            print("UPOZORENJE: fb_explain.py nije pored football_poisson.py - tipovi ce biti bez objasnjenja iz JSON-a (sajt koristi rezervno objasnjenje)")
-        json.dump({"updated": datetime.now().isoformat(timespec="seconds"), "w": a.w, "source": "statshub" if SD else "csv", "factors_on": bool(FX and not a.no_factors and SD), "beta": a.beta if SD else None, "rows": out, "skipped": skipped, "context": ctxs}, open(OUT, "w", encoding="utf-8"), ensure_ascii=False, separators=(",", ":"))
-        print(f"\nupisano {len(out)} izbora u {OUT}" + (f" (izbaceno {dropped} sumnjivih: model i trziste se previse razilaze; --keep-sus ih vraca)" if dropped else ""))
-        if SD:                                        # tabela lige za desnu kolonu sajta (data/<liga>/table.json); fb_table.py ima zone i logoe, rezervno FX.league_table
-            try:
-                import fb_table
-                tb = fb_table.write(CUR["code"], today=today, SD=SD)
-            except Exception as ex_:
-                tb = None; print("fb_table:", ex_)
-            if not tb and FX and hasattr(FX, "league_table") and not CUR.get("cup"):
-                try:
-                    tb = FX.league_table(SD, CUR.get("ut"), today)
-                    if tb["rows"]:
-                        tb.update({"updated": datetime.now().isoformat(timespec="seconds"), "league": CUR["code"], "zones": FX.ZONES.get(CUR["code"], FX.ZONES["epl"])})
-                        json.dump(tb, open(os.path.join(D, "table.json"), "w", encoding="utf-8"), ensure_ascii=False, separators=(",", ":"))
-                        print(f"tabela lige: {tb['n']} timova -> {os.path.join(D, 'table.json')}" + ("  (NEPOTPUNA: neki timovi imaju manje odigranih mečeva u podacima)" if tb["partial"] else ""))
-                except Exception as ex_:
-                    print("tabela lige nije upisana:", ex_)
+        json.dump({"updated": datetime.now().isoformat(timespec="seconds"), "w": a.w, "rows": out}, open(OUT, "w", encoding="utf-8"), ensure_ascii=False, separators=(",", ":"))
+        print(f"\nupisano {len(out)} izbora u {OUT}")
 
 
 if __name__ == "__main__":
