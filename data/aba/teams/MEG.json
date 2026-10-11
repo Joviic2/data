@@ -5,13 +5,13 @@
  "club_id": "33",
  "crest": "https://www.aba-liga.com/images/club/100x100/33.png",
  "record": {
-  "gp": 1,
-  "w": 0,
+  "gp": 2,
+  "w": 1,
   "l": 1,
-  "pf": 59,
-  "pa": 83,
-  "pf_avg": 59.0,
-  "pa_avg": 83.0
+  "pf": 147,
+  "pa": 165,
+  "pf_avg": 73.5,
+  "pa_avg": 82.5
  },
  "games": [
   {
@@ -23,20 +23,42 @@
    "pf": 59,
    "pa": 83,
    "result": "L"
+  },
+  {
+   "n": 28,
+   "round": 3,
+   "dt": "2026-10-11T10:00:00Z",
+   "home": true,
+   "opp": "ZAD",
+   "pf": 88,
+   "pa": 82,
+   "result": "W"
   }
  ],
  "roster": [
+  {
+   "id": "4264",
+   "name": "Nikolić O.",
+   "no": "17",
+   "pos": "",
+   "photo": "https://www.aba-liga.com/stats/img/foto/4264.png",
+   "gp": 1,
+   "min_avg": 30.7,
+   "pts_avg": 15.0,
+   "reb_avg": 7.0,
+   "ast_avg": 3.0
+  },
   {
    "id": "4665",
    "name": "Lučić A.",
    "no": "77",
    "pos": "",
    "photo": "https://www.aba-liga.com/stats/img/foto/4665.png",
-   "gp": 1,
-   "min_avg": 29.0,
-   "pts_avg": 14.0,
+   "gp": 2,
+   "min_avg": 29.4,
+   "pts_avg": 16.0,
    "reb_avg": 2.0,
-   "ast_avg": 1.0
+   "ast_avg": 4.0
   },
   {
    "id": "5658",
@@ -44,11 +66,11 @@
    "no": "10",
    "pos": "",
    "photo": "https://www.aba-liga.com/stats/img/foto/5658.png",
-   "gp": 1,
-   "min_avg": 27.3,
-   "pts_avg": 6.0,
-   "reb_avg": 1.0,
-   "ast_avg": 1.0
+   "gp": 2,
+   "min_avg": 28.4,
+   "pts_avg": 7.5,
+   "reb_avg": 1.5,
+   "ast_avg": 2.0
   },
   {
    "id": "5660",
@@ -56,11 +78,11 @@
    "no": "28",
    "pos": "",
    "photo": "https://www.aba-liga.com/stats/img/foto/5660.png",
-   "gp": 1,
-   "min_avg": 26.9,
-   "pts_avg": 7.0,
-   "reb_avg": 6.0,
-   "ast_avg": 0.0
+   "gp": 2,
+   "min_avg": 24.5,
+   "pts_avg": 9.0,
+   "reb_avg": 5.5,
+   "ast_avg": 0.5
   },
   {
    "id": "4260",
@@ -68,10 +90,10 @@
    "no": "23",
    "pos": "",
    "photo": "https://www.aba-liga.com/stats/img/foto/4260.png",
-   "gp": 1,
-   "min_avg": 23.2,
-   "pts_avg": 5.0,
-   "reb_avg": 3.0,
+   "gp": 2,
+   "min_avg": 23.1,
+   "pts_avg": 7.5,
+   "reb_avg": 2.5,
    "ast_avg": 0.0
   },
   {
@@ -92,11 +114,11 @@
    "no": "15",
    "pos": "",
    "photo": "https://www.aba-liga.com/stats/img/foto/4661.png",
-   "gp": 1,
-   "min_avg": 20.3,
-   "pts_avg": 7.0,
-   "reb_avg": 3.0,
-   "ast_avg": 1.0
+   "gp": 2,
+   "min_avg": 21.5,
+   "pts_avg": 7.5,
+   "reb_avg": 3.5,
+   "ast_avg": 0.5
   },
   {
    "id": "4346",
@@ -104,11 +126,11 @@
    "no": "8",
    "pos": "",
    "photo": "https://www.aba-liga.com/stats/img/foto/4346.png",
-   "gp": 1,
-   "min_avg": 17.6,
-   "pts_avg": 12.0,
-   "reb_avg": 7.0,
-   "ast_avg": 0.0
+   "gp": 2,
+   "min_avg": 16.8,
+   "pts_avg": 9.5,
+   "reb_avg": 5.0,
+   "ast_avg": 0.5
   },
   {
    "id": "4020",
@@ -116,11 +138,11 @@
    "no": "7",
    "pos": "",
    "photo": "https://www.aba-liga.com/stats/img/foto/4020.png",
-   "gp": 1,
-   "min_avg": 11.0,
-   "pts_avg": 0.0,
-   "reb_avg": 0.0,
-   "ast_avg": 1.0
+   "gp": 2,
+   "min_avg": 14.8,
+   "pts_avg": 3.0,
+   "reb_avg": 1.0,
+   "ast_avg": 0.5
   },
   {
    "id": "5381",
@@ -128,10 +150,10 @@
    "no": "22",
    "pos": "",
    "photo": "https://www.aba-liga.com/stats/img/foto/5381.png",
-   "gp": 1,
-   "min_avg": 9.5,
-   "pts_avg": 2.0,
-   "reb_avg": 4.0,
+   "gp": 2,
+   "min_avg": 7.0,
+   "pts_avg": 3.0,
+   "reb_avg": 3.5,
    "ast_avg": 0.0
   },
   {
@@ -140,10 +162,10 @@
    "no": "88",
    "pos": "",
    "photo": "https://www.aba-liga.com/stats/img/foto/4883.png",
-   "gp": 1,
-   "min_avg": 8.5,
-   "pts_avg": 4.0,
-   "reb_avg": 1.0,
+   "gp": 2,
+   "min_avg": 5.9,
+   "pts_avg": 2.0,
+   "reb_avg": 0.5,
    "ast_avg": 0.0
   },
   {
