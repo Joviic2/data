@@ -5,13 +5,13 @@
  "club_id": "10",
  "crest": "https://www.aba-liga.com/images/club/100x100/10.png",
  "record": {
-  "gp": 1,
+  "gp": 2,
   "w": 0,
-  "l": 1,
-  "pf": 72,
-  "pa": 77,
-  "pf_avg": 72.0,
-  "pa_avg": 77.0
+  "l": 2,
+  "pf": 140,
+  "pa": 156,
+  "pf_avg": 70.0,
+  "pa_avg": 78.0
  },
  "games": [
   {
@@ -23,6 +23,16 @@
    "pf": 72,
    "pa": 77,
    "result": "L"
+  },
+  {
+   "n": 25,
+   "round": 3,
+   "dt": "2026-10-11T16:00:00Z",
+   "home": true,
+   "opp": "FMP",
+   "pf": 68,
+   "pa": 79,
+   "result": "L"
   }
  ],
  "roster": [
@@ -32,11 +42,11 @@
    "no": "5",
    "pos": "",
    "photo": "https://www.aba-liga.com/stats/img/foto/3929.png",
-   "gp": 1,
-   "min_avg": 39.2,
-   "pts_avg": 7.0,
-   "reb_avg": 7.0,
-   "ast_avg": 14.0
+   "gp": 2,
+   "min_avg": 35.5,
+   "pts_avg": 9.5,
+   "reb_avg": 5.5,
+   "ast_avg": 10.5
   },
   {
    "id": "5673",
@@ -44,11 +54,11 @@
    "no": "23",
    "pos": "",
    "photo": "https://www.aba-liga.com/stats/img/foto/5673.png",
-   "gp": 1,
-   "min_avg": 31.4,
-   "pts_avg": 15.0,
-   "reb_avg": 10.0,
-   "ast_avg": 4.0
+   "gp": 2,
+   "min_avg": 26.5,
+   "pts_avg": 10.5,
+   "reb_avg": 8.0,
+   "ast_avg": 2.5
   },
   {
    "id": "2340",
@@ -56,11 +66,11 @@
    "no": "21",
    "pos": "",
    "photo": "https://www.aba-liga.com/stats/img/foto/2340.png",
-   "gp": 1,
-   "min_avg": 29.3,
-   "pts_avg": 15.0,
-   "reb_avg": 4.0,
-   "ast_avg": 0.0
+   "gp": 2,
+   "min_avg": 23.9,
+   "pts_avg": 10.5,
+   "reb_avg": 3.5,
+   "ast_avg": 2.0
   },
   {
    "id": "3119",
@@ -68,10 +78,22 @@
    "no": "31",
    "pos": "",
    "photo": "https://www.aba-liga.com/stats/img/foto/3119.png",
-   "gp": 1,
-   "min_avg": 24.2,
-   "pts_avg": 16.0,
-   "reb_avg": 1.0,
+   "gp": 2,
+   "min_avg": 23.3,
+   "pts_avg": 11.5,
+   "reb_avg": 2.0,
+   "ast_avg": 1.0
+  },
+  {
+   "id": "3143",
+   "name": "Oman U.",
+   "no": "10",
+   "pos": "",
+   "photo": "https://www.aba-liga.com/stats/img/foto/3143.png",
+   "gp": 2,
+   "min_avg": 23.1,
+   "pts_avg": 4.5,
+   "reb_avg": 5.5,
    "ast_avg": 1.0
   },
   {
@@ -80,46 +102,10 @@
    "no": "30",
    "pos": "",
    "photo": "https://www.aba-liga.com/stats/img/foto/5631.png",
-   "gp": 1,
-   "min_avg": 17.9,
-   "pts_avg": 5.0,
-   "reb_avg": 3.0,
-   "ast_avg": 0.0
-  },
-  {
-   "id": "3260",
-   "name": "Klobučar J.",
-   "no": "17",
-   "pos": "",
-   "photo": "https://www.aba-liga.com/stats/img/foto/3260.png",
-   "gp": 1,
-   "min_avg": 14.7,
-   "pts_avg": 6.0,
-   "reb_avg": 3.0,
-   "ast_avg": 0.0
-  },
-  {
-   "id": "3143",
-   "name": "Oman U.",
-   "no": "10",
-   "pos": "",
-   "photo": "https://www.aba-liga.com/stats/img/foto/3143.png",
-   "gp": 1,
-   "min_avg": 12.4,
-   "pts_avg": 2.0,
-   "reb_avg": 3.0,
-   "ast_avg": 0.0
-  },
-  {
-   "id": "3628",
-   "name": "Božić Đ.",
-   "no": "9",
-   "pos": "",
-   "photo": "https://www.aba-liga.com/stats/img/foto/3628.png",
-   "gp": 1,
-   "min_avg": 9.8,
-   "pts_avg": 0.0,
-   "reb_avg": 2.0,
+   "gp": 2,
+   "min_avg": 19.9,
+   "pts_avg": 12.0,
+   "reb_avg": 4.5,
    "ast_avg": 0.0
   },
   {
@@ -128,22 +114,34 @@
    "no": "7",
    "pos": "",
    "photo": "https://www.aba-liga.com/stats/img/foto/4842.png",
-   "gp": 1,
-   "min_avg": 9.0,
-   "pts_avg": 4.0,
-   "reb_avg": 1.0,
-   "ast_avg": 1.0
+   "gp": 2,
+   "min_avg": 17.3,
+   "pts_avg": 6.0,
+   "reb_avg": 2.0,
+   "ast_avg": 1.5
   },
   {
-   "id": "3888",
-   "name": "Sirc L.",
-   "no": "8",
+   "id": "3260",
+   "name": "Klobučar J.",
+   "no": "17",
    "pos": "",
-   "photo": "https://www.aba-liga.com/stats/img/foto/3888.png",
-   "gp": 1,
-   "min_avg": 8.5,
-   "pts_avg": 2.0,
-   "reb_avg": 0.0,
+   "photo": "https://www.aba-liga.com/stats/img/foto/3260.png",
+   "gp": 2,
+   "min_avg": 12.3,
+   "pts_avg": 3.5,
+   "reb_avg": 2.0,
+   "ast_avg": 0.0
+  },
+  {
+   "id": "3628",
+   "name": "Božić Đ.",
+   "no": "9",
+   "pos": "",
+   "photo": "https://www.aba-liga.com/stats/img/foto/3628.png",
+   "gp": 2,
+   "min_avg": 6.7,
+   "pts_avg": 0.0,
+   "reb_avg": 1.5,
    "ast_avg": 0.0
   },
   {
@@ -152,10 +150,22 @@
    "no": "11",
    "pos": "",
    "photo": "https://www.aba-liga.com/stats/img/foto/3424.png",
-   "gp": 1,
-   "min_avg": 3.7,
+   "gp": 2,
+   "min_avg": 6.0,
    "pts_avg": 0.0,
    "reb_avg": 2.0,
+   "ast_avg": 0.0
+  },
+  {
+   "id": "3888",
+   "name": "Sirc L.",
+   "no": "8",
+   "pos": "",
+   "photo": "https://www.aba-liga.com/stats/img/foto/3888.png",
+   "gp": 2,
+   "min_avg": 5.5,
+   "pts_avg": 2.0,
+   "reb_avg": 0.0,
    "ast_avg": 0.0
   }
  ]
