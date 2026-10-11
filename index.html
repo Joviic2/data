@@ -240,6 +240,10 @@ body.fb #lgs,body.fb #tabs,body.fb #mnb,body.fb #dw,body.fb main>p.sub{display:n
 #hm .tp .r{text-align:right;line-height:1.35}
 #hm .sl{padding:8px 0;border-bottom:1px solid var(--bd);display:grid;grid-template-columns:minmax(0,1fr) auto;gap:8px;font-size:.92rem}
 #hm .sl button.x{background:none;border:0;color:var(--no);font-size:1.1rem;cursor:pointer}
+.fbw{margin:4px 0 12px;padding:10px 12px;border-left:3px solid var(--ok);background:var(--in);border-radius:8px;font-size:.9rem;line-height:1.45}
+.fbw-h{display:flex;flex-direction:column;gap:2px;margin-bottom:6px}.fbw-h span{color:var(--mu)}
+.fbw-t{font-weight:700;font-size:.74rem;letter-spacing:.05em;text-transform:uppercase;color:var(--ok);margin-bottom:2px}
+.fbw ul{margin:0 0 0 18px;padding:0}.fbw li{margin:3px 0}.fbw-r{margin-top:6px;color:var(--mu);font-size:.8rem}
 </style></head><body><main>
 <h1>Euroleague Value Analyzer</h1>
 <div class="mts sps" id="sps"></div>
@@ -2702,7 +2706,7 @@ function homeRender(){
  const left=SPORT=="bb"?`<div class="card"><h2>Lige</h2><div class="lgv">${Object.entries(LEAGUES).map(([k,v])=>`<button type="button" data-lg="${k}" aria-selected="${k==LG}">${esc(v[0])}</button>`).join("")}</div></div>`
   :`<div class="card"><h2>Fudbal: lige</h2><div class="lgv">${FBL.map(([k,l])=>`<button type="button" data-fb="${k}" aria-selected="${k==FBSEL}">${esc(l)}</button>`).join("")}</div></div>`;
  const filt=`<div class="card"><h2>Brzi filteri</h2><div class="lgv">${[["danas","Danas"],["vikend","Vikend"],["top","Top +EV mečevi"]].map(([k,l])=>`<button type="button" data-hf="${k}" aria-selected="${HF==k}">${l}</button>`).join("")}</div></div>`;
- const tipRow=(x,i)=>`<div class="tp"><div><b>${esc(x.pick)}</b> <span class="mu">${esc(x.mk)}</span>${x.inj?' <span class="wr">⚠ povrede</span>':""}<br><span class="mu">${esc(x.mt)} · ${x.st?new Date(x.st).toLocaleString("sr-Latn-RS",{weekday:"short",day:"numeric",month:"numeric",hour:"2-digit",minute:"2-digit"}):""}</span></div><div class="r"><b class="ok">+${f(x.ev*100,1)}%</b><br>${f(x.o,2)} <span class="mu">${esc(x.bk||"")}</span><br><span class="mu">ulog ${f(stake(x.p,x.o,B),2)}</span></div><button class="btn sm" data-ts="${i}" type="button">+ Tiket</button></div>`;
+ const tipRow=(x,i)=>`<div class="tp"><div><b>${esc(x.pick)}</b> <span class="mu">${esc(x.mk)}</span>${x.inj?' <span class="wr">⚠ povrede</span>':""}${x.r?` <button class="chip" data-fw="${i}" type="button">Zašto?</button>`:""}<br><span class="mu">${esc(x.mt)} · ${x.st?new Date(x.st).toLocaleString("sr-Latn-RS",{weekday:"short",day:"numeric",month:"numeric",hour:"2-digit",minute:"2-digit"}):""}</span></div><div class="r"><b class="ok">+${f(x.ev*100,1)}%</b><br>${f(x.o,2)} <span class="mu">${esc(x.bk||"")}</span><br><span class="mu">ulog ${f(stake(x.p,x.o,B),2)}</span></div><button class="btn sm" data-ts="${i}" type="button">+ Tiket</button></div>`;
  let mid;
  if(SPORT=="bb")mid=kpi+`<div class="card"><h2>Najbolji tipovi (Most Value Tips)</h2>${HT.length?HT.map(tipRow).join(""):'<p class="mu">Nema tipova za ovaj filter. Razlozi (stare kvote, povrede, mali uzorak) su u tabu Screener.</p>'}<p class="mu" style="font-size:.85rem;margin-top:8px">Liga: ${esc(LEAGUES[LG][0])}. EV je procena, ne garancija. Kvote su sa Superbet-a kad su sveže.</p></div><div class="card" id="hnews"></div>`;
  else mid=fbMid(kpi,tipRow);
@@ -2718,6 +2722,7 @@ $("hm").onclick=async e=>{const t=e.target.closest("button");if(!t)return;const 
  else if(d.fev){FBEV=+d.fev;homeRender()}
  else if(d.fbr){FBD={};homeRender()}
  else if(d.hf){HF=d.hf;homeRender()}
+ else if(d.fw!=null){const x=HT[+d.fw];if(!x||!x.r)return;xmodal(`<h2 style="margin:0">${esc(x.pick)} <span class="mu" style="font-size:1rem">${esc(x.mt)}</span></h2><div class="sub" style="margin:2px 0 10px">${f(x.o,2)} Superbet · EV +${f(x.ev*100,1)}%</div>${fbWhyHtml(x)}`)}
  else if(d.ts!=null){const x=HT[+d.ts];if(!x)return;const id=x.mt+"|"+x.mk+"|"+x.pick;if(!SLIP.some(y=>y.id==id))SLIP.push({id,mt:x.mt,mk:x.mk,pick:x.pick,o:x.o,p:x.p,ev:x.ev});slSave();homeRender()}
  else if(d.sd!=null){SLIP.splice(+d.sd,1);slSave();homeRender()}
  else if(d.slm){SLM=d.slm;homeRender()}
@@ -2748,7 +2753,7 @@ function fbTipList(){
   FBM.push({e,st,rows:g.rows,tips:[],started:!!(st&&st<now)})});
  FBM.sort((a,b)=>(a.st||0)-(b.st||0));
  FBM.forEach(m=>{if(m.started){m.hid=0;return}m.hid=m.rows.filter(r=>r.ev>=FBEV&&r.ev>0&&fbBad(r)).length;m.rows.filter(r=>r.ev>=FBEV&&r.ev>0&&!fbBad(r)).sort((a,b)=>b.ev-a.ev).slice(0,4).forEach(r=>{
-  const x={pick:fbPlab(r,m.e),mk:r.market+(r.ev_raw>.25?" · ⚠ PROVERI liniju":""),mt:m.e.h+" - "+m.e.a,st:m.e.start,o:r.odds,p:r.p,ev:r.ev,bk:"Superbet",i:T.length};
+  const x={pick:fbPlab(r,m.e),mk:r.market+(r.ev_raw>.25?" · ⚠ PROVERI liniju":""),mt:m.e.h+" - "+m.e.a,st:m.e.start,o:r.odds,p:r.p,ev:r.ev,bk:"Superbet",i:T.length,r,e:m.e};
   T.push(x);m.tips.push(x)})});
  return T}
 function fbCtx(m,d){
@@ -2767,6 +2772,55 @@ function fbCtx(m,d){
   ${row("Forma (5)",fm(H),fm(A))}${row("Odmor",rs(H),rs(A))}${row("Nedostupni",out(H),out(A))}${row("Stil igre",sty(H),sty(A))}${row("xG po meču (10)",H.xg!=null?f(H.xg,2):"-",A.xg!=null?f(A.xg,2):"-")}
   ${row("Korekcija očekivanih golova",pc(mu[0]),pc(mu[1]))}</table></div>
   <p class="mu" style="margin:6px 0 0;font-size:.88rem">Očekivani golovi posle korekcija (povrede, odmor): <b>${C.lam?f(C.lam[0],2)+" : "+f(C.lam[1],2):"-"}</b>. Forma i stil su informativni, ne menjaju račun; xG, povrede i odmor menjaju.</p>${h2}</details>`}
+// ===== Fudbal: objašnjenje tipa (isti tekst kao fb_explain.py; ako predictions.json već ima r.why, uzima se on) =====
+const fbPc=v=>((v-1)*100>=0?"+":"")+((v-1)*100).toFixed(0)+"%",fbHas=(st,...k)=>{const s=(st||[]).join(" ").toLowerCase();return k.some(x=>s.includes(x))};
+function fbCtxGet(e,d){const L=(d&&d.p&&d.p.context)||[];return L.find(c=>c.h==e.h&&c.a==e.a&&(c.start||"")==(e.start||""))||L.find(c=>c.h==e.h&&c.a==e.a)||null}
+function fbExplain(r,h,a,C){
+ if(Array.isArray(r.why)&&r.why.length)return{label:r.label||(r.market+" · "+r.pick),meaning:r.meaning||"",why:r.why,risk:r.risk||[]};
+ const mk=String(r.market||""),pk=String(r.pick||""),p=r.p,pm=r.p_model,pmk=r.p_market,o=r.odds,ev=r.ev,side=pk=="1"?h:pk=="2"?a:null;
+ let kind="other",n=null,label,meaning;
+ if(mk.startsWith("1X2")){kind="1x2";label=pk=="1"?`1X2 · Pobeda domaćina (${h})`:pk=="X"?"1X2 · Nerešeno":pk=="2"?`1X2 · Pobeda gosta (${a})`:"1X2 · "+pk;
+  meaning=pk=="1"?`${h} pobeđuje u regularnom delu meča (90 minuta, bez produžetaka).`:pk=="X"?"Meč se posle 90 minuta završava nerešeno.":pk=="2"?`${a} pobeđuje u regularnom delu meča (90 minuta, bez produžetaka).`:""}
+ else if(mk.startsWith("Golovi")){kind="ou";const m=mk.match(/\d+(?:\.\d+)?/);n=m?parseFloat(m[0]):2.5;const lo=Math.floor(n);
+  if(pk=="Vise"){label=`Preko ${n} golova`;meaning=`Na meču padne ${lo+1} ili više golova (oba tima zajedno).`}else{label=`Ispod ${n} golova`;meaning=`Na meču padne ${lo} ili manje golova (oba tima zajedno).`}}
+ else if(mk.startsWith("GG")){kind="gg";if(pk=="GG"){label="GG · Oba tima daju gol";meaning=`I ${h} i ${a} postižu bar jedan gol.`}else{label="NG · Bar jedan tim ne daje gol";meaning=`Bar jedan od timova (${h} ili ${a}) ostaje bez gola.`}}
+ else if(/^(AH|EH)/.test(mk)){kind="hc";const line=mk.slice(2).trim();label=`${mk.startsWith("AH")?"Azijski":"Evropski"} hendikep ${line} · ${side||"Nerešeno"}`;meaning=`Tip na ${side||"nerešeno"} uz hendikep ${line}: golovi tima se računaju sa unapred dodeljenom prednošću ili manjkom.`}
+ else{label=mk+" · "+pk;meaning=""}
+ const why=[],risk=[];
+ if(p!=null&&pm!=null&&pmk!=null&&o)why.push(`Model daje ${(pm*100).toFixed(0)}% a tržište (bez marže) ${(pmk*100).toFixed(0)}%, što je zajedno ${(p*100).toFixed(0)}%. Kvota ${o.toFixed(2)} traži samo ${(100/o).toFixed(0)}% (fer kvota je ${(1/p).toFixed(2)}), pa je očekivana vrednost ${ev*100>=0?"+":""}${(ev*100).toFixed(1)}%.`);
+ if(C&&C.home&&C.away){const H=C.home,A=C.away,lam=C.lam;
+  if(lam){const[lh,la]=lam;
+   if((kind=="1x2"||kind=="hc")&&side){const mine=pk=="1"?lh:la,opp=pk=="1"?la:lh,d=mine-opp,base=`Očekivani golovi: ${h} ${lh.toFixed(2)} : ${la.toFixed(2)} ${a}. `;
+    why.push(d>=.25?base+`${side} ima prednost od ${d.toFixed(2)} gola u očekivanim golovima.`:d<=-.25?base+`${side} je po očekivanim golovima ${Math.abs(d).toFixed(2)} iza, ali kvota je viša nego što taj odnos snaga opravdava.`:base+`Odnos je gotovo izjednačen, pa je kvota za ${side} viša nego što ravnoteža opravdava.`)}
+   else if(kind=="1x2")why.push(`Očekivani golovi ${lh.toFixed(2)} : ${la.toFixed(2)} (razlika ${Math.abs(lh-la).toFixed(2)}) znače tesan meč u kome je nerešeno realnije nego što kvota sugeriše.`);
+   else if(kind=="ou"){const tot=lh+la;why.push(`Zbir očekivanih golova je ${tot.toFixed(2)} (${h} ${lh.toFixed(2)} + ${a} ${la.toFixed(2)}), ${tot>n?"iznad":"ispod"} linije ${n}`+((pk=="Vise")==(tot>n)?", što ide u prilog tipu.":", pa je prednost mala i zavisi od varijanse."))}
+   else if(kind=="gg"){const ph=1-Math.exp(-lh),pa=1-Math.exp(-la);why.push(`Šansa da ${h} postigne bar jedan gol je ${(ph*100).toFixed(0)}%, a da ${a} postigne ${(pa*100).toFixed(0)}% (iz očekivanih golova ${lh.toFixed(2)} : ${la.toFixed(2)}). `+(pk=="GG"?"Oba tima su realno u igri za gol.":"Bar jednom timu je realno teško da postigne gol."))}}
+  if(H.xg!=null&&A.xg!=null)why.push(`xG po meču (poslednjih 10): ${h} ${H.xg.toFixed(2)}, ${a} ${A.xg.toFixed(2)}.`);
+  const fh=H.form||{},fa=A.form||{};
+  if(fh.str&&fa.str){let s=`Forma (5): ${h} ${fh.str} (${fh.pts} bod., ${fh.gf}:${fh.ga}), ${a} ${fa.str} (${fa.pts} bod., ${fa.gf}:${fa.ga}). `;const nm_=Math.max(1,fh.str.length);
+   if((kind=="1x2"||kind=="hc")&&side){const dp=(fh.pts-fa.pts)*(pk=="1"?1:-1);s+=dp>=3?`${side} je u boljoj formi (${dp} bodova više).`:dp<=-3?`${side} je u slabijoj formi (${Math.abs(dp)} bodova manje), ali to je već u kvoti.`:"Forma je približno izjednačena."}
+   else if(kind=="ou"){const g=(fh.gf+fh.ga+fa.gf+fa.ga)/(2*nm_);s+=`U tim mečevima timovi u proseku igraju ${g.toFixed(1)} golova po meču.`}
+   else if(kind=="gg")s+=`Golovi po meču u formi: ${h} daje ${(fh.gf/nm_).toFixed(1)}, ${a} daje ${(fa.gf/nm_).toFixed(1)}.`;
+   why.push(s.trim())}
+  const mu=C.mult||[1,1],parts=[];
+  [[h,H],[a,A]].forEach(([t,X])=>{const out=X.out||[];
+   if(out.length)parts.push(`${t} bez: `+out.slice(0,3).map(u=>`${u.n??"?"}`+((u.pos||(u.status!=null&&u.status!="out"))?" ("+[u.pos,(u.status!=null&&u.status!="out")?"upitan":""].filter(x=>x).join(", ")+")":"")).join(", ")+(out.length>3?` i još ${out.length-3}`:""));
+   if(X.rest!=null&&X.rest<3.5)parts.push(`${t} igra posle kratkog odmora (${X.rest.toFixed(1)} d)`)});
+  if(parts.length||mu.some(v=>Math.abs(v-1)>=.02))why.push(parts.join("; ")+(parts.length?"; ":"")+`korekcija očekivanih golova za povrede i odmor: ${h} ${fbPc(mu[0])}, ${a} ${fbPc(mu[1])}.`);
+  const sh=H.style||[],sa=A.style||[];
+  if(sh.length||sa.length){let s=`Stil igre: ${h} – ${sh.join(", ")||"bez izraženog stila"}; ${a} – ${sa.join(", ")||"bez izraženog stila"}. `;
+   if((kind=="ou"&&pk=="Manje")||(kind=="gg"&&pk=="NG"))s+=fbHas([...sh,...sa],"kontr","defan","nizak","blok")?"Kontre i oprezna igra smanjuju broj šansi.":"";
+   else if(kind=="ou"||kind=="gg")s+=fbHas([...sh,...sa],"pres","visok","posed","napad")?"Visok pritisak i napadački stil donose više šansi sa obe strane.":"";
+   else if(side){const ss=pk=="1"?sh:sa;s+=fbHas(ss,"posed","dominac")?`${side} kontroliše posed i stvara više šansi.`:fbHas(ss,"kontr")?`${side} igra na kontre, što odgovara ulozi autsajdera.`:""}
+   why.push(s.trim())}
+  const hh=C.h2h;if(hh&&(hh.n||0)>=3)why.push(`H2H (poslednjih ${hh.n}): ${h} ${hh.h_win} pob., ${hh.draw} nere., ${a} ${hh.n-hh.h_win-hh.draw} pob.; prosek ${hh.avg_goals.toFixed(2)} gola po meču.`)}
+ else why.push("Kontekst (xG, forma, povrede) nije dostupan za ovaj meč, pa se tip oslanja samo na model i kvotu.");
+ if(pm!=null&&pmk!=null&&Math.abs(pm-pmk)>.10)risk.push(`Model i tržište se razilaze za ${(Math.abs(pm-pmk)*100).toFixed(0)} p.p. Proveri da li je kvota pravilno uparena sa ovim tržištem.`);
+ if((r.ev_raw||0)>.25)risk.push("Neobično visok EV, proveri liniju kod kladionice.");
+ risk.push("Konačne postave i vesti iz poslednjeg sata nisu uključeni u model.");
+ return{label,meaning,why,risk}}
+function fbWhyHtml(x){const d=FBD[FBSEL]||{},E=fbExplain(x.r,x.e.h,x.e.a,fbCtxGet(x.e,d));
+ return`<div class="fbw"><div class="fbw-h"><b>${esc(E.label)}</b>${E.meaning?`<span>${esc(E.meaning)}</span>`:""}</div><div class="fbw-t">Zašto +EV</div><ul>${E.why.map(w=>`<li>${esc(w)}</li>`).join("")}</ul>${E.risk.length?`<div class="fbw-r">${E.risk.map(esc).join(" ")}</div>`:""}</div>`}
 function fbMid(kpi,tipRow){
  const k=FBSEL,nm=(FBL.find(x=>x[0]==k)||[0,""])[1],d=FBD[k],hd=`<h2>⚽ ${esc(nm)}</h2>`;
  if(!d||d.loading)return kpi+`<div class="card">${hd}<p class="mu">Učitavam kvote i model…</p></div>`;
@@ -2782,7 +2836,7 @@ function fbMid(kpi,tipRow){
   <div class="mu" style="margin:6px 0">${o3?`1 <b>${f(o3[0],2)}</b> · X <b>${f(o3[1],2)}</b> · 2 <b>${f(o3[2],2)}</b>`:"nema 1X2"}${ou?` · Preko 2.5 <b>${f(ou[1],2)}</b> / Ispod <b>${f(ou[2],2)}</b>`:""}${gg&&ng?` · GG <b>${f(gg,2)}</b> / NG <b>${f(ng,2)}</b>`:""}</div>
   ${m.rows.length?`<div class="mu" style="font-size:.9rem;margin-bottom:6px">Model: 1/X/2 ${pm(m,"1X2","1")} / ${pm(m,"1X2","X")} / ${pm(m,"1X2","2")} · GG ${pm(m,"GG/NG","GG")} · Preko 2.5 ${pm(m,"Golovi 2.5","Vise")}</div>`:'<div class="mu">Nema modela za ovaj meč.</div>'}
   ${fbCtx(m,d)}
-  ${m.tips.length?m.tips.map(x=>tipRow(x,x.i)).join(""):`<p class="mu" style="margin:0">${m.started?"Utakmica je počela, prematch kvote više ne važe.":"Nema +EV tipa ≥ "+Math.round(FBEV*100)+"% za ovaj meč."}</p>${(()=>{const b=m.started?null:m.rows.filter(r=>!fbBad(r)).sort((x,y)=>y.ev-x.ev)[0];return b?`<p class="mu" style="font-size:.85rem;margin:4px 0 0">Najbliže pragu: <b>${esc(fbPlab(b,m.e))}</b> ${esc(b.market)} @ ${f(b.odds,2)} (EV ${b.ev>=0?"+":""}${f(b.ev*100,1)}%)</p>`:""})()}`}${m.hid?`<p class="mu" style="font-size:.85rem;margin:6px 0 0">Sakriveno ${m.hid} sumnjivih izbora (model i tržište se razilaze za više od 15 p.p., najčešće je pogrešno uparena kvota, a ne prava prilika).</p>`:""}</div>`}).join("");
+  ${m.tips.length?m.tips.map(x=>tipRow(x,x.i)+fbWhyHtml(x)).join(""):`<p class="mu" style="margin:0">${m.started?"Utakmica je počela, prematch kvote više ne važe.":"Nema +EV tipa ≥ "+Math.round(FBEV*100)+"% za ovaj meč."}</p>${(()=>{const b=m.started?null:m.rows.filter(r=>!fbBad(r)).sort((x,y)=>y.ev-x.ev)[0];return b?`<p class="mu" style="font-size:.85rem;margin:4px 0 0">Najbliže pragu: <b>${esc(fbPlab(b,m.e))}</b> ${esc(b.market)} @ ${f(b.odds,2)} (EV ${b.ev>=0?"+":""}${f(b.ev*100,1)}%)</p>`:""})()}`}${m.hid?`<p class="mu" style="font-size:.85rem;margin:6px 0 0">Sakriveno ${m.hid} sumnjivih izbora (model i tržište se razilaze za više od 15 p.p., najčešće je pogrešno uparena kvota, a ne prava prilika).</p>`:""}</div>`}).join("");
  const none=!FBM.length?`<div class="note" style="display:block">Nema utakmica za filter „${FBF}“ (${(d.p.rows||[]).length} izbora u fajlu). ${FBF!="sve"?'Probaj „Sve“.':""}</div>`:"";
  return kpi+`<div class="card">${hd}${bar}${st}</div>${topH}${none}${cards}<p class="mu" style="font-size:.85rem">EV = 35% model + 65% tržište bez marže (<code>--w</code> u football_poisson.py). Poisson model uči iz Statshub rezultata i xG-a, uračunava prijavljene povrede i kratak odmor, ali ne zna konačne sastave ni vesti iz poslednjeg sata; procena, ne garancija.</p>`}
 </script>
