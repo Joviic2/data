@@ -310,6 +310,7 @@ def main():
     ap.add_argument("--ref", action="append", default=[], help='sudija meca: "domacin,gost=Ime Prezime" (moze vise puta; ili data/<liga>/referees.json)')
     ap.add_argument("--bt-grid", action="store_true", help="uz --backtest K: poredi recent-w / momentum konfiguracije i ispisi pristrasnost Under/Over i preporuceni --lam-scale")
     a = ap.parse_args()
+    if FX is None and not a.no_factors: print("\n!!! UPOZORENJE: fb_factors.py nije u istom folderu kao football_poisson.py -> momentum, stil, sudija, motivacija, vreme i blokada Under tipova NISU uracunati !!!\n")
     today = date.today()
     cur = season_code(today); prev = f"{int(cur[:2]) - 1:02d}{int(cur[:2]):02d}"
     seasons = a.seasons.split(",") if a.seasons else [cur, prev]
@@ -422,7 +423,7 @@ def main():
                 r_.update(explain_row(r_, r_["h"], r_["a"], ctx_for({"context": ctxs}, r_["h"], r_["a"], r_.get("start"))))
         except ImportError:
             print("UPOZORENJE: fb_explain.py nije pored football_poisson.py - tipovi ce biti bez objasnjenja iz JSON-a (sajt koristi rezervno objasnjenje)")
-        json.dump({"updated": datetime.now().isoformat(timespec="seconds"), "w": a.w, "source": "statshub" if SD else "csv", "beta": a.beta if SD else None, "rows": out, "skipped": skipped, "context": ctxs}, open(OUT, "w", encoding="utf-8"), ensure_ascii=False, separators=(",", ":"))
+        json.dump({"updated": datetime.now().isoformat(timespec="seconds"), "w": a.w, "source": "statshub" if SD else "csv", "factors_on": bool(FX and not a.no_factors and SD), "beta": a.beta if SD else None, "rows": out, "skipped": skipped, "context": ctxs}, open(OUT, "w", encoding="utf-8"), ensure_ascii=False, separators=(",", ":"))
         print(f"\nupisano {len(out)} izbora u {OUT}" + (f" (izbaceno {dropped} sumnjivih: model i trziste se previse razilaze; --keep-sus ih vraca)" if dropped else ""))
 
 
