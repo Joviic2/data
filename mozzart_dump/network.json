@@ -1,0 +1,344 @@
+{
+ "stranica": "https://www.mozzartbet.com/sr/kladjenje",
+ "naslov": "Mozzart | Kladjenje | Najbolje kvote i najveca ponuda",
+ "zahtevi": [
+  {
+   "method": "POST",
+   "status": 429,
+   "url": "https://www.mozzartbet.com/betting/get-special-offer",
+   "nije_json": "Expecting value: line 1 column 1 (char 0)",
+   "post": "{}"
+  },
+  {
+   "method": "POST",
+   "status": 429,
+   "url": "https://www.mozzartbet.com/betting/get-sports",
+   "nije_json": "Expecting value: line 1 column 1 (char 0)",
+   "post": "{\"date\":\"all_days\"}"
+  },
+  {
+   "method": "POST",
+   "status": 429,
+   "url": "https://www.mozzartbet.com/betting/matches",
+   "nije_json": "Expecting value: line 1 column 1 (char 0)",
+   "post": "{\"date\":\"all_days\",\"sort\":\"bycompetition\",\"currentPage\":0,\"pageSize\":15,\"sportId\":8,\"competitionIds\":[],\"search\":\"\",\"matchTypeId\":0}"
+  },
+  {
+   "method": "POST",
+   "status": 200,
+   "url": "https://www.mozzartbet.com/sp-hub/competition-overview/6a0db770a67e932551431cb4/2",
+   "bajtova": 23139,
+   "post": "{\"currentPage\":0,\"groupationId\":1,\"matchTypeId\":0,\"medium\":\"PREMATCH_WEB\",\"orderType\":\"BY_COMPETITION\",\"packGroupsInMatch\":true,\"pageSize\":100,\"uberOffer\":true}"
+  },
+  {
+   "method": "GET",
+   "status": 200,
+   "url": "https://www.mozzartbet.com/get-banners-new?lang=sr&platform=DESKTOP&name=bettingPopupBanners",
+   "bajtova": 31
+  },
+  {
+   "method": "POST",
+   "status": 200,
+   "url": "https://www.mozzartbet.com/predefined/get-tickets",
+   "bajtova": 2,
+   "post": "{\"predefinedTicketType\":\"STANDARD\",\"from\":1791410400000,\"to\":1791669599000}"
+  },
+  {
+   "method": "GET",
+   "status": 200,
+   "url": "https://www.mozzartbet.com/generate-user-id",
+   "nije_json": "Extra data: line 1 column 2 (char 1)"
+  },
+  {
+   "method": "POST",
+   "status": 200,
+   "url": "https://www.mozzartbet.com/maintenanceCheck",
+   "bajtova": 15,
+   "post": ""
+  },
+  {
+   "method": "GET",
+   "status": 200,
+   "url": "https://www.mozzartbet.com/get-asset-v2?page=footer",
+   "bajtova": 1297
+  },
+  {
+   "method": "POST",
+   "status": 200,
+   "url": "https://tracking.mozzartsportke.com/user/update-data",
+   "bajtova": 60,
+   "post": "{\"fingerprint\":\"FmxZwcRfG4Uetm0ScPcL\",\"iDs\":{},\"visitInfo\":{\"domain\":\"https://www.mozzartbet.com\",\"ip\":\"213.196.109.113\",\"ipLocation\":{\"accuracyRadius\":100,\"city\":{\"name\":\"Niš\"},\"continent\":{\"code\":\"E"
+  },
+  {
+   "method": "GET",
+   "status": 200,
+   "url": "https://betting-publisher-rs.mozzartio.com/betting-publisher/ws-broker/info?name=0_105793704&t=1791590454718",
+   "bajtova": 85
+  },
+  {
+   "method": "POST",
+   "status": 200,
+   "url": "https://www.mozzartbet.com/_mfp",
+   "bajtova": 33,
+   "post": "{\"_mfv\":\"[\\\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36\\\",true,\\\"en-US\\\",24,16,12,[900,1366],[900,1366],-120,\\\"Europe/Budapest\\\",tru"
+  },
+  {
+   "method": "POST",
+   "status": 204,
+   "url": "https://ad.doubleclick.net/ccm/s/collect?auid=1871892866.1791588371&gtm=45He6a80h2v76727820za200zd76727820xeaxf1&fmt=8",
+   "nije_json": "Response.json: Protocol error (Network.getResponseBody): No data found",
+   "post": ""
+  },
+  {
+   "method": "POST",
+   "status": 200,
+   "url": "https://www.google.com/ccm/collect?rcb=10&frm=0&apvc=1&ae=g&auid=1871892866.1791588371&dt=Mozzart%20%7C%20Fudbal%20%7C%20Kosarka%20%7C%20Tenis%20%7C%20Najbolje%20kvote&en=page_view&dl=https%3A%2F%2Fwww.mozzartbet.com%2Fs",
+   "nije_json": "Response.json: Protocol error (Network.getResponseBody): No data found",
+   "post": ""
+  },
+  {
+   "method": "POST",
+   "status": 200,
+   "url": "https://www.google.com/ccm/collect?rcb=19&frm=0&apvc=0&auid=1871892866.1791588371&dt=Mozzart%20%7C%20Fudbal%20%7C%20Kosarka%20%7C%20Tenis%20%7C%20Najbolje%20kvote&tid=AW-855932212&en=page_view&dl=https%3A%2F%2Fwww.mozzar",
+   "nije_json": "Response.json: Protocol error (Network.getResponseBody): No data found",
+   "post": ""
+  },
+  {
+   "method": "POST",
+   "status": 204,
+   "url": "https://analytics.google.com/g/collect?v=2&tid=G-PHMZPND8CR&gtm=45je6a80h2v894695619z876727820za20gzb76727820zd76727820xf1&_p=1791590454766&_gaz=1&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AAAAAGQC&cid=1203229105.1791588371&frm=0",
+   "nije_json": "Response.json: Protocol error (Network.getResponseBody): No data found",
+   "post": ""
+  },
+  {
+   "method": "POST",
+   "status": 200,
+   "url": "https://api-eu.mixpanel.com/track/?verbose=1&ip=1&_=1791590460042",
+   "bajtova": 28,
+   "post": "data=%5B%7B%22event%22%3A%22open%22%2C%22properties%22%3A%7B%22%24os%22%3A%22Windows%22%2C%22%24browser%22%3A%22Chrome%22%2C%22%24current_url%22%3A%22https%3A%2F%2Fwww.mozzartbet.com%2Fsr%2Fkladjenje%"
+  },
+  {
+   "method": "POST",
+   "status": 200,
+   "url": "https://api-eu.mixpanel.com/track/?verbose=1&ip=1&_=1791590485302",
+   "bajtova": 28,
+   "post": "data=%5B%7B%22event%22%3A%22Nav%20Clicked%22%2C%22properties%22%3A%7B%22%24os%22%3A%22Windows%22%2C%22%24browser%22%3A%22Chrome%22%2C%22%24current_url%22%3A%22https%3A%2F%2Fwww.mozzartbet.com%2Fsr%2Fk"
+  },
+  {
+   "method": "POST",
+   "status": 204,
+   "url": "https://analytics.google.com/g/collect?v=2&tid=G-PHMZPND8CR&gtm=45je6a80h2v894695619z876727820za20gzb76727820zd76727820xf1&_p=1791590454766&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AAAAAGQC&cid=1203229105.1791588371&frm=0&pscdl=",
+   "nije_json": "Response.json: Protocol error (Network.getResponseBody): No data found",
+   "post": ""
+  },
+  {
+   "method": "POST",
+   "status": 429,
+   "url": "https://www.mozzartbet.com/betting/get-special-offer",
+   "nije_json": "Expecting value: line 1 column 1 (char 0)",
+   "post": "{}"
+  },
+  {
+   "method": "GET",
+   "status": 429,
+   "url": "https://www.mozzartbet.com/betting/most-popular-sports",
+   "nije_json": "Expecting value: line 1 column 1 (char 0)"
+  },
+  {
+   "method": "GET",
+   "status": 200,
+   "url": "https://www.mozzartbet.com/get-promotions?activeFilter=all",
+   "bajtova": 31135
+  },
+  {
+   "method": "GET",
+   "status": 200,
+   "url": "https://www.mozzartbet.com/get-banners-new?lang=sr&platform=DESKTOP&name=homePopupBanners",
+   "bajtova": 31
+  },
+  {
+   "method": "GET",
+   "status": 200,
+   "url": "https://www.mozzartbet.com/get-asset-v2?page=footer",
+   "bajtova": 1297
+  },
+  {
+   "method": "GET",
+   "status": 200,
+   "url": "https://www.mozzartbet.com/newsMainWidgetNew",
+   "bajtova": 11339
+  },
+  {
+   "method": "GET",
+   "status": 200,
+   "url": "https://www.mozzartbet.com/get-banners-new?lang=sr&platform=DESKTOP&name=homeMainBanner",
+   "bajtova": 6703
+  },
+  {
+   "method": "POST",
+   "status": 200,
+   "url": "https://www.mozzartbet.com/activeJackpotsByType",
+   "bajtova": 799,
+   "post": "{\"type\":3,\"sumId\":1137}"
+  },
+  {
+   "method": "POST",
+   "status": 429,
+   "url": "https://www.mozzartbet.com/betting/most-popular-matches-by-sport?sportId=1",
+   "nije_json": "Expecting value: line 1 column 1 (char 0)",
+   "post": "{\"subgameIds\":[]}"
+  },
+  {
+   "method": "POST",
+   "status": 204,
+   "url": "https://analytics.google.com/g/collect?v=2&tid=G-PHMZPND8CR&gtm=45je6a80h2v894695619za20gzb76727820zd76727820xf1&_p=1791590454766&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AEAAAGQC&ae=a&cid=1203229105.1791588371&frm=0&pscdl=noapi",
+   "nije_json": "Response.json: Protocol error (Network.getResponseBody): No data found",
+   "post": ""
+  },
+  {
+   "method": "POST",
+   "status": 429,
+   "url": "https://www.mozzartbet.com/live/matches",
+   "nije_json": "Expecting value: line 1 column 1 (char 0)",
+   "post": "{\"sportId\":1,\"competitionIds\":[],\"subgameIds\":[],\"sort\":\"bycompetition\"}"
+  },
+  {
+   "method": "GET",
+   "status": 200,
+   "url": "https://www.mozzartbet.com/casino/get-by-category?type=page&id=301",
+   "bajtova": 61560
+  },
+  {
+   "method": "POST",
+   "status": 200,
+   "url": "https://www.mozzartbet.com/activeJackpotsByType",
+   "bajtova": 2,
+   "post": "{\"type\":4,\"sumId\":1137}"
+  },
+  {
+   "method": "POST",
+   "status": 429,
+   "url": "https://www.mozzartbet.com/live/matches",
+   "nije_json": "Expecting value: line 1 column 1 (char 0)",
+   "post": "{\"sportId\":2,\"competitionIds\":[],\"subgameIds\":[],\"sort\":\"bycompetition\"}"
+  },
+  {
+   "method": "POST",
+   "status": 429,
+   "url": "https://www.mozzartbet.com/live/matches",
+   "nije_json": "Expecting value: line 1 column 1 (char 0)",
+   "post": "{\"sportId\":5,\"competitionIds\":[],\"subgameIds\":[],\"sort\":\"bycompetition\"}"
+  },
+  {
+   "method": "POST",
+   "status": 429,
+   "url": "https://www.mozzartbet.com/live/matches",
+   "nije_json": "Expecting value: line 1 column 1 (char 0)",
+   "post": "{\"sportId\":4,\"competitionIds\":[],\"subgameIds\":[],\"sort\":\"bycompetition\"}"
+  },
+  {
+   "method": "POST",
+   "status": 200,
+   "url": "https://g.mozzartbet.com/api/4/envelope/?sentry_key=447515007d7d464591d6d7a893b27ea0&sentry_version=7&sentry_client=sentry.javascript.vue%2F7.81.1",
+   "bajtova": 42,
+   "post": "{\"event_id\":\"ae9b122674fc432e8f9fde9052688789\",\"sent_at\":\"2026-10-10T00:01:27.301Z\",\"sdk\":{\"name\":\"sentry.javascript.vue\",\"version\":\"7.81.1\"},\"trace\":{\"environment\":\"production\",\"public_key\":\"44751500"
+  },
+  {
+   "method": "POST",
+   "status": 429,
+   "url": "https://www.mozzartbet.com/live/matches",
+   "nije_json": "Expecting value: line 1 column 1 (char 0)",
+   "post": "{\"sportId\":10,\"competitionIds\":[],\"subgameIds\":[],\"sort\":\"bycompetition\"}"
+  },
+  {
+   "method": "POST",
+   "status": 204,
+   "url": "https://analytics.google.com/g/collect?v=2&tid=G-PHMZPND8CR&gtm=45je6a80h2v894695619z876727820za20gzb76727820zd76727820xf1&_p=1791590454766&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AAAAAGQC&cid=1203229105.1791588371&frm=0&pscdl=",
+   "nije_json": "Response.json: Protocol error (Network.getResponseBody): No data found",
+   "post": ""
+  },
+  {
+   "method": "POST",
+   "status": 429,
+   "url": "https://www.mozzartbet.com/betting/get-special-offer",
+   "nije_json": "Expecting value: line 1 column 1 (char 0)",
+   "post": "{}"
+  },
+  {
+   "method": "POST",
+   "status": 429,
+   "url": "https://www.mozzartbet.com/betting/get-sports",
+   "nije_json": "Expecting value: line 1 column 1 (char 0)",
+   "post": "{\"date\":\"today\"}"
+  },
+  {
+   "method": "GET",
+   "status": 200,
+   "url": "https://www.mozzartbet.com/get-banners-new?lang=sr&platform=DESKTOP&name=bettingPopupBanners",
+   "bajtova": 31
+  },
+  {
+   "method": "POST",
+   "status": 204,
+   "url": "https://analytics.google.com/g/collect?v=2&tid=G-PHMZPND8CR&gtm=45je6a80h2v894695619za20gzb76727820zd76727820xf1&_p=1791590454766&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AEAAAGQC&ae=a&cid=1203229105.1791588371&frm=0&pscdl=noapi",
+   "nije_json": "Response.json: Protocol error (Network.getResponseBody): No data found",
+   "post": ""
+  },
+  {
+   "method": "GET",
+   "status": 200,
+   "url": "https://www.mozzartbet.com/get-asset-v2?page=footer",
+   "bajtova": 1297
+  },
+  {
+   "method": "POST",
+   "status": 200,
+   "url": "https://www.mozzartbet.com/predefined/get-tickets",
+   "bajtova": 2,
+   "post": "{\"predefinedTicketType\":\"STANDARD\",\"from\":1791410400000,\"to\":1791669599000}"
+  },
+  {
+   "method": "POST",
+   "status": 200,
+   "url": "https://api-eu.mixpanel.com/track/?verbose=1&ip=1&_=1791590490407",
+   "bajtova": 28,
+   "post": "data=%5B%7B%22event%22%3A%22Nav%20Clicked%22%2C%22properties%22%3A%7B%22%24os%22%3A%22Windows%22%2C%22%24browser%22%3A%22Chrome%22%2C%22%24current_url%22%3A%22https%3A%2F%2Fwww.mozzartbet.com%2Fsr%22%"
+  },
+  {
+   "method": "POST",
+   "status": 204,
+   "url": "https://analytics.google.com/g/collect?v=2&tid=G-PHMZPND8CR&gtm=45je6a80h2v894695619z876727820za20gzb76727820zd76727820xf1&_p=1791590454766&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AAAAAGQC&cid=1203229105.1791588371&frm=0&pscdl=",
+   "nije_json": "Response.json: Protocol error (Network.getResponseBody): No data found",
+   "post": ""
+  },
+  {
+   "method": "POST",
+   "status": 204,
+   "url": "https://analytics.google.com/g/collect?v=2&tid=G-PHMZPND8CR&gtm=45je6a80h2v894695619za20gzb76727820zd76727820xf1&_p=1791590454766&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AEAAAGQC&ae=a&cid=1203229105.1791588371&frm=0&pscdl=noapi",
+   "nije_json": "Response.json: Protocol error (Network.getResponseBody): No data found",
+   "post": ""
+  }
+ ],
+ "websocket": [
+  {
+   "url": "wss://www.mozzartbet.com/socket.io/?EIO=3&transport=websocket",
+   "frames": [
+    "0{\"sid\":\"lOC8COxmXNMJpgRdAEN3\",\"upgrades\":[],\"pingInterval\":25000,\"pingTimeout\":5000}",
+    "40",
+    "42[\"connected\",true]",
+    "3",
+    "3"
+   ]
+  },
+  {
+   "url": "wss://betting-publisher-rs.mozzartio.com/betting-publisher/ws-broker/896/5ibysjcj/websocket?name=0_105793704",
+   "frames": [
+    "o",
+    "a[\"CONNECTED\\nserver:RabbitMQ/3.13.7\\nsession:session-SpSnu63395_rQjJxMZUWzA\\nheart-beat:10000,10000\\nversion:1.2\\nuser-name:0_105793704\\n\\n\\u0000\"]",
+    "a[\"\\n\"]",
+    "a[\"\\n\"]",
+    "a[\"\\n\"]"
+   ]
+  }
+ ]
+}

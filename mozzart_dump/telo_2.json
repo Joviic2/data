@@ -1,0 +1,973 @@
+{
+ "url": "https://www.mozzartbet.com/sp-hub/competition-overview/6a0db770a67e932551431cb4/2",
+ "data": [
+  {
+   "type": "FREE_GAME",
+   "title": "Slobodna igra",
+   "subTitle": "Slobodna igra vezana za mečeve",
+   "iconUrl": "https://cdn.mozzartbet.com/public/img2023/svgs/svg__sp-hub-free-games.svg",
+   "matches": [
+    {
+     "id": 1067835,
+     "filter": {
+      "matchId": 1067835,
+      "pageSize": 50,
+      "currentPage": 0,
+      "matchTypeId": 6,
+      "orderType": "BY_COMPETITION",
+      "loadPriorityTemplateGamesOnly": true,
+      "loadAllTemplateGames": false,
+      "packGamesGroupBySport": false,
+      "medium": "ANDROID",
+      "loadExtendedOffer": false,
+      "packGroupsInMatch": true,
+      "packAllGroups": false,
+      "sportsLoad": true,
+      "uberOffer": true
+     },
+     "sport": {
+      "id": 1,
+      "name": "Fudbal",
+      "rank": 0
+     },
+     "competition": {
+      "id": 4187,
+      "name": "Engleska 1",
+      "originId": 20
+     },
+     "competitionPhase": {
+      "id": 1,
+      "name": "Liga"
+     },
+     "matchNumber": 2036,
+     "startTime": 1791649800000,
+     "betStatus": "STARTED",
+     "status": {
+      "id": 0,
+      "name": "Nije počeo"
+     },
+     "home": {
+      "id": 94299,
+      "name": "Manchester United"
+     },
+     "visitor": {
+      "id": 94296,
+      "name": "Tottenham"
+     },
+     "oddsGroup": [
+      {
+       "id": 302184983,
+       "groupId": "6a22c64439e275501e1d0633",
+       "groupName": "Man.Utd daje gol u oba poluvremena; Man.Utd po 2+ kornera u oba poluvremena",
+       "groupNameTranslation": [
+        {
+         "languageCode": "sr",
+         "name": "Slobodna igra"
+        }
+       ],
+       "odds": [
+        {
+         "id": 302184983,
+         "specialOddValue": "",
+         "subgame": {
+          "id": 1,
+          "name": "da",
+          "shortName": "da",
+          "description": "Man.Utd daje gol u oba poluvremena; Man.Utd po 2+ kornera u oba poluvremena da",
+          "fullId": 1001489001,
+          "rank": 1,
+          "originFullId": 1015704001
+         },
+         "game": {
+          "id": 489,
+          "name": "Man.Utd daje gol u oba poluvremena; Man.Utd po 2+ kornera u oba poluvremena",
+          "rank": 1,
+          "parameterName": ""
+         },
+         "value": 3.5,
+         "oddStatus": "ACTIVE",
+         "bindable": false,
+         "paramsHash": "cb8c757ee30cb0e1abfe00d47344d9f5769f3b00",
+         "previousValue": 3
+        }
+       ],
+       "specialOddValue": "",
+       "rank": 1
+      }
+     ],
+     "changeTime": 1791577234550,
+     "totalOddsCount": 471,
+     "matchTypeId": 6,
+     "originMatchId": 10017175,
+     "originInfo": {
+      "preMatchId": 10017175,
+      "lbMatchId": 72221308
+     },
+     "streamInfo": {
+      "playByPlayid": "72221308"
+     },
+     "topMinutes": [
+      "45",
+      "60",
+      "75"
+     ],
+     "hasMediaItems": false,
+     "activePayoutPromotions": [
+      {
+       "type": "SCORE_DIFF",
+       "description": "KI 1 dobitno ako domaćin povede sa dva gola razlike.",
+       "iconUrl": "https://cdn.mozzartbet.com/public/img2023/svgs/svg__benefitsIcons1.svg",
+       "title": "MR KI1"
+      },
+      {
+       "type": "SCORE_DIFF",
+       "description": "KI 2 dobitno ako gost povede sa dva gola razlike.",
+       "iconUrl": "https://cdn.mozzartbet.com/public/img2023/svgs/svg__benefitsIcons1.svg",
+       "title": "MR KI2"
+      },
+      {
+       "type": "SCORE_DIFF_AFTER_TIME",
+       "description": "1-1 dobitno ako domaćin vodi sa bar dva gola razlike na poluvremenu.",
+       "iconUrl": "https://cdn.mozzartbet.com/public/img2023/svgs/svg__benefitsIcons2.svg",
+       "title": "MR 1-1"
+      },
+      {
+       "type": "SCORE_DIFF_AFTER_TIME",
+       "description": "2-2 dobitno ako gost vodi sa bar dva gola razlike na poluvremenu.",
+       "iconUrl": "https://cdn.mozzartbet.com/public/img2023/svgs/svg__benefitsIcons2.svg",
+       "title": "MR 2-2"
+      },
+      {
+       "type": "SCORE_SUM",
+       "description": "Tri gola do 30. minuta važi 5+.",
+       "iconUrl": "https://cdn.mozzartbet.com/public/img2023/svgs/svg__benefitsIcons2.svg",
+       "title": "MR 5+"
+      },
+      {
+       "type": "SCORE_SUM",
+       "description": "Četiri gola do 60. minuta važi 5+.",
+       "iconUrl": "https://cdn.mozzartbet.com/public/img2023/svgs/svg__benefitsIcons2.svg",
+       "title": "MR 5+"
+      },
+      {
+       "type": "SCORE_SUM",
+       "description": "Dva gola do 15. minuta važi 4+.",
+       "iconUrl": "https://cdn.mozzartbet.com/public/img2023/svgs/svg__benefitsIcons2.svg",
+       "title": "MR 4+"
+      },
+      {
+       "type": "SCORE_SUM",
+       "description": "Tri gola do 40. minuta važi 4+.",
+       "iconUrl": "https://cdn.mozzartbet.com/public/img2023/svgs/svg__benefitsIcons2.svg",
+       "title": "MR 4+"
+      },
+      {
+       "type": "SCORE_SUM",
+       "description": "Gol do 10. minuta važi 3+.",
+       "iconUrl": "https://cdn.mozzartbet.com/public/img2023/svgs/svg__benefitsIcons2.svg",
+       "title": "MR 3+"
+      },
+      {
+       "type": "SCORE_SUM",
+       "description": "Dva gola do 30. minuta važi 3+.",
+       "iconUrl": "https://cdn.mozzartbet.com/public/img2023/svgs/svg__benefitsIcons2.svg",
+       "title": "MR 3+"
+      },
+      {
+       "type": "SCORE_SUM",
+       "description": "Gol do 10. minuta važi 2+.",
+       "iconUrl": "https://cdn.mozzartbet.com/public/img2023/svgs/svg__benefitsIcons2.svg",
+       "title": "MR 2+"
+      },
+      {
+       "type": "SCORE_SUM",
+       "description": "Gol do 15. minuta i drugi gol do 65. minuta važi I2+.",
+       "iconUrl": "https://cdn.mozzartbet.com/public/img2023/svgs/svg__benefitsIcons2.svg",
+       "title": "MR I2+"
+      },
+      {
+       "type": "SCORE_SUM",
+       "description": "Gol do 10. minuta važi GG.",
+       "iconUrl": "https://cdn.mozzartbet.com/public/img2023/svgs/svg__benefitsIcons2.svg",
+       "title": "MR GG"
+      },
+      {
+       "type": "SCORE_SUM",
+       "description": "Oba tima daju gol do poluvremena važi GG3+.",
+       "iconUrl": "https://cdn.mozzartbet.com/public/img2023/svgs/svg__benefitsIcons2.svg",
+       "title": "MR GG3+"
+      }
+     ]
+    },
+    {
+     "id": 1067835,
+     "filter": {
+      "matchId": 1067835,
+      "pageSize": 50,
+      "currentPage": 0,
+      "matchTypeId": 6,
+      "orderType": "BY_COMPETITION",
+      "loadPriorityTemplateGamesOnly": true,
+      "loadAllTemplateGames": false,
+      "packGamesGroupBySport": false,
+      "medium": "ANDROID",
+      "loadExtendedOffer": false,
+      "packGroupsInMatch": true,
+      "packAllGroups": false,
+      "sportsLoad": true,
+      "uberOffer": true
+     },
+     "sport": {
+      "id": 1,
+      "name": "Fudbal",
+      "rank": 0
+     },
+     "competition": {
+      "id": 4187,
+      "name": "Engleska 1",
+      "originId": 20
+     },
+     "competitionPhase": {
+      "id": 1,
+      "name": "Liga"
+     },
+     "matchNumber": 2036,
+     "startTime": 1791649800000,
+     "betStatus": "STARTED",
+     "status": {
+      "id": 0,
+      "name": "Nije počeo"
+     },
+     "home": {
+      "id": 94299,
+      "name": "Manchester United"
+     },
+     "visitor": {
+      "id": 94296,
+      "name": "Tottenham"
+     },
+     "oddsGroup": [
+      {
+       "id": 302184984,
+       "groupId": "6a22c64439e275501e1d0633",
+       "groupName": "Manchester United golman 4+ odbrane na meču; Tottenham golman 4+ odbrane na meču",
+       "groupNameTranslation": [
+        {
+         "languageCode": "sr",
+         "name": "Slobodna igra"
+        }
+       ],
+       "odds": [
+        {
+         "id": 302184984,
+         "specialOddValue": "",
+         "subgame": {
+          "id": 1,
+          "name": "da",
+          "shortName": "da",
+          "description": "Manchester United golman 4+ odbrane na meču; Tottenham golman 4+ odbrane na meču da",
+          "fullId": 1001489001,
+          "rank": 1,
+          "originFullId": 1015704001
+         },
+         "game": {
+          "id": 489,
+          "name": "Manchester United golman 4+ odbrane na meču; Tottenham golman 4+ odbrane na meču",
+          "rank": 1,
+          "parameterName": ""
+         },
+         "value": 5,
+         "oddStatus": "ACTIVE",
+         "bindable": false,
+         "paramsHash": "f7d49cddef8882dba799f9d593be509f0a4f76d1",
+         "previousValue": 4.5
+        }
+       ],
+       "specialOddValue": "",
+       "rank": 1
+      }
+     ],
+     "changeTime": 1791577234550,
+     "totalOddsCount": 471,
+     "matchTypeId": 6,
+     "originMatchId": 10017175,
+     "originInfo": {
+      "preMatchId": 10017175,
+      "lbMatchId": 72221308
+     },
+     "streamInfo": {
+      "playByPlayid": "72221308"
+     },
+     "topMinutes": [
+      "45",
+      "60",
+      "75"
+     ],
+     "hasMediaItems": false,
+     "activePayoutPromotions": [
+      {
+       "type": "SCORE_DIFF",
+       "description": "KI 1 dobitno ako domaćin povede sa dva gola razlike.",
+       "iconUrl": "https://cdn.mozzartbet.com/public/img2023/svgs/svg__benefitsIcons1.svg",
+       "title": "MR KI1"
+      },
+      {
+       "type": "SCORE_DIFF",
+       "description": "KI 2 dobitno ako gost povede sa dva gola razlike.",
+       "iconUrl": "https://cdn.mozzartbet.com/public/img2023/svgs/svg__benefitsIcons1.svg",
+       "title": "MR KI2"
+      },
+      {
+       "type": "SCORE_DIFF_AFTER_TIME",
+       "description": "1-1 dobitno ako domaćin vodi sa bar dva gola razlike na poluvremenu.",
+       "iconUrl": "https://cdn.mozzartbet.com/public/img2023/svgs/svg__benefitsIcons2.svg",
+       "title": "MR 1-1"
+      },
+      {
+       "type": "SCORE_DIFF_AFTER_TIME",
+       "description": "2-2 dobitno ako gost vodi sa bar dva gola razlike na poluvremenu.",
+       "iconUrl": "https://cdn.mozzartbet.com/public/img2023/svgs/svg__benefitsIcons2.svg",
+       "title": "MR 2-2"
+      },
+      {
+       "type": "SCORE_SUM",
+       "description": "Tri gola do 30. minuta važi 5+.",
+       "iconUrl": "https://cdn.mozzartbet.com/public/img2023/svgs/svg__benefitsIcons2.svg",
+       "title": "MR 5+"
+      },
+      {
+       "type": "SCORE_SUM",
+       "description": "Četiri gola do 60. minuta važi 5+.",
+       "iconUrl": "https://cdn.mozzartbet.com/public/img2023/svgs/svg__benefitsIcons2.svg",
+       "title": "MR 5+"
+      },
+      {
+       "type": "SCORE_SUM",
+       "description": "Dva gola do 15. minuta važi 4+.",
+       "iconUrl": "https://cdn.mozzartbet.com/public/img2023/svgs/svg__benefitsIcons2.svg",
+       "title": "MR 4+"
+      },
+      {
+       "type": "SCORE_SUM",
+       "description": "Tri gola do 40. minuta važi 4+.",
+       "iconUrl": "https://cdn.mozzartbet.com/public/img2023/svgs/svg__benefitsIcons2.svg",
+       "title": "MR 4+"
+      },
+      {
+       "type": "SCORE_SUM",
+       "description": "Gol do 10. minuta važi 3+.",
+       "iconUrl": "https://cdn.mozzartbet.com/public/img2023/svgs/svg__benefitsIcons2.svg",
+       "title": "MR 3+"
+      },
+      {
+       "type": "SCORE_SUM",
+       "description": "Dva gola do 30. minuta važi 3+.",
+       "iconUrl": "https://cdn.mozzartbet.com/public/img2023/svgs/svg__benefitsIcons2.svg",
+       "title": "MR 3+"
+      },
+      {
+       "type": "SCORE_SUM",
+       "description": "Gol do 10. minuta važi 2+.",
+       "iconUrl": "https://cdn.mozzartbet.com/public/img2023/svgs/svg__benefitsIcons2.svg",
+       "title": "MR 2+"
+      },
+      {
+       "type": "SCORE_SUM",
+       "description": "Gol do 15. minuta i drugi gol do 65. minuta važi I2+.",
+       "iconUrl": "https://cdn.mozzartbet.com/public/img2023/svgs/svg__benefitsIcons2.svg",
+       "title": "MR I2+"
+      },
+      {
+       "type": "SCORE_SUM",
+       "description": "Gol do 10. minuta važi GG.",
+       "iconUrl": "https://cdn.mozzartbet.com/public/img2023/svgs/svg__benefitsIcons2.svg",
+       "title": "MR GG"
+      },
+      {
+       "type": "SCORE_SUM",
+       "description": "Oba tima daju gol do poluvremena važi GG3+.",
+       "iconUrl": "https://cdn.mozzartbet.com/public/img2023/svgs/svg__benefitsIcons2.svg",
+       "title": "MR GG3+"
+      }
+     ]
+    },
+    {
+     "id": 1067835,
+     "filter": {
+      "matchId": 1067835,
+      "pageSize": 50,
+      "currentPage": 0,
+      "matchTypeId": 6,
+      "orderType": "BY_COMPETITION",
+      "loadPriorityTemplateGamesOnly": true,
+      "loadAllTemplateGames": false,
+      "packGamesGroupBySport": false,
+      "medium": "ANDROID",
+      "loadExtendedOffer": false,
+      "packGroupsInMatch": true,
+      "packAllGroups": false,
+      "sportsLoad": true,
+      "uberOffer": true
+     },
+     "sport": {
+      "id": 1,
+      "name": "Fudbal",
+      "rank": 0
+     },
+     "competition": {
+      "id": 4187,
+      "name": "Engleska 1",
+      "originId": 20
+     },
+     "competitionPhase": {
+      "id": 1,
+      "name": "Liga"
+     },
+     "matchNumber": 2036,
+     "startTime": 1791649800000,
+     "betStatus": "STARTED",
+     "status": {
+      "id": 0,
+      "name": "Nije počeo"
+     },
+     "home": {
+      "id": 94299,
+      "name": "Manchester United"
+     },
+     "visitor": {
+      "id": 94296,
+      "name": "Tottenham"
+     },
+     "oddsGroup": [
+      {
+       "id": 302184985,
+       "groupId": "6a22c64439e275501e1d0633",
+       "groupName": "Tottenham daje gol; Tottenham 5+ kornera; Tottenham 5+ šuteva u okvir gola",
+       "groupNameTranslation": [
+        {
+         "languageCode": "sr",
+         "name": "Slobodna igra"
+        }
+       ],
+       "odds": [
+        {
+         "id": 302184985,
+         "specialOddValue": "",
+         "subgame": {
+          "id": 1,
+          "name": "da",
+          "shortName": "da",
+          "description": "Tottenham daje gol; Tottenham 5+ kornera; Tottenham 5+ šuteva u okvir gola da",
+          "fullId": 1001489001,
+          "rank": 1,
+          "originFullId": 1015704001
+         },
+         "game": {
+          "id": 489,
+          "name": "Tottenham daje gol; Tottenham 5+ kornera; Tottenham 5+ šuteva u okvir gola",
+          "rank": 1,
+          "parameterName": ""
+         },
+         "value": 5,
+         "oddStatus": "ACTIVE",
+         "bindable": false,
+         "paramsHash": "e6ea217ccab8d7b0570004f553dc23d08cf3d612",
+         "previousValue": 4.5
+        }
+       ],
+       "specialOddValue": "",
+       "rank": 1
+      }
+     ],
+     "changeTime": 1791577234550,
+     "totalOddsCount": 471,
+     "matchTypeId": 6,
+     "originMatchId": 10017175,
+     "originInfo": {
+      "preMatchId": 10017175,
+      "lbMatchId": 72221308
+     },
+     "streamInfo": {
+      "playByPlayid": "72221308"
+     },
+     "topMinutes": [
+      "45",
+      "60",
+      "75"
+     ],
+     "hasMediaItems": false,
+     "activePayoutPromotions": [
+      {
+       "type": "SCORE_DIFF",
+       "description": "KI 1 dobitno ako domaćin povede sa dva gola razlike.",
+       "iconUrl": "https://cdn.mozzartbet.com/public/img2023/svgs/svg__benefitsIcons1.svg",
+       "title": "MR KI1"
+      },
+      {
+       "type": "SCORE_DIFF",
+       "description": "KI 2 dobitno ako gost povede sa dva gola razlike.",
+       "iconUrl": "https://cdn.mozzartbet.com/public/img2023/svgs/svg__benefitsIcons1.svg",
+       "title": "MR KI2"
+      },
+      {
+       "type": "SCORE_DIFF_AFTER_TIME",
+       "description": "1-1 dobitno ako domaćin vodi sa bar dva gola razlike na poluvremenu.",
+       "iconUrl": "https://cdn.mozzartbet.com/public/img2023/svgs/svg__benefitsIcons2.svg",
+       "title": "MR 1-1"
+      },
+      {
+       "type": "SCORE_DIFF_AFTER_TIME",
+       "description": "2-2 dobitno ako gost vodi sa bar dva gola razlike na poluvremenu.",
+       "iconUrl": "https://cdn.mozzartbet.com/public/img2023/svgs/svg__benefitsIcons2.svg",
+       "title": "MR 2-2"
+      },
+      {
+       "type": "SCORE_SUM",
+       "description": "Tri gola do 30. minuta važi 5+.",
+       "iconUrl": "https://cdn.mozzartbet.com/public/img2023/svgs/svg__benefitsIcons2.svg",
+       "title": "MR 5+"
+      },
+      {
+       "type": "SCORE_SUM",
+       "description": "Četiri gola do 60. minuta važi 5+.",
+       "iconUrl": "https://cdn.mozzartbet.com/public/img2023/svgs/svg__benefitsIcons2.svg",
+       "title": "MR 5+"
+      },
+      {
+       "type": "SCORE_SUM",
+       "description": "Dva gola do 15. minuta važi 4+.",
+       "iconUrl": "https://cdn.mozzartbet.com/public/img2023/svgs/svg__benefitsIcons2.svg",
+       "title": "MR 4+"
+      },
+      {
+       "type": "SCORE_SUM",
+       "description": "Tri gola do 40. minuta važi 4+.",
+       "iconUrl": "https://cdn.mozzartbet.com/public/img2023/svgs/svg__benefitsIcons2.svg",
+       "title": "MR 4+"
+      },
+      {
+       "type": "SCORE_SUM",
+       "description": "Gol do 10. minuta važi 3+.",
+       "iconUrl": "https://cdn.mozzartbet.com/public/img2023/svgs/svg__benefitsIcons2.svg",
+       "title": "MR 3+"
+      },
+      {
+       "type": "SCORE_SUM",
+       "description": "Dva gola do 30. minuta važi 3+.",
+       "iconUrl": "https://cdn.mozzartbet.com/public/img2023/svgs/svg__benefitsIcons2.svg",
+       "title": "MR 3+"
+      },
+      {
+       "type": "SCORE_SUM",
+       "description": "Gol do 10. minuta važi 2+.",
+       "iconUrl": "https://cdn.mozzartbet.com/public/img2023/svgs/svg__benefitsIcons2.svg",
+       "title": "MR 2+"
+      },
+      {
+       "type": "SCORE_SUM",
+       "description": "Gol do 15. minuta i drugi gol do 65. minuta važi I2+.",
+       "iconUrl": "https://cdn.mozzartbet.com/public/img2023/svgs/svg__benefitsIcons2.svg",
+       "title": "MR I2+"
+      },
+      {
+       "type": "SCORE_SUM",
+       "description": "Gol do 10. minuta važi GG.",
+       "iconUrl": "https://cdn.mozzartbet.com/public/img2023/svgs/svg__benefitsIcons2.svg",
+       "title": "MR GG"
+      },
+      {
+       "type": "SCORE_SUM",
+       "description": "Oba tima daju gol do poluvremena važi GG3+.",
+       "iconUrl": "https://cdn.mozzartbet.com/public/img2023/svgs/svg__benefitsIcons2.svg",
+       "title": "MR GG3+"
+      }
+     ]
+    },
+    {
+     "id": 1067835,
+     "filter": {
+      "matchId": 1067835,
+      "pageSize": 50,
+      "currentPage": 0,
+      "matchTypeId": 6,
+      "orderType": "BY_COMPETITION",
+      "loadPriorityTemplateGamesOnly": true,
+      "loadAllTemplateGames": false,
+      "packGamesGroupBySport": false,
+      "medium": "ANDROID",
+      "loadExtendedOffer": false,
+      "packGroupsInMatch": true,
+      "packAllGroups": false,
+      "sportsLoad": true,
+      "uberOffer": true
+     },
+     "sport": {
+      "id": 1,
+      "name": "Fudbal",
+      "rank": 0
+     },
+     "competition": {
+      "id": 4187,
+      "name": "Engleska 1",
+      "originId": 20
+     },
+     "competitionPhase": {
+      "id": 1,
+      "name": "Liga"
+     },
+     "matchNumber": 2036,
+     "startTime": 1791649800000,
+     "betStatus": "STARTED",
+     "status": {
+      "id": 0,
+      "name": "Nije počeo"
+     },
+     "home": {
+      "id": 94299,
+      "name": "Manchester United"
+     },
+     "visitor": {
+      "id": 94296,
+      "name": "Tottenham"
+     },
+     "oddsGroup": [
+      {
+       "id": 302184986,
+       "groupId": "6a22c64439e275501e1d0633",
+       "groupName": "Oba tima daju gol; M.Cunha 2+ šuteva u okvir gola; O.Marmoush 2+ šuteva u okvir gola",
+       "groupNameTranslation": [
+        {
+         "languageCode": "sr",
+         "name": "Slobodna igra"
+        }
+       ],
+       "odds": [
+        {
+         "id": 302184986,
+         "specialOddValue": "",
+         "subgame": {
+          "id": 1,
+          "name": "da",
+          "shortName": "da",
+          "description": "Oba tima daju gol; M.Cunha 2+ šuteva u okvir gola; O.Marmoush 2+ šuteva u okvir gola da",
+          "fullId": 1001489001,
+          "rank": 1,
+          "originFullId": 1015704001
+         },
+         "game": {
+          "id": 489,
+          "name": "Oba tima daju gol; M.Cunha 2+ šuteva u okvir gola; O.Marmoush 2+ šuteva u okvir gola",
+          "rank": 1,
+          "parameterName": ""
+         },
+         "value": 10,
+         "oddStatus": "ACTIVE",
+         "bindable": false,
+         "paramsHash": "6aebccdf4b4c8c7eae1b3cef28239d70626e98fb",
+         "previousValue": 9
+        }
+       ],
+       "specialOddValue": "",
+       "rank": 1
+      }
+     ],
+     "changeTime": 1791577234550,
+     "totalOddsCount": 471,
+     "matchTypeId": 6,
+     "originMatchId": 10017175,
+     "originInfo": {
+      "preMatchId": 10017175,
+      "lbMatchId": 72221308
+     },
+     "streamInfo": {
+      "playByPlayid": "72221308"
+     },
+     "topMinutes": [
+      "45",
+      "60",
+      "75"
+     ],
+     "hasMediaItems": false,
+     "activePayoutPromotions": [
+      {
+       "type": "SCORE_DIFF",
+       "description": "KI 1 dobitno ako domaćin povede sa dva gola razlike.",
+       "iconUrl": "https://cdn.mozzartbet.com/public/img2023/svgs/svg__benefitsIcons1.svg",
+       "title": "MR KI1"
+      },
+      {
+       "type": "SCORE_DIFF",
+       "description": "KI 2 dobitno ako gost povede sa dva gola razlike.",
+       "iconUrl": "https://cdn.mozzartbet.com/public/img2023/svgs/svg__benefitsIcons1.svg",
+       "title": "MR KI2"
+      },
+      {
+       "type": "SCORE_DIFF_AFTER_TIME",
+       "description": "1-1 dobitno ako domaćin vodi sa bar dva gola razlike na poluvremenu.",
+       "iconUrl": "https://cdn.mozzartbet.com/public/img2023/svgs/svg__benefitsIcons2.svg",
+       "title": "MR 1-1"
+      },
+      {
+       "type": "SCORE_DIFF_AFTER_TIME",
+       "description": "2-2 dobitno ako gost vodi sa bar dva gola razlike na poluvremenu.",
+       "iconUrl": "https://cdn.mozzartbet.com/public/img2023/svgs/svg__benefitsIcons2.svg",
+       "title": "MR 2-2"
+      },
+      {
+       "type": "SCORE_SUM",
+       "description": "Tri gola do 30. minuta važi 5+.",
+       "iconUrl": "https://cdn.mozzartbet.com/public/img2023/svgs/svg__benefitsIcons2.svg",
+       "title": "MR 5+"
+      },
+      {
+       "type": "SCORE_SUM",
+       "description": "Četiri gola do 60. minuta važi 5+.",
+       "iconUrl": "https://cdn.mozzartbet.com/public/img2023/svgs/svg__benefitsIcons2.svg",
+       "title": "MR 5+"
+      },
+      {
+       "type": "SCORE_SUM",
+       "description": "Dva gola do 15. minuta važi 4+.",
+       "iconUrl": "https://cdn.mozzartbet.com/public/img2023/svgs/svg__benefitsIcons2.svg",
+       "title": "MR 4+"
+      },
+      {
+       "type": "SCORE_SUM",
+       "description": "Tri gola do 40. minuta važi 4+.",
+       "iconUrl": "https://cdn.mozzartbet.com/public/img2023/svgs/svg__benefitsIcons2.svg",
+       "title": "MR 4+"
+      },
+      {
+       "type": "SCORE_SUM",
+       "description": "Gol do 10. minuta važi 3+.",
+       "iconUrl": "https://cdn.mozzartbet.com/public/img2023/svgs/svg__benefitsIcons2.svg",
+       "title": "MR 3+"
+      },
+      {
+       "type": "SCORE_SUM",
+       "description": "Dva gola do 30. minuta važi 3+.",
+       "iconUrl": "https://cdn.mozzartbet.com/public/img2023/svgs/svg__benefitsIcons2.svg",
+       "title": "MR 3+"
+      },
+      {
+       "type": "SCORE_SUM",
+       "description": "Gol do 10. minuta važi 2+.",
+       "iconUrl": "https://cdn.mozzartbet.com/public/img2023/svgs/svg__benefitsIcons2.svg",
+       "title": "MR 2+"
+      },
+      {
+       "type": "SCORE_SUM",
+       "description": "Gol do 15. minuta i drugi gol do 65. minuta važi I2+.",
+       "iconUrl": "https://cdn.mozzartbet.com/public/img2023/svgs/svg__benefitsIcons2.svg",
+       "title": "MR I2+"
+      },
+      {
+       "type": "SCORE_SUM",
+       "description": "Gol do 10. minuta važi GG.",
+       "iconUrl": "https://cdn.mozzartbet.com/public/img2023/svgs/svg__benefitsIcons2.svg",
+       "title": "MR GG"
+      },
+      {
+       "type": "SCORE_SUM",
+       "description": "Oba tima daju gol do poluvremena važi GG3+.",
+       "iconUrl": "https://cdn.mozzartbet.com/public/img2023/svgs/svg__benefitsIcons2.svg",
+       "title": "MR GG3+"
+      }
+     ]
+    },
+    {
+     "id": 1067835,
+     "filter": {
+      "matchId": 1067835,
+      "pageSize": 50,
+      "currentPage": 0,
+      "matchTypeId": 6,
+      "orderType": "BY_COMPETITION",
+      "loadPriorityTemplateGamesOnly": true,
+      "loadAllTemplateGames": false,
+      "packGamesGroupBySport": false,
+      "medium": "ANDROID",
+      "loadExtendedOffer": false,
+      "packGroupsInMatch": true,
+      "packAllGroups": false,
+      "sportsLoad": true,
+      "uberOffer": true
+     },
+     "sport": {
+      "id": 1,
+      "name": "Fudbal",
+      "rank": 0
+     },
+     "competition": {
+      "id": 4187,
+      "name": "Engleska 1",
+      "originId": 20
+     },
+     "competitionPhase": {
+      "id": 1,
+      "name": "Liga"
+     },
+     "matchNumber": 2036,
+     "startTime": 1791649800000,
+     "betStatus": "STARTED",
+     "status": {
+      "id": 0,
+      "name": "Nije počeo"
+     },
+     "home": {
+      "id": 94299,
+      "name": "Manchester United"
+     },
+     "visitor": {
+      "id": 94296,
+      "name": "Tottenham"
+     },
+     "oddsGroup": [
+      {
+       "id": 302184987,
+       "groupId": "6a22c64439e275501e1d0633",
+       "groupName": "Oba tima daju gol; B.Fernandes 1+ šuteva u okvir gola; Savinho 1+ šuteva u okvir gola",
+       "groupNameTranslation": [
+        {
+         "languageCode": "sr",
+         "name": "Slobodna igra"
+        }
+       ],
+       "odds": [
+        {
+         "id": 302184987,
+         "specialOddValue": "",
+         "subgame": {
+          "id": 1,
+          "name": "da",
+          "shortName": "da",
+          "description": "Oba tima daju gol; B.Fernandes 1+ šuteva u okvir gola; Savinho 1+ šuteva u okvir gola da",
+          "fullId": 1001489001,
+          "rank": 1,
+          "originFullId": 1015704001
+         },
+         "game": {
+          "id": 489,
+          "name": "Oba tima daju gol; B.Fernandes 1+ šuteva u okvir gola; Savinho 1+ šuteva u okvir gola",
+          "rank": 1,
+          "parameterName": ""
+         },
+         "value": 4,
+         "oddStatus": "ACTIVE",
+         "bindable": false,
+         "paramsHash": "b72410196271b11de1ef706f5bea70ee6e7b2c37",
+         "previousValue": 3.5
+        }
+       ],
+       "specialOddValue": "",
+       "rank": 1
+      }
+     ],
+     "changeTime": 1791577234550,
+     "totalOddsCount": 471,
+     "matchTypeId": 6,
+     "originMatchId": 10017175,
+     "originInfo": {
+      "preMatchId": 10017175,
+      "lbMatchId": 72221308
+     },
+     "streamInfo": {
+      "playByPlayid": "72221308"
+     },
+     "topMinutes": [
+      "45",
+      "60",
+      "75"
+     ],
+     "hasMediaItems": false,
+     "activePayoutPromotions": [
+      {
+       "type": "SCORE_DIFF",
+       "description": "KI 1 dobitno ako domaćin povede sa dva gola razlike.",
+       "iconUrl": "https://cdn.mozzartbet.com/public/img2023/svgs/svg__benefitsIcons1.svg",
+       "title": "MR KI1"
+      },
+      {
+       "type": "SCORE_DIFF",
+       "description": "KI 2 dobitno ako gost povede sa dva gola razlike.",
+       "iconUrl": "https://cdn.mozzartbet.com/public/img2023/svgs/svg__benefitsIcons1.svg",
+       "title": "MR KI2"
+      },
+      {
+       "type": "SCORE_DIFF_AFTER_TIME",
+       "description": "1-1 dobitno ako domaćin vodi sa bar dva gola razlike na poluvremenu.",
+       "iconUrl": "https://cdn.mozzartbet.com/public/img2023/svgs/svg__benefitsIcons2.svg",
+       "title": "MR 1-1"
+      },
+      {
+       "type": "SCORE_DIFF_AFTER_TIME",
+       "description": "2-2 dobitno ako gost vodi sa bar dva gola razlike na poluvremenu.",
+       "iconUrl": "https://cdn.mozzartbet.com/public/img2023/svgs/svg__benefitsIcons2.svg",
+       "title": "MR 2-2"
+      },
+      {
+       "type": "SCORE_SUM",
+       "description": "Tri gola do 30. minuta važi 5+.",
+       "iconUrl": "https://cdn.mozzartbet.com/public/img2023/svgs/svg__benefitsIcons2.svg",
+       "title": "MR 5+"
+      },
+      {
+       "type": "SCORE_SUM",
+       "description": "Četiri gola do 60. minuta važi 5+.",
+       "iconUrl": "https://cdn.mozzartbet.com/public/img2023/svgs/svg__benefitsIcons2.svg",
+       "title": "MR 5+"
+      },
+      {
+       "type": "SCORE_SUM",
+       "description": "Dva gola do 15. minuta važi 4+.",
+       "iconUrl": "https://cdn.mozzartbet.com/public/img2023/svgs/svg__benefitsIcons2.svg",
+       "title": "MR 4+"
+      },
+      {
+       "type": "SCORE_SUM",
+       "description": "Tri gola do 40. minuta važi 4+.",
+       "iconUrl": "https://cdn.mozzartbet.com/public/img2023/svgs/svg__benefitsIcons2.svg",
+       "title": "MR 4+"
+      },
+      {
+       "type": "SCORE_SUM",
+       "description": "Gol do 10. minuta važi 3+.",
+       "iconUrl": "https://cdn.mozzartbet.com/public/img2023/svgs/svg__benefitsIcons2.svg",
+       "title": "MR 3+"
+      },
+      {
+       "type": "SCORE_SUM",
+       "description": "Dva gola do 30. minuta važi 3+.",
+       "iconUrl": "https://cdn.mozzartbet.com/public/img2023/svgs/svg__benefitsIcons2.svg",
+       "title": "MR 3+"
+      },
+      {
+       "type": "SCORE_SUM",
+       "description": "Gol do 10. minuta važi 2+.",
+       "iconUrl": "https://cdn.mozzartbet.com/public/img2023/svgs/svg__benefitsIcons2.svg",
+       "title": "MR 2+"
+      },
+      {
+       "type": "SCORE_SUM",
+       "description": "Gol do 15. minuta i drugi gol do 65. minuta važi I2+.",
+       "iconUrl": "https://cdn.mozzartbet.com/public/img2023/svgs/svg__benefitsIcons2.svg",
+       "title": "MR I2+"
+      },
+      {
+       "type": "SCORE_SUM",
+       "description": "Gol do 10. minuta važi GG.",
+       "iconUrl": "https://cdn.mozzartbet.com/public/img2023/svgs/svg__benefitsIcons2.svg",
+       "title": "MR GG"
+      },
+      {
+       "type": "SCORE_SUM",
+       "description": "Oba tima daju gol do poluvremena važi GG3+.",
+       "iconUrl": "https://cdn.mozzartbet.com/public/img2023/svgs/svg__benefitsIcons2.svg",
+       "title": "MR GG3+"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

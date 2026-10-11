@@ -1,0 +1,73 @@
+name: Update data
+
+on:
+  push:
+    paths:
+      - "fetch_acb.py"
+      - "fetch_aba.py"
+      - "fetch_data.py"
+      - "build_site.py"
+      - "fetch_shots.py"
+      - "fetch_team_stats.py"
+      - "sync_data.py"
+      - "index.html"
+      - "fetch_lnb.py"
+      - "fetch_superbet.py"
+      - "quant_model.py"
+      - "backtest.py"
+      - "data/superbet_comps.json"
+      - "alerts.py"
+      - "clv_log.py"
+      - "learn_weights.py"
+      - "requirements.txt"
+      - ".github/workflows/update.yml"
+  schedule:
+    - cron: "*/15 * * * *"   # svakih 15 minuta (GitHub zna da kasni nekoliko minuta)
+  workflow_dispatch:         # dugme za rucno pokretanje
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-data
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - name: Cache Playwright Chromium
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/ms-playwright
+          key: playwright-chromium-${{ runner.os }}-${{ hashFiles('requirements.txt') }}
+      - name: Install Chromium for ACB Live stats
+        run: python -m playwright install chromium
+      - run: python sync_data.py --all
+        continue-on-error: true
+      - run: python fetch_pbp.py
+        continue-on-error: true
+      - run: pip install numpy requests
+      - name: CLV log (otvorene i zatvarajuce Pinnacle linije)
+        run: python clv_log.py
+        continue-on-error: true
+      - name: Telegram dojave (kvote bolje od Pinnaclea)
+        run: python alerts.py
+        continue-on-error: true
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+      - name: Ucenje tezina (Ridge + CV)
+        run: python learn_weights.py
+        continue-on-error: true
+      - name: Commit data
+        run: |
+          git config user.name "data-bot"
+          git config user.email "data-bot@users.noreply.github.com"
+          git add -A data
+          git diff --cached --quiet || (git commit -m "Update data" && git pull --rebase && git push)

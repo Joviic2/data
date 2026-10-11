@@ -1,0 +1,488 @@
+{
+ "url": "https://www.mozzartbet.com/newsMainWidgetNew",
+ "data": [
+  {
+   "id": 555889,
+   "title": "Nema drugog objašnjenja - to je proklet klub! (VIDEO)",
+   "url": "nema-drugog-objasnjenja-to-je-proklet-klub-video",
+   "publish_date": "2026-10-09T22:59:36.000Z",
+   "primary_category": 1,
+   "comments_count": 29,
+   "news_type_id": 1,
+   "intro": "Dortmund ponovo režirao horor svojim navijačima, Verder po treći put napravio pravo malo čudo na Vestfalenu",
+   "signed": 0,
+   "is_special": 0,
+   "deny_comments": 0,
+   "live_chat_active": null,
+   "Attachments": [
+    {
+     "id": 646031,
+     "description": "",
+     "model": "News",
+     "type": "Image",
+     "dir": "/upload/News/Image/2026_10/",
+     "filename": "1791579663326_Screenshot_2026-10-09_225924.png.webp"
+    }
+   ],
+   "Categories": [
+    {
+     "id": 12,
+     "parent_id": 7,
+     "title": "Nemačka",
+     "is_active": 1,
+     "url": "fudbal/evropa/nemacka",
+     "type": "Nation",
+     "m_bet_name": "Germany",
+     "m_bet_sport": 1,
+     "club": 52,
+     "created": null,
+     "modified": "2024-06-05T12:12:10.000Z"
+    },
+    {
+     "id": 22,
+     "parent_id": 12,
+     "title": "Bundesliga 1",
+     "is_active": 1,
+     "url": "fudbal/evropa/nemacka/bundesliga-1",
+     "type": "Competition",
+     "m_bet_name": null,
+     "m_bet_sport": null,
+     "club": null,
+     "created": null,
+     "modified": "2017-02-01T13:03:44.000Z"
+    },
+    {
+     "id": 135,
+     "parent_id": 22,
+     "title": "Verder",
+     "is_active": 1,
+     "url": "fudbal/evropa/nemacka/bundesliga-1/verder",
+     "type": "Teams",
+     "m_bet_name": null,
+     "m_bet_sport": null,
+     "club": null,
+     "created": null,
+     "modified": "2017-06-23T15:07:49.000Z"
+    },
+    {
+     "id": 760,
+     "parent_id": 22,
+     "title": "Borusija Dortmund",
+     "is_active": 1,
+     "url": "fudbal/evropa/nemacka/bundesliga-1/borusija_dortmund",
+     "type": "Teams",
+     "m_bet_name": "Dortmund",
+     "m_bet_sport": 1,
+     "club": null,
+     "created": "2017-06-23T15:10:00.000Z",
+     "modified": "2021-12-08T15:17:28.000Z"
+    }
+   ],
+   "Writer": null,
+   "SecondWriter": null,
+   "EditorWriter": {
+    "id": 44,
+    "first_name": "Predrag",
+    "last_name": "Dučić",
+    "email": "predrag.ducic@mozzartbet.com",
+    "image": "https://cdn3.mozzartsport.com/upload/admins/adminProfile_1686139942444.png"
+   }
+  },
+  {
+   "id": 555873,
+   "title": "UEFA kaznila Srbiju, bez domaćih navijača na Nemačku",
+   "url": "uefa-kaznila-srbiju-bez-domacih-navijaca-na-nemacku",
+   "publish_date": "2026-10-09T18:15:35.000Z",
+   "primary_category": 1,
+   "comments_count": 85,
+   "news_type_id": 1,
+   "intro": "FSS udaren i po džepu zbog rasističkog i diskriminatornog ponašanje publike na meču sa Holandijom",
+   "signed": 0,
+   "is_special": 0,
+   "deny_comments": 0,
+   "live_chat_active": null,
+   "Attachments": [
+    {
+     "id": 646010,
+     "description": "",
+     "model": "News",
+     "type": "Image",
+     "dir": "/upload/News/Image/2026_10/",
+     "filename": "1791562541467_467f2582-cda7-442b-84d8-9c9207715c04.jpg.webp"
+    }
+   ],
+   "Categories": [
+    {
+     "id": 8,
+     "parent_id": 7,
+     "title": "Srbija",
+     "is_active": 1,
+     "url": "fudbal/evropa/srbija",
+     "type": "Nation",
+     "m_bet_name": "Serbia",
+     "m_bet_sport": 1,
+     "club": 4,
+     "created": null,
+     "modified": "2024-06-05T13:33:35.000Z"
+    },
+    {
+     "id": 41,
+     "parent_id": 1,
+     "title": "Reprezentativni fudbal",
+     "is_active": 1,
+     "url": "fudbal/reprezentativni-fudbal",
+     "type": "Competition",
+     "m_bet_name": null,
+     "m_bet_sport": null,
+     "club": null,
+     "created": null,
+     "modified": "2017-02-01T13:01:24.000Z"
+    },
+    {
+     "id": 42,
+     "parent_id": 1,
+     "title": "Međunarodni fudbal",
+     "is_active": 1,
+     "url": "fudbal/medjunarodni-fudbal",
+     "type": "Competition",
+     "m_bet_name": null,
+     "m_bet_sport": null,
+     "club": null,
+     "created": null,
+     "modified": "2017-02-01T13:01:37.000Z"
+    },
+    {
+     "id": 852,
+     "parent_id": 41,
+     "title": "Reprezentacija fudbal",
+     "is_active": 1,
+     "url": "fudbal/reprezentativni-fudbal/reprezentacija_fudbal",
+     "type": "Teams",
+     "m_bet_name": "Serbia",
+     "m_bet_sport": 1,
+     "club": null,
+     "created": "2022-03-21T19:34:04.000Z",
+     "modified": "2022-03-21T19:34:04.000Z"
+    }
+   ],
+   "Writer": null,
+   "SecondWriter": null,
+   "EditorWriter": {
+    "id": 39,
+    "first_name": "Slavko",
+    "last_name": "Đorđević",
+    "email": "slavko.djordjevic@mozzartbet.com",
+    "image": "https://cdn3.mozzartsport.com/upload/admins/adminProfile_1686139815339.png"
+   }
+  },
+  {
+   "id": 555872,
+   "title": "Enfild kao bure baruta: Vanredne policijske mere, navijači Liverpula spremaju \"topao doček\" osuđenima",
+   "url": "enfild-kao-bure-baruta-vanredne-policijske-mere-navijaci-liverpula-spremaju-topao-docek-osuenima",
+   "publish_date": "2026-10-09T18:09:35.000Z",
+   "primary_category": 1,
+   "comments_count": 21,
+   "news_type_id": 1,
+   "intro": "Loša vest za Liverpul je što će pored Kodija Gakpa utakmicu protiv Sitija zbog povrede propustiti i Aleksander Isak - jedina zdrava \"devetka\" biće Luis Kumas",
+   "signed": 0,
+   "is_special": 0,
+   "deny_comments": 0,
+   "live_chat_active": null,
+   "Attachments": [
+    {
+     "id": 646008,
+     "description": "©Reuters",
+     "model": "News",
+     "type": "Image",
+     "dir": "/upload/News/Image/2026_10/",
+     "filename": "1791563916157_FotoJet_(7).jpg.webp"
+    }
+   ],
+   "Categories": [
+    {
+     "id": 9,
+     "parent_id": 7,
+     "title": "Engleska",
+     "is_active": 1,
+     "url": "fudbal/evropa/engleska",
+     "type": "Nation",
+     "m_bet_name": null,
+     "m_bet_sport": null,
+     "club": 61,
+     "created": null,
+     "modified": "2024-06-05T12:51:53.000Z"
+    },
+    {
+     "id": 19,
+     "parent_id": 9,
+     "title": "Premijer liga",
+     "is_active": 1,
+     "url": "fudbal/evropa/engleska/premijer-liga",
+     "type": "Competition",
+     "m_bet_name": null,
+     "m_bet_sport": null,
+     "club": null,
+     "created": null,
+     "modified": "2017-02-01T13:03:10.000Z"
+    },
+    {
+     "id": 254,
+     "parent_id": 19,
+     "title": "Liverpul",
+     "is_active": 1,
+     "url": "fudbal/evropa/engleska/premijer-liga/liverpul",
+     "type": "Teams",
+     "m_bet_name": "Liverpool",
+     "m_bet_sport": 1,
+     "club": null,
+     "created": null,
+     "modified": "2021-12-08T14:23:17.000Z"
+    },
+    {
+     "id": 256,
+     "parent_id": 19,
+     "title": "Mančester Siti",
+     "is_active": 1,
+     "url": "fudbal/evropa/engleska/premijer-liga/mancester_siti",
+     "type": "Teams",
+     "m_bet_name": "Man.City",
+     "m_bet_sport": 1,
+     "club": null,
+     "created": null,
+     "modified": "2021-12-08T14:24:22.000Z"
+    }
+   ],
+   "Writer": null,
+   "SecondWriter": null,
+   "EditorWriter": {
+    "id": 92,
+    "first_name": "Stefan",
+    "last_name": "Velimirović",
+    "email": "stefan.velimirovic@mozzartbet.com",
+    "image": "https://cdn3.mozzartsport.com/upload/admins/adminProfile_1691045158183.png"
+   }
+  },
+  {
+   "id": 555898,
+   "title": "\"Valverdovo čudo\" za podsmevanje: Atletiko optužuje Real da je Urugvajac lažirao povredu",
+   "url": "valverdovo-cudo-za-podsmevanje-atletiko-optuzuje-real-da-je-urugvajac-lazirao-povredu",
+   "publish_date": "2026-10-10T00:32:36.000Z",
+   "primary_category": 1,
+   "comments_count": 1,
+   "news_type_id": 1,
+   "intro": "Ni 17 dana posle derbija strasti se nisu smirile",
+   "signed": 0,
+   "is_special": 0,
+   "deny_comments": 0,
+   "live_chat_active": null,
+   "Attachments": [
+    {
+     "id": 646036,
+     "description": "Valverde i Li (Foto: Guliver/Cesar Cebolla/",
+     "model": "News",
+     "type": "Image",
+     "dir": "/upload/News/Image/2026_10/",
+     "filename": "1791585068342_1083577011.jpg.webp"
+    }
+   ],
+   "Categories": [
+    {
+     "id": 1,
+     "parent_id": null,
+     "title": "Fudbal",
+     "is_active": 1,
+     "url": "fudbal",
+     "type": "Sport",
+     "m_bet_name": null,
+     "m_bet_sport": null,
+     "club": null,
+     "created": null,
+     "modified": "2022-11-16T11:57:07.000Z"
+    },
+    {
+     "id": 10,
+     "parent_id": 41,
+     "title": "Španija",
+     "is_active": 1,
+     "url": "fudbal/reprezentativni-fudbal/spanija",
+     "type": "Nation",
+     "m_bet_name": null,
+     "m_bet_sport": null,
+     "club": 59,
+     "created": null,
+     "modified": "2024-06-05T12:44:35.000Z"
+    },
+    {
+     "id": 42,
+     "parent_id": 1,
+     "title": "Međunarodni fudbal",
+     "is_active": 1,
+     "url": "fudbal/medjunarodni-fudbal",
+     "type": "Competition",
+     "m_bet_name": null,
+     "m_bet_sport": null,
+     "club": null,
+     "created": null,
+     "modified": "2017-02-01T13:01:37.000Z"
+    },
+    {
+     "id": 150,
+     "parent_id": 20,
+     "title": "Atletiko Madrid",
+     "is_active": 1,
+     "url": "fudbal/evropa/spanija/primera/atletiko_madrid",
+     "type": "Teams",
+     "m_bet_name": "Atletico Madrid",
+     "m_bet_sport": 1,
+     "club": null,
+     "created": null,
+     "modified": "2021-12-08T15:05:42.000Z"
+    },
+    {
+     "id": 175,
+     "parent_id": 20,
+     "title": "Real Madrid",
+     "is_active": 1,
+     "url": "fudbal/evropa/spanija/primera/real_madrid",
+     "type": "Teams",
+     "m_bet_name": "Real Madrid",
+     "m_bet_sport": 1,
+     "club": null,
+     "created": null,
+     "modified": "2021-12-08T15:07:13.000Z"
+    }
+   ],
+   "Writer": null,
+   "SecondWriter": null,
+   "EditorWriter": {
+    "id": 127,
+    "first_name": "Đorđe",
+    "last_name": "Petrinjac",
+    "email": "djordje.petrinjac@mozzartbet.com",
+    "image": "https://cdn3.mozzartsport.com/upload/admins/adminProfile_1731399525072.png"
+   }
+  },
+  {
+   "id": 555871,
+   "title": "Rijera protiv novog kalendara: Zbog toga ne mogu da računam na šestoricu",
+   "url": "rijera-protiv-novog-kalendara-zbog-toga-ne-mogu-da-racunam-na-sestoricu",
+   "publish_date": "2026-10-09T18:35:18.000Z",
+   "primary_category": 1,
+   "comments_count": 20,
+   "news_type_id": 1,
+   "intro": "\"Nemam ništa protiv toga da igraju za reprezentaciju, naravno, ali mislim da su dve utakmice zaredom sasvim dovoljne da bi imali međunarodno iskustvo. Četiri u nizu su previše\", kaže Španac",
+   "signed": 0,
+   "is_special": 0,
+   "deny_comments": 0,
+   "live_chat_active": null,
+   "Attachments": [
+    {
+     "id": 646011,
+     "description": "Albert Rijera (©MN Press)",
+     "model": "News",
+     "type": "Image",
+     "dir": "/upload/News/Image/2026_10/",
+     "filename": "1791563720173_20260906mmRijera10.JPG.webp"
+    }
+   ],
+   "Categories": [
+    {
+     "id": 8,
+     "parent_id": 7,
+     "title": "Srbija",
+     "is_active": 1,
+     "url": "fudbal/evropa/srbija",
+     "type": "Nation",
+     "m_bet_name": "Serbia",
+     "m_bet_sport": 1,
+     "club": 4,
+     "created": null,
+     "modified": "2024-06-05T13:33:35.000Z"
+    },
+    {
+     "id": 25,
+     "parent_id": 1,
+     "title": "Mozzart Bet Superliga",
+     "is_active": 1,
+     "url": "fudbal/mozzart_bet_superliga",
+     "type": "Competition",
+     "m_bet_name": null,
+     "m_bet_sport": null,
+     "club": 41,
+     "created": null,
+     "modified": "2023-07-26T11:16:07.000Z"
+    },
+    {
+     "id": 290,
+     "parent_id": 25,
+     "title": "Crvena zvezda",
+     "is_active": 1,
+     "url": "fudbal/mozzart_bet_superliga/crvena_zvezda",
+     "type": "Teams",
+     "m_bet_name": "Crvena Zvezda",
+     "m_bet_sport": 1,
+     "club": 2,
+     "created": null,
+     "modified": "2023-08-06T09:01:25.000Z"
+    }
+   ],
+   "Writer": null,
+   "SecondWriter": null,
+   "EditorWriter": {
+    "id": 39,
+    "first_name": "Slavko",
+    "last_name": "Đorđević",
+    "email": "slavko.djordjevic@mozzartbet.com",
+    "image": "https://cdn3.mozzartsport.com/upload/admins/adminProfile_1686139815339.png"
+   }
+  },
+  {
+   "id": 555886,
+   "title": "Kameron Pejn nije Majk Džejms! Olimpijakos bez milosti za Efes",
+   "url": "kameron-pejn-nije-majk-dzejms-olimpijakos-bez-milosti-za-efes",
+   "publish_date": "2026-10-09T22:04:19.000Z",
+   "primary_category": 2,
+   "comments_count": 16,
+   "news_type_id": 1,
+   "intro": "Efes je stigao u Atini sa novim imenom, ali nisu bili ni blizu pobede jer je Olimpijakos još jednom pokazao da su među najjačima u čitavom takmičenju",
+   "signed": 0,
+   "is_special": 0,
+   "deny_comments": 0,
+   "live_chat_active": null,
+   "Attachments": [
+    {
+     "id": 646025,
+     "description": "Saša Vezenkov (© Starsport)",
+     "model": "News",
+     "type": "Image",
+     "dir": "/upload/News/Image/2026_10/",
+     "filename": "1791576263409_1777194108514_1767994791346_20230324ivPartizanOlimpijakos71_(1).jpg.webp.webp.webp"
+    }
+   ],
+   "Categories": [
+    {
+     "id": 33,
+     "parent_id": 2,
+     "title": "Evroliga",
+     "is_active": 1,
+     "url": "kosarka/evroliga",
+     "type": "Competition",
+     "m_bet_name": null,
+     "m_bet_sport": null,
+     "club": null,
+     "created": null,
+     "modified": "2017-02-01T12:25:23.000Z"
+    }
+   ],
+   "Writer": null,
+   "SecondWriter": null,
+   "EditorWriter": {
+    "id": 78,
+    "first_name": "Bojan",
+    "last_name": "Brezovac",
+    "email": "bojan.brezovac@mozzartbet.com",
+    "image": "https://cdn3.mozzartsport.com/upload/admins/adminProfile_1686139857877.png"
+   }
+  }
+ ]
+}
