@@ -2823,7 +2823,7 @@ function fbTipList(){
   if(FBF!="danas"&&st&&st<new Date(+now-3*36e5))return;
   FBM.push({e,st,rows:g.rows,tips:[],started:!!(st&&st<now)})});
  FBM.sort((a,b)=>(a.st||0)-(b.st||0));
- FBM.forEach(m=>{if(m.started){m.hid=0;return}m.hid=m.rows.filter(r=>r.ev>=FBEV&&r.ev>0&&fbBad(r)).length;m.rows.filter(r=>r.ev>=FBEV&&r.ev>0&&!fbBad(r)).sort((a,b)=>b.ev-a.ev).slice(0,4).forEach(r=>{
+ FBM.forEach(m=>{if(m.started){m.hid=0;return}m.blk=m.rows.filter(r=>r.blocked&&r.ev>=FBEV&&r.ev>0);m.hid=m.rows.filter(r=>r.ev>=FBEV&&r.ev>0&&!r.blocked&&fbBad(r)).length;m.rows.filter(r=>r.ev>=FBEV&&r.ev>0&&!r.blocked&&!fbBad(r)).sort((a,b)=>b.ev-a.ev).slice(0,4).forEach(r=>{
   const x={pick:fbPlab(r,m.e),mk:r.market+(r.ev_raw>.25?" · ⚠ PROVERI liniju":""),mt:m.e.h+" - "+m.e.a,st:m.e.start,o:r.odds,p:r.p,ev:r.ev,bk:"Superbet",i:T.length,r,e:m.e};
   T.push(x);m.tips.push(x)})});
  return T}
@@ -2837,12 +2837,12 @@ function fbCtx(m,d){
   sty=x=>x.style&&x.style.length?x.style.map(esc).join(", "):'<span class="mu">bez izraženog stila</span>',
   pc=v=>(v>=1?"+":"")+f((v-1)*100,1)+"%",
   row=(k,a,b)=>`<tr><td><b>${k}</b></td><td>${a}</td><td>${b}</td></tr>`,
-  mu=C.mult||[1,1],hh=C.h2h;
+  mu=C.mult||[1,1],hh=C.h2h,F=C.factors||null,fxr=fbFxRows(F,pc);
  const h2=hh&&hh.n?`<p class="mu" style="margin:8px 0 0;font-size:.88rem"><b>H2H</b> (poslednjih ${hh.n}): ${esc(m.e.h)} ${hh.h_win} pob., ${hh.draw} nere., ${esc(m.e.a)} ${hh.n-hh.h_win-hh.draw} pob. · golovi ${hh.gh}:${hh.ga} · prosek ${f(hh.avg_goals,2)} gola/meč${hh.last&&hh.last.length?"<br>"+hh.last.map(esc).join(" · "):""}</p>`:"";
- return`<details style="margin:6px 0"><summary class="mu" style="cursor:pointer">Kontekst: forma, povrede, odmor, stil, H2H</summary><div class="scroll"><table><tr><th></th><th>${esc(m.e.h)}</th><th>${esc(m.e.a)}</th></tr>
+ return`<details style="margin:6px 0"><summary class="mu" style="cursor:pointer">Kontekst: forma, povrede, odmor, stil, momentum, sudija, motivacija, vreme, H2H</summary><div class="scroll"><table><tr><th></th><th>${esc(m.e.h)}</th><th>${esc(m.e.a)}</th></tr>
   ${row("Forma (5)",fm(H),fm(A))}${row("Odmor",rs(H),rs(A))}${row("Nedostupni",out(H),out(A))}${row("Stil igre",sty(H),sty(A))}${row("xG po meču (10)",H.xg!=null?f(H.xg,2):"-",A.xg!=null?f(A.xg,2):"-")}
-  ${row("Korekcija očekivanih golova",pc(mu[0]),pc(mu[1]))}</table></div>
-  <p class="mu" style="margin:6px 0 0;font-size:.88rem">Očekivani golovi posle korekcija (povrede, odmor): <b>${C.lam?f(C.lam[0],2)+" : "+f(C.lam[1],2):"-"}</b>. Forma i stil su informativni, ne menjaju račun; xG, povrede i odmor menjaju.</p>${h2}</details>`}
+  ${row("Korekcija očekivanih golova",pc(mu[0]),pc(mu[1]))}${fxr}</table></div>
+  <p class="mu" style="margin:6px 0 0;font-size:.88rem">Očekivani golovi posle korekcija (povrede, odmor): <b>${C.lam?f(C.lam[0],2)+" : "+f(C.lam[1],2):"-"}</b>. ${F?`Faktori (momentum, stil, motivacija, sudija, vreme) su uračunati: domaćin ×${f(F.mult[0],3)}, gost ×${f(F.mult[1],3)}, ukupno golova ×${f(F.total,3)}.`:"Forma i stil su informativni; xG, povrede i odmor menjaju račun."}${F&&F.under_block&&F.under_block.length?`<br><b class="no">Under/NG blokiran:</b> ${F.under_block.map(esc).join("; ")}`:""}</p>${h2}</details>`}
 // ===== Fudbal: objašnjenje tipa (isti tekst kao fb_explain.py; ako predictions.json već ima r.why, uzima se on) =====
 const fbPc=v=>((v-1)*100>=0?"+":"")+((v-1)*100).toFixed(0)+"%",fbHas=(st,...k)=>{const s=(st||[]).join(" ").toLowerCase();return k.some(x=>s.includes(x))};
 function fbCtxGet(e,d){const L=(d&&d.p&&d.p.context)||[];return L.find(c=>c.h==e.h&&c.a==e.a&&(c.start||"")==(e.start||""))||L.find(c=>c.h==e.h&&c.a==e.a)||null}
@@ -2884,7 +2884,7 @@ function fbExplain(r,h,a,C){
    else if(kind=="ou"||kind=="gg")s+=fbHas([...sh,...sa],"pres","visok","posed","napad")?"Visok pritisak i napadački stil donose više šansi sa obe strane.":"";
    else if(side){const ss=pk=="1"?sh:sa;s+=fbHas(ss,"posed","dominac")?`${side} kontroliše posed i stvara više šansi.`:fbHas(ss,"kontr")?`${side} igra na kontre, što odgovara ulozi autsajdera.`:""}
    why.push(s.trim())}
-  const hh=C.h2h;if(hh&&(hh.n||0)>=3)why.push(`H2H (poslednjih ${hh.n}): ${h} ${hh.h_win} pob., ${hh.draw} nere., ${a} ${hh.n-hh.h_win-hh.draw} pob.; prosek ${hh.avg_goals.toFixed(2)} gola po meču.`)}
+  const hh=C.h2h;if(hh&&(hh.n||0)>=3)why.push(`H2H (poslednjih ${hh.n}): ${h} ${hh.h_win} pob., ${hh.draw} nere., ${a} ${hh.n-hh.h_win-hh.draw} pob.; prosek ${hh.avg_goals.toFixed(2)} gola po meču.`);if(C.factors&&C.factors.notes)C.factors.notes.slice(0,5).forEach(n=>why.push("Faktor: "+n))}
  else why.push("Kontekst (xG, forma, povrede) nije dostupan za ovaj meč, pa se tip oslanja samo na model i kvotu.");
  if(pm!=null&&pmk!=null&&Math.abs(pm-pmk)>.10)risk.push(`Model i tržište se razilaze za ${(Math.abs(pm-pmk)*100).toFixed(0)} p.p. Proveri da li je kvota pravilno uparena sa ovim tržištem.`);
  if((r.ev_raw||0)>.25)risk.push("Neobično visok EV, proveri liniju kod kladionice.");
@@ -2907,9 +2907,23 @@ function fbMid(kpi,tipRow){
   <div class="mu" style="margin:6px 0">${o3?`1 <b>${f(o3[0],2)}</b> · X <b>${f(o3[1],2)}</b> · 2 <b>${f(o3[2],2)}</b>`:"nema 1X2"}${ou?` · Preko 2.5 <b>${f(ou[1],2)}</b> / Ispod <b>${f(ou[2],2)}</b>`:""}${gg&&ng?` · GG <b>${f(gg,2)}</b> / NG <b>${f(ng,2)}</b>`:""}</div>
   ${m.rows.length?`<div class="mu" style="font-size:.9rem;margin-bottom:6px">Model: 1/X/2 ${pm(m,"1X2","1")} / ${pm(m,"1X2","X")} / ${pm(m,"1X2","2")} · GG ${pm(m,"GG/NG","GG")} · Preko 2.5 ${pm(m,"Golovi 2.5","Vise")}</div>`:'<div class="mu">Nema modela za ovaj meč.</div>'}
   ${fbCtx(m,d)}
-  ${m.tips.length?m.tips.map(x=>tipRow(x,x.i)+fbWhyHtml(x)).join(""):`<p class="mu" style="margin:0">${m.started?"Utakmica je počela, prematch kvote više ne važe.":"Nema +EV tipa ≥ "+Math.round(FBEV*100)+"% za ovaj meč."}</p>${(()=>{const b=m.started?null:m.rows.filter(r=>!fbBad(r)).sort((x,y)=>y.ev-x.ev)[0];return b?`<p class="mu" style="font-size:.85rem;margin:4px 0 0">Najbliže pragu: <b>${esc(fbPlab(b,m.e))}</b> ${esc(b.market)} @ ${f(b.odds,2)} (EV ${b.ev>=0?"+":""}${f(b.ev*100,1)}%)</p>`:""})()}`}${m.hid?`<p class="mu" style="font-size:.85rem;margin:6px 0 0">Sakriveno ${m.hid} sumnjivih izbora (model i tržište se razilaze za više od 15 p.p., najčešće je pogrešno uparena kvota, a ne prava prilika).</p>`:""}</div>`}).join("");
+  ${m.tips.length?m.tips.map(x=>tipRow(x,x.i)+fbWhyHtml(x)).join(""):`<p class="mu" style="margin:0">${m.started?"Utakmica je počela, prematch kvote više ne važe.":"Nema +EV tipa ≥ "+Math.round(FBEV*100)+"% za ovaj meč."}</p>${(()=>{const b=m.started?null:m.rows.filter(r=>!fbBad(r)&&!r.blocked).sort((x,y)=>y.ev-x.ev)[0];return b?`<p class="mu" style="font-size:.85rem;margin:4px 0 0">Najbliže pragu: <b>${esc(fbPlab(b,m.e))}</b> ${esc(b.market)} @ ${f(b.odds,2)} (EV ${b.ev>=0?"+":""}${f(b.ev*100,1)}%)</p>`:""})()}`}${m.blk&&m.blk.length?`<p class="mu" style="font-size:.85rem;margin:6px 0 0"><b class="no">Blokirano ${m.blk.length} Under/NG tipa:</b> ${esc(m.blk[0].block_reason||"")}</p>`:""}${m.hid?`<p class="mu" style="font-size:.85rem;margin:6px 0 0">Sakriveno ${m.hid} sumnjivih izbora (model i tržište se razilaze za više od 15 p.p., najčešće je pogrešno uparena kvota, a ne prava prilika).</p>`:""}</div>`}).join("");
  const none=!FBM.length?`<div class="note" style="display:block">Nema utakmica za filter „${FBF}“ (${(d.p.rows||[]).length} izbora u fajlu). ${FBF!="sve"?'Probaj „Sve“.':""}</div>`:"";
  return kpi+`<div class="card">${hd}${bar}${st}</div>${topH}${none}${cards}<p class="mu" style="font-size:.85rem">EV = 35% model + 65% tržište bez marže (<code>--w</code> u football_poisson.py). Poisson model uči iz Statshub rezultata i xG-a, uračunava prijavljene povrede i kratak odmor, ali ne zna konačne sastave ni vesti iz poslednjeg sata; procena, ne garancija.</p>`}
+</script>
+<script>
+// ===== Fudbal: redovi za momentum / stil / motivaciju / sudiju / vreme (podaci iz context[].factors, fb_factors.py) =====
+function fbFxRows(F,pc){
+ if(!F)return"";
+ const r=(k,a,b)=>`<tr><td><b>${k}</b></td><td>${a}</td><td>${b}</td></tr>`,r2=(k,v)=>`<tr><td><b>${k}</b></td><td colspan="2">${v}</td></tr>`;
+ let s="";const mm=F.momentum;
+ if(mm){const t=x=>`${x.hot?'<b class="ok">u naletu</b> ':""}${x.collapse?'<b class="no">raspad odbrane</b> ':""}<span class="mu">napad ${pc(x.att)} · prima ${pc(x.conc)} · EMA ${x.n} m.</span>`;s+=r("Momentum (EMA)",t(mm.h),t(mm.a))}
+ const mo=F.motivation;
+ if(mo){const t=(x,l)=>`${esc(x.label)} <span class="mu">(${x.rank}. mesto, ${x.pts} bod.${x.scale?"":" · rana sezona, ne računa se"} · golovi u 70-90': ${f(l*100,0)}%)</span>`;s+=r("Motivacija / poslednjih 20 min",t(mo.h,mo.late20.h),t(mo.a,mo.late20.a))}
+ if(F.style)s+=r2("Stilski mismatch",F.style.notes.length?F.style.notes.map(esc).join(" · "):'<span class="mu">bez izraženog sudara stilova</span>');
+ s+=r2("Sudija",F.referee?esc((F.referee.notes||[])[0]||F.referee.name):'<span class="mu">nije zadat (data/&lt;liga&gt;/referees.json ili --ref)</span>');
+ s+=r2("Vreme",F.weather?(F.weather.notes.length?F.weather.notes.map(esc).join(", "):"bez uticaja")+` <span class="mu">(${f(F.weather.temp,0)}°C, kiša ${F.weather.rain} mm/h, vetar ${f(F.weather.wind,0)} km/h)</span>`:'<span class="mu">nema prognoze (nema koordinata stadiona ili je meč dalje od 7 dana)</span>');
+ return s}
 </script>
 </body></html>
 

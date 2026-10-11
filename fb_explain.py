@@ -133,6 +133,15 @@ def explain_row(r, h, a, C):
             why.append(f"H2H (poslednjih {hh['n']}): {h} {hh['h_win']} pob., {hh['draw']} nere., {a} {hh['n'] - hh['h_win'] - hh['draw']} pob.; prosek {hh['avg_goals']:.2f} gola po meču.")
     else:
         why.append("Kontekst (xG, forma, povrede) nije dostupan za ovaj meč, pa se tip oslanja samo na model i kvotu.")
+    F = (C or {}).get("factors")
+    if F:                                                    # momentum, stil, sudija, motivacija, vreme (fb_factors.py)
+        for n in (F.get("notes") or [])[:5]:
+            why.append("Faktor: " + n)
+        m_ = F.get("mult") or [1, 1]
+        if abs(m_[0] - 1) >= .01 or abs(m_[1] - 1) >= .01 or abs((F.get("total") or 1) - 1) >= .01:
+            why.append(f"Ukupna korekcija iz faktora: {h} x{m_[0]:.3f}, {a} x{m_[1]:.3f}, ukupno golova x{F.get('total', 1):.3f}.")
+    if r.get("block_reason"):
+        risk.append(("Under/NG je blokiran" if r.get("blocked") else "Under/NG ima spusten EV") + ": " + r["block_reason"] + ".")
     if pm is not None and pmk is not None and abs(pm - pmk) > .10:
         risk.append(f"Model i tržište se razilaze za {abs(pm - pmk) * 100:.0f} p.p. Proveri da li je kvota pravilno uparena sa ovim tržištem.")
     if (r.get("ev_raw") or 0) > .25:
