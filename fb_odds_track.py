@@ -31,11 +31,8 @@ def same(a, b): return a[1:] == b[1:]
 
 def record(d, evs):
     hp = os.path.join(d, "odds_history.json")
-    cp = os.path.join(d, "odds_closing.json")
     try: H = json.load(open(hp, encoding="utf-8"))
     except Exception: H = {}
-    try: C = json.load(open(cp, encoding="utf-8"))
-    except Exception: C = {}
     now = time.time()
     for e in evs:
         s = snap(e)
@@ -43,19 +40,12 @@ def record(d, evs):
         h = H.setdefault(key(e), {"start": e.get("start"), "snaps": []})
         if not h["snaps"] or not same(h["snaps"][-1], s): h["snaps"].append(s)
         h["snaps"] = h["snaps"][-MAXS:]
-    for k in list(H):                                   # arhiviraj pre-kickoff snimak pre čišćenja
+    for k in list(H):                                   # stari mecevi ispadaju
         try: st = datetime.datetime.fromisoformat((H[k].get("start") or "").replace("Z", "+00:00")).timestamp()
         except Exception: st = None
-        if st and st < now - KEEP_AFTER:
-            before=[s for s in H[k].get("snaps",[]) if s[0] <= st]
-            if before:C[k]={"start":H[k].get("start"),"close":before[-1]}
-            del H[k]
-    if len(C)>8000:
-        C=dict(sorted(C.items(),key=lambda kv:kv[1].get("close",[0])[0],reverse=True)[:8000])
+        if st and st < now - KEEP_AFTER: del H[k]
     tmp = hp + ".tmp"
     json.dump(H, open(tmp, "w", encoding="utf-8"), separators=(",", ":")); os.replace(tmp, hp)
-    tmp = cp + ".tmp"
-    json.dump(C, open(tmp, "w", encoding="utf-8"), separators=(",", ":")); os.replace(tmp, cp)
     return moves(d, H)
 
 
@@ -96,22 +86,6 @@ def moves(d, H=None, win=24, thr=0.025):
     return out
 
 
-def alerts(M):
-    """Human-readable terminal warnings for sharp-sized Superbet market moves."""
-    out=[]
-    for k,m in M.items():
-        if not m.get("sharp"): continue
-        candidates=[]
-        for line,x in (m.get("ou") or {}).items(): candidates.append((abs(x["dp"]),x["dp"],f"Over/Under {line}"))
-        if m.get("x12"):
-            for name,dp in zip(("1","X","2"),m["x12"]["dp"]):candidates.append((abs(dp),dp,f"1X2 {name}"))
-        if m.get("btts"):candidates.append((abs(m["btts"]["dp"]),m["btts"]["dp"],"GG"))
-        if candidates:
-            mag,dp,label=max(candidates)
-            out.append(f"⚠ STEAM {k}: {label} no-vig {dp*100:+.1f} p.p. za {m['span_h']}h; kvota se {'skraćuje' if dp>0 else 'povećava'}. Proveri vest/postavu pre tipa.")
-    return out
-
-
 if __name__ == "__main__":
     ap = argparse.ArgumentParser(); ap.add_argument("--league", default="epl"); ap.add_argument("--win", type=float, default=24); ap.add_argument("--thr", type=float, default=0.025)
     a = ap.parse_args()
@@ -121,4 +95,4 @@ if __name__ == "__main__":
     except Exception: d = os.path.join("data", a.league)
     M = moves(d, win=a.win, thr=a.thr)
     sh = [k for k, v in M.items() if v["sharp"]]
-    print(f"{len(M)} meceva sa kretanjem, {len(sh)} izrazitih"); [print(x) for x in alerts(M)[:30]]
+    print(f"{len(M)} meceva sa kretanjem, {len(sh)} izrazitih"); [print(" ", k, M[k]["ou"].get("2.5"), M[k]["x12"] and M[k]["x12"]["dp"]) for k in sh[:15]]
