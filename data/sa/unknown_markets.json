@@ -1,45 +1,45 @@
 {
  "Poluvreme ili kraj": {
-  "mecova": 10,
+  "mecova": 9,
   "primer": [
    [
     "1",
     "1",
     "Atalanta pobednik u 1. poluvremenu ili na kraju",
-    1.37,
+    1.36,
     1.0
    ],
    [
     "0",
     "x",
     "Nerešeno u 1. poluvremenu ili na kraju",
-    2.05,
+    2.02,
     1.0
    ],
    [
     "2",
     "2",
     "Venezia pobednik u 1. poluvremenu ili na kraju",
-    3.5,
+    3.55,
     1.0
    ]
   ]
  },
  "Raspon golova u svakom poluvremenu": {
-  "mecova": 10,
+  "mecova": 9,
   "primer": [
    [
     "12",
     "1-2",
     "u svakom poluvremenu će biti postignuto 1 ili 2 go",
-    2.7,
+    2.67,
     2.0
    ],
    [
     "13",
     "1-3",
     "u svakom poluvremenu će biti postignuto 1,2 ili 3 ",
-    1.8,
+    1.82,
     3.0
    ],
    [
@@ -52,13 +52,13 @@
   ]
  },
  "Pobednik bilo koje poluvreme": {
-  "mecova": 10,
+  "mecova": 9,
   "primer": [
    [
     "1",
     "atalanta",
     "Atalanta pobeđuje barem jedno poluvreme",
-    1.27,
+    1.26,
     null
    ],
    [
@@ -72,26 +72,26 @@
     "2",
     "venezia",
     "Venezia pobeđuje barem jedno poluvreme",
-    2.72,
+    2.77,
     null
    ]
   ]
  },
  "Oba tima daju gol 1.poluvreme/2.poluvreme": {
-  "mecova": 10,
+  "mecova": 9,
   "primer": [
    [
     "11",
     "da/da",
     "Oba tima daju gol u 1. i 2. poluvremenu",
-    9.2,
+    9.0,
     2.0
    ],
    [
     "10",
     "da/ne",
     "Oba tima daju gol u 1. poluvremenu i barem jedan t",
-    5.1,
+    5.0,
     2.0
    ],
    [
@@ -105,26 +105,26 @@
     "00",
     "ne/ne",
     "Barem jedan tim neće dati gol u 1. poluvremenu i b",
-    1.77,
+    1.78,
     2.0
    ]
   ]
  },
  "Tačan rezultat u bilo kom trenutku": {
-  "mecova": 10,
+  "mecova": 9,
   "primer": [
    [
     "",
     "1:0",
     "Biće ostvaren u bilo kom trenutku tokom regularnog",
-    1.47,
+    1.46,
     1.0
    ],
    [
     "",
     "1:1",
     "Biće ostvaren u bilo kom trenutku tokom regularnog",
-    2.4,
+    2.42,
     1.0
    ],
    [
@@ -152,28 +152,28 @@
     "",
     "3:0",
     "Biće ostvaren u bilo kom trenutku tokom regularnog",
-    4.45,
+    4.35,
     3.0
    ],
    [
     "",
     "3:1",
     "Biće ostvaren u bilo kom trenutku tokom regularnog",
-    5.0,
+    4.9,
     3.0
    ],
    [
     "",
     "1:2",
     "Biće ostvaren u bilo kom trenutku tokom regularnog",
-    5.7,
+    5.75,
     1.0
    ],
    [
     "",
     "2:2",
     "Biće ostvaren u bilo kom trenutku tokom regularnog",
-    6.1,
+    6.2,
     2.0
    ],
    [
@@ -187,20 +187,20 @@
     "",
     "4:0",
     "Biće ostvaren u bilo kom trenutku tokom regularnog",
-    8.7,
+    8.5,
     4.0
    ],
    [
     "",
     "3:2",
     "Biće ostvaren u bilo kom trenutku tokom regularnog",
-    9.2,
+    9.0,
     3.0
    ]
   ]
  },
  "1. poluvreme ukupno golova & Ukupno golova": {
-  "mecova": 10,
+  "mecova": 9,
   "primer": [
    [
     "",
@@ -227,21 +227,21 @@
     "",
     "manje 0.5 & manje 1.5",
     "Manje od 0.5 golova u 1. poluvremenu & manje od 1.",
-    6.7,
+    6.8,
     1.5
    ],
    [
     "",
     "vise 0.5 & vise 2.5",
     "Više od 0.5 golova u 1. poluvremenu & više od 2.5 ",
-    1.65,
+    1.64,
     2.5
    ],
    [
     "",
     "vise 0.5 & manje 2.5",
     "Više od 0.5 golova u 1. poluvremenu & manje od 2.5",
-    4.15,
+    4.2,
     2.5
    ],
    [
@@ -255,14 +255,14 @@
     "",
     "manje 0.5 & manje 2.5",
     "Manje od 0.5 golova u 1. poluvremenu & manje od 2.",
-    4.7,
+    4.75,
     2.5
    ],
    [
     "",
     "vise 1.5 & vise 2.5",
     "Više od 1.5 golova u 1. poluvremenu & više od 2.5 ",
-    2.37,
+    2.32,
     2.5
    ],
    [
@@ -283,13 +283,13 @@
     "",
     "manje 1.5 & manje 2.5",
     "Manje od 1.5 golova u 1. poluvremenu & manje od 2.",
-    2.7,
+    2.75,
     2.5
    ]
   ]
  },
  "1. poluvreme ukupno golova & 2. poluvreme ukupno golova": {
-  "mecova": 10,
+  "mecova": 9,
   "primer": [
    [
     "0+0+",
@@ -309,21 +309,21 @@
     "0+1+",
     "vise 0.5 & vise 1.5",
     "Više od 0.5 golova u 1. poluvremenu & više od 1.5 ",
-    2.22,
+    2.2,
     2.0
    ],
    [
     "0+1-",
     "vise 0.5 & manje 1.5",
     "Više od 0.5 golova u 1. poluvremenu & manje od 1.5",
-    2.52,
+    2.55,
     2.0
    ],
    [
     "0+2+",
     "vise 0.5 & vise 2.5",
     "Više od 0.5 golova u 1. poluvremenu & više od 2.5 ",
-    4.1,
+    4.0,
     2.0
    ],
    [
@@ -337,7 +337,7 @@
     "0-0+",
     "manje 0.5 & vise 0.5",
     "Manje od 0.5 golova u 1. poluvremenu & više od 0.5",
-    4.25,
+    4.3,
     2.0
    ],
    [
@@ -358,7 +358,7 @@
     "0-1-",
     "manje 0.5 & manje 1.5",
     "Manje od 0.5 golova u 1. poluvremenu & manje od 1.",
-    6.7,
+    6.8,
     2.0
    ],
    [
@@ -372,33 +372,33 @@
     "0-2-",
     "manje 0.5 & manje 2.5",
     "Manje od 0.5 golova u 1. poluvremenu & manje od 2.",
-    4.7,
+    4.75,
     2.0
    ]
   ]
  },
  "1. poluvreme ukupno golova ili 2. poluvreme ukupno golova": {
-  "mecova": 10,
+  "mecova": 9,
   "primer": [
    [
     "+1+1",
     "vise 1.5 ili vise 1.5",
     "Više 1.5 ili više 1.5",
-    1.3,
+    1.29,
     1.5
    ],
    [
     "+1-1",
     "vise 1.5 ili manje 1.5",
     "Više 1.5 ili manje 1.5",
-    1.37,
+    1.36,
     1.5
    ],
    [
     "+1+2",
     "vise 1.5 ili vise 2.5",
     "Više 1.5 ili više 2.5",
-    1.62,
+    1.6,
     2.5
    ],
    [
@@ -412,7 +412,7 @@
     "+1+3",
     "vise 1.5 ili vise 3.5",
     "Više 1.5 ili više 3.5",
-    1.9,
+    1.88,
     3.5
    ],
    [
@@ -433,14 +433,14 @@
     "-1-1",
     "manje 1.5 ili manje 1.5",
     "Manje 1.5 ili manje 1.5",
-    1.23,
+    1.24,
     1.5
    ],
    [
     "-1+2",
     "manje 1.5 ili vise 2.5",
     "Manje 1.5 ili više 2.5",
-    1.37,
+    1.38,
     2.5
    ],
    [
@@ -454,7 +454,7 @@
     "-1+3",
     "manje 1.5 ili vise 3.5",
     "Manje 1.5 ili više 3.5",
-    1.51,
+    1.52,
     3.5
    ],
    [
@@ -467,13 +467,13 @@
   ]
  },
  "1X2 & ukupno golova (1.5)": {
-  "mecova": 10,
+  "mecova": 9,
   "primer": [
    [
     "",
     "1 & manje 1.5",
     "Atalanta pobednik utakmice i manje od 1.5 gola na ",
-    8.0,
+    8.1,
     1.5
    ],
    [
@@ -494,14 +494,14 @@
     "",
     "1 & vise 1.5",
     "Atalanta pobednik utakmice i više od 1.5 gola na u",
-    1.75,
+    1.73,
     1.5
    ],
    [
     "",
     "x & vise 1.5",
     "Nerešeno na kraju utakmice i više od 1.5 gola na u",
-    4.65,
+    4.7,
     1.5
    ],
    [
@@ -514,7 +514,7 @@
   ]
  },
  "1X2 & ukupno golova (2.5)": {
-  "mecova": 10,
+  "mecova": 9,
   "primer": [
    [
     "",
@@ -527,28 +527,28 @@
     "",
     "x & manje 2.5",
     "Nerešeno na kraju utakmice  i manje od 2.5 gola na",
-    5.5,
+    5.65,
     2.5
    ],
    [
     "",
     "2 & manje 2.5",
     "Venezia pobednik utakmice i manje od 2.5 gola na u",
-    10.0,
+    11.0,
     2.5
    ],
    [
     "",
     "1 & vise 2.5",
     "Atalanta pobednik utakmice i više od 2.5 gola na u",
-    2.07,
+    2.05,
     2.5
    ],
    [
     "",
     "x & vise 2.5",
     "Nerešeno na kraju utakmice i više od 2.5 gola na u",
-    8.7,
+    9.0,
     2.5
    ],
    [
@@ -561,7 +561,7 @@
   ]
  },
  "1X2 & ukupno golova (3.5)": {
-  "mecova": 10,
+  "mecova": 9,
   "primer": [
    [
     "",
@@ -574,28 +574,28 @@
     "",
     "x & manje 3.5",
     "Nerešeno na kraju utakmice  i manje od 3.5 gola na",
-    5.5,
+    5.65,
     3.5
    ],
    [
     "",
     "2 & manje 3.5",
     "Venezia pobednik utakmice i manje od 3.5 gola na u",
-    6.5,
+    6.6,
     3.5
    ],
    [
     "",
     "1 & vise 3.5",
     "Atalanta pobednik utakmice i više od 3.5 gola na u",
-    3.15,
+    3.1,
     3.5
    ],
    [
     "",
     "x & vise 3.5",
     "Nerešeno na kraju utakmice i više od 3.5 gola na u",
-    8.7,
+    9.0,
     3.5
    ],
    [
@@ -608,7 +608,7 @@
   ]
  },
  "1X2 & ukupno golova (4.5)": {
-  "mecova": 10,
+  "mecova": 9,
   "primer": [
    [
     "",
@@ -621,28 +621,28 @@
     "",
     "x & manje 4.5",
     "Nerešeno na kraju utakmice  i manje od 4.5 gola na",
-    4.2,
+    4.3,
     4.5
    ],
    [
     "",
     "2 & manje 4.5",
     "Venezia pobednik utakmice i manje od 4.5 gola na u",
-    5.75,
+    5.85,
     4.5
    ],
    [
     "",
     "1 & vise 4.5",
     "Atalanta pobednik utakmice i više od 4.5 gola na u",
-    4.8,
+    4.65,
     4.5
    ],
    [
     "",
     "x & vise 4.5",
     "Nerešeno na kraju utakmice i više od 4.5 gola na u",
-    27.0,
+    26.0,
     4.5
    ],
    [
@@ -655,69 +655,69 @@
   ]
  },
  "1X2 & raspon golova": {
-  "mecova": 10,
+  "mecova": 9,
   "primer": [
    [
     "123",
     "1 & 2-3",
     "Atalanta pobednik i 2-3 gola",
-    3.4,
+    3.35,
     3.0
    ],
    [
     "124",
     "1 & 2-4",
     "Atalanta pobednik i 2-4 gola",
-    2.5,
+    2.47,
     4.0
    ],
    [
     "125",
     "1 & 2-5",
     "Atalanta pobednik i 2-5 golova",
-    2.02,
+    2.0,
     5.0
    ],
    [
     "126",
     "1 & 2-6",
     "Atalanta pobednik i 2-6 golova",
-    1.87,
+    1.85,
     6.0
    ],
    [
     "135",
     "1 & 3-5",
     "Atalanta pobednik i 3-5 golova",
-    2.5,
+    2.45,
     5.0
    ],
    [
     "136",
     "1 & 3-6",
     "Atalanta pobednik i 3-6 golova",
-    2.25,
+    2.22,
     6.0
    ],
    [
     "024",
     "x & 2-4",
     "Nerešeno i 2-4 gola",
-    5.1,
+    5.2,
     4.0
    ],
    [
     "026",
     "x & 2-6",
     "Nerešeno i 2-6 gola",
-    4.75,
+    4.85,
     6.0
    ],
    [
     "046",
     "x & 4-6",
     "Nerešeno i 4-6 golova",
-    9.0,
+    9.2,
     6.0
    ],
    [
@@ -744,27 +744,27 @@
   ]
  },
  "1X2 & oba tima daju gol": {
-  "mecova": 10,
+  "mecova": 9,
   "primer": [
    [
     "11",
     "1 & da",
     "Atalanta pobednik i oba tima daju gol",
-    2.8,
+    2.77,
     1.0
    ],
    [
     "12",
     "1 & ne",
     "Atalanta pobednik i barem jedan tim ne daje gol",
-    2.95,
+    2.92,
     1.0
    ],
    [
     "01",
     "x & da",
     "Nerešeno i oba tima daju gol",
-    4.65,
+    4.7,
     null
    ],
    [
@@ -785,13 +785,13 @@
     "22",
     "2 & ne",
     "Venezia pobednik i barem jedan tim ne daje gol",
-    9.5,
+    9.7,
     2.0
    ]
   ]
  },
  "1X2 & gol u oba poluvremena": {
-  "mecova": 10,
+  "mecova": 9,
   "primer": [
    [
     "1",
@@ -811,33 +811,33 @@
     "2",
     "2 & da",
     "Venezia pobednik i gol u oba poluvremena",
-    7.5,
+    7.6,
     2.0
    ]
   ]
  },
  "Dupla šansa & ukupno golova (2.5)": {
-  "mecova": 10,
+  "mecova": 9,
   "primer": [
    [
     "10-",
     "1x & manje od 2.5",
     "Atalanta će pobediti ili će biti nerešeno i biće m",
-    2.5,
+    2.52,
     2.5
    ],
    [
     "10+",
     "1x & vise od 2.5",
     "Atalanta će pobediti ili će biti nerešeno i biće v",
-    1.68,
+    1.67,
     2.5
    ],
    [
     "02-",
     "x2 & manje od 2.5",
     "Biće nerešeno ili Venezia će pobediti i biće manje",
-    3.55,
+    3.6,
     2.5
    ],
    [
@@ -851,33 +851,33 @@
     "12-",
     "12 & manje od 2.5",
     "Atalanta ili Venezia će pobediti i biće manje od 2",
-    3.15,
+    3.2,
     2.5
    ],
    [
     "12+",
     "12 & vise od 2.5",
     "Atalanta ili Venezia će pobediti i biće više od 2.",
-    1.6,
+    1.58,
     2.5
    ]
   ]
  },
  "Dupla šansa & ukupno golova (3.5)": {
-  "mecova": 10,
+  "mecova": 9,
   "primer": [
    [
     "10-",
     "1x & manje od 3.5",
     "Atalanta će pobediti ili će biti nerešeno i biće m",
-    1.77,
+    1.78,
     3.5
    ],
    [
     "10+",
     "1x & vise od 3.5",
     "Atalanta će pobediti ili će biti nerešeno i biće v",
-    2.32,
+    2.3,
     3.5
    ],
    [
@@ -898,20 +898,20 @@
     "12-",
     "12 & manje od 3.5",
     "Atalanta ili Venezia će pobediti i biće manje od 3",
-    1.87,
+    1.88,
     3.5
    ],
    [
     "12+",
     "12 & vise od 3.5",
     "Atalanta ili Venezia će pobediti i biće više od 3.",
-    2.45,
+    2.42,
     3.5
    ]
   ]
  },
  "Dupla šansa & ukupno golova (4.5)": {
-  "mecova": 10,
+  "mecova": 9,
   "primer": [
    [
     "10-",
@@ -924,14 +924,14 @@
     "10+",
     "1x & vise od 4.5",
     "Atalanta će pobediti ili će biti nerešeno i biće v",
-    3.75,
+    3.7,
     4.5
    ],
    [
     "02-",
     "x2 & manje od 4.5",
     "Biće nerešeno ili Venezia će pobediti i biće manje",
-    2.42,
+    2.45,
     4.5
    ],
    [
@@ -952,33 +952,33 @@
     "12+",
     "12 & vise od 4.5",
     "Atalanta ili Venezia će pobediti i biće više od 4.",
-    3.5,
+    3.45,
     4.5
    ]
   ]
  },
  "Dupla šansa & ukupno golova (5.5)": {
-  "mecova": 10,
+  "mecova": 9,
   "primer": [
    [
     "10-",
     "1x & manje od 5.5",
     "Atalanta će pobediti ili će biti nerešeno i biće m",
-    1.22,
+    1.23,
     5.5
    ],
    [
     "10+",
     "1x & vise od 5.5",
     "Atalanta će pobediti ili će biti nerešeno i biće v",
-    5.7,
+    5.6,
     5.5
    ],
    [
     "02-",
     "x2 & manje od 5.5",
     "Biće nerešeno ili Venezia će pobediti i biće manje",
-    2.3,
+    2.32,
     5.5
    ],
    [
@@ -992,33 +992,33 @@
     "12-",
     "12 & manje od 5.5",
     "Atalanta ili Venezia će pobediti i biće manje od 5",
-    1.3,
+    1.29,
     5.5
    ],
    [
     "12+",
     "12 & vise od 5.5",
     "Atalanta ili Venezia će pobediti i biće više od 5.",
-    5.85,
+    5.75,
     5.5
    ]
   ]
  },
  "Dupla šansa & raspon golova": {
-  "mecova": 10,
+  "mecova": 9,
   "primer": [
    [
     "1023",
     "1x & 2-3",
     "Atalanta će pobediti ili će biti nerešeno i biće 2",
-    2.3,
+    2.32,
     3.0
    ],
    [
     "1024",
     "1x & 2-4",
     "Atalanta će pobediti ili će biti nerešeno i biće 2",
-    1.67,
+    1.68,
     4.0
    ],
    [
@@ -1046,35 +1046,35 @@
     "1036",
     "1x & 3-6",
     "Atalanta će pobediti ili će biti nerešeno i biće 3",
-    1.8,
+    1.78,
     6.0
    ],
    [
     "0223",
     "x2 & 2-3",
     "Biće nerešeno ili Venezia će pobediti i biće 2-3 g",
-    3.9,
+    4.0,
     3.0
    ],
    [
     "0224",
     "x2 & 2-4",
     "Biće nerešeno ili Venezia će pobediti i biće 2-4 g",
-    3.05,
+    3.1,
     4.0
    ],
    [
     "0225",
     "x2 & 2-5",
     "Biće nerešeno ili Venezia će pobediti i biće 2-5 g",
-    2.85,
+    2.9,
     5.0
    ],
    [
     "0226",
     "x2 & 2-6",
     "Biće nerešeno ili Venezia će pobediti i biće 2-6 g",
-    2.7,
+    2.72,
     6.0
    ],
    [
@@ -1094,7 +1094,7 @@
   ]
  },
  "Dupla šansa & oba tima daju gol": {
-  "mecova": 10,
+  "mecova": 9,
   "primer": [
    [
     "101",
@@ -1135,13 +1135,13 @@
     "022",
     "x2 & ne",
     "Biće nerešeno ili Venezia će pobediti i barem jeda",
-    5.25,
+    5.3,
     null
    ]
   ]
  },
  "Dupla šansa & gol u oba poluvremena": {
-  "mecova": 10,
+  "mecova": 9,
   "primer": [
    [
     "101",
@@ -1167,13 +1167,13 @@
   ]
  },
  "1X2 ili 1. poluvreme ukupno golova (0.5)": {
-  "mecova": 10,
+  "mecova": 9,
   "primer": [
    [
     "1-",
     "1 ili manje 0.5",
     "Atalanta pobednik utakmice ili 1. poluvreme manje ",
-    1.28,
+    1.27,
     0.5
    ],
    [
@@ -1187,7 +1187,7 @@
     "0-",
     "x ili manje 0.5",
     "Nerešeno na kraju utakmice ili 1. poluvreme manje ",
-    2.45,
+    2.47,
     0.5
    ],
    [
@@ -1214,7 +1214,7 @@
   ]
  },
  "1X2 ili 1. poluvreme ukupno golova (1.5)": {
-  "mecova": 10,
+  "mecova": 9,
   "primer": [
    [
     "1-",
@@ -1227,41 +1227,41 @@
     "1+",
     "1 ili vise 1.5",
     "Atalanta pobednik utakmice ili 1. poluvreme više o",
-    1.26,
+    1.25,
     1.5
    ],
    [
     "0-",
     "x ili manje 1.5",
     "Nerešeno na kraju utakmice ili 1. poluvreme manje ",
-    1.47,
+    1.48,
     1.5
    ],
    [
     "0+",
     "x ili vise 1.5",
     "Nerešeno na kraju utakmice ili 1. poluvreme više o",
-    1.65,
+    1.64,
     1.5
    ],
    [
     "2-",
     "2 ili manje 1.5",
     "Venezia pobednik utakmice ili 1. poluvreme manje o",
-    1.47,
+    1.48,
     1.5
    ],
    [
     "2+",
     "2 ili vise 1.5",
     "Venezia pobednik utakmice ili 1. poluvreme više od",
-    1.77,
+    1.76,
     1.5
    ]
   ]
  },
  "1X2 ili 1. poluvreme ukupno golova (2.5)": {
-  "mecova": 10,
+  "mecova": 9,
   "primer": [
    [
     "1-",
@@ -1274,7 +1274,7 @@
     "1+",
     "1 ili vise 2.5",
     "Atalanta pobednik utakmice ili 1. poluvreme više o",
-    1.4,
+    1.39,
     2.5
    ],
    [
@@ -1302,19 +1302,19 @@
     "2+",
     "2 ili vise 2.5",
     "Venezia pobednik utakmice ili 1. poluvreme više od",
-    2.8,
+    2.77,
     2.5
    ]
   ]
  },
  "1X2 ili 1. poluvreme ukupno golova (3.5)": {
-  "mecova": 10,
+  "mecova": 9,
   "primer": [
    [
     "1+",
     "1 ili vise 3.5",
     "Atalanta pobednik utakmice ili 1. poluvreme više o",
-    1.47,
+    1.45,
     3.5
    ],
    [
@@ -1328,7 +1328,7 @@
     "0+",
     "x ili vise 3.5",
     "Nerešeno na kraju utakmice ili 1. poluvreme više o",
-    3.3,
+    3.35,
     3.5
    ],
    [
@@ -1348,67 +1348,67 @@
   ]
  },
  "1X2 ili 1. poluvreme ukupno golova (4.5)": {
-  "mecova": 10,
+  "mecova": 9,
   "primer": [
    [
     "1+",
     "1 ili vise 4.5",
     "Atalanta pobednik utakmice ili 1. poluvreme više o",
-    1.49,
+    1.48,
     4.5
    ],
    [
     "0+",
     "x ili vise 4.5",
     "Nerešeno na kraju utakmice ili 1. poluvreme više o",
-    3.8,
+    3.85,
     4.5
    ],
    [
     "2+",
     "2 ili vise 4.5",
     "Venezia pobednik utakmice ili 1. poluvreme više od",
-    4.55,
+    4.6,
     4.5
    ]
   ]
  },
  "Ukupno golova & oba tima daju gol": {
-  "mecova": 10,
+  "mecova": 9,
   "primer": [
    [
     "+1",
     "vise 2.5 & da",
     "Više od 2.5 gola i oba tima daju gol",
-    1.9,
+    1.88,
     2.5
    ],
    [
     "-1",
     "manje 2.5 & da",
     "Manje od 2.5 gola i oba tima daju gol",
-    7.2,
+    7.3,
     2.5
    ],
    [
     "+2",
     "vise 2.5 & ne",
     "Više od 2.5 gola i barem jedan tim ne daje gol",
-    5.75,
+    5.7,
     2.5
    ],
    [
     "-2",
     "manje 2.5 & ne",
     "Manje od 2.5 gola i barem jedan tim ne daje gol",
-    3.1,
+    3.15,
     2.5
    ],
    [
     "+1",
     "vise 3.5 & da",
     "Više od 3.5 gola i oba tima daju gol",
-    2.62,
+    2.6,
     3.5
    ],
    [
@@ -1429,14 +1429,14 @@
     "-2",
     "manje 3.5 & ne",
     "Manje od 3.5 gola i barem jedan tim ne daje gol",
-    2.55,
+    2.57,
     3.5
    ],
    [
     "+1",
     "vise 4.5 & da",
     "Više od 4.5 gola i oba tima daju gol",
-    4.2,
+    4.15,
     4.5
    ],
    [
@@ -1450,20 +1450,20 @@
     "+2",
     "vise 4.5 & ne",
     "Više od 4.5 gola i barem jedan tim ne daje gol",
-    21.0,
+    20.0,
     4.5
    ],
    [
     "-2",
     "manje 4.5 & ne",
     "Manje od 4.5 gola i barem jedan tim ne daje gol",
-    2.32,
+    2.35,
     4.5
    ]
   ]
  },
  "Winner DNB": {
-  "mecova": 10,
+  "mecova": 9,
   "primer": [
    [
     "1",
@@ -1482,67 +1482,67 @@
   ]
  },
  "Oba tima daju po dva ili više golova": {
-  "mecova": 10,
+  "mecova": 9,
   "primer": [
    [
     "1",
     "da",
     "Oba tima daju po 2 ili više golova na utakmici",
-    4.4,
+    4.35,
     2.0
    ],
    [
     "2",
     "ne",
     "Barem jedan tim ne daje 2 ili više golova na utakm",
-    1.17,
+    1.18,
     2.0
    ]
   ]
  },
  "Nerešeno ili manje od X golova": {
-  "mecova": 10,
+  "mecova": 9,
   "primer": [
    [
     "",
     "1.5 - da",
     "nerešeno će završiti utakmica ili će biti manje od",
-    2.62,
+    2.67,
     1.5
    ],
    [
     "",
     "1.5 - ne",
     "nerešeno neće završiti utakmica i neće biti manje ",
-    1.43,
+    1.41,
     1.5
    ],
    [
     "",
     "2.5 - da",
     "nerešeno će završiti utakmica ili će biti manje od",
-    2.02,
+    2.05,
     2.5
    ],
    [
     "",
     "2.5 - ne",
     "nerešeno neće završiti utakmica i neće biti manje ",
-    1.71,
+    1.68,
     2.5
    ],
    [
     "",
     "3.5 - da",
     "nerešeno će završiti utakmica ili će biti manje od",
-    1.41,
+    1.42,
     3.5
    ],
    [
     "",
     "3.5 - ne",
     "nerešeno neće završiti utakmica i neće biti manje ",
-    2.72,
+    2.67,
     3.5
    ],
    [
@@ -1556,52 +1556,52 @@
     "",
     "4.5 - ne",
     "nerešeno neće završiti utakmica i neće biti manje ",
-    4.1,
+    4.0,
     4.5
    ]
   ]
  },
  "1X2 & ukupno golova (0.5)": {
-  "mecova": 7,
+  "mecova": 6,
   "primer": [
    [
     "",
     "x & manje 0.5",
     "Nerešeno na kraju utakmice  i manje od 0.5 gola na",
-    8.2,
+    7.6,
     0.5
    ],
    [
     "",
     "1 & vise 0.5",
-    "Cagliari pobednik utakmice i više od 0.5 gola na u",
-    5.3,
+    "Torino FC pobednik utakmice i više od 0.5 gola na ",
+    2.27,
     0.5
    ],
    [
     "",
     "x & vise 0.5",
     "Nerešeno na kraju utakmice i više od 0.5 gola na u",
-    5.0,
+    4.0,
     0.5
    ],
    [
     "",
     "2 & vise 0.5",
-    "Juventus pobednik utakmice i više od 0.5 gola na u",
-    1.54,
+    "Udinese pobednik utakmice i više od 0.5 gola na ut",
+    2.95,
     0.5
    ]
   ]
  },
  "Dupla šansa & ukupno golova (1.5)": {
-  "mecova": 6,
+  "mecova": 5,
   "primer": [
    [
     "10-",
     "1x & manje od 1.5",
     "Atalanta će pobediti ili će biti nerešeno i biće m",
-    4.8,
+    4.85,
     1.5
    ],
    [
@@ -1622,7 +1622,7 @@
     "02+",
     "x2 & vise od 1.5",
     "Biće nerešeno ili Venezia će pobediti i biće više ",
-    2.62,
+    2.65,
     1.5
    ],
    [
@@ -1636,7 +1636,7 @@
     "12+",
     "12 & vise od 1.5",
     "Atalanta ili Venezia će pobediti i biće više od 1.",
-    1.35,
+    1.34,
     1.5
    ]
   ]
@@ -1655,7 +1655,7 @@
     "",
     "1-3",
     "Atalanta  1-3 gola na utakmici",
-    1.32,
+    1.33,
     3.0
    ],
    [
@@ -1674,14 +1674,14 @@
     "",
     "1-2",
     "Venezia 1-2 gola na utakmici",
-    1.65,
+    1.66,
     2.0
    ],
    [
     "",
     "1-3",
     "Venezia 1-3 gola na utakmici",
-    1.48,
+    1.49,
     3.0
    ],
    [
@@ -1707,14 +1707,14 @@
     "13",
     "1-3",
     "Atalanta 1,2 ili 3 gola u svakom poluvremenu",
-    2.27,
+    2.25,
     3.0
    ],
    [
     "23",
     "2-3",
     "Atalanta 2 ili 3 gola u svakom poluvremenu",
-    9.1,
+    8.9,
     3.0
    ]
   ]
@@ -1752,14 +1752,14 @@
     "1",
     "da",
     "Atalanta pobeđuje bar jedno poluvreme",
-    1.27,
+    1.26,
     null
    ],
    [
     "2",
     "ne",
     "Atalanta ne pobeđuje bar jedno poluvreme",
-    3.4,
+    3.45,
     null
    ]
   ]
@@ -1771,14 +1771,14 @@
     "1",
     "da",
     "Venezia pobeđuje bar jedno poluvreme",
-    2.72,
+    2.77,
     null
    ],
    [
     "2",
     "ne",
     "Venezia neće pobediti ni jedno poluvreme",
-    1.4,
+    1.39,
     null
    ]
   ]
@@ -1790,7 +1790,7 @@
     "",
     "vise 0.5 & vise 1.5",
     "1. Poluvreme Atalanta više od 0.5 golova i Atalant",
-    1.8,
+    1.78,
     1.5
    ],
    [
@@ -1804,21 +1804,21 @@
     "",
     "manje 0.5 & vise 1.5",
     "1. Poluvreme Atalanta manje od 0.5 golova i Atalan",
-    6.0,
+    5.9,
     1.5
    ],
    [
     "",
     "manje 0.5 & manje 1.5",
     "1. Poluvreme Atalanta manje od 0.5 golova i Atalan",
-    3.5,
+    3.55,
     1.5
    ],
    [
     "",
     "vise 0.5 & vise 2.5",
     "1. Poluvreme Atalanta više od 0.5 golova i Atalant",
-    2.75,
+    2.7,
     2.5
    ],
    [
@@ -1839,7 +1839,7 @@
     "",
     "manje 0.5 & manje 2.5",
     "1. Poluvreme Atalanta manje od 0.5 golova i Atalan",
-    2.72,
+    2.75,
     2.5
    ],
    [
@@ -1860,14 +1860,14 @@
     "",
     "manje 1.5 & vise 2.5",
     "1. Poluvreme Atalanta manje od 1.5 golova i Atalan",
-    4.8,
+    4.75,
     2.5
    ],
    [
     "",
     "manje 1.5 & manje 2.5",
     "1. Poluvreme Atalanta manje od 1.5 golova i Atalan",
-    1.63,
+    1.65,
     2.5
    ]
   ]
@@ -1886,7 +1886,7 @@
     "",
     "vise 0.5 & manje 1.5",
     "1. Poluvreme Venezia više od 0.5 golova i Venezia ",
-    5.0,
+    4.9,
     1.5
    ],
    [
@@ -1928,7 +1928,7 @@
     "",
     "manje 0.5 & manje 2.5",
     "1. Poluvreme Venezia manje od 0.5 golova i Venezia",
-    1.52,
+    1.53,
     2.5
    ],
    [
@@ -1982,7 +1982,7 @@
     "",
     "vise 0.5 & vise 1.5",
     "Atalanta daje više od 0.5 golova u 1. poluvremenu ",
-    4.1,
+    4.0,
     2.0
    ],
    [
@@ -1996,7 +1996,7 @@
     "",
     "vise 0.5 & vise 2.5",
     "Atalanta daje više od 0.5 golova u 1. poluvremenu ",
-    9.0,
+    8.7,
     2.0
    ],
    [
@@ -2017,21 +2017,21 @@
     "",
     "manje 0.5 & manje 0.5",
     "Atalanta daje manje od 0.5 golova u 1. poluvremenu",
-    6.7,
+    6.8,
     2.0
    ],
    [
     "",
     "manje 0.5 & vise 1.5",
     "Atalanta daje manje od 0.5 golova u 1. poluvremenu",
-    6.0,
+    5.9,
     2.0
    ],
    [
     "",
     "manje 0.5 & manje 1.5",
     "Atalanta daje manje od 0.5 golova u 1. poluvremenu",
-    3.5,
+    3.55,
     2.0
    ],
    [
@@ -2045,7 +2045,7 @@
     "",
     "manje 0.5 & manje 2.5",
     "Atalanta daje manje od 0.5 golova u 1. poluvremenu",
-    2.72,
+    2.75,
     2.0
    ]
   ]
@@ -2064,7 +2064,7 @@
     "",
     "vise 0.5 & manje 0.5",
     "Venezia daje više od 0.5 golova u 1. poluvremenu i",
-    4.1,
+    4.0,
     2.0
    ],
    [
@@ -2092,7 +2092,7 @@
     "",
     "vise 0.5 & manje 2.5",
     "Venezia daje više od 0.5 golova u 1. poluvremenu i",
-    2.5,
+    2.47,
     2.0
    ],
    [
@@ -2134,55 +2134,8 @@
     "",
     "manje 0.5 & manje 2.5",
     "Venezia daje manje od 0.5 golova u 1. poluvremenu ",
-    1.52,
+    1.53,
     2.0
-   ]
-  ]
- },
- "1X2 & ukupno golova (5.5)": {
-  "mecova": 2,
-  "primer": [
-   [
-    "",
-    "1 & manje 5.5",
-    "Atalanta pobednik utakmice i manje od 5.5 gola na ",
-    1.72,
-    5.5
-   ],
-   [
-    "",
-    "x & manje 5.5",
-    "Nerešeno na kraju utakmice  i manje od 5.5 gola na",
-    4.2,
-    5.5
-   ],
-   [
-    "",
-    "2 & manje 5.5",
-    "Venezia pobednik utakmice i manje od 5.5 gola na u",
-    5.1,
-    5.5
-   ],
-   [
-    "",
-    "1 & vise 5.5",
-    "Atalanta pobednik utakmice i više od 5.5 gola na u",
-    8.5,
-    5.5
-   ],
-   [
-    "",
-    "x & vise 5.5",
-    "Nerešeno na kraju utakmice i više od 5.5 gola na u",
-    27.0,
-    5.5
-   ],
-   [
-    "",
-    "2 & vise 5.5",
-    "Venezia pobednik utakmice i više od 5.5 gola na ut",
-    34.0,
-    5.5
    ]
   ]
  },
@@ -2200,21 +2153,21 @@
     "2-",
     "2 & manje 0.5",
     "Venezia pobednik i Atalanta manje od 0.5 gola na u",
-    9.2,
+    9.3,
     0.5
    ],
    [
     "1+",
     "1 & vise 0.5",
     "Atalanta pobednik i Atalanta više od 0.5 gola na u",
-    1.52,
+    1.51,
     0.5
    ],
    [
     "0+",
     "x & vise 0.5",
     "nerešeno i Atalanta više od 0.5 gola na utakmici",
-    4.65,
+    4.7,
     0.5
    ],
    [
@@ -2240,7 +2193,7 @@
     "0-",
     "x & manje 1.5",
     "nerešeno i Atalanta manje od 1.5 gola na utakmici",
-    5.5,
+    5.65,
     1.5
    ],
    [
@@ -2254,14 +2207,14 @@
     "1+",
     "1 & vise 1.5",
     "Atalanta pobednik i Atalanta više od 1.5 gola na u",
-    1.75,
+    1.72,
     1.5
    ],
    [
     "0+",
     "x & vise 1.5",
     "nerešeno i Atalanta više od 1.5 gola na utakmici",
-    8.7,
+    9.0,
     1.5
    ],
    [
@@ -2287,28 +2240,28 @@
     "0-",
     "x & manje 2.5",
     "nerešeno i Atalanta manje od 2.5 gola na utakmici",
-    4.2,
+    4.3,
     2.5
    ],
    [
     "2-",
     "2 & manje 2.5",
     "Venezia pobednik i Atalanta manje od 2.5 gola na u",
-    4.9,
+    5.0,
     2.5
    ],
    [
     "1+",
     "1 & vise 2.5",
     "Atalanta pobednik i Atalanta više od 2.5 gola na u",
-    2.62,
+    2.57,
     2.5
    ],
    [
     "0+",
     "x & vise 2.5",
     "nerešeno i Atalanta više od 2.5 gola na utakmici",
-    27.0,
+    26.0,
     2.5
    ],
    [
@@ -2334,28 +2287,28 @@
     "0-",
     "x & manje 3.5",
     "nerešeno i Atalanta manje od 3.5 gola na utakmici",
-    4.0,
+    4.1,
     3.5
    ],
    [
     "2-",
     "2 & manje 3.5",
     "Venezia pobednik i Atalanta manje od 3.5 gola na u",
-    4.85,
+    4.9,
     3.5
    ],
    [
     "1+",
     "1 & vise 3.5",
     "Atalanta pobednik i Atalanta više od 3.5 gola na u",
-    4.85,
+    4.7,
     3.5
    ],
    [
     "0+",
     "x & vise 3.5",
     "nerešeno i Atalanta više od 3.5 gola na utakmici",
-    85.0,
+    80.0,
     3.5
    ],
    [
@@ -2374,28 +2327,28 @@
     "1-",
     "1 & manje 4.5",
     "Atalanta pobednik i Atalanta manje od 4.5 gola na ",
-    1.69,
+    1.68,
     4.5
    ],
    [
     "0-",
     "x & manje 4.5",
     "nerešeno i Atalanta manje od 4.5 gola na utakmici",
-    3.9,
+    4.0,
     4.5
    ],
    [
     "2-",
     "2 & manje 4.5",
     "Venezia pobednik i Atalanta manje od 4.5 gola na u",
-    4.8,
+    4.85,
     4.5
    ],
    [
     "1+",
     "1 & vise 4.5",
     "Atalanta pobednik i Atalanta više od 4.5 gola na u",
-    9.7,
+    9.2,
     4.5
    ],
    [
@@ -2421,7 +2374,7 @@
     "1-",
     "1 & manje 0.5",
     "Atalanta pobednik  i Venezia manje od 0.5 gola na ",
-    2.95,
+    2.92,
     0.5
    ],
    [
@@ -2435,21 +2388,21 @@
     "1+",
     "1 & vise 0.5",
     "Atalanta pobednik  i Venezia više od 0.5 gola na u",
-    2.8,
+    2.77,
     0.5
    ],
    [
     "0+",
     "x & vise 0.5",
     "nerešeno i Venezia više od 0.5 gola na utakmici",
-    4.65,
+    4.75,
     0.5
    ],
    [
     "2+",
     "2 & vise 0.5",
     "Venezia pobednik  i Venezia više od 0.5 gola na ut",
-    4.85,
+    4.9,
     0.5
    ]
   ]
@@ -2461,14 +2414,14 @@
     "1-",
     "1 & manje 1.5",
     "Atalanta pobednik  i Venezia manje od 1.5 gola na ",
-    1.75,
+    1.72,
     1.5
    ],
    [
     "0-",
     "x & manje 1.5",
     "nerešeno i Venezia manje od 1.5 gola na utakmici",
-    5.5,
+    5.65,
     1.5
    ],
    [
@@ -2482,14 +2435,14 @@
     "1+",
     "1 & vise 1.5",
     "Atalanta pobednik  i Venezia više od 1.5 gola na u",
-    8.0,
+    7.9,
     1.5
    ],
    [
     "0+",
     "x & vise 1.5",
     "nerešeno i Venezia više od 1.5 gola na utakmici",
-    8.7,
+    9.0,
     1.5
    ],
    [
@@ -2508,35 +2461,35 @@
     "1-",
     "1 & manje 2.5",
     "Atalanta pobednik  i Venezia manje od 2.5 gola na ",
-    1.55,
+    1.53,
     2.5
    ],
    [
     "0-",
     "x & manje 2.5",
     "nerešeno i Venezia manje od 2.5 gola na utakmici",
-    4.2,
+    4.3,
     2.5
    ],
    [
     "2-",
     "2 & manje 2.5",
     "Venezia pobednik  i Venezia manje od 2.5 gola na u",
-    6.8,
+    6.9,
     2.5
    ],
    [
     "1+",
     "1 & vise 2.5",
     "Atalanta pobednik  i Venezia više od 2.5 gola na u",
-    32.0,
+    31.0,
     2.5
    ],
    [
     "0+",
     "x & vise 2.5",
     "nerešeno i Venezia više od 2.5 gola na utakmici",
-    27.0,
+    26.0,
     2.5
    ],
    [
@@ -2555,35 +2508,35 @@
     "1-",
     "1 & manje 3.5",
     "Atalanta pobednik  i Venezia manje od 3.5 gola na ",
-    1.52,
+    1.51,
     3.5
    ],
    [
     "0-",
     "x & manje 3.5",
     "nerešeno i Venezia manje od 3.5 gola na utakmici",
-    4.0,
+    4.1,
     3.5
    ],
    [
     "2-",
     "2 & manje 3.5",
     "Venezia pobednik  i Venezia manje od 3.5 gola na u",
-    5.3,
+    5.35,
     3.5
    ],
    [
     "1+",
     "1 & vise 3.5",
     "Atalanta pobednik  i Venezia više od 3.5 gola na u",
-    100.0,
+    90.0,
     3.5
    ],
    [
     "0+",
     "x & vise 3.5",
     "nerešeno i Venezia više od 3.5 gola na utakmici",
-    85.0,
+    80.0,
     3.5
    ],
    [
@@ -2602,21 +2555,21 @@
     "1-",
     "1 & manje 4.5",
     "Atalanta pobednik  i Venezia manje od 4.5 gola na ",
-    1.52,
+    1.5,
     4.5
    ],
    [
     "0-",
     "x & manje 4.5",
     "nerešeno i Venezia manje od 4.5 gola na utakmici",
-    3.9,
+    4.0,
     4.5
    ],
    [
     "2-",
     "2 & manje 4.5",
     "Venezia pobednik  i Venezia manje od 4.5 gola na u",
-    4.9,
+    5.0,
     4.5
    ],
    [
@@ -2656,7 +2609,7 @@
     "2",
     "ne",
     "Atalanta ne daje gol na utakmici",
-    6.6,
+    6.7,
     null
    ]
   ]
@@ -2687,14 +2640,14 @@
     "",
     "da",
     "Atalanta daje gol u oba poluvremena",
-    2.1,
+    2.07,
     null
    ],
    [
     "",
     "ne",
     "Atalanta ne daje gol u oba poluvremena",
-    1.65,
+    1.67,
     null
    ]
   ]
@@ -2725,14 +2678,14 @@
     "",
     "da",
     "Atalanta pobeđuje u oba poluvremena",
-    3.65,
+    3.6,
     null
    ],
    [
     "",
     "ne",
     "Atalanta neće pobediti barem u jednom poluvremenu",
-    1.24,
+    1.25,
     null
    ]
   ]
@@ -2744,8 +2697,69 @@
     "",
     "da",
     "Venezia pobeđuje u oba poluvremena",
-    24.0,
+    25.0,
     null
+   ]
+  ]
+ },
+ "Venezia pobednik ili manje od X golova": {
+  "mecova": 2,
+  "primer": [
+   [
+    "",
+    "1.5 - da",
+    "Venezia pobednik ili će biti manje od 1.5 golova n",
+    3.05,
+    1.5
+   ],
+   [
+    "",
+    "1.5 - ne",
+    "Venezia neće biti pobednik i neće biti manje od 1.",
+    1.33,
+    1.5
+   ],
+   [
+    "",
+    "2.5 - da",
+    "Venezia pobednik ili će biti manje od 2.5 golova n",
+    1.92,
+    2.5
+   ],
+   [
+    "",
+    "2.5 - ne",
+    "Venezia neće biti pobednik i neće biti manje od 2.",
+    1.78,
+    2.5
+   ],
+   [
+    "",
+    "3.5 - da",
+    "Venezia pobednik ili će biti manje od 3.5 golova n",
+    1.46,
+    3.5
+   ],
+   [
+    "",
+    "3.5 - ne",
+    "Venezia neće biti pobednik i neće biti manje od 3.",
+    2.52,
+    3.5
+   ],
+   [
+    "",
+    "4.5 - da",
+    "Venezia pobednik ili će biti manje od 4.5 golova n",
+    1.18,
+    4.5
+   ],
+   [
+    "",
+    "4.5 - ne",
+    "Venezia neće biti pobednik i neće biti manje od 4.",
+    4.3,
+    4.5
    ]
   ]
  },
@@ -2756,7 +2770,7 @@
     "",
     "1-2",
     "Udinese 1-2 gola na utakmici",
-    1.63,
+    1.62,
     2.0
    ],
    [
@@ -2827,14 +2841,14 @@
     "",
     "vise 0.5 & vise 1.5",
     "1. Poluvreme Udinese više od 0.5 golova i Udinese ",
-    3.7,
+    3.65,
     1.5
    ],
    [
     "",
     "vise 0.5 & manje 1.5",
     "1. Poluvreme Udinese više od 0.5 golova i Udinese ",
-    5.0,
+    4.9,
     1.5
    ],
    [
@@ -2916,7 +2930,7 @@
     "",
     "vise 0.5 & vise 0.5",
     "Udinese daje više od 0.5 golova u 1. poluvremenu i",
-    4.5,
+    4.45,
     2.0
    ],
    [
@@ -2937,7 +2951,7 @@
     "",
     "vise 0.5 & manje 1.5",
     "Udinese daje više od 0.5 golova u 1. poluvremenu i",
-    2.62,
+    2.6,
     2.0
    ],
    [
@@ -2951,7 +2965,7 @@
     "",
     "vise 0.5 & manje 2.5",
     "Udinese daje više od 0.5 golova u 1. poluvremenu i",
-    2.37,
+    2.35,
     2.0
    ],
    [
@@ -3012,7 +3026,7 @@
     "0-",
     "x & manje 0.5",
     "nerešeno i Udinese manje od 0.5 gola na utakmici",
-    7.7,
+    7.6,
     0.5
    ],
    [
@@ -3052,7 +3066,7 @@
     "0-",
     "x & manje 1.5",
     "nerešeno i Udinese manje od 1.5 gola na utakmici",
-    3.7,
+    3.65,
     1.5
    ],
    [
@@ -3092,7 +3106,7 @@
     "1-",
     "1 & manje 2.5",
     "Torino FC pobednik  i Udinese manje od 2.5 gola na",
-    2.27,
+    2.3,
     2.5
    ],
    [
@@ -3318,14 +3332,14 @@
     "",
     "3.5 - da",
     "Atalanta pobednik ili će biti manje od 3.5 golova ",
-    1.1,
+    1.09,
     3.5
    ],
    [
     "",
     "3.5 - ne",
     "Atalanta neće biti pobednik i neće biti manje od 3",
-    6.0,
+    6.1,
     3.5
    ],
    [
@@ -3340,1135 +3354,6 @@
     "4.5 - ne",
     "Atalanta neće biti pobednik i neće biti manje od 4",
     12.0,
-    4.5
-   ]
-  ]
- },
- "Cagliari raspon golova": {
-  "mecova": 1,
-  "primer": [
-   [
-    "",
-    "1-2",
-    "Cagliari 1-2 gola na utakmici",
-    1.87,
-    2.0
-   ],
-   [
-    "",
-    "1-3",
-    "Cagliari  1-3 gola na utakmici",
-    1.75,
-    3.0
-   ],
-   [
-    "",
-    "2-3",
-    "Cagliari 2-3 gola na utakmici",
-    4.7,
-    3.0
-   ]
-  ]
- },
- "Juventus raspon golova": {
-  "mecova": 1,
-  "primer": [
-   [
-    "",
-    "1-2",
-    "Juventus 1-2 gola na utakmici",
-    1.64,
-    2.0
-   ],
-   [
-    "",
-    "1-3",
-    "Juventus 1-3 gola na utakmici",
-    1.3,
-    3.0
-   ],
-   [
-    "",
-    "2-3",
-    "Juventus 2-3 gola na utakmici",
-    2.15,
-    3.0
-   ]
-  ]
- },
- "Cagliari raspon golova u svakom poluvremenu": {
-  "mecova": 1,
-  "primer": [
-   [
-    "12",
-    "1-2",
-    "Cagliari 1 ili 2 gola u svakom poluvremenu",
-    7.4,
-    2.0
-   ],
-   [
-    "13",
-    "1-3",
-    "Cagliari 1,2 ili 3 gola u svakom poluvremenu",
-    7.2,
-    3.0
-   ],
-   [
-    "23",
-    "2-3",
-    "Cagliari 2 ili 3 gola u svakom poluvremenu",
-    75.0,
-    3.0
-   ]
-  ]
- },
- "Juventus raspon golova u svakom poluvremenu": {
-  "mecova": 1,
-  "primer": [
-   [
-    "12",
-    "1-2",
-    "Juventus 1 ili 2 gola u svakom poluvremenu",
-    3.15,
-    2.0
-   ],
-   [
-    "13",
-    "1-3",
-    "Juventus 1,2 ili 3 gola u svakom poluvremenu",
-    2.7,
-    3.0
-   ],
-   [
-    "23",
-    "2-3",
-    "Juventus 2 ili 3 gola u svakom poluvremenu",
-    13.0,
-    3.0
-   ]
-  ]
- },
- "Cagliari pobeđuje bar jedno poluvreme": {
-  "mecova": 1,
-  "primer": [
-   [
-    "1",
-    "da",
-    "Cagliari pobeđuje bar jedno poluvreme",
-    3.05,
-    null
-   ],
-   [
-    "2",
-    "ne",
-    "Cagliari ne pobeđuje bar jedno poluvreme",
-    1.33,
-    null
-   ]
-  ]
- },
- "Juventus pobeđuje bar jedno poluvreme": {
-  "mecova": 1,
-  "primer": [
-   [
-    "1",
-    "da",
-    "Juventus pobeđuje bar jedno poluvreme",
-    1.32,
-    null
-   ],
-   [
-    "2",
-    "ne",
-    "Juventus neće pobediti ni jedno poluvreme",
-    3.1,
-    null
-   ]
-  ]
- },
- "1. Poluvreme Cagliari Ukupno golova & Ukupno golova Cagliari": {
-  "mecova": 1,
-  "primer": [
-   [
-    "",
-    "vise 0.5 & vise 1.5",
-    "1. Poluvreme Cagliari više od 0.5 golova i Cagliar",
-    5.9,
-    1.5
-   ],
-   [
-    "",
-    "vise 0.5 & manje 1.5",
-    "1. Poluvreme Cagliari više od 0.5 golova i Cagliar",
-    5.0,
-    1.5
-   ],
-   [
-    "",
-    "manje 0.5 & vise 1.5",
-    "1. Poluvreme Cagliari manje od 0.5 golova i Caglia",
-    12.0,
-    1.5
-   ],
-   [
-    "",
-    "manje 0.5 & manje 1.5",
-    "1. Poluvreme Cagliari manje od 0.5 golova i Caglia",
-    1.43,
-    1.5
-   ],
-   [
-    "",
-    "vise 0.5 & vise 2.5",
-    "1. Poluvreme Cagliari više od 0.5 golova i Cagliar",
-    16.0,
-    2.5
-   ],
-   [
-    "",
-    "vise 0.5 & manje 2.5",
-    "1. Poluvreme Cagliari više od 0.5 golova i Cagliar",
-    3.4,
-    2.5
-   ],
-   [
-    "",
-    "manje 0.5 & vise 2.5",
-    "1. Poluvreme Cagliari manje od 0.5 golova i Caglia",
-    45.0,
-    2.5
-   ],
-   [
-    "",
-    "manje 0.5 & manje 2.5",
-    "1. Poluvreme Cagliari manje od 0.5 golova i Caglia",
-    1.34,
-    2.5
-   ],
-   [
-    "",
-    "vise 1.5 & vise 2.5",
-    "1. Poluvreme Cagliari više od 1.5 golova i Cagliar",
-    24.0,
-    2.5
-   ],
-   [
-    "",
-    "vise 1.5 & manje 2.5",
-    "1. Poluvreme Cagliari više od 1.5 golova i Cagliar",
-    19.0,
-    2.5
-   ],
-   [
-    "",
-    "manje 1.5 & vise 2.5",
-    "1. Poluvreme Cagliari manje od 1.5 golova i Caglia",
-    21.0,
-    2.5
-   ],
-   [
-    "",
-    "manje 1.5 & manje 2.5",
-    "1. Poluvreme Cagliari manje od 1.5 golova i Caglia",
-    1.04,
-    2.5
-   ]
-  ]
- },
- "1. Poluvreme Juventus Ukupno golova & Ukupno golova Juventus": {
-  "mecova": 1,
-  "primer": [
-   [
-    "",
-    "vise 0.5 & vise 1.5",
-    "1. Poluvreme Juventus više od 0.5 golova i Juventu",
-    2.17,
-    1.5
-   ],
-   [
-    "",
-    "vise 0.5 & manje 1.5",
-    "1. Poluvreme Juventus više od 0.5 golova i Juventu",
-    5.65,
-    1.5
-   ],
-   [
-    "",
-    "manje 0.5 & vise 1.5",
-    "1. Poluvreme Juventus manje od 0.5 golova i Juvent",
-    6.4,
-    1.5
-   ],
-   [
-    "",
-    "manje 0.5 & manje 1.5",
-    "1. Poluvreme Juventus manje od 0.5 golova i Juvent",
-    2.75,
-    1.5
-   ],
-   [
-    "",
-    "vise 0.5 & vise 2.5",
-    "1. Poluvreme Juventus više od 0.5 golova i Juventu",
-    3.7,
-    2.5
-   ],
-   [
-    "",
-    "vise 0.5 & manje 2.5",
-    "1. Poluvreme Juventus više od 0.5 golova i Juventu",
-    2.72,
-    2.5
-   ],
-   [
-    "",
-    "manje 0.5 & vise 2.5",
-    "1. Poluvreme Juventus manje od 0.5 golova i Juvent",
-    16.0,
-    2.5
-   ],
-   [
-    "",
-    "manje 0.5 & manje 2.5",
-    "1. Poluvreme Juventus manje od 0.5 golova i Juvent",
-    2.25,
-    2.5
-   ],
-   [
-    "",
-    "vise 1.5 & vise 2.5",
-    "1. Poluvreme Juventus više od 1.5 golova i Juventu",
-    5.55,
-    2.5
-   ],
-   [
-    "",
-    "vise 1.5 & manje 2.5",
-    "1. Poluvreme Juventus više od 1.5 golova i Juventu",
-    11.0,
-    2.5
-   ],
-   [
-    "",
-    "manje 1.5 & vise 2.5",
-    "1. Poluvreme Juventus manje od 1.5 golova i Juvent",
-    6.0,
-    2.5
-   ],
-   [
-    "",
-    "manje 1.5 & manje 2.5",
-    "1. Poluvreme Juventus manje od 1.5 golova i Juvent",
-    1.4,
-    2.5
-   ]
-  ]
- },
- "Cagliari - 1. poluvreme ukupno golova & 2. poluvreme ukupno golova": {
-  "mecova": 1,
-  "primer": [
-   [
-    "",
-    "vise 0.5 & vise 0.5",
-    "Cagliari daje više od 0.5 golova u 1. poluvremenu ",
-    7.2,
-    2.0
-   ],
-   [
-    "",
-    "vise 0.5 & manje 0.5",
-    "Cagliari daje više od 0.5 golova u 1. poluvremenu ",
-    4.35,
-    2.0
-   ],
-   [
-    "",
-    "vise 0.5 & vise 1.5",
-    "Cagliari daje više od 0.5 golova u 1. poluvremenu ",
-    24.0,
-    2.0
-   ],
-   [
-    "",
-    "vise 0.5 & manje 1.5",
-    "Cagliari daje više od 0.5 golova u 1. poluvremenu ",
-    3.25,
-    2.0
-   ],
-   [
-    "",
-    "vise 0.5 & vise 2.5",
-    "Cagliari daje više od 0.5 golova u 1. poluvremenu ",
-    80.0,
-    2.0
-   ],
-   [
-    "",
-    "vise 0.5 & manje 2.5",
-    "Cagliari daje više od 0.5 golova u 1. poluvremenu ",
-    3.1,
-    2.0
-   ],
-   [
-    "",
-    "manje 0.5 & vise 0.5",
-    "Cagliari daje manje od 0.5 golova u 1. poluvremenu",
-    3.35,
-    2.0
-   ],
-   [
-    "",
-    "manje 0.5 & manje 0.5",
-    "Cagliari daje manje od 0.5 golova u 1. poluvremenu",
-    2.02,
-    2.0
-   ],
-   [
-    "",
-    "manje 0.5 & vise 1.5",
-    "Cagliari daje manje od 0.5 golova u 1. poluvremenu",
-    12.0,
-    2.0
-   ],
-   [
-    "",
-    "manje 0.5 & manje 1.5",
-    "Cagliari daje manje od 0.5 golova u 1. poluvremenu",
-    1.43,
-    2.0
-   ],
-   [
-    "",
-    "manje 0.5 & vise 2.5",
-    "Cagliari daje manje od 0.5 golova u 1. poluvremenu",
-    45.0,
-    2.0
-   ],
-   [
-    "",
-    "manje 0.5 & manje 2.5",
-    "Cagliari daje manje od 0.5 golova u 1. poluvremenu",
-    1.34,
-    2.0
-   ]
-  ]
- },
- "Juventus - 1. poluvreme ukupno golova & 2. poluvreme ukupno golova": {
-  "mecova": 1,
-  "primer": [
-   [
-    "",
-    "vise 0.5 & vise 0.5",
-    "Juventus daje više od 0.5 golova u 1. poluvremenu ",
-    2.6,
-    2.0
-   ],
-   [
-    "",
-    "vise 0.5 & manje 0.5",
-    "Juventus daje više od 0.5 golova u 1. poluvremenu ",
-    4.0,
-    2.0
-   ],
-   [
-    "",
-    "vise 0.5 & vise 1.5",
-    "Juventus daje više od 0.5 golova u 1. poluvremenu ",
-    5.55,
-    2.0
-   ],
-   [
-    "",
-    "vise 0.5 & manje 1.5",
-    "Juventus daje više od 0.5 golova u 1. poluvremenu ",
-    2.17,
-    2.0
-   ],
-   [
-    "",
-    "vise 0.5 & vise 2.5",
-    "Juventus daje više od 0.5 golova u 1. poluvremenu ",
-    14.0,
-    2.0
-   ],
-   [
-    "",
-    "vise 0.5 & manje 2.5",
-    "Juventus daje više od 0.5 golova u 1. poluvremenu ",
-    1.8,
-    2.0
-   ],
-   [
-    "",
-    "manje 0.5 & vise 0.5",
-    "Juventus daje manje od 0.5 golova u 1. poluvremenu",
-    3.1,
-    2.0
-   ],
-   [
-    "",
-    "manje 0.5 & manje 0.5",
-    "Juventus daje manje od 0.5 golova u 1. poluvremenu",
-    5.0,
-    2.0
-   ],
-   [
-    "",
-    "manje 0.5 & vise 1.5",
-    "Juventus daje manje od 0.5 golova u 1. poluvremenu",
-    6.4,
-    2.0
-   ],
-   [
-    "",
-    "manje 0.5 & manje 1.5",
-    "Juventus daje manje od 0.5 golova u 1. poluvremenu",
-    2.75,
-    2.0
-   ],
-   [
-    "",
-    "manje 0.5 & vise 2.5",
-    "Juventus daje manje od 0.5 golova u 1. poluvremenu",
-    16.0,
-    2.0
-   ],
-   [
-    "",
-    "manje 0.5 & manje 2.5",
-    "Juventus daje manje od 0.5 golova u 1. poluvremenu",
-    2.25,
-    2.0
-   ]
-  ]
- },
- "1X2 & ukupno golova Cagliari (0.5)": {
-  "mecova": 1,
-  "primer": [
-   [
-    "0-",
-    "x & manje 0.5",
-    "nerešeno i Cagliari manje od 0.5 gola na utakmici",
-    8.2,
-    0.5
-   ],
-   [
-    "2-",
-    "2 & manje 0.5",
-    "Juventus pobednik i Cagliari manje od 0.5 gola na ",
-    2.37,
-    0.5
-   ],
-   [
-    "1+",
-    "1 & vise 0.5",
-    "Cagliari pobednik i Cagliari više od 0.5 gola na u",
-    5.3,
-    0.5
-   ],
-   [
-    "0+",
-    "x & vise 0.5",
-    "nerešeno i Cagliari više od 0.5 gola na utakmici",
-    5.0,
-    0.5
-   ],
-   [
-    "2+",
-    "2 & vise 0.5",
-    "Juventus pobednik i Cagliari više od 0.5 gola na u",
-    3.7,
-    0.5
-   ]
-  ]
- },
- "1X2 & ukupno golova Cagliari (1.5)": {
-  "mecova": 1,
-  "primer": [
-   [
-    "1-",
-    "1 & manje 1.5",
-    "Cagliari pobednik i Cagliari manje od 1.5 gola na ",
-    11.0,
-    1.5
-   ],
-   [
-    "0-",
-    "x & manje 1.5",
-    "nerešeno i Cagliari manje od 1.5 gola na utakmici",
-    4.25,
-    1.5
-   ],
-   [
-    "2-",
-    "2 & manje 1.5",
-    "Juventus pobednik i Cagliari manje od 1.5 gola na ",
-    1.64,
-    1.5
-   ],
-   [
-    "1+",
-    "1 & vise 1.5",
-    "Cagliari pobednik i Cagliari više od 1.5 gola na u",
-    7.5,
-    1.5
-   ],
-   [
-    "0+",
-    "x & vise 1.5",
-    "nerešeno i Cagliari više od 1.5 gola na utakmici",
-    13.0,
-    1.5
-   ],
-   [
-    "2+",
-    "2 & vise 1.5",
-    "Juventus pobednik i Cagliari više od 1.5 gola na u",
-    14.0,
-    1.5
-   ]
-  ]
- },
- "1X2 & ukupno golova Cagliari (2.5)": {
-  "mecova": 1,
-  "primer": [
-   [
-    "1-",
-    "1 & manje 2.5",
-    "Cagliari pobednik i Cagliari manje od 2.5 gola na ",
-    6.4,
-    2.5
-   ],
-   [
-    "0-",
-    "x & manje 2.5",
-    "nerešeno i Cagliari manje od 2.5 gola na utakmici",
-    3.65,
-    2.5
-   ],
-   [
-    "2-",
-    "2 & manje 2.5",
-    "Juventus pobednik i Cagliari manje od 2.5 gola na ",
-    1.55,
-    2.5
-   ],
-   [
-    "1+",
-    "1 & vise 2.5",
-    "Cagliari pobednik i Cagliari više od 2.5 gola na u",
-    17.0,
-    2.5
-   ],
-   [
-    "0+",
-    "x & vise 2.5",
-    "nerešeno i Cagliari više od 2.5 gola na utakmici",
-    50.0,
-    2.5
-   ],
-   [
-    "2+",
-    "2 & vise 2.5",
-    "Juventus pobednik i Cagliari više od 2.5 gola na u",
-    65.0,
-    2.5
-   ]
-  ]
- },
- "1X2 & ukupno golova Cagliari (3.5)": {
-  "mecova": 1,
-  "primer": [
-   [
-    "1-",
-    "1 & manje 3.5",
-    "Cagliari pobednik i Cagliari manje od 3.5 gola na ",
-    5.5,
-    3.5
-   ],
-   [
-    "0-",
-    "x & manje 3.5",
-    "nerešeno i Cagliari manje od 3.5 gola na utakmici",
-    3.55,
-    3.5
-   ],
-   [
-    "2-",
-    "2 & manje 3.5",
-    "Juventus pobednik i Cagliari manje od 3.5 gola na ",
-    1.54,
-    3.5
-   ],
-   [
-    "1+",
-    "1 & vise 3.5",
-    "Cagliari pobednik i Cagliari više od 3.5 gola na u",
-    50.0,
-    3.5
-   ],
-   [
-    "0+",
-    "x & vise 3.5",
-    "nerešeno i Cagliari više od 3.5 gola na utakmici",
-    100.0,
-    3.5
-   ],
-   [
-    "2+",
-    "2 & vise 3.5",
-    "Juventus pobednik i Cagliari više od 3.5 gola na u",
-    125.0,
-    3.5
-   ]
-  ]
- },
- "1X2 & ukupno golova Cagliari (4.5)": {
-  "mecova": 1,
-  "primer": [
-   [
-    "1-",
-    "1 & manje 4.5",
-    "Cagliari pobednik i Cagliari manje od 4.5 gola na ",
-    5.35,
-    4.5
-   ],
-   [
-    "0-",
-    "x & manje 4.5",
-    "nerešeno i Cagliari manje od 4.5 gola na utakmici",
-    3.55,
-    4.5
-   ],
-   [
-    "2-",
-    "2 & manje 4.5",
-    "Juventus pobednik i Cagliari manje od 4.5 gola na ",
-    1.54,
-    4.5
-   ],
-   [
-    "1+",
-    "1 & vise 4.5",
-    "Cagliari pobednik i Cagliari više od 4.5 gola na u",
-    100.0,
-    4.5
-   ],
-   [
-    "0+",
-    "x & vise 4.5",
-    "nerešeno i Cagliari više od 4.5 gola na utakmici",
-    125.0,
-    4.5
-   ],
-   [
-    "2+",
-    "2 & vise 4.5",
-    "Juventus pobednik i Cagliari više od 4.5 gola na u",
-    125.0,
-    4.5
-   ]
-  ]
- },
- "1X2 & ukupno golova Juventus (0.5)": {
-  "mecova": 1,
-  "primer": [
-   [
-    "1-",
-    "1 & manje 0.5",
-    "Cagliari pobednik  i Juventus manje od 0.5 gola na",
-    7.9,
-    0.5
-   ],
-   [
-    "0-",
-    "x & manje 0.5",
-    "nerešeno i Juventus manje od 0.5 gola na utakmici",
-    8.3,
-    0.5
-   ],
-   [
-    "1+",
-    "1 & vise 0.5",
-    "Cagliari pobednik  i Juventus više od 0.5 gola na ",
-    9.7,
-    0.5
-   ],
-   [
-    "0+",
-    "x & vise 0.5",
-    "nerešeno i Juventus više od 0.5 gola na utakmici",
-    5.0,
-    0.5
-   ],
-   [
-    "2+",
-    "2 & vise 0.5",
-    "Juventus pobednik  i Juventus više od 0.5 gola na ",
-    1.54,
-    0.5
-   ]
-  ]
- },
- "1X2 & ukupno golova Juventus (1.5)": {
-  "mecova": 1,
-  "primer": [
-   [
-    "1-",
-    "1 & manje 1.5",
-    "Cagliari pobednik  i Juventus manje od 1.5 gola na",
-    5.6,
-    1.5
-   ],
-   [
-    "0-",
-    "x & manje 1.5",
-    "nerešeno i Juventus manje od 1.5 gola na utakmici",
-    4.25,
-    1.5
-   ],
-   [
-    "2-",
-    "2 & manje 1.5",
-    "Juventus pobednik  i Juventus manje od 1.5 gola na",
-    5.65,
-    1.5
-   ],
-   [
-    "1+",
-    "1 & vise 1.5",
-    "Cagliari pobednik  i Juventus više od 1.5 gola na ",
-    32.0,
-    1.5
-   ],
-   [
-    "0+",
-    "x & vise 1.5",
-    "nerešeno i Juventus više od 1.5 gola na utakmici",
-    13.0,
-    1.5
-   ],
-   [
-    "2+",
-    "2 & vise 1.5",
-    "Juventus pobednik  i Juventus više od 1.5 gola na ",
-    1.95,
-    1.5
-   ]
-  ]
- },
- "1X2 & ukupno golova Juventus (2.5)": {
-  "mecova": 1,
-  "primer": [
-   [
-    "1-",
-    "1 & manje 2.5",
-    "Cagliari pobednik  i Juventus manje od 2.5 gola na",
-    5.35,
-    2.5
-   ],
-   [
-    "0-",
-    "x & manje 2.5",
-    "nerešeno i Juventus manje od 2.5 gola na utakmici",
-    3.65,
-    2.5
-   ],
-   [
-    "2-",
-    "2 & manje 2.5",
-    "Juventus pobednik  i Juventus manje od 2.5 gola na",
-    2.52,
-    2.5
-   ],
-   [
-    "1+",
-    "1 & vise 2.5",
-    "Cagliari pobednik  i Juventus više od 2.5 gola na ",
-    100.0,
-    2.5
-   ],
-   [
-    "0+",
-    "x & vise 2.5",
-    "nerešeno i Juventus više od 2.5 gola na utakmici",
-    50.0,
-    2.5
-   ],
-   [
-    "2+",
-    "2 & vise 2.5",
-    "Juventus pobednik  i Juventus više od 2.5 gola na ",
-    3.4,
-    2.5
-   ]
-  ]
- },
- "1X2 & ukupno golova Juventus (3.5)": {
-  "mecova": 1,
-  "primer": [
-   [
-    "1-",
-    "1 & manje 3.5",
-    "Cagliari pobednik  i Juventus manje od 3.5 gola na",
-    5.3,
-    3.5
-   ],
-   [
-    "0-",
-    "x & manje 3.5",
-    "nerešeno i Juventus manje od 3.5 gola na utakmici",
-    3.55,
-    3.5
-   ],
-   [
-    "2-",
-    "2 & manje 3.5",
-    "Juventus pobednik  i Juventus manje od 3.5 gola na",
-    1.83,
-    3.5
-   ],
-   [
-    "1+",
-    "1 & vise 3.5",
-    "Cagliari pobednik  i Juventus više od 3.5 gola na ",
-    125.0,
-    3.5
-   ],
-   [
-    "0+",
-    "x & vise 3.5",
-    "nerešeno i Juventus više od 3.5 gola na utakmici",
-    100.0,
-    3.5
-   ],
-   [
-    "2+",
-    "2 & vise 3.5",
-    "Juventus pobednik  i Juventus više od 3.5 gola na ",
-    6.9,
-    3.5
-   ]
-  ]
- },
- "1X2 & ukupno golova Juventus (4.5)": {
-  "mecova": 1,
-  "primer": [
-   [
-    "1-",
-    "1 & manje 4.5",
-    "Cagliari pobednik  i Juventus manje od 4.5 gola na",
-    5.3,
-    4.5
-   ],
-   [
-    "0-",
-    "x & manje 4.5",
-    "nerešeno i Juventus manje od 4.5 gola na utakmici",
-    3.55,
-    4.5
-   ],
-   [
-    "2-",
-    "2 & manje 4.5",
-    "Juventus pobednik  i Juventus manje od 4.5 gola na",
-    1.62,
-    4.5
-   ],
-   [
-    "0+",
-    "x & vise 4.5",
-    "nerešeno i Juventus više od 4.5 gola na utakmici",
-    125.0,
-    4.5
-   ],
-   [
-    "2+",
-    "2 & vise 4.5",
-    "Juventus pobednik  i Juventus više od 4.5 gola na ",
-    16.0,
-    4.5
-   ]
-  ]
- },
- "Cagliari daje gol": {
-  "mecova": 1,
-  "primer": [
-   [
-    "1",
-    "da",
-    "Cagliari daje gol na utakmici",
-    1.72,
-    null
-   ],
-   [
-    "2",
-    "ne",
-    "Cagliari ne daje gol na utakmici",
-    2.0,
-    null
-   ]
-  ]
- },
- "Juventus daje gol": {
-  "mecova": 1,
-  "primer": [
-   [
-    "1",
-    "da",
-    "Juventus daje gol na utakmici",
-    1.15,
-    null
-   ],
-   [
-    "2",
-    "ne",
-    "Juventus ne daje gol na utakmici",
-    4.8,
-    null
-   ]
-  ]
- },
- "Cagliari daje gol u oba poluvremena": {
-  "mecova": 1,
-  "primer": [
-   [
-    "",
-    "da",
-    "Cagliari daje gol u oba poluvremena",
-    7.3,
-    null
-   ],
-   [
-    "",
-    "ne",
-    "Cagliari ne daje gol u oba poluvremena",
-    1.06,
-    null
-   ]
-  ]
- },
- "Juventus daje gol u oba poluvremena": {
-  "mecova": 1,
-  "primer": [
-   [
-    "",
-    "da",
-    "Juventus daje gol u oba poluvremena",
-    2.6,
-    null
-   ],
-   [
-    "",
-    "ne",
-    "Juventus ne daje gol u oba poluvremena",
-    1.44,
-    null
-   ]
-  ]
- },
- "Cagliari pobednik oba poluvremena": {
-  "mecova": 1,
-  "primer": [
-   [
-    "",
-    "da",
-    "Cagliari pobeđuje u oba poluvremena",
-    33.0,
-    null
-   ]
-  ]
- },
- "Juventus pobednik oba poluvremena": {
-  "mecova": 1,
-  "primer": [
-   [
-    "",
-    "da",
-    "Juventus pobeđuje u oba poluvremena",
-    4.0,
-    null
-   ],
-   [
-    "",
-    "ne",
-    "Juventus neće pobediti barem u jednom poluvremenu",
-    1.2,
-    null
-   ]
-  ]
- },
- "Cagliari pobednik ili manje od X golova": {
-  "mecova": 1,
-  "primer": [
-   [
-    "",
-    "0.5 - da",
-    "Cagliari pobednik ili će biti manje od 0.5 golova ",
-    3.65,
-    0.5
-   ],
-   [
-    "",
-    "0.5 - ne",
-    "Cagliari neće biti pobednik i neće biti manje od 0",
-    1.24,
-    0.5
-   ],
-   [
-    "",
-    "1.5 - da",
-    "Cagliari pobednik ili će biti manje od 1.5 golova ",
-    2.45,
-    1.5
-   ],
-   [
-    "",
-    "1.5 - ne",
-    "Cagliari neće biti pobednik i neće biti manje od 1",
-    1.49,
-    1.5
-   ],
-   [
-    "",
-    "2.5 - da",
-    "Cagliari pobednik ili će biti manje od 2.5 golova ",
-    1.55,
-    2.5
-   ],
-   [
-    "",
-    "2.5 - ne",
-    "Cagliari neće biti pobednik i neće biti manje od 2",
-    2.3,
-    2.5
-   ],
-   [
-    "",
-    "3.5 - da",
-    "Cagliari pobednik ili će biti manje od 3.5 golova ",
-    1.23,
-    3.5
-   ],
-   [
-    "",
-    "3.5 - ne",
-    "Cagliari neće biti pobednik i neće biti manje od 3",
-    3.75,
-    3.5
-   ],
-   [
-    "",
-    "4.5 - da",
-    "Cagliari pobednik ili će biti manje od 4.5 golova ",
-    1.06,
-    4.5
-   ],
-   [
-    "",
-    "4.5 - ne",
-    "Cagliari neće biti pobednik i neće biti manje od 4",
-    7.1,
     4.5
    ]
   ]
@@ -4532,7 +3417,7 @@
     "1",
     "da",
     "Torino FC pobeđuje bar jedno poluvreme",
-    1.7,
+    1.71,
     null
    ],
    [
@@ -4551,7 +3436,7 @@
     "",
     "vise 0.5 & vise 1.5",
     "1. Poluvreme Torino FC više od 0.5 golova i Torino",
-    3.0,
+    3.05,
     1.5
    ],
    [
@@ -4607,7 +3492,7 @@
     "",
     "vise 1.5 & vise 2.5",
     "1. Poluvreme Torino FC više od 1.5 golova i Torino",
-    8.9,
+    9.0,
     2.5
    ],
    [
@@ -4621,7 +3506,7 @@
     "",
     "manje 1.5 & vise 2.5",
     "1. Poluvreme Torino FC manje od 1.5 golova i Torin",
-    8.5,
+    8.6,
     2.5
    ],
    [
@@ -4654,7 +3539,7 @@
     "",
     "vise 0.5 & vise 1.5",
     "Torino FC daje više od 0.5 golova u 1. poluvremenu",
-    8.8,
+    8.9,
     2.0
    ],
    [
@@ -4668,7 +3553,7 @@
     "",
     "vise 0.5 & vise 2.5",
     "Torino FC daje više od 0.5 golova u 1. poluvremenu",
-    26.0,
+    27.0,
     2.0
    ],
    [
@@ -4729,7 +3614,7 @@
     "0-",
     "x & manje 0.5",
     "nerešeno i Torino FC manje od 0.5 gola na utakmici",
-    7.7,
+    7.6,
     0.5
    ],
    [
@@ -4776,7 +3661,7 @@
     "0-",
     "x & manje 1.5",
     "nerešeno i Torino FC manje od 1.5 gola na utakmici",
-    3.7,
+    3.65,
     1.5
    ],
    [
@@ -4816,7 +3701,7 @@
     "1-",
     "1 & manje 2.5",
     "Torino FC pobednik i Torino FC manje od 2.5 gola n",
-    3.25,
+    3.3,
     2.5
    ],
    [
@@ -4837,7 +3722,7 @@
     "1+",
     "1 & vise 2.5",
     "Torino FC pobednik i Torino FC više od 2.5 gola na",
-    5.65,
+    5.7,
     2.5
    ],
    [
@@ -5021,14 +3906,14 @@
     "",
     "0.5 - ne",
     "Torino FC neće biti pobednik i neće biti manje od ",
-    1.83,
+    1.82,
     0.5
    ],
    [
     "",
     "1.5 - da",
     "Torino FC pobednik ili će biti manje od 1.5 golova",
-    1.61,
+    1.62,
     1.5
    ],
    [
@@ -7596,14 +6481,14 @@
     "12",
     "1-2",
     "Sassuolo 1 ili 2 gola u svakom poluvremenu",
-    3.55,
+    3.6,
     2.0
    ],
    [
     "13",
     "1-3",
     "Sassuolo 1,2 ili 3 gola u svakom poluvremenu",
-    3.15,
+    3.2,
     3.0
    ],
    [
@@ -7629,7 +6514,7 @@
     "2",
     "ne",
     "Frosinone ne pobeđuje bar jedno poluvreme",
-    2.12,
+    2.1,
     null
    ]
   ]
@@ -7660,7 +6545,7 @@
     "",
     "vise 0.5 & vise 1.5",
     "1. Poluvreme Frosinone više od 0.5 golova i Frosin",
-    2.37,
+    2.35,
     1.5
    ],
    [
@@ -7681,21 +6566,21 @@
     "",
     "manje 0.5 & manje 1.5",
     "1. Poluvreme Frosinone manje od 0.5 golova i Frosi",
-    2.5,
+    2.52,
     1.5
    ],
    [
     "",
     "vise 0.5 & vise 2.5",
     "1. Poluvreme Frosinone više od 0.5 golova i Frosin",
-    4.2,
+    4.15,
     2.5
    ],
    [
     "",
     "vise 0.5 & manje 2.5",
     "1. Poluvreme Frosinone više od 0.5 golova i Frosin",
-    2.72,
+    2.75,
     2.5
    ],
    [
@@ -7716,7 +6601,7 @@
     "",
     "vise 1.5 & vise 2.5",
     "1. Poluvreme Frosinone više od 1.5 golova i Frosin",
-    6.4,
+    6.3,
     2.5
    ],
    [
@@ -7749,14 +6634,14 @@
     "",
     "vise 0.5 & vise 1.5",
     "1. Poluvreme Sassuolo više od 0.5 golova i Sassuol",
-    2.57,
+    2.55,
     1.5
    ],
    [
     "",
     "vise 0.5 & manje 1.5",
     "1. Poluvreme Sassuolo više od 0.5 golova i Sassuol",
-    5.35,
+    5.4,
     1.5
    ],
    [
@@ -7777,7 +6662,7 @@
     "",
     "vise 0.5 & vise 2.5",
     "1. Poluvreme Sassuolo više od 0.5 golova i Sassuol",
-    4.7,
+    4.65,
     2.5
    ],
    [
@@ -7805,7 +6690,7 @@
     "",
     "vise 1.5 & vise 2.5",
     "1. Poluvreme Sassuolo više od 1.5 golova i Sassuol",
-    7.2,
+    7.1,
     2.5
    ],
    [
@@ -7819,7 +6704,7 @@
     "",
     "manje 1.5 & vise 2.5",
     "1. Poluvreme Sassuolo manje od 1.5 golova i Sassuo",
-    7.0,
+    6.9,
     2.5
    ],
    [
@@ -7901,7 +6786,7 @@
     "",
     "manje 0.5 & manje 1.5",
     "Frosinone daje manje od 0.5 golova u 1. poluvremen",
-    2.5,
+    2.52,
     2.0
    ],
    [
@@ -7927,7 +6812,7 @@
     "",
     "vise 0.5 & vise 0.5",
     "Sassuolo daje više od 0.5 golova u 1. poluvremenu ",
-    3.1,
+    3.05,
     2.0
    ],
    [
@@ -7955,7 +6840,7 @@
     "",
     "vise 0.5 & vise 2.5",
     "Sassuolo daje više od 0.5 golova u 1. poluvremenu ",
-    19.0,
+    18.0,
     2.0
    ],
    [
@@ -8009,6 +6894,53 @@
    ]
   ]
  },
+ "1X2 & ukupno golova (5.5)": {
+  "mecova": 1,
+  "primer": [
+   [
+    "",
+    "1 & manje 5.5",
+    "Frosinone pobednik utakmice i manje od 5.5 gola na",
+    2.57,
+    5.5
+   ],
+   [
+    "",
+    "x & manje 5.5",
+    "Nerešeno na kraju utakmice  i manje od 5.5 gola na",
+    3.65,
+    5.5
+   ],
+   [
+    "",
+    "2 & manje 5.5",
+    "Sassuolo pobednik utakmice i manje od 5.5 gola na ",
+    2.9,
+    5.5
+   ],
+   [
+    "",
+    "1 & vise 5.5",
+    "Frosinone pobednik utakmice i više od 5.5 gola na ",
+    13.0,
+    5.5
+   ],
+   [
+    "",
+    "x & vise 5.5",
+    "Nerešeno na kraju utakmice i više od 5.5 gola na u",
+    19.0,
+    5.5
+   ],
+   [
+    "",
+    "2 & vise 5.5",
+    "Sassuolo pobednik utakmice i više od 5.5 gola na u",
+    15.0,
+    5.5
+   ]
+  ]
+ },
  "1X2 & ukupno golova Frosinone (0.5)": {
   "mecova": 1,
   "primer": [
@@ -8023,7 +6955,7 @@
     "2-",
     "2 & manje 0.5",
     "Sassuolo pobednik i Frosinone manje od 0.5 gola na",
-    5.5,
+    5.55,
     0.5
    ],
    [
@@ -8037,14 +6969,14 @@
     "0+",
     "x & vise 0.5",
     "nerešeno i Frosinone više od 0.5 gola na utakmici",
-    3.85,
+    3.9,
     0.5
    ],
    [
     "2+",
     "2 & vise 0.5",
     "Sassuolo pobednik i Frosinone više od 0.5 gola na ",
-    4.15,
+    4.1,
     0.5
    ]
   ]
@@ -8056,7 +6988,7 @@
     "1-",
     "1 & manje 1.5",
     "Frosinone pobednik i Frosinone manje od 1.5 gola n",
-    9.7,
+    9.8,
     1.5
    ],
    [
@@ -8070,7 +7002,7 @@
     "2-",
     "2 & manje 1.5",
     "Sassuolo pobednik i Frosinone manje od 1.5 gola na",
-    3.1,
+    3.15,
     1.5
    ],
    [
@@ -8084,7 +7016,7 @@
     "0+",
     "x & vise 1.5",
     "nerešeno i Frosinone više od 1.5 gola na utakmici",
-    7.2,
+    7.1,
     1.5
    ],
    [
@@ -8124,7 +7056,7 @@
     "1+",
     "1 & vise 2.5",
     "Frosinone pobednik i Frosinone više od 2.5 gola na",
-    4.3,
+    4.25,
     2.5
    ],
    [
@@ -8204,14 +7136,14 @@
     "0-",
     "x & manje 4.5",
     "nerešeno i Frosinone manje od 4.5 gola na utakmici",
-    3.35,
+    3.3,
     4.5
    ],
    [
     "2-",
     "2 & manje 4.5",
     "Sassuolo pobednik i Frosinone manje od 4.5 gola na",
-    2.6,
+    2.62,
     4.5
    ],
    [
@@ -8265,14 +7197,14 @@
     "0+",
     "x & vise 0.5",
     "nerešeno i Sassuolo više od 0.5 gola na utakmici",
-    3.85,
+    3.9,
     0.5
    ],
    [
     "2+",
     "2 & vise 0.5",
     "Sassuolo pobednik  i Sassuolo više od 0.5 gola na ",
-    2.62,
+    2.6,
     0.5
    ]
   ]
@@ -8284,7 +7216,7 @@
     "1-",
     "1 & manje 1.5",
     "Frosinone pobednik  i Sassuolo manje od 1.5 gola n",
-    2.72,
+    2.75,
     1.5
    ],
    [
@@ -8312,7 +7244,7 @@
     "0+",
     "x & vise 1.5",
     "nerešeno i Sassuolo više od 1.5 gola na utakmici",
-    7.2,
+    7.1,
     1.5
    ],
    [
@@ -8352,7 +7284,7 @@
     "1+",
     "1 & vise 2.5",
     "Frosinone pobednik  i Sassuolo više od 2.5 gola na",
-    32.0,
+    31.0,
     2.5
    ],
    [
@@ -8432,7 +7364,7 @@
     "0-",
     "x & manje 4.5",
     "nerešeno i Sassuolo manje od 4.5 gola na utakmici",
-    3.35,
+    3.3,
     4.5
    ],
    [
@@ -8491,7 +7423,7 @@
     "1",
     "da",
     "Sassuolo daje gol na utakmici",
-    1.2,
+    1.21,
     null
    ],
    [
@@ -8586,14 +7518,14 @@
     "",
     "1.5 - da",
     "Frosinone pobednik ili će biti manje od 1.5 golova",
-    1.87,
+    1.85,
     1.5
    ],
    [
     "",
     "1.5 - ne",
     "Frosinone neće biti pobednik i neće biti manje od ",
-    1.83,
+    1.85,
     1.5
    ],
    [
@@ -8607,7 +7539,7 @@
     "",
     "2.5 - ne",
     "Frosinone neće biti pobednik i neće biti manje od ",
-    2.62,
+    2.65,
     2.5
    ],
    [
@@ -8621,7 +7553,7 @@
     "",
     "3.5 - ne",
     "Frosinone neće biti pobednik i neće biti manje od ",
-    3.55,
+    3.6,
     3.5
    ],
    [
@@ -8635,7 +7567,7 @@
     "",
     "4.5 - ne",
     "Frosinone neće biti pobednik i neće biti manje od ",
-    6.4,
+    6.5,
     4.5
    ]
   ]
@@ -8647,7 +7579,7 @@
     "",
     "1.5 - da",
     "Sassuolo pobednik ili će biti manje od 1.5 golova ",
-    2.05,
+    2.02,
     1.5
    ],
    [
@@ -8696,7 +7628,7 @@
     "",
     "4.5 - ne",
     "Sassuolo neće biti pobednik i neće biti manje od 4",
-    5.85,
+    5.9,
     4.5
    ]
   ]
@@ -9350,7 +8282,7 @@
     "",
     "1-3",
     "Genoa 1-3 gola na utakmici",
-    1.82,
+    1.8,
     3.0
    ],
    [
@@ -9395,14 +8327,14 @@
     "12",
     "1-2",
     "Genoa 1 ili 2 gola u svakom poluvremenu",
-    7.9,
+    7.7,
     2.0
    ],
    [
     "13",
     "1-3",
     "Genoa 1,2 ili 3 gola u svakom poluvremenu",
-    7.7,
+    7.5,
     3.0
    ],
    [
@@ -9421,14 +8353,14 @@
     "1",
     "da",
     "AS Roma pobeđuje bar jedno poluvreme",
-    1.17,
+    1.18,
     null
    ],
    [
     "2",
     "ne",
     "AS Roma ne pobeđuje bar jedno poluvreme",
-    4.4,
+    4.3,
     null
    ]
   ]
@@ -9440,14 +8372,14 @@
     "1",
     "da",
     "Genoa pobeđuje bar jedno poluvreme",
-    3.75,
+    3.65,
     null
    ],
    [
     "2",
     "ne",
     "Genoa neće pobediti ni jedno poluvreme",
-    1.23,
+    1.24,
     null
    ]
   ]
@@ -9459,14 +8391,14 @@
     "",
     "vise 0.5 & vise 1.5",
     "1. Poluvreme AS Roma više od 0.5 golova i AS Roma ",
-    1.71,
+    1.73,
     1.5
    ],
    [
     "",
     "vise 0.5 & manje 1.5",
     "1. Poluvreme AS Roma više od 0.5 golova i AS Roma ",
-    6.9,
+    6.8,
     1.5
    ],
    [
@@ -9480,14 +8412,14 @@
     "",
     "manje 0.5 & manje 1.5",
     "1. Poluvreme AS Roma manje od 0.5 golova i AS Roma",
-    3.8,
+    3.75,
     1.5
    ],
    [
     "",
     "vise 0.5 & vise 2.5",
     "1. Poluvreme AS Roma više od 0.5 golova i AS Roma ",
-    2.52,
+    2.55,
     2.5
    ],
    [
@@ -9508,14 +8440,14 @@
     "",
     "manje 0.5 & manje 2.5",
     "1. Poluvreme AS Roma manje od 0.5 golova i AS Roma",
-    2.92,
+    2.9,
     2.5
    ],
    [
     "",
     "vise 1.5 & vise 2.5",
     "1. Poluvreme AS Roma više od 1.5 golova i AS Roma ",
-    3.75,
+    3.8,
     2.5
    ],
    [
@@ -9529,14 +8461,14 @@
     "",
     "manje 1.5 & vise 2.5",
     "1. Poluvreme AS Roma manje od 1.5 golova i AS Roma",
-    4.55,
+    4.6,
     2.5
    ],
    [
     "",
     "manje 1.5 & manje 2.5",
     "1. Poluvreme AS Roma manje od 1.5 golova i AS Roma",
-    1.73,
+    1.71,
     2.5
    ]
   ]
@@ -9548,14 +8480,14 @@
     "",
     "vise 0.5 & vise 1.5",
     "1. Poluvreme Genoa više od 0.5 golova i Genoa više",
-    6.3,
+    6.1,
     1.5
    ],
    [
     "",
     "vise 0.5 & manje 1.5",
     "1. Poluvreme Genoa više od 0.5 golova i Genoa manj",
-    5.1,
+    5.0,
     1.5
    ],
    [
@@ -9569,7 +8501,7 @@
     "",
     "manje 0.5 & manje 1.5",
     "1. Poluvreme Genoa manje od 0.5 golova i Genoa man",
-    1.4,
+    1.41,
     1.5
    ],
    [
@@ -9583,7 +8515,7 @@
     "",
     "vise 0.5 & manje 2.5",
     "1. Poluvreme Genoa više od 0.5 golova i Genoa manj",
-    3.5,
+    3.45,
     2.5
    ],
    [
@@ -9597,14 +8529,14 @@
     "",
     "manje 0.5 & manje 2.5",
     "1. Poluvreme Genoa manje od 0.5 golova i Genoa man",
-    1.32,
+    1.33,
     2.5
    ],
    [
     "",
     "vise 1.5 & vise 2.5",
     "1. Poluvreme Genoa više od 1.5 golova i Genoa više",
-    27.0,
+    26.0,
     2.5
    ],
    [
@@ -9618,7 +8550,7 @@
     "",
     "manje 1.5 & vise 2.5",
     "1. Poluvreme Genoa manje od 1.5 golova i Genoa viš",
-    22.0,
+    21.0,
     2.5
    ],
    [
@@ -9651,7 +8583,7 @@
     "",
     "vise 0.5 & vise 1.5",
     "AS Roma daje više od 0.5 golova u 1. poluvremenu i",
-    3.7,
+    3.75,
     2.0
    ],
    [
@@ -9665,7 +8597,7 @@
     "",
     "vise 0.5 & vise 2.5",
     "AS Roma daje više od 0.5 golova u 1. poluvremenu i",
-    8.0,
+    8.1,
     2.0
    ],
    [
@@ -9686,7 +8618,7 @@
     "",
     "manje 0.5 & manje 0.5",
     "AS Roma daje manje od 0.5 golova u 1. poluvremenu ",
-    7.3,
+    7.2,
     2.0
    ],
    [
@@ -9700,7 +8632,7 @@
     "",
     "manje 0.5 & manje 1.5",
     "AS Roma daje manje od 0.5 golova u 1. poluvremenu ",
-    3.8,
+    3.75,
     2.0
    ],
    [
@@ -9714,7 +8646,7 @@
     "",
     "manje 0.5 & manje 2.5",
     "AS Roma daje manje od 0.5 golova u 1. poluvremenu ",
-    2.92,
+    2.9,
     2.0
    ]
   ]
@@ -9726,28 +8658,28 @@
     "",
     "vise 0.5 & vise 0.5",
     "Genoa daje više od 0.5 golova u 1. poluvremenu i v",
-    7.7,
+    7.5,
     2.0
    ],
    [
     "",
     "vise 0.5 & manje 0.5",
     "Genoa daje više od 0.5 golova u 1. poluvremenu i m",
-    4.4,
+    4.35,
     2.0
    ],
    [
     "",
     "vise 0.5 & vise 1.5",
     "Genoa daje više od 0.5 golova u 1. poluvremenu i v",
-    26.0,
+    25.0,
     2.0
    ],
    [
     "",
     "vise 0.5 & manje 1.5",
     "Genoa daje više od 0.5 golova u 1. poluvremenu i m",
-    3.35,
+    3.3,
     2.0
    ],
    [
@@ -9761,7 +8693,7 @@
     "",
     "vise 0.5 & manje 2.5",
     "Genoa daje više od 0.5 golova u 1. poluvremenu i m",
-    3.2,
+    3.15,
     2.0
    ],
    [
@@ -9775,7 +8707,7 @@
     "",
     "manje 0.5 & manje 0.5",
     "Genoa daje manje od 0.5 golova u 1. poluvremenu i ",
-    1.95,
+    1.97,
     2.0
    ],
    [
@@ -9789,7 +8721,7 @@
     "",
     "manje 0.5 & manje 1.5",
     "Genoa daje manje od 0.5 golova u 1. poluvremenu i ",
-    1.4,
+    1.41,
     2.0
    ],
    [
@@ -9803,7 +8735,7 @@
     "",
     "manje 0.5 & manje 2.5",
     "Genoa daje manje od 0.5 golova u 1. poluvremenu i ",
-    1.32,
+    1.33,
     2.0
    ]
   ]
@@ -9836,7 +8768,7 @@
     "0+",
     "x & vise 0.5",
     "nerešeno i AS Roma više od 0.5 gola na utakmici",
-    6.2,
+    6.1,
     0.5
    ],
    [
@@ -9855,7 +8787,7 @@
     "1-",
     "1 & manje 1.5",
     "AS Roma pobednik i AS Roma manje od 1.5 gola na ut",
-    6.5,
+    6.6,
     1.5
    ],
    [
@@ -9890,7 +8822,7 @@
     "2+",
     "2 & vise 1.5",
     "Genoa pobednik i AS Roma više od 1.5 gola na utakm",
-    35.0,
+    34.0,
     1.5
    ]
   ]
@@ -9909,21 +8841,21 @@
     "0-",
     "x & manje 2.5",
     "nerešeno i AS Roma manje od 2.5 gola na utakmici",
-    4.9,
+    4.85,
     2.5
    ],
    [
     "2-",
     "2 & manje 2.5",
     "Genoa pobednik i AS Roma manje od 2.5 gola na utak",
-    7.0,
+    6.9,
     2.5
    ],
    [
     "1+",
     "1 & vise 2.5",
     "AS Roma pobednik i AS Roma više od 2.5 gola na uta",
-    2.32,
+    2.35,
     2.5
    ],
    [
@@ -9956,7 +8888,7 @@
     "0-",
     "x & manje 3.5",
     "nerešeno i AS Roma manje od 3.5 gola na utakmici",
-    4.75,
+    4.7,
     3.5
    ],
    [
@@ -9970,7 +8902,7 @@
     "1+",
     "1 & vise 3.5",
     "AS Roma pobednik i AS Roma više od 3.5 gola na uta",
-    4.25,
+    4.3,
     3.5
    ],
    [
@@ -9996,14 +8928,14 @@
     "1-",
     "1 & manje 4.5",
     "AS Roma pobednik i AS Roma manje od 4.5 gola na ut",
-    1.46,
+    1.47,
     4.5
    ],
    [
     "0-",
     "x & manje 4.5",
     "nerešeno i AS Roma manje od 4.5 gola na utakmici",
-    4.75,
+    4.7,
     4.5
    ],
    [
@@ -10057,7 +8989,7 @@
     "0+",
     "x & vise 0.5",
     "nerešeno i Genoa više od 0.5 gola na utakmici",
-    6.2,
+    6.1,
     0.5
    ],
    [
@@ -10130,7 +9062,7 @@
     "0-",
     "x & manje 2.5",
     "nerešeno i Genoa manje od 2.5 gola na utakmici",
-    4.9,
+    4.85,
     2.5
    ],
    [
@@ -10177,7 +9109,7 @@
     "0-",
     "x & manje 3.5",
     "nerešeno i Genoa manje od 3.5 gola na utakmici",
-    4.75,
+    4.7,
     3.5
    ],
    [
@@ -10224,14 +9156,14 @@
     "0-",
     "x & manje 4.5",
     "nerešeno i Genoa manje od 4.5 gola na utakmici",
-    4.75,
+    4.7,
     4.5
    ],
    [
     "2-",
     "2 & manje 4.5",
     "Genoa pobednik  i Genoa manje od 4.5 gola na utakm",
-    7.0,
+    6.9,
     4.5
    ],
    [
@@ -10283,14 +9215,14 @@
     "1",
     "da",
     "Genoa daje gol na utakmici",
-    1.8,
+    1.76,
     null
    ],
    [
     "2",
     "ne",
     "Genoa ne daje gol na utakmici",
-    1.92,
+    1.95,
     null
    ]
   ]
@@ -10321,14 +9253,14 @@
     "",
     "da",
     "Genoa daje gol u oba poluvremena",
-    7.9,
+    7.8,
     null
    ],
    [
     "",
     "ne",
     "Genoa ne daje gol u oba poluvremena",
-    1.05,
+    1.06,
     null
    ]
   ]
@@ -10340,14 +9272,14 @@
     "",
     "da",
     "AS Roma pobeđuje u oba poluvremena",
-    2.9,
+    2.95,
     null
    ],
    [
     "",
     "ne",
     "AS Roma neće pobediti barem u jednom poluvremenu",
-    1.36,
+    1.35,
     null
    ]
   ]
@@ -10378,7 +9310,7 @@
     "",
     "0.5 - ne",
     "AS Roma neće biti pobednik i neće biti manje od 0.",
-    3.75,
+    3.7,
     0.5
    ],
    [
@@ -10392,7 +9324,7 @@
     "",
     "1.5 - ne",
     "AS Roma neće biti pobednik i neće biti manje od 1.",
-    4.35,
+    4.3,
     1.5
    ],
    [
@@ -10406,7 +9338,7 @@
     "",
     "2.5 - ne",
     "AS Roma neće biti pobednik i neće biti manje od 2.",
-    7.4,
+    7.3,
     2.5
    ],
    [
@@ -10439,7 +9371,7 @@
     "",
     "0.5 - da",
     "Genoa pobednik ili će biti manje od 0.5 golova na ",
-    5.15,
+    5.0,
     0.5
    ],
    [
@@ -11633,81 +10565,6 @@
     "Napoli neće pobediti barem u jednom poluvremenu",
     1.17,
     null
-   ]
-  ]
- },
- "Venezia pobednik ili manje od X golova": {
-  "mecova": 1,
-  "primer": [
-   [
-    "",
-    "0.5 - da",
-    "Venezia pobednik ili će biti manje od 0.5 golova n",
-    3.35,
-    0.5
-   ],
-   [
-    "",
-    "0.5 - ne",
-    "Venezia neće biti pobednik i neće biti manje od 0.",
-    1.28,
-    0.5
-   ],
-   [
-    "",
-    "1.5 - da",
-    "Venezia pobednik ili će biti manje od 1.5 golova n",
-    2.52,
-    1.5
-   ],
-   [
-    "",
-    "1.5 - ne",
-    "Venezia neće biti pobednik i neće biti manje od 1.",
-    1.46,
-    1.5
-   ],
-   [
-    "",
-    "2.5 - da",
-    "Venezia pobednik ili će biti manje od 2.5 golova n",
-    1.66,
-    2.5
-   ],
-   [
-    "",
-    "2.5 - ne",
-    "Venezia neće biti pobednik i neće biti manje od 2.",
-    2.1,
-    2.5
-   ],
-   [
-    "",
-    "3.5 - da",
-    "Venezia pobednik ili će biti manje od 3.5 golova n",
-    1.32,
-    3.5
-   ],
-   [
-    "",
-    "3.5 - ne",
-    "Venezia neće biti pobednik i neće biti manje od 3.",
-    3.1,
-    3.5
-   ],
-   [
-    "",
-    "4.5 - da",
-    "Venezia pobednik ili će biti manje od 4.5 golova n",
-    1.11,
-    4.5
-   ],
-   [
-    "",
-    "4.5 - ne",
-    "Venezia neće biti pobednik i neće biti manje od 4.",
-    5.65,
-    4.5
    ]
   ]
  },

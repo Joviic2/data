@@ -476,7 +476,16 @@ def once(a):
     with open(OUT + ".tmp", "w", encoding="utf-8") as fh:
         json.dump({"fetched": int(time.time()), "source": "superbet.rs", "league": CUR["code"], "comp": comp, "events": evs}, fh, ensure_ascii=False, separators=(",", ":"))
     os.replace(OUT + ".tmp", OUT)
-    if a.push: push([OUT])
+    out_files = [OUT]
+    try:                                            # Drop tracker: snimak kvota + kretanje (fb_odds_track.py)
+        import fb_odds_track
+        mv = fb_odds_track.record(os.path.dirname(OUT), evs)
+        sh = [k for k, v in mv.items() if v["sharp"]]
+        print(f"Kretanje kvota: {len(mv)} meceva sa istorijom, {len(sh)} izrazitih pomeranja" + (": " + "; ".join(sh[:5]) if sh else ""))
+        out_files += [os.path.join(os.path.dirname(OUT), f) for f in ("odds_history.json", "odds_moves.json")]
+    except Exception as ex:
+        print("Drop tracker preskocen:", ex)
+    if a.push: push(out_files)
 
 
 if __name__ == "__main__":
