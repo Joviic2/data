@@ -5,13 +5,13 @@
  "club_id": "2",
  "crest": "https://www.aba-liga.com/images/club/100x100/2.png",
  "record": {
-  "gp": 1,
+  "gp": 2,
   "w": 0,
-  "l": 1,
-  "pf": 76,
-  "pa": 89,
-  "pf_avg": 76.0,
-  "pa_avg": 89.0
+  "l": 2,
+  "pf": 158,
+  "pa": 179,
+  "pf_avg": 79.0,
+  "pa_avg": 89.5
  },
  "games": [
   {
@@ -23,6 +23,16 @@
    "pf": 76,
    "pa": 89,
    "result": "L"
+  },
+  {
+   "n": 23,
+   "round": 3,
+   "dt": "2026-10-12T17:00:00Z",
+   "home": true,
+   "opp": "SBR",
+   "pf": 82,
+   "pa": 90,
+   "result": "L"
   }
  ],
  "roster": [
@@ -32,35 +42,11 @@
    "no": "2",
    "pos": "",
    "photo": "https://www.aba-liga.com/stats/img/foto/5693.png",
-   "gp": 1,
-   "min_avg": 31.1,
-   "pts_avg": 14.0,
-   "reb_avg": 5.0,
-   "ast_avg": 5.0
-  },
-  {
-   "id": "2690",
-   "name": "Badžim R.",
-   "no": "18",
-   "pos": "",
-   "photo": "https://www.aba-liga.com/stats/img/foto/2690.png",
-   "gp": 1,
-   "min_avg": 26.5,
-   "pts_avg": 7.0,
-   "reb_avg": 1.0,
-   "ast_avg": 1.0
-  },
-  {
-   "id": "5651",
-   "name": "Battle K.",
-   "no": "99",
-   "pos": "",
-   "photo": "https://www.aba-liga.com/stats/img/foto/5651.png",
-   "gp": 1,
-   "min_avg": 26.0,
-   "pts_avg": 14.0,
-   "reb_avg": 2.0,
-   "ast_avg": 1.0
+   "gp": 2,
+   "min_avg": 31.3,
+   "pts_avg": 16.0,
+   "reb_avg": 3.5,
+   "ast_avg": 7.0
   },
   {
    "id": "2203",
@@ -68,11 +54,47 @@
    "no": "14",
    "pos": "",
    "photo": "https://www.aba-liga.com/stats/img/foto/2203.png",
-   "gp": 1,
+   "gp": 2,
+   "min_avg": 27.2,
+   "pts_avg": 17.5,
+   "reb_avg": 8.5,
+   "ast_avg": 2.5
+  },
+  {
+   "id": "2690",
+   "name": "Badžim R.",
+   "no": "18",
+   "pos": "",
+   "photo": "https://www.aba-liga.com/stats/img/foto/2690.png",
+   "gp": 2,
    "min_avg": 25.4,
-   "pts_avg": 14.0,
-   "reb_avg": 7.0,
-   "ast_avg": 3.0
+   "pts_avg": 7.5,
+   "reb_avg": 0.5,
+   "ast_avg": 1.5
+  },
+  {
+   "id": "5651",
+   "name": "Battle K.",
+   "no": "99",
+   "pos": "",
+   "photo": "https://www.aba-liga.com/stats/img/foto/5651.png",
+   "gp": 2,
+   "min_avg": 22.3,
+   "pts_avg": 12.0,
+   "reb_avg": 2.5,
+   "ast_avg": 2.0
+  },
+  {
+   "id": "3565",
+   "name": "Sikirić A.",
+   "no": "7",
+   "pos": "",
+   "photo": "https://www.aba-liga.com/stats/img/foto/3565.png",
+   "gp": 2,
+   "min_avg": 21.7,
+   "pts_avg": 6.0,
+   "reb_avg": 3.0,
+   "ast_avg": 0.5
   },
   {
    "id": "5195",
@@ -80,10 +102,10 @@
    "no": "44",
    "pos": "",
    "photo": "https://www.aba-liga.com/stats/img/foto/5195.png",
-   "gp": 1,
-   "min_avg": 23.1,
-   "pts_avg": 8.0,
-   "reb_avg": 4.0,
+   "gp": 2,
+   "min_avg": 21.6,
+   "pts_avg": 6.5,
+   "reb_avg": 3.5,
    "ast_avg": 0.0
   },
   {
@@ -92,46 +114,10 @@
    "no": "33",
    "pos": "",
    "photo": "https://www.aba-liga.com/stats/img/foto/5582.png",
-   "gp": 1,
-   "min_avg": 20.8,
-   "pts_avg": 8.0,
-   "reb_avg": 6.0,
-   "ast_avg": 0.0
-  },
-  {
-   "id": "3565",
-   "name": "Sikirić A.",
-   "no": "7",
-   "pos": "",
-   "photo": "https://www.aba-liga.com/stats/img/foto/3565.png",
-   "gp": 1,
-   "min_avg": 13.1,
-   "pts_avg": 5.0,
-   "reb_avg": 1.0,
-   "ast_avg": 0.0
-  },
-  {
-   "id": "2943",
-   "name": "Gnjidić L.",
-   "no": "19",
-   "pos": "",
-   "photo": "https://www.aba-liga.com/stats/img/foto/2943.png",
-   "gp": 1,
-   "min_avg": 11.1,
-   "pts_avg": 2.0,
-   "reb_avg": 1.0,
-   "ast_avg": 1.0
-  },
-  {
-   "id": "3362",
-   "name": "Serdarušić R.",
-   "no": "17",
-   "pos": "",
-   "photo": "https://www.aba-liga.com/stats/img/foto/3362.png",
-   "gp": 1,
-   "min_avg": 10.7,
-   "pts_avg": 2.0,
-   "reb_avg": 3.0,
+   "gp": 2,
+   "min_avg": 16.9,
+   "pts_avg": 6.5,
+   "reb_avg": 3.5,
    "ast_avg": 0.0
   },
   {
@@ -140,11 +126,35 @@
    "no": "1",
    "pos": "",
    "photo": "https://www.aba-liga.com/stats/img/foto/2415.png",
-   "gp": 1,
-   "min_avg": 9.7,
-   "pts_avg": 2.0,
-   "reb_avg": 2.0,
+   "gp": 2,
+   "min_avg": 10.3,
+   "pts_avg": 4.0,
+   "reb_avg": 3.5,
    "ast_avg": 0.0
+  },
+  {
+   "id": "3362",
+   "name": "Serdarušić R.",
+   "no": "17",
+   "pos": "",
+   "photo": "https://www.aba-liga.com/stats/img/foto/3362.png",
+   "gp": 2,
+   "min_avg": 9.7,
+   "pts_avg": 1.0,
+   "reb_avg": 2.5,
+   "ast_avg": 0.0
+  },
+  {
+   "id": "2943",
+   "name": "Gnjidić L.",
+   "no": "19",
+   "pos": "",
+   "photo": "https://www.aba-liga.com/stats/img/foto/2943.png",
+   "gp": 2,
+   "min_avg": 9.5,
+   "pts_avg": 1.0,
+   "reb_avg": 0.5,
+   "ast_avg": 1.5
   },
   {
    "id": "4811",
@@ -152,9 +162,9 @@
    "no": "8",
    "pos": "",
    "photo": "https://www.aba-liga.com/stats/img/foto/4811.png",
-   "gp": 1,
-   "min_avg": 2.5,
-   "pts_avg": 0.0,
+   "gp": 2,
+   "min_avg": 4.1,
+   "pts_avg": 1.0,
    "reb_avg": 0.0,
    "ast_avg": 0.0
   }
