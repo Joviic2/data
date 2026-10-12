@@ -1,217 +1,110 @@
-acb	3		1. poluvreme - 1X2
-acb	1		1. poluvreme - Barcelona ukupno poena
-acb	1		1. poluvreme - Baskonia ukupno poena
-acb	1		1. poluvreme - Bilbao ukupno poena
-acb	1		1. poluvreme - Joventut Badalona ukupno poena
-acb	1		1. poluvreme - San Pablo Burgos ukupno poena
-acb	1		1. poluvreme - Valencia ukupno poena
-acb	3		1. poluvreme - Winner DNB
-acb	3		1. poluvreme - hendikep poena
-acb	3		1. poluvreme - ukupno poena
-acb	1		1. četvrtina - Barcelona ukupno poena
-acb	1		1. četvrtina - Baskonia ukupno poena
-acb	1		1. četvrtina - Bilbao ukupno poena
-acb	1		1. četvrtina - Joventut Badalona ukupno poena
-acb	1		1. četvrtina - San Pablo Burgos ukupno poena
-acb	1		1. četvrtina - Valencia ukupno poena
-acb	3		1. četvrtina - hendikep poena
-acb	3		1. četvrtina - ukupno poena
-acb	3		2. poluvreme - 1X2
-acb	3		2. poluvreme - Winner DNB
-acb	3		2. poluvreme - dupla šansa
-acb	3		2. poluvreme - hendikep
-acb	3		2. poluvreme - ukupno poena
-acb	1		2. poluvreme - ukupno poena Barcelona
-acb	1		2. poluvreme - ukupno poena Baskonia
-acb	1		2. poluvreme - ukupno poena Bilbao
-acb	1		2. poluvreme - ukupno poena Joventut Badalona
-acb	1		2. poluvreme - ukupno poena San Pablo Burgos
-acb	1		2. poluvreme - ukupno poena Valencia
-acb	2	PROP:ast	Asistencije igrača (uklj. produžetke)
-acb	1	PROP:pts	Barcelona - ukupno poena (uklj. produžetke)
-acb	1	PROP:pts	Baskonia - ukupno poena (uklj. produžetke)
-acb	1	PROP:pts	Bilbao - ukupno poena (uklj. produžetke)
-acb	3		Dupla šansa
-acb	3	PROP:pts	Hendikep poena (uklj. produžetke)
-acb	1	PROP:pts	Joventut Badalona - ukupno poena (uklj. produžetke)
-acb	3		Konačan ishod
-acb	3	PROP:pts	Par/nepar poeni (uklj. produžetke)
-acb	1	PROP:pts	Par/nepar poeni (uklj. produžetke) - Barcelona
-acb	1	PROP:pts	Par/nepar poeni (uklj. produžetke) - Baskonia
-acb	1	PROP:pts	Par/nepar poeni (uklj. produžetke) - Bilbao
-acb	1	PROP:pts	Par/nepar poeni (uklj. produžetke) - Joventut Badalona
-acb	1	PROP:pts	Par/nepar poeni (uklj. produžetke) - San Pablo Burgos
-acb	1	PROP:pts	Par/nepar poeni (uklj. produžetke) - Valencia
-acb	3		Pobednik (uklj. produžetke)
-acb	3	PROP:pts	Poeni igrača (uklj. produžetke)
-acb	3		Prvi do X poena (uklj. produžetke)
-acb	1	PROP:pts	San Pablo Burgos - ukupno poena (uklj. produžetke)
-acb	2	PROP:reb	Skokovi igrača (uklj. produžetke)
-acb	3	PROP:pts	Ukupno poena (uklj. produžetke)
-acb	1	PROP:pts	Valencia - ukupno poena (uklj. produžetke)
-acb	3		Četvrtina X - 1X2
-acb	3		Četvrtina X - Winner DNB
-bbl	2		1. poluvreme - 1X2
-bbl	1		1. poluvreme - Hamburg Towers ukupno poena
-bbl	1		1. poluvreme - Lowen Braunschweig ukupno poena
-bbl	1		1. poluvreme - Ludwigsburg ukupno poena
-bbl	1		1. poluvreme - Skyliners Frankfurt ukupno poena
-bbl	2		1. poluvreme - Winner DNB
-bbl	2		1. poluvreme - hendikep poena
-bbl	2		1. poluvreme - ukupno poena
-bbl	1		1. četvrtina - Hamburg Towers ukupno poena
-bbl	1		1. četvrtina - Lowen Braunschweig ukupno poena
-bbl	1		1. četvrtina - Ludwigsburg ukupno poena
-bbl	1		1. četvrtina - Skyliners Frankfurt ukupno poena
-bbl	2		1. četvrtina - hendikep poena
-bbl	2		1. četvrtina - ukupno poena
-bbl	2		2. poluvreme - 1X2
-bbl	2		2. poluvreme - Winner DNB
-bbl	2		2. poluvreme - dupla šansa
-bbl	2		2. poluvreme - hendikep
-bbl	2		2. poluvreme - ukupno poena
-bbl	1		2. poluvreme - ukupno poena Hamburg Towers
-bbl	1		2. poluvreme - ukupno poena Lowen Braunschweig
-bbl	1		2. poluvreme - ukupno poena Ludwigsburg
-bbl	1		2. poluvreme - ukupno poena Skyliners Frankfurt
-bbl	1	PROP:ast	Asistencije igrača (uklj. produžetke)
-bbl	2		Dupla šansa
-bbl	1	PROP:pts	Hamburg Towers - ukupno poena (uklj. produžetke)
-bbl	2	PROP:pts	Hendikep poena (uklj. produžetke)
-bbl	2		Konačan ishod
-bbl	1	PROP:pts	Lowen Braunschweig - ukupno poena (uklj. produžetke)
-bbl	1	PROP:pts	Ludwigsburg - ukupno poena (uklj. produžetke)
-bbl	2	PROP:pts	Par/nepar poeni (uklj. produžetke)
-bbl	1	PROP:pts	Par/nepar poeni (uklj. produžetke) - Hamburg Towers
-bbl	1	PROP:pts	Par/nepar poeni (uklj. produžetke) - Lowen Braunschweig
-bbl	1	PROP:pts	Par/nepar poeni (uklj. produžetke) - Ludwigsburg
-bbl	1	PROP:pts	Par/nepar poeni (uklj. produžetke) - Skyliners Frankfurt
-bbl	2		Pobednik (uklj. produžetke)
-bbl	2	PROP:pts	Poeni igrača (uklj. produžetke)
-bbl	2		Prvi do X poena (uklj. produžetke)
-bbl	1	PROP:reb	Skokovi igrača (uklj. produžetke)
-bbl	1	PROP:pts	Skyliners Frankfurt - ukupno poena (uklj. produžetke)
-bbl	2	PROP:pts	Ukupno poena (uklj. produžetke)
-bbl	2		Četvrtina X - 1X2
-bbl	2		Četvrtina X - Winner DNB
-euroleague	2		1. poluvreme - 1X2
+aba	1		1. poluvreme - 1X2
+aba	1		1. poluvreme - BC Slovan Bratislava ukupno poena
+aba	1		1. poluvreme - Cibona ukupno poena
+aba	1		1. poluvreme - Winner DNB
+aba	1		1. poluvreme - hendikep poena
+aba	1		1. poluvreme - ukupno poena
+aba	1		1. četvrtina - BC Slovan Bratislava ukupno poena
+aba	1		1. četvrtina - Cibona ukupno poena
+aba	1		1. četvrtina - hendikep poena
+aba	1		1. četvrtina - ukupno poena
+aba	1	PROP:pts	BC Slovan Bratislava - ukupno poena (uklj. produžetke)
+aba	1	PROP:pts	Cibona - ukupno poena (uklj. produžetke)
+aba	1		Dupla šansa
+aba	1	PROP:pts	Hendikep poena (uklj. produžetke)
+aba	1		Konačan ishod
+aba	1	PROP:pts	Par/nepar poeni (uklj. produžetke)
+aba	1	PROP:pts	Par/nepar poeni (uklj. produžetke) - BC Slovan Bratislava
+aba	1	PROP:pts	Par/nepar poeni (uklj. produžetke) - Cibona
+aba	1		Pobednik (uklj. produžetke)
+aba	1		Prvi do X poena (uklj. produžetke)
+aba	1	PROP:pts	Ukupno poena (uklj. produžetke)
+aba	1		Četvrtina X - 1X2
+euroleague	3		1. poluvreme - 1X2
+euroleague	1		1. poluvreme - Milano ukupno poena
 euroleague	1		1. poluvreme - Olympiacos ukupno poena
-euroleague	1		1. poluvreme - Panathinaikos ukupno poena
-euroleague	1		1. poluvreme - Partizan ukupno poena
+euroleague	1		1. poluvreme - Panathinaikos - ukupno poena
+euroleague	1		1. poluvreme - Partizan - ukupno poena
+euroleague	1		1. poluvreme - Real Madrid ukupno poena
 euroleague	1		1. poluvreme - Valencia ukupno poena
-euroleague	2		1. poluvreme - Winner DNB
-euroleague	2		1. poluvreme - hendikep poena
-euroleague	2		1. poluvreme - ukupno poena
+euroleague	3		1. poluvreme - Winner DNB
+euroleague	3		1. poluvreme - hendikep poena
+euroleague	3		1. poluvreme - ukupno poena
+euroleague	1		1. četvrtina - Milano ukupno poena
 euroleague	1		1. četvrtina - Olympiacos ukupno poena
-euroleague	1		1. četvrtina - Panathinaikos ukupno poena
-euroleague	1		1. četvrtina - Partizan ukupno poena
+euroleague	1		1. četvrtina - Panathinaikos - ukupno poena
+euroleague	1		1. četvrtina - Partizan - ukupno poena
+euroleague	1		1. četvrtina - Real Madrid ukupno poena
 euroleague	1		1. četvrtina - Valencia ukupno poena
-euroleague	2		1. četvrtina - hendikep poena
-euroleague	2		1. četvrtina - ukupno poena
-euroleague	2		2. poluvreme - 1X2
-euroleague	2		2. poluvreme - Winner DNB
-euroleague	2		2. poluvreme - dupla šansa
+euroleague	3		1. četvrtina - hendikep poena
+euroleague	3		1. četvrtina - ukupno poena
+euroleague	3		2. poluvreme - 1X2
+euroleague	1		2. poluvreme - Panathinaikos - ukupno poena
+euroleague	1		2. poluvreme - Partizan - ukupno poena
+euroleague	3		2. poluvreme - Winner DNB
+euroleague	3		2. poluvreme - dupla šansa
 euroleague	2		2. poluvreme - hendikep
-euroleague	2		2. poluvreme - ukupno poena
+euroleague	1		2. poluvreme - hendikep poena
+euroleague	3		2. poluvreme - ukupno poena
+euroleague	1		2. poluvreme - ukupno poena Milano
 euroleague	1		2. poluvreme - ukupno poena Olympiacos
-euroleague	1		2. poluvreme - ukupno poena Panathinaikos
-euroleague	1		2. poluvreme - ukupno poena Partizan
+euroleague	1		2. poluvreme - ukupno poena Real Madrid
 euroleague	1		2. poluvreme - ukupno poena Valencia
+euroleague	1		2. četvrtina - Milano ukupno poena
 euroleague	1		2. četvrtina - Olympiacos ukupno poena
-euroleague	1		2. četvrtina - Panathinaikos ukupno poena
-euroleague	1		2. četvrtina - Partizan ukupno poena
+euroleague	1		2. četvrtina - Panathinaikos - ukupno poena
+euroleague	1		2. četvrtina - Partizan - ukupno poena
+euroleague	1		2. četvrtina - Real Madrid ukupno poena
 euroleague	1		2. četvrtina - Valencia ukupno poena
-euroleague	2		2. četvrtina - hendikep poena
-euroleague	2		2. četvrtina - ukupno poena
-euroleague	2	PROP:pts	3 poena igrača (uklj. produžetke)
+euroleague	3		2. četvrtina - hendikep poena
+euroleague	3		2. četvrtina - ukupno poena
+euroleague	3	PROP:pts	3 poena igrača (uklj. produžetke)
+euroleague	1		3. četvrtina - Milano ukupno poena
 euroleague	1		3. četvrtina - Olympiacos ukupno poena
-euroleague	1		3. četvrtina - Panathinaikos ukupno poena
-euroleague	1		3. četvrtina - Partizan ukupno poena
+euroleague	1		3. četvrtina - Panathinaikos - ukupno poena
+euroleague	1		3. četvrtina - Partizan - ukupno poena
+euroleague	1		3. četvrtina - Real Madrid ukupno poena
 euroleague	1		3. četvrtina - Valencia ukupno poena
-euroleague	2		3. četvrtina - hendikep poena
-euroleague	2		3. četvrtina - ukupno poena
-euroleague	1		4. četvrtina - Olympiacos ukupno poena
-euroleague	1		4. četvrtina - Panathinaikos ukupno poena
-euroleague	1		4. četvrtina - Partizan ukupno poena
+euroleague	3		3. četvrtina - hendikep poena
+euroleague	3		3. četvrtina - ukupno poena
+euroleague	1		4. četvrtina - Milano ukupno poena
+euroleague	1		4. četvrtina - Olympiacos - ukupno poena
+euroleague	1		4. četvrtina - Panathinaikos - ukupno poena
+euroleague	1		4. četvrtina - Partizan - ukupno poena
+euroleague	1		4. četvrtina - Real Madrid ukupno poena
 euroleague	1		4. četvrtina - Valencia ukupno poena
-euroleague	2		4. četvrtina - hendikep poena
-euroleague	2		4. četvrtina - ukupno poena
+euroleague	3		4. četvrtina - hendikep poena
+euroleague	3		4. četvrtina - ukupno poena
 euroleague	2		Dabl dabl igrača (uklj. produžetke)
-euroleague	2		Dupla šansa
-euroleague	10	PROP:pts	Hendikep poena (uklj. produžetke)
-euroleague	2		Konačan ishod
+euroleague	3		Dupla šansa
+euroleague	14	PROP:pts	Hendikep poena (uklj. produžetke)
+euroleague	3		Konačan ishod
+euroleague	1	PROP:pts	Milano - ukupno poena (uklj. produžetke)
 euroleague	1	PROP:pts	Olympiacos - ukupno poena (uklj. produžetke)
 euroleague	1	PROP:pts	Panathinaikos - ukupno poena (uklj. produžetke)
+euroleague	1	PROP:pts	Panathinaikos - ukupno poena par/nepar (uklj. produžetke)
 euroleague	2	PROP:pts	Par/nepar poeni (uklj. produžetke)
+euroleague	1	PROP:pts	Par/nepar poeni (uklj. produžetke) - Milano
 euroleague	1	PROP:pts	Par/nepar poeni (uklj. produžetke) - Olympiacos
-euroleague	1	PROP:pts	Par/nepar poeni (uklj. produžetke) - Panathinaikos
-euroleague	1	PROP:pts	Par/nepar poeni (uklj. produžetke) - Partizan
+euroleague	1	PROP:pts	Par/nepar poeni (uklj. produžetke) - Real Madrid
 euroleague	1	PROP:pts	Par/nepar poeni (uklj. produžetke) - Valencia
 euroleague	1	PROP:pts	Partizan - ukupno poena (uklj. produžetke)
-euroleague	10		Pobednik (uklj. produžetke)
-euroleague	2		Poeni igrača + Asistencije (uklj. produžetke)
-euroleague	2		Poeni igrača + Skokovi (uklj. produžetke)
-euroleague	2		Poeni igrača + Skokovi + Asistencije (uklj. produžetke)
+euroleague	1	PROP:pts	Partizan - ukupno poena par/nepar (uklj. produžetke)
+euroleague	14		Pobednik (uklj. produžetke)
+euroleague	3		Poeni igrača + Asistencije (uklj. produžetke)
+euroleague	3		Poeni igrača + Skokovi (uklj. produžetke)
+euroleague	3		Poeni igrača + Skokovi + Asistencije (uklj. produžetke)
 euroleague	2		Prvi do X poena (uklj. produžetke)
-euroleague	4	PROP:ast	Ukupno asistencija igrača (uklj. produžetke)
-euroleague	10	PROP:pts	Ukupno poena (uklj. produžetke)
-euroleague	2	PROP:pts	Ukupno poena igrača  (uklj. produžetke)
-euroleague	2	PROP:pts	Ukupno poena igrača (uklj. produžetke)
-euroleague	2	PROP:pts	Ukupno pogodaka za 3 poena (uklj. produžetke)
-euroleague	4	PROP:reb	Ukupno skokova igrača (uklj. produžetke)
+euroleague	1	PROP:pts	Real Madrid - ukupno poena (uklj. produžetke)
+euroleague	1	PROP:pts	Trka do X poena (uklj. produžetke)
+euroleague	6	PROP:ast	Ukupno asistencija igrača (uklj. produžetke)
+euroleague	14	PROP:pts	Ukupno poena (uklj. produžetke)
+euroleague	3	PROP:pts	Ukupno poena igrača  (uklj. produžetke)
+euroleague	3	PROP:pts	Ukupno poena igrača (uklj. produžetke)
+euroleague	1	PROP:pts	Ukupno poena par/nepar (uklj. produžetke)
+euroleague	3	PROP:pts	Ukupno pogodaka za 3 poena (uklj. produžetke)
+euroleague	6	PROP:reb	Ukupno skokova igrača (uklj. produžetke)
 euroleague	1	PROP:pts	Valencia - ukupno poena (uklj. produžetke)
-euroleague	2		Četvrtina X - 1X2
+euroleague	1		X. četvrtina - Winner DNB
+euroleague	3		Četvrtina X - 1X2
 euroleague	2		Četvrtina X - Winner DNB
-lnb	3		1. poluvreme - 1X2
-lnb	1		1. poluvreme - ASVEL ukupno poena
-lnb	1		1. poluvreme - Le Mans ukupno poena
-lnb	1		1. poluvreme - Paris ukupno poena
-lnb	1		1. poluvreme - Roanne ukupno poena
-lnb	1		1. poluvreme - Saint Quentin ukupno poena
-lnb	1		1. poluvreme - Strasbourg ukupno poena
-lnb	3		1. poluvreme - Winner DNB
-lnb	3		1. poluvreme - hendikep poena
-lnb	3		1. poluvreme - ukupno poena
-lnb	1		1. četvrtina - ASVEL ukupno poena
-lnb	1		1. četvrtina - Le Mans ukupno poena
-lnb	1		1. četvrtina - Paris ukupno poena
-lnb	1		1. četvrtina - Roanne ukupno poena
-lnb	1		1. četvrtina - Saint Quentin ukupno poena
-lnb	1		1. četvrtina - Strasbourg ukupno poena
-lnb	3		1. četvrtina - hendikep poena
-lnb	3		1. četvrtina - ukupno poena
-lnb	3		2. poluvreme - 1X2
-lnb	3		2. poluvreme - Winner DNB
-lnb	3		2. poluvreme - dupla šansa
-lnb	3		2. poluvreme - hendikep
-lnb	3		2. poluvreme - ukupno poena
-lnb	1		2. poluvreme - ukupno poena ASVEL
-lnb	1		2. poluvreme - ukupno poena Le Mans
-lnb	1		2. poluvreme - ukupno poena Paris
-lnb	1		2. poluvreme - ukupno poena Roanne
-lnb	1		2. poluvreme - ukupno poena Saint Quentin
-lnb	1		2. poluvreme - ukupno poena Strasbourg
-lnb	1	PROP:pts	ASVEL - ukupno poena (uklj. produžetke)
-lnb	1	PROP:ast	Asistencije igrača (uklj. produžetke)
-lnb	3		Dupla šansa
-lnb	3	PROP:pts	Hendikep poena (uklj. produžetke)
-lnb	3		Konačan ishod
-lnb	1	PROP:pts	Le Mans - ukupno poena (uklj. produžetke)
-lnb	3	PROP:pts	Par/nepar poeni (uklj. produžetke)
-lnb	1	PROP:pts	Par/nepar poeni (uklj. produžetke) - ASVEL
-lnb	1	PROP:pts	Par/nepar poeni (uklj. produžetke) - Le Mans
-lnb	1	PROP:pts	Par/nepar poeni (uklj. produžetke) - Paris
-lnb	1	PROP:pts	Par/nepar poeni (uklj. produžetke) - Roanne
-lnb	1	PROP:pts	Par/nepar poeni (uklj. produžetke) - Saint Quentin
-lnb	1	PROP:pts	Par/nepar poeni (uklj. produžetke) - Strasbourg
-lnb	1	PROP:pts	Paris - ukupno poena (uklj. produžetke)
-lnb	3		Pobednik (uklj. produžetke)
-lnb	3	PROP:pts	Poeni igrača (uklj. produžetke)
-lnb	3		Prvi do X poena (uklj. produžetke)
-lnb	1	PROP:pts	Roanne - ukupno poena (uklj. produžetke)
-lnb	1	PROP:pts	Saint Quentin - ukupno poena (uklj. produžetke)
-lnb	1	PROP:reb	Skokovi igrača (uklj. produžetke)
-lnb	1	PROP:pts	Strasbourg - ukupno poena (uklj. produžetke)
-lnb	3	PROP:pts	Ukupno poena (uklj. produžetke)
-lnb	3		Četvrtina X - 1X2
-lnb	3		Četvrtina X - Winner DNB

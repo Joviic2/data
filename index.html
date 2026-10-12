@@ -230,7 +230,13 @@ input::placeholder{color:var(--mu);opacity:1}
 /* ===== Home ===== */
 .sps button{padding:12px 30px;font:700 1.2rem "Barlow Condensed",sans-serif;letter-spacing:.05em}
 #lgf{display:none}body.fb #lgf{display:flex}
-body.fb #lgs,body.fb #tabs,body.fb #mnb,body.fb #dw,body.fb main>p.sub{display:none!important}
+body.fb #lgs,body.fb #tabs,body.fb #mnb,body.fb #dw,body.fb main>p.sub,body.lvon #lgs,body.lvon #tabs,body.lvon #mnb,body.lvon #dw,body.lvon main>p.sub{display:none!important}
+body.lvon #gs,body.lvon #gsr,body.lvon #qf{display:none!important}
+.rdot{display:inline-block;width:10px;height:10px;border-radius:50%;background:#ef4444;margin-right:7px;vertical-align:middle;animation:rdp 1.1s ease-in-out infinite}@keyframes rdp{0%,100%{box-shadow:0 0 0 0 #ef444499}50%{box-shadow:0 0 0 7px #ef444400}}@media(prefers-reduced-motion:reduce){.rdot{animation:none}}
+.sps button.lvb{color:#ef4444}.sps button.lvb[aria-selected=true]{color:#b91c1c}@media(max-width:560px){.sps button{padding:10px 12px;font-size:1rem}}
+.lvm{padding:10px 0;border-bottom:1px solid var(--bd)}.lvm:last-child{border:0}.lvh{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:10px;align-items:center}.lvs{font:700 1.5rem 'Barlow Condensed',sans-serif;text-align:right;white-space:nowrap}.lvmin{color:#ef4444;font-weight:700;font-size:.85rem}
+.lvt{margin-top:6px;padding:6px 10px;border-left:3px solid var(--ok);background:var(--in);border-radius:6px;font-size:.92rem}.lvm details{margin-top:6px;font-size:.88rem;color:var(--mu)}.lvm details li{margin:3px 0}
+.lvg{font:700 .78rem Barlow,sans-serif;letter-spacing:.06em;text-transform:uppercase;color:var(--mu);margin:14px 0 2px}
 #hm .hg{display:grid;grid-template-columns:230px minmax(0,1fr) 350px;gap:16px;align-items:start}
 #hm .col{display:grid;gap:14px;align-content:start}#hm .rs{position:sticky;top:8px}
 #hm .kpi{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}
@@ -382,6 +388,8 @@ body.fb #lgs,body.fb #tabs,body.fb #mnb,body.fb #dw,body.fb main>p.sub{display:n
   <div><label for="b0">Početni bankroll</label><input id="b0" type="number" step="10"></div>
   <div><label for="kf">Kelly razlomak</label><select id="kf"><option value="0.1">1/10</option><option value="0.25">1/4</option><option value="0.5">1/2</option></select></div>
   <div><label for="mx">Max ulog (% bankrolla)</label><input id="mx" type="number" step="0.5"></div>
+  <div><label for="mn">Min ulog kladionice (RSD, 0 = isključeno)</label><input id="mn" type="number" step="10" min="0"></div>
+  <div><label for="mnm">Kad je Kelly ispod minimuma</label><select id="mnm"><option value="up">Zaokruži na minimum</option><option value="mark">Samo označi</option></select></div>
  </div>
  <div class="grid" style="margin-top:12px" id="bk"></div></div>
  <div class="card"><h2>Evidencija</h2><div class="scroll"><table id="bt"></table></div></div>
@@ -398,7 +406,7 @@ const NAME_OVR={ULK:"Fenerbahče",RED:"Crvena zvezda",MIL:"Armani Milano",BES:"B
 
 // ================= STANJE =================
 let D=null,INJ={teams:{}},TEAMS=[],ST={},R={},rows=[],CH={},OPEN=new Set(),lastStamp="";
-let S={b0:1000,kf:.25,mx:2,hca:3.5,sig:11,pace:72,n0:8,bets:[]};
+let S={b0:1000,kf:.25,mx:2,mn:0,mnm:"up",hca:3.5,sig:11,pace:72,n0:8,bets:[]};
 try{Object.assign(S,JSON.parse(localStorage.getItem("elva")||"{}"))}catch(e){}
 const save=()=>{try{localStorage.setItem("elva",JSON.stringify(S))}catch(e){}};
 const $=i=>document.getElementById(i),f=(x,d=1)=>(+x).toFixed(d),sg=v=>(v>0?"+":"")+v;
@@ -481,7 +489,11 @@ function rankOf(c,key,fn){const v=fn(c)&&fn(c)[key];if(v==null)return null;let r
 function ratings(){const k=S.pace/100,pr={};TEAMS.forEach(t=>pr[t]=(PRIOR[t]||0)*k);const sum={},n={};TEAMS.forEach(t=>{sum[t]=0;n[t]=0});
  D.games.forEach(g=>{const M=g.hs-g.as;if(!(g.h in sum)||!(g.a in sum))return;sum[g.h]+=M-S.hca+pr[g.a];n[g.h]++;sum[g.a]+=-M+S.hca+pr[g.h];n[g.a]++});
  const r={};TEAMS.forEach(t=>r[t]={p:pr[t],n:n[t],r:(S.n0*pr[t]+sum[t])/(S.n0+n[t])});return r}
-const stake=(p,o,B)=>{const g=(p*o-1)/(o-1);return Math.max(0,Math.min(g*S.kf,S.mx/100))*B};
+const stakeRaw=(p,o,B)=>{const g=(p*o-1)/(o-1);return Math.max(0,Math.min(g*S.kf,S.mx/100))*B};
+// minimalni ulog kladionice: "up" = zaokruži naviše na minimum, "mark" = ostavi Kelly iznos ali označi
+const stakeLow=(p,o,B)=>{const r=stakeRaw(p,o,B);return S.mn>0&&r>0&&r<S.mn};
+const stake=(p,o,B)=>{const r=stakeRaw(p,o,B);return(S.mn>0&&r>0&&r<S.mn&&S.mnm=="up")?S.mn:r};
+const stakeTag=(p,o,B)=>{if(!stakeLow(p,o,B))return"";const r=stakeRaw(p,o,B);return S.mnm=="up"?` <span class="wr" title="Kelly predlog je ${f(r,2)}, ispod minimuma kladionice ${S.mn}; podignuto na minimum (to je veći ulog od Kelly preporuke)">↑ min ${S.mn}</span>`:` <span class="wr" title="Kelly predlog ${f(r,2)} je ispod minimuma kladionice ${S.mn}; opklada se ne može odigrati kako je predloženo">⚠ ispod min ${S.mn}</span>`};
 const bank=()=>S.b0+S.bets.reduce((s,b)=>s+(b.res=="W"?b.stake*(b.odds-1):b.res=="L"?-b.stake:0),0);
 const winP=(h,a,ah=0,aa=0)=>phi((R[h].r-R[a].r+S.hca+ah-aa)/S.sig);
 
@@ -808,7 +820,7 @@ function evHtml(c,mk,L,oo,ou,opt){opt=opt||{};
  why.push(`Model projicira <b>${f(r.proj)}</b> (${esc(lab)}) naspram granice <b>${L}</b>: ${r.diff>=0?"Over":"Under"} ima ${f(Math.abs(r.diff))} poena prostora (osnova je sezona ${f(r.season)}, zadnjih 5: ${f(r.l5)}).`);
  if(top.length)why.push("Šta najviše pomera projekciju: "+top.map(x=>`<b>${esc(x.k)}</b> (${sg(+f(x.d,2))})`).join(", ")+".");
  why.push(e>0?`Uz kvotu ${f(odds,2)} ${side} traži ${f(100/odds,1)}% a model (posle poverenja ${f(r.w*100,0)}%) daje ${f(pw*100,1)}%. Kladionica bez marže vidi ${f(nv*100,1)}%.`:`Uz kvotu ${f(odds,2)} potrebno je ${f(100/odds,1)}% a model daje ${f(pw*100,1)}%, pa nema prednosti ni na jednoj strani (Over ${sp(r.eo)}, Under ${sp(r.eu)}).`);
- if(stk>0)why.push(`Predlog uloga (Kelly ${f(S.kf*100,0)}%, max ${S.mx}%): <b>${f(stk,2)}</b>.`);
+ if(stk>0)why.push(`Predlog uloga (Kelly ${f(S.kf*100,0)}%, max ${S.mx}%): <b>${f(stk,2)}</b>${S.mn>0&&stk<=S.mn?` (min kladionice ${S.mn}${S.mnm=="up"?", podignuto sa Kelly iznosa":", Kelly iznos je ispod minimuma"})`:""}.`);
  if(e>.2)why.push("Oprez: EV preko 20% obično znači da je granica daleko od uobičajene ili da model ne vidi povredu, ulogu ili taktiku. Proveri pre klađenja.");
  const risks=m?m.risks:[],tile=(t,v,sub,cl)=>`<div class="stat"><span>${t}</span><div class="num ${cl||""}">${v}</div>${sub?`<span>${sub}</span>`:""}</div>`;
  const tbl=m?`<h3>Kako je nastala projekcija</h3><div class="scroll"><table><tr><th>Faktor</th><th class=r>Projekcija</th><th class=r>Efekat</th><th>Zašto</th></tr>${m.steps.map(s2=>`<tr><td><b>${s2.k}</b></td><td class=r>${f(s2.v,2)}</td><td class="r ${s2.d==null?"mu":s2.d>=0?"ok":"no"}">${s2.d==null?"-":sg(+f(s2.d,2))}</td><td class="mu" style="font-size:.85rem">${s2.txt}</td></tr>`).join("")}<tr><td><b>Konačna projekcija</b></td><td class=r><b>${f(r.proj,2)}</b></td><td></td><td class="mu" style="font-size:.85rem">raspodela: ${r.dist}, σ ${f(r.sd)}</td></tr></table></div>`:"";
@@ -1010,6 +1022,9 @@ function init(first){
 $("fx").onchange=()=>{const x=(window.FL||[])[$("fx").value];if(x){$("h").value=x.h;$("a").value=x.a;calc()}};
 ["h","a","ah","aa","o1","o2","ln","o3","o4"].forEach(i=>$(i).oninput=calc);
 [["hca","hca"],["sig","sig"],["pace","pace"],["n0","n0"],["b0","b0"],["kf","kf"],["mx","mx"]].forEach(([i,k])=>{$(i).value=S[k];$(i).oninput=()=>{const nv=parseFloat($(i).value);S[k]=(k=="hca"&&!isNaN(nv))?nv:(+$(i).value||S[k]);save();if(D){calc();ratingTab();teamView()}bk()}});
+$("mn").value=S.mn;$("mnm").value=S.mnm;
+$("mn").oninput=()=>{S.mn=Math.max(0,parseFloat($("mn").value)||0);save();bk();try{homeRender()}catch(e){}};
+$("mnm").onchange=()=>{S.mnm=$("mnm").value;save();bk();try{homeRender()}catch(e){}};
 $("add").onclick=()=>{const r=rows[$("pk").value];if(!r)return;if(r[5]===false&&!confirm("Kvota ne odgovara ovoj liniji (nerealna). Ipak dodati u evidenciju?"))return;S.bets.push({d:new Date().toISOString().slice(0,10),m:nm($("h").value)+" - "+nm($("a").value),pick:r[0]+" | "+r[1],odds:r[3],stake:Math.round(stake(r[2],r[3],bank())*100)/100,p:r[2],res:"C"});save();bk();alert("Dodato u evidenciju (tab Bankroll).")};
 $("bt").onchange=e=>{const i=e.target.dataset.i;if(i==null)return;const k=e.target.dataset.k;S.bets[i][k]=k=="stake"?+e.target.value:e.target.value;save();bkSum()};
 $("bt").onclick=e=>{const i=e.target.dataset.del;if(i==null)return;S.bets.splice(i,1);save();bk()};
@@ -1197,7 +1212,7 @@ function resRender(M,B){
      ?`<span class="${r.evc>0?"ok":"no"}">${sgn(+f(r.evc*100))}%</span><br><span class="mu" style="font-size:.72rem">samo model: ${sgn(+f(r.evm*100))}%</span>`
      :'<span class="mu">ne računa se</span>';
    const dec=!r.real?'<span class="no">NEREALNA KVOTA</span>'
-     :r.rec?`<span class="vb">IGRAJ</span> ulog ${f(stake(r.pb,r.odds,B),2)}`
+     :r.rec?`<span class="vb">IGRAJ</span> ulog ${f(stake(r.pb,r.odds,B),2)}${stakeTag(r.pb,r.odds,B)}`
      :`<span class="${r.evc>0?"mu":"no"}">${edge}</span>${r.fails.length?`<br><span class="mu" style="font-size:.72rem">${esc(r.fails[0][0].split(" (")[0])}</span>`:""}`;
    return`<tr${r.rec&&r.real?' style="background:var(--acbg)"':""}><td>${esc(r.mk)}</td><td>${esc(r.sel)}</td><td class=r>${pc(r.p)}</td><td class=r>${r.pm==null?"-":pc(r.pm)}</td><td class=r>${f(r.odds,2)}</td><td class=r>${f(r.fair,2)}</td><td class=r>${ev}</td><td>${dec}</td></tr>`}).join("");
  // objašnjenje kad kvota ne odgovara liniji (npr. +20 uz kvotu 1.90)
@@ -1479,7 +1494,7 @@ function screenInner(){
  el.innerHTML=whyHtml+(top?`<div class="card"><h3 style="margin-top:0">Top 3 value tipa</h3><div class="grid w">${top}</div></div>`:"")+
  `<div class="card"><h3 style="margin-top:0">Svi tipovi sa EV ≥ ${f(thr*100,0)}% (${SCR.length})</h3>`+
  (SCR.length?`<div class="scroll"><table><tr><th>Početak</th><th>Utakmica</th><th>Tržište</th><th>Izbor</th><th class="r">Model</th><th class="r">Kvota</th><th>Kladionica</th><th class="r">EV</th><th class="r">EV vs Pinnacle</th><th class="r">Ulog</th><th></th></tr>`+
-  SCR.map((x,i)=>`<tr><td>${esc(dt(x.st))}</td><td>${esc(x.mt)}${evChip(x)}</td><td>${esc(x.mk)}</td><td>${esc(x.pick)}${x.inj?' <span class="wr" title="Ključni igrač je van ili neizvestan, a nije uračunat u model">⚠ povrede</span>':""}${x.mv?` <span class="no" title="Pinnacle je pomerio liniju">⚡ ${esc(x.mv)}</span>`:""}</td><td class="r">${f(x.p*100)}%</td><td class="r">${f(x.o,2)}</td><td>${esc(x.bk)}</td><td class="r ok">+${f(x.ev*100,1)}% ${evb(x.ev)}</td><td class="r ${x.evS>0?"ok":"mu"}">${x.evS==null?"-":(x.evS>0?"+":"")+f(x.evS*100,1)+"%"}</td><td class="r">${f(stake(x.p,x.o,B),2)}</td><td><button class="btn sm" data-vi="${i}" type="button">Zašto?</button> <button class="btn sm" data-sl="${i}" type="button">+ Listić</button> <button class="btn sm" data-sa="${i}" type="button">Bankroll</button></td></tr>`).join("")+`</table></div>`:`<p class="mu">Nema tipova iznad praga${used?"":" (nijedan meč iz kvota nije prepoznat u tvom modelu)"}.</p>`)+
+  SCR.map((x,i)=>`<tr><td>${esc(dt(x.st))}</td><td>${esc(x.mt)}${evChip(x)}</td><td>${esc(x.mk)}</td><td>${esc(x.pick)}${x.inj?' <span class="wr" title="Ključni igrač je van ili neizvestan, a nije uračunat u model">⚠ povrede</span>':""}${x.mv?` <span class="no" title="Pinnacle je pomerio liniju">⚡ ${esc(x.mv)}</span>`:""}</td><td class="r">${f(x.p*100)}%</td><td class="r">${f(x.o,2)}</td><td>${esc(x.bk)}</td><td class="r ok">+${f(x.ev*100,1)}% ${evb(x.ev)}</td><td class="r ${x.evS>0?"ok":"mu"}">${x.evS==null?"-":(x.evS>0?"+":"")+f(x.evS*100,1)+"%"}</td><td class="r">${f(stake(x.p,x.o,B),2)}${stakeTag(x.p,x.o,B)}</td><td><button class="btn sm" data-vi="${i}" type="button">Zašto?</button> <button class="btn sm" data-sl="${i}" type="button">+ Listić</button> <button class="btn sm" data-sa="${i}" type="button">Bankroll</button></td></tr>`).join("")+`</table></div>`:`<p class="mu">Nema tipova iznad praga${used?"":" (nijedan meč iz kvota nije prepoznat u tvom modelu)"}.</p>`)+
  `<div class="note warn">Referenca je Superbet: kvota koja se igra i tržišna šansa (bez marže) su sa Superbeta, pomešane sa modelom (težina modela ${f((XW.game||.27)*100,0)}%). Pošto je to jedna kladionica, EV je gruba procena: prava prednost postoji samo kad se model i Superbet jako razilaze. ${minN<5?`Rani deo sezone: najmanji uzorak je ${minN} utakmica po timu, pa je model manje pouzdan. `:""}EV iznad 12% se odbacuje kao greška. Realan edge u klađenju je 2 do 6%. Analizirano mečeva: ${used}/${OD.events.length}. Tabela ispod prikazuje SVE linije sa Superbeta, uključujući one bez prednosti.</div></div>`;
 el.insertAdjacentHTML("beforeend",scaHtml(unk));window.SCALL={ALL,unk,RS,used,total:OD.events.length};scaRender();
  $("sb").innerHTML=`<div class="card"><h2>Surebet</h2>`+(sure.length?`<div class="scroll"><table><tr><th>Utakmica</th><th>Domaćin</th><th>Gost</th><th class="r">Profit</th></tr>`+sure.map(x=>`<tr><td>${esc(x.mt)}</td><td>${f(x.b1,2)} (${esc(x.k1)})</td><td>${f(x.b2,2)} (${esc(x.k2)})</td><td class="r ok">+${f(x.pf,2)}%</td></tr>`).join("")+`</table></div>`:`<p class="mu">Trenutno nema arbitraže.</p>`)+`</div>`}
@@ -2131,7 +2146,7 @@ function tevRender(){
  why.push(`Model: ${M.projLab} <b>${f(M.proj)}</b>${mk=="win"||mk=="hcap"?` (${M.proj>=0?hn:an} favorit)`:""}${mk=="hcap"||M.sm&&mk=="pts"||!M.sm?`, granica kladionice <b>${mk=="hcap"?(L>0?"+":"")+L:L}</b>`:""}.`);
  try{const sw=xsmWhy(h,a);if(sw)why.push(sw)}catch(x){console.error(x)}if(drv.length)why.push("Šta najviše pomera procenu: "+drv.map(x=>`<b>${x.k}</b> (${sg(+f(x.d,2))})`).join(", ")+".");
  why.push(e>0?`${side} uz kvotu ${f(odds,2)} traži ${f(100/odds,1)}%, model (posle poverenja ${f(M.w*100,0)}%) daje ${f(pw*100,1)}%, a kladionica bez marže vidi ${f(nv*100,1)}%.`:`Uz te kvote potrebno je ${f(100/odds,1)}% za najbolju stranu a model daje ${f(pw*100,1)}%, pa nijedna strana nema prednost (${s1} ${sp(r.e1)}, ${s2} ${sp(r.e2)}).`);
- if(stk>0)why.push(`Predlog uloga (Kelly ${f(S.kf*100,0)}%, max ${S.mx}%): <b>${f(stk,2)}</b>.`);
+ if(stk>0)why.push(`Predlog uloga (Kelly ${f(S.kf*100,0)}%, max ${S.mx}%): <b>${f(stk,2)}</b>${S.mn>0&&stk<=S.mn?` (min kladionice ${S.mn}${S.mnm=="up"?", podignuto sa Kelly iznosa":", Kelly iznos je ispod minimuma"})`:""}.`);
  if(e>.2)why.push("Oprez: EV preko 20% obično znači da model ne vidi povredu, rotaciju ili taktiku. Proveri pre klađenja.");
  const tile=(t,v,sub,cl)=>`<div class="stat"><span>${t}</span><div class="num ${cl||""}">${v}</div>${sub?`<span>${sub}</span>`:""}</div>`;
  const tb=`<h3>Kako je nastala procena</h3><div class="scroll"><table><tr><th>Faktor</th><th class=r>Vrednost</th><th class=r>Efekat</th><th>Zašto</th></tr>${M.steps.map(s=>`<tr><td><b>${s.k}</b></td><td class=r>${s.v==null?"-":f(s.v,2)}</td><td class="r ${s.d==null?"mu":s.d>=0?"ok":"no"}">${s.d==null?"-":sg(+f(s.d,2))}</td><td class="mu" style="font-size:.85rem">${s.txt}</td></tr>`).join("")}</table></div>`;
@@ -2677,11 +2692,11 @@ $("ov").onclick=e=>{const g=a=>e.target.closest("[data-"+a+"]");let b;
 <script>
 // ===== Home: Football/Basketball, lige, KPI, najbolji tipovi, vesti i tiket =====
 const FBL=[["epl","Premier League"],["laliga","La Liga"],["l1","Ligue 1"],["bl","Bundesliga"],["ppl","Primeira Liga (Portugal)"],["sa","Serie A"],["sl","Super Liga (Srbija)"],["tsl","Süper Lig (Turska)"]];
-let SPORT="bb",FBSEL="epl",HF="top",SLM="single",SLIP=[],HT=[];
+let LV=null,LVT=0,LVERR="",SPORT="bb",FBSEL="epl",LVQ="all",HF="top",SLM="single",SLIP=[],HT=[];
 try{SPORT=localStorage.getItem("elsport")||"bb";SLIP=JSON.parse(localStorage.getItem("elslip")||"[]")}catch(e){}
 const slSave=()=>{try{localStorage.setItem("elslip",JSON.stringify(SLIP))}catch(e){}};
-function sportBar(){$("sps").innerHTML=[["fb","⚽ Football"],["bb","🏀 Basketball"]].map(([k,l])=>`<button type="button" data-sp="${k}" aria-selected="${SPORT==k}">${l}</button>`).join("");
- $("lgf").innerHTML=FBL.map(([k,l])=>`<button type="button" data-fb="${k}" aria-selected="${k==FBSEL}">${esc(l)}</button>`).join("");document.body.classList.toggle("fb",SPORT=="fb")}
+function sportBar(){$("sps").innerHTML=[["fb","⚽ Football"],["bb","🏀 Basketball"],["live",`<i class="rdot"></i>UŽIVO${LV&&LV.matches&&!lvStale()?" ("+LV.matches.length+")":""}`]].map(([k,l])=>`<button type="button" data-sp="${k}" class="${k=="live"?"lvb":""}" aria-selected="${SPORT==k}">${l}</button>`).join("");
+ $("lgf").innerHTML=FBL.map(([k,l])=>`<button type="button" data-fb="${k}" aria-selected="${k==FBSEL}">${esc(l)}</button>`).join("");document.body.classList.toggle("fb",SPORT=="fb");document.body.classList.toggle("lvon",SPORT=="live")}
 function slipHtml(){
  const B=bank(),n=SLIP.length;let body="";
  if(!n)body='<p class="mu">Tiket je prazan. Klikni "+ Tiket" kod nekog tipa.</p>';
@@ -2689,13 +2704,14 @@ function slipHtml(){
   const items=SLIP.map((x,i)=>`<div class="sl"><div><b>${esc(x.pick)}</b> <span class="mu">${esc(x.mk)}</span><br><span class="mu">${esc(x.mt)}</span></div><div style="text-align:right">${f(x.o,2)}<br><button class="x" data-sd="${i}" type="button" aria-label="Ukloni">✕</button></div></div>`).join("");
   let sum="";
   if(SLM=="single"){const st=SLIP.map(x=>stake(x.p,x.o,B)),tot=st.reduce((a,b)=>a+b,0),win=SLIP.reduce((a,x,i)=>a+st[i]*(x.o-1),0);
-   sum=`<div class="grid" style="grid-template-columns:1fr 1fr;margin-top:10px"><div class="stat"><span>Ukupan ulog</span><div class="num">${f(tot,2)}</div></div><div class="stat"><span>Potencijalni dobitak</span><div class="num ok">+${f(win,2)}</div></div></div><p class="mu" style="font-size:.85rem">Ulog po tipu je ${S.kf} Kelly, najviše ${S.mx}% bankrolla (${f(B,0)}).</p>`}
+   sum=`<div class="grid" style="grid-template-columns:1fr 1fr;margin-top:10px"><div class="stat"><span>Ukupan ulog</span><div class="num">${f(tot,2)}</div></div><div class="stat"><span>Potencijalni dobitak</span><div class="num ok">+${f(win,2)}</div></div></div><p class="mu" style="font-size:.85rem">Ulog po tipu je ${S.kf} Kelly, najviše ${S.mx}% bankrolla (${f(B,0)}).${S.mn>0&&SLIP.some(x=>stakeLow(x.p,x.o,B))?` Neki ulozi su ispod minimuma kladionice (${S.mn}) pa ${S.mnm=="up"?"su podignuti na minimum, što je veći rizik od Kelly preporuke":"su označeni"}.`:""}</p>`}
   else{const oc=SLIP.reduce((a,x)=>a*x.o,1),pc=SLIP.reduce((a,x)=>a*x.p,1),ev=pc*oc-1,st=ev>0?stake(pc,oc,B):0,dup=new Set(SLIP.map(x=>x.mt)).size<n;
    sum=`<div class="grid" style="grid-template-columns:1fr 1fr;margin-top:10px"><div class="stat"><span>Ukupna kvota</span><div class="num">${f(oc,2)}</div></div><div class="stat"><span>Šansa (model)</span><div class="num">${f(pc*100,1)}%</div></div><div class="stat"><span>EV kombinacije</span><div class="num ${ev>0?"ok":"no"}">${ev>0?"+":""}${f(ev*100,1)}%</div></div><div class="stat"><span>Preporučen ulog</span><div class="num">${f(st,2)}</div></div></div><p class="mu" style="font-size:.85rem">Potencijalni dobitak: +${f(st*(oc-1),2)}. ${ev<=0?"Kombinacija nema pozitivan EV, ulog je 0.":""}${dup?" ⚠ Dva izbora iz istog meča su povezana, pa je šansa kombinacije precenjena.":""} Računa se da su izbori nezavisni.</p>`}
   body=items+sum+`<div style="display:flex;gap:8px;margin-top:10px"><button class="btn" data-slsave="1" type="button">Sačuvaj u evidenciju</button><button class="btn sm" data-slclr="1" type="button" style="background:var(--bd);color:var(--tx)">Isprazni</button></div>`}
  return `<div class="card rs"><h2>Tiket</h2><div class="mts" style="margin-bottom:8px"><button type="button" data-slm="single" aria-selected="${SLM=="single"}">Singlovi</button><button type="button" data-slm="combo" aria-selected="${SLM=="combo"}">Kombinacija</button></div>${body}</div>`}
 function homeRender(){
  const el=$("hm");if(!el)return;sportBar();
+ if(SPORT=="live"){el.innerHTML=lvHtml();return}
  const B=bank(),settled=S.bets.filter(b=>b.res=="W"||b.res=="L"||b.res=="P"),pl=B-S.b0,stk=settled.reduce((a,b)=>a+(+b.stake||0),0),dec=S.bets.filter(b=>b.res=="W"||b.res=="L"),w=dec.filter(b=>b.res=="W").length;
  const now=new Date(),inD=x=>{const d=new Date(x.st);return !isNaN(d)&&d>now},tipsAll=(typeof SCR!="undefined"?SCR:[]).filter(inD);
  const ft=HF=="danas"?tipsAll.filter(x=>new Date(x.st).toDateString()==now.toDateString()):HF=="vikend"?tipsAll.filter(x=>[0,6].includes(new Date(x.st).getDay())):tipsAll;
@@ -2716,7 +2732,9 @@ function homeNews(){const n=$("news"),h=$("hnews");if(!h)return;if(n&&n.innerHTM
 $("sps").onclick=e=>{const b=e.target.closest("[data-sp]");if(!b)return;SPORT=b.dataset.sp;try{localStorage.setItem("elsport",SPORT)}catch(x){}show(13)};
 $("lgf").onclick=e=>{const b=e.target.closest("[data-fb]");if(!b)return;FBSEL=b.dataset.fb;homeRender()};
 $("hm").onclick=async e=>{const t=e.target.closest("button");if(!t)return;const d=t.dataset;
- if(d.lg){await switchLeague(d.lg);homeRender()}
+ if(d.lvq){LVQ=d.lvq;homeRender()}
+ else if(d.lvr){lvPoll(true)}
+ else if(d.lg){await switchLeague(d.lg);homeRender()}
  else if(d.fb){FBSEL=d.fb;homeRender()}
  else if(d.ff){FBF=d.ff;homeRender()}
  else if(d.fev){FBEV=+d.fev;homeRender()}
@@ -2732,6 +2750,34 @@ $("hm").onclick=async e=>{const t=e.target.closest("button");if(!t)return;const 
   else{const oc=SLIP.reduce((a,x)=>a*x.o,1),pc=SLIP.reduce((a,x)=>a*x.p,1),st=pc*oc-1>0?stake(pc,oc,B):0;if(st<=0&&!confirm("Kombinacija nema pozitivan EV (ulog 0). Ipak sačuvati?"))return;S.bets.push({d:day,m:"Kombinacija ("+SLIP.length+")",pick:SLIP.map(x=>x.mt+": "+x.pick).join(" + "),odds:Math.round(oc*100)/100,stake:Math.round(st*100)/100,p:pc,res:"C"})}
   save();try{bk()}catch(x){}SLIP=[];slSave();homeRender();alert("Sačuvano u evidenciju (tab Bankroll).")}};
 sportBar();
+// ===== UŽIVO: čita data/live.json koji piše fb_live.py (pokreće ga pokreni.bat); osvežava se sam svakih 15 s =====
+const LVN={epl:"Premier League",laliga:"La Liga",l1:"Ligue 1",sa:"Serie A",sve:"Fudbal",kosarka:"Košarka"},LVO=["epl","laliga","l1","sa","sve","kosarka"];
+const lvStale=()=>!LV||!LV.updated||Date.now()/1e3-LV.updated>180;
+async function lvPoll(force){
+ if(!force&&document.hidden)return;
+ const us=["data/live.json?t="+Date.now(),"http://localhost:8765/live.json?t="+Date.now(),RAW_BASE+"data/live.json?t="+Date.now()];
+ let ok=false;
+ for(const u of us){try{const r=await fetch(u,{cache:"no-store"});if(!r.ok)continue;const j=await r.json();if(j&&Array.isArray(j.matches)&&(!LV||(j.updated||0)>=(LV.updated||0)||force)){LV=j;ok=true;LVERR="";break}if(j&&Array.isArray(j.matches)){ok=true;break}}catch(e){}}
+ if(!ok&&!LV)LVERR="data/live.json ne postoji ili nije dostupan. Pokreni sajt preko pokreni.bat (on startuje i live skener).";
+ LVT=Date.now();
+ try{sportBar();if(SPORT=="live"&&!$("t13").hidden){const y=window.scrollY;$("hm").innerHTML=lvHtml();window.scrollTo(0,y)}}catch(e){}}
+function lvMin(m){return typeof m.minute=="number"?m.minute+"'":(m.minute||"")}
+function lvHtml(){
+ if(!LV)return `<div class="card"><h2><i class="rdot"></i>Uživo</h2><p class="mu">${esc(LVERR||"Učitavam…")}</p><button class="btn sm" data-lvr="1" type="button">Osveži</button></div>`;
+ const ms=(LV.matches||[]).filter(m=>LVQ=="tip"?m.tip:true),stale=lvStale(),ago=LV.updated?Math.round(Date.now()/1e3-LV.updated):null;
+ const tot=(LV.matches||[]).length,nt=(LV.matches||[]).filter(m=>m.tip).length;
+ const head=`<div class="card"><h2><i class="rdot"></i>Uživo <span class="mu" style="font-size:.9rem;font-weight:500">· ${tot} mečeva, ${nt} sa tipom · osvežava se samo na 15 s</span></h2>
+ <div class="mts" style="margin:6px 0">${[["all","Svi mečevi"],["tip","Samo sa tipom"]].map(([k,l])=>`<button type="button" data-lvq="${k}" aria-selected="${LVQ==k}">${l}</button>`).join("")}<button type="button" class="btn sm" data-lvr="1">Osveži odmah</button></div>
+ <p class="mu" style="margin:4px 0 0;font-size:.85rem">${ago==null?"":"Podaci stari "+(ago<90?ago+" s":Math.round(ago/60)+" min")+"."} ${stale?'<b style="color:var(--no)">Skener izgleda ne radi (podaci stariji od 3 min): pokreni pokreni.bat ili "py fb_live.py --loop 45".</b>':""} Tipovi su model, ne garancija; kvote se menjaju za sekunde.</p></div>`;
+ if(!ms.length)return head+`<div class="card"><p class="mu">${tot?"Nijedan meč nema tip u ovom trenutku.":"Trenutno nema mečeva uživo u dozvoljenim ligama (Premier League, La Liga, Ligue 1, Serie A)."}</p></div>`;
+ const g={};ms.forEach(m=>(g[m.league||(m.sport=="kosarka"?"kosarka":"sve")]=g[m.league||(m.sport=="kosarka"?"kosarka":"sve")]||[]).push(m));
+ const mi=m=>typeof m.minute=="number"?m.minute:-1;
+ return head+`<div class="card">`+LVO.filter(k=>g[k]).map(k=>`<div class="lvg">${esc(LVN[k]||k)} (${g[k].length})</div>`+g[k].sort((a,b)=>mi(b)-mi(a)).map(m=>{
+  const t=m.tip,al=(m.alts||[]).map(x=>`${esc(x.label)} @ ${x.odds} (EV ${(x.ev*100).toFixed(1)}%)`).join(" · ");
+  return `<div class="lvm"><div class="lvh"><div><b>${esc(m.h)}</b> - <b>${esc(m.a)}</b><br><span class="lvmin">${esc(lvMin(m))}</span>${m.prior=="generic"?' <span class="mu">(bez predmeč modela)</span>':""}</div><div class="lvs">${m.score?m.score[0]+":"+m.score[1]:"-:-"}</div></div>`
+  +(t?`<div class="lvt"><b>${esc(t.label)}</b> @ ${t.odds} · <span class="${t.ev>0?"ok":"no"}">EV ${t.ev>0?"+":""}${(t.ev*100).toFixed(1)}%</span> <span class="mu">· model ${(t.p_model*100).toFixed(0)}% / tržište ${(t.p_market*100).toFixed(0)}%</span>${al?`<br><span class="mu">Alternative: ${al}</span>`:""}</div>`:`<div class="mu" style="margin-top:4px;font-size:.88rem">bez tipa</div>`)
+  +((m.why||[]).length?`<details><summary>Zašto?</summary><ul style="margin:6px 0 0 18px;padding:0">${m.why.map(x=>`<li>${esc(x)}</li>`).join("")}${(m.risk||[]).map(x=>`<li>⚠ ${esc(x)}</li>`).join("")}</ul></details>`:"")+`</div>`}).join("")).join("")+`</div>`}
+setInterval(()=>{lvPoll()},15000);lvPoll(true);
 </script>
 <script>
 // ===== Fudbal: danasnje utakmice, kvote i value tipovi (data/<liga>/odds_superbet.json + predictions.json iz football_poisson.py) =====
@@ -2740,9 +2786,25 @@ const fbBad=r=>r.sus||r.ev_raw>.25||Math.abs(r.p_model-r.p_market)>.15;   // mod
 function fbDay(st){const n=new Date();return FBF=="sve"||(st&&(FBF=="danas"?st.toDateString()==n.toDateString():st.toDateString()==new Date(+n+864e5).toDateString()))}
 async function fbLoad(k){
  if(FBD[k])return;FBD[k]={loading:1};
- let p=null;try{p=await getJSON("data/"+k+"/predictions.json")}catch(e){}
- FBD[k]={p};if(SPORT=="fb"&&FBSEL==k)homeRender()}
+ let p=null,mv=null;try{p=await getJSON("data/"+k+"/predictions.json")}catch(e){}
+ try{mv=await getJSON("data/"+k+"/odds_moves.json")}catch(e){}
+ try{if(p&&mv)fbSteam(p,mv)}catch(e){}
+ FBD[k]={p,mv};if(SPORT=="fb"&&FBSEL==k)homeRender()}
 function fbPlab(r,e){return/^(1X2|AH|EH)/.test(r.market)?(r.pick=="1"?e.h:r.pick=="2"?e.a:"Nerešeno"):r.pick=="Vise"?"Preko":r.pick=="Manje"?"Ispod":r.pick}
+// ===== Drop / Live Odds Tracker: pad/rast kvote pred meč koriguje verovatnoću i EV (data/<liga>/odds_moves.json iz fb_odds_track.py) =====
+function fbSteam(p,mv){
+ const M=mv.moves||{},thr=mv.thr||.025;
+ (p.rows||[]).forEach(r=>{
+  if(r.steam)return;const m=M[r.h+"|"+r.a+"|"+(r.start||"")];if(!m||!m.sharp||!(r.odds>1)||r.p==null)return;
+  const mk=String(r.market||""),pk=String(r.pick||"");let dp=null,lab="";
+  if(mk.startsWith("Golovi")){const L=(mk.match(/\d+(?:\.\d+)?/)||[])[0],x=m.ou&&m.ou[parseFloat(L).toFixed(1)];if(x){dp=pk=="Vise"?x.dp:-x.dp;lab=pk=="Vise"?`kvota Preko ${L}: ${f(x.o0,2)} → ${f(x.o1,2)}`:`kvota Ispod ${L}: ${f(x.u0,2)} → ${f(x.u1,2)}`}}
+  else if(mk.startsWith("1X2")&&m.x12){const i={"1":0,"X":1,"2":2}[pk];if(i!=null){dp=m.x12.dp[i];lab=`kvota ${pk}: ${f(m.x12.o0[i],2)} → ${f(m.x12.o1[i],2)}`}}
+  else if(mk.startsWith("GG")&&m.btts){dp=pk=="GG"?m.btts.dp:-m.btts.dp;lab=`kvota GG: ${f(m.btts.o0,2)} → ${f(m.btts.o1,2)}`}
+  if(dp==null||Math.abs(dp)<thr)return;
+  const k=(m.mins_to_ko!=null&&m.mins_to_ko<=180)?.6:.4,adj=Math.max(-.04,Math.min(.04,k*dp)),p1=Math.max(.01,Math.min(.99,r.p+adj));
+  r.p0=r.p;r.ev0=r.ev;r.p=p1;r.ev=p1*r.odds-1;
+  r.steam={dp,adj,tag:dp>0?"📉 kvota pada (tržište ulaže na ovo)":"📈 kvota raste (tržište se udaljava)",txt:`Kretanje kvote u poslednjih ${f(m.span_h,1)} h: ${lab} (tržišna verovatnoća ${dp>0?"+":""}${f(dp*100,1)} p.p.). Pomeraj ove veličine pred meč obično znači novac ili vest koju model ne vidi, pa je verovatnoća korigovana za ${adj>0?"+":""}${f(adj*100,1)} p.p. (EV ${f(r.ev0*100,1)}% → ${f(r.ev*100,1)}%).`};
+  if(Array.isArray(r.why))r.why=r.why.concat([r.steam.txt]);else r.why_steam=r.steam.txt})}
 function fbTipList(){
  const d=FBD[FBSEL]||{},rows=(d.p&&d.p.rows)||[],now=new Date(),G={},T=[];
  rows.forEach(r=>{const k=r.h+"|"+r.a+"|"+(r.start||"");(G[k]||(G[k]={e:{h:r.h,a:r.a,start:r.start},rows:[],tips:[]})).rows.push(r)});
@@ -2753,7 +2815,7 @@ function fbTipList(){
   FBM.push({e,st,rows:g.rows,tips:[],started:!!(st&&st<now)})});
  FBM.sort((a,b)=>(a.st||0)-(b.st||0));
  FBM.forEach(m=>{if(m.started){m.hid=0;return}m.blk=m.rows.filter(r=>r.blocked&&r.ev>=FBEV&&r.ev>0);m.hid=m.rows.filter(r=>r.ev>=FBEV&&r.ev>0&&!r.blocked&&fbBad(r)).length;m.rows.filter(r=>r.ev>=FBEV&&r.ev>0&&!r.blocked&&!fbBad(r)).sort((a,b)=>b.ev-a.ev).slice(0,4).forEach(r=>{
-  const x={pick:fbPlab(r,m.e),mk:r.market+(r.ev_raw>.25?" · ⚠ PROVERI liniju":""),mt:m.e.h+" - "+m.e.a,st:m.e.start,o:r.odds,p:r.p,ev:r.ev,bk:"Superbet",i:T.length,r,e:m.e};
+  const x={pick:fbPlab(r,m.e),mk:r.market+(r.ev_raw>.25?" · ⚠ PROVERI liniju":"")+(r.steam?" · "+r.steam.tag:""),mt:m.e.h+" - "+m.e.a,st:m.e.start,o:r.odds,p:r.p,ev:r.ev,bk:"Superbet",i:T.length,r,e:m.e};
   T.push(x);m.tips.push(x)})});
  return T}
 function fbCtx(m,d){
@@ -2775,7 +2837,8 @@ function fbCtx(m,d){
 // ===== Fudbal: objašnjenje tipa (isti tekst kao fb_explain.py; ako predictions.json već ima r.why, uzima se on) =====
 const fbPc=v=>((v-1)*100>=0?"+":"")+((v-1)*100).toFixed(0)+"%",fbHas=(st,...k)=>{const s=(st||[]).join(" ").toLowerCase();return k.some(x=>s.includes(x))};
 function fbCtxGet(e,d){const L=(d&&d.p&&d.p.context)||[];return L.find(c=>c.h==e.h&&c.a==e.a&&(c.start||"")==(e.start||""))||L.find(c=>c.h==e.h&&c.a==e.a)||null}
-function fbExplain(r,h,a,C){
+function fbExplain(r,h,a,C){const R=fbExplain0(r,h,a,C);if(r&&r.why_steam&&R&&Array.isArray(R.why))R.why=R.why.concat([r.why_steam]);return R}
+function fbExplain0(r,h,a,C){
  if(Array.isArray(r.why)&&r.why.length)return{label:r.label||(r.market+" · "+r.pick),meaning:r.meaning||"",why:r.why,risk:r.risk||[]};
  const mk=String(r.market||""),pk=String(r.pick||""),p=r.p,pm=r.p_model,pmk=r.p_market,o=r.odds,ev=r.ev,side=pk=="1"?h:pk=="2"?a:null;
  let kind="other",n=null,label,meaning;
