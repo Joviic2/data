@@ -20,7 +20,7 @@
     "",
     "manje 1.5",
     "Manje od 1.5 golova u 1. poluvremenu",
-    1.59,
+    1.6,
     1.5
    ],
    [
@@ -163,7 +163,7 @@
     "1",
     "angers",
     "Angers pobednik u 1. poluvremenu",
-    3.55,
+    3.6,
     1.0
    ],
    [
@@ -177,7 +177,7 @@
     "2",
     "olympique marseille",
     "Olympique Marseille pobednik u 1. poluvremenu",
-    2.65,
+    2.62,
     1.0
    ]
   ]
@@ -189,7 +189,7 @@
     "1",
     "1",
     "Angers pobednik u 1. poluvremenu ili na kraju",
-    2.35,
+    2.37,
     1.0
    ],
    [
@@ -203,7 +203,7 @@
     "2",
     "2",
     "Olympique Marseille pobednik u 1. poluvremenu ili ",
-    1.75,
+    1.73,
     1.0
    ]
   ]
@@ -215,14 +215,14 @@
     "",
     "1:0, 2:0 ili 3:0",
     "Utakmica će završiti rezultatom 1-0, 2-0 ili 3-0.",
-    7.0,
+    7.1,
     -0.0
    ],
    [
     "",
     "0:1, 0:2 ili 0:3",
     "Utakmica će završiti rezultatom 0:1, 0:2 ili 0:3",
-    5.0,
+    4.9,
     3.0
    ],
    [
@@ -236,14 +236,14 @@
     "",
     "0:4, 0:5 ili 0:6",
     "Utakmica će završiti rezultatom 0:4, 0:5 ili 0:6",
-    34.0,
+    33.0,
     6.0
    ],
    [
     "",
     "2:1, 3:1 ili 4:1",
     "Utakmica će završiti rezultatom 2:1, 3:1 ili 4:1",
-    7.2,
+    7.3,
     1.0
    ],
    [
@@ -257,7 +257,7 @@
     "",
     "3:2, 4:2, 4:3 ili 5:1",
     "Utakmica će završiti rezultatom 3:2, 4:2, 4:3 ili ",
-    16.0,
+    17.0,
     1.0
    ],
    [
@@ -344,7 +344,7 @@
     "",
     "2 & vise 1.5",
     "Olympique Marseille pobednik utakmice i više od 1.",
-    2.4,
+    2.42,
     1.5
    ]
   ]
@@ -356,7 +356,7 @@
     "",
     "1 & manje 2.5",
     "Angers pobednik utakmice i manje od 2.5 gola na ut",
-    7.3,
+    7.2,
     2.5
    ],
    [
@@ -377,7 +377,7 @@
     "",
     "1 & vise 2.5",
     "Angers pobednik utakmice i više od 2.5 gola na uta",
-    4.3,
+    4.25,
     2.5
    ],
    [
@@ -391,7 +391,7 @@
     "",
     "2 & vise 2.5",
     "Olympique Marseille pobednik utakmice i više od 2.",
-    2.85,
+    2.87,
     2.5
    ]
   ]
@@ -403,7 +403,7 @@
     "",
     "1 & manje 3.5",
     "Angers pobednik utakmice i manje od 3.5 gola na ut",
-    4.45,
+    4.4,
     3.5
    ],
    [
@@ -417,14 +417,14 @@
     "",
     "2 & manje 3.5",
     "Olympique Marseille pobednik utakmice i manje od 3",
-    3.2,
+    3.25,
     3.5
    ],
    [
     "",
     "1 & vise 3.5",
     "Angers pobednik utakmice i više od 3.5 gola na uta",
-    6.9,
+    6.8,
     3.5
    ],
    [
@@ -450,7 +450,7 @@
     "",
     "1 & manje 4.5",
     "Angers pobednik utakmice i manje od 4.5 gola na ut",
-    3.8,
+    3.75,
     4.5
    ],
    [
@@ -471,7 +471,7 @@
     "",
     "1 & vise 4.5",
     "Angers pobednik utakmice i više od 4.5 gola na uta",
-    9.6,
+    9.5,
     4.5
    ],
    [
@@ -497,14 +497,14 @@
     "10-",
     "1x & manje od 3.5",
     "Angers će pobediti ili će biti nerešeno i biće man",
-    2.3,
+    2.32,
     3.5
    ],
    [
     "10+",
     "1x & vise od 3.5",
     "Angers će pobediti ili će biti nerešeno i biće viš",
-    3.55,
+    3.6,
     3.5
    ],
    [
@@ -518,7 +518,7 @@
     "02+",
     "x2 & vise od 3.5",
     "Biće nerešeno ili Olympique Marseille će pobediti ",
-    2.87,
+    2.85,
     3.5
    ],
    [
@@ -544,35 +544,35 @@
     "10-",
     "1x & manje od 4.5",
     "Angers će pobediti ili će biti nerešeno i biće man",
-    1.83,
+    1.85,
     4.5
    ],
    [
     "10+",
     "1x & vise od 4.5",
     "Angers će pobediti ili će biti nerešeno i biće viš",
-    5.85,
+    5.9,
     4.5
    ],
    [
     "02-",
     "x2 & manje od 4.5",
     "Biće nerešeno ili Olympique Marseille će pobediti ",
-    1.54,
+    1.53,
     4.5
    ],
    [
     "02+",
     "x2 & vise od 4.5",
     "Biće nerešeno ili Olympique Marseille će pobediti ",
-    4.7,
+    4.65,
     4.5
    ],
    [
     "12-",
     "12 & manje od 4.5",
     "Angers ili Olympique Marseille će pobediti i biće ",
-    1.55,
+    1.56,
     4.5
    ],
    [
@@ -645,14 +645,14 @@
     "",
     "vise 0.5 & manje 1.5",
     "Više od 0.5 golova u 1. poluvremenu & manje od 1.5",
-    10.0,
+    11.0,
     1.5
    ],
    [
     "",
     "manje 0.5 & vise 1.5",
     "Manje od 0.5 golova u 1. poluvremenu & više od 1.5",
-    5.8,
+    5.75,
     1.5
    ],
    [
@@ -701,14 +701,14 @@
     "",
     "vise 1.5 & manje 2.5",
     "Više od 1.5 golova u 1. poluvremenu & manje od 2.5",
-    14.0,
+    13.0,
     2.5
    ],
    [
     "",
     "manje 1.5 & vise 2.5",
     "Manje od 1.5 golova u 1. poluvremenu & više od 2.5",
-    3.55,
+    3.6,
     2.5
    ],
    [
@@ -783,7 +783,7 @@
     "0-1+",
     "manje 0.5 & vise 1.5",
     "Manje od 0.5 golova u 1. poluvremenu & više od 1.5",
-    5.8,
+    5.75,
     2.0
    ],
    [
@@ -905,7 +905,7 @@
     "1",
     "angers",
     "Angers pobeđuje barem jedno poluvreme",
-    1.95,
+    1.97,
     null
    ],
    [
@@ -919,7 +919,7 @@
     "2",
     "olympique marseille",
     "Olympique Marseille pobeđuje barem jedno poluvreme",
-    1.55,
+    1.54,
     null
    ]
   ]
@@ -1086,7 +1086,7 @@
     "+1",
     "vise 4.5 & da",
     "Više od 4.5 gola i oba tima daju gol",
-    4.35,
+    4.3,
     4.5
    ],
    [
@@ -1171,14 +1171,14 @@
     "123",
     "1 & 2-3",
     "Angers pobednik i 2-3 gola",
-    6.0,
+    5.9,
     -3.0
    ],
    [
     "124",
     "1 & 2-4",
     "Angers pobednik i 2-4 gola",
-    4.85,
+    4.8,
     -4.0
    ],
    [
@@ -1192,21 +1192,21 @@
     "126",
     "1 & 2-6",
     "Angers pobednik i 2-6 golova",
-    3.85,
+    3.8,
     -6.0
    ],
    [
     "135",
     "1 & 3-5",
     "Angers pobednik i 3-5 golova",
-    4.85,
+    4.8,
     -5.0
    ],
    [
     "136",
     "1 & 3-6",
     "Angers pobednik i 3-6 golova",
-    4.55,
+    4.5,
     -6.0
    ],
    [
@@ -1234,7 +1234,7 @@
     "223",
     "2 & 2-3",
     "Olympique Marseille pobednik i 2-3 gola",
-    4.25,
+    4.3,
     -3.0
    ],
    [
@@ -1267,7 +1267,7 @@
     "12",
     "1 & ne",
     "Angers pobednik i barem jedan tim ne daje gol",
-    6.1,
+    6.0,
     1.0
    ],
    [
@@ -1295,7 +1295,7 @@
     "22",
     "2 & ne",
     "Olympique Marseille pobednik i barem jedan tim ne ",
-    4.1,
+    4.15,
     2.0
    ]
   ]
@@ -1307,7 +1307,7 @@
     "1",
     "1 & da",
     "Angers pobednik i gol u oba poluvremena",
-    4.45,
+    4.5,
     1.0
    ],
    [
@@ -1321,7 +1321,7 @@
     "2",
     "2 & da",
     "Olympique Marseille pobednik i gol u oba poluvreme",
-    3.05,
+    3.0,
     2.0
    ]
   ]
@@ -1333,7 +1333,7 @@
     "1-",
     "1 ili manje 0.5",
     "Angers pobednik utakmice ili 1. poluvreme manje od",
-    1.9,
+    1.92,
     0.5
    ],
    [
@@ -1361,7 +1361,7 @@
     "2-",
     "2 ili manje 0.5",
     "Olympique Marseille pobednik utakmice ili 1. poluv",
-    1.54,
+    1.53,
     0.5
    ],
    [
@@ -1380,14 +1380,14 @@
     "1-",
     "1 ili manje 1.5",
     "Angers pobednik utakmice ili 1. poluvreme manje od",
-    1.31,
+    1.32,
     1.5
    ],
    [
     "1+",
     "1 ili vise 1.5",
     "Angers pobednik utakmice ili 1. poluvreme više od ",
-    1.62,
+    1.63,
     1.5
    ],
    [
@@ -1408,14 +1408,14 @@
     "2-",
     "2 ili manje 1.5",
     "Olympique Marseille pobednik utakmice ili 1. poluv",
-    1.2,
+    1.19,
     1.5
    ],
    [
     "2+",
     "2 ili vise 1.5",
     "Olympique Marseille pobednik utakmice ili 1. poluv",
-    1.44,
+    1.43,
     1.5
    ]
   ]
@@ -1434,7 +1434,7 @@
     "1+",
     "1 ili vise 2.5",
     "Angers pobednik utakmice ili 1. poluvreme više od ",
-    2.22,
+    2.25,
     2.5
    ],
    [
@@ -1462,7 +1462,7 @@
     "2+",
     "2 ili vise 2.5",
     "Olympique Marseille pobednik utakmice ili 1. poluv",
-    1.77,
+    1.75,
     2.5
    ]
   ]
@@ -1474,7 +1474,7 @@
     "1+",
     "1 ili vise 3.5",
     "Angers pobednik utakmice ili 1. poluvreme više od ",
-    2.67,
+    2.7,
     3.5
    ],
    [
@@ -1488,7 +1488,7 @@
     "2+",
     "2 ili vise 3.5",
     "Olympique Marseille pobednik utakmice ili 1. poluv",
-    1.95,
+    1.92,
     3.5
    ]
   ]
@@ -1533,35 +1533,35 @@
     "1024",
     "1x & 2-4",
     "Angers će pobediti ili će biti nerešeno i biće 2-4",
-    2.27,
+    2.3,
     -4.0
    ],
    [
     "1025",
     "1x & 2-5",
     "Angers će pobediti ili će biti nerešeno i biće 2-5",
-    2.07,
+    2.1,
     -5.0
    ],
    [
     "1026",
     "1x & 2-6",
     "Angers će pobediti ili će biti nerešeno i biće 2-6",
-    1.95,
+    1.97,
     -6.0
    ],
    [
     "1035",
     "1x & 3-5",
     "Angers će pobediti ili će biti nerešeno i biće 3-5",
-    3.1,
+    3.15,
     -5.0
    ],
    [
     "1036",
     "1x & 3-6",
     "Angers će pobediti ili će biti nerešeno i biće 3-6",
-    2.82,
+    2.85,
     -6.0
    ],
    [
@@ -1582,28 +1582,28 @@
     "0225",
     "x2 & 2-5",
     "Biće nerešeno ili Olympique Marseille će pobediti ",
-    1.7,
+    1.69,
     -5.0
    ],
    [
     "0226",
     "x2 & 2-6",
     "Biće nerešeno ili Olympique Marseille će pobediti ",
-    1.58,
+    1.57,
     -6.0
    ],
    [
     "0235",
     "x2 & 3-5",
     "Biće nerešeno ili Olympique Marseille će pobediti ",
-    2.45,
+    2.42,
     -5.0
    ],
    [
     "0235",
     "x2 & 3-6",
     "Biće nerešeno ili Olympique Marseille će pobediti ",
-    2.22,
+    2.2,
     -6.0
    ]
   ]
@@ -1615,14 +1615,14 @@
     "",
     "0:1",
     "Biće ostvaren u bilo kom trenutku tokom regularnog",
-    1.77,
+    1.75,
     0.0
    ],
    [
     "",
     "1:0",
     "Biće ostvaren u bilo kom trenutku tokom regularnog",
-    2.15,
+    2.17,
     1.0
    ],
    [
@@ -1636,21 +1636,21 @@
     "",
     "0:2",
     "Biće ostvaren u bilo kom trenutku tokom regularnog",
-    3.5,
+    3.45,
     0.0
    ],
    [
     "",
     "1:2",
     "Biće ostvaren u bilo kom trenutku tokom regularnog",
-    3.5,
+    3.45,
     1.0
    ],
    [
     "",
     "2:1",
     "Biće ostvaren u bilo kom trenutku tokom regularnog",
-    4.2,
+    4.25,
     2.0
    ],
    [
@@ -1671,7 +1671,7 @@
     "",
     "1:3",
     "Biće ostvaren u bilo kom trenutku tokom regularnog",
-    6.6,
+    6.5,
     1.0
    ],
    [
@@ -1685,14 +1685,14 @@
     "",
     "3:1",
     "Biće ostvaren u bilo kom trenutku tokom regularnog",
-    9.5,
+    9.4,
     3.0
    ],
    [
     "",
     "2:3",
     "Biće ostvaren u bilo kom trenutku tokom regularnog",
-    9.7,
+    9.6,
     2.0
    ]
   ]
@@ -1725,7 +1725,7 @@
     "",
     "2 & vise 0.5",
     "Olympique Marseille pobednik utakmice i više od 0.",
-    2.02,
+    2.05,
     0.5
    ]
   ]
@@ -1737,14 +1737,14 @@
     "10-",
     "1x & manje od 2.5",
     "Angers će pobediti ili će biti nerešeno i biće man",
-    2.9,
+    2.92,
     2.5
    ],
    [
     "10+",
     "1x & vise od 2.5",
     "Angers će pobediti ili će biti nerešeno i biće viš",
-    2.7,
+    2.72,
     2.5
    ],
    [
@@ -1758,7 +1758,7 @@
     "02+",
     "x2 & vise od 2.5",
     "Biće nerešeno ili Olympique Marseille će pobediti ",
-    2.1,
+    2.07,
     2.5
    ],
    [
@@ -1772,7 +1772,7 @@
     "12+",
     "12 & vise od 2.5",
     "Angers ili Olympique Marseille će pobediti i biće ",
-    1.72,
+    1.71,
     2.5
    ]
   ]
@@ -1784,7 +1784,7 @@
     "101",
     "1x & da",
     "Angers će pobediti ili će biti nerešeno i oba tima",
-    2.17,
+    2.2,
     1.0
    ],
    [
@@ -2042,7 +2042,7 @@
     "",
     "2-3",
     "Angers 2-3 gola na utakmici",
-    2.67,
+    2.65,
     -3.0
    ]
   ]
@@ -2113,7 +2113,7 @@
     "13",
     "1-3",
     "Olympique Marseille 1,2 ili 3 gola u svakom poluvr",
-    2.8,
+    2.82,
     3.0
    ],
    [
@@ -2165,7 +2165,7 @@
     "0",
     "0",
     "Olympique Marseille ne daje gol",
-    4.85,
+    4.9,
     3.0
    ],
    [
@@ -2186,7 +2186,7 @@
     "3",
     "3+",
     "Olympique Marseille daje 3 ili više golova",
-    3.7,
+    3.65,
     3.0
    ]
   ]
@@ -2205,7 +2205,7 @@
     "2",
     "ne",
     "Angers ne daje gol na utakmici",
-    3.7,
+    3.65,
     null
    ]
   ]
@@ -2224,7 +2224,7 @@
     "2",
     "ne",
     "Olympique Marseille ne daje gol na utakmici",
-    4.9,
+    5.0,
     null
    ]
   ]
@@ -2250,7 +2250,7 @@
     "",
     "manje 0.5 & vise 1.5",
     "1. Poluvreme Angers manje od 0.5 golova i Angers v",
-    7.1,
+    7.0,
     1.5
    ],
    [
@@ -2271,7 +2271,7 @@
     "",
     "vise 0.5 & manje 2.5",
     "1. Poluvreme Angers više od 0.5 golova i Angers ma",
-    2.77,
+    2.8,
     2.5
    ],
    [
@@ -2285,14 +2285,14 @@
     "",
     "manje 0.5 & manje 2.5",
     "1. Poluvreme Angers manje od 0.5 golova i Angers m",
-    1.78,
+    1.77,
     2.5
    ],
    [
     "",
     "vise 1.5 & vise 2.5",
     "1. Poluvreme Angers više od 1.5 golova i Angers vi",
-    8.6,
+    8.7,
     2.5
    ],
    [
@@ -2306,7 +2306,7 @@
     "",
     "manje 1.5 & vise 2.5",
     "1. Poluvreme Angers manje od 1.5 golova i Angers v",
-    8.2,
+    8.1,
     2.5
    ],
    [
@@ -2421,7 +2421,7 @@
     "",
     "vise 0.5 & manje 0.5",
     "Angers daje više od 0.5 golova u 1. poluvremenu i ",
-    3.9,
+    4.0,
     2.0
    ],
    [
@@ -2449,7 +2449,7 @@
     "",
     "vise 0.5 & manje 2.5",
     "Angers daje više od 0.5 golova u 1. poluvremenu i ",
-    2.1,
+    2.12,
     2.0
    ],
    [
@@ -2470,7 +2470,7 @@
     "",
     "manje 0.5 & vise 1.5",
     "Angers daje manje od 0.5 golova u 1. poluvremenu i",
-    7.1,
+    7.0,
     2.0
    ],
    [
@@ -2491,7 +2491,7 @@
     "",
     "manje 0.5 & manje 2.5",
     "Angers daje manje od 0.5 golova u 1. poluvremenu i",
-    1.78,
+    1.77,
     2.0
    ]
   ]
@@ -2517,7 +2517,7 @@
     "",
     "vise 0.5 & vise 1.5",
     "Olympique Marseille daje više od 0.5 golova u 1. p",
-    5.85,
+    5.9,
     2.0
    ],
    [
@@ -2599,7 +2599,7 @@
     "2-",
     "2 & manje 0.5",
     "Olympique Marseille pobednik i Angers manje od 0.5",
-    4.1,
+    4.15,
     0.5
    ],
    [
@@ -2646,7 +2646,7 @@
     "2-",
     "2 & manje 1.5",
     "Olympique Marseille pobednik i Angers manje od 1.5",
-    2.37,
+    2.4,
     1.5
    ],
    [
@@ -2679,7 +2679,7 @@
     "1-",
     "1 & manje 2.5",
     "Angers pobednik i Angers manje od 2.5 gola na utak",
-    4.85,
+    4.8,
     2.5
    ],
    [
@@ -2700,7 +2700,7 @@
     "1+",
     "1 & vise 2.5",
     "Angers pobednik i Angers više od 2.5 gola na utakm",
-    6.1,
+    6.0,
     2.5
    ],
    [
@@ -2773,7 +2773,7 @@
     "1-",
     "1 & manje 4.5",
     "Angers pobednik i Angers manje od 4.5 gola na utak",
-    3.1,
+    3.15,
     4.5
    ],
    [
@@ -2794,7 +2794,7 @@
     "1+",
     "1 & vise 4.5",
     "Angers pobednik i Angers više od 4.5 gola na utakm",
-    31.0,
+    32.0,
     4.5
    ],
    [
@@ -2848,7 +2848,7 @@
     "2+",
     "2 & vise 0.5",
     "Olympique Marseille pobednik  i Olympique Marseill",
-    2.02,
+    2.05,
     0.5
    ]
   ]
@@ -2895,7 +2895,7 @@
     "2+",
     "2 & vise 1.5",
     "Olympique Marseille pobednik  i Olympique Marseill",
-    2.4,
+    2.42,
     1.5
    ]
   ]
@@ -2942,7 +2942,7 @@
     "2+",
     "2 & vise 2.5",
     "Olympique Marseille pobednik  i Olympique Marseill",
-    3.85,
+    3.9,
     2.5
    ]
   ]
@@ -2954,7 +2954,7 @@
     "1-",
     "1 & manje 3.5",
     "Angers pobednik  i Olympique Marseille manje od 3.",
-    3.05,
+    3.0,
     3.5
    ],
    [
@@ -2968,7 +2968,7 @@
     "2-",
     "2 & manje 3.5",
     "Olympique Marseille pobednik  i Olympique Marseill",
-    2.5,
+    2.52,
     3.5
    ],
    [
@@ -3036,7 +3036,7 @@
     "2+",
     "2 & vise 4.5",
     "Olympique Marseille pobednik  i Olympique Marseill",
-    17.0,
+    18.0,
     4.5
    ]
   ]
