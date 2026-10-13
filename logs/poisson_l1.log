@@ -1,0 +1,14 @@
+Izvor: Statshub (2026-10-13T11:52:29), 326 utakmica sa xG
+Model: 394 utakmica, 18 ekipa, mu 1.32, domaci faktor 1.27, beta xG 0.5
+   * Traceback (most recent call last):
+  File "C:\Users\Jovic\Desktop\ye\football_poisson.py", line 525, in <module>
+    main()
+    ~~~~^^
+  File "C:\Users\Jovic\Desktop\ye\football_poisson.py", line 466, in main
+    for n_ in F["notes"][:8]: print("   *", n_)
+                              ~~~~~^^^^^^^^^^^^
+  File "C:\Users\Jovic\AppData\Local\Programs\Python\Python314\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u010d' in position 43: character maps to <undefined>
+[UPOZORENJE] Predikcije za l1 nisu uspele.

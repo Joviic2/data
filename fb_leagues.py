@@ -96,13 +96,30 @@ LEAGUES = {
     "el": {"name": "Liga Evrope", "dir": "el", "path": "/leagues/europe/uefa-europa-league/679", "ut": 679, "tourn": None, "season": None, "csv": "",
            "struct": "liga evrope|europa league", "cup": True, "feeders": ["epl", "laliga", "sa", "bl", "l1"],
            "strength": {"epl": 1.00, "laliga": 0.97, "sa": 0.95, "bl": 0.95, "l1": 0.90}, "alias": {}},
-    "ecl": {"name": "Liga konferencije", "dir": "ecl", "path": "/leagues/europe/uefa-conference-league/17015", "ut": 17015, "tourn": None, "season": None, "csv": "",
-            "struct": "liga konferencije|conference league", "cup": True, "feeders": ["epl", "laliga", "sa", "bl", "l1"],
-            "strength": {"epl": 1.00, "laliga": 0.97, "sa": 0.95, "bl": 0.95, "l1": 0.90}, "alias": {}},
+    "conf": {"name": "Liga konferencije", "dir": "conf", "path": "/leagues/europe/uefa-conference-league/17015", "ut": 17015, "tourn": None, "season": None, "csv": "",
+             "struct": "liga konferencije|conference league|uefa lk", "cup": True, "feeders": ["epl", "laliga", "sa", "bl", "l1"],
+             "strength": {"epl": 1.00, "laliga": 0.97, "sa": 0.95, "bl": 0.95, "l1": 0.90}, "alias": {}},
 }
-CUP_TXT = {"cl": r"liga sampiona|champions league", "el": r"liga evrope|europa league", "ecl": r"liga konferencij|conference league"}
+CUP_TXT = {"cl": r"liga sampiona|champions league", "el": r"liga evrope|europa league", "conf": r"liga konferencij|conference league"}
 CUP_NOT = r"kvalifik|qualif|zene|women|youth|omladin|\bu ?\d\d\b|super ?cup|superkup|play ?off"
 
+
+
+# UEFA (cl/el/conf) se vode po TIMOVIMA: statshub_football.py za svaku ekipu ucesnicu skida sve njene utakmice (domace lige + Evropa), bez novih liga/foldera.
+# "feeders"/"strength" iznad ostaju samo kao rezervni nacin (kad data/<cup>/statshub_data.json ne postoji).
+# --- UEFA takmicenja (dodato iz add_uefa.py) ---
+UEFA = {
+    "cl": {"name": "UEFA Liga šampiona", "dir": "cl", "path": "/leagues/europe/uefa-champions-league/7", "ut": 7, "tourn": None, "season": None, "csv": None,
+           "struct": "liga sampiona|liga šampiona|champions league|uefa lš", "alias": {}},
+    "el": {"name": "UEFA Liga Evrope", "dir": "el", "path": "/leagues/europe/uefa-europa-league/679", "ut": 679, "tourn": None, "season": None, "csv": None,
+           "struct": "liga evrope|europa league|uefa le", "alias": {}},
+    "conf": {"name": "UEFA Liga konferencije", "dir": "conf", "path": "/leagues/europe/uefa-conference-league/17015", "ut": 17015, "tourn": None, "season": None, "csv": None,
+             "struct": "liga konferencije|conference league|uefa lk", "alias": {}},
+}
+_ALL_ALIAS = {a: b for _k, _v in LEAGUES.items() for a, b in (_v.get("alias") or {}).items()}
+for _k, _v in UEFA.items():
+    if _k not in LEAGUES:
+        LEAGUES[_k] = dict(_v, alias=dict(_ALL_ALIAS))
 
 def _code():
     a = sys.argv

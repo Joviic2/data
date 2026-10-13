@@ -38,6 +38,11 @@ ALIAS = {"manchester city": "man city", "mancester siti": "man city", "mancheste
 
 
 ALIAS.update(CUR["alias"])
+try:                                                  # UEFA: zajednicki recnik imena klubova (Statshub / Superbet / srpski prepisi) iz svih liga
+    import fb_eu
+    if fb_eu.is_cup(CUR): ALIAS.update({nrm_k: v for nrm_k, v in fb_eu.eu_alias().items()})
+except ImportError:
+    fb_eu = None
 
 
 def nrm(s):
@@ -101,7 +106,7 @@ def load(files):
 
 
 def fit(M, today, halflife=180.0, k=4.0):
-    w = [0.5 ** (max(0, (today - m["d"]).days) / halflife) for m in M]
+    w = [0.5 ** (max(0, (today - m["d"]).days) / halflife) * m.get("w", 1.0) for m in M]
     T = sorted({m["h"] for m in M} | {m["a"] for m in M})
     W, Gh, Ga = sum(w), sum(x * m["hg"] for x, m in zip(w, M)), sum(x * m["ag"] for x, m in zip(w, M))
     l0, mu, H = (Gh + Ga) / (2 * W), Ga / W, Gh / Ga
@@ -200,10 +205,12 @@ def fair(odds):
 SH = os.path.join(D, "statshub_data.json")
 
 
-def load_statshub(path=SH):
-    """(M, SD): M = utakmice u istom formatu kao load() + xh/xa (xG) + ts; SD = ceo JSON (profili timova)."""
+def load_statshub(path=SH, dom_w=1.0):
+    """(M, SD): M = utakmice u istom formatu kao load() + xh/xa (xG) + ts; SD = ceo JSON (profili timova).
+    dom_w: samo za UEFA (SD["cup"]): tezina NE-evropskih meceva (domace lige protivnika) pri ucenju snage; evropske utakmice imaju tezinu 1."""
     SD = json.load(open(path, encoding="utf-8"))
-    M = [{"d": datetime.strptime(m["d"], "%Y-%m-%d").date(), "ts": m["ts"], "h": m["h"], "a": m["a"], "hg": m["hg"], "ag": m["ag"], "xh": m.get("xh"), "xa": m.get("xa")} for m in SD["matches"]]
+    M = [{"d": datetime.strptime(m["d"], "%Y-%m-%d").date(), "ts": m["ts"], "h": m["h"], "a": m["a"], "hg": m["hg"], "ag": m["ag"], "xh": m.get("xh"), "xa": m.get("xa"),
+          "w": 1.0 if (not SD.get("cup") or m.get("eu")) else dom_w} for m in SD["matches"]]
     return M, SD
 
 
@@ -300,11 +307,11 @@ def backtest_cfg(M, K, a, beta):
     Negativna pristrasnost = model gura Under (potcenjuje golove); preporuceni --lam-scale je odnos stvarnog i predvidjenog prosecnog broja golova."""
     if not FX: print("fb_factors.py nije pored football_poisson.py"); return
     ms = sorted(M, key=lambda m: m["ts"]); test = ms[-K:]
-    cfgs = [(0.0, 0.0), (0.3, 0.0), (0.0, 0.25), (0.3, 0.25), (0.5, 0.25), (0.3, 0.5)]
+    cfgs = [(0.0, 0.0, 0.0), (0.3, 0.0, 0.0), (0.0, 0.25, 0.0), (0.3, 0.25, 0.0), (0.3, 0.25, a.opp_k), (0.5, 0.25, 0.0), (0.3, 0.5, 0.0)]
     print(f"\nBACKTEST KONFIGURACIJA: {len(test)} utakmica, beta {beta}, halflife {a.halflife}/{a.halflife_short}")
-    print(f"  {'recent-w':>8} {'mom-k':>6} | {'LL 1X2':>7} {'LL o2.5':>8} | {'P(o2.5)':>8} {'stvarno':>8} {'bias':>7} | {'gol pred':>8} {'gol stv':>8} | n")
+    print(f"  {'recent-w':>8} {'mom-k':>6} {'opp-k':>6} | {'LL 1X2':>7} {'LL o2.5':>8} | {'P(o2.5)':>8} {'stvarno':>8} {'bias':>7} | {'gol pred':>8} {'gol stv':>8} | n")
     base_scale = None
-    for rw, mk in cfgs:
+    for rw, mk, ok in cfgs:
         l12 = lo = n = 0; po_s = ov_s = tp = ta = 0.0
         for m in test:
             tr = [x for x in ms if x["ts"] < m["ts"] - 3600]
@@ -319,7 +326,7 @@ def backtest_cfg(M, K, a, beta):
                 return x, y
             lh, la = lam(m["h"], m["a"])
             if mk:
-                Pm = dict(FX.PARAMS, mom_k=mk)
+                Pm = dict(FX.PARAMS, mom_k=mk, opp_k=ok)
                 mh_, ma_ = FX.momentum(tr, beta, lam, m["h"], Pm), FX.momentum(tr, beta, lam, m["a"], Pm)
                 lh *= mh_["att"] * ma_["conc"] * ((1 + Pm["collapse_k"]) if ma_["collapse"] else 1)
                 la *= ma_["att"] * mh_["conc"] * ((1 + Pm["collapse_k"]) if mh_["collapse"] else 1)
@@ -330,7 +337,7 @@ def backtest_cfg(M, K, a, beta):
             lo -= math.log(max(1e-9, po if ov else 1 - po)); po_s += po; ov_s += ov; tp += lh * a.lam_scale + la * a.lam_scale; ta += m["hg"] + m["ag"]; n += 1
         if n:
             if base_scale is None: base_scale = ta / tp
-            print(f"  {rw:>8} {mk:>6} | {l12 / n:7.4f} {lo / n:8.4f} | {po_s / n:8.3f} {ov_s / n:8.3f} {(po_s - ov_s) / n:+7.3f} | {tp / n:8.2f} {ta / n:8.2f} | {n}")
+            print(f"  {rw:>8} {mk:>6} {ok:>6} | {l12 / n:7.4f} {lo / n:8.4f} | {po_s / n:8.3f} {ov_s / n:8.3f} {(po_s - ov_s) / n:+7.3f} | {tp / n:8.2f} {ta / n:8.2f} | {n}")
     if base_scale: print(f"\n  Osnovna konfiguracija: stvarni/predvidjeni golovi = {base_scale:.3f} -> --lam-scale {base_scale:.3f} ispravlja sistematsku pristrasnost (ako je dalje od 1.0 za vise od ~3%).")
     print("  Biraj konfiguraciju sa najmanjim log-lossom, ali samo ako je razlika veca od suma (n < 150 je mali uzorak). Stil, sudija, motivacija i vreme se ne mogu backtestovati (nema istorije).")
 
@@ -360,6 +367,8 @@ def main():
     ap.add_argument("--halflife-short", type=float, default=45.0); ap.add_argument("--k-short", type=float, default=6.0)
     ap.add_argument("--lam-scale", type=float, default=1.0, help="mnozi oba ocekivana gola; uzmi preporuku iz --backtest K --bt-grid ako model sistematski potcenjuje golove")
     ap.add_argument("--no-factors", action="store_true", help="iskljuci fb_factors.py (momentum, stil, sudija, motivacija, vreme)"); ap.add_argument("--no-weather", action="store_true")
+    ap.add_argument("--dom-w", type=float, default=0.6, help="UEFA: tezina domacih (ne-evropskih) utakmica u ucenju snage ekipa (1 = ravnopravno; manje = slabije lige manje naduvavaju rejting)")
+    ap.add_argument("--opp-k", type=float, default=PD.get("opp_k", .25), help="momentum: tezina meca raste/pada sa jacinom protivnika (0 = iskljuceno; pobeda protiv jakog vredi vise)")
     ap.add_argument("--mom-k", type=float, default=PD.get("mom_k", .25)); ap.add_argument("--style-k", type=float, default=PD.get("style_k", .03)); ap.add_argument("--mot-k", type=float, default=PD.get("mot_k", .04))
     ap.add_argument("--ref-k", type=float, default=PD.get("ref_k", .015)); ap.add_argument("--wx-k", type=float, default=PD.get("wx_k", .02))
     ap.add_argument("--under-rule", choices=["block", "demote", "off"], default="block", help="Under/NG na mecu gde je tim u naletu ili ima raspad odbrane: block = ne preporucuj, demote = spusti EV za --under-pen")
@@ -383,10 +392,19 @@ def main():
         sf.build(types.SimpleNamespace(offline=a.offline, ttl=6.0, limit=60, tournament=sf.resolve_ids(a.offline)[0], season=sf.resolve_ids(a.offline)[1], no_upcoming=False))
     Mraw = None
     SD, use_sh = None, a.source == "statshub" or (a.source == "auto" and os.path.exists(SH))
-    if CUR.get("cup"):
+    net = False
+    if CUR.get("cup") and os.path.exists(SH):
+        try: net = bool(json.load(open(SH, encoding="utf-8")).get("cup"))
+        except (OSError, ValueError): net = False
+    if CUR.get("cup") and net:                            # UEFA po timovima: ucesnici + protivnici iz svih takmicenja (statshub_football.py)
         if a.backtest: sys.exit("Backtest za evropska takmicenja nije podrzan; uradi ga na domacim ligama (--league epl --backtest 80).")
+        M, SD = load_statshub(dom_w=a.dom_w); use_sh = True; Mraw = M; M = eff(M, a.beta)
+        print(f"Izvor: Statshub UEFA mreza ({SD.get('updated')}): {len(M)} utakmica, {sum(1 for m in M if m.get('w', 1) < 1)} domacih (tezina {a.dom_w}), {sum(1 for m in Mraw if m['xh'] is not None)} sa xG")
+    elif CUR.get("cup"):
+        if a.backtest: sys.exit("Backtest za evropska takmicenja nije podrzan; uradi ga na domacim ligama (--league epl --backtest 80).")
+        print("  (nema UEFA podataka po timovima: pokreni statshub_football.py --league " + CUR["code"] + "; koristim stari nacin preko domacih liga)")
         M, SD = cup_load(a.beta); use_sh = True; Mraw = M; M = eff(M, a.beta); a.no_factors = True
-        print("  (faktori forme/stila/sudije/motivacije se za evropska takmicenja ne racunaju; ostaju xG, povrede i odmor)")
+        print("  (faktori forme/stila/sudije/motivacije se u ovom nacinu ne racunaju; ostaju xG, povrede i odmor)")
     elif use_sh:
         if not os.path.exists(SH): sys.exit(f"Nema {SH}. Pokreni: python statshub_football.py (ili --refresh)")
         M, SD = load_statshub()
@@ -410,8 +428,8 @@ def main():
         if mod_s:
             sx, sy = lam_of(mod_s, h_, g_); x, y = (1 - a.recent_w) * x + a.recent_w * sx, (1 - a.recent_w) * y + a.recent_w * sy
         return x, y
-    FP = dict(FX.PARAMS, mom_k=a.mom_k, style_k=a.style_k, mot_k=a.mot_k, ref_k=a.ref_k, wx_k=a.wx_k) if FX else None
-    fcfg = {"dir": D, "csv": CUR["csv"], "league": CUR["code"], "ut": CUR.get("ut"), "today": today, "ref": {}, "wx_off": a.no_weather}
+    FP = dict(FX.PARAMS, mom_k=a.mom_k, opp_k=a.opp_k, style_k=a.style_k, mot_k=a.mot_k, ref_k=a.ref_k, wx_k=a.wx_k) if FX else None
+    fcfg = {"dir": D, "csv": CUR["csv"], "league": CUR["code"], "ut": None if CUR.get("cup") else CUR.get("ut"), "today": today, "ref": {}, "wx_off": a.no_weather}
     for r_ in a.ref:
         k_, _, nm_ = r_.partition("=")
         pr_ = [canon(x.strip(), known) for x in k_.split(",")]
@@ -486,15 +504,21 @@ def main():
             print("UPOZORENJE: fb_explain.py nije pored football_poisson.py - tipovi ce biti bez objasnjenja iz JSON-a (sajt koristi rezervno objasnjenje)")
         json.dump({"updated": datetime.now().isoformat(timespec="seconds"), "w": a.w, "source": "statshub" if SD else "csv", "factors_on": bool(FX and not a.no_factors and SD), "beta": a.beta if SD else None, "rows": out, "skipped": skipped, "context": ctxs}, open(OUT, "w", encoding="utf-8"), ensure_ascii=False, separators=(",", ":"))
         print(f"\nupisano {len(out)} izbora u {OUT}" + (f" (izbaceno {dropped} sumnjivih: model i trziste se previse razilaze; --keep-sus ih vraca)" if dropped else ""))
-        if SD and FX and hasattr(FX, "league_table") and not CUR.get("cup"):            # tabela lige za desnu kolonu sajta (data/<liga>/table.json)
+        if SD:                                        # tabela lige za desnu kolonu sajta (data/<liga>/table.json); fb_table.py ima zone i logoe, rezervno FX.league_table
             try:
-                tb = FX.league_table(SD, CUR.get("ut"), today)
-                if tb["rows"]:
-                    tb.update({"updated": datetime.now().isoformat(timespec="seconds"), "league": CUR["code"], "zones": FX.ZONES.get(CUR["code"], FX.ZONES["epl"])})
-                    json.dump(tb, open(os.path.join(D, "table.json"), "w", encoding="utf-8"), ensure_ascii=False, separators=(",", ":"))
-                    print(f"tabela lige: {tb['n']} timova -> {os.path.join(D, 'table.json')}" + ("  (NEPOTPUNA: neki timovi imaju manje odigranih mečeva u podacima)" if tb["partial"] else ""))
+                import fb_table
+                tb = fb_table.write(CUR["code"], today=today, SD=SD)
             except Exception as ex_:
-                print("tabela lige nije upisana:", ex_)
+                tb = None; print("fb_table:", ex_)
+            if not tb and FX and hasattr(FX, "league_table") and not CUR.get("cup"):
+                try:
+                    tb = FX.league_table(SD, CUR.get("ut"), today)
+                    if tb["rows"]:
+                        tb.update({"updated": datetime.now().isoformat(timespec="seconds"), "league": CUR["code"], "zones": FX.ZONES.get(CUR["code"], FX.ZONES["epl"])})
+                        json.dump(tb, open(os.path.join(D, "table.json"), "w", encoding="utf-8"), ensure_ascii=False, separators=(",", ":"))
+                        print(f"tabela lige: {tb['n']} timova -> {os.path.join(D, 'table.json')}" + ("  (NEPOTPUNA: neki timovi imaju manje odigranih mečeva u podacima)" if tb["partial"] else ""))
+                except Exception as ex_:
+                    print("tabela lige nije upisana:", ex_)
 
 
 if __name__ == "__main__":

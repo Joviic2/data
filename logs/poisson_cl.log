@@ -1,0 +1,16 @@
+Izvor: Statshub UEFA mreza (2026-10-13T12:17:15): 923 utakmica, 750 domacih (tezina 0.6), 20 sa xG
+Model: 923 utakmica, 303 ekipa, mu 1.40, domaci faktor 1.33, beta xG 0.5
+  ne prepoznajem ekipu: Slovan Bratislava - Stuttgart (dodaj u ALIAS)
+  ne prepoznajem ekipu: Shakhtar Donetsk - AEK Athens (dodaj u ALIAS)
+   * Traceback (most recent call last):
+  File "C:\Users\Jovic\Desktop\ye\football_poisson.py", line 525, in <module>
+    main()
+    ~~~~^^
+  File "C:\Users\Jovic\Desktop\ye\football_poisson.py", line 466, in main
+    for n_ in F["notes"][:8]: print("   *", n_)
+                              ~~~~~^^^^^^^^^^^^
+  File "C:\Users\Jovic\AppData\Local\Programs\Python\Python314\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u010d' in position 13: character maps to <undefined>
+[UPOZORENJE] Predikcije za cl nisu uspele.

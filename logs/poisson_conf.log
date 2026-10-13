@@ -1,0 +1,6 @@
+  (nema UEFA podataka po timovima: pokreni statshub_football.py --league conf; koristim stari nacin preko domacih liga)
+Evropsko takmicenje: snaga ekipa iz liga epl, laliga, sa, bl, l1 (jacina liga: epl 1, laliga 0.97, sa 0.95, bl 0.95, l1 0.9)
+  (faktori forme/stila/sudije/motivacije se u ovom nacinu ne racunaju; ostaju xG, povrede i odmor)
+Model: 2011 utakmica, 96 ekipa, mu 1.30, domaci faktor 1.26, beta xG 0.5
+Nema data\conf\odds_superbet.json. Pokreni fetch_superbet_football.py ili koristi --match.
+[UPOZORENJE] Predikcije za conf nisu uspele.

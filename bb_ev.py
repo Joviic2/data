@@ -25,7 +25,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from fetch_superbet import LEAGUES, tokens, share, to_ms
 
 ND = NormalDist()
-MIN_G = 4                      # najmanje odigranih utakmica po timu da se model koristi
+MIN_G = 3                      # najmanje odigranih utakmica po timu da se model koristi
 W_MAX, W_K = 0.40, 5.0         # tezina modela = W_MAX * n/(n+W_K)
 SD_M, SD_T = (10.0, 16.0, 11.5), (13.0, 22.0, 16.5)   # (min, max, podrazumevano) sd razlike i ukupnog
 MKT_SD_M, MKT_SD_T = (8.0, 17.0), (11.0, 26.0)        # granice sd kriva trzista
@@ -158,12 +158,12 @@ def outcome(kind, mu, sd, L):
     return (win, push, 1 - win - push) if kind == "h" else (1 - win - push, push, win)
 
 
-def event_evs(e, pred, mod_ok, mkt_flag=True):
+def event_evs(e, pred, mod_ok, mkt_flag=True, sharp=None):
     b = e.get("b") or []
     tt = [(x["tt"], i == 0) for i, x in enumerate(b) if x.get("tt")]
     sp = [(x["sp"], i == 0) for i, x in enumerate(b) if x.get("sp")]
     h2h = b[0].get("h2h") if b else None
-    meta = {"model": bool(mod_ok)}
+    meta = {"model": bool(mod_ok), "sharp": bool(sharp)}
     # kriva trzista: ukupno (x = -L, jer P(over) pada sa linijom), razlika (x = +L, pobeda domacina je L=0)
     ct = cm = None
     if tt:
@@ -180,6 +180,23 @@ def event_evs(e, pred, mod_ok, mkt_flag=True):
     out = []
     w = pred["w"] if (pred and mod_ok) else 0.0
 
+    def sharp_p(k, side, L):
+        """Sansa izbora po Pinnacleu: kriva kroz njegovu liniju, pomerena (normalna, sd modela) na liniju koju Superbet nudi."""
+        if not sharp:
+            return None
+        if k == "h" and sharp.get("h") is not None:
+            return sharp["h"] if side == "h" else 1 - sharp["h"]
+        if k == "s" and sharp.get("sp"):
+            lp, pp = sharp["sp"]
+            hl = L if side == "h" else -L                      # linija domacina
+            ph = ND.cdf(ND.inv_cdf(cl(pp, .001, .999)) + (hl - lp) / (pred["sd_m"] if pred else SD_M[2]))
+            return ph if side == "h" else 1 - ph
+        if k == "t" and sharp.get("tt"):
+            lp, pp = sharp["tt"]
+            po = ND.cdf(ND.inv_cdf(cl(pp, .001, .999)) + (lp - L) / (pred["sd_t"] if pred else SD_T[2]))
+            return po if side == "o" else 1 - po
+        return None
+
     def add(k, mk, pick, side, L, odds, other, main, mkt_p, mdl):
         """mkt_p/mdl = (win, push, lose) trzisna (kriva) i modelska raspodela za TAJ izbor."""
         if not odds or odds <= 1.01:
@@ -188,20 +205,23 @@ def event_evs(e, pred, mod_ok, mkt_flag=True):
         kw, kp, kl = mkt_p
         pm = mw / (mw + ml) if mdl else None                  # sansa pobede kad se ulog vrati na push
         pf = kw / (kw + kl)
-        p = w * pm + (1 - w) * pf if pm is not None and w > 0 else pf
+        ps = sharp_p(k, side, L)                               # Pinnacle bez marze (pomerena na liniju ove opklade), ako postoji
+        pref = ps if ps is not None else pf                    # referenca: Pinnacle ako ga ima, inace Superbet bez marze
+        wm = min(w, 0.25) if ps is not None else w             # kad je referenca ostra, model dobija manju tezinu
+        p = wm * pm + (1 - wm) * pref if pm is not None and wm > 0 else pref
         push = (w * mp + (1 - w) * kp) if (mdl and w > 0) else kp
         ev = (1 - push) * (p * odds - 1)
         evm = (1 - mp) * (pm * odds - 1) if pm is not None else None
         raw, orr = (nv2(odds, other) if other else (None, None))
         row = {"k": k, "mk": mk, "pick": pick, "side": side, "line": L, "o": odds, "alt": not main, "p": round(p, 4), "pm": None if pm is None else round(pm, 4),
-               "pf": round(pf, 4), "pf_raw": None if raw is None else round(raw, 4), "vig": None if orr is None else round(orr - 1, 4), "push": round(push, 4),
+               "pf": round(pf, 4), "ps": None if ps is None else round(ps, 4), "ref": "pinnacle" if ps is not None else "superbet", "pf_raw": None if raw is None else round(raw, 4), "vig": None if orr is None else round(orr - 1, 4), "push": round(push, 4),
                "ev": round(ev, 4), "ev_m": None if evm is None else round(evm, 4), "fair": round(1 / p, 3) if p > 0 else None,
                "kelly": round(max(0.0, (p * odds - 1) / (odds - 1)), 4)}
         why = None
         if pm is None:
             why = "nema modela (tim nije prepoznat ili premalo odigranih utakmica)"
-        elif abs(pm - pf) > OK_DIV:
-            why = f"model i tržište se razilaze {abs(pm - pf) * 100:.0f} p.p."
+        elif abs(pm - pref) > OK_DIV:
+            why = f"model i tržište se razilaze {abs(pm - pref) * 100:.0f} p.p."
         elif ev > OK_EV:
             why = f"EV {ev * 100:.0f}% je neverovatno visok (verovatno povreda/pogrešan model)"
         row["ok"] = why is None
@@ -261,6 +281,17 @@ def run_league(lg, a):
     now = time.time()
     games = load_games(site, now)
     clubs = club_codes(site)
+    sharp_map = {}                                             # Pinnacle iz data/[<liga>/]odds.json (The Odds API), ako postoji
+    sh = jl(os.path.join(os.path.dirname(c["out"]), "odds.json"), {}) or {}
+    for se in sh.get("events") or []:
+        pin = next((b for b in se.get("b") or [] if b.get("key") == "pinnacle"), None)
+        sh_, sa_ = code_of(se.get("h", ""), clubs), code_of(se.get("a", ""), clubs)
+        if pin and sh_ and sa_:
+            d = {}
+            if pin.get("h2h") and all(pin["h2h"]): d["h"] = nv2(*pin["h2h"])[0]
+            if pin.get("sp") and pin["sp"][0] is not None: d["sp"] = (pin["sp"][0], nv2(pin["sp"][1], pin["sp"][2])[0])
+            if pin.get("tt") and pin["tt"][0] is not None: d["tt"] = (pin["tt"][0], nv2(pin["tt"][1], pin["tt"][2])[0])
+            sharp_map[(sh_, sa_)] = d
     mod = fit(games, now, a.half, a.lam) if len(games) >= 12 else None
     res, nok = [], 0
     for e in od["events"]:
@@ -276,7 +307,7 @@ def run_league(lg, a):
             why = "nema rezultata lige u site.json" if not mod else "tim nije prepoznat u site.json"
         ok = bool(pred) and why is None
         pr = pred or {"w": 0, "sd_m": SD_M[2], "sd_t": SD_T[2], "margin": 0, "total": 0}
-        evs, meta = event_evs(e, pr, ok)
+        evs, meta = event_evs(e, pr, ok, sharp=sharp_map.get((h, aw)) if h and aw else None)
         if pred:
             meta["q"] = {"margin": round(pred["margin"], 2), "total": round(pred["total"], 2), "pts": [round(x, 1) for x in pred["pts"]], "sd_m": round(pred["sd_m"], 2),
                          "sd_t": round(pred["sd_t"], 2), "se_m": round(pred["se_m"], 2), "se_t": round(pred["se_t"], 2), "w": round(pred["w"], 3), "n": pred["n"],
