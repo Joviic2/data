@@ -13,6 +13,8 @@ Izlaz po mecu: {"h","a","start","comp","x12":[1,X,2],"ou":[[linija,vise,manje],.
 import argparse, collections, datetime, glob, json, os, random, re, sys, time, unicodedata, urllib.error
 from football_poisson import canon, nrm, load as load_results
 from fetch_superbet import get, events_in, num, line_of, event_id, push, DETAIL, URL
+try: from fetch_superbet import tour_text
+except ImportError: tour_text = lambda ev: ""
 
 from fb_leagues import CUR
 OUT = os.path.join("data", CUR["dir"], "odds_superbet.json")
@@ -282,7 +284,7 @@ def parse_fb(ev, diag):
         return None
     ids = ids_of(ev)
     tid = next((v for k, v in ids.items() if re.search("tournament", k, re.I)), "")
-    return {"h": parts[0].strip(), "a": parts[1].strip(), "start": f.get("utc_date"), "comp": f"t{tid}", "ids": ids,
+    return {"h": parts[0].strip(), "a": parts[1].strip(), "start": f.get("utc_date"), "comp": f"t{tid}", "ids": ids, "tt": tour_text(ev),
             "x12": Xr, "ou": OU, "btts": B, "eid": event_id(ev), **ex}
 
 
@@ -328,6 +330,38 @@ def show_sample(raw):
             print("    trziste:", mk.get("name"), "|", od)
         if not ev.get("markets"):
             print("    (nema polja markets; kljucevi:", list(ev)[:12], ")")
+
+
+CUP_EXTRA_NOT = re.compile(r"\beal\b|\bafc\b|\bcaf\b|concacaf|conmebol|\bofc\b|e ?comp|battle|\bgt\b|utakmice na dan|asian|azij|afric|volta|\bu ?\d\d\b|\((z|w)\)|\bzene\b|\bwomen\b|fifa|svet", re.I)
+
+
+def cup_ids(code):
+    """Id-jevi turnira iz Superbet stabla ciji naziv odgovara evropskom takmicenju (npr. 'Liga Šampiona', 'UEFA - Liga Šampiona'), bez kvalifikacija,
+    zena, azijskih/africkih/e-sport 'Liga Sampiona' i slicnih. Snima ih i u data/superbet_comps_fb.json da ih koristi i fb_live.py."""
+    from fb_leagues import CUP_TXT, CUP_NOT
+    rx, nx = re.compile(CUP_TXT[code], re.I), re.compile(CUP_NOT, re.I)
+    found = {}
+    def walk(o, path=""):
+        if isinstance(o, dict):
+            ln = o.get("localNames")
+            if isinstance(ln, dict) and ".tournaments" in path:
+                nm = " / ".join(str(v) for v in ln.values()); l = low(nm)
+                if rx.search(l) and not nx.search(l) and not CUP_EXTRA_NOT.search(l):
+                    if code == "el" and re.search(r"konferenc|conference", l): return
+                    if o.get("id") not in (None, ""): found[str(o["id"])] = nm
+            for k, v in o.items(): walk(v, f"{path}.{k}")
+        elif isinstance(o, list):
+            for i, v in enumerate(o): walk(v, f"{path}[{i}]")
+    walk(get(STRUCT))
+    plain = {i: n for i, n in found.items() if not re.search(r"\bgr\.? ?[a-h0-9]\b", low(n))}   # od ove sezone je jedna tabela (faza lige): 'Gr.A..H' su stare grupe/drugi turniri
+    if plain: found = plain
+    try:
+        fn = os.path.join("data", "superbet_comps_fb.json")
+        cur = json.load(open(fn, encoding="utf-8")) if os.path.exists(fn) else {}
+        if found and sorted(map(str, cur.get(code) or [])) != sorted(found):
+            cur[code] = sorted(found); os.makedirs("data", exist_ok=True); json.dump(cur, open(fn, "w", encoding="utf-8"), ensure_ascii=False)
+    except Exception: pass
+    return found
 
 
 def diag_ids(allv):
@@ -431,7 +465,21 @@ def once(a):
         print("Neprepoznato:", diag.most_common(8))
         return
     explicit = a.tournament or a.category or a.comp
-    if explicit:
+    if CUR.get("cup") and not explicit:
+        # evropski kup: turnir se prepoznaje po nazivu turnira iz feeda (ne po klubovima, jer bi inace usli i domaci ligaski mecevi istih klubova)
+        from fb_leagues import CUP_TXT, CUP_NOT
+        rx, nx = re.compile(CUP_TXT[CUR["code"]], re.I), re.compile(CUP_NOT, re.I)
+        mine = lambda r: bool(rx.search(r.get("tt") or "")) and not nx.search(r.get("tt") or "") and not BAD.search(r["h"]) and not BAD.search(r["a"])
+        if CUR["code"] == "el": mine = (lambda f: (lambda r: f(r) and not re.search(r"konferenc|conference", r.get("tt") or "", re.I)))(mine)
+        ids_ = {}
+        try: ids_ = cup_ids(CUR["code"])
+        except Exception as ex_: print("  stablo turnira nije procitano:", ex_)
+        by_id = lambda r: any(v in ids_ for k, v in r["ids"].items() if re.search("tournament", k, re.I)) and not BAD.search(r["h"]) and not BAD.search(r["a"])
+        evs = [r for r in allv if mine(r) or by_id(r)]
+        if ids_: print(f"  turniri iz Superbet stabla ({len(ids_)}): " + "; ".join(f"{i} {n}" for i, n in list(ids_.items())[:8]) + f" -> mečeva u feedu: {len(evs)}")
+        if not evs:
+            print(f"Nijedan meč u feedu nema turnir '{CUR['name']}' u nazivu (feed ima {len(allv)} fudbalskih). Turnire vidiš sa: py fetch_superbet_football.py --league {CUR['code']} --struct ; zatim --comp <id>")
+    elif explicit:
         if a.tournament: hit = lambda r: any(v == str(a.tournament) for k, v in r["ids"].items() if re.search("tournament", k, re.I))
         elif a.category: hit = lambda r: any(v == str(a.category) for k, v in r["ids"].items() if re.search("categor", k, re.I))
         else: hit = lambda r: str(a.comp) in r["ids"].values()
@@ -456,7 +504,7 @@ def once(a):
         diag["detalj_ok" if ds else "detalj_prazan"] += 1
         if ds: merge(r, ds[0])
     for r in evs:
-        r.pop("eid", None); r.pop("ids", None)
+        r.pop("eid", None); r.pop("ids", None); r.pop("tt", None)
     print(f"{datetime.datetime.now():%H:%M:%S} comp {comp}: {len(evs)} mecova (od {len(allv)} fudbalskih), detalj {len(todo)}")
     for r in evs[:20]:
         print(f"  {r['h']} - {r['a']} | {r['start']} | 1X2 {r['x12']} | ukupno {len(r['ou'])} lin | GG/NG {r['btts']} | DC {bool(r.get('dc'))} AH {len(r.get('ah') or [])} AU {len(r.get('ouah') or [])} EH {len(r.get('eh') or [])} rasp {len(r.get('range') or [])} G&{len(r.get('bttsx') or [])} HT/FT {len(r.get('htft') or {})} ostalo {len(r.get('other') or [])}")

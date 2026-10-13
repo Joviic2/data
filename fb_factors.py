@@ -24,7 +24,7 @@ PARAMS = dict(
     style_k=0.03, mot_k=0.04, ref_k=0.015, wx_k=0.02, late_share=0.27,   # stil, motivacija, sudija, vreme; udeo golova u poslednjih ~20 min
     desp_n=8, desp_thr=0.45, desp_red=0.60, desp_att_k=0.06, desp_conc_k=0.04,   # ocaj: prozor mecova, prag korekcije, prag crvene zone, max -6% napad / +4% primljeno (0 = iskljuceno)
 )
-ZONES = {"epl": {"cl": 4, "eu": 7, "rel": 3}, "laliga": {"cl": 4, "eu": 7, "rel": 3}, "l1": {"cl": 3, "eu": 6, "rel": 3}, "sa": {"cl": 4, "eu": 7, "rel": 3}}
+ZONES = {"epl": {"cl": 4, "eu": 7, "rel": 3}, "laliga": {"cl": 4, "eu": 7, "rel": 3}, "l1": {"cl": 3, "eu": 6, "rel": 3}, "sa": {"cl": 4, "eu": 7, "rel": 3}, "bl": {"cl": 4, "eu": 6, "rel": 2}}
 # priblizne koordinate stadiona (dovoljno za prognozu); drugi klubovi: data/<liga>/stadiums.json  {"kljuc": [lat, lon]}
 STADIUMS = {
     "arsenal": (51.555, -0.109), "aston villa": (52.509, -1.885), "bournemouth": (50.735, -1.838), "brentford": (51.491, -0.289), "brighton": (50.862, -0.083),
@@ -239,7 +239,7 @@ def standings(SD, ut, today):
     T = (SD or {}).get("teams") or {}
     start = f"{today.year if today.month >= 7 else today.year - 1}-07-01"
     tab = {k: {"pts": 0, "pl": 0, "gd": 0, "gf": 0} for k in T}
-    for m in (SD or {}).get("matches") or []:
+    for m in (SD or {}).get("league_matches") or (SD or {}).get("matches") or []:
         if m.get("ut") != ut or m["d"] < start or m["h"] not in tab or m["a"] not in tab:
             continue
         for t, gf, ga in ((m["h"], m["hg"], m["ag"]), (m["a"], m["ag"], m["hg"])):
@@ -248,6 +248,36 @@ def standings(SD, ut, today):
     for i, t in enumerate(order):
         tab[t]["rank"] = i + 1
     return tab, order
+
+
+def league_table(SD, ut, today):
+    """Pun prikaz tabele za sajt (data/<liga>/table.json): mesto, tim, odigrano, P/N/I, golovi, bodovi, forma (poslednjih 5).
+    Izvor: Statshub rezultati tekuce sezone (ut = unique tournament). Ako neki tim ima bitno manje mecava u podacima (npr. Statshub ucitava samo
+    poslednjih ~60 dogadjaja po timu), `partial` je True i sajt to prijavljuje."""
+    T = (SD or {}).get("teams") or {}
+    start = f"{today.year if today.month >= 7 else today.year - 1}-07-01"
+    R = {k: {"key": k, "name": v.get("name") or k, "pl": 0, "w": 0, "d": 0, "l": 0, "gf": 0, "ga": 0, "pts": 0, "res": []} for k, v in T.items()}
+    seen = set()
+    for m in sorted((SD or {}).get("league_matches") or (SD or {}).get("matches") or [], key=lambda m: m.get("ts") or 0):
+        sig = (m.get("d"), m.get("h"), m.get("a"))
+        if m.get("ut") != ut or (m.get("d") or "") < start or m["h"] not in R or m["a"] not in R or sig in seen:
+            continue
+        seen.add(sig)
+        for t, gf, ga in ((m["h"], m["hg"], m["ag"]), (m["a"], m["ag"], m["hg"])):
+            r = R[t]; r["pl"] += 1; r["gf"] += gf; r["ga"] += ga
+            k = "w" if gf > ga else "d" if gf == ga else "l"
+            r[k] += 1; r["pts"] += 3 if k == "w" else 1 if k == "d" else 0; r["res"].append(k.upper())
+    off = (SD or {}).get("standing") or {}
+    for k, o in off.items():                    # sluzbena tabela (Statshub standing) ima prednost nad racunom iz mecova
+        if k in R:
+            R[k].update(o)
+    rows = [r for r in R.values() if r["pl"] > 0]
+    rows.sort(key=lambda r: (-r["pts"], -(r["gf"] - r["ga"]), -r["gf"], r["name"]))
+    for i, r in enumerate(rows):
+        r["rank"] = i + 1; r["gd"] = r["gf"] - r["ga"]; r["form"] = "".join(r.pop("res")[-5:])
+    pls = sorted(r["pl"] for r in rows)
+    partial = bool(pls) and (pls[-1] - pls[0] > 1 or pls[len(pls) // 2] < 1) and len(off) < 10
+    return {"rows": rows, "n": len(rows), "partial": partial, "official": len(off) >= 10, "season_from": start}
 
 
 def motivation(tab, order, key, zone, P):
