@@ -1,6 +1,6 @@
 {
  "season": "E2026",
- "run_at": "2026-10-13T05:48:32.576365+00:00",
+ "run_at": "2026-10-13T06:21:55.278004+00:00",
  "checks": [
   {
    "name": "results",
@@ -516,7 +516,7 @@
    "url": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2026/games",
    "params": null,
    "status": 200,
-   "bytes": 704053,
+   "bytes": 705488,
    "content_type": "application/json; charset=utf-8",
    "preview": "{\"data\":[{\"id\":\"b4377faa-0f7f-445d-a2c6-d66d20f60f54\",\"identifier\":\"E2026_379\",\"gameCode\":379,\"season\":{\"name\":\"EuroLeague 2026-27\",\"code\":\"E2026\",\"alias\":\"2026-27\",\"competitionCode\":\"E\",\"year\":2026,\""
   },
