@@ -6,7 +6,11 @@
     "",
     "manje 0.5",
     "Manje od 0.5 golova u 1. poluvremenu",
+<<<<<<< HEAD
     3.6,
+=======
+    3.55,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     0.5
    ],
    [
@@ -20,28 +24,44 @@
     "",
     "manje 1.5",
     "Manje od 1.5 golova u 1. poluvremenu",
+<<<<<<< HEAD
     1.61,
+=======
+    1.6,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
     "",
     "vise 1.5",
     "Više od 1.5 golova u 1. poluvremenu",
+<<<<<<< HEAD
     2.27,
+=======
+    2.3,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
     "",
     "manje 2.5",
     "Manje od 2.5 golova u 1. poluvremenu",
+<<<<<<< HEAD
     1.16,
+=======
+    1.15,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
     "",
     "vise 2.5",
     "Više od 2.5 golova u 1. poluvremenu",
+<<<<<<< HEAD
     5.1,
+=======
+    5.15,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
@@ -62,7 +82,11 @@
     "",
     "vise 4.5",
     "Više od 4.5 golova u 1. poluvremenu",
+<<<<<<< HEAD
     34.0,
+=======
+    35.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     4.5
    ]
   ]
@@ -252,7 +276,11 @@
     "1",
     "sabah baku",
     "Sabah Baku pobednik u 1. poluvremenu",
+<<<<<<< HEAD
     3.85,
+=======
+    3.9,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.0
    ],
    [
@@ -278,7 +306,11 @@
     "1",
     "1",
     "Sabah Baku pobednik u 1. poluvremenu ili na kraju",
+<<<<<<< HEAD
     2.6,
+=======
+    2.62,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.0
    ],
    [
@@ -304,14 +336,23 @@
     "",
     "1:0, 2:0 ili 3:0",
     "Utakmica će završiti rezultatom 1-0, 2-0 ili 3-0.",
+<<<<<<< HEAD
     8.0,
     -0.0
+=======
+    7.9,
+    0.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "",
     "0:1, 0:2 ili 0:3",
     "Utakmica će završiti rezultatom 0:1, 0:2 ili 0:3",
+<<<<<<< HEAD
     4.6,
+=======
+    4.5,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.0
    ],
    [
@@ -339,21 +380,33 @@
     "",
     "1:2, 1:3 ili 1:4",
     "Utakmica će završiti rezultatom 1:2, 1:3 ili 1:4",
+<<<<<<< HEAD
     4.85,
+=======
+    4.9,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     4.0
    ],
    [
     "",
     "3:2, 4:2, 4:3 ili 5:1",
     "Utakmica će završiti rezultatom 3:2, 4:2, 4:3 ili ",
+<<<<<<< HEAD
     18.0,
+=======
+    19.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.0
    ],
    [
     "",
     "2:3, 2:4, 3:4 ili 1:5",
     "Utakmica će završiti rezultatom 2:3, 2:4, 3:4 ili ",
+<<<<<<< HEAD
     10.0,
+=======
+    11.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     5.0
    ],
    [
@@ -367,13 +420,21 @@
     "",
     "gost pobeda, ostali",
     "Gostujući tim pobeđuje bilo kojim drugim rezultato",
+<<<<<<< HEAD
     38.0,
+=======
+    40.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     null
    ]
   ]
  },
  "Winner DNB": {
+<<<<<<< HEAD
   "mecova": 17,
+=======
+  "mecova": 18,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
   "primer": [
    [
     "1",
@@ -391,6 +452,7 @@
    ]
   ]
  },
+<<<<<<< HEAD
  "Tačan rezultat u bilo kom trenutku": {
   "mecova": 16,
   "primer": [
@@ -482,6 +544,10 @@
  },
  "Ukupno šuteva u okvir gola": {
   "mecova": 15,
+=======
+ "Ukupno šuteva u okvir gola": {
+  "mecova": 17,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
   "primer": [
    [
     "*1-",
@@ -515,14 +581,22 @@
     "*1-",
     "manje 7.5",
     "Manje od 7.5 šuteva u okvir gola",
+<<<<<<< HEAD
     3.0,
+=======
+    2.9,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     7.5
    ],
    [
     "*1+",
     "vise 7.5",
     "Više od 7.5 šuteva u okvir gola",
+<<<<<<< HEAD
     1.34,
+=======
+    1.32,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     7.5
    ],
    [
@@ -536,14 +610,22 @@
     "*1+",
     "vise 8.5",
     "Više od 8.5 šuteva u okvir gola",
+<<<<<<< HEAD
     1.61,
+=======
+    1.6,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     8.5
    ],
    [
     "*1-",
     "manje 9.5",
     "Manje od 9.5 šuteva u okvir gola",
+<<<<<<< HEAD
     1.69,
+=======
+    1.7,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     9.5
    ],
    [
@@ -569,6 +651,98 @@
    ]
   ]
  },
+<<<<<<< HEAD
+=======
+ "Tačan rezultat u bilo kom trenutku": {
+  "mecova": 16,
+  "primer": [
+   [
+    "",
+    "0:1",
+    "Biće ostvaren u bilo kom trenutku tokom regularnog",
+    1.66,
+    0.0
+   ],
+   [
+    "",
+    "1:1",
+    "Biće ostvaren u bilo kom trenutku tokom regularnog",
+    2.25,
+    1.0
+   ],
+   [
+    "",
+    "1:0",
+    "Biće ostvaren u bilo kom trenutku tokom regularnog",
+    2.32,
+    1.0
+   ],
+   [
+    "",
+    "0:2",
+    "Biće ostvaren u bilo kom trenutku tokom regularnog",
+    3.1,
+    0.0
+   ],
+   [
+    "",
+    "1:2",
+    "Biće ostvaren u bilo kom trenutku tokom regularnog",
+    3.35,
+    1.0
+   ],
+   [
+    "",
+    "2:1",
+    "Biće ostvaren u bilo kom trenutku tokom regularnog",
+    4.55,
+    2.0
+   ],
+   [
+    "",
+    "2:2",
+    "Biće ostvaren u bilo kom trenutku tokom regularnog",
+    5.55,
+    2.0
+   ],
+   [
+    "",
+    "2:0",
+    "Biće ostvaren u bilo kom trenutku tokom regularnog",
+    5.7,
+    2.0
+   ],
+   [
+    "",
+    "1:3",
+    "Biće ostvaren u bilo kom trenutku tokom regularnog",
+    6.0,
+    1.0
+   ],
+   [
+    "",
+    "0:3",
+    "Biće ostvaren u bilo kom trenutku tokom regularnog",
+    6.2,
+    0.0
+   ],
+   [
+    "",
+    "2:3",
+    "Biće ostvaren u bilo kom trenutku tokom regularnog",
+    9.3,
+    2.0
+   ],
+   [
+    "",
+    "3:1",
+    "Biće ostvaren u bilo kom trenutku tokom regularnog",
+    11.0,
+    3.0
+   ]
+  ]
+ },
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
  "Ukupno šuteva": {
   "mecova": 15,
   "primer": [
@@ -590,14 +764,22 @@
     "",
     "manje 23.5",
     "manje od 23.5 šuteva",
+<<<<<<< HEAD
     3.2,
+=======
+    3.1,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     23.5
    ],
    [
     "",
     "vise 23.5",
     "više od 23.5 šuteva",
+<<<<<<< HEAD
     1.3,
+=======
+    1.28,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     23.5
    ],
    [
@@ -659,7 +841,11 @@
   ]
  },
  "Ukupno faulova": {
+<<<<<<< HEAD
   "mecova": 12,
+=======
+  "mecova": 15,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
   "primer": [
    [
     "/*0-",
@@ -706,13 +892,21 @@
   ]
  },
  "1X2 & ukupno golova (2.5)": {
+<<<<<<< HEAD
   "mecova": 12,
+=======
+  "mecova": 13,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
   "primer": [
    [
     "",
     "1 & manje 2.5",
     "Sabah Baku pobednik utakmice i manje od 2.5 gola n",
+<<<<<<< HEAD
     8.0,
+=======
+    7.8,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
@@ -726,32 +920,98 @@
     "",
     "2 & manje 2.5",
     "Slavia Prague pobednik utakmice i manje od 2.5 gol",
+<<<<<<< HEAD
     5.3,
+=======
+    5.2,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
     "",
     "1 & vise 2.5",
     "Sabah Baku pobednik utakmice i više od 2.5 gola na",
+<<<<<<< HEAD
     4.75,
+=======
+    4.8,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
     "",
     "x & vise 2.5",
     "Nerešeno na kraju utakmice i više od 2.5 gola na u",
+<<<<<<< HEAD
     7.7,
+=======
+    7.9,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
     "",
     "2 & vise 2.5",
     "Slavia Prague pobednik utakmice i više od 2.5 gola",
+<<<<<<< HEAD
     2.57,
+=======
+    2.6,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ]
   ]
  },
+<<<<<<< HEAD
+=======
+ "1X2 & ukupno golova (1.5)": {
+  "mecova": 12,
+  "primer": [
+   [
+    "",
+    "1 & manje 1.5",
+    "Sabah Baku pobednik utakmice i manje od 1.5 gola n",
+    12.0,
+    1.5
+   ],
+   [
+    "",
+    "x & manje 1.5",
+    "Nerešeno na kraju utakmice  i manje od 1.5 gola na",
+    13.0,
+    1.5
+   ],
+   [
+    "",
+    "2 & manje 1.5",
+    "Slavia Prague pobednik utakmice i manje od 1.5 gol",
+    8.4,
+    1.5
+   ],
+   [
+    "",
+    "1 & vise 1.5",
+    "Sabah Baku pobednik utakmice i više od 1.5 gola na",
+    4.1,
+    1.5
+   ],
+   [
+    "",
+    "x & vise 1.5",
+    "Nerešeno na kraju utakmice i više od 1.5 gola na u",
+    4.2,
+    1.5
+   ],
+   [
+    "",
+    "2 & vise 1.5",
+    "Slavia Prague pobednik utakmice i više od 1.5 gola",
+    2.17,
+    1.5
+   ]
+  ]
+ },
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
  "1X2 & ukupno golova (3.5)": {
   "mecova": 12,
   "primer": [
@@ -759,7 +1019,11 @@
     "",
     "1 & manje 3.5",
     "Sabah Baku pobednik utakmice i manje od 3.5 gola n",
+<<<<<<< HEAD
     4.9,
+=======
+    4.85,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.5
    ],
    [
@@ -773,28 +1037,44 @@
     "",
     "2 & manje 3.5",
     "Slavia Prague pobednik utakmice i manje od 3.5 gol",
+<<<<<<< HEAD
     3.05,
+=======
+    3.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.5
    ],
    [
     "",
     "1 & vise 3.5",
     "Sabah Baku pobednik utakmice i više od 3.5 gola na",
+<<<<<<< HEAD
     7.6,
+=======
+    7.7,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.5
    ],
    [
     "",
     "x & vise 3.5",
     "Nerešeno na kraju utakmice i više od 3.5 gola na u",
+<<<<<<< HEAD
     7.7,
+=======
+    7.9,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.5
    ],
    [
     "",
     "2 & vise 3.5",
     "Slavia Prague pobednik utakmice i više od 3.5 gola",
+<<<<<<< HEAD
     4.0,
+=======
+    4.1,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.5
    ]
   ]
@@ -820,7 +1100,11 @@
     "",
     "2 & manje 4.5",
     "Slavia Prague pobednik utakmice i manje od 4.5 gol",
+<<<<<<< HEAD
     2.45,
+=======
+    2.42,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     4.5
    ],
    [
@@ -841,11 +1125,16 @@
     "",
     "2 & vise 4.5",
     "Slavia Prague pobednik utakmice i više od 4.5 gola",
+<<<<<<< HEAD
     5.85,
+=======
+    5.9,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     4.5
    ]
   ]
  },
+<<<<<<< HEAD
  "1X2 & ukupno golova (1.5)": {
   "mecova": 11,
   "primer": [
@@ -895,53 +1184,85 @@
  },
  "Dupla šansa & ukupno golova (3.5)": {
   "mecova": 11,
+=======
+ "Dupla šansa & ukupno golova (3.5)": {
+  "mecova": 12,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
   "primer": [
    [
     "10-",
     "1x & manje od 3.5",
     "Sabah Baku će pobediti ili će biti nerešeno i biće",
+<<<<<<< HEAD
     2.5,
+=======
+    2.47,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.5
    ],
    [
     "10+",
     "1x & vise od 3.5",
     "Sabah Baku će pobediti ili će biti nerešeno i biće",
+<<<<<<< HEAD
     3.8,
+=======
+    3.9,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.5
    ],
    [
     "02-",
     "x2 & manje od 3.5",
     "Biće nerešeno ili Slavia Prague će pobediti i biće",
+<<<<<<< HEAD
     1.9,
+=======
+    1.88,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.5
    ],
    [
     "02+",
     "x2 & vise od 3.5",
     "Biće nerešeno ili Slavia Prague će pobediti i biće",
+<<<<<<< HEAD
     2.62,
+=======
+    2.67,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.5
    ],
    [
     "12-",
     "12 & manje od 3.5",
     "Sabah Baku ili Slavia Prague će pobediti i biće ma",
+<<<<<<< HEAD
     1.88,
+=======
+    1.85,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.5
    ],
    [
     "12+",
     "12 & vise od 3.5",
     "Sabah Baku ili Slavia Prague će pobediti i biće vi",
+<<<<<<< HEAD
     2.62,
+=======
+    2.65,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.5
    ]
   ]
  },
  "Dupla šansa & ukupno golova (4.5)": {
+<<<<<<< HEAD
   "mecova": 11,
+=======
+  "mecova": 12,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
   "primer": [
    [
     "10-",
@@ -954,54 +1275,86 @@
     "10+",
     "1x & vise od 4.5",
     "Sabah Baku će pobediti ili će biti nerešeno i biće",
+<<<<<<< HEAD
     6.2,
+=======
+    6.3,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     4.5
    ],
    [
     "02-",
     "x2 & manje od 4.5",
     "Biće nerešeno ili Slavia Prague će pobediti i biće",
+<<<<<<< HEAD
     1.49,
+=======
+    1.48,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     4.5
    ],
    [
     "02+",
     "x2 & vise od 4.5",
     "Biće nerešeno ili Slavia Prague će pobediti i biće",
+<<<<<<< HEAD
     4.3,
+=======
+    4.35,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     4.5
    ],
    [
     "12-",
     "12 & manje od 4.5",
     "Sabah Baku ili Slavia Prague će pobediti i biće ma",
+<<<<<<< HEAD
     1.55,
+=======
+    1.54,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     4.5
    ],
    [
     "12+",
     "12 & vise od 4.5",
     "Sabah Baku ili Slavia Prague će pobediti i biće vi",
+<<<<<<< HEAD
     3.7,
+=======
+    3.75,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     4.5
    ]
   ]
  },
  "Dupla šansa & ukupno golova (5.5)": {
+<<<<<<< HEAD
   "mecova": 11,
+=======
+  "mecova": 12,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
   "primer": [
    [
     "10-",
     "1x & manje od 5.5",
     "Sabah Baku će pobediti ili će biti nerešeno i biće",
+<<<<<<< HEAD
     1.87,
+=======
+    1.85,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     5.5
    ],
    [
     "10+",
     "1x & vise od 5.5",
     "Sabah Baku će pobediti ili će biti nerešeno i biće",
+<<<<<<< HEAD
     9.4,
+=======
+    9.7,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     5.5
    ],
    [
@@ -1015,33 +1368,53 @@
     "02+",
     "x2 & vise od 5.5",
     "Biće nerešeno ili Slavia Prague će pobediti i biće",
+<<<<<<< HEAD
     6.3,
+=======
+    6.4,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     5.5
    ],
    [
     "12-",
     "12 & manje od 5.5",
     "Sabah Baku ili Slavia Prague će pobediti i biće ma",
+<<<<<<< HEAD
     1.33,
+=======
+    1.32,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     5.5
    ],
    [
     "12+",
     "12 & vise od 5.5",
     "Sabah Baku ili Slavia Prague će pobediti i biće vi",
+<<<<<<< HEAD
     6.2,
+=======
+    6.3,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     5.5
    ]
   ]
  },
  "1. poluvreme ukupno golova & Ukupno golova": {
+<<<<<<< HEAD
   "mecova": 11,
+=======
+  "mecova": 12,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
   "primer": [
    [
     "",
     "vise 0.5 & vise 1.5",
     "Više od 0.5 golova u 1. poluvremenu & više od 1.5 ",
+<<<<<<< HEAD
     1.36,
+=======
+    1.37,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
@@ -1062,42 +1435,66 @@
     "",
     "manje 0.5 & manje 1.5",
     "Manje od 0.5 golova u 1. poluvremenu & manje od 1.",
+<<<<<<< HEAD
     6.4,
+=======
+    6.3,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
     "",
     "vise 0.5 & vise 2.5",
     "Više od 0.5 golova u 1. poluvremenu & više od 2.5 ",
+<<<<<<< HEAD
     1.7,
+=======
+    1.72,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
     "",
     "vise 0.5 & manje 2.5",
     "Više od 0.5 golova u 1. poluvremenu & manje od 2.5",
+<<<<<<< HEAD
     4.1,
+=======
+    4.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
     "",
     "manje 0.5 & vise 2.5",
     "Manje od 0.5 golova u 1. poluvremenu & više od 2.5",
+<<<<<<< HEAD
     9.9,
+=======
+    10.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
     "",
     "manje 0.5 & manje 2.5",
     "Manje od 0.5 golova u 1. poluvremenu & manje od 2.",
+<<<<<<< HEAD
     4.45,
+=======
+    4.4,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
     "",
     "vise 1.5 & vise 2.5",
     "Više od 1.5 golova u 1. poluvremenu & više od 2.5 ",
+<<<<<<< HEAD
     2.45,
+=======
+    2.47,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
@@ -1118,54 +1515,86 @@
     "",
     "manje 1.5 & manje 2.5",
     "Manje od 1.5 golova u 1. poluvremenu & manje od 2.",
+<<<<<<< HEAD
     2.6,
+=======
+    2.55,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ]
   ]
  },
  "1. poluvreme ukupno golova & 2. poluvreme ukupno golova": {
+<<<<<<< HEAD
   "mecova": 11,
+=======
+  "mecova": 12,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
   "primer": [
    [
     "0+0+",
     "vise 0.5 & vise 0.5",
     "Više od 0.5 golova u 1. poluvremenu & više od 0.5 ",
+<<<<<<< HEAD
     1.51,
+=======
+    1.52,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
     "0+0-",
     "vise 0.5 & manje 0.5",
     "Više od 0.5 golova u 1. poluvremenu & manje od 0.5",
+<<<<<<< HEAD
     5.9,
+=======
+    5.85,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
     "0+1+",
     "vise 0.5 & vise 1.5",
     "Više od 0.5 golova u 1. poluvremenu & više od 1.5 ",
+<<<<<<< HEAD
     2.3,
+=======
+    2.32,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
     "0+1-",
     "vise 0.5 & manje 1.5",
     "Više od 0.5 golova u 1. poluvremenu & manje od 1.5",
+<<<<<<< HEAD
     2.52,
+=======
+    2.5,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
     "0+2+",
     "vise 0.5 & vise 2.5",
     "Više od 0.5 golova u 1. poluvremenu & više od 2.5 ",
+<<<<<<< HEAD
     4.25,
+=======
+    4.3,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
     "0+2-",
     "vise 0.5 & manje 2.5",
     "Više od 0.5 golova u 1. poluvremenu & manje od 2.5",
+<<<<<<< HEAD
     1.68,
+=======
+    1.67,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
@@ -1193,33 +1622,53 @@
     "0-1-",
     "manje 0.5 & manje 1.5",
     "Manje od 0.5 golova u 1. poluvremenu & manje od 1.",
+<<<<<<< HEAD
     6.4,
+=======
+    6.3,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
     "0-2+",
     "manje 0.5 & vise 2.5",
     "Manje od 0.5 golova u 1. poluvremenu & više od 2.5",
+<<<<<<< HEAD
     9.9,
+=======
+    10.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
     "0-2-",
     "manje 0.5 & manje 2.5",
     "Manje od 0.5 golova u 1. poluvremenu & manje od 2.",
+<<<<<<< HEAD
     4.45,
+=======
+    4.4,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ]
   ]
  },
  "1. poluvreme ukupno golova ili 2. poluvreme ukupno golova": {
+<<<<<<< HEAD
   "mecova": 11,
+=======
+  "mecova": 12,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
   "primer": [
    [
     "+1+1",
     "vise 1.5 ili vise 1.5",
     "Više 1.5 ili više 1.5",
+<<<<<<< HEAD
     1.31,
+=======
+    1.32,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
@@ -1233,7 +1682,11 @@
     "+1+2",
     "vise 1.5 ili vise 2.5",
     "Više 1.5 ili više 2.5",
+<<<<<<< HEAD
     1.66,
+=======
+    1.67,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
@@ -1247,7 +1700,11 @@
     "+1+3",
     "vise 1.5 ili vise 3.5",
     "Više 1.5 ili više 3.5",
+<<<<<<< HEAD
     1.95,
+=======
+    1.97,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.5
    ],
    [
@@ -1289,33 +1746,53 @@
     "-1+3",
     "manje 1.5 ili vise 3.5",
     "Manje 1.5 ili više 3.5",
+<<<<<<< HEAD
     1.49,
+=======
+    1.48,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.5
    ],
    [
     "+2+1",
     "vise 2.5 ili vise 1.5",
     "Više 2.5 ili više 1.5",
+<<<<<<< HEAD
     1.55,
+=======
+    1.56,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ]
   ]
  },
  "Pobednik bilo koje poluvreme": {
+<<<<<<< HEAD
   "mecova": 11,
+=======
+  "mecova": 12,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
   "primer": [
    [
     "1",
     "sabah baku",
     "Sabah Baku pobeđuje barem jedno poluvreme",
+<<<<<<< HEAD
     2.12,
+=======
+    2.15,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     null
    ],
    [
     "0",
     "nereseno",
     "Nerešeno u barem jednom poluvremenu",
+<<<<<<< HEAD
     1.61,
+=======
+    1.6,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     null
    ],
    [
@@ -1328,32 +1805,52 @@
   ]
  },
  "Gol u oba poluvremena": {
+<<<<<<< HEAD
   "mecova": 11,
+=======
+  "mecova": 12,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
   "primer": [
    [
     "",
     "da",
     "gol će biti postignut u oba poluvremena",
+<<<<<<< HEAD
     1.51,
+=======
+    1.52,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     null
    ],
    [
     "",
     "ne",
     "gol neće biti postignut u oba poluvremena",
+<<<<<<< HEAD
     2.4,
+=======
+    2.37,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     null
    ]
   ]
  },
  "Raspon golova u svakom poluvremenu": {
+<<<<<<< HEAD
   "mecova": 11,
+=======
+  "mecova": 12,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
   "primer": [
    [
     "12",
     "1-2",
     "u svakom poluvremenu će biti postignuto 1 ili 2 go",
+<<<<<<< HEAD
     2.7,
+=======
+    2.67,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
@@ -1367,13 +1864,21 @@
     "23",
     "2-3",
     "u svakom poluvremenu će biti postignuto 2 ili 3 go",
+<<<<<<< HEAD
     5.25,
+=======
+    5.3,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.0
    ]
   ]
  },
  "Tačno golova": {
+<<<<<<< HEAD
   "mecova": 11,
+=======
+  "mecova": 12,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
   "primer": [
    [
     "0",
@@ -1386,21 +1891,33 @@
     "1",
     "1",
     "Utakmica će završiti sa 1 golom",
+<<<<<<< HEAD
     6.5,
+=======
+    6.3,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     6.0
    ],
    [
     "2",
     "2",
     "Utakmica će završiti sa 2 gola",
+<<<<<<< HEAD
     4.15,
+=======
+    4.1,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     6.0
    ],
    [
     "3",
     "3",
     "Utakmica će završiti sa 3 gola",
+<<<<<<< HEAD
     4.15,
+=======
+    4.1,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     6.0
    ],
    [
@@ -1414,26 +1931,42 @@
     "5",
     "5",
     "Utakmica će završiti sa 5 golova",
+<<<<<<< HEAD
     7.4,
+=======
+    7.5,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     6.0
    ],
    [
     "6",
     "6+",
     "Utakmica će završiti sa 6 ili više golova",
+<<<<<<< HEAD
     7.8,
+=======
+    8.1,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     6.0
    ]
   ]
  },
  "Ukupno golova & oba tima daju gol": {
+<<<<<<< HEAD
   "mecova": 11,
+=======
+  "mecova": 12,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
   "primer": [
    [
     "+1",
     "vise 2.5 & da",
     "Više od 2.5 gola i oba tima daju gol",
+<<<<<<< HEAD
     1.82,
+=======
+    1.83,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
@@ -1454,14 +1987,22 @@
     "-2",
     "manje 2.5 & ne",
     "Manje od 2.5 gola i barem jedan tim ne daje gol",
+<<<<<<< HEAD
     3.15,
+=======
+    3.05,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
     "+1",
     "vise 3.5 & da",
     "Više od 3.5 gola i oba tima daju gol",
+<<<<<<< HEAD
     2.55,
+=======
+    2.6,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.5
    ],
    [
@@ -1482,21 +2023,33 @@
     "-2",
     "manje 3.5 & ne",
     "Manje od 3.5 gola i barem jedan tim ne daje gol",
+<<<<<<< HEAD
     2.65,
+=======
+    2.6,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.5
    ],
    [
     "+1",
     "vise 4.5 & da",
     "Više od 4.5 gola i oba tima daju gol",
+<<<<<<< HEAD
     4.15,
+=======
+    4.3,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     4.5
    ],
    [
     "-1",
     "manje 4.5 & da",
     "Manje od 4.5 gola i oba tima daju gol",
+<<<<<<< HEAD
     2.15,
+=======
+    2.17,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     4.5
    ],
    [
@@ -1510,38 +2063,62 @@
     "-2",
     "manje 4.5 & ne",
     "Manje od 4.5 gola i barem jedan tim ne daje gol",
+<<<<<<< HEAD
     2.47,
+=======
+    2.42,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     4.5
    ]
   ]
  },
  "Oba tima daju po dva ili više golova": {
+<<<<<<< HEAD
   "mecova": 11,
+=======
+  "mecova": 12,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
   "primer": [
    [
     "1",
     "da",
     "Oba tima daju po 2 ili više golova na utakmici",
+<<<<<<< HEAD
     3.9,
+=======
+    4.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
     "2",
     "ne",
     "Barem jedan tim ne daje 2 ili više golova na utakm",
+<<<<<<< HEAD
     1.21,
+=======
+    1.2,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ]
   ]
  },
  "Oba tima daju gol 1.poluvreme/2.poluvreme": {
+<<<<<<< HEAD
   "mecova": 11,
+=======
+  "mecova": 12,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
   "primer": [
    [
     "11",
     "da/da",
     "Oba tima daju gol u 1. i 2. poluvremenu",
+<<<<<<< HEAD
     8.3,
+=======
+    8.6,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
@@ -1555,18 +2132,27 @@
     "01",
     "ne/da",
     "Barem jedan tim neće dati gol u 1. poluvremenu i o",
+<<<<<<< HEAD
     3.4,
+=======
+    3.45,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
     "00",
     "ne/ne",
     "Barem jedan tim neće dati gol u 1. poluvremenu i b",
+<<<<<<< HEAD
     1.85,
+=======
+    1.83,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ]
   ]
  },
+<<<<<<< HEAD
  "1X2 & ukupno golova (5.5)": {
   "mecova": 8,
   "primer": [
@@ -1663,6 +2249,10 @@
  },
  "Igrač postiže gol": {
   "mecova": 7,
+=======
+ "Igrač postiže gol": {
+  "mecova": 10,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
   "primer": [
    [
     "",
@@ -1675,42 +2265,66 @@
     "",
     "mojmir chytil",
     "Postiže gol",
+<<<<<<< HEAD
     2.5,
+=======
+    2.55,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     null
    ],
    [
     "",
     "joy-lance mickels",
     "Postiže gol",
+<<<<<<< HEAD
     3.05,
+=======
+    3.1,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     null
    ],
    [
     "",
     "orphe mbina",
     "Postiže gol",
+<<<<<<< HEAD
     3.2,
+=======
+    3.1,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     null
    ],
    [
     "",
     "danijel sturm",
     "Postiže gol",
+<<<<<<< HEAD
     3.25,
+=======
+    3.3,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     null
    ],
    [
     "",
     "emmanuel ayaosi",
     "Postiže gol",
+<<<<<<< HEAD
     3.35,
+=======
+    3.45,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     null
    ],
    [
     "",
     "veljko simic",
     "Postiže gol",
+<<<<<<< HEAD
     3.45,
+=======
+    3.5,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     null
    ],
    [
@@ -1729,29 +2343,49 @@
    ],
    [
     "",
+<<<<<<< HEAD
     "mubarak suleiman",
     "Postiže gol",
     4.15,
+=======
+    "kaheem parris",
+    "Postiže gol",
+    4.3,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     null
    ],
    [
     "",
+<<<<<<< HEAD
     "kaheem parris",
     "Postiže gol",
     4.25,
+=======
+    "mubarak suleiman",
+    "Postiže gol",
+    4.3,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     null
    ],
    [
     "",
     "shahin ibrahimov",
     "Postiže gol",
+<<<<<<< HEAD
     4.4,
+=======
+    4.45,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     null
    ]
   ]
  },
  "Igrač postiže 1. gol": {
+<<<<<<< HEAD
   "mecova": 7,
+=======
+  "mecova": 9,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
   "primer": [
    [
     "",
@@ -1839,20 +2473,129 @@
    ]
   ]
  },
+<<<<<<< HEAD
  "Gol bilo kog igrača sa klupe": {
+=======
+ "Dupla šansa & ukupno golova (2.5)": {
+  "mecova": 9,
+  "primer": [
+   [
+    "10-",
+    "1x & manje od 2.5",
+    "Sabah Baku će pobediti ili će biti nerešeno i biće",
+    3.05,
+    2.5
+   ],
+   [
+    "10+",
+    "1x & vise od 2.5",
+    "Sabah Baku će pobediti ili će biti nerešeno i biće",
+    3.0,
+    2.5
+   ],
+   [
+    "02-",
+    "x2 & manje od 2.5",
+    "Biće nerešeno ili Slavia Prague će pobediti i biće",
+    2.55,
+    2.5
+   ],
+   [
+    "02+",
+    "x2 & vise od 2.5",
+    "Biće nerešeno ili Slavia Prague će pobediti i biće",
+    1.95,
+    2.5
+   ],
+   [
+    "12-",
+    "12 & manje od 2.5",
+    "Sabah Baku ili Slavia Prague će pobediti i biće ma",
+    3.1,
+    2.5
+   ],
+   [
+    "12+",
+    "12 & vise od 2.5",
+    "Sabah Baku ili Slavia Prague će pobediti i biće vi",
+    1.68,
+    2.5
+   ]
+  ]
+ },
+ "1X2 & ukupno golova (5.5)": {
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
   "mecova": 7,
+  "primer": [
+   [
+    "",
+<<<<<<< HEAD
+    "da",
+    "Bilo koji igrač sa klupe će postići gol. Za mečeve",
+    2.5,
+    15.0
+=======
+    "1 & manje 5.5",
+    "Viking pobednik utakmice i manje od 5.5 gola na ut",
+    15.0,
+    5.5
+   ],
+   [
+    "",
+    "x & manje 5.5",
+    "Nerešeno na kraju utakmice  i manje od 5.5 gola na",
+    10.0,
+    5.5
+   ],
+   [
+    "",
+    "2 & manje 5.5",
+    "Bayern Munich pobednik utakmice i manje od 5.5 gol",
+    1.62,
+    5.5
+   ],
+   [
+    "",
+    "1 & vise 5.5",
+    "Viking pobednik utakmice i više od 5.5 gola na uta",
+    60.0,
+    5.5
+   ],
+   [
+    "",
+    "x & vise 5.5",
+    "Nerešeno na kraju utakmice i više od 5.5 gola na u",
+    38.0,
+    5.5
+   ],
+   [
+    "",
+    "2 & vise 5.5",
+    "Bayern Munich pobednik utakmice i više od 5.5 gola",
+    2.87,
+    5.5
+   ]
+  ]
+ },
+ "Gol bilo kog igrača sa klupe": {
+  "mecova": 6,
   "primer": [
    [
     "",
     "da",
     "Bilo koji igrač sa klupe će postići gol. Za mečeve",
     2.5,
-    15.0
+    null
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ]
   ]
  },
  "Sudija da pogleda VAR bar jednom": {
+<<<<<<< HEAD
   "mecova": 7,
+=======
+  "mecova": 6,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
   "primer": [
    [
     "",
@@ -1864,7 +2607,11 @@
   ]
  },
  "Sudija da pogleda VAR bar dva puta": {
+<<<<<<< HEAD
   "mecova": 7,
+=======
+  "mecova": 6,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
   "primer": [
    [
     "",
@@ -1876,67 +2623,111 @@
   ]
  },
  "Sudija da pogleda VAR i da dosudi penal": {
+<<<<<<< HEAD
   "mecova": 7,
+=======
+  "mecova": 6,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
   "primer": [
    [
     "",
     "da",
     "Sudija će pogledati VAR i dosudiće penal. Za mečev",
     5.0,
+<<<<<<< HEAD
     15.0
+=======
+    null
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ]
   ]
  },
  "Sudija da pogleda VAR i ne menja prvobitnu odluku": {
+<<<<<<< HEAD
   "mecova": 7,
+=======
+  "mecova": 6,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
   "primer": [
    [
     "",
     "da",
     "Sudija će pogledati VAR i neće promeniti prvobitnu",
     10.0,
+<<<<<<< HEAD
     15.0
+=======
+    null
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ]
   ]
  },
  "Oba golmana imaće odbranu u oba poluvremena": {
+<<<<<<< HEAD
   "mecova": 7,
+=======
+  "mecova": 6,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
   "primer": [
    [
     "",
     "da",
     "Oba golmana će imati odbraniti u oba poluvremena. ",
     2.5,
+<<<<<<< HEAD
     15.0
+=======
+    null
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ]
   ]
  },
  "Bilo koji golman asistira": {
+<<<<<<< HEAD
   "mecova": 7,
+=======
+  "mecova": 6,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
   "primer": [
    [
     "",
     "da",
     "Bilo koji golman će asistirati . Za mečeve koji uk",
     50.0,
+<<<<<<< HEAD
     15.0
+=======
+    null
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ]
   ]
  },
  "Oba golmana biće faulirana": {
+<<<<<<< HEAD
   "mecova": 7,
+=======
+  "mecova": 6,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
   "primer": [
    [
     "",
     "da",
     "Oba golmana će biti faulirana. Za mečeve koji uklj",
     15.0,
+<<<<<<< HEAD
     15.0
+=======
+    null
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ]
   ]
  },
  "3+ šuteva u okvir gola van šesnaesterca": {
+<<<<<<< HEAD
   "mecova": 7,
+=======
+  "mecova": 6,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
   "primer": [
    [
     "",
@@ -1948,55 +2739,91 @@
   ]
  },
  "Gol van šesnaesterca": {
+<<<<<<< HEAD
   "mecova": 7,
+=======
+  "mecova": 6,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
   "primer": [
    [
     "",
     "da",
     "Bilo koji igrač će postići gol van šesnaesterca. Z",
     2.5,
+<<<<<<< HEAD
     15.0
+=======
+    null
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ]
   ]
  },
  "Gol glavom": {
+<<<<<<< HEAD
   "mecova": 7,
+=======
+  "mecova": 6,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
   "primer": [
    [
     "",
     "da",
     "Bilo koji igrač će postići gol glavom. Za mečeve k",
     2.8,
+<<<<<<< HEAD
     15.0
+=======
+    null
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ]
   ]
  },
  "Gol direktno iz slobodnog udarca": {
+<<<<<<< HEAD
   "mecova": 7,
+=======
+  "mecova": 6,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
   "primer": [
    [
     "",
     "da",
     "Bilo koji igrač će dati gol direktno iz slobodnog ",
     12.0,
+<<<<<<< HEAD
     15.0
+=======
+    null
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ]
   ]
  },
  "Gol makazicama": {
+<<<<<<< HEAD
   "mecova": 7,
+=======
+  "mecova": 6,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
   "primer": [
    [
     "",
     "da",
     "Bilo koji igrač će postići gol makazicama. Za meče",
     50.0,
+<<<<<<< HEAD
     15.0
+=======
+    null
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ]
   ]
  },
  "Crveni karton ili gol u nadoknadi vremena ('90+) 2. poluvremena": {
+<<<<<<< HEAD
   "mecova": 7,
+=======
+  "mecova": 6,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
   "primer": [
    [
     "",
@@ -2008,7 +2835,11 @@
   ]
  },
  "Bilo koji igrač dobija karton u nadoknadi vremena ('90+) 2. poluvremena": {
+<<<<<<< HEAD
   "mecova": 7,
+=======
+  "mecova": 6,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
   "primer": [
    [
     "",
@@ -2020,31 +2851,51 @@
   ]
  },
  "Oba tima izvode korner iz svakog ugla terena": {
+<<<<<<< HEAD
   "mecova": 7,
+=======
+  "mecova": 6,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
   "primer": [
    [
     "",
     "da",
     "Oba tima će izvesti korner iz svakog ugla terena. ",
     8.0,
+<<<<<<< HEAD
     15.0
+=======
+    null
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ]
   ]
  },
  "Strelac gola skida dres da proslavi": {
+<<<<<<< HEAD
   "mecova": 7,
+=======
+  "mecova": 6,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
   "primer": [
    [
     "",
     "da",
     "Igrač koji postiže gol će skinuti dres da bi prosl",
     5.0,
+<<<<<<< HEAD
     15.0
+=======
+    null
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ]
   ]
  },
  "Dosuđen penal, crveni karton i postignut autogol": {
+<<<<<<< HEAD
   "mecova": 7,
+=======
+  "mecova": 6,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
   "primer": [
    [
     "",
@@ -2055,6 +2906,7 @@
    ]
   ]
  },
+<<<<<<< HEAD
  "Ukupno dodavanja": {
   "mecova": 5,
   "primer": [
@@ -2069,80 +2921,136 @@
  },
  "Dupla šansa & ukupno golova (1.5)": {
   "mecova": 4,
+=======
+ "Dupla šansa & ukupno golova (1.5)": {
+  "mecova": 5,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
   "primer": [
    [
     "10-",
     "1x & manje od 1.5",
+<<<<<<< HEAD
     "LASK Linz će pobediti ili će biti nerešeno i biće ",
     11.0,
+=======
+    "Sabah Baku će pobediti ili će biti nerešeno i biće",
+    5.55,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
     "10+",
     "1x & vise od 1.5",
+<<<<<<< HEAD
     "LASK Linz će pobediti ili će biti nerešeno i biće ",
     4.0,
+=======
+    "Sabah Baku će pobediti ili će biti nerešeno i biće",
+    2.07,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
     "02-",
     "x2 & manje od 1.5",
+<<<<<<< HEAD
     "Biće nerešeno ili Liverpool će pobediti i biće man",
     6.7,
+=======
+    "Biće nerešeno ili Slavia Prague će pobediti i biće",
+    4.85,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
     "02+",
     "x2 & vise od 1.5",
+<<<<<<< HEAD
     "Biće nerešeno ili Liverpool će pobediti i biće viš",
     1.18,
+=======
+    "Biće nerešeno ili Slavia Prague će pobediti i biće",
+    1.43,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
     "12-",
     "12 & manje od 1.5",
+<<<<<<< HEAD
     "LASK Linz ili Liverpool će pobediti i biće manje o",
     6.8,
+=======
+    "Sabah Baku ili Slavia Prague će pobediti i biće ma",
+    4.7,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
     "12+",
     "12 & vise od 1.5",
+<<<<<<< HEAD
     "LASK Linz ili Liverpool će pobediti i biće više od",
     1.24,
+=======
+    "Sabah Baku ili Slavia Prague će pobediti i biće vi",
+    1.42,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ]
   ]
  },
  "1X2 & ukupno golova (0.5)": {
+<<<<<<< HEAD
   "mecova": 3,
+=======
+  "mecova": 4,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
   "primer": [
    [
     "",
     "x & manje 0.5",
     "Nerešeno na kraju utakmice  i manje od 0.5 gola na",
+<<<<<<< HEAD
     11.0,
+=======
+    13.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     0.5
    ],
    [
     "",
     "1 & vise 0.5",
+<<<<<<< HEAD
     "Betis pobednik utakmice i više od 0.5 gola na utak",
     2.02,
+=======
+    "Sabah Baku pobednik utakmice i više od 0.5 gola na",
+    3.4,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     0.5
    ],
    [
     "",
     "x & vise 0.5",
     "Nerešeno na kraju utakmice i više od 0.5 gola na u",
+<<<<<<< HEAD
     4.15,
+=======
+    4.2,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     0.5
    ],
    [
     "",
     "2 & vise 0.5",
+<<<<<<< HEAD
     "Porto pobednik utakmice i više od 0.5 gola na utak",
     3.05,
+=======
+    "Slavia Prague pobednik utakmice i više od 0.5 gola",
+    1.85,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     0.5
    ]
   ]
@@ -2557,7 +3465,11 @@
     "*12+",
     "vise 4.5",
     "Slavia Prague će imati više od 4.5 šuteva u okvir ",
+<<<<<<< HEAD
     1.64,
+=======
+    1.63,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     4.5
    ],
    [
@@ -2602,6 +3514,23 @@
   "primer": [
    [
     "",
+<<<<<<< HEAD
+=======
+    "manje 7.5",
+    "Sabah Baku manje od 7.5 šuteva,",
+    4.2,
+    7.5
+   ],
+   [
+    "",
+    "vise 7.5",
+    "Sabah Baku više od 7.5 šuteva",
+    1.15,
+    7.5
+   ],
+   [
+    "",
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     "manje 8.5",
     "Sabah Baku manje od 8.5 šuteva,",
     3.15,
@@ -2618,28 +3547,44 @@
     "",
     "manje 9.5",
     "Sabah Baku manje od 9.5 šuteva,",
+<<<<<<< HEAD
     2.52,
+=======
+    2.47,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     9.5
    ],
    [
     "",
     "vise 9.5",
     "Sabah Baku više od 9.5 šuteva",
+<<<<<<< HEAD
     1.47,
+=======
+    1.45,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     9.5
    ],
    [
     "",
     "manje 10.5",
     "Sabah Baku manje od 10.5 šuteva,",
+<<<<<<< HEAD
     2.05,
+=======
+    2.02,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     10.5
    ],
    [
     "",
     "vise 10.5",
     "Sabah Baku više od 10.5 šuteva",
+<<<<<<< HEAD
     1.69,
+=======
+    1.7,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     10.5
    ],
    [
@@ -2669,6 +3614,7 @@
     "Sabah Baku više od 12.5 šuteva",
     2.45,
     12.5
+<<<<<<< HEAD
    ],
    [
     "",
@@ -2683,6 +3629,8 @@
     "Sabah Baku više od 13.5 šuteva",
     3.0,
     13.5
+=======
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ]
   ]
  },
@@ -2693,14 +3641,22 @@
     "",
     "manje 12.5",
     "Slavia Prague manje od 12.5 šuteva",
+<<<<<<< HEAD
     3.2,
+=======
+    3.05,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     12.5
    ],
    [
     "",
     "vise 12.5",
     "Slavia Prague više od 12.5 šuteva",
+<<<<<<< HEAD
     1.3,
+=======
+    1.28,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     12.5
    ],
    [
@@ -2728,7 +3684,11 @@
     "",
     "vise 14.5",
     "Slavia Prague više od 14.5 šuteva",
+<<<<<<< HEAD
     1.63,
+=======
+    1.64,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     14.5
    ],
    [
@@ -2756,7 +3716,11 @@
     "",
     "vise 16.5",
     "Slavia Prague više od 16.5 šuteva",
+<<<<<<< HEAD
     2.25,
+=======
+    2.2,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     16.5
    ],
    [
@@ -2821,21 +3785,35 @@
     "1-2",
     "Sabah Baku 1-2 gola na utakmici",
     1.62,
+<<<<<<< HEAD
     -2.0
+=======
+    2.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "",
     "1-3",
     "Sabah Baku  1-3 gola na utakmici",
+<<<<<<< HEAD
     1.39,
     -3.0
+=======
+    1.4,
+    3.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "",
     "2-3",
     "Sabah Baku 2-3 gola na utakmici",
+<<<<<<< HEAD
     2.77,
     -3.0
+=======
+    2.82,
+    3.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ]
   ]
  },
@@ -2846,22 +3824,36 @@
     "",
     "1-2",
     "Slavia Prague 1-2 gola na utakmici",
+<<<<<<< HEAD
     1.69,
     -2.0
+=======
+    1.68,
+    2.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "",
     "1-3",
     "Slavia Prague 1-3 gola na utakmici",
     1.32,
+<<<<<<< HEAD
     -3.0
+=======
+    3.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "",
     "2-3",
     "Slavia Prague 2-3 gola na utakmici",
+<<<<<<< HEAD
     2.12,
     -3.0
+=======
+    2.15,
+    3.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ]
   ]
  },
@@ -2872,21 +3864,33 @@
     "12",
     "1-2",
     "Sabah Baku 1 ili 2 gola u svakom poluvremenu",
+<<<<<<< HEAD
     4.25,
+=======
+    4.3,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
     "13",
     "1-3",
     "Sabah Baku 1,2 ili 3 gola u svakom poluvremenu",
+<<<<<<< HEAD
     3.9,
+=======
+    4.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.0
    ],
    [
     "23",
     "2-3",
     "Sabah Baku 2 ili 3 gola u svakom poluvremenu",
+<<<<<<< HEAD
     27.0,
+=======
+    28.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.0
    ]
   ]
@@ -2898,14 +3902,22 @@
     "12",
     "1-2",
     "Slavia Prague 1 ili 2 gola u svakom poluvremenu",
+<<<<<<< HEAD
     3.05,
+=======
+    3.1,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
     "13",
     "1-3",
     "Slavia Prague 1,2 ili 3 gola u svakom poluvremenu",
+<<<<<<< HEAD
     2.6,
+=======
+    2.62,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.0
    ],
    [
@@ -2924,7 +3936,11 @@
     "0",
     "0",
     "Sabah Baku ne daje gol",
+<<<<<<< HEAD
     3.35,
+=======
+    3.3,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.0
    ],
    [
@@ -2945,7 +3961,11 @@
     "3",
     "3+",
     "Sabah Baku daje 3 ili više golova",
+<<<<<<< HEAD
     5.8,
+=======
+    6.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.0
    ]
   ]
@@ -2957,7 +3977,11 @@
     "0",
     "0",
     "Slavia Prague ne daje gol",
+<<<<<<< HEAD
     5.5,
+=======
+    5.4,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.0
    ],
    [
@@ -2978,7 +4002,11 @@
     "3",
     "3+",
     "Slavia Prague daje 3 ili više golova",
+<<<<<<< HEAD
     3.2,
+=======
+    3.25,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.0
    ]
   ]
@@ -2990,14 +4018,22 @@
     "1",
     "da",
     "Sabah Baku daje gol na utakmici",
+<<<<<<< HEAD
     1.32,
+=======
+    1.33,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     null
    ],
    [
     "2",
     "ne",
     "Sabah Baku ne daje gol na utakmici",
+<<<<<<< HEAD
     3.4,
+=======
+    3.35,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     null
    ]
   ]
@@ -3016,7 +4052,11 @@
     "2",
     "ne",
     "Slavia Prague ne daje gol na utakmici",
+<<<<<<< HEAD
     5.65,
+=======
+    5.55,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     null
    ]
   ]
@@ -3028,7 +4068,11 @@
     "",
     "vise 0.5 & vise 1.5",
     "1. Poluvreme Sabah Baku više od 0.5 golova i Sabah",
+<<<<<<< HEAD
     3.15,
+=======
+    3.2,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
@@ -3042,21 +4086,33 @@
     "",
     "manje 0.5 & vise 1.5",
     "1. Poluvreme Sabah Baku manje od 0.5 golova i Saba",
+<<<<<<< HEAD
     7.3,
+=======
+    7.4,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
     "",
     "manje 0.5 & manje 1.5",
     "1. Poluvreme Sabah Baku manje od 0.5 golova i Saba",
+<<<<<<< HEAD
     1.97,
+=======
+    1.95,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
     "",
     "vise 0.5 & vise 2.5",
     "1. Poluvreme Sabah Baku više od 0.5 golova i Sabah",
+<<<<<<< HEAD
     6.3,
+=======
+    6.5,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
@@ -3070,21 +4126,33 @@
     "",
     "manje 0.5 & vise 2.5",
     "1. Poluvreme Sabah Baku manje od 0.5 golova i Saba",
+<<<<<<< HEAD
     21.0,
+=======
+    22.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
     "",
     "manje 0.5 & manje 2.5",
     "1. Poluvreme Sabah Baku manje od 0.5 golova i Saba",
+<<<<<<< HEAD
     1.71,
+=======
+    1.7,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
     "",
     "vise 1.5 & vise 2.5",
     "1. Poluvreme Sabah Baku više od 1.5 golova i Sabah",
+<<<<<<< HEAD
     9.6,
+=======
+    9.9,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
@@ -3098,7 +4166,11 @@
     "",
     "manje 1.5 & vise 2.5",
     "1. Poluvreme Sabah Baku manje od 1.5 golova i Saba",
+<<<<<<< HEAD
     8.7,
+=======
+    9.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
@@ -3117,7 +4189,11 @@
     "",
     "vise 0.5 & vise 1.5",
     "1. Poluvreme Slavia Prague više od 0.5 golova i Sl",
+<<<<<<< HEAD
     2.1,
+=======
+    2.12,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
@@ -3131,21 +4207,33 @@
     "",
     "manje 0.5 & vise 1.5",
     "1. Poluvreme Slavia Prague manje od 0.5 golova i S",
+<<<<<<< HEAD
     6.1,
+=======
+    6.2,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
     "",
     "manje 0.5 & manje 1.5",
     "1. Poluvreme Slavia Prague manje od 0.5 golova i S",
+<<<<<<< HEAD
     2.85,
+=======
+    2.82,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
     "",
     "vise 0.5 & vise 2.5",
     "1. Poluvreme Slavia Prague više od 0.5 golova i Sl",
+<<<<<<< HEAD
     3.5,
+=======
+    3.55,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
@@ -3166,14 +4254,22 @@
     "",
     "manje 0.5 & manje 2.5",
     "1. Poluvreme Slavia Prague manje od 0.5 golova i S",
+<<<<<<< HEAD
     2.3,
+=======
+    2.27,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
     "",
     "vise 1.5 & vise 2.5",
     "1. Poluvreme Slavia Prague više od 1.5 golova i Sl",
+<<<<<<< HEAD
     5.3,
+=======
+    5.4,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
@@ -3187,14 +4283,22 @@
     "",
     "manje 1.5 & vise 2.5",
     "1. Poluvreme Slavia Prague manje od 1.5 golova i S",
+<<<<<<< HEAD
     5.65,
+=======
+    5.7,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
     "",
     "manje 1.5 & manje 2.5",
     "1. Poluvreme Slavia Prague manje od 1.5 golova i S",
+<<<<<<< HEAD
     1.43,
+=======
+    1.42,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ]
   ]
@@ -3206,7 +4310,11 @@
     "",
     "vise 0.5 & vise 0.5",
     "Sabah Baku daje više od 0.5 golova u 1. poluvremen",
+<<<<<<< HEAD
     3.8,
+=======
+    3.9,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
@@ -3220,28 +4328,44 @@
     "",
     "vise 0.5 & vise 1.5",
     "Sabah Baku daje više od 0.5 golova u 1. poluvremen",
+<<<<<<< HEAD
     9.2,
+=======
+    9.5,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
     "",
     "vise 0.5 & manje 1.5",
     "Sabah Baku daje više od 0.5 golova u 1. poluvremen",
+<<<<<<< HEAD
     2.47,
+=======
+    2.5,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
     "",
     "vise 0.5 & vise 2.5",
     "Sabah Baku daje više od 0.5 golova u 1. poluvremen",
+<<<<<<< HEAD
     28.0,
+=======
+    29.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
     "",
     "vise 0.5 & manje 2.5",
     "Sabah Baku daje više od 0.5 golova u 1. poluvremen",
+<<<<<<< HEAD
     2.17,
+=======
+    2.2,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
@@ -3255,35 +4379,55 @@
     "",
     "manje 0.5 & manje 0.5",
     "Sabah Baku daje manje od 0.5 golova u 1. poluvreme",
+<<<<<<< HEAD
     3.25,
+=======
+    3.2,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
     "",
     "manje 0.5 & vise 1.5",
     "Sabah Baku daje manje od 0.5 golova u 1. poluvreme",
+<<<<<<< HEAD
     7.3,
+=======
+    7.4,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
     "",
     "manje 0.5 & manje 1.5",
     "Sabah Baku daje manje od 0.5 golova u 1. poluvreme",
+<<<<<<< HEAD
     1.97,
+=======
+    1.95,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
     "",
     "manje 0.5 & vise 2.5",
     "Sabah Baku daje manje od 0.5 golova u 1. poluvreme",
+<<<<<<< HEAD
     21.0,
+=======
+    22.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
     "",
     "manje 0.5 & manje 2.5",
     "Sabah Baku daje manje od 0.5 golova u 1. poluvreme",
+<<<<<<< HEAD
     1.71,
+=======
+    1.7,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ]
   ]
@@ -3295,7 +4439,11 @@
     "",
     "vise 0.5 & vise 0.5",
     "Slavia Prague daje više od 0.5 golova u 1. poluvre",
+<<<<<<< HEAD
     2.5,
+=======
+    2.52,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
@@ -3309,7 +4457,11 @@
     "",
     "vise 0.5 & vise 1.5",
     "Slavia Prague daje više od 0.5 golova u 1. poluvre",
+<<<<<<< HEAD
     5.2,
+=======
+    5.25,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
@@ -3330,7 +4482,11 @@
     "",
     "vise 0.5 & manje 2.5",
     "Slavia Prague daje više od 0.5 golova u 1. poluvre",
+<<<<<<< HEAD
     1.78,
+=======
+    1.8,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
@@ -3344,21 +4500,33 @@
     "",
     "manje 0.5 & manje 0.5",
     "Slavia Prague daje manje od 0.5 golova u 1. poluvr",
+<<<<<<< HEAD
     5.25,
+=======
+    5.2,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
     "",
     "manje 0.5 & vise 1.5",
     "Slavia Prague daje manje od 0.5 golova u 1. poluvr",
+<<<<<<< HEAD
     6.1,
+=======
+    6.2,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
     "",
     "manje 0.5 & manje 1.5",
     "Slavia Prague daje manje od 0.5 golova u 1. poluvr",
+<<<<<<< HEAD
     2.85,
+=======
+    2.82,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
@@ -3372,7 +4540,11 @@
     "",
     "manje 0.5 & manje 2.5",
     "Slavia Prague daje manje od 0.5 golova u 1. poluvr",
+<<<<<<< HEAD
     2.3,
+=======
+    2.27,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ]
   ]
@@ -3391,7 +4563,11 @@
     "2-",
     "2 & manje 0.5",
     "Slavia Prague pobednik i Sabah Baku manje od 0.5 g",
+<<<<<<< HEAD
     3.8,
+=======
+    3.7,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     0.5
    ],
    [
@@ -3405,7 +4581,11 @@
     "0+",
     "x & vise 0.5",
     "nerešeno i Sabah Baku više od 0.5 gola na utakmici",
+<<<<<<< HEAD
     4.15,
+=======
+    4.2,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     0.5
    ],
    [
@@ -3452,14 +4632,22 @@
     "0+",
     "x & vise 1.5",
     "nerešeno i Sabah Baku više od 1.5 gola na utakmici",
+<<<<<<< HEAD
     7.7,
+=======
+    7.9,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
     "2+",
     "2 & vise 1.5",
     "Slavia Prague pobednik i Sabah Baku više od 1.5 go",
+<<<<<<< HEAD
     8.4,
+=======
+    8.5,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ]
   ]
@@ -3471,7 +4659,11 @@
     "1-",
     "1 & manje 2.5",
     "Sabah Baku pobednik i Sabah Baku manje od 2.5 gola",
+<<<<<<< HEAD
     5.3,
+=======
+    5.25,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
@@ -3492,7 +4684,11 @@
     "1+",
     "1 & vise 2.5",
     "Sabah Baku pobednik i Sabah Baku više od 2.5 gola ",
+<<<<<<< HEAD
     6.8,
+=======
+    6.9,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
@@ -3506,7 +4702,11 @@
     "2+",
     "2 & vise 2.5",
     "Slavia Prague pobednik i Sabah Baku više od 2.5 go",
+<<<<<<< HEAD
     31.0,
+=======
+    32.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ]
   ]
@@ -3518,7 +4718,11 @@
     "1-",
     "1 & manje 3.5",
     "Sabah Baku pobednik i Sabah Baku manje od 3.5 gola",
+<<<<<<< HEAD
     3.9,
+=======
+    3.85,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.5
    ],
    [
@@ -3532,7 +4736,11 @@
     "2-",
     "2 & manje 3.5",
     "Slavia Prague pobednik i Sabah Baku manje od 3.5 g",
+<<<<<<< HEAD
     1.87,
+=======
+    1.85,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.5
    ],
    [
@@ -3553,7 +4761,11 @@
     "2+",
     "2 & vise 3.5",
     "Slavia Prague pobednik i Sabah Baku više od 3.5 go",
+<<<<<<< HEAD
     90.0,
+=======
+    100.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.5
    ]
   ]
@@ -3586,7 +4798,11 @@
     "1+",
     "1 & vise 4.5",
     "Sabah Baku pobednik i Sabah Baku više od 4.5 gola ",
+<<<<<<< HEAD
     38.0,
+=======
+    39.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     4.5
    ],
    [
@@ -3605,6 +4821,7 @@
    ]
   ]
  },
+<<<<<<< HEAD
  "1X2 & ukupno golova Slavia Prague (0.5)": {
   "mecova": 1,
   "primer": [
@@ -3645,6 +4862,8 @@
    ]
   ]
  },
+=======
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
  "Anthony Gordon & Leroy Sane zajedno imaju 3+ šuteva u okvir gola": {
   "mecova": 1,
   "primer": [
@@ -3761,7 +4980,11 @@
     "da",
     "Dani Olmo & Lucas Torreira će faulirati jedan drug",
     2.8,
+<<<<<<< HEAD
     15.0
+=======
+    null
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ]
   ]
  },
@@ -3773,7 +4996,11 @@
     "da",
     "Gabriel Jesus & Abdulkerim Bardakci će faulirati j",
     4.6,
+<<<<<<< HEAD
     15.0
+=======
+    null
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ]
   ]
  },
@@ -3785,7 +5012,11 @@
     "da",
     "Joao Cancelo & Leroy Sane će faulirati jedan drugo",
     3.7,
+<<<<<<< HEAD
     15.0
+=======
+    null
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ]
   ]
  },
@@ -3797,7 +5028,11 @@
     "da",
     "Lamine Yamal & Jakobs, Ismail će faulirati jedan d",
     4.0,
+<<<<<<< HEAD
     15.0
+=======
+    null
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ]
   ]
  },
@@ -3809,7 +5044,11 @@
     "da",
     "Gordon, Anthony će pogoditi stativu/precku (gol od",
     7.0,
+<<<<<<< HEAD
     15.0
+=======
+    null
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ]
   ]
  },
@@ -3821,7 +5060,11 @@
     "da",
     "Deniz Daniel Gul će pogoditi stativu/precku (gol o",
     10.0,
+<<<<<<< HEAD
     15.0
+=======
+    null
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ]
   ]
  },
@@ -3833,7 +5076,11 @@
     "da",
     "Gabriel Jesus će pogoditi stativu/precku (gol od s",
     6.0,
+<<<<<<< HEAD
     15.0
+=======
+    null
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ]
   ]
  },
@@ -3845,7 +5092,11 @@
     "da",
     "Lamine Yamal će pogoditi stativu/precku (gol od st",
     5.0,
+<<<<<<< HEAD
     15.0
+=======
+    null
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ]
   ]
  },
@@ -3857,7 +5108,11 @@
     "da",
     "Leroy Sane će pogoditi stativu/precku (gol od stat",
     14.0,
+<<<<<<< HEAD
     15.0
+=======
+    null
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ]
   ]
  },
@@ -3869,6 +5124,7 @@
     "da",
     "Rafael Leao će pogoditi stativu/precku (gol od sta",
     9.0,
+<<<<<<< HEAD
     15.0
    ]
   ]
@@ -3894,6 +5150,9 @@
     "Barcelona više od 655.5 dodavanja",
     1.85,
     655.5
+=======
+    null
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ]
   ]
  },
@@ -3905,7 +5164,11 @@
     "da",
     "Hansi Flick će dobiti karton. Za mečeve koji uklju",
     6.0,
+<<<<<<< HEAD
     15.0
+=======
+    null
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ]
   ]
  },
@@ -3917,7 +5180,11 @@
     "da",
     "Okan Buruk će dobiti karton. Za mečeve koji uključ",
     6.0,
+<<<<<<< HEAD
     15.0
+=======
+    null
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ]
   ]
  },
@@ -3929,7 +5196,11 @@
     "da",
     "Hansi Flick & Okan Buruk će dobiti karton. Za meče",
     35.0,
+<<<<<<< HEAD
     15.0
+=======
+    null
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ]
   ]
  },
@@ -4118,42 +5389,66 @@
     ".1-",
     "manje 1.5",
     "Galatasaray će imati manje od 1.5 kartona na utakm",
+<<<<<<< HEAD
     3.0,
+=======
+    3.05,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
     ".1+",
     "vise 1.5",
     "Galatasaray će imati više od 1.5 kartona na utakmi",
+<<<<<<< HEAD
     1.3,
+=======
+    1.29,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
     ".1-",
     "manje 2.5",
     "Galatasaray će imati manje od 2.5 kartona na utakm",
+<<<<<<< HEAD
     1.73,
+=======
+    1.76,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
     ".1+",
     "vise 2.5",
     "Galatasaray će imati više od 2.5 kartona na utakmi",
+<<<<<<< HEAD
     1.97,
+=======
+    1.95,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
     ".1-",
     "manje 3.5",
     "Galatasaray će imati manje od 3.5 kartona na utakm",
+<<<<<<< HEAD
     1.25,
+=======
+    1.26,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.5
    ],
    [
     ".1+",
     "vise 3.5",
     "Galatasaray će imati više od 3.5 kartona na utakmi",
+<<<<<<< HEAD
     3.25,
+=======
+    3.2,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.5
    ]
   ]
@@ -4165,42 +5460,66 @@
     ".2-",
     "manje 0.5",
     "Barcelona će imati manje od 0.5 kartona na utakmic",
+<<<<<<< HEAD
     3.3,
+=======
+    3.5,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     0.5
    ],
    [
     ".2+",
     "vise 0.5",
     "Barcelona će imati više od 0.5 kartona na utakmici",
+<<<<<<< HEAD
     1.25,
+=======
+    1.21,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     0.5
    ],
    [
     ".2-",
     "manje 1.5",
     "Barcelona će imati manje od 1.5 kartona na utakmic",
+<<<<<<< HEAD
     1.55,
+=======
+    1.62,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
     ".2+",
     "vise 1.5",
     "Barcelona će imati više od 1.5 kartona na utakmici",
+<<<<<<< HEAD
     2.25,
+=======
+    2.12,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
     ".2-",
     "manje 2.5",
     "Barcelona će imati manje od 2.5 kartona na utakmic",
+<<<<<<< HEAD
     1.12,
+=======
+    1.15,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
     ".2+",
     "vise 2.5",
     "Barcelona će imati više od 2.5 kartona na utakmici",
+<<<<<<< HEAD
     4.5,
+=======
+    4.15,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ]
   ]
@@ -4212,84 +5531,132 @@
     "*11-",
     "manje 0.5",
     "Galatasaray će imati manje od 0.5 šuteva u okvir g",
+<<<<<<< HEAD
     14.0,
+=======
+    15.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     0.5
    ],
    [
     "*11-",
     "manje 1.5",
     "Galatasaray će imati manje od 1.5 šuteva u okvir g",
+<<<<<<< HEAD
     5.65,
+=======
+    6.1,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
     "*11+",
     "vise 1.5",
     "Galatasaray će imati više od 1.5 šuteva u okvir go",
+<<<<<<< HEAD
     1.07,
+=======
+    1.05,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
     "*11-",
     "manje 2.5",
     "Galatasaray će imati manje od 2.5 šuteva u okvir g",
+<<<<<<< HEAD
     3.0,
+=======
+    3.25,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
     "*11+",
     "vise 2.5",
     "Galatasaray će imati više od 2.5 šuteva u okvir go",
+<<<<<<< HEAD
     1.29,
+=======
+    1.25,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
     "*11-",
     "manje 3.5",
     "Galatasaray će imati manje od 3.5 šuteva u okvir g",
+<<<<<<< HEAD
     1.95,
+=======
+    2.07,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.5
    ],
    [
     "*11+",
     "vise 3.5",
     "Galatasaray će imati više od 3.5 šuteva u okvir go",
+<<<<<<< HEAD
     1.75,
+=======
+    1.67,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.5
    ],
    [
     "*11-",
     "manje 4.5",
     "Galatasaray će imati manje od 4.5 šuteva u okvir g",
+<<<<<<< HEAD
     1.43,
+=======
+    1.5,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     4.5
    ],
    [
     "*11+",
     "vise 4.5",
     "Galatasaray će imati više od 4.5 šuteva u okvir go",
+<<<<<<< HEAD
     2.52,
+=======
+    2.35,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     4.5
    ],
    [
     "*11-",
     "manje 5.5",
     "Galatasaray će imati manje od 5.5 šuteva u okvir g",
+<<<<<<< HEAD
     1.18,
+=======
+    1.22,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     5.5
    ],
    [
     "*11+",
     "vise 5.5",
     "Galatasaray će imati više od 5.5 šuteva u okvir go",
+<<<<<<< HEAD
     3.8,
+=======
+    3.5,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     5.5
    ],
    [
     "*11-",
     "manje 6.5",
     "Galatasaray će imati manje od 6.5 šuteva u okvir g",
+<<<<<<< HEAD
     1.06,
+=======
+    1.08,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     6.5
    ]
   ]
@@ -4299,6 +5666,7 @@
   "primer": [
    [
     "*12-",
+<<<<<<< HEAD
     "manje 3.5",
     "Barcelona će imati manje od 3.5 šuteva u okvir gol",
     6.5,
@@ -4316,70 +5684,304 @@
     "manje 4.5",
     "Barcelona će imati manje od 4.5 šuteva u okvir gol",
     4.1,
+=======
+    "manje 4.5",
+    "Barcelona će imati manje od 4.5 šuteva u okvir gol",
+    5.15,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     4.5
    ],
    [
     "*12+",
     "vise 4.5",
     "Barcelona će imati više od 4.5 šuteva u okvir gola",
+<<<<<<< HEAD
     1.15,
+=======
+    1.09,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     4.5
    ],
    [
     "*12-",
     "manje 5.5",
     "Barcelona će imati manje od 5.5 šuteva u okvir gol",
+<<<<<<< HEAD
     2.72,
+=======
+    3.55,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     5.5
    ],
    [
     "*12+",
     "vise 5.5",
     "Barcelona će imati više od 5.5 šuteva u okvir gola",
+<<<<<<< HEAD
     1.36,
+=======
+    1.26,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     5.5
    ],
    [
     "*12-",
     "manje 6.5",
     "Barcelona će imati manje od 6.5 šuteva u okvir gol",
+<<<<<<< HEAD
     2.02,
+=======
+    2.4,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     6.5
    ],
    [
     "*12+",
     "vise 6.5",
     "Barcelona će imati više od 6.5 šuteva u okvir gola",
+<<<<<<< HEAD
     1.71,
+=======
+    1.48,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     6.5
    ],
    [
     "*12-",
     "manje 7.5",
     "Barcelona će imati manje od 7.5 šuteva u okvir gol",
+<<<<<<< HEAD
     1.57,
+=======
+    1.83,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     7.5
    ],
    [
     "*12+",
     "vise 7.5",
     "Barcelona će imati više od 7.5 šuteva u okvir gola",
+<<<<<<< HEAD
     2.22,
+=======
+    1.87,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     7.5
    ],
    [
     "*12-",
     "manje 8.5",
     "Barcelona će imati manje od 8.5 šuteva u okvir gol",
+<<<<<<< HEAD
     1.3,
+=======
+    1.47,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     8.5
    ],
    [
     "*12+",
     "vise 8.5",
     "Barcelona će imati više od 8.5 šuteva u okvir gola",
+<<<<<<< HEAD
     2.95,
     8.5
+=======
+    2.42,
+    8.5
+   ],
+   [
+    "*12-",
+    "manje 9.5",
+    "Barcelona će imati manje od 9.5 šuteva u okvir gol",
+    1.26,
+    9.5
+   ],
+   [
+    "*12+",
+    "vise 9.5",
+    "Barcelona će imati više od 9.5 šuteva u okvir gola",
+    3.2,
+    9.5
+   ]
+  ]
+ },
+ "Ukupno šuteva Galatasaray": {
+  "mecova": 1,
+  "primer": [
+   [
+    "",
+    "manje 7.5",
+    "Galatasaray manje od 7.5 šuteva,",
+    3.8,
+    7.5
+   ],
+   [
+    "",
+    "vise 7.5",
+    "Galatasaray više od 7.5 šuteva",
+    1.18,
+    7.5
+   ],
+   [
+    "",
+    "manje 8.5",
+    "Galatasaray manje od 8.5 šuteva,",
+    2.87,
+    8.5
+   ],
+   [
+    "",
+    "vise 8.5",
+    "Galatasaray više od 8.5 šuteva",
+    1.32,
+    8.5
+   ],
+   [
+    "",
+    "manje 9.5",
+    "Galatasaray manje od 9.5 šuteva,",
+    2.3,
+    9.5
+   ],
+   [
+    "",
+    "vise 9.5",
+    "Galatasaray više od 9.5 šuteva",
+    1.53,
+    9.5
+   ],
+   [
+    "",
+    "manje 10.5",
+    "Galatasaray manje od 10.5 šuteva,",
+    1.88,
+    10.5
+   ],
+   [
+    "",
+    "vise 10.5",
+    "Galatasaray više od 10.5 šuteva",
+    1.82,
+    10.5
+   ],
+   [
+    "",
+    "manje 11.5",
+    "Galatasaray manje od 11.5 šuteva,",
+    1.59,
+    11.5
+   ],
+   [
+    "",
+    "vise 11.5",
+    "Galatasaray više od 11.5 šuteva",
+    2.17,
+    11.5
+   ],
+   [
+    "",
+    "manje 12.5",
+    "Galatasaray manje od 12.5 šuteva,",
+    1.39,
+    12.5
+   ],
+   [
+    "",
+    "vise 12.5",
+    "Galatasaray više od 12.5 šuteva",
+    2.65,
+    12.5
+   ]
+  ]
+ },
+ "Ukupno šuteva Barcelona": {
+  "mecova": 1,
+  "primer": [
+   [
+    "",
+    "manje 15.5",
+    "Barcelona manje od 15.5 šuteva",
+    3.3,
+    15.5
+   ],
+   [
+    "",
+    "vise 15.5",
+    "Barcelona više od 15.5 šuteva",
+    1.29,
+    15.5
+   ],
+   [
+    "",
+    "manje 16.5",
+    "Barcelona manje od 16.5 šuteva",
+    2.67,
+    16.5
+   ],
+   [
+    "",
+    "vise 16.5",
+    "Barcelona više od 16.5 šuteva",
+    1.41,
+    16.5
+   ],
+   [
+    "",
+    "manje 17.5",
+    "Barcelona manje od 17.5 šuteva",
+    2.25,
+    17.5
+   ],
+   [
+    "",
+    "vise 17.5",
+    "Barcelona više od 17.5 šuteva",
+    1.57,
+    17.5
+   ],
+   [
+    "",
+    "manje 18.5",
+    "Barcelona manje od 18.5 šuteva",
+    1.92,
+    18.5
+   ],
+   [
+    "",
+    "vise 18.5",
+    "Barcelona više od 18.5 šuteva",
+    1.78,
+    18.5
+   ],
+   [
+    "",
+    "manje 19.5",
+    "Barcelona manje od 19.5 šuteva",
+    1.69,
+    19.5
+   ],
+   [
+    "",
+    "vise 19.5",
+    "Barcelona više od 19.5 šuteva",
+    2.05,
+    19.5
+   ],
+   [
+    "",
+    "manje 20.5",
+    "Barcelona manje od 20.5 šuteva",
+    1.5,
+    20.5
+   ],
+   [
+    "",
+    "vise 20.5",
+    "Barcelona više od 20.5 šuteva",
+    2.35,
+    20.5
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ]
   ]
  },
@@ -4559,7 +6161,11 @@
     "da",
     "Alex Grimaldo & Bryan Mbeumo će faulirati jedan dr",
     3.85,
+<<<<<<< HEAD
     15.0
+=======
+    null
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ]
   ]
  },
@@ -4571,7 +6177,11 @@
     "da",
     "Cristian Romero & Mateus Kunja će faulirati jedan ",
     2.75,
+<<<<<<< HEAD
     15.0
+=======
+    null
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ]
   ]
  },
@@ -4583,7 +6193,11 @@
     "da",
     "Johnny Cardoso & Bruno Fernandes će faulirati jeda",
     3.0,
+<<<<<<< HEAD
     15.0
+=======
+    null
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ]
   ]
  },
@@ -4595,7 +6209,11 @@
     "da",
     "Marcos Llorente & Rashford, Marcus će faulirati je",
     5.0,
+<<<<<<< HEAD
     15.0
+=======
+    null
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ]
   ]
  },
@@ -4607,7 +6225,11 @@
     "da",
     "Žulijan Alvarez & Lisandro Martinez će faulirati j",
     5.0,
+<<<<<<< HEAD
     15.0
+=======
+    null
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ]
   ]
  },
@@ -4619,7 +6241,11 @@
     "da",
     "Alex Baena će pogoditi stativu/precku (gol od stat",
     8.0,
+<<<<<<< HEAD
     15.0
+=======
+    null
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ]
   ]
  },
@@ -4631,7 +6257,11 @@
     "da",
     "Bruno Fernandes će pogoditi stativu/precku (gol od",
     9.0,
+<<<<<<< HEAD
     15.0
+=======
+    null
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ]
   ]
  },
@@ -4643,7 +6273,11 @@
     "da",
     "Bryan Mbeumo će pogoditi stativu/precku (gol od st",
     9.0,
+<<<<<<< HEAD
     15.0
+=======
+    null
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ]
   ]
  },
@@ -4655,7 +6289,11 @@
     "da",
     "Li Kangin će pogoditi stativu/precku (gol od stati",
     7.5,
+<<<<<<< HEAD
     15.0
+=======
+    null
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ]
   ]
  },
@@ -4667,7 +6305,11 @@
     "da",
     "Mateus Kunja će pogoditi stativu/precku (gol od st",
     7.0,
+<<<<<<< HEAD
     15.0
+=======
+    null
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ]
   ]
  },
@@ -4679,15 +6321,24 @@
     "da",
     "Julian Alvarez će pogoditi stativu/precku (gol od ",
     6.0,
+<<<<<<< HEAD
     15.0
    ]
   ]
  },
  "Ukupno dodavanja Atletico Madrid": {
+=======
+    null
+   ]
+  ]
+ },
+ "Ukupno dodavanja": {
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
   "mecova": 1,
   "primer": [
    [
     "",
+<<<<<<< HEAD
     "vise 533.5",
     "Atletico Madrid više od 533.5 dodavanja",
     1.85,
@@ -4704,6 +6355,12 @@
     "Manchester United više od 467.5 dodavanja",
     1.85,
     467.5
+=======
+    "vise 1000.5",
+    "Više od 1000.5 dodavanja",
+    1.85,
+    1000.5
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ]
   ]
  },
@@ -4715,7 +6372,11 @@
     "da",
     "Diego Simeone će dobiti karton. Za mečeve koji ukl",
     4.0,
+<<<<<<< HEAD
     15.0
+=======
+    null
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ]
   ]
  },
@@ -4727,7 +6388,11 @@
     "da",
     "Michael Carrick će dobiti karton. Za mečeve koji u",
     5.5,
+<<<<<<< HEAD
     15.0
+=======
+    null
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ]
   ]
  },
@@ -4739,7 +6404,11 @@
     "da",
     "Diego Simeone & Michael Carrick će dobiti karton. ",
     22.0,
+<<<<<<< HEAD
     15.0
+=======
+    null
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ]
   ]
  },
@@ -5315,14 +6984,22 @@
     "*11-",
     "manje 3.5",
     "Lens će imati manje od 3.5 šuteva u okvir gola",
+<<<<<<< HEAD
     2.8,
+=======
+    2.9,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.5
    ],
    [
     "*11+",
     "vise 3.5",
     "Lens će imati više od 3.5 šuteva u okvir gola",
+<<<<<<< HEAD
     1.34,
+=======
+    1.36,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.5
    ],
    [
@@ -5411,21 +7088,33 @@
     "*12-",
     "manje 3.5",
     "Sporting Lisbon će imati manje od 3.5 šuteva u okv",
+<<<<<<< HEAD
     2.45,
+=======
+    2.5,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.5
    ],
    [
     "*12+",
     "vise 3.5",
     "Sporting Lisbon će imati više od 3.5 šuteva u okvi",
+<<<<<<< HEAD
     1.46,
+=======
+    1.47,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.5
    ],
    [
     "*12-",
     "manje 4.5",
     "Sporting Lisbon će imati manje od 4.5 šuteva u okv",
+<<<<<<< HEAD
     1.72,
+=======
+    1.73,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     4.5
    ],
    [
@@ -5446,14 +7135,22 @@
     "*12+",
     "vise 5.5",
     "Sporting Lisbon će imati više od 5.5 šuteva u okvi",
+<<<<<<< HEAD
     2.82,
+=======
+    2.8,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     5.5
    ],
    [
     "*12-",
     "manje 6.5",
     "Sporting Lisbon će imati manje od 6.5 šuteva u okv",
+<<<<<<< HEAD
     1.14,
+=======
+    1.15,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     6.5
    ],
    [
@@ -5472,28 +7169,44 @@
     "",
     "manje 11.5",
     "Lens manje od 11.5 šuteva,",
+<<<<<<< HEAD
     3.15,
+=======
+    3.05,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     11.5
    ],
    [
     "",
     "vise 11.5",
     "Lens više od 11.5 šuteva",
+<<<<<<< HEAD
     1.31,
+=======
+    1.29,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     11.5
    ],
    [
     "",
     "manje 12.5",
     "Lens manje od 12.5 šuteva,",
+<<<<<<< HEAD
     2.52,
+=======
+    2.47,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     12.5
    ],
    [
     "",
     "vise 12.5",
     "Lens više od 12.5 šuteva",
+<<<<<<< HEAD
     1.46,
+=======
+    1.44,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     12.5
    ],
    [
@@ -5528,7 +7241,11 @@
     "",
     "manje 15.5",
     "Lens manje od 15.5 šuteva,",
+<<<<<<< HEAD
     1.53,
+=======
+    1.54,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     15.5
    ],
    [
@@ -5603,7 +7320,11 @@
     "",
     "manje 12.5",
     "Sporting Lisbon manje od 12.5 šuteva",
+<<<<<<< HEAD
     1.72,
+=======
+    1.71,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     12.5
    ],
    [
@@ -5638,7 +7359,11 @@
     "",
     "vise 14.5",
     "Sporting Lisbon više od 14.5 šuteva",
+<<<<<<< HEAD
     2.87,
+=======
+    2.9,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     14.5
    ]
   ]
@@ -5689,21 +7414,34 @@
     "1-2",
     "Lens 1-2 gola na utakmici",
     1.62,
+<<<<<<< HEAD
     -2.0
+=======
+    2.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "",
     "1-3",
     "Lens  1-3 gola na utakmici",
     1.33,
+<<<<<<< HEAD
     -3.0
+=======
+    3.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "",
     "2-3",
     "Lens 2-3 gola na utakmici",
+<<<<<<< HEAD
     2.35,
     -3.0
+=======
+    2.37,
+    3.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ]
   ]
  },
@@ -5715,21 +7453,34 @@
     "1-2",
     "Sporting Lisbon 1-2 gola na utakmici",
     1.62,
+<<<<<<< HEAD
     -2.0
+=======
+    2.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "",
     "1-3",
     "Sporting Lisbon 1-3 gola na utakmici",
     1.33,
+<<<<<<< HEAD
     -3.0
+=======
+    3.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "",
     "2-3",
     "Sporting Lisbon 2-3 gola na utakmici",
+<<<<<<< HEAD
     2.4,
     -3.0
+=======
+    2.37,
+    3.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ]
   ]
  },
@@ -5792,7 +7543,11 @@
     "0",
     "0",
     "Lens ne daje gol",
+<<<<<<< HEAD
     4.35,
+=======
+    4.3,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.0
    ],
    [
@@ -5813,7 +7568,11 @@
     "3",
     "3+",
     "Lens daje 3 ili više golova",
+<<<<<<< HEAD
     4.1,
+=======
+    4.15,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.0
    ]
   ]
@@ -5825,7 +7584,11 @@
     "0",
     "0",
     "Sporting Lisbon ne daje gol",
+<<<<<<< HEAD
     4.2,
+=======
+    4.25,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.0
    ],
    [
@@ -5846,7 +7609,11 @@
     "3",
     "3+",
     "Sporting Lisbon daje 3 ili više golova",
+<<<<<<< HEAD
     4.3,
+=======
+    4.2,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.0
    ]
   ]
@@ -5858,14 +7625,22 @@
     "1",
     "da",
     "Lens daje gol na utakmici",
+<<<<<<< HEAD
     1.21,
+=======
+    1.22,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     null
    ],
    [
     "2",
     "ne",
     "Lens ne daje gol na utakmici",
+<<<<<<< HEAD
     4.45,
+=======
+    4.35,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     null
    ]
   ]
@@ -5985,7 +7760,11 @@
     "",
     "vise 0.5 & vise 1.5",
     "1. Poluvreme Sporting Lisbon više od 0.5 golova i ",
+<<<<<<< HEAD
     2.57,
+=======
+    2.55,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
@@ -5999,21 +7778,33 @@
     "",
     "manje 0.5 & vise 1.5",
     "1. Poluvreme Sporting Lisbon manje od 0.5 golova i",
+<<<<<<< HEAD
     6.6,
+=======
+    6.5,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
     "",
     "manje 0.5 & manje 1.5",
     "1. Poluvreme Sporting Lisbon manje od 0.5 golova i",
+<<<<<<< HEAD
     2.32,
+=======
+    2.35,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
     "",
     "vise 0.5 & vise 2.5",
     "1. Poluvreme Sporting Lisbon više od 0.5 golova i ",
+<<<<<<< HEAD
     4.7,
+=======
+    4.65,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
@@ -6034,7 +7825,11 @@
     "",
     "manje 0.5 & manje 2.5",
     "1. Poluvreme Sporting Lisbon manje od 0.5 golova i",
+<<<<<<< HEAD
     1.95,
+=======
+    1.97,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
@@ -6055,14 +7850,22 @@
     "",
     "manje 1.5 & vise 2.5",
     "1. Poluvreme Sporting Lisbon manje od 1.5 golova i",
+<<<<<<< HEAD
     7.0,
+=======
+    6.9,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
     "",
     "manje 1.5 & manje 2.5",
     "1. Poluvreme Sporting Lisbon manje od 1.5 golova i",
+<<<<<<< HEAD
     1.27,
+=======
+    1.28,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ]
   ]
@@ -6163,7 +7966,11 @@
     "",
     "vise 0.5 & vise 0.5",
     "Sporting Lisbon daje više od 0.5 golova u 1. poluv",
+<<<<<<< HEAD
     3.1,
+=======
+    3.05,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
@@ -6184,21 +7991,33 @@
     "",
     "vise 0.5 & manje 1.5",
     "Sporting Lisbon daje više od 0.5 golova u 1. poluv",
+<<<<<<< HEAD
     2.32,
+=======
+    2.3,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
     "",
     "vise 0.5 & vise 2.5",
     "Sporting Lisbon daje više od 0.5 golova u 1. poluv",
+<<<<<<< HEAD
     19.0,
+=======
+    18.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
     "",
     "vise 0.5 & manje 2.5",
     "Sporting Lisbon daje više od 0.5 golova u 1. poluv",
+<<<<<<< HEAD
     1.97,
+=======
+    1.95,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
@@ -6219,14 +8038,22 @@
     "",
     "manje 0.5 & vise 1.5",
     "Sporting Lisbon daje manje od 0.5 golova u 1. polu",
+<<<<<<< HEAD
     6.6,
+=======
+    6.5,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
     "",
     "manje 0.5 & manje 1.5",
     "Sporting Lisbon daje manje od 0.5 golova u 1. polu",
+<<<<<<< HEAD
     2.32,
+=======
+    2.35,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
@@ -6240,7 +8067,11 @@
     "",
     "manje 0.5 & manje 2.5",
     "Sporting Lisbon daje manje od 0.5 golova u 1. polu",
+<<<<<<< HEAD
     1.95,
+=======
+    1.97,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ]
   ]
@@ -6839,42 +8670,66 @@
     ".1-",
     "manje 1.5",
     "Viking će imati manje od 1.5 kartona na utakmici (",
+<<<<<<< HEAD
     2.5,
+=======
+    2.65,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
     ".1+",
     "vise 1.5",
     "Viking će imati više od 1.5 kartona na utakmici (u",
+<<<<<<< HEAD
     1.44,
+=======
+    1.38,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
     ".1-",
     "manje 2.5",
     "Viking će imati manje od 2.5 kartona na utakmici (",
+<<<<<<< HEAD
     1.5,
+=======
+    1.58,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
     ".1+",
     "vise 2.5",
     "Viking će imati više od 2.5 kartona na utakmici (u",
+<<<<<<< HEAD
     2.35,
+=======
+    2.2,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
     ".1-",
     "manje 3.5",
     "Viking će imati manje od 3.5 kartona na utakmici (",
+<<<<<<< HEAD
     1.15,
+=======
+    1.18,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.5
    ],
    [
     ".1+",
     "vise 3.5",
     "Viking će imati više od 3.5 kartona na utakmici (u",
+<<<<<<< HEAD
     4.1,
+=======
+    3.75,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.5
    ]
   ]
@@ -6886,42 +8741,66 @@
     ".2-",
     "manje 0.5",
     "Bayern Munich će imati manje od 0.5 kartona na uta",
+<<<<<<< HEAD
     3.55,
+=======
+    3.8,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     0.5
    ],
    [
     ".2+",
     "vise 0.5",
     "Bayern Munich će imati više od 0.5 kartona na utak",
+<<<<<<< HEAD
     1.21,
+=======
+    1.18,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     0.5
    ],
    [
     ".2-",
     "manje 1.5",
     "Bayern Munich će imati manje od 1.5 kartona na uta",
+<<<<<<< HEAD
     1.64,
+=======
+    1.73,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
     ".2+",
     "vise 1.5",
     "Bayern Munich će imati više od 1.5 kartona na utak",
+<<<<<<< HEAD
     2.1,
+=======
+    1.97,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
     ".2-",
     "manje 2.5",
     "Bayern Munich će imati manje od 2.5 kartona na uta",
+<<<<<<< HEAD
     1.15,
+=======
+    1.19,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
     ".2+",
     "vise 2.5",
     "Bayern Munich će imati više od 2.5 kartona na utak",
+<<<<<<< HEAD
     4.1,
+=======
+    3.75,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ]
   ]
@@ -6947,28 +8826,44 @@
     "*11-",
     "manje 1.5",
     "Viking će imati manje od 1.5 šuteva u okvir gola",
+<<<<<<< HEAD
     2.82,
+=======
+    2.92,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
     "*11+",
     "vise 1.5",
     "Viking će imati više od 1.5 šuteva u okvir gola",
+<<<<<<< HEAD
     1.34,
+=======
+    1.36,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
     "*11-",
     "manje 2.5",
     "Viking će imati manje od 2.5 šuteva u okvir gola",
+<<<<<<< HEAD
     1.71,
+=======
+    1.72,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
     "*11+",
     "vise 2.5",
     "Viking će imati više od 2.5 šuteva u okvir gola",
+<<<<<<< HEAD
     2.0,
+=======
+    2.02,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
@@ -7015,28 +8910,44 @@
     "*12-",
     "manje 6.5",
     "Bayern Munich će imati manje od 6.5 šuteva u okvir",
+<<<<<<< HEAD
     3.8,
+=======
+    4.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     6.5
    ],
    [
     "*12+",
     "vise 6.5",
     "Bayern Munich će imati više od 6.5 šuteva u okvir ",
+<<<<<<< HEAD
     1.18,
+=======
+    1.2,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     6.5
    ],
    [
     "*12-",
     "manje 7.5",
     "Bayern Munich će imati manje od 7.5 šuteva u okvir",
+<<<<<<< HEAD
     2.72,
+=======
+    2.8,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     7.5
    ],
    [
     "*12+",
     "vise 7.5",
     "Bayern Munich će imati više od 7.5 šuteva u okvir ",
+<<<<<<< HEAD
     1.36,
+=======
+    1.38,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     7.5
    ],
    [
@@ -7071,14 +8982,22 @@
     "*12-",
     "manje 10.5",
     "Bayern Munich će imati manje od 10.5 šuteva u okvi",
+<<<<<<< HEAD
     1.41,
+=======
+    1.39,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     10.5
    ],
    [
     "*12+",
     "vise 10.5",
     "Bayern Munich će imati više od 10.5 šuteva u okvir",
+<<<<<<< HEAD
     2.7,
+=======
+    2.65,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     10.5
    ],
    [
@@ -7104,28 +9023,44 @@
     "",
     "manje 5.5",
     "Viking manje od 5.5 šuteva,",
+<<<<<<< HEAD
     4.0,
+=======
+    4.25,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     5.5
    ],
    [
     "",
     "vise 5.5",
     "Viking više od 5.5 šuteva",
+<<<<<<< HEAD
     1.16,
+=======
+    1.18,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     5.5
    ],
    [
     "",
     "manje 6.5",
     "Viking manje od 6.5 šuteva,",
+<<<<<<< HEAD
     2.9,
+=======
+    3.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     6.5
    ],
    [
     "",
     "vise 6.5",
     "Viking više od 6.5 šuteva",
+<<<<<<< HEAD
     1.32,
+=======
+    1.34,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     6.5
    ],
    [
@@ -7139,21 +9074,33 @@
     "",
     "vise 7.5",
     "Viking više od 7.5 šuteva",
+<<<<<<< HEAD
     1.55,
+=======
+    1.57,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     7.5
    ],
    [
     "",
     "manje 8.5",
     "Viking manje od 8.5 šuteva,",
+<<<<<<< HEAD
     1.78,
+=======
+    1.8,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     8.5
    ],
    [
     "",
     "vise 8.5",
     "Viking više od 8.5 šuteva",
+<<<<<<< HEAD
     1.92,
+=======
+    1.9,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     8.5
    ],
    [
@@ -7193,14 +9140,22 @@
     "",
     "manje 20.5",
     "Bayern Munich manje od 20.5 šuteva",
+<<<<<<< HEAD
     2.75,
+=======
+    2.82,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     20.5
    ],
    [
     "",
     "vise 20.5",
     "Bayern Munich više od 20.5 šuteva",
+<<<<<<< HEAD
     1.36,
+=======
+    1.38,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     20.5
    ],
    [
@@ -7228,7 +9183,11 @@
     "",
     "vise 22.5",
     "Bayern Munich više od 22.5 šuteva",
+<<<<<<< HEAD
     1.67,
+=======
+    1.66,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     22.5
    ],
    [
@@ -7249,14 +9208,22 @@
     "",
     "manje 24.5",
     "Bayern Munich manje od 24.5 šuteva",
+<<<<<<< HEAD
     1.63,
+=======
+    1.62,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     24.5
    ],
    [
     "",
     "vise 24.5",
     "Bayern Munich više od 24.5 šuteva",
+<<<<<<< HEAD
     2.15,
+=======
+    2.12,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     24.5
    ],
    [
@@ -7282,14 +9249,22 @@
     "/*01-",
     "manje 10.5",
     "Viking manje od 10.5 faulova",
+<<<<<<< HEAD
     1.97,
+=======
+    2.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     10.5
    ],
    [
     "/*01+",
     "vise 10.5",
     "Viking više od 10.5 faulova",
+<<<<<<< HEAD
     1.74,
+=======
+    1.73,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     10.5
    ]
   ]
@@ -7415,21 +9390,33 @@
     "1-2",
     "Viking 1-2 gola na utakmici",
     1.83,
+<<<<<<< HEAD
     -2.0
+=======
+    2.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "",
     "1-3",
     "Viking  1-3 gola na utakmici",
     1.71,
+<<<<<<< HEAD
     -3.0
+=======
+    3.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "",
     "2-3",
     "Viking 2-3 gola na utakmici",
     4.45,
+<<<<<<< HEAD
     -3.0
+=======
+    3.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ]
   ]
  },
@@ -7441,21 +9428,33 @@
     "1-2",
     "Bayern Munich 1-2 gola na utakmici",
     3.65,
+<<<<<<< HEAD
     -2.0
+=======
+    2.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "",
     "1-3",
     "Bayern Munich 1-3 gola na utakmici",
     2.1,
+<<<<<<< HEAD
     -3.0
+=======
+    3.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "",
     "2-3",
     "Bayern Munich 2-3 gola na utakmici",
     2.52,
+<<<<<<< HEAD
     -3.0
+=======
+    3.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ]
   ]
  },
@@ -8239,6 +10238,7 @@
    ]
   ]
  },
+<<<<<<< HEAD
  "Christoph Lang & Lewis Koumas zajedno imaju 3+ šuteva u okvir gola": {
   "mecova": 1,
   "primer": [
@@ -8395,6 +10395,8 @@
    ]
   ]
  },
+=======
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
  "Ukupno kornera LASK Linz": {
   "mecova": 1,
   "primer": [
@@ -8587,7 +10589,11 @@
     ".1+",
     "vise 1.5",
     "LASK Linz će imati više od 1.5 kartona na utakmici",
+<<<<<<< HEAD
     1.41,
+=======
+    1.42,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
@@ -8627,28 +10633,44 @@
     ".2-",
     "manje 0.5",
     "Liverpool će imati manje od 0.5 kartona na utakmic",
+<<<<<<< HEAD
     3.55,
+=======
+    3.6,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     0.5
    ],
    [
     ".2+",
     "vise 0.5",
     "Liverpool će imati više od 0.5 kartona na utakmici",
+<<<<<<< HEAD
     1.21,
+=======
+    1.2,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     0.5
    ],
    [
     ".2-",
     "manje 1.5",
     "Liverpool će imati manje od 1.5 kartona na utakmic",
+<<<<<<< HEAD
     1.64,
+=======
+    1.63,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
     ".2+",
     "vise 1.5",
     "Liverpool će imati više od 1.5 kartona na utakmici",
+<<<<<<< HEAD
     2.1,
+=======
+    2.12,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
@@ -8662,7 +10684,11 @@
     ".2+",
     "vise 2.5",
     "Liverpool će imati više od 2.5 kartona na utakmici",
+<<<<<<< HEAD
     4.15,
+=======
+    4.1,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ]
   ]
@@ -8681,7 +10707,11 @@
     "*11+",
     "vise 2.5",
     "LASK Linz će imati više od 2.5 šuteva u okvir gola",
+<<<<<<< HEAD
     1.57,
+=======
+    1.58,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ]
   ]
@@ -8693,14 +10723,22 @@
     "*12-",
     "manje 6.5",
     "Liverpool će imati manje od 6.5 šuteva u okvir gol",
+<<<<<<< HEAD
     2.1,
+=======
+    2.12,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     6.5
    ],
    [
     "*12+",
     "vise 6.5",
     "Liverpool će imati više od 6.5 šuteva u okvir gola",
+<<<<<<< HEAD
     1.64,
+=======
+    1.65,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     6.5
    ]
   ]
@@ -8750,14 +10788,22 @@
     "/*01-",
     "manje 11.5",
     "LASK Linz manje od 11.5 faulova",
+<<<<<<< HEAD
     1.74,
+=======
+    1.8,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     11.5
    ],
    [
     "/*01+",
     "vise 11.5",
     "LASK Linz više od 11.5 faulova",
+<<<<<<< HEAD
     1.9,
+=======
+    1.92,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     11.5
    ]
   ]
@@ -8769,18 +10815,821 @@
     "/*02-",
     "manje 9.5",
     "Liverpool manje od 9.5 faulova",
+<<<<<<< HEAD
     2.0,
+=======
+    2.05,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     9.5
    ],
    [
     "/*02+",
     "vise 9.5",
     "Liverpool više od 9.5 faulova",
+<<<<<<< HEAD
     1.65,
+=======
+    1.68,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     9.5
    ]
   ]
  },
+<<<<<<< HEAD
+=======
+ "LASK Linz raspon golova": {
+  "mecova": 1,
+  "primer": [
+   [
+    "",
+    "1-2",
+    "LASK Linz 1-2 gola na utakmici",
+    1.77,
+    2.0
+   ],
+   [
+    "",
+    "1-3",
+    "LASK Linz  1-3 gola na utakmici",
+    1.63,
+    3.0
+   ],
+   [
+    "",
+    "2-3",
+    "LASK Linz 2-3 gola na utakmici",
+    4.0,
+    3.0
+   ]
+  ]
+ },
+ "Liverpool raspon golova": {
+  "mecova": 1,
+  "primer": [
+   [
+    "",
+    "1-2",
+    "Liverpool 1-2 gola na utakmici",
+    2.2,
+    2.0
+   ],
+   [
+    "",
+    "1-3",
+    "Liverpool 1-3 gola na utakmici",
+    1.48,
+    3.0
+   ],
+   [
+    "",
+    "2-3",
+    "Liverpool 2-3 gola na utakmici",
+    2.02,
+    3.0
+   ]
+  ]
+ },
+ "LASK Linz raspon golova u svakom poluvremenu": {
+  "mecova": 1,
+  "primer": [
+   [
+    "12",
+    "1-2",
+    "LASK Linz 1 ili 2 gola u svakom poluvremenu",
+    6.1,
+    2.0
+   ],
+   [
+    "13",
+    "1-3",
+    "LASK Linz 1,2 ili 3 gola u svakom poluvremenu",
+    5.85,
+    3.0
+   ],
+   [
+    "23",
+    "2-3",
+    "LASK Linz 2 ili 3 gola u svakom poluvremenu",
+    55.0,
+    3.0
+   ]
+  ]
+ },
+ "Liverpool raspon golova u svakom poluvremenu": {
+  "mecova": 1,
+  "primer": [
+   [
+    "12",
+    "1-2",
+    "Liverpool 1 ili 2 gola u svakom poluvremenu",
+    2.62,
+    2.0
+   ],
+   [
+    "13",
+    "1-3",
+    "Liverpool 1,2 ili 3 gola u svakom poluvremenu",
+    1.92,
+    3.0
+   ],
+   [
+    "23",
+    "2-3",
+    "Liverpool 2 ili 3 gola u svakom poluvremenu",
+    6.4,
+    3.0
+   ]
+  ]
+ },
+ "LASK Linz tačno golova": {
+  "mecova": 1,
+  "primer": [
+   [
+    "0",
+    "0",
+    "LASK Linz ne daje gol",
+    2.32,
+    3.0
+   ],
+   [
+    "1",
+    "1",
+    "LASK Linz daje tačno 1 gol",
+    2.52,
+    3.0
+   ],
+   [
+    "2",
+    "2",
+    "LASK Linz daje tačno 2 gola",
+    5.1,
+    3.0
+   ],
+   [
+    "3",
+    "3+",
+    "LASK Linz daje 3 ili više golova",
+    11.0,
+    3.0
+   ]
+  ]
+ },
+ "Liverpool tačno golova": {
+  "mecova": 1,
+  "primer": [
+   [
+    "0",
+    "0",
+    "Liverpool ne daje gol",
+    11.0,
+    3.0
+   ],
+   [
+    "1",
+    "1",
+    "Liverpool daje tačno 1 gol",
+    4.75,
+    3.0
+   ],
+   [
+    "2",
+    "2",
+    "Liverpool daje tačno 2 gola",
+    3.65,
+    3.0
+   ],
+   [
+    "3",
+    "3+",
+    "Liverpool daje 3 ili više golova",
+    1.85,
+    3.0
+   ]
+  ]
+ },
+ "LASK Linz daje gol": {
+  "mecova": 1,
+  "primer": [
+   [
+    "1",
+    "da",
+    "LASK Linz daje gol na utakmici",
+    1.6,
+    null
+   ],
+   [
+    "2",
+    "ne",
+    "LASK Linz ne daje gol na utakmici",
+    2.35,
+    null
+   ]
+  ]
+ },
+ "Liverpool daje gol": {
+  "mecova": 1,
+  "primer": [
+   [
+    "1",
+    "da",
+    "Liverpool daje gol na utakmici",
+    1.05,
+    null
+   ],
+   [
+    "2",
+    "ne",
+    "Liverpool ne daje gol na utakmici",
+    11.0,
+    null
+   ]
+  ]
+ },
+ "1. Poluvreme LASK Linz Ukupno golova & Ukupno golova LASK Linz": {
+  "mecova": 1,
+  "primer": [
+   [
+    "",
+    "vise 0.5 & vise 1.5",
+    "1. Poluvreme LASK Linz više od 0.5 golova i LASK L",
+    5.1,
+    1.5
+   ],
+   [
+    "",
+    "vise 0.5 & manje 1.5",
+    "1. Poluvreme LASK Linz više od 0.5 golova i LASK L",
+    5.35,
+    1.5
+   ],
+   [
+    "",
+    "manje 0.5 & vise 1.5",
+    "1. Poluvreme LASK Linz manje od 0.5 golova i LASK ",
+    11.0,
+    1.5
+   ],
+   [
+    "",
+    "manje 0.5 & manje 1.5",
+    "1. Poluvreme LASK Linz manje od 0.5 golova i LASK ",
+    1.6,
+    1.5
+   ],
+   [
+    "",
+    "vise 0.5 & vise 2.5",
+    "1. Poluvreme LASK Linz više od 0.5 golova i LASK L",
+    13.0,
+    2.5
+   ],
+   [
+    "",
+    "vise 0.5 & manje 2.5",
+    "1. Poluvreme LASK Linz više od 0.5 golova i LASK L",
+    3.3,
+    2.5
+   ],
+   [
+    "",
+    "manje 0.5 & vise 2.5",
+    "1. Poluvreme LASK Linz manje od 0.5 golova i LASK ",
+    45.0,
+    2.5
+   ],
+   [
+    "",
+    "manje 0.5 & manje 2.5",
+    "1. Poluvreme LASK Linz manje od 0.5 golova i LASK ",
+    1.47,
+    2.5
+   ],
+   [
+    "",
+    "vise 1.5 & vise 2.5",
+    "1. Poluvreme LASK Linz više od 1.5 golova i LASK L",
+    22.0,
+    2.5
+   ],
+   [
+    "",
+    "vise 1.5 & manje 2.5",
+    "1. Poluvreme LASK Linz više od 1.5 golova i LASK L",
+    19.0,
+    2.5
+   ],
+   [
+    "",
+    "manje 1.5 & vise 2.5",
+    "1. Poluvreme LASK Linz manje od 1.5 golova i LASK ",
+    18.0,
+    2.5
+   ],
+   [
+    "",
+    "manje 1.5 & manje 2.5",
+    "1. Poluvreme LASK Linz manje od 1.5 golova i LASK ",
+    1.08,
+    2.5
+   ]
+  ]
+ },
+ "1. Poluvreme Liverpool Ukupno golova & Ukupno golova Liverpool": {
+  "mecova": 1,
+  "primer": [
+   [
+    "",
+    "vise 0.5 & vise 1.5",
+    "1. Poluvreme Liverpool više od 0.5 golova i Liverp",
+    1.53,
+    1.5
+   ],
+   [
+    "",
+    "vise 0.5 & manje 1.5",
+    "1. Poluvreme Liverpool više od 0.5 golova i Liverp",
+    9.5,
+    1.5
+   ],
+   [
+    "",
+    "manje 0.5 & vise 1.5",
+    "1. Poluvreme Liverpool manje od 0.5 golova i Liver",
+    6.4,
+    1.5
+   ],
+   [
+    "",
+    "manje 0.5 & manje 1.5",
+    "1. Poluvreme Liverpool manje od 0.5 golova i Liver",
+    5.45,
+    1.5
+   ],
+   [
+    "",
+    "vise 0.5 & vise 2.5",
+    "1. Poluvreme Liverpool više od 0.5 golova i Liverp",
+    2.07,
+    2.5
+   ],
+   [
+    "",
+    "vise 0.5 & manje 2.5",
+    "1. Poluvreme Liverpool više od 0.5 golova i Liverp",
+    3.65,
+    2.5
+   ],
+   [
+    "",
+    "manje 0.5 & vise 2.5",
+    "1. Poluvreme Liverpool manje od 0.5 golova i Liver",
+    13.0,
+    2.5
+   ],
+   [
+    "",
+    "manje 0.5 & manje 2.5",
+    "1. Poluvreme Liverpool manje od 0.5 golova i Liver",
+    3.9,
+    2.5
+   ],
+   [
+    "",
+    "vise 1.5 & vise 2.5",
+    "1. Poluvreme Liverpool više od 1.5 golova i Liverp",
+    3.05,
+    2.5
+   ],
+   [
+    "",
+    "vise 1.5 & manje 2.5",
+    "1. Poluvreme Liverpool više od 1.5 golova i Liverp",
+    14.0,
+    2.5
+   ],
+   [
+    "",
+    "manje 1.5 & vise 2.5",
+    "1. Poluvreme Liverpool manje od 1.5 golova i Liver",
+    4.15,
+    2.5
+   ],
+   [
+    "",
+    "manje 1.5 & manje 2.5",
+    "1. Poluvreme Liverpool manje od 1.5 golova i Liver",
+    2.17,
+    2.5
+   ]
+  ]
+ },
+ "LASK Linz - 1. poluvreme ukupno golova & 2. poluvreme ukupno golova": {
+  "mecova": 1,
+  "primer": [
+   [
+    "",
+    "vise 0.5 & vise 0.5",
+    "LASK Linz daje više od 0.5 golova u 1. poluvremenu",
+    6.4,
+    2.0
+   ],
+   [
+    "",
+    "vise 0.5 & manje 0.5",
+    "LASK Linz daje više od 0.5 golova u 1. poluvremenu",
+    4.4,
+    2.0
+   ],
+   [
+    "",
+    "vise 0.5 & vise 1.5",
+    "LASK Linz daje više od 0.5 golova u 1. poluvremenu",
+    21.0,
+    2.0
+   ],
+   [
+    "",
+    "vise 0.5 & manje 1.5",
+    "LASK Linz daje više od 0.5 golova u 1. poluvremenu",
+    3.05,
+    2.0
+   ],
+   [
+    "",
+    "vise 0.5 & vise 2.5",
+    "LASK Linz daje više od 0.5 golova u 1. poluvremenu",
+    80.0,
+    2.0
+   ],
+   [
+    "",
+    "vise 0.5 & manje 2.5",
+    "LASK Linz daje više od 0.5 golova u 1. poluvremenu",
+    2.82,
+    2.0
+   ],
+   [
+    "",
+    "manje 0.5 & vise 0.5",
+    "LASK Linz daje manje od 0.5 golova u 1. poluvremen",
+    3.35,
+    2.0
+   ],
+   [
+    "",
+    "manje 0.5 & manje 0.5",
+    "LASK Linz daje manje od 0.5 golova u 1. poluvremen",
+    2.4,
+    2.0
+   ],
+   [
+    "",
+    "manje 0.5 & vise 1.5",
+    "LASK Linz daje manje od 0.5 golova u 1. poluvremen",
+    11.0,
+    2.0
+   ],
+   [
+    "",
+    "manje 0.5 & manje 1.5",
+    "LASK Linz daje manje od 0.5 golova u 1. poluvremen",
+    1.6,
+    2.0
+   ],
+   [
+    "",
+    "manje 0.5 & vise 2.5",
+    "LASK Linz daje manje od 0.5 golova u 1. poluvremen",
+    45.0,
+    2.0
+   ],
+   [
+    "",
+    "manje 0.5 & manje 2.5",
+    "LASK Linz daje manje od 0.5 golova u 1. poluvremen",
+    1.47,
+    2.0
+   ]
+  ]
+ },
+ "Liverpool - 1. poluvreme ukupno golova & 2. poluvreme ukupno golova": {
+  "mecova": 1,
+  "primer": [
+   [
+    "",
+    "vise 0.5 & vise 0.5",
+    "Liverpool daje više od 0.5 golova u 1. poluvremenu",
+    1.74,
+    2.0
+   ],
+   [
+    "",
+    "vise 0.5 & manje 0.5",
+    "Liverpool daje više od 0.5 golova u 1. poluvremenu",
+    5.4,
+    2.0
+   ],
+   [
+    "",
+    "vise 0.5 & vise 1.5",
+    "Liverpool daje više od 0.5 golova u 1. poluvremenu",
+    2.95,
+    2.0
+   ],
+   [
+    "",
+    "vise 0.5 & manje 1.5",
+    "Liverpool daje više od 0.5 golova u 1. poluvremenu",
+    2.37,
+    2.0
+   ],
+   [
+    "",
+    "vise 0.5 & vise 2.5",
+    "Liverpool daje više od 0.5 golova u 1. poluvremenu",
+    6.3,
+    2.0
+   ],
+   [
+    "",
+    "vise 0.5 & manje 2.5",
+    "Liverpool daje više od 0.5 golova u 1. poluvremenu",
+    1.66,
+    2.0
+   ],
+   [
+    "",
+    "manje 0.5 & vise 0.5",
+    "Liverpool daje manje od 0.5 golova u 1. poluvremen",
+    4.0,
+    2.0
+   ],
+   [
+    "",
+    "manje 0.5 & manje 0.5",
+    "Liverpool daje manje od 0.5 golova u 1. poluvremen",
+    12.0,
+    2.0
+   ],
+   [
+    "",
+    "manje 0.5 & vise 1.5",
+    "Liverpool daje manje od 0.5 golova u 1. poluvremen",
+    6.4,
+    2.0
+   ],
+   [
+    "",
+    "manje 0.5 & manje 1.5",
+    "Liverpool daje manje od 0.5 golova u 1. poluvremen",
+    5.45,
+    2.0
+   ],
+   [
+    "",
+    "manje 0.5 & vise 2.5",
+    "Liverpool daje manje od 0.5 golova u 1. poluvremen",
+    13.0,
+    2.0
+   ],
+   [
+    "",
+    "manje 0.5 & manje 2.5",
+    "Liverpool daje manje od 0.5 golova u 1. poluvremen",
+    3.9,
+    2.0
+   ]
+  ]
+ },
+ "1X2 & ukupno golova LASK Linz (0.5)": {
+  "mecova": 1,
+  "primer": [
+   [
+    "0-",
+    "x & manje 0.5",
+    "nerešeno i LASK Linz manje od 0.5 gola na utakmici",
+    23.0,
+    0.5
+   ],
+   [
+    "2-",
+    "2 & manje 0.5",
+    "Liverpool pobednik i LASK Linz manje od 0.5 gola n",
+    2.5,
+    0.5
+   ],
+   [
+    "1+",
+    "1 & vise 0.5",
+    "LASK Linz pobednik i LASK Linz više od 0.5 gola na",
+    7.8,
+    0.5
+   ],
+   [
+    "0+",
+    "x & vise 0.5",
+    "nerešeno i LASK Linz više od 0.5 gola na utakmici",
+    6.9,
+    0.5
+   ],
+   [
+    "2+",
+    "2 & vise 0.5",
+    "Liverpool pobednik i LASK Linz više od 0.5 gola na",
+    2.47,
+    0.5
+   ]
+  ]
+ },
+ "1X2 & ukupno golova LASK Linz (1.5)": {
+  "mecova": 1,
+  "primer": [
+   [
+    "1-",
+    "1 & manje 1.5",
+    "LASK Linz pobednik i LASK Linz manje od 1.5 gola n",
+    25.0,
+    1.5
+   ],
+   [
+    "0-",
+    "x & manje 1.5",
+    "nerešeno i LASK Linz manje od 1.5 gola na utakmici",
+    8.5,
+    1.5
+   ],
+   [
+    "2-",
+    "2 & manje 1.5",
+    "Liverpool pobednik i LASK Linz manje od 1.5 gola n",
+    1.48,
+    1.5
+   ],
+   [
+    "1+",
+    "1 & vise 1.5",
+    "LASK Linz pobednik i LASK Linz više od 1.5 gola na",
+    9.7,
+    1.5
+   ],
+   [
+    "0+",
+    "x & vise 1.5",
+    "nerešeno i LASK Linz više od 1.5 gola na utakmici",
+    13.0,
+    1.5
+   ],
+   [
+    "2+",
+    "2 & vise 1.5",
+    "Liverpool pobednik i LASK Linz više od 1.5 gola na",
+    7.9,
+    1.5
+   ]
+  ]
+ },
+ "1X2 & ukupno golova LASK Linz (2.5)": {
+  "mecova": 1,
+  "primer": [
+   [
+    "1-",
+    "1 & manje 2.5",
+    "LASK Linz pobednik i LASK Linz manje od 2.5 gola n",
+    11.0,
+    2.5
+   ],
+   [
+    "0-",
+    "x & manje 2.5",
+    "nerešeno i LASK Linz manje od 2.5 gola na utakmici",
+    6.3,
+    2.5
+   ],
+   [
+    "2-",
+    "2 & manje 2.5",
+    "Liverpool pobednik i LASK Linz manje od 2.5 gola n",
+    1.32,
+    2.5
+   ],
+   [
+    "1+",
+    "1 & vise 2.5",
+    "LASK Linz pobednik i LASK Linz više od 2.5 gola na",
+    19.0,
+    2.5
+   ],
+   [
+    "0+",
+    "x & vise 2.5",
+    "nerešeno i LASK Linz više od 2.5 gola na utakmici",
+    40.0,
+    2.5
+   ],
+   [
+    "2+",
+    "2 & vise 2.5",
+    "Liverpool pobednik i LASK Linz više od 2.5 gola na",
+    34.0,
+    2.5
+   ]
+  ]
+ },
+ "1X2 & ukupno golova LASK Linz (3.5)": {
+  "mecova": 1,
+  "primer": [
+   [
+    "1-",
+    "1 & manje 3.5",
+    "LASK Linz pobednik i LASK Linz manje od 3.5 gola n",
+    8.6,
+    3.5
+   ],
+   [
+    "0-",
+    "x & manje 3.5",
+    "nerešeno i LASK Linz manje od 3.5 gola na utakmici",
+    5.9,
+    3.5
+   ],
+   [
+    "2-",
+    "2 & manje 3.5",
+    "Liverpool pobednik i LASK Linz manje od 3.5 gola n",
+    1.29,
+    3.5
+   ],
+   [
+    "1+",
+    "1 & vise 3.5",
+    "LASK Linz pobednik i LASK Linz više od 3.5 gola na",
+    50.0,
+    3.5
+   ],
+   [
+    "0+",
+    "x & vise 3.5",
+    "nerešeno i LASK Linz više od 3.5 gola na utakmici",
+    125.0,
+    3.5
+   ],
+   [
+    "2+",
+    "2 & vise 3.5",
+    "Liverpool pobednik i LASK Linz više od 3.5 gola na",
+    125.0,
+    3.5
+   ]
+  ]
+ },
+ "1X2 & ukupno golova LASK Linz (4.5)": {
+  "mecova": 1,
+  "primer": [
+   [
+    "1-",
+    "1 & manje 4.5",
+    "LASK Linz pobednik i LASK Linz manje od 4.5 gola n",
+    8.0,
+    4.5
+   ],
+   [
+    "0-",
+    "x & manje 4.5",
+    "nerešeno i LASK Linz manje od 4.5 gola na utakmici",
+    5.85,
+    4.5
+   ],
+   [
+    "2-",
+    "2 & manje 4.5",
+    "Liverpool pobednik i LASK Linz manje od 4.5 gola n",
+    1.29,
+    4.5
+   ],
+   [
+    "1+",
+    "1 & vise 4.5",
+    "LASK Linz pobednik i LASK Linz više od 4.5 gola na",
+    125.0,
+    4.5
+   ],
+   [
+    "0+",
+    "x & vise 4.5",
+    "nerešeno i LASK Linz više od 4.5 gola na utakmici",
+    150.0,
+    4.5
+   ],
+   [
+    "2+",
+    "2 & vise 4.5",
+    "Liverpool pobednik i LASK Linz više od 4.5 gola na",
+    150.0,
+    4.5
+   ]
+  ]
+ },
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
  "Ukupno kornera Feyenoord Rotterdam": {
   "mecova": 1,
   "primer": [
@@ -8994,14 +11843,22 @@
     ".1-",
     "manje 2.5",
     "Feyenoord Rotterdam će imati manje od 2.5 kartona ",
+<<<<<<< HEAD
     1.32,
+=======
+    1.31,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
     ".1+",
     "vise 2.5",
     "Feyenoord Rotterdam će imati više od 2.5 kartona n",
+<<<<<<< HEAD
     2.87,
+=======
+    2.9,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ]
   ]
@@ -9079,14 +11936,22 @@
     "*12-",
     "manje 5.5",
     "Como će imati manje od 5.5 šuteva u okvir gola",
+<<<<<<< HEAD
     1.9,
+=======
+    1.92,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     5.5
    ],
    [
     "*12+",
     "vise 5.5",
     "Como će imati više od 5.5 šuteva u okvir gola",
+<<<<<<< HEAD
     1.8,
+=======
+    1.78,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     5.5
    ]
   ]
@@ -9117,14 +11982,22 @@
     "",
     "manje 16.5",
     "Como manje od 16.5 šuteva",
+<<<<<<< HEAD
     1.9,
+=======
+    1.92,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     16.5
    ],
    [
     "",
     "vise 16.5",
     "Como više od 16.5 šuteva",
+<<<<<<< HEAD
     1.8,
+=======
+    1.78,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     16.5
    ]
   ]
@@ -9155,14 +12028,22 @@
     "/*02-",
     "manje 11.5",
     "Como manje od 11.5 faulova",
+<<<<<<< HEAD
     1.95,
+=======
+    2.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     11.5
    ],
    [
     "/*02+",
     "vise 11.5",
     "Como više od 11.5 faulova",
+<<<<<<< HEAD
     1.7,
+=======
+    1.73,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     11.5
    ]
   ]
@@ -9175,21 +12056,33 @@
     "1-2",
     "Feyenoord Rotterdam 1-2 gola na utakmici",
     1.61,
+<<<<<<< HEAD
     -2.0
+=======
+    2.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "",
     "1-3",
     "Feyenoord Rotterdam  1-3 gola na utakmici",
     1.35,
+<<<<<<< HEAD
     -3.0
+=======
+    3.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "",
     "2-3",
     "Feyenoord Rotterdam 2-3 gola na utakmici",
     2.52,
+<<<<<<< HEAD
     -3.0
+=======
+    3.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ]
   ]
  },
@@ -9201,21 +12094,33 @@
     "1-2",
     "Como 1-2 gola na utakmici",
     1.74,
+<<<<<<< HEAD
     -2.0
+=======
+    2.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "",
     "1-3",
     "Como 1-3 gola na utakmici",
     1.32,
+<<<<<<< HEAD
     -3.0
+=======
+    3.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "",
     "2-3",
     "Como 2-3 gola na utakmici",
     2.07,
+<<<<<<< HEAD
     -3.0
+=======
+    3.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ]
   ]
  },
@@ -10185,7 +13090,11 @@
     "da",
     "Bukayo Saka & Romain Perraud će faulirati jedan dr",
     2.8,
+<<<<<<< HEAD
     15.0
+=======
+    null
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ]
   ]
  },
@@ -10197,7 +13106,11 @@
     "da",
     "Eberechi Eze & Tiago Santos će faulirati jedan dru",
     2.7,
+<<<<<<< HEAD
     15.0
+=======
+    null
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ]
   ]
  },
@@ -10209,7 +13122,11 @@
     "da",
     "Viktor Gjokeres & Alexsandro Ribeiro će faulirati ",
     4.5,
+<<<<<<< HEAD
     15.0
+=======
+    null
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ]
   ]
  },
@@ -10221,7 +13138,11 @@
     "da",
     "Ajase Ueda će pogoditi stativu/precku (gol od stat",
     13.0,
+<<<<<<< HEAD
     15.0
+=======
+    null
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ]
   ]
  },
@@ -10233,7 +13154,11 @@
     "da",
     "Saka, Bukayo će pogoditi stativu/precku (gol od st",
     6.0,
+<<<<<<< HEAD
     15.0
+=======
+    null
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ]
   ]
  },
@@ -10245,7 +13170,11 @@
     "da",
     "Dilane Bakwa će pogoditi stativu/precku (gol od st",
     18.0,
+<<<<<<< HEAD
     15.0
+=======
+    null
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ]
   ]
  },
@@ -10257,7 +13186,11 @@
     "da",
     "Eberechi Eze će pogoditi stativu/precku (gol od st",
     8.0,
+<<<<<<< HEAD
     15.0
+=======
+    null
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ]
   ]
  },
@@ -10269,7 +13202,11 @@
     "da",
     "Hakon Arnar Haraldsson će pogoditi stativu/precku ",
     18.0,
+<<<<<<< HEAD
     15.0
+=======
+    null
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ]
   ]
  },
@@ -10281,6 +13218,7 @@
     "da",
     "Viktor Gyokeres će pogoditi stativu/precku (gol od",
     8.0,
+<<<<<<< HEAD
     15.0
    ]
   ]
@@ -10306,6 +13244,9 @@
     "Lille više od 365.5 dodavanja",
     1.85,
     365.5
+=======
+    null
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ]
   ]
  },
@@ -10317,7 +13258,11 @@
     "da",
     "Davide Ancelotti će dobiti karton. Za mečeve koji ",
     6.0,
+<<<<<<< HEAD
     15.0
+=======
+    null
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ]
   ]
  },
@@ -10329,7 +13274,11 @@
     "da",
     "Mikel Arteta će dobiti karton. Za mečeve koji uklj",
     6.0,
+<<<<<<< HEAD
     15.0
+=======
+    null
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ]
   ]
  },
@@ -10341,7 +13290,11 @@
     "da",
     "Mikel Arteta & Davide Ancelotti će dobiti karton. ",
     35.0,
+<<<<<<< HEAD
     15.0
+=======
+    null
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ]
   ]
  },
@@ -10530,42 +13483,66 @@
     ".1-",
     "manje 0.5",
     "Arsenal će imati manje od 0.5 kartona na utakmici ",
+<<<<<<< HEAD
     3.15,
+=======
+    3.4,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     0.5
    ],
    [
     ".1+",
     "vise 0.5",
     "Arsenal će imati više od 0.5 kartona na utakmici (",
+<<<<<<< HEAD
     1.27,
+=======
+    1.23,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     0.5
    ],
    [
     ".1-",
     "manje 1.5",
     "Arsenal će imati manje od 1.5 kartona na utakmici ",
+<<<<<<< HEAD
     1.5,
+=======
+    1.59,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
     ".1+",
     "vise 1.5",
     "Arsenal će imati više od 1.5 kartona na utakmici (",
+<<<<<<< HEAD
     2.35,
+=======
+    2.17,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
     ".1-",
     "manje 2.5",
     "Arsenal će imati manje od 2.5 kartona na utakmici ",
+<<<<<<< HEAD
     1.11,
+=======
+    1.14,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
     ".1+",
     "vise 2.5",
     "Arsenal će imati više od 2.5 kartona na utakmici (",
+<<<<<<< HEAD
     4.75,
+=======
+    4.25,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ]
   ]
@@ -10577,42 +13554,66 @@
     ".2-",
     "manje 1.5",
     "Lille će imati manje od 1.5 kartona na utakmici (u",
+<<<<<<< HEAD
     2.85,
+=======
+    3.1,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
     ".2+",
     "vise 1.5",
     "Lille će imati više od 1.5 kartona na utakmici (uk",
+<<<<<<< HEAD
     1.33,
+=======
+    1.27,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
     ".2-",
     "manje 2.5",
     "Lille će imati manje od 2.5 kartona na utakmici (u",
+<<<<<<< HEAD
     1.67,
+=======
+    1.78,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
     ".2+",
     "vise 2.5",
     "Lille će imati više od 2.5 kartona na utakmici (uk",
+<<<<<<< HEAD
     2.05,
+=======
+    1.92,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
     ".2-",
     "manje 3.5",
     "Lille će imati manje od 3.5 kartona na utakmici (u",
+<<<<<<< HEAD
     1.22,
+=======
+    1.27,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.5
    ],
    [
     ".2+",
     "vise 3.5",
     "Lille će imati više od 3.5 kartona na utakmici (uk",
+<<<<<<< HEAD
     3.45,
+=======
+    3.1,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.5
    ]
   ]
@@ -10624,84 +13625,132 @@
     "*11-",
     "manje 3.5",
     "Arsenal će imati manje od 3.5 šuteva u okvir gola",
+<<<<<<< HEAD
     5.65,
+=======
+    5.85,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.5
    ],
    [
     "*11+",
     "vise 3.5",
     "Arsenal će imati više od 3.5 šuteva u okvir gola",
+<<<<<<< HEAD
     1.07,
+=======
+    1.06,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.5
    ],
    [
     "*11-",
     "manje 4.5",
     "Arsenal će imati manje od 4.5 šuteva u okvir gola",
+<<<<<<< HEAD
     3.55,
+=======
+    3.85,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     4.5
    ],
    [
     "*11+",
     "vise 4.5",
     "Arsenal će imati više od 4.5 šuteva u okvir gola",
+<<<<<<< HEAD
     1.21,
+=======
+    1.22,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     4.5
    ],
    [
     "*11-",
     "manje 5.5",
     "Arsenal će imati manje od 5.5 šuteva u okvir gola",
+<<<<<<< HEAD
     2.47,
+=======
+    2.55,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     5.5
    ],
    [
     "*11+",
     "vise 5.5",
     "Arsenal će imati više od 5.5 šuteva u okvir gola",
+<<<<<<< HEAD
     1.48,
+=======
+    1.46,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     5.5
    ],
    [
     "*11-",
     "manje 6.5",
     "Arsenal će imati manje od 6.5 šuteva u okvir gola",
+<<<<<<< HEAD
     1.82,
+=======
+    1.85,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     6.5
    ],
    [
     "*11+",
     "vise 6.5",
     "Arsenal će imati više od 6.5 šuteva u okvir gola",
+<<<<<<< HEAD
     1.88,
+=======
+    1.85,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     6.5
    ],
    [
     "*11-",
     "manje 7.5",
     "Arsenal će imati manje od 7.5 šuteva u okvir gola",
+<<<<<<< HEAD
     1.44,
+=======
+    1.46,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     7.5
    ],
    [
     "*11+",
     "vise 7.5",
     "Arsenal će imati više od 7.5 šuteva u okvir gola",
+<<<<<<< HEAD
     2.5,
+=======
+    2.42,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     7.5
    ],
    [
     "*11-",
     "manje 8.5",
     "Arsenal će imati manje od 8.5 šuteva u okvir gola",
+<<<<<<< HEAD
     1.23,
+=======
+    1.24,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     8.5
    ],
    [
     "*11+",
     "vise 8.5",
     "Arsenal će imati više od 8.5 šuteva u okvir gola",
+<<<<<<< HEAD
     3.4,
+=======
+    3.3,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     8.5
    ]
   ]
@@ -10713,70 +13762,110 @@
     "*12-",
     "manje 0.5",
     "Lille će imati manje od 0.5 šuteva u okvir gola",
+<<<<<<< HEAD
     5.75,
+=======
+    5.45,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     0.5
    ],
    [
     "*12+",
     "vise 0.5",
     "Lille će imati više od 0.5 šuteva u okvir gola",
+<<<<<<< HEAD
     1.07,
+=======
+    1.08,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     0.5
    ],
    [
     "*12-",
     "manje 1.5",
     "Lille će imati manje od 1.5 šuteva u okvir gola",
+<<<<<<< HEAD
     2.57,
+=======
+    2.45,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
     "*12+",
     "vise 1.5",
     "Lille će imati više od 1.5 šuteva u okvir gola",
+<<<<<<< HEAD
     1.45,
+=======
+    1.49,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
     "*12-",
     "manje 2.5",
     "Lille će imati manje od 2.5 šuteva u okvir gola",
+<<<<<<< HEAD
     1.56,
+=======
+    1.5,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
     "*12+",
     "vise 2.5",
     "Lille će imati više od 2.5 šuteva u okvir gola",
+<<<<<<< HEAD
     2.25,
+=======
+    2.35,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
     "*12-",
     "manje 3.5",
     "Lille će imati manje od 3.5 šuteva u okvir gola",
+<<<<<<< HEAD
     1.19,
+=======
+    1.16,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.5
    ],
    [
     "*12+",
     "vise 3.5",
     "Lille će imati više od 3.5 šuteva u okvir gola",
+<<<<<<< HEAD
     3.7,
+=======
+    4.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.5
    ],
    [
     "*12-",
     "manje 4.5",
     "Lille će imati manje od 4.5 šuteva u okvir gola",
+<<<<<<< HEAD
     1.05,
+=======
+    1.04,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     4.5
    ],
    [
     "*12+",
     "vise 4.5",
     "Lille će imati više od 4.5 šuteva u okvir gola",
+<<<<<<< HEAD
     6.3,
+=======
+    6.8,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     4.5
    ],
    [
@@ -10823,14 +13912,22 @@
     "",
     "manje 16.5",
     "Arsenal manje od 16.5 šuteva,",
+<<<<<<< HEAD
     2.12,
+=======
+    2.1,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     16.5
    ],
    [
     "",
     "vise 16.5",
     "Arsenal više od 16.5 šuteva",
+<<<<<<< HEAD
     1.65,
+=======
+    1.64,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     16.5
    ],
    [
@@ -10966,6 +14063,47 @@
    ]
   ]
  },
+<<<<<<< HEAD
+=======
+ "Arsenal Ukupno faulova": {
+  "mecova": 1,
+  "primer": [
+   [
+    "/*01-",
+    "manje 10.5",
+    "Arsenal manje od 10.5 faulova",
+    1.85,
+    10.5
+   ],
+   [
+    "/*01+",
+    "vise 10.5",
+    "Arsenal više od 10.5 faulova",
+    1.85,
+    10.5
+   ]
+  ]
+ },
+ "Lille Ukupno faulova": {
+  "mecova": 1,
+  "primer": [
+   [
+    "/*02-",
+    "manje 12.5",
+    "Lille manje od 12.5 faulova",
+    1.68,
+    12.5
+   ],
+   [
+    "/*02+",
+    "vise 12.5",
+    "Lille više od 12.5 faulova",
+    2.05,
+    12.5
+   ]
+  ]
+ },
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
  "Ajoze Perez & Kevin De Bruyne zajedno imaju 3+ šuteva u okvir gola": {
   "mecova": 1,
   "primer": [
@@ -11130,7 +14268,11 @@
     "da",
     "Ajoze Perez & Kevin De Bruyne će faulirati jedan d",
     2.8,
+<<<<<<< HEAD
     15.0
+=======
+    null
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ]
   ]
  },
@@ -11142,7 +14284,11 @@
     "da",
     "Ajoze Perez & Noa Lang će faulirati jedan drugog. ",
     2.7,
+<<<<<<< HEAD
     15.0
+=======
+    null
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ]
   ]
  },
@@ -11154,7 +14300,11 @@
     "da",
     "Alberto Moleiro & Rasmus Hojlund će faulirati jeda",
     3.3,
+<<<<<<< HEAD
     15.0
+=======
+    null
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ]
   ]
  },
@@ -11166,7 +14316,11 @@
     "da",
     "Oluwaseyi, Tani & Politano, Matteo će faulirati je",
     3.2,
+<<<<<<< HEAD
     15.0
+=======
+    null
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ]
   ]
  },
@@ -11178,7 +14332,11 @@
     "da",
     "Ayoze Perez će pogoditi stativu/precku (gol od sta",
     5.5,
+<<<<<<< HEAD
     15.0
+=======
+    null
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ]
   ]
  },
@@ -11190,7 +14348,11 @@
     "da",
     "Alberto Moleiro će pogoditi stativu/precku (gol od",
     9.0,
+<<<<<<< HEAD
     15.0
+=======
+    null
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ]
   ]
  },
@@ -11202,7 +14364,11 @@
     "da",
     "Kevin De Bruyne će pogoditi stativu/precku (gol od",
     6.5,
+<<<<<<< HEAD
     15.0
+=======
+    null
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ]
   ]
  },
@@ -11214,7 +14380,11 @@
     "da",
     "Lobotka, Stanislav će pogoditi stativu/precku (gol",
     12.0,
+<<<<<<< HEAD
     15.0
+=======
+    null
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ]
   ]
  },
@@ -11226,7 +14396,11 @@
     "da",
     "Oluwaseyi, Tani će pogoditi stativu/precku (gol od",
     8.0,
+<<<<<<< HEAD
     15.0
+=======
+    null
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ]
   ]
  },
@@ -11238,7 +14412,11 @@
     "da",
     "Politano, Matteo će pogoditi stativu/precku (gol o",
     10.0,
+<<<<<<< HEAD
     15.0
+=======
+    null
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ]
   ]
  },
@@ -11250,6 +14428,7 @@
     "da",
     "Rasmus Hojlund će pogoditi stativu/precku (gol od ",
     5.8,
+<<<<<<< HEAD
     15.0
    ]
   ]
@@ -11275,6 +14454,9 @@
     "Napoli više od 477.5 dodavanja",
     1.85,
     477.5
+=======
+    null
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ]
   ]
  },
@@ -11286,7 +14468,11 @@
     "da",
     "Inigo Perez će dobiti karton. Za mečeve koji uklju",
     5.5,
+<<<<<<< HEAD
     15.0
+=======
+    null
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ]
   ]
  },
@@ -11298,7 +14484,11 @@
     "da",
     "Massimiliano Allegri će dobiti karton. Za mečeve k",
     5.5,
+<<<<<<< HEAD
     15.0
+=======
+    null
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ]
   ]
  },
@@ -11310,7 +14500,11 @@
     "da",
     "Inigo Perez & Massimiliano Allegri će dobiti karto",
     25.0,
+<<<<<<< HEAD
     15.0
+=======
+    null
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ]
   ]
  },
@@ -11694,6 +14888,7 @@
    ]
   ]
  },
+<<<<<<< HEAD
  "Gianluca Mancini & Denzel Dumfries da zajedno načine 4+ faulova": {
   "mecova": 1,
   "primer": [
@@ -11778,6 +14973,8 @@
    ]
   ]
  },
+=======
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
  "Arda Guler pogađa stativu/prečku (gol od stative/prečke se ne računa)": {
   "mecova": 1,
   "primer": [
@@ -11786,7 +14983,11 @@
     "da",
     "Arda Guler će pogoditi stativu/precku (gol od stat",
     8.0,
+<<<<<<< HEAD
     15.0
+=======
+    null
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ]
   ]
  },
@@ -11798,7 +14999,11 @@
     "da",
     "Donyell Malen će pogoditi stativu/precku (gol od s",
     5.5,
+<<<<<<< HEAD
     15.0
+=======
+    null
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ]
   ]
  },
@@ -11810,7 +15015,11 @@
     "da",
     "Jude Bellingham će pogoditi stativu/precku (gol od",
     7.0,
+<<<<<<< HEAD
     15.0
+=======
+    null
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ]
   ]
  },
@@ -11822,7 +15031,11 @@
     "da",
     "Kylian Mbappe će pogoditi stativu/precku (gol od s",
     5.0,
+<<<<<<< HEAD
     15.0
+=======
+    null
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ]
   ]
  },
@@ -11834,7 +15047,11 @@
     "da",
     "Matias Soule će pogoditi stativu/precku (gol od st",
     9.0,
+<<<<<<< HEAD
     15.0
+=======
+    null
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ]
   ]
  },
@@ -11846,7 +15063,11 @@
     "da",
     "Paulo Dybala će pogoditi stativu/precku (gol od st",
     8.0,
+<<<<<<< HEAD
     15.0
+=======
+    null
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ]
   ]
  },
@@ -11858,7 +15079,11 @@
     "da",
     "Vinicius Junior će pogoditi stativu/precku (gol od",
     6.5,
+<<<<<<< HEAD
     15.0
+=======
+    null
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ]
   ]
  },
@@ -11870,7 +15095,11 @@
     "da",
     "Gian Piero Gasperini će dobiti karton. Za mečeve k",
     5.5,
+<<<<<<< HEAD
     15.0
+=======
+    null
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ]
   ]
  },
@@ -11882,7 +15111,11 @@
     "da",
     "Jose Mourinho će dobiti karton. Za mečeve koji ukl",
     5.5,
+<<<<<<< HEAD
     15.0
+=======
+    null
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ]
   ]
  },
@@ -11894,7 +15127,11 @@
     "da",
     "Gian Piero Gasperini & Jose Mourinho će dobiti kar",
     30.0,
+<<<<<<< HEAD
     15.0
+=======
+    null
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ]
   ]
  },
@@ -12083,42 +15320,66 @@
     ".1-",
     "manje 1.5",
     "AS Roma će imati manje od 1.5 kartona na utakmici ",
+<<<<<<< HEAD
     2.72,
+=======
+    2.57,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
     ".1+",
     "vise 1.5",
     "AS Roma će imati više od 1.5 kartona na utakmici (",
+<<<<<<< HEAD
     1.36,
+=======
+    1.41,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
     ".1-",
     "manje 2.5",
     "AS Roma će imati manje od 2.5 kartona na utakmici ",
+<<<<<<< HEAD
     1.61,
+=======
+    1.55,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
     ".1+",
     "vise 2.5",
     "AS Roma će imati više od 2.5 kartona na utakmici (",
+<<<<<<< HEAD
     2.15,
+=======
+    2.25,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
     ".1-",
     "manje 3.5",
     "AS Roma će imati manje od 3.5 kartona na utakmici ",
+<<<<<<< HEAD
     1.2,
+=======
+    1.17,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.5
    ],
    [
     ".1+",
     "vise 3.5",
     "AS Roma će imati više od 3.5 kartona na utakmici (",
+<<<<<<< HEAD
     3.6,
+=======
+    3.9,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.5
    ]
   ]
@@ -12130,42 +15391,66 @@
     ".2-",
     "manje 0.5",
     "Real Madrid će imati manje od 0.5 kartona na utakm",
+<<<<<<< HEAD
     5.15,
+=======
+    5.5,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     0.5
    ],
    [
     ".2+",
     "vise 0.5",
     "Real Madrid će imati više od 0.5 kartona na utakmi",
+<<<<<<< HEAD
     1.09,
+=======
+    1.07,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     0.5
    ],
    [
     ".2-",
     "manje 1.5",
     "Real Madrid će imati manje od 1.5 kartona na utakm",
+<<<<<<< HEAD
     2.2,
+=======
+    2.32,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
     ".2+",
     "vise 1.5",
     "Real Madrid će imati više od 1.5 kartona na utakmi",
+<<<<<<< HEAD
     1.58,
+=======
+    1.52,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
     ".2-",
     "manje 2.5",
     "Real Madrid će imati manje od 2.5 kartona na utakm",
+<<<<<<< HEAD
     1.37,
+=======
+    1.42,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
     ".2+",
     "vise 2.5",
     "Real Madrid će imati više od 2.5 kartona na utakmi",
+<<<<<<< HEAD
     2.7,
+=======
+    2.52,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ]
   ]
@@ -12208,6 +15493,85 @@
    ]
   ]
  },
+<<<<<<< HEAD
+=======
+ "Ukupno šuteva AS Roma": {
+  "mecova": 1,
+  "primer": [
+   [
+    "",
+    "manje 13.5",
+    "AS Roma manje od 13.5 šuteva,",
+    1.83,
+    13.5
+   ],
+   [
+    "",
+    "vise 13.5",
+    "AS Roma više od 13.5 šuteva",
+    1.88,
+    13.5
+   ]
+  ]
+ },
+ "Ukupno šuteva Real Madrid": {
+  "mecova": 1,
+  "primer": [
+   [
+    "",
+    "manje 16.5",
+    "Real Madrid manje od 16.5 šuteva",
+    1.76,
+    16.5
+   ],
+   [
+    "",
+    "vise 16.5",
+    "Real Madrid više od 16.5 šuteva",
+    1.95,
+    16.5
+   ]
+  ]
+ },
+ "AS Roma Ukupno faulova": {
+  "mecova": 1,
+  "primer": [
+   [
+    "/*01-",
+    "manje 12.5",
+    "AS Roma manje od 12.5 faulova",
+    1.95,
+    12.5
+   ],
+   [
+    "/*01+",
+    "vise 12.5",
+    "AS Roma više od 12.5 faulova",
+    1.77,
+    12.5
+   ]
+  ]
+ },
+ "Real Madrid Ukupno faulova": {
+  "mecova": 1,
+  "primer": [
+   [
+    "/*02-",
+    "manje 10.5",
+    "Real Madrid manje od 10.5 faulova",
+    1.95,
+    10.5
+   ],
+   [
+    "/*02+",
+    "vise 10.5",
+    "Real Madrid više od 10.5 faulova",
+    1.76,
+    10.5
+   ]
+  ]
+ },
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
  "Ukupno kornera Slovan Bratislava": {
   "mecova": 1,
   "primer": [
@@ -12393,42 +15757,66 @@
     ".1-",
     "manje 1.5",
     "Slovan Bratislava će imati manje od 1.5 kartona na",
+<<<<<<< HEAD
     2.55,
+=======
+    2.57,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
     ".1+",
     "vise 1.5",
     "Slovan Bratislava će imati više od 1.5 kartona na ",
+<<<<<<< HEAD
     1.42,
+=======
+    1.41,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
     ".1-",
     "manje 2.5",
     "Slovan Bratislava će imati manje od 2.5 kartona na",
+<<<<<<< HEAD
     1.53,
+=======
+    1.54,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
     ".1+",
     "vise 2.5",
     "Slovan Bratislava će imati više od 2.5 kartona na ",
+<<<<<<< HEAD
     2.3,
+=======
+    2.27,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
     ".1-",
     "manje 3.5",
     "Slovan Bratislava će imati manje od 3.5 kartona na",
+<<<<<<< HEAD
     1.16,
+=======
+    1.17,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.5
    ],
    [
     ".1+",
     "vise 3.5",
     "Slovan Bratislava će imati više od 3.5 kartona na ",
+<<<<<<< HEAD
     4.0,
+=======
+    3.9,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.5
    ]
   ]
@@ -12440,7 +15828,11 @@
     ".2-",
     "manje 0.5",
     "Stuttgart će imati manje od 0.5 kartona na utakmic",
+<<<<<<< HEAD
     3.75,
+=======
+    3.7,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     0.5
    ],
    [
@@ -12454,14 +15846,22 @@
     ".2-",
     "manje 1.5",
     "Stuttgart će imati manje od 1.5 kartona na utakmic",
+<<<<<<< HEAD
     1.7,
+=======
+    1.68,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
     ".2+",
     "vise 1.5",
     "Stuttgart će imati više od 1.5 kartona na utakmici",
+<<<<<<< HEAD
     2.02,
+=======
+    2.05,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
@@ -12475,7 +15875,11 @@
     ".2+",
     "vise 2.5",
     "Stuttgart će imati više od 2.5 kartona na utakmici",
+<<<<<<< HEAD
     3.85,
+=======
+    3.9,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ]
   ]
@@ -12494,7 +15898,11 @@
     "*11+",
     "vise 2.5",
     "Slovan Bratislava će imati više od 2.5 šuteva u ok",
+<<<<<<< HEAD
     1.66,
+=======
+    1.67,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ]
   ]
@@ -12563,14 +15971,22 @@
     "/*01-",
     "manje 11.5",
     "Slovan Bratislava manje od 11.5 faulova",
+<<<<<<< HEAD
     1.65,
+=======
+    1.69,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     11.5
    ],
    [
     "/*01+",
     "vise 11.5",
     "Slovan Bratislava više od 11.5 faulova",
+<<<<<<< HEAD
     2.0,
+=======
+    2.05,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     11.5
    ]
   ]
@@ -12582,14 +15998,22 @@
     "/*02-",
     "manje 11.5",
     "Stuttgart manje od 11.5 faulova",
+<<<<<<< HEAD
     1.65,
+=======
+    1.69,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     11.5
    ],
    [
     "/*02+",
     "vise 11.5",
     "Stuttgart više od 11.5 faulova",
+<<<<<<< HEAD
     2.0,
+=======
+    2.05,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     11.5
    ]
   ]
@@ -12602,21 +16026,33 @@
     "1-2",
     "Slovan Bratislava 1-2 gola na utakmici",
     1.75,
+<<<<<<< HEAD
     -2.0
+=======
+    2.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "",
     "1-3",
     "Slovan Bratislava  1-3 gola na utakmici",
     1.6,
+<<<<<<< HEAD
     -3.0
+=======
+    3.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "",
     "2-3",
     "Slovan Bratislava 2-3 gola na utakmici",
     3.85,
+<<<<<<< HEAD
     -3.0
+=======
+    3.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ]
   ]
  },
@@ -12627,22 +16063,36 @@
     "",
     "1-2",
     "Stuttgart 1-2 gola na utakmici",
+<<<<<<< HEAD
     2.22,
     -2.0
+=======
+    2.25,
+    2.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "",
     "1-3",
     "Stuttgart 1-3 gola na utakmici",
+<<<<<<< HEAD
     1.49,
     -3.0
+=======
+    1.5,
+    3.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "",
     "2-3",
     "Stuttgart 2-3 gola na utakmici",
     2.02,
+<<<<<<< HEAD
     -3.0
+=======
+    3.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ]
   ]
  },
@@ -12745,7 +16195,11 @@
     "1",
     "1",
     "Stuttgart daje tačno 1 gol",
+<<<<<<< HEAD
     4.85,
+=======
+    4.9,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.0
    ],
    [
@@ -12759,7 +16213,11 @@
     "3",
     "3+",
     "Stuttgart daje 3 ili više golova",
+<<<<<<< HEAD
     1.83,
+=======
+    1.82,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.0
    ]
   ]
@@ -12790,14 +16248,22 @@
     "1",
     "da",
     "Stuttgart daje gol na utakmici",
+<<<<<<< HEAD
     1.05,
+=======
+    1.04,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     null
    ],
    [
     "2",
     "ne",
     "Stuttgart ne daje gol na utakmici",
+<<<<<<< HEAD
     11.0,
+=======
+    12.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     null
    ]
   ]
@@ -12898,14 +16364,22 @@
     "",
     "vise 0.5 & vise 1.5",
     "1. Poluvreme Stuttgart više od 0.5 golova i Stuttg",
+<<<<<<< HEAD
     1.48,
+=======
+    1.47,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
     "",
     "vise 0.5 & manje 1.5",
     "1. Poluvreme Stuttgart više od 0.5 golova i Stuttg",
+<<<<<<< HEAD
     8.4,
+=======
+    8.5,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
@@ -12919,14 +16393,22 @@
     "",
     "manje 0.5 & manje 1.5",
     "1. Poluvreme Stuttgart manje od 0.5 golova i Stutt",
+<<<<<<< HEAD
     5.15,
+=======
+    5.2,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
     "",
     "vise 0.5 & vise 2.5",
     "1. Poluvreme Stuttgart više od 0.5 golova i Stuttg",
+<<<<<<< HEAD
     1.97,
+=======
+    1.95,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
@@ -12947,14 +16429,22 @@
     "",
     "manje 0.5 & manje 2.5",
     "1. Poluvreme Stuttgart manje od 0.5 golova i Stutt",
+<<<<<<< HEAD
     3.75,
+=======
+    3.8,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
     "",
     "vise 1.5 & vise 2.5",
     "1. Poluvreme Stuttgart više od 1.5 golova i Stuttg",
+<<<<<<< HEAD
     2.87,
+=======
+    2.85,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
@@ -12968,14 +16458,22 @@
     "",
     "manje 1.5 & vise 2.5",
     "1. Poluvreme Stuttgart manje od 1.5 golova i Stutt",
+<<<<<<< HEAD
     3.9,
+=======
+    3.85,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
     "",
     "manje 1.5 & manje 2.5",
     "1. Poluvreme Stuttgart manje od 1.5 golova i Stutt",
+<<<<<<< HEAD
     2.15,
+=======
+    2.17,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ]
   ]
@@ -13872,7 +17370,11 @@
     "*12+",
     "vise 3.5",
     "Porto će imati više od 3.5 šuteva u okvir gola",
+<<<<<<< HEAD
     1.67,
+=======
+    1.68,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.5
    ]
   ]
@@ -13910,7 +17412,11 @@
     "",
     "vise 12.5",
     "Porto više od 12.5 šuteva",
+<<<<<<< HEAD
     1.97,
+=======
+    2.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     12.5
    ]
   ]
@@ -13941,14 +17447,22 @@
     "/*02-",
     "manje 12.5",
     "Porto manje od 12.5 faulova",
+<<<<<<< HEAD
     1.69,
+=======
+    1.73,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     12.5
    ],
    [
     "/*02+",
     "vise 12.5",
     "Porto više od 12.5 faulova",
+<<<<<<< HEAD
     1.95,
+=======
+    2.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     12.5
    ]
   ]
@@ -13961,21 +17475,33 @@
     "1-2",
     "Betis 1-2 gola na utakmici",
     1.63,
+<<<<<<< HEAD
     -2.0
+=======
+    2.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "",
     "1-3",
     "Betis  1-3 gola na utakmici",
     1.32,
+<<<<<<< HEAD
     -3.0
+=======
+    3.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "",
     "2-3",
     "Betis 2-3 gola na utakmici",
     2.3,
+<<<<<<< HEAD
     -3.0
+=======
+    3.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ]
   ]
  },
@@ -13987,21 +17513,33 @@
     "1-2",
     "Porto 1-2 gola na utakmici",
     1.62,
+<<<<<<< HEAD
     -2.0
+=======
+    2.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "",
     "1-3",
     "Porto 1-3 gola na utakmici",
     1.4,
+<<<<<<< HEAD
     -3.0
+=======
+    3.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "",
     "2-3",
     "Porto 2-3 gola na utakmici",
     2.82,
+<<<<<<< HEAD
     -3.0
+=======
+    3.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ]
   ]
  },
@@ -14996,7 +18534,11 @@
     "da",
     "Andy Diouf & Joaquin Seys će faulirati jedan drugo",
     4.0,
+<<<<<<< HEAD
     15.0
+=======
+    null
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ]
   ]
  },
@@ -15008,7 +18550,11 @@
     "da",
     "Federico Dimarco & Carlos Forbs će faulirati jedan",
     3.75,
+<<<<<<< HEAD
     15.0
+=======
+    null
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ]
   ]
  },
@@ -15020,7 +18566,11 @@
     "da",
     "Hakan Calhanoglu & Hans Vanaken će faulirati jedan",
     3.25,
+<<<<<<< HEAD
     15.0
+=======
+    null
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ]
   ]
  },
@@ -15032,7 +18582,11 @@
     "da",
     "Lautaro Martinez & Kyriani Sabbe će faulirati jeda",
     3.15,
+<<<<<<< HEAD
     15.0
+=======
+    null
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ]
   ]
  },
@@ -15044,7 +18598,11 @@
     "da",
     "Carlos Forbs će pogoditi stativu/precku (gol od st",
     12.0,
+<<<<<<< HEAD
     15.0
+=======
+    null
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ]
   ]
  },
@@ -15056,7 +18614,11 @@
     "da",
     "Francesco Pio Esposito će pogoditi stativu/precku ",
     6.0,
+<<<<<<< HEAD
     15.0
+=======
+    null
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ]
   ]
  },
@@ -15068,7 +18630,11 @@
     "da",
     "Hakan Calhanoglu će pogoditi stativu/precku (gol o",
     10.0,
+<<<<<<< HEAD
     15.0
+=======
+    null
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ]
   ]
  },
@@ -15080,7 +18646,11 @@
     "da",
     "Hugo Vetlesen će pogoditi stativu/precku (gol od s",
     10.0,
+<<<<<<< HEAD
     15.0
+=======
+    null
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ]
   ]
  },
@@ -15092,7 +18662,11 @@
     "da",
     "Lautaro Martinez će pogoditi stativu/precku (gol o",
     5.5,
+<<<<<<< HEAD
     15.0
+=======
+    null
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ]
   ]
  },
@@ -15104,7 +18678,11 @@
     "da",
     "Marcus Thuram će pogoditi stativu/precku (gol od s",
     6.5,
+<<<<<<< HEAD
     15.0
+=======
+    null
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ]
   ]
  },
@@ -15116,6 +18694,7 @@
     "da",
     "Nicolo Tresoldi će pogoditi stativu/precku (gol od",
     7.0,
+<<<<<<< HEAD
     15.0
    ]
   ]
@@ -15141,6 +18720,9 @@
     "Club Brugge više od 418.5 dodavanja",
     1.85,
     418.5
+=======
+    null
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ]
   ]
  },
@@ -15152,7 +18734,11 @@
     "da",
     "Cristian Chivu će dobiti karton. Za mečeve koji uk",
     5.5,
+<<<<<<< HEAD
     15.0
+=======
+    null
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ]
   ]
  },
@@ -15164,7 +18750,11 @@
     "da",
     "Ivan Leko će dobiti karton. Za mečeve koji uključu",
     5.5,
+<<<<<<< HEAD
     15.0
+=======
+    null
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ]
   ]
  },
@@ -15176,7 +18766,11 @@
     "da",
     "Cristian Chivu & Ivan Leko će dobiti karton. Za me",
     25.0,
+<<<<<<< HEAD
     15.0
+=======
+    null
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ]
   ]
  },
@@ -15365,42 +18959,66 @@
     ".1-",
     "manje 0.5",
     "Inter Milano će imati manje od 0.5 kartona na utak",
+<<<<<<< HEAD
     3.0,
+=======
+    3.25,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     0.5
    ],
    [
     ".1+",
     "vise 0.5",
     "Inter Milano će imati više od 0.5 kartona na utakm",
+<<<<<<< HEAD
     1.29,
+=======
+    1.25,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     0.5
    ],
    [
     ".1-",
     "manje 1.5",
     "Inter Milano će imati manje od 1.5 kartona na utak",
+<<<<<<< HEAD
     1.46,
+=======
+    1.54,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
     ".1+",
     "vise 1.5",
     "Inter Milano će imati više od 1.5 kartona na utakm",
+<<<<<<< HEAD
     2.45,
+=======
+    2.27,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
     ".1-",
     "manje 2.5",
     "Inter Milano će imati manje od 2.5 kartona na utak",
+<<<<<<< HEAD
     1.09,
+=======
+    1.12,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
     ".1+",
     "vise 2.5",
     "Inter Milano će imati više od 2.5 kartona na utakm",
+<<<<<<< HEAD
     5.1,
+=======
+    4.5,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ]
   ]
@@ -15412,42 +19030,66 @@
     ".2-",
     "manje 1.5",
     "Club Brugge će imati manje od 1.5 kartona na utakm",
+<<<<<<< HEAD
     2.5,
+=======
+    2.65,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
     ".2+",
     "vise 1.5",
     "Club Brugge će imati više od 1.5 kartona na utakmi",
+<<<<<<< HEAD
     1.43,
+=======
+    1.38,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
     ".2-",
     "manje 2.5",
     "Club Brugge će imati manje od 2.5 kartona na utakm",
+<<<<<<< HEAD
     1.51,
+=======
+    1.57,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
     ".2+",
     "vise 2.5",
     "Club Brugge će imati više od 2.5 kartona na utakmi",
+<<<<<<< HEAD
     2.35,
+=======
+    2.2,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
     ".2-",
     "manje 3.5",
     "Club Brugge će imati manje od 3.5 kartona na utakm",
+<<<<<<< HEAD
     1.15,
+=======
+    1.18,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.5
    ],
    [
     ".2+",
     "vise 3.5",
     "Club Brugge će imati više od 3.5 kartona na utakmi",
+<<<<<<< HEAD
     4.1,
+=======
+    3.8,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.5
    ]
   ]
@@ -15637,7 +19279,11 @@
     ".1-",
     "manje 0.5",
     "Bodo/Glimt će imati manje od 0.5 kartona na utakmi",
+<<<<<<< HEAD
     5.6,
+=======
+    5.75,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     0.5
    ],
    [
@@ -15651,28 +19297,44 @@
     ".1-",
     "manje 1.5",
     "Bodo/Glimt će imati manje od 1.5 kartona na utakmi",
+<<<<<<< HEAD
     2.35,
+=======
+    2.4,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
     ".1+",
     "vise 1.5",
     "Bodo/Glimt će imati više od 1.5 kartona na utakmic",
+<<<<<<< HEAD
     1.5,
+=======
+    1.48,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
     ".1-",
     "manje 2.5",
     "Bodo/Glimt će imati manje od 2.5 kartona na utakmi",
+<<<<<<< HEAD
     1.43,
+=======
+    1.45,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
     ".1+",
     "vise 2.5",
     "Bodo/Glimt će imati više od 2.5 kartona na utakmic",
+<<<<<<< HEAD
     2.5,
+=======
+    2.45,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ]
   ]
@@ -15684,42 +19346,66 @@
     ".2-",
     "manje 0.5",
     "Borussia Dortmund će imati manje od 0.5 kartona na",
+<<<<<<< HEAD
     3.9,
+=======
+    3.8,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     0.5
    ],
    [
     ".2+",
     "vise 0.5",
     "Borussia Dortmund će imati više od 0.5 kartona na ",
+<<<<<<< HEAD
     1.17,
+=======
+    1.18,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     0.5
    ],
    [
     ".2-",
     "manje 1.5",
     "Borussia Dortmund će imati manje od 1.5 kartona na",
+<<<<<<< HEAD
     1.76,
+=======
+    1.72,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
     ".2+",
     "vise 1.5",
     "Borussia Dortmund će imati više od 1.5 kartona na ",
+<<<<<<< HEAD
     1.95,
+=======
+    2.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
     ".2-",
     "manje 2.5",
     "Borussia Dortmund će imati manje od 2.5 kartona na",
+<<<<<<< HEAD
     1.19,
+=======
+    1.18,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
     ".2+",
     "vise 2.5",
     "Borussia Dortmund će imati više od 2.5 kartona na ",
+<<<<<<< HEAD
     3.65,
+=======
+    3.8,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ]
   ]
@@ -15738,7 +19424,11 @@
     "*11+",
     "vise 4.5",
     "Bodo/Glimt će imati više od 4.5 šuteva u okvir gol",
+<<<<<<< HEAD
     2.02,
+=======
+    2.05,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     4.5
    ]
   ]
@@ -15769,14 +19459,22 @@
     "",
     "manje 13.5",
     "Bodo/Glimt manje od 13.5 šuteva,",
+<<<<<<< HEAD
     1.8,
+=======
+    1.78,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     13.5
    ],
    [
     "",
     "vise 13.5",
     "Bodo/Glimt više od 13.5 šuteva",
+<<<<<<< HEAD
     1.9,
+=======
+    1.92,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     13.5
    ]
   ]
@@ -15807,14 +19505,22 @@
     "/*01-",
     "manje 9.5",
     "Bodo/Glimt manje od 9.5 faulova",
+<<<<<<< HEAD
     1.92,
+=======
+    1.95,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     9.5
    ],
    [
     "/*01+",
     "vise 9.5",
     "Bodo/Glimt više od 9.5 faulova",
+<<<<<<< HEAD
     1.72,
+=======
+    1.77,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     9.5
    ]
   ]
@@ -15826,14 +19532,22 @@
     "/*02-",
     "manje 11.5",
     "Borussia Dortmund manje od 11.5 faulova",
+<<<<<<< HEAD
     1.65,
+=======
+    1.69,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     11.5
    ],
    [
     "/*02+",
     "vise 11.5",
     "Borussia Dortmund više od 11.5 faulova",
+<<<<<<< HEAD
     2.0,
+=======
+    2.05,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     11.5
    ]
   ]
@@ -15846,21 +19560,33 @@
     "1-2",
     "Bodo/Glimt 1-2 gola na utakmici",
     1.62,
+<<<<<<< HEAD
     -2.0
+=======
+    2.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "",
     "1-3",
     "Bodo/Glimt  1-3 gola na utakmici",
     1.33,
+<<<<<<< HEAD
     -3.0
+=======
+    3.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "",
     "2-3",
     "Bodo/Glimt 2-3 gola na utakmici",
     2.35,
+<<<<<<< HEAD
     -3.0
+=======
+    3.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ]
   ]
  },
@@ -15872,21 +19598,33 @@
     "1-2",
     "Borussia Dortmund 1-2 gola na utakmici",
     1.73,
+<<<<<<< HEAD
     -2.0
+=======
+    2.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "",
     "1-3",
     "Borussia Dortmund 1-3 gola na utakmici",
     1.32,
+<<<<<<< HEAD
     -3.0
+=======
+    3.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "",
     "2-3",
     "Borussia Dortmund 2-3 gola na utakmici",
     2.07,
+<<<<<<< HEAD
     -3.0
+=======
+    3.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ]
   ]
  },
@@ -15930,7 +19668,11 @@
     "13",
     "1-3",
     "Borussia Dortmund 1,2 ili 3 gola u svakom poluvrem",
+<<<<<<< HEAD
     2.47,
+=======
+    2.45,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.0
    ],
    [
@@ -15949,14 +19691,22 @@
     "0",
     "0",
     "Bodo/Glimt ne daje gol",
+<<<<<<< HEAD
     4.3,
+=======
+    4.4,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.0
    ],
    [
     "1",
     "1",
     "Bodo/Glimt daje tačno 1 gol",
+<<<<<<< HEAD
     2.8,
+=======
+    2.82,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.0
    ],
    [
@@ -15970,7 +19720,11 @@
     "3",
     "3+",
     "Bodo/Glimt daje 3 ili više golova",
+<<<<<<< HEAD
     4.15,
+=======
+    4.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.0
    ]
   ]
@@ -15982,14 +19736,22 @@
     "0",
     "0",
     "Borussia Dortmund ne daje gol",
+<<<<<<< HEAD
     6.0,
+=======
+    6.1,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.0
    ],
    [
     "1",
     "1",
     "Borussia Dortmund daje tačno 1 gol",
+<<<<<<< HEAD
     3.25,
+=======
+    3.3,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.0
    ],
    [
@@ -16003,7 +19765,11 @@
     "3",
     "3+",
     "Borussia Dortmund daje 3 ili više golova",
+<<<<<<< HEAD
     2.92,
+=======
+    2.87,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.0
    ]
   ]
@@ -16015,14 +19781,22 @@
     "1",
     "da",
     "Bodo/Glimt daje gol na utakmici",
+<<<<<<< HEAD
     1.22,
+=======
+    1.21,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     null
    ],
    [
     "2",
     "ne",
     "Bodo/Glimt ne daje gol na utakmici",
+<<<<<<< HEAD
     4.4,
+=======
+    4.5,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     null
    ]
   ]
@@ -16034,14 +19808,22 @@
     "1",
     "da",
     "Borussia Dortmund daje gol na utakmici",
+<<<<<<< HEAD
     1.13,
+=======
+    1.12,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     null
    ],
    [
     "2",
     "ne",
     "Borussia Dortmund ne daje gol na utakmici",
+<<<<<<< HEAD
     6.2,
+=======
+    6.3,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     null
    ]
   ]
@@ -16456,21 +20238,33 @@
     "0-",
     "x & manje 1.5",
     "nerešeno i Bodo/Glimt manje od 1.5 gola na utakmic",
+<<<<<<< HEAD
     6.0,
+=======
+    6.1,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
     "2-",
     "2 & manje 1.5",
     "Borussia Dortmund pobednik i Bodo/Glimt manje od 1",
+<<<<<<< HEAD
     2.5,
+=======
+    2.52,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
     "1+",
     "1 & vise 1.5",
     "Bodo/Glimt pobednik i Bodo/Glimt više od 1.5 gola ",
+<<<<<<< HEAD
     3.35,
+=======
+    3.3,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
@@ -16484,7 +20278,11 @@
     "2+",
     "2 & vise 1.5",
     "Borussia Dortmund pobednik i Bodo/Glimt više od 1.",
+<<<<<<< HEAD
     7.0,
+=======
+    6.9,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ]
   ]
@@ -17019,14 +20817,22 @@
     "*12-",
     "manje 3.5",
     "PSV Eindhoven će imati manje od 3.5 šuteva u okvir",
+<<<<<<< HEAD
     2.55,
+=======
+    2.6,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.5
    ],
    [
     "*12+",
     "vise 3.5",
     "PSV Eindhoven će imati više od 3.5 šuteva u okvir ",
+<<<<<<< HEAD
     1.42,
+=======
+    1.44,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.5
    ],
    [
@@ -17136,7 +20942,11 @@
     "",
     "vise 16.5",
     "RB Leipzig više od 16.5 šuteva",
+<<<<<<< HEAD
     1.75,
+=======
+    1.76,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     16.5
    ],
    [
@@ -17190,14 +21000,22 @@
     "",
     "manje 10.5",
     "PSV Eindhoven manje od 10.5 šuteva",
+<<<<<<< HEAD
     2.77,
+=======
+    2.85,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     10.5
    ],
    [
     "",
     "vise 10.5",
     "PSV Eindhoven više od 10.5 šuteva",
+<<<<<<< HEAD
     1.35,
+=======
+    1.37,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     10.5
    ],
    [
@@ -17232,7 +21050,11 @@
     "",
     "manje 13.5",
     "PSV Eindhoven manje od 13.5 šuteva",
+<<<<<<< HEAD
     1.62,
+=======
+    1.61,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     13.5
    ],
    [
@@ -17265,14 +21087,22 @@
     "/*01-",
     "manje 10.5",
     "RB Leipzig manje od 10.5 faulova",
+<<<<<<< HEAD
     2.02,
+=======
+    1.87,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     10.5
    ],
    [
     "/*01+",
     "vise 10.5",
     "RB Leipzig više od 10.5 faulova",
+<<<<<<< HEAD
     1.7,
+=======
+    1.83,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     10.5
    ]
   ]
@@ -17282,6 +21112,7 @@
   "primer": [
    [
     "/*02-",
+<<<<<<< HEAD
     "manje 12.5",
     "PSV Eindhoven manje od 12.5 faulova",
     1.71,
@@ -17293,6 +21124,19 @@
     "PSV Eindhoven više od 12.5 faulova",
     2.0,
     12.5
+=======
+    "manje 11.5",
+    "PSV Eindhoven manje od 11.5 faulova",
+    1.95,
+    11.5
+   ],
+   [
+    "/*02+",
+    "vise 11.5",
+    "PSV Eindhoven više od 11.5 faulova",
+    1.77,
+    11.5
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ]
   ]
  },
@@ -17303,22 +21147,36 @@
     "",
     "1-2",
     "RB Leipzig 1-2 gola na utakmici",
+<<<<<<< HEAD
     2.05,
     -2.0
+=======
+    2.02,
+    2.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "",
     "1-3",
     "RB Leipzig  1-3 gola na utakmici",
+<<<<<<< HEAD
     1.42,
     -3.0
+=======
+    1.41,
+    3.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "",
     "2-3",
     "RB Leipzig 2-3 gola na utakmici",
     2.0,
+<<<<<<< HEAD
     -3.0
+=======
+    3.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ]
   ]
  },
@@ -17330,21 +21188,34 @@
     "1-2",
     "PSV Eindhoven 1-2 gola na utakmici",
     1.62,
+<<<<<<< HEAD
     -2.0
+=======
+    2.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "",
     "1-3",
     "PSV Eindhoven 1-3 gola na utakmici",
     1.35,
+<<<<<<< HEAD
     -3.0
+=======
+    3.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "",
     "2-3",
     "PSV Eindhoven 2-3 gola na utakmici",
+<<<<<<< HEAD
     2.52,
     -3.0
+=======
+    2.47,
+    3.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ]
   ]
  },
@@ -17388,14 +21259,22 @@
     "13",
     "1-3",
     "PSV Eindhoven 1,2 ili 3 gola u svakom poluvremenu",
+<<<<<<< HEAD
     3.4,
+=======
+    3.35,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.0
    ],
    [
     "23",
     "2-3",
     "PSV Eindhoven 2 ili 3 gola u svakom poluvremenu",
+<<<<<<< HEAD
     21.0,
+=======
+    20.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.0
    ]
   ]
@@ -17407,21 +21286,33 @@
     "0",
     "0",
     "RB Leipzig ne daje gol",
+<<<<<<< HEAD
     9.2,
+=======
+    9.1,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.0
    ],
    [
     "1",
     "1",
     "RB Leipzig daje tačno 1 gol",
+<<<<<<< HEAD
     4.3,
+=======
+    4.25,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.0
    ],
    [
     "2",
     "2",
     "RB Leipzig daje tačno 2 gola",
+<<<<<<< HEAD
     3.5,
+=======
+    3.45,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.0
    ],
    [
@@ -17440,28 +21331,44 @@
     "0",
     "0",
     "PSV Eindhoven ne daje gol",
+<<<<<<< HEAD
     3.8,
+=======
+    3.9,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.0
    ],
    [
     "1",
     "1",
     "PSV Eindhoven daje tačno 1 gol",
+<<<<<<< HEAD
     2.7,
+=======
+    2.72,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.0
    ],
    [
     "2",
     "2",
     "PSV Eindhoven daje tačno 2 gola",
+<<<<<<< HEAD
     3.6,
+=======
+    3.55,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.0
    ],
    [
     "3",
     "3+",
     "PSV Eindhoven daje 3 ili više golova",
+<<<<<<< HEAD
     4.75,
+=======
+    4.65,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.0
    ]
   ]
@@ -17480,7 +21387,11 @@
     "2",
     "ne",
     "RB Leipzig ne daje gol na utakmici",
+<<<<<<< HEAD
     9.9,
+=======
+    9.7,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     null
    ]
   ]
@@ -17492,14 +21403,22 @@
     "1",
     "da",
     "PSV Eindhoven daje gol na utakmici",
+<<<<<<< HEAD
     1.26,
+=======
+    1.25,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     null
    ],
    [
     "2",
     "ne",
     "PSV Eindhoven ne daje gol na utakmici",
+<<<<<<< HEAD
     3.9,
+=======
+    4.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     null
    ]
   ]
@@ -17511,14 +21430,22 @@
     "",
     "vise 0.5 & vise 1.5",
     "1. Poluvreme RB Leipzig više od 0.5 golova i RB Le",
+<<<<<<< HEAD
     1.59,
+=======
+    1.6,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
     "",
     "vise 0.5 & manje 1.5",
     "1. Poluvreme RB Leipzig više od 0.5 golova i RB Le",
+<<<<<<< HEAD
     7.7,
+=======
+    7.6,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
@@ -17532,21 +21459,33 @@
     "",
     "manje 0.5 & manje 1.5",
     "1. Poluvreme RB Leipzig manje od 0.5 golova i RB L",
+<<<<<<< HEAD
     4.4,
+=======
+    4.35,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
     "",
     "vise 0.5 & vise 2.5",
     "1. Poluvreme RB Leipzig više od 0.5 golova i RB Le",
+<<<<<<< HEAD
     2.22,
+=======
+    2.25,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
     "",
     "vise 0.5 & manje 2.5",
     "1. Poluvreme RB Leipzig više od 0.5 golova i RB Le",
+<<<<<<< HEAD
     3.25,
+=======
+    3.2,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
@@ -17560,14 +21499,22 @@
     "",
     "manje 0.5 & manje 2.5",
     "1. Poluvreme RB Leipzig manje od 0.5 golova i RB L",
+<<<<<<< HEAD
     3.3,
+=======
+    3.25,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
     "",
     "vise 1.5 & vise 2.5",
     "1. Poluvreme RB Leipzig više od 1.5 golova i RB Le",
+<<<<<<< HEAD
     3.3,
+=======
+    3.35,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
@@ -17581,14 +21528,22 @@
     "",
     "manje 1.5 & vise 2.5",
     "1. Poluvreme RB Leipzig manje od 1.5 golova i RB L",
+<<<<<<< HEAD
     4.1,
+=======
+    4.15,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
     "",
     "manje 1.5 & manje 2.5",
     "1. Poluvreme RB Leipzig manje od 1.5 golova i RB L",
+<<<<<<< HEAD
     1.92,
+=======
+    1.9,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ]
   ]
@@ -17600,35 +21555,55 @@
     "",
     "vise 0.5 & vise 1.5",
     "1. Poluvreme PSV Eindhoven više od 0.5 golova i PS",
+<<<<<<< HEAD
     2.75,
+=======
+    2.72,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
     "",
     "vise 0.5 & manje 1.5",
     "1. Poluvreme PSV Eindhoven više od 0.5 golova i PS",
+<<<<<<< HEAD
     5.25,
+=======
+    5.3,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
     "",
     "manje 0.5 & vise 1.5",
     "1. Poluvreme PSV Eindhoven manje od 0.5 golova i P",
+<<<<<<< HEAD
     6.8,
+=======
+    6.7,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
     "",
     "manje 0.5 & manje 1.5",
     "1. Poluvreme PSV Eindhoven manje od 0.5 golova i P",
+<<<<<<< HEAD
     2.17,
+=======
+    2.2,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
     "",
     "vise 0.5 & vise 2.5",
     "1. Poluvreme PSV Eindhoven više od 0.5 golova i PS",
+<<<<<<< HEAD
     5.2,
+=======
+    5.1,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
@@ -17642,21 +21617,33 @@
     "",
     "manje 0.5 & vise 2.5",
     "1. Poluvreme PSV Eindhoven manje od 0.5 golova i P",
+<<<<<<< HEAD
     19.0,
+=======
+    18.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
     "",
     "manje 0.5 & manje 2.5",
     "1. Poluvreme PSV Eindhoven manje od 0.5 golova i P",
+<<<<<<< HEAD
     1.85,
+=======
+    1.87,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
     "",
     "vise 1.5 & vise 2.5",
     "1. Poluvreme PSV Eindhoven više od 1.5 golova i PS",
+<<<<<<< HEAD
     7.9,
+=======
+    7.8,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
@@ -17670,14 +21657,22 @@
     "",
     "manje 1.5 & vise 2.5",
     "1. Poluvreme PSV Eindhoven manje od 1.5 golova i P",
+<<<<<<< HEAD
     7.5,
+=======
+    7.4,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
     "",
     "manje 1.5 & manje 2.5",
     "1. Poluvreme PSV Eindhoven manje od 1.5 golova i P",
+<<<<<<< HEAD
     1.23,
+=======
+    1.24,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ]
   ]
@@ -17689,7 +21684,11 @@
     "",
     "vise 0.5 & vise 0.5",
     "RB Leipzig daje više od 0.5 golova u 1. poluvremen",
+<<<<<<< HEAD
     1.82,
+=======
+    1.83,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
@@ -17717,7 +21716,11 @@
     "",
     "vise 0.5 & vise 2.5",
     "RB Leipzig daje više od 0.5 golova u 1. poluvremen",
+<<<<<<< HEAD
     6.6,
+=======
+    6.7,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
@@ -17738,7 +21741,11 @@
     "",
     "manje 0.5 & manje 0.5",
     "RB Leipzig daje manje od 0.5 golova u 1. poluvreme",
+<<<<<<< HEAD
     8.6,
+=======
+    8.5,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
@@ -17752,7 +21759,11 @@
     "",
     "manje 0.5 & manje 1.5",
     "RB Leipzig daje manje od 0.5 golova u 1. poluvreme",
+<<<<<<< HEAD
     4.4,
+=======
+    4.35,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
@@ -17766,7 +21777,11 @@
     "",
     "manje 0.5 & manje 2.5",
     "RB Leipzig daje manje od 0.5 golova u 1. poluvreme",
+<<<<<<< HEAD
     3.3,
+=======
+    3.25,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ]
   ]
@@ -17778,7 +21793,11 @@
     "",
     "vise 0.5 & vise 0.5",
     "PSV Eindhoven daje više od 0.5 golova u 1. poluvre",
+<<<<<<< HEAD
     3.3,
+=======
+    3.25,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
@@ -17792,7 +21811,11 @@
     "",
     "vise 0.5 & vise 1.5",
     "PSV Eindhoven daje više od 0.5 golova u 1. poluvre",
+<<<<<<< HEAD
     7.6,
+=======
+    7.5,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
@@ -17813,7 +21836,11 @@
     "",
     "vise 0.5 & manje 2.5",
     "PSV Eindhoven daje više od 0.5 golova u 1. poluvre",
+<<<<<<< HEAD
     2.05,
+=======
+    2.02,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
@@ -17827,35 +21854,55 @@
     "",
     "manje 0.5 & manje 0.5",
     "PSV Eindhoven daje manje od 0.5 golova u 1. poluvr",
+<<<<<<< HEAD
     3.75,
+=======
+    3.8,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
     "",
     "manje 0.5 & vise 1.5",
     "PSV Eindhoven daje manje od 0.5 golova u 1. poluvr",
+<<<<<<< HEAD
     6.8,
+=======
+    6.7,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
     "",
     "manje 0.5 & manje 1.5",
     "PSV Eindhoven daje manje od 0.5 golova u 1. poluvr",
+<<<<<<< HEAD
     2.17,
+=======
+    2.2,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
     "",
     "manje 0.5 & vise 2.5",
     "PSV Eindhoven daje manje od 0.5 golova u 1. poluvr",
+<<<<<<< HEAD
     19.0,
+=======
+    18.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
     "",
     "manje 0.5 & manje 2.5",
     "PSV Eindhoven daje manje od 0.5 golova u 1. poluvr",
+<<<<<<< HEAD
     1.85,
+=======
+    1.87,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ]
   ]
@@ -17881,21 +21928,33 @@
     "1+",
     "1 & vise 0.5",
     "RB Leipzig pobednik i RB Leipzig više od 0.5 gola ",
+<<<<<<< HEAD
     1.55,
+=======
+    1.57,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     0.5
    ],
    [
     "0+",
     "x & vise 0.5",
     "nerešeno i RB Leipzig više od 0.5 gola na utakmici",
+<<<<<<< HEAD
     4.7,
+=======
+    4.6,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     0.5
    ],
    [
     "2+",
     "2 & vise 0.5",
     "PSV Eindhoven pobednik i RB Leipzig više od 0.5 go",
+<<<<<<< HEAD
     5.45,
+=======
+    5.35,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     0.5
    ]
   ]
@@ -17914,28 +21973,44 @@
     "0-",
     "x & manje 1.5",
     "nerešeno i RB Leipzig manje od 1.5 gola na utakmic",
+<<<<<<< HEAD
     7.6,
+=======
+    7.5,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
     "2-",
     "2 & manje 1.5",
     "PSV Eindhoven pobednik i RB Leipzig manje od 1.5 g",
+<<<<<<< HEAD
     5.45,
+=======
+    5.35,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
     "1+",
     "1 & vise 1.5",
     "RB Leipzig pobednik i RB Leipzig više od 1.5 gola ",
+<<<<<<< HEAD
     1.68,
+=======
+    1.7,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
     "0+",
     "x & vise 1.5",
     "nerešeno i RB Leipzig više od 1.5 gola na utakmici",
+<<<<<<< HEAD
     7.1,
+=======
+    6.9,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
@@ -17954,28 +22029,44 @@
     "1-",
     "1 & manje 2.5",
     "RB Leipzig pobednik i RB Leipzig manje od 2.5 gola",
+<<<<<<< HEAD
     4.3,
+=======
+    4.35,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
     "0-",
     "x & manje 2.5",
     "nerešeno i RB Leipzig manje od 2.5 gola na utakmic",
+<<<<<<< HEAD
     5.1,
+=======
+    5.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
     "2-",
     "2 & manje 2.5",
     "PSV Eindhoven pobednik i RB Leipzig manje od 2.5 g",
+<<<<<<< HEAD
     4.35,
+=======
+    4.3,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
     "1+",
     "1 & vise 2.5",
     "RB Leipzig pobednik i RB Leipzig više od 2.5 gola ",
+<<<<<<< HEAD
     2.22,
+=======
+    2.25,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
@@ -18001,28 +22092,44 @@
     "1-",
     "1 & manje 3.5",
     "RB Leipzig pobednik i RB Leipzig manje od 3.5 gola",
+<<<<<<< HEAD
     2.45,
+=======
+    2.47,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.5
    ],
    [
     "0-",
     "x & manje 3.5",
     "nerešeno i RB Leipzig manje od 3.5 gola na utakmic",
+<<<<<<< HEAD
     4.45,
+=======
+    4.35,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.5
    ],
    [
     "2-",
     "2 & manje 3.5",
     "PSV Eindhoven pobednik i RB Leipzig manje od 3.5 g",
+<<<<<<< HEAD
     4.15,
+=======
+    4.1,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.5
    ],
    [
     "1+",
     "1 & vise 3.5",
     "RB Leipzig pobednik i RB Leipzig više od 3.5 gola ",
+<<<<<<< HEAD
     3.6,
+=======
+    3.7,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.5
    ],
    [
@@ -18048,28 +22155,44 @@
     "1-",
     "1 & manje 4.5",
     "RB Leipzig pobednik i RB Leipzig manje od 4.5 gola",
+<<<<<<< HEAD
     1.87,
+=======
+    1.9,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     4.5
    ],
    [
     "0-",
     "x & manje 4.5",
     "nerešeno i RB Leipzig manje od 4.5 gola na utakmic",
+<<<<<<< HEAD
     4.3,
+=======
+    4.25,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     4.5
    ],
    [
     "2-",
     "2 & manje 4.5",
     "PSV Eindhoven pobednik i RB Leipzig manje od 4.5 g",
+<<<<<<< HEAD
     4.1,
+=======
+    4.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     4.5
    ],
    [
     "1+",
     "1 & vise 4.5",
     "RB Leipzig pobednik i RB Leipzig više od 4.5 gola ",
+<<<<<<< HEAD
     6.7,
+=======
+    6.8,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     4.5
    ],
    [
@@ -18095,7 +22218,11 @@
     "1-",
     "1 & manje 0.5",
     "RB Leipzig pobednik  i PSV Eindhoven manje od 0.5 ",
+<<<<<<< HEAD
     4.0,
+=======
+    4.1,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     0.5
    ],
    [
@@ -18109,21 +22236,33 @@
     "1+",
     "1 & vise 0.5",
     "RB Leipzig pobednik  i PSV Eindhoven više od 0.5 g",
+<<<<<<< HEAD
     2.32,
+=======
+    2.35,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     0.5
    ],
    [
     "0+",
     "x & vise 0.5",
     "nerešeno i PSV Eindhoven više od 0.5 gola na utakm",
+<<<<<<< HEAD
     4.7,
+=======
+    4.6,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     0.5
    ],
    [
     "2+",
     "2 & vise 0.5",
     "PSV Eindhoven pobednik  i PSV Eindhoven više od 0.",
+<<<<<<< HEAD
     4.1,
+=======
+    4.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     0.5
    ]
   ]
@@ -18135,14 +22274,22 @@
     "1-",
     "1 & manje 1.5",
     "RB Leipzig pobednik  i PSV Eindhoven manje od 1.5 ",
+<<<<<<< HEAD
     2.02,
+=======
+    2.05,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
     "0-",
     "x & manje 1.5",
     "nerešeno i PSV Eindhoven manje od 1.5 gola na utak",
+<<<<<<< HEAD
     7.6,
+=======
+    7.5,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
@@ -18163,14 +22310,22 @@
     "0+",
     "x & vise 1.5",
     "nerešeno i PSV Eindhoven više od 1.5 gola na utakm",
+<<<<<<< HEAD
     7.1,
+=======
+    6.9,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
     "2+",
     "2 & vise 1.5",
     "PSV Eindhoven pobednik  i PSV Eindhoven više od 1.",
+<<<<<<< HEAD
     4.6,
+=======
+    4.5,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ]
   ]
@@ -18182,21 +22337,33 @@
     "1-",
     "1 & manje 2.5",
     "RB Leipzig pobednik  i PSV Eindhoven manje od 2.5 ",
+<<<<<<< HEAD
     1.64,
+=======
+    1.67,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
     "0-",
     "x & manje 2.5",
     "nerešeno i PSV Eindhoven manje od 2.5 gola na utak",
+<<<<<<< HEAD
     5.1,
+=======
+    5.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
     "2-",
     "2 & manje 2.5",
     "PSV Eindhoven pobednik  i PSV Eindhoven manje od 2",
+<<<<<<< HEAD
     7.5,
+=======
+    7.4,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
@@ -18217,7 +22384,11 @@
     "2+",
     "2 & vise 2.5",
     "PSV Eindhoven pobednik  i PSV Eindhoven više od 2.",
+<<<<<<< HEAD
     6.7,
+=======
+    6.5,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ]
   ]
@@ -18454,7 +22625,11 @@
     ".2-",
     "manje 1.5",
     "Fenerbahce će imati manje od 1.5 kartona na utakmi",
+<<<<<<< HEAD
     2.77,
+=======
+    2.75,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
@@ -18508,7 +22683,11 @@
     "*11+",
     "vise 5.5",
     "Aston Villa će imati više od 5.5 šuteva u okvir go",
+<<<<<<< HEAD
     1.69,
+=======
+    1.7,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     5.5
    ]
   ]
@@ -18565,7 +22744,11 @@
     "",
     "vise 10.5",
     "Fenerbahce više od 10.5 šuteva",
+<<<<<<< HEAD
     1.9,
+=======
+    1.88,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     10.5
    ]
   ]
@@ -18577,14 +22760,22 @@
     "/*01-",
     "manje 11.5",
     "Aston Villa manje od 11.5 faulova",
+<<<<<<< HEAD
     1.78,
+=======
+    1.8,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     11.5
    ],
    [
     "/*01+",
     "vise 11.5",
     "Aston Villa više od 11.5 faulova",
+<<<<<<< HEAD
     1.87,
+=======
+    1.9,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     11.5
    ]
   ]
@@ -18596,14 +22787,22 @@
     "/*02-",
     "manje 11.5",
     "Fenerbahce manje od 11.5 faulova",
+<<<<<<< HEAD
     1.77,
+=======
+    1.82,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     11.5
    ],
    [
     "/*02+",
     "vise 11.5",
     "Fenerbahce više od 11.5 faulova",
+<<<<<<< HEAD
     1.87,
+=======
+    1.9,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     11.5
    ]
   ]
@@ -18616,21 +22815,33 @@
     "1-2",
     "Aston Villa 1-2 gola na utakmici",
     1.74,
+<<<<<<< HEAD
     -2.0
+=======
+    2.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "",
     "1-3",
     "Aston Villa  1-3 gola na utakmici",
     1.32,
+<<<<<<< HEAD
     -3.0
+=======
+    3.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "",
     "2-3",
     "Aston Villa 2-3 gola na utakmici",
     2.07,
+<<<<<<< HEAD
     -3.0
+=======
+    3.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ]
   ]
  },
@@ -18642,21 +22853,33 @@
     "1-2",
     "Fenerbahce 1-2 gola na utakmici",
     1.67,
+<<<<<<< HEAD
     -2.0
+=======
+    2.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "",
     "1-3",
     "Fenerbahce 1-3 gola na utakmici",
     1.49,
+<<<<<<< HEAD
     -3.0
+=======
+    3.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "",
     "2-3",
     "Fenerbahce 2-3 gola na utakmici",
     3.3,
+<<<<<<< HEAD
     -3.0
+=======
+    3.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ]
   ]
  },
@@ -18752,7 +22975,11 @@
     "0",
     "0",
     "Fenerbahce ne daje gol",
+<<<<<<< HEAD
     2.75,
+=======
+    2.72,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.0
    ],
    [
@@ -18766,14 +22993,22 @@
     "2",
     "2",
     "Fenerbahce daje tačno 2 gola",
+<<<<<<< HEAD
     4.35,
+=======
+    4.4,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.0
    ],
    [
     "3",
     "3+",
     "Fenerbahce daje 3 ili više golova",
+<<<<<<< HEAD
     7.9,
+=======
+    8.1,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.0
    ]
   ]
@@ -18792,7 +23027,11 @@
     "2",
     "ne",
     "Aston Villa ne daje gol na utakmici",
+<<<<<<< HEAD
     6.3,
+=======
+    6.2,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     null
    ]
   ]
@@ -19186,7 +23425,11 @@
     "2-",
     "2 & manje 0.5",
     "Fenerbahce pobednik i Aston Villa manje od 0.5 gol",
+<<<<<<< HEAD
     8.1,
+=======
+    7.9,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     0.5
    ],
    [
@@ -19200,14 +23443,22 @@
     "0+",
     "x & vise 0.5",
     "nerešeno i Aston Villa više od 0.5 gola na utakmic",
+<<<<<<< HEAD
     4.5,
+=======
+    4.55,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     0.5
    ],
    [
     "2+",
     "2 & vise 0.5",
     "Fenerbahce pobednik i Aston Villa više od 0.5 gola",
+<<<<<<< HEAD
     6.8,
+=======
+    6.9,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     0.5
    ]
   ]
@@ -19421,21 +23672,33 @@
     "1+",
     "1 & vise 0.5",
     "Aston Villa pobednik  i Fenerbahce više od 0.5 gol",
+<<<<<<< HEAD
     3.0,
+=======
+    3.05,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     0.5
    ],
    [
     "0+",
     "x & vise 0.5",
     "nerešeno i Fenerbahce više od 0.5 gola na utakmici",
+<<<<<<< HEAD
     4.5,
+=======
+    4.55,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     0.5
    ],
    [
     "2+",
     "2 & vise 0.5",
     "Fenerbahce pobednik  i Fenerbahce više od 0.5 gola",
+<<<<<<< HEAD
     4.35,
+=======
+    4.3,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     0.5
    ]
   ]
@@ -19820,7 +24083,11 @@
     "*11+",
     "vise 3.5",
     "Shakhtar Donetsk će imati više od 3.5 šuteva u okv",
+<<<<<<< HEAD
     1.6,
+=======
+    1.61,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.5
    ]
   ]
@@ -19858,7 +24125,11 @@
     "",
     "vise 11.5",
     "Shakhtar Donetsk više od 11.5 šuteva",
+<<<<<<< HEAD
     1.77,
+=======
+    1.78,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     11.5
    ]
   ]
@@ -19870,7 +24141,11 @@
     "",
     "manje 11.5",
     "AEK Athens manje od 11.5 šuteva",
+<<<<<<< HEAD
     1.76,
+=======
+    1.77,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     11.5
    ],
    [
@@ -19889,14 +24164,22 @@
     "/*01-",
     "manje 11.5",
     "Shakhtar Donetsk manje od 11.5 faulova",
+<<<<<<< HEAD
     1.66,
+=======
+    1.69,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     11.5
    ],
    [
     "/*01+",
     "vise 11.5",
     "Shakhtar Donetsk više od 11.5 faulova",
+<<<<<<< HEAD
     2.0,
+=======
+    2.05,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     11.5
    ]
   ]
@@ -19908,14 +24191,22 @@
     "/*02-",
     "manje 12.5",
     "AEK Athens manje od 12.5 faulova",
+<<<<<<< HEAD
     1.66,
+=======
+    1.7,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     12.5
    ],
    [
     "/*02+",
     "vise 12.5",
     "AEK Athens više od 12.5 faulova",
+<<<<<<< HEAD
     2.0,
+=======
+    2.05,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     12.5
    ]
   ]
@@ -19928,21 +24219,33 @@
     "1-2",
     "Shakhtar Donetsk 1-2 gola na utakmici",
     1.62,
+<<<<<<< HEAD
     -2.0
+=======
+    2.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "",
     "1-3",
     "Shakhtar Donetsk  1-3 gola na utakmici",
     1.38,
+<<<<<<< HEAD
     -3.0
+=======
+    3.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "",
     "2-3",
     "Shakhtar Donetsk 2-3 gola na utakmici",
     2.67,
+<<<<<<< HEAD
     -3.0
+=======
+    3.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ]
   ]
  },
@@ -19954,21 +24257,33 @@
     "1-2",
     "AEK Athens 1-2 gola na utakmici",
     1.61,
+<<<<<<< HEAD
     -2.0
+=======
+    2.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "",
     "1-3",
     "AEK Athens 1-3 gola na utakmici",
     1.38,
+<<<<<<< HEAD
     -3.0
+=======
+    3.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "",
     "2-3",
     "AEK Athens 2-3 gola na utakmici",
     2.67,
+<<<<<<< HEAD
     -3.0
+=======
+    3.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ]
   ]
  },
@@ -21085,7 +25400,11 @@
     "*11+",
     "vise 5.5",
     "Manchester City će imati više od 5.5 šuteva u okvi",
+<<<<<<< HEAD
     1.87,
+=======
+    1.85,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     5.5
    ]
   ]
@@ -21104,7 +25423,11 @@
     "*12+",
     "vise 4.5",
     "PSG će imati više od 4.5 šuteva u okvir gola",
+<<<<<<< HEAD
     1.69,
+=======
+    1.71,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     4.5
    ]
   ]
@@ -21116,14 +25439,22 @@
     "",
     "manje 14.5",
     "Manchester City manje od 14.5 šuteva,",
+<<<<<<< HEAD
     1.9,
+=======
+    1.88,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     14.5
    ],
    [
     "",
     "vise 14.5",
     "Manchester City više od 14.5 šuteva",
+<<<<<<< HEAD
     1.8,
+=======
+    1.82,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     14.5
    ]
   ]
@@ -21161,7 +25492,11 @@
     "/*01+",
     "vise 10.5",
     "Manchester City više od 10.5 faulova",
+<<<<<<< HEAD
     1.73,
+=======
+    1.72,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     10.5
    ]
   ]
@@ -21173,14 +25508,22 @@
     "/*02-",
     "manje 10.5",
     "PSG manje od 10.5 faulova",
+<<<<<<< HEAD
     1.66,
+=======
+    1.69,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     10.5
    ],
    [
     "/*02+",
     "vise 10.5",
     "PSG više od 10.5 faulova",
+<<<<<<< HEAD
     2.0,
+=======
+    2.05,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     10.5
    ]
   ]
@@ -21193,21 +25536,33 @@
     "1-2",
     "Manchester City 1-2 gola na utakmici",
     1.69,
+<<<<<<< HEAD
     -2.0
+=======
+    2.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "",
     "1-3",
     "Manchester City  1-3 gola na utakmici",
     1.32,
+<<<<<<< HEAD
     -3.0
+=======
+    3.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "",
     "2-3",
     "Manchester City 2-3 gola na utakmici",
     2.12,
+<<<<<<< HEAD
     -3.0
+=======
+    3.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ]
   ]
  },
@@ -21219,21 +25574,33 @@
     "1-2",
     "PSG 1-2 gola na utakmici",
     1.63,
+<<<<<<< HEAD
     -2.0
+=======
+    2.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "",
     "1-3",
     "PSG 1-3 gola na utakmici",
     1.33,
+<<<<<<< HEAD
     -3.0
+=======
+    3.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "",
     "2-3",
     "PSG 2-3 gola na utakmici",
     2.35,
+<<<<<<< HEAD
     -3.0
+=======
+    3.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ]
   ]
  },

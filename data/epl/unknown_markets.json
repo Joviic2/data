@@ -216,7 +216,11 @@
     "1:0, 2:0 ili 3:0",
     "Utakmica će završiti rezultatom 1-0, 2-0 ili 3-0.",
     4.15,
+<<<<<<< HEAD
     -0.0
+=======
+    0.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "",
@@ -1219,84 +1223,132 @@
     "1 & 2-3",
     "Bournemouth pobednik i 2-3 gola",
     4.0,
+<<<<<<< HEAD
     -3.0
+=======
+    3.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "124",
     "1 & 2-4",
     "Bournemouth pobednik i 2-4 gola",
     3.15,
+<<<<<<< HEAD
     -4.0
+=======
+    4.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "125",
     "1 & 2-5",
     "Bournemouth pobednik i 2-5 golova",
     2.67,
+<<<<<<< HEAD
     -5.0
+=======
+    5.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "126",
     "1 & 2-6",
     "Bournemouth pobednik i 2-6 golova",
     2.52,
+<<<<<<< HEAD
     -6.0
+=======
+    6.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "135",
     "1 & 3-5",
     "Bournemouth pobednik i 3-5 golova",
     3.35,
+<<<<<<< HEAD
     -5.0
+=======
+    5.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "136",
     "1 & 3-6",
     "Bournemouth pobednik i 3-6 golova",
     3.15,
+<<<<<<< HEAD
     -6.0
+=======
+    6.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "024",
     "x & 2-4",
     "Nerešeno i 2-4 gola",
     4.4,
+<<<<<<< HEAD
     -4.0
+=======
+    4.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "026",
     "x & 2-6",
     "Nerešeno i 2-6 gola",
     4.15,
+<<<<<<< HEAD
     -6.0
+=======
+    6.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "046",
     "x & 4-6",
     "Nerešeno i 4-6 golova",
     8.7,
+<<<<<<< HEAD
     -6.0
+=======
+    6.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "223",
     "2 & 2-3",
     "Sunderland pobednik i 2-3 gola",
     6.2,
+<<<<<<< HEAD
     -3.0
+=======
+    3.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "224",
     "2 & 2-4",
     "Sunderland pobednik i 2-4 gola",
     5.2,
+<<<<<<< HEAD
     -4.0
+=======
+    4.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "225",
     "2 & 2-5",
     "Sunderland pobednik i 2-5 golova",
     4.5,
+<<<<<<< HEAD
     -5.0
+=======
+    5.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ]
   ]
  },
@@ -1322,14 +1374,22 @@
     "x & da",
     "Nerešeno i oba tima daju gol",
     4.15,
+<<<<<<< HEAD
     2.0
+=======
+    null
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "02",
     "x & ne",
     "Nerešeno i barem jedan tim ne daje gol",
     10.0,
+<<<<<<< HEAD
     2.0
+=======
+    null
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "21",
@@ -1362,7 +1422,11 @@
     "x & da",
     "Nerešeno i gol u oba poluvremena",
     5.9,
+<<<<<<< HEAD
     2.0
+=======
+    null
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "2",
@@ -1567,110 +1631,174 @@
   ]
  },
  "Dupla šansa & raspon golova": {
+<<<<<<< HEAD
   "mecova": 9,
+=======
+  "mecova": 10,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
   "primer": [
    [
     "1023",
     "1x & 2-3",
     "Bournemouth će pobediti ili će biti nerešeno i bić",
     2.4,
+<<<<<<< HEAD
     -3.0
+=======
+    3.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "1024",
     "1x & 2-4",
     "Bournemouth će pobediti ili će biti nerešeno i bić",
     1.83,
+<<<<<<< HEAD
     -4.0
+=======
+    4.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "1025",
     "1x & 2-5",
     "Bournemouth će pobediti ili će biti nerešeno i bić",
     1.66,
+<<<<<<< HEAD
     -5.0
+=======
+    5.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "1026",
     "1x & 2-6",
     "Bournemouth će pobediti ili će biti nerešeno i bić",
     1.57,
+<<<<<<< HEAD
     -6.0
+=======
+    6.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "1035",
     "1x & 3-5",
     "Bournemouth će pobediti ili će biti nerešeno i bić",
     2.5,
+<<<<<<< HEAD
     -5.0
+=======
+    5.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "1036",
     "1x & 3-6",
     "Bournemouth će pobediti ili će biti nerešeno i bić",
     2.3,
+<<<<<<< HEAD
     -6.0
+=======
+    6.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "0223",
     "x2 & 2-3",
     "Biće nerešeno ili Sunderland će pobediti i biće 2-",
     3.05,
+<<<<<<< HEAD
     -3.0
+=======
+    3.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "0224",
     "x2 & 2-4",
     "Biće nerešeno ili Sunderland će pobediti i biće 2-",
     2.37,
+<<<<<<< HEAD
     -4.0
+=======
+    4.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "0225",
     "x2 & 2-5",
     "Biće nerešeno ili Sunderland će pobediti i biće 2-",
     2.22,
+<<<<<<< HEAD
     -5.0
+=======
+    5.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "0226",
     "x2 & 2-6",
     "Biće nerešeno ili Sunderland će pobediti i biće 2-",
     2.12,
+<<<<<<< HEAD
     -6.0
+=======
+    6.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "0235",
     "x2 & 3-5",
     "Biće nerešeno ili Sunderland će pobediti i biće 3-",
     3.5,
+<<<<<<< HEAD
     -5.0
+=======
+    5.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "0235",
     "x2 & 3-6",
     "Biće nerešeno ili Sunderland će pobediti i biće 3-",
     3.25,
+<<<<<<< HEAD
     -6.0
+=======
+    6.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ]
   ]
  },
  "Dupla šansa & oba tima daju gol": {
+<<<<<<< HEAD
   "mecova": 9,
+=======
+  "mecova": 10,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
   "primer": [
    [
     "101",
     "1x & da",
     "Bournemouth će pobediti ili će biti nerešeno i oba",
     1.95,
+<<<<<<< HEAD
     1.0
+=======
+    null
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "102",
     "1x & ne",
     "Bournemouth će pobediti ili će biti nerešeno i bar",
     2.6,
+<<<<<<< HEAD
     1.0
+=======
+    null
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "121",
@@ -1691,14 +1819,48 @@
     "x2 & da",
     "Biće nerešeno ili Sunderland će pobediti i oba tim",
     2.4,
+<<<<<<< HEAD
     2.0
+=======
+    null
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "022",
     "x2 & ne",
     "Biće nerešeno ili Sunderland će pobediti i barem j",
     3.65,
+<<<<<<< HEAD
     2.0
+=======
+    null
+   ]
+  ]
+ },
+ "Dupla šansa & gol u oba poluvremena": {
+  "mecova": 9,
+  "primer": [
+   [
+    "101",
+    "1x & da",
+    "Bournemouth će pobediti ili će biti nerešeno i bić",
+    2.02,
+    null
+   ],
+   [
+    "021",
+    "x2 & da",
+    "Biće nerešeno ili Sunderland će pobediti i biće go",
+    2.8,
+    null
+   ],
+   [
+    "121",
+    "12 & da",
+    "Bournemouth ili Sunderland će pobediti i biće gol ",
+    1.95,
+    12.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ]
   ]
  },
@@ -1735,6 +1897,7 @@
    ]
   ]
  },
+<<<<<<< HEAD
  "Dupla šansa & gol u oba poluvremena": {
   "mecova": 7,
   "primer": [
@@ -1761,6 +1924,8 @@
    ]
   ]
  },
+=======
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
  "Dupla šansa & ukupno golova (1.5)": {
   "mecova": 4,
   "primer": [
@@ -1855,6 +2020,7 @@
    ]
   ]
  },
+<<<<<<< HEAD
  "Ukupno kornera": {
   "mecova": 2,
   "primer": [
@@ -1944,6 +2110,8 @@
    ]
   ]
  },
+=======
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
  "Igrač postiže gol": {
   "mecova": 2,
   "primer": [
@@ -1956,16 +2124,26 @@
    ],
    [
     "",
+<<<<<<< HEAD
     "palmer, cole",
     "Postiže gol",
     2.6,
+=======
+    "cole palmer",
+    "Postiže gol",
+    2.55,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     null
    ],
    [
     "",
     "deni velbek",
     "Postiže gol",
+<<<<<<< HEAD
     2.75,
+=======
+    2.65,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     null
    ],
    [
@@ -1977,16 +2155,28 @@
    ],
    [
     "",
+<<<<<<< HEAD
     "estevao goncalves",
     "Postiže gol",
     3.25,
+=======
+    "morgan rogers",
+    "Postiže gol",
+    3.15,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     null
    ],
    [
     "",
+<<<<<<< HEAD
     "morgan rogers",
     "Postiže gol",
     3.25,
+=======
+    "estevao goncalves",
+    "Postiže gol",
+    3.45,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     null
    ],
    [
@@ -2005,14 +2195,24 @@
    ],
    [
     "",
+<<<<<<< HEAD
     "brennan johnson",
     "Postiže gol",
     4.0,
+=======
+    "kiernan dewsbury-hall",
+    "Postiže gol",
+    3.9,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     null
    ],
    [
     "",
+<<<<<<< HEAD
     "kiernan dewsbury-hall",
+=======
+    "brennan johnson",
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     "Postiže gol",
     4.0,
     null
@@ -2028,7 +2228,11 @@
     "",
     "geovany quenda",
     "Postiže gol",
+<<<<<<< HEAD
     4.1,
+=======
+    4.3,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     null
    ]
   ]
@@ -2045,16 +2249,26 @@
    ],
    [
     "",
+<<<<<<< HEAD
     "palmer, cole",
     "Postiže 1. gol",
     6.0,
+=======
+    "cole palmer",
+    "Postiže 1. gol",
+    5.75,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.0
    ],
    [
     "",
     "deni velbek",
     "Postiže 1. gol",
+<<<<<<< HEAD
     6.5,
+=======
+    6.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.0
    ],
    [
@@ -2075,7 +2289,11 @@
     "",
     "estevao goncalves",
     "Postiže 1. gol",
+<<<<<<< HEAD
     7.7,
+=======
+    8.1,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.0
    ],
    [
@@ -2094,6 +2312,16 @@
    ],
    [
     "",
+<<<<<<< HEAD
+=======
+    "kiernan dewsbury-hall",
+    "Postiže 1. gol",
+    8.9,
+    1.0
+   ],
+   [
+    "",
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     "brennan johnson",
     "Postiže 1. gol",
     9.2,
@@ -2108,6 +2336,7 @@
    ],
    [
     "",
+<<<<<<< HEAD
     "kiernan dewsbury-hall",
     "Postiže 1. gol",
     9.4,
@@ -2115,6 +2344,8 @@
    ],
    [
     "",
+=======
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     "geovany quenda",
     "Postiže 1. gol",
     9.8,
@@ -2130,21 +2361,33 @@
     "1-2",
     "Bournemouth 1-2 gola na utakmici",
     1.63,
+<<<<<<< HEAD
     -2.0
+=======
+    2.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "",
     "1-3",
     "Bournemouth  1-3 gola na utakmici",
     1.33,
+<<<<<<< HEAD
     -3.0
+=======
+    3.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "",
     "2-3",
     "Bournemouth 2-3 gola na utakmici",
     2.32,
+<<<<<<< HEAD
     -3.0
+=======
+    3.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ]
   ]
  },
@@ -2156,21 +2399,33 @@
     "1-2",
     "Sunderland 1-2 gola na utakmici",
     1.64,
+<<<<<<< HEAD
     -2.0
+=======
+    2.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "",
     "1-3",
     "Sunderland 1-3 gola na utakmici",
     1.44,
+<<<<<<< HEAD
     -3.0
+=======
+    3.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "",
     "2-3",
     "Sunderland 2-3 gola na utakmici",
     3.05,
+<<<<<<< HEAD
     -3.0
+=======
+    3.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ]
   ]
  },
@@ -3169,21 +3424,33 @@
     "1-2",
     "Brentford 1-2 gola na utakmici",
     1.64,
+<<<<<<< HEAD
     -2.0
+=======
+    2.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "",
     "1-3",
     "Brentford  1-3 gola na utakmici",
     1.33,
+<<<<<<< HEAD
     -3.0
+=======
+    3.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "",
     "2-3",
     "Brentford 2-3 gola na utakmici",
     2.32,
+<<<<<<< HEAD
     -3.0
+=======
+    3.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ]
   ]
  },
@@ -3195,21 +3462,33 @@
     "1-2",
     "Liverpool 1-2 gola na utakmici",
     1.63,
+<<<<<<< HEAD
     -2.0
+=======
+    2.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "",
     "1-3",
     "Liverpool 1-3 gola na utakmici",
     1.34,
+<<<<<<< HEAD
     -3.0
+=======
+    3.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "",
     "2-3",
     "Liverpool 2-3 gola na utakmici",
     2.42,
+<<<<<<< HEAD
     -3.0
+=======
+    3.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ]
   ]
  },
@@ -4219,6 +4498,7 @@
    ]
   ]
  },
+<<<<<<< HEAD
  "Ukupno kornera Brighton": {
   "mecova": 1,
   "primer": [
@@ -4369,6 +4649,8 @@
    ]
   ]
  },
+=======
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
  "Brighton raspon golova": {
   "mecova": 1,
   "primer": [
@@ -4377,21 +4659,33 @@
     "1-2",
     "Brighton 1-2 gola na utakmici",
     1.8,
+<<<<<<< HEAD
     -2.0
+=======
+    2.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "",
     "1-3",
     "Brighton  1-3 gola na utakmici",
     1.34,
+<<<<<<< HEAD
     -3.0
+=======
+    3.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "",
     "2-3",
     "Brighton 2-3 gola na utakmici",
     2.05,
+<<<<<<< HEAD
     -3.0
+=======
+    3.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ]
   ]
  },
@@ -4403,21 +4697,33 @@
     "1-2",
     "Crystal Palace 1-2 gola na utakmici",
     1.7,
+<<<<<<< HEAD
     -2.0
+=======
+    2.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "",
     "1-3",
     "Crystal Palace 1-3 gola na utakmici",
     1.53,
+<<<<<<< HEAD
     -3.0
+=======
+    3.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "",
     "2-3",
     "Crystal Palace 2-3 gola na utakmici",
     3.5,
+<<<<<<< HEAD
     -3.0
+=======
+    3.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ]
   ]
  },
@@ -5389,6 +5695,7 @@
    ]
   ]
  },
+<<<<<<< HEAD
  "Ukupno kornera Everton": {
   "mecova": 1,
   "primer": [
@@ -5536,6 +5843,43 @@
     "Chelsea će imati više od 6.5 kornera",
     2.95,
     6.5
+=======
+ "Brighton pobeđuje bar jedno poluvreme": {
+  "mecova": 1,
+  "primer": [
+   [
+    "1",
+    "da",
+    "Brighton pobeđuje bar jedno poluvreme",
+    1.28,
+    null
+   ],
+   [
+    "2",
+    "ne",
+    "Brighton ne pobeđuje bar jedno poluvreme",
+    3.3,
+    null
+   ]
+  ]
+ },
+ "Crystal Palace pobeđuje bar jedno poluvreme": {
+  "mecova": 1,
+  "primer": [
+   [
+    "1",
+    "da",
+    "Crystal Palace pobeđuje bar jedno poluvreme",
+    2.7,
+    null
+   ],
+   [
+    "2",
+    "ne",
+    "Crystal Palace neće pobediti ni jedno poluvreme",
+    1.41,
+    null
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ]
   ]
  },
@@ -5547,21 +5891,33 @@
     "1-2",
     "Everton 1-2 gola na utakmici",
     1.62,
+<<<<<<< HEAD
     -2.0
+=======
+    2.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "",
     "1-3",
     "Everton  1-3 gola na utakmici",
     1.39,
+<<<<<<< HEAD
     -3.0
+=======
+    3.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "",
     "2-3",
     "Everton 2-3 gola na utakmici",
     2.7,
+<<<<<<< HEAD
     -3.0
+=======
+    3.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ]
   ]
  },
@@ -5573,21 +5929,33 @@
     "1-2",
     "Chelsea 1-2 gola na utakmici",
     1.64,
+<<<<<<< HEAD
     -2.0
+=======
+    2.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "",
     "1-3",
     "Chelsea 1-3 gola na utakmici",
     1.33,
+<<<<<<< HEAD
     -3.0
+=======
+    3.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "",
     "2-3",
     "Chelsea 2-3 gola na utakmici",
     2.3,
+<<<<<<< HEAD
     -3.0
+=======
+    3.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ]
   ]
  },
@@ -6566,22 +6934,35 @@
     "",
     "1-2",
     "Fulham 1-2 gola na utakmici",
+<<<<<<< HEAD
     1.69,
     -2.0
+=======
+    1.7,
+    2.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "",
     "1-3",
     "Fulham  1-3 gola na utakmici",
     1.32,
+<<<<<<< HEAD
     -3.0
+=======
+    3.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "",
     "2-3",
     "Fulham 2-3 gola na utakmici",
     2.15,
+<<<<<<< HEAD
     -3.0
+=======
+    3.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ]
   ]
  },
@@ -6593,21 +6974,35 @@
     "1-2",
     "Hull City 1-2 gola na utakmici",
     1.7,
+<<<<<<< HEAD
     -2.0
+=======
+    2.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "",
     "1-3",
     "Hull City 1-3 gola na utakmici",
+<<<<<<< HEAD
     1.52,
     -3.0
+=======
+    1.53,
+    3.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "",
     "2-3",
     "Hull City 2-3 gola na utakmici",
+<<<<<<< HEAD
     3.5,
     -3.0
+=======
+    3.55,
+    3.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ]
   ]
  },
@@ -6618,21 +7013,33 @@
     "12",
     "1-2",
     "Fulham 1 ili 2 gola u svakom poluvremenu",
+<<<<<<< HEAD
     3.1,
+=======
+    3.05,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
     "13",
     "1-3",
     "Fulham 1,2 ili 3 gola u svakom poluvremenu",
+<<<<<<< HEAD
     2.6,
+=======
+    2.57,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.0
    ],
    [
     "23",
     "2-3",
     "Fulham 2 ili 3 gola u svakom poluvremenu",
+<<<<<<< HEAD
     13.0,
+=======
+    12.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.0
    ]
   ]
@@ -6644,7 +7051,11 @@
     "12",
     "1-2",
     "Hull City 1 ili 2 gola u svakom poluvremenu",
+<<<<<<< HEAD
     5.35,
+=======
+    5.4,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
@@ -6670,7 +7081,11 @@
     "0",
     "0",
     "Fulham ne daje gol",
+<<<<<<< HEAD
     5.45,
+=======
+    5.6,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.0
    ],
    [
@@ -6691,7 +7106,11 @@
     "3",
     "3+",
     "Fulham daje 3 ili više golova",
+<<<<<<< HEAD
     3.2,
+=======
+    3.15,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.0
    ]
   ]
@@ -6703,7 +7122,11 @@
     "0",
     "0",
     "Hull City ne daje gol",
+<<<<<<< HEAD
     2.65,
+=======
+    2.62,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.0
    ],
    [
@@ -6717,14 +7140,22 @@
     "2",
     "2",
     "Hull City daje tačno 2 gola",
+<<<<<<< HEAD
     4.55,
+=======
+    4.6,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.0
    ],
    [
     "3",
     "3+",
     "Hull City daje 3 ili više golova",
+<<<<<<< HEAD
     8.6,
+=======
+    8.8,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.0
    ]
   ]
@@ -6774,35 +7205,55 @@
     "",
     "vise 0.5 & vise 1.5",
     "1. Poluvreme Fulham više od 0.5 golova i Fulham vi",
+<<<<<<< HEAD
     2.1,
+=======
+    2.07,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
     "",
     "vise 0.5 & manje 1.5",
     "1. Poluvreme Fulham više od 0.5 golova i Fulham ma",
+<<<<<<< HEAD
     5.85,
+=======
+    5.9,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
     "",
     "manje 0.5 & vise 1.5",
     "1. Poluvreme Fulham manje od 0.5 golova i Fulham v",
+<<<<<<< HEAD
     6.2,
+=======
+    6.1,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
     "",
     "manje 0.5 & manje 1.5",
     "1. Poluvreme Fulham manje od 0.5 golova i Fulham m",
+<<<<<<< HEAD
     2.85,
+=======
+    2.9,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
     "",
     "vise 0.5 & vise 2.5",
     "1. Poluvreme Fulham više od 0.5 golova i Fulham vi",
+<<<<<<< HEAD
     3.5,
+=======
+    3.4,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
@@ -6823,14 +7274,22 @@
     "",
     "manje 0.5 & manje 2.5",
     "1. Poluvreme Fulham manje od 0.5 golova i Fulham m",
+<<<<<<< HEAD
     2.3,
+=======
+    2.32,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
     "",
     "vise 1.5 & vise 2.5",
     "1. Poluvreme Fulham više od 1.5 golova i Fulham vi",
+<<<<<<< HEAD
     5.3,
+=======
+    5.2,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
@@ -6844,14 +7303,22 @@
     "",
     "manje 1.5 & vise 2.5",
     "1. Poluvreme Fulham manje od 1.5 golova i Fulham v",
+<<<<<<< HEAD
     5.65,
+=======
+    5.6,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
     "",
     "manje 1.5 & manje 2.5",
     "1. Poluvreme Fulham manje od 1.5 golova i Fulham m",
+<<<<<<< HEAD
     1.43,
+=======
+    1.45,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ]
   ]
@@ -6863,7 +7330,11 @@
     "",
     "vise 0.5 & vise 1.5",
     "1. Poluvreme Hull City više od 0.5 golova i Hull C",
+<<<<<<< HEAD
     4.1,
+=======
+    4.15,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
@@ -6877,21 +7348,33 @@
     "",
     "manje 0.5 & vise 1.5",
     "1. Poluvreme Hull City manje od 0.5 golova i Hull ",
+<<<<<<< HEAD
     8.5,
+=======
+    8.6,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
     "",
     "manje 0.5 & manje 1.5",
     "1. Poluvreme Hull City manje od 0.5 golova i Hull ",
+<<<<<<< HEAD
     1.68,
+=======
+    1.67,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
     "",
     "vise 0.5 & vise 2.5",
     "1. Poluvreme Hull City više od 0.5 golova i Hull C",
+<<<<<<< HEAD
     9.0,
+=======
+    9.2,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
@@ -6905,21 +7388,33 @@
     "",
     "manje 0.5 & vise 2.5",
     "1. Poluvreme Hull City manje od 0.5 golova i Hull ",
+<<<<<<< HEAD
     29.0,
+=======
+    30.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
     "",
     "manje 0.5 & manje 2.5",
     "1. Poluvreme Hull City manje od 0.5 golova i Hull ",
+<<<<<<< HEAD
     1.52,
+=======
+    1.51,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
     "",
     "vise 1.5 & vise 2.5",
     "1. Poluvreme Hull City više od 1.5 golova i Hull C",
+<<<<<<< HEAD
     14.0,
+=======
+    15.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
@@ -6952,7 +7447,11 @@
     "",
     "vise 0.5 & vise 0.5",
     "Fulham daje više od 0.5 golova u 1. poluvremenu i ",
+<<<<<<< HEAD
     2.5,
+=======
+    2.45,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
@@ -6966,7 +7465,11 @@
     "",
     "vise 0.5 & vise 1.5",
     "Fulham daje više od 0.5 golova u 1. poluvremenu i ",
+<<<<<<< HEAD
     5.2,
+=======
+    5.1,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
@@ -6980,14 +7483,22 @@
     "",
     "vise 0.5 & vise 2.5",
     "Fulham daje više od 0.5 golova u 1. poluvremenu i ",
+<<<<<<< HEAD
     13.0,
+=======
+    12.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
     "",
     "vise 0.5 & manje 2.5",
     "Fulham daje više od 0.5 golova u 1. poluvremenu i ",
+<<<<<<< HEAD
     1.78,
+=======
+    1.77,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
@@ -7001,21 +7512,33 @@
     "",
     "manje 0.5 & manje 0.5",
     "Fulham daje manje od 0.5 golova u 1. poluvremenu i",
+<<<<<<< HEAD
     5.25,
+=======
+    5.35,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
     "",
     "manje 0.5 & vise 1.5",
     "Fulham daje manje od 0.5 golova u 1. poluvremenu i",
+<<<<<<< HEAD
     6.2,
+=======
+    6.1,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
     "",
     "manje 0.5 & manje 1.5",
     "Fulham daje manje od 0.5 golova u 1. poluvremenu i",
+<<<<<<< HEAD
     2.85,
+=======
+    2.9,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
@@ -7029,7 +7552,11 @@
     "",
     "manje 0.5 & manje 2.5",
     "Fulham daje manje od 0.5 golova u 1. poluvremenu i",
+<<<<<<< HEAD
     2.3,
+=======
+    2.32,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ]
   ]
@@ -7041,7 +7568,11 @@
     "",
     "vise 0.5 & vise 0.5",
     "Hull City daje više od 0.5 golova u 1. poluvremenu",
+<<<<<<< HEAD
     5.0,
+=======
+    5.1,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
@@ -7062,21 +7593,33 @@
     "",
     "vise 0.5 & manje 1.5",
     "Hull City daje više od 0.5 golova u 1. poluvremenu",
+<<<<<<< HEAD
     2.72,
+=======
+    2.75,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
     "",
     "vise 0.5 & vise 2.5",
     "Hull City daje više od 0.5 golova u 1. poluvremenu",
+<<<<<<< HEAD
     45.0,
+=======
+    50.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
     "",
     "vise 0.5 & manje 2.5",
     "Hull City daje više od 0.5 golova u 1. poluvremenu",
+<<<<<<< HEAD
     2.5,
+=======
+    2.52,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
@@ -7090,35 +7633,55 @@
     "",
     "manje 0.5 & manje 0.5",
     "Hull City daje manje od 0.5 golova u 1. poluvremen",
+<<<<<<< HEAD
     2.6,
+=======
+    2.57,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
     "",
     "manje 0.5 & vise 1.5",
     "Hull City daje manje od 0.5 golova u 1. poluvremen",
+<<<<<<< HEAD
     8.5,
+=======
+    8.6,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
     "",
     "manje 0.5 & manje 1.5",
     "Hull City daje manje od 0.5 golova u 1. poluvremen",
+<<<<<<< HEAD
     1.68,
+=======
+    1.67,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
     "",
     "manje 0.5 & vise 2.5",
     "Hull City daje manje od 0.5 golova u 1. poluvremen",
+<<<<<<< HEAD
     29.0,
+=======
+    30.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
     "",
     "manje 0.5 & manje 2.5",
     "Hull City daje manje od 0.5 golova u 1. poluvremen",
+<<<<<<< HEAD
     1.52,
+=======
+    1.51,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ]
   ]
@@ -7137,28 +7700,44 @@
     "2-",
     "2 & manje 0.5",
     "Hull City pobednik i Fulham manje od 0.5 gola na u",
+<<<<<<< HEAD
     7.3,
+=======
+    7.4,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     0.5
    ],
    [
     "1+",
     "1 & vise 0.5",
     "Fulham pobednik i Fulham više od 0.5 gola na utakm",
+<<<<<<< HEAD
     1.67,
+=======
+    1.64,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     0.5
    ],
    [
     "0+",
     "x & vise 0.5",
     "nerešeno i Fulham više od 0.5 gola na utakmici",
+<<<<<<< HEAD
     4.55,
+=======
+    4.6,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     0.5
    ],
    [
     "2+",
     "2 & vise 0.5",
     "Hull City pobednik i Fulham više od 0.5 gola na ut",
+<<<<<<< HEAD
     6.9,
+=======
+    7.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     0.5
    ]
   ]
@@ -7177,28 +7756,44 @@
     "0-",
     "x & manje 1.5",
     "nerešeno i Fulham manje od 1.5 gola na utakmici",
+<<<<<<< HEAD
     4.8,
+=======
+    4.85,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
     "2-",
     "2 & manje 1.5",
     "Hull City pobednik i Fulham manje od 1.5 gola na u",
+<<<<<<< HEAD
     4.6,
+=======
+    4.75,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
     "1+",
     "1 & vise 1.5",
     "Fulham pobednik i Fulham više od 1.5 gola na utakm",
+<<<<<<< HEAD
     2.0,
+=======
+    1.97,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
     "0+",
     "x & vise 1.5",
     "nerešeno i Fulham više od 1.5 gola na utakmici",
+<<<<<<< HEAD
     9.4,
+=======
+    9.6,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
@@ -7224,21 +7819,33 @@
     "0-",
     "x & manje 2.5",
     "nerešeno i Fulham manje od 2.5 gola na utakmici",
+<<<<<<< HEAD
     3.8,
+=======
+    3.85,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
     "2-",
     "2 & manje 2.5",
     "Hull City pobednik i Fulham manje od 2.5 gola na u",
+<<<<<<< HEAD
     4.2,
+=======
+    4.25,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
     "1+",
     "1 & vise 2.5",
     "Fulham pobednik i Fulham više od 2.5 gola na utakm",
+<<<<<<< HEAD
     3.25,
+=======
+    3.2,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
@@ -7264,28 +7871,44 @@
     "1-",
     "1 & manje 3.5",
     "Fulham pobednik i Fulham manje od 3.5 gola na utak",
+<<<<<<< HEAD
     2.07,
+=======
+    2.05,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.5
    ],
    [
     "0-",
     "x & manje 3.5",
     "nerešeno i Fulham manje od 3.5 gola na utakmici",
+<<<<<<< HEAD
     3.65,
+=======
+    3.7,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.5
    ],
    [
     "2-",
     "2 & manje 3.5",
     "Hull City pobednik i Fulham manje od 3.5 gola na u",
+<<<<<<< HEAD
     4.1,
+=======
+    4.2,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.5
    ],
    [
     "1+",
     "1 & vise 3.5",
     "Fulham pobednik i Fulham više od 3.5 gola na utakm",
+<<<<<<< HEAD
     6.5,
+=======
+    6.3,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.5
    ],
    [
@@ -7311,21 +7934,33 @@
     "1-",
     "1 & manje 4.5",
     "Fulham pobednik i Fulham manje od 4.5 gola na utak",
+<<<<<<< HEAD
     1.78,
+=======
+    1.77,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     4.5
    ],
    [
     "0-",
     "x & manje 4.5",
     "nerešeno i Fulham manje od 4.5 gola na utakmici",
+<<<<<<< HEAD
     3.6,
+=======
+    3.65,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     4.5
    ],
    [
     "2-",
     "2 & manje 4.5",
     "Hull City pobednik i Fulham manje od 4.5 gola na u",
+<<<<<<< HEAD
     4.1,
+=======
+    4.2,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     4.5
    ],
    [
@@ -7358,7 +7993,11 @@
     "1-",
     "1 & manje 0.5",
     "Fulham pobednik  i Hull City manje od 0.5 gola na ",
+<<<<<<< HEAD
     3.0,
+=======
+    2.95,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     0.5
    ],
    [
@@ -7379,14 +8018,22 @@
     "0+",
     "x & vise 0.5",
     "nerešeno i Hull City više od 0.5 gola na utakmici",
+<<<<<<< HEAD
     4.55,
+=======
+    4.6,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     0.5
    ],
    [
     "2+",
     "2 & vise 0.5",
     "Hull City pobednik  i Hull City više od 0.5 gola n",
+<<<<<<< HEAD
     4.1,
+=======
+    4.2,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     0.5
    ]
   ]
@@ -7398,14 +8045,22 @@
     "1-",
     "1 & manje 1.5",
     "Fulham pobednik  i Hull City manje od 1.5 gola na ",
+<<<<<<< HEAD
     1.87,
+=======
+    1.83,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
     "0-",
     "x & manje 1.5",
     "nerešeno i Hull City manje od 1.5 gola na utakmici",
+<<<<<<< HEAD
     4.8,
+=======
+    4.85,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
@@ -7419,21 +8074,33 @@
     "1+",
     "1 & vise 1.5",
     "Fulham pobednik  i Hull City više od 1.5 gola na u",
+<<<<<<< HEAD
     10.0,
+=======
+    9.9,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
     "0+",
     "x & vise 1.5",
     "nerešeno i Hull City više od 1.5 gola na utakmici",
+<<<<<<< HEAD
     9.4,
+=======
+    9.6,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
     "2+",
     "2 & vise 1.5",
     "Hull City pobednik  i Hull City više od 1.5 gola n",
+<<<<<<< HEAD
     5.3,
+=======
+    5.45,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ]
   ]
@@ -7445,21 +8112,33 @@
     "1-",
     "1 & manje 2.5",
     "Fulham pobednik  i Hull City manje od 2.5 gola na ",
+<<<<<<< HEAD
     1.69,
+=======
+    1.67,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
     "0-",
     "x & manje 2.5",
     "nerešeno i Hull City manje od 2.5 gola na utakmici",
+<<<<<<< HEAD
     3.8,
+=======
+    3.85,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
     "2-",
     "2 & manje 2.5",
     "Hull City pobednik  i Hull City manje od 2.5 gola ",
+<<<<<<< HEAD
     5.65,
+=======
+    5.75,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
@@ -7480,7 +8159,11 @@
     "2+",
     "2 & vise 2.5",
     "Hull City pobednik  i Hull City više od 2.5 gola n",
+<<<<<<< HEAD
     9.7,
+=======
+    10.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ]
   ]
@@ -7492,21 +8175,33 @@
     "1-",
     "1 & manje 3.5",
     "Fulham pobednik  i Hull City manje od 3.5 gola na ",
+<<<<<<< HEAD
     1.67,
+=======
+    1.65,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.5
    ],
    [
     "0-",
     "x & manje 3.5",
     "nerešeno i Hull City manje od 3.5 gola na utakmici",
+<<<<<<< HEAD
     3.65,
+=======
+    3.7,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.5
    ],
    [
     "2-",
     "2 & manje 3.5",
     "Hull City pobednik  i Hull City manje od 3.5 gola ",
+<<<<<<< HEAD
     4.45,
+=======
+    4.55,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.5
    ],
    [
@@ -7527,7 +8222,11 @@
     "2+",
     "2 & vise 3.5",
     "Hull City pobednik  i Hull City više od 3.5 gola n",
+<<<<<<< HEAD
     23.0,
+=======
+    24.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.5
    ]
   ]
@@ -7539,14 +8238,22 @@
     "1-",
     "1 & manje 4.5",
     "Fulham pobednik  i Hull City manje od 4.5 gola na ",
+<<<<<<< HEAD
     1.67,
+=======
+    1.65,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     4.5
    ],
    [
     "0-",
     "x & manje 4.5",
     "nerešeno i Hull City manje od 4.5 gola na utakmici",
+<<<<<<< HEAD
     3.6,
+=======
+    3.65,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     4.5
    ],
    [
@@ -7586,14 +8293,22 @@
     "1",
     "da",
     "Fulham pobeđuje bar jedno poluvreme",
+<<<<<<< HEAD
     1.37,
+=======
+    1.36,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     null
    ],
    [
     "2",
     "ne",
     "Fulham ne pobeđuje bar jedno poluvreme",
+<<<<<<< HEAD
     2.87,
+=======
+    2.92,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     null
    ]
   ]
@@ -7606,21 +8321,33 @@
     "1-2",
     "Leeds United 1-2 gola na utakmici",
     1.62,
+<<<<<<< HEAD
     -2.0
+=======
+    2.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "",
     "1-3",
     "Leeds United  1-3 gola na utakmici",
     1.34,
+<<<<<<< HEAD
     -3.0
+=======
+    3.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "",
     "2-3",
     "Leeds United 2-3 gola na utakmici",
     2.4,
+<<<<<<< HEAD
     -3.0
+=======
+    3.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ]
   ]
  },
@@ -7632,21 +8359,33 @@
     "1-2",
     "Manchester United 1-2 gola na utakmici",
     1.62,
+<<<<<<< HEAD
     -2.0
+=======
+    2.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "",
     "1-3",
     "Manchester United 1-3 gola na utakmici",
     1.35,
+<<<<<<< HEAD
     -3.0
+=======
+    3.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "",
     "2-3",
     "Manchester United 2-3 gola na utakmici",
     2.5,
+<<<<<<< HEAD
     -3.0
+=======
+    3.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ]
   ]
  },
@@ -8664,21 +9403,33 @@
     "1-2",
     "Manchester City 1-2 gola na utakmici",
     2.27,
+<<<<<<< HEAD
     -2.0
+=======
+    2.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "",
     "1-3",
     "Manchester City  1-3 gola na utakmici",
     1.52,
+<<<<<<< HEAD
     -3.0
+=======
+    3.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "",
     "2-3",
     "Manchester City 2-3 gola na utakmici",
     2.05,
+<<<<<<< HEAD
     -3.0
+=======
+    3.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ]
   ]
  },
@@ -8689,22 +9440,37 @@
     "",
     "1-2",
     "Ipswich 1-2 gola na utakmici",
+<<<<<<< HEAD
     1.88,
     -2.0
+=======
+    1.87,
+    2.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "",
     "1-3",
     "Ipswich 1-3 gola na utakmici",
+<<<<<<< HEAD
     1.75,
     -3.0
+=======
+    1.74,
+    3.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "",
     "2-3",
     "Ipswich 2-3 gola na utakmici",
+<<<<<<< HEAD
     4.7,
     -3.0
+=======
+    4.65,
+    3.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ]
   ]
  },
@@ -8741,14 +9507,22 @@
     "12",
     "1-2",
     "Ipswich 1 ili 2 gola u svakom poluvremenu",
+<<<<<<< HEAD
     7.1,
+=======
+    6.9,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
     "13",
     "1-3",
     "Ipswich 1,2 ili 3 gola u svakom poluvremenu",
+<<<<<<< HEAD
     6.8,
+=======
+    6.7,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.0
    ],
    [
@@ -8800,7 +9574,11 @@
     "0",
     "0",
     "Ipswich ne daje gol",
+<<<<<<< HEAD
     2.1,
+=======
+    2.12,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.0
    ],
    [
@@ -8814,7 +9592,11 @@
     "2",
     "2",
     "Ipswich daje tačno 2 gola",
+<<<<<<< HEAD
     5.8,
+=======
+    5.7,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.0
    ],
    [
@@ -8871,35 +9653,55 @@
     "",
     "vise 0.5 & vise 1.5",
     "1. Poluvreme Manchester City više od 0.5 golova i ",
+<<<<<<< HEAD
     1.45,
+=======
+    1.46,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
     "",
     "vise 0.5 & manje 1.5",
     "1. Poluvreme Manchester City više od 0.5 golova i ",
+<<<<<<< HEAD
     8.7,
+=======
+    8.6,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
     "",
     "manje 0.5 & vise 1.5",
     "1. Poluvreme Manchester City manje od 0.5 golova i",
+<<<<<<< HEAD
     5.9,
+=======
+    5.85,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
     "",
     "manje 0.5 & manje 1.5",
     "1. Poluvreme Manchester City manje od 0.5 golova i",
+<<<<<<< HEAD
     5.35,
+=======
+    5.3,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
     "",
     "vise 0.5 & vise 2.5",
     "1. Poluvreme Manchester City više od 0.5 golova i ",
+<<<<<<< HEAD
     1.9,
+=======
+    1.92,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
@@ -8920,14 +9722,22 @@
     "",
     "manje 0.5 & manje 2.5",
     "1. Poluvreme Manchester City manje od 0.5 golova i",
+<<<<<<< HEAD
     3.9,
+=======
+    3.85,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
     "",
     "vise 1.5 & vise 2.5",
     "1. Poluvreme Manchester City više od 1.5 golova i ",
+<<<<<<< HEAD
     2.77,
+=======
+    2.82,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
@@ -8941,14 +9751,22 @@
     "",
     "manje 1.5 & vise 2.5",
     "1. Poluvreme Manchester City manje od 1.5 golova i",
+<<<<<<< HEAD
     3.8,
+=======
+    3.85,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
     "",
     "manje 1.5 & manje 2.5",
     "1. Poluvreme Manchester City manje od 1.5 golova i",
+<<<<<<< HEAD
     2.22,
+=======
+    2.2,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ]
   ]
@@ -8960,7 +9778,11 @@
     "",
     "vise 0.5 & vise 1.5",
     "1. Poluvreme Ipswich više od 0.5 golova i Ipswich ",
+<<<<<<< HEAD
     5.55,
+=======
+    5.5,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
@@ -8981,7 +9803,11 @@
     "",
     "manje 0.5 & manje 1.5",
     "1. Poluvreme Ipswich manje od 0.5 golova i Ipswich",
+<<<<<<< HEAD
     1.46,
+=======
+    1.47,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
@@ -8995,21 +9821,33 @@
     "",
     "vise 0.5 & manje 2.5",
     "1. Poluvreme Ipswich više od 0.5 golova i Ipswich ",
+<<<<<<< HEAD
     3.35,
+=======
+    3.3,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
     "",
     "manje 0.5 & vise 2.5",
     "1. Poluvreme Ipswich manje od 0.5 golova i Ipswich",
+<<<<<<< HEAD
     45.0,
+=======
+    40.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
     "",
     "manje 0.5 & manje 2.5",
     "1. Poluvreme Ipswich manje od 0.5 golova i Ipswich",
+<<<<<<< HEAD
     1.36,
+=======
+    1.37,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
@@ -9049,7 +9887,11 @@
     "",
     "vise 0.5 & vise 0.5",
     "Manchester City daje više od 0.5 golova u 1. poluv",
+<<<<<<< HEAD
     1.64,
+=======
+    1.65,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
@@ -9063,7 +9905,11 @@
     "",
     "vise 0.5 & vise 1.5",
     "Manchester City daje više od 0.5 golova u 1. poluv",
+<<<<<<< HEAD
     2.7,
+=======
+    2.72,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
@@ -9077,7 +9923,11 @@
     "",
     "vise 0.5 & vise 2.5",
     "Manchester City daje više od 0.5 golova u 1. poluv",
+<<<<<<< HEAD
     5.35,
+=======
+    5.4,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
@@ -9105,14 +9955,22 @@
     "",
     "manje 0.5 & vise 1.5",
     "Manchester City daje manje od 0.5 golova u 1. polu",
+<<<<<<< HEAD
     5.9,
+=======
+    5.85,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
     "",
     "manje 0.5 & manje 1.5",
     "Manchester City daje manje od 0.5 golova u 1. polu",
+<<<<<<< HEAD
     5.35,
+=======
+    5.3,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
@@ -9126,7 +9984,11 @@
     "",
     "manje 0.5 & manje 2.5",
     "Manchester City daje manje od 0.5 golova u 1. polu",
+<<<<<<< HEAD
     3.9,
+=======
+    3.85,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ]
   ]
@@ -9138,7 +10000,11 @@
     "",
     "vise 0.5 & vise 0.5",
     "Ipswich daje više od 0.5 golova u 1. poluvremenu i",
+<<<<<<< HEAD
     6.8,
+=======
+    6.7,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
@@ -9152,7 +10018,11 @@
     "",
     "vise 0.5 & vise 1.5",
     "Ipswich daje više od 0.5 golova u 1. poluvremenu i",
+<<<<<<< HEAD
     22.0,
+=======
+    21.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
@@ -9166,14 +10036,22 @@
     "",
     "vise 0.5 & vise 2.5",
     "Ipswich daje više od 0.5 golova u 1. poluvremenu i",
+<<<<<<< HEAD
     75.0,
+=======
+    70.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
     "",
     "vise 0.5 & manje 2.5",
     "Ipswich daje više od 0.5 golova u 1. poluvremenu i",
+<<<<<<< HEAD
     3.0,
+=======
+    2.95,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
@@ -9187,7 +10065,11 @@
     "",
     "manje 0.5 & manje 0.5",
     "Ipswich daje manje od 0.5 golova u 1. poluvremenu ",
+<<<<<<< HEAD
     2.07,
+=======
+    2.1,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
@@ -9201,21 +10083,33 @@
     "",
     "manje 0.5 & manje 1.5",
     "Ipswich daje manje od 0.5 golova u 1. poluvremenu ",
+<<<<<<< HEAD
     1.46,
+=======
+    1.47,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
     "",
     "manje 0.5 & vise 2.5",
     "Ipswich daje manje od 0.5 golova u 1. poluvremenu ",
+<<<<<<< HEAD
     45.0,
+=======
+    40.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
     "",
     "manje 0.5 & manje 2.5",
     "Ipswich daje manje od 0.5 golova u 1. poluvremenu ",
+<<<<<<< HEAD
     1.36,
+=======
+    1.37,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ]
   ]
@@ -9248,14 +10142,22 @@
     "0+",
     "x & vise 0.5",
     "nerešeno i Manchester City više od 0.5 gola na uta",
+<<<<<<< HEAD
     7.0,
+=======
+    6.9,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     0.5
    ],
    [
     "2+",
     "2 & vise 0.5",
     "Ipswich pobednik i Manchester City više od 0.5 gol",
+<<<<<<< HEAD
     13.0,
+=======
+    12.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     0.5
    ]
   ]
@@ -9274,21 +10176,33 @@
     "0-",
     "x & manje 1.5",
     "nerešeno i Manchester City manje od 1.5 gola na ut",
+<<<<<<< HEAD
     7.9,
+=======
+    7.8,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
     "2-",
     "2 & manje 1.5",
     "Ipswich pobednik i Manchester City manje od 1.5 go",
+<<<<<<< HEAD
     9.5,
+=======
+    9.3,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
     "1+",
     "1 & vise 1.5",
     "Manchester City pobednik i Manchester City više od",
+<<<<<<< HEAD
     1.33,
+=======
+    1.34,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
@@ -9302,7 +10216,11 @@
     "2+",
     "2 & vise 1.5",
     "Ipswich pobednik i Manchester City više od 1.5 gol",
+<<<<<<< HEAD
     30.0,
+=======
+    29.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ]
   ]
@@ -9328,21 +10246,33 @@
     "2-",
     "2 & manje 2.5",
     "Ipswich pobednik i Manchester City manje od 2.5 go",
+<<<<<<< HEAD
     8.4,
+=======
+    8.2,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
     "1+",
     "1 & vise 2.5",
     "Manchester City pobednik i Manchester City više od",
+<<<<<<< HEAD
     1.78,
+=======
+    1.8,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
     "0+",
     "x & vise 2.5",
     "nerešeno i Manchester City više od 2.5 gola na uta",
+<<<<<<< HEAD
     39.0,
+=======
+    38.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
@@ -9375,14 +10305,22 @@
     "2-",
     "2 & manje 3.5",
     "Ipswich pobednik i Manchester City manje od 3.5 go",
+<<<<<<< HEAD
     8.2,
+=======
+    8.1,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.5
    ],
    [
     "1+",
     "1 & vise 3.5",
     "Manchester City pobednik i Manchester City više od",
+<<<<<<< HEAD
     2.87,
+=======
+    2.9,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.5
    ],
    [
@@ -9422,7 +10360,11 @@
     "2-",
     "2 & manje 4.5",
     "Ipswich pobednik i Manchester City manje od 4.5 go",
+<<<<<<< HEAD
     8.2,
+=======
+    8.1,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     4.5
    ],
    [
@@ -9502,7 +10444,11 @@
     "0-",
     "x & manje 1.5",
     "nerešeno i Ipswich manje od 1.5 gola na utakmici",
+<<<<<<< HEAD
     7.9,
+=======
+    7.8,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
@@ -9516,7 +10462,11 @@
     "1+",
     "1 & vise 1.5",
     "Manchester City pobednik  i Ipswich više od 1.5 go",
+<<<<<<< HEAD
     7.7,
+=======
+    7.6,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
@@ -9530,7 +10480,11 @@
     "2+",
     "2 & vise 1.5",
     "Ipswich pobednik  i Ipswich više od 1.5 gola na ut",
+<<<<<<< HEAD
     11.0,
+=======
+    10.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ]
   ]
@@ -9570,14 +10524,22 @@
     "0+",
     "x & vise 2.5",
     "nerešeno i Ipswich više od 2.5 gola na utakmici",
+<<<<<<< HEAD
     39.0,
+=======
+    38.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
     "2+",
     "2 & vise 2.5",
     "Ipswich pobednik  i Ipswich više od 2.5 gola na ut",
+<<<<<<< HEAD
     20.0,
+=======
+    19.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ]
   ]
@@ -9603,7 +10565,11 @@
     "2-",
     "2 & manje 3.5",
     "Ipswich pobednik  i Ipswich manje od 3.5 gola na u",
+<<<<<<< HEAD
     8.7,
+=======
+    8.6,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.5
    ],
    [
@@ -9650,7 +10616,11 @@
     "2-",
     "2 & manje 4.5",
     "Ipswich pobednik  i Ipswich manje od 4.5 gola na u",
+<<<<<<< HEAD
     8.3,
+=======
+    8.2,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     4.5
    ],
    [
@@ -9683,14 +10653,22 @@
     "1",
     "da",
     "Manchester City pobeđuje bar jedno poluvreme",
+<<<<<<< HEAD
     1.1,
+=======
+    1.11,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     null
    ],
    [
     "2",
     "ne",
     "Manchester City ne pobeđuje bar jedno poluvreme",
+<<<<<<< HEAD
     5.75,
+=======
+    5.65,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     null
    ]
   ]
@@ -9702,22 +10680,36 @@
     "",
     "1-2",
     "Newcastle 1-2 gola na utakmici",
+<<<<<<< HEAD
     1.64,
     -2.0
+=======
+    1.65,
+    2.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "",
     "1-3",
     "Newcastle  1-3 gola na utakmici",
     1.32,
+<<<<<<< HEAD
     -3.0
+=======
+    3.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "",
     "2-3",
     "Newcastle 2-3 gola na utakmici",
+<<<<<<< HEAD
     2.25,
     -3.0
+=======
+    2.22,
+    3.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ]
   ]
  },
@@ -9729,21 +10721,35 @@
     "1-2",
     "Aston Villa 1-2 gola na utakmici",
     1.62,
+<<<<<<< HEAD
     -2.0
+=======
+    2.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "",
     "1-3",
     "Aston Villa 1-3 gola na utakmici",
+<<<<<<< HEAD
     1.36,
     -3.0
+=======
+    1.37,
+    3.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "",
     "2-3",
     "Aston Villa 2-3 gola na utakmici",
+<<<<<<< HEAD
     2.6,
     -3.0
+=======
+    2.62,
+    3.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ]
   ]
  },
@@ -9754,14 +10760,22 @@
     "12",
     "1-2",
     "Newcastle 1 ili 2 gola u svakom poluvremenu",
+<<<<<<< HEAD
     3.3,
+=======
+    3.25,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
     "13",
     "1-3",
     "Newcastle 1,2 ili 3 gola u svakom poluvremenu",
+<<<<<<< HEAD
     2.87,
+=======
+    2.82,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.0
    ],
    [
@@ -9780,14 +10794,22 @@
     "12",
     "1-2",
     "Aston Villa 1 ili 2 gola u svakom poluvremenu",
+<<<<<<< HEAD
     3.85,
+=======
+    3.9,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
     "13",
     "1-3",
     "Aston Villa 1,2 ili 3 gola u svakom poluvremenu",
+<<<<<<< HEAD
     3.5,
+=======
+    3.6,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.0
    ],
    [
@@ -9806,14 +10828,22 @@
     "0",
     "0",
     "Newcastle ne daje gol",
+<<<<<<< HEAD
     4.8,
+=======
+    4.9,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.0
    ],
    [
     "1",
     "1",
     "Newcastle daje tačno 1 gol",
+<<<<<<< HEAD
     2.92,
+=======
+    2.95,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.0
    ],
    [
@@ -9827,7 +10857,11 @@
     "3",
     "3+",
     "Newcastle daje 3 ili više golova",
+<<<<<<< HEAD
     3.75,
+=======
+    3.65,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.0
    ]
   ]
@@ -9839,28 +10873,44 @@
     "0",
     "0",
     "Aston Villa ne daje gol",
+<<<<<<< HEAD
     3.75,
+=======
+    3.65,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.0
    ],
    [
     "1",
     "1",
     "Aston Villa daje tačno 1 gol",
+<<<<<<< HEAD
     2.67,
+=======
+    2.65,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.0
    ],
    [
     "2",
     "2",
     "Aston Villa daje tačno 2 gola",
+<<<<<<< HEAD
     3.65,
+=======
+    3.7,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.0
    ],
    [
     "3",
     "3+",
     "Aston Villa daje 3 ili više golova",
+<<<<<<< HEAD
     5.0,
+=======
+    5.2,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.0
    ]
   ]
@@ -9879,7 +10929,11 @@
     "2",
     "ne",
     "Newcastle ne daje gol na utakmici",
+<<<<<<< HEAD
     4.9,
+=======
+    5.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     null
    ]
   ]
@@ -9891,14 +10945,22 @@
     "1",
     "da",
     "Aston Villa daje gol na utakmici",
+<<<<<<< HEAD
     1.27,
+=======
+    1.28,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     null
    ],
    [
     "2",
     "ne",
     "Aston Villa ne daje gol na utakmici",
+<<<<<<< HEAD
     3.8,
+=======
+    3.7,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     null
    ]
   ]
@@ -9910,14 +10972,22 @@
     "",
     "vise 0.5 & vise 1.5",
     "1. Poluvreme Newcastle više od 0.5 golova i Newcas",
+<<<<<<< HEAD
     2.32,
+=======
+    2.27,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
     "",
     "vise 0.5 & manje 1.5",
     "1. Poluvreme Newcastle više od 0.5 golova i Newcas",
+<<<<<<< HEAD
     5.55,
+=======
+    5.6,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
@@ -9931,14 +11001,22 @@
     "",
     "manje 0.5 & manje 1.5",
     "1. Poluvreme Newcastle manje od 0.5 golova i Newca",
+<<<<<<< HEAD
     2.55,
+=======
+    2.6,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
     "",
     "vise 0.5 & vise 2.5",
     "1. Poluvreme Newcastle više od 0.5 golova i Newcas",
+<<<<<<< HEAD
     4.1,
+=======
+    3.9,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
@@ -9959,14 +11037,22 @@
     "",
     "manje 0.5 & manje 2.5",
     "1. Poluvreme Newcastle manje od 0.5 golova i Newca",
+<<<<<<< HEAD
     2.1,
+=======
+    2.15,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
     "",
     "vise 1.5 & vise 2.5",
     "1. Poluvreme Newcastle više od 1.5 golova i Newcas",
+<<<<<<< HEAD
     6.2,
+=======
+    6.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
@@ -9980,14 +11066,22 @@
     "",
     "manje 1.5 & vise 2.5",
     "1. Poluvreme Newcastle manje od 1.5 golova i Newca",
+<<<<<<< HEAD
     6.3,
+=======
+    6.2,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
     "",
     "manje 1.5 & manje 2.5",
     "1. Poluvreme Newcastle manje od 1.5 golova i Newca",
+<<<<<<< HEAD
     1.34,
+=======
+    1.36,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ]
   ]
@@ -9999,35 +11093,55 @@
     "",
     "vise 0.5 & vise 1.5",
     "1. Poluvreme Aston Villa više od 0.5 golova i Asto",
+<<<<<<< HEAD
     2.85,
+=======
+    2.9,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
     "",
     "vise 0.5 & manje 1.5",
     "1. Poluvreme Aston Villa više od 0.5 golova i Asto",
+<<<<<<< HEAD
     5.2,
+=======
+    5.15,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
     "",
     "manje 0.5 & vise 1.5",
     "1. Poluvreme Aston Villa manje od 0.5 golova i Ast",
+<<<<<<< HEAD
     6.9,
+=======
+    7.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
     "",
     "manje 0.5 & manje 1.5",
     "1. Poluvreme Aston Villa manje od 0.5 golova i Ast",
+<<<<<<< HEAD
     2.12,
+=======
+    2.1,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
     "",
     "vise 0.5 & vise 2.5",
     "1. Poluvreme Aston Villa više od 0.5 golova i Asto",
+<<<<<<< HEAD
     5.45,
+=======
+    5.6,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
@@ -10041,42 +11155,66 @@
     "",
     "manje 0.5 & vise 2.5",
     "1. Poluvreme Aston Villa manje od 0.5 golova i Ast",
+<<<<<<< HEAD
     19.0,
+=======
+    20.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
     "",
     "manje 0.5 & manje 2.5",
     "1. Poluvreme Aston Villa manje od 0.5 golova i Ast",
+<<<<<<< HEAD
     1.82,
+=======
+    1.8,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
     "",
     "vise 1.5 & vise 2.5",
     "1. Poluvreme Aston Villa više od 1.5 golova i Asto",
+<<<<<<< HEAD
     8.2,
+=======
+    8.5,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
     "",
     "vise 1.5 & manje 2.5",
     "1. Poluvreme Aston Villa više od 1.5 golova i Asto",
+<<<<<<< HEAD
     12.0,
+=======
+    13.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
     "",
     "manje 1.5 & vise 2.5",
     "1. Poluvreme Aston Villa manje od 1.5 golova i Ast",
+<<<<<<< HEAD
     7.8,
+=======
+    8.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
     "",
     "manje 1.5 & manje 2.5",
     "1. Poluvreme Aston Villa manje od 1.5 golova i Ast",
+<<<<<<< HEAD
     1.22,
+=======
+    1.21,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ]
   ]
@@ -10088,7 +11226,11 @@
     "",
     "vise 0.5 & vise 0.5",
     "Newcastle daje više od 0.5 golova u 1. poluvremenu",
+<<<<<<< HEAD
     2.77,
+=======
+    2.72,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
@@ -10102,42 +11244,66 @@
     "",
     "vise 0.5 & vise 1.5",
     "Newcastle daje više od 0.5 golova u 1. poluvremenu",
+<<<<<<< HEAD
     6.1,
+=======
+    5.9,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
     "",
     "vise 0.5 & manje 1.5",
     "Newcastle daje više od 0.5 golova u 1. poluvremenu",
+<<<<<<< HEAD
     2.25,
+=======
+    2.22,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
     "",
     "vise 0.5 & vise 2.5",
     "Newcastle daje više od 0.5 golova u 1. poluvremenu",
+<<<<<<< HEAD
     16.0,
+=======
+    15.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
     "",
     "vise 0.5 & manje 2.5",
     "Newcastle daje više od 0.5 golova u 1. poluvremenu",
+<<<<<<< HEAD
     1.87,
+=======
+    1.85,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
     "",
     "manje 0.5 & vise 0.5",
     "Newcastle daje manje od 0.5 golova u 1. poluvremen",
+<<<<<<< HEAD
     3.0,
+=======
+    3.05,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
     "",
     "manje 0.5 & manje 0.5",
     "Newcastle daje manje od 0.5 golova u 1. poluvremen",
+<<<<<<< HEAD
     4.6,
+=======
+    4.7,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
@@ -10151,7 +11317,11 @@
     "",
     "manje 0.5 & manje 1.5",
     "Newcastle daje manje od 0.5 golova u 1. poluvremen",
+<<<<<<< HEAD
     2.55,
+=======
+    2.6,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
@@ -10165,7 +11335,11 @@
     "",
     "manje 0.5 & manje 2.5",
     "Newcastle daje manje od 0.5 golova u 1. poluvremen",
+<<<<<<< HEAD
     2.1,
+=======
+    2.15,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ]
   ]
@@ -10177,7 +11351,11 @@
     "",
     "vise 0.5 & vise 0.5",
     "Aston Villa daje više od 0.5 golova u 1. poluvreme",
+<<<<<<< HEAD
     3.4,
+=======
+    3.5,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
@@ -10191,28 +11369,44 @@
     "",
     "vise 0.5 & vise 1.5",
     "Aston Villa daje više od 0.5 golova u 1. poluvreme",
+<<<<<<< HEAD
     8.0,
+=======
+    8.2,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
     "",
     "vise 0.5 & manje 1.5",
     "Aston Villa daje više od 0.5 golova u 1. poluvreme",
+<<<<<<< HEAD
     2.37,
+=======
+    2.4,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
     "",
     "vise 0.5 & vise 2.5",
     "Aston Villa daje više od 0.5 golova u 1. poluvreme",
+<<<<<<< HEAD
     22.0,
+=======
+    23.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
     "",
     "vise 0.5 & manje 2.5",
     "Aston Villa daje više od 0.5 golova u 1. poluvreme",
+<<<<<<< HEAD
     2.07,
+=======
+    2.1,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
@@ -10226,35 +11420,55 @@
     "",
     "manje 0.5 & manje 0.5",
     "Aston Villa daje manje od 0.5 golova u 1. poluvrem",
+<<<<<<< HEAD
     3.6,
+=======
+    3.55,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
     "",
     "manje 0.5 & vise 1.5",
     "Aston Villa daje manje od 0.5 golova u 1. poluvrem",
+<<<<<<< HEAD
     6.9,
+=======
+    7.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
     "",
     "manje 0.5 & manje 1.5",
     "Aston Villa daje manje od 0.5 golova u 1. poluvrem",
+<<<<<<< HEAD
     2.12,
+=======
+    2.1,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
     "",
     "manje 0.5 & vise 2.5",
     "Aston Villa daje manje od 0.5 golova u 1. poluvrem",
+<<<<<<< HEAD
     19.0,
+=======
+    20.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
     "",
     "manje 0.5 & manje 2.5",
     "Aston Villa daje manje od 0.5 golova u 1. poluvrem",
+<<<<<<< HEAD
     1.82,
+=======
+    1.8,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ]
   ]
@@ -10273,14 +11487,22 @@
     "2-",
     "2 & manje 0.5",
     "Aston Villa pobednik i Newcastle manje od 0.5 gola",
+<<<<<<< HEAD
     5.8,
+=======
+    6.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     0.5
    ],
    [
     "1+",
     "1 & vise 0.5",
     "Newcastle pobednik i Newcastle više od 0.5 gola na",
+<<<<<<< HEAD
     2.12,
+=======
+    2.05,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     0.5
    ],
    [
@@ -10294,7 +11516,11 @@
     "2+",
     "2 & vise 0.5",
     "Aston Villa pobednik i Newcastle više od 0.5 gola ",
+<<<<<<< HEAD
     4.6,
+=======
+    4.75,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     0.5
    ]
   ]
@@ -10306,7 +11532,11 @@
     "1-",
     "1 & manje 1.5",
     "Newcastle pobednik i Newcastle manje od 1.5 gola n",
+<<<<<<< HEAD
     8.9,
+=======
+    8.7,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
@@ -10320,21 +11550,33 @@
     "2-",
     "2 & manje 1.5",
     "Aston Villa pobednik i Newcastle manje od 1.5 gola",
+<<<<<<< HEAD
     3.4,
+=======
+    3.5,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
     "1+",
     "1 & vise 1.5",
     "Newcastle pobednik i Newcastle više od 1.5 gola na",
+<<<<<<< HEAD
     2.5,
+=======
+    2.42,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
     "0+",
     "x & vise 1.5",
     "nerešeno i Newcastle više od 1.5 gola na utakmici",
+<<<<<<< HEAD
     7.5,
+=======
+    7.6,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
@@ -10353,7 +11595,11 @@
     "1-",
     "1 & manje 2.5",
     "Newcastle pobednik i Newcastle manje od 2.5 gola n",
+<<<<<<< HEAD
     3.8,
+=======
+    3.7,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
@@ -10367,14 +11613,22 @@
     "2-",
     "2 & manje 2.5",
     "Aston Villa pobednik i Newcastle manje od 2.5 gola",
+<<<<<<< HEAD
     2.95,
+=======
+    3.05,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
     "1+",
     "1 & vise 2.5",
     "Newcastle pobednik i Newcastle više od 2.5 gola na",
+<<<<<<< HEAD
     4.0,
+=======
+    3.9,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
@@ -10400,7 +11654,11 @@
     "1-",
     "1 & manje 3.5",
     "Newcastle pobednik i Newcastle manje od 3.5 gola n",
+<<<<<<< HEAD
     2.6,
+=======
+    2.52,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.5
    ],
    [
@@ -10414,21 +11672,33 @@
     "2-",
     "2 & manje 3.5",
     "Aston Villa pobednik i Newcastle manje od 3.5 gola",
+<<<<<<< HEAD
     2.87,
+=======
+    2.95,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.5
    ],
    [
     "1+",
     "1 & vise 3.5",
     "Newcastle pobednik i Newcastle više od 3.5 gola na",
+<<<<<<< HEAD
     7.9,
+=======
+    7.6,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.5
    ],
    [
     "0+",
     "x & vise 3.5",
     "nerešeno i Newcastle više od 3.5 gola na utakmici",
+<<<<<<< HEAD
     70.0,
+=======
+    75.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.5
    ],
    [
@@ -10447,21 +11717,33 @@
     "1-",
     "1 & manje 4.5",
     "Newcastle pobednik i Newcastle manje od 4.5 gola n",
+<<<<<<< HEAD
     2.25,
+=======
+    2.2,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     4.5
    ],
    [
     "0-",
     "x & manje 4.5",
     "nerešeno i Newcastle manje od 4.5 gola na utakmici",
+<<<<<<< HEAD
     3.35,
+=======
+    3.4,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     4.5
    ],
    [
     "2-",
     "2 & manje 4.5",
     "Aston Villa pobednik i Newcastle manje od 4.5 gola",
+<<<<<<< HEAD
     2.87,
+=======
+    2.95,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     4.5
    ],
    [
@@ -10494,7 +11776,11 @@
     "1-",
     "1 & manje 0.5",
     "Newcastle pobednik  i Aston Villa manje od 0.5 gol",
+<<<<<<< HEAD
     4.3,
+=======
+    4.2,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     0.5
    ],
    [
@@ -10508,7 +11794,11 @@
     "1+",
     "1 & vise 0.5",
     "Newcastle pobednik  i Aston Villa više od 0.5 gola",
+<<<<<<< HEAD
     3.55,
+=======
+    3.45,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     0.5
    ],
    [
@@ -10522,7 +11812,11 @@
     "2+",
     "2 & vise 0.5",
     "Aston Villa pobednik  i Aston Villa više od 0.5 go",
+<<<<<<< HEAD
     2.87,
+=======
+    2.95,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     0.5
    ]
   ]
@@ -10534,7 +11828,11 @@
     "1-",
     "1 & manje 1.5",
     "Newcastle pobednik  i Aston Villa manje od 1.5 gol",
+<<<<<<< HEAD
     2.5,
+=======
+    2.42,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
@@ -10555,21 +11853,33 @@
     "1+",
     "1 & vise 1.5",
     "Newcastle pobednik  i Aston Villa više od 1.5 gola",
+<<<<<<< HEAD
     9.1,
+=======
+    9.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
     "0+",
     "x & vise 1.5",
     "nerešeno i Aston Villa više od 1.5 gola na utakmic",
+<<<<<<< HEAD
     7.5,
+=======
+    7.6,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
     "2+",
     "2 & vise 1.5",
     "Aston Villa pobednik  i Aston Villa više od 1.5 go",
+<<<<<<< HEAD
     3.45,
+=======
+    3.55,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ]
   ]
@@ -10581,7 +11891,11 @@
     "1-",
     "1 & manje 2.5",
     "Newcastle pobednik  i Aston Villa manje od 2.5 gol",
+<<<<<<< HEAD
     2.17,
+=======
+    2.12,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
@@ -10595,7 +11909,11 @@
     "2-",
     "2 & manje 2.5",
     "Aston Villa pobednik  i Aston Villa manje od 2.5 g",
+<<<<<<< HEAD
     4.7,
+=======
+    4.8,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
@@ -10616,7 +11934,11 @@
     "2+",
     "2 & vise 2.5",
     "Aston Villa pobednik  i Aston Villa više od 2.5 go",
+<<<<<<< HEAD
     5.7,
+=======
+    5.9,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ]
   ]
@@ -10628,7 +11950,11 @@
     "1-",
     "1 & manje 3.5",
     "Newcastle pobednik  i Aston Villa manje od 3.5 gol",
+<<<<<<< HEAD
     2.12,
+=======
+    2.07,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.5
    ],
    [
@@ -10642,7 +11968,11 @@
     "2-",
     "2 & manje 3.5",
     "Aston Villa pobednik  i Aston Villa manje od 3.5 g",
+<<<<<<< HEAD
     3.35,
+=======
+    3.45,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.5
    ],
    [
@@ -10656,7 +11986,11 @@
     "0+",
     "x & vise 3.5",
     "nerešeno i Aston Villa više od 3.5 gola na utakmic",
+<<<<<<< HEAD
     70.0,
+=======
+    75.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.5
    ],
    [
@@ -10675,21 +12009,33 @@
     "1-",
     "1 & manje 4.5",
     "Newcastle pobednik  i Aston Villa manje od 4.5 gol",
+<<<<<<< HEAD
     2.12,
+=======
+    2.05,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     4.5
    ],
    [
     "0-",
     "x & manje 4.5",
     "nerešeno i Aston Villa manje od 4.5 gola na utakmi",
+<<<<<<< HEAD
     3.35,
+=======
+    3.4,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     4.5
    ],
    [
     "2-",
     "2 & manje 4.5",
     "Aston Villa pobednik  i Aston Villa manje od 4.5 g",
+<<<<<<< HEAD
     3.0,
+=======
+    3.1,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     4.5
    ],
    [
@@ -10710,7 +12056,11 @@
     "2+",
     "2 & vise 4.5",
     "Aston Villa pobednik  i Aston Villa više od 4.5 go",
+<<<<<<< HEAD
     29.0,
+=======
+    31.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     4.5
    ]
   ]
@@ -10722,14 +12072,22 @@
     "1",
     "da",
     "Newcastle pobeđuje bar jedno poluvreme",
+<<<<<<< HEAD
     1.57,
+=======
+    1.55,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     null
    ],
    [
     "2",
     "ne",
     "Newcastle ne pobeđuje bar jedno poluvreme",
+<<<<<<< HEAD
     2.25,
+=======
+    2.3,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     null
    ]
   ]
@@ -10741,14 +12099,22 @@
     "1",
     "da",
     "Aston Villa pobeđuje bar jedno poluvreme",
+<<<<<<< HEAD
     1.9,
+=======
+    1.95,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     null
    ],
    [
     "2",
     "ne",
     "Aston Villa neće pobediti ni jedno poluvreme",
+<<<<<<< HEAD
     1.8,
+=======
+    1.76,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     null
    ]
   ]
@@ -10761,21 +12127,33 @@
     "1-2",
     "Nottingham Forest 1-2 gola na utakmici",
     1.85,
+<<<<<<< HEAD
     -2.0
+=======
+    2.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "",
     "1-3",
     "Nottingham Forest  1-3 gola na utakmici",
     1.72,
+<<<<<<< HEAD
     -3.0
+=======
+    3.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "",
     "2-3",
     "Nottingham Forest 2-3 gola na utakmici",
     4.55,
+<<<<<<< HEAD
     -3.0
+=======
+    3.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ]
   ]
  },
@@ -10787,21 +12165,33 @@
     "1-2",
     "Arsenal 1-2 gola na utakmici",
     1.7,
+<<<<<<< HEAD
     -2.0
+=======
+    2.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "",
     "1-3",
     "Arsenal 1-3 gola na utakmici",
     1.32,
+<<<<<<< HEAD
     -3.0
+=======
+    3.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "",
     "2-3",
     "Arsenal 2-3 gola na utakmici",
     2.17,
+<<<<<<< HEAD
     -3.0
+=======
+    3.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ]
   ]
  },
@@ -11774,21 +13164,33 @@
     "1-2",
     "Tottenham 1-2 gola na utakmici",
     1.85,
+<<<<<<< HEAD
     -2.0
+=======
+    2.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "",
     "1-3",
     "Tottenham  1-3 gola na utakmici",
     1.35,
+<<<<<<< HEAD
     -3.0
+=======
+    3.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "",
     "2-3",
     "Tottenham 2-3 gola na utakmici",
     2.02,
+<<<<<<< HEAD
     -3.0
+=======
+    3.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ]
   ]
  },
@@ -11800,21 +13202,35 @@
     "1-2",
     "Coventry City 1-2 gola na utakmici",
     1.75,
+<<<<<<< HEAD
     -2.0
+=======
+    2.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "",
     "1-3",
     "Coventry City 1-3 gola na utakmici",
+<<<<<<< HEAD
     1.59,
     -3.0
+=======
+    1.6,
+    3.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "",
     "2-3",
     "Coventry City 2-3 gola na utakmici",
+<<<<<<< HEAD
     3.8,
     -3.0
+=======
+    3.9,
+    3.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ]
   ]
  },
@@ -11851,21 +13267,33 @@
     "12",
     "1-2",
     "Coventry City 1 ili 2 gola u svakom poluvremenu",
+<<<<<<< HEAD
     5.8,
+=======
+    5.85,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
     "13",
     "1-3",
     "Coventry City 1,2 ili 3 gola u svakom poluvremenu",
+<<<<<<< HEAD
     5.5,
+=======
+    5.6,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.0
    ],
    [
     "23",
     "2-3",
     "Coventry City 2 ili 3 gola u svakom poluvremenu",
+<<<<<<< HEAD
     50.0,
+=======
+    55.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.0
    ]
   ]
@@ -11910,7 +13338,11 @@
     "0",
     "0",
     "Coventry City ne daje gol",
+<<<<<<< HEAD
     2.45,
+=======
+    2.42,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.0
    ],
    [
@@ -11931,7 +13363,11 @@
     "3",
     "3+",
     "Coventry City daje 3 ili više golova",
+<<<<<<< HEAD
     9.9,
+=======
+    10.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.0
    ]
   ]
@@ -12070,7 +13506,11 @@
     "",
     "vise 0.5 & vise 1.5",
     "1. Poluvreme Coventry City više od 0.5 golova i Co",
+<<<<<<< HEAD
     4.45,
+=======
+    4.55,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
@@ -12084,21 +13524,33 @@
     "",
     "manje 0.5 & vise 1.5",
     "1. Poluvreme Coventry City manje od 0.5 golova i C",
+<<<<<<< HEAD
     9.2,
+=======
+    9.3,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
     "",
     "manje 0.5 & manje 1.5",
     "1. Poluvreme Coventry City manje od 0.5 golova i C",
+<<<<<<< HEAD
     1.61,
+=======
+    1.6,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
     "",
     "vise 0.5 & vise 2.5",
     "1. Poluvreme Coventry City više od 0.5 golova i Co",
+<<<<<<< HEAD
     10.0,
+=======
+    11.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
@@ -12112,35 +13564,55 @@
     "",
     "manje 0.5 & vise 2.5",
     "1. Poluvreme Coventry City manje od 0.5 golova i C",
+<<<<<<< HEAD
     33.0,
+=======
+    34.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
     "",
     "manje 0.5 & manje 2.5",
     "1. Poluvreme Coventry City manje od 0.5 golova i C",
+<<<<<<< HEAD
     1.47,
+=======
+    1.46,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
     "",
     "vise 1.5 & vise 2.5",
     "1. Poluvreme Coventry City više od 1.5 golova i Co",
+<<<<<<< HEAD
     16.0,
+=======
+    17.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
     "",
     "vise 1.5 & manje 2.5",
     "1. Poluvreme Coventry City više od 1.5 golova i Co",
+<<<<<<< HEAD
     15.0,
+=======
+    16.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
     "",
     "manje 1.5 & vise 2.5",
     "1. Poluvreme Coventry City manje od 1.5 golova i C",
+<<<<<<< HEAD
     14.0,
+=======
+    15.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
@@ -12187,14 +13659,22 @@
     "",
     "vise 0.5 & vise 2.5",
     "Tottenham daje više od 0.5 golova u 1. poluvremenu",
+<<<<<<< HEAD
     8.8,
+=======
+    8.7,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
     "",
     "vise 0.5 & manje 2.5",
     "Tottenham daje više od 0.5 golova u 1. poluvremenu",
+<<<<<<< HEAD
     1.69,
+=======
+    1.68,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
@@ -12208,7 +13688,11 @@
     "",
     "manje 0.5 & manje 0.5",
     "Tottenham daje manje od 0.5 golova u 1. poluvremen",
+<<<<<<< HEAD
     6.7,
+=======
+    6.8,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
@@ -12222,7 +13706,11 @@
     "",
     "manje 0.5 & manje 1.5",
     "Tottenham daje manje od 0.5 golova u 1. poluvremen",
+<<<<<<< HEAD
     3.5,
+=======
+    3.55,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
@@ -12236,7 +13724,11 @@
     "",
     "manje 0.5 & manje 2.5",
     "Tottenham daje manje od 0.5 golova u 1. poluvremen",
+<<<<<<< HEAD
     2.72,
+=======
+    2.75,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ]
   ]
@@ -12248,7 +13740,11 @@
     "",
     "vise 0.5 & vise 0.5",
     "Coventry City daje više od 0.5 golova u 1. poluvre",
+<<<<<<< HEAD
     5.5,
+=======
+    5.6,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
@@ -12269,7 +13765,11 @@
     "",
     "vise 0.5 & manje 1.5",
     "Coventry City daje više od 0.5 golova u 1. poluvre",
+<<<<<<< HEAD
     2.82,
+=======
+    2.85,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
@@ -12283,7 +13783,11 @@
     "",
     "vise 0.5 & manje 2.5",
     "Coventry City daje više od 0.5 golova u 1. poluvre",
+<<<<<<< HEAD
     2.62,
+=======
+    2.65,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
@@ -12297,35 +13801,55 @@
     "",
     "manje 0.5 & manje 0.5",
     "Coventry City daje manje od 0.5 golova u 1. poluvr",
+<<<<<<< HEAD
     2.42,
+=======
+    2.4,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
     "",
     "manje 0.5 & vise 1.5",
     "Coventry City daje manje od 0.5 golova u 1. poluvr",
+<<<<<<< HEAD
     9.2,
+=======
+    9.3,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
     "",
     "manje 0.5 & manje 1.5",
     "Coventry City daje manje od 0.5 golova u 1. poluvr",
+<<<<<<< HEAD
     1.61,
+=======
+    1.6,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
     "",
     "manje 0.5 & vise 2.5",
     "Coventry City daje manje od 0.5 golova u 1. poluvr",
+<<<<<<< HEAD
     33.0,
+=======
+    34.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
     "",
     "manje 0.5 & manje 2.5",
     "Coventry City daje manje od 0.5 golova u 1. poluvr",
+<<<<<<< HEAD
     1.47,
+=======
+    1.46,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ]
   ]
@@ -12344,14 +13868,22 @@
     "2-",
     "2 & manje 0.5",
     "Coventry City pobednik i Tottenham manje od 0.5 go",
+<<<<<<< HEAD
     9.2,
+=======
+    9.4,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     0.5
    ],
    [
     "1+",
     "1 & vise 0.5",
     "Tottenham pobednik i Tottenham više od 0.5 gola na",
+<<<<<<< HEAD
     1.45,
+=======
+    1.44,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     0.5
    ],
    [
@@ -12365,7 +13897,11 @@
     "2+",
     "2 & vise 0.5",
     "Coventry City pobednik i Tottenham više od 0.5 gol",
+<<<<<<< HEAD
     8.0,
+=======
+    8.2,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     0.5
    ]
   ]
@@ -12391,14 +13927,22 @@
     "2-",
     "2 & manje 1.5",
     "Coventry City pobednik i Tottenham manje od 1.5 go",
+<<<<<<< HEAD
     5.8,
+=======
+    6.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
     "1+",
     "1 & vise 1.5",
     "Tottenham pobednik i Tottenham više od 1.5 gola na",
+<<<<<<< HEAD
     1.68,
+=======
+    1.67,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
@@ -12424,7 +13968,11 @@
     "1-",
     "1 & manje 2.5",
     "Tottenham pobednik i Tottenham manje od 2.5 gola n",
+<<<<<<< HEAD
     3.0,
+=======
+    2.95,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
@@ -12438,21 +13986,33 @@
     "2-",
     "2 & manje 2.5",
     "Coventry City pobednik i Tottenham manje od 2.5 go",
+<<<<<<< HEAD
     5.2,
+=======
+    5.35,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
     "1+",
     "1 & vise 2.5",
     "Tottenham pobednik i Tottenham više od 2.5 gola na",
+<<<<<<< HEAD
     2.55,
+=======
+    2.52,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
     "0+",
     "x & vise 2.5",
     "nerešeno i Tottenham više od 2.5 gola na utakmici",
+<<<<<<< HEAD
     32.0,
+=======
+    33.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
@@ -12471,7 +14031,11 @@
     "1-",
     "1 & manje 3.5",
     "Tottenham pobednik i Tottenham manje od 3.5 gola n",
+<<<<<<< HEAD
     1.95,
+=======
+    1.92,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.5
    ],
    [
@@ -12485,14 +14049,22 @@
     "2-",
     "2 & manje 3.5",
     "Coventry City pobednik i Tottenham manje od 3.5 go",
+<<<<<<< HEAD
     5.15,
+=======
+    5.25,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.5
    ],
    [
     "1+",
     "1 & vise 3.5",
     "Tottenham pobednik i Tottenham više od 3.5 gola na",
+<<<<<<< HEAD
     4.7,
+=======
+    4.65,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.5
    ],
    [
@@ -12518,28 +14090,44 @@
     "1-",
     "1 & manje 4.5",
     "Tottenham pobednik i Tottenham manje od 4.5 gola n",
+<<<<<<< HEAD
     1.62,
+=======
+    1.6,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     4.5
    ],
    [
     "0-",
     "x & manje 4.5",
     "nerešeno i Tottenham manje od 4.5 gola na utakmici",
+<<<<<<< HEAD
     4.2,
+=======
+    4.25,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     4.5
    ],
    [
     "2-",
     "2 & manje 4.5",
     "Coventry City pobednik i Tottenham manje od 4.5 go",
+<<<<<<< HEAD
     5.15,
+=======
+    5.25,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     4.5
    ],
    [
     "1+",
     "1 & vise 4.5",
     "Tottenham pobednik i Tottenham više od 4.5 gola na",
+<<<<<<< HEAD
     9.3,
+=======
+    9.2,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     4.5
    ],
    [
@@ -12565,7 +14153,11 @@
     "1-",
     "1 & manje 0.5",
     "Tottenham pobednik  i Coventry City manje od 0.5 g",
+<<<<<<< HEAD
     2.65,
+=======
+    2.62,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     0.5
    ],
    [
@@ -12593,7 +14185,11 @@
     "2+",
     "2 & vise 0.5",
     "Coventry City pobednik  i Coventry City više od 0.",
+<<<<<<< HEAD
     5.15,
+=======
+    5.25,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     0.5
    ]
   ]
@@ -12605,7 +14201,11 @@
     "1-",
     "1 & manje 1.5",
     "Tottenham pobednik  i Coventry City manje od 1.5 g",
+<<<<<<< HEAD
     1.63,
+=======
+    1.62,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
@@ -12640,7 +14240,11 @@
     "2+",
     "2 & vise 1.5",
     "Coventry City pobednik  i Coventry City više od 1.",
+<<<<<<< HEAD
     6.5,
+=======
+    6.7,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ]
   ]
@@ -12652,7 +14256,11 @@
     "1-",
     "1 & manje 2.5",
     "Tottenham pobednik  i Coventry City manje od 2.5 g",
+<<<<<<< HEAD
     1.48,
+=======
+    1.46,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
@@ -12666,7 +14274,11 @@
     "2-",
     "2 & manje 2.5",
     "Coventry City pobednik  i Coventry City manje od 2",
+<<<<<<< HEAD
     6.9,
+=======
+    7.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
@@ -12680,14 +14292,22 @@
     "0+",
     "x & vise 2.5",
     "nerešeno i Coventry City više od 2.5 gola na utakm",
+<<<<<<< HEAD
     32.0,
+=======
+    33.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
     "2+",
     "2 & vise 2.5",
     "Coventry City pobednik  i Coventry City više od 2.",
+<<<<<<< HEAD
     12.0,
+=======
+    13.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ]
   ]
@@ -12699,7 +14319,11 @@
     "1-",
     "1 & manje 3.5",
     "Tottenham pobednik  i Coventry City manje od 3.5 g",
+<<<<<<< HEAD
     1.45,
+=======
+    1.44,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.5
    ],
    [
@@ -12713,7 +14337,11 @@
     "2-",
     "2 & manje 3.5",
     "Coventry City pobednik  i Coventry City manje od 3",
+<<<<<<< HEAD
     5.55,
+=======
+    5.65,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.5
    ],
    [
@@ -12734,7 +14362,11 @@
     "2+",
     "2 & vise 3.5",
     "Coventry City pobednik  i Coventry City više od 3.",
+<<<<<<< HEAD
     30.0,
+=======
+    31.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.5
    ]
   ]
@@ -12746,21 +14378,33 @@
     "1-",
     "1 & manje 4.5",
     "Tottenham pobednik  i Coventry City manje od 4.5 g",
+<<<<<<< HEAD
     1.45,
+=======
+    1.44,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     4.5
    ],
    [
     "0-",
     "x & manje 4.5",
     "nerešeno i Coventry City manje od 4.5 gola na utak",
+<<<<<<< HEAD
     4.2,
+=======
+    4.25,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     4.5
    ],
    [
     "2-",
     "2 & manje 4.5",
     "Coventry City pobednik  i Coventry City manje od 4",
+<<<<<<< HEAD
     5.2,
+=======
+    5.35,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     4.5
    ],
    [

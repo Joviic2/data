@@ -1034,4 +1034,8 @@ def annotate_scores(events, lg, root=".", cfg=None, log=print):
         ev["tips"] = tips
         dg["mecevi_sa_modelom"] += 1
         dg["tipova"] += len(tips)
+<<<<<<< HEAD
     return dg
+=======
+    return dg
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81

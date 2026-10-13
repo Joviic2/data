@@ -26,12 +26,15 @@ ALIAS = {"manchester city": "man city", "manchester united": "man united", "tott
          "norwich city": "norwich", "luton town": "luton", "coventry city": "coventry", "hull city": "hull", "stoke city": "stoke",
          "swansea city": "swansea", "cardiff city": "cardiff", "birmingham city": "birmingham", "blackburn rovers": "blackburn"}
 ALIAS.update(CUR["alias"])
+<<<<<<< HEAD
 try:                                                       # UEFA takmicenja (cl/el/conf): ucesnici iz mnogo liga -> zajednicki aliasi + mrezni nacin rada (fb_eu.py)
     import fb_eu
     CUP = fb_eu.is_cup(CUR)
     if CUP: ALIAS.update(fb_eu.eu_alias())
 except ImportError:
     fb_eu, CUP = None, False
+=======
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
 STAT = ("expectedGoals", "expectedAssists", "shots", "onTargetScoringAttempt", "shotOffTarget", "blockedScoringAttempt", "touches", "totalPass",
         "accuratePass", "totalLongBalls", "totalCross", "totalTackle", "interceptionWon", "totalClearance", "aerialWon", "duelWon", "duelLost",
         "bigChanceCreated", "keyPass", "fouls", "wasFouled", "saves", "goals", "minutesPlayed")
@@ -268,7 +271,11 @@ def build(a):
         # inace se njihovi mecovi odbace i tabela/forma svih ostalih ispadnu pogresni (jedan tim ima 3 utakmice, drugi 6)
         now_ = datetime.now(timezone.utc)
         s0 = datetime(now_.year if now_.month >= 7 else now_.year - 1, 7, 1, tzinfo=timezone.utc).timestamp()
+<<<<<<< HEAD
         for _ in range(0 if CUP else 2):                  # UEFA: protivnike iz kvalifikacija ne skidamo kao posebne timove
+=======
+        for _ in range(2):
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
             miss = {}
             for tid_, (evs_, per_, pl_, un_) in list(packs.items()):
                 for e_ in evs_.values():
@@ -286,6 +293,7 @@ def build(a):
     finally:
         cl.close()
     tk = {tid: key(n) for tid, n in teams.items()}
+<<<<<<< HEAD
     node = dict(tk)                                    # id -> kljuc; u UEFA modu i protivnici iz domacih liga (bez profila, samo cvorovi mreze za model)
     if CUP:
         for tid_, (evs_, per_, pl_, un_) in packs.items():
@@ -293,24 +301,39 @@ def build(a):
                 for i_, n_ in ((e_["h"], e_["hn"]), (e_["a"], e_["an"])):
                     if i_ is not None and n_ and i_ not in node: node[i_] = key(n_)
         print(f"  UEFA mod: {len(tk)} ucesnika, {len(node) - len(tk)} protivnika iz drugih takmicenja kao cvorovi modela")
+=======
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     official = official_table(std_json, tk, teams)
     # utakmice izmedju timova lige (svi turniri), jedna po event id; xG = zbir xG igraca svakog tima
     M = {}
     for tid, (evs, per, pl, un) in packs.items():
         for eid, e in evs.items():
+<<<<<<< HEAD
             if not e["fin"] or e["hs"] is None or e["as"] is None or e["h"] not in node or e["a"] not in node or not e["ts"]:
                 continue
             m = M.setdefault(eid, {"id": eid, "ts": e["ts"], "d": datetime.fromtimestamp(e["ts"], timezone.utc).strftime("%Y-%m-%d"), "h": node[e["h"]], "a": node[e["a"]], "tid": (e["h"], e["a"]),
+=======
+            if not e["fin"] or e["hs"] is None or e["as"] is None or e["h"] not in tk or e["a"] not in tk or not e["ts"]:
+                continue
+            m = M.setdefault(eid, {"id": eid, "ts": e["ts"], "d": datetime.fromtimestamp(e["ts"], timezone.utc).strftime("%Y-%m-%d"), "h": tk[e["h"]], "a": tk[e["a"]],
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
                                    "hg": int(e["hs"]), "ag": int(e["as"]), "ut": e["ut"], "round": e["round"], "x": {}})
             if eid in per:
                 m["x"][tid] = per[eid]
     matches = []
     for m in sorted(M.values(), key=lambda m: m["ts"]):
+<<<<<<< HEAD
         ht, at = m["tid"]
         xh, xa = m["x"].get(ht), m["x"].get(at)         # xG imamo samo kad su OBA tima ucesnici (za protivnike iz drugih liga nema xG: tamo se koriste golovi)
         ok = bool(xh and xa and xh["expectedGoals"] + xa["expectedGoals"] > 0.2)
         matches.append({"d": m["d"], "ts": m["ts"], "h": m["h"], "a": m["a"], "hg": m["hg"], "ag": m["ag"], "ut": m["ut"], "round": m["round"],
                         "eu": (1 if (fb_eu and m["ut"] in fb_eu.UEFA_UT) else 0),
+=======
+        ht = next((t for t, k in tk.items() if k == m["h"]), None); at = next((t for t, k in tk.items() if k == m["a"]), None)
+        xh, xa = m["x"].get(ht), m["x"].get(at)
+        ok = bool(xh and xa and xh["expectedGoals"] + xa["expectedGoals"] > 0.2)
+        matches.append({"d": m["d"], "ts": m["ts"], "h": m["h"], "a": m["a"], "hg": m["hg"], "ag": m["ag"], "ut": m["ut"], "round": m["round"],
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
                         "xh": round(xh["expectedGoals"], 3) if ok else None, "xa": round(xa["expectedGoals"], 3) if ok else None})
     # profili timova
     prof, raw_style = {}, {}
@@ -376,7 +399,11 @@ def build(a):
     for tid, r in raw_style.items():
         prof[tid]["style"] = {**{k: (round(v, 3) if isinstance(v, float) else v) for k, v in r.items() if k != "z"}, "z": {k: round(v, 2) for k, v in r["z"].items()}, "labels": labels(r["z"])}
     out = {"updated": datetime.now().isoformat(timespec="seconds"), "source": "statshub.com", "tournament": a.tournament, "season": a.season,
+<<<<<<< HEAD
            "teams": {tk[t]: prof[t] for t in prof}, "matches": matches, "standing": official, "cup": CUP}
+=======
+           "teams": {tk[t]: prof[t] for t in prof}, "matches": matches, "standing": official}
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     os.makedirs(D, exist_ok=True)
     json.dump(out, open(OUT, "w", encoding="utf-8"), ensure_ascii=False, separators=(",", ":"))
     nx = sum(1 for m in matches if m["xh"] is not None)

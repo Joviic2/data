@@ -96,6 +96,7 @@ LEAGUES = {
     "el": {"name": "Liga Evrope", "dir": "el", "path": "/leagues/europe/uefa-europa-league/679", "ut": 679, "tourn": None, "season": None, "csv": "",
            "struct": "liga evrope|europa league", "cup": True, "feeders": ["epl", "laliga", "sa", "bl", "l1"],
            "strength": {"epl": 1.00, "laliga": 0.97, "sa": 0.95, "bl": 0.95, "l1": 0.90}, "alias": {}},
+<<<<<<< HEAD
     "conf": {"name": "Liga konferencije", "dir": "conf", "path": "/leagues/europe/uefa-conference-league/17015", "ut": 17015, "tourn": None, "season": None, "csv": "",
              "struct": "liga konferencije|conference league|uefa lk", "cup": True, "feeders": ["epl", "laliga", "sa", "bl", "l1"],
              "strength": {"epl": 1.00, "laliga": 0.97, "sa": 0.95, "bl": 0.95, "l1": 0.90}, "alias": {}},
@@ -121,6 +122,16 @@ for _k, _v in UEFA.items():
     if _k not in LEAGUES:
         LEAGUES[_k] = dict(_v, alias=dict(_ALL_ALIAS))
 
+=======
+    "ecl": {"name": "Liga konferencije", "dir": "ecl", "path": "/leagues/europe/uefa-conference-league/17015", "ut": 17015, "tourn": None, "season": None, "csv": "",
+            "struct": "liga konferencije|conference league", "cup": True, "feeders": ["epl", "laliga", "sa", "bl", "l1"],
+            "strength": {"epl": 1.00, "laliga": 0.97, "sa": 0.95, "bl": 0.95, "l1": 0.90}, "alias": {}},
+}
+CUP_TXT = {"cl": r"liga sampiona|champions league", "el": r"liga evrope|europa league", "ecl": r"liga konferencij|conference league"}
+CUP_NOT = r"kvalifik|qualif|zene|women|youth|omladin|\bu ?\d\d\b|super ?cup|superkup|play ?off"
+
+
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
 def _code():
     a = sys.argv
     for i, x in enumerate(a):

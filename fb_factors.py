@@ -22,7 +22,10 @@ PARAMS = dict(
     mom_k=0.25, mom_cap=0.15, def_cap=0.20, mom_rho=0.65, mom_n=5,      # momentum: jacina, granice, pad tezine po meču unazad, broj mečeva
     hot_wins=3, hot_mom=1.02, collapse_mom=1.10, collapse_k=0.06,        # hot tim: >=3 pobede u 4 + napad >= +2%; raspad: odbrambeni momentum >= +10%
     style_k=0.03, mot_k=0.04, ref_k=0.015, wx_k=0.02, late_share=0.27,   # stil, motivacija, sudija, vreme; udeo golova u poslednjih ~20 min
+<<<<<<< HEAD
     opp_k=0.25, opp_lo=0.6, opp_hi=1.6,                                   # tezina meca u formi raste sa jacinom protivnika: w *= clamp(1 + opp_k*z, lo, hi); 0 = iskljuceno
+=======
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     desp_n=8, desp_thr=0.45, desp_red=0.60, desp_att_k=0.06, desp_conc_k=0.04,   # ocaj: prozor mecova, prag korekcije, prag crvene zone, max -6% napad / +4% primljeno (0 = iskljuceno)
 )
 ZONES = {"epl": {"cl": 4, "eu": 7, "rel": 3}, "laliga": {"cl": 4, "eu": 7, "rel": 3}, "l1": {"cl": 3, "eu": 6, "rel": 3}, "sa": {"cl": 4, "eu": 7, "rel": 3}, "bl": {"cl": 4, "eu": 6, "rel": 2}}
@@ -65,6 +68,7 @@ def _zstat(T, key, field):
     return 0.0 if sd < 1e-9 else (vals[key] - mu) / sd
 
 
+<<<<<<< HEAD
 # ------------------------------------------------------------------ jacina protivnika (za tezinu meca u formi)
 _SC = {}
 
@@ -96,6 +100,8 @@ def opp_strength(Mraw, lam_fn):
     return lambda t: 0.0 if c["sd"] < 1e-9 else (c["raw"](t) - c["mu"]) / c["sd"]
 
 
+=======
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
 # ------------------------------------------------------------------ 1-3: momentum, raspad odbrane, hot tim
 def momentum(Mraw, beta, lam_fn, key, P, nout_def=0):
     """EMA reziduala (stvarni - ocekivani golovi, xG se meša sa golovima sa udelom beta) u poslednjih P['mom_n'] mečeva tima.
@@ -105,10 +111,14 @@ def momentum(Mraw, beta, lam_fn, key, P, nout_def=0):
     if len(ms) < 3:
         return out
     wsum = da = dd = 0.0
+<<<<<<< HEAD
     u_w = u_da = 0.0                                          # isti racun BEZ tezine protivnika (za poredjenje)
     mean_lam = []
     ok_ = P.get("opp_k", 0.0)
     zf = opp_strength(Mraw, lam_fn) if ok_ else None
+=======
+    mean_lam = []
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     for k, m in enumerate(reversed(ms)):                     # k = 0 je najnoviji
         home = m["h"] == key
         gf, ga = (m["hg"], m["ag"]) if home else (m["ag"], m["hg"])
@@ -118,15 +128,21 @@ def momentum(Mraw, beta, lam_fn, key, P, nout_def=0):
         lh, la = lam_fn(m["h"], m["a"])
         ef, ea = (lh, la) if home else (la, lh)
         w = P["mom_rho"] ** k
+<<<<<<< HEAD
         u_w += w; u_da += w * (gf - ef)
         if zf:                                                # pobeda/dobra partija protiv jakog protivnika nosi vecu tezinu, protiv slabog manju
             w *= clamp(1 + ok_ * zf(m["a"] if home else m["h"]), P.get("opp_lo", 0.6), P.get("opp_hi", 1.6))
+=======
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
         wsum += w; da += w * (gf - ef); dd += w * (ga - ea); mean_lam.append(ef)
     n = len(ms)
     s = n / (n + 2.0)                                        # skupljanje ka nuli: mali uzorak = mali momentum
     ref = max(0.8, sum(mean_lam) / n)
     out["m_att"], out["m_def"] = s * da / wsum, s * dd / wsum
+<<<<<<< HEAD
     out["opp_shift"] = round(s * (da / wsum - u_da / u_w), 3) if zf else 0.0          # koliko je tezina protivnika pomerila napadacki momentum (gola po meču)
+=======
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     out["att"] = clamp(1 + P["mom_k"] * out["m_att"] / ref, 1 - P["mom_cap"], 1 + P["mom_cap"])
     out["conc"] = clamp(1 + P["mom_k"] * out["m_def"] / ref, 1 - P["mom_cap"], 1 + P["def_cap"])
     last4 = ms[-4:]
@@ -138,8 +154,11 @@ def momentum(Mraw, beta, lam_fn, key, P, nout_def=0):
         out["notes"].append(f"u naletu: {out['wins4']} pobede u poslednja 4 meča, napad {(out['att'] - 1) * 100:+.0f}% iznad očekivanja modela")
     elif abs(out["att"] - 1) >= 0.03:
         out["notes"].append(f"napadački momentum {(out['att'] - 1) * 100:+.0f}% (EMA poslednjih {n} mečeva)")
+<<<<<<< HEAD
     if abs(out["opp_shift"]) >= 0.08:
         out["notes"].append(f"težina jačine protivnika {'diže' if out['opp_shift'] > 0 else 'spušta'} napadački momentum za {abs(out['opp_shift']):.2f} gola/meč (rezultati protiv jačih ekipa vrede više)")
+=======
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     if out["collapse"]:
         out["notes"].append(f"raspad odbrane: prima {out['m_def']:+.2f} gola/meč više od očekivanog" + (f", nedostupno {nout_def} odbrambenih igrača" if nout_def else ""))
     return out

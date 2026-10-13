@@ -48,14 +48,22 @@
     "",
     "manje 3.5",
     "Manje od 3.5 golova u 1. poluvremenu",
+<<<<<<< HEAD
     1.09,
+=======
+    1.08,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.5
    ],
    [
     "",
     "vise 3.5",
     "Više od 3.5 golova u 1. poluvremenu",
+<<<<<<< HEAD
     7.4,
+=======
+    7.5,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.5
    ],
    [
@@ -81,21 +89,33 @@
     "1",
     "betis",
     "Betis pobednik u 1. poluvremenu",
+<<<<<<< HEAD
     5.1,
+=======
+    5.15,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.0
    ],
    [
     "0",
     "nereseno",
     "1. poluvreme završava nerešeno",
+<<<<<<< HEAD
     3.0,
+=======
+    3.05,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.0
    ],
    [
     "2",
     "barcelona",
     "Barcelona pobednik u 1. poluvremenu",
+<<<<<<< HEAD
     1.8,
+=======
+    1.78,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.0
    ]
   ]
@@ -107,21 +127,33 @@
     "1",
     "1",
     "Betis pobednik u 1. poluvremenu ili na kraju",
+<<<<<<< HEAD
     3.55,
+=======
+    3.65,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.0
    ],
    [
     "0",
     "x",
     "Nerešeno u 1. poluvremenu ili na kraju",
+<<<<<<< HEAD
     2.32,
+=======
+    2.35,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.0
    ],
    [
     "2",
     "2",
     "Barcelona pobednik u 1. poluvremenu ili na kraju",
+<<<<<<< HEAD
     1.28,
+=======
+    1.27,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.0
    ]
   ]
@@ -134,20 +166,32 @@
     "1:0, 2:0 ili 3:0",
     "Utakmica će završiti rezultatom 1-0, 2-0 ili 3-0.",
     17.0,
+<<<<<<< HEAD
     -0.0
+=======
+    0.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "",
     "0:1, 0:2 ili 0:3",
     "Utakmica će završiti rezultatom 0:1, 0:2 ili 0:3",
+<<<<<<< HEAD
     4.85,
+=======
+    4.75,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.0
    ],
    [
     "",
     "4:0, 5:0 ili 6:0",
     "Utakmica će završiti rezultatom 4:0, 5:0 ili 6:0",
+<<<<<<< HEAD
     175.0,
+=======
+    200.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     0.0
    ],
    [
@@ -161,7 +205,11 @@
     "",
     "2:1, 3:1 ili 4:1",
     "Utakmica će završiti rezultatom 2:1, 3:1 ili 4:1",
+<<<<<<< HEAD
     12.0,
+=======
+    13.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.0
    ],
    [
@@ -175,7 +223,11 @@
     "",
     "3:2, 4:2, 4:3 ili 5:1",
     "Utakmica će završiti rezultatom 3:2, 4:2, 4:3 ili ",
+<<<<<<< HEAD
     20.0,
+=======
+    21.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.0
    ],
    [
@@ -208,14 +260,22 @@
     "1",
     "betis",
     "Betis pobeđuje, X vraća ulog",
+<<<<<<< HEAD
     4.35,
+=======
+    4.55,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     null
    ],
    [
     "2",
     "barcelona",
     "Barcelona pobeđuje, X vraća ulog",
+<<<<<<< HEAD
     1.17,
+=======
+    1.16,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     null
    ]
   ]
@@ -227,7 +287,11 @@
     "",
     "1 & manje 1.5",
     "Betis pobednik utakmice i manje od 1.5 gola na uta",
+<<<<<<< HEAD
     20.0,
+=======
+    21.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
@@ -248,21 +312,33 @@
     "",
     "1 & vise 1.5",
     "Betis pobednik utakmice i više od 1.5 gola na utak",
+<<<<<<< HEAD
     5.75,
+=======
+    6.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
     "",
     "x & vise 1.5",
     "Nerešeno na kraju utakmice i više od 1.5 gola na u",
+<<<<<<< HEAD
     5.3,
+=======
+    5.4,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
     "",
     "2 & vise 1.5",
     "Barcelona pobednik utakmice i više od 1.5 gola na ",
+<<<<<<< HEAD
     1.51,
+=======
+    1.48,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ]
   ]
@@ -281,35 +357,55 @@
     "",
     "x & manje 2.5",
     "Nerešeno na kraju utakmice  i manje od 2.5 gola na",
+<<<<<<< HEAD
     8.0,
+=======
+    8.1,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
     "",
     "2 & manje 2.5",
     "Barcelona pobednik utakmice i manje od 2.5 gola na",
+<<<<<<< HEAD
     6.3,
+=======
+    6.2,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
     "",
     "1 & vise 2.5",
     "Betis pobednik utakmice i više od 2.5 gola na utak",
+<<<<<<< HEAD
     6.3,
+=======
+    6.6,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
     "",
     "x & vise 2.5",
     "Nerešeno na kraju utakmice i više od 2.5 gola na u",
+<<<<<<< HEAD
     8.1,
+=======
+    8.3,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
     "",
     "2 & vise 2.5",
     "Barcelona pobednik utakmice i više od 2.5 gola na ",
+<<<<<<< HEAD
     1.68,
+=======
+    1.66,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ]
   ]
@@ -321,42 +417,66 @@
     "",
     "1 & manje 3.5",
     "Betis pobednik utakmice i manje od 3.5 gola na uta",
+<<<<<<< HEAD
     7.9,
+=======
+    8.1,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.5
    ],
    [
     "",
     "x & manje 3.5",
     "Nerešeno na kraju utakmice  i manje od 3.5 gola na",
+<<<<<<< HEAD
     8.0,
+=======
+    8.1,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.5
    ],
    [
     "",
     "2 & manje 3.5",
     "Barcelona pobednik utakmice i manje od 3.5 gola na",
+<<<<<<< HEAD
     3.25,
+=======
+    3.2,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.5
    ],
    [
     "",
     "1 & vise 3.5",
     "Betis pobednik utakmice i više od 3.5 gola na utak",
+<<<<<<< HEAD
     9.1,
+=======
+    9.6,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.5
    ],
    [
     "",
     "x & vise 3.5",
     "Nerešeno na kraju utakmice i više od 3.5 gola na u",
+<<<<<<< HEAD
     8.1,
+=======
+    8.3,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.5
    ],
    [
     "",
     "2 & vise 3.5",
     "Barcelona pobednik utakmice i više od 3.5 gola na ",
+<<<<<<< HEAD
     2.25,
+=======
+    2.2,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.5
    ]
   ]
@@ -368,21 +488,33 @@
     "",
     "1 & manje 4.5",
     "Betis pobednik utakmice i manje od 4.5 gola na uta",
+<<<<<<< HEAD
     6.9,
+=======
+    7.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     4.5
    ],
    [
     "",
     "x & manje 4.5",
     "Nerešeno na kraju utakmice  i manje od 4.5 gola na",
+<<<<<<< HEAD
     5.55,
+=======
+    5.6,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     4.5
    ],
    [
     "",
     "2 & manje 4.5",
     "Barcelona pobednik utakmice i manje od 4.5 gola na",
+<<<<<<< HEAD
     2.35,
+=======
+    2.3,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     4.5
    ],
    [
@@ -396,7 +528,11 @@
     "",
     "x & vise 4.5",
     "Nerešeno na kraju utakmice i više od 4.5 gola na u",
+<<<<<<< HEAD
     19.0,
+=======
+    20.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     4.5
    ],
    [
@@ -415,14 +551,22 @@
     "10-",
     "1x & manje od 2.5",
     "Betis će pobediti ili će biti nerešeno i biće manj",
+<<<<<<< HEAD
     4.9,
+=======
+    5.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
     "10+",
     "1x & vise od 2.5",
     "Betis će pobediti ili će biti nerešeno i biće više",
+<<<<<<< HEAD
     3.55,
+=======
+    3.7,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
@@ -436,21 +580,33 @@
     "02+",
     "x2 & vise od 2.5",
     "Biće nerešeno ili Barcelona će pobediti i biće viš",
+<<<<<<< HEAD
     1.39,
+=======
+    1.38,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
     "12-",
     "12 & manje od 2.5",
     "Betis ili Barcelona će pobediti i biće manje od 2.",
+<<<<<<< HEAD
     4.2,
+=======
+    4.15,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
     "12+",
     "12 & vise od 2.5",
     "Betis ili Barcelona će pobediti i biće više od 2.5",
+<<<<<<< HEAD
     1.33,
+=======
+    1.32,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ]
   ]
@@ -469,21 +625,33 @@
     "10+",
     "1x & vise od 3.5",
     "Betis će pobediti ili će biti nerešeno i biće više",
+<<<<<<< HEAD
     4.25,
+=======
+    4.4,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.5
    ],
    [
     "02-",
     "x2 & manje od 3.5",
     "Biće nerešeno ili Barcelona će pobediti i biće man",
+<<<<<<< HEAD
     2.32,
+=======
+    2.3,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.5
    ],
    [
     "02+",
     "x2 & vise od 3.5",
     "Biće nerešeno ili Barcelona će pobediti i biće viš",
+<<<<<<< HEAD
     1.76,
+=======
+    1.75,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.5
    ],
    [
@@ -497,7 +665,11 @@
     "12+",
     "12 & vise od 3.5",
     "Betis ili Barcelona će pobediti i biće više od 3.5",
+<<<<<<< HEAD
     1.8,
+=======
+    1.78,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.5
    ]
   ]
@@ -509,35 +681,55 @@
     "10-",
     "1x & manje od 4.5",
     "Betis će pobediti ili će biti nerešeno i biće manj",
+<<<<<<< HEAD
     3.05,
+=======
+    3.1,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     4.5
    ],
    [
     "10+",
     "1x & vise od 4.5",
     "Betis će pobediti ili će biti nerešeno i biće više",
+<<<<<<< HEAD
     6.3,
+=======
+    6.5,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     4.5
    ],
    [
     "02-",
     "x2 & manje od 4.5",
     "Biće nerešeno ili Barcelona će pobediti i biće man",
+<<<<<<< HEAD
     1.64,
+=======
+    1.63,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     4.5
    ],
    [
     "02+",
     "x2 & vise od 4.5",
     "Biće nerešeno ili Barcelona će pobediti i biće viš",
+<<<<<<< HEAD
     2.55,
+=======
+    2.52,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     4.5
    ],
    [
     "12-",
     "12 & manje od 4.5",
     "Betis ili Barcelona će pobediti i biće manje od 4.",
+<<<<<<< HEAD
     1.74,
+=======
+    1.73,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     4.5
    ],
    [
@@ -556,21 +748,33 @@
     "10-",
     "1x & manje od 5.5",
     "Betis će pobediti ili će biti nerešeno i biće manj",
+<<<<<<< HEAD
     2.8,
+=======
+    2.87,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     5.5
    ],
    [
     "10+",
     "1x & vise od 5.5",
     "Betis će pobediti ili će biti nerešeno i biće više",
+<<<<<<< HEAD
     8.8,
+=======
+    9.2,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     5.5
    ],
    [
     "02-",
     "x2 & manje od 5.5",
     "Biće nerešeno ili Barcelona će pobediti i biće man",
+<<<<<<< HEAD
     1.36,
+=======
+    1.35,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     5.5
    ],
    [
@@ -584,7 +788,11 @@
     "12-",
     "12 & manje od 5.5",
     "Betis ili Barcelona će pobediti i biće manje od 5.",
+<<<<<<< HEAD
     1.37,
+=======
+    1.36,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     5.5
    ],
    [
@@ -610,7 +818,11 @@
     "",
     "vise 0.5 & manje 1.5",
     "Više od 0.5 golova u 1. poluvremenu & manje od 1.5",
+<<<<<<< HEAD
     17.0,
+=======
+    16.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
@@ -638,14 +850,22 @@
     "",
     "vise 0.5 & manje 2.5",
     "Više od 0.5 golova u 1. poluvremenu & manje od 2.5",
+<<<<<<< HEAD
     5.75,
+=======
+    5.7,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
     "",
     "manje 0.5 & vise 2.5",
     "Manje od 0.5 golova u 1. poluvremenu & više od 2.5",
+<<<<<<< HEAD
     9.9,
+=======
+    10.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
@@ -659,7 +879,11 @@
     "",
     "vise 1.5 & vise 2.5",
     "Više od 1.5 golova u 1. poluvremenu & više od 2.5 ",
+<<<<<<< HEAD
     1.83,
+=======
+    1.85,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
@@ -706,7 +930,11 @@
     "0+1+",
     "vise 0.5 & vise 1.5",
     "Više od 0.5 golova u 1. poluvremenu & više od 1.5 ",
+<<<<<<< HEAD
     1.72,
+=======
+    1.73,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
@@ -762,7 +990,11 @@
     "0-2+",
     "manje 0.5 & vise 2.5",
     "Manje od 0.5 golova u 1. poluvremenu & više od 2.5",
+<<<<<<< HEAD
     9.9,
+=======
+    10.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
@@ -844,7 +1076,11 @@
     "-1-2",
     "manje 1.5 ili manje 2.5",
     "Manje 1.5 ili manje 2.5",
+<<<<<<< HEAD
     1.2,
+=======
+    1.19,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
@@ -870,21 +1106,33 @@
     "1",
     "betis",
     "Betis pobeđuje barem jedno poluvreme",
+<<<<<<< HEAD
     2.77,
+=======
+    2.82,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     null
    ],
    [
     "0",
     "nereseno",
     "Nerešeno u barem jednom poluvremenu",
+<<<<<<< HEAD
     1.9,
+=======
+    1.92,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     null
    ],
    [
     "2",
     "barcelona",
     "Barcelona pobeđuje barem jedno poluvreme",
+<<<<<<< HEAD
     1.2,
+=======
+    1.19,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     null
    ]
   ]
@@ -969,14 +1217,22 @@
     "4",
     "4",
     "Utakmica će završiti sa 4 gola",
+<<<<<<< HEAD
     4.55,
+=======
+    4.6,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     6.0
    ],
    [
     "5",
     "5",
     "Utakmica će završiti sa 5 golova",
+<<<<<<< HEAD
     5.6,
+=======
+    5.65,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     6.0
    ],
    [
@@ -995,35 +1251,55 @@
     "+1",
     "vise 2.5 & da",
     "Više od 2.5 gola i oba tima daju gol",
+<<<<<<< HEAD
     1.55,
+=======
+    1.56,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
     "-1",
     "manje 2.5 & da",
     "Manje od 2.5 gola i oba tima daju gol",
+<<<<<<< HEAD
     9.7,
+=======
+    9.8,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
     "+2",
     "vise 2.5 & ne",
     "Više od 2.5 gola i barem jedan tim ne daje gol",
+<<<<<<< HEAD
     5.25,
+=======
+    5.1,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
     "-2",
     "manje 2.5 & ne",
     "Manje od 2.5 gola i barem jedan tim ne daje gol",
+<<<<<<< HEAD
     4.6,
+=======
+    4.55,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
     "+1",
     "vise 3.5 & da",
     "Više od 3.5 gola i oba tima daju gol",
+<<<<<<< HEAD
     1.92,
+=======
+    1.95,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.5
    ],
    [
@@ -1037,42 +1313,66 @@
     "+2",
     "vise 3.5 & ne",
     "Više od 3.5 gola i barem jedan tim ne daje gol",
+<<<<<<< HEAD
     8.2,
+=======
+    7.9,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.5
    ],
    [
     "-2",
     "manje 3.5 & ne",
     "Manje od 3.5 gola i barem jedan tim ne daje gol",
+<<<<<<< HEAD
     3.5,
+=======
+    3.45,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.5
    ],
    [
     "+1",
     "vise 4.5 & da",
     "Više od 4.5 gola i oba tima daju gol",
+<<<<<<< HEAD
     2.72,
+=======
+    2.77,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     4.5
    ],
    [
     "-1",
     "manje 4.5 & da",
     "Manje od 4.5 gola i oba tima daju gol",
+<<<<<<< HEAD
     2.6,
+=======
+    2.62,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     4.5
    ],
    [
     "+2",
     "vise 4.5 & ne",
     "Više od 4.5 gola i barem jedan tim ne daje gol",
+<<<<<<< HEAD
     15.0,
+=======
+    14.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     4.5
    ],
    [
     "-2",
     "manje 4.5 & ne",
     "Manje od 4.5 gola i barem jedan tim ne daje gol",
+<<<<<<< HEAD
     3.05,
+=======
+    3.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     4.5
    ]
   ]
@@ -1084,14 +1384,22 @@
     "1",
     "da",
     "Oba tima daju po 2 ili više golova na utakmici",
+<<<<<<< HEAD
     3.2,
+=======
+    3.25,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
     "2",
     "ne",
     "Barem jedan tim ne daje 2 ili više golova na utakm",
+<<<<<<< HEAD
     1.31,
+=======
+    1.29,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ]
   ]
@@ -1103,7 +1411,11 @@
     "11",
     "da/da",
     "Oba tima daju gol u 1. i 2. poluvremenu",
+<<<<<<< HEAD
     6.3,
+=======
+    6.4,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
@@ -1124,7 +1436,11 @@
     "00",
     "ne/ne",
     "Barem jedan tim neće dati gol u 1. poluvremenu i b",
+<<<<<<< HEAD
     2.17,
+=======
+    2.15,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ]
   ]
@@ -1137,84 +1453,143 @@
     "1 & 2-3",
     "Betis pobednik i 2-3 gola",
     10.0,
+<<<<<<< HEAD
     -3.0
+=======
+    3.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "124",
     "1 & 2-4",
     "Betis pobednik i 2-4 gola",
+<<<<<<< HEAD
     8.2,
     -4.0
+=======
+    8.4,
+    4.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "125",
     "1 & 2-5",
     "Betis pobednik i 2-5 golova",
+<<<<<<< HEAD
     6.6,
     -5.0
+=======
+    6.8,
+    5.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "126",
     "1 & 2-6",
     "Betis pobednik i 2-6 golova",
+<<<<<<< HEAD
     6.2,
     -6.0
+=======
+    6.5,
+    6.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "135",
     "1 & 3-5",
     "Betis pobednik i 3-5 golova",
+<<<<<<< HEAD
     7.3,
     -5.0
+=======
+    7.6,
+    5.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "136",
     "1 & 3-6",
     "Betis pobednik i 3-6 golova",
+<<<<<<< HEAD
     6.9,
     -6.0
+=======
+    7.1,
+    6.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "024",
     "x & 2-4",
     "Nerešeno i 2-4 gola",
+<<<<<<< HEAD
     6.2,
     -4.0
+=======
+    6.3,
+    4.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "026",
     "x & 2-6",
     "Nerešeno i 2-6 gola",
+<<<<<<< HEAD
     5.45,
     -6.0
+=======
+    5.55,
+    6.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "046",
     "x & 4-6",
     "Nerešeno i 4-6 golova",
+<<<<<<< HEAD
     8.5,
     -6.0
+=======
+    8.7,
+    6.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "223",
     "2 & 2-3",
     "Barcelona pobednik i 2-3 gola",
+<<<<<<< HEAD
     3.9,
     -3.0
+=======
+    3.8,
+    3.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "224",
     "2 & 2-4",
     "Barcelona pobednik i 2-4 gola",
+<<<<<<< HEAD
     2.65,
     -4.0
+=======
+    2.6,
+    4.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "225",
     "2 & 2-5",
     "Barcelona pobednik i 2-5 golova",
+<<<<<<< HEAD
     2.0,
     -5.0
+=======
+    1.95,
+    5.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ]
   ]
  },
@@ -1225,7 +1600,11 @@
     "11",
     "1 & da",
     "Betis pobednik i oba tima daju gol",
+<<<<<<< HEAD
     6.7,
+=======
+    7.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.0
    ],
    [
@@ -1239,15 +1618,24 @@
     "01",
     "x & da",
     "Nerešeno i oba tima daju gol",
+<<<<<<< HEAD
     5.3,
     2.0
+=======
+    5.4,
+    null
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "02",
     "x & ne",
     "Nerešeno i barem jedan tim ne daje gol",
     35.0,
+<<<<<<< HEAD
     2.0
+=======
+    null
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "21",
@@ -1260,7 +1648,11 @@
     "22",
     "2 & ne",
     "Barcelona pobednik i barem jedan tim ne daje gol",
+<<<<<<< HEAD
     3.35,
+=======
+    3.2,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ]
   ]
@@ -1272,21 +1664,34 @@
     "1",
     "1 & da",
     "Betis pobednik i gol u oba poluvremena",
+<<<<<<< HEAD
     7.0,
+=======
+    7.3,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.0
    ],
    [
     "0",
     "x & da",
     "Nerešeno i gol u oba poluvremena",
+<<<<<<< HEAD
     6.8,
     2.0
+=======
+    6.9,
+    null
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "2",
     "2 & da",
     "Barcelona pobednik i gol u oba poluvremena",
+<<<<<<< HEAD
     1.76,
+=======
+    1.74,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ]
   ]
@@ -1298,7 +1703,11 @@
     "1-",
     "1 ili manje 0.5",
     "Betis pobednik utakmice ili 1. poluvreme manje od ",
+<<<<<<< HEAD
     3.0,
+=======
+    3.05,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     0.5
    ],
    [
@@ -1312,7 +1721,11 @@
     "0-",
     "x ili manje 0.5",
     "Nerešeno na kraju utakmice ili 1. poluvreme manje ",
+<<<<<<< HEAD
     3.0,
+=======
+    3.05,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     0.5
    ],
    [
@@ -1326,7 +1739,11 @@
     "2-",
     "2 ili manje 0.5",
     "Barcelona pobednik utakmice ili 1. poluvreme manje",
+<<<<<<< HEAD
     1.26,
+=======
+    1.25,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     0.5
    ],
    [
@@ -1345,14 +1762,22 @@
     "1-",
     "1 ili manje 1.5",
     "Betis pobednik utakmice ili 1. poluvreme manje od ",
+<<<<<<< HEAD
     1.72,
+=======
+    1.73,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
     "1+",
     "1 ili vise 1.5",
     "Betis pobednik utakmice ili 1. poluvreme više od 1",
+<<<<<<< HEAD
     1.53,
+=======
+    1.54,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
@@ -1366,21 +1791,33 @@
     "0+",
     "x ili vise 1.5",
     "Nerešeno na kraju utakmice ili 1. poluvreme više o",
+<<<<<<< HEAD
     1.49,
+=======
+    1.5,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
     "2-",
     "2 ili manje 1.5",
     "Barcelona pobednik utakmice ili 1. poluvreme manje",
+<<<<<<< HEAD
     1.12,
+=======
+    1.11,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
     "2+",
     "2 ili vise 1.5",
     "Barcelona pobednik utakmice ili 1. poluvreme više ",
+<<<<<<< HEAD
     1.16,
+=======
+    1.15,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ]
   ]
@@ -1399,7 +1836,11 @@
     "1+",
     "1 ili vise 2.5",
     "Betis pobednik utakmice ili 1. poluvreme više od 2",
+<<<<<<< HEAD
     2.35,
+=======
+    2.4,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
@@ -1413,7 +1854,11 @@
     "0+",
     "x ili vise 2.5",
     "Nerešeno na kraju utakmice ili 1. poluvreme više o",
+<<<<<<< HEAD
     2.25,
+=======
+    2.27,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
@@ -1427,7 +1872,11 @@
     "2+",
     "2 ili vise 2.5",
     "Barcelona pobednik utakmice ili 1. poluvreme više ",
+<<<<<<< HEAD
     1.28,
+=======
+    1.27,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ]
   ]
@@ -1446,7 +1895,11 @@
     "1+",
     "1 ili vise 3.5",
     "Betis pobednik utakmice ili 1. poluvreme više od 3",
+<<<<<<< HEAD
     3.5,
+=======
+    3.55,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.5
    ],
    [
@@ -1460,14 +1913,22 @@
     "0+",
     "x ili vise 3.5",
     "Nerešeno na kraju utakmice ili 1. poluvreme više o",
+<<<<<<< HEAD
     3.3,
+=======
+    3.35,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.5
    ],
    [
     "2+",
     "2 ili vise 3.5",
     "Barcelona pobednik utakmice ili 1. poluvreme više ",
+<<<<<<< HEAD
     1.35,
+=======
+    1.33,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.5
    ]
   ]
@@ -1479,21 +1940,33 @@
     "1+",
     "1 ili vise 4.5",
     "Betis pobednik utakmice ili 1. poluvreme više od 4",
+<<<<<<< HEAD
     4.45,
+=======
+    4.6,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     4.5
    ],
    [
     "0+",
     "x ili vise 4.5",
     "Nerešeno na kraju utakmice ili 1. poluvreme više o",
+<<<<<<< HEAD
     4.15,
+=======
+    4.25,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     4.5
    ],
    [
     "2+",
     "2 ili vise 4.5",
     "Barcelona pobednik utakmice ili 1. poluvreme više ",
+<<<<<<< HEAD
     1.38,
+=======
+    1.36,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     4.5
    ]
   ]
@@ -1505,85 +1978,145 @@
     "1023",
     "1x & 2-3",
     "Betis će pobediti ili će biti nerešeno i biće 2-3 ",
+<<<<<<< HEAD
     4.8,
     -3.0
+=======
+    4.9,
+    3.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "1024",
     "1x & 2-4",
     "Betis će pobediti ili će biti nerešeno i biće 2-4 ",
+<<<<<<< HEAD
     3.5,
     -4.0
+=======
+    3.6,
+    4.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "1025",
     "1x & 2-5",
     "Betis će pobediti ili će biti nerešeno i biće 2-5 ",
+<<<<<<< HEAD
     3.2,
     -5.0
+=======
+    3.3,
+    5.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "1026",
     "1x & 2-6",
     "Betis će pobediti ili će biti nerešeno i biće 2-6 ",
+<<<<<<< HEAD
     2.9,
     -6.0
+=======
+    3.0,
+    6.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "1035",
     "1x & 3-5",
     "Betis će pobediti ili će biti nerešeno i biće 3-5 ",
+<<<<<<< HEAD
     4.3,
     -5.0
+=======
+    4.4,
+    5.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "1036",
     "1x & 3-6",
     "Betis će pobediti ili će biti nerešeno i biće 3-6 ",
+<<<<<<< HEAD
     3.8,
     -6.0
+=======
+    3.9,
+    6.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "0223",
     "x2 & 2-3",
     "Biće nerešeno ili Barcelona će pobediti i biće 2-3",
+<<<<<<< HEAD
     2.75,
     -3.0
+=======
+    2.72,
+    3.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "0224",
     "x2 & 2-4",
     "Biće nerešeno ili Barcelona će pobediti i biće 2-4",
+<<<<<<< HEAD
     1.85,
     -4.0
+=======
+    1.83,
+    4.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "0225",
     "x2 & 2-5",
     "Biće nerešeno ili Barcelona će pobediti i biće 2-5",
+<<<<<<< HEAD
     1.51,
     -5.0
+=======
+    1.49,
+    5.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "0226",
     "x2 & 2-6",
     "Biće nerešeno ili Barcelona će pobediti i biće 2-6",
+<<<<<<< HEAD
     1.32,
     -6.0
+=======
+    1.31,
+    6.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "0235",
     "x2 & 3-5",
     "Biće nerešeno ili Barcelona će pobediti i biće 3-5",
+<<<<<<< HEAD
     1.88,
     -5.0
+=======
+    1.87,
+    5.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "0235",
     "x2 & 3-6",
     "Biće nerešeno ili Barcelona će pobediti i biće 3-6",
+<<<<<<< HEAD
     1.6,
     -6.0
+=======
+    1.59,
+    6.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ]
   ]
  },
@@ -1601,28 +2134,44 @@
     "10+",
     "1x & vise od 1.5",
     "Betis će pobediti ili će biti nerešeno i biće više",
+<<<<<<< HEAD
     2.75,
+=======
+    2.85,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
     "02-",
     "x2 & manje od 1.5",
     "Biće nerešeno ili Barcelona će pobediti i biće man",
+<<<<<<< HEAD
     6.8,
+=======
+    6.7,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
     "02+",
     "x2 & vise od 1.5",
     "Biće nerešeno ili Barcelona će pobediti i biće viš",
+<<<<<<< HEAD
     1.17,
+=======
+    1.16,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
     "12-",
     "12 & manje od 1.5",
     "Betis ili Barcelona će pobediti i biće manje od 1.",
+<<<<<<< HEAD
     6.5,
+=======
+    6.4,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
@@ -1641,84 +2190,132 @@
     "",
     "1:0",
     "Biće ostvaren u bilo kom trenutku tokom regularnog",
+<<<<<<< HEAD
     1.73,
+=======
+    1.72,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.0
    ],
    [
     "",
     "0:1",
     "Biće ostvaren u bilo kom trenutku tokom regularnog",
+<<<<<<< HEAD
     2.47,
+=======
+    2.45,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     0.0
    ],
    [
     "",
     "1:1",
     "Biće ostvaren u bilo kom trenutku tokom regularnog",
+<<<<<<< HEAD
     2.65,
+=======
+    2.57,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.0
    ],
    [
     "",
     "2:0",
     "Biće ostvaren u bilo kom trenutku tokom regularnog",
+<<<<<<< HEAD
     3.55,
+=======
+    3.5,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
     "",
     "2:1",
     "Biće ostvaren u bilo kom trenutku tokom regularnog",
+<<<<<<< HEAD
     4.45,
+=======
+    4.25,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
     "",
     "1:2",
     "Biće ostvaren u bilo kom trenutku tokom regularnog",
+<<<<<<< HEAD
     6.1,
+=======
+    5.85,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.0
    ],
    [
     "",
     "0:2",
     "Biće ostvaren u bilo kom trenutku tokom regularnog",
+<<<<<<< HEAD
     6.6,
+=======
+    6.5,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     0.0
    ],
    [
     "",
     "3:0",
     "Biće ostvaren u bilo kom trenutku tokom regularnog",
+<<<<<<< HEAD
     8.0,
+=======
+    7.8,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.0
    ],
    [
     "",
     "2:2",
     "Biće ostvaren u bilo kom trenutku tokom regularnog",
+<<<<<<< HEAD
     8.8,
+=======
+    8.2,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
     "",
     "3:1",
     "Biće ostvaren u bilo kom trenutku tokom regularnog",
+<<<<<<< HEAD
     9.2,
+=======
+    8.7,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.0
    ],
    [
     "",
     "1:3",
     "Biće ostvaren u bilo kom trenutku tokom regularnog",
+<<<<<<< HEAD
     19.0,
+=======
+    18.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.0
    ],
    [
     "",
     "3:2",
     "Biće ostvaren u bilo kom trenutku tokom regularnog",
+<<<<<<< HEAD
     20.0,
+=======
+    18.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.0
    ]
   ]
@@ -1758,7 +2355,11 @@
     "/0-",
     "manje 8.5",
     "Manje od 8.5 kornera na utakmici",
+<<<<<<< HEAD
     2.52,
+=======
+    2.55,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     8.5
    ],
    [
@@ -1819,7 +2420,11 @@
     "",
     "x & manje 0.5",
     "Nerešeno na kraju utakmice  i manje od 0.5 gola na",
+<<<<<<< HEAD
     7.4,
+=======
+    7.8,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     0.5
    ],
    [
@@ -1833,7 +2438,11 @@
     "",
     "x & vise 0.5",
     "Nerešeno na kraju utakmice i više od 0.5 gola na u",
+<<<<<<< HEAD
     4.45,
+=======
+    4.35,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     0.5
    ],
    [
@@ -1852,42 +2461,66 @@
     "",
     "1 & manje 5.5",
     "Betis pobednik utakmice i manje od 5.5 gola na uta",
+<<<<<<< HEAD
     5.7,
+=======
+    5.9,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     5.5
    ],
    [
     "",
     "x & manje 5.5",
     "Nerešeno na kraju utakmice  i manje od 5.5 gola na",
+<<<<<<< HEAD
     5.55,
+=======
+    5.6,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     5.5
    ],
    [
     "",
     "2 & manje 5.5",
     "Barcelona pobednik utakmice i manje od 5.5 gola na",
+<<<<<<< HEAD
     1.8,
+=======
+    1.78,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     5.5
    ],
    [
     "",
     "1 & vise 5.5",
     "Betis pobednik utakmice i više od 5.5 gola na utak",
+<<<<<<< HEAD
     21.0,
+=======
+    22.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     5.5
    ],
    [
     "",
     "x & vise 5.5",
     "Nerešeno na kraju utakmice i više od 5.5 gola na u",
+<<<<<<< HEAD
     19.0,
+=======
+    20.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     5.5
    ],
    [
     "",
     "2 & vise 5.5",
     "Barcelona pobednik utakmice i više od 5.5 gola na ",
+<<<<<<< HEAD
     5.0,
+=======
+    4.9,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     5.5
    ]
   ]
@@ -1899,28 +2532,46 @@
     "101",
     "1x & da",
     "Betis će pobediti ili će biti nerešeno i oba tima ",
+<<<<<<< HEAD
     2.95,
     1.0
+=======
+    3.05,
+    null
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "102",
     "1x & ne",
     "Betis će pobediti ili će biti nerešeno i barem jed",
+<<<<<<< HEAD
     7.5,
     1.0
+=======
+    7.7,
+    null
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "121",
     "12 & da",
     "Betis ili Barcelona će pobediti i oba tima daju go",
+<<<<<<< HEAD
     1.66,
+=======
+    1.67,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     12.0
    ],
    [
     "122",
     "12 & ne",
     "Betis ili Barcelona će pobediti i barem jedan tim ",
+<<<<<<< HEAD
     2.57,
+=======
+    2.52,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     12.0
    ],
    [
@@ -1928,14 +2579,23 @@
     "x2 & da",
     "Biće nerešeno ili Barcelona će pobediti i oba tima",
     1.56,
+<<<<<<< HEAD
     2.0
+=======
+    null
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "022",
     "x2 & ne",
     "Biće nerešeno ili Barcelona će pobediti i barem je",
+<<<<<<< HEAD
     2.77,
     2.0
+=======
+    2.7,
+    null
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ]
   ]
  },
@@ -1946,22 +2606,36 @@
     "",
     "1-2",
     "Levante 1-2 gola na utakmici",
+<<<<<<< HEAD
     1.66,
     -2.0
+=======
+    1.65,
+    2.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "",
     "1-3",
     "Levante 1-3 gola na utakmici",
+<<<<<<< HEAD
     1.47,
     -3.0
+=======
+    1.46,
+    3.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "",
     "2-3",
     "Levante 2-3 gola na utakmici",
     3.15,
+<<<<<<< HEAD
     -3.0
+=======
+    3.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ]
   ]
  },
@@ -1972,21 +2646,33 @@
     "12",
     "1-2",
     "Levante 1 ili 2 gola u svakom poluvremenu",
+<<<<<<< HEAD
     4.85,
+=======
+    4.8,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
     "13",
     "1-3",
     "Levante 1,2 ili 3 gola u svakom poluvremenu",
+<<<<<<< HEAD
     4.55,
+=======
+    4.5,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.0
    ],
    [
     "23",
     "2-3",
     "Levante 2 ili 3 gola u svakom poluvremenu",
+<<<<<<< HEAD
     36.0,
+=======
+    35.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.0
    ]
   ]
@@ -1998,7 +2684,11 @@
     "0",
     "0",
     "Levante ne daje gol",
+<<<<<<< HEAD
     2.9,
+=======
+    2.92,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.0
    ],
    [
@@ -2012,14 +2702,22 @@
     "2",
     "2",
     "Levante daje tačno 2 gola",
+<<<<<<< HEAD
     4.25,
+=======
+    4.2,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.0
    ],
    [
     "3",
     "3+",
     "Levante daje 3 ili više golova",
+<<<<<<< HEAD
     7.3,
+=======
+    7.2,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.0
    ]
   ]
@@ -2038,7 +2736,11 @@
     "2",
     "ne",
     "Levante ne daje gol na utakmici",
+<<<<<<< HEAD
     2.92,
+=======
+    2.95,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     null
    ]
   ]
@@ -2078,14 +2780,22 @@
     "",
     "vise 0.5 & vise 2.5",
     "1. Poluvreme Levante više od 0.5 golova i Levante ",
+<<<<<<< HEAD
     7.7,
+=======
+    7.8,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
     "",
     "vise 0.5 & manje 2.5",
     "1. Poluvreme Levante više od 0.5 golova i Levante ",
+<<<<<<< HEAD
     2.9,
+=======
+    2.92,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
@@ -2228,14 +2938,22 @@
     "1-",
     "1 & manje 0.5",
     "Deportivo de A Coruna pobednik  i Levante manje od",
+<<<<<<< HEAD
     3.55,
+=======
+    3.6,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     0.5
    ],
    [
     "0-",
     "x & manje 0.5",
     "nerešeno i Levante manje od 0.5 gola na utakmici",
+<<<<<<< HEAD
     8.7,
+=======
+    8.8,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     0.5
    ],
    [
@@ -2296,14 +3014,22 @@
     "0+",
     "x & vise 1.5",
     "nerešeno i Levante više od 1.5 gola na utakmici",
+<<<<<<< HEAD
     9.3,
+=======
+    9.2,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
     "2+",
     "2 & vise 1.5",
     "Levante pobednik  i Levante više od 1.5 gola na ut",
+<<<<<<< HEAD
     4.15,
+=======
+    4.1,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ]
   ]
@@ -2350,7 +3076,11 @@
     "2+",
     "2 & vise 2.5",
     "Levante pobednik  i Levante više od 2.5 gola na ut",
+<<<<<<< HEAD
     7.7,
+=======
+    7.6,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ]
   ]
@@ -2362,7 +3092,11 @@
     "1-",
     "1 & manje 3.5",
     "Deportivo de A Coruna pobednik  i Levante manje od",
+<<<<<<< HEAD
     2.05,
+=======
+    2.07,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.5
    ],
    [
@@ -2397,7 +3131,11 @@
     "2+",
     "2 & vise 3.5",
     "Levante pobednik  i Levante više od 3.5 gola na ut",
+<<<<<<< HEAD
     19.0,
+=======
+    18.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.5
    ]
   ]
@@ -2416,7 +3154,11 @@
     "0-",
     "x & manje 4.5",
     "nerešeno i Levante manje od 4.5 gola na utakmici",
+<<<<<<< HEAD
     3.2,
+=======
+    3.15,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     4.5
    ],
    [
@@ -2457,21 +3199,33 @@
     "1-2",
     "Athletic Bilbao 1-2 gola na utakmici",
     1.62,
+<<<<<<< HEAD
     -2.0
+=======
+    2.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "",
     "1-3",
     "Athletic Bilbao 1-3 gola na utakmici",
     1.36,
+<<<<<<< HEAD
     -3.0
+=======
+    3.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "",
     "2-3",
     "Athletic Bilbao 2-3 gola na utakmici",
     2.55,
+<<<<<<< HEAD
     -3.0
+=======
+    3.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ]
   ]
  },
@@ -2482,14 +3236,22 @@
     "12",
     "1-2",
     "Athletic Bilbao 1 ili 2 gola u svakom poluvremenu",
+<<<<<<< HEAD
     3.85,
+=======
+    3.8,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
     "13",
     "1-3",
     "Athletic Bilbao 1,2 ili 3 gola u svakom poluvremen",
+<<<<<<< HEAD
     3.45,
+=======
+    3.4,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.0
    ],
    [
@@ -2508,14 +3270,22 @@
     "0",
     "0",
     "Athletic Bilbao ne daje gol",
+<<<<<<< HEAD
     3.8,
+=======
+    3.85,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.0
    ],
    [
     "1",
     "1",
     "Athletic Bilbao daje tačno 1 gol",
+<<<<<<< HEAD
     2.67,
+=======
+    2.7,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.0
    ],
    [
@@ -2529,7 +3299,11 @@
     "3",
     "3+",
     "Athletic Bilbao daje 3 ili više golova",
+<<<<<<< HEAD
     5.0,
+=======
+    4.9,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.0
    ]
   ]
@@ -2541,14 +3315,22 @@
     "1",
     "da",
     "Athletic Bilbao daje gol na utakmici",
+<<<<<<< HEAD
     1.27,
+=======
+    1.26,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     null
    ],
    [
     "2",
     "ne",
     "Athletic Bilbao ne daje gol na utakmici",
+<<<<<<< HEAD
     3.85,
+=======
+    3.9,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     null
    ]
   ]
@@ -2560,7 +3342,11 @@
     "",
     "vise 0.5 & vise 1.5",
     "1. Poluvreme Athletic Bilbao više od 0.5 golova i ",
+<<<<<<< HEAD
     2.8,
+=======
+    2.77,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
@@ -2574,28 +3360,44 @@
     "",
     "manje 0.5 & vise 1.5",
     "1. Poluvreme Athletic Bilbao manje od 0.5 golova i",
+<<<<<<< HEAD
     7.0,
+=======
+    6.9,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
     "",
     "manje 0.5 & manje 1.5",
     "1. Poluvreme Athletic Bilbao manje od 0.5 golova i",
+<<<<<<< HEAD
     2.15,
+=======
+    2.17,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
     "",
     "vise 0.5 & vise 2.5",
     "1. Poluvreme Athletic Bilbao više od 0.5 golova i ",
+<<<<<<< HEAD
     5.4,
+=======
+    5.3,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
     "",
     "vise 0.5 & manje 2.5",
     "1. Poluvreme Athletic Bilbao više od 0.5 golova i ",
+<<<<<<< HEAD
     2.75,
+=======
+    2.72,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
@@ -2616,7 +3418,11 @@
     "",
     "vise 1.5 & vise 2.5",
     "1. Poluvreme Athletic Bilbao više od 1.5 golova i ",
+<<<<<<< HEAD
     8.1,
+=======
+    7.9,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
@@ -2630,14 +3436,22 @@
     "",
     "manje 1.5 & vise 2.5",
     "1. Poluvreme Athletic Bilbao manje od 1.5 golova i",
+<<<<<<< HEAD
     7.8,
+=======
+    7.7,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
     "",
     "manje 1.5 & manje 2.5",
     "1. Poluvreme Athletic Bilbao manje od 1.5 golova i",
+<<<<<<< HEAD
     1.22,
+=======
+    1.23,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ]
   ]
@@ -2649,7 +3463,11 @@
     "",
     "vise 0.5 & vise 0.5",
     "Athletic Bilbao daje više od 0.5 golova u 1. poluv",
+<<<<<<< HEAD
     3.4,
+=======
+    3.35,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
@@ -2663,7 +3481,11 @@
     "",
     "vise 0.5 & vise 1.5",
     "Athletic Bilbao daje više od 0.5 golova u 1. poluv",
+<<<<<<< HEAD
     7.9,
+=======
+    7.8,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
@@ -2684,7 +3506,11 @@
     "",
     "vise 0.5 & manje 2.5",
     "Athletic Bilbao daje više od 0.5 golova u 1. poluv",
+<<<<<<< HEAD
     2.05,
+=======
+    2.02,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
@@ -2698,21 +3524,33 @@
     "",
     "manje 0.5 & manje 0.5",
     "Athletic Bilbao daje manje od 0.5 golova u 1. polu",
+<<<<<<< HEAD
     3.65,
+=======
+    3.7,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
     "",
     "manje 0.5 & vise 1.5",
     "Athletic Bilbao daje manje od 0.5 golova u 1. polu",
+<<<<<<< HEAD
     7.0,
+=======
+    6.9,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
     "",
     "manje 0.5 & manje 1.5",
     "Athletic Bilbao daje manje od 0.5 golova u 1. polu",
+<<<<<<< HEAD
     2.15,
+=======
+    2.17,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
@@ -2738,7 +3576,11 @@
     "1-",
     "1 & manje 0.5",
     "Valencia pobednik  i Athletic Bilbao manje od 0.5 ",
+<<<<<<< HEAD
     5.2,
+=======
+    5.3,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     0.5
    ],
    [
@@ -2752,21 +3594,33 @@
     "1+",
     "1 & vise 0.5",
     "Valencia pobednik  i Athletic Bilbao više od 0.5 g",
+<<<<<<< HEAD
     6.0,
+=======
+    6.1,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     0.5
    ],
    [
     "0+",
     "x & vise 0.5",
     "nerešeno i Athletic Bilbao više od 0.5 gola na uta",
+<<<<<<< HEAD
     4.2,
+=======
+    4.25,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     0.5
    ],
    [
     "2+",
     "2 & vise 0.5",
     "Athletic Bilbao pobednik  i Athletic Bilbao više o",
+<<<<<<< HEAD
     2.07,
+=======
+    2.05,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     0.5
    ]
   ]
@@ -2778,7 +3632,11 @@
     "1-",
     "1 & manje 1.5",
     "Valencia pobednik  i Athletic Bilbao manje od 1.5 ",
+<<<<<<< HEAD
     3.45,
+=======
+    3.5,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
@@ -2806,14 +3664,22 @@
     "0+",
     "x & vise 1.5",
     "nerešeno i Athletic Bilbao više od 1.5 gola na uta",
+<<<<<<< HEAD
     9.9,
+=======
+    10.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
     "2+",
     "2 & vise 1.5",
     "Athletic Bilbao pobednik  i Athletic Bilbao više o",
+<<<<<<< HEAD
     2.72,
+=======
+    2.67,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ]
   ]
@@ -2825,14 +3691,22 @@
     "1-",
     "1 & manje 2.5",
     "Valencia pobednik  i Athletic Bilbao manje od 2.5 ",
+<<<<<<< HEAD
     3.15,
+=======
+    3.2,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
     "0-",
     "x & manje 2.5",
     "nerešeno i Athletic Bilbao manje od 2.5 gola na ut",
+<<<<<<< HEAD
     3.2,
+=======
+    3.25,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
@@ -2846,7 +3720,11 @@
     "1+",
     "1 & vise 2.5",
     "Valencia pobednik  i Athletic Bilbao više od 2.5 g",
+<<<<<<< HEAD
     70.0,
+=======
+    75.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
@@ -2860,7 +3738,11 @@
     "2+",
     "2 & vise 2.5",
     "Athletic Bilbao pobednik  i Athletic Bilbao više o",
+<<<<<<< HEAD
     5.0,
+=======
+    4.9,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ]
   ]
@@ -2872,7 +3754,11 @@
     "1-",
     "1 & manje 3.5",
     "Valencia pobednik  i Athletic Bilbao manje od 3.5 ",
+<<<<<<< HEAD
     3.15,
+=======
+    3.2,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.5
    ],
    [
@@ -2886,7 +3772,11 @@
     "2-",
     "2 & manje 3.5",
     "Athletic Bilbao pobednik  i Athletic Bilbao manje ",
+<<<<<<< HEAD
     2.35,
+=======
+    2.32,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.5
    ],
    [
@@ -2919,21 +3809,33 @@
     "1-",
     "1 & manje 4.5",
     "Valencia pobednik  i Athletic Bilbao manje od 4.5 ",
+<<<<<<< HEAD
     3.15,
+=======
+    3.2,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     4.5
    ],
    [
     "0-",
     "x & manje 4.5",
     "nerešeno i Athletic Bilbao manje od 4.5 gola na ut",
+<<<<<<< HEAD
     3.1,
+=======
+    3.15,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     4.5
    ],
    [
     "2-",
     "2 & manje 4.5",
     "Athletic Bilbao pobednik  i Athletic Bilbao manje ",
+<<<<<<< HEAD
     2.15,
+=======
+    2.12,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     4.5
    ],
    [
@@ -2954,7 +3856,11 @@
     "2+",
     "2 & vise 4.5",
     "Athletic Bilbao pobednik  i Athletic Bilbao više o",
+<<<<<<< HEAD
     28.0,
+=======
+    27.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     4.5
    ]
   ]
@@ -2967,20 +3873,32 @@
     "1x & da",
     "Levante će pobediti ili će biti nerešeno i biće go",
     2.9,
+<<<<<<< HEAD
     1.0
+=======
+    null
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "021",
     "x2 & da",
     "Biće nerešeno ili Athletic Bilbao će pobediti i bi",
     2.2,
+<<<<<<< HEAD
     2.0
+=======
+    null
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "121",
     "12 & da",
     "Levante ili Athletic Bilbao će pobediti i biće gol",
+<<<<<<< HEAD
     2.1,
+=======
+    2.12,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     12.0
    ]
   ]
@@ -2992,70 +3910,110 @@
     "/1-",
     "manje 1.5",
     "Betis manje od 1.5 kornera",
+<<<<<<< HEAD
     5.0,
+=======
+    4.9,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
     "/1+",
     "vise 1.5",
     "Betis više od 1.5 kornera",
+<<<<<<< HEAD
     1.13,
+=======
+    1.14,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
     "/1-",
     "manje 2.5",
     "Betis manje od 2.5 kornera",
+<<<<<<< HEAD
     2.77,
+=======
+    2.7,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
     "/1+",
     "vise 2.5",
     "Betis više od 2.5 kornera",
+<<<<<<< HEAD
     1.39,
+=======
+    1.41,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
     "/1-",
     "manje 3.5",
     "Betis manje od 3.5 kornera",
+<<<<<<< HEAD
     1.85,
+=======
+    1.82,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.5
    ],
    [
     "/1+",
     "vise 3.5",
     "Betis više od 3.5 kornera",
+<<<<<<< HEAD
     1.85,
+=======
+    1.88,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.5
    ],
    [
     "/1-",
     "manje 4.5",
     "Betis manje od 4.5 kornera",
+<<<<<<< HEAD
     1.43,
+=======
+    1.41,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     4.5
    ],
    [
     "/1+",
     "vise 4.5",
     "Betis više od 4.5 kornera",
+<<<<<<< HEAD
     2.62,
+=======
+    2.7,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     4.5
    ],
    [
     "/1-",
     "manje 5.5",
     "Betis manje od 5.5 kornera",
+<<<<<<< HEAD
     1.22,
+=======
+    1.2,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     5.5
    ],
    [
     "/1+",
     "vise 5.5",
     "Betis više od 5.5 kornera",
+<<<<<<< HEAD
     3.9,
+=======
+    4.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     5.5
    ]
   ]
@@ -3067,70 +4025,110 @@
     "/2-",
     "manje 4.5",
     "Barcelona će imati manje od 4.5 kornera",
+<<<<<<< HEAD
     3.0,
+=======
+    3.1,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     4.5
    ],
    [
     "/2+",
     "vise 4.5",
     "Barcelona će imati više od 4.5 kornera",
+<<<<<<< HEAD
     1.34,
+=======
+    1.32,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     4.5
    ],
    [
     "/2-",
     "manje 5.5",
     "Barcelona će imati manje od 5.5 kornera",
+<<<<<<< HEAD
     2.15,
+=======
+    2.2,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     5.5
    ],
    [
     "/2+",
     "vise 5.5",
     "Barcelona će imati više od 5.5 kornera",
+<<<<<<< HEAD
     1.63,
+=======
+    1.6,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     5.5
    ],
    [
     "/2-",
     "manje 6.5",
     "Barcelona će imati manje od 6.5 kornera",
+<<<<<<< HEAD
     1.67,
+=======
+    1.7,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     6.5
    ],
    [
     "/2+",
     "vise 6.5",
     "Barcelona će imati više od 6.5 kornera",
+<<<<<<< HEAD
     2.07,
+=======
+    2.02,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     6.5
    ],
    [
     "/2-",
     "manje 7.5",
     "Barcelona će imati manje od 7.5 kornera",
+<<<<<<< HEAD
     1.4,
+=======
+    1.41,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     7.5
    ],
    [
     "/2+",
     "vise 7.5",
     "Barcelona će imati više od 7.5 kornera",
+<<<<<<< HEAD
     2.75,
+=======
+    2.7,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     7.5
    ],
    [
     "/2-",
     "manje 8.5",
     "Barcelona će imati manje od 8.5 kornera",
+<<<<<<< HEAD
     1.23,
+=======
+    1.24,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     8.5
    ],
    [
     "/2+",
     "vise 8.5",
     "Barcelona će imati više od 8.5 kornera",
+<<<<<<< HEAD
     3.75,
+=======
+    3.65,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     8.5
    ]
   ]
@@ -3142,22 +4140,37 @@
     "",
     "1-2",
     "Betis 1-2 gola na utakmici",
+<<<<<<< HEAD
     1.63,
     -2.0
+=======
+    1.64,
+    2.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "",
     "1-3",
     "Betis  1-3 gola na utakmici",
+<<<<<<< HEAD
     1.41,
     -3.0
+=======
+    1.43,
+    3.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "",
     "2-3",
     "Betis 2-3 gola na utakmici",
+<<<<<<< HEAD
     2.85,
     -3.0
+=======
+    2.92,
+    3.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ]
   ]
  },
@@ -3168,22 +4181,36 @@
     "",
     "1-2",
     "Barcelona 1-2 gola na utakmici",
+<<<<<<< HEAD
     2.2,
     -2.0
+=======
+    2.22,
+    2.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "",
     "1-3",
     "Barcelona 1-3 gola na utakmici",
+<<<<<<< HEAD
     1.48,
     -3.0
+=======
+    1.49,
+    3.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "",
     "2-3",
     "Barcelona 2-3 gola na utakmici",
     2.02,
+<<<<<<< HEAD
     -3.0
+=======
+    3.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ]
   ]
  },
@@ -3194,21 +4221,33 @@
     "12",
     "1-2",
     "Betis 1 ili 2 gola u svakom poluvremenu",
+<<<<<<< HEAD
     4.3,
+=======
+    4.4,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
     "13",
     "1-3",
     "Betis 1,2 ili 3 gola u svakom poluvremenu",
+<<<<<<< HEAD
     4.0,
+=======
+    4.1,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.0
    ],
    [
     "23",
     "2-3",
     "Betis 2 ili 3 gola u svakom poluvremenu",
+<<<<<<< HEAD
     28.0,
+=======
+    30.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.0
    ]
   ]
@@ -3227,7 +4266,11 @@
     "13",
     "1-3",
     "Barcelona 1,2 ili 3 gola u svakom poluvremenu",
+<<<<<<< HEAD
     1.95,
+=======
+    1.92,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.0
    ],
    [
@@ -3246,28 +4289,44 @@
     "0",
     "0",
     "Betis ne daje gol",
+<<<<<<< HEAD
     3.25,
+=======
+    3.15,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.0
    ],
    [
     "1",
     "1",
     "Betis daje tačno 1 gol",
+<<<<<<< HEAD
     2.6,
+=======
+    2.57,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.0
    ],
    [
     "2",
     "2",
     "Betis daje tačno 2 gola",
+<<<<<<< HEAD
     3.9,
+=======
+    4.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.0
    ],
    [
     "3",
     "3+",
     "Betis daje 3 ili više golova",
+<<<<<<< HEAD
     6.1,
+=======
+    6.4,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.0
    ]
   ]
@@ -3286,21 +4345,33 @@
     "1",
     "1",
     "Barcelona daje tačno 1 gol",
+<<<<<<< HEAD
     4.75,
+=======
+    4.85,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.0
    ],
    [
     "2",
     "2",
     "Barcelona daje tačno 2 gola",
+<<<<<<< HEAD
     3.65,
+=======
+    3.7,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.0
    ],
    [
     "3",
     "3+",
     "Barcelona daje 3 ili više golova",
+<<<<<<< HEAD
     1.87,
+=======
+    1.85,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.0
    ]
   ]
@@ -3312,14 +4383,22 @@
     "1",
     "da",
     "Betis daje gol na utakmici",
+<<<<<<< HEAD
     1.34,
+=======
+    1.36,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     null
    ],
    [
     "2",
     "ne",
     "Betis ne daje gol na utakmici",
+<<<<<<< HEAD
     3.3,
+=======
+    3.2,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     null
    ]
   ]
@@ -3350,35 +4429,55 @@
     "",
     "vise 0.5 & vise 1.5",
     "1. Poluvreme Betis više od 0.5 golova i Betis više",
+<<<<<<< HEAD
     3.2,
+=======
+    3.3,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
     "",
     "vise 0.5 & manje 1.5",
     "1. Poluvreme Betis više od 0.5 golova i Betis manj",
+<<<<<<< HEAD
     5.1,
+=======
+    5.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
     "",
     "manje 0.5 & vise 1.5",
     "1. Poluvreme Betis manje od 0.5 golova i Betis viš",
+<<<<<<< HEAD
     7.4,
+=======
+    7.6,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
     "",
     "manje 0.5 & manje 1.5",
     "1. Poluvreme Betis manje od 0.5 golova i Betis man",
+<<<<<<< HEAD
     1.95,
+=======
+    1.9,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
     "",
     "vise 0.5 & vise 2.5",
     "1. Poluvreme Betis više od 0.5 golova i Betis više",
+<<<<<<< HEAD
     6.4,
+=======
+    6.7,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
@@ -3399,14 +4498,22 @@
     "",
     "manje 0.5 & manje 2.5",
     "1. Poluvreme Betis manje od 0.5 golova i Betis man",
+<<<<<<< HEAD
     1.7,
+=======
+    1.67,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
     "",
     "vise 1.5 & vise 2.5",
     "1. Poluvreme Betis više od 1.5 golova i Betis više",
+<<<<<<< HEAD
     9.9,
+=======
+    10.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
@@ -3420,14 +4527,22 @@
     "",
     "manje 1.5 & vise 2.5",
     "1. Poluvreme Betis manje od 1.5 golova i Betis viš",
+<<<<<<< HEAD
     8.9,
+=======
+    9.4,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
     "",
     "manje 1.5 & manje 2.5",
     "1. Poluvreme Betis manje od 1.5 golova i Betis man",
+<<<<<<< HEAD
     1.17,
+=======
+    1.15,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ]
   ]
@@ -3439,14 +4554,22 @@
     "",
     "vise 0.5 & vise 1.5",
     "1. Poluvreme Barcelona više od 0.5 golova i Barcel",
+<<<<<<< HEAD
     1.5,
+=======
+    1.49,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
     "",
     "vise 0.5 & manje 1.5",
     "1. Poluvreme Barcelona više od 0.5 golova i Barcel",
+<<<<<<< HEAD
     8.3,
+=======
+    8.4,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
@@ -3467,7 +4590,11 @@
     "",
     "vise 0.5 & vise 2.5",
     "1. Poluvreme Barcelona više od 0.5 golova i Barcel",
+<<<<<<< HEAD
     2.02,
+=======
+    2.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
@@ -3488,14 +4615,22 @@
     "",
     "manje 0.5 & manje 2.5",
     "1. Poluvreme Barcelona manje od 0.5 golova i Barce",
+<<<<<<< HEAD
     3.6,
+=======
+    3.65,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
     "",
     "vise 1.5 & vise 2.5",
     "1. Poluvreme Barcelona više od 1.5 golova i Barcel",
+<<<<<<< HEAD
     3.0,
+=======
+    2.95,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
@@ -3516,7 +4651,11 @@
     "",
     "manje 1.5 & manje 2.5",
     "1. Poluvreme Barcelona manje od 1.5 golova i Barce",
+<<<<<<< HEAD
     2.1,
+=======
+    2.12,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ]
   ]
@@ -3528,21 +4667,33 @@
     "",
     "vise 0.5 & vise 0.5",
     "Betis daje više od 0.5 golova u 1. poluvremenu i v",
+<<<<<<< HEAD
     3.9,
+=======
+    4.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
     "",
     "vise 0.5 & manje 0.5",
     "Betis daje više od 0.5 golova u 1. poluvremenu i m",
+<<<<<<< HEAD
     4.0,
+=======
+    3.9,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
     "",
     "vise 0.5 & vise 1.5",
     "Betis daje više od 0.5 golova u 1. poluvremenu i v",
+<<<<<<< HEAD
     9.5,
+=======
+    10.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
@@ -3556,14 +4707,22 @@
     "",
     "vise 0.5 & vise 2.5",
     "Betis daje više od 0.5 golova u 1. poluvremenu i v",
+<<<<<<< HEAD
     29.0,
+=======
+    31.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
     "",
     "vise 0.5 & manje 2.5",
     "Betis daje više od 0.5 golova u 1. poluvremenu i m",
+<<<<<<< HEAD
     2.2,
+=======
+    2.22,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
@@ -3577,21 +4736,33 @@
     "",
     "manje 0.5 & manje 0.5",
     "Betis daje manje od 0.5 golova u 1. poluvremenu i ",
+<<<<<<< HEAD
     3.2,
+=======
+    3.1,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
     "",
     "manje 0.5 & vise 1.5",
     "Betis daje manje od 0.5 golova u 1. poluvremenu i ",
+<<<<<<< HEAD
     7.4,
+=======
+    7.6,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
     "",
     "manje 0.5 & manje 1.5",
     "Betis daje manje od 0.5 golova u 1. poluvremenu i ",
+<<<<<<< HEAD
     1.95,
+=======
+    1.9,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
@@ -3605,7 +4776,11 @@
     "",
     "manje 0.5 & manje 2.5",
     "Betis daje manje od 0.5 golova u 1. poluvremenu i ",
+<<<<<<< HEAD
     1.7,
+=======
+    1.67,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ]
   ]
@@ -3617,7 +4792,11 @@
     "",
     "vise 0.5 & vise 0.5",
     "Barcelona daje više od 0.5 golova u 1. poluvremenu",
+<<<<<<< HEAD
     1.71,
+=======
+    1.69,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
@@ -3631,7 +4810,11 @@
     "",
     "vise 0.5 & vise 1.5",
     "Barcelona daje više od 0.5 golova u 1. poluvremenu",
+<<<<<<< HEAD
     2.87,
+=======
+    2.82,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
@@ -3645,7 +4828,11 @@
     "",
     "vise 0.5 & vise 2.5",
     "Barcelona daje više od 0.5 golova u 1. poluvremenu",
+<<<<<<< HEAD
     5.8,
+=======
+    5.7,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
@@ -3666,7 +4853,11 @@
     "",
     "manje 0.5 & manje 0.5",
     "Barcelona daje manje od 0.5 golova u 1. poluvremen",
+<<<<<<< HEAD
     9.9,
+=======
+    10.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
@@ -3694,7 +4885,11 @@
     "",
     "manje 0.5 & manje 2.5",
     "Barcelona daje manje od 0.5 golova u 1. poluvremen",
+<<<<<<< HEAD
     3.6,
+=======
+    3.65,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ]
   ]
@@ -3713,21 +4908,33 @@
     "2-",
     "2 & manje 0.5",
     "Barcelona pobednik i Betis manje od 0.5 gola na ut",
+<<<<<<< HEAD
     3.35,
+=======
+    3.2,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     0.5
    ],
    [
     "1+",
     "1 & vise 0.5",
     "Betis pobednik i Betis više od 0.5 gola na utakmic",
+<<<<<<< HEAD
     5.1,
+=======
+    5.25,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     0.5
    ],
    [
     "0+",
     "x & vise 0.5",
     "nerešeno i Betis više od 0.5 gola na utakmici",
+<<<<<<< HEAD
     5.3,
+=======
+    5.4,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     0.5
    ],
    [
@@ -3746,42 +4953,66 @@
     "1-",
     "1 & manje 1.5",
     "Betis pobednik i Betis manje od 1.5 gola na utakmi",
+<<<<<<< HEAD
     20.0,
+=======
+    21.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
     "0-",
     "x & manje 1.5",
     "nerešeno i Betis manje od 1.5 gola na utakmici",
+<<<<<<< HEAD
     8.0,
+=======
+    8.1,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
     "2-",
     "2 & manje 1.5",
     "Barcelona pobednik i Betis manje od 1.5 gola na ut",
+<<<<<<< HEAD
     1.76,
+=======
+    1.72,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
     "1+",
     "1 & vise 1.5",
     "Betis pobednik i Betis više od 1.5 gola na utakmic",
+<<<<<<< HEAD
     5.75,
+=======
+    6.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
     "0+",
     "x & vise 1.5",
     "nerešeno i Betis više od 1.5 gola na utakmici",
+<<<<<<< HEAD
     8.1,
+=======
+    8.3,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
     "2+",
     "2 & vise 1.5",
     "Barcelona pobednik i Betis više od 1.5 gola na uta",
+<<<<<<< HEAD
     5.35,
+=======
+    5.4,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ]
   ]
@@ -3793,35 +5024,55 @@
     "1-",
     "1 & manje 2.5",
     "Betis pobednik i Betis manje od 2.5 gola na utakmi",
+<<<<<<< HEAD
     8.3,
+=======
+    8.5,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
     "0-",
     "x & manje 2.5",
     "nerešeno i Betis manje od 2.5 gola na utakmici",
+<<<<<<< HEAD
     5.55,
+=======
+    5.6,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
     "2-",
     "2 & manje 2.5",
     "Barcelona pobednik i Betis manje od 2.5 gola na ut",
+<<<<<<< HEAD
     1.46,
+=======
+    1.44,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
     "1+",
     "1 & vise 2.5",
     "Betis pobednik i Betis više od 2.5 gola na utakmic",
+<<<<<<< HEAD
     8.5,
+=======
+    8.9,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
     "0+",
     "x & vise 2.5",
     "nerešeno i Betis više od 2.5 gola na utakmici",
+<<<<<<< HEAD
     19.0,
+=======
+    20.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
@@ -3840,42 +5091,66 @@
     "1-",
     "1 & manje 3.5",
     "Betis pobednik i Betis manje od 3.5 gola na utakmi",
+<<<<<<< HEAD
     6.0,
+=======
+    6.2,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.5
    ],
    [
     "0-",
     "x & manje 3.5",
     "nerešeno i Betis manje od 3.5 gola na utakmici",
+<<<<<<< HEAD
     4.9,
+=======
+    5.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.5
    ],
    [
     "2-",
     "2 & manje 3.5",
     "Barcelona pobednik i Betis manje od 3.5 gola na ut",
+<<<<<<< HEAD
     1.41,
+=======
+    1.39,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.5
    ],
    [
     "1+",
     "1 & vise 3.5",
     "Betis pobednik i Betis više od 3.5 gola na utakmic",
+<<<<<<< HEAD
     17.0,
+=======
+    18.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.5
    ],
    [
     "0+",
     "x & vise 3.5",
     "nerešeno i Betis više od 3.5 gola na utakmici",
+<<<<<<< HEAD
     55.0,
+=======
+    60.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.5
    ],
    [
     "2+",
     "2 & vise 3.5",
     "Barcelona pobednik i Betis više od 3.5 gola na uta",
+<<<<<<< HEAD
     60.0,
+=======
+    65.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.5
    ]
   ]
@@ -3887,28 +5162,44 @@
     "1-",
     "1 & manje 4.5",
     "Betis pobednik i Betis manje od 4.5 gola na utakmi",
+<<<<<<< HEAD
     5.3,
+=======
+    5.5,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     4.5
    ],
    [
     "0-",
     "x & manje 4.5",
     "nerešeno i Betis manje od 4.5 gola na utakmici",
+<<<<<<< HEAD
     4.85,
+=======
+    4.9,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     4.5
    ],
    [
     "2-",
     "2 & manje 4.5",
     "Barcelona pobednik i Betis manje od 4.5 gola na ut",
+<<<<<<< HEAD
     1.4,
+=======
+    1.38,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     4.5
    ],
    [
     "1+",
     "1 & vise 4.5",
     "Betis pobednik i Betis više od 4.5 gola na utakmic",
+<<<<<<< HEAD
     40.0,
+=======
+    45.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     4.5
    ],
    [
@@ -3934,7 +5225,11 @@
     "1-",
     "1 & manje 0.5",
     "Betis pobednik  i Barcelona manje od 0.5 gola na u",
+<<<<<<< HEAD
     12.0,
+=======
+    13.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     0.5
    ],
    [
@@ -3948,21 +5243,33 @@
     "1+",
     "1 & vise 0.5",
     "Betis pobednik  i Barcelona više od 0.5 gola na ut",
+<<<<<<< HEAD
     6.7,
+=======
+    7.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     0.5
    ],
    [
     "0+",
     "x & vise 0.5",
     "nerešeno i Barcelona više od 0.5 gola na utakmici",
+<<<<<<< HEAD
     5.3,
+=======
+    5.4,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     0.5
    ],
    [
     "2+",
     "2 & vise 0.5",
     "Barcelona pobednik  i Barcelona više od 0.5 gola n",
+<<<<<<< HEAD
     1.4,
+=======
+    1.38,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     0.5
    ]
   ]
@@ -3974,14 +5281,22 @@
     "1-",
     "1 & manje 1.5",
     "Betis pobednik  i Barcelona manje od 1.5 gola na u",
+<<<<<<< HEAD
     6.5,
+=======
+    6.7,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
     "0-",
     "x & manje 1.5",
     "nerešeno i Barcelona manje od 1.5 gola na utakmici",
+<<<<<<< HEAD
     8.0,
+=======
+    8.1,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
@@ -3995,21 +5310,33 @@
     "1+",
     "1 & vise 1.5",
     "Betis pobednik  i Barcelona više od 1.5 gola na ut",
+<<<<<<< HEAD
     13.0,
+=======
+    14.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
     "0+",
     "x & vise 1.5",
     "nerešeno i Barcelona više od 1.5 gola na utakmici",
+<<<<<<< HEAD
     8.1,
+=======
+    8.3,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
     "2+",
     "2 & vise 1.5",
     "Barcelona pobednik  i Barcelona više od 1.5 gola n",
+<<<<<<< HEAD
     1.51,
+=======
+    1.48,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ]
   ]
@@ -4021,42 +5348,66 @@
     "1-",
     "1 & manje 2.5",
     "Betis pobednik  i Barcelona manje od 2.5 gola na u",
+<<<<<<< HEAD
     5.35,
+=======
+    5.55,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
     "0-",
     "x & manje 2.5",
     "nerešeno i Barcelona manje od 2.5 gola na utakmici",
+<<<<<<< HEAD
     5.55,
+=======
+    5.6,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
     "2-",
     "2 & manje 2.5",
     "Barcelona pobednik  i Barcelona manje od 2.5 gola ",
+<<<<<<< HEAD
     4.1,
+=======
+    4.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
     "1+",
     "1 & vise 2.5",
     "Betis pobednik  i Barcelona više od 2.5 gola na ut",
+<<<<<<< HEAD
     37.0,
+=======
+    39.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
     "0+",
     "x & vise 2.5",
     "nerešeno i Barcelona više od 2.5 gola na utakmici",
+<<<<<<< HEAD
     19.0,
+=======
+    20.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
     "2+",
     "2 & vise 2.5",
     "Barcelona pobednik  i Barcelona više od 2.5 gola n",
+<<<<<<< HEAD
     1.97,
+=======
+    1.95,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ]
   ]
@@ -4068,21 +5419,33 @@
     "1-",
     "1 & manje 3.5",
     "Betis pobednik  i Barcelona manje od 3.5 gola na u",
+<<<<<<< HEAD
     5.1,
+=======
+    5.3,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.5
    ],
    [
     "0-",
     "x & manje 3.5",
     "nerešeno i Barcelona manje od 3.5 gola na utakmici",
+<<<<<<< HEAD
     4.9,
+=======
+    5.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.5
    ],
    [
     "2-",
     "2 & manje 3.5",
     "Barcelona pobednik  i Barcelona manje od 3.5 gola ",
+<<<<<<< HEAD
     2.3,
+=======
+    2.27,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.5
    ],
    [
@@ -4096,14 +5459,22 @@
     "0+",
     "x & vise 3.5",
     "nerešeno i Barcelona više od 3.5 gola na utakmici",
+<<<<<<< HEAD
     55.0,
+=======
+    60.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.5
    ],
    [
     "2+",
     "2 & vise 3.5",
     "Barcelona pobednik  i Barcelona više od 3.5 gola n",
+<<<<<<< HEAD
     3.15,
+=======
+    3.1,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.5
    ]
   ]
@@ -4115,21 +5486,33 @@
     "1-",
     "1 & manje 4.5",
     "Betis pobednik  i Barcelona manje od 4.5 gola na u",
+<<<<<<< HEAD
     5.1,
+=======
+    5.25,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     4.5
    ],
    [
     "0-",
     "x & manje 4.5",
     "nerešeno i Barcelona manje od 4.5 gola na utakmici",
+<<<<<<< HEAD
     4.85,
+=======
+    4.9,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     4.5
    ],
    [
     "2-",
     "2 & manje 4.5",
     "Barcelona pobednik  i Barcelona manje od 4.5 gola ",
+<<<<<<< HEAD
     1.73,
+=======
+    1.7,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     4.5
    ],
    [
@@ -4150,7 +5533,11 @@
     "2+",
     "2 & vise 4.5",
     "Barcelona pobednik  i Barcelona više od 4.5 gola n",
+<<<<<<< HEAD
     5.7,
+=======
+    5.55,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     4.5
    ]
   ]
@@ -4313,21 +5700,35 @@
     "1-2",
     "Celta Vigo 1-2 gola na utakmici",
     1.62,
+<<<<<<< HEAD
     -2.0
+=======
+    2.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "",
     "1-3",
     "Celta Vigo  1-3 gola na utakmici",
+<<<<<<< HEAD
     1.37,
     -3.0
+=======
+    1.35,
+    3.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "",
     "2-3",
     "Celta Vigo 2-3 gola na utakmici",
+<<<<<<< HEAD
     2.6,
     -3.0
+=======
+    2.52,
+    3.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ]
   ]
  },
@@ -4338,22 +5739,37 @@
     "",
     "1-2",
     "Alaves 1-2 gola na utakmici",
+<<<<<<< HEAD
     1.74,
     -2.0
+=======
+    1.72,
+    2.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "",
     "1-3",
     "Alaves 1-3 gola na utakmici",
+<<<<<<< HEAD
     1.58,
     -3.0
+=======
+    1.55,
+    3.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "",
     "2-3",
     "Alaves 2-3 gola na utakmici",
+<<<<<<< HEAD
     3.8,
     -3.0
+=======
+    3.65,
+    3.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ]
   ]
  },
@@ -4364,21 +5780,33 @@
     "12",
     "1-2",
     "Celta Vigo 1 ili 2 gola u svakom poluvremenu",
+<<<<<<< HEAD
     3.85,
+=======
+    3.75,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
     "13",
     "1-3",
     "Celta Vigo 1,2 ili 3 gola u svakom poluvremenu",
+<<<<<<< HEAD
     3.5,
+=======
+    3.4,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.0
    ],
    [
     "23",
     "2-3",
     "Celta Vigo 2 ili 3 gola u svakom poluvremenu",
+<<<<<<< HEAD
     22.0,
+=======
+    20.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.0
    ]
   ]
@@ -4390,21 +5818,33 @@
     "12",
     "1-2",
     "Alaves 1 ili 2 gola u svakom poluvremenu",
+<<<<<<< HEAD
     5.85,
+=======
+    5.6,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
     "13",
     "1-3",
     "Alaves 1,2 ili 3 gola u svakom poluvremenu",
+<<<<<<< HEAD
     5.6,
+=======
+    5.3,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.0
    ],
    [
     "23",
     "2-3",
     "Alaves 2 ili 3 gola u svakom poluvremenu",
+<<<<<<< HEAD
     55.0,
+=======
+    50.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.0
    ]
   ]
@@ -4416,28 +5856,44 @@
     "0",
     "0",
     "Celta Vigo ne daje gol",
+<<<<<<< HEAD
     3.7,
+=======
+    3.9,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.0
    ],
    [
     "1",
     "1",
     "Celta Vigo daje tačno 1 gol",
+<<<<<<< HEAD
     2.67,
+=======
+    2.7,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.0
    ],
    [
     "2",
     "2",
     "Celta Vigo daje tačno 2 gola",
+<<<<<<< HEAD
     3.7,
+=======
+    3.6,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.0
    ],
    [
     "3",
     "3+",
     "Celta Vigo daje 3 ili više golova",
+<<<<<<< HEAD
     5.0,
+=======
+    4.8,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.0
    ]
   ]
@@ -4449,7 +5905,11 @@
     "0",
     "0",
     "Alaves ne daje gol",
+<<<<<<< HEAD
     2.45,
+=======
+    2.55,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.0
    ],
    [
@@ -4463,14 +5923,22 @@
     "2",
     "2",
     "Alaves daje tačno 2 gola",
+<<<<<<< HEAD
     4.85,
+=======
+    4.7,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.0
    ],
    [
     "3",
     "3+",
     "Alaves daje 3 ili više golova",
+<<<<<<< HEAD
     9.8,
+=======
+    9.2,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.0
    ]
   ]
@@ -4482,14 +5950,22 @@
     "1",
     "da",
     "Celta Vigo daje gol na utakmici",
+<<<<<<< HEAD
     1.27,
+=======
+    1.26,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     null
    ],
    [
     "2",
     "ne",
     "Celta Vigo ne daje gol na utakmici",
+<<<<<<< HEAD
     3.75,
+=======
+    3.9,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     null
    ]
   ]
@@ -4501,14 +5977,22 @@
     "1",
     "da",
     "Alaves daje gol na utakmici",
+<<<<<<< HEAD
     1.55,
+=======
+    1.51,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     null
    ],
    [
     "2",
     "ne",
     "Alaves ne daje gol na utakmici",
+<<<<<<< HEAD
     2.47,
+=======
+    2.57,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     null
    ]
   ]
@@ -4520,63 +6004,99 @@
     "",
     "vise 0.5 & vise 1.5",
     "1. Poluvreme Celta Vigo više od 0.5 golova i Celta",
+<<<<<<< HEAD
     2.82,
+=======
+    2.72,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
     "",
     "vise 0.5 & manje 1.5",
     "1. Poluvreme Celta Vigo više od 0.5 golova i Celta",
+<<<<<<< HEAD
     5.1,
+=======
+    5.15,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
     "",
     "manje 0.5 & vise 1.5",
     "1. Poluvreme Celta Vigo manje od 0.5 golova i Celt",
+<<<<<<< HEAD
     7.0,
+=======
+    6.9,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
     "",
     "manje 0.5 & manje 1.5",
     "1. Poluvreme Celta Vigo manje od 0.5 golova i Celt",
+<<<<<<< HEAD
     2.12,
+=======
+    2.2,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
     "",
     "vise 0.5 & vise 2.5",
     "1. Poluvreme Celta Vigo više od 0.5 golova i Celta",
+<<<<<<< HEAD
     5.45,
+=======
+    5.15,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
     "",
     "vise 0.5 & manje 2.5",
     "1. Poluvreme Celta Vigo više od 0.5 golova i Celta",
+<<<<<<< HEAD
     2.75,
+=======
+    2.72,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
     "",
     "manje 0.5 & vise 2.5",
     "1. Poluvreme Celta Vigo manje od 0.5 golova i Celt",
+<<<<<<< HEAD
     20.0,
+=======
+    19.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
     "",
     "manje 0.5 & manje 2.5",
     "1. Poluvreme Celta Vigo manje od 0.5 golova i Celt",
+<<<<<<< HEAD
     1.83,
+=======
+    1.88,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
     "",
     "vise 1.5 & vise 2.5",
     "1. Poluvreme Celta Vigo više od 1.5 golova i Celta",
+<<<<<<< HEAD
     8.1,
+=======
+    7.8,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
@@ -4590,14 +6110,22 @@
     "",
     "manje 1.5 & vise 2.5",
     "1. Poluvreme Celta Vigo manje od 1.5 golova i Celt",
+<<<<<<< HEAD
     7.9,
+=======
+    7.6,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
     "",
     "manje 1.5 & manje 2.5",
     "1. Poluvreme Celta Vigo manje od 1.5 golova i Celt",
+<<<<<<< HEAD
     1.22,
+=======
+    1.24,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ]
   ]
@@ -4609,7 +6137,11 @@
     "",
     "vise 0.5 & vise 1.5",
     "1. Poluvreme Alaves više od 0.5 golova i Alaves vi",
+<<<<<<< HEAD
     4.55,
+=======
+    4.3,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
@@ -4623,56 +6155,88 @@
     "",
     "manje 0.5 & vise 1.5",
     "1. Poluvreme Alaves manje od 0.5 golova i Alaves v",
+<<<<<<< HEAD
     9.1,
+=======
+    8.8,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
     "",
     "manje 0.5 & manje 1.5",
     "1. Poluvreme Alaves manje od 0.5 golova i Alaves m",
+<<<<<<< HEAD
     1.59,
+=======
+    1.64,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
     "",
     "vise 0.5 & vise 2.5",
     "1. Poluvreme Alaves više od 0.5 golova i Alaves vi",
+<<<<<<< HEAD
     11.0,
+=======
+    9.7,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
     "",
     "vise 0.5 & manje 2.5",
     "1. Poluvreme Alaves više od 0.5 golova i Alaves ma",
+<<<<<<< HEAD
     3.1,
+=======
+    3.05,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
     "",
     "manje 0.5 & vise 2.5",
     "1. Poluvreme Alaves manje od 0.5 golova i Alaves v",
+<<<<<<< HEAD
     33.0,
+=======
+    31.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
     "",
     "manje 0.5 & manje 2.5",
     "1. Poluvreme Alaves manje od 0.5 golova i Alaves m",
+<<<<<<< HEAD
     1.46,
+=======
+    1.49,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
     "",
     "vise 1.5 & vise 2.5",
     "1. Poluvreme Alaves više od 1.5 golova i Alaves vi",
+<<<<<<< HEAD
     17.0,
+=======
+    15.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
     "",
     "vise 1.5 & manje 2.5",
     "1. Poluvreme Alaves više od 1.5 golova i Alaves ma",
+<<<<<<< HEAD
     16.0,
+=======
+    15.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
@@ -4686,7 +6250,11 @@
     "",
     "manje 1.5 & manje 2.5",
     "1. Poluvreme Alaves manje od 1.5 golova i Alaves m",
+<<<<<<< HEAD
     1.07,
+=======
+    1.08,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ]
   ]
@@ -4698,7 +6266,11 @@
     "",
     "vise 0.5 & vise 0.5",
     "Celta Vigo daje više od 0.5 golova u 1. poluvremen",
+<<<<<<< HEAD
     3.45,
+=======
+    3.3,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
@@ -4712,28 +6284,44 @@
     "",
     "vise 0.5 & vise 1.5",
     "Celta Vigo daje više od 0.5 golova u 1. poluvremen",
+<<<<<<< HEAD
     8.1,
+=======
+    7.7,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
     "",
     "vise 0.5 & manje 1.5",
     "Celta Vigo daje više od 0.5 golova u 1. poluvremen",
+<<<<<<< HEAD
     2.35,
+=======
+    2.32,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
     "",
     "vise 0.5 & vise 2.5",
     "Celta Vigo daje više od 0.5 golova u 1. poluvremen",
+<<<<<<< HEAD
     23.0,
+=======
+    21.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
     "",
     "vise 0.5 & manje 2.5",
     "Celta Vigo daje više od 0.5 golova u 1. poluvremen",
+<<<<<<< HEAD
     2.05,
+=======
+    2.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
@@ -4747,35 +6335,55 @@
     "",
     "manje 0.5 & manje 0.5",
     "Celta Vigo daje manje od 0.5 golova u 1. poluvreme",
+<<<<<<< HEAD
     3.6,
+=======
+    3.75,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
     "",
     "manje 0.5 & vise 1.5",
     "Celta Vigo daje manje od 0.5 golova u 1. poluvreme",
+<<<<<<< HEAD
     7.0,
+=======
+    6.9,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
     "",
     "manje 0.5 & manje 1.5",
     "Celta Vigo daje manje od 0.5 golova u 1. poluvreme",
+<<<<<<< HEAD
     2.12,
+=======
+    2.2,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
     "",
     "manje 0.5 & vise 2.5",
     "Celta Vigo daje manje od 0.5 golova u 1. poluvreme",
+<<<<<<< HEAD
     20.0,
+=======
+    19.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
     "",
     "manje 0.5 & manje 2.5",
     "Celta Vigo daje manje od 0.5 golova u 1. poluvreme",
+<<<<<<< HEAD
     1.83,
+=======
+    1.88,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ]
   ]
@@ -4787,7 +6395,11 @@
     "",
     "vise 0.5 & vise 0.5",
     "Alaves daje više od 0.5 golova u 1. poluvremenu i ",
+<<<<<<< HEAD
     5.6,
+=======
+    5.25,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
@@ -4801,28 +6413,44 @@
     "",
     "vise 0.5 & vise 1.5",
     "Alaves daje više od 0.5 golova u 1. poluvremenu i ",
+<<<<<<< HEAD
     16.0,
+=======
+    15.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
     "",
     "vise 0.5 & manje 1.5",
     "Alaves daje više od 0.5 golova u 1. poluvremenu i ",
+<<<<<<< HEAD
     2.87,
+=======
+    2.8,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
     "",
     "vise 0.5 & vise 2.5",
     "Alaves daje više od 0.5 golova u 1. poluvremenu i ",
+<<<<<<< HEAD
     55.0,
+=======
+    50.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
     "",
     "vise 0.5 & manje 2.5",
     "Alaves daje više od 0.5 golova u 1. poluvremenu i ",
+<<<<<<< HEAD
     2.65,
+=======
+    2.57,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
@@ -4836,35 +6464,55 @@
     "",
     "manje 0.5 & manje 0.5",
     "Alaves daje manje od 0.5 golova u 1. poluvremenu i",
+<<<<<<< HEAD
     2.4,
+=======
+    2.5,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
     "",
     "manje 0.5 & vise 1.5",
     "Alaves daje manje od 0.5 golova u 1. poluvremenu i",
+<<<<<<< HEAD
     9.1,
+=======
+    8.8,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
     "",
     "manje 0.5 & manje 1.5",
     "Alaves daje manje od 0.5 golova u 1. poluvremenu i",
+<<<<<<< HEAD
     1.59,
+=======
+    1.64,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
     "",
     "manje 0.5 & vise 2.5",
     "Alaves daje manje od 0.5 golova u 1. poluvremenu i",
+<<<<<<< HEAD
     33.0,
+=======
+    31.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
     "",
     "manje 0.5 & manje 2.5",
     "Alaves daje manje od 0.5 golova u 1. poluvremenu i",
+<<<<<<< HEAD
     1.46,
+=======
+    1.49,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ]
   ]
@@ -4876,14 +6524,22 @@
     "0-",
     "x & manje 0.5",
     "nerešeno i Celta Vigo manje od 0.5 gola na utakmic",
+<<<<<<< HEAD
     7.4,
+=======
+    7.8,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     0.5
    ],
    [
     "2-",
     "2 & manje 0.5",
     "Alaves pobednik i Celta Vigo manje od 0.5 gola na ",
+<<<<<<< HEAD
     5.4,
+=======
+    5.55,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     0.5
    ],
    [
@@ -4897,14 +6553,22 @@
     "0+",
     "x & vise 0.5",
     "nerešeno i Celta Vigo više od 0.5 gola na utakmici",
+<<<<<<< HEAD
     4.45,
+=======
+    4.35,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     0.5
    ],
    [
     "2+",
     "2 & vise 0.5",
     "Alaves pobednik i Celta Vigo više od 0.5 gola na u",
+<<<<<<< HEAD
     6.9,
+=======
+    6.7,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     0.5
    ]
   ]
@@ -4916,42 +6580,66 @@
     "1-",
     "1 & manje 1.5",
     "Celta Vigo pobednik i Celta Vigo manje od 1.5 gola",
+<<<<<<< HEAD
     5.9,
+=======
+    6.2,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
     "0-",
     "x & manje 1.5",
     "nerešeno i Celta Vigo manje od 1.5 gola na utakmic",
+<<<<<<< HEAD
     3.75,
+=======
+    3.85,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
     "2-",
     "2 & manje 1.5",
     "Alaves pobednik i Celta Vigo manje od 1.5 gola na ",
+<<<<<<< HEAD
     3.7,
+=======
+    3.75,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
     "1+",
     "1 & vise 1.5",
     "Celta Vigo pobednik i Celta Vigo više od 1.5 gola ",
+<<<<<<< HEAD
     2.62,
+=======
+    2.57,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
     "0+",
     "x & vise 1.5",
     "nerešeno i Celta Vigo više od 1.5 gola na utakmici",
+<<<<<<< HEAD
     12.0,
+=======
+    11.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
     "2+",
     "2 & vise 1.5",
     "Alaves pobednik i Celta Vigo više od 1.5 gola na u",
+<<<<<<< HEAD
     23.0,
+=======
+    21.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ]
   ]
@@ -4963,42 +6651,66 @@
     "1-",
     "1 & manje 2.5",
     "Celta Vigo pobednik i Celta Vigo manje od 2.5 gola",
+<<<<<<< HEAD
     2.85,
+=======
+    2.92,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
     "0-",
     "x & manje 2.5",
     "nerešeno i Celta Vigo manje od 2.5 gola na utakmic",
+<<<<<<< HEAD
     3.2,
+=======
+    3.25,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
     "2-",
     "2 & manje 2.5",
     "Alaves pobednik i Celta Vigo manje od 2.5 gola na ",
+<<<<<<< HEAD
     3.45,
+=======
+    3.5,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
     "1+",
     "1 & vise 2.5",
     "Celta Vigo pobednik i Celta Vigo više od 2.5 gola ",
+<<<<<<< HEAD
     5.0,
+=======
+    4.75,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
     "0+",
     "x & vise 2.5",
     "nerešeno i Celta Vigo više od 2.5 gola na utakmici",
+<<<<<<< HEAD
     45.0,
+=======
+    40.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
     "2+",
     "2 & vise 2.5",
     "Alaves pobednik i Celta Vigo više od 2.5 gola na u",
+<<<<<<< HEAD
     85.0,
+=======
+    80.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ]
   ]
@@ -5010,7 +6722,11 @@
     "1-",
     "1 & manje 3.5",
     "Celta Vigo pobednik i Celta Vigo manje od 3.5 gola",
+<<<<<<< HEAD
     2.2,
+=======
+    2.22,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.5
    ],
    [
@@ -5078,7 +6794,11 @@
     "1+",
     "1 & vise 4.5",
     "Celta Vigo pobednik i Celta Vigo više od 4.5 gola ",
+<<<<<<< HEAD
     29.0,
+=======
+    26.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     4.5
    ],
    [
@@ -5097,28 +6817,44 @@
     "1-",
     "1 & manje 0.5",
     "Celta Vigo pobednik  i Alaves manje od 0.5 gola na",
+<<<<<<< HEAD
     3.1,
+=======
+    3.15,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     0.5
    ],
    [
     "0-",
     "x & manje 0.5",
     "nerešeno i Alaves manje od 0.5 gola na utakmici",
+<<<<<<< HEAD
     7.4,
+=======
+    7.8,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     0.5
    ],
    [
     "1+",
     "1 & vise 0.5",
     "Celta Vigo pobednik  i Alaves više od 0.5 gola na ",
+<<<<<<< HEAD
     4.45,
+=======
+    4.25,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     0.5
    ],
    [
     "0+",
     "x & vise 0.5",
     "nerešeno i Alaves više od 0.5 gola na utakmici",
+<<<<<<< HEAD
     4.45,
+=======
+    4.35,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     0.5
    ],
    [
@@ -5137,42 +6873,66 @@
     "1-",
     "1 & manje 1.5",
     "Celta Vigo pobednik  i Alaves manje od 1.5 gola na",
+<<<<<<< HEAD
     2.1,
+=======
+    2.12,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
     "0-",
     "x & manje 1.5",
     "nerešeno i Alaves manje od 1.5 gola na utakmici",
+<<<<<<< HEAD
     3.75,
+=======
+    3.85,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
     "2-",
     "2 & manje 1.5",
     "Alaves pobednik  i Alaves manje od 1.5 gola na uta",
+<<<<<<< HEAD
     7.9,
+=======
+    8.3,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
     "1+",
     "1 & vise 1.5",
     "Celta Vigo pobednik  i Alaves više od 1.5 gola na ",
+<<<<<<< HEAD
     16.0,
+=======
+    15.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
     "0+",
     "x & vise 1.5",
     "nerešeno i Alaves više od 1.5 gola na utakmici",
+<<<<<<< HEAD
     12.0,
+=======
+    11.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
     "2+",
     "2 & vise 1.5",
     "Alaves pobednik  i Alaves više od 1.5 gola na utak",
+<<<<<<< HEAD
     4.9,
+=======
+    4.8,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ]
   ]
@@ -5191,35 +6951,55 @@
     "0-",
     "x & manje 2.5",
     "nerešeno i Alaves manje od 2.5 gola na utakmici",
+<<<<<<< HEAD
     3.2,
+=======
+    3.25,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
     "2-",
     "2 & manje 2.5",
     "Alaves pobednik  i Alaves manje od 2.5 gola na uta",
+<<<<<<< HEAD
     4.4,
+=======
+    4.5,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
     "1+",
     "1 & vise 2.5",
     "Celta Vigo pobednik  i Alaves više od 2.5 gola na ",
+<<<<<<< HEAD
     70.0,
+=======
+    65.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
     "0+",
     "x & vise 2.5",
     "nerešeno i Alaves više od 2.5 gola na utakmici",
+<<<<<<< HEAD
     45.0,
+=======
+    40.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
     "2+",
     "2 & vise 2.5",
     "Alaves pobednik  i Alaves više od 2.5 gola na utak",
+<<<<<<< HEAD
     10.0,
+=======
+    9.5,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ]
   ]
@@ -5231,7 +7011,11 @@
     "1-",
     "1 & manje 3.5",
     "Celta Vigo pobednik  i Alaves manje od 3.5 gola na",
+<<<<<<< HEAD
     1.97,
+=======
+    1.95,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.5
    ],
    [
@@ -5245,7 +7029,11 @@
     "2-",
     "2 & manje 3.5",
     "Alaves pobednik  i Alaves manje od 3.5 gola na uta",
+<<<<<<< HEAD
     3.65,
+=======
+    3.7,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.5
    ],
    [
@@ -5266,7 +7054,11 @@
     "2+",
     "2 & vise 3.5",
     "Alaves pobednik  i Alaves više od 3.5 gola na utak",
+<<<<<<< HEAD
     27.0,
+=======
+    24.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.5
    ]
   ]
@@ -5296,6 +7088,16 @@
     4.5
    ],
    [
+<<<<<<< HEAD
+=======
+    "1+",
+    "1 & vise 4.5",
+    "Celta Vigo pobednik  i Alaves više od 4.5 gola na ",
+    125.0,
+    4.5
+   ],
+   [
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     "0+",
     "x & vise 4.5",
     "nerešeno i Alaves više od 4.5 gola na utakmici",
@@ -5306,7 +7108,11 @@
     "2+",
     "2 & vise 4.5",
     "Alaves pobednik  i Alaves više od 4.5 gola na utak",
+<<<<<<< HEAD
     75.0,
+=======
+    70.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     4.5
    ]
   ]
@@ -5469,21 +7275,34 @@
     "1-2",
     "Deportivo de A Coruna 1-2 gola na utakmici",
     1.62,
+<<<<<<< HEAD
     -2.0
+=======
+    2.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "",
     "1-3",
     "Deportivo de A Coruna  1-3 gola na utakmici",
+<<<<<<< HEAD
     1.35,
     -3.0
+=======
+    1.34,
+    3.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "",
     "2-3",
     "Deportivo de A Coruna 2-3 gola na utakmici",
     2.47,
+<<<<<<< HEAD
     -3.0
+=======
+    3.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ]
   ]
  },
@@ -5750,7 +7569,11 @@
     "0-",
     "x & manje 0.5",
     "nerešeno i Deportivo de A Coruna manje od 0.5 gola",
+<<<<<<< HEAD
     8.7,
+=======
+    8.8,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     0.5
    ],
    [
@@ -5778,7 +7601,11 @@
     "2+",
     "2 & vise 0.5",
     "Levante pobednik i Deportivo de A Coruna više od 0",
+<<<<<<< HEAD
     5.8,
+=======
+    5.75,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     0.5
    ]
   ]
@@ -5790,7 +7617,11 @@
     "1-",
     "1 & manje 1.5",
     "Deportivo de A Coruna pobednik i Deportivo de A Co",
+<<<<<<< HEAD
     6.9,
+=======
+    7.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
@@ -5804,21 +7635,33 @@
     "2-",
     "2 & manje 1.5",
     "Levante pobednik i Deportivo de A Coruna manje od ",
+<<<<<<< HEAD
     3.5,
+=======
+    3.45,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
     "1+",
     "1 & vise 1.5",
     "Deportivo de A Coruna pobednik i Deportivo de A Co",
+<<<<<<< HEAD
     2.6,
+=======
+    2.62,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
     "0+",
     "x & vise 1.5",
     "nerešeno i Deportivo de A Coruna više od 1.5 gola ",
+<<<<<<< HEAD
     9.3,
+=======
+    9.2,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
@@ -5851,7 +7694,11 @@
     "2-",
     "2 & manje 2.5",
     "Levante pobednik i Deportivo de A Coruna manje od ",
+<<<<<<< HEAD
     3.2,
+=======
+    3.15,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
@@ -5884,7 +7731,11 @@
     "1-",
     "1 & manje 3.5",
     "Deportivo de A Coruna pobednik i Deportivo de A Co",
+<<<<<<< HEAD
     2.35,
+=======
+    2.37,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.5
    ],
    [
@@ -5931,14 +7782,22 @@
     "1-",
     "1 & manje 4.5",
     "Deportivo de A Coruna pobednik i Deportivo de A Co",
+<<<<<<< HEAD
     2.12,
+=======
+    2.15,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     4.5
    ],
    [
     "0-",
     "x & manje 4.5",
     "nerešeno i Deportivo de A Coruna manje od 4.5 gola",
+<<<<<<< HEAD
     3.2,
+=======
+    3.15,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     4.5
    ],
    [
@@ -5952,7 +7811,11 @@
     "1+",
     "1 & vise 4.5",
     "Deportivo de A Coruna pobednik i Deportivo de A Co",
+<<<<<<< HEAD
     24.0,
+=======
+    25.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     4.5
    ],
    [
@@ -6013,14 +7876,22 @@
     "/1+",
     "vise 3.5",
     "Espanyol više od 3.5 kornera",
+<<<<<<< HEAD
     1.74,
+=======
+    1.75,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.5
    ],
    [
     "/1-",
     "manje 4.5",
     "Espanyol manje od 4.5 kornera",
+<<<<<<< HEAD
     1.5,
+=======
+    1.49,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     4.5
    ],
    [
@@ -6034,7 +7905,11 @@
     "/1-",
     "manje 5.5",
     "Espanyol manje od 5.5 kornera",
+<<<<<<< HEAD
     1.26,
+=======
+    1.25,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     5.5
    ],
    [
@@ -6074,14 +7949,22 @@
     "/2+",
     "vise 4.5",
     "Atletico Madrid će imati više od 4.5 kornera",
+<<<<<<< HEAD
     1.58,
+=======
+    1.59,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     4.5
    ],
    [
     "/2-",
     "manje 5.5",
     "Atletico Madrid će imati manje od 5.5 kornera",
+<<<<<<< HEAD
     1.69,
+=======
+    1.68,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     5.5
    ],
    [
@@ -6102,7 +7985,11 @@
     "/2+",
     "vise 6.5",
     "Atletico Madrid će imati više od 6.5 kornera",
+<<<<<<< HEAD
     2.77,
+=======
+    2.8,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     6.5
    ],
    [
@@ -6129,21 +8016,33 @@
     "1-2",
     "Espanyol 1-2 gola na utakmici",
     1.69,
+<<<<<<< HEAD
     -2.0
+=======
+    2.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "",
     "1-3",
     "Espanyol  1-3 gola na utakmici",
     1.52,
+<<<<<<< HEAD
     -3.0
+=======
+    3.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "",
     "2-3",
     "Espanyol 2-3 gola na utakmici",
     3.45,
+<<<<<<< HEAD
     -3.0
+=======
+    3.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ]
   ]
  },
@@ -6155,21 +8054,33 @@
     "1-2",
     "Atletico Madrid 1-2 gola na utakmici",
     1.66,
+<<<<<<< HEAD
     -2.0
+=======
+    2.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "",
     "1-3",
     "Atletico Madrid 1-3 gola na utakmici",
     1.32,
+<<<<<<< HEAD
     -3.0
+=======
+    3.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "",
     "2-3",
     "Atletico Madrid 2-3 gola na utakmici",
     2.22,
+<<<<<<< HEAD
     -3.0
+=======
+    3.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ]
   ]
  },
@@ -6286,7 +8197,11 @@
     "3",
     "3+",
     "Atletico Madrid daje 3 ili više golova",
+<<<<<<< HEAD
     3.5,
+=======
+    3.55,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.0
    ]
   ]
@@ -6453,7 +8368,11 @@
     "",
     "vise 0.5 & vise 2.5",
     "1. Poluvreme Atletico Madrid više od 0.5 golova i ",
+<<<<<<< HEAD
     3.85,
+=======
+    3.8,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
@@ -6706,7 +8625,11 @@
     "1+",
     "1 & vise 0.5",
     "Espanyol pobednik i Espanyol više od 0.5 gola na u",
+<<<<<<< HEAD
     3.85,
+=======
+    3.9,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     0.5
    ],
    [
@@ -6753,7 +8676,11 @@
     "1+",
     "1 & vise 1.5",
     "Espanyol pobednik i Espanyol više od 1.5 gola na u",
+<<<<<<< HEAD
     5.0,
+=======
+    5.1,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
@@ -6873,7 +8800,11 @@
     "1-",
     "1 & manje 4.5",
     "Espanyol pobednik i Espanyol manje od 4.5 gola na ",
+<<<<<<< HEAD
     3.9,
+=======
+    4.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     4.5
    ],
    [
@@ -6934,7 +8865,11 @@
     "1+",
     "1 & vise 0.5",
     "Espanyol pobednik  i Atletico Madrid više od 0.5 g",
+<<<<<<< HEAD
     6.6,
+=======
+    6.7,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     0.5
    ],
    [
@@ -7101,7 +9036,11 @@
     "1-",
     "1 & manje 4.5",
     "Espanyol pobednik  i Atletico Madrid manje od 4.5 ",
+<<<<<<< HEAD
     3.85,
+=======
+    3.9,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     4.5
    ],
    [
@@ -7299,21 +9238,33 @@
     "1-2",
     "Getafe 1-2 gola na utakmici",
     1.7,
+<<<<<<< HEAD
     -2.0
+=======
+    2.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "",
     "1-3",
     "Getafe  1-3 gola na utakmici",
     1.53,
+<<<<<<< HEAD
     -3.0
+=======
+    3.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "",
     "2-3",
     "Getafe 2-3 gola na utakmici",
     3.55,
+<<<<<<< HEAD
     -3.0
+=======
+    3.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ]
   ]
  },
@@ -7325,21 +9276,33 @@
     "1-2",
     "Rayo Vallecano 1-2 gola na utakmici",
     1.68,
+<<<<<<< HEAD
     -2.0
+=======
+    2.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "",
     "1-3",
     "Rayo Vallecano 1-3 gola na utakmici",
     1.49,
+<<<<<<< HEAD
     -3.0
+=======
+    3.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "",
     "2-3",
     "Rayo Vallecano 2-3 gola na utakmici",
     3.3,
+<<<<<<< HEAD
     -3.0
+=======
+    3.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ]
   ]
  },
@@ -8455,21 +10418,33 @@
     "1-2",
     "Malaga 1-2 gola na utakmici",
     1.63,
+<<<<<<< HEAD
     -2.0
+=======
+    2.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "",
     "1-3",
     "Malaga  1-3 gola na utakmici",
     1.41,
+<<<<<<< HEAD
     -3.0
+=======
+    3.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "",
     "2-3",
     "Malaga 2-3 gola na utakmici",
     2.87,
+<<<<<<< HEAD
     -3.0
+=======
+    3.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ]
   ]
  },
@@ -8481,21 +10456,34 @@
     "1-2",
     "Real Sociedad 1-2 gola na utakmici",
     1.62,
+<<<<<<< HEAD
     -2.0
+=======
+    2.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "",
     "1-3",
     "Real Sociedad 1-3 gola na utakmici",
+<<<<<<< HEAD
     1.33,
     -3.0
+=======
+    1.34,
+    3.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "",
     "2-3",
     "Real Sociedad 2-3 gola na utakmici",
     2.4,
+<<<<<<< HEAD
     -3.0
+=======
+    3.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ]
   ]
  },
@@ -8579,7 +10567,11 @@
     "3",
     "3+",
     "Malaga daje 3 ili više golova",
+<<<<<<< HEAD
     6.2,
+=======
+    6.1,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.0
    ]
   ]
@@ -8591,14 +10583,22 @@
     "0",
     "0",
     "Real Sociedad ne daje gol",
+<<<<<<< HEAD
     4.3,
+=======
+    4.25,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.0
    ],
    [
     "1",
     "1",
     "Real Sociedad daje tačno 1 gol",
+<<<<<<< HEAD
     2.8,
+=======
+    2.77,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.0
    ],
    [
@@ -8631,7 +10631,11 @@
     "2",
     "ne",
     "Malaga ne daje gol na utakmici",
+<<<<<<< HEAD
     3.25,
+=======
+    3.3,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     null
    ]
   ]
@@ -8650,7 +10654,11 @@
     "2",
     "ne",
     "Real Sociedad ne daje gol na utakmici",
+<<<<<<< HEAD
     4.35,
+=======
+    4.3,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     null
    ]
   ]
@@ -8676,7 +10684,11 @@
     "",
     "manje 0.5 & vise 1.5",
     "1. Poluvreme Malaga manje od 0.5 golova i Malaga v",
+<<<<<<< HEAD
     7.5,
+=======
+    7.4,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
@@ -8690,7 +10702,11 @@
     "",
     "vise 0.5 & vise 2.5",
     "1. Poluvreme Malaga više od 0.5 golova i Malaga vi",
+<<<<<<< HEAD
     6.6,
+=======
+    6.5,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
@@ -8732,7 +10748,11 @@
     "",
     "manje 1.5 & vise 2.5",
     "1. Poluvreme Malaga manje od 1.5 golova i Malaga v",
+<<<<<<< HEAD
     9.2,
+=======
+    9.1,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
@@ -8758,7 +10778,11 @@
     "",
     "vise 0.5 & manje 1.5",
     "1. Poluvreme Real Sociedad više od 0.5 golova i Re",
+<<<<<<< HEAD
     5.35,
+=======
+    5.3,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
@@ -8772,14 +10796,22 @@
     "",
     "manje 0.5 & manje 1.5",
     "1. Poluvreme Real Sociedad manje od 0.5 golova i R",
+<<<<<<< HEAD
     2.35,
+=======
+    2.32,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
     "",
     "vise 0.5 & vise 2.5",
     "1. Poluvreme Real Sociedad više od 0.5 golova i Re",
+<<<<<<< HEAD
     4.65,
+=======
+    4.7,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
@@ -8828,7 +10860,11 @@
     "",
     "manje 1.5 & manje 2.5",
     "1. Poluvreme Real Sociedad manje od 1.5 golova i R",
+<<<<<<< HEAD
     1.28,
+=======
+    1.27,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ]
   ]
@@ -8840,7 +10876,11 @@
     "",
     "vise 0.5 & vise 0.5",
     "Malaga daje više od 0.5 golova u 1. poluvremenu i ",
+<<<<<<< HEAD
     4.0,
+=======
+    3.9,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
@@ -8854,7 +10894,11 @@
     "",
     "vise 0.5 & vise 1.5",
     "Malaga daje više od 0.5 golova u 1. poluvremenu i ",
+<<<<<<< HEAD
     9.8,
+=======
+    9.7,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
@@ -8868,14 +10912,22 @@
     "",
     "vise 0.5 & vise 2.5",
     "Malaga daje više od 0.5 golova u 1. poluvremenu i ",
+<<<<<<< HEAD
     30.0,
+=======
+    29.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
     "",
     "vise 0.5 & manje 2.5",
     "Malaga daje više od 0.5 golova u 1. poluvremenu i ",
+<<<<<<< HEAD
     2.22,
+=======
+    2.2,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
@@ -8896,7 +10948,11 @@
     "",
     "manje 0.5 & vise 1.5",
     "Malaga daje manje od 0.5 golova u 1. poluvremenu i",
+<<<<<<< HEAD
     7.5,
+=======
+    7.4,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
@@ -8943,7 +10999,11 @@
     "",
     "vise 0.5 & vise 1.5",
     "Real Sociedad daje više od 0.5 golova u 1. poluvre",
+<<<<<<< HEAD
     6.9,
+=======
+    7.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
@@ -8992,7 +11052,11 @@
     "",
     "manje 0.5 & manje 1.5",
     "Real Sociedad daje manje od 0.5 golova u 1. poluvr",
+<<<<<<< HEAD
     2.35,
+=======
+    2.32,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
@@ -9032,7 +11096,11 @@
     "1+",
     "1 & vise 0.5",
     "Malaga pobednik i Malaga više od 0.5 gola na utakm",
+<<<<<<< HEAD
     3.0,
+=======
+    2.95,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     0.5
    ],
    [
@@ -9046,7 +11114,11 @@
     "2+",
     "2 & vise 0.5",
     "Real Sociedad pobednik i Malaga više od 0.5 gola n",
+<<<<<<< HEAD
     3.85,
+=======
+    3.9,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     0.5
    ]
   ]
@@ -9072,14 +11144,22 @@
     "2-",
     "2 & manje 1.5",
     "Real Sociedad pobednik i Malaga manje od 1.5 gola ",
+<<<<<<< HEAD
     2.37,
+=======
+    2.4,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
     "1+",
     "1 & vise 1.5",
     "Malaga pobednik i Malaga više od 1.5 gola na utakm",
+<<<<<<< HEAD
     3.8,
+=======
+    3.75,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
@@ -9126,7 +11206,11 @@
     "1+",
     "1 & vise 2.5",
     "Malaga pobednik i Malaga više od 2.5 gola na utakm",
+<<<<<<< HEAD
     6.7,
+=======
+    6.6,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
@@ -9166,7 +11250,11 @@
     "2-",
     "2 & manje 3.5",
     "Real Sociedad pobednik i Malaga manje od 3.5 gola ",
+<<<<<<< HEAD
     2.1,
+=======
+    2.12,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.5
    ],
    [
@@ -9199,7 +11287,11 @@
     "1-",
     "1 & manje 4.5",
     "Malaga pobednik i Malaga manje od 4.5 gola na utak",
+<<<<<<< HEAD
     3.1,
+=======
+    3.05,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     4.5
    ],
    [
@@ -9213,14 +11305,22 @@
     "2-",
     "2 & manje 4.5",
     "Real Sociedad pobednik i Malaga manje od 4.5 gola ",
+<<<<<<< HEAD
     2.1,
+=======
+    2.12,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     4.5
    ],
    [
     "1+",
     "1 & vise 4.5",
     "Malaga pobednik i Malaga više od 4.5 gola na utakm",
+<<<<<<< HEAD
     40.0,
+=======
+    39.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     4.5
    ],
    [
@@ -9246,7 +11346,11 @@
     "1-",
     "1 & manje 0.5",
     "Malaga pobednik  i Real Sociedad manje od 0.5 gola",
+<<<<<<< HEAD
     5.5,
+=======
+    5.45,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     0.5
    ],
    [
@@ -9260,7 +11364,11 @@
     "1+",
     "1 & vise 0.5",
     "Malaga pobednik  i Real Sociedad više od 0.5 gola ",
+<<<<<<< HEAD
     5.2,
+=======
+    5.15,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     0.5
    ],
    [
@@ -9274,7 +11382,11 @@
     "2+",
     "2 & vise 0.5",
     "Real Sociedad pobednik  i Real Sociedad više od 0.",
+<<<<<<< HEAD
     2.1,
+=======
+    2.12,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     0.5
    ]
   ]
@@ -9286,7 +11398,11 @@
     "1-",
     "1 & manje 1.5",
     "Malaga pobednik  i Real Sociedad manje od 1.5 gola",
+<<<<<<< HEAD
     3.4,
+=======
+    3.35,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
@@ -9307,7 +11423,11 @@
     "1+",
     "1 & vise 1.5",
     "Malaga pobednik  i Real Sociedad više od 1.5 gola ",
+<<<<<<< HEAD
     15.0,
+=======
+    14.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
@@ -9321,7 +11441,11 @@
     "2+",
     "2 & vise 1.5",
     "Real Sociedad pobednik  i Real Sociedad više od 1.",
+<<<<<<< HEAD
     2.6,
+=======
+    2.62,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ]
   ]
@@ -9333,7 +11457,11 @@
     "1-",
     "1 & manje 2.5",
     "Malaga pobednik  i Real Sociedad manje od 2.5 gola",
+<<<<<<< HEAD
     3.05,
+=======
+    3.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
@@ -9368,7 +11496,11 @@
     "2+",
     "2 & vise 2.5",
     "Real Sociedad pobednik  i Real Sociedad više od 2.",
+<<<<<<< HEAD
     4.45,
+=======
+    4.5,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ]
   ]
@@ -9380,7 +11512,11 @@
     "1-",
     "1 & manje 3.5",
     "Malaga pobednik  i Real Sociedad manje od 3.5 gola",
+<<<<<<< HEAD
     3.0,
+=======
+    2.95,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.5
    ],
    [
@@ -9415,7 +11551,11 @@
     "2+",
     "2 & vise 3.5",
     "Real Sociedad pobednik  i Real Sociedad više od 3.",
+<<<<<<< HEAD
     9.2,
+=======
+    9.3,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.5
    ]
   ]
@@ -9427,7 +11567,11 @@
     "1-",
     "1 & manje 4.5",
     "Malaga pobednik  i Real Sociedad manje od 4.5 gola",
+<<<<<<< HEAD
     3.0,
+=======
+    2.95,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     4.5
    ],
    [
@@ -9441,7 +11585,11 @@
     "2-",
     "2 & manje 4.5",
     "Real Sociedad pobednik  i Real Sociedad manje od 4",
+<<<<<<< HEAD
     2.2,
+=======
+    2.22,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     4.5
    ],
    [
@@ -9625,21 +11773,33 @@
     "1-2",
     "Osasuna 1-2 gola na utakmici",
     1.66,
+<<<<<<< HEAD
     -2.0
+=======
+    2.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "",
     "1-3",
     "Osasuna  1-3 gola na utakmici",
     1.32,
+<<<<<<< HEAD
     -3.0
+=======
+    3.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "",
     "2-3",
     "Osasuna 2-3 gola na utakmici",
     2.22,
+<<<<<<< HEAD
     -3.0
+=======
+    3.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ]
   ]
  },
@@ -9651,21 +11811,34 @@
     "1-2",
     "Racing Santander 1-2 gola na utakmici",
     1.63,
+<<<<<<< HEAD
     -2.0
+=======
+    2.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "",
     "1-3",
     "Racing Santander 1-3 gola na utakmici",
     1.41,
+<<<<<<< HEAD
     -3.0
+=======
+    3.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "",
     "2-3",
     "Racing Santander 2-3 gola na utakmici",
+<<<<<<< HEAD
     2.87,
     -3.0
+=======
+    2.85,
+    3.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ]
   ]
  },
@@ -9716,7 +11889,11 @@
     "23",
     "2-3",
     "Racing Santander 2 ili 3 gola u svakom poluvremenu",
+<<<<<<< HEAD
     29.0,
+=======
+    28.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.0
    ]
   ]
@@ -9742,7 +11919,11 @@
     "2",
     "2",
     "Osasuna daje tačno 2 gola",
+<<<<<<< HEAD
     3.4,
+=======
+    3.35,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.0
    ],
    [
@@ -9956,7 +12137,11 @@
     "",
     "vise 0.5 & manje 2.5",
     "1. Poluvreme Racing Santander više od 0.5 golova i",
+<<<<<<< HEAD
     2.85,
+=======
+    2.82,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
@@ -9970,7 +12155,11 @@
     "",
     "manje 0.5 & manje 2.5",
     "1. Poluvreme Racing Santander manje od 0.5 golova ",
+<<<<<<< HEAD
     1.68,
+=======
+    1.69,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
@@ -10099,7 +12288,11 @@
     "",
     "vise 0.5 & vise 0.5",
     "Racing Santander daje više od 0.5 golova u 1. polu",
+<<<<<<< HEAD
     4.0,
+=======
+    3.9,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
@@ -10113,21 +12306,33 @@
     "",
     "vise 0.5 & vise 1.5",
     "Racing Santander daje više od 0.5 golova u 1. polu",
+<<<<<<< HEAD
     9.8,
+=======
+    9.7,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
     "",
     "vise 0.5 & manje 1.5",
     "Racing Santander daje više od 0.5 golova u 1. polu",
+<<<<<<< HEAD
     2.52,
+=======
+    2.5,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
     "",
     "vise 0.5 & vise 2.5",
     "Racing Santander daje više od 0.5 golova u 1. polu",
+<<<<<<< HEAD
     30.0,
+=======
+    29.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
@@ -10176,7 +12381,11 @@
     "",
     "manje 0.5 & manje 2.5",
     "Racing Santander daje manje od 0.5 golova u 1. pol",
+<<<<<<< HEAD
     1.68,
+=======
+    1.69,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ]
   ]
@@ -10256,7 +12465,11 @@
     "0+",
     "x & vise 1.5",
     "nerešeno i Osasuna više od 1.5 gola na utakmici",
+<<<<<<< HEAD
     8.0,
+=======
+    7.9,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
@@ -10303,7 +12516,11 @@
     "0+",
     "x & vise 2.5",
     "nerešeno i Osasuna više od 2.5 gola na utakmici",
+<<<<<<< HEAD
     24.0,
+=======
+    23.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
@@ -10376,7 +12593,11 @@
     "0-",
     "x & manje 4.5",
     "nerešeno i Osasuna manje od 4.5 gola na utakmici",
+<<<<<<< HEAD
     3.4,
+=======
+    3.35,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     4.5
    ],
    [
@@ -10484,7 +12705,11 @@
     "0+",
     "x & vise 1.5",
     "nerešeno i Racing Santander više od 1.5 gola na ut",
+<<<<<<< HEAD
     8.0,
+=======
+    7.9,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
@@ -10531,7 +12756,11 @@
     "0+",
     "x & vise 2.5",
     "nerešeno i Racing Santander više od 2.5 gola na ut",
+<<<<<<< HEAD
     24.0,
+=======
+    23.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
@@ -10564,7 +12793,11 @@
     "2-",
     "2 & manje 3.5",
     "Racing Santander pobednik  i Racing Santander manj",
+<<<<<<< HEAD
     3.7,
+=======
+    3.75,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.5
    ],
    [
@@ -10604,7 +12837,11 @@
     "0-",
     "x & manje 4.5",
     "nerešeno i Racing Santander manje od 4.5 gola na u",
+<<<<<<< HEAD
     3.4,
+=======
+    3.35,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     4.5
    ],
    [
@@ -10794,22 +13031,37 @@
     "",
     "1-2",
     "Real Madrid 1-2 gola na utakmici",
+<<<<<<< HEAD
     2.22,
     -2.0
+=======
+    2.27,
+    2.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "",
     "1-3",
     "Real Madrid  1-3 gola na utakmici",
+<<<<<<< HEAD
     1.49,
     -3.0
+=======
+    1.51,
+    3.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "",
     "2-3",
     "Real Madrid 2-3 gola na utakmici",
+<<<<<<< HEAD
     2.02,
     -3.0
+=======
+    2.05,
+    3.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ]
   ]
  },
@@ -10820,22 +13072,37 @@
     "",
     "1-2",
     "Sevilla 1-2 gola na utakmici",
+<<<<<<< HEAD
     1.83,
     -2.0
+=======
+    1.85,
+    2.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "",
     "1-3",
     "Sevilla 1-3 gola na utakmici",
+<<<<<<< HEAD
     1.7,
     -3.0
+=======
+    1.72,
+    3.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "",
     "2-3",
     "Sevilla 2-3 gola na utakmici",
+<<<<<<< HEAD
     4.45,
     -3.0
+=======
+    4.55,
+    3.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ]
   ]
  },
@@ -10860,7 +13127,11 @@
     "23",
     "2-3",
     "Real Madrid 2 ili 3 gola u svakom poluvremenu",
+<<<<<<< HEAD
     6.3,
+=======
+    6.2,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.0
    ]
   ]
@@ -10872,21 +13143,33 @@
     "12",
     "1-2",
     "Sevilla 1 ili 2 gola u svakom poluvremenu",
+<<<<<<< HEAD
     6.7,
+=======
+    6.8,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
     "13",
     "1-3",
     "Sevilla 1,2 ili 3 gola u svakom poluvremenu",
+<<<<<<< HEAD
     6.5,
+=======
+    6.6,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.0
    ],
    [
     "23",
     "2-3",
     "Sevilla 2 ili 3 gola u svakom poluvremenu",
+<<<<<<< HEAD
     65.0,
+=======
+    70.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.0
    ]
   ]
@@ -10905,21 +13188,33 @@
     "1",
     "1",
     "Real Madrid daje tačno 1 gol",
+<<<<<<< HEAD
     4.85,
+=======
+    5.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.0
    ],
    [
     "2",
     "2",
     "Real Madrid daje tačno 2 gola",
+<<<<<<< HEAD
     3.7,
+=======
+    3.75,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.0
    ],
    [
     "3",
     "3+",
     "Real Madrid daje 3 ili više golova",
+<<<<<<< HEAD
     1.85,
+=======
+    1.82,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.0
    ]
   ]
@@ -10931,7 +13226,11 @@
     "0",
     "0",
     "Sevilla ne daje gol",
+<<<<<<< HEAD
     2.17,
+=======
+    2.15,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.0
    ],
    [
@@ -10945,7 +13244,11 @@
     "2",
     "2",
     "Sevilla daje tačno 2 gola",
+<<<<<<< HEAD
     5.5,
+=======
+    5.6,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.0
    ],
    [
@@ -10964,14 +13267,22 @@
     "1",
     "da",
     "Real Madrid daje gol na utakmici",
+<<<<<<< HEAD
     1.05,
+=======
+    1.04,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     null
    ],
    [
     "2",
     "ne",
     "Real Madrid ne daje gol na utakmici",
+<<<<<<< HEAD
     11.0,
+=======
+    12.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     null
    ]
   ]
@@ -10983,14 +13294,22 @@
     "1",
     "da",
     "Sevilla daje gol na utakmici",
+<<<<<<< HEAD
     1.68,
+=======
+    1.7,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     null
    ],
    [
     "2",
     "ne",
     "Sevilla ne daje gol na utakmici",
+<<<<<<< HEAD
     2.2,
+=======
+    2.17,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     null
    ]
   ]
@@ -11002,14 +13321,22 @@
     "",
     "vise 0.5 & vise 1.5",
     "1. Poluvreme Real Madrid više od 0.5 golova i Real",
+<<<<<<< HEAD
     1.49,
+=======
+    1.47,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
     "",
     "vise 0.5 & manje 1.5",
     "1. Poluvreme Real Madrid više od 0.5 golova i Real",
+<<<<<<< HEAD
     8.4,
+=======
+    8.5,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
@@ -11023,21 +13350,33 @@
     "",
     "manje 0.5 & manje 1.5",
     "1. Poluvreme Real Madrid manje od 0.5 golova i Rea",
+<<<<<<< HEAD
     5.1,
+=======
+    5.2,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
     "",
     "vise 0.5 & vise 2.5",
     "1. Poluvreme Real Madrid više od 0.5 golova i Real",
+<<<<<<< HEAD
     1.97,
+=======
+    1.95,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
     "",
     "vise 0.5 & manje 2.5",
     "1. Poluvreme Real Madrid više od 0.5 golova i Real",
+<<<<<<< HEAD
     3.45,
+=======
+    3.5,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
@@ -11051,14 +13390,22 @@
     "",
     "manje 0.5 & manje 2.5",
     "1. Poluvreme Real Madrid manje od 0.5 golova i Rea",
+<<<<<<< HEAD
     3.7,
+=======
+    3.8,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
     "",
     "vise 1.5 & vise 2.5",
     "1. Poluvreme Real Madrid više od 1.5 golova i Real",
+<<<<<<< HEAD
     2.9,
+=======
+    2.85,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
@@ -11072,14 +13419,22 @@
     "",
     "manje 1.5 & vise 2.5",
     "1. Poluvreme Real Madrid manje od 1.5 golova i Rea",
+<<<<<<< HEAD
     3.9,
+=======
+    3.85,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
     "",
     "manje 1.5 & manje 2.5",
     "1. Poluvreme Real Madrid manje od 1.5 golova i Rea",
+<<<<<<< HEAD
     2.12,
+=======
+    2.17,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ]
   ]
@@ -11091,7 +13446,11 @@
     "",
     "vise 0.5 & vise 1.5",
     "1. Poluvreme Sevilla više od 0.5 golova i Sevilla ",
+<<<<<<< HEAD
     5.25,
+=======
+    5.35,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
@@ -11105,28 +13464,44 @@
     "",
     "manje 0.5 & vise 1.5",
     "1. Poluvreme Sevilla manje od 0.5 golova i Sevilla",
+<<<<<<< HEAD
     10.0,
+=======
+    11.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
     "",
     "manje 0.5 & manje 1.5",
     "1. Poluvreme Sevilla manje od 0.5 golova i Sevilla",
+<<<<<<< HEAD
     1.5,
+=======
+    1.48,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
     "",
     "vise 0.5 & vise 2.5",
     "1. Poluvreme Sevilla više od 0.5 golova i Sevilla ",
+<<<<<<< HEAD
     13.0,
+=======
+    14.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
     "",
     "vise 0.5 & manje 2.5",
     "1. Poluvreme Sevilla više od 0.5 golova i Sevilla ",
+<<<<<<< HEAD
     3.25,
+=======
+    3.3,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
@@ -11140,28 +13515,44 @@
     "",
     "manje 0.5 & manje 2.5",
     "1. Poluvreme Sevilla manje od 0.5 golova i Sevilla",
+<<<<<<< HEAD
     1.39,
+=======
+    1.38,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
     "",
     "vise 1.5 & vise 2.5",
     "1. Poluvreme Sevilla više od 1.5 golova i Sevilla ",
+<<<<<<< HEAD
     20.0,
+=======
+    21.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
     "",
     "vise 1.5 & manje 2.5",
     "1. Poluvreme Sevilla više od 1.5 golova i Sevilla ",
+<<<<<<< HEAD
     17.0,
+=======
+    18.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
     "",
     "manje 1.5 & vise 2.5",
     "1. Poluvreme Sevilla manje od 1.5 golova i Sevilla",
+<<<<<<< HEAD
     17.0,
+=======
+    18.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
@@ -11180,21 +13571,33 @@
     "",
     "vise 0.5 & vise 0.5",
     "Real Madrid daje više od 0.5 golova u 1. poluvreme",
+<<<<<<< HEAD
     1.68,
+=======
+    1.66,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
     "",
     "vise 0.5 & manje 0.5",
     "Real Madrid daje više od 0.5 golova u 1. poluvreme",
+<<<<<<< HEAD
     5.0,
+=======
+    5.1,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
     "",
     "vise 0.5 & vise 1.5",
     "Real Madrid daje više od 0.5 golova u 1. poluvreme",
+<<<<<<< HEAD
     2.8,
+=======
+    2.75,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
@@ -11208,7 +13611,11 @@
     "",
     "vise 0.5 & vise 2.5",
     "Real Madrid daje više od 0.5 golova u 1. poluvreme",
+<<<<<<< HEAD
     5.65,
+=======
+    5.5,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
@@ -11222,7 +13629,11 @@
     "",
     "manje 0.5 & vise 0.5",
     "Real Madrid daje manje od 0.5 golova u 1. poluvrem",
+<<<<<<< HEAD
     3.75,
+=======
+    3.8,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
@@ -11243,7 +13654,11 @@
     "",
     "manje 0.5 & manje 1.5",
     "Real Madrid daje manje od 0.5 golova u 1. poluvrem",
+<<<<<<< HEAD
     5.1,
+=======
+    5.2,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
@@ -11257,7 +13672,11 @@
     "",
     "manje 0.5 & manje 2.5",
     "Real Madrid daje manje od 0.5 golova u 1. poluvrem",
+<<<<<<< HEAD
     3.7,
+=======
+    3.8,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ]
   ]
@@ -11269,7 +13688,11 @@
     "",
     "vise 0.5 & vise 0.5",
     "Sevilla daje više od 0.5 golova u 1. poluvremenu i",
+<<<<<<< HEAD
     6.4,
+=======
+    6.6,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
@@ -11283,14 +13706,22 @@
     "",
     "vise 0.5 & vise 1.5",
     "Sevilla daje više od 0.5 golova u 1. poluvremenu i",
+<<<<<<< HEAD
     20.0,
+=======
+    21.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
     "",
     "vise 0.5 & manje 1.5",
     "Sevilla daje više od 0.5 golova u 1. poluvremenu i",
+<<<<<<< HEAD
     3.05,
+=======
+    3.1,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
@@ -11304,35 +13735,55 @@
     "",
     "vise 0.5 & manje 2.5",
     "Sevilla daje više od 0.5 golova u 1. poluvremenu i",
+<<<<<<< HEAD
     2.87,
+=======
+    2.92,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
     "",
     "manje 0.5 & vise 0.5",
     "Sevilla daje manje od 0.5 golova u 1. poluvremenu ",
+<<<<<<< HEAD
     3.25,
+=======
+    3.3,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
     "",
     "manje 0.5 & manje 0.5",
     "Sevilla daje manje od 0.5 golova u 1. poluvremenu ",
+<<<<<<< HEAD
     2.17,
+=======
+    2.12,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
     "",
     "manje 0.5 & vise 1.5",
     "Sevilla daje manje od 0.5 golova u 1. poluvremenu ",
+<<<<<<< HEAD
     10.0,
+=======
+    11.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
     "",
     "manje 0.5 & manje 1.5",
     "Sevilla daje manje od 0.5 golova u 1. poluvremenu ",
+<<<<<<< HEAD
     1.5,
+=======
+    1.48,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
@@ -11346,7 +13797,11 @@
     "",
     "manje 0.5 & manje 2.5",
     "Sevilla daje manje od 0.5 golova u 1. poluvremenu ",
+<<<<<<< HEAD
     1.39,
+=======
+    1.38,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ]
   ]
@@ -11372,21 +13827,33 @@
     "1+",
     "1 & vise 0.5",
     "Real Madrid pobednik i Real Madrid više od 0.5 gol",
+<<<<<<< HEAD
     1.24,
+=======
+    1.22,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     0.5
    ],
    [
     "0+",
     "x & vise 0.5",
     "nerešeno i Real Madrid više od 0.5 gola na utakmic",
+<<<<<<< HEAD
     6.6,
+=======
+    6.8,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     0.5
    ],
    [
     "2+",
     "2 & vise 0.5",
     "Sevilla pobednik i Real Madrid više od 0.5 gola na",
+<<<<<<< HEAD
     11.0,
+=======
+    12.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     0.5
    ]
   ]
@@ -11405,21 +13872,33 @@
     "0-",
     "x & manje 1.5",
     "nerešeno i Real Madrid manje od 1.5 gola na utakmi",
+<<<<<<< HEAD
     7.6,
+=======
+    7.8,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
     "2-",
     "2 & manje 1.5",
     "Sevilla pobednik i Real Madrid manje od 1.5 gola n",
+<<<<<<< HEAD
     8.6,
+=======
+    8.9,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
     "1+",
     "1 & vise 1.5",
     "Real Madrid pobednik i Real Madrid više od 1.5 gol",
+<<<<<<< HEAD
     1.36,
+=======
+    1.35,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
@@ -11433,7 +13912,11 @@
     "2+",
     "2 & vise 1.5",
     "Sevilla pobednik i Real Madrid više od 1.5 gola na",
+<<<<<<< HEAD
     27.0,
+=======
+    28.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ]
   ]
@@ -11452,35 +13935,55 @@
     "0-",
     "x & manje 2.5",
     "nerešeno i Real Madrid manje od 2.5 gola na utakmi",
+<<<<<<< HEAD
     6.0,
+=======
+    6.1,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
     "2-",
     "2 & manje 2.5",
     "Sevilla pobednik i Real Madrid manje od 2.5 gola n",
+<<<<<<< HEAD
     7.7,
+=======
+    7.9,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
     "1+",
     "1 & vise 2.5",
     "Real Madrid pobednik i Real Madrid više od 2.5 gol",
+<<<<<<< HEAD
     1.85,
+=======
+    1.82,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
     "0+",
     "x & vise 2.5",
     "nerešeno i Real Madrid više od 2.5 gola na utakmic",
+<<<<<<< HEAD
     36.0,
+=======
+    37.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
     "2+",
     "2 & vise 2.5",
     "Sevilla pobednik i Real Madrid više od 2.5 gola na",
+<<<<<<< HEAD
     75.0,
+=======
+    80.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ]
   ]
@@ -11499,21 +14002,33 @@
     "0-",
     "x & manje 3.5",
     "nerešeno i Real Madrid manje od 3.5 gola na utakmi",
+<<<<<<< HEAD
     5.65,
+=======
+    5.8,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.5
    ],
    [
     "2-",
     "2 & manje 3.5",
     "Sevilla pobednik i Real Madrid manje od 3.5 gola n",
+<<<<<<< HEAD
     7.6,
+=======
+    7.8,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.5
    ],
    [
     "1+",
     "1 & vise 3.5",
     "Real Madrid pobednik i Real Madrid više od 3.5 gol",
+<<<<<<< HEAD
     3.0,
+=======
+    2.95,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.5
    ],
    [
@@ -11539,28 +14054,44 @@
     "1-",
     "1 & manje 4.5",
     "Real Madrid pobednik i Real Madrid manje od 4.5 go",
+<<<<<<< HEAD
     1.5,
+=======
+    1.49,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     4.5
    ],
    [
     "0-",
     "x & manje 4.5",
     "nerešeno i Real Madrid manje od 4.5 gola na utakmi",
+<<<<<<< HEAD
     5.6,
+=======
+    5.8,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     4.5
    ],
    [
     "2-",
     "2 & manje 4.5",
     "Sevilla pobednik i Real Madrid manje od 4.5 gola n",
+<<<<<<< HEAD
     7.6,
+=======
+    7.8,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     4.5
    ],
    [
     "1+",
     "1 & vise 4.5",
     "Real Madrid pobednik i Real Madrid više od 4.5 gol",
+<<<<<<< HEAD
     5.5,
+=======
+    5.35,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     4.5
    ],
    [
@@ -11586,7 +14117,11 @@
     "1-",
     "1 & manje 0.5",
     "Real Madrid pobednik  i Sevilla manje od 0.5 gola ",
+<<<<<<< HEAD
     2.27,
+=======
+    2.22,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     0.5
    ],
    [
@@ -11607,14 +14142,22 @@
     "0+",
     "x & vise 0.5",
     "nerešeno i Sevilla više od 0.5 gola na utakmici",
+<<<<<<< HEAD
     6.6,
+=======
+    6.8,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     0.5
    ],
    [
     "2+",
     "2 & vise 0.5",
     "Sevilla pobednik  i Sevilla više od 0.5 gola na ut",
+<<<<<<< HEAD
     7.6,
+=======
+    7.8,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     0.5
    ]
   ]
@@ -11626,28 +14169,44 @@
     "1-",
     "1 & manje 1.5",
     "Real Madrid pobednik  i Sevilla manje od 1.5 gola ",
+<<<<<<< HEAD
     1.39,
+=======
+    1.38,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
     "0-",
     "x & manje 1.5",
     "nerešeno i Sevilla manje od 1.5 gola na utakmici",
+<<<<<<< HEAD
     7.6,
+=======
+    7.8,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
     "2-",
     "2 & manje 1.5",
     "Sevilla pobednik  i Sevilla manje od 1.5 gola na u",
+<<<<<<< HEAD
     20.0,
+=======
+    21.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
     "1+",
     "1 & vise 1.5",
     "Real Madrid pobednik  i Sevilla više od 1.5 gola n",
+<<<<<<< HEAD
     7.5,
+=======
+    7.6,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
@@ -11661,7 +14220,11 @@
     "2+",
     "2 & vise 1.5",
     "Sevilla pobednik  i Sevilla više od 1.5 gola na ut",
+<<<<<<< HEAD
     9.4,
+=======
+    9.8,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ]
   ]
@@ -11673,14 +14236,22 @@
     "1-",
     "1 & manje 2.5",
     "Real Madrid pobednik  i Sevilla manje od 2.5 gola ",
+<<<<<<< HEAD
     1.26,
+=======
+    1.24,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
     "0-",
     "x & manje 2.5",
     "nerešeno i Sevilla manje od 2.5 gola na utakmici",
+<<<<<<< HEAD
     6.0,
+=======
+    6.1,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
@@ -11701,7 +14272,11 @@
     "0+",
     "x & vise 2.5",
     "nerešeno i Sevilla više od 2.5 gola na utakmici",
+<<<<<<< HEAD
     36.0,
+=======
+    37.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
@@ -11720,21 +14295,33 @@
     "1-",
     "1 & manje 3.5",
     "Real Madrid pobednik  i Sevilla manje od 3.5 gola ",
+<<<<<<< HEAD
     1.24,
+=======
+    1.23,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.5
    ],
    [
     "0-",
     "x & manje 3.5",
     "nerešeno i Sevilla manje od 3.5 gola na utakmici",
+<<<<<<< HEAD
     5.65,
+=======
+    5.8,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.5
    ],
    [
     "2-",
     "2 & manje 3.5",
     "Sevilla pobednik  i Sevilla manje od 3.5 gola na u",
+<<<<<<< HEAD
     8.1,
+=======
+    8.3,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.5
    ],
    [
@@ -11767,21 +14354,33 @@
     "1-",
     "1 & manje 4.5",
     "Real Madrid pobednik  i Sevilla manje od 4.5 gola ",
+<<<<<<< HEAD
     1.24,
+=======
+    1.22,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     4.5
    ],
    [
     "0-",
     "x & manje 4.5",
     "nerešeno i Sevilla manje od 4.5 gola na utakmici",
+<<<<<<< HEAD
     5.6,
+=======
+    5.8,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     4.5
    ],
    [
     "2-",
     "2 & manje 4.5",
     "Sevilla pobednik  i Sevilla manje od 4.5 gola na u",
+<<<<<<< HEAD
     7.6,
+=======
+    7.8,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     4.5
    ],
    [
@@ -11964,22 +14563,37 @@
     "",
     "1-2",
     "Valencia 1-2 gola na utakmici",
+<<<<<<< HEAD
     1.67,
     -2.0
+=======
+    1.68,
+    2.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "",
     "1-3",
     "Valencia  1-3 gola na utakmici",
+<<<<<<< HEAD
     1.49,
     -3.0
+=======
+    1.5,
+    3.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "",
     "2-3",
     "Valencia 2-3 gola na utakmici",
+<<<<<<< HEAD
     3.3,
     -3.0
+=======
+    3.35,
+    3.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ]
   ]
  },
@@ -11990,21 +14604,33 @@
     "12",
     "1-2",
     "Valencia 1 ili 2 gola u svakom poluvremenu",
+<<<<<<< HEAD
     5.1,
+=======
+    5.15,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
     "13",
     "1-3",
     "Valencia 1,2 ili 3 gola u svakom poluvremenu",
+<<<<<<< HEAD
     4.75,
+=======
+    4.85,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.0
    ],
    [
     "23",
     "2-3",
     "Valencia 2 ili 3 gola u svakom poluvremenu",
+<<<<<<< HEAD
     39.0,
+=======
+    40.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.0
    ]
   ]
@@ -12016,7 +14642,11 @@
     "0",
     "0",
     "Valencia ne daje gol",
+<<<<<<< HEAD
     2.8,
+=======
+    2.75,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.0
    ],
    [
@@ -12030,14 +14660,22 @@
     "2",
     "2",
     "Valencia daje tačno 2 gola",
+<<<<<<< HEAD
     4.35,
+=======
+    4.4,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.0
    ],
    [
     "3",
     "3+",
     "Valencia daje 3 ili više golova",
+<<<<<<< HEAD
     7.9,
+=======
+    8.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.0
    ]
   ]
@@ -12049,14 +14687,22 @@
     "1",
     "da",
     "Valencia daje gol na utakmici",
+<<<<<<< HEAD
     1.44,
+=======
+    1.45,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     null
    ],
    [
     "2",
     "ne",
     "Valencia ne daje gol na utakmici",
+<<<<<<< HEAD
     2.8,
+=======
+    2.77,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     null
    ]
   ]
@@ -12068,35 +14714,55 @@
     "",
     "vise 0.5 & vise 1.5",
     "1. Poluvreme Valencia više od 0.5 golova i Valenci",
+<<<<<<< HEAD
     3.85,
+=======
+    3.9,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
     "",
     "vise 0.5 & manje 1.5",
     "1. Poluvreme Valencia više od 0.5 golova i Valenci",
+<<<<<<< HEAD
     4.9,
+=======
+    5.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
     "",
     "manje 0.5 & vise 1.5",
     "1. Poluvreme Valencia manje od 0.5 golova i Valenc",
+<<<<<<< HEAD
     8.2,
+=======
+    8.3,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
     "",
     "manje 0.5 & manje 1.5",
     "1. Poluvreme Valencia manje od 0.5 golova i Valenc",
+<<<<<<< HEAD
     1.73,
+=======
+    1.71,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
     "",
     "vise 0.5 & vise 2.5",
     "1. Poluvreme Valencia više od 0.5 golova i Valenci",
+<<<<<<< HEAD
     8.2,
+=======
+    8.4,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
@@ -12117,7 +14783,11 @@
     "",
     "manje 0.5 & manje 2.5",
     "1. Poluvreme Valencia manje od 0.5 golova i Valenc",
+<<<<<<< HEAD
     1.56,
+=======
+    1.54,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
@@ -12131,7 +14801,11 @@
     "",
     "vise 1.5 & manje 2.5",
     "1. Poluvreme Valencia više od 1.5 golova i Valenci",
+<<<<<<< HEAD
     14.0,
+=======
+    15.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
@@ -12145,7 +14819,11 @@
     "",
     "manje 1.5 & manje 2.5",
     "1. Poluvreme Valencia manje od 1.5 golova i Valenc",
+<<<<<<< HEAD
     1.11,
+=======
+    1.1,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ]
   ]
@@ -12157,7 +14835,11 @@
     "",
     "vise 0.5 & vise 0.5",
     "Valencia daje više od 0.5 golova u 1. poluvremenu ",
+<<<<<<< HEAD
     4.7,
+=======
+    4.8,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
@@ -12178,49 +14860,77 @@
     "",
     "vise 0.5 & manje 1.5",
     "Valencia daje više od 0.5 golova u 1. poluvremenu ",
+<<<<<<< HEAD
     2.67,
+=======
+    2.7,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
     "",
     "vise 0.5 & vise 2.5",
     "Valencia daje više od 0.5 golova u 1. poluvremenu ",
+<<<<<<< HEAD
     40.0,
+=======
+    45.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
     "",
     "vise 0.5 & manje 2.5",
     "Valencia daje više od 0.5 golova u 1. poluvremenu ",
+<<<<<<< HEAD
     2.42,
+=======
+    2.45,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
     "",
     "manje 0.5 & vise 0.5",
     "Valencia daje manje od 0.5 golova u 1. poluvremenu",
+<<<<<<< HEAD
     3.05,
+=======
+    3.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
     "",
     "manje 0.5 & manje 0.5",
     "Valencia daje manje od 0.5 golova u 1. poluvremenu",
+<<<<<<< HEAD
     2.72,
+=======
+    2.67,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
     "",
     "manje 0.5 & vise 1.5",
     "Valencia daje manje od 0.5 golova u 1. poluvremenu",
+<<<<<<< HEAD
     8.2,
+=======
+    8.3,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
     "",
     "manje 0.5 & manje 1.5",
     "Valencia daje manje od 0.5 golova u 1. poluvremenu",
+<<<<<<< HEAD
     1.73,
+=======
+    1.71,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
@@ -12234,7 +14944,11 @@
     "",
     "manje 0.5 & manje 2.5",
     "Valencia daje manje od 0.5 golova u 1. poluvremenu",
+<<<<<<< HEAD
     1.56,
+=======
+    1.54,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ]
   ]
@@ -12253,28 +14967,44 @@
     "2-",
     "2 & manje 0.5",
     "Athletic Bilbao pobednik i Valencia manje od 0.5 g",
+<<<<<<< HEAD
     3.5,
+=======
+    3.45,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     0.5
    ],
    [
     "1+",
     "1 & vise 0.5",
     "Valencia pobednik i Valencia više od 0.5 gola na u",
+<<<<<<< HEAD
     3.15,
+=======
+    3.2,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     0.5
    ],
    [
     "0+",
     "x & vise 0.5",
     "nerešeno i Valencia više od 0.5 gola na utakmici",
+<<<<<<< HEAD
     4.2,
+=======
+    4.25,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     0.5
    ],
    [
     "2+",
     "2 & vise 0.5",
     "Athletic Bilbao pobednik i Valencia više od 0.5 go",
+<<<<<<< HEAD
     4.3,
+=======
+    4.25,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     0.5
    ]
   ]
@@ -12300,21 +15030,33 @@
     "2-",
     "2 & manje 1.5",
     "Athletic Bilbao pobednik i Valencia manje od 1.5 g",
+<<<<<<< HEAD
     2.27,
+=======
+    2.25,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
     "1+",
     "1 & vise 1.5",
     "Valencia pobednik i Valencia više od 1.5 gola na u",
+<<<<<<< HEAD
     4.25,
+=======
+    4.3,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
     "0+",
     "x & vise 1.5",
     "nerešeno i Valencia više od 1.5 gola na utakmici",
+<<<<<<< HEAD
     9.9,
+=======
+    10.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
@@ -12333,28 +15075,44 @@
     "1-",
     "1 & manje 2.5",
     "Valencia pobednik i Valencia manje od 2.5 gola na ",
+<<<<<<< HEAD
     4.25,
+=======
+    4.3,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
     "0-",
     "x & manje 2.5",
     "nerešeno i Valencia manje od 2.5 gola na utakmici",
+<<<<<<< HEAD
     3.2,
+=======
+    3.25,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
     "2-",
     "2 & manje 2.5",
     "Athletic Bilbao pobednik i Valencia manje od 2.5 g",
+<<<<<<< HEAD
     2.1,
+=======
+    2.07,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
     "1+",
     "1 & vise 2.5",
     "Valencia pobednik i Valencia više od 2.5 gola na u",
+<<<<<<< HEAD
     8.1,
+=======
+    8.2,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
@@ -12380,7 +15138,11 @@
     "1-",
     "1 & manje 3.5",
     "Valencia pobednik i Valencia manje od 3.5 gola na ",
+<<<<<<< HEAD
     3.4,
+=======
+    3.45,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.5
    ],
    [
@@ -12394,14 +15156,22 @@
     "2-",
     "2 & manje 3.5",
     "Athletic Bilbao pobednik i Valencia manje od 3.5 g",
+<<<<<<< HEAD
     2.07,
+=======
+    2.05,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.5
    ],
    [
     "1+",
     "1 & vise 3.5",
     "Valencia pobednik i Valencia više od 3.5 gola na u",
+<<<<<<< HEAD
     20.0,
+=======
+    21.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.5
    ],
    [
@@ -12427,28 +15197,44 @@
     "1-",
     "1 & manje 4.5",
     "Valencia pobednik i Valencia manje od 4.5 gola na ",
+<<<<<<< HEAD
     3.2,
+=======
+    3.25,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     4.5
    ],
    [
     "0-",
     "x & manje 4.5",
     "nerešeno i Valencia manje od 4.5 gola na utakmici",
+<<<<<<< HEAD
     3.1,
+=======
+    3.15,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     4.5
    ],
    [
     "2-",
     "2 & manje 4.5",
     "Athletic Bilbao pobednik i Valencia manje od 4.5 g",
+<<<<<<< HEAD
     2.07,
+=======
+    2.05,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     4.5
    ],
    [
     "1+",
     "1 & vise 4.5",
     "Valencia pobednik i Valencia više od 4.5 gola na u",
+<<<<<<< HEAD
     55.0,
+=======
+    60.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     4.5
    ],
    [
@@ -12625,21 +15411,34 @@
     "1-2",
     "Villarreal 1-2 gola na utakmici",
     1.92,
+<<<<<<< HEAD
     -2.0
+=======
+    2.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "",
     "1-3",
     "Villarreal  1-3 gola na utakmici",
     1.38,
+<<<<<<< HEAD
     -3.0
+=======
+    3.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "",
     "2-3",
     "Villarreal 2-3 gola na utakmici",
+<<<<<<< HEAD
     2.0,
     -3.0
+=======
+    2.02,
+    3.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ]
   ]
  },
@@ -12651,21 +15450,35 @@
     "1-2",
     "Elche 1-2 gola na utakmici",
     1.69,
+<<<<<<< HEAD
     -2.0
+=======
+    2.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "",
     "1-3",
     "Elche 1-3 gola na utakmici",
+<<<<<<< HEAD
     1.52,
     -3.0
+=======
+    1.51,
+    3.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "",
     "2-3",
     "Elche 2-3 gola na utakmici",
+<<<<<<< HEAD
     3.45,
     -3.0
+=======
+    3.4,
+    3.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ]
   ]
  },
@@ -12702,21 +15515,33 @@
     "12",
     "1-2",
     "Elche 1 ili 2 gola u svakom poluvremenu",
+<<<<<<< HEAD
     5.25,
+=======
+    5.15,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
     "13",
     "1-3",
     "Elche 1,2 ili 3 gola u svakom poluvremenu",
+<<<<<<< HEAD
     4.9,
+=======
+    4.85,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.0
    ],
    [
     "23",
     "2-3",
     "Elche 2 ili 3 gola u svakom poluvremenu",
+<<<<<<< HEAD
     45.0,
+=======
+    40.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.0
    ]
   ]
@@ -12728,7 +15553,11 @@
     "0",
     "0",
     "Villarreal ne daje gol",
+<<<<<<< HEAD
     8.0,
+=======
+    7.9,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.0
    ],
    [
@@ -12749,7 +15578,11 @@
     "3",
     "3+",
     "Villarreal daje 3 ili više golova",
+<<<<<<< HEAD
     2.27,
+=======
+    2.3,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.0
    ]
   ]
@@ -12761,7 +15594,11 @@
     "0",
     "0",
     "Elche ne daje gol",
+<<<<<<< HEAD
     2.67,
+=======
+    2.72,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.0
    ],
    [
@@ -12775,14 +15612,22 @@
     "2",
     "2",
     "Elche daje tačno 2 gola",
+<<<<<<< HEAD
     4.5,
+=======
+    4.45,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.0
    ],
    [
     "3",
     "3+",
     "Elche daje 3 ili više golova",
+<<<<<<< HEAD
     8.4,
+=======
+    8.2,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.0
    ]
   ]
@@ -12801,7 +15646,11 @@
     "2",
     "ne",
     "Villarreal ne daje gol na utakmici",
+<<<<<<< HEAD
     8.3,
+=======
+    8.2,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     null
    ]
   ]
@@ -12846,7 +15695,11 @@
     "",
     "manje 0.5 & vise 1.5",
     "1. Poluvreme Villarreal manje od 0.5 golova i Vill",
+<<<<<<< HEAD
     5.8,
+=======
+    5.85,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
@@ -12921,7 +15774,11 @@
     "",
     "vise 0.5 & vise 1.5",
     "1. Poluvreme Elche više od 0.5 golova i Elche više",
+<<<<<<< HEAD
     4.0,
+=======
+    3.9,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
@@ -12942,14 +15799,22 @@
     "",
     "manje 0.5 & manje 1.5",
     "1. Poluvreme Elche manje od 0.5 golova i Elche man",
+<<<<<<< HEAD
     1.7,
+=======
+    1.71,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
     "",
     "vise 0.5 & vise 2.5",
     "1. Poluvreme Elche više od 0.5 golova i Elche više",
+<<<<<<< HEAD
     8.7,
+=======
+    8.5,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
@@ -12970,7 +15835,11 @@
     "",
     "manje 0.5 & manje 2.5",
     "1. Poluvreme Elche manje od 0.5 golova i Elche man",
+<<<<<<< HEAD
     1.53,
+=======
+    1.54,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
@@ -12984,7 +15853,11 @@
     "",
     "vise 1.5 & manje 2.5",
     "1. Poluvreme Elche više od 1.5 golova i Elche manj",
+<<<<<<< HEAD
     15.0,
+=======
+    14.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
@@ -13017,14 +15890,22 @@
     "",
     "vise 0.5 & manje 0.5",
     "Villarreal daje više od 0.5 golova u 1. poluvremen",
+<<<<<<< HEAD
     4.5,
+=======
+    4.45,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
     "",
     "vise 0.5 & vise 1.5",
     "Villarreal daje više od 0.5 golova u 1. poluvremen",
+<<<<<<< HEAD
     3.6,
+=======
+    3.65,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
@@ -13038,7 +15919,11 @@
     "",
     "vise 0.5 & vise 2.5",
     "Villarreal daje više od 0.5 golova u 1. poluvremen",
+<<<<<<< HEAD
     7.7,
+=======
+    7.9,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
@@ -13059,21 +15944,33 @@
     "",
     "manje 0.5 & manje 0.5",
     "Villarreal daje manje od 0.5 golova u 1. poluvreme",
+<<<<<<< HEAD
     7.5,
+=======
+    7.4,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
     "",
     "manje 0.5 & vise 1.5",
     "Villarreal daje manje od 0.5 golova u 1. poluvreme",
+<<<<<<< HEAD
     5.8,
+=======
+    5.85,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
     "",
     "manje 0.5 & manje 1.5",
     "Villarreal daje manje od 0.5 golova u 1. poluvreme",
+<<<<<<< HEAD
     3.9,
+=======
+    3.85,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
@@ -13087,7 +15984,11 @@
     "",
     "manje 0.5 & manje 2.5",
     "Villarreal daje manje od 0.5 golova u 1. poluvreme",
+<<<<<<< HEAD
     2.95,
+=======
+    2.92,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ]
   ]
@@ -13099,7 +16000,11 @@
     "",
     "vise 0.5 & vise 0.5",
     "Elche daje više od 0.5 golova u 1. poluvremenu i v",
+<<<<<<< HEAD
     4.9,
+=======
+    4.85,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
@@ -13113,14 +16018,22 @@
     "",
     "vise 0.5 & vise 1.5",
     "Elche daje više od 0.5 golova u 1. poluvremenu i v",
+<<<<<<< HEAD
     14.0,
+=======
+    13.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
     "",
     "vise 0.5 & manje 1.5",
     "Elche daje više od 0.5 golova u 1. poluvremenu i m",
+<<<<<<< HEAD
     2.7,
+=======
+    2.67,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
@@ -13134,7 +16047,11 @@
     "",
     "vise 0.5 & manje 2.5",
     "Elche daje više od 0.5 golova u 1. poluvremenu i m",
+<<<<<<< HEAD
     2.47,
+=======
+    2.45,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
@@ -13148,7 +16065,11 @@
     "",
     "manje 0.5 & manje 0.5",
     "Elche daje manje od 0.5 golova u 1. poluvremenu i ",
+<<<<<<< HEAD
     2.62,
+=======
+    2.65,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
@@ -13162,7 +16083,11 @@
     "",
     "manje 0.5 & manje 1.5",
     "Elche daje manje od 0.5 golova u 1. poluvremenu i ",
+<<<<<<< HEAD
     1.7,
+=======
+    1.71,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
@@ -13176,7 +16101,11 @@
     "",
     "manje 0.5 & manje 2.5",
     "Elche daje manje od 0.5 golova u 1. poluvremenu i ",
+<<<<<<< HEAD
     1.53,
+=======
+    1.54,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ]
   ]
@@ -13195,28 +16124,44 @@
     "2-",
     "2 & manje 0.5",
     "Elche pobednik i Villarreal manje od 0.5 gola na u",
+<<<<<<< HEAD
     10.0,
+=======
+    9.8,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     0.5
    ],
    [
     "1+",
     "1 & vise 0.5",
     "Villarreal pobednik i Villarreal više od 0.5 gola ",
+<<<<<<< HEAD
     1.44,
+=======
+    1.46,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     0.5
    ],
    [
     "0+",
     "x & vise 0.5",
     "nerešeno i Villarreal više od 0.5 gola na utakmici",
+<<<<<<< HEAD
     5.15,
+=======
+    5.1,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     0.5
    ],
    [
     "2+",
     "2 & vise 0.5",
     "Elche pobednik i Villarreal više od 0.5 gola na ut",
+<<<<<<< HEAD
     7.5,
+=======
+    7.3,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     0.5
    ]
   ]
@@ -13235,35 +16180,55 @@
     "0-",
     "x & manje 1.5",
     "nerešeno i Villarreal manje od 1.5 gola na utakmic",
+<<<<<<< HEAD
     6.3,
+=======
+    6.2,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
     "2-",
     "2 & manje 1.5",
     "Elche pobednik i Villarreal manje od 1.5 gola na u",
+<<<<<<< HEAD
     6.0,
+=======
+    5.8,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
     "1+",
     "1 & vise 1.5",
     "Villarreal pobednik i Villarreal više od 1.5 gola ",
+<<<<<<< HEAD
     1.62,
+=======
+    1.64,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
     "0+",
     "x & vise 1.5",
     "nerešeno i Villarreal više od 1.5 gola na utakmici",
+<<<<<<< HEAD
     9.3,
+=======
+    9.2,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
     "2+",
     "2 & vise 1.5",
     "Elche pobednik i Villarreal više od 1.5 gola na ut",
+<<<<<<< HEAD
     18.0,
+=======
+    17.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ]
   ]
@@ -13282,21 +16247,33 @@
     "0-",
     "x & manje 2.5",
     "nerešeno i Villarreal manje od 2.5 gola na utakmic",
+<<<<<<< HEAD
     4.7,
+=======
+    4.65,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
     "2-",
     "2 & manje 2.5",
     "Elche pobednik i Villarreal manje od 2.5 gola na u",
+<<<<<<< HEAD
     5.25,
+=======
+    5.1,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
     "1+",
     "1 & vise 2.5",
     "Villarreal pobednik i Villarreal više od 2.5 gola ",
+<<<<<<< HEAD
     2.32,
+=======
+    2.37,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
@@ -13322,28 +16299,44 @@
     "1-",
     "1 & manje 3.5",
     "Villarreal pobednik i Villarreal manje od 3.5 gola",
+<<<<<<< HEAD
     2.02,
+=======
+    2.05,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.5
    ],
    [
     "0-",
     "x & manje 3.5",
     "nerešeno i Villarreal manje od 3.5 gola na utakmic",
+<<<<<<< HEAD
     4.4,
+=======
+    4.35,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.5
    ],
    [
     "2-",
     "2 & manje 3.5",
     "Elche pobednik i Villarreal manje od 3.5 gola na u",
+<<<<<<< HEAD
     5.15,
+=======
+    5.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.5
    ],
    [
     "1+",
     "1 & vise 3.5",
     "Villarreal pobednik i Villarreal više od 3.5 gola ",
+<<<<<<< HEAD
     4.1,
+=======
+    4.2,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.5
    ],
    [
@@ -13369,7 +16362,11 @@
     "1-",
     "1 & manje 4.5",
     "Villarreal pobednik i Villarreal manje od 4.5 gola",
+<<<<<<< HEAD
     1.64,
+=======
+    1.65,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     4.5
    ],
    [
@@ -13383,14 +16380,22 @@
     "2-",
     "2 & manje 4.5",
     "Elche pobednik i Villarreal manje od 4.5 gola na u",
+<<<<<<< HEAD
     5.1,
+=======
+    5.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     4.5
    ],
    [
     "1+",
     "1 & vise 4.5",
     "Villarreal pobednik i Villarreal više od 4.5 gola ",
+<<<<<<< HEAD
     7.9,
+=======
+    8.1,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     4.5
    ],
    [
@@ -13416,7 +16421,11 @@
     "1-",
     "1 & manje 0.5",
     "Villarreal pobednik  i Elche manje od 0.5 gola na ",
+<<<<<<< HEAD
     2.85,
+=======
+    2.9,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     0.5
    ],
    [
@@ -13430,21 +16439,33 @@
     "1+",
     "1 & vise 0.5",
     "Villarreal pobednik  i Elche više od 0.5 gola na u",
+<<<<<<< HEAD
     2.6,
+=======
+    2.62,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     0.5
    ],
    [
     "0+",
     "x & vise 0.5",
     "nerešeno i Elche više od 0.5 gola na utakmici",
+<<<<<<< HEAD
     5.15,
+=======
+    5.1,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     0.5
    ],
    [
     "2+",
     "2 & vise 0.5",
     "Elche pobednik  i Elche više od 0.5 gola na utakmi",
+<<<<<<< HEAD
     5.1,
+=======
+    5.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     0.5
    ]
   ]
@@ -13456,21 +16477,33 @@
     "1-",
     "1 & manje 1.5",
     "Villarreal pobednik  i Elche manje od 1.5 gola na ",
+<<<<<<< HEAD
     1.67,
+=======
+    1.69,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
     "0-",
     "x & manje 1.5",
     "nerešeno i Elche manje od 1.5 gola na utakmici",
+<<<<<<< HEAD
     6.3,
+=======
+    6.2,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
     "2-",
     "2 & manje 1.5",
     "Elche pobednik  i Elche manje od 1.5 gola na utakm",
+<<<<<<< HEAD
     16.0,
+=======
+    15.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
@@ -13484,14 +16517,22 @@
     "0+",
     "x & vise 1.5",
     "nerešeno i Elche više od 1.5 gola na utakmici",
+<<<<<<< HEAD
     9.3,
+=======
+    9.2,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
     "2+",
     "2 & vise 1.5",
     "Elche pobednik  i Elche više od 1.5 gola na utakmi",
+<<<<<<< HEAD
     6.2,
+=======
+    6.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ]
   ]
@@ -13503,21 +16544,33 @@
     "1-",
     "1 & manje 2.5",
     "Villarreal pobednik  i Elche manje od 2.5 gola na ",
+<<<<<<< HEAD
     1.47,
+=======
+    1.49,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
     "0-",
     "x & manje 2.5",
     "nerešeno i Elche manje od 2.5 gola na utakmici",
+<<<<<<< HEAD
     4.7,
+=======
+    4.65,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
     "2-",
     "2 & manje 2.5",
     "Elche pobednik  i Elche manje od 2.5 gola na utakm",
+<<<<<<< HEAD
     7.3,
+=======
+    7.1,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
@@ -13538,7 +16591,11 @@
     "2+",
     "2 & vise 2.5",
     "Elche pobednik  i Elche više od 2.5 gola na utakmi",
+<<<<<<< HEAD
     11.0,
+=======
+    10.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ]
   ]
@@ -13550,7 +16607,11 @@
     "1-",
     "1 & manje 3.5",
     "Villarreal pobednik  i Elche manje od 3.5 gola na ",
+<<<<<<< HEAD
     1.44,
+=======
+    1.45,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.5
    ],
    [
@@ -13564,7 +16625,11 @@
     "2-",
     "2 & manje 3.5",
     "Elche pobednik  i Elche manje od 3.5 gola na utakm",
+<<<<<<< HEAD
     5.65,
+=======
+    5.55,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.5
    ],
    [
@@ -13597,7 +16662,11 @@
     "1-",
     "1 & manje 4.5",
     "Villarreal pobednik  i Elche manje od 4.5 gola na ",
+<<<<<<< HEAD
     1.44,
+=======
+    1.45,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     4.5
    ],
    [
@@ -13611,7 +16680,11 @@
     "2-",
     "2 & manje 4.5",
     "Elche pobednik  i Elche manje od 4.5 gola na utakm",
+<<<<<<< HEAD
     5.2,
+=======
+    5.1,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     4.5
    ],
    [
@@ -13651,7 +16724,11 @@
     "2",
     "ne",
     "Levante ne pobeđuje bar jedno poluvreme",
+<<<<<<< HEAD
     1.63,
+=======
+    1.62,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     null
    ]
   ]
@@ -13663,22 +16740,36 @@
     "",
     "1-2",
     "Deportivo Toluca 1-2 gola na utakmici",
+<<<<<<< HEAD
     2.05,
     -2.0
+=======
+    2.02,
+    2.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "",
     "1-3",
     "Deportivo Toluca  1-3 gola na utakmici",
+<<<<<<< HEAD
     1.42,
     -3.0
+=======
+    1.41,
+    3.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "",
     "2-3",
     "Deportivo Toluca 2-3 gola na utakmici",
     1.97,
+<<<<<<< HEAD
     -3.0
+=======
+    3.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ]
   ]
  },
@@ -13689,22 +16780,37 @@
     "",
     "1-2",
     "Atletico San Luis 1-2 gola na utakmici",
+<<<<<<< HEAD
     1.72,
     -2.0
+=======
+    1.7,
+    2.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "",
     "1-3",
     "Atletico San Luis 1-3 gola na utakmici",
+<<<<<<< HEAD
     1.56,
     -3.0
+=======
+    1.55,
+    3.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "",
     "2-3",
     "Atletico San Luis 2-3 gola na utakmici",
+<<<<<<< HEAD
     3.65,
     -3.0
+=======
+    3.6,
+    3.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ]
   ]
  },
@@ -13767,28 +16873,44 @@
     "0",
     "0",
     "Deportivo Toluca ne daje gol",
+<<<<<<< HEAD
     8.8,
+=======
+    8.4,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.0
    ],
    [
     "1",
     "1",
     "Deportivo Toluca daje tačno 1 gol",
+<<<<<<< HEAD
     4.25,
+=======
+    4.15,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.0
    ],
    [
     "2",
     "2",
     "Deportivo Toluca daje tačno 2 gola",
+<<<<<<< HEAD
     3.45,
+=======
+    3.4,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.0
    ],
    [
     "3",
     "3+",
     "Deportivo Toluca daje 3 ili više golova",
+<<<<<<< HEAD
     2.0,
+=======
+    1.97,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.0
    ]
   ]
@@ -13800,28 +16922,44 @@
     "0",
     "0",
     "Atletico San Luis ne daje gol",
+<<<<<<< HEAD
     2.45,
+=======
+    2.4,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.0
    ],
    [
     "1",
     "1",
     "Atletico San Luis daje tačno 1 gol",
+<<<<<<< HEAD
     2.47,
+=======
+    2.45,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.0
    ],
    [
     "2",
     "2",
     "Atletico San Luis daje tačno 2 gola",
+<<<<<<< HEAD
     4.65,
+=======
+    4.55,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.0
    ],
    [
     "3",
     "3+",
     "Atletico San Luis daje 3 ili više golova",
+<<<<<<< HEAD
     9.0,
+=======
+    8.6,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.0
    ]
   ]

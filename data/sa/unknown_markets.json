@@ -305,7 +305,11 @@
     "1:0, 2:0 ili 3:0",
     "Utakmica će završiti rezultatom 1-0, 2-0 ili 3-0.",
     10.0,
+<<<<<<< HEAD
     -0.0
+=======
+    0.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "",
@@ -1308,84 +1312,132 @@
     "1 & 2-3",
     "Bologna pobednik i 2-3 gola",
     8.5,
+<<<<<<< HEAD
     -3.0
+=======
+    3.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "124",
     "1 & 2-4",
     "Bologna pobednik i 2-4 gola",
     7.4,
+<<<<<<< HEAD
     -4.0
+=======
+    4.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "125",
     "1 & 2-5",
     "Bologna pobednik i 2-5 golova",
     6.4,
+<<<<<<< HEAD
     -5.0
+=======
+    5.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "126",
     "1 & 2-6",
     "Bologna pobednik i 2-6 golova",
     6.2,
+<<<<<<< HEAD
     -6.0
+=======
+    6.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "135",
     "1 & 3-5",
     "Bologna pobednik i 3-5 golova",
     7.5,
+<<<<<<< HEAD
     -5.0
+=======
+    5.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "136",
     "1 & 3-6",
     "Bologna pobednik i 3-6 golova",
     7.3,
+<<<<<<< HEAD
     -6.0
+=======
+    6.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "024",
     "x & 2-4",
     "Nerešeno i 2-4 gola",
     5.1,
+<<<<<<< HEAD
     -4.0
+=======
+    4.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "026",
     "x & 2-6",
     "Nerešeno i 2-6 gola",
     4.8,
+<<<<<<< HEAD
     -6.0
+=======
+    6.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "046",
     "x & 4-6",
     "Nerešeno i 4-6 golova",
     9.8,
+<<<<<<< HEAD
     -6.0
+=======
+    6.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "223",
     "2 & 2-3",
     "Inter Milano pobednik i 2-3 gola",
     3.3,
+<<<<<<< HEAD
     -3.0
+=======
+    3.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "224",
     "2 & 2-4",
     "Inter Milano pobednik i 2-4 gola",
     2.47,
+<<<<<<< HEAD
     -4.0
+=======
+    4.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "225",
     "2 & 2-5",
     "Inter Milano pobednik i 2-5 golova",
     2.05,
+<<<<<<< HEAD
     -5.0
+=======
+    5.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ]
   ]
  },
@@ -1411,14 +1463,22 @@
     "x & da",
     "Nerešeno i oba tima daju gol",
     4.8,
+<<<<<<< HEAD
     2.0
+=======
+    null
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "02",
     "x & ne",
     "Nerešeno i barem jedan tim ne daje gol",
     13.0,
+<<<<<<< HEAD
     2.0
+=======
+    null
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "21",
@@ -1451,7 +1511,11 @@
     "x & da",
     "Nerešeno i gol u oba poluvremena",
     6.7,
+<<<<<<< HEAD
     2.0
+=======
+    null
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "2",
@@ -1663,84 +1727,132 @@
     "1x & 2-3",
     "Bologna će pobediti ili će biti nerešeno i biće 2-",
     3.85,
+<<<<<<< HEAD
     -3.0
+=======
+    3.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "1024",
     "1x & 2-4",
     "Bologna će pobediti ili će biti nerešeno i biće 2-",
     3.05,
+<<<<<<< HEAD
     -4.0
+=======
+    4.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "1025",
     "1x & 2-5",
     "Bologna će pobediti ili će biti nerešeno i biće 2-",
     2.85,
+<<<<<<< HEAD
     -5.0
+=======
+    5.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "1026",
     "1x & 2-6",
     "Bologna će pobediti ili će biti nerešeno i biće 2-",
     2.72,
+<<<<<<< HEAD
     -6.0
+=======
+    6.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "1035",
     "1x & 3-5",
     "Bologna će pobediti ili će biti nerešeno i biće 3-",
     4.45,
+<<<<<<< HEAD
     -5.0
+=======
+    5.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "1036",
     "1x & 3-6",
     "Bologna će pobediti ili će biti nerešeno i biće 3-",
     4.15,
+<<<<<<< HEAD
     -6.0
+=======
+    6.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "0223",
     "x2 & 2-3",
     "Biće nerešeno ili Inter Milano će pobediti i biće ",
     2.22,
+<<<<<<< HEAD
     -3.0
+=======
+    3.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "0224",
     "x2 & 2-4",
     "Biće nerešeno ili Inter Milano će pobediti i biće ",
     1.66,
+<<<<<<< HEAD
     -4.0
+=======
+    4.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "0225",
     "x2 & 2-5",
     "Biće nerešeno ili Inter Milano će pobediti i biće ",
     1.46,
+<<<<<<< HEAD
     -5.0
+=======
+    5.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "0226",
     "x2 & 2-6",
     "Biće nerešeno ili Inter Milano će pobediti i biće ",
     1.37,
+<<<<<<< HEAD
     -6.0
+=======
+    6.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "0235",
     "x2 & 3-5",
     "Biće nerešeno ili Inter Milano će pobediti i biće ",
     2.07,
+<<<<<<< HEAD
     -5.0
+=======
+    5.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "0235",
     "x2 & 3-6",
     "Biće nerešeno ili Inter Milano će pobediti i biće ",
     1.88,
+<<<<<<< HEAD
     -6.0
+=======
+    6.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ]
   ]
  },
@@ -1778,7 +1890,11 @@
   ]
  },
  "Dupla šansa & ukupno golova (1.5)": {
+<<<<<<< HEAD
   "mecova": 7,
+=======
+  "mecova": 6,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
   "primer": [
    [
     "10-",
@@ -1832,14 +1948,23 @@
     "1x & da",
     "Fiorentina će pobediti ili će biti nerešeno i oba ",
     2.3,
+<<<<<<< HEAD
     1.0
+=======
+    null
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "102",
     "1x & ne",
     "Fiorentina će pobediti ili će biti nerešeno i bare",
+<<<<<<< HEAD
     4.0,
     1.0
+=======
+    3.9,
+    null
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "121",
@@ -1860,14 +1985,22 @@
     "x2 & da",
     "Biće nerešeno ili Como će pobediti i oba tima daju",
     1.87,
+<<<<<<< HEAD
     2.0
+=======
+    null
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "022",
     "x2 & ne",
     "Biće nerešeno ili Como će pobediti i barem jedan t",
     2.82,
+<<<<<<< HEAD
     2.0
+=======
+    null
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ]
   ]
  },
@@ -2029,21 +2162,33 @@
     "1-2",
     "Bologna 1-2 gola na utakmici",
     1.72,
+<<<<<<< HEAD
     -2.0
+=======
+    2.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "",
     "1-3",
     "Bologna  1-3 gola na utakmici",
     1.56,
+<<<<<<< HEAD
     -3.0
+=======
+    3.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "",
     "2-3",
     "Bologna 2-3 gola na utakmici",
     3.65,
+<<<<<<< HEAD
     -3.0
+=======
+    3.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ]
   ]
  },
@@ -2055,21 +2200,33 @@
     "1-2",
     "Inter Milano 1-2 gola na utakmici",
     1.76,
+<<<<<<< HEAD
     -2.0
+=======
+    2.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "",
     "1-3",
     "Inter Milano 1-3 gola na utakmici",
     1.33,
+<<<<<<< HEAD
     -3.0
+=======
+    3.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "",
     "2-3",
     "Inter Milano 2-3 gola na utakmici",
     2.07,
+<<<<<<< HEAD
     -3.0
+=======
+    3.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ]
   ]
  },
@@ -3198,22 +3355,35 @@
     "",
     "1-2",
     "Fiorentina 1-2 gola na utakmici",
+<<<<<<< HEAD
     1.62,
     -2.0
+=======
+    1.63,
+    2.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "",
     "1-3",
     "Fiorentina  1-3 gola na utakmici",
     1.4,
+<<<<<<< HEAD
     -3.0
+=======
+    3.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "",
     "2-3",
     "Fiorentina 2-3 gola na utakmici",
     2.82,
+<<<<<<< HEAD
     -3.0
+=======
+    3.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ]
   ]
  },
@@ -3225,21 +3395,33 @@
     "1-2",
     "Como 1-2 gola na utakmici",
     1.65,
+<<<<<<< HEAD
     -2.0
+=======
+    2.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "",
     "1-3",
     "Como 1-3 gola na utakmici",
     1.32,
+<<<<<<< HEAD
     -3.0
+=======
+    3.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "",
     "2-3",
     "Como 2-3 gola na utakmici",
     2.22,
+<<<<<<< HEAD
     -3.0
+=======
+    3.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ]
   ]
  },
@@ -3250,7 +3432,11 @@
     "12",
     "1-2",
     "Fiorentina 1 ili 2 gola u svakom poluvremenu",
+<<<<<<< HEAD
     4.25,
+=======
+    4.3,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
@@ -3394,7 +3580,11 @@
     "2",
     "ne",
     "Como ne daje gol na utakmici",
+<<<<<<< HEAD
     5.1,
+=======
+    5.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     null
    ]
   ]
@@ -3476,7 +3666,11 @@
     "",
     "manje 1.5 & vise 2.5",
     "1. Poluvreme Fiorentina manje od 1.5 golova i Fior",
+<<<<<<< HEAD
     8.9,
+=======
+    9.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
@@ -3584,7 +3778,11 @@
     "",
     "vise 0.5 & vise 0.5",
     "Fiorentina daje više od 0.5 golova u 1. poluvremen",
+<<<<<<< HEAD
     3.85,
+=======
+    3.9,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
@@ -3598,14 +3796,22 @@
     "",
     "vise 0.5 & vise 1.5",
     "Fiorentina daje više od 0.5 golova u 1. poluvremen",
+<<<<<<< HEAD
     9.4,
+=======
+    9.5,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
     "",
     "vise 0.5 & manje 1.5",
     "Fiorentina daje više od 0.5 golova u 1. poluvremen",
+<<<<<<< HEAD
     2.47,
+=======
+    2.5,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
@@ -3687,7 +3893,11 @@
     "",
     "vise 0.5 & vise 1.5",
     "Como daje više od 0.5 golova u 1. poluvremenu i vi",
+<<<<<<< HEAD
     5.85,
+=======
+    5.8,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
@@ -3708,7 +3918,11 @@
     "",
     "vise 0.5 & manje 2.5",
     "Como daje više od 0.5 golova u 1. poluvremenu i ma",
+<<<<<<< HEAD
     1.85,
+=======
+    1.83,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
@@ -3769,7 +3983,11 @@
     "2-",
     "2 & manje 0.5",
     "Como pobednik i Fiorentina manje od 0.5 gola na ut",
+<<<<<<< HEAD
     3.85,
+=======
+    3.8,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     0.5
    ],
    [
@@ -3870,7 +4088,11 @@
     "1+",
     "1 & vise 2.5",
     "Fiorentina pobednik i Fiorentina više od 2.5 gola ",
+<<<<<<< HEAD
     6.7,
+=======
+    6.8,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
@@ -3943,14 +4165,22 @@
     "1-",
     "1 & manje 4.5",
     "Fiorentina pobednik i Fiorentina manje od 4.5 gola",
+<<<<<<< HEAD
     3.35,
+=======
+    3.3,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     4.5
    ],
    [
     "0-",
     "x & manje 4.5",
     "nerešeno i Fiorentina manje od 4.5 gola na utakmic",
+<<<<<<< HEAD
     3.35,
+=======
+    3.4,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     4.5
    ],
    [
@@ -4091,7 +4321,11 @@
     "2-",
     "2 & manje 2.5",
     "Como pobednik  i Como manje od 2.5 gola na utakmic",
+<<<<<<< HEAD
     3.5,
+=======
+    3.45,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
@@ -4124,7 +4358,11 @@
     "1-",
     "1 & manje 3.5",
     "Fiorentina pobednik  i Como manje od 3.5 gola na u",
+<<<<<<< HEAD
     3.25,
+=======
+    3.2,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.5
    ],
    [
@@ -4178,7 +4416,11 @@
     "0-",
     "x & manje 4.5",
     "nerešeno i Como manje od 4.5 gola na utakmici",
+<<<<<<< HEAD
     3.35,
+=======
+    3.4,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     4.5
    ],
    [
@@ -4416,21 +4658,33 @@
     "1-2",
     "Frosinone 1-2 gola na utakmici",
     1.65,
+<<<<<<< HEAD
     -2.0
+=======
+    2.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "",
     "1-3",
     "Frosinone  1-3 gola na utakmici",
     1.32,
+<<<<<<< HEAD
     -3.0
+=======
+    3.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "",
     "2-3",
     "Frosinone 2-3 gola na utakmici",
     2.25,
+<<<<<<< HEAD
     -3.0
+=======
+    3.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ]
   ]
  },
@@ -4442,21 +4696,33 @@
     "1-2",
     "Sassuolo 1-2 gola na utakmici",
     1.64,
+<<<<<<< HEAD
     -2.0
+=======
+    2.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "",
     "1-3",
     "Sassuolo 1-3 gola na utakmici",
     1.33,
+<<<<<<< HEAD
     -3.0
+=======
+    3.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "",
     "2-3",
     "Sassuolo 2-3 gola na utakmici",
     2.3,
+<<<<<<< HEAD
     -3.0
+=======
+    3.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ]
   ]
  },
@@ -4500,7 +4766,11 @@
     "13",
     "1-3",
     "Sassuolo 1,2 ili 3 gola u svakom poluvremenu",
+<<<<<<< HEAD
     2.95,
+=======
+    3.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.0
    ],
    [
@@ -4526,7 +4796,11 @@
     "1",
     "1",
     "Frosinone daje tačno 1 gol",
+<<<<<<< HEAD
     2.92,
+=======
+    2.95,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.0
    ],
    [
@@ -4623,7 +4897,11 @@
     "",
     "vise 0.5 & vise 1.5",
     "1. Poluvreme Frosinone više od 0.5 golova i Frosin",
+<<<<<<< HEAD
     2.3,
+=======
+    2.32,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
@@ -4700,7 +4978,11 @@
     "",
     "manje 1.5 & manje 2.5",
     "1. Poluvreme Frosinone manje od 1.5 golova i Frosi",
+<<<<<<< HEAD
     1.35,
+=======
+    1.34,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ]
   ]
@@ -4712,7 +4994,11 @@
     "",
     "vise 0.5 & vise 1.5",
     "1. Poluvreme Sassuolo više od 0.5 golova i Sassuol",
+<<<<<<< HEAD
     2.4,
+=======
+    2.42,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
@@ -4733,21 +5019,33 @@
     "",
     "manje 0.5 & manje 1.5",
     "1. Poluvreme Sassuolo manje od 0.5 golova i Sassuo",
+<<<<<<< HEAD
     2.47,
+=======
+    2.45,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
     "",
     "vise 0.5 & vise 2.5",
     "1. Poluvreme Sassuolo više od 0.5 golova i Sassuol",
+<<<<<<< HEAD
     4.25,
+=======
+    4.3,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
     "",
     "vise 0.5 & manje 2.5",
     "1. Poluvreme Sassuolo više od 0.5 golova i Sassuol",
+<<<<<<< HEAD
     2.75,
+=======
+    2.77,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
@@ -4768,7 +5066,11 @@
     "",
     "vise 1.5 & vise 2.5",
     "1. Poluvreme Sassuolo više od 1.5 golova i Sassuol",
+<<<<<<< HEAD
     6.5,
+=======
+    6.6,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
@@ -4789,7 +5091,11 @@
     "",
     "manje 1.5 & manje 2.5",
     "1. Poluvreme Sassuolo manje od 1.5 golova i Sassuo",
+<<<<<<< HEAD
     1.32,
+=======
+    1.31,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ]
   ]
@@ -4801,7 +5107,11 @@
     "",
     "vise 0.5 & vise 0.5",
     "Frosinone daje više od 0.5 golova u 1. poluvremenu",
+<<<<<<< HEAD
     2.75,
+=======
+    2.77,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
@@ -4850,7 +5160,11 @@
     "",
     "manje 0.5 & manje 0.5",
     "Frosinone daje manje od 0.5 golova u 1. poluvremen",
+<<<<<<< HEAD
     4.65,
+=======
+    4.6,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
@@ -4932,7 +5246,11 @@
     "",
     "manje 0.5 & vise 0.5",
     "Sassuolo daje manje od 0.5 golova u 1. poluvremenu",
+<<<<<<< HEAD
     3.0,
+=======
+    2.95,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
@@ -4946,7 +5264,11 @@
     "",
     "manje 0.5 & vise 1.5",
     "Sassuolo daje manje od 0.5 golova u 1. poluvremenu",
+<<<<<<< HEAD
     6.4,
+=======
+    6.3,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
@@ -5101,7 +5423,11 @@
     "2+",
     "2 & vise 2.5",
     "Sassuolo pobednik i Frosinone više od 2.5 gola na ",
+<<<<<<< HEAD
     29.0,
+=======
+    30.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ]
   ]
@@ -5134,7 +5460,11 @@
     "1+",
     "1 & vise 3.5",
     "Frosinone pobednik i Frosinone više od 3.5 gola na",
+<<<<<<< HEAD
     8.0,
+=======
+    7.9,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.5
    ],
    [
@@ -5247,7 +5577,11 @@
     "1-",
     "1 & manje 1.5",
     "Frosinone pobednik  i Sassuolo manje od 1.5 gola n",
+<<<<<<< HEAD
     2.9,
+=======
+    2.87,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
@@ -5376,7 +5710,11 @@
     "2+",
     "2 & vise 3.5",
     "Sassuolo pobednik  i Sassuolo više od 3.5 gola na ",
+<<<<<<< HEAD
     8.5,
+=======
+    8.4,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.5
    ]
   ]
@@ -5435,70 +5773,110 @@
     "/1-",
     "manje 3.5",
     "Juventus manje od 3.5 kornera",
+<<<<<<< HEAD
     4.15,
+=======
+    3.8,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.5
    ],
    [
     "/1+",
     "vise 3.5",
     "Juventus više od 3.5 kornera",
+<<<<<<< HEAD
     1.19,
+=======
+    1.23,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.5
    ],
    [
     "/1-",
     "manje 4.5",
     "Juventus manje od 4.5 kornera",
+<<<<<<< HEAD
     2.7,
+=======
+    2.5,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     4.5
    ],
    [
     "/1+",
     "vise 4.5",
     "Juventus više od 4.5 kornera",
+<<<<<<< HEAD
     1.41,
+=======
+    1.47,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     4.5
    ],
    [
     "/1-",
     "manje 5.5",
     "Juventus manje od 5.5 kornera",
+<<<<<<< HEAD
     1.97,
+=======
+    1.85,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     5.5
    ],
    [
     "/1+",
     "vise 5.5",
     "Juventus više od 5.5 kornera",
+<<<<<<< HEAD
     1.75,
+=======
+    1.85,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     5.5
    ],
    [
     "/1-",
     "manje 6.5",
     "Juventus manje od 6.5 kornera",
+<<<<<<< HEAD
     1.56,
+=======
+    1.49,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     6.5
    ],
    [
     "/1+",
     "vise 6.5",
     "Juventus više od 6.5 kornera",
+<<<<<<< HEAD
     2.27,
+=======
+    2.45,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     6.5
    ],
    [
     "/1-",
     "manje 7.5",
     "Juventus manje od 7.5 kornera",
+<<<<<<< HEAD
     1.32,
+=======
+    1.28,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     7.5
    ],
    [
     "/1+",
     "vise 7.5",
     "Juventus više od 7.5 kornera",
+<<<<<<< HEAD
     3.1,
+=======
+    3.35,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     7.5
    ]
   ]
@@ -5510,70 +5888,110 @@
     "/2-",
     "manje 1.5",
     "Lazio će imati manje od 1.5 kornera",
+<<<<<<< HEAD
     4.9,
+=======
+    4.4,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
     "/2+",
     "vise 1.5",
     "Lazio će imati više od 1.5 kornera",
+<<<<<<< HEAD
     1.14,
+=======
+    1.17,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
     "/2-",
     "manje 2.5",
     "Lazio će imati manje od 2.5 kornera",
+<<<<<<< HEAD
     2.7,
+=======
+    2.45,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
     "/2+",
     "vise 2.5",
     "Lazio će imati više od 2.5 kornera",
+<<<<<<< HEAD
     1.41,
+=======
+    1.49,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
     "/2-",
     "manje 3.5",
     "Lazio će imati manje od 3.5 kornera",
+<<<<<<< HEAD
     1.83,
+=======
+    1.7,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.5
    ],
    [
     "/2+",
     "vise 3.5",
     "Lazio će imati više od 3.5 kornera",
+<<<<<<< HEAD
     1.88,
+=======
+    2.05,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.5
    ],
    [
     "/2-",
     "manje 4.5",
     "Lazio će imati manje od 4.5 kornera",
+<<<<<<< HEAD
     1.42,
+=======
+    1.35,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     4.5
    ],
    [
     "/2+",
     "vise 4.5",
     "Lazio će imati više od 4.5 kornera",
+<<<<<<< HEAD
     2.67,
+=======
+    2.95,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     4.5
    ],
    [
     "/2-",
     "manje 5.5",
     "Lazio će imati manje od 5.5 kornera",
+<<<<<<< HEAD
     1.21,
+=======
+    1.17,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     5.5
    ],
    [
     "/2+",
     "vise 5.5",
     "Lazio će imati više od 5.5 kornera",
+<<<<<<< HEAD
     4.0,
+=======
+    4.5,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     5.5
    ]
   ]
@@ -5586,21 +6004,33 @@
     "1-2",
     "Juventus 1-2 gola na utakmici",
     1.67,
+<<<<<<< HEAD
     -2.0
+=======
+    2.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "",
     "1-3",
     "Juventus  1-3 gola na utakmici",
     1.32,
+<<<<<<< HEAD
     -3.0
+=======
+    3.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "",
     "2-3",
     "Juventus 2-3 gola na utakmici",
     2.2,
+<<<<<<< HEAD
     -3.0
+=======
+    3.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ]
   ]
  },
@@ -5612,21 +6042,34 @@
     "1-2",
     "Lazio 1-2 gola na utakmici",
     1.8,
+<<<<<<< HEAD
     -2.0
+=======
+    2.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "",
     "1-3",
     "Lazio 1-3 gola na utakmici",
+<<<<<<< HEAD
     1.66,
     -3.0
+=======
+    1.65,
+    3.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "",
     "2-3",
     "Lazio 2-3 gola na utakmici",
     4.2,
+<<<<<<< HEAD
     -3.0
+=======
+    3.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ]
   ]
  },
@@ -5637,7 +6080,11 @@
     "12",
     "1-2",
     "Juventus 1 ili 2 gola u svakom poluvremenu",
+<<<<<<< HEAD
     3.15,
+=======
+    3.2,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
@@ -5696,7 +6143,11 @@
     "1",
     "1",
     "Juventus daje tačno 1 gol",
+<<<<<<< HEAD
     3.05,
+=======
+    3.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.0
    ],
    [
@@ -5736,7 +6187,11 @@
     "2",
     "2",
     "Lazio daje tačno 2 gola",
+<<<<<<< HEAD
     5.3,
+=======
+    5.25,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.0
    ],
    [
@@ -5835,21 +6290,33 @@
     "",
     "manje 0.5 & vise 2.5",
     "1. Poluvreme Juventus manje od 0.5 golova i Juvent",
+<<<<<<< HEAD
     15.0,
+=======
+    16.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
     "",
     "manje 0.5 & manje 2.5",
     "1. Poluvreme Juventus manje od 0.5 golova i Juvent",
+<<<<<<< HEAD
     2.22,
+=======
+    2.2,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
     "",
     "vise 1.5 & vise 2.5",
     "1. Poluvreme Juventus više od 1.5 golova i Juventu",
+<<<<<<< HEAD
     5.65,
+=======
+    5.7,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
@@ -5870,7 +6337,11 @@
     "",
     "manje 1.5 & manje 2.5",
     "1. Poluvreme Juventus manje od 1.5 golova i Juvent",
+<<<<<<< HEAD
     1.39,
+=======
+    1.38,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ]
   ]
@@ -5896,14 +6367,22 @@
     "",
     "manje 0.5 & vise 1.5",
     "1. Poluvreme Lazio manje od 0.5 golova i Lazio viš",
+<<<<<<< HEAD
     10.0,
+=======
+    9.9,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
     "",
     "manje 0.5 & manje 1.5",
     "1. Poluvreme Lazio manje od 0.5 golova i Lazio man",
+<<<<<<< HEAD
     1.52,
+=======
+    1.53,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
@@ -5952,14 +6431,22 @@
     "",
     "manje 1.5 & vise 2.5",
     "1. Poluvreme Lazio manje od 1.5 golova i Lazio viš",
+<<<<<<< HEAD
     17.0,
+=======
+    16.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
     "",
     "manje 1.5 & manje 2.5",
     "1. Poluvreme Lazio manje od 1.5 golova i Lazio man",
+<<<<<<< HEAD
     1.05,
+=======
+    1.06,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ]
   ]
@@ -6041,14 +6528,22 @@
     "",
     "manje 0.5 & vise 2.5",
     "Juventus daje manje od 0.5 golova u 1. poluvremenu",
+<<<<<<< HEAD
     15.0,
+=======
+    16.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
     "",
     "manje 0.5 & manje 2.5",
     "Juventus daje manje od 0.5 golova u 1. poluvremenu",
+<<<<<<< HEAD
     2.22,
+=======
+    2.2,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ]
   ]
@@ -6060,7 +6555,11 @@
     "",
     "vise 0.5 & vise 0.5",
     "Lazio daje više od 0.5 golova u 1. poluvremenu i v",
+<<<<<<< HEAD
     6.2,
+=======
+    6.1,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
@@ -6095,7 +6594,11 @@
     "",
     "vise 0.5 & manje 2.5",
     "Lazio daje više od 0.5 golova u 1. poluvremenu i m",
+<<<<<<< HEAD
     2.82,
+=======
+    2.8,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
@@ -6116,14 +6619,22 @@
     "",
     "manje 0.5 & vise 1.5",
     "Lazio daje manje od 0.5 golova u 1. poluvremenu i ",
+<<<<<<< HEAD
     10.0,
+=======
+    9.9,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
     "",
     "manje 0.5 & manje 1.5",
     "Lazio daje manje od 0.5 golova u 1. poluvremenu i ",
+<<<<<<< HEAD
     1.52,
+=======
+    1.53,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
@@ -6149,7 +6660,11 @@
     "0-",
     "x & manje 0.5",
     "nerešeno i Juventus manje od 0.5 gola na utakmici",
+<<<<<<< HEAD
     9.0,
+=======
+    8.9,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     0.5
    ],
    [
@@ -6163,14 +6678,22 @@
     "1+",
     "1 & vise 0.5",
     "Juventus pobednik i Juventus više od 0.5 gola na u",
+<<<<<<< HEAD
     1.61,
+=======
+    1.62,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     0.5
    ],
    [
     "0+",
     "x & vise 0.5",
     "nerešeno i Juventus više od 0.5 gola na utakmici",
+<<<<<<< HEAD
     4.8,
+=======
+    4.75,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     0.5
    ],
    [
@@ -6243,7 +6766,11 @@
     "0-",
     "x & manje 2.5",
     "nerešeno i Juventus manje od 2.5 gola na utakmici",
+<<<<<<< HEAD
     3.7,
+=======
+    3.65,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
@@ -6283,14 +6810,22 @@
     "1-",
     "1 & manje 3.5",
     "Juventus pobednik i Juventus manje od 3.5 gola na ",
+<<<<<<< HEAD
     1.92,
+=======
+    1.95,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.5
    ],
    [
     "0-",
     "x & manje 3.5",
     "nerešeno i Juventus manje od 3.5 gola na utakmici",
+<<<<<<< HEAD
     3.6,
+=======
+    3.55,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.5
    ],
    [
@@ -6330,7 +6865,11 @@
     "1-",
     "1 & manje 4.5",
     "Juventus pobednik i Juventus manje od 4.5 gola na ",
+<<<<<<< HEAD
     1.7,
+=======
+    1.71,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     4.5
    ],
    [
@@ -6370,14 +6909,22 @@
     "1-",
     "1 & manje 0.5",
     "Juventus pobednik  i Lazio manje od 0.5 gola na ut",
+<<<<<<< HEAD
     2.62,
+=======
+    2.65,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     0.5
    ],
    [
     "0-",
     "x & manje 0.5",
     "nerešeno i Lazio manje od 0.5 gola na utakmici",
+<<<<<<< HEAD
     9.0,
+=======
+    8.9,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     0.5
    ],
    [
@@ -6391,7 +6938,11 @@
     "0+",
     "x & vise 0.5",
     "nerešeno i Lazio više od 0.5 gola na utakmici",
+<<<<<<< HEAD
     4.8,
+=======
+    4.75,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     0.5
    ],
    [
@@ -6445,7 +6996,11 @@
     "2+",
     "2 & vise 1.5",
     "Lazio pobednik  i Lazio više od 1.5 gola na utakmi",
+<<<<<<< HEAD
     6.3,
+=======
+    6.2,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ]
   ]
@@ -6464,7 +7019,11 @@
     "0-",
     "x & manje 2.5",
     "nerešeno i Lazio manje od 2.5 gola na utakmici",
+<<<<<<< HEAD
     3.7,
+=======
+    3.65,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
@@ -6504,14 +7063,22 @@
     "1-",
     "1 & manje 3.5",
     "Juventus pobednik  i Lazio manje od 3.5 gola na ut",
+<<<<<<< HEAD
     1.61,
+=======
+    1.62,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.5
    ],
    [
     "0-",
     "x & manje 3.5",
     "nerešeno i Lazio manje od 3.5 gola na utakmici",
+<<<<<<< HEAD
     3.6,
+=======
+    3.55,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.5
    ],
    [
@@ -6551,7 +7118,11 @@
     "1-",
     "1 & manje 4.5",
     "Juventus pobednik  i Lazio manje od 4.5 gola na ut",
+<<<<<<< HEAD
     1.61,
+=======
+    1.62,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     4.5
    ],
    [
@@ -6749,21 +7320,33 @@
     "1-2",
     "AC Milan 1-2 gola na utakmici",
     1.66,
+<<<<<<< HEAD
     -2.0
+=======
+    2.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "",
     "1-3",
     "AC Milan  1-3 gola na utakmici",
     1.32,
+<<<<<<< HEAD
     -3.0
+=======
+    3.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "",
     "2-3",
     "AC Milan 2-3 gola na utakmici",
     2.22,
+<<<<<<< HEAD
     -3.0
+=======
+    3.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ]
   ]
  },
@@ -6774,22 +7357,37 @@
     "",
     "1-2",
     "Atalanta 1-2 gola na utakmici",
+<<<<<<< HEAD
     1.66,
     -2.0
+=======
+    1.67,
+    2.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "",
     "1-3",
     "Atalanta 1-3 gola na utakmici",
+<<<<<<< HEAD
     1.47,
     -3.0
+=======
+    1.49,
+    3.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "",
     "2-3",
     "Atalanta 2-3 gola na utakmici",
+<<<<<<< HEAD
     3.25,
     -3.0
+=======
+    3.3,
+    3.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ]
   ]
  },
@@ -6800,21 +7398,33 @@
     "12",
     "1-2",
     "AC Milan 1 ili 2 gola u svakom poluvremenu",
+<<<<<<< HEAD
     3.2,
+=======
+    3.25,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
     "13",
     "1-3",
     "AC Milan 1,2 ili 3 gola u svakom poluvremenu",
+<<<<<<< HEAD
     2.77,
+=======
+    2.8,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.0
    ],
    [
     "23",
     "2-3",
     "AC Milan 2 ili 3 gola u svakom poluvremenu",
+<<<<<<< HEAD
     14.0,
+=======
+    15.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.0
    ]
   ]
@@ -6826,21 +7436,33 @@
     "12",
     "1-2",
     "Atalanta 1 ili 2 gola u svakom poluvremenu",
+<<<<<<< HEAD
     4.9,
+=======
+    5.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
     "13",
     "1-3",
     "Atalanta 1,2 ili 3 gola u svakom poluvremenu",
+<<<<<<< HEAD
     4.65,
+=======
+    4.75,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.0
    ],
    [
     "23",
     "2-3",
     "Atalanta 2 ili 3 gola u svakom poluvremenu",
+<<<<<<< HEAD
     38.0,
+=======
+    40.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.0
    ]
   ]
@@ -6859,7 +7481,11 @@
     "1",
     "1",
     "AC Milan daje tačno 1 gol",
+<<<<<<< HEAD
     3.0,
+=======
+    2.95,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.0
    ],
    [
@@ -6873,7 +7499,11 @@
     "3",
     "3+",
     "AC Milan daje 3 ili više golova",
+<<<<<<< HEAD
     3.55,
+=======
+    3.6,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.0
    ]
   ]
@@ -6885,7 +7515,11 @@
     "0",
     "0",
     "Atalanta ne daje gol",
+<<<<<<< HEAD
     2.85,
+=======
+    2.8,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.0
    ],
    [
@@ -6899,14 +7533,22 @@
     "2",
     "2",
     "Atalanta daje tačno 2 gola",
+<<<<<<< HEAD
     4.3,
+=======
+    4.35,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.0
    ],
    [
     "3",
     "3+",
     "Atalanta daje 3 ili više golova",
+<<<<<<< HEAD
     7.6,
+=======
+    7.9,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.0
    ]
   ]
@@ -6925,7 +7567,11 @@
     "2",
     "ne",
     "AC Milan ne daje gol na utakmici",
+<<<<<<< HEAD
     5.1,
+=======
+    5.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     null
    ]
   ]
@@ -6937,14 +7583,22 @@
     "1",
     "da",
     "Atalanta daje gol na utakmici",
+<<<<<<< HEAD
     1.42,
+=======
+    1.44,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     null
    ],
    [
     "2",
     "ne",
     "Atalanta ne daje gol na utakmici",
+<<<<<<< HEAD
     2.87,
+=======
+    2.82,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     null
    ]
   ]
@@ -6977,14 +7631,22 @@
     "",
     "manje 0.5 & manje 1.5",
     "1. Poluvreme AC Milan manje od 0.5 golova i AC Mil",
+<<<<<<< HEAD
     2.65,
+=======
+    2.62,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
     "",
     "vise 0.5 & vise 2.5",
     "1. Poluvreme AC Milan više od 0.5 golova i AC Mila",
+<<<<<<< HEAD
     3.85,
+=======
+    3.9,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
@@ -7005,14 +7667,22 @@
     "",
     "manje 0.5 & manje 2.5",
     "1. Poluvreme AC Milan manje od 0.5 golova i AC Mil",
+<<<<<<< HEAD
     2.17,
+=======
+    2.15,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
     "",
     "vise 1.5 & vise 2.5",
     "1. Poluvreme AC Milan više od 1.5 golova i AC Mila",
+<<<<<<< HEAD
     5.85,
+=======
+    5.9,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
@@ -7033,7 +7703,11 @@
     "",
     "manje 1.5 & manje 2.5",
     "1. Poluvreme AC Milan manje od 1.5 golova i AC Mil",
+<<<<<<< HEAD
     1.37,
+=======
+    1.36,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ]
   ]
@@ -7045,56 +7719,88 @@
     "",
     "vise 0.5 & vise 1.5",
     "1. Poluvreme Atalanta više od 0.5 golova i Atalant",
+<<<<<<< HEAD
     3.75,
+=======
+    3.85,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
     "",
     "vise 0.5 & manje 1.5",
     "1. Poluvreme Atalanta više od 0.5 golova i Atalant",
+<<<<<<< HEAD
     5.0,
+=======
+    4.9,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
     "",
     "manje 0.5 & vise 1.5",
     "1. Poluvreme Atalanta manje od 0.5 golova i Atalan",
+<<<<<<< HEAD
     8.1,
+=======
+    8.2,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
     "",
     "manje 0.5 & manje 1.5",
     "1. Poluvreme Atalanta manje od 0.5 golova i Atalan",
+<<<<<<< HEAD
     1.76,
+=======
+    1.73,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
     "",
     "vise 0.5 & vise 2.5",
     "1. Poluvreme Atalanta više od 0.5 golova i Atalant",
+<<<<<<< HEAD
     8.0,
+=======
+    8.2,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
     "",
     "vise 0.5 & manje 2.5",
     "1. Poluvreme Atalanta više od 0.5 golova i Atalant",
+<<<<<<< HEAD
     2.92,
+=======
+    2.95,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
     "",
     "manje 0.5 & vise 2.5",
     "1. Poluvreme Atalanta manje od 0.5 golova i Atalan",
+<<<<<<< HEAD
     26.0,
+=======
+    27.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
     "",
     "manje 0.5 & manje 2.5",
     "1. Poluvreme Atalanta manje od 0.5 golova i Atalan",
+<<<<<<< HEAD
     1.57,
+=======
+    1.56,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
@@ -7115,7 +7821,11 @@
     "",
     "manje 1.5 & vise 2.5",
     "1. Poluvreme Atalanta manje od 1.5 golova i Atalan",
+<<<<<<< HEAD
     11.0,
+=======
+    12.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
@@ -7134,7 +7844,11 @@
     "",
     "vise 0.5 & vise 0.5",
     "AC Milan daje više od 0.5 golova u 1. poluvremenu ",
+<<<<<<< HEAD
     2.67,
+=======
+    2.7,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
@@ -7148,7 +7862,11 @@
     "",
     "vise 0.5 & vise 1.5",
     "AC Milan daje više od 0.5 golova u 1. poluvremenu ",
+<<<<<<< HEAD
     5.75,
+=======
+    5.85,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
@@ -7169,7 +7887,11 @@
     "",
     "vise 0.5 & manje 2.5",
     "AC Milan daje više od 0.5 golova u 1. poluvremenu ",
+<<<<<<< HEAD
     1.83,
+=======
+    1.85,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
@@ -7183,7 +7905,11 @@
     "",
     "manje 0.5 & manje 0.5",
     "AC Milan daje manje od 0.5 golova u 1. poluvremenu",
+<<<<<<< HEAD
     4.8,
+=======
+    4.75,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
@@ -7197,7 +7923,11 @@
     "",
     "manje 0.5 & manje 1.5",
     "AC Milan daje manje od 0.5 golova u 1. poluvremenu",
+<<<<<<< HEAD
     2.65,
+=======
+    2.62,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
@@ -7211,7 +7941,11 @@
     "",
     "manje 0.5 & manje 2.5",
     "AC Milan daje manje od 0.5 golova u 1. poluvremenu",
+<<<<<<< HEAD
     2.17,
+=======
+    2.15,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ]
   ]
@@ -7223,7 +7957,11 @@
     "",
     "vise 0.5 & vise 0.5",
     "Atalanta daje više od 0.5 golova u 1. poluvremenu ",
+<<<<<<< HEAD
     4.6,
+=======
+    4.7,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
@@ -7237,14 +7975,22 @@
     "",
     "vise 0.5 & vise 1.5",
     "Atalanta daje više od 0.5 golova u 1. poluvremenu ",
+<<<<<<< HEAD
     12.0,
+=======
+    13.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
     "",
     "vise 0.5 & manje 1.5",
     "Atalanta daje više od 0.5 golova u 1. poluvremenu ",
+<<<<<<< HEAD
     2.65,
+=======
+    2.67,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
@@ -7258,7 +8004,11 @@
     "",
     "vise 0.5 & manje 2.5",
     "Atalanta daje više od 0.5 golova u 1. poluvremenu ",
+<<<<<<< HEAD
     2.4,
+=======
+    2.42,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
@@ -7272,35 +8022,55 @@
     "",
     "manje 0.5 & manje 0.5",
     "Atalanta daje manje od 0.5 golova u 1. poluvremenu",
+<<<<<<< HEAD
     2.77,
+=======
+    2.72,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
     "",
     "manje 0.5 & vise 1.5",
     "Atalanta daje manje od 0.5 golova u 1. poluvremenu",
+<<<<<<< HEAD
     8.1,
+=======
+    8.2,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
     "",
     "manje 0.5 & manje 1.5",
     "Atalanta daje manje od 0.5 golova u 1. poluvremenu",
+<<<<<<< HEAD
     1.76,
+=======
+    1.73,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
     "",
     "manje 0.5 & vise 2.5",
     "Atalanta daje manje od 0.5 golova u 1. poluvremenu",
+<<<<<<< HEAD
     26.0,
+=======
+    27.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
     "",
     "manje 0.5 & manje 2.5",
     "Atalanta daje manje od 0.5 golova u 1. poluvremenu",
+<<<<<<< HEAD
     1.57,
+=======
+    1.56,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ]
   ]
@@ -7326,7 +8096,11 @@
     "1+",
     "1 & vise 0.5",
     "AC Milan pobednik i AC Milan više od 0.5 gola na u",
+<<<<<<< HEAD
     1.82,
+=======
+    1.8,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     0.5
    ],
    [
@@ -7340,7 +8114,11 @@
     "2+",
     "2 & vise 0.5",
     "Atalanta pobednik i AC Milan više od 0.5 gola na u",
+<<<<<<< HEAD
     6.2,
+=======
+    6.3,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     0.5
    ]
   ]
@@ -7352,21 +8130,33 @@
     "1-",
     "1 & manje 1.5",
     "AC Milan pobednik i AC Milan manje od 1.5 gola na ",
+<<<<<<< HEAD
     7.3,
+=======
+    7.1,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
     "0-",
     "x & manje 1.5",
     "nerešeno i AC Milan manje od 1.5 gola na utakmici",
+<<<<<<< HEAD
     4.55,
+=======
+    4.5,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
     "2-",
     "2 & manje 1.5",
     "Atalanta pobednik i AC Milan manje od 1.5 gola na ",
+<<<<<<< HEAD
     4.1,
+=======
+    4.15,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
@@ -7380,14 +8170,22 @@
     "0+",
     "x & vise 1.5",
     "nerešeno i AC Milan više od 1.5 gola na utakmici",
+<<<<<<< HEAD
     8.8,
+=======
+    9.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
     "2+",
     "2 & vise 1.5",
     "Atalanta pobednik i AC Milan više od 1.5 gola na u",
+<<<<<<< HEAD
     17.0,
+=======
+    18.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ]
   ]
@@ -7399,21 +8197,33 @@
     "1-",
     "1 & manje 2.5",
     "AC Milan pobednik i AC Milan manje od 2.5 gola na ",
+<<<<<<< HEAD
     3.15,
+=======
+    3.1,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
     "0-",
     "x & manje 2.5",
     "nerešeno i AC Milan manje od 2.5 gola na utakmici",
+<<<<<<< HEAD
     3.6,
+=======
+    3.55,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
     "2-",
     "2 & manje 2.5",
     "Atalanta pobednik i AC Milan manje od 2.5 gola na ",
+<<<<<<< HEAD
     3.7,
+=======
+    3.75,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
@@ -7427,14 +8237,22 @@
     "0+",
     "x & vise 2.5",
     "nerešeno i AC Milan više od 2.5 gola na utakmici",
+<<<<<<< HEAD
     29.0,
+=======
+    30.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
     "2+",
     "2 & vise 2.5",
     "Atalanta pobednik i AC Milan više od 2.5 gola na u",
+<<<<<<< HEAD
     60.0,
+=======
+    65.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ]
   ]
@@ -7446,7 +8264,11 @@
     "1-",
     "1 & manje 3.5",
     "AC Milan pobednik i AC Milan manje od 3.5 gola na ",
+<<<<<<< HEAD
     2.2,
+=======
+    2.17,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.5
    ],
    [
@@ -7460,14 +8282,22 @@
     "2-",
     "2 & manje 3.5",
     "Atalanta pobednik i AC Milan manje od 3.5 gola na ",
+<<<<<<< HEAD
     3.65,
+=======
+    3.7,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.5
    ],
    [
     "1+",
     "1 & vise 3.5",
     "AC Milan pobednik i AC Milan više od 3.5 gola na u",
+<<<<<<< HEAD
     7.3,
+=======
+    7.4,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.5
    ],
    [
@@ -7493,7 +8323,11 @@
     "1-",
     "1 & manje 4.5",
     "AC Milan pobednik i AC Milan manje od 4.5 gola na ",
+<<<<<<< HEAD
     1.92,
+=======
+    1.9,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     4.5
    ],
    [
@@ -7507,7 +8341,11 @@
     "2-",
     "2 & manje 4.5",
     "Atalanta pobednik i AC Milan manje od 4.5 gola na ",
+<<<<<<< HEAD
     3.65,
+=======
+    3.7,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     4.5
    ],
    [
@@ -7540,7 +8378,11 @@
     "1-",
     "1 & manje 0.5",
     "AC Milan pobednik  i Atalanta manje od 0.5 gola na",
+<<<<<<< HEAD
     3.3,
+=======
+    3.25,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     0.5
    ],
    [
@@ -7554,7 +8396,11 @@
     "1+",
     "1 & vise 0.5",
     "AC Milan pobednik  i Atalanta više od 0.5 gola na ",
+<<<<<<< HEAD
     3.45,
+=======
+    3.5,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     0.5
    ],
    [
@@ -7568,7 +8414,11 @@
     "2+",
     "2 & vise 0.5",
     "Atalanta pobednik  i Atalanta više od 0.5 gola na ",
+<<<<<<< HEAD
     3.65,
+=======
+    3.7,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     0.5
    ]
   ]
@@ -7580,14 +8430,22 @@
     "1-",
     "1 & manje 1.5",
     "AC Milan pobednik  i Atalanta manje od 1.5 gola na",
+<<<<<<< HEAD
     2.05,
+=======
+    2.02,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
     "0-",
     "x & manje 1.5",
     "nerešeno i Atalanta manje od 1.5 gola na utakmici",
+<<<<<<< HEAD
     4.55,
+=======
+    4.5,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
@@ -7601,21 +8459,33 @@
     "1+",
     "1 & vise 1.5",
     "AC Milan pobednik  i Atalanta više od 1.5 gola na ",
+<<<<<<< HEAD
     10.0,
+=======
+    11.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
     "0+",
     "x & vise 1.5",
     "nerešeno i Atalanta više od 1.5 gola na utakmici",
+<<<<<<< HEAD
     8.8,
+=======
+    9.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
     "2+",
     "2 & vise 1.5",
     "Atalanta pobednik  i Atalanta više od 1.5 gola na ",
+<<<<<<< HEAD
     4.65,
+=======
+    4.8,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ]
   ]
@@ -7627,21 +8497,33 @@
     "1-",
     "1 & manje 2.5",
     "AC Milan pobednik  i Atalanta manje od 2.5 gola na",
+<<<<<<< HEAD
     1.83,
+=======
+    1.82,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
     "0-",
     "x & manje 2.5",
     "nerešeno i Atalanta manje od 2.5 gola na utakmici",
+<<<<<<< HEAD
     3.6,
+=======
+    3.55,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
     "2-",
     "2 & manje 2.5",
     "Atalanta pobednik  i Atalanta manje od 2.5 gola na",
+<<<<<<< HEAD
     5.15,
+=======
+    5.2,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
@@ -7655,14 +8537,22 @@
     "0+",
     "x & vise 2.5",
     "nerešeno i Atalanta više od 2.5 gola na utakmici",
+<<<<<<< HEAD
     29.0,
+=======
+    30.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
     "2+",
     "2 & vise 2.5",
     "Atalanta pobednik  i Atalanta više od 2.5 gola na ",
+<<<<<<< HEAD
     8.3,
+=======
+    8.6,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ]
   ]
@@ -7674,7 +8564,11 @@
     "1-",
     "1 & manje 3.5",
     "AC Milan pobednik  i Atalanta manje od 3.5 gola na",
+<<<<<<< HEAD
     1.82,
+=======
+    1.8,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.5
    ],
    [
@@ -7688,7 +8582,11 @@
     "2-",
     "2 & manje 3.5",
     "Atalanta pobednik  i Atalanta manje od 3.5 gola na",
+<<<<<<< HEAD
     4.0,
+=======
+    4.1,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.5
    ],
    [
@@ -7709,7 +8607,11 @@
     "2+",
     "2 & vise 3.5",
     "Atalanta pobednik  i Atalanta više od 3.5 gola na ",
+<<<<<<< HEAD
     20.0,
+=======
+    21.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.5
    ]
   ]
@@ -7721,7 +8623,11 @@
     "1-",
     "1 & manje 4.5",
     "AC Milan pobednik  i Atalanta manje od 4.5 gola na",
+<<<<<<< HEAD
     1.82,
+=======
+    1.8,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     4.5
    ],
    [
@@ -7735,7 +8641,11 @@
     "2-",
     "2 & manje 4.5",
     "Atalanta pobednik  i Atalanta manje od 4.5 gola na",
+<<<<<<< HEAD
     3.75,
+=======
+    3.8,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     4.5
    ],
    [
@@ -7919,21 +8829,34 @@
     "1-2",
     "Monza 1-2 gola na utakmici",
     1.61,
+<<<<<<< HEAD
     -2.0
+=======
+    2.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "",
     "1-3",
     "Monza  1-3 gola na utakmici",
     1.38,
+<<<<<<< HEAD
     -3.0
+=======
+    3.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "",
     "2-3",
     "Monza 2-3 gola na utakmici",
+<<<<<<< HEAD
     2.7,
     -3.0
+=======
+    2.67,
+    3.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ]
   ]
  },
@@ -7945,21 +8868,33 @@
     "1-2",
     "Cagliari 1-2 gola na utakmici",
     1.66,
+<<<<<<< HEAD
     -2.0
+=======
+    2.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "",
     "1-3",
     "Cagliari 1-3 gola na utakmici",
     1.46,
+<<<<<<< HEAD
     -3.0
+=======
+    3.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "",
     "2-3",
     "Cagliari 2-3 gola na utakmici",
     3.15,
+<<<<<<< HEAD
     -3.0
+=======
+    3.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ]
   ]
  },
@@ -7970,7 +8905,11 @@
     "12",
     "1-2",
     "Monza 1 ili 2 gola u svakom poluvremenu",
+<<<<<<< HEAD
     4.1,
+=======
+    4.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
@@ -8043,7 +8982,11 @@
     "3",
     "3+",
     "Monza daje 3 ili više golova",
+<<<<<<< HEAD
     5.55,
+=======
+    5.5,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.0
    ]
   ]
@@ -8055,7 +8998,11 @@
     "0",
     "0",
     "Cagliari ne daje gol",
+<<<<<<< HEAD
     2.92,
+=======
+    2.9,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.0
    ],
    [
@@ -8069,14 +9016,22 @@
     "2",
     "2",
     "Cagliari daje tačno 2 gola",
+<<<<<<< HEAD
     4.2,
+=======
+    4.25,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.0
    ],
    [
     "3",
     "3+",
     "Cagliari daje 3 ili više golova",
+<<<<<<< HEAD
     7.3,
+=======
+    7.4,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.0
    ]
   ]
@@ -8095,7 +9050,11 @@
     "2",
     "ne",
     "Monza ne daje gol na utakmici",
+<<<<<<< HEAD
     3.55,
+=======
+    3.6,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     null
    ]
   ]
@@ -8114,7 +9073,11 @@
     "2",
     "ne",
     "Cagliari ne daje gol na utakmici",
+<<<<<<< HEAD
     2.95,
+=======
+    2.92,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     null
    ]
   ]
@@ -8489,14 +9452,22 @@
     "2-",
     "2 & manje 0.5",
     "Cagliari pobednik i Monza manje od 0.5 gola na uta",
+<<<<<<< HEAD
     4.8,
+=======
+    4.9,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     0.5
    ],
    [
     "1+",
     "1 & vise 0.5",
     "Monza pobednik i Monza više od 0.5 gola na utakmic",
+<<<<<<< HEAD
     2.25,
+=======
+    2.22,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     0.5
    ],
    [
@@ -8510,7 +9481,11 @@
     "2+",
     "2 & vise 0.5",
     "Cagliari pobednik i Monza više od 0.5 gola na utak",
+<<<<<<< HEAD
     5.7,
+=======
+    5.8,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     0.5
    ]
   ]
@@ -8522,28 +9497,44 @@
     "1-",
     "1 & manje 1.5",
     "Monza pobednik i Monza manje od 1.5 gola na utakmi",
+<<<<<<< HEAD
     6.8,
+=======
+    6.7,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
     "0-",
     "x & manje 1.5",
     "nerešeno i Monza manje od 1.5 gola na utakmici",
+<<<<<<< HEAD
     3.75,
+=======
+    3.7,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
     "2-",
     "2 & manje 1.5",
     "Cagliari pobednik i Monza manje od 1.5 gola na uta",
+<<<<<<< HEAD
     3.2,
+=======
+    3.25,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
     "1+",
     "1 & vise 1.5",
     "Monza pobednik i Monza više od 1.5 gola na utakmic",
+<<<<<<< HEAD
     3.0,
+=======
+    2.95,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
@@ -8569,7 +9560,11 @@
     "1-",
     "1 & manje 2.5",
     "Monza pobednik i Monza manje od 2.5 gola na utakmi",
+<<<<<<< HEAD
     3.3,
+=======
+    3.25,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
@@ -8583,14 +9578,22 @@
     "2-",
     "2 & manje 2.5",
     "Cagliari pobednik i Monza manje od 2.5 gola na uta",
+<<<<<<< HEAD
     2.95,
+=======
+    3.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
     "1+",
     "1 & vise 2.5",
     "Monza pobednik i Monza više od 2.5 gola na utakmic",
+<<<<<<< HEAD
     5.6,
+=======
+    5.55,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
@@ -8616,7 +9619,11 @@
     "1-",
     "1 & manje 3.5",
     "Monza pobednik i Monza manje od 3.5 gola na utakmi",
+<<<<<<< HEAD
     2.52,
+=======
+    2.5,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.5
    ],
    [
@@ -8630,7 +9637,11 @@
     "2-",
     "2 & manje 3.5",
     "Cagliari pobednik i Monza manje od 3.5 gola na uta",
+<<<<<<< HEAD
     2.92,
+=======
+    2.95,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.5
    ],
    [
@@ -8663,7 +9674,11 @@
     "1-",
     "1 & manje 4.5",
     "Monza pobednik i Monza manje od 4.5 gola na utakmi",
+<<<<<<< HEAD
     2.32,
+=======
+    2.3,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     4.5
    ],
    [
@@ -8677,14 +9692,22 @@
     "2-",
     "2 & manje 4.5",
     "Cagliari pobednik i Monza manje od 4.5 gola na uta",
+<<<<<<< HEAD
     2.92,
+=======
+    2.95,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     4.5
    ],
    [
     "1+",
     "1 & vise 4.5",
     "Monza pobednik i Monza više od 4.5 gola na utakmic",
+<<<<<<< HEAD
     34.0,
+=======
+    33.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     4.5
    ],
    [
@@ -8710,7 +9733,11 @@
     "1-",
     "1 & manje 0.5",
     "Monza pobednik  i Cagliari manje od 0.5 gola na ut",
+<<<<<<< HEAD
     3.75,
+=======
+    3.7,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     0.5
    ],
    [
@@ -8738,7 +9765,11 @@
     "2+",
     "2 & vise 0.5",
     "Cagliari pobednik  i Cagliari više od 0.5 gola na ",
+<<<<<<< HEAD
     2.92,
+=======
+    2.95,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     0.5
    ]
   ]
@@ -8757,14 +9788,22 @@
     "0-",
     "x & manje 1.5",
     "nerešeno i Cagliari manje od 1.5 gola na utakmici",
+<<<<<<< HEAD
     3.75,
+=======
+    3.7,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
     "2-",
     "2 & manje 1.5",
     "Cagliari pobednik  i Cagliari manje od 1.5 gola na",
+<<<<<<< HEAD
     7.8,
+=======
+    7.9,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
@@ -8785,7 +9824,11 @@
     "2+",
     "2 & vise 1.5",
     "Cagliari pobednik  i Cagliari više od 1.5 gola na ",
+<<<<<<< HEAD
     3.9,
+=======
+    4.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ]
   ]
@@ -8797,7 +9840,11 @@
     "1-",
     "1 & manje 2.5",
     "Monza pobednik  i Cagliari manje od 2.5 gola na ut",
+<<<<<<< HEAD
     2.27,
+=======
+    2.25,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
@@ -8811,7 +9858,11 @@
     "2-",
     "2 & manje 2.5",
     "Cagliari pobednik  i Cagliari manje od 2.5 gola na",
+<<<<<<< HEAD
     4.0,
+=======
+    4.1,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
@@ -8832,7 +9883,11 @@
     "2+",
     "2 & vise 2.5",
     "Cagliari pobednik  i Cagliari više od 2.5 gola na ",
+<<<<<<< HEAD
     7.4,
+=======
+    7.6,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ]
   ]
@@ -9089,21 +10144,33 @@
     "1-2",
     "Parma 1-2 gola na utakmici",
     1.69,
+<<<<<<< HEAD
     -2.0
+=======
+    2.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "",
     "1-3",
     "Parma  1-3 gola na utakmici",
     1.51,
+<<<<<<< HEAD
     -3.0
+=======
+    3.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "",
     "2-3",
     "Parma 2-3 gola na utakmici",
     3.4,
+<<<<<<< HEAD
     -3.0
+=======
+    3.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ]
   ]
  },
@@ -9115,21 +10182,34 @@
     "1-2",
     "Torino FC 1-2 gola na utakmici",
     1.64,
+<<<<<<< HEAD
     -2.0
+=======
+    2.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "",
     "1-3",
     "Torino FC 1-3 gola na utakmici",
+<<<<<<< HEAD
     1.44,
     -3.0
+=======
+    1.43,
+    3.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "",
     "2-3",
     "Torino FC 2-3 gola na utakmici",
     3.0,
+<<<<<<< HEAD
     -3.0
+=======
+    3.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ]
   ]
  },
@@ -9140,21 +10220,33 @@
     "12",
     "1-2",
     "Parma 1 ili 2 gola u svakom poluvremenu",
+<<<<<<< HEAD
     5.25,
+=======
+    5.2,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
     "13",
     "1-3",
     "Parma 1,2 ili 3 gola u svakom poluvremenu",
+<<<<<<< HEAD
     5.0,
+=======
+    4.9,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.0
    ],
    [
     "23",
     "2-3",
     "Parma 2 ili 3 gola u svakom poluvremenu",
+<<<<<<< HEAD
     45.0,
+=======
+    40.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.0
    ]
   ]
@@ -9173,14 +10265,22 @@
     "13",
     "1-3",
     "Torino FC 1,2 ili 3 gola u svakom poluvremenu",
+<<<<<<< HEAD
     4.3,
+=======
+    4.25,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.0
    ],
    [
     "23",
     "2-3",
     "Torino FC 2 ili 3 gola u svakom poluvremenu",
+<<<<<<< HEAD
     33.0,
+=======
+    32.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.0
    ]
   ]
@@ -9206,14 +10306,22 @@
     "2",
     "2",
     "Parma daje tačno 2 gola",
+<<<<<<< HEAD
     4.5,
+=======
+    4.45,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.0
    ],
    [
     "3",
     "3+",
     "Parma daje 3 ili više golova",
+<<<<<<< HEAD
     8.3,
+=======
+    8.2,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.0
    ]
   ]
@@ -9225,7 +10333,11 @@
     "0",
     "0",
     "Torino FC ne daje gol",
+<<<<<<< HEAD
     3.05,
+=======
+    3.1,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.0
    ],
    [
@@ -9258,14 +10370,22 @@
     "1",
     "da",
     "Parma daje gol na utakmici",
+<<<<<<< HEAD
     1.47,
+=======
+    1.46,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     null
    ],
    [
     "2",
     "ne",
     "Parma ne daje gol na utakmici",
+<<<<<<< HEAD
     2.7,
+=======
+    2.72,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     null
    ]
   ]
@@ -9277,7 +10397,11 @@
     "1",
     "da",
     "Torino FC daje gol na utakmici",
+<<<<<<< HEAD
     1.38,
+=======
+    1.37,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     null
    ],
    [
@@ -9310,7 +10434,11 @@
     "",
     "manje 0.5 & vise 1.5",
     "1. Poluvreme Parma manje od 0.5 golova i Parma viš",
+<<<<<<< HEAD
     8.5,
+=======
+    8.4,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
@@ -9324,7 +10452,11 @@
     "",
     "vise 0.5 & vise 2.5",
     "1. Poluvreme Parma više od 0.5 golova i Parma više",
+<<<<<<< HEAD
     8.7,
+=======
+    8.6,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
@@ -9338,7 +10470,11 @@
     "",
     "manje 0.5 & vise 2.5",
     "1. Poluvreme Parma manje od 0.5 golova i Parma viš",
+<<<<<<< HEAD
     29.0,
+=======
+    28.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
@@ -9406,21 +10542,33 @@
     "",
     "manje 0.5 & manje 1.5",
     "1. Poluvreme Torino FC manje od 0.5 golova i Torin",
+<<<<<<< HEAD
     1.85,
+=======
+    1.87,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
     "",
     "vise 0.5 & vise 2.5",
     "1. Poluvreme Torino FC više od 0.5 golova i Torino",
+<<<<<<< HEAD
     7.2,
+=======
+    7.1,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
     "",
     "vise 0.5 & manje 2.5",
     "1. Poluvreme Torino FC više od 0.5 golova i Torino",
+<<<<<<< HEAD
     2.85,
+=======
+    2.82,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
@@ -9434,7 +10582,11 @@
     "",
     "manje 0.5 & manje 2.5",
     "1. Poluvreme Torino FC manje od 0.5 golova i Torin",
+<<<<<<< HEAD
     1.64,
+=======
+    1.65,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
@@ -9488,7 +10640,11 @@
     "",
     "vise 0.5 & vise 1.5",
     "Parma daje više od 0.5 golova u 1. poluvremenu i v",
+<<<<<<< HEAD
     14.0,
+=======
+    13.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
@@ -9523,14 +10679,22 @@
     "",
     "manje 0.5 & manje 0.5",
     "Parma daje manje od 0.5 golova u 1. poluvremenu i ",
+<<<<<<< HEAD
     2.62,
+=======
+    2.65,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
     "",
     "manje 0.5 & vise 1.5",
     "Parma daje manje od 0.5 golova u 1. poluvremenu i ",
+<<<<<<< HEAD
     8.5,
+=======
+    8.4,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
@@ -9544,7 +10708,11 @@
     "",
     "manje 0.5 & vise 2.5",
     "Parma daje manje od 0.5 golova u 1. poluvremenu i ",
+<<<<<<< HEAD
     29.0,
+=======
+    28.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
@@ -9563,7 +10731,11 @@
     "",
     "vise 0.5 & vise 0.5",
     "Torino FC daje više od 0.5 golova u 1. poluvremenu",
+<<<<<<< HEAD
     4.25,
+=======
+    4.2,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
@@ -9591,7 +10763,11 @@
     "",
     "vise 0.5 & vise 2.5",
     "Torino FC daje više od 0.5 golova u 1. poluvremenu",
+<<<<<<< HEAD
     35.0,
+=======
+    34.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
@@ -9626,7 +10802,11 @@
     "",
     "manje 0.5 & manje 1.5",
     "Torino FC daje manje od 0.5 golova u 1. poluvremen",
+<<<<<<< HEAD
     1.85,
+=======
+    1.87,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
@@ -9640,7 +10820,11 @@
     "",
     "manje 0.5 & manje 2.5",
     "Torino FC daje manje od 0.5 golova u 1. poluvremen",
+<<<<<<< HEAD
     1.64,
+=======
+    1.65,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ]
   ]
@@ -9659,7 +10843,11 @@
     "2-",
     "2 & manje 0.5",
     "Torino FC pobednik i Parma manje od 0.5 gola na ut",
+<<<<<<< HEAD
     3.6,
+=======
+    3.65,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     0.5
    ],
    [
@@ -9673,7 +10861,11 @@
     "0+",
     "x & vise 0.5",
     "nerešeno i Parma više od 0.5 gola na utakmici",
+<<<<<<< HEAD
     4.35,
+=======
+    4.3,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     0.5
    ],
    [
@@ -9692,7 +10884,11 @@
     "1-",
     "1 & manje 1.5",
     "Parma pobednik i Parma manje od 1.5 gola na utakmi",
+<<<<<<< HEAD
     6.8,
+=======
+    6.9,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
@@ -9720,7 +10916,11 @@
     "0+",
     "x & vise 1.5",
     "nerešeno i Parma više od 1.5 gola na utakmici",
+<<<<<<< HEAD
     12.0,
+=======
+    11.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
@@ -9746,14 +10946,22 @@
     "0-",
     "x & manje 2.5",
     "nerešeno i Parma manje od 2.5 gola na utakmici",
+<<<<<<< HEAD
     3.05,
+=======
+    3.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
     "2-",
     "2 & manje 2.5",
     "Torino FC pobednik i Parma manje od 2.5 gola na ut",
+<<<<<<< HEAD
     2.35,
+=======
+    2.37,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
@@ -9767,7 +10975,11 @@
     "0+",
     "x & vise 2.5",
     "nerešeno i Parma više od 2.5 gola na utakmici",
+<<<<<<< HEAD
     50.0,
+=======
+    45.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
@@ -9833,7 +11045,11 @@
     "1-",
     "1 & manje 4.5",
     "Parma pobednik i Parma manje od 4.5 gola na utakmi",
+<<<<<<< HEAD
     2.85,
+=======
+    2.87,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     4.5
    ],
    [
@@ -9894,7 +11110,11 @@
     "0+",
     "x & vise 0.5",
     "nerešeno i Torino FC više od 0.5 gola na utakmici",
+<<<<<<< HEAD
     4.35,
+=======
+    4.3,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     0.5
    ],
    [
@@ -9927,7 +11147,11 @@
     "2-",
     "2 & manje 1.5",
     "Torino FC pobednik  i Torino FC manje od 1.5 gola ",
+<<<<<<< HEAD
     6.1,
+=======
+    6.2,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
@@ -9941,7 +11165,11 @@
     "0+",
     "x & vise 1.5",
     "nerešeno i Torino FC više od 1.5 gola na utakmici",
+<<<<<<< HEAD
     12.0,
+=======
+    11.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
@@ -9960,21 +11188,33 @@
     "1-",
     "1 & manje 2.5",
     "Parma pobednik  i Torino FC manje od 2.5 gola na u",
+<<<<<<< HEAD
     2.82,
+=======
+    2.85,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
     "0-",
     "x & manje 2.5",
     "nerešeno i Torino FC manje od 2.5 gola na utakmici",
+<<<<<<< HEAD
     3.05,
+=======
+    3.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
     "2-",
     "2 & manje 2.5",
     "Torino FC pobednik  i Torino FC manje od 2.5 gola ",
+<<<<<<< HEAD
     3.15,
+=======
+    3.2,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
@@ -9988,7 +11228,11 @@
     "0+",
     "x & vise 2.5",
     "nerešeno i Torino FC više od 2.5 gola na utakmici",
+<<<<<<< HEAD
     50.0,
+=======
+    45.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
@@ -10068,7 +11312,11 @@
     "2-",
     "2 & manje 4.5",
     "Torino FC pobednik  i Torino FC manje od 4.5 gola ",
+<<<<<<< HEAD
     2.37,
+=======
+    2.4,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     4.5
    ],
    [
@@ -10244,22 +11492,35 @@
     "",
     "1-2",
     "AS Roma 1-2 gola na utakmici",
+<<<<<<< HEAD
     1.85,
     -2.0
+=======
+    1.87,
+    2.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "",
     "1-3",
     "AS Roma  1-3 gola na utakmici",
     1.36,
+<<<<<<< HEAD
     -3.0
+=======
+    3.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "",
     "2-3",
     "AS Roma 2-3 gola na utakmici",
     2.02,
+<<<<<<< HEAD
     -3.0
+=======
+    3.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ]
   ]
  },
@@ -10271,21 +11532,34 @@
     "1-2",
     "Genoa 1-2 gola na utakmici",
     1.97,
+<<<<<<< HEAD
     -2.0
+=======
+    2.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "",
     "1-3",
     "Genoa 1-3 gola na utakmici",
     1.85,
+<<<<<<< HEAD
     -3.0
+=======
+    3.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "",
     "2-3",
     "Genoa 2-3 gola na utakmici",
+<<<<<<< HEAD
     5.25,
     -3.0
+=======
+    5.3,
+    3.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ]
   ]
  },
@@ -10303,14 +11577,22 @@
     "13",
     "1-3",
     "AS Roma 1,2 ili 3 gola u svakom poluvremenu",
+<<<<<<< HEAD
     2.22,
+=======
+    2.2,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.0
    ],
    [
     "23",
     "2-3",
     "AS Roma 2 ili 3 gola u svakom poluvremenu",
+<<<<<<< HEAD
     8.6,
+=======
+    8.5,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.0
    ]
   ]
@@ -10322,14 +11604,22 @@
     "12",
     "1-2",
     "Genoa 1 ili 2 gola u svakom poluvremenu",
+<<<<<<< HEAD
     7.8,
+=======
+    7.9,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
     "13",
     "1-3",
     "Genoa 1,2 ili 3 gola u svakom poluvremenu",
+<<<<<<< HEAD
     7.6,
+=======
+    7.7,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.0
    ],
    [
@@ -10348,14 +11638,22 @@
     "0",
     "0",
     "AS Roma ne daje gol",
+<<<<<<< HEAD
     7.2,
+=======
+    7.4,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.0
    ],
    [
     "1",
     "1",
     "AS Roma daje tačno 1 gol",
+<<<<<<< HEAD
     3.7,
+=======
+    3.75,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.0
    ],
    [
@@ -10369,7 +11667,11 @@
     "3",
     "3+",
     "AS Roma daje 3 ili više golova",
+<<<<<<< HEAD
     2.45,
+=======
+    2.42,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.0
    ]
   ]
@@ -10395,7 +11697,11 @@
     "2",
     "2",
     "Genoa daje tačno 2 gola",
+<<<<<<< HEAD
     6.3,
+=======
+    6.4,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.0
    ],
    [
@@ -10421,7 +11727,11 @@
     "2",
     "ne",
     "AS Roma ne daje gol na utakmici",
+<<<<<<< HEAD
     7.4,
+=======
+    7.6,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     null
    ]
   ]
@@ -10433,14 +11743,22 @@
     "1",
     "da",
     "Genoa daje gol na utakmici",
+<<<<<<< HEAD
     1.83,
+=======
+    1.82,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     null
    ],
    [
     "2",
     "ne",
     "Genoa ne daje gol na utakmici",
+<<<<<<< HEAD
     1.97,
+=======
+    2.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     null
    ]
   ]
@@ -10452,14 +11770,22 @@
     "",
     "vise 0.5 & vise 1.5",
     "1. Poluvreme AS Roma više od 0.5 golova i AS Roma ",
+<<<<<<< HEAD
     1.76,
+=======
+    1.75,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
     "",
     "vise 0.5 & manje 1.5",
     "1. Poluvreme AS Roma više od 0.5 golova i AS Roma ",
+<<<<<<< HEAD
     6.7,
+=======
+    6.8,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
@@ -10473,42 +11799,66 @@
     "",
     "manje 0.5 & manje 1.5",
     "1. Poluvreme AS Roma manje od 0.5 golova i AS Roma",
+<<<<<<< HEAD
     3.65,
+=======
+    3.7,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
     "",
     "vise 0.5 & vise 2.5",
     "1. Poluvreme AS Roma više od 0.5 golova i AS Roma ",
+<<<<<<< HEAD
     2.65,
+=======
+    2.6,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
     "",
     "vise 0.5 & manje 2.5",
     "1. Poluvreme AS Roma više od 0.5 golova i AS Roma ",
+<<<<<<< HEAD
     2.95,
+=======
+    3.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
     "",
     "manje 0.5 & vise 2.5",
     "1. Poluvreme AS Roma manje od 0.5 golova i AS Roma",
+<<<<<<< HEAD
     13.0,
+=======
+    12.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
     "",
     "manje 0.5 & manje 2.5",
     "1. Poluvreme AS Roma manje od 0.5 golova i AS Roma",
+<<<<<<< HEAD
     2.8,
+=======
+    2.85,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
     "",
     "vise 1.5 & vise 2.5",
     "1. Poluvreme AS Roma više od 1.5 golova i AS Roma ",
+<<<<<<< HEAD
     4.0,
+=======
+    3.9,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
@@ -10522,14 +11872,22 @@
     "",
     "manje 1.5 & vise 2.5",
     "1. Poluvreme AS Roma manje od 1.5 golova i AS Roma",
+<<<<<<< HEAD
     4.7,
+=======
+    4.65,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
     "",
     "manje 1.5 & manje 2.5",
     "1. Poluvreme AS Roma manje od 1.5 golova i AS Roma",
+<<<<<<< HEAD
     1.67,
+=======
+    1.69,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ]
   ]
@@ -10541,14 +11899,22 @@
     "",
     "vise 0.5 & vise 1.5",
     "1. Poluvreme Genoa više od 0.5 golova i Genoa više",
+<<<<<<< HEAD
     6.2,
+=======
+    6.3,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
     "",
     "vise 0.5 & manje 1.5",
     "1. Poluvreme Genoa više od 0.5 golova i Genoa manj",
+<<<<<<< HEAD
     5.0,
+=======
+    5.1,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
@@ -10562,7 +11928,11 @@
     "",
     "manje 0.5 & manje 1.5",
     "1. Poluvreme Genoa manje od 0.5 golova i Genoa man",
+<<<<<<< HEAD
     1.41,
+=======
+    1.4,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
@@ -10576,7 +11946,11 @@
     "",
     "vise 0.5 & manje 2.5",
     "1. Poluvreme Genoa više od 0.5 golova i Genoa manj",
+<<<<<<< HEAD
     3.45,
+=======
+    3.5,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
@@ -10590,14 +11964,22 @@
     "",
     "manje 0.5 & manje 2.5",
     "1. Poluvreme Genoa manje od 0.5 golova i Genoa man",
+<<<<<<< HEAD
     1.33,
+=======
+    1.32,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
     "",
     "vise 1.5 & vise 2.5",
     "1. Poluvreme Genoa više od 1.5 golova i Genoa više",
+<<<<<<< HEAD
     26.0,
+=======
+    27.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
@@ -10644,7 +12026,11 @@
     "",
     "vise 0.5 & vise 1.5",
     "AS Roma daje više od 0.5 golova u 1. poluvremenu i",
+<<<<<<< HEAD
     3.9,
+=======
+    3.85,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
@@ -10658,7 +12044,11 @@
     "",
     "vise 0.5 & vise 2.5",
     "AS Roma daje više od 0.5 golova u 1. poluvremenu i",
+<<<<<<< HEAD
     8.5,
+=======
+    8.4,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
@@ -10707,7 +12097,11 @@
     "",
     "manje 0.5 & manje 2.5",
     "AS Roma daje manje od 0.5 golova u 1. poluvremenu ",
+<<<<<<< HEAD
     2.8,
+=======
+    2.82,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ]
   ]
@@ -10719,7 +12113,11 @@
     "",
     "vise 0.5 & vise 0.5",
     "Genoa daje više od 0.5 golova u 1. poluvremenu i v",
+<<<<<<< HEAD
     7.6,
+=======
+    7.7,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
@@ -10740,7 +12138,11 @@
     "",
     "vise 0.5 & manje 1.5",
     "Genoa daje više od 0.5 golova u 1. poluvremenu i m",
+<<<<<<< HEAD
     3.3,
+=======
+    3.35,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
@@ -10754,7 +12156,11 @@
     "",
     "vise 0.5 & manje 2.5",
     "Genoa daje više od 0.5 golova u 1. poluvremenu i m",
+<<<<<<< HEAD
     3.15,
+=======
+    3.2,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
@@ -10768,7 +12174,11 @@
     "",
     "manje 0.5 & manje 0.5",
     "Genoa daje manje od 0.5 golova u 1. poluvremenu i ",
+<<<<<<< HEAD
     1.97,
+=======
+    1.95,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
@@ -10782,7 +12192,11 @@
     "",
     "manje 0.5 & manje 1.5",
     "Genoa daje manje od 0.5 golova u 1. poluvremenu i ",
+<<<<<<< HEAD
     1.41,
+=======
+    1.4,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
@@ -10796,7 +12210,11 @@
     "",
     "manje 0.5 & manje 2.5",
     "Genoa daje manje od 0.5 golova u 1. poluvremenu i ",
+<<<<<<< HEAD
     1.33,
+=======
+    1.32,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ]
   ]
@@ -10836,7 +12254,11 @@
     "2+",
     "2 & vise 0.5",
     "Genoa pobednik i AS Roma više od 0.5 gola na utakm",
+<<<<<<< HEAD
     11.0,
+=======
+    12.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     0.5
    ]
   ]
@@ -10855,21 +12277,33 @@
     "0-",
     "x & manje 1.5",
     "nerešeno i AS Roma manje od 1.5 gola na utakmici",
+<<<<<<< HEAD
     5.7,
+=======
+    5.65,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
     "2-",
     "2 & manje 1.5",
     "Genoa pobednik i AS Roma manje od 1.5 gola na utak",
+<<<<<<< HEAD
     7.2,
+=======
+    7.3,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
     "1+",
     "1 & vise 1.5",
     "AS Roma pobednik i AS Roma više od 1.5 gola na uta",
+<<<<<<< HEAD
     1.58,
+=======
+    1.57,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
@@ -10895,7 +12329,11 @@
     "1-",
     "1 & manje 2.5",
     "AS Roma pobednik i AS Roma manje od 2.5 gola na ut",
+<<<<<<< HEAD
     2.65,
+=======
+    2.62,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
@@ -10909,7 +12347,11 @@
     "2-",
     "2 & manje 2.5",
     "Genoa pobednik i AS Roma manje od 2.5 gola na utak",
+<<<<<<< HEAD
     6.7,
+=======
+    6.8,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
@@ -10942,7 +12384,11 @@
     "1-",
     "1 & manje 3.5",
     "AS Roma pobednik i AS Roma manje od 3.5 gola na ut",
+<<<<<<< HEAD
     1.76,
+=======
+    1.75,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.5
    ],
    [
@@ -10956,7 +12402,11 @@
     "2-",
     "2 & manje 3.5",
     "Genoa pobednik i AS Roma manje od 3.5 gola na utak",
+<<<<<<< HEAD
     6.6,
+=======
+    6.7,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.5
    ],
    [
@@ -10989,7 +12439,11 @@
     "1-",
     "1 & manje 4.5",
     "AS Roma pobednik i AS Roma manje od 4.5 gola na ut",
+<<<<<<< HEAD
     1.48,
+=======
+    1.47,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     4.5
    ],
    [
@@ -11003,7 +12457,11 @@
     "2-",
     "2 & manje 4.5",
     "Genoa pobednik i AS Roma manje od 4.5 gola na utak",
+<<<<<<< HEAD
     6.6,
+=======
+    6.7,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     4.5
    ],
    [
@@ -11029,7 +12487,11 @@
     "1-",
     "1 & manje 0.5",
     "AS Roma pobednik  i Genoa manje od 0.5 gola na uta",
+<<<<<<< HEAD
     2.15,
+=======
+    2.12,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     0.5
    ],
    [
@@ -11057,7 +12519,11 @@
     "2+",
     "2 & vise 0.5",
     "Genoa pobednik  i Genoa više od 0.5 gola na utakmi",
+<<<<<<< HEAD
     6.6,
+=======
+    6.7,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     0.5
    ]
   ]
@@ -11069,21 +12535,33 @@
     "1-",
     "1 & manje 1.5",
     "AS Roma pobednik  i Genoa manje od 1.5 gola na uta",
+<<<<<<< HEAD
     1.44,
+=======
+    1.43,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
     "0-",
     "x & manje 1.5",
     "nerešeno i Genoa manje od 1.5 gola na utakmici",
+<<<<<<< HEAD
     5.7,
+=======
+    5.65,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
     "2-",
     "2 & manje 1.5",
     "Genoa pobednik  i Genoa manje od 1.5 gola na utakm",
+<<<<<<< HEAD
     14.0,
+=======
+    15.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
@@ -11104,7 +12582,11 @@
     "2+",
     "2 & vise 1.5",
     "Genoa pobednik  i Genoa više od 1.5 gola na utakmi",
+<<<<<<< HEAD
     9.0,
+=======
+    9.1,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ]
   ]
@@ -11130,7 +12612,11 @@
     "2-",
     "2 & manje 2.5",
     "Genoa pobednik  i Genoa manje od 2.5 gola na utakm",
+<<<<<<< HEAD
     7.9,
+=======
+    8.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
@@ -11151,7 +12637,11 @@
     "2+",
     "2 & vise 2.5",
     "Genoa pobednik  i Genoa više od 2.5 gola na utakmi",
+<<<<<<< HEAD
     19.0,
+=======
+    20.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ]
   ]
@@ -11177,7 +12667,11 @@
     "2-",
     "2 & manje 3.5",
     "Genoa pobednik  i Genoa manje od 3.5 gola na utakm",
+<<<<<<< HEAD
     6.8,
+=======
+    6.9,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.5
    ],
    [
@@ -11224,7 +12718,11 @@
     "2-",
     "2 & manje 4.5",
     "Genoa pobednik  i Genoa manje od 4.5 gola na utakm",
+<<<<<<< HEAD
     6.6,
+=======
+    6.7,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     4.5
    ],
    [
@@ -11250,6 +12748,35 @@
    ]
   ]
  },
+<<<<<<< HEAD
+=======
+ "Dupla šansa & gol u oba poluvremena": {
+  "mecova": 1,
+  "primer": [
+   [
+    "101",
+    "1x & da",
+    "AS Roma će pobediti ili će biti nerešeno i biće go",
+    1.59,
+    null
+   ],
+   [
+    "021",
+    "x2 & da",
+    "Biće nerešeno ili Genoa će pobediti i biće gol u o",
+    4.7,
+    null
+   ],
+   [
+    "121",
+    "12 & da",
+    "AS Roma ili Genoa će pobediti i biće gol u oba pol",
+    1.67,
+    12.0
+   ]
+  ]
+ },
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
  "Ukupno kornera Udinese": {
   "mecova": 1,
   "primer": [
@@ -11408,21 +12935,33 @@
     "1-2",
     "Udinese 1-2 gola na utakmici",
     1.63,
+<<<<<<< HEAD
     -2.0
+=======
+    2.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "",
     "1-3",
     "Udinese  1-3 gola na utakmici",
     1.33,
+<<<<<<< HEAD
     -3.0
+=======
+    3.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "",
     "2-3",
     "Udinese 2-3 gola na utakmici",
     2.35,
+<<<<<<< HEAD
     -3.0
+=======
+    3.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ]
   ]
  },
@@ -11434,21 +12973,33 @@
     "1-2",
     "Lecce 1-2 gola na utakmici",
     1.73,
+<<<<<<< HEAD
     -2.0
+=======
+    2.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "",
     "1-3",
     "Lecce 1-3 gola na utakmici",
     1.57,
+<<<<<<< HEAD
     -3.0
+=======
+    3.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "",
     "2-3",
     "Lecce 2-3 gola na utakmici",
     3.75,
+<<<<<<< HEAD
     -3.0
+=======
+    3.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ]
   ]
  },
@@ -12571,21 +14122,33 @@
     "1-2",
     "Venezia 1-2 gola na utakmici",
     1.69,
+<<<<<<< HEAD
     -2.0
+=======
+    2.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "",
     "1-3",
     "Venezia  1-3 gola na utakmici",
     1.52,
+<<<<<<< HEAD
     -3.0
+=======
+    3.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "",
     "2-3",
     "Venezia 2-3 gola na utakmici",
     3.5,
+<<<<<<< HEAD
     -3.0
+=======
+    3.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ]
   ]
  },
@@ -12597,21 +14160,33 @@
     "1-2",
     "Napoli 1-2 gola na utakmici",
     1.72,
+<<<<<<< HEAD
     -2.0
+=======
+    2.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "",
     "1-3",
     "Napoli 1-3 gola na utakmici",
     1.32,
+<<<<<<< HEAD
     -3.0
+=======
+    3.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ],
    [
     "",
     "2-3",
     "Napoli 2-3 gola na utakmici",
     2.12,
+<<<<<<< HEAD
     -3.0
+=======
+    3.0
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
    ]
   ]
  },
@@ -12648,7 +14223,11 @@
     "12",
     "1-2",
     "Napoli 1 ili 2 gola u svakom poluvremenu",
+<<<<<<< HEAD
     3.0,
+=======
+    2.95,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
@@ -12674,7 +14253,11 @@
     "0",
     "0",
     "Venezia ne daje gol",
+<<<<<<< HEAD
     2.65,
+=======
+    2.62,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.0
    ],
    [
@@ -12695,7 +14278,11 @@
     "3",
     "3+",
     "Venezia daje 3 ili više golova",
+<<<<<<< HEAD
     8.6,
+=======
+    8.7,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.0
    ]
   ]
@@ -12707,14 +14294,22 @@
     "0",
     "0",
     "Napoli ne daje gol",
+<<<<<<< HEAD
     5.75,
+=======
+    5.8,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.0
    ],
    [
     "1",
     "1",
     "Napoli daje tačno 1 gol",
+<<<<<<< HEAD
     3.2,
+=======
+    3.25,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.0
    ],
    [
@@ -12728,7 +14323,11 @@
     "3",
     "3+",
     "Napoli daje 3 ili više golova",
+<<<<<<< HEAD
     3.05,
+=======
+    3.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     3.0
    ]
   ]
@@ -12740,14 +14339,22 @@
     "1",
     "da",
     "Venezia daje gol na utakmici",
+<<<<<<< HEAD
     1.48,
+=======
+    1.49,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     null
    ],
    [
     "2",
     "ne",
     "Venezia ne daje gol na utakmici",
+<<<<<<< HEAD
     2.67,
+=======
+    2.65,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     null
    ]
   ]
@@ -12759,14 +14366,22 @@
     "1",
     "da",
     "Napoli daje gol na utakmici",
+<<<<<<< HEAD
     1.14,
+=======
+    1.13,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     null
    ],
    [
     "2",
     "ne",
     "Napoli ne daje gol na utakmici",
+<<<<<<< HEAD
     5.85,
+=======
+    5.9,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     null
    ]
   ]
@@ -12888,7 +14503,11 @@
     "",
     "manje 0.5 & manje 1.5",
     "1. Poluvreme Napoli manje od 0.5 golova i Napoli m",
+<<<<<<< HEAD
     2.95,
+=======
+    3.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
@@ -12916,7 +14535,11 @@
     "",
     "manje 0.5 & manje 2.5",
     "1. Poluvreme Napoli manje od 0.5 golova i Napoli m",
+<<<<<<< HEAD
     2.37,
+=======
+    2.4,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
@@ -12937,7 +14560,11 @@
     "",
     "manje 1.5 & vise 2.5",
     "1. Poluvreme Napoli manje od 1.5 golova i Napoli v",
+<<<<<<< HEAD
     5.45,
+=======
+    5.4,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.5
    ],
    [
@@ -13094,7 +14721,11 @@
     "",
     "manje 0.5 & manje 0.5",
     "Napoli daje manje od 0.5 golova u 1. poluvremenu i",
+<<<<<<< HEAD
     5.5,
+=======
+    5.55,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
@@ -13108,7 +14739,11 @@
     "",
     "manje 0.5 & manje 1.5",
     "Napoli daje manje od 0.5 golova u 1. poluvremenu i",
+<<<<<<< HEAD
     2.95,
+=======
+    3.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ],
    [
@@ -13122,7 +14757,11 @@
     "",
     "manje 0.5 & manje 2.5",
     "Napoli daje manje od 0.5 golova u 1. poluvremenu i",
+<<<<<<< HEAD
     2.37,
+=======
+    2.4,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     2.0
    ]
   ]
@@ -13141,14 +14780,22 @@
     "2-",
     "2 & manje 0.5",
     "Napoli pobednik i Venezia manje od 0.5 gola na uta",
+<<<<<<< HEAD
     3.0,
+=======
+    2.95,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     0.5
    ],
    [
     "1+",
     "1 & vise 0.5",
     "Venezia pobednik i Venezia više od 0.5 gola na uta",
+<<<<<<< HEAD
     4.25,
+=======
+    4.3,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     0.5
    ],
    [
@@ -13181,28 +14828,44 @@
     "0-",
     "x & manje 1.5",
     "nerešeno i Venezia manje od 1.5 gola na utakmici",
+<<<<<<< HEAD
     4.9,
+=======
+    5.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
     "2-",
     "2 & manje 1.5",
     "Napoli pobednik i Venezia manje od 1.5 gola na uta",
+<<<<<<< HEAD
     1.83,
+=======
+    1.82,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
     "1+",
     "1 & vise 1.5",
     "Venezia pobednik i Venezia više od 1.5 gola na uta",
+<<<<<<< HEAD
     5.4,
+=======
+    5.5,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
     "0+",
     "x & vise 1.5",
     "nerešeno i Venezia više od 1.5 gola na utakmici",
+<<<<<<< HEAD
     9.3,
+=======
+    9.4,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
@@ -13362,7 +15025,11 @@
     "1-",
     "1 & manje 0.5",
     "Venezia pobednik  i Napoli manje od 0.5 gola na ut",
+<<<<<<< HEAD
     7.6,
+=======
+    7.7,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     0.5
    ],
    [
@@ -13376,7 +15043,11 @@
     "1+",
     "1 & vise 0.5",
     "Venezia pobednik  i Napoli više od 0.5 gola na uta",
+<<<<<<< HEAD
     6.9,
+=======
+    7.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     0.5
    ],
    [
@@ -13390,7 +15061,11 @@
     "2+",
     "2 & vise 0.5",
     "Napoli pobednik  i Napoli više od 0.5 gola na utak",
+<<<<<<< HEAD
     1.63,
+=======
+    1.62,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     0.5
    ]
   ]
@@ -13402,14 +15077,22 @@
     "1-",
     "1 & manje 1.5",
     "Venezia pobednik  i Napoli manje od 1.5 gola na ut",
+<<<<<<< HEAD
     4.8,
+=======
+    4.85,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
     "0-",
     "x & manje 1.5",
     "nerešeno i Napoli manje od 1.5 gola na utakmici",
+<<<<<<< HEAD
     4.9,
+=======
+    5.0,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
@@ -13430,14 +15113,22 @@
     "0+",
     "x & vise 1.5",
     "nerešeno i Napoli više od 1.5 gola na utakmici",
+<<<<<<< HEAD
     9.3,
+=======
+    9.4,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ],
    [
     "2+",
     "2 & vise 1.5",
     "Napoli pobednik  i Napoli više od 1.5 gola na utak",
+<<<<<<< HEAD
     1.95,
+=======
+    1.92,
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
     1.5
    ]
   ]

@@ -321,7 +321,11 @@ body.fb #hm .hg{grid-template-columns:200px minmax(0,1fr) 540px}
 <section id="t7" hidden>
  <div class="card"><h2>Value Screener</h2>
  <p class="sub">Model prolazi kroz sve mečeve sa Superbeta (data/odds_superbet.json: pobednik, hendikep, ukupno, i alternativne linije) i izlistava izbore gde je EV iznad praga. Ispod je tabela svih linija.</p>
+<<<<<<< HEAD
  <div class="grid"><div><label for="sth">Minimalni EV</label><select id="sth"><option value="3" selected>3%</option><option value="5">5%</option><option value="8">8%</option></select></div><div><label for="sbk">Kladionica za ulog</label><select id="sbk"><option value="">Sve</option><option value="superbet">Samo Superbet</option></select></div><div><label for="sin">Mečevi sa povredama</label><select id="sin"><option value="">Sakrij ako ključni igrač nedostaje</option><option value="1" selected>Prikaži sa oznakom ⚠</option></select></div></div></div>
+=======
+ <div class="grid"><div><label for="sth">Minimalni EV</label><select id="sth"><option value="3">3%</option><option value="5" selected>5%</option><option value="8">8%</option></select></div><div><label for="sbk">Kladionica za ulog</label><select id="sbk"><option value="">Sve</option><option value="superbet">Samo Superbet</option></select></div><div><label for="sin">Mečevi sa povredama</label><select id="sin"><option value="">Sakrij ako ključni igrač nedostaje</option><option value="1">Prikaži sa oznakom ⚠</option></select></div></div></div>
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
  <div id="slip"></div><div id="scr"></div>
 </section>
 <section id="t5" hidden>
@@ -1591,7 +1595,11 @@ function screenInner(){
  `<div class="card"><h3 style="margin-top:0">Svi tipovi sa EV ≥ ${f(thr*100,0)}% (${SCR.length})</h3>`+
  (SCR.length?`<div class="scroll"><table><tr><th>Početak</th><th>Utakmica</th><th>Tržište</th><th>Izbor</th><th class="r">Model</th><th class="r">Kvota</th><th>Kladionica</th><th class="r">EV</th><th class="r">EV vs Pinnacle</th><th class="r">Ulog</th><th></th></tr>`+
   SCR.map((x,i)=>`<tr><td>${esc(dt(x.st))}</td><td>${esc(x.mt)}${evChip(x)}</td><td>${esc(x.mk)}</td><td>${esc(x.pick)}${x.inj?' <span class="wr" title="Ključni igrač je van ili neizvestan, a nije uračunat u model">⚠ povrede</span>':""}${x.mv?` <span class="no" title="Pinnacle je pomerio liniju">⚡ ${esc(x.mv)}</span>`:""}</td><td class="r">${f(x.p*100)}%</td><td class="r">${f(x.o,2)}</td><td>${esc(x.bk)}</td><td class="r ok">+${f(x.ev*100,1)}% ${evb(x.ev)}</td><td class="r ${x.evS>0?"ok":"mu"}">${x.evS==null?"-":(x.evS>0?"+":"")+f(x.evS*100,1)+"%"}</td><td class="r">${f(stake(x.p,x.o,B),2)}${stakeTag(x.p,x.o,B)}</td><td><button class="btn sm" data-vi="${i}" type="button">Zašto?</button> <button class="btn sm" data-sl="${i}" type="button">+ Listić</button> <button class="btn sm" data-sa="${i}" type="button">Bankroll</button></td></tr>`).join("")+`</table></div>`:`<p class="mu">Nema tipova iznad praga${used?"":" (nijedan meč iz kvota nije prepoznat u tvom modelu)"}.</p>`)+
+<<<<<<< HEAD
  `<div class="note warn">Referenca je Pinnacle bez marže kad postoji u data/odds.json (model dobija najviše 25%), inače Superbet bez marže (model najviše 40%). Kvota koja se igra je uvek sa Superbeta. Pošto je to jedna kladionica, EV je gruba procena: prava prednost postoji samo kad se model i Superbet jako razilaze. ${minN<5?`Rani deo sezone: najmanji uzorak je ${minN} utakmica po timu, pa je model manje pouzdan. `:""}Svu matematiku (model, uklanjanje marže, raspodela poena, push na celim linijama, Kelly) računa Python backend (bb_ev.py); EV iznad 15% ili velika razlika modela i tržišta se označava kao nerealno i ne ulazi u tipove. Realan edge u klađenju je 2 do 6%. Analizirano mečeva: ${used}/${OD.events.length}. Tabela ispod prikazuje SVE linije sa Superbeta, uključujući one bez prednosti.</div></div>`;
+=======
+ `<div class="note warn">Referenca je Superbet: kvota koja se igra i tržišna šansa (bez marže) su sa Superbeta, pomešane sa modelom (težina modela je po meču u odds_ev.json, najviše 40%). Pošto je to jedna kladionica, EV je gruba procena: prava prednost postoji samo kad se model i Superbet jako razilaze. ${minN<5?`Rani deo sezone: najmanji uzorak je ${minN} utakmica po timu, pa je model manje pouzdan. `:""}Svu matematiku (model, uklanjanje marže, raspodela poena, push na celim linijama, Kelly) računa Python backend (bb_ev.py); EV iznad 15% ili velika razlika modela i tržišta se označava kao nerealno i ne ulazi u tipove. Realan edge u klađenju je 2 do 6%. Analizirano mečeva: ${used}/${OD.events.length}. Tabela ispod prikazuje SVE linije sa Superbeta, uključujući one bez prednosti.</div></div>`;
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
 el.insertAdjacentHTML("beforeend",scaHtml(unk));window.SCALL={ALL,unk,RS,used,total:OD.events.length};scaRender();
  $("sb").innerHTML=`<div class="card"><h2>Surebet</h2>`+(sure.length?`<div class="scroll"><table><tr><th>Utakmica</th><th>Domaćin</th><th>Gost</th><th class="r">Profit</th></tr>`+sure.map(x=>`<tr><td>${esc(x.mt)}</td><td>${f(x.b1,2)} (${esc(x.k1)})</td><td>${f(x.b2,2)} (${esc(x.k2)})</td><td class="r ok">+${f(x.pf,2)}%</td></tr>`).join("")+`</table></div>`:`<p class="mu">Trenutno nema arbitraže.</p>`)+`</div>`}
 function screen(){try{screenInner()}catch(e){const el=$("scr");if(el)el.innerHTML='<div class="note warn"><b>Screener nije uspeo da se izračuna:</b> '+esc(e.message)+' <span class="mu">('+esc(((e.stack||"").split("\n")[1]||"").trim())+')</span>. Pošalji mi ovu poruku.</div>'}}
@@ -2787,7 +2795,11 @@ $("ov").onclick=e=>{const g=a=>e.target.closest("[data-"+a+"]");let b;
 </script>
 <script>
 // ===== Home: Football/Basketball, lige, KPI, najbolji tipovi, vesti i tiket =====
+<<<<<<< HEAD
 const FBL=[["cl","Liga šampiona"],["el","Liga Evrope"],["conf","Liga konferencije"],["epl","Premier League"],["laliga","La Liga"],["l1","Ligue 1"],["bl","Bundesliga"],["ppl","Primeira Liga (Portugal)"],["sa","Serie A"],["sl","Super Liga (Srbija)"],["tsl","Süper Lig (Turska)"]];
+=======
+const FBL=[["epl","Premier League"],["laliga","La Liga"],["l1","Ligue 1"],["bl","Bundesliga"],["ppl","Primeira Liga (Portugal)"],["sa","Serie A"],["sl","Super Liga (Srbija)"],["tsl","Süper Lig (Turska)"]];
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
 let LV=null,LVT=0,LVERR="",SPORT="bb",FBSEL="epl",LVQ="all",HF="top",SLM="single",SLIP=[],HT=[];
 try{SPORT=localStorage.getItem("elsport")||"bb";SLIP=JSON.parse(localStorage.getItem("elslip")||"[]")}catch(e){}
 const slSave=()=>{try{localStorage.setItem("elslip",JSON.stringify(SLIP))}catch(e){}};
@@ -2847,7 +2859,11 @@ $("hm").onclick=async e=>{const t=e.target.closest("button");if(!t)return;const 
   save();try{bk()}catch(x){}SLIP=[];slSave();homeRender();alert("Sačuvano u evidenciju (tab Bankroll).")}};
 sportBar();
 // ===== UŽIVO: čita data/live.json koji piše fb_live.py (pokreće ga pokreni.bat); osvežava se sam svakih 15 s =====
+<<<<<<< HEAD
 const LVN={cl:"Liga šampiona",el:"Liga Evrope",conf:"Liga konferencije",epl:"Premier League",laliga:"La Liga",l1:"Ligue 1",sa:"Serie A",sve:"Fudbal",kosarka:"Košarka"},LVO=["cl","el","conf","epl","laliga","l1","sa","sve","kosarka"];
+=======
+const LVN={epl:"Premier League",laliga:"La Liga",l1:"Ligue 1",sa:"Serie A",sve:"Fudbal",kosarka:"Košarka"},LVO=["epl","laliga","l1","sa","sve","kosarka"];
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
 const lvStale=()=>!LV||!LV.updated||Date.now()/1e3-LV.updated>180;
 async function lvPoll(force){
  if(!force&&document.hidden)return;
@@ -3019,7 +3035,11 @@ function fbFxRows(F,pc){
 <script>
 // ===== Fudbal: logotipi liga, leva lista, tabela lige (desna kolona) i brzi filteri (Danas / Top Value Bets / Over golovi) za sve fudbalske lige =====
 // Logotipi: media.api-sports.io (id lige). Ako slika ne ucita, prikazuje se oznaka lige (PL, LL...). Za svoje slike zameni URL u fbLogo().
+<<<<<<< HEAD
 const FBLG={cl:[2,"UEFA","LŠ"],el:[3,"UEFA","LE"],conf:[848,"UEFA","LK"],epl:[39,"Engleska","PL"],laliga:[140,"Španija","LL"],l1:[61,"Francuska","L1"],bl:[78,"Nemačka","BL"],ppl:[94,"Portugalija","PP"],sa:[135,"Italija","SA"],sl:[286,"Srbija","SL"],tsl:[203,"Turska","TS"]};
+=======
+const FBLG={epl:[39,"Engleska","PL"],laliga:[140,"Španija","LL"],l1:[61,"Francuska","L1"],bl:[78,"Nemačka","BL"],ppl:[94,"Portugalija","PP"],sa:[135,"Italija","SA"],sl:[286,"Srbija","SL"],tsl:[203,"Turska","TS"]};
+>>>>>>> c0636432980d531347fbd7fa74496488ec3a9d81
 const fbShort=n=>String(n).replace(/\s*\(.*\)\s*$/,"");
 function fbLogo(k,sz){const g=FBLG[k]||[0,"","?"],s=sz||26;return `<span class="lgi" style="width:${s}px;height:${s}px"><img src="https://media.api-sports.io/football/leagues/${g[0]}.png" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="fbLogoErr(this,'${g[2]}')"></span>`}
 function fbLogoErr(img,t){const s=img.parentNode;if(!s)return;s.classList.add("fall");s.textContent=t}
