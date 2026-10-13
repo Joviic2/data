@@ -201,6 +201,33 @@ def discover(cl, tourn, season):
     return teams
 
 
+def official_table(j, tk, teams):
+    """Sluzbena tabela sa Statshuba ({key: {pl,w,d,l,gf,ga,pts}}) ili {} ako se ne da procitati. Ona je izvor istine za odigrano/bodove."""
+    out = {}
+    def rows(o):
+        if isinstance(o, dict):
+            if isinstance(o.get("rows"), list):
+                yield from o["rows"]
+            for v in o.values():
+                yield from rows(v)
+        elif isinstance(o, list):
+            for v in o:
+                yield from rows(v)
+    byname = {n: t for t, n in teams.items()}
+    for r in rows(j):
+        t = r.get("team") or {}
+        tid = t.get("id") if t.get("id") in tk else byname.get(t.get("name"))
+        g = lambda *ks: next((r[k] for k in ks if isinstance(r.get(k), (int, float))), None)
+        pl, w, d, l, gf, ga, pts = g("matches", "played", "gamesPlayed"), g("wins", "win"), g("draws", "draw"), g("losses", "loss"), g("scoresFor", "goalsFor", "gf"), g("scoresAgainst", "goalsAgainst", "ga"), g("points", "pts")
+        if tid in tk and None not in (pl, w, d, l, gf, ga, pts) and pl == w + d + l:
+            out[tk[tid]] = {"pl": int(pl), "w": int(w), "d": int(d), "l": int(l), "gf": int(gf), "ga": int(ga), "pts": int(pts)}
+    if len(out) < 10:
+        print(f"  sluzbena tabela nije procitana ({len(out)} timova): tabela se racuna iz mecova")
+        return {}
+    print(f"  sluzbena tabela: {len(out)} timova, odigrano {min(v['pl'] for v in out.values())}-{max(v['pl'] for v in out.values())}")
+    return out
+
+
 def labels(z):
     out = []
     if z["poss"] > .8: out.append("posed/kontrola lopte")
@@ -221,19 +248,39 @@ def build(a):
             sys.exit(f"Nasao samo {len(teams)} timova u /api/tournament/{a.tournament}/{a.season}/events; proveri --tournament/--season ili posalji mi taj JSON.")
         print(f"{len(teams)} timova: " + ", ".join(sorted(teams.values())))
         packs = {}
-        for tid in teams:
+
+        def load(tid):
             j = cl.get(f"/api/team/{tid}/players/performance?tournamentId=&limit={a.limit}&location=both")
             if j and not (j.get("data") or j.get("events")):
                 j = cl.get(f"/api/team/{tid}/players/performance?tournamentId=&limit=20&location=both")
             if j:
                 packs[tid] = team_pack(j, tid)
                 print(f"  {teams[tid]:<22} {len(packs[tid][0])} mecova, {len(packs[tid][3])} nedostupnih")
+        for tid in list(teams):
+            load(tid)
+        # discover() zna da nadje samo deo timova (npr. 17 od 20): protivnike iz ligaskih mecova koji nisu medju timovima dodajemo i ucitavamo,
+        # inace se njihovi mecovi odbace i tabela/forma svih ostalih ispadnu pogresni (jedan tim ima 3 utakmice, drugi 6)
+        now_ = datetime.now(timezone.utc)
+        s0 = datetime(now_.year if now_.month >= 7 else now_.year - 1, 7, 1, tzinfo=timezone.utc).timestamp()
+        for _ in range(2):
+            miss = {}
+            for tid_, (evs_, per_, pl_, un_) in list(packs.items()):
+                for e_ in evs_.values():
+                    if e_["ut"] == PL_UT and e_["ts"] and e_["ts"] >= s0:
+                        for i_, n_ in ((e_["h"], e_["hn"]), (e_["a"], e_["an"])):
+                            if i_ is not None and i_ not in teams and n_: miss[i_] = n_
+            if not miss: break
+            print("  dodajem timove koji nisu bili u listi lige: " + ", ".join(miss.values()))
+            for i_, n_ in miss.items():
+                teams[i_] = n_; load(i_)
         ups = {tid: cl.get(f"/api/team/{tid}/upcoming-events?page=1&limit=10") for tid in teams} if not a.no_upcoming else {}
+        std_json = cl.get(f"/api/unique-tournament/{CUR['ut']}/{a.season}/standing") or {}
     except Blocked as e:
         sys.exit(f"STAJEM: {e}. Statshub odbija zahteve; ne zaobilazim. Pokusaj kasnije (kes ostaje).")
     finally:
         cl.close()
     tk = {tid: key(n) for tid, n in teams.items()}
+    official = official_table(std_json, tk, teams)
     # utakmice izmedju timova lige (svi turniri), jedna po event id; xG = zbir xG igraca svakog tima
     M = {}
     for tid, (evs, per, pl, un) in packs.items():
@@ -315,7 +362,7 @@ def build(a):
     for tid, r in raw_style.items():
         prof[tid]["style"] = {**{k: (round(v, 3) if isinstance(v, float) else v) for k, v in r.items() if k != "z"}, "z": {k: round(v, 2) for k, v in r["z"].items()}, "labels": labels(r["z"])}
     out = {"updated": datetime.now().isoformat(timespec="seconds"), "source": "statshub.com", "tournament": a.tournament, "season": a.season,
-           "teams": {tk[t]: prof[t] for t in prof}, "matches": matches}
+           "teams": {tk[t]: prof[t] for t in prof}, "matches": matches, "standing": official}
     os.makedirs(D, exist_ok=True)
     json.dump(out, open(OUT, "w", encoding="utf-8"), ensure_ascii=False, separators=(",", ":"))
     nx = sum(1 for m in matches if m["xh"] is not None)

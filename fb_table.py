@@ -32,14 +32,6 @@ ALIASES = {"pl": ("matches", "played", "gamesPlayed", "games", "mp", "gp"), "w":
            "ga": ("scoresAgainst", "goalsAgainst", "ga", "goalsConceded", "conceded"), "pts": ("points", "pts")}
 
 
-
-# --- UEFA takmicenja: ligaska faza (dodato iz add_uefa.py) ---
-_LP = [(1, 8, "cl", "Osmina finala (direktno)"), (9, 24, "po", "Baraž za osminu finala"), (25, 36, "rel", "Eliminisani")]
-for _c in ("cl", "el", "conf"):
-    BANDS.setdefault(_c, _LP); SIZE.setdefault(_c, 36)
-LP_CAP = {7: 144, 679: 144, 17015: 108}   # utakmica u ligaskoj fazi: 36 klubova x 8 (LS, LE) ili 6 (LK) kola / 2
-
-
 def jl(p, dflt=None):
     try:
         return json.load(open(p, encoding="utf-8"))
@@ -72,8 +64,6 @@ def computed(SD, ut, today):
         if m.get("ut") != ut or (m.get("d") or "") < start or m["h"] not in R or m["a"] not in R or sig in seen:
             continue
         seen.add(sig)
-        if LP_CAP.get(ut) and len(seen) > LP_CAP[ut]:
-            break
         for t, o, gf, ga, home in ((m["h"], m["a"], m["hg"], m["ag"], True), (m["a"], m["h"], m["ag"], m["hg"], False)):
             r = R[t]
             k = "w" if gf > ga else "d" if gf == ga else "l"

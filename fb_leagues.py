@@ -63,7 +63,45 @@ LEAGUES = {
                "us sassuolo": "sassuolo", "sassuolo calcio": "sassuolo", "sasuolo": "sassuolo", "us cremonese": "cremonese", "kremonese": "cremonese",
                "pisa sc": "pisa", "ac pisa 1909": "pisa", "venezia fc": "venezia", "venecija": "venezia", "ac monza": "monza",
                "us salernitana 1919": "salernitana", "frosinone calcio": "frosinone"}},
+    # Bundesliga: Statshub uniqueTournament 35, football-data D1. Kljuc "bl" = folder data/bl/. tournament/season se sami pronadju (ili --tournament X --season Y).
+    "bl": {"name": "Bundesliga", "dir": "bl", "path": "/leagues/germany/bundesliga/35", "ut": 35,
+           "tourn": None, "season": None, "csv": "D1", "struct": "bundesliga|nemacka|germany|nemacke|njemacka",
+           "alias": {
+               # kanonski kljuc = kratko ime; levo: Statshub (engleski/nemacki) i srpski prepisi (Superbet), posle nrm (bez dijakritika, bez fc/afc/cf)
+               "bayern munich": "bayern", "bayern munchen": "bayern", "fc bayern munchen": "bayern", "bajern": "bayern", "bajern minhen": "bayern", "bajern minchen": "bayern",
+               "borussia dortmund": "dortmund", "bv borussia 09 dortmund": "dortmund", "borusija dortmund": "dortmund", "borusija d": "dortmund", "dortmund": "dortmund",
+               "bayer 04 leverkusen": "leverkusen", "bayer leverkusen": "leverkusen", "bajer leverkuzen": "leverkusen", "bajer 04 leverkuzen": "leverkusen", "leverkuzen": "leverkusen",
+               "rb leipzig": "leipzig", "rasenballsport leipzig": "leipzig", "rb lajpcig": "leipzig", "lajpcig": "leipzig", "lajpzig": "leipzig", "rb lajpzig": "leipzig",
+               "vfb stuttgart": "stuttgart", "stutgart": "stuttgart", "vfb stutgart": "stuttgart",
+               "eintracht frankfurt": "frankfurt", "ajntraht frankfurt": "frankfurt", "ajntrah frankfurt": "frankfurt", "ajntraht": "frankfurt", "ajntrakt frankfurt": "frankfurt",
+               "tsg hoffenheim": "hoffenheim", "tsg 1899 hoffenheim": "hoffenheim", "hofenhajm": "hoffenheim", "hofenhajm tsg": "hoffenheim",
+               "sc freiburg": "freiburg", "frajburg": "freiburg", "werder bremen": "werder", "sv werder bremen": "werder", "verder bremen": "werder", "verder": "werder",
+               "vfl wolfsburg": "wolfsburg", "volfsburg": "wolfsburg", "1 fsv mainz 05": "mainz", "fsv mainz 05": "mainz", "mainz 05": "mainz", "majnc": "mainz", "majnc 05": "mainz",
+               "fc augsburg": "augsburg", "augzburg": "augsburg", "1 fc union berlin": "union berlin", "fc union berlin": "union berlin", "unjon berlin": "union berlin", "union": "union berlin",
+               "borussia monchengladbach": "gladbach", "borussia m gladbach": "gladbach", "monchengladbach": "gladbach", "m gladbach": "gladbach", "mgladbach": "gladbach",
+               "borusija menhengladbah": "gladbach", "borusija monhengladbah": "gladbach", "menhengladbah": "gladbach", "borusija m": "gladbach",
+               "1 fc heidenheim 1846": "heidenheim", "1 heidenheim 1846": "heidenheim", "fc heidenheim": "heidenheim", "heidenheim 1846": "heidenheim", "hajdenhajm": "heidenheim",
+               "fc st pauli": "st pauli", "sankt pauli": "st pauli", "san pauli": "st pauli", "st pauli": "st pauli",
+               "1 fc koln": "koln", "fc koln": "koln", "cologne": "koln", "keln": "koln", "kolonj": "koln", "1 koln": "koln",
+               "hamburger sv": "hamburg", "hamburg sv": "hamburg", "hsv": "hamburg", "hamburger": "hamburg",
+               "fc schalke 04": "schalke", "schalke 04": "schalke", "salke": "schalke", "salke 04": "schalke",
+               "sc paderborn 07": "paderborn", "paderborn 07": "paderborn", "paderborn": "paderborn", "hertha bsc": "hertha", "hertha berlin": "hertha", "herta": "hertha",
+               "fortuna dusseldorf": "dusseldorf", "1 fc nurnberg": "nurnberg", "nurnberg": "nurnberg", "hannover 96": "hannover", "sv elversberg": "elversberg",
+               "holstein kiel": "kiel", "vfl bochum": "bochum", "bochum 1848": "bochum", "darmstadt 98": "darmstadt", "sv darmstadt 98": "darmstadt", "1 fc kaiserslautern": "kaiserslautern"}},
+    # ===== EVROPSKA TAKMICENJA (od sutra). Nemaju svoj Statshub fajl: snaga ekipa se uzima iz domacih liga ("feeders"), a razlika u kvalitetu
+    # liga je u "strength" (VAZNA PRETPOSTAVKA, menjaj po osecaju: >1 = jaca liga). Ekipe iz liga koje nemamo (Portugal, Holandija, Turska...) se preskacu bez tipa.
+    "cl": {"name": "Liga šampiona", "dir": "cl", "path": "/leagues/europe/uefa-champions-league/7", "ut": 7, "tourn": None, "season": None, "csv": "",
+           "struct": "liga sampiona|champions league", "cup": True, "feeders": ["epl", "laliga", "sa", "bl", "l1"],
+           "strength": {"epl": 1.00, "laliga": 0.97, "sa": 0.95, "bl": 0.95, "l1": 0.90}, "alias": {}},
+    "el": {"name": "Liga Evrope", "dir": "el", "path": "/leagues/europe/uefa-europa-league/679", "ut": 679, "tourn": None, "season": None, "csv": "",
+           "struct": "liga evrope|europa league", "cup": True, "feeders": ["epl", "laliga", "sa", "bl", "l1"],
+           "strength": {"epl": 1.00, "laliga": 0.97, "sa": 0.95, "bl": 0.95, "l1": 0.90}, "alias": {}},
+    "ecl": {"name": "Liga konferencije", "dir": "ecl", "path": "/leagues/europe/uefa-conference-league/17015", "ut": 17015, "tourn": None, "season": None, "csv": "",
+            "struct": "liga konferencije|conference league", "cup": True, "feeders": ["epl", "laliga", "sa", "bl", "l1"],
+            "strength": {"epl": 1.00, "laliga": 0.97, "sa": 0.95, "bl": 0.95, "l1": 0.90}, "alias": {}},
 }
+CUP_TXT = {"cl": r"liga sampiona|champions league", "el": r"liga evrope|europa league", "ecl": r"liga konferencij|conference league"}
+CUP_NOT = r"kvalifik|qualif|zene|women|youth|omladin|\bu ?\d\d\b|super ?cup|superkup|play ?off"
 
 
 def _code():
