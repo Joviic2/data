@@ -1,0 +1,11 @@
+SUPERBET +EV  |  14.10.2026 13:54  |  min EV 300% (UEFA 300%)  |  bankroll 415 RSD, Kelly 25% (max 2%)
+
+Nema tipova koji prolaze filtere. Pregledano 1039 redova iz 8 liga: Liga šampiona 82, Liga Evrope 145, Liga konferencije 130, Premier League 144, La Liga 157, Ligue 1 127, Bundesliga 111, Serie A 143
+Odbačeno zbog: predaleko 631, ev_ispod_praga 265, blokiran_under_ng 89, kvota_van_opsega 54
+Najbolji kandidati koji su pali samo na pragu EV:
+   Riga FC - Kairat Almaty | 1 (Riga FC) @ 1.95 | EV +5.6%  (Liga konferencije)
+   Sint-Truiden - Iberia 1999 | GG (oba daju gol) @ 2.02 | EV +5.4%  (Liga konferencije)
+   Olympique Marseille - Olympiacos | NG (bar jedan ne daje) @ 2.32 | EV +5.2%  (Liga Evrope)
+   Olympique Marseille - Olympiacos | Ispod 2.5 @ 2.10 | EV +5.2%  (Liga Evrope)
+   Slovan Bratislava - Stuttgart | Ispod 2.5 @ 3.25 | EV +5.2%  (Liga šampiona)
+Prag spusti sa --min-ev 0.01 (ili 0), ali EV ispod 3% je najčešće samo šum.

@@ -561,7 +561,7 @@
   ]
  },
  "1X2 & ukupno golova (1.5)": {
-  "mecova": 18,
+  "mecova": 16,
   "primer": [
    [
     "",
@@ -608,7 +608,7 @@
   ]
  },
  "1X2 & ukupno golova (2.5)": {
-  "mecova": 17,
+  "mecova": 15,
   "primer": [
    [
     "",
@@ -655,7 +655,7 @@
   ]
  },
  "1X2 & ukupno golova (3.5)": {
-  "mecova": 17,
+  "mecova": 15,
   "primer": [
    [
     "",
@@ -702,7 +702,7 @@
   ]
  },
  "1X2 & ukupno golova (4.5)": {
-  "mecova": 17,
+  "mecova": 15,
   "primer": [
    [
     "",
@@ -749,7 +749,7 @@
   ]
  },
  "Dupla šansa & ukupno golova (2.5)": {
-  "mecova": 16,
+  "mecova": 14,
   "primer": [
    [
     "10-",
@@ -796,7 +796,7 @@
   ]
  },
  "Dupla šansa & ukupno golova (3.5)": {
-  "mecova": 16,
+  "mecova": 14,
   "primer": [
    [
     "10-",
@@ -843,7 +843,7 @@
   ]
  },
  "Dupla šansa & ukupno golova (4.5)": {
-  "mecova": 16,
+  "mecova": 14,
   "primer": [
    [
     "10-",
@@ -890,7 +890,7 @@
   ]
  },
  "Dupla šansa & ukupno golova (5.5)": {
-  "mecova": 16,
+  "mecova": 14,
   "primer": [
    [
     "10-",
@@ -937,7 +937,7 @@
   ]
  },
  "1. poluvreme ukupno golova & Ukupno golova": {
-  "mecova": 16,
+  "mecova": 14,
   "primer": [
    [
     "",
@@ -1026,7 +1026,7 @@
   ]
  },
  "1. poluvreme ukupno golova & 2. poluvreme ukupno golova": {
-  "mecova": 16,
+  "mecova": 14,
   "primer": [
    [
     "0+0+",
@@ -1115,7 +1115,7 @@
   ]
  },
  "1. poluvreme ukupno golova ili 2. poluvreme ukupno golova": {
-  "mecova": 16,
+  "mecova": 14,
   "primer": [
    [
     "+1+1",
@@ -1204,7 +1204,7 @@
   ]
  },
  "Pobednik bilo koje poluvreme": {
-  "mecova": 16,
+  "mecova": 14,
   "primer": [
    [
     "1",
@@ -1230,7 +1230,7 @@
   ]
  },
  "Gol u oba poluvremena": {
-  "mecova": 16,
+  "mecova": 14,
   "primer": [
    [
     "",
@@ -1249,7 +1249,7 @@
   ]
  },
  "Winner DNB": {
-  "mecova": 16,
+  "mecova": 14,
   "primer": [
    [
     "1",
@@ -1268,7 +1268,7 @@
   ]
  },
  "Raspon golova u svakom poluvremenu": {
-  "mecova": 16,
+  "mecova": 14,
   "primer": [
    [
     "12",
@@ -1294,7 +1294,7 @@
   ]
  },
  "Tačno golova": {
-  "mecova": 16,
+  "mecova": 14,
   "primer": [
    [
     "0",
@@ -1348,7 +1348,7 @@
   ]
  },
  "Ukupno golova & oba tima daju gol": {
-  "mecova": 16,
+  "mecova": 14,
   "primer": [
    [
     "+1",
@@ -1437,7 +1437,7 @@
   ]
  },
  "Oba tima daju po dva ili više golova": {
-  "mecova": 16,
+  "mecova": 14,
   "primer": [
    [
     "1",
@@ -1456,7 +1456,7 @@
   ]
  },
  "Oba tima daju gol 1.poluvreme/2.poluvreme": {
-  "mecova": 16,
+  "mecova": 14,
   "primer": [
    [
     "11",
@@ -1489,7 +1489,7 @@
   ]
  },
  "Dupla šansa & ukupno golova (1.5)": {
-  "mecova": 10,
+  "mecova": 9,
   "primer": [
    [
     "10-",
@@ -1536,7 +1536,7 @@
   ]
  },
  "1X2 & ukupno golova (0.5)": {
-  "mecova": 10,
+  "mecova": 8,
   "primer": [
    [
     "",
@@ -1794,7 +1794,7 @@
   ]
  },
  "Gol bilo kog igrača sa klupe": {
-  "mecova": 2,
+  "mecova": 4,
   "primer": [
    [
     "",
@@ -1806,7 +1806,7 @@
   ]
  },
  "Sudija da pogleda VAR bar jednom": {
-  "mecova": 2,
+  "mecova": 4,
   "primer": [
    [
     "",
@@ -1818,7 +1818,7 @@
   ]
  },
  "Sudija da pogleda VAR bar dva puta": {
-  "mecova": 2,
+  "mecova": 4,
   "primer": [
    [
     "",
@@ -1830,7 +1830,7 @@
   ]
  },
  "Sudija da pogleda VAR i da dosudi penal": {
-  "mecova": 2,
+  "mecova": 4,
   "primer": [
    [
     "",
@@ -1842,7 +1842,7 @@
   ]
  },
  "Sudija da pogleda VAR i ne menja prvobitnu odluku": {
-  "mecova": 2,
+  "mecova": 4,
   "primer": [
    [
     "",
@@ -1854,7 +1854,7 @@
   ]
  },
  "Oba golmana imaće odbranu u oba poluvremena": {
-  "mecova": 2,
+  "mecova": 4,
   "primer": [
    [
     "",
@@ -1866,7 +1866,7 @@
   ]
  },
  "Bilo koji golman asistira": {
-  "mecova": 2,
+  "mecova": 4,
   "primer": [
    [
     "",
@@ -1878,7 +1878,7 @@
   ]
  },
  "Oba golmana biće faulirana": {
-  "mecova": 2,
+  "mecova": 4,
   "primer": [
    [
     "",
@@ -1890,7 +1890,7 @@
   ]
  },
  "3+ šuteva u okvir gola van šesnaesterca": {
-  "mecova": 2,
+  "mecova": 4,
   "primer": [
    [
     "",
@@ -1902,7 +1902,7 @@
   ]
  },
  "Gol van šesnaesterca": {
-  "mecova": 2,
+  "mecova": 4,
   "primer": [
    [
     "",
@@ -1914,7 +1914,7 @@
   ]
  },
  "Gol glavom": {
-  "mecova": 2,
+  "mecova": 4,
   "primer": [
    [
     "",
@@ -1926,7 +1926,7 @@
   ]
  },
  "Gol direktno iz slobodnog udarca": {
-  "mecova": 2,
+  "mecova": 4,
   "primer": [
    [
     "",
@@ -1938,7 +1938,7 @@
   ]
  },
  "Gol makazicama": {
-  "mecova": 2,
+  "mecova": 4,
   "primer": [
    [
     "",
@@ -1950,7 +1950,7 @@
   ]
  },
  "Crveni karton ili gol u nadoknadi vremena ('90+) 2. poluvremena": {
-  "mecova": 2,
+  "mecova": 4,
   "primer": [
    [
     "",
@@ -7998,835 +7998,291 @@
    ]
   ]
  },
- "Olympique Lyon raspon golova": {
+ "Boudache, Kail & Strand Larsen, Jorgen zajedno imaju 3+ šuteva u okvir gola": {
   "mecova": 1,
   "primer": [
    [
     "",
-    "1-2",
-    "Olympique Lyon 1-2 gola na utakmici",
-    1.63,
-    -2.0
-   ],
-   [
-    "",
-    "1-3",
-    "Olympique Lyon  1-3 gola na utakmici",
-    1.32,
+    "da",
+    "Boudache, Kail & Strand Larsen, Jorgen će zajedno ",
+    2.4,
     -3.0
-   ],
+   ]
+  ]
+ },
+ "Nakamura, Keito & Pino, Yeremy zajedno imaju 3+ šuteva u okvir gola": {
+  "mecova": 1,
+  "primer": [
    [
     "",
-    "2-3",
-    "Olympique Lyon 2-3 gola na utakmici",
+    "da",
+    "Nakamura, Keito & Pino, Yeremy će zajedno imati 3 ",
+    2.5,
+    -3.0
+   ]
+  ]
+ },
+ "Sulc, Pavel & Kamada, Daichi zajedno imaju 3+ šuteva u okvir gola": {
+  "mecova": 1,
+  "primer": [
+   [
+    "",
+    "da",
+    "Sulc, Pavel & Kamada, Daichi će zajedno imati 3 il",
+    4.0,
+    -3.0
+   ]
+  ]
+ },
+ "Sulc, Pavel & Strand Larsen, Jorgen zajedno imaju 4+ šuteva u okvir gola": {
+  "mecova": 1,
+  "primer": [
+   [
+    "",
+    "da",
+    "Sulc, Pavel & Strand Larsen, Jorgen će zajedno ima",
+    4.2,
+    -4.0
+   ]
+  ]
+ },
+ "Boudache, Kail & Strand Larsen, Jorgen oba pojedinačno imaju 1+ šuteva u okvir gola i oba faulirana bar jednom": {
+  "mecova": 1,
+  "primer": [
+   [
+    "",
+    "da",
+    "Boudache, Kail & Strand Larsen, Jorgen obojica će ",
+    3.15,
+    -1.0
+   ]
+  ]
+ },
+ "Nakamura, Keito & Pino, Yeremy oba pojedinačno imaju 1+ šuteva u okvir gola i oba faulirana bar jednom": {
+  "mecova": 1,
+  "primer": [
+   [
+    "",
+    "da",
+    "Nakamura, Keito & Pino, Yeremy obojica će imati 1 ",
+    3.6,
+    -1.0
+   ]
+  ]
+ },
+ "Sulc, Pavel & Kamada, Daichi oba pojedinačno imaju 1+ šuteva u okvir gola i oba faulirana bar jednom": {
+  "mecova": 1,
+  "primer": [
+   [
+    "",
+    "da",
+    "Sulc, Pavel & Kamada, Daichi obojica će imati 1 il",
+    5.0,
+    -1.0
+   ]
+  ]
+ },
+ "Sulc, Pavel & Strand Larsen, Jorgen oba pojedinačno imaju 1+ šuteva u okvir gola i oba faulirana bar jednom": {
+  "mecova": 1,
+  "primer": [
+   [
+    "",
+    "da",
+    "Sulc, Pavel & Strand Larsen, Jorgen obojica će ima",
+    3.5,
+    -1.0
+   ]
+  ]
+ },
+ "Athekame, Zachary & Ahanor, Honest da zajedno načine 4+ faulova": {
+  "mecova": 1,
+  "primer": [
+   [
+    "",
+    "da",
+    "Athekame, Zachary & Ahanor, Honest će zajedno nači",
+    2.4,
+    -4.0
+   ]
+  ]
+ },
+ "Morton, Tyler & Richards, Chris da zajedno načine 3+ faulova": {
+  "mecova": 1,
+  "primer": [
+   [
+    "",
+    "da",
+    "Morton, Tyler & Richards, Chris će zajedno načinil",
     2.3,
     -3.0
    ]
   ]
  },
- "Crystal Palace raspon golova": {
+ "Nakamura, Keito & Mitchell, Tyrick da zajedno načine 3+ faulova": {
   "mecova": 1,
   "primer": [
    [
     "",
-    "1-2",
-    "Crystal Palace 1-2 gola na utakmici",
-    1.61,
-    -2.0
-   ],
-   [
-    "",
-    "1-3",
-    "Crystal Palace 1-3 gola na utakmici",
-    1.36,
-    -3.0
-   ],
-   [
-    "",
-    "2-3",
-    "Crystal Palace 2-3 gola na utakmici",
-    2.6,
+    "da",
+    "Nakamura, Keito & Mitchell, Tyrick će zajedno nači",
+    2.5,
     -3.0
    ]
   ]
  },
- "Olympique Lyon raspon golova u svakom poluvremenu": {
+ "Sulc, Pavel & Quinten Timber da zajedno načine 4+ faulova": {
   "mecova": 1,
   "primer": [
    [
-    "12",
-    "1-2",
-    "Olympique Lyon 1 ili 2 gola u svakom poluvremenu",
-    3.4,
-    2.0
-   ],
-   [
-    "13",
-    "1-3",
-    "Olympique Lyon 1,2 ili 3 gola u svakom poluvremenu",
-    2.95,
-    3.0
-   ],
-   [
-    "23",
-    "2-3",
-    "Olympique Lyon 2 ili 3 gola u svakom poluvremenu",
-    16.0,
-    3.0
-   ]
-  ]
- },
- "Crystal Palace raspon golova u svakom poluvremenu": {
-  "mecova": 1,
-  "primer": [
-   [
-    "12",
-    "1-2",
-    "Crystal Palace 1 ili 2 gola u svakom poluvremenu",
-    3.9,
-    2.0
-   ],
-   [
-    "13",
-    "1-3",
-    "Crystal Palace 1,2 ili 3 gola u svakom poluvremenu",
-    3.55,
-    3.0
-   ],
-   [
-    "23",
-    "2-3",
-    "Crystal Palace 2 ili 3 gola u svakom poluvremenu",
-    22.0,
-    3.0
-   ]
-  ]
- },
- "Olympique Lyon tačno golova": {
-  "mecova": 1,
-  "primer": [
-   [
-    "0",
-    "0",
-    "Olympique Lyon ne daje gol",
-    4.55,
-    3.0
-   ],
-   [
-    "1",
-    "1",
-    "Olympique Lyon daje tačno 1 gol",
-    2.85,
-    3.0
-   ],
-   [
-    "2",
-    "2",
-    "Olympique Lyon daje tačno 2 gola",
-    3.4,
-    3.0
-   ],
-   [
-    "3",
-    "3+",
-    "Olympique Lyon daje 3 ili više golova",
-    3.9,
-    3.0
-   ]
-  ]
- },
- "Crystal Palace tačno golova": {
-  "mecova": 1,
-  "primer": [
-   [
-    "0",
-    "0",
-    "Crystal Palace ne daje gol",
-    3.7,
-    3.0
-   ],
-   [
-    "1",
-    "1",
-    "Crystal Palace daje tačno 1 gol",
-    2.65,
-    3.0
-   ],
-   [
-    "2",
-    "2",
-    "Crystal Palace daje tačno 2 gola",
-    3.65,
-    3.0
-   ],
-   [
-    "3",
-    "3+",
-    "Crystal Palace daje 3 ili više golova",
-    5.1,
-    3.0
-   ]
-  ]
- },
- "Olympique Lyon daje gol": {
-  "mecova": 1,
-  "primer": [
-   [
-    "1",
+    "",
     "da",
-    "Olympique Lyon daje gol na utakmici",
-    1.2,
-    null
-   ],
-   [
-    "2",
-    "ne",
-    "Olympique Lyon ne daje gol na utakmici",
-    4.65,
-    null
+    "Sulc, Pavel & Quinten Timber će zajedno načinili 4",
+    2.3,
+    -4.0
    ]
   ]
  },
- "Crystal Palace daje gol": {
+ "Kluivert, Ruben & Strand Larsen, Jorgen fauliraju jedan drugog": {
   "mecova": 1,
   "primer": [
    [
-    "1",
+    "",
     "da",
-    "Crystal Palace daje gol na utakmici",
-    1.28,
-    null
-   ],
-   [
-    "2",
-    "ne",
-    "Crystal Palace ne daje gol na utakmici",
-    3.75,
-    null
-   ]
-  ]
- },
- "1. Poluvreme Olympique Lyon Ukupno golova & Ukupno golova Olympique Lyon": {
-  "mecova": 1,
-  "primer": [
-   [
-    "",
-    "vise 0.5 & vise 1.5",
-    "1. Poluvreme Olympique Lyon više od 0.5 golova i O",
-    2.4,
-    1.5
-   ],
-   [
-    "",
-    "vise 0.5 & manje 1.5",
-    "1. Poluvreme Olympique Lyon više od 0.5 golova i O",
-    5.45,
-    1.5
-   ],
-   [
-    "",
-    "manje 0.5 & vise 1.5",
-    "1. Poluvreme Olympique Lyon manje od 0.5 golova i ",
-    6.4,
-    1.5
-   ],
-   [
-    "",
-    "manje 0.5 & manje 1.5",
-    "1. Poluvreme Olympique Lyon manje od 0.5 golova i ",
-    2.47,
-    1.5
-   ],
-   [
-    "",
-    "vise 0.5 & vise 2.5",
-    "1. Poluvreme Olympique Lyon više od 0.5 golova i O",
-    4.3,
-    2.5
-   ],
-   [
-    "",
-    "vise 0.5 & manje 2.5",
-    "1. Poluvreme Olympique Lyon više od 0.5 golova i O",
-    2.72,
-    2.5
-   ],
-   [
-    "",
-    "manje 0.5 & vise 2.5",
-    "1. Poluvreme Olympique Lyon manje od 0.5 golova i ",
-    17.0,
-    2.5
-   ],
-   [
-    "",
-    "manje 0.5 & manje 2.5",
-    "1. Poluvreme Olympique Lyon manje od 0.5 golova i ",
-    2.05,
-    2.5
-   ],
-   [
-    "",
-    "vise 1.5 & vise 2.5",
-    "1. Poluvreme Olympique Lyon više od 1.5 golova i O",
-    6.5,
-    2.5
-   ],
-   [
-    "",
-    "vise 1.5 & manje 2.5",
-    "1. Poluvreme Olympique Lyon više od 1.5 golova i O",
-    12.0,
-    2.5
-   ],
-   [
-    "",
-    "manje 1.5 & vise 2.5",
-    "1. Poluvreme Olympique Lyon manje od 1.5 golova i ",
-    6.5,
-    2.5
-   ],
-   [
-    "",
-    "manje 1.5 & manje 2.5",
-    "1. Poluvreme Olympique Lyon manje od 1.5 golova i ",
-    1.32,
-    2.5
-   ]
-  ]
- },
- "1. Poluvreme Crystal Palace Ukupno golova & Ukupno golova Crystal Palace": {
-  "mecova": 1,
-  "primer": [
-   [
-    "",
-    "vise 0.5 & vise 1.5",
-    "1. Poluvreme Crystal Palace više od 0.5 golova i C",
-    2.87,
-    1.5
-   ],
-   [
-    "",
-    "vise 0.5 & manje 1.5",
-    "1. Poluvreme Crystal Palace više od 0.5 golova i C",
-    5.2,
-    1.5
-   ],
-   [
-    "",
-    "manje 0.5 & vise 1.5",
-    "1. Poluvreme Crystal Palace manje od 0.5 golova i ",
-    7.0,
-    1.5
-   ],
-   [
-    "",
-    "manje 0.5 & manje 1.5",
-    "1. Poluvreme Crystal Palace manje od 0.5 golova i ",
-    2.1,
-    1.5
-   ],
-   [
-    "",
-    "vise 0.5 & vise 2.5",
-    "1. Poluvreme Crystal Palace više od 0.5 golova i C",
-    5.55,
-    2.5
-   ],
-   [
-    "",
-    "vise 0.5 & manje 2.5",
-    "1. Poluvreme Crystal Palace više od 0.5 golova i C",
-    2.77,
-    2.5
-   ],
-   [
-    "",
-    "manje 0.5 & vise 2.5",
-    "1. Poluvreme Crystal Palace manje od 0.5 golova i ",
-    20.0,
-    2.5
-   ],
-   [
-    "",
-    "manje 0.5 & manje 2.5",
-    "1. Poluvreme Crystal Palace manje od 0.5 golova i ",
-    1.8,
-    2.5
-   ],
-   [
-    "",
-    "vise 1.5 & vise 2.5",
-    "1. Poluvreme Crystal Palace više od 1.5 golova i C",
-    8.3,
-    2.5
-   ],
-   [
-    "",
-    "vise 1.5 & manje 2.5",
-    "1. Poluvreme Crystal Palace više od 1.5 golova i C",
-    13.0,
-    2.5
-   ],
-   [
-    "",
-    "manje 1.5 & vise 2.5",
-    "1. Poluvreme Crystal Palace manje od 1.5 golova i ",
-    7.9,
-    2.5
-   ],
-   [
-    "",
-    "manje 1.5 & manje 2.5",
-    "1. Poluvreme Crystal Palace manje od 1.5 golova i ",
-    1.21,
-    2.5
-   ]
-  ]
- },
- "Olympique Lyon - 1. poluvreme ukupno golova & 2. poluvreme ukupno golova": {
-  "mecova": 1,
-  "primer": [
-   [
-    "",
-    "vise 0.5 & vise 0.5",
-    "Olympique Lyon daje više od 0.5 golova u 1. poluvr",
-    2.87,
-    2.0
-   ],
-   [
-    "",
-    "vise 0.5 & manje 0.5",
-    "Olympique Lyon daje više od 0.5 golova u 1. poluvr",
+    "Kluivert, Ruben & Strand Larsen, Jorgen će faulira",
     4.0,
-    2.0
-   ],
+    15.0
+   ]
+  ]
+ },
+ "Morton, Tyler & Quinten Timber fauliraju jedan drugog": {
+  "mecova": 1,
+  "primer": [
    [
     "",
-    "vise 0.5 & vise 1.5",
-    "Olympique Lyon daje više od 0.5 golova u 1. poluvr",
-    6.4,
-    2.0
-   ],
-   [
-    "",
-    "vise 0.5 & manje 1.5",
-    "Olympique Lyon daje više od 0.5 golova u 1. poluvr",
-    2.25,
-    2.0
-   ],
-   [
-    "",
-    "vise 0.5 & vise 2.5",
-    "Olympique Lyon daje više od 0.5 golova u 1. poluvr",
-    17.0,
-    2.0
-   ],
-   [
-    "",
-    "vise 0.5 & manje 2.5",
-    "Olympique Lyon daje više od 0.5 golova u 1. poluvr",
-    1.9,
-    2.0
-   ],
-   [
-    "",
-    "manje 0.5 & vise 0.5",
-    "Olympique Lyon daje manje od 0.5 golova u 1. poluv",
+    "da",
+    "Morton, Tyler & Quinten Timber će faulirati jedan ",
     3.0,
-    2.0
-   ],
-   [
-    "",
-    "manje 0.5 & manje 0.5",
-    "Olympique Lyon daje manje od 0.5 golova u 1. poluv",
-    4.4,
-    2.0
-   ],
-   [
-    "",
-    "manje 0.5 & vise 1.5",
-    "Olympique Lyon daje manje od 0.5 golova u 1. poluv",
-    6.4,
-    2.0
-   ],
-   [
-    "",
-    "manje 0.5 & manje 1.5",
-    "Olympique Lyon daje manje od 0.5 golova u 1. poluv",
-    2.47,
-    2.0
-   ],
-   [
-    "",
-    "manje 0.5 & vise 2.5",
-    "Olympique Lyon daje manje od 0.5 golova u 1. poluv",
-    17.0,
-    2.0
-   ],
-   [
-    "",
-    "manje 0.5 & manje 2.5",
-    "Olympique Lyon daje manje od 0.5 golova u 1. poluv",
-    2.05,
-    2.0
+    15.0
    ]
   ]
  },
- "Crystal Palace - 1. poluvreme ukupno golova & 2. poluvreme ukupno golova": {
+ "Nakamura, Keito & Wharton, Adam fauliraju jedan drugog": {
   "mecova": 1,
   "primer": [
    [
     "",
-    "vise 0.5 & vise 0.5",
-    "Crystal Palace daje više od 0.5 golova u 1. poluvr",
-    3.45,
-    2.0
-   ],
-   [
-    "",
-    "vise 0.5 & manje 0.5",
-    "Crystal Palace daje više od 0.5 golova u 1. poluvr",
-    4.0,
-    2.0
-   ],
-   [
-    "",
-    "vise 0.5 & vise 1.5",
-    "Crystal Palace daje više od 0.5 golova u 1. poluvr",
-    8.1,
-    2.0
-   ],
-   [
-    "",
-    "vise 0.5 & manje 1.5",
-    "Crystal Palace daje više od 0.5 golova u 1. poluvr",
-    2.4,
-    2.0
-   ],
-   [
-    "",
-    "vise 0.5 & vise 2.5",
-    "Crystal Palace daje više od 0.5 golova u 1. poluvr",
-    23.0,
-    2.0
-   ],
-   [
-    "",
-    "vise 0.5 & manje 2.5",
-    "Crystal Palace daje više od 0.5 golova u 1. poluvr",
-    2.07,
-    2.0
-   ],
-   [
-    "",
-    "manje 0.5 & vise 0.5",
-    "Crystal Palace daje manje od 0.5 golova u 1. poluv",
-    2.95,
-    2.0
-   ],
-   [
-    "",
-    "manje 0.5 & manje 0.5",
-    "Crystal Palace daje manje od 0.5 golova u 1. poluv",
+    "da",
+    "Nakamura, Keito & Wharton, Adam će faulirati jedan",
     3.6,
-    2.0
-   ],
-   [
-    "",
-    "manje 0.5 & vise 1.5",
-    "Crystal Palace daje manje od 0.5 golova u 1. poluv",
-    7.0,
-    2.0
-   ],
-   [
-    "",
-    "manje 0.5 & manje 1.5",
-    "Crystal Palace daje manje od 0.5 golova u 1. poluv",
-    2.1,
-    2.0
-   ],
-   [
-    "",
-    "manje 0.5 & vise 2.5",
-    "Crystal Palace daje manje od 0.5 golova u 1. poluv",
-    20.0,
-    2.0
-   ],
-   [
-    "",
-    "manje 0.5 & manje 2.5",
-    "Crystal Palace daje manje od 0.5 golova u 1. poluv",
-    1.8,
-    2.0
+    15.0
    ]
   ]
  },
- "1X2 & ukupno golova Olympique Lyon (0.5)": {
+ "Sulc, Pavel & Ahanor, Honest fauliraju jedan drugog": {
   "mecova": 1,
   "primer": [
    [
-    "0-",
-    "x & manje 0.5",
-    "nerešeno i Olympique Lyon manje od 0.5 gola na uta",
-    12.0,
-    0.5
-   ],
-   [
-    "2-",
-    "2 & manje 0.5",
-    "Crystal Palace pobednik i Olympique Lyon manje od ",
-    5.6,
-    0.5
-   ],
-   [
-    "1+",
-    "1 & vise 0.5",
-    "Olympique Lyon pobednik i Olympique Lyon više od 0",
-    2.15,
-    0.5
-   ],
-   [
-    "0+",
-    "x & vise 0.5",
-    "nerešeno i Olympique Lyon više od 0.5 gola na utak",
-    4.0,
-    0.5
-   ],
-   [
-    "2+",
-    "2 & vise 0.5",
-    "Crystal Palace pobednik i Olympique Lyon više od 0",
-    4.65,
-    0.5
-   ]
-  ]
- },
- "1X2 & ukupno golova Olympique Lyon (1.5)": {
-  "mecova": 1,
-  "primer": [
-   [
-    "1-",
-    "1 & manje 1.5",
-    "Olympique Lyon pobednik i Olympique Lyon manje od ",
-    8.6,
-    1.5
-   ],
-   [
-    "0-",
-    "x & manje 1.5",
-    "nerešeno i Olympique Lyon manje od 1.5 gola na uta",
-    4.75,
-    1.5
-   ],
-   [
-    "2-",
-    "2 & manje 1.5",
-    "Crystal Palace pobednik i Olympique Lyon manje od ",
+    "",
+    "da",
+    "Sulc, Pavel & Ahanor, Honest će faulirati jedan dr",
     3.3,
-    1.5
-   ],
-   [
-    "1+",
-    "1 & vise 1.5",
-    "Olympique Lyon pobednik i Olympique Lyon više od 1",
-    2.57,
-    1.5
-   ],
-   [
-    "0+",
-    "x & vise 1.5",
-    "nerešeno i Olympique Lyon više od 1.5 gola na utak",
-    7.6,
-    1.5
-   ],
-   [
-    "2+",
-    "2 & vise 1.5",
-    "Crystal Palace pobednik i Olympique Lyon više od 1",
-    12.0,
-    1.5
+    15.0
    ]
   ]
  },
- "1X2 & ukupno golova Olympique Lyon (2.5)": {
+ "Boudache, Kail pogađa stativu/prečku (gol od stative/prečke se ne računa)": {
   "mecova": 1,
   "primer": [
    [
-    "1-",
-    "1 & manje 2.5",
-    "Olympique Lyon pobednik i Olympique Lyon manje od ",
-    3.75,
-    2.5
-   ],
-   [
-    "0-",
-    "x & manje 2.5",
-    "nerešeno i Olympique Lyon manje od 2.5 gola na uta",
-    3.55,
-    2.5
-   ],
-   [
-    "2-",
-    "2 & manje 2.5",
-    "Crystal Palace pobednik i Olympique Lyon manje od ",
-    2.9,
-    2.5
-   ],
-   [
-    "1+",
-    "1 & vise 2.5",
-    "Olympique Lyon pobednik i Olympique Lyon više od 2",
-    4.2,
-    2.5
-   ],
-   [
-    "0+",
-    "x & vise 2.5",
-    "nerešeno i Olympique Lyon više od 2.5 gola na utak",
-    22.0,
-    2.5
-   ],
-   [
-    "2+",
-    "2 & vise 2.5",
-    "Crystal Palace pobednik i Olympique Lyon više od 2",
-    45.0,
-    2.5
+    "",
+    "da",
+    "Boudache, Kail će pogoditi stativu/precku (gol od ",
+    9.5,
+    15.0
    ]
   ]
  },
- "1X2 & ukupno golova Olympique Lyon (3.5)": {
+ "Kamada, Daichi pogađa stativu/prečku (gol od stative/prečke se ne računa)": {
   "mecova": 1,
   "primer": [
    [
-    "1-",
-    "1 & manje 3.5",
-    "Olympique Lyon pobednik i Olympique Lyon manje od ",
-    2.6,
-    3.5
-   ],
-   [
-    "0-",
-    "x & manje 3.5",
-    "nerešeno i Olympique Lyon manje od 3.5 gola na uta",
-    3.35,
-    3.5
-   ],
-   [
-    "2-",
-    "2 & manje 3.5",
-    "Crystal Palace pobednik i Olympique Lyon manje od ",
-    2.85,
-    3.5
-   ],
-   [
-    "1+",
-    "1 & vise 3.5",
-    "Olympique Lyon pobednik i Olympique Lyon više od 3",
-    8.3,
-    3.5
-   ],
-   [
-    "0+",
-    "x & vise 3.5",
-    "nerešeno i Olympique Lyon više od 3.5 gola na utak",
-    75.0,
-    3.5
-   ],
-   [
-    "2+",
-    "2 & vise 3.5",
-    "Crystal Palace pobednik i Olympique Lyon više od 3",
-    100.0,
-    3.5
+    "",
+    "da",
+    "Kamada, Daichi će pogoditi stativu/precku (gol od ",
+    10.0,
+    15.0
    ]
   ]
  },
- "1X2 & ukupno golova Olympique Lyon (4.5)": {
+ "Nakamura, Keito pogađa stativu/prečku (gol od stative/prečke se ne računa)": {
   "mecova": 1,
   "primer": [
    [
-    "1-",
-    "1 & manje 4.5",
-    "Olympique Lyon pobednik i Olympique Lyon manje od ",
-    2.27,
-    4.5
-   ],
-   [
-    "0-",
-    "x & manje 4.5",
-    "nerešeno i Olympique Lyon manje od 4.5 gola na uta",
-    3.3,
-    4.5
-   ],
-   [
-    "2-",
-    "2 & manje 4.5",
-    "Crystal Palace pobednik i Olympique Lyon manje od ",
-    2.82,
-    4.5
-   ],
-   [
-    "1+",
-    "1 & vise 4.5",
-    "Olympique Lyon pobednik i Olympique Lyon više od 4",
-    20.0,
-    4.5
-   ],
-   [
-    "0+",
-    "x & vise 4.5",
-    "nerešeno i Olympique Lyon više od 4.5 gola na utak",
-    125.0,
-    4.5
-   ],
-   [
-    "2+",
-    "2 & vise 4.5",
-    "Crystal Palace pobednik i Olympique Lyon više od 4",
-    125.0,
-    4.5
+    "",
+    "da",
+    "Nakamura, Keito će pogoditi stativu/precku (gol od",
+    8.0,
+    15.0
    ]
   ]
  },
- "1X2 & ukupno golova Crystal Palace (0.5)": {
+ "Pino, Yeremy pogađa stativu/prečku (gol od stative/prečke se ne računa)": {
   "mecova": 1,
   "primer": [
    [
-    "1-",
-    "1 & manje 0.5",
-    "Olympique Lyon pobednik  i Crystal Palace manje od",
-    4.35,
-    0.5
-   ],
+    "",
+    "da",
+    "Pino, Yeremy će pogoditi stativu/precku (gol od st",
+    8.5,
+    15.0
+   ]
+  ]
+ },
+ "Strand Larsen, Jorgen pogađa stativu/prečku (gol od stative/prečke se ne računa)": {
+  "mecova": 1,
+  "primer": [
    [
-    "0-",
-    "x & manje 0.5",
-    "nerešeno i Crystal Palace manje od 0.5 gola na uta",
-    12.0,
-    0.5
-   ],
+    "",
+    "da",
+    "Strand Larsen, Jorgen će pogoditi stativu/precku (",
+    6.6,
+    15.0
+   ]
+  ]
+ },
+ "Sulc, Pavel pogađa stativu/prečku (gol od stative/prečke se ne računa)": {
+  "mecova": 1,
+  "primer": [
    [
-    "1+",
-    "1 & vise 0.5",
-    "Olympique Lyon pobednik  i Crystal Palace više od ",
-    3.65,
-    0.5
-   ],
+    "",
+    "da",
+    "Sulc, Pavel će pogoditi stativu/precku (gol od sta",
+    6.5,
+    15.0
+   ]
+  ]
+ },
+ "Tessmann, Tanner pogađa stativu/prečku (gol od stative/prečke se ne računa)": {
+  "mecova": 1,
+  "primer": [
    [
-    "0+",
-    "x & vise 0.5",
-    "nerešeno i Crystal Palace više od 0.5 gola na utak",
-    4.0,
-    0.5
-   ],
+    "",
+    "da",
+    "Tessmann, Tanner će pogoditi stativu/precku (gol o",
+    11.0,
+    15.0
+   ]
+  ]
+ },
+ "Paulo Fonseca dobija karton": {
+  "mecova": 1,
+  "primer": [
    [
-    "2+",
-    "2 & vise 0.5",
-    "Crystal Palace pobednik  i Crystal Palace više od ",
-    2.82,
-    0.5
+    "",
+    "da",
+    "Paulo Fonseca će dobiti karton. Za mečeve koji ukl",
+    5.5,
+    15.0
    ]
   ]
  },
@@ -11733,14 +11189,14 @@
     "*11-",
     "manje 4.5",
     "NEC Nijmegen će imati manje od 4.5 šuteva u okvir ",
-    2.07,
+    2.02,
     4.5
    ],
    [
     "*11+",
     "vise 4.5",
     "NEC Nijmegen će imati više od 4.5 šuteva u okvir g",
-    1.67,
+    1.69,
     4.5
    ]
   ]
@@ -11752,14 +11208,14 @@
     "*12-",
     "manje 3.5",
     "Levski Sofia će imati manje od 3.5 šuteva u okvir ",
-    1.85,
+    1.87,
     3.5
    ],
    [
     "*12+",
     "vise 3.5",
     "Levski Sofia će imati više od 3.5 šuteva u okvir g",
-    1.87,
+    1.83,
     3.5
    ]
   ]
@@ -11769,17 +11225,17 @@
   "primer": [
    [
     "",
-    "manje 14.5",
-    "NEC Nijmegen manje od 14.5 šuteva,",
-    1.82,
-    14.5
+    "manje 13.5",
+    "NEC Nijmegen manje od 13.5 šuteva,",
+    1.97,
+    13.5
    ],
    [
     "",
-    "vise 14.5",
-    "NEC Nijmegen više od 14.5 šuteva",
-    1.88,
-    14.5
+    "vise 13.5",
+    "NEC Nijmegen više od 13.5 šuteva",
+    1.73,
+    13.5
    ]
   ]
  },
@@ -11880,14 +11336,14 @@
     "",
     "1-3",
     "Levski Sofia 1-3 gola na utakmici",
-    1.48,
+    1.47,
     -3.0
    ],
    [
     "",
     "2-3",
     "Levski Sofia 2-3 gola na utakmici",
-    3.25,
+    3.2,
     -3.0
    ]
   ]
@@ -11925,21 +11381,21 @@
     "12",
     "1-2",
     "Levski Sofia 1 ili 2 gola u svakom poluvremenu",
-    5.0,
+    4.9,
     2.0
    ],
    [
     "13",
     "1-3",
     "Levski Sofia 1,2 ili 3 gola u svakom poluvremenu",
-    4.7,
+    4.65,
     3.0
    ],
    [
     "23",
     "2-3",
     "Levski Sofia 2 ili 3 gola u svakom poluvremenu",
-    39.0,
+    38.0,
     3.0
    ]
   ]
@@ -11984,28 +11440,28 @@
     "0",
     "0",
     "Levski Sofia ne daje gol",
-    2.8,
+    2.85,
     3.0
    ],
    [
     "1",
     "1",
     "Levski Sofia daje tačno 1 gol",
-    2.5,
+    2.52,
     3.0
    ],
    [
     "2",
     "2",
     "Levski Sofia daje tačno 2 gola",
-    4.3,
+    4.25,
     3.0
    ],
    [
     "3",
     "3+",
     "Levski Sofia daje 3 ili više golova",
-    7.7,
+    7.5,
     3.0
    ]
   ]
@@ -12055,14 +11511,14 @@
     "",
     "vise 0.5 & vise 1.5",
     "1. Poluvreme NEC Nijmegen više od 0.5 golova i NEC",
-    2.2,
+    2.22,
     1.5
    ],
    [
     "",
     "vise 0.5 & manje 1.5",
     "1. Poluvreme NEC Nijmegen više od 0.5 golova i NEC",
-    5.7,
+    5.65,
     1.5
    ],
    [
@@ -12076,14 +11532,14 @@
     "",
     "manje 0.5 & manje 1.5",
     "1. Poluvreme NEC Nijmegen manje od 0.5 golova i NE",
-    2.7,
+    2.67,
     1.5
    ],
    [
     "",
     "vise 0.5 & vise 2.5",
     "1. Poluvreme NEC Nijmegen više od 0.5 golova i NEC",
-    3.75,
+    3.8,
     2.5
    ],
    [
@@ -12097,21 +11553,21 @@
     "",
     "manje 0.5 & vise 2.5",
     "1. Poluvreme NEC Nijmegen manje od 0.5 golova i NE",
-    15.0,
+    16.0,
     2.5
    ],
    [
     "",
     "manje 0.5 & manje 2.5",
     "1. Poluvreme NEC Nijmegen manje od 0.5 golova i NE",
-    2.2,
+    2.17,
     2.5
    ],
    [
     "",
     "vise 1.5 & vise 2.5",
     "1. Poluvreme NEC Nijmegen više od 1.5 golova i NEC",
-    5.7,
+    5.8,
     2.5
    ],
    [
@@ -12144,35 +11600,35 @@
     "",
     "vise 0.5 & vise 1.5",
     "1. Poluvreme Levski Sofia više od 0.5 golova i Lev",
-    3.8,
+    3.75,
     1.5
    ],
    [
     "",
     "vise 0.5 & manje 1.5",
     "1. Poluvreme Levski Sofia više od 0.5 golova i Lev",
-    4.9,
+    5.0,
     1.5
    ],
    [
     "",
     "manje 0.5 & vise 1.5",
     "1. Poluvreme Levski Sofia manje od 0.5 golova i Le",
-    8.2,
+    8.1,
     1.5
    ],
    [
     "",
     "manje 0.5 & manje 1.5",
     "1. Poluvreme Levski Sofia manje od 0.5 golova i Le",
-    1.75,
+    1.76,
     1.5
    ],
    [
     "",
     "vise 0.5 & vise 2.5",
     "1. Poluvreme Levski Sofia više od 0.5 golova i Lev",
-    8.1,
+    8.0,
     2.5
    ],
    [
@@ -12186,14 +11642,14 @@
     "",
     "manje 0.5 & vise 2.5",
     "1. Poluvreme Levski Sofia manje od 0.5 golova i Le",
-    27.0,
+    26.0,
     2.5
    ],
    [
     "",
     "manje 0.5 & manje 2.5",
     "1. Poluvreme Levski Sofia manje od 0.5 golova i Le",
-    1.56,
+    1.57,
     2.5
    ],
    [
@@ -12233,7 +11689,7 @@
     "",
     "vise 0.5 & vise 0.5",
     "NEC Nijmegen daje više od 0.5 golova u 1. poluvrem",
-    2.62,
+    2.65,
     2.0
    ],
    [
@@ -12247,7 +11703,7 @@
     "",
     "vise 0.5 & vise 1.5",
     "NEC Nijmegen daje više od 0.5 golova u 1. poluvrem",
-    5.6,
+    5.7,
     2.0
    ],
    [
@@ -12268,7 +11724,7 @@
     "",
     "vise 0.5 & manje 2.5",
     "NEC Nijmegen daje više od 0.5 golova u 1. poluvrem",
-    1.82,
+    1.83,
     2.0
    ],
    [
@@ -12282,7 +11738,7 @@
     "",
     "manje 0.5 & manje 0.5",
     "NEC Nijmegen daje manje od 0.5 golova u 1. poluvre",
-    4.9,
+    4.85,
     2.0
    ],
    [
@@ -12296,21 +11752,21 @@
     "",
     "manje 0.5 & manje 1.5",
     "NEC Nijmegen daje manje od 0.5 golova u 1. poluvre",
-    2.7,
+    2.67,
     2.0
    ],
    [
     "",
     "manje 0.5 & vise 2.5",
     "NEC Nijmegen daje manje od 0.5 golova u 1. poluvre",
-    15.0,
+    16.0,
     2.0
    ],
    [
     "",
     "manje 0.5 & manje 2.5",
     "NEC Nijmegen daje manje od 0.5 golova u 1. poluvre",
-    2.2,
+    2.17,
     2.0
    ]
   ]
@@ -12322,7 +11778,7 @@
     "",
     "vise 0.5 & vise 0.5",
     "Levski Sofia daje više od 0.5 golova u 1. poluvrem",
-    4.65,
+    4.6,
     2.0
    ],
    [
@@ -12336,7 +11792,7 @@
     "",
     "vise 0.5 & vise 1.5",
     "Levski Sofia daje više od 0.5 golova u 1. poluvrem",
-    13.0,
+    12.0,
     2.0
    ],
    [
@@ -12371,35 +11827,35 @@
     "",
     "manje 0.5 & manje 0.5",
     "Levski Sofia daje manje od 0.5 golova u 1. poluvre",
-    2.75,
+    2.77,
     2.0
    ],
    [
     "",
     "manje 0.5 & vise 1.5",
     "Levski Sofia daje manje od 0.5 golova u 1. poluvre",
-    8.2,
+    8.1,
     2.0
    ],
    [
     "",
     "manje 0.5 & manje 1.5",
     "Levski Sofia daje manje od 0.5 golova u 1. poluvre",
-    1.75,
+    1.76,
     2.0
    ],
    [
     "",
     "manje 0.5 & vise 2.5",
     "Levski Sofia daje manje od 0.5 golova u 1. poluvre",
-    27.0,
+    26.0,
     2.0
    ],
    [
     "",
     "manje 0.5 & manje 2.5",
     "Levski Sofia daje manje od 0.5 golova u 1. poluvre",
-    1.56,
+    1.57,
     2.0
    ]
   ]
@@ -12418,14 +11874,14 @@
     "2-",
     "2 & manje 0.5",
     "Levski Sofia pobednik i NEC Nijmegen manje od 0.5 ",
-    6.8,
+    6.6,
     0.5
    ],
    [
     "1+",
     "1 & vise 0.5",
     "NEC Nijmegen pobednik i NEC Nijmegen više od 0.5 g",
-    1.77,
+    1.8,
     0.5
    ],
    [
@@ -12439,7 +11895,7 @@
     "2+",
     "2 & vise 0.5",
     "Levski Sofia pobednik i NEC Nijmegen više od 0.5 g",
-    6.3,
+    6.2,
     0.5
    ]
   ]
@@ -12458,28 +11914,28 @@
     "0-",
     "x & manje 1.5",
     "nerešeno i NEC Nijmegen manje od 1.5 gola na utakm",
-    4.65,
+    4.6,
     1.5
    ],
    [
     "2-",
     "2 & manje 1.5",
     "Levski Sofia pobednik i NEC Nijmegen manje od 1.5 ",
-    4.25,
+    4.15,
     1.5
    ],
    [
     "1+",
     "1 & vise 1.5",
     "NEC Nijmegen pobednik i NEC Nijmegen više od 1.5 g",
-    2.15,
+    2.17,
     1.5
    ],
    [
     "0+",
     "x & vise 1.5",
     "nerešeno i NEC Nijmegen više od 1.5 gola na utakmi",
-    8.9,
+    8.8,
     1.5
    ],
    [
@@ -12498,7 +11954,7 @@
     "1-",
     "1 & manje 2.5",
     "NEC Nijmegen pobednik i NEC Nijmegen manje od 2.5 ",
-    3.1,
+    3.15,
     2.5
    ],
    [
@@ -12512,14 +11968,14 @@
     "2-",
     "2 & manje 2.5",
     "Levski Sofia pobednik i NEC Nijmegen manje od 2.5 ",
-    3.8,
+    3.7,
     2.5
    ],
    [
     "1+",
     "1 & vise 2.5",
     "NEC Nijmegen pobednik i NEC Nijmegen više od 2.5 g",
-    3.55,
+    3.6,
     2.5
    ],
    [
@@ -12545,28 +12001,28 @@
     "1-",
     "1 & manje 3.5",
     "NEC Nijmegen pobednik i NEC Nijmegen manje od 3.5 ",
-    2.17,
+    2.2,
     3.5
    ],
    [
     "0-",
     "x & manje 3.5",
     "nerešeno i NEC Nijmegen manje od 3.5 gola na utakm",
-    3.5,
+    3.45,
     3.5
    ],
    [
     "2-",
     "2 & manje 3.5",
     "Levski Sofia pobednik i NEC Nijmegen manje od 3.5 ",
-    3.75,
+    3.65,
     3.5
    ],
    [
     "1+",
     "1 & vise 3.5",
     "NEC Nijmegen pobednik i NEC Nijmegen više od 3.5 g",
-    7.1,
+    7.2,
     3.5
    ],
    [
@@ -12592,7 +12048,7 @@
     "1-",
     "1 & manje 4.5",
     "NEC Nijmegen pobednik i NEC Nijmegen manje od 4.5 ",
-    1.88,
+    1.9,
     4.5
    ],
    [
@@ -12606,14 +12062,14 @@
     "2-",
     "2 & manje 4.5",
     "Levski Sofia pobednik i NEC Nijmegen manje od 4.5 ",
-    3.75,
+    3.65,
     4.5
    ],
    [
     "1+",
     "1 & vise 4.5",
     "NEC Nijmegen pobednik i NEC Nijmegen više od 4.5 g",
-    16.0,
+    17.0,
     4.5
    ],
    [
@@ -13018,795 +12474,291 @@
    ]
   ]
  },
- "Olympique Marseille raspon golova": {
+ "Abdallah, Keyliane & Silva, Jota zajedno imaju 3+ šuteva u okvir gola": {
   "mecova": 1,
   "primer": [
    [
     "",
-    "1-2",
-    "Olympique Marseille 1-2 gola na utakmici",
-    1.62,
-    -2.0
-   ],
-   [
-    "",
-    "1-3",
-    "Olympique Marseille  1-3 gola na utakmici",
-    1.33,
-    -3.0
-   ],
-   [
-    "",
-    "2-3",
-    "Olympique Marseille 2-3 gola na utakmici",
-    2.37,
-    -3.0
-   ]
-  ]
- },
- "Olympiacos raspon golova": {
-  "mecova": 1,
-  "primer": [
-   [
-    "",
-    "1-2",
-    "Olympiacos 1-2 gola na utakmici",
-    1.62,
-    -2.0
-   ],
-   [
-    "",
-    "1-3",
-    "Olympiacos 1-3 gola na utakmici",
-    1.38,
-    -3.0
-   ],
-   [
-    "",
-    "2-3",
-    "Olympiacos 2-3 gola na utakmici",
-    2.72,
-    -3.0
-   ]
-  ]
- },
- "Olympique Marseille raspon golova u svakom poluvremenu": {
-  "mecova": 1,
-  "primer": [
-   [
-    "12",
-    "1-2",
-    "Olympique Marseille 1 ili 2 gola u svakom poluvrem",
-    3.55,
-    2.0
-   ],
-   [
-    "13",
-    "1-3",
-    "Olympique Marseille 1,2 ili 3 gola u svakom poluvr",
-    3.15,
-    3.0
-   ],
-   [
-    "23",
-    "2-3",
-    "Olympique Marseille 2 ili 3 gola u svakom poluvrem",
-    18.0,
-    3.0
-   ]
-  ]
- },
- "Olympiacos raspon golova u svakom poluvremenu": {
-  "mecova": 1,
-  "primer": [
-   [
-    "12",
-    "1-2",
-    "Olympiacos 1 ili 2 gola u svakom poluvremenu",
-    4.1,
-    2.0
-   ],
-   [
-    "13",
-    "1-3",
-    "Olympiacos 1,2 ili 3 gola u svakom poluvremenu",
-    3.75,
-    3.0
-   ],
-   [
-    "23",
-    "2-3",
-    "Olympiacos 2 ili 3 gola u svakom poluvremenu",
-    25.0,
-    3.0
-   ]
-  ]
- },
- "Olympique Marseille tačno golova": {
-  "mecova": 1,
-  "primer": [
-   [
-    "0",
-    "0",
-    "Olympique Marseille ne daje gol",
-    4.25,
-    3.0
-   ],
-   [
-    "1",
-    "1",
-    "Olympique Marseille daje tačno 1 gol",
-    2.77,
-    3.0
-   ],
-   [
-    "2",
-    "2",
-    "Olympique Marseille daje tačno 2 gola",
-    3.45,
-    3.0
-   ],
-   [
-    "3",
-    "3+",
-    "Olympique Marseille daje 3 ili više golova",
-    4.25,
-    3.0
-   ]
-  ]
- },
- "Olympiacos tačno golova": {
-  "mecova": 1,
-  "primer": [
-   [
-    "0",
-    "0",
-    "Olympiacos ne daje gol",
-    3.45,
-    3.0
-   ],
-   [
-    "1",
-    "1",
-    "Olympiacos daje tačno 1 gol",
-    2.6,
-    3.0
-   ],
-   [
-    "2",
-    "2",
-    "Olympiacos daje tačno 2 gola",
-    3.8,
-    3.0
-   ],
-   [
-    "3",
-    "3+",
-    "Olympiacos daje 3 ili više golova",
-    5.55,
-    3.0
-   ]
-  ]
- },
- "Olympique Marseille daje gol": {
-  "mecova": 1,
-  "primer": [
-   [
-    "1",
     "da",
-    "Olympique Marseille daje gol na utakmici",
-    1.22,
-    null
-   ],
-   [
-    "2",
-    "ne",
-    "Olympique Marseille ne daje gol na utakmici",
-    4.3,
-    null
+    "Abdallah, Keyliane & Silva, Jota će zajedno imati ",
+    2.5,
+    -3.0
    ]
   ]
  },
- "Olympiacos daje gol": {
+ "Harit, Amine & Chiquinho zajedno imaju 3+ šuteva u okvir gola": {
   "mecova": 1,
   "primer": [
    [
-    "1",
+    "",
     "da",
-    "Olympiacos daje gol na utakmici",
-    1.31,
-    null
-   ],
-   [
-    "2",
-    "ne",
-    "Olympiacos ne daje gol na utakmici",
-    3.5,
-    null
-   ]
-  ]
- },
- "1. Poluvreme Olympique Marseille Ukupno golova & Ukupno golova Olympique Marseille": {
-  "mecova": 1,
-  "primer": [
-   [
-    "",
-    "vise 0.5 & vise 1.5",
-    "1. Poluvreme Olympique Marseille više od 0.5 golov",
-    2.55,
-    1.5
-   ],
-   [
-    "",
-    "vise 0.5 & manje 1.5",
-    "1. Poluvreme Olympique Marseille više od 0.5 golov",
-    5.3,
-    1.5
-   ],
-   [
-    "",
-    "manje 0.5 & vise 1.5",
-    "1. Poluvreme Olympique Marseille manje od 0.5 golo",
-    6.6,
-    1.5
-   ],
-   [
-    "",
-    "manje 0.5 & manje 1.5",
-    "1. Poluvreme Olympique Marseille manje od 0.5 golo",
-    2.35,
-    1.5
-   ],
-   [
-    "",
-    "vise 0.5 & vise 2.5",
-    "1. Poluvreme Olympique Marseille više od 0.5 golov",
-    4.65,
-    2.5
-   ],
-   [
-    "",
-    "vise 0.5 & manje 2.5",
-    "1. Poluvreme Olympique Marseille više od 0.5 golov",
-    2.72,
-    2.5
-   ],
-   [
-    "",
-    "manje 0.5 & vise 2.5",
-    "1. Poluvreme Olympique Marseille manje od 0.5 golo",
-    18.0,
-    2.5
-   ],
-   [
-    "",
-    "manje 0.5 & manje 2.5",
-    "1. Poluvreme Olympique Marseille manje od 0.5 golo",
-    1.97,
-    2.5
-   ],
-   [
-    "",
-    "vise 1.5 & vise 2.5",
-    "1. Poluvreme Olympique Marseille više od 1.5 golov",
-    7.0,
-    2.5
-   ],
-   [
-    "",
-    "vise 1.5 & manje 2.5",
-    "1. Poluvreme Olympique Marseille više od 1.5 golov",
-    12.0,
-    2.5
-   ],
-   [
-    "",
-    "manje 1.5 & vise 2.5",
-    "1. Poluvreme Olympique Marseille manje od 1.5 golo",
-    7.0,
-    2.5
-   ],
-   [
-    "",
-    "manje 1.5 & manje 2.5",
-    "1. Poluvreme Olympique Marseille manje od 1.5 golo",
-    1.28,
-    2.5
-   ]
-  ]
- },
- "1. Poluvreme Olympiacos Ukupno golova & Ukupno golova Olympiacos": {
-  "mecova": 1,
-  "primer": [
-   [
-    "",
-    "vise 0.5 & vise 1.5",
-    "1. Poluvreme Olympiacos više od 0.5 golova i Olymp",
-    3.05,
-    1.5
-   ],
-   [
-    "",
-    "vise 0.5 & manje 1.5",
-    "1. Poluvreme Olympiacos više od 0.5 golova i Olymp",
-    5.1,
-    1.5
-   ],
-   [
-    "",
-    "manje 0.5 & vise 1.5",
-    "1. Poluvreme Olympiacos manje od 0.5 golova i Olym",
-    7.2,
-    1.5
-   ],
-   [
-    "",
-    "manje 0.5 & manje 1.5",
-    "1. Poluvreme Olympiacos manje od 0.5 golova i Olym",
-    2.02,
-    1.5
-   ],
-   [
-    "",
-    "vise 0.5 & vise 2.5",
-    "1. Poluvreme Olympiacos više od 0.5 golova i Olymp",
-    6.0,
-    2.5
-   ],
-   [
-    "",
-    "vise 0.5 & manje 2.5",
-    "1. Poluvreme Olympiacos više od 0.5 golova i Olymp",
-    2.8,
-    2.5
-   ],
-   [
-    "",
-    "manje 0.5 & vise 2.5",
-    "1. Poluvreme Olympiacos manje od 0.5 golova i Olym",
-    21.0,
-    2.5
-   ],
-   [
-    "",
-    "manje 0.5 & manje 2.5",
-    "1. Poluvreme Olympiacos manje od 0.5 golova i Olym",
-    1.75,
-    2.5
-   ],
-   [
-    "",
-    "vise 1.5 & vise 2.5",
-    "1. Poluvreme Olympiacos više od 1.5 golova i Olymp",
-    9.0,
-    2.5
-   ],
-   [
-    "",
-    "vise 1.5 & manje 2.5",
-    "1. Poluvreme Olympiacos više od 1.5 golova i Olymp",
-    13.0,
-    2.5
-   ],
-   [
-    "",
-    "manje 1.5 & vise 2.5",
-    "1. Poluvreme Olympiacos manje od 1.5 golova i Olym",
-    8.5,
-    2.5
-   ],
-   [
-    "",
-    "manje 1.5 & manje 2.5",
-    "1. Poluvreme Olympiacos manje od 1.5 golova i Olym",
-    1.19,
-    2.5
-   ]
-  ]
- },
- "Olympique Marseille - 1. poluvreme ukupno golova & 2. poluvreme ukupno golova": {
-  "mecova": 1,
-  "primer": [
-   [
-    "",
-    "vise 0.5 & vise 0.5",
-    "Olympique Marseille daje više od 0.5 golova u 1. p",
-    3.05,
-    2.0
-   ],
-   [
-    "",
-    "vise 0.5 & manje 0.5",
-    "Olympique Marseille daje više od 0.5 golova u 1. p",
-    3.9,
-    2.0
-   ],
-   [
-    "",
-    "vise 0.5 & vise 1.5",
-    "Olympique Marseille daje više od 0.5 golova u 1. p",
-    6.9,
-    2.0
-   ],
-   [
-    "",
-    "vise 0.5 & manje 1.5",
-    "Olympique Marseille daje više od 0.5 golova u 1. p",
-    2.27,
-    2.0
-   ],
-   [
-    "",
-    "vise 0.5 & vise 2.5",
-    "Olympique Marseille daje više od 0.5 golova u 1. p",
-    19.0,
-    2.0
-   ],
-   [
-    "",
-    "vise 0.5 & manje 2.5",
-    "Olympique Marseille daje više od 0.5 golova u 1. p",
-    1.95,
-    2.0
-   ],
-   [
-    "",
-    "manje 0.5 & vise 0.5",
-    "Olympique Marseille daje manje od 0.5 golova u 1. ",
-    3.0,
-    2.0
-   ],
-   [
-    "",
-    "manje 0.5 & manje 0.5",
-    "Olympique Marseille daje manje od 0.5 golova u 1. ",
-    4.1,
-    2.0
-   ],
-   [
-    "",
-    "manje 0.5 & vise 1.5",
-    "Olympique Marseille daje manje od 0.5 golova u 1. ",
-    6.6,
-    2.0
-   ],
-   [
-    "",
-    "manje 0.5 & manje 1.5",
-    "Olympique Marseille daje manje od 0.5 golova u 1. ",
-    2.35,
-    2.0
-   ],
-   [
-    "",
-    "manje 0.5 & vise 2.5",
-    "Olympique Marseille daje manje od 0.5 golova u 1. ",
-    18.0,
-    2.0
-   ],
-   [
-    "",
-    "manje 0.5 & manje 2.5",
-    "Olympique Marseille daje manje od 0.5 golova u 1. ",
-    1.97,
-    2.0
-   ]
-  ]
- },
- "Olympiacos - 1. poluvreme ukupno golova & 2. poluvreme ukupno golova": {
-  "mecova": 1,
-  "primer": [
-   [
-    "",
-    "vise 0.5 & vise 0.5",
-    "Olympiacos daje više od 0.5 golova u 1. poluvremen",
+    "Harit, Amine & Chiquinho će zajedno imati 3 ili vi",
     3.7,
-    2.0
-   ],
-   [
-    "",
-    "vise 0.5 & manje 0.5",
-    "Olympiacos daje više od 0.5 golova u 1. poluvremen",
-    3.9,
-    2.0
-   ],
-   [
-    "",
-    "vise 0.5 & vise 1.5",
-    "Olympiacos daje više od 0.5 golova u 1. poluvremen",
-    8.8,
-    2.0
-   ],
-   [
-    "",
-    "vise 0.5 & manje 1.5",
-    "Olympiacos daje više od 0.5 golova u 1. poluvremen",
-    2.45,
-    2.0
-   ],
-   [
-    "",
-    "vise 0.5 & vise 2.5",
-    "Olympiacos daje više od 0.5 golova u 1. poluvremen",
-    26.0,
-    2.0
-   ],
-   [
-    "",
-    "vise 0.5 & manje 2.5",
-    "Olympiacos daje više od 0.5 golova u 1. poluvremen",
-    2.15,
-    2.0
-   ],
-   [
-    "",
-    "manje 0.5 & vise 0.5",
-    "Olympiacos daje manje od 0.5 golova u 1. poluvreme",
-    2.95,
-    2.0
-   ],
-   [
-    "",
-    "manje 0.5 & manje 0.5",
-    "Olympiacos daje manje od 0.5 golova u 1. poluvreme",
-    3.35,
-    2.0
-   ],
-   [
-    "",
-    "manje 0.5 & vise 1.5",
-    "Olympiacos daje manje od 0.5 golova u 1. poluvreme",
-    7.2,
-    2.0
-   ],
-   [
-    "",
-    "manje 0.5 & manje 1.5",
-    "Olympiacos daje manje od 0.5 golova u 1. poluvreme",
-    2.02,
-    2.0
-   ],
-   [
-    "",
-    "manje 0.5 & vise 2.5",
-    "Olympiacos daje manje od 0.5 golova u 1. poluvreme",
-    21.0,
-    2.0
-   ],
-   [
-    "",
-    "manje 0.5 & manje 2.5",
-    "Olympiacos daje manje od 0.5 golova u 1. poluvreme",
-    1.75,
-    2.0
+    -3.0
    ]
   ]
  },
- "1X2 & ukupno golova Olympique Marseille (0.5)": {
+ "Maupay, Neal & Armando Gonzalez zajedno imaju 4+ šuteva u okvir gola": {
   "mecova": 1,
   "primer": [
    [
-    "0-",
-    "x & manje 0.5",
-    "nerešeno i Olympique Marseille manje od 0.5 gola n",
-    11.0,
-    0.5
-   ],
-   [
-    "2-",
-    "2 & manje 0.5",
-    "Olympiacos pobednik i Olympique Marseille manje od",
-    5.35,
-    0.5
-   ],
-   [
-    "1+",
-    "1 & vise 0.5",
-    "Olympique Marseille pobednik i Olympique Marseille",
-    2.17,
-    0.5
-   ],
-   [
-    "0+",
-    "x & vise 0.5",
-    "nerešeno i Olympique Marseille više od 0.5 gola na",
-    4.0,
-    0.5
-   ],
-   [
-    "2+",
-    "2 & vise 0.5",
-    "Olympiacos pobednik i Olympique Marseille više od ",
-    4.85,
-    0.5
+    "",
+    "da",
+    "Maupay, Neal & Armando Gonzalez će zajedno imati 4",
+    4.3,
+    -4.0
    ]
   ]
  },
- "1X2 & ukupno golova Olympique Marseille (1.5)": {
+ "Maupay, Neal & Silva, Jota zajedno imaju 3+ šuteva u okvir gola": {
   "mecova": 1,
   "primer": [
    [
-    "1-",
-    "1 & manje 1.5",
-    "Olympique Marseille pobednik i Olympique Marseille",
-    8.1,
-    1.5
-   ],
-   [
-    "0-",
-    "x & manje 1.5",
-    "nerešeno i Olympique Marseille manje od 1.5 gola n",
-    4.45,
-    1.5
-   ],
-   [
-    "2-",
-    "2 & manje 1.5",
-    "Olympiacos pobednik i Olympique Marseille manje od",
-    3.25,
-    1.5
-   ],
-   [
-    "1+",
-    "1 & vise 1.5",
-    "Olympique Marseille pobednik i Olympique Marseille",
-    2.67,
-    1.5
-   ],
-   [
-    "0+",
-    "x & vise 1.5",
-    "nerešeno i Olympique Marseille više od 1.5 gola na",
-    8.1,
-    1.5
-   ],
-   [
-    "2+",
-    "2 & vise 1.5",
-    "Olympiacos pobednik i Olympique Marseille više od ",
-    13.0,
-    1.5
+    "",
+    "da",
+    "Maupay, Neal & Silva, Jota će zajedno imati 3 ili ",
+    2.4,
+    -3.0
    ]
   ]
  },
- "1X2 & ukupno golova Olympique Marseille (2.5)": {
+ "Gomes, Angel & Armando Gonzalez oba pojedinačno imaju 1+ šuteva u okvir gola i oba faulirana bar jednom": {
   "mecova": 1,
   "primer": [
    [
-    "1-",
-    "1 & manje 2.5",
-    "Olympique Marseille pobednik i Olympique Marseille",
-    3.6,
-    2.5
-   ],
-   [
-    "0-",
-    "x & manje 2.5",
-    "nerešeno i Olympique Marseille manje od 2.5 gola n",
-    3.45,
-    2.5
-   ],
-   [
-    "2-",
-    "2 & manje 2.5",
-    "Olympiacos pobednik i Olympique Marseille manje od",
-    2.9,
-    2.5
-   ],
-   [
-    "1+",
-    "1 & vise 2.5",
-    "Olympique Marseille pobednik i Olympique Marseille",
-    4.55,
-    2.5
-   ],
-   [
-    "0+",
-    "x & vise 2.5",
-    "nerešeno i Olympique Marseille više od 2.5 gola na",
-    25.0,
-    2.5
-   ],
-   [
-    "2+",
-    "2 & vise 2.5",
-    "Olympiacos pobednik i Olympique Marseille više od ",
-    50.0,
-    2.5
+    "",
+    "da",
+    "Gomes, Angel & Armando Gonzalez obojica će imati 1",
+    4.5,
+    -1.0
    ]
   ]
  },
- "1X2 & ukupno golova Olympique Marseille (3.5)": {
+ "Harit, Amine & Chiquinho oba pojedinačno imaju 1+ šuteva u okvir gola i oba faulirana bar jednom": {
   "mecova": 1,
   "primer": [
    [
-    "1-",
-    "1 & manje 3.5",
-    "Olympique Marseille pobednik i Olympique Marseille",
-    2.57,
-    3.5
-   ],
-   [
-    "0-",
-    "x & manje 3.5",
-    "nerešeno i Olympique Marseille manje od 3.5 gola n",
-    3.25,
-    3.5
-   ],
-   [
-    "2-",
-    "2 & manje 3.5",
-    "Olympiacos pobednik i Olympique Marseille manje od",
-    2.85,
-    3.5
-   ],
-   [
-    "1+",
-    "1 & vise 3.5",
-    "Olympique Marseille pobednik i Olympique Marseille",
-    9.3,
-    3.5
-   ],
-   [
-    "0+",
-    "x & vise 3.5",
-    "nerešeno i Olympique Marseille više od 3.5 gola na",
-    85.0,
-    3.5
-   ],
-   [
-    "2+",
-    "2 & vise 3.5",
-    "Olympiacos pobednik i Olympique Marseille više od ",
-    100.0,
-    3.5
+    "",
+    "da",
+    "Harit, Amine & Chiquinho obojica će imati 1 ili vi",
+    3.5,
+    -1.0
    ]
   ]
  },
- "1X2 & ukupno golova Olympique Marseille (4.5)": {
+ "Maupay, Neal & Armando Gonzalez oba pojedinačno imaju 1+ šuteva u okvir gola i oba faulirana bar jednom": {
   "mecova": 1,
   "primer": [
    [
-    "1-",
-    "1 & manje 4.5",
-    "Olympique Marseille pobednik i Olympique Marseille",
+    "",
+    "da",
+    "Maupay, Neal & Armando Gonzalez obojica će imati 1",
+    3.0,
+    -1.0
+   ]
+  ]
+ },
+ "Maupay, Neal & Silva, Jota oba pojedinačno imaju 1+ šuteva u okvir gola i oba faulirana bar jednom": {
+  "mecova": 1,
+  "primer": [
+   [
+    "",
+    "da",
+    "Maupay, Neal & Silva, Jota obojica će imati 1 ili ",
+    2.5,
+    -1.0
+   ]
+  ]
+ },
+ "Garcia, Ulisses & Chiquinho da zajedno načine 4+ faulova": {
+  "mecova": 1,
+  "primer": [
+   [
+    "",
+    "da",
+    "Garcia, Ulisses & Chiquinho će zajedno načinili 4 ",
+    2.5,
+    -4.0
+   ]
+  ]
+ },
+ "Maupay, Neal & Armando Gonzalez da zajedno načine 5+ faulova": {
+  "mecova": 1,
+  "primer": [
+   [
+    "",
+    "da",
+    "Maupay, Neal & Armando Gonzalez će zajedno načinil",
+    3.0,
+    -5.0
+   ]
+  ]
+ },
+ "Maupay, Neal & Silva, Jota da zajedno načine 5+ faulova": {
+  "mecova": 1,
+  "primer": [
+   [
+    "",
+    "da",
+    "Maupay, Neal & Silva, Jota će zajedno načinili 5 i",
     2.3,
-    4.5
-   ],
+    -5.0
+   ]
+  ]
+ },
+ "Weah, Timothy & Hezze, Santiago da zajedno načine 5+ faulova": {
+  "mecova": 1,
+  "primer": [
    [
-    "0-",
-    "x & manje 4.5",
-    "nerešeno i Olympique Marseille manje od 4.5 gola n",
-    3.25,
-    4.5
-   ],
+    "",
+    "da",
+    "Weah, Timothy & Hezze, Santiago će zajedno načinil",
+    3.15,
+    -5.0
+   ]
+  ]
+ },
+ "Abdelli, Himad & Silva, Jota fauliraju jedan drugog": {
+  "mecova": 1,
+  "primer": [
    [
-    "2-",
-    "2 & manje 4.5",
-    "Olympiacos pobednik i Olympique Marseille manje od",
-    2.85,
-    4.5
-   ],
+    "",
+    "da",
+    "Abdelli, Himad & Silva, Jota će faulirati jedan dr",
+    2.0,
+    15.0
+   ]
+  ]
+ },
+ "Gomes, Angel & Chiquinho fauliraju jedan drugog": {
+  "mecova": 1,
+  "primer": [
    [
-    "1+",
-    "1 & vise 4.5",
-    "Olympique Marseille pobednik i Olympique Marseille",
-    22.0,
-    4.5
-   ],
+    "",
+    "da",
+    "Gomes, Angel & Chiquinho će faulirati jedan drugog",
+    2.55,
+    15.0
+   ]
+  ]
+ },
+ "Harit, Amine & Armando Gonzalez fauliraju jedan drugog": {
+  "mecova": 1,
+  "primer": [
    [
-    "0+",
-    "x & vise 4.5",
-    "nerešeno i Olympique Marseille više od 4.5 gola na",
-    125.0,
-    4.5
-   ],
+    "",
+    "da",
+    "Harit, Amine & Armando Gonzalez će faulirati jedan",
+    2.7,
+    15.0
+   ]
+  ]
+ },
+ "Maupay, Neal & Bruno, Onyemaechi fauliraju jedan drugog": {
+  "mecova": 1,
+  "primer": [
    [
-    "2+",
-    "2 & vise 4.5",
-    "Olympiacos pobednik i Olympique Marseille više od ",
-    125.0,
-    4.5
+    "",
+    "da",
+    "Maupay, Neal & Bruno, Onyemaechi će faulirati jeda",
+    2.9,
+    15.0
+   ]
+  ]
+ },
+ "Armando Gonzalez pogađa stativu/prečku (gol od stative/prečke se ne računa)": {
+  "mecova": 1,
+  "primer": [
+   [
+    "",
+    "da",
+    "Armando Gonzalez će pogoditi stativu/precku (gol o",
+    7.0,
+    15.0
+   ]
+  ]
+ },
+ "Chiquinho pogađa stativu/prečku (gol od stative/prečke se ne računa)": {
+  "mecova": 1,
+  "primer": [
+   [
+    "",
+    "da",
+    "Chiquinho će pogoditi stativu/precku (gol od stati",
+    9.7,
+    15.0
+   ]
+  ]
+ },
+ "Gomes, Angel pogađa stativu/prečku (gol od stative/prečke se ne računa)": {
+  "mecova": 1,
+  "primer": [
+   [
+    "",
+    "da",
+    "Gomes, Angel će pogoditi stativu/precku (gol od st",
+    10.0,
+    15.0
+   ]
+  ]
+ },
+ "Harit, Amine pogađa stativu/prečku (gol od stative/prečke se ne računa)": {
+  "mecova": 1,
+  "primer": [
+   [
+    "",
+    "da",
+    "Harit, Amine će pogoditi stativu/precku (gol od st",
+    8.5,
+    15.0
+   ]
+  ]
+ },
+ "Martins, Gelson pogađa stativu/prečku (gol od stative/prečke se ne računa)": {
+  "mecova": 1,
+  "primer": [
+   [
+    "",
+    "da",
+    "Martins, Gelson će pogoditi stativu/precku (gol od",
+    9.0,
+    15.0
+   ]
+  ]
+ },
+ "Maupay, Neal pogađa stativu/prečku (gol od stative/prečke se ne računa)": {
+  "mecova": 1,
+  "primer": [
+   [
+    "",
+    "da",
+    "Maupay, Neal će pogoditi stativu/precku (gol od st",
+    6.5,
+    15.0
+   ]
+  ]
+ },
+ "Silva, Jota pogađa stativu/prečku (gol od stative/prečke se ne računa)": {
+  "mecova": 1,
+  "primer": [
+   [
+    "",
+    "da",
+    "Silva, Jota će pogoditi stativu/precku (gol od sta",
+    8.3,
+    15.0
+   ]
+  ]
+ },
+ "Bruno Genesio dobija karton": {
+  "mecova": 1,
+  "primer": [
+   [
+    "",
+    "da",
+    "Bruno Genesio će dobiti karton. Za mečeve koji ukl",
+    5.5,
+    15.0
    ]
   ]
  },
