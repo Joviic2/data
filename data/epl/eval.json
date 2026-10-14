@@ -1,0 +1,18 @@
+{
+ "league": "epl",
+ "n_test": 1174,
+ "halflife": 240.0,
+ "k": 2.0,
+ "w_1x2": 0.0,
+ "w_ou": 0.1,
+ "temp_1x2": 1.04,
+ "platt_over": [
+  0.3,
+  0.6
+ ],
+ "ev_shrink": 0.45,
+ "ev_slope_se": 1.37,
+ "ll_gap_vs_market": 0.021,
+ "ll_gap_se": 0.0057,
+ "seasons": 5
+}

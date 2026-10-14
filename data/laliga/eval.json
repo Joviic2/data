@@ -1,0 +1,18 @@
+{
+ "league": "laliga",
+ "n_test": 1196,
+ "halflife": 480.0,
+ "k": 2.0,
+ "w_1x2": 0.0,
+ "w_ou": 0.1,
+ "temp_1x2": 0.9,
+ "platt_over": [
+  0.04,
+  0.85
+ ],
+ "ev_shrink": 0.69,
+ "ev_slope_se": 1.21,
+ "ll_gap_vs_market": 0.0193,
+ "ll_gap_se": 0.0048,
+ "seasons": 5
+}

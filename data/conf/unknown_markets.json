@@ -2167,14 +2167,14 @@
     "/*02-",
     "manje 11.5",
     "Crvena Zvezda manje od 11.5 faulova",
-    1.9,
+    1.95,
     11.5
    ],
    [
     "/*02+",
     "vise 11.5",
     "Crvena Zvezda više od 11.5 faulova",
-    1.73,
+    1.77,
     11.5
    ]
   ]
@@ -4565,7 +4565,7 @@
     "",
     "manje 7.5",
     "Inter Escaldes manje od 7.5 šuteva",
-    2.0,
+    2.02,
     7.5
    ],
    [
@@ -7142,14 +7142,14 @@
     "*12-",
     "manje 3.5",
     "Getafe će imati manje od 3.5 šuteva u okvir gola",
-    2.1,
+    2.12,
     3.5
    ],
    [
     "*12+",
     "vise 3.5",
     "Getafe će imati više od 3.5 šuteva u okvir gola",
-    1.63,
+    1.64,
     3.5
    ]
   ]
@@ -13087,14 +13087,14 @@
     "/*02-",
     "manje 11.5",
     "AGF Aarhus manje od 11.5 faulova",
-    1.85,
+    1.88,
     11.5
    ],
    [
     "/*02+",
     "vise 11.5",
     "AGF Aarhus više od 11.5 faulova",
-    1.78,
+    1.82,
     11.5
    ]
   ]
@@ -16760,21 +16760,21 @@
     "",
     "1-2",
     "Egnatia Rrogozhine 1-2 gola na utakmici",
-    1.82,
+    1.8,
     -2.0
    ],
    [
     "",
     "1-3",
     "Egnatia Rrogozhine  1-3 gola na utakmici",
-    1.68,
+    1.66,
     -3.0
    ],
    [
     "",
     "2-3",
     "Egnatia Rrogozhine 2-3 gola na utakmici",
-    4.35,
+    4.2,
     -3.0
    ]
   ]
@@ -16812,14 +16812,14 @@
     "12",
     "1-2",
     "Egnatia Rrogozhine 1 ili 2 gola u svakom poluvreme",
-    6.6,
+    6.5,
     2.0
    ],
    [
     "13",
     "1-3",
     "Egnatia Rrogozhine 1,2 ili 3 gola u svakom poluvre",
-    6.4,
+    6.2,
     3.0
    ],
    [
@@ -16838,21 +16838,21 @@
     "12",
     "1-2",
     "Midtjylland 1 ili 2 gola u svakom poluvremenu",
-    2.9,
+    2.95,
     2.0
    ],
    [
     "13",
     "1-3",
     "Midtjylland 1,2 ili 3 gola u svakom poluvremenu",
-    2.42,
+    2.45,
     3.0
    ],
    [
     "23",
     "2-3",
     "Midtjylland 2 ili 3 gola u svakom poluvremenu",
-    10.0,
+    11.0,
     3.0
    ]
   ]
@@ -16864,7 +16864,7 @@
     "0",
     "0",
     "Egnatia Rrogozhine ne daje gol",
-    2.2,
+    2.25,
     3.0
    ],
    [
@@ -16878,7 +16878,7 @@
     "2",
     "2",
     "Egnatia Rrogozhine daje tačno 2 gola",
-    5.35,
+    5.25,
     3.0
    ],
    [
@@ -16897,14 +16897,14 @@
     "0",
     "0",
     "Midtjylland ne daje gol",
-    6.1,
+    5.9,
     3.0
    ],
    [
     "1",
     "1",
     "Midtjylland daje tačno 1 gol",
-    3.35,
+    3.3,
     3.0
    ],
    [
@@ -16918,7 +16918,7 @@
     "3",
     "3+",
     "Midtjylland daje 3 ili više golova",
-    2.8,
+    2.9,
     3.0
    ]
   ]
@@ -16930,14 +16930,14 @@
     "1",
     "da",
     "Egnatia Rrogozhine daje gol na utakmici",
-    1.66,
+    1.64,
     null
    ],
    [
     "2",
     "ne",
     "Egnatia Rrogozhine ne daje gol na utakmici",
-    2.22,
+    2.27,
     null
    ]
   ]
@@ -16949,14 +16949,14 @@
     "1",
     "da",
     "Midtjylland daje gol na utakmici",
-    1.12,
+    1.13,
     null
    ],
    [
     "2",
     "ne",
     "Midtjylland ne daje gol na utakmici",
-    6.3,
+    6.1,
     null
    ]
   ]
@@ -16968,14 +16968,14 @@
     "",
     "vise 0.5 & vise 1.5",
     "1. Poluvreme Egnatia Rrogozhine više od 0.5 golova",
-    5.2,
+    5.1,
     1.5
    ],
    [
     "",
     "vise 0.5 & manje 1.5",
     "1. Poluvreme Egnatia Rrogozhine više od 0.5 golova",
-    5.0,
+    4.9,
     1.5
    ],
    [
@@ -16989,42 +16989,42 @@
     "",
     "manje 0.5 & manje 1.5",
     "1. Poluvreme Egnatia Rrogozhine manje od 0.5 golov",
-    1.5,
+    1.52,
     1.5
    ],
    [
     "",
     "vise 0.5 & vise 2.5",
     "1. Poluvreme Egnatia Rrogozhine više od 0.5 golova",
-    13.0,
+    12.0,
     2.5
    ],
    [
     "",
     "vise 0.5 & manje 2.5",
     "1. Poluvreme Egnatia Rrogozhine više od 0.5 golova",
-    3.25,
+    3.2,
     2.5
    ],
    [
     "",
     "manje 0.5 & vise 2.5",
     "1. Poluvreme Egnatia Rrogozhine manje od 0.5 golov",
-    39.0,
+    38.0,
     2.5
    ],
    [
     "",
     "manje 0.5 & manje 2.5",
     "1. Poluvreme Egnatia Rrogozhine manje od 0.5 golov",
-    1.4,
+    1.41,
     2.5
    ],
    [
     "",
     "vise 1.5 & vise 2.5",
     "1. Poluvreme Egnatia Rrogozhine više od 1.5 golova",
-    20.0,
+    19.0,
     2.5
    ],
    [
@@ -17057,7 +17057,7 @@
     "",
     "vise 0.5 & vise 1.5",
     "1. Poluvreme Midtjylland više od 0.5 golova i Midt",
-    1.95,
+    1.97,
     1.5
    ],
    [
@@ -17078,14 +17078,14 @@
     "",
     "manje 0.5 & manje 1.5",
     "1. Poluvreme Midtjylland manje od 0.5 golova i Mid",
-    3.15,
+    3.1,
     1.5
    ],
    [
     "",
     "vise 0.5 & vise 2.5",
     "1. Poluvreme Midtjylland više od 0.5 golova i Midt",
-    3.1,
+    3.15,
     2.5
    ],
    [
@@ -17106,14 +17106,14 @@
     "",
     "manje 0.5 & manje 2.5",
     "1. Poluvreme Midtjylland manje od 0.5 golova i Mid",
-    2.5,
+    2.47,
     2.5
    ],
    [
     "",
     "vise 1.5 & vise 2.5",
     "1. Poluvreme Midtjylland više od 1.5 golova i Midt",
-    4.65,
+    4.75,
     2.5
    ],
    [
@@ -17127,14 +17127,14 @@
     "",
     "manje 1.5 & vise 2.5",
     "1. Poluvreme Midtjylland manje od 1.5 golova i Mid",
-    5.25,
+    5.3,
     2.5
    ],
    [
     "",
     "manje 1.5 & manje 2.5",
     "1. Poluvreme Midtjylland manje od 1.5 golova i Mid",
-    1.52,
+    1.51,
     2.5
    ]
   ]
@@ -17146,7 +17146,7 @@
     "",
     "vise 0.5 & vise 0.5",
     "Egnatia Rrogozhine daje više od 0.5 golova u 1. po",
-    6.4,
+    6.2,
     2.0
    ],
    [
@@ -17160,42 +17160,42 @@
     "",
     "vise 0.5 & vise 1.5",
     "Egnatia Rrogozhine daje više od 0.5 golova u 1. po",
-    20.0,
+    19.0,
     2.0
    ],
    [
     "",
     "vise 0.5 & manje 1.5",
     "Egnatia Rrogozhine daje više od 0.5 golova u 1. po",
-    3.05,
+    3.0,
     2.0
    ],
    [
     "",
     "vise 0.5 & vise 2.5",
     "Egnatia Rrogozhine daje više od 0.5 golova u 1. po",
-    70.0,
+    65.0,
     2.0
    ],
    [
     "",
     "vise 0.5 & manje 2.5",
     "Egnatia Rrogozhine daje više od 0.5 golova u 1. po",
-    2.85,
+    2.82,
     2.0
    ],
    [
     "",
     "manje 0.5 & vise 0.5",
     "Egnatia Rrogozhine daje manje od 0.5 golova u 1. p",
-    3.25,
+    3.2,
     2.0
    ],
    [
     "",
     "manje 0.5 & manje 0.5",
     "Egnatia Rrogozhine daje manje od 0.5 golova u 1. p",
-    2.2,
+    2.22,
     2.0
    ],
    [
@@ -17209,21 +17209,21 @@
     "",
     "manje 0.5 & manje 1.5",
     "Egnatia Rrogozhine daje manje od 0.5 golova u 1. p",
-    1.5,
+    1.52,
     2.0
    ],
    [
     "",
     "manje 0.5 & vise 2.5",
     "Egnatia Rrogozhine daje manje od 0.5 golova u 1. p",
-    39.0,
+    38.0,
     2.0
    ],
    [
     "",
     "manje 0.5 & manje 2.5",
     "Egnatia Rrogozhine daje manje od 0.5 golova u 1. p",
-    1.4,
+    1.41,
     2.0
    ]
   ]
@@ -17235,7 +17235,7 @@
     "",
     "vise 0.5 & vise 0.5",
     "Midtjylland daje više od 0.5 golova u 1. poluvreme",
-    2.3,
+    2.32,
     2.0
    ],
    [
@@ -17249,7 +17249,7 @@
     "",
     "vise 0.5 & vise 1.5",
     "Midtjylland daje više od 0.5 golova u 1. poluvreme",
-    4.6,
+    4.7,
     2.0
    ],
    [
@@ -17284,7 +17284,7 @@
     "",
     "manje 0.5 & manje 0.5",
     "Midtjylland daje manje od 0.5 golova u 1. poluvrem",
-    5.85,
+    5.75,
     2.0
    ],
    [
@@ -17298,7 +17298,7 @@
     "",
     "manje 0.5 & manje 1.5",
     "Midtjylland daje manje od 0.5 golova u 1. poluvrem",
-    3.15,
+    3.1,
     2.0
    ],
    [
@@ -17312,7 +17312,7 @@
     "",
     "manje 0.5 & manje 2.5",
     "Midtjylland daje manje od 0.5 golova u 1. poluvrem",
-    2.5,
+    2.47,
     2.0
    ]
   ]
@@ -17331,21 +17331,21 @@
     "2-",
     "2 & manje 0.5",
     "Midtjylland pobednik i Egnatia Rrogozhine manje od",
-    2.47,
+    2.52,
     0.5
    ],
    [
     "1+",
     "1 & vise 0.5",
     "Egnatia Rrogozhine pobednik i Egnatia Rrogozhine v",
-    5.2,
+    5.1,
     0.5
    ],
    [
     "0+",
     "x & vise 0.5",
     "nerešeno i Egnatia Rrogozhine više od 0.5 gola na ",
-    5.2,
+    5.1,
     0.5
    ],
    [
@@ -17378,21 +17378,21 @@
     "2-",
     "2 & manje 1.5",
     "Midtjylland pobednik i Egnatia Rrogozhine manje od",
-    1.61,
+    1.64,
     1.5
    ],
    [
     "1+",
     "1 & vise 1.5",
     "Egnatia Rrogozhine pobednik i Egnatia Rrogozhine v",
-    7.0,
+    6.8,
     1.5
    ],
    [
     "0+",
     "x & vise 1.5",
     "nerešeno i Egnatia Rrogozhine više od 1.5 gola na ",
-    12.0,
+    11.0,
     1.5
    ],
    [
@@ -17411,21 +17411,21 @@
     "1-",
     "1 & manje 2.5",
     "Egnatia Rrogozhine pobednik i Egnatia Rrogozhine m",
-    6.6,
+    6.5,
     2.5
    ],
    [
     "0-",
     "x & manje 2.5",
     "nerešeno i Egnatia Rrogozhine manje od 2.5 gola na",
-    4.15,
+    4.1,
     2.5
    ],
    [
     "2-",
     "2 & manje 2.5",
     "Midtjylland pobednik i Egnatia Rrogozhine manje od",
-    1.49,
+    1.51,
     2.5
    ],
    [
@@ -17458,28 +17458,28 @@
     "1-",
     "1 & manje 3.5",
     "Egnatia Rrogozhine pobednik i Egnatia Rrogozhine m",
-    5.5,
+    5.35,
     3.5
    ],
    [
     "0-",
     "x & manje 3.5",
     "nerešeno i Egnatia Rrogozhine manje od 3.5 gola na",
-    4.0,
+    3.9,
     3.5
    ],
    [
     "2-",
     "2 & manje 3.5",
     "Midtjylland pobednik i Egnatia Rrogozhine manje od",
-    1.48,
+    1.5,
     3.5
    ],
    [
     "1+",
     "1 & vise 3.5",
     "Egnatia Rrogozhine pobednik i Egnatia Rrogozhine v",
-    38.0,
+    36.0,
     3.5
    ],
    [
@@ -17505,28 +17505,28 @@
     "1-",
     "1 & manje 4.5",
     "Egnatia Rrogozhine pobednik i Egnatia Rrogozhine m",
-    5.25,
+    5.1,
     4.5
    ],
    [
     "0-",
     "x & manje 4.5",
     "nerešeno i Egnatia Rrogozhine manje od 4.5 gola na",
-    4.0,
+    3.9,
     4.5
    ],
    [
     "2-",
     "2 & manje 4.5",
     "Midtjylland pobednik i Egnatia Rrogozhine manje od",
-    1.48,
+    1.5,
     4.5
    ],
    [
     "1+",
     "1 & vise 4.5",
     "Egnatia Rrogozhine pobednik i Egnatia Rrogozhine v",
-    90.0,
+    85.0,
     4.5
    ],
    [
@@ -17938,21 +17938,21 @@
     "",
     "1-2",
     "FC Copenhagen 1-2 gola na utakmici",
-    1.61,
+    1.62,
     -2.0
    ],
    [
     "",
     "1-3",
     "FC Copenhagen  1-3 gola na utakmici",
-    1.38,
+    1.39,
     -3.0
    ],
    [
     "",
     "2-3",
     "FC Copenhagen 2-3 gola na utakmici",
-    2.72,
+    2.75,
     -3.0
    ]
   ]
@@ -17964,21 +17964,21 @@
     "",
     "1-2",
     "Braga 1-2 gola na utakmici",
-    1.63,
+    1.64,
     -2.0
    ],
    [
     "",
     "1-3",
     "Braga 1-3 gola na utakmici",
-    1.43,
+    1.44,
     -3.0
    ],
    [
     "",
     "2-3",
     "Braga 2-3 gola na utakmici",
-    2.95,
+    3.0,
     -3.0
    ]
   ]
@@ -17990,14 +17990,14 @@
     "12",
     "1-2",
     "FC Copenhagen 1 ili 2 gola u svakom poluvremenu",
-    4.15,
+    4.2,
     2.0
    ],
    [
     "13",
     "1-3",
     "FC Copenhagen 1,2 ili 3 gola u svakom poluvremenu",
-    3.8,
+    3.85,
     3.0
    ],
    [
@@ -18016,21 +18016,21 @@
     "12",
     "1-2",
     "Braga 1 ili 2 gola u svakom poluvremenu",
-    4.55,
+    4.65,
     2.0
    ],
    [
     "13",
     "1-3",
     "Braga 1,2 ili 3 gola u svakom poluvremenu",
-    4.2,
+    4.3,
     3.0
    ],
    [
     "23",
     "2-3",
     "Braga 2 ili 3 gola u svakom poluvremenu",
-    31.0,
+    33.0,
     3.0
    ]
   ]
@@ -18167,14 +18167,14 @@
     "",
     "manje 0.5 & manje 1.5",
     "1. Poluvreme FC Copenhagen manje od 0.5 golova i F",
-    2.0,
+    1.97,
     1.5
    ],
    [
     "",
     "vise 0.5 & vise 2.5",
     "1. Poluvreme FC Copenhagen više od 0.5 golova i FC",
-    6.1,
+    6.3,
     2.5
    ],
    [
@@ -18195,14 +18195,14 @@
     "",
     "manje 0.5 & manje 2.5",
     "1. Poluvreme FC Copenhagen manje od 0.5 golova i F",
-    1.74,
+    1.73,
     2.5
    ],
    [
     "",
     "vise 1.5 & vise 2.5",
     "1. Poluvreme FC Copenhagen više od 1.5 golova i FC",
-    9.2,
+    9.4,
     2.5
    ],
    [
@@ -18216,14 +18216,14 @@
     "",
     "manje 1.5 & vise 2.5",
     "1. Poluvreme FC Copenhagen manje od 1.5 golova i F",
-    8.6,
+    8.8,
     2.5
    ],
    [
     "",
     "manje 1.5 & manje 2.5",
     "1. Poluvreme FC Copenhagen manje od 1.5 golova i F",
-    1.18,
+    1.17,
     2.5
    ]
   ]
@@ -18235,7 +18235,7 @@
     "",
     "vise 0.5 & vise 1.5",
     "1. Poluvreme Braga više od 0.5 golova i Braga više",
-    3.4,
+    3.5,
     1.5
    ],
    [
@@ -18256,35 +18256,35 @@
     "",
     "manje 0.5 & manje 1.5",
     "1. Poluvreme Braga manje od 0.5 golova i Braga man",
-    1.87,
+    1.83,
     1.5
    ],
    [
     "",
     "vise 0.5 & vise 2.5",
     "1. Poluvreme Braga više od 0.5 golova i Braga više",
-    7.0,
+    7.2,
     2.5
    ],
    [
     "",
     "vise 0.5 & manje 2.5",
     "1. Poluvreme Braga više od 0.5 golova i Braga manj",
-    2.85,
+    2.87,
     2.5
    ],
    [
     "",
     "manje 0.5 & vise 2.5",
     "1. Poluvreme Braga manje od 0.5 golova i Braga viš",
-    23.0,
+    24.0,
     2.5
    ],
    [
     "",
     "manje 0.5 & manje 2.5",
     "1. Poluvreme Braga manje od 0.5 golova i Braga man",
-    1.65,
+    1.63,
     2.5
    ],
    [
@@ -18298,14 +18298,14 @@
     "",
     "vise 1.5 & manje 2.5",
     "1. Poluvreme Braga više od 1.5 golova i Braga manj",
-    13.0,
+    14.0,
     2.5
    ],
    [
     "",
     "manje 1.5 & vise 2.5",
     "1. Poluvreme Braga manje od 1.5 golova i Braga viš",
-    9.9,
+    10.0,
     2.5
    ],
    [
@@ -18324,7 +18324,7 @@
     "",
     "vise 0.5 & vise 0.5",
     "FC Copenhagen daje više od 0.5 golova u 1. poluvre",
-    3.75,
+    3.8,
     2.0
    ],
    [
@@ -18338,21 +18338,21 @@
     "",
     "vise 0.5 & vise 1.5",
     "FC Copenhagen daje više od 0.5 golova u 1. poluvre",
-    9.1,
+    9.3,
     2.0
    ],
    [
     "",
     "vise 0.5 & manje 1.5",
     "FC Copenhagen daje više od 0.5 golova u 1. poluvre",
-    2.42,
+    2.45,
     2.0
    ],
    [
     "",
     "vise 0.5 & vise 2.5",
     "FC Copenhagen daje više od 0.5 golova u 1. poluvre",
-    27.0,
+    28.0,
     2.0
    ],
    [
@@ -18373,7 +18373,7 @@
     "",
     "manje 0.5 & manje 0.5",
     "FC Copenhagen daje manje od 0.5 golova u 1. poluvr",
-    3.35,
+    3.3,
     2.0
    ],
    [
@@ -18387,7 +18387,7 @@
     "",
     "manje 0.5 & manje 1.5",
     "FC Copenhagen daje manje od 0.5 golova u 1. poluvr",
-    2.0,
+    1.97,
     2.0
    ],
    [
@@ -18401,7 +18401,7 @@
     "",
     "manje 0.5 & manje 2.5",
     "FC Copenhagen daje manje od 0.5 golova u 1. poluvr",
-    1.74,
+    1.73,
     2.0
    ]
   ]
@@ -18413,14 +18413,14 @@
     "",
     "vise 0.5 & vise 0.5",
     "Braga daje više od 0.5 golova u 1. poluvremenu i v",
-    4.15,
+    4.25,
     2.0
    ],
    [
     "",
     "vise 0.5 & manje 0.5",
     "Braga daje više od 0.5 golova u 1. poluvremenu i m",
-    3.9,
+    4.0,
     2.0
    ],
    [
@@ -18434,21 +18434,21 @@
     "",
     "vise 0.5 & manje 1.5",
     "Braga daje više od 0.5 golova u 1. poluvremenu i m",
-    2.52,
+    2.57,
     2.0
    ],
    [
     "",
     "vise 0.5 & vise 2.5",
     "Braga daje više od 0.5 golova u 1. poluvremenu i v",
-    33.0,
+    34.0,
     2.0
    ],
    [
     "",
     "vise 0.5 & manje 2.5",
     "Braga daje više od 0.5 golova u 1. poluvremenu i m",
-    2.27,
+    2.3,
     2.0
    ],
    [
@@ -18462,7 +18462,7 @@
     "",
     "manje 0.5 & manje 0.5",
     "Braga daje manje od 0.5 golova u 1. poluvremenu i ",
-    3.0,
+    2.95,
     2.0
    ],
    [
@@ -18476,21 +18476,21 @@
     "",
     "manje 0.5 & manje 1.5",
     "Braga daje manje od 0.5 golova u 1. poluvremenu i ",
-    1.87,
+    1.83,
     2.0
    ],
    [
     "",
     "manje 0.5 & vise 2.5",
     "Braga daje manje od 0.5 golova u 1. poluvremenu i ",
-    23.0,
+    24.0,
     2.0
    ],
    [
     "",
     "manje 0.5 & manje 2.5",
     "Braga daje manje od 0.5 golova u 1. poluvremenu i ",
-    1.65,
+    1.63,
     2.0
    ]
   ]
@@ -18542,21 +18542,21 @@
     "1-",
     "1 & manje 1.5",
     "FC Copenhagen pobednik i FC Copenhagen manje od 1.",
-    7.1,
+    7.0,
     1.5
    ],
    [
     "0-",
     "x & manje 1.5",
     "nerešeno i FC Copenhagen manje od 1.5 gola na utak",
-    3.85,
+    3.8,
     1.5
    ],
    [
     "2-",
     "2 & manje 1.5",
     "Braga pobednik i FC Copenhagen manje od 1.5 gola n",
-    3.0,
+    2.95,
     1.5
    ],
    [
@@ -18570,7 +18570,7 @@
     "0+",
     "x & vise 1.5",
     "nerešeno i FC Copenhagen više od 1.5 gola na utakm",
-    9.5,
+    9.8,
     1.5
    ],
    [
@@ -18589,7 +18589,7 @@
     "1-",
     "1 & manje 2.5",
     "FC Copenhagen pobednik i FC Copenhagen manje od 2.",
-    3.45,
+    3.4,
     2.5
    ],
    [
@@ -18610,21 +18610,21 @@
     "1+",
     "1 & vise 2.5",
     "FC Copenhagen pobednik i FC Copenhagen više od 2.5",
-    5.8,
+    5.9,
     2.5
    ],
    [
     "0+",
     "x & vise 2.5",
     "nerešeno i FC Copenhagen više od 2.5 gola na utakm",
-    35.0,
+    37.0,
     2.5
    ],
    [
     "2+",
     "2 & vise 2.5",
     "Braga pobednik i FC Copenhagen više od 2.5 gola na",
-    65.0,
+    70.0,
     2.5
    ]
   ]
@@ -18657,7 +18657,7 @@
     "1+",
     "1 & vise 3.5",
     "FC Copenhagen pobednik i FC Copenhagen više od 3.5",
-    13.0,
+    14.0,
     3.5
    ],
    [
@@ -18704,7 +18704,7 @@
     "1+",
     "1 & vise 4.5",
     "FC Copenhagen pobednik i FC Copenhagen više od 4.5",
-    36.0,
+    37.0,
     4.5
    ],
    [
@@ -18770,42 +18770,42 @@
     "1-",
     "1 & manje 1.5",
     "FC Copenhagen pobednik  i Braga manje od 1.5 gola ",
-    2.6,
+    2.57,
     1.5
    ],
    [
     "0-",
     "x & manje 1.5",
     "nerešeno i Braga manje od 1.5 gola na utakmici",
-    3.85,
+    3.8,
     1.5
    ],
    [
     "2-",
     "2 & manje 1.5",
     "Braga pobednik  i Braga manje od 1.5 gola na utakm",
-    7.7,
+    7.5,
     1.5
    ],
    [
     "1+",
     "1 & vise 1.5",
     "FC Copenhagen pobednik  i Braga više od 1.5 gola n",
-    15.0,
+    16.0,
     1.5
    ],
    [
     "0+",
     "x & vise 1.5",
     "nerešeno i Braga više od 1.5 gola na utakmici",
-    9.5,
+    9.8,
     1.5
    ],
    [
     "2+",
     "2 & vise 1.5",
     "Braga pobednik  i Braga više od 1.5 gola na utakmi",
-    3.6,
+    3.65,
     1.5
    ]
   ]
@@ -22894,7 +22894,7 @@
     "",
     "vise 8.5",
     "Jablonec više od 8.5 šuteva",
-    1.92,
+    1.95,
     8.5
    ]
   ]
@@ -22906,14 +22906,14 @@
     "/*01-",
     "manje 10.5",
     "Freiburg manje od 10.5 faulova",
-    1.92,
+    1.95,
     10.5
    ],
    [
     "/*01+",
     "vise 10.5",
     "Freiburg više od 10.5 faulova",
-    1.73,
+    1.76,
     10.5
    ]
   ]

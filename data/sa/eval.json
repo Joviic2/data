@@ -1,0 +1,18 @@
+{
+ "league": "sa",
+ "n_test": 1186,
+ "halflife": 240.0,
+ "k": 2.0,
+ "w_1x2": 0.0,
+ "w_ou": 0.0,
+ "temp_1x2": 0.94,
+ "platt_over": [
+  0.1,
+  0.55
+ ],
+ "ev_shrink": 1.0,
+ "ev_slope_se": 1.68,
+ "ll_gap_vs_market": 0.023,
+ "ll_gap_se": 0.005,
+ "seasons": 5
+}

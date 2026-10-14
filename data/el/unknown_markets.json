@@ -529,14 +529,14 @@
     "",
     "manje 29.5",
     "manje od 29.5 šuteva",
-    1.67,
+    1.68,
     29.5
    ],
    [
     "",
     "vise 29.5",
     "više od 29.5 šuteva",
-    2.05,
+    2.07,
     29.5
    ]
   ]
@@ -548,14 +548,14 @@
     "/*0-",
     "manje 25.5",
     "manje od 25.5 faulova",
-    1.82,
+    1.85,
     25.5
    ],
    [
     "/*0+",
     "vise 25.5",
     "više od 25.5 faulova",
-    1.82,
+    1.85,
     25.5
    ]
   ]
@@ -1747,7 +1747,7 @@
   ]
  },
  "1X2 & ukupno golova (5.5)": {
-  "mecova": 6,
+  "mecova": 5,
   "primer": [
    [
     "",
@@ -2352,7 +2352,7 @@
     "",
     "vise 9.5",
     "Lillestrom više od 9.5 šuteva",
-    1.72,
+    1.73,
     9.5
    ]
   ]
@@ -2364,14 +2364,14 @@
     "/*01-",
     "manje 11.5",
     "Sparta Prague manje od 11.5 faulova",
-    1.88,
+    1.92,
     11.5
    ],
    [
     "/*01+",
     "vise 11.5",
     "Sparta Prague više od 11.5 faulova",
-    1.76,
+    1.8,
     11.5
    ]
   ]
@@ -14165,14 +14165,14 @@
     "/*01-",
     "manje 10.5",
     "Lech Poznan manje od 10.5 faulova",
-    2.0,
+    2.05,
     10.5
    ],
    [
     "/*01+",
     "vise 10.5",
     "Lech Poznan više od 10.5 faulova",
-    1.65,
+    1.69,
     10.5
    ]
   ]
@@ -15421,21 +15421,21 @@
     "",
     "1-2",
     "SCU Torreense 1-2 gola na utakmici",
-    1.8,
+    1.82,
     -2.0
    ],
    [
     "",
     "1-3",
     "SCU Torreense  1-3 gola na utakmici",
-    1.67,
+    1.68,
     -3.0
    ],
    [
     "",
     "2-3",
     "SCU Torreense 2-3 gola na utakmici",
-    4.25,
+    4.35,
     -3.0
    ]
   ]
@@ -15473,14 +15473,14 @@
     "12",
     "1-2",
     "SCU Torreense 1 ili 2 gola u svakom poluvremenu",
-    6.5,
+    6.6,
     2.0
    ],
    [
     "13",
     "1-3",
     "SCU Torreense 1,2 ili 3 gola u svakom poluvremenu",
-    6.2,
+    6.3,
     3.0
    ],
    [
@@ -15525,21 +15525,21 @@
     "0",
     "0",
     "SCU Torreense ne daje gol",
-    2.22,
+    2.2,
     3.0
    ],
    [
     "1",
     "1",
     "SCU Torreense daje tačno 1 gol",
-    2.52,
+    2.55,
     3.0
    ],
    [
     "2",
     "2",
     "SCU Torreense daje tačno 2 gola",
-    5.3,
+    5.35,
     3.0
    ],
    [
@@ -15629,14 +15629,14 @@
     "",
     "vise 0.5 & vise 1.5",
     "1. Poluvreme SCU Torreense više od 0.5 golova i SC",
-    5.1,
+    5.15,
     1.5
    ],
    [
     "",
     "vise 0.5 & manje 1.5",
     "1. Poluvreme SCU Torreense više od 0.5 golova i SC",
-    5.0,
+    4.9,
     1.5
    ],
    [
@@ -15650,7 +15650,7 @@
     "",
     "manje 0.5 & manje 1.5",
     "1. Poluvreme SCU Torreense manje od 0.5 golova i S",
-    1.52,
+    1.51,
     1.5
    ],
    [
@@ -15664,21 +15664,21 @@
     "",
     "vise 0.5 & manje 2.5",
     "1. Poluvreme SCU Torreense više od 0.5 golova i SC",
-    3.2,
+    3.25,
     2.5
    ],
    [
     "",
     "manje 0.5 & vise 2.5",
     "1. Poluvreme SCU Torreense manje od 0.5 golova i S",
-    38.0,
+    39.0,
     2.5
    ],
    [
     "",
     "manje 0.5 & manje 2.5",
     "1. Poluvreme SCU Torreense manje od 0.5 golova i S",
-    1.41,
+    1.4,
     2.5
    ],
    [
@@ -15718,7 +15718,7 @@
     "",
     "vise 0.5 & vise 1.5",
     "1. Poluvreme Sunderland više od 0.5 golova i Sunde",
-    1.69,
+    1.7,
     1.5
    ],
    [
@@ -15732,21 +15732,21 @@
     "",
     "manje 0.5 & vise 1.5",
     "1. Poluvreme Sunderland manje od 0.5 golova i Sund",
-    5.85,
+    5.9,
     1.5
    ],
    [
     "",
     "manje 0.5 & manje 1.5",
     "1. Poluvreme Sunderland manje od 0.5 golova i Sund",
-    3.9,
+    3.85,
     1.5
    ],
    [
     "",
     "vise 0.5 & vise 2.5",
     "1. Poluvreme Sunderland više od 0.5 golova i Sunde",
-    2.47,
+    2.5,
     2.5
    ],
    [
@@ -15767,14 +15767,14 @@
     "",
     "manje 0.5 & manje 2.5",
     "1. Poluvreme Sunderland manje od 0.5 golova i Sund",
-    3.0,
+    2.95,
     2.5
    ],
    [
     "",
     "vise 1.5 & vise 2.5",
     "1. Poluvreme Sunderland više od 1.5 golova i Sunde",
-    3.65,
+    3.7,
     2.5
    ],
    [
@@ -15788,14 +15788,14 @@
     "",
     "manje 1.5 & vise 2.5",
     "1. Poluvreme Sunderland manje od 1.5 golova i Sund",
-    4.45,
+    4.5,
     2.5
    ],
    [
     "",
     "manje 1.5 & manje 2.5",
     "1. Poluvreme Sunderland manje od 1.5 golova i Sund",
-    1.76,
+    1.74,
     2.5
    ]
   ]
@@ -15807,7 +15807,7 @@
     "",
     "vise 0.5 & vise 0.5",
     "SCU Torreense daje više od 0.5 golova u 1. poluvre",
-    6.2,
+    6.3,
     2.0
    ],
    [
@@ -15821,14 +15821,14 @@
     "",
     "vise 0.5 & vise 1.5",
     "SCU Torreense daje više od 0.5 golova u 1. poluvre",
-    19.0,
+    20.0,
     2.0
    ],
    [
     "",
     "vise 0.5 & manje 1.5",
     "SCU Torreense daje više od 0.5 golova u 1. poluvre",
-    3.0,
+    3.05,
     2.0
    ],
    [
@@ -15842,21 +15842,21 @@
     "",
     "vise 0.5 & manje 2.5",
     "SCU Torreense daje više od 0.5 golova u 1. poluvre",
-    2.82,
+    2.85,
     2.0
    ],
    [
     "",
     "manje 0.5 & vise 0.5",
     "SCU Torreense daje manje od 0.5 golova u 1. poluvr",
-    3.2,
+    3.25,
     2.0
    ],
    [
     "",
     "manje 0.5 & manje 0.5",
     "SCU Torreense daje manje od 0.5 golova u 1. poluvr",
-    2.22,
+    2.2,
     2.0
    ],
    [
@@ -15870,21 +15870,21 @@
     "",
     "manje 0.5 & manje 1.5",
     "SCU Torreense daje manje od 0.5 golova u 1. poluvr",
-    1.52,
+    1.51,
     2.0
    ],
    [
     "",
     "manje 0.5 & vise 2.5",
     "SCU Torreense daje manje od 0.5 golova u 1. poluvr",
-    38.0,
+    39.0,
     2.0
    ],
    [
     "",
     "manje 0.5 & manje 2.5",
     "SCU Torreense daje manje od 0.5 golova u 1. poluvr",
-    1.41,
+    1.4,
     2.0
    ]
   ]
@@ -15896,21 +15896,21 @@
     "",
     "vise 0.5 & vise 0.5",
     "Sunderland daje više od 0.5 golova u 1. poluvremen",
-    1.95,
+    1.97,
     2.0
    ],
    [
     "",
     "vise 0.5 & manje 0.5",
     "Sunderland daje više od 0.5 golova u 1. poluvremen",
-    4.5,
+    4.45,
     2.0
    ],
    [
     "",
     "vise 0.5 & vise 1.5",
     "Sunderland daje više od 0.5 golova u 1. poluvremen",
-    3.6,
+    3.65,
     2.0
    ],
    [
@@ -15924,14 +15924,14 @@
     "",
     "vise 0.5 & vise 2.5",
     "Sunderland daje više od 0.5 golova u 1. poluvremen",
-    7.7,
+    7.9,
     2.0
    ],
    [
     "",
     "vise 0.5 & manje 2.5",
     "Sunderland daje više od 0.5 golova u 1. poluvremen",
-    1.65,
+    1.66,
     2.0
    ],
    [
@@ -15945,21 +15945,21 @@
     "",
     "manje 0.5 & manje 0.5",
     "Sunderland daje manje od 0.5 golova u 1. poluvreme",
-    7.5,
+    7.4,
     2.0
    ],
    [
     "",
     "manje 0.5 & vise 1.5",
     "Sunderland daje manje od 0.5 golova u 1. poluvreme",
-    5.85,
+    5.9,
     2.0
    ],
    [
     "",
     "manje 0.5 & manje 1.5",
     "Sunderland daje manje od 0.5 golova u 1. poluvreme",
-    3.9,
+    3.85,
     2.0
    ],
    [
@@ -15973,7 +15973,7 @@
     "",
     "manje 0.5 & manje 2.5",
     "Sunderland daje manje od 0.5 golova u 1. poluvreme",
-    3.0,
+    2.95,
     2.0
    ]
   ]
@@ -15992,7 +15992,7 @@
     "2-",
     "2 & manje 0.5",
     "Sunderland pobednik i SCU Torreense manje od 0.5 g",
-    2.4,
+    2.37,
     0.5
    ],
    [
@@ -16006,14 +16006,14 @@
     "0+",
     "x & vise 0.5",
     "nerešeno i SCU Torreense više od 0.5 gola na utakm",
-    5.65,
+    5.7,
     0.5
    ],
    [
     "2+",
     "2 & vise 0.5",
     "Sunderland pobednik i SCU Torreense više od 0.5 go",
-    2.77,
+    2.8,
     0.5
    ]
   ]
@@ -16025,21 +16025,21 @@
     "1-",
     "1 & manje 1.5",
     "SCU Torreense pobednik i SCU Torreense manje od 1.",
-    16.0,
+    15.0,
     1.5
    ],
    [
     "0-",
     "x & manje 1.5",
     "nerešeno i SCU Torreense manje od 1.5 gola na utak",
-    6.1,
+    6.0,
     1.5
    ],
    [
     "2-",
     "2 & manje 1.5",
     "Sunderland pobednik i SCU Torreense manje od 1.5 g",
-    1.51,
+    1.5,
     1.5
    ],
    [
@@ -16060,7 +16060,7 @@
     "2+",
     "2 & vise 1.5",
     "Sunderland pobednik i SCU Torreense više od 1.5 go",
-    8.7,
+    8.9,
     1.5
    ]
   ]
@@ -16072,14 +16072,14 @@
     "1-",
     "1 & manje 2.5",
     "SCU Torreense pobednik i SCU Torreense manje od 2.",
-    7.9,
+    7.8,
     2.5
    ],
    [
     "0-",
     "x & manje 2.5",
     "nerešeno i SCU Torreense manje od 2.5 gola na utak",
-    4.85,
+    4.8,
     2.5
    ],
    [
@@ -16100,14 +16100,14 @@
     "0+",
     "x & vise 2.5",
     "nerešeno i SCU Torreense više od 2.5 gola na utakm",
-    36.0,
+    38.0,
     2.5
    ],
    [
     "2+",
     "2 & vise 2.5",
     "Sunderland pobednik i SCU Torreense više od 2.5 go",
-    37.0,
+    39.0,
     2.5
    ]
   ]
@@ -16140,7 +16140,7 @@
     "1+",
     "1 & vise 3.5",
     "SCU Torreense pobednik i SCU Torreense više od 3.5",
-    39.0,
+    40.0,
     3.5
    ],
    [
@@ -16180,7 +16180,7 @@
     "2-",
     "2 & manje 4.5",
     "Sunderland pobednik i SCU Torreense manje od 4.5 g",
-    1.35,
+    1.36,
     4.5
    ],
    [
@@ -16203,6 +16203,46 @@
     "Sunderland pobednik i SCU Torreense više od 4.5 go",
     125.0,
     4.5
+   ]
+  ]
+ },
+ "1X2 & ukupno golova Sunderland (0.5)": {
+  "mecova": 1,
+  "primer": [
+   [
+    "1-",
+    "1 & manje 0.5",
+    "SCU Torreense pobednik  i Sunderland manje od 0.5 ",
+    11.0,
+    0.5
+   ],
+   [
+    "0-",
+    "x & manje 0.5",
+    "nerešeno i Sunderland manje od 0.5 gola na utakmic",
+    14.0,
+    0.5
+   ],
+   [
+    "1+",
+    "1 & vise 0.5",
+    "SCU Torreense pobednik  i Sunderland više od 0.5 g",
+    9.6,
+    0.5
+   ],
+   [
+    "0+",
+    "x & vise 0.5",
+    "nerešeno i Sunderland više od 0.5 gola na utakmici",
+    5.7,
+    0.5
+   ],
+   [
+    "2+",
+    "2 & vise 0.5",
+    "Sunderland pobednik  i Sunderland više od 0.5 gola",
+    1.36,
+    0.5
    ]
   ]
  },
@@ -16580,14 +16620,14 @@
     "/*02-",
     "manje 12.5",
     "Anderlecht manje od 12.5 faulova",
-    2.0,
+    2.02,
     12.5
    ],
    [
     "/*02+",
     "vise 12.5",
     "Anderlecht više od 12.5 faulova",
-    1.66,
+    1.7,
     12.5
    ]
   ]
@@ -21039,14 +21079,14 @@
     "",
     "1-3",
     "Celta Vigo  1-3 gola na utakmici",
-    1.5,
+    1.51,
     -3.0
    ],
    [
     "",
     "2-3",
     "Celta Vigo 2-3 gola na utakmici",
-    3.35,
+    3.4,
     -3.0
    ]
   ]
@@ -21072,7 +21112,7 @@
     "",
     "2-3",
     "Juventus 2-3 gola na utakmici",
-    2.55,
+    2.6,
     -3.0
    ]
   ]
@@ -21084,21 +21124,21 @@
     "12",
     "1-2",
     "Celta Vigo 1 ili 2 gola u svakom poluvremenu",
-    5.15,
+    5.25,
     2.0
    ],
    [
     "13",
     "1-3",
     "Celta Vigo 1,2 ili 3 gola u svakom poluvremenu",
-    4.9,
+    5.0,
     3.0
    ],
    [
     "23",
     "2-3",
     "Celta Vigo 2 ili 3 gola u svakom poluvremenu",
-    40.0,
+    45.0,
     3.0
    ]
   ]
@@ -21110,14 +21150,14 @@
     "12",
     "1-2",
     "Juventus 1 ili 2 gola u svakom poluvremenu",
-    3.85,
+    3.9,
     2.0
    ],
    [
     "13",
     "1-3",
     "Juventus 1,2 ili 3 gola u svakom poluvremenu",
-    3.5,
+    3.55,
     3.0
    ],
    [
@@ -21136,7 +21176,7 @@
     "0",
     "0",
     "Celta Vigo ne daje gol",
-    2.72,
+    2.67,
     3.0
    ],
    [
@@ -21150,14 +21190,14 @@
     "2",
     "2",
     "Celta Vigo daje tačno 2 gola",
-    4.4,
+    4.45,
     3.0
    ],
    [
     "3",
     "3+",
     "Celta Vigo daje 3 ili više golova",
-    8.0,
+    8.2,
     3.0
    ]
   ]
@@ -21254,21 +21294,21 @@
     "",
     "manje 0.5 & vise 1.5",
     "1. Poluvreme Celta Vigo manje od 0.5 golova i Celt",
-    8.4,
+    8.5,
     1.5
    ],
    [
     "",
     "manje 0.5 & manje 1.5",
     "1. Poluvreme Celta Vigo manje od 0.5 golova i Celt",
-    1.71,
+    1.7,
     1.5
    ],
    [
     "",
     "vise 0.5 & vise 2.5",
     "1. Poluvreme Celta Vigo više od 0.5 golova i Celta",
-    8.5,
+    8.7,
     2.5
    ],
    [
@@ -21282,14 +21322,14 @@
     "",
     "manje 0.5 & vise 2.5",
     "1. Poluvreme Celta Vigo manje od 0.5 golova i Celt",
-    28.0,
+    29.0,
     2.5
    ],
    [
     "",
     "manje 0.5 & manje 2.5",
     "1. Poluvreme Celta Vigo manje od 0.5 golova i Celt",
-    1.54,
+    1.53,
     2.5
    ],
    [
@@ -21329,7 +21369,7 @@
     "",
     "vise 0.5 & vise 1.5",
     "1. Poluvreme Juventus više od 0.5 golova i Juventu",
-    2.82,
+    2.87,
     1.5
    ],
    [
@@ -21350,14 +21390,14 @@
     "",
     "manje 0.5 & manje 1.5",
     "1. Poluvreme Juventus manje od 0.5 golova i Juvent",
-    2.15,
+    2.12,
     1.5
    ],
    [
     "",
     "vise 0.5 & vise 2.5",
     "1. Poluvreme Juventus više od 0.5 golova i Juventu",
-    5.45,
+    5.55,
     2.5
    ],
    [
@@ -21378,14 +21418,14 @@
     "",
     "manje 0.5 & manje 2.5",
     "1. Poluvreme Juventus manje od 0.5 golova i Juvent",
-    1.83,
+    1.82,
     2.5
    ],
    [
     "",
     "vise 1.5 & vise 2.5",
     "1. Poluvreme Juventus više od 1.5 golova i Juventu",
-    8.1,
+    8.3,
     2.5
    ],
    [
@@ -21399,14 +21439,14 @@
     "",
     "manje 1.5 & vise 2.5",
     "1. Poluvreme Juventus manje od 1.5 golova i Juvent",
-    7.9,
+    8.0,
     2.5
    ],
    [
     "",
     "manje 1.5 & manje 2.5",
     "1. Poluvreme Juventus manje od 1.5 golova i Juvent",
-    1.22,
+    1.21,
     2.5
    ]
   ]
@@ -21418,7 +21458,7 @@
     "",
     "vise 0.5 & vise 0.5",
     "Celta Vigo daje više od 0.5 golova u 1. poluvremen",
-    4.85,
+    4.9,
     2.0
    ],
    [
@@ -21432,7 +21472,7 @@
     "",
     "vise 0.5 & vise 1.5",
     "Celta Vigo daje više od 0.5 golova u 1. poluvremen",
-    13.0,
+    14.0,
     2.0
    ],
    [
@@ -21453,7 +21493,7 @@
     "",
     "vise 0.5 & manje 2.5",
     "Celta Vigo daje više od 0.5 golova u 1. poluvremen",
-    2.45,
+    2.47,
     2.0
    ],
    [
@@ -21467,35 +21507,35 @@
     "",
     "manje 0.5 & manje 0.5",
     "Celta Vigo daje manje od 0.5 golova u 1. poluvreme",
-    2.67,
+    2.62,
     2.0
    ],
    [
     "",
     "manje 0.5 & vise 1.5",
     "Celta Vigo daje manje od 0.5 golova u 1. poluvreme",
-    8.4,
+    8.5,
     2.0
    ],
    [
     "",
     "manje 0.5 & manje 1.5",
     "Celta Vigo daje manje od 0.5 golova u 1. poluvreme",
-    1.71,
+    1.7,
     2.0
    ],
    [
     "",
     "manje 0.5 & vise 2.5",
     "Celta Vigo daje manje od 0.5 golova u 1. poluvreme",
-    28.0,
+    29.0,
     2.0
    ],
    [
     "",
     "manje 0.5 & manje 2.5",
     "Celta Vigo daje manje od 0.5 golova u 1. poluvreme",
-    1.54,
+    1.53,
     2.0
    ]
   ]
@@ -21507,7 +21547,7 @@
     "",
     "vise 0.5 & vise 0.5",
     "Juventus daje više od 0.5 golova u 1. poluvremenu ",
-    3.4,
+    3.5,
     2.0
    ],
    [
@@ -21521,14 +21561,14 @@
     "",
     "vise 0.5 & vise 1.5",
     "Juventus daje više od 0.5 golova u 1. poluvremenu ",
-    8.0,
+    8.2,
     2.0
    ],
    [
     "",
     "vise 0.5 & manje 1.5",
     "Juventus daje više od 0.5 golova u 1. poluvremenu ",
-    2.35,
+    2.37,
     2.0
    ],
    [
@@ -21556,7 +21596,7 @@
     "",
     "manje 0.5 & manje 0.5",
     "Juventus daje manje od 0.5 golova u 1. poluvremenu",
-    3.65,
+    3.55,
     2.0
    ],
    [
@@ -21570,7 +21610,7 @@
     "",
     "manje 0.5 & manje 1.5",
     "Juventus daje manje od 0.5 golova u 1. poluvremenu",
-    2.15,
+    2.12,
     2.0
    ],
    [
@@ -21584,7 +21624,7 @@
     "",
     "manje 0.5 & manje 2.5",
     "Juventus daje manje od 0.5 golova u 1. poluvremenu",
-    1.83,
+    1.82,
     2.0
    ]
   ]
@@ -21636,7 +21676,7 @@
     "1-",
     "1 & manje 1.5",
     "Celta Vigo pobednik i Celta Vigo manje od 1.5 gola",
-    8.2,
+    8.0,
     1.5
    ],
    [
@@ -21683,14 +21723,14 @@
     "1-",
     "1 & manje 2.5",
     "Celta Vigo pobednik i Celta Vigo manje od 2.5 gola",
-    4.3,
+    4.25,
     2.5
    ],
    [
     "0-",
     "x & manje 2.5",
     "nerešeno i Celta Vigo manje od 2.5 gola na utakmic",
-    3.15,
+    3.2,
     2.5
    ],
    [
@@ -21704,14 +21744,14 @@
     "1+",
     "1 & vise 2.5",
     "Celta Vigo pobednik i Celta Vigo više od 2.5 gola ",
-    8.3,
+    8.5,
     2.5
    ],
    [
     "0+",
     "x & vise 2.5",
     "nerešeno i Celta Vigo više od 2.5 gola na utakmici",
-    38.0,
+    40.0,
     2.5
    ],
    [
@@ -21730,7 +21770,7 @@
     "1-",
     "1 & manje 3.5",
     "Celta Vigo pobednik i Celta Vigo manje od 3.5 gola",
-    3.45,
+    3.4,
     3.5
    ],
    [
@@ -21751,7 +21791,7 @@
     "1+",
     "1 & vise 3.5",
     "Celta Vigo pobednik i Celta Vigo više od 3.5 gola ",
-    21.0,
+    22.0,
     3.5
    ],
    [
@@ -22172,14 +22212,14 @@
     "/*01-",
     "manje 11.5",
     "Rennes manje od 11.5 faulova",
-    1.85,
+    1.88,
     11.5
    ],
    [
     "/*01+",
     "vise 11.5",
     "Rennes više od 11.5 faulova",
-    1.8,
+    1.83,
     11.5
    ]
   ]
