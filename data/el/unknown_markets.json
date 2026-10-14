@@ -529,14 +529,14 @@
     "",
     "manje 29.5",
     "manje od 29.5 šuteva",
-    1.68,
+    1.67,
     29.5
    ],
    [
     "",
     "vise 29.5",
     "više od 29.5 šuteva",
-    2.07,
+    2.05,
     29.5
    ]
   ]
@@ -548,14 +548,14 @@
     "/*0-",
     "manje 25.5",
     "manje od 25.5 faulova",
-    1.85,
+    1.82,
     25.5
    ],
    [
     "/*0+",
     "vise 25.5",
     "više od 25.5 faulova",
-    1.85,
+    1.82,
     25.5
    ]
   ]
@@ -1542,28 +1542,28 @@
     "",
     "x & manje 0.5",
     "Nerešeno na kraju utakmice  i manje od 0.5 gola na",
-    9.5,
+    9.1,
     0.5
    ],
    [
     "",
     "1 & vise 0.5",
     "Celje pobednik utakmice i više od 0.5 gola na utak",
-    2.37,
+    2.4,
     0.5
    ],
    [
     "",
     "x & vise 0.5",
     "Nerešeno na kraju utakmice i više od 0.5 gola na u",
-    4.1,
+    4.0,
     0.5
    ],
    [
     "",
     "2 & vise 0.5",
     "Omonia Nicosia pobednik utakmice i više od 0.5 gol",
-    2.6,
+    2.62,
     0.5
    ]
   ]
@@ -1573,13 +1573,6 @@
   "primer": [
    [
     "",
-    "mikel oyarzabal",
-    "Postiže gol",
-    2.62,
-    null
-   ],
-   [
-    "",
     "orri oskarsson",
     "Postiže gol",
     2.62,
@@ -1587,65 +1580,72 @@
    ],
    [
     "",
+    "mikel oyarzabal",
+    "Postiže gol",
+    2.67,
+    null
+   ],
+   [
+    "",
     "mateo biondic",
     "Postiže gol",
-    3.1,
+    3.2,
     null
    ],
    [
     "",
     "relebohile mofokeng",
     "Postiže gol",
-    3.3,
+    3.2,
     null
    ],
    [
     "",
     "sekou abrahame keita",
     "Postiže gol",
-    3.3,
+    3.4,
     null
    ],
    [
     "",
     "goncalo guedes",
     "Postiže gol",
-    3.4,
+    3.5,
     null
    ],
    [
     "",
     "darius olaru",
     "Postiže gol",
-    3.8,
-    null
-   ],
-   [
-    "",
-    "guilherme smith",
-    "Postiže gol",
-    3.8,
+    3.85,
     null
    ],
    [
     "",
     "besfort zeneli",
     "Postiže gol",
-    3.85,
+    3.9,
     null
    ],
    [
     "",
-    "sucic, luka",
+    "guilherme smith",
     "Postiže gol",
-    3.9,
+    4.0,
+    null
+   ],
+   [
+    "",
+    "luka sucic",
+    "Postiže gol",
+    4.0,
     null
    ],
    [
     "",
     "dylan aquino",
     "Postiže gol",
-    4.0,
+    4.1,
     null
    ],
    [
@@ -1678,19 +1678,12 @@
     "",
     "mateo biondic",
     "Postiže 1. gol",
-    7.0,
-    1.0
-   ],
-   [
-    "",
-    "relebohile mofokeng",
-    "Postiže 1. gol",
     7.5,
     1.0
    ],
    [
     "",
-    "sekou abrahame keita",
+    "relebohile mofokeng",
     "Postiže 1. gol",
     7.5,
     1.0
@@ -1704,9 +1697,9 @@
    ],
    [
     "",
-    "besfort zeneli",
+    "sekou abrahame keita",
     "Postiže 1. gol",
-    8.8,
+    8.0,
     1.0
    ],
    [
@@ -1718,14 +1711,21 @@
    ],
    [
     "",
-    "guilherme smith",
+    "besfort zeneli",
     "Postiže 1. gol",
-    8.9,
+    9.2,
     1.0
    ],
    [
     "",
     "dylan aquino",
+    "Postiže 1. gol",
+    9.3,
+    1.0
+   ],
+   [
+    "",
+    "guilherme smith",
     "Postiže 1. gol",
     9.3,
     1.0
@@ -3629,14 +3629,14 @@
     "/*01-",
     "manje 11.5",
     "AZ Alkmaar manje od 11.5 faulova",
-    1.73,
+    1.76,
     11.5
    ],
    [
     "/*01+",
     "vise 11.5",
     "AZ Alkmaar više od 11.5 faulova",
-    1.9,
+    1.95,
     11.5
    ]
   ]
@@ -3674,7 +3674,7 @@
     "",
     "1-3",
     "AZ Alkmaar  1-3 gola na utakmici",
-    1.42,
+    1.43,
     -3.0
    ],
    [
@@ -3700,14 +3700,14 @@
     "",
     "1-3",
     "Hapoel Beer Sheva 1-3 gola na utakmici",
-    1.75,
+    1.73,
     -3.0
    ],
    [
     "",
     "2-3",
     "Hapoel Beer Sheva 2-3 gola na utakmici",
-    4.7,
+    4.6,
     -3.0
    ]
   ]
@@ -3726,14 +3726,14 @@
     "13",
     "1-3",
     "AZ Alkmaar 1,2 ili 3 gola u svakom poluvremenu",
-    2.02,
+    2.0,
     3.0
    ],
    [
     "23",
     "2-3",
     "AZ Alkmaar 2 ili 3 gola u svakom poluvremenu",
-    7.1,
+    7.0,
     3.0
    ]
   ]
@@ -3745,14 +3745,14 @@
     "12",
     "1-2",
     "Hapoel Beer Sheva 1 ili 2 gola u svakom poluvremen",
-    7.1,
+    7.0,
     2.0
    ],
    [
     "13",
     "1-3",
     "Hapoel Beer Sheva 1,2 ili 3 gola u svakom poluvrem",
-    6.8,
+    6.7,
     3.0
    ],
    [
@@ -3771,7 +3771,7 @@
     "0",
     "0",
     "AZ Alkmaar ne daje gol",
-    9.0,
+    9.1,
     3.0
    ],
    [
@@ -3792,7 +3792,7 @@
     "3",
     "3+",
     "AZ Alkmaar daje 3 ili više golova",
-    2.05,
+    2.02,
     3.0
    ]
   ]
@@ -3804,7 +3804,7 @@
     "0",
     "0",
     "Hapoel Beer Sheva ne daje gol",
-    2.1,
+    2.12,
     3.0
    ],
    [
@@ -3818,14 +3818,14 @@
     "2",
     "2",
     "Hapoel Beer Sheva daje tačno 2 gola",
-    5.75,
+    5.65,
     3.0
    ],
    [
     "3",
     "3+",
     "Hapoel Beer Sheva daje 3 ili više golova",
-    14.0,
+    13.0,
     3.0
    ]
   ]
@@ -3844,7 +3844,7 @@
     "2",
     "ne",
     "AZ Alkmaar ne daje gol na utakmici",
-    9.6,
+    9.8,
     null
    ]
   ]
@@ -3856,14 +3856,14 @@
     "1",
     "da",
     "Hapoel Beer Sheva daje gol na utakmici",
-    1.73,
+    1.72,
     null
    ],
    [
     "2",
     "ne",
     "Hapoel Beer Sheva ne daje gol na utakmici",
-    2.12,
+    2.15,
     null
    ]
   ]
@@ -3875,14 +3875,14 @@
     "",
     "vise 0.5 & vise 1.5",
     "1. Poluvreme AZ Alkmaar više od 0.5 golova i AZ Al",
-    1.58,
+    1.57,
     1.5
    ],
    [
     "",
     "vise 0.5 & manje 1.5",
     "1. Poluvreme AZ Alkmaar više od 0.5 golova i AZ Al",
-    7.6,
+    7.7,
     1.5
    ],
    [
@@ -3896,21 +3896,21 @@
     "",
     "manje 0.5 & manje 1.5",
     "1. Poluvreme AZ Alkmaar manje od 0.5 golova i AZ A",
-    4.4,
+    4.5,
     1.5
    ],
    [
     "",
     "vise 0.5 & vise 2.5",
     "1. Poluvreme AZ Alkmaar više od 0.5 golova i AZ Al",
-    2.2,
+    2.17,
     2.5
    ],
    [
     "",
     "vise 0.5 & manje 2.5",
     "1. Poluvreme AZ Alkmaar više od 0.5 golova i AZ Al",
-    3.2,
+    3.25,
     2.5
    ],
    [
@@ -3924,14 +3924,14 @@
     "",
     "manje 0.5 & manje 2.5",
     "1. Poluvreme AZ Alkmaar manje od 0.5 golova i AZ A",
-    3.3,
+    3.35,
     2.5
    ],
    [
     "",
     "vise 1.5 & vise 2.5",
     "1. Poluvreme AZ Alkmaar više od 1.5 golova i AZ Al",
-    3.25,
+    3.2,
     2.5
    ],
    [
@@ -3952,7 +3952,7 @@
     "",
     "manje 1.5 & manje 2.5",
     "1. Poluvreme AZ Alkmaar manje od 1.5 golova i AZ A",
-    1.92,
+    1.95,
     2.5
    ]
   ]
@@ -3964,7 +3964,7 @@
     "",
     "vise 0.5 & vise 1.5",
     "1. Poluvreme Hapoel Beer Sheva više od 0.5 golova ",
-    5.55,
+    5.5,
     1.5
    ],
    [
@@ -3985,7 +3985,7 @@
     "",
     "manje 0.5 & manje 1.5",
     "1. Poluvreme Hapoel Beer Sheva manje od 0.5 golova",
-    1.46,
+    1.47,
     1.5
    ],
    [
@@ -3999,14 +3999,14 @@
     "",
     "vise 0.5 & manje 2.5",
     "1. Poluvreme Hapoel Beer Sheva više od 0.5 golova ",
-    3.35,
+    3.3,
     2.5
    ],
    [
     "",
     "manje 0.5 & vise 2.5",
     "1. Poluvreme Hapoel Beer Sheva manje od 0.5 golova",
-    45.0,
+    40.0,
     2.5
    ],
    [
@@ -4034,7 +4034,7 @@
     "",
     "manje 1.5 & vise 2.5",
     "1. Poluvreme Hapoel Beer Sheva manje od 1.5 golova",
-    19.0,
+    18.0,
     2.5
    ],
    [
@@ -4053,21 +4053,21 @@
     "",
     "vise 0.5 & vise 0.5",
     "AZ Alkmaar daje više od 0.5 golova u 1. poluvremen",
-    1.82,
+    1.8,
     2.0
    ],
    [
     "",
     "vise 0.5 & manje 0.5",
     "AZ Alkmaar daje više od 0.5 golova u 1. poluvremen",
-    4.7,
+    4.75,
     2.0
    ],
    [
     "",
     "vise 0.5 & vise 1.5",
     "AZ Alkmaar daje više od 0.5 golova u 1. poluvremen",
-    3.2,
+    3.15,
     2.0
    ],
    [
@@ -4081,7 +4081,7 @@
     "",
     "vise 0.5 & vise 2.5",
     "AZ Alkmaar daje više od 0.5 golova u 1. poluvremen",
-    6.6,
+    6.5,
     2.0
    ],
    [
@@ -4095,14 +4095,14 @@
     "",
     "manje 0.5 & vise 0.5",
     "AZ Alkmaar daje manje od 0.5 golova u 1. poluvreme",
-    3.55,
+    3.6,
     2.0
    ],
    [
     "",
     "manje 0.5 & manje 0.5",
     "AZ Alkmaar daje manje od 0.5 golova u 1. poluvreme",
-    8.5,
+    8.6,
     2.0
    ],
    [
@@ -4116,7 +4116,7 @@
     "",
     "manje 0.5 & manje 1.5",
     "AZ Alkmaar daje manje od 0.5 golova u 1. poluvreme",
-    4.4,
+    4.5,
     2.0
    ],
    [
@@ -4130,7 +4130,7 @@
     "",
     "manje 0.5 & manje 2.5",
     "AZ Alkmaar daje manje od 0.5 golova u 1. poluvreme",
-    3.3,
+    3.35,
     2.0
    ]
   ]
@@ -4142,7 +4142,7 @@
     "",
     "vise 0.5 & vise 0.5",
     "Hapoel Beer Sheva daje više od 0.5 golova u 1. pol",
-    6.8,
+    6.7,
     2.0
    ],
    [
@@ -4156,7 +4156,7 @@
     "",
     "vise 0.5 & vise 1.5",
     "Hapoel Beer Sheva daje više od 0.5 golova u 1. pol",
-    22.0,
+    21.0,
     2.0
    ],
    [
@@ -4170,7 +4170,7 @@
     "",
     "vise 0.5 & vise 2.5",
     "Hapoel Beer Sheva daje više od 0.5 golova u 1. pol",
-    75.0,
+    70.0,
     2.0
    ],
    [
@@ -4205,14 +4205,14 @@
     "",
     "manje 0.5 & manje 1.5",
     "Hapoel Beer Sheva daje manje od 0.5 golova u 1. po",
-    1.46,
+    1.47,
     2.0
    ],
    [
     "",
     "manje 0.5 & vise 2.5",
     "Hapoel Beer Sheva daje manje od 0.5 golova u 1. po",
-    45.0,
+    40.0,
     2.0
    ],
    [
@@ -4231,7 +4231,7 @@
     "0-",
     "x & manje 0.5",
     "nerešeno i AZ Alkmaar manje od 0.5 gola na utakmic",
-    15.0,
+    16.0,
     0.5
    ],
    [
@@ -4271,14 +4271,14 @@
     "1-",
     "1 & manje 1.5",
     "AZ Alkmaar pobednik i AZ Alkmaar manje od 1.5 gola",
-    7.6,
+    7.7,
     1.5
    ],
    [
     "0-",
     "x & manje 1.5",
     "nerešeno i AZ Alkmaar manje od 1.5 gola na utakmic",
-    6.7,
+    6.8,
     1.5
    ],
    [
@@ -4292,7 +4292,7 @@
     "1+",
     "1 & vise 1.5",
     "AZ Alkmaar pobednik i AZ Alkmaar više od 1.5 gola ",
-    1.44,
+    1.43,
     1.5
    ],
    [
@@ -4306,7 +4306,7 @@
     "2+",
     "2 & vise 1.5",
     "Hapoel Beer Sheva pobednik i AZ Alkmaar više od 1.",
-    29.0,
+    28.0,
     1.5
    ]
   ]
@@ -4318,42 +4318,42 @@
     "1-",
     "1 & manje 2.5",
     "AZ Alkmaar pobednik i AZ Alkmaar manje od 2.5 gola",
-    2.95,
+    3.0,
     2.5
    ],
    [
     "0-",
     "x & manje 2.5",
     "nerešeno i AZ Alkmaar manje od 2.5 gola na utakmic",
-    5.4,
+    5.45,
     2.5
    ],
    [
     "2-",
     "2 & manje 2.5",
     "Hapoel Beer Sheva pobednik i AZ Alkmaar manje od 2",
-    7.3,
+    7.2,
     2.5
    ],
    [
     "1+",
     "1 & vise 2.5",
     "AZ Alkmaar pobednik i AZ Alkmaar više od 2.5 gola ",
-    2.05,
+    2.02,
     2.5
    ],
    [
     "0+",
     "x & vise 2.5",
     "nerešeno i AZ Alkmaar više od 2.5 gola na utakmici",
-    40.0,
+    39.0,
     2.5
    ],
    [
     "2+",
     "2 & vise 2.5",
     "Hapoel Beer Sheva pobednik i AZ Alkmaar više od 2.",
-    85.0,
+    80.0,
     2.5
    ]
   ]
@@ -4372,21 +4372,21 @@
     "0-",
     "x & manje 3.5",
     "nerešeno i AZ Alkmaar manje od 3.5 gola na utakmic",
-    5.15,
+    5.2,
     3.5
    ],
    [
     "2-",
     "2 & manje 3.5",
     "Hapoel Beer Sheva pobednik i AZ Alkmaar manje od 3",
-    7.2,
+    7.1,
     3.5
    ],
    [
     "1+",
     "1 & vise 3.5",
     "AZ Alkmaar pobednik i AZ Alkmaar više od 3.5 gola ",
-    3.55,
+    3.5,
     3.5
    ],
    [
@@ -4412,28 +4412,28 @@
     "1-",
     "1 & manje 4.5",
     "AZ Alkmaar pobednik i AZ Alkmaar manje od 4.5 gola",
-    1.48,
+    1.49,
     4.5
    ],
    [
     "0-",
     "x & manje 4.5",
     "nerešeno i AZ Alkmaar manje od 4.5 gola na utakmic",
-    5.15,
+    5.2,
     4.5
    ],
    [
     "2-",
     "2 & manje 4.5",
     "Hapoel Beer Sheva pobednik i AZ Alkmaar manje od 4",
-    7.2,
+    7.1,
     4.5
    ],
    [
     "1+",
     "1 & vise 4.5",
     "AZ Alkmaar pobednik i AZ Alkmaar više od 4.5 gola ",
-    6.7,
+    6.5,
     4.5
    ],
    [
@@ -4466,14 +4466,14 @@
     "0-",
     "x & manje 0.5",
     "nerešeno i Hapoel Beer Sheva manje od 0.5 gola na ",
-    15.0,
+    16.0,
     0.5
    ],
    [
     "1+",
     "1 & vise 0.5",
     "AZ Alkmaar pobednik  i Hapoel Beer Sheva više od 0",
-    2.67,
+    2.65,
     0.5
    ],
    [
@@ -4487,7 +4487,7 @@
     "2+",
     "2 & vise 0.5",
     "Hapoel Beer Sheva pobednik  i Hapoel Beer Sheva vi",
-    7.2,
+    7.1,
     0.5
    ]
   ]
@@ -4506,7 +4506,7 @@
     "0-",
     "x & manje 1.5",
     "nerešeno i Hapoel Beer Sheva manje od 1.5 gola na ",
-    6.7,
+    6.8,
     1.5
    ],
    [
@@ -4520,7 +4520,7 @@
     "1+",
     "1 & vise 1.5",
     "AZ Alkmaar pobednik  i Hapoel Beer Sheva više od 1",
-    8.6,
+    8.4,
     1.5
    ],
    [
@@ -4534,7 +4534,7 @@
     "2+",
     "2 & vise 1.5",
     "Hapoel Beer Sheva pobednik  i Hapoel Beer Sheva vi",
-    9.2,
+    9.0,
     1.5
    ]
   ]
@@ -4818,14 +4818,14 @@
     "*11-",
     "manje 4.5",
     "Celje će imati manje od 4.5 šuteva u okvir gola",
-    1.85,
+    1.83,
     4.5
    ],
    [
     "*11+",
     "vise 4.5",
     "Celje će imati više od 4.5 šuteva u okvir gola",
-    1.85,
+    1.87,
     4.5
    ]
   ]
@@ -4894,14 +4894,14 @@
     "/*01-",
     "manje 13.5",
     "Celje manje od 13.5 faulova",
-    1.72,
+    1.69,
     13.5
    ],
    [
     "/*01+",
     "vise 13.5",
     "Celje više od 13.5 faulova",
-    2.0,
+    1.95,
     13.5
    ]
   ]
@@ -4939,14 +4939,14 @@
     "",
     "1-3",
     "Celje  1-3 gola na utakmici",
-    1.36,
+    1.37,
     -3.0
    ],
    [
     "",
     "2-3",
     "Celje 2-3 gola na utakmici",
-    2.6,
+    2.62,
     -3.0
    ]
   ]
@@ -4965,14 +4965,14 @@
     "",
     "1-3",
     "Omonia Nicosia 1-3 gola na utakmici",
-    1.38,
+    1.39,
     -3.0
    ],
    [
     "",
     "2-3",
     "Omonia Nicosia 2-3 gola na utakmici",
-    2.7,
+    2.75,
     -3.0
    ]
   ]
@@ -4984,21 +4984,21 @@
     "12",
     "1-2",
     "Celje 1 ili 2 gola u svakom poluvremenu",
-    3.9,
+    4.0,
     2.0
    ],
    [
     "13",
     "1-3",
     "Celje 1,2 ili 3 gola u svakom poluvremenu",
-    3.55,
+    3.6,
     3.0
    ],
    [
     "23",
     "2-3",
     "Celje 2 ili 3 gola u svakom poluvremenu",
-    22.0,
+    23.0,
     3.0
    ]
   ]
@@ -5010,21 +5010,21 @@
     "12",
     "1-2",
     "Omonia Nicosia 1 ili 2 gola u svakom poluvremenu",
-    4.15,
+    4.2,
     2.0
    ],
    [
     "13",
     "1-3",
     "Omonia Nicosia 1,2 ili 3 gola u svakom poluvremenu",
-    3.8,
+    3.85,
     3.0
    ],
    [
     "23",
     "2-3",
     "Omonia Nicosia 2 ili 3 gola u svakom poluvremenu",
-    25.0,
+    26.0,
     3.0
    ]
   ]
@@ -5036,7 +5036,7 @@
     "0",
     "0",
     "Celje ne daje gol",
-    3.65,
+    3.6,
     3.0
    ],
    [
@@ -5050,14 +5050,14 @@
     "2",
     "2",
     "Celje daje tačno 2 gola",
-    3.65,
+    3.7,
     3.0
    ],
    [
     "3",
     "3+",
     "Celje daje 3 ili više golova",
-    5.1,
+    5.2,
     3.0
    ]
   ]
@@ -5069,7 +5069,7 @@
     "0",
     "0",
     "Omonia Nicosia ne daje gol",
-    3.45,
+    3.4,
     3.0
    ],
    [
@@ -5090,7 +5090,7 @@
     "3",
     "3+",
     "Omonia Nicosia daje 3 ili više golova",
-    5.5,
+    5.65,
     3.0
    ]
   ]
@@ -5102,14 +5102,14 @@
     "1",
     "da",
     "Celje daje gol na utakmici",
-    1.28,
+    1.29,
     null
    ],
    [
     "2",
     "ne",
     "Celje ne daje gol na utakmici",
-    3.75,
+    3.65,
     null
    ]
   ]
@@ -5121,14 +5121,14 @@
     "1",
     "da",
     "Omonia Nicosia daje gol na utakmici",
-    1.31,
+    1.32,
     null
    ],
    [
     "2",
     "ne",
     "Omonia Nicosia ne daje gol na utakmici",
-    3.5,
+    3.45,
     null
    ]
   ]
@@ -5140,35 +5140,35 @@
     "",
     "vise 0.5 & vise 1.5",
     "1. Poluvreme Celje više od 0.5 golova i Celje više",
-    2.87,
+    2.9,
     1.5
    ],
    [
     "",
     "vise 0.5 & manje 1.5",
     "1. Poluvreme Celje više od 0.5 golova i Celje manj",
-    5.15,
+    5.1,
     1.5
    ],
    [
     "",
     "manje 0.5 & vise 1.5",
     "1. Poluvreme Celje manje od 0.5 golova i Celje viš",
-    7.0,
+    7.1,
     1.5
    ],
    [
     "",
     "manje 0.5 & manje 1.5",
     "1. Poluvreme Celje manje od 0.5 golova i Celje man",
-    2.12,
+    2.1,
     1.5
    ],
    [
     "",
     "vise 0.5 & vise 2.5",
     "1. Poluvreme Celje više od 0.5 golova i Celje više",
-    5.55,
+    5.65,
     2.5
    ],
    [
@@ -5189,14 +5189,14 @@
     "",
     "manje 0.5 & manje 2.5",
     "1. Poluvreme Celje manje od 0.5 golova i Celje man",
-    1.82,
+    1.8,
     2.5
    ],
    [
     "",
     "vise 1.5 & vise 2.5",
     "1. Poluvreme Celje više od 1.5 golova i Celje više",
-    8.3,
+    8.5,
     2.5
    ],
    [
@@ -5210,7 +5210,7 @@
     "",
     "manje 1.5 & vise 2.5",
     "1. Poluvreme Celje manje od 1.5 golova i Celje viš",
-    8.0,
+    8.1,
     2.5
    ],
    [
@@ -5229,7 +5229,7 @@
     "",
     "vise 0.5 & vise 1.5",
     "1. Poluvreme Omonia Nicosia više od 0.5 golova i O",
-    3.05,
+    3.1,
     1.5
    ],
    [
@@ -5257,7 +5257,7 @@
     "",
     "vise 0.5 & vise 2.5",
     "1. Poluvreme Omonia Nicosia više od 0.5 golova i O",
-    6.0,
+    6.2,
     2.5
    ],
    [
@@ -5278,14 +5278,14 @@
     "",
     "manje 0.5 & manje 2.5",
     "1. Poluvreme Omonia Nicosia manje od 0.5 golova i ",
-    1.74,
+    1.73,
     2.5
    ],
    [
     "",
     "vise 1.5 & vise 2.5",
     "1. Poluvreme Omonia Nicosia više od 1.5 golova i O",
-    9.1,
+    9.4,
     2.5
    ],
    [
@@ -5299,7 +5299,7 @@
     "",
     "manje 1.5 & vise 2.5",
     "1. Poluvreme Omonia Nicosia manje od 1.5 golova i ",
-    8.5,
+    8.6,
     2.5
    ],
    [
@@ -5318,7 +5318,7 @@
     "",
     "vise 0.5 & vise 0.5",
     "Celje daje više od 0.5 golova u 1. poluvremenu i v",
-    3.5,
+    3.55,
     2.0
    ],
    [
@@ -5332,7 +5332,7 @@
     "",
     "vise 0.5 & vise 1.5",
     "Celje daje više od 0.5 golova u 1. poluvremenu i v",
-    8.2,
+    8.3,
     2.0
    ],
    [
@@ -5346,7 +5346,7 @@
     "",
     "vise 0.5 & vise 2.5",
     "Celje daje više od 0.5 golova u 1. poluvremenu i v",
-    23.0,
+    24.0,
     2.0
    ],
    [
@@ -5367,21 +5367,21 @@
     "",
     "manje 0.5 & manje 0.5",
     "Celje daje manje od 0.5 golova u 1. poluvremenu i ",
-    3.6,
+    3.5,
     2.0
    ],
    [
     "",
     "manje 0.5 & vise 1.5",
     "Celje daje manje od 0.5 golova u 1. poluvremenu i ",
-    7.0,
+    7.1,
     2.0
    ],
    [
     "",
     "manje 0.5 & manje 1.5",
     "Celje daje manje od 0.5 golova u 1. poluvremenu i ",
-    2.12,
+    2.1,
     2.0
    ],
    [
@@ -5395,7 +5395,7 @@
     "",
     "manje 0.5 & manje 2.5",
     "Celje daje manje od 0.5 golova u 1. poluvremenu i ",
-    1.82,
+    1.8,
     2.0
    ]
   ]
@@ -5407,7 +5407,7 @@
     "",
     "vise 0.5 & vise 0.5",
     "Omonia Nicosia daje više od 0.5 golova u 1. poluvr",
-    3.7,
+    3.75,
     2.0
    ],
    [
@@ -5421,7 +5421,7 @@
     "",
     "vise 0.5 & vise 1.5",
     "Omonia Nicosia daje više od 0.5 golova u 1. poluvr",
-    8.8,
+    9.0,
     2.0
    ],
    [
@@ -5435,7 +5435,7 @@
     "",
     "vise 0.5 & vise 2.5",
     "Omonia Nicosia daje više od 0.5 golova u 1. poluvr",
-    26.0,
+    27.0,
     2.0
    ],
    [
@@ -5456,14 +5456,14 @@
     "",
     "manje 0.5 & manje 0.5",
     "Omonia Nicosia daje manje od 0.5 golova u 1. poluv",
-    3.35,
+    3.3,
     2.0
    ],
    [
     "",
     "manje 0.5 & vise 1.5",
     "Omonia Nicosia daje manje od 0.5 golova u 1. poluv",
-    7.2,
+    7.3,
     2.0
    ],
    [
@@ -5496,7 +5496,7 @@
     "0-",
     "x & manje 0.5",
     "nerešeno i Celje manje od 0.5 gola na utakmici",
-    9.5,
+    9.1,
     0.5
    ],
    [
@@ -5510,21 +5510,21 @@
     "1+",
     "1 & vise 0.5",
     "Celje pobednik i Celje više od 0.5 gola na utakmic",
-    2.37,
+    2.4,
     0.5
    ],
    [
     "0+",
     "x & vise 0.5",
     "nerešeno i Celje više od 0.5 gola na utakmici",
-    4.1,
+    4.0,
     0.5
    ],
    [
     "2+",
     "2 & vise 0.5",
     "Omonia Nicosia pobednik i Celje više od 0.5 gola n",
-    4.7,
+    4.8,
     0.5
    ]
   ]
@@ -5536,28 +5536,28 @@
     "1-",
     "1 & manje 1.5",
     "Celje pobednik i Celje manje od 1.5 gola na utakmi",
-    7.8,
+    7.7,
     1.5
    ],
    [
     "0-",
     "x & manje 1.5",
     "nerešeno i Celje manje od 1.5 gola na utakmici",
-    4.25,
+    4.1,
     1.5
    ],
    [
     "2-",
     "2 & manje 1.5",
     "Omonia Nicosia pobednik i Celje manje od 1.5 gola ",
-    2.9,
+    2.92,
     1.5
    ],
    [
     "1+",
     "1 & vise 1.5",
     "Celje pobednik i Celje više od 1.5 gola na utakmic",
-    3.0,
+    3.05,
     1.5
    ],
    [
@@ -5590,21 +5590,21 @@
     "0-",
     "x & manje 2.5",
     "nerešeno i Celje manje od 2.5 gola na utakmici",
-    3.35,
+    3.3,
     2.5
    ],
    [
     "2-",
     "2 & manje 2.5",
     "Omonia Nicosia pobednik i Celje manje od 2.5 gola ",
-    2.62,
+    2.65,
     2.5
    ],
    [
     "1+",
     "1 & vise 2.5",
     "Celje pobednik i Celje više od 2.5 gola na utakmic",
-    5.35,
+    5.45,
     2.5
    ],
    [
@@ -5637,14 +5637,14 @@
     "0-",
     "x & manje 3.5",
     "nerešeno i Celje manje od 3.5 gola na utakmici",
-    3.2,
+    3.15,
     3.5
    ],
    [
     "2-",
     "2 & manje 3.5",
     "Omonia Nicosia pobednik i Celje manje od 3.5 gola ",
-    2.6,
+    2.62,
     3.5
    ],
    [
@@ -5665,7 +5665,7 @@
     "2+",
     "2 & vise 3.5",
     "Omonia Nicosia pobednik i Celje više od 3.5 gola n",
-    100.0,
+    125.0,
     3.5
    ]
   ]
@@ -5677,28 +5677,28 @@
     "1-",
     "1 & manje 4.5",
     "Celje pobednik i Celje manje od 4.5 gola na utakmi",
-    2.45,
+    2.47,
     4.5
    ],
    [
     "0-",
     "x & manje 4.5",
     "nerešeno i Celje manje od 4.5 gola na utakmici",
-    3.2,
+    3.15,
     4.5
    ],
    [
     "2-",
     "2 & manje 4.5",
     "Omonia Nicosia pobednik i Celje manje od 4.5 gola ",
-    2.6,
+    2.62,
     4.5
    ],
    [
     "1+",
     "1 & vise 4.5",
     "Celje pobednik i Celje više od 4.5 gola na utakmic",
-    30.0,
+    31.0,
     4.5
    ],
    [
@@ -5731,28 +5731,28 @@
     "0-",
     "x & manje 0.5",
     "nerešeno i Omonia Nicosia manje od 0.5 gola na uta",
-    9.5,
+    9.1,
     0.5
    ],
    [
     "1+",
     "1 & vise 0.5",
     "Celje pobednik  i Omonia Nicosia više od 0.5 gola ",
-    4.4,
+    4.45,
     0.5
    ],
    [
     "0+",
     "x & vise 0.5",
     "nerešeno i Omonia Nicosia više od 0.5 gola na utak",
-    4.1,
+    4.0,
     0.5
    ],
    [
     "2+",
     "2 & vise 0.5",
     "Omonia Nicosia pobednik  i Omonia Nicosia više od ",
-    2.6,
+    2.62,
     0.5
    ]
   ]
@@ -5771,14 +5771,14 @@
     "0-",
     "x & manje 1.5",
     "nerešeno i Omonia Nicosia manje od 1.5 gola na uta",
-    4.25,
+    4.1,
     1.5
    ],
    [
     "2-",
     "2 & manje 1.5",
     "Omonia Nicosia pobednik  i Omonia Nicosia manje od",
-    8.2,
+    8.1,
     1.5
    ],
    [
@@ -5799,7 +5799,7 @@
     "2+",
     "2 & vise 1.5",
     "Omonia Nicosia pobednik  i Omonia Nicosia više od ",
-    3.3,
+    3.35,
     1.5
    ]
   ]
@@ -5989,42 +5989,42 @@
     ".1-",
     "manje 1.5",
     "Royale Union SG će imati manje od 1.5 kartona na u",
-    2.62,
+    3.05,
     1.5
    ],
    [
     ".1+",
     "vise 1.5",
     "Royale Union SG će imati više od 1.5 kartona na ut",
-    1.39,
+    1.28,
     1.5
    ],
    [
     ".1-",
     "manje 2.5",
     "Royale Union SG će imati manje od 2.5 kartona na u",
-    1.57,
+    1.78,
     2.5
    ],
    [
     ".1+",
     "vise 2.5",
     "Royale Union SG će imati više od 2.5 kartona na ut",
-    2.2,
+    1.92,
     2.5
    ],
    [
     ".1-",
     "manje 3.5",
     "Royale Union SG će imati manje od 3.5 kartona na u",
-    1.19,
+    1.28,
     3.5
    ],
    [
     ".1+",
     "vise 3.5",
     "Royale Union SG će imati više od 3.5 kartona na ut",
-    3.75,
+    3.1,
     3.5
    ]
   ]
@@ -6036,42 +6036,42 @@
     ".2-",
     "manje 1.5",
     "Real Sociedad će imati manje od 1.5 kartona na uta",
-    2.7,
+    3.2,
     1.5
    ],
    [
     ".2+",
     "vise 1.5",
     "Real Sociedad će imati više od 1.5 kartona na utak",
-    1.37,
+    1.26,
     1.5
    ],
    [
     ".2-",
     "manje 2.5",
     "Real Sociedad će imati manje od 2.5 kartona na uta",
-    1.61,
+    1.83,
     2.5
    ],
    [
     ".2+",
     "vise 2.5",
     "Real Sociedad će imati više od 2.5 kartona na utak",
-    2.15,
+    1.87,
     2.5
    ],
    [
     ".2-",
     "manje 3.5",
     "Real Sociedad će imati manje od 3.5 kartona na uta",
-    1.2,
+    1.3,
     3.5
    ],
    [
     ".2+",
     "vise 3.5",
     "Real Sociedad će imati više od 3.5 kartona na utak",
-    3.6,
+    2.95,
     3.5
    ]
   ]
@@ -6121,7 +6121,7 @@
     "",
     "manje 14.5",
     "Royale Union SG manje od 14.5 šuteva,",
-    1.78,
+    1.77,
     14.5
    ],
    [
@@ -6159,14 +6159,14 @@
     "/*01-",
     "manje 12.5",
     "Royale Union SG manje od 12.5 faulova",
-    1.83,
+    1.8,
     12.5
    ],
    [
     "/*01+",
     "vise 12.5",
     "Royale Union SG više od 12.5 faulova",
-    1.87,
+    1.83,
     12.5
    ]
   ]
@@ -6178,14 +6178,14 @@
     "/*02-",
     "manje 12.5",
     "Real Sociedad manje od 12.5 faulova",
-    1.74,
+    1.78,
     12.5
    ],
    [
     "/*02+",
     "vise 12.5",
     "Real Sociedad više od 12.5 faulova",
-    1.9,
+    1.92,
     12.5
    ]
   ]
@@ -7205,45 +7205,45 @@
   "primer": [
    [
     ".1-",
+    "manje 0.5",
+    "RB Salzburg će imati manje od 0.5 kartona na utakm",
+    5.0,
+    0.5
+   ],
+   [
+    ".1+",
+    "vise 0.5",
+    "RB Salzburg će imati više od 0.5 kartona na utakmi",
+    1.1,
+    0.5
+   ],
+   [
+    ".1-",
     "manje 1.5",
     "RB Salzburg će imati manje od 1.5 kartona na utakm",
-    2.47,
+    2.15,
     1.5
    ],
    [
     ".1+",
     "vise 1.5",
     "RB Salzburg će imati više od 1.5 kartona na utakmi",
-    1.44,
+    1.6,
     1.5
    ],
    [
     ".1-",
     "manje 2.5",
     "RB Salzburg će imati manje od 2.5 kartona na utakm",
-    1.51,
+    1.36,
     2.5
    ],
    [
     ".1+",
     "vise 2.5",
     "RB Salzburg će imati više od 2.5 kartona na utakmi",
-    2.32,
+    2.72,
     2.5
-   ],
-   [
-    ".1-",
-    "manje 3.5",
-    "RB Salzburg će imati manje od 3.5 kartona na utakm",
-    1.16,
-    3.5
-   ],
-   [
-    ".1+",
-    "vise 3.5",
-    "RB Salzburg će imati više od 3.5 kartona na utakmi",
-    4.0,
-    3.5
    ]
   ]
  },
@@ -7254,42 +7254,42 @@
     ".2-",
     "manje 0.5",
     "AC Milan će imati manje od 0.5 kartona na utakmici",
-    5.55,
+    4.55,
     0.5
    ],
    [
     ".2+",
     "vise 0.5",
     "AC Milan će imati više od 0.5 kartona na utakmici ",
-    1.07,
+    1.12,
     0.5
    ],
    [
     ".2-",
     "manje 1.5",
     "AC Milan će imati manje od 1.5 kartona na utakmici",
-    2.32,
+    2.0,
     1.5
    ],
    [
     ".2+",
     "vise 1.5",
     "AC Milan će imati više od 1.5 kartona na utakmici ",
-    1.51,
+    1.72,
     1.5
    ],
    [
     ".2-",
     "manje 2.5",
     "AC Milan će imati manje od 2.5 kartona na utakmici",
-    1.44,
+    1.29,
     2.5
    ],
    [
     ".2+",
     "vise 2.5",
     "AC Milan će imati više od 2.5 kartona na utakmici ",
-    2.5,
+    3.0,
     2.5
    ]
   ]
@@ -7377,14 +7377,14 @@
     "/*01-",
     "manje 12.5",
     "RB Salzburg manje od 12.5 faulova",
-    1.72,
+    1.68,
     12.5
    ],
    [
     "/*01+",
     "vise 12.5",
     "RB Salzburg više od 12.5 faulova",
-    2.0,
+    1.97,
     12.5
    ]
   ]
@@ -7396,14 +7396,14 @@
     "/*02-",
     "manje 11.5",
     "AC Milan manje od 11.5 faulova",
-    1.9,
+    1.95,
     11.5
    ],
    [
     "/*02+",
     "vise 11.5",
     "AC Milan više od 11.5 faulova",
-    1.74,
+    1.77,
     11.5
    ]
   ]
@@ -8471,42 +8471,42 @@
     ".1-",
     "manje 1.5",
     "Ferencvaros će imati manje od 1.5 kartona na utakm",
-    2.52,
+    2.92,
     1.5
    ],
    [
     ".1+",
     "vise 1.5",
     "Ferencvaros će imati više od 1.5 kartona na utakmi",
-    1.43,
+    1.31,
     1.5
    ],
    [
     ".1-",
     "manje 2.5",
     "Ferencvaros će imati manje od 2.5 kartona na utakm",
-    1.52,
+    1.71,
     2.5
    ],
    [
     ".1+",
     "vise 2.5",
     "Ferencvaros će imati više od 2.5 kartona na utakmi",
-    2.32,
+    2.0,
     2.5
    ],
    [
     ".1-",
     "manje 3.5",
     "Ferencvaros će imati manje od 3.5 kartona na utakm",
-    1.16,
+    1.24,
     3.5
    ],
    [
     ".1+",
     "vise 3.5",
     "Ferencvaros će imati više od 3.5 kartona na utakmi",
-    4.0,
+    3.3,
     3.5
    ]
   ]
@@ -8518,42 +8518,42 @@
     ".2-",
     "manje 1.5",
     "Viktoria Plzen će imati manje od 1.5 kartona na ut",
-    2.72,
+    3.2,
     1.5
    ],
    [
     ".2+",
     "vise 1.5",
     "Viktoria Plzen će imati više od 1.5 kartona na uta",
-    1.36,
+    1.26,
     1.5
    ],
    [
     ".2-",
     "manje 2.5",
     "Viktoria Plzen će imati manje od 2.5 kartona na ut",
-    1.61,
+    1.83,
     2.5
    ],
    [
     ".2+",
     "vise 2.5",
     "Viktoria Plzen će imati više od 2.5 kartona na uta",
-    2.15,
+    1.87,
     2.5
    ],
    [
     ".2-",
     "manje 3.5",
     "Viktoria Plzen će imati manje od 3.5 kartona na ut",
-    1.2,
+    1.29,
     3.5
    ],
    [
     ".2+",
     "vise 3.5",
     "Viktoria Plzen će imati više od 3.5 kartona na uta",
-    3.65,
+    3.0,
     3.5
    ]
   ]
@@ -8622,7 +8622,7 @@
     "",
     "manje 12.5",
     "Viktoria Plzen manje od 12.5 šuteva",
-    1.71,
+    1.7,
     12.5
    ],
    [
@@ -8660,14 +8660,14 @@
     "/*02-",
     "manje 13.5",
     "Viktoria Plzen manje od 13.5 faulova",
-    1.82,
+    1.85,
     13.5
    ],
    [
     "/*02+",
     "vise 13.5",
     "Viktoria Plzen više od 13.5 faulova",
-    1.82,
+    1.85,
     13.5
    ]
   ]
@@ -9783,42 +9783,42 @@
     ".1-",
     "manje 0.5",
     "Jagiellonia Bialystok će imati manje od 0.5 karton",
-    5.2,
+    4.4,
     0.5
    ],
    [
     ".1+",
     "vise 0.5",
     "Jagiellonia Bialystok će imati više od 0.5 kartona",
-    1.09,
+    1.13,
     0.5
    ],
    [
     ".1-",
     "manje 1.5",
     "Jagiellonia Bialystok će imati manje od 1.5 karton",
-    2.2,
+    1.92,
     1.5
    ],
    [
     ".1+",
     "vise 1.5",
     "Jagiellonia Bialystok će imati više od 1.5 kartona",
-    1.58,
+    1.78,
     1.5
    ],
    [
     ".1-",
     "manje 2.5",
     "Jagiellonia Bialystok će imati manje od 2.5 karton",
-    1.38,
+    1.26,
     2.5
    ],
    [
     ".1+",
     "vise 2.5",
     "Jagiellonia Bialystok će imati više od 2.5 kartona",
-    2.67,
+    3.15,
     2.5
    ]
   ]
@@ -9830,42 +9830,42 @@
     ".2-",
     "manje 1.5",
     "Ararat Armenia će imati manje od 1.5 kartona na ut",
-    4.1,
+    3.6,
     1.5
    ],
    [
     ".2+",
     "vise 1.5",
     "Ararat Armenia će imati više od 1.5 kartona na uta",
-    1.15,
+    1.2,
     1.5
    ],
    [
     ".2-",
     "manje 2.5",
     "Ararat Armenia će imati manje od 2.5 kartona na ut",
-    2.2,
+    2.0,
     2.5
    ],
    [
     ".2+",
     "vise 2.5",
     "Ararat Armenia će imati više od 2.5 kartona na uta",
-    1.57,
+    1.72,
     2.5
    ],
    [
     ".2-",
     "manje 3.5",
     "Ararat Armenia će imati manje od 3.5 kartona na ut",
-    1.47,
+    1.37,
     3.5
    ],
    [
     ".2+",
     "vise 3.5",
     "Ararat Armenia će imati više od 3.5 kartona na uta",
-    2.4,
+    2.7,
     3.5
    ]
   ]
@@ -11189,14 +11189,14 @@
     "*11-",
     "manje 4.5",
     "NEC Nijmegen će imati manje od 4.5 šuteva u okvir ",
-    2.02,
+    2.0,
     4.5
    ],
    [
     "*11+",
     "vise 4.5",
     "NEC Nijmegen će imati više od 4.5 šuteva u okvir g",
-    1.69,
+    1.72,
     4.5
    ]
   ]
@@ -11208,14 +11208,14 @@
     "*12-",
     "manje 3.5",
     "Levski Sofia će imati manje od 3.5 šuteva u okvir ",
-    1.87,
+    1.9,
     3.5
    ],
    [
     "*12+",
     "vise 3.5",
     "Levski Sofia će imati više od 3.5 šuteva u okvir g",
-    1.83,
+    1.82,
     3.5
    ]
   ]
@@ -11227,14 +11227,14 @@
     "",
     "manje 13.5",
     "NEC Nijmegen manje od 13.5 šuteva,",
-    1.97,
+    1.9,
     13.5
    ],
    [
     "",
     "vise 13.5",
     "NEC Nijmegen više od 13.5 šuteva",
-    1.73,
+    1.8,
     13.5
    ]
   ]
@@ -11265,14 +11265,14 @@
     "/*01-",
     "manje 12.5",
     "NEC Nijmegen manje od 12.5 faulova",
-    1.82,
+    1.83,
     12.5
    ],
    [
     "/*01+",
     "vise 12.5",
     "NEC Nijmegen više od 12.5 faulova",
-    1.82,
+    1.8,
     12.5
    ]
   ]
@@ -11291,7 +11291,7 @@
     "/*02+",
     "vise 11.5",
     "Levski Sofia više od 11.5 faulova",
-    1.74,
+    1.75,
     11.5
    ]
   ]
@@ -11303,7 +11303,7 @@
     "",
     "1-2",
     "NEC Nijmegen 1-2 gola na utakmici",
-    1.66,
+    1.65,
     -2.0
    ],
    [
@@ -11317,7 +11317,7 @@
     "",
     "2-3",
     "NEC Nijmegen 2-3 gola na utakmici",
-    2.2,
+    2.22,
     -3.0
    ]
   ]
@@ -11329,21 +11329,21 @@
     "",
     "1-2",
     "Levski Sofia 1-2 gola na utakmici",
-    1.66,
+    1.65,
     -2.0
    ],
    [
     "",
     "1-3",
     "Levski Sofia 1-3 gola na utakmici",
-    1.47,
+    1.46,
     -3.0
    ],
    [
     "",
     "2-3",
     "Levski Sofia 2-3 gola na utakmici",
-    3.2,
+    3.15,
     -3.0
    ]
   ]
@@ -11355,14 +11355,14 @@
     "12",
     "1-2",
     "NEC Nijmegen 1 ili 2 gola u svakom poluvremenu",
-    3.2,
+    3.25,
     2.0
    ],
    [
     "13",
     "1-3",
     "NEC Nijmegen 1,2 ili 3 gola u svakom poluvremenu",
-    2.72,
+    2.8,
     3.0
    ],
    [
@@ -11381,21 +11381,21 @@
     "12",
     "1-2",
     "Levski Sofia 1 ili 2 gola u svakom poluvremenu",
-    4.9,
+    4.85,
     2.0
    ],
    [
     "13",
     "1-3",
     "Levski Sofia 1,2 ili 3 gola u svakom poluvremenu",
-    4.65,
+    4.5,
     3.0
    ],
    [
     "23",
     "2-3",
     "Levski Sofia 2 ili 3 gola u svakom poluvremenu",
-    38.0,
+    36.0,
     3.0
    ]
   ]
@@ -11407,14 +11407,14 @@
     "0",
     "0",
     "NEC Nijmegen ne daje gol",
-    5.1,
+    4.9,
     3.0
    ],
    [
     "1",
     "1",
     "NEC Nijmegen daje tačno 1 gol",
-    3.0,
+    2.95,
     3.0
    ],
    [
@@ -11428,7 +11428,7 @@
     "3",
     "3+",
     "NEC Nijmegen daje 3 ili više golova",
-    3.45,
+    3.55,
     3.0
    ]
   ]
@@ -11440,7 +11440,7 @@
     "0",
     "0",
     "Levski Sofia ne daje gol",
-    2.85,
+    2.9,
     3.0
    ],
    [
@@ -11454,14 +11454,14 @@
     "2",
     "2",
     "Levski Sofia daje tačno 2 gola",
-    4.25,
+    4.2,
     3.0
    ],
    [
     "3",
     "3+",
     "Levski Sofia daje 3 ili više golova",
-    7.5,
+    7.2,
     3.0
    ]
   ]
@@ -11480,7 +11480,7 @@
     "2",
     "ne",
     "NEC Nijmegen ne daje gol na utakmici",
-    5.2,
+    5.0,
     null
    ]
   ]
@@ -11492,14 +11492,14 @@
     "1",
     "da",
     "Levski Sofia daje gol na utakmici",
-    1.43,
+    1.41,
     null
    ],
    [
     "2",
     "ne",
     "Levski Sofia ne daje gol na utakmici",
-    2.82,
+    2.95,
     null
    ]
   ]
@@ -11511,14 +11511,14 @@
     "",
     "vise 0.5 & vise 1.5",
     "1. Poluvreme NEC Nijmegen više od 0.5 golova i NEC",
-    2.22,
+    2.25,
     1.5
    ],
    [
     "",
     "vise 0.5 & manje 1.5",
     "1. Poluvreme NEC Nijmegen više od 0.5 golova i NEC",
-    5.65,
+    5.6,
     1.5
    ],
    [
@@ -11532,14 +11532,14 @@
     "",
     "manje 0.5 & manje 1.5",
     "1. Poluvreme NEC Nijmegen manje od 0.5 golova i NE",
-    2.67,
+    2.62,
     1.5
    ],
    [
     "",
     "vise 0.5 & vise 2.5",
     "1. Poluvreme NEC Nijmegen više od 0.5 golova i NEC",
-    3.8,
+    3.9,
     2.5
    ],
    [
@@ -11567,7 +11567,7 @@
     "",
     "vise 1.5 & vise 2.5",
     "1. Poluvreme NEC Nijmegen više od 1.5 golova i NEC",
-    5.8,
+    5.9,
     2.5
    ],
    [
@@ -11581,14 +11581,14 @@
     "",
     "manje 1.5 & vise 2.5",
     "1. Poluvreme NEC Nijmegen manje od 1.5 golova i NE",
-    6.0,
+    6.1,
     2.5
    ],
    [
     "",
     "manje 1.5 & manje 2.5",
     "1. Poluvreme NEC Nijmegen manje od 1.5 golova i NE",
-    1.38,
+    1.36,
     2.5
    ]
   ]
@@ -11600,7 +11600,7 @@
     "",
     "vise 0.5 & vise 1.5",
     "1. Poluvreme Levski Sofia više od 0.5 golova i Lev",
-    3.75,
+    3.65,
     1.5
    ],
    [
@@ -11614,49 +11614,49 @@
     "",
     "manje 0.5 & vise 1.5",
     "1. Poluvreme Levski Sofia manje od 0.5 golova i Le",
-    8.1,
+    7.9,
     1.5
    ],
    [
     "",
     "manje 0.5 & manje 1.5",
     "1. Poluvreme Levski Sofia manje od 0.5 golova i Le",
-    1.76,
+    1.78,
     1.5
    ],
    [
     "",
     "vise 0.5 & vise 2.5",
     "1. Poluvreme Levski Sofia više od 0.5 golova i Lev",
-    8.0,
+    7.7,
     2.5
    ],
    [
     "",
     "vise 0.5 & manje 2.5",
     "1. Poluvreme Levski Sofia više od 0.5 golova i Lev",
-    2.92,
+    2.9,
     2.5
    ],
    [
     "",
     "manje 0.5 & vise 2.5",
     "1. Poluvreme Levski Sofia manje od 0.5 golova i Le",
-    26.0,
+    25.0,
     2.5
    ],
    [
     "",
     "manje 0.5 & manje 2.5",
     "1. Poluvreme Levski Sofia manje od 0.5 golova i Le",
-    1.57,
+    1.59,
     2.5
    ],
    [
     "",
     "vise 1.5 & vise 2.5",
     "1. Poluvreme Levski Sofia više od 1.5 golova i Lev",
-    13.0,
+    12.0,
     2.5
    ],
    [
@@ -11677,7 +11677,7 @@
     "",
     "manje 1.5 & manje 2.5",
     "1. Poluvreme Levski Sofia manje od 1.5 golova i Le",
-    1.11,
+    1.12,
     2.5
    ]
   ]
@@ -11689,7 +11689,7 @@
     "",
     "vise 0.5 & vise 0.5",
     "NEC Nijmegen daje više od 0.5 golova u 1. poluvrem",
-    2.65,
+    2.7,
     2.0
    ],
    [
@@ -11703,7 +11703,7 @@
     "",
     "vise 0.5 & vise 1.5",
     "NEC Nijmegen daje više od 0.5 golova u 1. poluvrem",
-    5.7,
+    5.8,
     2.0
    ],
    [
@@ -11717,7 +11717,7 @@
     "",
     "vise 0.5 & vise 2.5",
     "NEC Nijmegen daje više od 0.5 golova u 1. poluvrem",
-    14.0,
+    15.0,
     2.0
    ],
    [
@@ -11738,7 +11738,7 @@
     "",
     "manje 0.5 & manje 0.5",
     "NEC Nijmegen daje manje od 0.5 golova u 1. poluvre",
-    4.85,
+    4.75,
     2.0
    ],
    [
@@ -11752,7 +11752,7 @@
     "",
     "manje 0.5 & manje 1.5",
     "NEC Nijmegen daje manje od 0.5 golova u 1. poluvre",
-    2.67,
+    2.62,
     2.0
    ],
    [
@@ -11778,7 +11778,7 @@
     "",
     "vise 0.5 & vise 0.5",
     "Levski Sofia daje više od 0.5 golova u 1. poluvrem",
-    4.6,
+    4.45,
     2.0
    ],
    [
@@ -11799,21 +11799,21 @@
     "",
     "vise 0.5 & manje 1.5",
     "Levski Sofia daje više od 0.5 golova u 1. poluvrem",
-    2.65,
+    2.62,
     2.0
    ],
    [
     "",
     "vise 0.5 & vise 2.5",
     "Levski Sofia daje više od 0.5 golova u 1. poluvrem",
-    40.0,
+    38.0,
     2.0
    ],
    [
     "",
     "vise 0.5 & manje 2.5",
     "Levski Sofia daje više od 0.5 golova u 1. poluvrem",
-    2.4,
+    2.37,
     2.0
    ],
    [
@@ -11827,35 +11827,35 @@
     "",
     "manje 0.5 & manje 0.5",
     "Levski Sofia daje manje od 0.5 golova u 1. poluvre",
-    2.77,
+    2.85,
     2.0
    ],
    [
     "",
     "manje 0.5 & vise 1.5",
     "Levski Sofia daje manje od 0.5 golova u 1. poluvre",
-    8.1,
+    7.9,
     2.0
    ],
    [
     "",
     "manje 0.5 & manje 1.5",
     "Levski Sofia daje manje od 0.5 golova u 1. poluvre",
-    1.76,
+    1.78,
     2.0
    ],
    [
     "",
     "manje 0.5 & vise 2.5",
     "Levski Sofia daje manje od 0.5 golova u 1. poluvre",
-    26.0,
+    25.0,
     2.0
    ],
    [
     "",
     "manje 0.5 & manje 2.5",
     "Levski Sofia daje manje od 0.5 golova u 1. poluvre",
-    1.57,
+    1.59,
     2.0
    ]
   ]
@@ -11874,28 +11874,28 @@
     "2-",
     "2 & manje 0.5",
     "Levski Sofia pobednik i NEC Nijmegen manje od 0.5 ",
-    6.6,
+    6.4,
     0.5
    ],
    [
     "1+",
     "1 & vise 0.5",
     "NEC Nijmegen pobednik i NEC Nijmegen više od 0.5 g",
-    1.8,
+    1.83,
     0.5
    ],
    [
     "0+",
     "x & vise 0.5",
     "nerešeno i NEC Nijmegen više od 0.5 gola na utakmi",
-    4.35,
+    4.3,
     0.5
    ],
    [
     "2+",
     "2 & vise 0.5",
     "Levski Sofia pobednik i NEC Nijmegen više od 0.5 g",
-    6.2,
+    6.0,
     0.5
    ]
   ]
@@ -11907,7 +11907,7 @@
     "1-",
     "1 & manje 1.5",
     "NEC Nijmegen pobednik i NEC Nijmegen manje od 1.5 ",
-    7.3,
+    7.4,
     1.5
    ],
    [
@@ -11921,28 +11921,28 @@
     "2-",
     "2 & manje 1.5",
     "Levski Sofia pobednik i NEC Nijmegen manje od 1.5 ",
-    4.15,
+    4.0,
     1.5
    ],
    [
     "1+",
     "1 & vise 1.5",
     "NEC Nijmegen pobednik i NEC Nijmegen više od 1.5 g",
-    2.17,
+    2.22,
     1.5
    ],
    [
     "0+",
     "x & vise 1.5",
     "nerešeno i NEC Nijmegen više od 1.5 gola na utakmi",
-    8.8,
+    8.7,
     1.5
    ],
    [
     "2+",
     "2 & vise 1.5",
     "Levski Sofia pobednik i NEC Nijmegen više od 1.5 g",
-    17.0,
+    16.0,
     1.5
    ]
   ]
@@ -11954,35 +11954,35 @@
     "1-",
     "1 & manje 2.5",
     "NEC Nijmegen pobednik i NEC Nijmegen manje od 2.5 ",
-    3.15,
+    3.2,
     2.5
    ],
    [
     "0-",
     "x & manje 2.5",
     "nerešeno i NEC Nijmegen manje od 2.5 gola na utakm",
-    3.65,
+    3.6,
     2.5
    ],
    [
     "2-",
     "2 & manje 2.5",
     "Levski Sofia pobednik i NEC Nijmegen manje od 2.5 ",
-    3.7,
+    3.6,
     2.5
    ],
    [
     "1+",
     "1 & vise 2.5",
     "NEC Nijmegen pobednik i NEC Nijmegen više od 2.5 g",
-    3.6,
+    3.7,
     2.5
    ],
    [
     "0+",
     "x & vise 2.5",
     "nerešeno i NEC Nijmegen više od 2.5 gola na utakmi",
-    29.0,
+    28.0,
     2.5
    ],
    [
@@ -12001,7 +12001,7 @@
     "1-",
     "1 & manje 3.5",
     "NEC Nijmegen pobednik i NEC Nijmegen manje od 3.5 ",
-    2.2,
+    2.22,
     3.5
    ],
    [
@@ -12015,14 +12015,14 @@
     "2-",
     "2 & manje 3.5",
     "Levski Sofia pobednik i NEC Nijmegen manje od 3.5 ",
-    3.65,
+    3.55,
     3.5
    ],
    [
     "1+",
     "1 & vise 3.5",
     "NEC Nijmegen pobednik i NEC Nijmegen više od 3.5 g",
-    7.2,
+    7.4,
     3.5
    ],
    [
@@ -12048,21 +12048,21 @@
     "1-",
     "1 & manje 4.5",
     "NEC Nijmegen pobednik i NEC Nijmegen manje od 4.5 ",
-    1.9,
+    1.95,
     4.5
    ],
    [
     "0-",
     "x & manje 4.5",
     "nerešeno i NEC Nijmegen manje od 4.5 gola na utakm",
-    3.45,
+    3.4,
     4.5
    ],
    [
     "2-",
     "2 & manje 4.5",
     "Levski Sofia pobednik i NEC Nijmegen manje od 4.5 ",
-    3.65,
+    3.55,
     4.5
    ],
    [
@@ -12273,42 +12273,42 @@
     ".1-",
     "manje 0.5",
     "Olympique Marseille će imati manje od 0.5 kartona ",
-    5.5,
+    5.0,
     0.5
    ],
    [
     ".1+",
     "vise 0.5",
     "Olympique Marseille će imati više od 0.5 kartona n",
-    1.07,
+    1.1,
     0.5
    ],
    [
     ".1-",
     "manje 1.5",
     "Olympique Marseille će imati manje od 1.5 kartona ",
-    2.3,
+    2.12,
     1.5
    ],
    [
     ".1+",
     "vise 1.5",
     "Olympique Marseille će imati više od 1.5 kartona n",
-    1.52,
+    1.62,
     1.5
    ],
    [
     ".1-",
     "manje 2.5",
     "Olympique Marseille će imati manje od 2.5 kartona ",
-    1.42,
+    1.34,
     2.5
    ],
    [
     ".1+",
     "vise 2.5",
     "Olympique Marseille će imati više od 2.5 kartona n",
-    2.55,
+    2.8,
     2.5
    ]
   ]
@@ -12318,45 +12318,45 @@
   "primer": [
    [
     ".2-",
+    "manje 0.5",
+    "Olympiacos će imati manje od 0.5 kartona na utakmi",
+    5.65,
+    0.5
+   ],
+   [
+    ".2+",
+    "vise 0.5",
+    "Olympiacos će imati više od 0.5 kartona na utakmic",
+    1.07,
+    0.5
+   ],
+   [
+    ".2-",
     "manje 1.5",
     "Olympiacos će imati manje od 1.5 kartona na utakmi",
-    2.55,
+    2.35,
     1.5
    ],
    [
     ".2+",
     "vise 1.5",
     "Olympiacos će imati više od 1.5 kartona na utakmic",
-    1.42,
+    1.5,
     1.5
    ],
    [
     ".2-",
     "manje 2.5",
     "Olympiacos će imati manje od 2.5 kartona na utakmi",
-    1.53,
+    1.44,
     2.5
    ],
    [
     ".2+",
     "vise 2.5",
     "Olympiacos će imati više od 2.5 kartona na utakmic",
-    2.3,
+    2.5,
     2.5
-   ],
-   [
-    ".2-",
-    "manje 3.5",
-    "Olympiacos će imati manje od 3.5 kartona na utakmi",
-    1.16,
-    3.5
-   ],
-   [
-    ".2+",
-    "vise 3.5",
-    "Olympiacos će imati više od 3.5 kartona na utakmic",
-    4.0,
-    3.5
    ]
   ]
  },
@@ -12443,14 +12443,14 @@
     "/*01-",
     "manje 11.5",
     "Olympique Marseille manje od 11.5 faulova",
-    1.97,
+    1.92,
     11.5
    ],
    [
     "/*01+",
     "vise 11.5",
     "Olympique Marseille više od 11.5 faulova",
-    1.74,
+    1.71,
     11.5
    ]
   ]
@@ -12790,7 +12790,7 @@
     "/1-",
     "manje 2.5",
     "Lech Poznan manje od 2.5 kornera",
-    3.9,
+    3.85,
     2.5
    ],
    [
@@ -12900,7 +12900,7 @@
     "/2+",
     "vise 3.5",
     "Bayer Leverkusen će imati više od 3.5 kornera",
-    1.27,
+    1.26,
     3.5
    ],
    [
@@ -13041,14 +13041,14 @@
     "*11-",
     "manje 3.5",
     "Lech Poznan će imati manje od 3.5 šuteva u okvir g",
-    2.17,
+    2.2,
     3.5
    ],
    [
     "*11+",
     "vise 3.5",
     "Lech Poznan će imati više od 3.5 šuteva u okvir go",
-    1.59,
+    1.58,
     3.5
    ]
   ]
@@ -13067,7 +13067,7 @@
     "*12+",
     "vise 5.5",
     "Bayer Leverkusen će imati više od 5.5 šuteva u okv",
-    1.82,
+    1.8,
     5.5
    ]
   ]
@@ -13079,14 +13079,14 @@
     "",
     "manje 12.5",
     "Lech Poznan manje od 12.5 šuteva,",
-    1.76,
+    1.78,
     12.5
    ],
    [
     "",
     "vise 12.5",
     "Lech Poznan više od 12.5 šuteva",
-    1.95,
+    1.92,
     12.5
    ]
   ]
@@ -13098,14 +13098,14 @@
     "",
     "manje 16.5",
     "Bayer Leverkusen manje od 16.5 šuteva",
-    1.92,
+    1.97,
     16.5
    ],
    [
     "",
     "vise 16.5",
     "Bayer Leverkusen više od 16.5 šuteva",
-    1.78,
+    1.74,
     16.5
    ]
   ]
@@ -13136,14 +13136,14 @@
     "/*02-",
     "manje 11.5",
     "Bayer Leverkusen manje od 11.5 faulova",
-    2.0,
+    2.05,
     11.5
    ],
    [
     "/*02+",
     "vise 11.5",
     "Bayer Leverkusen više od 11.5 faulova",
-    1.66,
+    1.7,
     11.5
    ]
   ]
@@ -13162,14 +13162,14 @@
     "",
     "1-3",
     "Lech Poznan  1-3 gola na utakmici",
-    1.43,
+    1.42,
     -3.0
    ],
    [
     "",
     "2-3",
     "Lech Poznan 2-3 gola na utakmici",
-    2.95,
+    2.9,
     -3.0
    ]
   ]
@@ -13181,7 +13181,7 @@
     "",
     "1-2",
     "Bayer Leverkusen 1-2 gola na utakmici",
-    1.8,
+    1.82,
     -2.0
    ],
    [
@@ -13207,21 +13207,21 @@
     "12",
     "1-2",
     "Lech Poznan 1 ili 2 gola u svakom poluvremenu",
-    4.55,
+    4.45,
     2.0
    ],
    [
     "13",
     "1-3",
     "Lech Poznan 1,2 ili 3 gola u svakom poluvremenu",
-    4.2,
+    4.1,
     3.0
    ],
    [
     "23",
     "2-3",
     "Lech Poznan 2 ili 3 gola u svakom poluvremenu",
-    32.0,
+    30.0,
     3.0
    ]
   ]
@@ -13233,21 +13233,21 @@
     "12",
     "1-2",
     "Bayer Leverkusen 1 ili 2 gola u svakom poluvremenu",
-    2.82,
+    2.8,
     2.0
    ],
    [
     "13",
     "1-3",
     "Bayer Leverkusen 1,2 ili 3 gola u svakom poluvreme",
-    2.27,
+    2.25,
     3.0
    ],
    [
     "23",
     "2-3",
     "Bayer Leverkusen 2 ili 3 gola u svakom poluvremenu",
-    9.3,
+    9.0,
     3.0
    ]
   ]
@@ -13259,7 +13259,7 @@
     "0",
     "0",
     "Lech Poznan ne daje gol",
-    3.05,
+    3.15,
     3.0
    ],
    [
@@ -13280,7 +13280,7 @@
     "3",
     "3+",
     "Lech Poznan daje 3 ili više golova",
-    6.6,
+    6.3,
     3.0
    ]
   ]
@@ -13292,28 +13292,28 @@
     "0",
     "0",
     "Bayer Leverkusen ne daje gol",
-    6.9,
+    7.0,
     3.0
    ],
    [
     "1",
     "1",
     "Bayer Leverkusen daje tačno 1 gol",
-    3.55,
+    3.6,
     3.0
    ],
    [
     "2",
     "2",
     "Bayer Leverkusen daje tačno 2 gola",
-    3.3,
+    3.35,
     3.0
    ],
    [
     "3",
     "3+",
     "Bayer Leverkusen daje 3 ili više golova",
-    2.55,
+    2.5,
     3.0
    ]
   ]
@@ -13325,14 +13325,14 @@
     "1",
     "da",
     "Lech Poznan daje gol na utakmici",
-    1.38,
+    1.36,
     null
    ],
    [
     "2",
     "ne",
     "Lech Poznan ne daje gol na utakmici",
-    3.05,
+    3.2,
     null
    ]
   ]
@@ -13351,7 +13351,7 @@
     "2",
     "ne",
     "Bayer Leverkusen ne daje gol na utakmici",
-    7.2,
+    7.3,
     null
    ]
   ]
@@ -13363,7 +13363,7 @@
     "",
     "vise 0.5 & vise 1.5",
     "1. Poluvreme Lech Poznan više od 0.5 golova i Lech",
-    3.4,
+    3.35,
     1.5
    ],
    [
@@ -13377,21 +13377,21 @@
     "",
     "manje 0.5 & vise 1.5",
     "1. Poluvreme Lech Poznan manje od 0.5 golova i Lec",
-    7.7,
+    7.5,
     1.5
    ],
    [
     "",
     "manje 0.5 & manje 1.5",
     "1. Poluvreme Lech Poznan manje od 0.5 golova i Lec",
-    1.87,
+    1.88,
     1.5
    ],
    [
     "",
     "vise 0.5 & vise 2.5",
     "1. Poluvreme Lech Poznan više od 0.5 golova i Lech",
-    7.0,
+    6.8,
     2.5
    ],
    [
@@ -13405,14 +13405,14 @@
     "",
     "manje 0.5 & vise 2.5",
     "1. Poluvreme Lech Poznan manje od 0.5 golova i Lec",
-    23.0,
+    22.0,
     2.5
    ],
    [
     "",
     "manje 0.5 & manje 2.5",
     "1. Poluvreme Lech Poznan manje od 0.5 golova i Lec",
-    1.65,
+    1.66,
     2.5
    ],
    [
@@ -13433,14 +13433,14 @@
     "",
     "manje 1.5 & vise 2.5",
     "1. Poluvreme Lech Poznan manje od 1.5 golova i Lec",
-    9.8,
+    9.5,
     2.5
    ],
    [
     "",
     "manje 1.5 & manje 2.5",
     "1. Poluvreme Lech Poznan manje od 1.5 golova i Lec",
-    1.14,
+    1.15,
     2.5
    ]
   ]
@@ -13473,14 +13473,14 @@
     "",
     "manje 0.5 & manje 1.5",
     "1. Poluvreme Bayer Leverkusen manje od 0.5 golova ",
-    3.5,
+    3.55,
     1.5
    ],
    [
     "",
     "vise 0.5 & vise 2.5",
     "1. Poluvreme Bayer Leverkusen više od 0.5 golova i",
-    2.75,
+    2.72,
     2.5
    ],
    [
@@ -13508,7 +13508,7 @@
     "",
     "vise 1.5 & vise 2.5",
     "1. Poluvreme Bayer Leverkusen više od 1.5 golova i",
-    4.15,
+    4.1,
     2.5
    ],
    [
@@ -13529,7 +13529,7 @@
     "",
     "manje 1.5 & manje 2.5",
     "1. Poluvreme Bayer Leverkusen manje od 1.5 golova ",
-    1.63,
+    1.64,
     2.5
    ]
   ]
@@ -13541,7 +13541,7 @@
     "",
     "vise 0.5 & vise 0.5",
     "Lech Poznan daje više od 0.5 golova u 1. poluvreme",
-    4.15,
+    4.1,
     2.0
    ],
    [
@@ -13555,70 +13555,70 @@
     "",
     "vise 0.5 & vise 1.5",
     "Lech Poznan daje više od 0.5 golova u 1. poluvreme",
-    11.0,
+    10.0,
     2.0
    ],
    [
     "",
     "vise 0.5 & manje 1.5",
     "Lech Poznan daje više od 0.5 golova u 1. poluvreme",
-    2.55,
+    2.52,
     2.0
    ],
    [
     "",
     "vise 0.5 & vise 2.5",
     "Lech Poznan daje više od 0.5 golova u 1. poluvreme",
-    33.0,
+    31.0,
     2.0
    ],
    [
     "",
     "vise 0.5 & manje 2.5",
     "Lech Poznan daje više od 0.5 golova u 1. poluvreme",
-    2.27,
+    2.25,
     2.0
    ],
    [
     "",
     "manje 0.5 & vise 0.5",
     "Lech Poznan daje manje od 0.5 golova u 1. poluvrem",
-    3.0,
+    2.95,
     2.0
    ],
    [
     "",
     "manje 0.5 & manje 0.5",
     "Lech Poznan daje manje od 0.5 golova u 1. poluvrem",
-    3.0,
+    3.1,
     2.0
    ],
    [
     "",
     "manje 0.5 & vise 1.5",
     "Lech Poznan daje manje od 0.5 golova u 1. poluvrem",
-    7.7,
+    7.5,
     2.0
    ],
    [
     "",
     "manje 0.5 & manje 1.5",
     "Lech Poznan daje manje od 0.5 golova u 1. poluvrem",
-    1.87,
+    1.88,
     2.0
    ],
    [
     "",
     "manje 0.5 & vise 2.5",
     "Lech Poznan daje manje od 0.5 golova u 1. poluvrem",
-    23.0,
+    22.0,
     2.0
    ],
    [
     "",
     "manje 0.5 & manje 2.5",
     "Lech Poznan daje manje od 0.5 golova u 1. poluvrem",
-    1.65,
+    1.66,
     2.0
    ]
   ]
@@ -13630,21 +13630,21 @@
     "",
     "vise 0.5 & vise 0.5",
     "Bayer Leverkusen daje više od 0.5 golova u 1. polu",
-    2.12,
+    2.1,
     2.0
    ],
    [
     "",
     "vise 0.5 & manje 0.5",
     "Bayer Leverkusen daje više od 0.5 golova u 1. polu",
-    4.3,
+    4.35,
     2.0
    ],
    [
     "",
     "vise 0.5 & vise 1.5",
     "Bayer Leverkusen daje više od 0.5 golova u 1. polu",
-    4.1,
+    4.0,
     2.0
    ],
    [
@@ -13658,7 +13658,7 @@
     "",
     "vise 0.5 & vise 2.5",
     "Bayer Leverkusen daje više od 0.5 golova u 1. polu",
-    9.0,
+    8.8,
     2.0
    ],
    [
@@ -13672,14 +13672,14 @@
     "",
     "manje 0.5 & vise 0.5",
     "Bayer Leverkusen daje manje od 0.5 golova u 1. pol",
-    3.25,
+    3.3,
     2.0
    ],
    [
     "",
     "manje 0.5 & manje 0.5",
     "Bayer Leverkusen daje manje od 0.5 golova u 1. pol",
-    6.6,
+    6.7,
     2.0
    ],
    [
@@ -13693,7 +13693,7 @@
     "",
     "manje 0.5 & manje 1.5",
     "Bayer Leverkusen daje manje od 0.5 golova u 1. pol",
-    3.45,
+    3.55,
     2.0
    ],
    [
@@ -13707,7 +13707,7 @@
     "",
     "manje 0.5 & manje 2.5",
     "Bayer Leverkusen daje manje od 0.5 golova u 1. pol",
-    2.7,
+    2.72,
     2.0
    ]
   ]
@@ -13719,14 +13719,14 @@
     "0-",
     "x & manje 0.5",
     "nerešeno i Lech Poznan manje od 0.5 gola na utakmi",
-    15.0,
+    16.0,
     0.5
    ],
    [
     "2-",
     "2 & manje 0.5",
     "Bayer Leverkusen pobednik i Lech Poznan manje od 0",
-    3.35,
+    3.4,
     0.5
    ],
    [
@@ -13747,7 +13747,7 @@
     "2+",
     "2 & vise 0.5",
     "Bayer Leverkusen pobednik i Lech Poznan više od 0.",
-    2.75,
+    2.7,
     0.5
    ]
   ]
@@ -13759,42 +13759,42 @@
     "1-",
     "1 & manje 1.5",
     "Lech Poznan pobednik i Lech Poznan manje od 1.5 go",
-    14.0,
+    15.0,
     1.5
    ],
    [
     "0-",
     "x & manje 1.5",
     "nerešeno i Lech Poznan manje od 1.5 gola na utakmi",
-    5.8,
+    5.9,
     1.5
    ],
    [
     "2-",
     "2 & manje 1.5",
     "Bayer Leverkusen pobednik i Lech Poznan manje od 1",
-    1.9,
+    1.92,
     1.5
    ],
    [
     "1+",
     "1 & vise 1.5",
     "Lech Poznan pobednik i Lech Poznan više od 1.5 gol",
-    5.0,
+    4.9,
     1.5
    ],
    [
     "0+",
     "x & vise 1.5",
     "nerešeno i Lech Poznan više od 1.5 gola na utakmic",
-    8.1,
+    7.9,
     1.5
    ],
    [
     "2+",
     "2 & vise 1.5",
     "Bayer Leverkusen pobednik i Lech Poznan više od 1.",
-    7.3,
+    7.1,
     1.5
    ]
   ]
@@ -13813,7 +13813,7 @@
     "0-",
     "x & manje 2.5",
     "nerešeno i Lech Poznan manje od 2.5 gola na utakmi",
-    4.25,
+    4.3,
     2.5
    ],
    [
@@ -13827,21 +13827,21 @@
     "1+",
     "1 & vise 2.5",
     "Lech Poznan pobednik i Lech Poznan više od 2.5 gol",
-    8.1,
+    7.9,
     2.5
    ],
    [
     "0+",
     "x & vise 2.5",
     "nerešeno i Lech Poznan više od 2.5 gola na utakmic",
-    22.0,
+    21.0,
     2.5
    ],
    [
     "2+",
     "2 & vise 2.5",
     "Bayer Leverkusen pobednik i Lech Poznan više od 2.",
-    26.0,
+    24.0,
     2.5
    ]
   ]
@@ -13853,7 +13853,7 @@
     "1-",
     "1 & manje 3.5",
     "Lech Poznan pobednik i Lech Poznan manje od 3.5 go",
-    4.7,
+    4.75,
     3.5
    ],
    [
@@ -13874,7 +13874,7 @@
     "1+",
     "1 & vise 3.5",
     "Lech Poznan pobednik i Lech Poznan više od 3.5 gol",
-    18.0,
+    17.0,
     3.5
    ],
    [
@@ -13914,7 +13914,7 @@
     "2-",
     "2 & manje 4.5",
     "Bayer Leverkusen pobednik i Lech Poznan manje od 4",
-    1.6,
+    1.61,
     4.5
    ],
    [
@@ -13947,21 +13947,21 @@
     "1-",
     "1 & manje 0.5",
     "Lech Poznan pobednik  i Bayer Leverkusen manje od ",
-    8.4,
+    8.5,
     0.5
    ],
    [
     "0-",
     "x & manje 0.5",
     "nerešeno i Bayer Leverkusen manje od 0.5 gola na u",
-    15.0,
+    16.0,
     0.5
    ],
    [
     "1+",
     "1 & vise 0.5",
     "Lech Poznan pobednik  i Bayer Leverkusen više od 0",
-    6.2,
+    6.1,
     0.5
    ],
    [
@@ -13975,7 +13975,7 @@
     "2+",
     "2 & vise 0.5",
     "Bayer Leverkusen pobednik  i Bayer Leverkusen više",
-    1.6,
+    1.61,
     0.5
    ]
   ]
@@ -14354,14 +14354,14 @@
     "/*02-",
     "manje 12.5",
     "Sunderland manje od 12.5 faulova",
-    1.9,
+    1.95,
     12.5
    ],
    [
     "/*02+",
     "vise 12.5",
     "Sunderland više od 12.5 faulova",
-    1.74,
+    1.77,
     12.5
    ]
   ]
@@ -14399,14 +14399,14 @@
     "",
     "1-2",
     "Sunderland 1-2 gola na utakmici",
-    1.92,
+    1.9,
     -2.0
    ],
    [
     "",
     "1-3",
     "Sunderland 1-3 gola na utakmici",
-    1.38,
+    1.37,
     -3.0
    ],
    [
@@ -14458,14 +14458,14 @@
     "13",
     "1-3",
     "Sunderland 1,2 ili 3 gola u svakom poluvremenu",
-    2.12,
+    2.15,
     3.0
    ],
    [
     "23",
     "2-3",
     "Sunderland 2 ili 3 gola u svakom poluvremenu",
-    8.0,
+    8.1,
     3.0
    ]
   ]
@@ -14510,14 +14510,14 @@
     "0",
     "0",
     "Sunderland ne daje gol",
-    7.8,
+    7.7,
     3.0
    ],
    [
     "1",
     "1",
     "Sunderland daje tačno 1 gol",
-    3.9,
+    3.85,
     3.0
    ],
    [
@@ -14531,7 +14531,7 @@
     "3",
     "3+",
     "Sunderland daje 3 ili više golova",
-    2.27,
+    2.3,
     3.0
    ]
   ]
@@ -14543,14 +14543,14 @@
     "1",
     "da",
     "SCU Torreense daje gol na utakmici",
-    1.65,
+    1.66,
     null
    ],
    [
     "2",
     "ne",
     "SCU Torreense ne daje gol na utakmici",
-    2.25,
+    2.22,
     null
    ]
   ]
@@ -14569,7 +14569,7 @@
     "2",
     "ne",
     "Sunderland ne daje gol na utakmici",
-    8.2,
+    8.1,
     null
    ]
   ]
@@ -15515,14 +15515,14 @@
     "",
     "manje 14.5",
     "Dinamo Zagreb manje od 14.5 šuteva,",
-    1.88,
+    1.97,
     14.5
    ],
    [
     "",
     "vise 14.5",
     "Dinamo Zagreb više od 14.5 šuteva",
-    1.82,
+    1.75,
     14.5
    ]
   ]
@@ -15534,14 +15534,14 @@
     "",
     "manje 11.5",
     "Anderlecht manje od 11.5 šuteva",
-    1.74,
+    1.82,
     11.5
    ],
    [
     "",
     "vise 11.5",
     "Anderlecht više od 11.5 šuteva",
-    1.97,
+    1.88,
     11.5
    ]
   ]
@@ -15572,14 +15572,14 @@
     "/*02-",
     "manje 12.5",
     "Anderlecht manje od 12.5 faulova",
-    2.02,
+    2.0,
     12.5
    ],
    [
     "/*02+",
     "vise 12.5",
     "Anderlecht više od 12.5 faulova",
-    1.7,
+    1.66,
     12.5
    ]
   ]
@@ -16648,42 +16648,42 @@
     ".1-",
     "manje 0.5",
     "Bournemouth će imati manje od 0.5 kartona na utakm",
-    3.6,
+    3.7,
     0.5
    ],
    [
     ".1+",
     "vise 0.5",
     "Bournemouth će imati više od 0.5 kartona na utakmi",
-    1.2,
+    1.19,
     0.5
    ],
    [
     ".1-",
     "manje 1.5",
     "Bournemouth će imati manje od 1.5 kartona na utakm",
-    1.67,
+    1.71,
     1.5
    ],
    [
     ".1+",
     "vise 1.5",
     "Bournemouth će imati više od 1.5 kartona na utakmi",
-    2.05,
+    2.0,
     1.5
    ],
    [
     ".1-",
     "manje 2.5",
     "Bournemouth će imati manje od 2.5 kartona na utakm",
-    1.17,
+    1.18,
     2.5
    ],
    [
     ".1+",
     "vise 2.5",
     "Bournemouth će imati više od 2.5 kartona na utakmi",
-    3.9,
+    3.75,
     2.5
    ]
   ]
@@ -16695,42 +16695,42 @@
     ".2-",
     "manje 1.5",
     "Sturm Graz će imati manje od 1.5 kartona na utakmi",
-    3.25,
+    3.2,
     1.5
    ],
    [
     ".2+",
     "vise 1.5",
     "Sturm Graz će imati više od 1.5 kartona na utakmic",
-    1.25,
+    1.26,
     1.5
    ],
    [
     ".2-",
     "manje 2.5",
     "Sturm Graz će imati manje od 2.5 kartona na utakmi",
-    1.87,
+    1.83,
     2.5
    ],
    [
     ".2+",
     "vise 2.5",
     "Sturm Graz će imati više od 2.5 kartona na utakmic",
-    1.83,
+    1.87,
     2.5
    ],
    [
     ".2-",
     "manje 3.5",
     "Sturm Graz će imati manje od 3.5 kartona na utakmi",
-    1.31,
+    1.3,
     3.5
    ],
    [
     ".2+",
     "vise 3.5",
     "Sturm Graz će imati više od 3.5 kartona na utakmic",
-    2.92,
+    3.0,
     3.5
    ]
   ]
@@ -16818,14 +16818,14 @@
     "/*01-",
     "manje 10.5",
     "Bournemouth manje od 10.5 faulova",
-    1.67,
+    1.71,
     10.5
    ],
    [
     "/*01+",
     "vise 10.5",
     "Bournemouth više od 10.5 faulova",
-    1.97,
+    2.02,
     10.5
    ]
   ]
@@ -17986,7 +17986,7 @@
     "*12+",
     "vise 2.5",
     "Celtic će imati više od 2.5 šuteva u okvir gola",
-    1.67,
+    1.66,
     2.5
    ]
   ]
@@ -18055,14 +18055,14 @@
     "/*02-",
     "manje 12.5",
     "Celtic manje od 12.5 faulova",
-    1.97,
+    2.02,
     12.5
    ],
    [
     "/*02+",
     "vise 12.5",
     "Celtic više od 12.5 faulova",
-    1.68,
+    1.72,
     12.5
    ]
   ]
@@ -18617,14 +18617,14 @@
     "*12-",
     "manje 4.5",
     "Besiktas će imati manje od 4.5 šuteva u okvir gola",
-    1.61,
+    1.67,
     4.5
    ],
    [
     "*12+",
     "vise 4.5",
     "Besiktas će imati više od 4.5 šuteva u okvir gola",
-    2.15,
+    2.05,
     4.5
    ]
   ]
@@ -18693,14 +18693,14 @@
     "/*02-",
     "manje 10.5",
     "Besiktas manje od 10.5 faulova",
-    1.7,
+    1.74,
     10.5
    ],
    [
     "/*02+",
     "vise 10.5",
     "Besiktas više od 10.5 faulova",
-    1.95,
+    1.97,
     10.5
    ]
   ]
@@ -18712,7 +18712,7 @@
     "",
     "1-2",
     "Hoffenheim 1-2 gola na utakmici",
-    1.71,
+    1.72,
     -2.0
    ],
    [
@@ -18745,14 +18745,14 @@
     "",
     "1-3",
     "Besiktas 1-3 gola na utakmici",
-    1.35,
+    1.34,
     -3.0
    ],
    [
     "",
     "2-3",
     "Besiktas 2-3 gola na utakmici",
-    2.5,
+    2.45,
     -3.0
    ]
   ]
@@ -18771,14 +18771,14 @@
     "13",
     "1-3",
     "Hoffenheim 1,2 ili 3 gola u svakom poluvremenu",
-    2.52,
+    2.5,
     3.0
    ],
    [
     "23",
     "2-3",
     "Hoffenheim 2 ili 3 gola u svakom poluvremenu",
-    12.0,
+    11.0,
     3.0
    ]
   ]
@@ -18790,14 +18790,14 @@
     "12",
     "1-2",
     "Besiktas 1 ili 2 gola u svakom poluvremenu",
-    3.75,
+    3.7,
     2.0
    ],
    [
     "13",
     "1-3",
     "Besiktas 1,2 ili 3 gola u svakom poluvremenu",
-    3.35,
+    3.3,
     3.0
    ],
    [
@@ -18816,14 +18816,14 @@
     "0",
     "0",
     "Hoffenheim ne daje gol",
-    5.7,
+    5.9,
     3.0
    ],
    [
     "1",
     "1",
     "Hoffenheim daje tačno 1 gol",
-    3.2,
+    3.25,
     3.0
    ],
    [
@@ -18837,7 +18837,7 @@
     "3",
     "3+",
     "Hoffenheim daje 3 ili više golova",
-    3.05,
+    2.95,
     3.0
    ]
   ]
@@ -18849,14 +18849,14 @@
     "0",
     "0",
     "Besiktas ne daje gol",
-    3.9,
+    4.0,
     3.0
    ],
    [
     "1",
     "1",
     "Besiktas daje tačno 1 gol",
-    2.7,
+    2.72,
     3.0
    ],
    [
@@ -18870,7 +18870,7 @@
     "3",
     "3+",
     "Besiktas daje 3 ili više golova",
-    4.65,
+    4.55,
     3.0
    ]
   ]
@@ -18882,14 +18882,14 @@
     "1",
     "da",
     "Hoffenheim daje gol na utakmici",
-    1.14,
+    1.13,
     null
    ],
    [
     "2",
     "ne",
     "Hoffenheim ne daje gol na utakmici",
-    5.9,
+    6.1,
     null
    ]
   ]
@@ -18901,14 +18901,14 @@
     "1",
     "da",
     "Besiktas daje gol na utakmici",
-    1.25,
+    1.24,
     null
    ],
    [
     "2",
     "ne",
     "Besiktas ne daje gol na utakmici",
-    4.0,
+    4.1,
     null
    ]
   ]
@@ -18920,14 +18920,14 @@
     "",
     "vise 0.5 & vise 1.5",
     "1. Poluvreme Hoffenheim više od 0.5 golova i Hoffe",
-    2.05,
+    2.0,
     1.5
    ],
    [
     "",
     "vise 0.5 & manje 1.5",
     "1. Poluvreme Hoffenheim više od 0.5 golova i Hoffe",
-    6.0,
+    6.1,
     1.5
    ],
    [
@@ -18941,21 +18941,21 @@
     "",
     "manje 0.5 & manje 1.5",
     "1. Poluvreme Hoffenheim manje od 0.5 golova i Hoff",
-    2.95,
+    3.0,
     1.5
    ],
    [
     "",
     "vise 0.5 & vise 2.5",
     "1. Poluvreme Hoffenheim više od 0.5 golova i Hoffe",
-    3.3,
+    3.25,
     2.5
    ],
    [
     "",
     "vise 0.5 & manje 2.5",
     "1. Poluvreme Hoffenheim više od 0.5 golova i Hoffe",
-    2.8,
+    2.82,
     2.5
    ],
    [
@@ -18969,14 +18969,14 @@
     "",
     "manje 0.5 & manje 2.5",
     "1. Poluvreme Hoffenheim manje od 0.5 golova i Hoff",
-    2.37,
+    2.4,
     2.5
    ],
    [
     "",
     "vise 1.5 & vise 2.5",
     "1. Poluvreme Hoffenheim više od 1.5 golova i Hoffe",
-    5.1,
+    5.0,
     2.5
    ],
    [
@@ -18990,14 +18990,14 @@
     "",
     "manje 1.5 & vise 2.5",
     "1. Poluvreme Hoffenheim manje od 1.5 golova i Hoff",
-    5.4,
+    5.3,
     2.5
    ],
    [
     "",
     "manje 1.5 & manje 2.5",
     "1. Poluvreme Hoffenheim manje od 1.5 golova i Hoff",
-    1.46,
+    1.48,
     2.5
    ]
   ]
@@ -19009,14 +19009,14 @@
     "",
     "vise 0.5 & vise 1.5",
     "1. Poluvreme Besiktas više od 0.5 golova i Besikta",
-    2.72,
+    2.67,
     1.5
    ],
    [
     "",
     "vise 0.5 & manje 1.5",
     "1. Poluvreme Besiktas više od 0.5 golova i Besikta",
-    5.25,
+    5.3,
     1.5
    ],
    [
@@ -19030,14 +19030,14 @@
     "",
     "manje 0.5 & manje 1.5",
     "1. Poluvreme Besiktas manje od 0.5 golova i Besikt",
-    2.2,
+    2.22,
     1.5
    ],
    [
     "",
     "vise 0.5 & vise 2.5",
     "1. Poluvreme Besiktas više od 0.5 golova i Besikta",
-    5.1,
+    5.0,
     2.5
    ],
    [
@@ -19058,14 +19058,14 @@
     "",
     "manje 0.5 & manje 2.5",
     "1. Poluvreme Besiktas manje od 0.5 golova i Besikt",
-    1.87,
+    1.9,
     2.5
    ],
    [
     "",
     "vise 1.5 & vise 2.5",
     "1. Poluvreme Besiktas više od 1.5 golova i Besikta",
-    7.8,
+    7.6,
     2.5
    ],
    [
@@ -19079,14 +19079,14 @@
     "",
     "manje 1.5 & vise 2.5",
     "1. Poluvreme Besiktas manje od 1.5 golova i Besikt",
-    7.4,
+    7.3,
     2.5
    ],
    [
     "",
     "manje 1.5 & manje 2.5",
     "1. Poluvreme Besiktas manje od 1.5 golova i Besikt",
-    1.24,
+    1.25,
     2.5
    ]
   ]
@@ -19098,7 +19098,7 @@
     "",
     "vise 0.5 & vise 0.5",
     "Hoffenheim daje više od 0.5 golova u 1. poluvremen",
-    2.4,
+    2.37,
     2.0
    ],
    [
@@ -19112,7 +19112,7 @@
     "",
     "vise 0.5 & vise 1.5",
     "Hoffenheim daje više od 0.5 golova u 1. poluvremen",
-    4.9,
+    4.8,
     2.0
    ],
    [
@@ -19126,28 +19126,28 @@
     "",
     "vise 0.5 & vise 2.5",
     "Hoffenheim daje više od 0.5 golova u 1. poluvremen",
-    12.0,
+    11.0,
     2.0
    ],
    [
     "",
     "vise 0.5 & manje 2.5",
     "Hoffenheim daje više od 0.5 golova u 1. poluvremen",
-    1.77,
+    1.76,
     2.0
    ],
    [
     "",
     "manje 0.5 & vise 0.5",
     "Hoffenheim daje manje od 0.5 golova u 1. poluvreme",
-    3.1,
+    3.15,
     2.0
    ],
    [
     "",
     "manje 0.5 & manje 0.5",
     "Hoffenheim daje manje od 0.5 golova u 1. poluvreme",
-    5.5,
+    5.65,
     2.0
    ],
    [
@@ -19161,7 +19161,7 @@
     "",
     "manje 0.5 & manje 1.5",
     "Hoffenheim daje manje od 0.5 golova u 1. poluvreme",
-    2.95,
+    3.0,
     2.0
    ],
    [
@@ -19175,7 +19175,7 @@
     "",
     "manje 0.5 & manje 2.5",
     "Hoffenheim daje manje od 0.5 golova u 1. poluvreme",
-    2.37,
+    2.4,
     2.0
    ]
   ]
@@ -19187,7 +19187,7 @@
     "",
     "vise 0.5 & vise 0.5",
     "Besiktas daje više od 0.5 golova u 1. poluvremenu ",
-    3.3,
+    3.2,
     2.0
    ],
    [
@@ -19201,7 +19201,7 @@
     "",
     "vise 0.5 & vise 1.5",
     "Besiktas daje više od 0.5 golova u 1. poluvremenu ",
-    7.5,
+    7.3,
     2.0
    ],
    [
@@ -19215,14 +19215,14 @@
     "",
     "vise 0.5 & vise 2.5",
     "Besiktas daje više od 0.5 golova u 1. poluvremenu ",
-    21.0,
+    20.0,
     2.0
    ],
    [
     "",
     "vise 0.5 & manje 2.5",
     "Besiktas daje više od 0.5 golova u 1. poluvremenu ",
-    2.02,
+    2.0,
     2.0
    ],
    [
@@ -19236,7 +19236,7 @@
     "",
     "manje 0.5 & manje 0.5",
     "Besiktas daje manje od 0.5 golova u 1. poluvremenu",
-    3.8,
+    3.85,
     2.0
    ],
    [
@@ -19250,7 +19250,7 @@
     "",
     "manje 0.5 & manje 1.5",
     "Besiktas daje manje od 0.5 golova u 1. poluvremenu",
-    2.2,
+    2.22,
     2.0
    ],
    [
@@ -19264,7 +19264,7 @@
     "",
     "manje 0.5 & manje 2.5",
     "Besiktas daje manje od 0.5 golova u 1. poluvremenu",
-    1.87,
+    1.9,
     2.0
    ]
   ]
@@ -19283,7 +19283,7 @@
     "2-",
     "2 & manje 0.5",
     "Besiktas pobednik i Hoffenheim manje od 0.5 gola n",
-    6.7,
+    6.9,
     0.5
    ],
    [
@@ -19297,7 +19297,7 @@
     "0+",
     "x & vise 0.5",
     "nerešeno i Hoffenheim više od 0.5 gola na utakmici",
-    4.15,
+    4.1,
     0.5
    ],
    [
@@ -19323,28 +19323,28 @@
     "0-",
     "x & manje 1.5",
     "nerešeno i Hoffenheim manje od 1.5 gola na utakmic",
-    5.7,
+    5.75,
     1.5
    ],
    [
     "2-",
     "2 & manje 1.5",
     "Besiktas pobednik i Hoffenheim manje od 1.5 gola n",
-    3.75,
+    3.8,
     1.5
    ],
    [
     "1+",
     "1 & vise 1.5",
     "Hoffenheim pobednik i Hoffenheim više od 1.5 gola ",
-    2.22,
+    2.2,
     1.5
    ],
    [
     "0+",
     "x & vise 1.5",
     "nerešeno i Hoffenheim više od 1.5 gola na utakmici",
-    7.2,
+    7.0,
     1.5
    ],
    [
@@ -19363,7 +19363,7 @@
     "1-",
     "1 & manje 2.5",
     "Hoffenheim pobednik i Hoffenheim manje od 2.5 gola",
-    3.9,
+    4.0,
     2.5
    ],
    [
@@ -19377,28 +19377,28 @@
     "2-",
     "2 & manje 2.5",
     "Besiktas pobednik i Hoffenheim manje od 2.5 gola n",
-    3.15,
+    3.2,
     2.5
    ],
    [
     "1+",
     "1 & vise 2.5",
     "Hoffenheim pobednik i Hoffenheim više od 2.5 gola ",
-    3.3,
+    3.25,
     2.5
    ],
    [
     "0+",
     "x & vise 2.5",
     "nerešeno i Hoffenheim više od 2.5 gola na utakmici",
-    19.0,
+    18.0,
     2.5
    ],
    [
     "2+",
     "2 & vise 2.5",
     "Besiktas pobednik i Hoffenheim više od 2.5 gola na",
-    33.0,
+    32.0,
     2.5
    ]
   ]
@@ -19410,28 +19410,28 @@
     "1-",
     "1 & manje 3.5",
     "Hoffenheim pobednik i Hoffenheim manje od 3.5 gola",
-    2.55,
+    2.57,
     3.5
    ],
    [
     "0-",
     "x & manje 3.5",
     "nerešeno i Hoffenheim manje od 3.5 gola na utakmic",
-    3.7,
+    3.65,
     3.5
    ],
    [
     "2-",
     "2 & manje 3.5",
     "Besiktas pobednik i Hoffenheim manje od 3.5 gola n",
-    3.05,
+    3.1,
     3.5
    ],
    [
     "1+",
     "1 & vise 3.5",
     "Hoffenheim pobednik i Hoffenheim više od 3.5 gola ",
-    6.2,
+    6.0,
     3.5
    ],
    [
@@ -19464,7 +19464,7 @@
     "0-",
     "x & manje 4.5",
     "nerešeno i Hoffenheim manje od 4.5 gola na utakmic",
-    3.65,
+    3.6,
     4.5
    ],
    [
@@ -19504,7 +19504,7 @@
     "1-",
     "1 & manje 0.5",
     "Hoffenheim pobednik  i Besiktas manje od 0.5 gola ",
-    4.3,
+    4.4,
     0.5
    ],
    [
@@ -19518,14 +19518,14 @@
     "1+",
     "1 & vise 0.5",
     "Hoffenheim pobednik  i Besiktas više od 0.5 gola n",
-    3.1,
+    3.05,
     0.5
    ],
    [
     "0+",
     "x & vise 0.5",
     "nerešeno i Besiktas više od 0.5 gola na utakmici",
-    4.15,
+    4.1,
     0.5
    ],
    [
@@ -19544,14 +19544,14 @@
     "1-",
     "1 & manje 1.5",
     "Hoffenheim pobednik  i Besiktas manje od 1.5 gola ",
-    2.37,
+    2.4,
     1.5
    ],
    [
     "0-",
     "x & manje 1.5",
     "nerešeno i Besiktas manje od 1.5 gola na utakmici",
-    5.7,
+    5.75,
     1.5
    ],
    [
@@ -19565,14 +19565,14 @@
     "1+",
     "1 & vise 1.5",
     "Hoffenheim pobednik  i Besiktas više od 1.5 gola n",
-    7.5,
+    7.3,
     1.5
    ],
    [
     "0+",
     "x & vise 1.5",
     "nerešeno i Besiktas više od 1.5 gola na utakmici",
-    7.2,
+    7.0,
     1.5
    ],
    [
@@ -19605,28 +19605,28 @@
     "2-",
     "2 & manje 2.5",
     "Besiktas pobednik  i Besiktas manje od 2.5 gola na",
-    5.25,
+    5.4,
     2.5
    ],
    [
     "1+",
     "1 & vise 2.5",
     "Hoffenheim pobednik  i Besiktas više od 2.5 gola n",
-    25.0,
+    23.0,
     2.5
    ],
    [
     "0+",
     "x & vise 2.5",
     "nerešeno i Besiktas više od 2.5 gola na utakmici",
-    19.0,
+    18.0,
     2.5
    ],
    [
     "2+",
     "2 & vise 2.5",
     "Besiktas pobednik  i Besiktas više od 2.5 gola na ",
-    5.6,
+    5.5,
     2.5
    ]
   ]
@@ -19986,14 +19986,14 @@
     "/*01-",
     "manje 10.5",
     "Celta Vigo manje od 10.5 faulova",
-    1.8,
+    1.83,
     10.5
    ],
    [
     "/*01+",
     "vise 10.5",
     "Celta Vigo više od 10.5 faulova",
-    1.83,
+    1.87,
     10.5
    ]
   ]
@@ -20161,7 +20161,7 @@
     "0",
     "0",
     "Juventus ne daje gol",
-    3.75,
+    3.65,
     3.0
    ],
    [
@@ -20182,7 +20182,7 @@
     "3",
     "3+",
     "Juventus daje 3 ili više golova",
-    5.0,
+    5.1,
     3.0
    ]
   ]
@@ -20194,14 +20194,14 @@
     "1",
     "da",
     "Celta Vigo daje gol na utakmici",
-    1.46,
+    1.47,
     null
    ],
    [
     "2",
     "ne",
     "Celta Vigo ne daje gol na utakmici",
-    2.75,
+    2.7,
     null
    ]
   ]
@@ -20213,14 +20213,14 @@
     "1",
     "da",
     "Juventus daje gol na utakmici",
-    1.27,
+    1.28,
     null
    ],
    [
     "2",
     "ne",
     "Juventus ne daje gol na utakmici",
-    3.8,
+    3.75,
     null
    ]
   ]
@@ -20588,14 +20588,14 @@
     "0-",
     "x & manje 0.5",
     "nerešeno i Celta Vigo manje od 0.5 gola na utakmic",
-    7.9,
+    7.8,
     0.5
    ],
    [
     "2-",
     "2 & manje 0.5",
     "Juventus pobednik i Celta Vigo manje od 0.5 gola n",
-    3.45,
+    3.4,
     0.5
    ],
    [
@@ -20609,14 +20609,14 @@
     "0+",
     "x & vise 0.5",
     "nerešeno i Celta Vigo više od 0.5 gola na utakmici",
-    4.2,
+    4.25,
     0.5
    ],
    [
     "2+",
     "2 & vise 0.5",
     "Juventus pobednik i Celta Vigo više od 0.5 gola na",
-    4.35,
+    4.4,
     0.5
    ]
   ]
@@ -20994,42 +20994,42 @@
     ".1-",
     "manje 0.5",
     "Rennes će imati manje od 0.5 kartona na utakmici (",
-    4.65,
+    3.75,
     0.5
    ],
    [
     ".1+",
     "vise 0.5",
     "Rennes će imati više od 0.5 kartona na utakmici (u",
-    1.12,
+    1.18,
     0.5
    ],
    [
     ".1-",
     "manje 1.5",
     "Rennes će imati manje od 1.5 kartona na utakmici (",
-    2.02,
+    1.71,
     1.5
    ],
    [
     ".1+",
     "vise 1.5",
     "Rennes će imati više od 1.5 kartona na utakmici (u",
-    1.7,
+    2.0,
     1.5
    ],
    [
     ".1-",
     "manje 2.5",
     "Rennes će imati manje od 2.5 kartona na utakmici (",
-    1.3,
+    1.18,
     2.5
    ],
    [
     ".1+",
     "vise 2.5",
     "Rennes će imati više od 2.5 kartona na utakmici (u",
-    3.0,
+    3.8,
     2.5
    ]
   ]
@@ -21041,42 +21041,42 @@
     ".2-",
     "manje 1.5",
     "OFI Crete će imati manje od 1.5 kartona na utakmic",
-    3.8,
+    3.2,
     1.5
    ],
    [
     ".2+",
     "vise 1.5",
     "OFI Crete će imati više od 1.5 kartona na utakmici",
-    1.18,
+    1.26,
     1.5
    ],
    [
     ".2-",
     "manje 2.5",
     "OFI Crete će imati manje od 2.5 kartona na utakmic",
-    2.1,
+    1.83,
     2.5
    ],
    [
     ".2+",
     "vise 2.5",
     "OFI Crete će imati više od 2.5 kartona na utakmici",
-    1.64,
+    1.88,
     2.5
    ],
    [
     ".2-",
     "manje 3.5",
     "OFI Crete će imati manje od 3.5 kartona na utakmic",
-    1.42,
+    1.29,
     3.5
    ],
    [
     ".2+",
     "vise 3.5",
     "OFI Crete će imati više od 3.5 kartona na utakmici",
-    2.55,
+    3.0,
     3.5
    ]
   ]
@@ -21164,14 +21164,14 @@
     "/*01-",
     "manje 11.5",
     "Rennes manje od 11.5 faulova",
-    1.88,
+    1.85,
     11.5
    ],
    [
     "/*01+",
     "vise 11.5",
     "Rennes više od 11.5 faulova",
-    1.83,
+    1.8,
     11.5
    ]
   ]
@@ -21183,14 +21183,14 @@
     "/*02-",
     "manje 12.5",
     "OFI Crete manje od 12.5 faulova",
-    1.92,
+    1.97,
     12.5
    ],
    [
     "/*02+",
     "vise 12.5",
     "OFI Crete više od 12.5 faulova",
-    1.72,
+    1.75,
     12.5
    ]
   ]
@@ -21202,14 +21202,14 @@
     "",
     "1-2",
     "Rennes 1-2 gola na utakmici",
-    2.1,
+    2.12,
     -2.0
    ],
    [
     "",
     "1-3",
     "Rennes  1-3 gola na utakmici",
-    1.44,
+    1.45,
     -3.0
    ],
    [
@@ -21228,21 +21228,21 @@
     "",
     "1-2",
     "OFI Crete 1-2 gola na utakmici",
-    1.97,
+    1.95,
     -2.0
    ],
    [
     "",
     "1-3",
     "OFI Crete 1-3 gola na utakmici",
-    1.85,
+    1.83,
     -3.0
    ],
    [
     "",
     "2-3",
     "OFI Crete 2-3 gola na utakmici",
-    5.3,
+    5.2,
     -3.0
    ]
   ]
@@ -21268,7 +21268,7 @@
     "23",
     "2-3",
     "Rennes 2 ili 3 gola u svakom poluvremenu",
-    6.8,
+    6.6,
     3.0
    ]
   ]
@@ -21280,21 +21280,21 @@
     "12",
     "1-2",
     "OFI Crete 1 ili 2 gola u svakom poluvremenu",
-    8.0,
+    7.8,
     2.0
    ],
    [
     "13",
     "1-3",
     "OFI Crete 1,2 ili 3 gola u svakom poluvremenu",
-    7.8,
+    7.6,
     3.0
    ],
    [
     "23",
     "2-3",
     "OFI Crete 2 ili 3 gola u svakom poluvremenu",
-    85.0,
+    80.0,
     3.0
    ]
   ]
@@ -21306,14 +21306,14 @@
     "0",
     "0",
     "Rennes ne daje gol",
-    9.5,
+    9.7,
     3.0
    ],
    [
     "1",
     "1",
     "Rennes daje tačno 1 gol",
-    4.45,
+    4.55,
     3.0
    ],
    [
@@ -21327,7 +21327,7 @@
     "3",
     "3+",
     "Rennes daje 3 ili više golova",
-    1.97,
+    1.95,
     3.0
    ]
   ]
@@ -21339,7 +21339,7 @@
     "0",
     "0",
     "OFI Crete ne daje gol",
-    1.95,
+    1.97,
     3.0
    ],
    [
@@ -21353,14 +21353,14 @@
     "2",
     "2",
     "OFI Crete daje tačno 2 gola",
-    6.3,
+    6.2,
     3.0
    ],
    [
     "3",
     "3+",
     "OFI Crete daje 3 ili više golova",
-    17.0,
+    16.0,
     3.0
    ]
   ]
@@ -21372,14 +21372,14 @@
     "1",
     "da",
     "Rennes daje gol na utakmici",
-    1.06,
+    1.05,
     null
    ],
    [
     "2",
     "ne",
     "Rennes ne daje gol na utakmici",
-    10.0,
+    11.0,
     null
    ]
   ]
@@ -21391,14 +21391,14 @@
     "1",
     "da",
     "OFI Crete daje gol na utakmici",
-    1.85,
+    1.83,
     null
    ],
    [
     "2",
     "ne",
     "OFI Crete ne daje gol na utakmici",
-    1.97,
+    2.0,
     null
    ]
   ]
@@ -21410,14 +21410,14 @@
     "",
     "vise 0.5 & vise 1.5",
     "1. Poluvreme Rennes više od 0.5 golova i Rennes vi",
-    1.54,
+    1.53,
     1.5
    ],
    [
     "",
     "vise 0.5 & manje 1.5",
     "1. Poluvreme Rennes više od 0.5 golova i Rennes ma",
-    7.9,
+    8.0,
     1.5
    ],
    [
@@ -21431,21 +21431,21 @@
     "",
     "manje 0.5 & manje 1.5",
     "1. Poluvreme Rennes manje od 0.5 golova i Rennes m",
-    4.65,
+    4.75,
     1.5
    ],
    [
     "",
     "vise 0.5 & vise 2.5",
     "1. Poluvreme Rennes više od 0.5 golova i Rennes vi",
-    2.12,
+    2.07,
     2.5
    ],
    [
     "",
     "vise 0.5 & manje 2.5",
     "1. Poluvreme Rennes više od 0.5 golova i Rennes ma",
-    3.3,
+    3.35,
     2.5
    ],
    [
@@ -21459,14 +21459,14 @@
     "",
     "manje 0.5 & manje 2.5",
     "1. Poluvreme Rennes manje od 0.5 golova i Rennes m",
-    3.45,
+    3.5,
     2.5
    ],
    [
     "",
     "vise 1.5 & vise 2.5",
     "1. Poluvreme Rennes više od 1.5 golova i Rennes vi",
-    3.1,
+    3.05,
     2.5
    ],
    [
@@ -21480,14 +21480,14 @@
     "",
     "manje 1.5 & vise 2.5",
     "1. Poluvreme Rennes manje od 1.5 golova i Rennes v",
-    4.1,
+    4.0,
     2.5
    ],
    [
     "",
     "manje 1.5 & manje 2.5",
     "1. Poluvreme Rennes manje od 1.5 golova i Rennes m",
-    2.0,
+    2.02,
     2.5
    ]
   ]
@@ -21499,14 +21499,14 @@
     "",
     "vise 0.5 & vise 1.5",
     "1. Poluvreme OFI Crete više od 0.5 golova i OFI Cr",
-    6.4,
+    6.2,
     1.5
    ],
    [
     "",
     "vise 0.5 & manje 1.5",
     "1. Poluvreme OFI Crete više od 0.5 golova i OFI Cr",
-    5.15,
+    5.1,
     1.5
    ],
    [
@@ -21520,21 +21520,21 @@
     "",
     "manje 0.5 & manje 1.5",
     "1. Poluvreme OFI Crete manje od 0.5 golova i OFI C",
-    1.39,
+    1.4,
     1.5
    ],
    [
     "",
     "vise 0.5 & vise 2.5",
     "1. Poluvreme OFI Crete više od 0.5 golova i OFI Cr",
-    18.0,
+    17.0,
     2.5
    ],
    [
     "",
     "vise 0.5 & manje 2.5",
     "1. Poluvreme OFI Crete više od 0.5 golova i OFI Cr",
-    3.55,
+    3.5,
     2.5
    ],
    [
@@ -21548,28 +21548,28 @@
     "",
     "manje 0.5 & manje 2.5",
     "1. Poluvreme OFI Crete manje od 0.5 golova i OFI C",
-    1.31,
+    1.32,
     2.5
    ],
    [
     "",
     "vise 1.5 & vise 2.5",
     "1. Poluvreme OFI Crete više od 1.5 golova i OFI Cr",
-    28.0,
+    26.0,
     2.5
    ],
    [
     "",
     "vise 1.5 & manje 2.5",
     "1. Poluvreme OFI Crete više od 1.5 golova i OFI Cr",
-    20.0,
+    19.0,
     2.5
    ],
    [
     "",
     "manje 1.5 & vise 2.5",
     "1. Poluvreme OFI Crete manje od 1.5 golova i OFI C",
-    22.0,
+    21.0,
     2.5
    ],
    [
@@ -21588,21 +21588,21 @@
     "",
     "vise 0.5 & vise 0.5",
     "Rennes daje više od 0.5 golova u 1. poluvremenu i ",
-    1.76,
+    1.74,
     2.0
    ],
    [
     "",
     "vise 0.5 & manje 0.5",
     "Rennes daje više od 0.5 golova u 1. poluvremenu i ",
-    4.8,
+    4.85,
     2.0
    ],
    [
     "",
     "vise 0.5 & vise 1.5",
     "Rennes daje više od 0.5 golova u 1. poluvremenu i ",
-    3.05,
+    3.0,
     2.0
    ],
    [
@@ -21616,7 +21616,7 @@
     "",
     "vise 0.5 & vise 2.5",
     "Rennes daje više od 0.5 golova u 1. poluvremenu i ",
-    6.3,
+    6.1,
     2.0
    ],
    [
@@ -21630,14 +21630,14 @@
     "",
     "manje 0.5 & vise 0.5",
     "Rennes daje manje od 0.5 golova u 1. poluvremenu i",
-    3.65,
+    3.7,
     2.0
    ],
    [
     "",
     "manje 0.5 & manje 0.5",
     "Rennes daje manje od 0.5 golova u 1. poluvremenu i",
-    9.1,
+    9.4,
     2.0
    ],
    [
@@ -21651,7 +21651,7 @@
     "",
     "manje 0.5 & manje 1.5",
     "Rennes daje manje od 0.5 golova u 1. poluvremenu i",
-    4.65,
+    4.75,
     2.0
    ],
    [
@@ -21665,7 +21665,7 @@
     "",
     "manje 0.5 & manje 2.5",
     "Rennes daje manje od 0.5 golova u 1. poluvremenu i",
-    3.45,
+    3.5,
     2.0
    ]
   ]
@@ -21677,56 +21677,56 @@
     "",
     "vise 0.5 & vise 0.5",
     "OFI Crete daje više od 0.5 golova u 1. poluvremenu",
-    7.8,
+    7.6,
     2.0
    ],
    [
     "",
     "vise 0.5 & manje 0.5",
     "OFI Crete daje više od 0.5 golova u 1. poluvremenu",
-    4.5,
+    4.45,
     2.0
    ],
    [
     "",
     "vise 0.5 & vise 1.5",
     "OFI Crete daje više od 0.5 golova u 1. poluvremenu",
-    26.0,
+    25.0,
     2.0
    ],
    [
     "",
     "vise 0.5 & manje 1.5",
     "OFI Crete daje više od 0.5 golova u 1. poluvremenu",
-    3.4,
+    3.35,
     2.0
    ],
    [
     "",
     "vise 0.5 & vise 2.5",
     "OFI Crete daje više od 0.5 golova u 1. poluvremenu",
-    85.0,
+    80.0,
     2.0
    ],
    [
     "",
     "vise 0.5 & manje 2.5",
     "OFI Crete daje više od 0.5 golova u 1. poluvremenu",
-    3.25,
+    3.2,
     2.0
    ],
    [
     "",
     "manje 0.5 & vise 0.5",
     "OFI Crete daje manje od 0.5 golova u 1. poluvremen",
-    3.45,
+    3.4,
     2.0
    ],
    [
     "",
     "manje 0.5 & manje 0.5",
     "OFI Crete daje manje od 0.5 golova u 1. poluvremen",
-    1.92,
+    1.95,
     2.0
    ],
    [
@@ -21740,7 +21740,7 @@
     "",
     "manje 0.5 & manje 1.5",
     "OFI Crete daje manje od 0.5 golova u 1. poluvremen",
-    1.39,
+    1.4,
     2.0
    ],
    [
@@ -21754,7 +21754,7 @@
     "",
     "manje 0.5 & manje 2.5",
     "OFI Crete daje manje od 0.5 golova u 1. poluvremen",
-    1.31,
+    1.32,
     2.0
    ]
   ]
@@ -21766,7 +21766,7 @@
     "0-",
     "x & manje 0.5",
     "nerešeno i Rennes manje od 0.5 gola na utakmici",
-    15.0,
+    16.0,
     0.5
    ],
    [
@@ -21794,7 +21794,7 @@
     "2+",
     "2 & vise 0.5",
     "OFI Crete pobednik i Rennes više od 0.5 gola na ut",
-    14.0,
+    13.0,
     0.5
    ]
   ]
@@ -21806,14 +21806,14 @@
     "1-",
     "1 & manje 1.5",
     "Rennes pobednik i Rennes manje od 1.5 gola na utak",
-    7.5,
+    7.6,
     1.5
    ],
    [
     "0-",
     "x & manje 1.5",
     "nerešeno i Rennes manje od 1.5 gola na utakmici",
-    6.9,
+    7.1,
     1.5
    ],
    [
@@ -21827,7 +21827,7 @@
     "1+",
     "1 & vise 1.5",
     "Rennes pobednik i Rennes više od 1.5 gola na utakm",
-    1.39,
+    1.38,
     1.5
    ],
    [
@@ -21841,7 +21841,7 @@
     "2+",
     "2 & vise 1.5",
     "OFI Crete pobednik i Rennes više od 1.5 gola na ut",
-    36.0,
+    35.0,
     1.5
    ]
   ]
@@ -21853,14 +21853,14 @@
     "1-",
     "1 & manje 2.5",
     "Rennes pobednik i Rennes manje od 2.5 gola na utak",
-    2.9,
+    2.95,
     2.5
    ],
    [
     "0-",
     "x & manje 2.5",
     "nerešeno i Rennes manje od 2.5 gola na utakmici",
-    5.65,
+    5.75,
     2.5
    ],
    [
@@ -21874,7 +21874,7 @@
     "1+",
     "1 & vise 2.5",
     "Rennes pobednik i Rennes više od 2.5 gola na utakm",
-    1.97,
+    1.95,
     2.5
    ],
    [
@@ -21900,14 +21900,14 @@
     "1-",
     "1 & manje 3.5",
     "Rennes pobednik i Rennes manje od 3.5 gola na utak",
-    1.8,
+    1.82,
     3.5
    ],
    [
     "0-",
     "x & manje 3.5",
     "nerešeno i Rennes manje od 3.5 gola na utakmici",
-    5.45,
+    5.55,
     3.5
    ],
    [
@@ -21921,7 +21921,7 @@
     "1+",
     "1 & vise 3.5",
     "Rennes pobednik i Rennes više od 3.5 gola na utakm",
-    3.35,
+    3.25,
     3.5
    ],
    [
@@ -21947,14 +21947,14 @@
     "1-",
     "1 & manje 4.5",
     "Rennes pobednik i Rennes manje od 4.5 gola na utak",
-    1.44,
+    1.45,
     4.5
    ],
    [
     "0-",
     "x & manje 4.5",
     "nerešeno i Rennes manje od 4.5 gola na utakmici",
-    5.45,
+    5.5,
     4.5
    ],
    [
@@ -21968,7 +21968,7 @@
     "1+",
     "1 & vise 4.5",
     "Rennes pobednik i Rennes više od 4.5 gola na utakm",
-    6.2,
+    6.1,
     4.5
    ],
    [
@@ -21987,21 +21987,21 @@
     "1-",
     "1 & manje 0.5",
     "Rennes pobednik  i OFI Crete manje od 0.5 gola na ",
-    2.05,
+    2.07,
     0.5
    ],
    [
     "0-",
     "x & manje 0.5",
     "nerešeno i OFI Crete manje od 0.5 gola na utakmici",
-    15.0,
+    16.0,
     0.5
    ],
    [
     "1+",
     "1 & vise 0.5",
     "Rennes pobednik  i OFI Crete više od 0.5 gola na u",
-    2.72,
+    2.7,
     0.5
    ],
    [
@@ -22027,14 +22027,14 @@
     "1-",
     "1 & manje 1.5",
     "Rennes pobednik  i OFI Crete manje od 1.5 gola na ",
-    1.34,
+    1.35,
     1.5
    ],
    [
     "0-",
     "x & manje 1.5",
     "nerešeno i OFI Crete manje od 1.5 gola na utakmici",
-    6.9,
+    7.1,
     1.5
    ],
    [
@@ -22048,7 +22048,7 @@
     "1+",
     "1 & vise 1.5",
     "Rennes pobednik  i OFI Crete više od 1.5 gola na u",
-    9.2,
+    8.9,
     1.5
    ],
    [

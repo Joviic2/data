@@ -1,6 +1,6 @@
 {
  "1. poluvreme - ukupno golova": {
-  "mecova": 14,
+  "mecova": 15,
   "primer": [
    [
     "",
@@ -75,20 +75,20 @@
   ]
  },
  "1. poluvreme - 1X2": {
-  "mecova": 14,
+  "mecova": 15,
   "primer": [
    [
     "1",
     "betis",
     "Betis pobednik u 1. poluvremenu",
-    5.0,
+    4.9,
     1.0
    ],
    [
     "0",
     "nereseno",
     "1. poluvreme završava nerešeno",
-    3.0,
+    3.05,
     1.0
    ],
    [
@@ -101,13 +101,13 @@
   ]
  },
  "Poluvreme ili kraj": {
-  "mecova": 14,
+  "mecova": 15,
   "primer": [
    [
     "1",
     "1",
     "Betis pobednik u 1. poluvremenu ili na kraju",
-    3.5,
+    3.45,
     1.0
    ],
    [
@@ -121,13 +121,13 @@
     "2",
     "2",
     "Barcelona pobednik u 1. poluvremenu ili na kraju",
-    1.28,
+    1.29,
     1.0
    ]
   ]
  },
  "Multirezultati": {
-  "mecova": 14,
+  "mecova": 15,
   "primer": [
    [
     "",
@@ -168,7 +168,7 @@
     "",
     "1:2, 1:3 ili 1:4",
     "Utakmica će završiti rezultatom 1:2, 1:3 ili 1:4",
-    4.1,
+    4.15,
     4.0
    ],
    [
@@ -189,7 +189,7 @@
     "",
     "domacin pobeda, ostali",
     "Domaći tim pobeđuje bilo kojim drugim rezultatom",
-    100.0,
+    90.0,
     null
    ],
    [
@@ -202,7 +202,7 @@
   ]
  },
  "1X2 & ukupno golova (1.5)": {
-  "mecova": 14,
+  "mecova": 15,
   "primer": [
    [
     "",
@@ -229,7 +229,7 @@
     "",
     "1 & vise 1.5",
     "Betis pobednik utakmice i više od 1.5 gola na utak",
-    5.65,
+    5.6,
     1.5
    ],
    [
@@ -243,13 +243,13 @@
     "",
     "2 & vise 1.5",
     "Barcelona pobednik utakmice i više od 1.5 gola na ",
-    1.51,
+    1.52,
     1.5
    ]
   ]
  },
  "1X2 & ukupno golova (2.5)": {
-  "mecova": 14,
+  "mecova": 15,
   "primer": [
    [
     "",
@@ -276,7 +276,7 @@
     "",
     "1 & vise 2.5",
     "Betis pobednik utakmice i više od 2.5 gola na utak",
-    6.2,
+    6.1,
     2.5
    ],
    [
@@ -290,13 +290,13 @@
     "",
     "2 & vise 2.5",
     "Barcelona pobednik utakmice i više od 2.5 gola na ",
-    1.68,
+    1.69,
     2.5
    ]
   ]
  },
  "1X2 & ukupno golova (3.5)": {
-  "mecova": 14,
+  "mecova": 15,
   "primer": [
    [
     "",
@@ -323,7 +323,7 @@
     "",
     "1 & vise 3.5",
     "Betis pobednik utakmice i više od 3.5 gola na utak",
-    8.8,
+    8.7,
     3.5
    ],
    [
@@ -337,13 +337,13 @@
     "",
     "2 & vise 3.5",
     "Barcelona pobednik utakmice i više od 3.5 gola na ",
-    2.22,
+    2.25,
     3.5
    ]
   ]
  },
  "1X2 & ukupno golova (4.5)": {
-  "mecova": 14,
+  "mecova": 15,
   "primer": [
    [
     "",
@@ -356,7 +356,7 @@
     "",
     "x & manje 4.5",
     "Nerešeno na kraju utakmice  i manje od 4.5 gola na",
-    5.55,
+    5.5,
     4.5
    ],
    [
@@ -390,7 +390,7 @@
   ]
  },
  "Dupla šansa & ukupno golova (2.5)": {
-  "mecova": 14,
+  "mecova": 15,
   "primer": [
    [
     "10-",
@@ -403,7 +403,7 @@
     "10+",
     "1x & vise od 2.5",
     "Betis će pobediti ili će biti nerešeno i biće više",
-    3.5,
+    3.45,
     2.5
    ],
    [
@@ -437,7 +437,7 @@
   ]
  },
  "Dupla šansa & ukupno golova (3.5)": {
-  "mecova": 14,
+  "mecova": 15,
   "primer": [
    [
     "10-",
@@ -450,7 +450,7 @@
     "10+",
     "1x & vise od 3.5",
     "Betis će pobediti ili će biti nerešeno i biće više",
-    4.2,
+    4.15,
     3.5
    ],
    [
@@ -484,7 +484,7 @@
   ]
  },
  "Dupla šansa & ukupno golova (4.5)": {
-  "mecova": 14,
+  "mecova": 15,
   "primer": [
    [
     "10-",
@@ -497,7 +497,7 @@
     "10+",
     "1x & vise od 4.5",
     "Betis će pobediti ili će biti nerešeno i biće više",
-    6.2,
+    6.1,
     4.5
    ],
    [
@@ -531,27 +531,27 @@
   ]
  },
  "Dupla šansa & ukupno golova (5.5)": {
-  "mecova": 14,
+  "mecova": 15,
   "primer": [
    [
     "10-",
     "1x & manje od 5.5",
     "Betis će pobediti ili će biti nerešeno i biće manj",
-    2.8,
+    2.77,
     5.5
    ],
    [
     "10+",
     "1x & vise od 5.5",
     "Betis će pobediti ili će biti nerešeno i biće više",
-    8.5,
+    8.4,
     5.5
    ],
    [
     "02-",
     "x2 & manje od 5.5",
     "Biće nerešeno ili Barcelona će pobediti i biće man",
-    1.37,
+    1.38,
     5.5
    ],
    [
@@ -578,7 +578,7 @@
   ]
  },
  "1. poluvreme ukupno golova & Ukupno golova": {
-  "mecova": 14,
+  "mecova": 15,
   "primer": [
    [
     "",
@@ -598,7 +598,7 @@
     "",
     "manje 0.5 & vise 1.5",
     "Manje od 0.5 golova u 1. poluvremenu & više od 1.5",
-    6.7,
+    6.8,
     1.5
    ],
    [
@@ -626,14 +626,14 @@
     "",
     "manje 0.5 & vise 2.5",
     "Manje od 0.5 golova u 1. poluvremenu & više od 2.5",
-    9.9,
+    10.0,
     2.5
    ],
    [
     "",
     "manje 0.5 & manje 2.5",
     "Manje od 0.5 golova u 1. poluvremenu & manje od 2.",
-    7.0,
+    7.1,
     2.5
    ],
    [
@@ -667,13 +667,13 @@
   ]
  },
  "1. poluvreme ukupno golova & 2. poluvreme ukupno golova": {
-  "mecova": 14,
+  "mecova": 15,
   "primer": [
    [
     "0+0+",
     "vise 0.5 & vise 0.5",
     "Više od 0.5 golova u 1. poluvremenu & više od 0.5 ",
-    1.28,
+    1.27,
     2.0
    ],
    [
@@ -708,14 +708,14 @@
     "0+2-",
     "vise 0.5 & manje 2.5",
     "Više od 0.5 golova u 1. poluvremenu & manje od 2.5",
-    1.82,
+    1.8,
     2.0
    ],
    [
     "0-0+",
     "manje 0.5 & vise 0.5",
     "Manje od 0.5 golova u 1. poluvremenu & više od 0.5",
-    5.3,
+    5.35,
     2.0
    ],
    [
@@ -729,7 +729,7 @@
     "0-1+",
     "manje 0.5 & vise 1.5",
     "Manje od 0.5 golova u 1. poluvremenu & više od 1.5",
-    6.7,
+    6.8,
     2.0
    ],
    [
@@ -743,20 +743,20 @@
     "0-2+",
     "manje 0.5 & vise 2.5",
     "Manje od 0.5 golova u 1. poluvremenu & više od 2.5",
-    9.9,
+    10.0,
     2.0
    ],
    [
     "0-2-",
     "manje 0.5 & manje 2.5",
     "Manje od 0.5 golova u 1. poluvremenu & manje od 2.",
-    7.0,
+    7.1,
     2.0
    ]
   ]
  },
  "1. poluvreme ukupno golova ili 2. poluvreme ukupno golova": {
-  "mecova": 14,
+  "mecova": 15,
   "primer": [
    [
     "+1+1",
@@ -845,13 +845,13 @@
   ]
  },
  "Pobednik bilo koje poluvreme": {
-  "mecova": 14,
+  "mecova": 15,
   "primer": [
    [
     "1",
     "betis",
     "Betis pobeđuje barem jedno poluvreme",
-    2.72,
+    2.7,
     null
    ],
    [
@@ -871,13 +871,13 @@
   ]
  },
  "Gol u oba poluvremena": {
-  "mecova": 14,
+  "mecova": 15,
   "primer": [
    [
     "",
     "da",
     "gol će biti postignut u oba poluvremena",
-    1.28,
+    1.27,
     null
    ],
    [
@@ -890,7 +890,7 @@
   ]
  },
  "Winner DNB": {
-  "mecova": 14,
+  "mecova": 15,
   "primer": [
    [
     "1",
@@ -909,7 +909,7 @@
   ]
  },
  "Raspon golova u svakom poluvremenu": {
-  "mecova": 14,
+  "mecova": 15,
   "primer": [
    [
     "12",
@@ -922,7 +922,7 @@
     "13",
     "1-3",
     "u svakom poluvremenu će biti postignuto 1,2 ili 3 ",
-    1.82,
+    1.8,
     3.0
    ],
    [
@@ -935,13 +935,13 @@
   ]
  },
  "Tačno golova": {
-  "mecova": 14,
+  "mecova": 15,
   "primer": [
    [
     "0",
     "0",
     "Bez golova",
-    32.0,
+    31.0,
     6.0
    ],
    [
@@ -955,7 +955,7 @@
     "2",
     "2",
     "Utakmica će završiti sa 2 gola",
-    5.9,
+    5.85,
     6.0
    ],
    [
@@ -989,7 +989,7 @@
   ]
  },
  "Ukupno golova & oba tima daju gol": {
-  "mecova": 14,
+  "mecova": 15,
   "primer": [
    [
     "+1",
@@ -1002,7 +1002,7 @@
     "-1",
     "manje 2.5 & da",
     "Manje od 2.5 gola i oba tima daju gol",
-    9.8,
+    9.7,
     2.5
    ],
    [
@@ -1058,7 +1058,7 @@
     "-1",
     "manje 4.5 & da",
     "Manje od 4.5 gola i oba tima daju gol",
-    2.6,
+    2.57,
     4.5
    ],
    [
@@ -1078,7 +1078,7 @@
   ]
  },
  "Oba tima daju po dva ili više golova": {
-  "mecova": 14,
+  "mecova": 15,
   "primer": [
    [
     "1",
@@ -1097,7 +1097,7 @@
   ]
  },
  "Oba tima daju gol 1.poluvreme/2.poluvreme": {
-  "mecova": 14,
+  "mecova": 15,
   "primer": [
    [
     "11",
@@ -1117,20 +1117,20 @@
     "01",
     "ne/da",
     "Barem jedan tim neće dati gol u 1. poluvremenu i o",
-    3.15,
+    3.1,
     2.0
    ],
    [
     "00",
     "ne/ne",
     "Barem jedan tim neće dati gol u 1. poluvremenu i b",
-    2.2,
+    2.22,
     2.0
    ]
   ]
  },
  "1X2 & raspon golova": {
-  "mecova": 14,
+  "mecova": 15,
   "primer": [
    [
     "123",
@@ -1171,61 +1171,61 @@
     "136",
     "1 & 3-6",
     "Betis pobednik i 3-6 golova",
-    6.8,
+    6.7,
     -6.0
    ],
    [
     "024",
     "x & 2-4",
     "Nerešeno i 2-4 gola",
-    6.2,
+    6.1,
     -4.0
    ],
    [
     "026",
     "x & 2-6",
     "Nerešeno i 2-6 gola",
-    5.45,
+    5.4,
     -6.0
    ],
    [
     "046",
     "x & 4-6",
     "Nerešeno i 4-6 golova",
-    8.4,
+    8.3,
     -6.0
    ],
    [
     "223",
     "2 & 2-3",
     "Barcelona pobednik i 2-3 gola",
-    3.9,
+    4.0,
     -3.0
    ],
    [
     "224",
     "2 & 2-4",
     "Barcelona pobednik i 2-4 gola",
-    2.67,
+    2.7,
     -4.0
    ],
    [
     "225",
     "2 & 2-5",
     "Barcelona pobednik i 2-5 golova",
-    2.0,
+    2.02,
     -5.0
    ]
   ]
  },
  "1X2 & oba tima daju gol": {
-  "mecova": 14,
+  "mecova": 15,
   "primer": [
    [
     "11",
     "1 & da",
     "Betis pobednik i oba tima daju gol",
-    6.6,
+    6.5,
     1.0
    ],
    [
@@ -1266,13 +1266,13 @@
   ]
  },
  "1X2 & gol u oba poluvremena": {
-  "mecova": 14,
+  "mecova": 15,
   "primer": [
    [
     "1",
     "1 & da",
     "Betis pobednik i gol u oba poluvremena",
-    6.8,
+    6.7,
     1.0
    ],
    [
@@ -1288,6 +1288,53 @@
     "Barcelona pobednik i gol u oba poluvremena",
     1.77,
     2.0
+   ]
+  ]
+ },
+ "Dupla šansa & ukupno golova (1.5)": {
+  "mecova": 14,
+  "primer": [
+   [
+    "10-",
+    "1x & manje od 1.5",
+    "Betis će pobediti ili će biti nerešeno i biće manj",
+    9.7,
+    1.5
+   ],
+   [
+    "10+",
+    "1x & vise od 1.5",
+    "Betis će pobediti ili će biti nerešeno i biće više",
+    2.7,
+    1.5
+   ],
+   [
+    "02-",
+    "x2 & manje od 1.5",
+    "Biće nerešeno ili Barcelona će pobediti i biće man",
+    6.9,
+    1.5
+   ],
+   [
+    "02+",
+    "x2 & vise od 1.5",
+    "Biće nerešeno ili Barcelona će pobediti i biće viš",
+    1.18,
+    1.5
+   ],
+   [
+    "12-",
+    "12 & manje od 1.5",
+    "Betis ili Barcelona će pobediti i biće manje od 1.",
+    6.6,
+    1.5
+   ],
+   [
+    "12+",
+    "12 & vise od 1.5",
+    "Betis ili Barcelona će pobediti i biće više od 1.5",
+    1.19,
+    1.5
    ]
   ]
  },
@@ -1352,14 +1399,14 @@
     "1+",
     "1 ili vise 1.5",
     "Betis pobednik utakmice ili 1. poluvreme više od 1",
-    1.53,
+    1.52,
     1.5
    ],
    [
     "0-",
     "x ili manje 1.5",
     "Nerešeno na kraju utakmice ili 1. poluvreme manje ",
-    1.74,
+    1.73,
     1.5
    ],
    [
@@ -1446,7 +1493,7 @@
     "1+",
     "1 ili vise 3.5",
     "Betis pobednik utakmice ili 1. poluvreme više od 3",
-    3.45,
+    3.4,
     3.5
    ],
    [
@@ -1460,14 +1507,14 @@
     "0+",
     "x ili vise 3.5",
     "Nerešeno na kraju utakmice ili 1. poluvreme više o",
-    3.3,
+    3.25,
     3.5
    ],
    [
     "2+",
     "2 ili vise 3.5",
     "Barcelona pobednik utakmice ili 1. poluvreme više ",
-    1.35,
+    1.36,
     3.5
    ]
   ]
@@ -1479,21 +1526,21 @@
     "1+",
     "1 ili vise 4.5",
     "Betis pobednik utakmice ili 1. poluvreme više od 4",
-    4.4,
+    4.35,
     4.5
    ],
    [
     "0+",
     "x ili vise 4.5",
     "Nerešeno na kraju utakmice ili 1. poluvreme više o",
-    4.15,
+    4.1,
     4.5
    ],
    [
     "2+",
     "2 ili vise 4.5",
     "Barcelona pobednik utakmice ili 1. poluvreme više ",
-    1.38,
+    1.39,
     4.5
    ]
   ]
@@ -1526,21 +1573,21 @@
     "1026",
     "1x & 2-6",
     "Betis će pobediti ili će biti nerešeno i biće 2-6 ",
-    2.87,
+    2.85,
     -6.0
    ],
    [
     "1035",
     "1x & 3-5",
     "Betis će pobediti ili će biti nerešeno i biće 3-5 ",
-    4.25,
+    4.2,
     -5.0
    ],
    [
     "1036",
     "1x & 3-6",
     "Betis će pobediti ili će biti nerešeno i biće 3-6 ",
-    3.75,
+    3.7,
     -6.0
    ],
    [
@@ -1568,7 +1615,7 @@
     "0226",
     "x2 & 2-6",
     "Biće nerešeno ili Barcelona će pobediti i biće 2-6",
-    1.32,
+    1.33,
     -6.0
    ],
    [
@@ -1587,55 +1634,8 @@
    ]
   ]
  },
- "Dupla šansa & ukupno golova (1.5)": {
-  "mecova": 13,
-  "primer": [
-   [
-    "10-",
-    "1x & manje od 1.5",
-    "Betis će pobediti ili će biti nerešeno i biće manj",
-    9.7,
-    1.5
-   ],
-   [
-    "10+",
-    "1x & vise od 1.5",
-    "Betis će pobediti ili će biti nerešeno i biće više",
-    2.72,
-    1.5
-   ],
-   [
-    "02-",
-    "x2 & manje od 1.5",
-    "Biće nerešeno ili Barcelona će pobediti i biće man",
-    6.9,
-    1.5
-   ],
-   [
-    "02+",
-    "x2 & vise od 1.5",
-    "Biće nerešeno ili Barcelona će pobediti i biće viš",
-    1.17,
-    1.5
-   ],
-   [
-    "12-",
-    "12 & manje od 1.5",
-    "Betis ili Barcelona će pobediti i biće manje od 1.",
-    6.6,
-    1.5
-   ],
-   [
-    "12+",
-    "12 & vise od 1.5",
-    "Betis ili Barcelona će pobediti i biće više od 1.5",
-    1.19,
-    1.5
-   ]
-  ]
- },
  "Tačan rezultat u bilo kom trenutku": {
-  "mecova": 13,
+  "mecova": 14,
   "primer": [
    [
     "",
@@ -1720,6 +1720,39 @@
     "Biće ostvaren u bilo kom trenutku tokom regularnog",
     21.0,
     0.0
+   ]
+  ]
+ },
+ "1X2 & ukupno golova (0.5)": {
+  "mecova": 11,
+  "primer": [
+   [
+    "",
+    "x & manje 0.5",
+    "Nerešeno na kraju utakmice  i manje od 0.5 gola na",
+    7.3,
+    0.5
+   ],
+   [
+    "",
+    "1 & vise 0.5",
+    "Celta Vigo pobednik utakmice i više od 0.5 gola na",
+    2.05,
+    0.5
+   ],
+   [
+    "",
+    "x & vise 0.5",
+    "Nerešeno na kraju utakmice i više od 0.5 gola na u",
+    4.35,
+    0.5
+   ],
+   [
+    "",
+    "2 & vise 0.5",
+    "Alaves pobednik utakmice i više od 0.5 gola na uta",
+    3.3,
+    0.5
    ]
   ]
  },
@@ -1812,47 +1845,14 @@
    ]
   ]
  },
- "1X2 & ukupno golova (0.5)": {
-  "mecova": 10,
-  "primer": [
-   [
-    "",
-    "x & manje 0.5",
-    "Nerešeno na kraju utakmice  i manje od 0.5 gola na",
-    7.3,
-    0.5
-   ],
-   [
-    "",
-    "1 & vise 0.5",
-    "Celta Vigo pobednik utakmice i više od 0.5 gola na",
-    2.05,
-    0.5
-   ],
-   [
-    "",
-    "x & vise 0.5",
-    "Nerešeno na kraju utakmice i više od 0.5 gola na u",
-    4.35,
-    0.5
-   ],
-   [
-    "",
-    "2 & vise 0.5",
-    "Alaves pobednik utakmice i više od 0.5 gola na uta",
-    3.3,
-    0.5
-   ]
-  ]
- },
  "Dupla šansa & oba tima daju gol": {
-  "mecova": 6,
+  "mecova": 7,
   "primer": [
    [
     "101",
     "1x & da",
     "Betis će pobediti ili će biti nerešeno i oba tima ",
-    2.92,
+    2.9,
     1.0
    ],
    [
@@ -1887,66 +1887,19 @@
     "022",
     "x2 & ne",
     "Biće nerešeno ili Barcelona će pobediti i barem je",
-    2.82,
+    2.85,
     2.0
    ]
   ]
  },
- "1X2 & ukupno golova (5.5)": {
-  "mecova": 4,
-  "primer": [
-   [
-    "",
-    "1 & manje 5.5",
-    "Betis pobednik utakmice i manje od 5.5 gola na uta",
-    5.65,
-    5.5
-   ],
-   [
-    "",
-    "x & manje 5.5",
-    "Nerešeno na kraju utakmice  i manje od 5.5 gola na",
-    5.55,
-    5.5
-   ],
-   [
-    "",
-    "2 & manje 5.5",
-    "Barcelona pobednik utakmice i manje od 5.5 gola na",
-    1.83,
-    5.5
-   ],
-   [
-    "",
-    "1 & vise 5.5",
-    "Betis pobednik utakmice i više od 5.5 gola na utak",
-    21.0,
-    5.5
-   ],
-   [
-    "",
-    "x & vise 5.5",
-    "Nerešeno na kraju utakmice i više od 5.5 gola na u",
-    18.0,
-    5.5
-   ],
-   [
-    "",
-    "2 & vise 5.5",
-    "Barcelona pobednik utakmice i više od 5.5 gola na ",
-    4.9,
-    5.5
-   ]
-  ]
- },
  "Dupla šansa & gol u oba poluvremena": {
-  "mecova": 4,
+  "mecova": 5,
   "primer": [
    [
     "101",
     "1x & da",
     "Alaves će pobediti ili će biti nerešeno i biće gol",
-    2.07,
+    2.1,
     1.0
    ],
    [
@@ -1962,6 +1915,53 @@
     "Alaves ili Malaga će pobediti i biće gol u oba pol",
     2.12,
     12.0
+   ]
+  ]
+ },
+ "1X2 & ukupno golova (5.5)": {
+  "mecova": 4,
+  "primer": [
+   [
+    "",
+    "1 & manje 5.5",
+    "Betis pobednik utakmice i manje od 5.5 gola na uta",
+    5.6,
+    5.5
+   ],
+   [
+    "",
+    "x & manje 5.5",
+    "Nerešeno na kraju utakmice  i manje od 5.5 gola na",
+    5.5,
+    5.5
+   ],
+   [
+    "",
+    "2 & manje 5.5",
+    "Barcelona pobednik utakmice i manje od 5.5 gola na",
+    1.83,
+    5.5
+   ],
+   [
+    "",
+    "1 & vise 5.5",
+    "Betis pobednik utakmice i više od 5.5 gola na utak",
+    20.0,
+    5.5
+   ],
+   [
+    "",
+    "x & vise 5.5",
+    "Nerešeno na kraju utakmice i više od 5.5 gola na u",
+    18.0,
+    5.5
+   ],
+   [
+    "",
+    "2 & vise 5.5",
+    "Barcelona pobednik utakmice i više od 5.5 gola na ",
+    4.9,
+    5.5
    ]
   ]
  },
@@ -2614,14 +2614,14 @@
     "",
     "vise 0.5 & manje 2.5",
     "1. Poluvreme Levante više od 0.5 golova i Levante ",
-    2.9,
+    2.92,
     2.5
    ],
    [
     "",
     "manje 0.5 & vise 2.5",
     "1. Poluvreme Levante manje od 0.5 golova i Levante",
-    25.0,
+    26.0,
     2.5
    ],
    [
@@ -2738,7 +2738,7 @@
     "",
     "manje 0.5 & vise 2.5",
     "Levante daje manje od 0.5 golova u 1. poluvremenu ",
-    25.0,
+    26.0,
     2.0
    ],
    [
@@ -2825,7 +2825,7 @@
     "0+",
     "x & vise 1.5",
     "nerešeno i Levante više od 1.5 gola na utakmici",
-    9.2,
+    9.3,
     1.5
    ],
    [
@@ -2858,7 +2858,7 @@
     "2-",
     "2 & manje 2.5",
     "Levante pobednik  i Levante manje od 2.5 gola na u",
-    4.45,
+    4.4,
     2.5
    ],
    [
@@ -2898,7 +2898,7 @@
     "0-",
     "x & manje 3.5",
     "nerešeno i Levante manje od 3.5 gola na utakmici",
-    3.15,
+    3.2,
     3.5
    ],
    [
@@ -2952,7 +2952,7 @@
     "2-",
     "2 & manje 4.5",
     "Levante pobednik  i Levante manje od 4.5 gola na u",
-    3.25,
+    3.2,
     4.5
    ],
    [
@@ -2974,6 +2974,516 @@
     "2 & vise 4.5",
     "Levante pobednik  i Levante više od 4.5 gola na ut",
     50.0,
+    4.5
+   ]
+  ]
+ },
+ "Espanyol raspon golova": {
+  "mecova": 2,
+  "primer": [
+   [
+    "",
+    "1-2",
+    "Espanyol 1-2 gola na utakmici",
+    1.72,
+    -2.0
+   ],
+   [
+    "",
+    "1-3",
+    "Espanyol  1-3 gola na utakmici",
+    1.55,
+    -3.0
+   ],
+   [
+    "",
+    "2-3",
+    "Espanyol 2-3 gola na utakmici",
+    3.65,
+    -3.0
+   ]
+  ]
+ },
+ "Espanyol raspon golova u svakom poluvremenu": {
+  "mecova": 2,
+  "primer": [
+   [
+    "12",
+    "1-2",
+    "Espanyol 1 ili 2 gola u svakom poluvremenu",
+    5.55,
+    2.0
+   ],
+   [
+    "13",
+    "1-3",
+    "Espanyol 1,2 ili 3 gola u svakom poluvremenu",
+    5.3,
+    3.0
+   ],
+   [
+    "23",
+    "2-3",
+    "Espanyol 2 ili 3 gola u svakom poluvremenu",
+    50.0,
+    3.0
+   ]
+  ]
+ },
+ "Espanyol tačno golova": {
+  "mecova": 2,
+  "primer": [
+   [
+    "0",
+    "0",
+    "Espanyol ne daje gol",
+    2.55,
+    3.0
+   ],
+   [
+    "1",
+    "1",
+    "Espanyol daje tačno 1 gol",
+    2.52,
+    3.0
+   ],
+   [
+    "2",
+    "2",
+    "Espanyol daje tačno 2 gola",
+    4.7,
+    3.0
+   ],
+   [
+    "3",
+    "3+",
+    "Espanyol daje 3 ili više golova",
+    9.2,
+    3.0
+   ]
+  ]
+ },
+ "Espanyol daje gol": {
+  "mecova": 2,
+  "primer": [
+   [
+    "1",
+    "da",
+    "Espanyol daje gol na utakmici",
+    1.52,
+    null
+   ],
+   [
+    "2",
+    "ne",
+    "Espanyol ne daje gol na utakmici",
+    2.57,
+    null
+   ]
+  ]
+ },
+ "1. Poluvreme Espanyol Ukupno golova & Ukupno golova Espanyol": {
+  "mecova": 2,
+  "primer": [
+   [
+    "",
+    "vise 0.5 & vise 1.5",
+    "1. Poluvreme Espanyol više od 0.5 golova i Espanyo",
+    4.3,
+    1.5
+   ],
+   [
+    "",
+    "vise 0.5 & manje 1.5",
+    "1. Poluvreme Espanyol više od 0.5 golova i Espanyo",
+    4.9,
+    1.5
+   ],
+   [
+    "",
+    "manje 0.5 & vise 1.5",
+    "1. Poluvreme Espanyol manje od 0.5 golova i Espany",
+    8.8,
+    1.5
+   ],
+   [
+    "",
+    "manje 0.5 & manje 1.5",
+    "1. Poluvreme Espanyol manje od 0.5 golova i Espany",
+    1.64,
+    1.5
+   ],
+   [
+    "",
+    "vise 0.5 & vise 2.5",
+    "1. Poluvreme Espanyol više od 0.5 golova i Espanyo",
+    9.7,
+    2.5
+   ],
+   [
+    "",
+    "vise 0.5 & manje 2.5",
+    "1. Poluvreme Espanyol više od 0.5 golova i Espanyo",
+    3.0,
+    2.5
+   ],
+   [
+    "",
+    "manje 0.5 & vise 2.5",
+    "1. Poluvreme Espanyol manje od 0.5 golova i Espany",
+    31.0,
+    2.5
+   ],
+   [
+    "",
+    "manje 0.5 & manje 2.5",
+    "1. Poluvreme Espanyol manje od 0.5 golova i Espany",
+    1.49,
+    2.5
+   ],
+   [
+    "",
+    "vise 1.5 & vise 2.5",
+    "1. Poluvreme Espanyol više od 1.5 golova i Espanyo",
+    15.0,
+    2.5
+   ],
+   [
+    "",
+    "vise 1.5 & manje 2.5",
+    "1. Poluvreme Espanyol više od 1.5 golova i Espanyo",
+    15.0,
+    2.5
+   ],
+   [
+    "",
+    "manje 1.5 & vise 2.5",
+    "1. Poluvreme Espanyol manje od 1.5 golova i Espany",
+    14.0,
+    2.5
+   ],
+   [
+    "",
+    "manje 1.5 & manje 2.5",
+    "1. Poluvreme Espanyol manje od 1.5 golova i Espany",
+    1.08,
+    2.5
+   ]
+  ]
+ },
+ "Espanyol - 1. poluvreme ukupno golova & 2. poluvreme ukupno golova": {
+  "mecova": 2,
+  "primer": [
+   [
+    "",
+    "vise 0.5 & vise 0.5",
+    "Espanyol daje više od 0.5 golova u 1. poluvremenu ",
+    5.25,
+    2.0
+   ],
+   [
+    "",
+    "vise 0.5 & manje 0.5",
+    "Espanyol daje više od 0.5 golova u 1. poluvremenu ",
+    4.1,
+    2.0
+   ],
+   [
+    "",
+    "vise 0.5 & vise 1.5",
+    "Espanyol daje više od 0.5 golova u 1. poluvremenu ",
+    15.0,
+    2.0
+   ],
+   [
+    "",
+    "vise 0.5 & manje 1.5",
+    "Espanyol daje više od 0.5 golova u 1. poluvremenu ",
+    2.77,
+    2.0
+   ],
+   [
+    "",
+    "vise 0.5 & vise 2.5",
+    "Espanyol daje više od 0.5 golova u 1. poluvremenu ",
+    50.0,
+    2.0
+   ],
+   [
+    "",
+    "vise 0.5 & manje 2.5",
+    "Espanyol daje više od 0.5 golova u 1. poluvremenu ",
+    2.57,
+    2.0
+   ],
+   [
+    "",
+    "manje 0.5 & vise 0.5",
+    "Espanyol daje manje od 0.5 golova u 1. poluvremenu",
+    3.1,
+    2.0
+   ],
+   [
+    "",
+    "manje 0.5 & manje 0.5",
+    "Espanyol daje manje od 0.5 golova u 1. poluvremenu",
+    2.5,
+    2.0
+   ],
+   [
+    "",
+    "manje 0.5 & vise 1.5",
+    "Espanyol daje manje od 0.5 golova u 1. poluvremenu",
+    8.8,
+    2.0
+   ],
+   [
+    "",
+    "manje 0.5 & manje 1.5",
+    "Espanyol daje manje od 0.5 golova u 1. poluvremenu",
+    1.64,
+    2.0
+   ],
+   [
+    "",
+    "manje 0.5 & vise 2.5",
+    "Espanyol daje manje od 0.5 golova u 1. poluvremenu",
+    31.0,
+    2.0
+   ],
+   [
+    "",
+    "manje 0.5 & manje 2.5",
+    "Espanyol daje manje od 0.5 golova u 1. poluvremenu",
+    1.49,
+    2.0
+   ]
+  ]
+ },
+ "1X2 & ukupno golova Espanyol (0.5)": {
+  "mecova": 2,
+  "primer": [
+   [
+    "0-",
+    "x & manje 0.5",
+    "nerešeno i Espanyol manje od 0.5 gola na utakmici",
+    10.0,
+    0.5
+   ],
+   [
+    "2-",
+    "2 & manje 0.5",
+    "Atletico Madrid pobednik i Espanyol manje od 0.5 g",
+    2.92,
+    0.5
+   ],
+   [
+    "1+",
+    "1 & vise 0.5",
+    "Espanyol pobednik i Espanyol više od 0.5 gola na u",
+    4.15,
+    0.5
+   ],
+   [
+    "0+",
+    "x & vise 0.5",
+    "nerešeno i Espanyol više od 0.5 gola na utakmici",
+    4.55,
+    0.5
+   ],
+   [
+    "2+",
+    "2 & vise 0.5",
+    "Atletico Madrid pobednik i Espanyol više od 0.5 go",
+    3.4,
+    0.5
+   ]
+  ]
+ },
+ "1X2 & ukupno golova Espanyol (1.5)": {
+  "mecova": 2,
+  "primer": [
+   [
+    "1-",
+    "1 & manje 1.5",
+    "Espanyol pobednik i Espanyol manje od 1.5 gola na ",
+    11.0,
+    1.5
+   ],
+   [
+    "0-",
+    "x & manje 1.5",
+    "nerešeno i Espanyol manje od 1.5 gola na utakmici",
+    4.55,
+    1.5
+   ],
+   [
+    "2-",
+    "2 & manje 1.5",
+    "Atletico Madrid pobednik i Espanyol manje od 1.5 g",
+    1.85,
+    1.5
+   ],
+   [
+    "1+",
+    "1 & vise 1.5",
+    "Espanyol pobednik i Espanyol više od 1.5 gola na u",
+    5.45,
+    1.5
+   ],
+   [
+    "0+",
+    "x & vise 1.5",
+    "nerešeno i Espanyol više od 1.5 gola na utakmici",
+    9.9,
+    1.5
+   ],
+   [
+    "2+",
+    "2 & vise 1.5",
+    "Atletico Madrid pobednik i Espanyol više od 1.5 go",
+    11.0,
+    1.5
+   ]
+  ]
+ },
+ "1X2 & ukupno golova Espanyol (2.5)": {
+  "mecova": 2,
+  "primer": [
+   [
+    "1-",
+    "1 & manje 2.5",
+    "Espanyol pobednik i Espanyol manje od 2.5 gola na ",
+    5.55,
+    2.5
+   ],
+   [
+    "0-",
+    "x & manje 2.5",
+    "nerešeno i Espanyol manje od 2.5 gola na utakmici",
+    3.7,
+    2.5
+   ],
+   [
+    "2-",
+    "2 & manje 2.5",
+    "Atletico Madrid pobednik i Espanyol manje od 2.5 g",
+    1.7,
+    2.5
+   ],
+   [
+    "1+",
+    "1 & vise 2.5",
+    "Espanyol pobednik i Espanyol više od 2.5 gola na u",
+    10.0,
+    2.5
+   ],
+   [
+    "0+",
+    "x & vise 2.5",
+    "nerešeno i Espanyol više od 2.5 gola na utakmici",
+    34.0,
+    2.5
+   ],
+   [
+    "2+",
+    "2 & vise 2.5",
+    "Atletico Madrid pobednik i Espanyol više od 2.5 go",
+    45.0,
+    2.5
+   ]
+  ]
+ },
+ "1X2 & ukupno golova Espanyol (3.5)": {
+  "mecova": 2,
+  "primer": [
+   [
+    "1-",
+    "1 & manje 3.5",
+    "Espanyol pobednik i Espanyol manje od 3.5 gola na ",
+    4.45,
+    3.5
+   ],
+   [
+    "0-",
+    "x & manje 3.5",
+    "nerešeno i Espanyol manje od 3.5 gola na utakmici",
+    3.55,
+    3.5
+   ],
+   [
+    "2-",
+    "2 & manje 3.5",
+    "Atletico Madrid pobednik i Espanyol manje od 3.5 g",
+    1.68,
+    3.5
+   ],
+   [
+    "1+",
+    "1 & vise 3.5",
+    "Espanyol pobednik i Espanyol više od 3.5 gola na u",
+    26.0,
+    3.5
+   ],
+   [
+    "0+",
+    "x & vise 3.5",
+    "nerešeno i Espanyol više od 3.5 gola na utakmici",
+    100.0,
+    3.5
+   ],
+   [
+    "2+",
+    "2 & vise 3.5",
+    "Atletico Madrid pobednik i Espanyol više od 3.5 go",
+    100.0,
+    3.5
+   ]
+  ]
+ },
+ "1X2 & ukupno golova Espanyol (4.5)": {
+  "mecova": 2,
+  "primer": [
+   [
+    "1-",
+    "1 & manje 4.5",
+    "Espanyol pobednik i Espanyol manje od 4.5 gola na ",
+    4.2,
+    4.5
+   ],
+   [
+    "0-",
+    "x & manje 4.5",
+    "nerešeno i Espanyol manje od 4.5 gola na utakmici",
+    3.55,
+    4.5
+   ],
+   [
+    "2-",
+    "2 & manje 4.5",
+    "Atletico Madrid pobednik i Espanyol manje od 4.5 g",
+    1.68,
+    4.5
+   ],
+   [
+    "1+",
+    "1 & vise 4.5",
+    "Espanyol pobednik i Espanyol više od 4.5 gola na u",
+    70.0,
+    4.5
+   ],
+   [
+    "0+",
+    "x & vise 4.5",
+    "nerešeno i Espanyol više od 4.5 gola na utakmici",
+    125.0,
+    4.5
+   ],
+   [
+    "2+",
+    "2 & vise 4.5",
+    "Atletico Madrid pobednik i Espanyol više od 4.5 go",
+    125.0,
     4.5
    ]
   ]
@@ -3592,14 +4102,14 @@
     "",
     "vise 0.5 & vise 1.5",
     "1. Poluvreme Malaga više od 0.5 golova i Malaga vi",
-    3.3,
+    3.25,
     1.5
    ],
    [
     "",
     "vise 0.5 & manje 1.5",
     "1. Poluvreme Malaga više od 0.5 golova i Malaga ma",
-    5.1,
+    5.0,
     1.5
    ],
    [
@@ -3627,7 +4137,7 @@
     "",
     "vise 0.5 & manje 2.5",
     "1. Poluvreme Malaga više od 0.5 golova i Malaga ma",
-    2.85,
+    2.82,
     2.5
    ],
    [
@@ -3702,7 +4212,7 @@
     "",
     "vise 0.5 & manje 1.5",
     "Malaga daje više od 0.5 golova u 1. poluvremenu i ",
-    2.52,
+    2.5,
     2.0
    ],
    [
@@ -3784,7 +4294,7 @@
     "1+",
     "1 & vise 0.5",
     "Malaga pobednik i Malaga više od 0.5 gola na utakm",
-    3.0,
+    2.95,
     0.5
    ],
    [
@@ -3857,14 +4367,14 @@
     "1-",
     "1 & manje 2.5",
     "Malaga pobednik i Malaga manje od 2.5 gola na utak",
-    4.45,
+    4.4,
     2.5
    ],
    [
     "0-",
     "x & manje 2.5",
     "nerešeno i Malaga manje od 2.5 gola na utakmici",
-    3.4,
+    3.45,
     2.5
    ],
    [
@@ -3878,7 +4388,7 @@
     "1+",
     "1 & vise 2.5",
     "Malaga pobednik i Malaga više od 2.5 gola na utakm",
-    6.7,
+    6.6,
     2.5
    ],
    [
@@ -3932,7 +4442,7 @@
     "0+",
     "x & vise 3.5",
     "nerešeno i Malaga više od 3.5 gola na utakmici",
-    85.0,
+    90.0,
     3.5
    ],
    [
@@ -3991,6 +4501,516 @@
    ]
   ]
  },
+ "Racing Santander raspon golova": {
+  "mecova": 2,
+  "primer": [
+   [
+    "",
+    "1-2",
+    "Racing Santander 1-2 gola na utakmici",
+    1.62,
+    -2.0
+   ],
+   [
+    "",
+    "1-3",
+    "Racing Santander 1-3 gola na utakmici",
+    1.4,
+    -3.0
+   ],
+   [
+    "",
+    "2-3",
+    "Racing Santander 2-3 gola na utakmici",
+    2.82,
+    -3.0
+   ]
+  ]
+ },
+ "Racing Santander raspon golova u svakom poluvremenu": {
+  "mecova": 2,
+  "primer": [
+   [
+    "12",
+    "1-2",
+    "Racing Santander 1 ili 2 gola u svakom poluvremenu",
+    4.3,
+    2.0
+   ],
+   [
+    "13",
+    "1-3",
+    "Racing Santander 1,2 ili 3 gola u svakom poluvreme",
+    4.0,
+    3.0
+   ],
+   [
+    "23",
+    "2-3",
+    "Racing Santander 2 ili 3 gola u svakom poluvremenu",
+    28.0,
+    3.0
+   ]
+  ]
+ },
+ "Racing Santander tačno golova": {
+  "mecova": 2,
+  "primer": [
+   [
+    "0",
+    "0",
+    "Racing Santander ne daje gol",
+    3.3,
+    3.0
+   ],
+   [
+    "1",
+    "1",
+    "Racing Santander daje tačno 1 gol",
+    2.57,
+    3.0
+   ],
+   [
+    "2",
+    "2",
+    "Racing Santander daje tačno 2 gola",
+    3.9,
+    3.0
+   ],
+   [
+    "3",
+    "3+",
+    "Racing Santander daje 3 ili više golova",
+    6.0,
+    3.0
+   ]
+  ]
+ },
+ "Racing Santander daje gol": {
+  "mecova": 2,
+  "primer": [
+   [
+    "1",
+    "da",
+    "Racing Santander daje gol na utakmici",
+    1.33,
+    null
+   ],
+   [
+    "2",
+    "ne",
+    "Racing Santander ne daje gol na utakmici",
+    3.35,
+    null
+   ]
+  ]
+ },
+ "1. Poluvreme Racing Santander Ukupno golova & Ukupno golova Racing Santander": {
+  "mecova": 2,
+  "primer": [
+   [
+    "",
+    "vise 0.5 & vise 1.5",
+    "1. Poluvreme Racing Santander više od 0.5 golova i",
+    3.2,
+    1.5
+   ],
+   [
+    "",
+    "vise 0.5 & manje 1.5",
+    "1. Poluvreme Racing Santander više od 0.5 golova i",
+    5.1,
+    1.5
+   ],
+   [
+    "",
+    "manje 0.5 & vise 1.5",
+    "1. Poluvreme Racing Santander manje od 0.5 golova ",
+    7.4,
+    1.5
+   ],
+   [
+    "",
+    "manje 0.5 & manje 1.5",
+    "1. Poluvreme Racing Santander manje od 0.5 golova ",
+    1.95,
+    1.5
+   ],
+   [
+    "",
+    "vise 0.5 & vise 2.5",
+    "1. Poluvreme Racing Santander više od 0.5 golova i",
+    6.5,
+    2.5
+   ],
+   [
+    "",
+    "vise 0.5 & manje 2.5",
+    "1. Poluvreme Racing Santander više od 0.5 golova i",
+    2.82,
+    2.5
+   ],
+   [
+    "",
+    "manje 0.5 & vise 2.5",
+    "1. Poluvreme Racing Santander manje od 0.5 golova ",
+    22.0,
+    2.5
+   ],
+   [
+    "",
+    "manje 0.5 & manje 2.5",
+    "1. Poluvreme Racing Santander manje od 0.5 golova ",
+    1.7,
+    2.5
+   ],
+   [
+    "",
+    "vise 1.5 & vise 2.5",
+    "1. Poluvreme Racing Santander više od 1.5 golova i",
+    9.9,
+    2.5
+   ],
+   [
+    "",
+    "vise 1.5 & manje 2.5",
+    "1. Poluvreme Racing Santander više od 1.5 golova i",
+    13.0,
+    2.5
+   ],
+   [
+    "",
+    "manje 1.5 & vise 2.5",
+    "1. Poluvreme Racing Santander manje od 1.5 golova ",
+    9.0,
+    2.5
+   ],
+   [
+    "",
+    "manje 1.5 & manje 2.5",
+    "1. Poluvreme Racing Santander manje od 1.5 golova ",
+    1.16,
+    2.5
+   ]
+  ]
+ },
+ "Racing Santander - 1. poluvreme ukupno golova & 2. poluvreme ukupno golova": {
+  "mecova": 2,
+  "primer": [
+   [
+    "",
+    "vise 0.5 & vise 0.5",
+    "Racing Santander daje više od 0.5 golova u 1. polu",
+    3.9,
+    2.0
+   ],
+   [
+    "",
+    "vise 0.5 & manje 0.5",
+    "Racing Santander daje više od 0.5 golova u 1. polu",
+    4.0,
+    2.0
+   ],
+   [
+    "",
+    "vise 0.5 & vise 1.5",
+    "Racing Santander daje više od 0.5 golova u 1. polu",
+    9.5,
+    2.0
+   ],
+   [
+    "",
+    "vise 0.5 & manje 1.5",
+    "Racing Santander daje više od 0.5 golova u 1. polu",
+    2.5,
+    2.0
+   ],
+   [
+    "",
+    "vise 0.5 & vise 2.5",
+    "Racing Santander daje više od 0.5 golova u 1. polu",
+    29.0,
+    2.0
+   ],
+   [
+    "",
+    "vise 0.5 & manje 2.5",
+    "Racing Santander daje više od 0.5 golova u 1. polu",
+    2.2,
+    2.0
+   ],
+   [
+    "",
+    "manje 0.5 & vise 0.5",
+    "Racing Santander daje manje od 0.5 golova u 1. pol",
+    2.95,
+    2.0
+   ],
+   [
+    "",
+    "manje 0.5 & manje 0.5",
+    "Racing Santander daje manje od 0.5 golova u 1. pol",
+    3.2,
+    2.0
+   ],
+   [
+    "",
+    "manje 0.5 & vise 1.5",
+    "Racing Santander daje manje od 0.5 golova u 1. pol",
+    7.4,
+    2.0
+   ],
+   [
+    "",
+    "manje 0.5 & manje 1.5",
+    "Racing Santander daje manje od 0.5 golova u 1. pol",
+    1.95,
+    2.0
+   ],
+   [
+    "",
+    "manje 0.5 & vise 2.5",
+    "Racing Santander daje manje od 0.5 golova u 1. pol",
+    22.0,
+    2.0
+   ],
+   [
+    "",
+    "manje 0.5 & manje 2.5",
+    "Racing Santander daje manje od 0.5 golova u 1. pol",
+    1.7,
+    2.0
+   ]
+  ]
+ },
+ "1X2 & ukupno golova Racing Santander (0.5)": {
+  "mecova": 2,
+  "primer": [
+   [
+    "1-",
+    "1 & manje 0.5",
+    "Osasuna pobednik  i Racing Santander manje od 0.5 ",
+    3.8,
+    0.5
+   ],
+   [
+    "0-",
+    "x & manje 0.5",
+    "nerešeno i Racing Santander manje od 0.5 gola na u",
+    12.0,
+    0.5
+   ],
+   [
+    "1+",
+    "1 & vise 0.5",
+    "Osasuna pobednik  i Racing Santander više od 0.5 g",
+    3.4,
+    0.5
+   ],
+   [
+    "0+",
+    "x & vise 0.5",
+    "nerešeno i Racing Santander više od 0.5 gola na ut",
+    4.0,
+    0.5
+   ],
+   [
+    "2+",
+    "2 & vise 0.5",
+    "Racing Santander pobednik  i Racing Santander više",
+    3.25,
+    0.5
+   ]
+  ]
+ },
+ "1X2 & ukupno golova Racing Santander (1.5)": {
+  "mecova": 2,
+  "primer": [
+   [
+    "1-",
+    "1 & manje 1.5",
+    "Osasuna pobednik  i Racing Santander manje od 1.5 ",
+    2.25,
+    1.5
+   ],
+   [
+    "0-",
+    "x & manje 1.5",
+    "nerešeno i Racing Santander manje od 1.5 gola na u",
+    4.7,
+    1.5
+   ],
+   [
+    "2-",
+    "2 & manje 1.5",
+    "Racing Santander pobednik  i Racing Santander manj",
+    11.0,
+    1.5
+   ],
+   [
+    "1+",
+    "1 & vise 1.5",
+    "Osasuna pobednik  i Racing Santander više od 1.5 g",
+    9.3,
+    1.5
+   ],
+   [
+    "0+",
+    "x & vise 1.5",
+    "nerešeno i Racing Santander više od 1.5 gola na ut",
+    7.8,
+    1.5
+   ],
+   [
+    "2+",
+    "2 & vise 1.5",
+    "Racing Santander pobednik  i Racing Santander više",
+    4.0,
+    1.5
+   ]
+  ]
+ },
+ "1X2 & ukupno golova Racing Santander (2.5)": {
+  "mecova": 2,
+  "primer": [
+   [
+    "1-",
+    "1 & manje 2.5",
+    "Osasuna pobednik  i Racing Santander manje od 2.5 ",
+    2.0,
+    2.5
+   ],
+   [
+    "0-",
+    "x & manje 2.5",
+    "nerešeno i Racing Santander manje od 2.5 gola na u",
+    3.55,
+    2.5
+   ],
+   [
+    "2-",
+    "2 & manje 2.5",
+    "Racing Santander pobednik  i Racing Santander manj",
+    5.0,
+    2.5
+   ],
+   [
+    "1+",
+    "1 & vise 2.5",
+    "Osasuna pobednik  i Racing Santander više od 2.5 g",
+    36.0,
+    2.5
+   ],
+   [
+    "0+",
+    "x & vise 2.5",
+    "nerešeno i Racing Santander više od 2.5 gola na ut",
+    23.0,
+    2.5
+   ],
+   [
+    "2+",
+    "2 & vise 2.5",
+    "Racing Santander pobednik  i Racing Santander više",
+    6.8,
+    2.5
+   ]
+  ]
+ },
+ "1X2 & ukupno golova Racing Santander (3.5)": {
+  "mecova": 2,
+  "primer": [
+   [
+    "1-",
+    "1 & manje 3.5",
+    "Osasuna pobednik  i Racing Santander manje od 3.5 ",
+    1.95,
+    3.5
+   ],
+   [
+    "0-",
+    "x & manje 3.5",
+    "nerešeno i Racing Santander manje od 3.5 gola na u",
+    3.35,
+    3.5
+   ],
+   [
+    "2-",
+    "2 & manje 3.5",
+    "Racing Santander pobednik  i Racing Santander manj",
+    3.7,
+    3.5
+   ],
+   [
+    "1+",
+    "1 & vise 3.5",
+    "Osasuna pobednik  i Racing Santander više od 3.5 g",
+    100.0,
+    3.5
+   ],
+   [
+    "0+",
+    "x & vise 3.5",
+    "nerešeno i Racing Santander više od 3.5 gola na ut",
+    80.0,
+    3.5
+   ],
+   [
+    "2+",
+    "2 & vise 3.5",
+    "Racing Santander pobednik  i Racing Santander više",
+    15.0,
+    3.5
+   ]
+  ]
+ },
+ "1X2 & ukupno golova Racing Santander (4.5)": {
+  "mecova": 2,
+  "primer": [
+   [
+    "1-",
+    "1 & manje 4.5",
+    "Osasuna pobednik  i Racing Santander manje od 4.5 ",
+    1.95,
+    4.5
+   ],
+   [
+    "0-",
+    "x & manje 4.5",
+    "nerešeno i Racing Santander manje od 4.5 gola na u",
+    3.35,
+    4.5
+   ],
+   [
+    "2-",
+    "2 & manje 4.5",
+    "Racing Santander pobednik  i Racing Santander manj",
+    3.35,
+    4.5
+   ],
+   [
+    "1+",
+    "1 & vise 4.5",
+    "Osasuna pobednik  i Racing Santander više od 4.5 g",
+    125.0,
+    4.5
+   ],
+   [
+    "0+",
+    "x & vise 4.5",
+    "nerešeno i Racing Santander više od 4.5 gola na ut",
+    125.0,
+    4.5
+   ],
+   [
+    "2+",
+    "2 & vise 4.5",
+    "Racing Santander pobednik  i Racing Santander više",
+    39.0,
+    4.5
+   ]
+  ]
+ },
  "Athletic Bilbao raspon golova": {
   "mecova": 2,
   "primer": [
@@ -4031,7 +5051,7 @@
     "13",
     "1-3",
     "Athletic Bilbao 1,2 ili 3 gola u svakom poluvremen",
-    3.5,
+    3.55,
     3.0
    ],
    [
@@ -4071,7 +5091,7 @@
     "3",
     "3+",
     "Athletic Bilbao daje 3 ili više golova",
-    5.1,
+    5.15,
     3.0
    ]
   ]
@@ -4102,7 +5122,7 @@
     "",
     "vise 0.5 & vise 1.5",
     "1. Poluvreme Athletic Bilbao više od 0.5 golova i ",
-    2.85,
+    2.87,
     1.5
    ],
    [
@@ -4123,21 +5143,21 @@
     "",
     "manje 0.5 & manje 1.5",
     "1. Poluvreme Athletic Bilbao manje od 0.5 golova i",
-    2.12,
+    2.1,
     1.5
    ],
    [
     "",
     "vise 0.5 & vise 2.5",
     "1. Poluvreme Athletic Bilbao više od 0.5 golova i ",
-    5.5,
+    5.55,
     2.5
    ],
    [
     "",
     "vise 0.5 & manje 2.5",
     "1. Poluvreme Athletic Bilbao više od 0.5 golova i ",
-    2.72,
+    2.75,
     2.5
    ],
    [
@@ -4151,14 +5171,14 @@
     "",
     "manje 0.5 & manje 2.5",
     "1. Poluvreme Athletic Bilbao manje od 0.5 golova i",
-    1.83,
+    1.82,
     2.5
    ],
    [
     "",
     "vise 1.5 & vise 2.5",
     "1. Poluvreme Athletic Bilbao više od 1.5 golova i ",
-    8.2,
+    8.3,
     2.5
    ],
    [
@@ -4191,7 +5211,7 @@
     "",
     "vise 0.5 & vise 0.5",
     "Athletic Bilbao daje više od 0.5 golova u 1. poluv",
-    3.45,
+    3.5,
     2.0
    ],
    [
@@ -4205,14 +5225,14 @@
     "",
     "vise 0.5 & vise 1.5",
     "Athletic Bilbao daje više od 0.5 golova u 1. poluv",
-    8.1,
+    8.2,
     2.0
    ],
    [
     "",
     "vise 0.5 & manje 1.5",
     "Athletic Bilbao daje više od 0.5 golova u 1. poluv",
-    2.35,
+    2.37,
     2.0
    ],
    [
@@ -4226,7 +5246,7 @@
     "",
     "vise 0.5 & manje 2.5",
     "Athletic Bilbao daje više od 0.5 golova u 1. poluv",
-    2.05,
+    2.07,
     2.0
    ],
    [
@@ -4240,7 +5260,7 @@
     "",
     "manje 0.5 & manje 0.5",
     "Athletic Bilbao daje manje od 0.5 golova u 1. polu",
-    3.6,
+    3.55,
     2.0
    ],
    [
@@ -4254,7 +5274,7 @@
     "",
     "manje 0.5 & manje 1.5",
     "Athletic Bilbao daje manje od 0.5 golova u 1. polu",
-    2.12,
+    2.1,
     2.0
    ],
    [
@@ -4268,7 +5288,7 @@
     "",
     "manje 0.5 & manje 2.5",
     "Athletic Bilbao daje manje od 0.5 golova u 1. polu",
-    1.83,
+    1.82,
     2.0
    ]
   ]
@@ -4280,7 +5300,7 @@
     "1-",
     "1 & manje 0.5",
     "Valencia pobednik  i Athletic Bilbao manje od 0.5 ",
-    5.1,
+    5.0,
     0.5
    ],
    [
@@ -4294,7 +5314,7 @@
     "1+",
     "1 & vise 0.5",
     "Valencia pobednik  i Athletic Bilbao više od 0.5 g",
-    5.9,
+    5.85,
     0.5
    ],
    [
@@ -4308,7 +5328,7 @@
     "2+",
     "2 & vise 0.5",
     "Athletic Bilbao pobednik  i Athletic Bilbao više o",
-    2.12,
+    2.15,
     0.5
    ]
   ]
@@ -4320,7 +5340,7 @@
     "1-",
     "1 & manje 1.5",
     "Valencia pobednik  i Athletic Bilbao manje od 1.5 ",
-    3.35,
+    3.3,
     1.5
    ],
    [
@@ -4334,14 +5354,14 @@
     "2-",
     "2 & manje 1.5",
     "Athletic Bilbao pobednik  i Athletic Bilbao manje ",
-    6.6,
+    6.7,
     1.5
    ],
    [
     "1+",
     "1 & vise 1.5",
     "Valencia pobednik  i Athletic Bilbao više od 1.5 g",
-    19.0,
+    18.0,
     1.5
    ],
    [
@@ -4355,7 +5375,7 @@
     "2+",
     "2 & vise 1.5",
     "Athletic Bilbao pobednik  i Athletic Bilbao više o",
-    2.77,
+    2.8,
     1.5
    ]
   ]
@@ -4367,7 +5387,7 @@
     "1-",
     "1 & manje 2.5",
     "Valencia pobednik  i Athletic Bilbao manje od 2.5 ",
-    3.1,
+    3.05,
     2.5
    ],
    [
@@ -4402,7 +5422,7 @@
     "2+",
     "2 & vise 2.5",
     "Athletic Bilbao pobednik  i Athletic Bilbao više o",
-    5.15,
+    5.2,
     2.5
    ]
   ]
@@ -4508,7 +5528,7 @@
     "",
     "1-2",
     "Elche 1-2 gola na utakmici",
-    1.71,
+    1.7,
     -2.0
    ],
    [
@@ -4560,7 +5580,7 @@
     "0",
     "0",
     "Elche ne daje gol",
-    2.6,
+    2.62,
     3.0
    ],
    [
@@ -4600,7 +5620,7 @@
     "2",
     "ne",
     "Elche ne daje gol na utakmici",
-    2.62,
+    2.65,
     null
    ]
   ]
@@ -4736,14 +5756,14 @@
     "",
     "vise 0.5 & manje 2.5",
     "Elche daje više od 0.5 golova u 1. poluvremenu i m",
-    2.5,
+    2.52,
     2.0
    ],
    [
     "",
     "manje 0.5 & vise 0.5",
     "Elche daje manje od 0.5 golova u 1. poluvremenu i ",
-    3.1,
+    3.05,
     2.0
    ],
    [
@@ -4811,7 +5831,7 @@
     "0+",
     "x & vise 0.5",
     "nerešeno i Elche više od 0.5 gola na utakmici",
-    5.3,
+    5.25,
     0.5
    ],
    [
@@ -4837,7 +5857,7 @@
     "0-",
     "x & manje 1.5",
     "nerešeno i Elche manje od 1.5 gola na utakmici",
-    6.4,
+    6.3,
     1.5
    ],
    [
@@ -4952,7 +5972,7 @@
     "0+",
     "x & vise 3.5",
     "nerešeno i Elche više od 3.5 gola na utakmici",
-    85.0,
+    80.0,
     3.5
    ],
    [
@@ -4978,7 +5998,7 @@
     "0-",
     "x & manje 4.5",
     "nerešeno i Elche manje od 4.5 gola na utakmici",
-    4.5,
+    4.45,
     4.5
    ],
    [
@@ -5182,7 +6202,7 @@
     "",
     "2-3",
     "Betis 2-3 gola na utakmici",
-    2.8,
+    2.77,
     -3.0
    ]
   ]
@@ -5227,14 +6247,14 @@
     "13",
     "1-3",
     "Betis 1,2 ili 3 gola u svakom poluvremenu",
-    3.9,
+    3.85,
     3.0
    ],
    [
     "23",
     "2-3",
     "Betis 2 ili 3 gola u svakom poluvremenu",
-    27.0,
+    26.0,
     3.0
    ]
   ]
@@ -5260,7 +6280,7 @@
     "23",
     "2-3",
     "Barcelona 2 ili 3 gola u svakom poluvremenu",
-    6.4,
+    6.5,
     3.0
    ]
   ]
@@ -5272,7 +6292,7 @@
     "0",
     "0",
     "Betis ne daje gol",
-    3.3,
+    3.35,
     3.0
    ],
    [
@@ -5293,7 +6313,7 @@
     "3",
     "3+",
     "Betis daje 3 ili više golova",
-    5.9,
+    5.8,
     3.0
    ]
   ]
@@ -5312,7 +6332,7 @@
     "1",
     "1",
     "Barcelona daje tačno 1 gol",
-    4.8,
+    4.75,
     3.0
    ],
    [
@@ -5326,7 +6346,7 @@
     "3",
     "3+",
     "Barcelona daje 3 ili više golova",
-    1.87,
+    1.88,
     3.0
    ]
   ]
@@ -5345,7 +6365,7 @@
     "2",
     "ne",
     "Betis ne daje gol na utakmici",
-    3.35,
+    3.4,
     null
    ]
   ]
@@ -5376,7 +6396,7 @@
     "",
     "vise 0.5 & vise 1.5",
     "1. Poluvreme Betis više od 0.5 golova i Betis više",
-    3.15,
+    3.1,
     1.5
    ],
    [
@@ -5404,14 +6424,14 @@
     "",
     "vise 0.5 & vise 2.5",
     "1. Poluvreme Betis više od 0.5 golova i Betis više",
-    6.3,
+    6.2,
     2.5
    ],
    [
     "",
     "vise 0.5 & manje 2.5",
     "1. Poluvreme Betis više od 0.5 golova i Betis manj",
-    2.82,
+    2.8,
     2.5
    ],
    [
@@ -5425,14 +6445,14 @@
     "",
     "manje 0.5 & manje 2.5",
     "1. Poluvreme Betis manje od 0.5 golova i Betis man",
-    1.71,
+    1.72,
     2.5
    ],
    [
     "",
     "vise 1.5 & vise 2.5",
     "1. Poluvreme Betis više od 1.5 golova i Betis više",
-    9.6,
+    9.5,
     2.5
    ],
    [
@@ -5446,14 +6466,14 @@
     "",
     "manje 1.5 & vise 2.5",
     "1. Poluvreme Betis manje od 1.5 golova i Betis viš",
-    8.7,
+    8.6,
     2.5
    ],
    [
     "",
     "manje 1.5 & manje 2.5",
     "1. Poluvreme Betis manje od 1.5 golova i Betis man",
-    1.17,
+    1.18,
     2.5
    ]
   ]
@@ -5465,7 +6485,7 @@
     "",
     "vise 0.5 & vise 1.5",
     "1. Poluvreme Barcelona više od 0.5 golova i Barcel",
-    1.5,
+    1.51,
     1.5
    ],
    [
@@ -5486,7 +6506,7 @@
     "",
     "manje 0.5 & manje 1.5",
     "1. Poluvreme Barcelona manje od 0.5 golova i Barce",
-    5.0,
+    4.9,
     1.5
    ],
    [
@@ -5500,7 +6520,7 @@
     "",
     "vise 0.5 & manje 2.5",
     "1. Poluvreme Barcelona više od 0.5 golova i Barcel",
-    3.45,
+    3.4,
     2.5
    ],
    [
@@ -5568,7 +6588,7 @@
     "",
     "vise 0.5 & vise 1.5",
     "Betis daje više od 0.5 golova u 1. poluvremenu i v",
-    9.2,
+    9.1,
     2.0
    ],
    [
@@ -5582,7 +6602,7 @@
     "",
     "vise 0.5 & vise 2.5",
     "Betis daje više od 0.5 golova u 1. poluvremenu i v",
-    28.0,
+    27.0,
     2.0
    ],
    [
@@ -5631,7 +6651,7 @@
     "",
     "manje 0.5 & manje 2.5",
     "Betis daje manje od 0.5 golova u 1. poluvremenu i ",
-    1.71,
+    1.72,
     2.0
    ]
   ]
@@ -5643,7 +6663,7 @@
     "",
     "vise 0.5 & vise 0.5",
     "Barcelona daje više od 0.5 golova u 1. poluvremenu",
-    1.7,
+    1.71,
     2.0
    ],
    [
@@ -5706,7 +6726,7 @@
     "",
     "manje 0.5 & manje 1.5",
     "Barcelona daje manje od 0.5 golova u 1. poluvremen",
-    5.0,
+    4.9,
     2.0
    ],
    [
@@ -5746,7 +6766,7 @@
     "1+",
     "1 & vise 0.5",
     "Betis pobednik i Betis više od 0.5 gola na utakmic",
-    5.0,
+    4.9,
     0.5
    ],
    [
@@ -5786,14 +6806,14 @@
     "2-",
     "2 & manje 1.5",
     "Barcelona pobednik i Betis manje od 1.5 gola na ut",
-    1.78,
+    1.8,
     1.5
    ],
    [
     "1+",
     "1 & vise 1.5",
     "Betis pobednik i Betis više od 1.5 gola na utakmic",
-    5.65,
+    5.6,
     1.5
    ],
    [
@@ -5826,7 +6846,7 @@
     "0-",
     "x & manje 2.5",
     "nerešeno i Betis manje od 2.5 gola na utakmici",
-    5.55,
+    5.5,
     2.5
    ],
    [
@@ -5840,7 +6860,7 @@
     "1+",
     "1 & vise 2.5",
     "Betis pobednik i Betis više od 2.5 gola na utakmic",
-    8.3,
+    8.2,
     2.5
    ],
    [
@@ -5974,7 +6994,7 @@
     "1+",
     "1 & vise 0.5",
     "Betis pobednik  i Barcelona više od 0.5 gola na ut",
-    6.6,
+    6.5,
     0.5
    ],
    [
@@ -6035,7 +7055,7 @@
     "2+",
     "2 & vise 1.5",
     "Barcelona pobednik  i Barcelona više od 1.5 gola n",
-    1.51,
+    1.52,
     1.5
    ]
   ]
@@ -6054,7 +7074,7 @@
     "0-",
     "x & manje 2.5",
     "nerešeno i Barcelona manje od 2.5 gola na utakmici",
-    5.55,
+    5.5,
     2.5
    ],
    [
@@ -6068,7 +7088,7 @@
     "1+",
     "1 & vise 2.5",
     "Betis pobednik  i Barcelona više od 2.5 gola na ut",
-    36.0,
+    35.0,
     2.5
    ],
    [
@@ -6141,7 +7161,7 @@
     "1-",
     "1 & manje 4.5",
     "Betis pobednik  i Barcelona manje od 4.5 gola na u",
-    5.0,
+    4.9,
     4.5
    ],
    [
@@ -6155,7 +7175,7 @@
     "2-",
     "2 & manje 4.5",
     "Barcelona pobednik  i Barcelona manje od 4.5 gola ",
-    1.74,
+    1.75,
     4.5
    ],
    [
@@ -6176,7 +7196,7 @@
     "2+",
     "2 & vise 4.5",
     "Barcelona pobednik  i Barcelona više od 4.5 gola n",
-    5.65,
+    5.7,
     4.5
    ]
   ]
@@ -7012,6 +8032,176 @@
    ]
   ]
  },
+ "Ukupno šuteva u okvir gola": {
+  "mecova": 1,
+  "primer": [
+   [
+    "*1-",
+    "manje 7.5",
+    "Manje od 7.5 šuteva u okvir gola",
+    2.42,
+    7.5
+   ],
+   [
+    "*1+",
+    "vise 7.5",
+    "Više od 7.5 šuteva u okvir gola",
+    1.46,
+    7.5
+   ],
+   [
+    "*1-",
+    "manje 8.5",
+    "Manje od 8.5 šuteva u okvir gola",
+    1.85,
+    8.5
+   ],
+   [
+    "*1+",
+    "vise 8.5",
+    "Više od 8.5 šuteva u okvir gola",
+    1.85,
+    8.5
+   ],
+   [
+    "*1-",
+    "manje 9.5",
+    "Manje od 9.5 šuteva u okvir gola",
+    1.48,
+    9.5
+   ],
+   [
+    "*1+",
+    "vise 9.5",
+    "Više od 9.5 šuteva u okvir gola",
+    2.4,
+    9.5
+   ]
+  ]
+ },
+ "Deportivo de A Coruna ukupno šuteva u okvir gola": {
+  "mecova": 1,
+  "primer": [
+   [
+    "*11-",
+    "manje 4.5",
+    "Deportivo de A Coruna će imati manje od 4.5 šuteva",
+    1.87,
+    4.5
+   ],
+   [
+    "*11+",
+    "vise 4.5",
+    "Deportivo de A Coruna će imati više od 4.5 šuteva ",
+    1.85,
+    4.5
+   ]
+  ]
+ },
+ "Levante ukupno šuteva u okvir gola": {
+  "mecova": 1,
+  "primer": [
+   [
+    "*12-",
+    "manje 3.5",
+    "Levante će imati manje od 3.5 šuteva u okvir gola",
+    2.02,
+    3.5
+   ],
+   [
+    "*12+",
+    "vise 3.5",
+    "Levante će imati više od 3.5 šuteva u okvir gola",
+    1.7,
+    3.5
+   ]
+  ]
+ },
+ "Ukupno šuteva": {
+  "mecova": 1,
+  "primer": [
+   [
+    "",
+    "manje 24.5",
+    "manje od 24.5 šuteva",
+    2.25,
+    24.5
+   ],
+   [
+    "",
+    "vise 24.5",
+    "više od 24.5 šuteva",
+    1.55,
+    24.5
+   ],
+   [
+    "",
+    "manje 25.5",
+    "manje od 25.5 šuteva",
+    1.95,
+    25.5
+   ],
+   [
+    "",
+    "vise 25.5",
+    "više od 25.5 šuteva",
+    1.77,
+    25.5
+   ],
+   [
+    "",
+    "manje 26.5",
+    "manje od 26.5 šuteva",
+    1.69,
+    26.5
+   ],
+   [
+    "",
+    "vise 26.5",
+    "više od 26.5 šuteva",
+    2.02,
+    26.5
+   ]
+  ]
+ },
+ "Ukupno šuteva Deportivo de A Coruna": {
+  "mecova": 1,
+  "primer": [
+   [
+    "",
+    "manje 14.5",
+    "Deportivo de A Coruna manje od 14.5 šuteva,",
+    1.75,
+    14.5
+   ],
+   [
+    "",
+    "vise 14.5",
+    "Deportivo de A Coruna više od 14.5 šuteva",
+    1.95,
+    14.5
+   ]
+  ]
+ },
+ "Ukupno šuteva Levante": {
+  "mecova": 1,
+  "primer": [
+   [
+    "",
+    "manje 11.5",
+    "Levante manje od 11.5 šuteva",
+    1.78,
+    11.5
+   ],
+   [
+    "",
+    "vise 11.5",
+    "Levante više od 11.5 šuteva",
+    1.92,
+    11.5
+   ]
+  ]
+ },
  "Deportivo de A Coruna raspon golova": {
   "mecova": 1,
   "primer": [
@@ -7026,14 +8216,14 @@
     "",
     "1-3",
     "Deportivo de A Coruna  1-3 gola na utakmici",
-    1.34,
+    1.35,
     -3.0
    ],
    [
     "",
     "2-3",
     "Deportivo de A Coruna 2-3 gola na utakmici",
-    2.45,
+    2.47,
     -3.0
    ]
   ]
@@ -7059,7 +8249,7 @@
     "23",
     "2-3",
     "Deportivo de A Coruna 2 ili 3 gola u svakom poluvr",
-    19.0,
+    20.0,
     3.0
    ]
   ]
@@ -7071,14 +8261,14 @@
     "0",
     "0",
     "Deportivo de A Coruna ne daje gol",
-    4.1,
+    4.0,
     3.0
    ],
    [
     "1",
     "1",
     "Deportivo de A Coruna daje tačno 1 gol",
-    2.75,
+    2.72,
     3.0
    ],
    [
@@ -7092,7 +8282,7 @@
     "3",
     "3+",
     "Deportivo de A Coruna daje 3 ili više golova",
-    4.55,
+    4.6,
     3.0
    ]
   ]
@@ -7130,7 +8320,7 @@
     "",
     "vise 0.5 & manje 1.5",
     "1. Poluvreme Deportivo de A Coruna više od 0.5 gol",
-    5.25,
+    5.2,
     1.5
    ],
    [
@@ -7193,7 +8383,7 @@
     "",
     "manje 1.5 & vise 2.5",
     "1. Poluvreme Deportivo de A Coruna manje od 1.5 go",
-    7.3,
+    7.4,
     2.5
    ],
    [
@@ -7233,7 +8423,7 @@
     "",
     "vise 0.5 & manje 1.5",
     "Deportivo de A Coruna daje više od 0.5 golova u 1.",
-    2.32,
+    2.3,
     2.0
    ],
    [
@@ -7308,7 +8498,7 @@
     "2-",
     "2 & manje 0.5",
     "Levante pobednik i Deportivo de A Coruna manje od ",
-    5.45,
+    5.4,
     0.5
    ],
    [
@@ -7362,14 +8552,14 @@
     "1+",
     "1 & vise 1.5",
     "Deportivo de A Coruna pobednik i Deportivo de A Co",
-    2.6,
+    2.62,
     1.5
    ],
    [
     "0+",
     "x & vise 1.5",
     "nerešeno i Deportivo de A Coruna više od 1.5 gola ",
-    9.2,
+    9.3,
     1.5
    ],
    [
@@ -7409,7 +8599,7 @@
     "1+",
     "1 & vise 2.5",
     "Deportivo de A Coruna pobednik i Deportivo de A Co",
-    4.65,
+    4.7,
     2.5
    ],
    [
@@ -7442,21 +8632,21 @@
     "0-",
     "x & manje 3.5",
     "nerešeno i Deportivo de A Coruna manje od 3.5 gola",
-    3.15,
+    3.2,
     3.5
    ],
    [
     "2-",
     "2 & manje 3.5",
     "Levante pobednik i Deportivo de A Coruna manje od ",
-    3.2,
+    3.15,
     3.5
    ],
    [
     "1+",
     "1 & vise 3.5",
     "Deportivo de A Coruna pobednik i Deportivo de A Co",
-    9.9,
+    10.0,
     3.5
    ],
    [
@@ -7503,7 +8693,7 @@
     "1+",
     "1 & vise 4.5",
     "Deportivo de A Coruna pobednik i Deportivo de A Co",
-    24.0,
+    25.0,
     4.5
    ],
    [
@@ -7700,32 +8890,6 @@
    ]
   ]
  },
- "Espanyol raspon golova": {
-  "mecova": 1,
-  "primer": [
-   [
-    "",
-    "1-2",
-    "Espanyol 1-2 gola na utakmici",
-    1.71,
-    -2.0
-   ],
-   [
-    "",
-    "1-3",
-    "Espanyol  1-3 gola na utakmici",
-    1.54,
-    -3.0
-   ],
-   [
-    "",
-    "2-3",
-    "Espanyol 2-3 gola na utakmici",
-    3.6,
-    -3.0
-   ]
-  ]
- },
  "Atletico Madrid raspon golova": {
   "mecova": 1,
   "primer": [
@@ -7733,7 +8897,7 @@
     "",
     "1-2",
     "Atletico Madrid 1-2 gola na utakmici",
-    1.67,
+    1.68,
     -2.0
    ],
    [
@@ -7749,32 +8913,6 @@
     "Atletico Madrid 2-3 gola na utakmici",
     2.2,
     -3.0
-   ]
-  ]
- },
- "Espanyol raspon golova u svakom poluvremenu": {
-  "mecova": 1,
-  "primer": [
-   [
-    "12",
-    "1-2",
-    "Espanyol 1 ili 2 gola u svakom poluvremenu",
-    5.5,
-    2.0
-   ],
-   [
-    "13",
-    "1-3",
-    "Espanyol 1,2 ili 3 gola u svakom poluvremenu",
-    5.2,
-    3.0
-   ],
-   [
-    "23",
-    "2-3",
-    "Espanyol 2 ili 3 gola u svakom poluvremenu",
-    45.0,
-    3.0
    ]
   ]
  },
@@ -7800,39 +8938,6 @@
     "2-3",
     "Atletico Madrid 2 ili 3 gola u svakom poluvremenu",
     13.0,
-    3.0
-   ]
-  ]
- },
- "Espanyol tačno golova": {
-  "mecova": 1,
-  "primer": [
-   [
-    "0",
-    "0",
-    "Espanyol ne daje gol",
-    2.57,
-    3.0
-   ],
-   [
-    "1",
-    "1",
-    "Espanyol daje tačno 1 gol",
-    2.52,
-    3.0
-   ],
-   [
-    "2",
-    "2",
-    "Espanyol daje tačno 2 gola",
-    4.65,
-    3.0
-   ],
-   [
-    "3",
-    "3+",
-    "Espanyol daje 3 ili više golova",
-    9.0,
     3.0
    ]
   ]
@@ -7870,25 +8975,6 @@
    ]
   ]
  },
- "Espanyol daje gol": {
-  "mecova": 1,
-  "primer": [
-   [
-    "1",
-    "da",
-    "Espanyol daje gol na utakmici",
-    1.5,
-    null
-   ],
-   [
-    "2",
-    "ne",
-    "Espanyol ne daje gol na utakmici",
-    2.6,
-    null
-   ]
-  ]
- },
  "Atletico Madrid daje gol": {
   "mecova": 1,
   "primer": [
@@ -7905,95 +8991,6 @@
     "Atletico Madrid ne daje gol na utakmici",
     5.3,
     null
-   ]
-  ]
- },
- "1. Poluvreme Espanyol Ukupno golova & Ukupno golova Espanyol": {
-  "mecova": 1,
-  "primer": [
-   [
-    "",
-    "vise 0.5 & vise 1.5",
-    "1. Poluvreme Espanyol više od 0.5 golova i Espanyo",
-    4.25,
-    1.5
-   ],
-   [
-    "",
-    "vise 0.5 & manje 1.5",
-    "1. Poluvreme Espanyol više od 0.5 golova i Espanyo",
-    4.9,
-    1.5
-   ],
-   [
-    "",
-    "manje 0.5 & vise 1.5",
-    "1. Poluvreme Espanyol manje od 0.5 golova i Espany",
-    8.7,
-    1.5
-   ],
-   [
-    "",
-    "manje 0.5 & manje 1.5",
-    "1. Poluvreme Espanyol manje od 0.5 golova i Espany",
-    1.65,
-    1.5
-   ],
-   [
-    "",
-    "vise 0.5 & vise 2.5",
-    "1. Poluvreme Espanyol više od 0.5 golova i Espanyo",
-    9.4,
-    2.5
-   ],
-   [
-    "",
-    "vise 0.5 & manje 2.5",
-    "1. Poluvreme Espanyol više od 0.5 golova i Espanyo",
-    3.0,
-    2.5
-   ],
-   [
-    "",
-    "manje 0.5 & vise 2.5",
-    "1. Poluvreme Espanyol manje od 0.5 golova i Espany",
-    31.0,
-    2.5
-   ],
-   [
-    "",
-    "manje 0.5 & manje 2.5",
-    "1. Poluvreme Espanyol manje od 0.5 golova i Espany",
-    1.5,
-    2.5
-   ],
-   [
-    "",
-    "vise 1.5 & vise 2.5",
-    "1. Poluvreme Espanyol više od 1.5 golova i Espanyo",
-    15.0,
-    2.5
-   ],
-   [
-    "",
-    "vise 1.5 & manje 2.5",
-    "1. Poluvreme Espanyol više od 1.5 golova i Espanyo",
-    15.0,
-    2.5
-   ],
-   [
-    "",
-    "manje 1.5 & vise 2.5",
-    "1. Poluvreme Espanyol manje od 1.5 golova i Espany",
-    13.0,
-    2.5
-   ],
-   [
-    "",
-    "manje 1.5 & manje 2.5",
-    "1. Poluvreme Espanyol manje od 1.5 golova i Espany",
-    1.09,
-    2.5
    ]
   ]
  },
@@ -8086,95 +9083,6 @@
    ]
   ]
  },
- "Espanyol - 1. poluvreme ukupno golova & 2. poluvreme ukupno golova": {
-  "mecova": 1,
-  "primer": [
-   [
-    "",
-    "vise 0.5 & vise 0.5",
-    "Espanyol daje više od 0.5 golova u 1. poluvremenu ",
-    5.2,
-    2.0
-   ],
-   [
-    "",
-    "vise 0.5 & manje 0.5",
-    "Espanyol daje više od 0.5 golova u 1. poluvremenu ",
-    4.1,
-    2.0
-   ],
-   [
-    "",
-    "vise 0.5 & vise 1.5",
-    "Espanyol daje više od 0.5 golova u 1. poluvremenu ",
-    15.0,
-    2.0
-   ],
-   [
-    "",
-    "vise 0.5 & manje 1.5",
-    "Espanyol daje više od 0.5 golova u 1. poluvremenu ",
-    2.77,
-    2.0
-   ],
-   [
-    "",
-    "vise 0.5 & vise 2.5",
-    "Espanyol daje više od 0.5 golova u 1. poluvremenu ",
-    50.0,
-    2.0
-   ],
-   [
-    "",
-    "vise 0.5 & manje 2.5",
-    "Espanyol daje više od 0.5 golova u 1. poluvremenu ",
-    2.55,
-    2.0
-   ],
-   [
-    "",
-    "manje 0.5 & vise 0.5",
-    "Espanyol daje manje od 0.5 golova u 1. poluvremenu",
-    3.1,
-    2.0
-   ],
-   [
-    "",
-    "manje 0.5 & manje 0.5",
-    "Espanyol daje manje od 0.5 golova u 1. poluvremenu",
-    2.52,
-    2.0
-   ],
-   [
-    "",
-    "manje 0.5 & vise 1.5",
-    "Espanyol daje manje od 0.5 golova u 1. poluvremenu",
-    8.7,
-    2.0
-   ],
-   [
-    "",
-    "manje 0.5 & manje 1.5",
-    "Espanyol daje manje od 0.5 golova u 1. poluvremenu",
-    1.65,
-    2.0
-   ],
-   [
-    "",
-    "manje 0.5 & vise 2.5",
-    "Espanyol daje manje od 0.5 golova u 1. poluvremenu",
-    31.0,
-    2.0
-   ],
-   [
-    "",
-    "manje 0.5 & manje 2.5",
-    "Espanyol daje manje od 0.5 golova u 1. poluvremenu",
-    1.5,
-    2.0
-   ]
-  ]
- },
  "Atletico Madrid - 1. poluvreme ukupno golova & 2. poluvreme ukupno golova": {
   "mecova": 1,
   "primer": [
@@ -8264,234 +9172,6 @@
    ]
   ]
  },
- "1X2 & ukupno golova Espanyol (0.5)": {
-  "mecova": 1,
-  "primer": [
-   [
-    "0-",
-    "x & manje 0.5",
-    "nerešeno i Espanyol manje od 0.5 gola na utakmici",
-    10.0,
-    0.5
-   ],
-   [
-    "2-",
-    "2 & manje 0.5",
-    "Atletico Madrid pobednik i Espanyol manje od 0.5 g",
-    2.95,
-    0.5
-   ],
-   [
-    "1+",
-    "1 & vise 0.5",
-    "Espanyol pobednik i Espanyol više od 0.5 gola na u",
-    4.1,
-    0.5
-   ],
-   [
-    "0+",
-    "x & vise 0.5",
-    "nerešeno i Espanyol više od 0.5 gola na utakmici",
-    4.5,
-    0.5
-   ],
-   [
-    "2+",
-    "2 & vise 0.5",
-    "Atletico Madrid pobednik i Espanyol više od 0.5 go",
-    3.4,
-    0.5
-   ]
-  ]
- },
- "1X2 & ukupno golova Espanyol (1.5)": {
-  "mecova": 1,
-  "primer": [
-   [
-    "1-",
-    "1 & manje 1.5",
-    "Espanyol pobednik i Espanyol manje od 1.5 gola na ",
-    11.0,
-    1.5
-   ],
-   [
-    "0-",
-    "x & manje 1.5",
-    "nerešeno i Espanyol manje od 1.5 gola na utakmici",
-    4.55,
-    1.5
-   ],
-   [
-    "2-",
-    "2 & manje 1.5",
-    "Atletico Madrid pobednik i Espanyol manje od 1.5 g",
-    1.88,
-    1.5
-   ],
-   [
-    "1+",
-    "1 & vise 1.5",
-    "Espanyol pobednik i Espanyol više od 1.5 gola na u",
-    5.4,
-    1.5
-   ],
-   [
-    "0+",
-    "x & vise 1.5",
-    "nerešeno i Espanyol više od 1.5 gola na utakmici",
-    9.7,
-    1.5
-   ],
-   [
-    "2+",
-    "2 & vise 1.5",
-    "Atletico Madrid pobednik i Espanyol više od 1.5 go",
-    11.0,
-    1.5
-   ]
-  ]
- },
- "1X2 & ukupno golova Espanyol (2.5)": {
-  "mecova": 1,
-  "primer": [
-   [
-    "1-",
-    "1 & manje 2.5",
-    "Espanyol pobednik i Espanyol manje od 2.5 gola na ",
-    5.55,
-    2.5
-   ],
-   [
-    "0-",
-    "x & manje 2.5",
-    "nerešeno i Espanyol manje od 2.5 gola na utakmici",
-    3.65,
-    2.5
-   ],
-   [
-    "2-",
-    "2 & manje 2.5",
-    "Atletico Madrid pobednik i Espanyol manje od 2.5 g",
-    1.71,
-    2.5
-   ],
-   [
-    "1+",
-    "1 & vise 2.5",
-    "Espanyol pobednik i Espanyol više od 2.5 gola na u",
-    10.0,
-    2.5
-   ],
-   [
-    "0+",
-    "x & vise 2.5",
-    "nerešeno i Espanyol više od 2.5 gola na utakmici",
-    33.0,
-    2.5
-   ],
-   [
-    "2+",
-    "2 & vise 2.5",
-    "Atletico Madrid pobednik i Espanyol više od 2.5 go",
-    45.0,
-    2.5
-   ]
-  ]
- },
- "1X2 & ukupno golova Espanyol (3.5)": {
-  "mecova": 1,
-  "primer": [
-   [
-    "1-",
-    "1 & manje 3.5",
-    "Espanyol pobednik i Espanyol manje od 3.5 gola na ",
-    4.45,
-    3.5
-   ],
-   [
-    "0-",
-    "x & manje 3.5",
-    "nerešeno i Espanyol manje od 3.5 gola na utakmici",
-    3.5,
-    3.5
-   ],
-   [
-    "2-",
-    "2 & manje 3.5",
-    "Atletico Madrid pobednik i Espanyol manje od 3.5 g",
-    1.69,
-    3.5
-   ],
-   [
-    "1+",
-    "1 & vise 3.5",
-    "Espanyol pobednik i Espanyol više od 3.5 gola na u",
-    25.0,
-    3.5
-   ],
-   [
-    "0+",
-    "x & vise 3.5",
-    "nerešeno i Espanyol više od 3.5 gola na utakmici",
-    100.0,
-    3.5
-   ],
-   [
-    "2+",
-    "2 & vise 3.5",
-    "Atletico Madrid pobednik i Espanyol više od 3.5 go",
-    100.0,
-    3.5
-   ]
-  ]
- },
- "1X2 & ukupno golova Espanyol (4.5)": {
-  "mecova": 1,
-  "primer": [
-   [
-    "1-",
-    "1 & manje 4.5",
-    "Espanyol pobednik i Espanyol manje od 4.5 gola na ",
-    4.15,
-    4.5
-   ],
-   [
-    "0-",
-    "x & manje 4.5",
-    "nerešeno i Espanyol manje od 4.5 gola na utakmici",
-    3.5,
-    4.5
-   ],
-   [
-    "2-",
-    "2 & manje 4.5",
-    "Atletico Madrid pobednik i Espanyol manje od 4.5 g",
-    1.69,
-    4.5
-   ],
-   [
-    "1+",
-    "1 & vise 4.5",
-    "Espanyol pobednik i Espanyol više od 4.5 gola na u",
-    70.0,
-    4.5
-   ],
-   [
-    "0+",
-    "x & vise 4.5",
-    "nerešeno i Espanyol više od 4.5 gola na utakmici",
-    125.0,
-    4.5
-   ],
-   [
-    "2+",
-    "2 & vise 4.5",
-    "Atletico Madrid pobednik i Espanyol više od 4.5 go",
-    125.0,
-    4.5
-   ]
-  ]
- },
  "1X2 & ukupno golova Atletico Madrid (0.5)": {
   "mecova": 1,
   "primer": [
@@ -8513,21 +9193,21 @@
     "1+",
     "1 & vise 0.5",
     "Espanyol pobednik  i Atletico Madrid više od 0.5 g",
-    7.0,
+    7.1,
     0.5
    ],
    [
     "0+",
     "x & vise 0.5",
     "nerešeno i Atletico Madrid više od 0.5 gola na uta",
-    4.5,
+    4.55,
     0.5
    ],
    [
     "2+",
     "2 & vise 0.5",
     "Atletico Madrid pobednik  i Atletico Madrid više o",
-    1.69,
+    1.68,
     0.5
    ]
   ]
@@ -8553,7 +9233,7 @@
     "2-",
     "2 & manje 1.5",
     "Atletico Madrid pobednik  i Atletico Madrid manje ",
-    6.8,
+    6.7,
     1.5
    ],
    [
@@ -8567,14 +9247,14 @@
     "0+",
     "x & vise 1.5",
     "nerešeno i Atletico Madrid više od 1.5 gola na uta",
-    9.7,
+    9.9,
     1.5
    ],
    [
     "2+",
     "2 & vise 1.5",
     "Atletico Madrid pobednik  i Atletico Madrid više o",
-    2.07,
+    2.05,
     1.5
    ]
   ]
@@ -8586,21 +9266,21 @@
     "1-",
     "1 & manje 2.5",
     "Espanyol pobednik  i Atletico Madrid manje od 2.5 ",
-    4.15,
+    4.2,
     2.5
    ],
    [
     "0-",
     "x & manje 2.5",
     "nerešeno i Atletico Madrid manje od 2.5 gola na ut",
-    3.65,
+    3.7,
     2.5
    ],
    [
     "2-",
     "2 & manje 2.5",
     "Atletico Madrid pobednik  i Atletico Madrid manje ",
-    2.95,
+    2.9,
     2.5
    ],
    [
@@ -8614,7 +9294,7 @@
     "0+",
     "x & vise 2.5",
     "nerešeno i Atletico Madrid više od 2.5 gola na uta",
-    33.0,
+    34.0,
     2.5
    ],
    [
@@ -8633,14 +9313,14 @@
     "1-",
     "1 & manje 3.5",
     "Espanyol pobednik  i Atletico Madrid manje od 3.5 ",
-    4.1,
+    4.15,
     3.5
    ],
    [
     "0-",
     "x & manje 3.5",
     "nerešeno i Atletico Madrid manje od 3.5 gola na ut",
-    3.5,
+    3.55,
     3.5
    ],
    [
@@ -8680,21 +9360,21 @@
     "1-",
     "1 & manje 4.5",
     "Espanyol pobednik  i Atletico Madrid manje od 4.5 ",
-    4.1,
+    4.15,
     4.5
    ],
    [
     "0-",
     "x & manje 4.5",
     "nerešeno i Atletico Madrid manje od 4.5 gola na ut",
-    3.5,
+    3.55,
     4.5
    ],
    [
     "2-",
     "2 & manje 4.5",
     "Atletico Madrid pobednik  i Atletico Madrid manje ",
-    1.8,
+    1.78,
     4.5
    ],
    [
@@ -9537,7 +10217,7 @@
     "",
     "1-3",
     "Real Sociedad 1-3 gola na utakmici",
-    1.33,
+    1.34,
     -3.0
    ],
    [
@@ -9582,7 +10262,7 @@
     "0",
     "0",
     "Real Sociedad ne daje gol",
-    4.3,
+    4.25,
     3.0
    ],
    [
@@ -9603,7 +10283,7 @@
     "3",
     "3+",
     "Real Sociedad daje 3 ili više golova",
-    4.25,
+    4.3,
     3.0
    ]
   ]
@@ -9622,7 +10302,7 @@
     "2",
     "ne",
     "Real Sociedad ne daje gol na utakmici",
-    4.35,
+    4.3,
     null
    ]
   ]
@@ -9634,7 +10314,7 @@
     "",
     "vise 0.5 & vise 1.5",
     "1. Poluvreme Real Sociedad više od 0.5 golova i Re",
-    2.52,
+    2.55,
     1.5
    ],
    [
@@ -9662,7 +10342,7 @@
     "",
     "vise 0.5 & vise 2.5",
     "1. Poluvreme Real Sociedad više od 0.5 golova i Re",
-    4.6,
+    4.65,
     2.5
    ],
    [
@@ -9690,7 +10370,7 @@
     "",
     "vise 1.5 & vise 2.5",
     "1. Poluvreme Real Sociedad više od 1.5 golova i Re",
-    7.0,
+    7.1,
     2.5
    ],
    [
@@ -9744,7 +10424,7 @@
     "",
     "vise 0.5 & manje 1.5",
     "Real Sociedad daje više od 0.5 golova u 1. poluvre",
-    2.27,
+    2.3,
     2.0
    ],
    [
@@ -9899,14 +10579,14 @@
     "1-",
     "1 & manje 2.5",
     "Malaga pobednik  i Real Sociedad manje od 2.5 gola",
-    3.05,
+    3.0,
     2.5
    ],
    [
     "0-",
     "x & manje 2.5",
     "nerešeno i Real Sociedad manje od 2.5 gola na utak",
-    3.4,
+    3.45,
     2.5
    ],
    [
@@ -9946,7 +10626,7 @@
     "1-",
     "1 & manje 3.5",
     "Malaga pobednik  i Real Sociedad manje od 3.5 gola",
-    3.0,
+    2.95,
     3.5
    ],
    [
@@ -9974,7 +10654,7 @@
     "0+",
     "x & vise 3.5",
     "nerešeno i Real Sociedad više od 3.5 gola na utakm",
-    85.0,
+    90.0,
     3.5
    ],
    [
@@ -9993,7 +10673,7 @@
     "1-",
     "1 & manje 4.5",
     "Malaga pobednik  i Real Sociedad manje od 4.5 gola",
-    3.0,
+    2.95,
     4.5
    ],
    [
@@ -10190,7 +10870,7 @@
     "",
     "1-2",
     "Osasuna 1-2 gola na utakmici",
-    1.66,
+    1.65,
     -2.0
    ],
    [
@@ -10209,32 +10889,6 @@
    ]
   ]
  },
- "Racing Santander raspon golova": {
-  "mecova": 1,
-  "primer": [
-   [
-    "",
-    "1-2",
-    "Racing Santander 1-2 gola na utakmici",
-    1.62,
-    -2.0
-   ],
-   [
-    "",
-    "1-3",
-    "Racing Santander 1-3 gola na utakmici",
-    1.4,
-    -3.0
-   ],
-   [
-    "",
-    "2-3",
-    "Racing Santander 2-3 gola na utakmici",
-    2.82,
-    -3.0
-   ]
-  ]
- },
  "Osasuna raspon golova u svakom poluvremenu": {
   "mecova": 1,
   "primer": [
@@ -10242,14 +10896,14 @@
     "12",
     "1-2",
     "Osasuna 1 ili 2 gola u svakom poluvremenu",
-    3.2,
+    3.25,
     2.0
    ],
    [
     "13",
     "1-3",
     "Osasuna 1,2 ili 3 gola u svakom poluvremenu",
-    2.8,
+    2.77,
     3.0
    ],
    [
@@ -10257,32 +10911,6 @@
     "2-3",
     "Osasuna 2 ili 3 gola u svakom poluvremenu",
     14.0,
-    3.0
-   ]
-  ]
- },
- "Racing Santander raspon golova u svakom poluvremenu": {
-  "mecova": 1,
-  "primer": [
-   [
-    "12",
-    "1-2",
-    "Racing Santander 1 ili 2 gola u svakom poluvremenu",
-    4.3,
-    2.0
-   ],
-   [
-    "13",
-    "1-3",
-    "Racing Santander 1,2 ili 3 gola u svakom poluvreme",
-    4.0,
-    3.0
-   ],
-   [
-    "23",
-    "2-3",
-    "Racing Santander 2 ili 3 gola u svakom poluvremenu",
-    28.0,
     3.0
    ]
   ]
@@ -10320,39 +10948,6 @@
    ]
   ]
  },
- "Racing Santander tačno golova": {
-  "mecova": 1,
-  "primer": [
-   [
-    "0",
-    "0",
-    "Racing Santander ne daje gol",
-    3.3,
-    3.0
-   ],
-   [
-    "1",
-    "1",
-    "Racing Santander daje tačno 1 gol",
-    2.57,
-    3.0
-   ],
-   [
-    "2",
-    "2",
-    "Racing Santander daje tačno 2 gola",
-    3.9,
-    3.0
-   ],
-   [
-    "3",
-    "3+",
-    "Racing Santander daje 3 ili više golova",
-    6.0,
-    3.0
-   ]
-  ]
- },
  "Osasuna daje gol": {
   "mecova": 1,
   "primer": [
@@ -10368,25 +10963,6 @@
     "ne",
     "Osasuna ne daje gol na utakmici",
     5.1,
-    null
-   ]
-  ]
- },
- "Racing Santander daje gol": {
-  "mecova": 1,
-  "primer": [
-   [
-    "1",
-    "da",
-    "Racing Santander daje gol na utakmici",
-    1.33,
-    null
-   ],
-   [
-    "2",
-    "ne",
-    "Racing Santander ne daje gol na utakmici",
-    3.35,
     null
    ]
   ]
@@ -10480,95 +11056,6 @@
    ]
   ]
  },
- "1. Poluvreme Racing Santander Ukupno golova & Ukupno golova Racing Santander": {
-  "mecova": 1,
-  "primer": [
-   [
-    "",
-    "vise 0.5 & vise 1.5",
-    "1. Poluvreme Racing Santander više od 0.5 golova i",
-    3.2,
-    1.5
-   ],
-   [
-    "",
-    "vise 0.5 & manje 1.5",
-    "1. Poluvreme Racing Santander više od 0.5 golova i",
-    5.1,
-    1.5
-   ],
-   [
-    "",
-    "manje 0.5 & vise 1.5",
-    "1. Poluvreme Racing Santander manje od 0.5 golova ",
-    7.4,
-    1.5
-   ],
-   [
-    "",
-    "manje 0.5 & manje 1.5",
-    "1. Poluvreme Racing Santander manje od 0.5 golova ",
-    1.95,
-    1.5
-   ],
-   [
-    "",
-    "vise 0.5 & vise 2.5",
-    "1. Poluvreme Racing Santander više od 0.5 golova i",
-    6.5,
-    2.5
-   ],
-   [
-    "",
-    "vise 0.5 & manje 2.5",
-    "1. Poluvreme Racing Santander više od 0.5 golova i",
-    2.82,
-    2.5
-   ],
-   [
-    "",
-    "manje 0.5 & vise 2.5",
-    "1. Poluvreme Racing Santander manje od 0.5 golova ",
-    22.0,
-    2.5
-   ],
-   [
-    "",
-    "manje 0.5 & manje 2.5",
-    "1. Poluvreme Racing Santander manje od 0.5 golova ",
-    1.7,
-    2.5
-   ],
-   [
-    "",
-    "vise 1.5 & vise 2.5",
-    "1. Poluvreme Racing Santander više od 1.5 golova i",
-    9.9,
-    2.5
-   ],
-   [
-    "",
-    "vise 1.5 & manje 2.5",
-    "1. Poluvreme Racing Santander više od 1.5 golova i",
-    13.0,
-    2.5
-   ],
-   [
-    "",
-    "manje 1.5 & vise 2.5",
-    "1. Poluvreme Racing Santander manje od 1.5 golova ",
-    9.0,
-    2.5
-   ],
-   [
-    "",
-    "manje 1.5 & manje 2.5",
-    "1. Poluvreme Racing Santander manje od 1.5 golova ",
-    1.16,
-    2.5
-   ]
-  ]
- },
  "Osasuna - 1. poluvreme ukupno golova & 2. poluvreme ukupno golova": {
   "mecova": 1,
   "primer": [
@@ -10658,95 +11145,6 @@
    ]
   ]
  },
- "Racing Santander - 1. poluvreme ukupno golova & 2. poluvreme ukupno golova": {
-  "mecova": 1,
-  "primer": [
-   [
-    "",
-    "vise 0.5 & vise 0.5",
-    "Racing Santander daje više od 0.5 golova u 1. polu",
-    3.9,
-    2.0
-   ],
-   [
-    "",
-    "vise 0.5 & manje 0.5",
-    "Racing Santander daje više od 0.5 golova u 1. polu",
-    4.0,
-    2.0
-   ],
-   [
-    "",
-    "vise 0.5 & vise 1.5",
-    "Racing Santander daje više od 0.5 golova u 1. polu",
-    9.5,
-    2.0
-   ],
-   [
-    "",
-    "vise 0.5 & manje 1.5",
-    "Racing Santander daje više od 0.5 golova u 1. polu",
-    2.5,
-    2.0
-   ],
-   [
-    "",
-    "vise 0.5 & vise 2.5",
-    "Racing Santander daje više od 0.5 golova u 1. polu",
-    29.0,
-    2.0
-   ],
-   [
-    "",
-    "vise 0.5 & manje 2.5",
-    "Racing Santander daje više od 0.5 golova u 1. polu",
-    2.2,
-    2.0
-   ],
-   [
-    "",
-    "manje 0.5 & vise 0.5",
-    "Racing Santander daje manje od 0.5 golova u 1. pol",
-    2.95,
-    2.0
-   ],
-   [
-    "",
-    "manje 0.5 & manje 0.5",
-    "Racing Santander daje manje od 0.5 golova u 1. pol",
-    3.2,
-    2.0
-   ],
-   [
-    "",
-    "manje 0.5 & vise 1.5",
-    "Racing Santander daje manje od 0.5 golova u 1. pol",
-    7.4,
-    2.0
-   ],
-   [
-    "",
-    "manje 0.5 & manje 1.5",
-    "Racing Santander daje manje od 0.5 golova u 1. pol",
-    1.95,
-    2.0
-   ],
-   [
-    "",
-    "manje 0.5 & vise 2.5",
-    "Racing Santander daje manje od 0.5 golova u 1. pol",
-    22.0,
-    2.0
-   ],
-   [
-    "",
-    "manje 0.5 & manje 2.5",
-    "Racing Santander daje manje od 0.5 golova u 1. pol",
-    1.7,
-    2.0
-   ]
-  ]
- },
  "1X2 & ukupno golova Osasuna (0.5)": {
   "mecova": 1,
   "primer": [
@@ -10775,7 +11173,7 @@
     "0+",
     "x & vise 0.5",
     "nerešeno i Osasuna više od 0.5 gola na utakmici",
-    4.1,
+    4.0,
     0.5
    ],
    [
@@ -10801,14 +11199,14 @@
     "0-",
     "x & manje 1.5",
     "nerešeno i Osasuna manje od 1.5 gola na utakmici",
-    4.75,
+    4.7,
     1.5
    ],
    [
     "2-",
     "2 & manje 1.5",
     "Racing Santander pobednik i Osasuna manje od 1.5 g",
-    3.75,
+    3.8,
     1.5
    ],
    [
@@ -10822,7 +11220,7 @@
     "0+",
     "x & vise 1.5",
     "nerešeno i Osasuna više od 1.5 gola na utakmici",
-    7.9,
+    7.8,
     1.5
    ],
    [
@@ -10841,21 +11239,21 @@
     "1-",
     "1 & manje 2.5",
     "Osasuna pobednik i Osasuna manje od 2.5 gola na ut",
-    3.45,
+    3.5,
     2.5
    ],
    [
     "0-",
     "x & manje 2.5",
     "nerešeno i Osasuna manje od 2.5 gola na utakmici",
-    3.6,
+    3.55,
     2.5
    ],
    [
     "2-",
     "2 & manje 2.5",
     "Racing Santander pobednik i Osasuna manje od 2.5 g",
-    3.3,
+    3.35,
     2.5
    ],
    [
@@ -10895,7 +11293,7 @@
     "0-",
     "x & manje 3.5",
     "nerešeno i Osasuna manje od 3.5 gola na utakmici",
-    3.4,
+    3.35,
     3.5
    ],
    [
@@ -10971,234 +11369,6 @@
     "2 & vise 4.5",
     "Racing Santander pobednik i Osasuna više od 4.5 go",
     125.0,
-    4.5
-   ]
-  ]
- },
- "1X2 & ukupno golova Racing Santander (0.5)": {
-  "mecova": 1,
-  "primer": [
-   [
-    "1-",
-    "1 & manje 0.5",
-    "Osasuna pobednik  i Racing Santander manje od 0.5 ",
-    3.8,
-    0.5
-   ],
-   [
-    "0-",
-    "x & manje 0.5",
-    "nerešeno i Racing Santander manje od 0.5 gola na u",
-    12.0,
-    0.5
-   ],
-   [
-    "1+",
-    "1 & vise 0.5",
-    "Osasuna pobednik  i Racing Santander više od 0.5 g",
-    3.45,
-    0.5
-   ],
-   [
-    "0+",
-    "x & vise 0.5",
-    "nerešeno i Racing Santander više od 0.5 gola na ut",
-    4.1,
-    0.5
-   ],
-   [
-    "2+",
-    "2 & vise 0.5",
-    "Racing Santander pobednik  i Racing Santander više",
-    3.25,
-    0.5
-   ]
-  ]
- },
- "1X2 & ukupno golova Racing Santander (1.5)": {
-  "mecova": 1,
-  "primer": [
-   [
-    "1-",
-    "1 & manje 1.5",
-    "Osasuna pobednik  i Racing Santander manje od 1.5 ",
-    2.25,
-    1.5
-   ],
-   [
-    "0-",
-    "x & manje 1.5",
-    "nerešeno i Racing Santander manje od 1.5 gola na u",
-    4.75,
-    1.5
-   ],
-   [
-    "2-",
-    "2 & manje 1.5",
-    "Racing Santander pobednik  i Racing Santander manj",
-    11.0,
-    1.5
-   ],
-   [
-    "1+",
-    "1 & vise 1.5",
-    "Osasuna pobednik  i Racing Santander više od 1.5 g",
-    9.3,
-    1.5
-   ],
-   [
-    "0+",
-    "x & vise 1.5",
-    "nerešeno i Racing Santander više od 1.5 gola na ut",
-    7.9,
-    1.5
-   ],
-   [
-    "2+",
-    "2 & vise 1.5",
-    "Racing Santander pobednik  i Racing Santander više",
-    4.0,
-    1.5
-   ]
-  ]
- },
- "1X2 & ukupno golova Racing Santander (2.5)": {
-  "mecova": 1,
-  "primer": [
-   [
-    "1-",
-    "1 & manje 2.5",
-    "Osasuna pobednik  i Racing Santander manje od 2.5 ",
-    2.0,
-    2.5
-   ],
-   [
-    "0-",
-    "x & manje 2.5",
-    "nerešeno i Racing Santander manje od 2.5 gola na u",
-    3.6,
-    2.5
-   ],
-   [
-    "2-",
-    "2 & manje 2.5",
-    "Racing Santander pobednik  i Racing Santander manj",
-    5.0,
-    2.5
-   ],
-   [
-    "1+",
-    "1 & vise 2.5",
-    "Osasuna pobednik  i Racing Santander više od 2.5 g",
-    36.0,
-    2.5
-   ],
-   [
-    "0+",
-    "x & vise 2.5",
-    "nerešeno i Racing Santander više od 2.5 gola na ut",
-    23.0,
-    2.5
-   ],
-   [
-    "2+",
-    "2 & vise 2.5",
-    "Racing Santander pobednik  i Racing Santander više",
-    6.8,
-    2.5
-   ]
-  ]
- },
- "1X2 & ukupno golova Racing Santander (3.5)": {
-  "mecova": 1,
-  "primer": [
-   [
-    "1-",
-    "1 & manje 3.5",
-    "Osasuna pobednik  i Racing Santander manje od 3.5 ",
-    1.95,
-    3.5
-   ],
-   [
-    "0-",
-    "x & manje 3.5",
-    "nerešeno i Racing Santander manje od 3.5 gola na u",
-    3.4,
-    3.5
-   ],
-   [
-    "2-",
-    "2 & manje 3.5",
-    "Racing Santander pobednik  i Racing Santander manj",
-    3.7,
-    3.5
-   ],
-   [
-    "1+",
-    "1 & vise 3.5",
-    "Osasuna pobednik  i Racing Santander više od 3.5 g",
-    100.0,
-    3.5
-   ],
-   [
-    "0+",
-    "x & vise 3.5",
-    "nerešeno i Racing Santander više od 3.5 gola na ut",
-    80.0,
-    3.5
-   ],
-   [
-    "2+",
-    "2 & vise 3.5",
-    "Racing Santander pobednik  i Racing Santander više",
-    15.0,
-    3.5
-   ]
-  ]
- },
- "1X2 & ukupno golova Racing Santander (4.5)": {
-  "mecova": 1,
-  "primer": [
-   [
-    "1-",
-    "1 & manje 4.5",
-    "Osasuna pobednik  i Racing Santander manje od 4.5 ",
-    1.95,
-    4.5
-   ],
-   [
-    "0-",
-    "x & manje 4.5",
-    "nerešeno i Racing Santander manje od 4.5 gola na u",
-    3.35,
-    4.5
-   ],
-   [
-    "2-",
-    "2 & manje 4.5",
-    "Racing Santander pobednik  i Racing Santander manj",
-    3.35,
-    4.5
-   ],
-   [
-    "1+",
-    "1 & vise 4.5",
-    "Osasuna pobednik  i Racing Santander više od 4.5 g",
-    125.0,
-    4.5
-   ],
-   [
-    "0+",
-    "x & vise 4.5",
-    "nerešeno i Racing Santander više od 4.5 gola na ut",
-    125.0,
-    4.5
-   ],
-   [
-    "2+",
-    "2 & vise 4.5",
-    "Racing Santander pobednik  i Racing Santander više",
-    39.0,
     4.5
    ]
   ]
@@ -11386,7 +11556,7 @@
     "",
     "1-2",
     "Sevilla 1-2 gola na utakmici",
-    1.85,
+    1.87,
     -2.0
    ],
    [
@@ -11419,7 +11589,7 @@
     "13",
     "1-3",
     "Real Madrid 1,2 ili 3 gola u svakom poluvremenu",
-    1.92,
+    1.95,
     3.0
    ],
    [
@@ -11438,14 +11608,14 @@
     "12",
     "1-2",
     "Sevilla 1 ili 2 gola u svakom poluvremenu",
-    6.8,
+    6.9,
     2.0
    ],
    [
     "13",
     "1-3",
     "Sevilla 1,2 ili 3 gola u svakom poluvremenu",
-    6.6,
+    6.7,
     3.0
    ],
    [
@@ -11471,7 +11641,7 @@
     "1",
     "1",
     "Real Madrid daje tačno 1 gol",
-    4.8,
+    4.75,
     3.0
    ],
    [
@@ -11485,7 +11655,7 @@
     "3",
     "3+",
     "Real Madrid daje 3 ili više golova",
-    1.87,
+    1.88,
     3.0
    ]
   ]
@@ -11596,14 +11766,14 @@
     "",
     "vise 0.5 & vise 2.5",
     "1. Poluvreme Real Madrid više od 0.5 golova i Real",
-    2.0,
+    2.02,
     2.5
    ],
    [
     "",
     "vise 0.5 & manje 2.5",
     "1. Poluvreme Real Madrid više od 0.5 golova i Real",
-    3.45,
+    3.4,
     2.5
    ],
    [
@@ -11720,7 +11890,7 @@
     "",
     "vise 1.5 & manje 2.5",
     "1. Poluvreme Sevilla više od 1.5 golova i Sevilla ",
-    17.0,
+    18.0,
     2.5
    ],
    [
@@ -11760,7 +11930,7 @@
     "",
     "vise 0.5 & vise 1.5",
     "Real Madrid daje više od 0.5 golova u 1. poluvreme",
-    2.85,
+    2.87,
     2.0
    ],
    [
@@ -11774,7 +11944,7 @@
     "",
     "vise 0.5 & vise 2.5",
     "Real Madrid daje više od 0.5 golova u 1. poluvreme",
-    5.75,
+    5.8,
     2.0
    ],
    [
@@ -11795,7 +11965,7 @@
     "",
     "manje 0.5 & manje 0.5",
     "Real Madrid daje manje od 0.5 golova u 1. poluvrem",
-    10.0,
+    9.9,
     2.0
    ],
    [
@@ -11938,7 +12108,7 @@
     "1+",
     "1 & vise 0.5",
     "Real Madrid pobednik i Real Madrid više od 0.5 gol",
-    1.23,
+    1.24,
     0.5
    ],
    [
@@ -11964,7 +12134,7 @@
     "1-",
     "1 & manje 1.5",
     "Real Madrid pobednik i Real Madrid manje od 1.5 go",
-    8.4,
+    8.3,
     1.5
    ],
    [
@@ -12032,7 +12202,7 @@
     "1+",
     "1 & vise 2.5",
     "Real Madrid pobednik i Real Madrid više od 2.5 gol",
-    1.87,
+    1.88,
     2.5
    ],
    [
@@ -12119,7 +12289,7 @@
     "2-",
     "2 & manje 4.5",
     "Sevilla pobednik i Real Madrid manje od 4.5 gola n",
-    7.5,
+    7.6,
     4.5
    ],
    [
@@ -12239,7 +12409,7 @@
     "1-",
     "1 & manje 2.5",
     "Real Madrid pobednik  i Sevilla manje od 2.5 gola ",
-    1.25,
+    1.26,
     2.5
    ],
    [
@@ -12300,7 +12470,7 @@
     "2-",
     "2 & manje 3.5",
     "Sevilla pobednik  i Sevilla manje od 3.5 gola na u",
-    8.1,
+    8.0,
     3.5
    ],
    [
@@ -12347,7 +12517,7 @@
     "2-",
     "2 & manje 4.5",
     "Sevilla pobednik  i Sevilla manje od 4.5 gola na u",
-    7.6,
+    7.7,
     4.5
    ],
    [
@@ -12563,7 +12733,7 @@
     "13",
     "1-3",
     "Valencia 1,2 ili 3 gola u svakom poluvremenu",
-    4.7,
+    4.65,
     3.0
    ],
    [
@@ -12582,7 +12752,7 @@
     "0",
     "0",
     "Valencia ne daje gol",
-    2.82,
+    2.85,
     3.0
    ],
    [
@@ -12603,7 +12773,7 @@
     "3",
     "3+",
     "Valencia daje 3 ili više golova",
-    7.7,
+    7.6,
     3.0
    ]
   ]
@@ -12622,7 +12792,7 @@
     "2",
     "ne",
     "Valencia ne daje gol na utakmici",
-    2.85,
+    2.87,
     null
    ]
   ]
@@ -12634,7 +12804,7 @@
     "",
     "vise 0.5 & vise 1.5",
     "1. Poluvreme Valencia više od 0.5 golova i Valenci",
-    3.8,
+    3.75,
     1.5
    ],
    [
@@ -12648,14 +12818,14 @@
     "",
     "manje 0.5 & vise 1.5",
     "1. Poluvreme Valencia manje od 0.5 golova i Valenc",
-    8.2,
+    8.1,
     1.5
    ],
    [
     "",
     "manje 0.5 & manje 1.5",
     "1. Poluvreme Valencia manje od 0.5 golova i Valenc",
-    1.75,
+    1.76,
     1.5
    ],
    [
@@ -12676,7 +12846,7 @@
     "",
     "manje 0.5 & vise 2.5",
     "1. Poluvreme Valencia manje od 0.5 golova i Valenc",
-    27.0,
+    26.0,
     2.5
    ],
    [
@@ -12744,7 +12914,7 @@
     "",
     "vise 0.5 & manje 1.5",
     "Valencia daje više od 0.5 golova u 1. poluvremenu ",
-    2.62,
+    2.65,
     2.0
    ],
    [
@@ -12758,14 +12928,14 @@
     "",
     "vise 0.5 & manje 2.5",
     "Valencia daje više od 0.5 golova u 1. poluvremenu ",
-    2.37,
+    2.4,
     2.0
    ],
    [
     "",
     "manje 0.5 & vise 0.5",
     "Valencia daje manje od 0.5 golova u 1. poluvremenu",
-    3.05,
+    3.0,
     2.0
    ],
    [
@@ -12779,7 +12949,7 @@
     "",
     "manje 0.5 & vise 1.5",
     "Valencia daje manje od 0.5 golova u 1. poluvremenu",
-    8.2,
+    8.1,
     2.0
    ],
    [
@@ -12800,7 +12970,7 @@
     "",
     "manje 0.5 & manje 2.5",
     "Valencia daje manje od 0.5 golova u 1. poluvremenu",
-    1.58,
+    1.57,
     2.0
    ]
   ]
@@ -12873,7 +13043,7 @@
     "1+",
     "1 & vise 1.5",
     "Valencia pobednik i Valencia više od 1.5 gola na u",
-    4.15,
+    4.1,
     1.5
    ],
    [
@@ -12899,7 +13069,7 @@
     "1-",
     "1 & manje 2.5",
     "Valencia pobednik i Valencia manje od 2.5 gola na ",
-    4.2,
+    4.15,
     2.5
    ],
    [
@@ -12913,14 +13083,14 @@
     "2-",
     "2 & manje 2.5",
     "Athletic Bilbao pobednik i Valencia manje od 2.5 g",
-    2.15,
+    2.17,
     2.5
    ],
    [
     "1+",
     "1 & vise 2.5",
     "Valencia pobednik i Valencia više od 2.5 gola na u",
-    7.9,
+    7.8,
     2.5
    ],
    [
@@ -12960,14 +13130,14 @@
     "2-",
     "2 & manje 3.5",
     "Athletic Bilbao pobednik i Valencia manje od 3.5 g",
-    2.12,
+    2.15,
     3.5
    ],
    [
     "1+",
     "1 & vise 3.5",
     "Valencia pobednik i Valencia više od 3.5 gola na u",
-    20.0,
+    19.0,
     3.5
    ],
    [
@@ -13007,7 +13177,7 @@
     "2-",
     "2 & manje 4.5",
     "Athletic Bilbao pobednik i Valencia manje od 4.5 g",
-    2.12,
+    2.15,
     4.5
    ],
    [
@@ -13038,73 +13208,87 @@
   "primer": [
    [
     "/1-",
+    "manje 0.5",
+    "Villarreal manje od 0.5 kornera",
+    50.0,
+    0.5
+   ],
+   [
+    "/1-",
+    "manje 1.5",
+    "Villarreal manje od 1.5 kornera",
+    16.0,
+    1.5
+   ],
+   [
+    "/1-",
+    "manje 2.5",
+    "Villarreal manje od 2.5 kornera",
+    7.2,
+    2.5
+   ],
+   [
+    "/1+",
+    "vise 2.5",
+    "Villarreal više od 2.5 kornera",
+    1.06,
+    2.5
+   ],
+   [
+    "/1-",
     "manje 3.5",
     "Villarreal manje od 3.5 kornera",
-    4.3,
+    4.2,
     3.5
    ],
    [
     "/1+",
     "vise 3.5",
     "Villarreal više od 3.5 kornera",
-    1.18,
+    1.19,
     3.5
    ],
    [
     "/1-",
     "manje 4.5",
     "Villarreal manje od 4.5 kornera",
-    2.8,
+    2.75,
     4.5
    ],
    [
     "/1+",
     "vise 4.5",
     "Villarreal više od 4.5 kornera",
-    1.38,
+    1.4,
     4.5
    ],
    [
     "/1-",
     "manje 5.5",
     "Villarreal manje od 5.5 kornera",
-    2.02,
+    2.0,
     5.5
    ],
    [
     "/1+",
     "vise 5.5",
     "Villarreal više od 5.5 kornera",
-    1.71,
+    1.73,
     5.5
    ],
    [
     "/1-",
     "manje 6.5",
     "Villarreal manje od 6.5 kornera",
-    1.59,
+    1.58,
     6.5
    ],
    [
     "/1+",
     "vise 6.5",
     "Villarreal više od 6.5 kornera",
-    2.22,
+    2.25,
     6.5
-   ],
-   [
-    "/1-",
-    "manje 7.5",
-    "Villarreal manje od 7.5 kornera",
-    1.35,
-    7.5
-   ],
-   [
-    "/1+",
-    "vise 7.5",
-    "Villarreal više od 7.5 kornera",
-    2.95,
-    7.5
    ]
   ]
  },
@@ -13113,9 +13297,23 @@
   "primer": [
    [
     "/2-",
+    "manje 0.5",
+    "Elche će imati manje od 0.5 kornera",
+    12.0,
+    0.5
+   ],
+   [
+    "/2+",
+    "vise 0.5",
+    "Elche će imati više od 0.5 kornera",
+    1.02,
+    0.5
+   ],
+   [
+    "/2-",
     "manje 1.5",
     "Elche će imati manje od 1.5 kornera",
-    4.4,
+    4.5,
     1.5
    ],
    [
@@ -13129,56 +13327,56 @@
     "/2-",
     "manje 2.5",
     "Elche će imati manje od 2.5 kornera",
-    2.47,
+    2.52,
     2.5
    ],
    [
     "/2+",
     "vise 2.5",
     "Elche će imati više od 2.5 kornera",
-    1.48,
+    1.47,
     2.5
    ],
    [
     "/2-",
     "manje 3.5",
     "Elche će imati manje od 3.5 kornera",
-    1.7,
+    1.73,
     3.5
    ],
    [
     "/2+",
     "vise 3.5",
     "Elche će imati više od 3.5 kornera",
-    2.02,
+    2.0,
     3.5
    ],
    [
     "/2-",
     "manje 4.5",
     "Elche će imati manje od 4.5 kornera",
-    1.35,
+    1.36,
     4.5
    ],
    [
     "/2+",
     "vise 4.5",
     "Elche će imati više od 4.5 kornera",
-    2.95,
+    2.9,
     4.5
    ],
    [
     "/2-",
     "manje 5.5",
     "Elche će imati manje od 5.5 kornera",
-    1.17,
+    1.18,
     5.5
    ],
    [
     "/2+",
     "vise 5.5",
     "Elche će imati više od 5.5 kornera",
-    4.5,
+    4.35,
     5.5
    ]
   ]
@@ -13190,7 +13388,7 @@
     "",
     "1-2",
     "Villarreal 1-2 gola na utakmici",
-    1.95,
+    1.92,
     -2.0
    ],
    [
@@ -13249,7 +13447,7 @@
     "1",
     "1",
     "Villarreal daje tačno 1 gol",
-    4.0,
+    3.9,
     3.0
    ],
    [
@@ -13322,14 +13520,14 @@
     "",
     "vise 0.5 & vise 2.5",
     "1. Poluvreme Villarreal više od 0.5 golova i Villa",
-    2.42,
+    2.45,
     2.5
    ],
    [
     "",
     "vise 0.5 & manje 2.5",
     "1. Poluvreme Villarreal više od 0.5 golova i Villa",
-    3.1,
+    3.05,
     2.5
    ],
    [
@@ -13371,7 +13569,7 @@
     "",
     "manje 1.5 & manje 2.5",
     "1. Poluvreme Villarreal manje od 1.5 golova i Vill",
-    1.78,
+    1.77,
     2.5
    ]
   ]
@@ -13390,7 +13588,7 @@
     "",
     "vise 0.5 & manje 0.5",
     "Villarreal daje više od 0.5 golova u 1. poluvremen",
-    4.55,
+    4.5,
     2.0
    ],
    [
@@ -13418,7 +13616,7 @@
     "",
     "vise 0.5 & manje 2.5",
     "Villarreal daje više od 0.5 golova u 1. poluvremen",
-    1.66,
+    1.65,
     2.0
    ],
    [
@@ -13493,7 +13691,7 @@
     "0+",
     "x & vise 0.5",
     "nerešeno i Villarreal više od 0.5 gola na utakmici",
-    5.3,
+    5.25,
     0.5
    ],
    [
@@ -13519,7 +13717,7 @@
     "0-",
     "x & manje 1.5",
     "nerešeno i Villarreal manje od 1.5 gola na utakmic",
-    6.4,
+    6.3,
     1.5
    ],
    [
@@ -13627,14 +13825,14 @@
     "1+",
     "1 & vise 3.5",
     "Villarreal pobednik i Villarreal više od 3.5 gola ",
-    4.0,
+    4.1,
     3.5
    ],
    [
     "0+",
     "x & vise 3.5",
     "nerešeno i Villarreal više od 3.5 gola na utakmici",
-    85.0,
+    80.0,
     3.5
    ],
    [
@@ -13660,7 +13858,7 @@
     "0-",
     "x & manje 4.5",
     "nerešeno i Villarreal manje od 4.5 gola na utakmic",
-    4.5,
+    4.45,
     4.5
    ],
    [
@@ -13674,7 +13872,7 @@
     "1+",
     "1 & vise 4.5",
     "Villarreal pobednik i Villarreal više od 4.5 gola ",
-    7.7,
+    7.8,
     4.5
    ],
    [
@@ -13700,14 +13898,33 @@
     "1",
     "da",
     "Alaves pobeđuje bar jedno poluvreme",
-    1.45,
+    1.46,
     null
    ],
    [
     "2",
     "ne",
     "Alaves ne pobeđuje bar jedno poluvreme",
-    2.55,
+    2.52,
+    null
+   ]
+  ]
+ },
+ "Racing Santander pobeđuje bar jedno poluvreme": {
+  "mecova": 1,
+  "primer": [
+   [
+    "1",
+    "da",
+    "Racing Santander pobeđuje bar jedno poluvreme",
+    1.66,
+    null
+   ],
+   [
+    "2",
+    "ne",
+    "Racing Santander ne pobeđuje bar jedno poluvreme",
+    2.1,
     null
    ]
   ]
