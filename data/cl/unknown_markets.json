@@ -6,63 +6,63 @@
     "",
     "manje 0.5",
     "Manje od 0.5 golova u 1. poluvremenu",
-    4.5,
+    3.9,
     0.5
    ],
    [
     "",
     "vise 0.5",
     "Više od 0.5 golova u 1. poluvremenu",
-    1.19,
+    1.24,
     0.5
    ],
    [
     "",
     "manje 1.5",
     "Manje od 1.5 golova u 1. poluvremenu",
-    1.85,
+    1.69,
     1.5
    ],
    [
     "",
     "vise 1.5",
     "Više od 1.5 golova u 1. poluvremenu",
-    1.92,
+    2.15,
     1.5
    ],
    [
     "",
     "manje 2.5",
     "Manje od 2.5 golova u 1. poluvremenu",
-    1.25,
+    1.18,
     2.5
    ],
    [
     "",
     "vise 2.5",
     "Više od 2.5 golova u 1. poluvremenu",
-    3.85,
+    4.7,
     2.5
    ],
    [
     "",
     "manje 3.5",
     "Manje od 3.5 golova u 1. poluvremenu",
-    1.06,
+    1.04,
     3.5
    ],
    [
     "",
     "vise 3.5",
     "Više od 3.5 golova u 1. poluvremenu",
-    8.7,
+    11.0,
     3.5
    ],
    [
     "",
     "vise 4.5",
     "Više od 4.5 golova u 1. poluvremenu",
-    22.0,
+    30.0,
     4.5
    ]
   ]
@@ -144,14 +144,14 @@
     "/0-",
     "manje 8.5",
     "Manje od 8.5 kornera na utakmici",
-    2.62,
+    2.6,
     8.5
    ],
    [
     "/0+",
     "vise 8.5",
     "Više od 8.5 kornera na utakmici",
-    1.43,
+    1.44,
     8.5
    ]
   ]
@@ -252,21 +252,21 @@
     "1",
     "lask linz",
     "LASK Linz pobednik u 1. poluvremenu",
-    6.4,
+    5.9,
     1.0
    ],
    [
     "0",
     "nereseno",
     "1. poluvreme završava nerešeno",
-    3.0,
+    2.72,
     1.0
    ],
    [
     "2",
     "liverpool",
     "Liverpool pobednik u 1. poluvremenu",
-    1.66,
+    1.8,
     1.0
    ]
   ]
@@ -278,21 +278,21 @@
     "1",
     "1",
     "LASK Linz pobednik u 1. poluvremenu ili na kraju",
-    4.6,
+    4.25,
     1.0
    ],
    [
     "0",
     "x",
     "Nerešeno u 1. poluvremenu ili na kraju",
-    2.42,
+    2.2,
     1.0
    ],
    [
     "2",
     "2",
     "Liverpool pobednik u 1. poluvremenu ili na kraju",
-    1.2,
+    1.26,
     1.0
    ]
   ]
@@ -304,14 +304,14 @@
     "",
     "0:1",
     "Biće ostvaren u bilo kom trenutku tokom regularnog",
-    1.31,
+    1.37,
     0.0
    ],
    [
     "",
     "0:2",
     "Biće ostvaren u bilo kom trenutku tokom regularnog",
-    1.92,
+    2.15,
     0.0
    ],
    [
@@ -325,63 +325,63 @@
     "",
     "1:2",
     "Biće ostvaren u bilo kom trenutku tokom regularnog",
-    2.95,
+    3.15,
+    1.0
+   ],
+   [
+    "",
+    "1:0",
+    "Biće ostvaren u bilo kom trenutku tokom regularnog",
+    3.2,
     1.0
    ],
    [
     "",
     "0:3",
     "Biće ostvaren u bilo kom trenutku tokom regularnog",
-    3.05,
+    3.65,
     0.0
-   ],
-   [
-    "",
-    "1:0",
-    "Biće ostvaren u bilo kom trenutku tokom regularnog",
-    3.45,
-    1.0
    ],
    [
     "",
     "1:3",
     "Biće ostvaren u bilo kom trenutku tokom regularnog",
-    4.1,
+    4.75,
     1.0
    ],
    [
     "",
     "0:4",
     "Biće ostvaren u bilo kom trenutku tokom regularnog",
-    5.3,
+    6.7,
     0.0
    ],
    [
     "",
-    "1:4",
-    "Biće ostvaren u bilo kom trenutku tokom regularnog",
-    6.4,
-    1.0
-   ],
-   [
-    "",
-    "2:2",
+    "2:1",
     "Biće ostvaren u bilo kom trenutku tokom regularnog",
     6.9,
     2.0
    ],
    [
     "",
-    "2:1",
+    "2:2",
     "Biće ostvaren u bilo kom trenutku tokom regularnog",
-    7.0,
+    7.1,
     2.0
    ],
    [
     "",
-    "2:3",
+    "1:4",
     "Biće ostvaren u bilo kom trenutku tokom regularnog",
-    8.6,
+    8.2,
+    1.0
+   ],
+   [
+    "",
+    "2:0",
+    "Biće ostvaren u bilo kom trenutku tokom regularnog",
+    10.0,
     2.0
    ]
   ]
@@ -393,14 +393,14 @@
     "",
     "1:0, 2:0 ili 3:0",
     "Utakmica će završiti rezultatom 1-0, 2-0 ili 3-0.",
-    19.0,
+    14.0,
     -0.0
    ],
    [
     "",
     "0:1, 0:2 ili 0:3",
     "Utakmica će završiti rezultatom 0:1, 0:2 ili 0:3",
-    3.55,
+    3.3,
     3.0
    ],
    [
@@ -414,49 +414,49 @@
     "",
     "0:4, 0:5 ili 0:6",
     "Utakmica će završiti rezultatom 0:4, 0:5 ili 0:6",
-    7.9,
+    9.8,
     6.0
    ],
    [
     "",
     "2:1, 3:1 ili 4:1",
     "Utakmica će završiti rezultatom 2:1, 3:1 ili 4:1",
-    18.0,
+    15.0,
     1.0
    ],
    [
     "",
     "1:2, 1:3 ili 1:4",
     "Utakmica će završiti rezultatom 1:2, 1:3 ili 1:4",
-    4.0,
+    4.15,
     4.0
    ],
    [
     "",
     "3:2, 4:2, 4:3 ili 5:1",
     "Utakmica će završiti rezultatom 3:2, 4:2, 4:3 ili ",
-    39.0,
+    40.0,
     1.0
    ],
    [
     "",
     "2:3, 2:4, 3:4 ili 1:5",
     "Utakmica će završiti rezultatom 2:3, 2:4, 3:4 ili ",
-    8.1,
+    9.7,
     5.0
    ],
    [
     "",
     "domacin pobeda, ostali",
     "Domaći tim pobeđuje bilo kojim drugim rezultatom",
-    225.0,
+    250.0,
     null
    ],
    [
     "",
     "gost pobeda, ostali",
     "Gostujući tim pobeđuje bilo kojim drugim rezultato",
-    13.0,
+    21.0,
     null
    ]
   ]
@@ -466,44 +466,86 @@
   "primer": [
    [
     "*1-",
+    "manje 5.5",
+    "Manje od 5.5 šuteva u okvir gola",
+    8.2,
+    5.5
+   ],
+   [
+    "*1-",
+    "manje 6.5",
+    "Manje od 6.5 šuteva u okvir gola",
+    5.4,
+    6.5
+   ],
+   [
+    "*1+",
+    "vise 6.5",
+    "Više od 6.5 šuteva u okvir gola",
+    1.08,
+    6.5
+   ],
+   [
+    "*1-",
+    "manje 7.5",
+    "Manje od 7.5 šuteva u okvir gola",
+    3.7,
+    7.5
+   ],
+   [
+    "*1+",
+    "vise 7.5",
+    "Više od 7.5 šuteva u okvir gola",
+    1.19,
+    7.5
+   ],
+   [
+    "*1-",
+    "manje 8.5",
+    "Manje od 8.5 šuteva u okvir gola",
+    2.72,
+    8.5
+   ],
+   [
+    "*1+",
+    "vise 8.5",
+    "Više od 8.5 šuteva u okvir gola",
+    1.4,
+    8.5
+   ],
+   [
+    "*1-",
     "manje 9.5",
     "Manje od 9.5 šuteva u okvir gola",
-    2.17,
+    2.05,
     9.5
    ],
    [
     "*1+",
     "vise 9.5",
     "Više od 9.5 šuteva u okvir gola",
-    1.61,
+    1.69,
     9.5
    ],
    [
     "*1-",
     "manje 10.5",
     "Manje od 10.5 šuteva u okvir gola",
-    1.72,
+    1.64,
     10.5
    ],
    [
     "*1+",
     "vise 10.5",
     "Više od 10.5 šuteva u okvir gola",
-    2.0,
+    2.12,
     10.5
    ],
    [
     "*1-",
     "manje 11.5",
     "Manje od 11.5 šuteva u okvir gola",
-    1.44,
-    11.5
-   ],
-   [
-    "*1+",
-    "vise 11.5",
-    "Više od 11.5 šuteva u okvir gola",
-    2.6,
+    1.36,
     11.5
    ]
   ]
@@ -513,44 +555,86 @@
   "primer": [
    [
     "",
+    "manje 26.5",
+    "manje od 26.5 šuteva",
+    3.4,
+    26.5
+   ],
+   [
+    "",
+    "vise 26.5",
+    "više od 26.5 šuteva",
+    1.27,
+    26.5
+   ],
+   [
+    "",
+    "manje 27.5",
+    "manje od 27.5 šuteva",
+    2.82,
+    27.5
+   ],
+   [
+    "",
+    "vise 27.5",
+    "više od 27.5 šuteva",
+    1.38,
+    27.5
+   ],
+   [
+    "",
+    "manje 28.5",
+    "manje od 28.5 šuteva",
+    2.37,
+    28.5
+   ],
+   [
+    "",
+    "vise 28.5",
+    "više od 28.5 šuteva",
+    1.52,
+    28.5
+   ],
+   [
+    "",
     "manje 29.5",
     "manje od 29.5 šuteva",
-    2.17,
+    2.05,
     29.5
    ],
    [
     "",
     "vise 29.5",
     "više od 29.5 šuteva",
-    1.61,
+    1.69,
     29.5
    ],
    [
     "",
     "manje 30.5",
     "manje od 30.5 šuteva",
-    1.9,
+    1.76,
     30.5
    ],
    [
     "",
     "vise 30.5",
     "više od 30.5 šuteva",
-    1.8,
+    1.95,
     30.5
    ],
    [
     "",
     "manje 31.5",
     "manje od 31.5 šuteva",
-    1.68,
+    1.6,
     31.5
    ],
    [
     "",
     "vise 31.5",
     "više od 31.5 šuteva",
-    2.05,
+    2.2,
     31.5
    ]
   ]
@@ -562,15 +646,221 @@
     "/*0-",
     "manje 21.5",
     "manje od 21.5 faulova",
-    1.92,
+    2.17,
     21.5
    ],
    [
     "/*0+",
     "vise 21.5",
     "više od 21.5 faulova",
-    1.8,
+    1.61,
     21.5
+   ],
+   [
+    "/*0-",
+    "manje 22.5",
+    "manje od 22.5 faulova",
+    1.83,
+    22.5
+   ],
+   [
+    "/*0+",
+    "vise 22.5",
+    "više od 22.5 faulova",
+    1.87,
+    22.5
+   ],
+   [
+    "/*0-",
+    "manje 23.5",
+    "manje od 23.5 faulova",
+    1.65,
+    23.5
+   ],
+   [
+    "/*0+",
+    "vise 23.5",
+    "više od 23.5 faulova",
+    2.12,
+    23.5
+   ]
+  ]
+ },
+ "Igrač postiže gol": {
+  "mecova": 5,
+  "primer": [
+   [
+    "",
+    "lewis koumas",
+    "Postiže gol",
+    2.22,
+    null
+   ],
+   [
+    "",
+    "jayden danns",
+    "Postiže gol",
+    2.35,
+    null
+   ],
+   [
+    "",
+    "barcola, bradley",
+    "Postiže gol",
+    2.57,
+    null
+   ],
+   [
+    "",
+    "victor munoz",
+    "Postiže gol",
+    2.57,
+    null
+   ],
+   [
+    "",
+    "rio ngumoha",
+    "Postiže gol",
+    2.9,
+    null
+   ],
+   [
+    "",
+    "florian wirtz",
+    "Postiže gol",
+    3.15,
+    null
+   ],
+   [
+    "",
+    "dominik szoboszlai",
+    "Postiže gol",
+    3.2,
+    null
+   ],
+   [
+    "",
+    "samuel adeniran",
+    "Postiže gol",
+    3.6,
+    null
+   ],
+   [
+    "",
+    "treymaurice nyoni",
+    "Postiže gol",
+    3.6,
+    null
+   ],
+   [
+    "",
+    "sasa kalajdzic",
+    "Postiže gol",
+    3.8,
+    null
+   ],
+   [
+    "",
+    "james mcconnell",
+    "Postiže gol",
+    3.9,
+    null
+   ],
+   [
+    "",
+    "moses usor",
+    "Postiže gol",
+    4.0,
+    null
+   ]
+  ]
+ },
+ "Igrač postiže 1. gol": {
+  "mecova": 5,
+  "primer": [
+   [
+    "",
+    "lewis koumas",
+    "Postiže 1. gol",
+    5.25,
+    1.0
+   ],
+   [
+    "",
+    "jayden danns",
+    "Postiže 1. gol",
+    5.75,
+    1.0
+   ],
+   [
+    "",
+    "bradley barcola",
+    "Postiže 1. gol",
+    6.3,
+    1.0
+   ],
+   [
+    "",
+    "victor munoz",
+    "Postiže 1. gol",
+    6.3,
+    1.0
+   ],
+   [
+    "",
+    "rio ngumoha",
+    "Postiže 1. gol",
+    6.9,
+    1.0
+   ],
+   [
+    "",
+    "dominik szoboszlai",
+    "Postiže 1. gol",
+    7.7,
+    1.0
+   ],
+   [
+    "",
+    "florian wirtz",
+    "Postiže 1. gol",
+    7.9,
+    1.0
+   ],
+   [
+    "",
+    "treymaurice nyoni",
+    "Postiže 1. gol",
+    8.7,
+    1.0
+   ],
+   [
+    "",
+    "samuel adeniran",
+    "Postiže 1. gol",
+    9.0,
+    1.0
+   ],
+   [
+    "",
+    "sasa kalajdzic",
+    "Postiže 1. gol",
+    9.0,
+    1.0
+   ],
+   [
+    "",
+    "james mcconnell",
+    "Postiže 1. gol",
+    9.6,
+    1.0
+   ],
+   [
+    "",
+    "aleksis mek alister",
+    "Postiže 1. gol",
+    10.0,
+    1.0
    ]
   ]
  },
@@ -730,6 +1020,18 @@
    ]
   ]
  },
+ "Ukupno dodavanja": {
+  "mecova": 5,
+  "primer": [
+   [
+    "",
+    "vise 1026.5",
+    "Više od 1026.5 dodavanja",
+    1.85,
+    1026.5
+   ]
+  ]
+ },
  "1X2 & ukupno golova (1.5)": {
   "mecova": 5,
   "primer": [
@@ -737,231 +1039,43 @@
     "",
     "1 & manje 1.5",
     "Feyenoord Rotterdam pobednik utakmice i manje od 1",
-    14.0,
+    12.0,
     1.5
    ],
    [
     "",
     "x & manje 1.5",
     "Nerešeno na kraju utakmice  i manje od 1.5 gola na",
-    17.0,
+    14.0,
     1.5
    ],
    [
     "",
     "2 & manje 1.5",
     "Como pobednik utakmice i manje od 1.5 gola na utak",
-    10.0,
+    9.6,
     1.5
    ],
    [
     "",
     "1 & vise 1.5",
     "Feyenoord Rotterdam pobednik utakmice i više od 1.",
-    3.85,
+    3.5,
     1.5
    ],
    [
     "",
     "x & vise 1.5",
     "Nerešeno na kraju utakmice i više od 1.5 gola na u",
-    4.2,
+    4.0,
     1.5
    ],
    [
     "",
     "2 & vise 1.5",
     "Como pobednik utakmice i više od 1.5 gola na utakm",
-    2.05,
+    2.35,
     1.5
-   ]
-  ]
- },
- "1X2 & ukupno golova (2.5)": {
-  "mecova": 5,
-  "primer": [
-   [
-    "",
-    "1 & manje 2.5",
-    "Feyenoord Rotterdam pobednik utakmice i manje od 2",
-    9.0,
-    2.5
-   ],
-   [
-    "",
-    "x & manje 2.5",
-    "Nerešeno na kraju utakmice  i manje od 2.5 gola na",
-    5.9,
-    2.5
-   ],
-   [
-    "",
-    "2 & manje 2.5",
-    "Como pobednik utakmice i manje od 2.5 gola na utak",
-    6.1,
-    2.5
-   ],
-   [
-    "",
-    "1 & vise 2.5",
-    "Feyenoord Rotterdam pobednik utakmice i više od 2.",
-    4.35,
-    2.5
-   ],
-   [
-    "",
-    "x & vise 2.5",
-    "Nerešeno na kraju utakmice i više od 2.5 gola na u",
-    7.1,
-    2.5
-   ],
-   [
-    "",
-    "2 & vise 2.5",
-    "Como pobednik utakmice i više od 2.5 gola na utakm",
-    2.35,
-    2.5
-   ]
-  ]
- },
- "1X2 & ukupno golova (3.5)": {
-  "mecova": 5,
-  "primer": [
-   [
-    "",
-    "1 & manje 3.5",
-    "Feyenoord Rotterdam pobednik utakmice i manje od 3",
-    5.25,
-    3.5
-   ],
-   [
-    "",
-    "x & manje 3.5",
-    "Nerešeno na kraju utakmice  i manje od 3.5 gola na",
-    5.9,
-    3.5
-   ],
-   [
-    "",
-    "2 & manje 3.5",
-    "Como pobednik utakmice i manje od 3.5 gola na utak",
-    3.35,
-    3.5
-   ],
-   [
-    "",
-    "1 & vise 3.5",
-    "Feyenoord Rotterdam pobednik utakmice i više od 3.",
-    6.5,
-    3.5
-   ],
-   [
-    "",
-    "x & vise 3.5",
-    "Nerešeno na kraju utakmice i više od 3.5 gola na u",
-    7.1,
-    3.5
-   ],
-   [
-    "",
-    "2 & vise 3.5",
-    "Como pobednik utakmice i više od 3.5 gola na utakm",
-    3.45,
-    3.5
-   ]
-  ]
- },
- "1X2 & ukupno golova (4.5)": {
-  "mecova": 5,
-  "primer": [
-   [
-    "",
-    "1 & manje 4.5",
-    "Feyenoord Rotterdam pobednik utakmice i manje od 4",
-    4.45,
-    4.5
-   ],
-   [
-    "",
-    "x & manje 4.5",
-    "Nerešeno na kraju utakmice  i manje od 4.5 gola na",
-    4.15,
-    4.5
-   ],
-   [
-    "",
-    "2 & manje 4.5",
-    "Como pobednik utakmice i manje od 4.5 gola na utak",
-    2.62,
-    4.5
-   ],
-   [
-    "",
-    "1 & vise 4.5",
-    "Feyenoord Rotterdam pobednik utakmice i više od 4.",
-    8.6,
-    4.5
-   ],
-   [
-    "",
-    "x & vise 4.5",
-    "Nerešeno na kraju utakmice i više od 4.5 gola na u",
-    18.0,
-    4.5
-   ],
-   [
-    "",
-    "2 & vise 4.5",
-    "Como pobednik utakmice i više od 4.5 gola na utakm",
-    4.85,
-    4.5
-   ]
-  ]
- },
- "Dupla šansa & ukupno golova (3.5)": {
-  "mecova": 5,
-  "primer": [
-   [
-    "10-",
-    "1x & manje od 3.5",
-    "Feyenoord Rotterdam će pobediti ili će biti nereše",
-    2.77,
-    3.5
-   ],
-   [
-    "10+",
-    "1x & vise od 3.5",
-    "Feyenoord Rotterdam će pobediti ili će biti nereše",
-    3.35,
-    3.5
-   ],
-   [
-    "02-",
-    "x2 & manje od 3.5",
-    "Biće nerešeno ili Como će pobediti i biće manje od",
-    2.15,
-    3.5
-   ],
-   [
-    "02+",
-    "x2 & vise od 3.5",
-    "Biće nerešeno ili Como će pobediti i biće više od ",
-    2.35,
-    3.5
-   ],
-   [
-    "12-",
-    "12 & manje od 3.5",
-    "Feyenoord Rotterdam ili Como će pobediti i biće ma",
-    2.05,
-    3.5
-   ],
-   [
-    "12+",
-    "12 & vise od 3.5",
-    "Feyenoord Rotterdam ili Como će pobediti i biće vi",
-    2.27,
-    3.5
    ]
   ]
  },
@@ -977,50 +1091,191 @@
    ]
   ]
  },
- "Dupla šansa & ukupno golova (2.5)": {
+ "1X2 & ukupno golova (2.5)": {
+  "mecova": 4,
+  "primer": [
+   [
+    "",
+    "1 & manje 2.5",
+    "Feyenoord Rotterdam pobednik utakmice i manje od 2",
+    7.7,
+    2.5
+   ],
+   [
+    "",
+    "x & manje 2.5",
+    "Nerešeno na kraju utakmice  i manje od 2.5 gola na",
+    5.3,
+    2.5
+   ],
+   [
+    "",
+    "2 & manje 2.5",
+    "Como pobednik utakmice i manje od 2.5 gola na utak",
+    6.0,
+    2.5
+   ],
+   [
+    "",
+    "1 & vise 2.5",
+    "Feyenoord Rotterdam pobednik utakmice i više od 2.",
+    4.0,
+    2.5
+   ],
+   [
+    "",
+    "x & vise 2.5",
+    "Nerešeno na kraju utakmice i više od 2.5 gola na u",
+    7.2,
+    2.5
+   ],
+   [
+    "",
+    "2 & vise 2.5",
+    "Como pobednik utakmice i više od 2.5 gola na utakm",
+    2.72,
+    2.5
+   ]
+  ]
+ },
+ "1X2 & ukupno golova (3.5)": {
+  "mecova": 4,
+  "primer": [
+   [
+    "",
+    "1 & manje 3.5",
+    "Feyenoord Rotterdam pobednik utakmice i manje od 3",
+    4.6,
+    3.5
+   ],
+   [
+    "",
+    "x & manje 3.5",
+    "Nerešeno na kraju utakmice  i manje od 3.5 gola na",
+    5.3,
+    3.5
+   ],
+   [
+    "",
+    "2 & manje 3.5",
+    "Como pobednik utakmice i manje od 3.5 gola na utak",
+    3.4,
+    3.5
+   ],
+   [
+    "",
+    "1 & vise 3.5",
+    "Feyenoord Rotterdam pobednik utakmice i više od 3.",
+    6.2,
+    3.5
+   ],
+   [
+    "",
+    "x & vise 3.5",
+    "Nerešeno na kraju utakmice i više od 3.5 gola na u",
+    7.2,
+    3.5
+   ],
+   [
+    "",
+    "2 & vise 3.5",
+    "Como pobednik utakmice i više od 3.5 gola na utakm",
+    4.15,
+    3.5
+   ]
+  ]
+ },
+ "1X2 & ukupno golova (4.5)": {
+  "mecova": 4,
+  "primer": [
+   [
+    "",
+    "1 & manje 4.5",
+    "Feyenoord Rotterdam pobednik utakmice i manje od 4",
+    3.85,
+    4.5
+   ],
+   [
+    "",
+    "x & manje 4.5",
+    "Nerešeno na kraju utakmice  i manje od 4.5 gola na",
+    3.8,
+    4.5
+   ],
+   [
+    "",
+    "2 & manje 4.5",
+    "Como pobednik utakmice i manje od 4.5 gola na utak",
+    2.75,
+    4.5
+   ],
+   [
+    "",
+    "1 & vise 4.5",
+    "Feyenoord Rotterdam pobednik utakmice i više od 4.",
+    8.4,
+    4.5
+   ],
+   [
+    "",
+    "x & vise 4.5",
+    "Nerešeno na kraju utakmice i više od 4.5 gola na u",
+    19.0,
+    4.5
+   ],
+   [
+    "",
+    "2 & vise 4.5",
+    "Como pobednik utakmice i više od 4.5 gola na utakm",
+    5.9,
+    4.5
+   ]
+  ]
+ },
+ "Dupla šansa & ukupno golova (3.5)": {
   "mecova": 4,
   "primer": [
    [
     "10-",
-    "1x & manje od 2.5",
+    "1x & manje od 3.5",
     "Feyenoord Rotterdam će pobediti ili će biti nereše",
-    3.55,
-    2.5
+    2.47,
+    3.5
    ],
    [
     "10+",
-    "1x & vise od 2.5",
+    "1x & vise od 3.5",
     "Feyenoord Rotterdam će pobediti ili će biti nereše",
-    2.7,
-    2.5
+    3.35,
+    3.5
    ],
    [
     "02-",
-    "x2 & manje od 2.5",
+    "x2 & manje od 3.5",
     "Biće nerešeno ili Como će pobediti i biće manje od",
-    3.0,
-    2.5
+    2.07,
+    3.5
    ],
    [
     "02+",
-    "x2 & vise od 2.5",
+    "x2 & vise od 3.5",
     "Biće nerešeno ili Como će pobediti i biće više od ",
-    1.77,
-    2.5
+    2.65,
+    3.5
    ],
    [
     "12-",
-    "12 & manje od 2.5",
+    "12 & manje od 3.5",
     "Feyenoord Rotterdam ili Como će pobediti i biće ma",
-    3.65,
-    2.5
+    1.95,
+    3.5
    ],
    [
     "12+",
-    "12 & vise od 2.5",
+    "12 & vise od 3.5",
     "Feyenoord Rotterdam ili Como će pobediti i biće vi",
-    1.53,
-    2.5
+    2.5,
+    3.5
    ]
   ]
  },
@@ -1031,7 +1286,7 @@
     "10-",
     "1x & manje od 4.5",
     "Feyenoord Rotterdam će pobediti ili će biti nereše",
-    2.15,
+    1.92,
     4.5
    ],
    [
@@ -1045,28 +1300,28 @@
     "02-",
     "x2 & manje od 4.5",
     "Biće nerešeno ili Como će pobediti i biće manje od",
-    1.61,
+    1.6,
     4.5
    ],
    [
     "02+",
     "x2 & vise od 4.5",
     "Biće nerešeno ili Como će pobediti i biće više od ",
-    3.65,
+    4.25,
     4.5
    ],
    [
     "12-",
     "12 & manje od 4.5",
     "Feyenoord Rotterdam ili Como će pobediti i biće ma",
-    1.65,
+    1.6,
     4.5
    ],
    [
     "12+",
     "12 & vise od 4.5",
     "Feyenoord Rotterdam ili Como će pobediti i biće vi",
-    3.1,
+    3.45,
     4.5
    ]
   ]
@@ -1078,42 +1333,42 @@
     "10-",
     "1x & manje od 5.5",
     "Feyenoord Rotterdam će pobediti ili će biti nereše",
-    1.92,
+    1.76,
     5.5
    ],
    [
     "10+",
     "1x & vise od 5.5",
     "Feyenoord Rotterdam će pobediti ili će biti nereše",
-    7.3,
+    7.7,
     5.5
    ],
    [
     "02-",
     "x2 & manje od 5.5",
     "Biće nerešeno ili Como će pobediti i biće manje od",
-    1.42,
+    1.43,
     5.5
    ],
    [
     "02+",
     "x2 & vise od 5.5",
     "Biće nerešeno ili Como će pobediti i biće više od ",
-    5.3,
+    6.1,
     5.5
    ],
    [
     "12-",
     "12 & manje od 5.5",
     "Feyenoord Rotterdam ili Como će pobediti i biće ma",
-    1.36,
+    1.35,
     5.5
    ],
    [
     "12+",
     "12 & vise od 5.5",
     "Feyenoord Rotterdam ili Como će pobediti i biće vi",
-    5.15,
+    5.85,
     5.5
    ]
   ]
@@ -1125,84 +1380,84 @@
     "",
     "vise 0.5 & vise 1.5",
     "Više od 0.5 golova u 1. poluvremenu & više od 1.5 ",
-    1.28,
+    1.33,
     1.5
    ],
    [
     "",
     "vise 0.5 & manje 1.5",
     "Više od 0.5 golova u 1. poluvremenu & manje od 1.5",
-    13.0,
+    12.0,
     1.5
    ],
    [
     "",
     "manje 0.5 & vise 1.5",
     "Manje od 0.5 golova u 1. poluvremenu & više od 1.5",
-    6.1,
+    5.9,
     1.5
    ],
    [
     "",
     "manje 0.5 & manje 1.5",
     "Manje od 0.5 golova u 1. poluvremenu & manje od 1.",
-    7.7,
+    6.9,
     1.5
    ],
    [
     "",
     "vise 0.5 & vise 2.5",
     "Više od 0.5 golova u 1. poluvremenu & više od 2.5 ",
-    1.53,
+    1.63,
     2.5
    ],
    [
     "",
     "vise 0.5 & manje 2.5",
     "Više od 0.5 golova u 1. poluvremenu & manje od 2.5",
-    4.65,
+    4.3,
     2.5
    ],
    [
     "",
     "manje 0.5 & vise 2.5",
     "Manje od 0.5 golova u 1. poluvremenu & više od 2.5",
-    9.7,
+    9.8,
     2.5
    ],
    [
     "",
     "manje 0.5 & manje 2.5",
     "Manje od 0.5 golova u 1. poluvremenu & manje od 2.",
-    5.35,
+    4.75,
     2.5
    ],
    [
     "",
     "vise 1.5 & vise 2.5",
     "Više od 1.5 golova u 1. poluvremenu & više od 2.5 ",
-    2.15,
+    2.32,
     2.5
    ],
    [
     "",
     "vise 1.5 & manje 2.5",
     "Više od 1.5 golova u 1. poluvremenu & manje od 2.5",
-    15.0,
+    14.0,
     2.5
    ],
    [
     "",
     "manje 1.5 & vise 2.5",
     "Manje od 1.5 golova u 1. poluvremenu & više od 2.5",
-    3.4,
+    3.45,
     2.5
    ],
    [
     "",
     "manje 1.5 & manje 2.5",
     "Manje od 1.5 golova u 1. poluvremenu & manje od 2.",
-    3.1,
+    2.75,
     2.5
    ]
   ]
@@ -1214,84 +1469,84 @@
     "0+0+",
     "vise 0.5 & vise 0.5",
     "Više od 0.5 golova u 1. poluvremenu & više od 0.5 ",
-    1.4,
+    1.46,
     2.0
    ],
    [
     "0+0-",
     "vise 0.5 & manje 0.5",
     "Više od 0.5 golova u 1. poluvremenu & manje od 0.5",
-    6.6,
+    6.2,
     2.0
    ],
    [
     "0+1+",
     "vise 0.5 & vise 1.5",
     "Više od 0.5 golova u 1. poluvremenu & više od 1.5 ",
-    2.02,
+    2.17,
     2.0
    ],
    [
     "0+1-",
     "vise 0.5 & manje 1.5",
     "Više od 0.5 golova u 1. poluvremenu & manje od 1.5",
-    2.7,
+    2.6,
     2.0
    ],
    [
     "0+2+",
     "vise 0.5 & vise 2.5",
     "Više od 0.5 golova u 1. poluvremenu & više od 2.5 ",
-    3.5,
+    3.9,
     2.0
    ],
    [
     "0+2-",
     "vise 0.5 & manje 2.5",
     "Više od 0.5 golova u 1. poluvremenu & manje od 2.5",
-    1.72,
+    1.69,
     2.0
    ],
    [
     "0-0+",
     "manje 0.5 & vise 0.5",
     "Manje od 0.5 golova u 1. poluvremenu & više od 0.5",
-    4.5,
+    4.25,
     2.0
    ],
    [
     "0-0-",
     "manje 0.5 & manje 0.5",
     "Manje od 0.5 golova u 1. poluvremenu & manje od 0.",
-    17.0,
+    15.0,
     2.0
    ],
    [
     "0-1+",
     "manje 0.5 & vise 1.5",
     "Manje od 0.5 golova u 1. poluvremenu & više od 1.5",
-    6.1,
+    5.9,
     2.0
    ],
    [
     "0-1-",
     "manje 0.5 & manje 1.5",
     "Manje od 0.5 golova u 1. poluvremenu & manje od 1.",
-    7.7,
+    6.9,
     2.0
    ],
    [
     "0-2+",
     "manje 0.5 & vise 2.5",
     "Manje od 0.5 golova u 1. poluvremenu & više od 2.5",
-    9.7,
+    9.8,
     2.0
    ],
    [
     "0-2-",
     "manje 0.5 & manje 2.5",
     "Manje od 0.5 golova u 1. poluvremenu & manje od 2.",
-    5.35,
+    4.75,
     2.0
    ]
   ]
@@ -1303,7 +1558,7 @@
     "+1+1",
     "vise 1.5 ili vise 1.5",
     "Više 1.5 ili više 1.5",
-    1.23,
+    1.28,
     1.5
    ],
    [
@@ -1317,28 +1572,28 @@
     "+1+2",
     "vise 1.5 ili vise 2.5",
     "Više 1.5 ili više 2.5",
-    1.5,
+    1.59,
     2.5
    ],
    [
     "+1-2",
     "vise 1.5 ili manje 2.5",
     "Više 1.5 ili manje 2.5",
-    1.15,
+    1.14,
     2.5
    ],
    [
     "+1+3",
     "vise 1.5 ili vise 3.5",
     "Više 1.5 ili više 3.5",
-    1.74,
+    1.87,
     3.5
    ],
    [
     "+1-3",
     "vise 1.5 ili manje 3.5",
     "Više 1.5 ili manje 3.5",
-    1.04,
+    1.03,
     3.5
    ],
    [
@@ -1352,35 +1607,35 @@
     "-1-1",
     "manje 1.5 ili manje 1.5",
     "Manje 1.5 ili manje 1.5",
-    1.3,
+    1.24,
     1.5
    ],
    [
     "-1+2",
     "manje 1.5 ili vise 2.5",
     "Manje 1.5 ili više 2.5",
-    1.39,
+    1.37,
     2.5
    ],
    [
     "-1-2",
     "manje 1.5 ili manje 2.5",
     "Manje 1.5 ili manje 2.5",
-    1.11,
+    1.09,
     2.5
    ],
    [
     "-1+3",
     "manje 1.5 ili vise 3.5",
     "Manje 1.5 ili više 3.5",
-    1.56,
+    1.52,
     3.5
    ],
    [
     "-1-3",
     "manje 1.5 ili manje 3.5",
     "Manje 1.5 ili manje 3.5",
-    1.03,
+    1.02,
     3.5
    ]
   ]
@@ -1392,21 +1647,21 @@
     "1",
     "feyenoord rotterdam",
     "Feyenoord Rotterdam pobeđuje barem jedno poluvreme",
-    2.07,
+    1.95,
     null
    ],
    [
     "0",
     "nereseno",
     "Nerešeno u barem jednom poluvremenu",
-    1.68,
+    1.62,
     null
    ],
    [
     "2",
     "como",
     "Como pobeđuje barem jedno poluvreme",
-    1.42,
+    1.52,
     null
    ]
   ]
@@ -1418,14 +1673,14 @@
     "",
     "da",
     "gol će biti postignut u oba poluvremena",
-    1.4,
+    1.46,
     null
    ],
    [
     "",
     "ne",
     "gol neće biti postignut u oba poluvremena",
-    2.75,
+    2.52,
     null
    ]
   ]
@@ -1437,14 +1692,14 @@
     "1",
     "feyenoord rotterdam",
     "Feyenoord Rotterdam pobeđuje, X vraća ulog",
-    2.65,
+    2.32,
     null
    ],
    [
     "2",
     "como",
     "Como pobeđuje, X vraća ulog",
-    1.44,
+    1.57,
     null
    ]
   ]
@@ -1456,21 +1711,21 @@
     "12",
     "1-2",
     "u svakom poluvremenu će biti postignuto 1 ili 2 go",
-    2.8,
+    2.72,
     2.0
    ],
    [
     "13",
     "1-3",
     "u svakom poluvremenu će biti postignuto 1,2 ili 3 ",
-    1.8,
+    1.82,
     3.0
    ],
    [
     "23",
     "2-3",
     "u svakom poluvremenu će biti postignuto 2 ili 3 go",
-    4.7,
+    5.0,
     3.0
    ]
   ]
@@ -1482,49 +1737,49 @@
     "0",
     "0",
     "Bez golova",
-    20.0,
+    17.0,
     6.0
    ],
    [
     "1",
     "1",
     "Utakmica će završiti sa 1 golom",
-    7.8,
+    7.0,
     6.0
    ],
    [
     "2",
     "2",
     "Utakmica će završiti sa 2 gola",
-    4.65,
+    4.3,
     6.0
    ],
    [
     "3",
     "3",
     "Utakmica će završiti sa 3 gola",
-    4.25,
+    4.15,
     6.0
    ],
    [
     "4",
     "4",
     "Utakmica će završiti sa 4 gola",
-    4.6,
+    4.75,
     6.0
    ],
    [
     "5",
     "5",
     "Utakmica će završiti sa 5 golova",
-    6.5,
+    7.0,
     6.0
    ],
    [
     "6",
     "6+",
     "Utakmica će završiti sa 6 ili više golova",
-    6.0,
+    7.0,
     6.0
    ]
   ]
@@ -1536,84 +1791,84 @@
     "+1",
     "vise 2.5 & da",
     "Više od 2.5 gola i oba tima daju gol",
-    1.62,
+    1.71,
     2.5
    ],
    [
     "-1",
     "manje 2.5 & da",
     "Manje od 2.5 gola i oba tima daju gol",
-    7.3,
+    6.7,
     2.5
    ],
    [
     "+2",
     "vise 2.5 & ne",
     "Više od 2.5 gola i barem jedan tim ne daje gol",
-    7.3,
+    7.7,
     2.5
    ],
    [
     "-2",
     "manje 2.5 & ne",
     "Manje od 2.5 gola i barem jedan tim ne daje gol",
-    3.75,
+    3.35,
     2.5
    ],
    [
     "+1",
     "vise 3.5 & da",
     "Više od 3.5 gola i oba tima daju gol",
-    2.15,
+    2.35,
     3.5
    ],
    [
     "-1",
     "manje 3.5 & da",
     "Manje od 3.5 gola i oba tima daju gol",
-    3.45,
+    3.25,
     3.5
    ],
    [
     "+2",
     "vise 3.5 & ne",
     "Više od 3.5 gola i barem jedan tim ne daje gol",
-    14.0,
+    16.0,
     3.5
    ],
    [
     "-2",
     "manje 3.5 & ne",
     "Manje od 3.5 gola i barem jedan tim ne daje gol",
-    3.1,
+    2.85,
     3.5
    ],
    [
     "+1",
     "vise 4.5 & da",
     "Više od 4.5 gola i oba tima daju gol",
-    3.35,
+    3.8,
     4.5
    ],
    [
     "-1",
     "manje 4.5 & da",
     "Manje od 4.5 gola i oba tima daju gol",
-    2.2,
+    2.12,
     4.5
    ],
    [
     "+2",
     "vise 4.5 & ne",
     "Više od 4.5 gola i barem jedan tim ne daje gol",
-    29.0,
+    36.0,
     4.5
    ],
    [
     "-2",
     "manje 4.5 & ne",
     "Manje od 4.5 gola i barem jedan tim ne daje gol",
-    2.85,
+    2.65,
     4.5
    ]
   ]
@@ -1625,14 +1880,14 @@
     "1",
     "da",
     "Oba tima daju po 2 ili više golova na utakmici",
-    3.25,
+    3.55,
     2.0
    ],
    [
     "2",
     "ne",
     "Barem jedan tim ne daje 2 ili više golova na utakm",
-    1.29,
+    1.25,
     2.0
    ]
   ]
@@ -1644,28 +1899,28 @@
     "11",
     "da/da",
     "Oba tima daju gol u 1. i 2. poluvremenu",
-    6.8,
+    7.5,
     2.0
    ],
    [
     "10",
     "da/ne",
     "Oba tima daju gol u 1. poluvremenu i barem jedan t",
-    4.6,
+    4.75,
     2.0
    ],
    [
     "01",
     "ne/da",
     "Barem jedan tim neće dati gol u 1. poluvremenu i o",
-    3.2,
+    3.3,
     2.0
    ],
    [
     "00",
     "ne/ne",
     "Barem jedan tim neće dati gol u 1. poluvremenu i b",
-    2.07,
+    1.97,
     2.0
    ]
   ]
@@ -1677,21 +1932,21 @@
     "",
     "1 & manje 5.5",
     "Feyenoord Rotterdam pobednik utakmice i manje od 5",
-    3.7,
+    3.25,
     5.5
    ],
    [
     "",
     "x & manje 5.5",
     "Nerešeno na kraju utakmice  i manje od 5.5 gola na",
-    4.15,
+    3.8,
     5.5
    ],
    [
     "",
     "2 & manje 5.5",
     "Como pobednik utakmice i manje od 5.5 gola na utak",
-    2.15,
+    2.3,
     5.5
    ],
    [
@@ -1705,193 +1960,62 @@
     "",
     "x & vise 5.5",
     "Nerešeno na kraju utakmice i više od 5.5 gola na u",
-    18.0,
+    19.0,
     5.5
    ],
    [
     "",
     "2 & vise 5.5",
     "Como pobednik utakmice i više od 5.5 gola na utakm",
-    8.3,
+    11.0,
     5.5
    ]
   ]
  },
- "Igrač postiže gol": {
-  "mecova": 2,
+ "Dupla šansa & ukupno golova (2.5)": {
+  "mecova": 3,
   "primer": [
    [
-    "",
-    "lewis koumas",
-    "Postiže gol",
-    1.92,
-    null
+    "10-",
+    "1x & manje od 2.5",
+    "Feyenoord Rotterdam će pobediti ili će biti nereše",
+    3.15,
+    2.5
    ],
    [
-    "",
-    "jayden danns",
-    "Postiže gol",
-    2.17,
-    null
+    "10+",
+    "1x & vise od 2.5",
+    "Feyenoord Rotterdam će pobediti ili će biti nereše",
+    2.57,
+    2.5
    ],
    [
-    "",
-    "bradley barcola",
-    "Postiže gol",
-    2.27,
-    null
+    "02-",
+    "x2 & manje od 2.5",
+    "Biće nerešeno ili Como će pobediti i biće manje od",
+    2.82,
+    2.5
    ],
    [
-    "",
-    "victor munoz",
-    "Postiže gol",
-    2.42,
-    null
+    "02+",
+    "x2 & vise od 2.5",
+    "Biće nerešeno ili Como će pobediti i biće više od ",
+    1.97,
+    2.5
    ],
    [
-    "",
-    "rio ngumoha",
-    "Postiže gol",
-    2.7,
-    null
+    "12-",
+    "12 & manje od 2.5",
+    "Feyenoord Rotterdam ili Como će pobediti i biće ma",
+    3.35,
+    2.5
    ],
    [
-    "",
-    "dominik szoboszlai",
-    "Postiže gol",
-    2.95,
-    null
-   ],
-   [
-    "",
-    "florian wirtz",
-    "Postiže gol",
-    3.05,
-    null
-   ],
-   [
-    "",
-    "james mcconnell",
-    "Postiže gol",
-    3.45,
-    null
-   ],
-   [
-    "",
-    "treymaurice nyoni",
-    "Postiže gol",
-    3.55,
-    null
-   ],
-   [
-    "",
-    "samuel adeniran",
-    "Postiže gol",
-    3.6,
-    null
-   ],
-   [
-    "",
-    "sasa kalajdzic",
-    "Postiže gol",
-    3.75,
-    null
-   ],
-   [
-    "",
-    "aleksis mek alister",
-    "Postiže gol",
-    4.1,
-    null
-   ]
-  ]
- },
- "Igrač postiže 1. gol": {
-  "mecova": 2,
-  "primer": [
-   [
-    "",
-    "lewis koumas",
-    "Postiže 1. gol",
-    4.75,
-    1.0
-   ],
-   [
-    "",
-    "jayden danns",
-    "Postiže 1. gol",
-    5.5,
-    1.0
-   ],
-   [
-    "",
-    "barcola, bradley",
-    "Postiže 1. gol",
-    5.9,
-    1.0
-   ],
-   [
-    "",
-    "victor munoz",
-    "Postiže 1. gol",
-    6.4,
-    1.0
-   ],
-   [
-    "",
-    "rio ngumoha",
-    "Postiže 1. gol",
-    7.0,
-    1.0
-   ],
-   [
-    "",
-    "dominik szoboszlai",
-    "Postiže 1. gol",
-    7.7,
-    1.0
-   ],
-   [
-    "",
-    "florian wirtz",
-    "Postiže 1. gol",
-    8.0,
-    1.0
-   ],
-   [
-    "",
-    "treymaurice nyoni",
-    "Postiže 1. gol",
-    9.1,
-    1.0
-   ],
-   [
-    "",
-    "james mcconnell",
-    "Postiže 1. gol",
-    9.2,
-    1.0
-   ],
-   [
-    "",
-    "samuel adeniran",
-    "Postiže 1. gol",
-    9.5,
-    1.0
-   ],
-   [
-    "",
-    "sasa kalajdzic",
-    "Postiže 1. gol",
-    9.5,
-    1.0
-   ],
-   [
-    "",
-    "alexis mac allister",
-    "Postiže 1. gol",
-    10.0,
-    1.0
+    "12+",
+    "12 & vise od 2.5",
+    "Feyenoord Rotterdam ili Como će pobediti i biće vi",
+    1.62,
+    2.5
    ]
   ]
  },
@@ -1916,7 +2040,7 @@
     "",
     "x & vise 0.5",
     "Nerešeno na kraju utakmice i više od 0.5 gola na u",
-    4.2,
+    4.15,
     0.5
    ],
    [
@@ -1975,42 +2099,6 @@
    ]
   ]
  },
- "Bilo koji igrač dobija karton u nadoknadi vremena ('90+) 2. poluvremena": {
-  "mecova": 2,
-  "primer": [
-   [
-    "",
-    "da",
-    "Bilo koji igrač će dobiti karton u nadoknadi vreme",
-    1.85,
-    2.0
-   ]
-  ]
- },
- "Oba tima izvode korner iz svakog ugla terena": {
-  "mecova": 2,
-  "primer": [
-   [
-    "",
-    "da",
-    "Oba tima će izvesti korner iz svakog ugla terena. ",
-    7.5,
-    15.0
-   ]
-  ]
- },
- "Strelac gola skida dres da proslavi": {
-  "mecova": 2,
-  "primer": [
-   [
-    "",
-    "da",
-    "Igrač koji postiže gol će skinuti dres da bi prosl",
-    4.5,
-    15.0
-   ]
-  ]
- },
  "Ukupno kornera LASK Linz": {
   "mecova": 1,
   "primer": [
@@ -2018,84 +2106,84 @@
     "/1-",
     "manje 0.5",
     "LASK Linz manje od 0.5 kornera",
-    15.0,
+    14.0,
     0.5
    ],
    [
     "/1-",
     "manje 1.5",
     "LASK Linz manje od 1.5 kornera",
-    5.75,
+    5.4,
     1.5
    ],
    [
     "/1+",
     "vise 1.5",
     "LASK Linz više od 1.5 kornera",
-    1.1,
+    1.12,
     1.5
    ],
    [
     "/1-",
     "manje 2.5",
     "LASK Linz manje od 2.5 kornera",
-    3.1,
+    2.92,
     2.5
    ],
    [
     "/1+",
     "vise 2.5",
     "LASK Linz više od 2.5 kornera",
-    1.32,
+    1.36,
     2.5
    ],
    [
     "/1-",
     "manje 3.5",
     "LASK Linz manje od 3.5 kornera",
-    2.02,
+    1.92,
     3.5
    ],
    [
     "/1+",
     "vise 3.5",
     "LASK Linz više od 3.5 kornera",
-    1.71,
+    1.78,
     3.5
    ],
    [
     "/1-",
     "manje 4.5",
     "LASK Linz manje od 4.5 kornera",
-    1.52,
+    1.48,
     4.5
    ],
    [
     "/1+",
     "vise 4.5",
     "LASK Linz više od 4.5 kornera",
-    2.37,
+    2.47,
     4.5
    ],
    [
     "/1-",
     "manje 5.5",
     "LASK Linz manje od 5.5 kornera",
-    1.27,
+    1.24,
     5.5
    ],
    [
     "/1+",
     "vise 5.5",
     "LASK Linz više od 5.5 kornera",
-    3.45,
+    3.65,
     5.5
    ],
    [
     "/1-",
     "manje 6.5",
     "LASK Linz manje od 6.5 kornera",
-    1.13,
+    1.12,
     6.5
    ]
   ]
@@ -2105,23 +2193,16 @@
   "primer": [
    [
     "/2-",
-    "manje 0.5",
-    "Liverpool će imati manje od 0.5 kornera",
-    50.0,
-    0.5
-   ],
-   [
-    "/2-",
     "manje 1.5",
     "Liverpool će imati manje od 1.5 kornera",
-    17.0,
+    18.0,
     1.5
    ],
    [
     "/2-",
     "manje 2.5",
     "Liverpool će imati manje od 2.5 kornera",
-    7.7,
+    8.0,
     2.5
    ],
    [
@@ -2135,57 +2216,64 @@
     "/2-",
     "manje 3.5",
     "Liverpool će imati manje od 3.5 kornera",
-    4.5,
+    4.65,
     3.5
    ],
    [
     "/2+",
     "vise 3.5",
     "Liverpool će imati više od 3.5 kornera",
-    1.17,
+    1.16,
     3.5
    ],
    [
     "/2-",
     "manje 4.5",
     "Liverpool će imati manje od 4.5 kornera",
-    2.9,
+    3.0,
     4.5
    ],
    [
     "/2+",
     "vise 4.5",
     "Liverpool će imati više od 4.5 kornera",
-    1.36,
+    1.34,
     4.5
    ],
    [
     "/2-",
     "manje 5.5",
     "Liverpool će imati manje od 5.5 kornera",
-    2.1,
+    2.15,
     5.5
    ],
    [
     "/2+",
     "vise 5.5",
     "Liverpool će imati više od 5.5 kornera",
-    1.66,
+    1.63,
     5.5
    ],
    [
     "/2-",
     "manje 6.5",
     "Liverpool će imati manje od 6.5 kornera",
-    1.64,
+    1.67,
     6.5
    ],
    [
     "/2+",
     "vise 6.5",
     "Liverpool će imati više od 6.5 kornera",
-    2.12,
+    2.07,
     6.5
+   ],
+   [
+    "/2-",
+    "manje 7.5",
+    "Liverpool će imati manje od 7.5 kornera",
+    1.39,
+    7.5
    ]
   ]
  },
@@ -2288,17 +2376,87 @@
   "primer": [
    [
     "*11-",
+    "manje 0.5",
+    "LASK Linz će imati manje od 0.5 šuteva u okvir gol",
+    9.7,
+    0.5
+   ],
+   [
+    "*11-",
+    "manje 1.5",
+    "LASK Linz će imati manje od 1.5 šuteva u okvir gol",
+    4.35,
+    1.5
+   ],
+   [
+    "*11+",
+    "vise 1.5",
+    "LASK Linz će imati više od 1.5 šuteva u okvir gola",
+    1.18,
+    1.5
+   ],
+   [
+    "*11-",
     "manje 2.5",
     "LASK Linz će imati manje od 2.5 šuteva u okvir gol",
-    2.22,
+    2.32,
     2.5
    ],
    [
     "*11+",
     "vise 2.5",
     "LASK Linz će imati više od 2.5 šuteva u okvir gola",
-    1.58,
+    1.54,
     2.5
+   ],
+   [
+    "*11-",
+    "manje 3.5",
+    "LASK Linz će imati manje od 3.5 šuteva u okvir gol",
+    1.57,
+    3.5
+   ],
+   [
+    "*11+",
+    "vise 3.5",
+    "LASK Linz će imati više od 3.5 šuteva u okvir gola",
+    2.27,
+    3.5
+   ],
+   [
+    "*11-",
+    "manje 4.5",
+    "LASK Linz će imati manje od 4.5 šuteva u okvir gol",
+    1.22,
+    4.5
+   ],
+   [
+    "*11+",
+    "vise 4.5",
+    "LASK Linz će imati više od 4.5 šuteva u okvir gola",
+    3.45,
+    4.5
+   ],
+   [
+    "*11-",
+    "manje 5.5",
+    "LASK Linz će imati manje od 5.5 šuteva u okvir gol",
+    1.07,
+    5.5
+   ],
+   [
+    "*11+",
+    "vise 5.5",
+    "LASK Linz će imati više od 5.5 šuteva u okvir gola",
+    5.5,
+    5.5
+   ],
+   [
+    "*11+",
+    "vise 6.5",
+    "LASK Linz će imati više od 6.5 šuteva u okvir gola",
+    8.7,
+    6.5
    ]
   ]
  },
@@ -2307,17 +2465,87 @@
   "primer": [
    [
     "*12-",
+    "manje 3.5",
+    "Liverpool će imati manje od 3.5 šuteva u okvir gol",
+    6.1,
+    3.5
+   ],
+   [
+    "*12+",
+    "vise 3.5",
+    "Liverpool će imati više od 3.5 šuteva u okvir gola",
+    1.05,
+    3.5
+   ],
+   [
+    "*12-",
+    "manje 4.5",
+    "Liverpool će imati manje od 4.5 šuteva u okvir gol",
+    3.8,
+    4.5
+   ],
+   [
+    "*12+",
+    "vise 4.5",
+    "Liverpool će imati više od 4.5 šuteva u okvir gola",
+    1.18,
+    4.5
+   ],
+   [
+    "*12-",
+    "manje 5.5",
+    "Liverpool će imati manje od 5.5 šuteva u okvir gol",
+    2.6,
+    5.5
+   ],
+   [
+    "*12+",
+    "vise 5.5",
+    "Liverpool će imati više od 5.5 šuteva u okvir gola",
+    1.4,
+    5.5
+   ],
+   [
+    "*12-",
     "manje 6.5",
     "Liverpool će imati manje od 6.5 šuteva u okvir gol",
-    2.12,
+    1.92,
     6.5
    ],
    [
     "*12+",
     "vise 6.5",
     "Liverpool će imati više od 6.5 šuteva u okvir gola",
-    1.65,
+    1.78,
     6.5
+   ],
+   [
+    "*12-",
+    "manje 7.5",
+    "Liverpool će imati manje od 7.5 šuteva u okvir gol",
+    1.52,
+    7.5
+   ],
+   [
+    "*12+",
+    "vise 7.5",
+    "Liverpool će imati više od 7.5 šuteva u okvir gola",
+    2.37,
+    7.5
+   ],
+   [
+    "*12-",
+    "manje 8.5",
+    "Liverpool će imati manje od 8.5 šuteva u okvir gol",
+    1.27,
+    8.5
+   ],
+   [
+    "*12+",
+    "vise 8.5",
+    "Liverpool će imati više od 8.5 šuteva u okvir gola",
+    3.15,
+    8.5
    ]
   ]
  },
@@ -2326,17 +2554,87 @@
   "primer": [
    [
     "",
+    "manje 7.5",
+    "LASK Linz manje od 7.5 šuteva,",
+    4.2,
+    7.5
+   ],
+   [
+    "",
+    "vise 7.5",
+    "LASK Linz više od 7.5 šuteva",
+    1.15,
+    7.5
+   ],
+   [
+    "",
+    "manje 8.5",
+    "LASK Linz manje od 8.5 šuteva,",
+    3.15,
+    8.5
+   ],
+   [
+    "",
+    "vise 8.5",
+    "LASK Linz više od 8.5 šuteva",
+    1.27,
+    8.5
+   ],
+   [
+    "",
+    "manje 9.5",
+    "LASK Linz manje od 9.5 šuteva,",
+    2.47,
+    9.5
+   ],
+   [
+    "",
+    "vise 9.5",
+    "LASK Linz više od 9.5 šuteva",
+    1.45,
+    9.5
+   ],
+   [
+    "",
     "manje 10.5",
     "LASK Linz manje od 10.5 šuteva,",
-    1.9,
+    2.02,
     10.5
    ],
    [
     "",
     "vise 10.5",
     "LASK Linz više od 10.5 šuteva",
-    1.82,
+    1.7,
     10.5
+   ],
+   [
+    "",
+    "manje 11.5",
+    "LASK Linz manje od 11.5 šuteva,",
+    1.67,
+    11.5
+   ],
+   [
+    "",
+    "vise 11.5",
+    "LASK Linz više od 11.5 šuteva",
+    2.07,
+    11.5
+   ],
+   [
+    "",
+    "manje 12.5",
+    "LASK Linz manje od 12.5 šuteva,",
+    1.46,
+    12.5
+   ],
+   [
+    "",
+    "vise 12.5",
+    "LASK Linz više od 12.5 šuteva",
+    2.52,
+    12.5
    ]
   ]
  },
@@ -2345,17 +2643,87 @@
   "primer": [
    [
     "",
+    "manje 15.5",
+    "Liverpool manje od 15.5 šuteva",
+    3.25,
+    15.5
+   ],
+   [
+    "",
+    "vise 15.5",
+    "Liverpool više od 15.5 šuteva",
+    1.25,
+    15.5
+   ],
+   [
+    "",
+    "manje 16.5",
+    "Liverpool manje od 16.5 šuteva",
+    2.75,
+    16.5
+   ],
+   [
+    "",
+    "vise 16.5",
+    "Liverpool više od 16.5 šuteva",
+    1.4,
+    16.5
+   ],
+   [
+    "",
+    "manje 17.5",
+    "Liverpool manje od 17.5 šuteva",
+    2.3,
+    17.5
+   ],
+   [
+    "",
+    "vise 17.5",
+    "Liverpool više od 17.5 šuteva",
+    1.55,
+    17.5
+   ],
+   [
+    "",
+    "manje 18.5",
+    "Liverpool manje od 18.5 šuteva",
+    1.97,
+    18.5
+   ],
+   [
+    "",
+    "vise 18.5",
+    "Liverpool više od 18.5 šuteva",
+    1.74,
+    18.5
+   ],
+   [
+    "",
     "manje 19.5",
     "Liverpool manje od 19.5 šuteva",
-    1.88,
+    1.72,
     19.5
    ],
    [
     "",
     "vise 19.5",
     "Liverpool više od 19.5 šuteva",
-    1.82,
+    2.0,
     19.5
+   ],
+   [
+    "",
+    "manje 20.5",
+    "Liverpool manje od 20.5 šuteva",
+    1.52,
+    20.5
+   ],
+   [
+    "",
+    "vise 20.5",
+    "Liverpool više od 20.5 šuteva",
+    2.3,
+    20.5
    ]
   ]
  },
@@ -2366,14 +2734,14 @@
     "/*01-",
     "manje 11.5",
     "LASK Linz manje od 11.5 faulova",
-    1.82,
+    1.97,
     11.5
    ],
    [
     "/*01+",
     "vise 11.5",
     "LASK Linz više od 11.5 faulova",
-    1.9,
+    1.74,
     11.5
    ]
   ]
@@ -2385,14 +2753,14 @@
     "/*02-",
     "manje 10.5",
     "Liverpool manje od 10.5 faulova",
-    1.71,
+    1.88,
     10.5
    ],
    [
     "/*02+",
     "vise 10.5",
     "Liverpool više od 10.5 faulova",
-    2.02,
+    1.82,
     10.5
    ]
   ]
@@ -2661,27 +3029,15 @@
    ]
   ]
  },
- "Andoni Iraola dobija karton": {
+ "Ukupno dodavanja LASK Linz": {
   "mecova": 1,
   "primer": [
    [
     "",
-    "da",
-    "Andoni Iraola će dobiti karton. Za mečeve koji ukl",
-    5.0,
-    15.0
-   ]
-  ]
- },
- "Dietmar Kühbauer dobija karton": {
-  "mecova": 1,
-  "primer": [
-   [
-    "",
-    "da",
-    "Dietmar Kühbauer će dobiti karton. Za mečeve koji ",
-    5.0,
-    15.0
+    "vise 411.5",
+    "LASK Linz više od 411.5 dodavanja",
+    1.85,
+    411.5
    ]
   ]
  },
@@ -2692,84 +3048,84 @@
     "/1-",
     "manje 0.5",
     "Feyenoord Rotterdam manje od 0.5 kornera",
-    27.0,
+    23.0,
     0.5
    ],
    [
     "/1-",
     "manje 1.5",
     "Feyenoord Rotterdam manje od 1.5 kornera",
-    9.2,
+    8.1,
     1.5
    ],
    [
     "/1+",
     "vise 1.5",
     "Feyenoord Rotterdam više od 1.5 kornera",
-    1.04,
+    1.05,
     1.5
    ],
    [
     "/1-",
     "manje 2.5",
     "Feyenoord Rotterdam manje od 2.5 kornera",
-    4.75,
+    4.2,
     2.5
    ],
    [
     "/1+",
     "vise 2.5",
     "Feyenoord Rotterdam više od 2.5 kornera",
-    1.15,
+    1.19,
     2.5
    ],
    [
     "/1-",
     "manje 3.5",
     "Feyenoord Rotterdam manje od 3.5 kornera",
-    2.87,
+    2.6,
     3.5
    ],
    [
     "/1+",
     "vise 3.5",
     "Feyenoord Rotterdam više od 3.5 kornera",
-    1.37,
+    1.44,
     3.5
    ],
    [
     "/1-",
     "manje 4.5",
     "Feyenoord Rotterdam manje od 4.5 kornera",
-    2.0,
+    1.85,
     4.5
    ],
    [
     "/1+",
     "vise 4.5",
     "Feyenoord Rotterdam više od 4.5 kornera",
-    1.73,
+    1.85,
     4.5
    ],
    [
     "/1-",
     "manje 5.5",
     "Feyenoord Rotterdam manje od 5.5 kornera",
-    1.55,
+    1.46,
     5.5
    ],
    [
     "/1+",
     "vise 5.5",
     "Feyenoord Rotterdam više od 5.5 kornera",
-    2.3,
+    2.52,
     5.5
    ],
    [
     "/1-",
     "manje 6.5",
     "Feyenoord Rotterdam manje od 6.5 kornera",
-    1.3,
+    1.25,
     6.5
    ]
   ]
@@ -2781,84 +3137,84 @@
     "/2-",
     "manje 0.5",
     "Como će imati manje od 0.5 kornera",
-    22.0,
+    19.0,
     0.5
    ],
    [
     "/2-",
     "manje 1.5",
     "Como će imati manje od 1.5 kornera",
-    7.9,
+    7.0,
     1.5
    ],
    [
     "/2+",
     "vise 1.5",
     "Como će imati više od 1.5 kornera",
-    1.05,
+    1.07,
     1.5
    ],
    [
     "/2-",
     "manje 2.5",
     "Como će imati manje od 2.5 kornera",
-    4.1,
+    3.65,
     2.5
    ],
    [
     "/2+",
     "vise 2.5",
     "Como će imati više od 2.5 kornera",
-    1.2,
+    1.24,
     2.5
    ],
    [
     "/2-",
     "manje 3.5",
     "Como će imati manje od 3.5 kornera",
-    2.55,
+    2.32,
     3.5
    ],
    [
     "/2+",
     "vise 3.5",
     "Como će imati više od 3.5 kornera",
-    1.46,
+    1.54,
     3.5
    ],
    [
     "/2-",
     "manje 4.5",
     "Como će imati manje od 4.5 kornera",
-    1.82,
+    1.69,
     4.5
    ],
    [
     "/2+",
     "vise 4.5",
     "Como će imati više od 4.5 kornera",
-    1.88,
+    2.05,
     4.5
    ],
    [
     "/2-",
     "manje 5.5",
     "Como će imati manje od 5.5 kornera",
-    1.44,
+    1.37,
     5.5
    ],
    [
     "/2+",
     "vise 5.5",
     "Como će imati više od 5.5 kornera",
-    2.57,
+    2.87,
     5.5
    ],
    [
     "/2-",
     "manje 6.5",
     "Como će imati manje od 6.5 kornera",
-    1.24,
+    1.19,
     6.5
    ]
   ]
@@ -2962,17 +3318,87 @@
   "primer": [
    [
     "*11-",
+    "manje 1.5",
+    "Feyenoord Rotterdam će imati manje od 1.5 šuteva u",
+    8.4,
+    1.5
+   ],
+   [
+    "*11-",
+    "manje 2.5",
+    "Feyenoord Rotterdam će imati manje od 2.5 šuteva u",
+    4.7,
+    2.5
+   ],
+   [
+    "*11+",
+    "vise 2.5",
+    "Feyenoord Rotterdam će imati više od 2.5 šuteva u ",
+    1.15,
+    2.5
+   ],
+   [
+    "*11-",
+    "manje 3.5",
+    "Feyenoord Rotterdam će imati manje od 3.5 šuteva u",
+    2.72,
+    3.5
+   ],
+   [
+    "*11+",
+    "vise 3.5",
+    "Feyenoord Rotterdam će imati više od 3.5 šuteva u ",
+    1.4,
+    3.5
+   ],
+   [
+    "*11-",
     "manje 4.5",
     "Feyenoord Rotterdam će imati manje od 4.5 šuteva u",
-    1.8,
+    1.85,
     4.5
    ],
    [
     "*11+",
     "vise 4.5",
     "Feyenoord Rotterdam će imati više od 4.5 šuteva u ",
-    1.9,
+    1.85,
     4.5
+   ],
+   [
+    "*11-",
+    "manje 5.5",
+    "Feyenoord Rotterdam će imati manje od 5.5 šuteva u",
+    1.41,
+    5.5
+   ],
+   [
+    "*11+",
+    "vise 5.5",
+    "Feyenoord Rotterdam će imati više od 5.5 šuteva u ",
+    2.57,
+    5.5
+   ],
+   [
+    "*11-",
+    "manje 6.5",
+    "Feyenoord Rotterdam će imati manje od 6.5 šuteva u",
+    1.18,
+    6.5
+   ],
+   [
+    "*11+",
+    "vise 6.5",
+    "Feyenoord Rotterdam će imati više od 6.5 šuteva u ",
+    3.75,
+    6.5
+   ],
+   [
+    "*11-",
+    "manje 7.5",
+    "Feyenoord Rotterdam će imati manje od 7.5 šuteva u",
+    1.07,
+    7.5
    ]
   ]
  },
@@ -2981,17 +3407,87 @@
   "primer": [
    [
     "*12-",
+    "manje 2.5",
+    "Como će imati manje od 2.5 šuteva u okvir gola",
+    6.2,
+    2.5
+   ],
+   [
+    "*12+",
+    "vise 2.5",
+    "Como će imati više od 2.5 šuteva u okvir gola",
+    1.05,
+    2.5
+   ],
+   [
+    "*12-",
+    "manje 3.5",
+    "Como će imati manje od 3.5 šuteva u okvir gola",
+    3.8,
+    3.5
+   ],
+   [
+    "*12+",
+    "vise 3.5",
+    "Como će imati više od 3.5 šuteva u okvir gola",
+    1.22,
+    3.5
+   ],
+   [
+    "*12-",
+    "manje 4.5",
+    "Como će imati manje od 4.5 šuteva u okvir gola",
+    2.42,
+    4.5
+   ],
+   [
+    "*12+",
+    "vise 4.5",
+    "Como će imati više od 4.5 šuteva u okvir gola",
+    1.5,
+    4.5
+   ],
+   [
+    "*12-",
     "manje 5.5",
     "Como će imati manje od 5.5 šuteva u okvir gola",
-    1.9,
+    1.75,
     5.5
    ],
    [
     "*12+",
     "vise 5.5",
     "Como će imati više od 5.5 šuteva u okvir gola",
-    1.8,
+    1.97,
     5.5
+   ],
+   [
+    "*12-",
+    "manje 6.5",
+    "Como će imati manje od 6.5 šuteva u okvir gola",
+    1.4,
+    6.5
+   ],
+   [
+    "*12+",
+    "vise 6.5",
+    "Como će imati više od 6.5 šuteva u okvir gola",
+    2.75,
+    6.5
+   ],
+   [
+    "*12-",
+    "manje 7.5",
+    "Como će imati manje od 7.5 šuteva u okvir gola",
+    1.18,
+    7.5
+   ],
+   [
+    "*12+",
+    "vise 7.5",
+    "Como će imati više od 7.5 šuteva u okvir gola",
+    3.8,
+    7.5
    ]
   ]
  },
@@ -3000,17 +3496,87 @@
   "primer": [
    [
     "",
+    "manje 11.5",
+    "Feyenoord Rotterdam manje od 11.5 šuteva,",
+    3.05,
+    11.5
+   ],
+   [
+    "",
+    "vise 11.5",
+    "Feyenoord Rotterdam više od 11.5 šuteva",
+    1.33,
+    11.5
+   ],
+   [
+    "",
+    "manje 12.5",
+    "Feyenoord Rotterdam manje od 12.5 šuteva,",
+    2.45,
+    12.5
+   ],
+   [
+    "",
+    "vise 12.5",
+    "Feyenoord Rotterdam više od 12.5 šuteva",
+    1.49,
+    12.5
+   ],
+   [
+    "",
+    "manje 13.5",
+    "Feyenoord Rotterdam manje od 13.5 šuteva,",
+    2.05,
+    13.5
+   ],
+   [
+    "",
+    "vise 13.5",
+    "Feyenoord Rotterdam više od 13.5 šuteva",
+    1.69,
+    13.5
+   ],
+   [
+    "",
     "manje 14.5",
     "Feyenoord Rotterdam manje od 14.5 šuteva,",
-    1.82,
+    1.72,
     14.5
    ],
    [
     "",
     "vise 14.5",
     "Feyenoord Rotterdam više od 14.5 šuteva",
-    1.88,
+    2.0,
     14.5
+   ],
+   [
+    "",
+    "manje 15.5",
+    "Feyenoord Rotterdam manje od 15.5 šuteva,",
+    1.5,
+    15.5
+   ],
+   [
+    "",
+    "vise 15.5",
+    "Feyenoord Rotterdam više od 15.5 šuteva",
+    2.35,
+    15.5
+   ],
+   [
+    "",
+    "manje 16.5",
+    "Feyenoord Rotterdam manje od 16.5 šuteva,",
+    1.37,
+    16.5
+   ],
+   [
+    "",
+    "vise 16.5",
+    "Feyenoord Rotterdam više od 16.5 šuteva",
+    2.87,
+    16.5
    ]
   ]
  },
@@ -3019,17 +3585,87 @@
   "primer": [
    [
     "",
+    "manje 12.5",
+    "Como manje od 12.5 šuteva",
+    3.3,
+    12.5
+   ],
+   [
+    "",
+    "vise 12.5",
+    "Como više od 12.5 šuteva",
+    1.29,
+    12.5
+   ],
+   [
+    "",
+    "manje 13.5",
+    "Como manje od 13.5 šuteva",
+    2.65,
+    13.5
+   ],
+   [
+    "",
+    "vise 13.5",
+    "Como više od 13.5 šuteva",
+    1.42,
+    13.5
+   ],
+   [
+    "",
+    "manje 14.5",
+    "Como manje od 14.5 šuteva",
+    2.2,
+    14.5
+   ],
+   [
+    "",
+    "vise 14.5",
+    "Como više od 14.5 šuteva",
+    1.61,
+    14.5
+   ],
+   [
+    "",
+    "manje 15.5",
+    "Como manje od 15.5 šuteva",
+    1.85,
+    15.5
+   ],
+   [
+    "",
+    "vise 15.5",
+    "Como više od 15.5 šuteva",
+    1.85,
+    15.5
+   ],
+   [
+    "",
     "manje 16.5",
     "Como manje od 16.5 šuteva",
-    1.95,
+    1.62,
     16.5
    ],
    [
     "",
     "vise 16.5",
     "Como više od 16.5 šuteva",
-    1.76,
+    2.15,
     16.5
+   ],
+   [
+    "",
+    "manje 17.5",
+    "Como manje od 17.5 šuteva",
+    1.45,
+    17.5
+   ],
+   [
+    "",
+    "vise 17.5",
+    "Como više od 17.5 šuteva",
+    2.57,
+    17.5
    ]
   ]
  },
@@ -3040,14 +3676,14 @@
     "/*01-",
     "manje 11.5",
     "Feyenoord Rotterdam manje od 11.5 faulova",
-    1.74,
+    1.7,
     11.5
    ],
    [
     "/*01+",
     "vise 11.5",
     "Feyenoord Rotterdam više od 11.5 faulova",
-    1.97,
+    2.05,
     11.5
    ]
   ]
@@ -3059,14 +3695,14 @@
     "/*02-",
     "manje 11.5",
     "Como manje od 11.5 faulova",
-    1.92,
+    1.88,
     11.5
    ],
    [
     "/*02+",
     "vise 11.5",
     "Como više od 11.5 faulova",
-    1.78,
+    1.82,
     11.5
    ]
   ]
@@ -3092,7 +3728,7 @@
     "",
     "2-3",
     "Feyenoord Rotterdam 2-3 gola na utakmici",
-    2.52,
+    2.5,
     -3.0
    ]
   ]
@@ -3104,21 +3740,21 @@
     "",
     "1-2",
     "Como 1-2 gola na utakmici",
-    1.75,
+    1.67,
     -2.0
    ],
    [
     "",
     "1-3",
     "Como 1-3 gola na utakmici",
-    1.33,
+    1.31,
     -3.0
    ],
    [
     "",
     "2-3",
     "Como 2-3 gola na utakmici",
-    2.05,
+    2.15,
     -3.0
    ]
   ]
@@ -3130,7 +3766,7 @@
     "12",
     "1-2",
     "Feyenoord Rotterdam 1 ili 2 gola u svakom poluvrem",
-    3.8,
+    3.75,
     2.0
    ],
    [
@@ -3144,7 +3780,7 @@
     "23",
     "2-3",
     "Feyenoord Rotterdam 2 ili 3 gola u svakom poluvrem",
-    21.0,
+    20.0,
     3.0
    ]
   ]
@@ -3156,21 +3792,21 @@
     "12",
     "1-2",
     "Como 1 ili 2 gola u svakom poluvremenu",
-    2.9,
+    3.1,
     2.0
    ],
    [
     "13",
     "1-3",
     "Como 1,2 ili 3 gola u svakom poluvremenu",
-    2.4,
+    2.67,
     3.0
    ],
    [
     "23",
     "2-3",
     "Como 2 ili 3 gola u svakom poluvremenu",
-    11.0,
+    13.0,
     3.0
    ]
   ]
@@ -3182,7 +3818,7 @@
     "0",
     "0",
     "Feyenoord Rotterdam ne daje gol",
-    3.8,
+    3.85,
     3.0
    ],
    [
@@ -3203,7 +3839,7 @@
     "3",
     "3+",
     "Feyenoord Rotterdam daje 3 ili više golova",
-    4.8,
+    4.75,
     3.0
    ]
   ]
@@ -3215,14 +3851,14 @@
     "0",
     "0",
     "Como ne daje gol",
-    6.3,
+    5.3,
     3.0
    ],
    [
     "1",
     "1",
     "Como daje tačno 1 gol",
-    3.35,
+    3.05,
     3.0
    ],
    [
@@ -3236,7 +3872,7 @@
     "3",
     "3+",
     "Como daje 3 ili više golova",
-    2.8,
+    3.3,
     3.0
    ]
   ]
@@ -3248,14 +3884,14 @@
     "1",
     "da",
     "Feyenoord Rotterdam daje gol na utakmici",
-    1.25,
+    1.26,
     null
    ],
    [
     "2",
     "ne",
     "Feyenoord Rotterdam ne daje gol na utakmici",
-    4.0,
+    3.9,
     null
    ]
   ]
@@ -3267,14 +3903,14 @@
     "1",
     "da",
     "Como daje gol na utakmici",
-    1.12,
+    1.15,
     null
    ],
    [
     "2",
     "ne",
     "Como ne daje gol na utakmici",
-    6.5,
+    5.45,
     null
    ]
   ]
@@ -3286,7 +3922,7 @@
     "",
     "vise 0.5 & vise 1.5",
     "1. Poluvreme Feyenoord Rotterdam više od 0.5 golov",
-    2.77,
+    2.75,
     1.5
    ],
    [
@@ -3314,7 +3950,7 @@
     "",
     "vise 0.5 & vise 2.5",
     "1. Poluvreme Feyenoord Rotterdam više od 0.5 golov",
-    5.25,
+    5.2,
     2.5
    ],
    [
@@ -3342,7 +3978,7 @@
     "",
     "vise 1.5 & vise 2.5",
     "1. Poluvreme Feyenoord Rotterdam više od 1.5 golov",
-    8.0,
+    7.9,
     2.5
    ],
    [
@@ -3356,7 +3992,7 @@
     "",
     "manje 1.5 & vise 2.5",
     "1. Poluvreme Feyenoord Rotterdam manje od 1.5 golo",
-    7.6,
+    7.5,
     2.5
    ],
    [
@@ -3375,63 +4011,63 @@
     "",
     "vise 0.5 & vise 1.5",
     "1. Poluvreme Como više od 0.5 golova i Como više o",
-    1.92,
+    2.15,
     1.5
    ],
    [
     "",
     "vise 0.5 & manje 1.5",
     "1. Poluvreme Como više od 0.5 golova i Como manje ",
-    6.3,
+    5.8,
     1.5
    ],
    [
     "",
     "manje 0.5 & vise 1.5",
     "1. Poluvreme Como manje od 0.5 golova i Como više ",
-    5.9,
+    6.2,
     1.5
    ],
    [
     "",
     "manje 0.5 & manje 1.5",
     "1. Poluvreme Como manje od 0.5 golova i Como manje",
-    3.2,
+    2.77,
     1.5
    ],
    [
     "",
     "vise 0.5 & vise 2.5",
     "1. Poluvreme Como više od 0.5 golova i Como više o",
-    3.0,
+    3.6,
     2.5
    ],
    [
     "",
     "vise 0.5 & manje 2.5",
     "1. Poluvreme Como više od 0.5 golova i Como manje ",
-    2.87,
+    2.77,
     2.5
    ],
    [
     "",
     "manje 0.5 & vise 2.5",
     "1. Poluvreme Como manje od 0.5 golova i Como više ",
-    13.0,
+    15.0,
     2.5
    ],
    [
     "",
     "manje 0.5 & manje 2.5",
     "1. Poluvreme Como manje od 0.5 golova i Como manje",
-    2.52,
+    2.25,
     2.5
    ],
    [
     "",
     "vise 1.5 & vise 2.5",
     "1. Poluvreme Como više od 1.5 golova i Como više o",
-    4.6,
+    5.5,
     2.5
    ],
    [
@@ -3445,14 +4081,14 @@
     "",
     "manje 1.5 & vise 2.5",
     "1. Poluvreme Como manje od 1.5 golova i Como više ",
-    5.0,
+    5.75,
     2.5
    ],
    [
     "",
     "manje 1.5 & manje 2.5",
     "1. Poluvreme Como manje od 1.5 golova i Como manje",
-    1.54,
+    1.41,
     2.5
    ]
   ]
@@ -3464,7 +4100,7 @@
     "",
     "vise 0.5 & vise 0.5",
     "Feyenoord Rotterdam daje više od 0.5 golova u 1. p",
-    3.35,
+    3.3,
     2.0
    ],
    [
@@ -3478,7 +4114,7 @@
     "",
     "vise 0.5 & vise 1.5",
     "Feyenoord Rotterdam daje više od 0.5 golova u 1. p",
-    7.7,
+    7.6,
     2.0
    ],
    [
@@ -3513,7 +4149,7 @@
     "",
     "manje 0.5 & manje 0.5",
     "Feyenoord Rotterdam daje manje od 0.5 golova u 1. ",
-    3.7,
+    3.75,
     2.0
    ],
    [
@@ -3553,84 +4189,84 @@
     "",
     "vise 0.5 & vise 0.5",
     "Como daje više od 0.5 golova u 1. poluvremenu i vi",
-    2.25,
+    2.55,
     2.0
    ],
    [
     "",
     "vise 0.5 & manje 0.5",
     "Como daje više od 0.5 golova u 1. poluvremenu i ma",
-    4.25,
+    4.1,
     2.0
    ],
    [
     "",
     "vise 0.5 & vise 1.5",
     "Como daje više od 0.5 golova u 1. poluvremenu i vi",
-    4.45,
+    5.35,
     2.0
    ],
    [
     "",
     "vise 0.5 & manje 1.5",
     "Como daje više od 0.5 golova u 1. poluvremenu i ma",
-    2.2,
+    2.22,
     2.0
    ],
    [
     "",
     "vise 0.5 & vise 2.5",
     "Como daje više od 0.5 golova u 1. poluvremenu i vi",
-    10.0,
+    13.0,
     2.0
    ],
    [
     "",
     "vise 0.5 & manje 2.5",
     "Como daje više od 0.5 golova u 1. poluvremenu i ma",
-    1.73,
+    1.8,
     2.0
    ],
    [
     "",
     "manje 0.5 & vise 0.5",
     "Como daje manje od 0.5 golova u 1. poluvremenu i v",
-    3.2,
+    3.05,
     2.0
    ],
    [
     "",
     "manje 0.5 & manje 0.5",
     "Como daje manje od 0.5 golova u 1. poluvremenu i m",
-    6.1,
+    5.1,
     2.0
    ],
    [
     "",
     "manje 0.5 & vise 1.5",
     "Como daje manje od 0.5 golova u 1. poluvremenu i v",
-    5.9,
+    6.2,
     2.0
    ],
    [
     "",
     "manje 0.5 & manje 1.5",
     "Como daje manje od 0.5 golova u 1. poluvremenu i m",
-    3.2,
+    2.77,
     2.0
    ],
    [
     "",
     "manje 0.5 & vise 2.5",
     "Como daje manje od 0.5 golova u 1. poluvremenu i v",
-    13.0,
+    15.0,
     2.0
    ],
    [
     "",
     "manje 0.5 & manje 2.5",
     "Como daje manje od 0.5 golova u 1. poluvremenu i m",
-    2.52,
+    2.25,
     2.0
    ]
   ]
@@ -3642,35 +4278,35 @@
     "0-",
     "x & manje 0.5",
     "nerešeno i Feyenoord Rotterdam manje od 0.5 gola n",
-    17.0,
+    14.0,
     0.5
    ],
    [
     "2-",
     "2 & manje 0.5",
     "Como pobednik i Feyenoord Rotterdam manje od 0.5 g",
-    4.15,
+    4.35,
     0.5
    ],
    [
     "1+",
     "1 & vise 0.5",
     "Feyenoord Rotterdam pobednik i Feyenoord Rotterdam",
-    3.3,
+    2.95,
     0.5
    ],
    [
     "0+",
     "x & vise 0.5",
     "nerešeno i Feyenoord Rotterdam više od 0.5 gola na",
-    4.2,
+    4.0,
     0.5
    ],
    [
     "2+",
     "2 & vise 0.5",
     "Como pobednik i Feyenoord Rotterdam više od 0.5 go",
-    2.87,
+    3.25,
     0.5
    ]
   ]
@@ -3682,42 +4318,42 @@
     "1-",
     "1 & manje 1.5",
     "Feyenoord Rotterdam pobednik i Feyenoord Rotterdam",
-    14.0,
+    12.0,
     1.5
    ],
    [
     "0-",
     "x & manje 1.5",
     "nerešeno i Feyenoord Rotterdam manje od 1.5 gola n",
-    5.9,
+    5.3,
     1.5
    ],
    [
     "2-",
     "2 & manje 1.5",
     "Como pobednik i Feyenoord Rotterdam manje od 1.5 g",
-    2.25,
+    2.45,
     1.5
    ],
    [
     "1+",
     "1 & vise 1.5",
     "Feyenoord Rotterdam pobednik i Feyenoord Rotterdam",
-    3.85,
+    3.5,
     1.5
    ],
    [
     "0+",
     "x & vise 1.5",
     "nerešeno i Feyenoord Rotterdam više od 1.5 gola na",
-    7.1,
+    7.2,
     1.5
    ],
    [
     "2+",
     "2 & vise 1.5",
     "Como pobednik i Feyenoord Rotterdam više od 1.5 go",
-    7.0,
+    8.1,
     1.5
    ]
   ]
@@ -3729,42 +4365,42 @@
     "1-",
     "1 & manje 2.5",
     "Feyenoord Rotterdam pobednik i Feyenoord Rotterdam",
-    5.75,
+    5.0,
     2.5
    ],
    [
     "0-",
     "x & manje 2.5",
     "nerešeno i Feyenoord Rotterdam manje od 2.5 gola n",
-    4.15,
+    3.8,
     2.5
    ],
    [
     "2-",
     "2 & manje 2.5",
     "Como pobednik i Feyenoord Rotterdam manje od 2.5 g",
-    1.9,
+    2.1,
     2.5
    ],
    [
     "1+",
     "1 & vise 2.5",
     "Feyenoord Rotterdam pobednik i Feyenoord Rotterdam",
-    6.0,
+    5.6,
     2.5
    ],
    [
     "0+",
     "x & vise 2.5",
     "nerešeno i Feyenoord Rotterdam više od 2.5 gola na",
-    18.0,
+    19.0,
     2.5
    ],
    [
     "2+",
     "2 & vise 2.5",
     "Como pobednik i Feyenoord Rotterdam više od 2.5 go",
-    22.0,
+    28.0,
     2.5
    ]
   ]
@@ -3776,42 +4412,42 @@
     "1-",
     "1 & manje 3.5",
     "Feyenoord Rotterdam pobednik i Feyenoord Rotterdam",
-    4.0,
+    3.55,
     3.5
    ],
    [
     "0-",
     "x & manje 3.5",
     "nerešeno i Feyenoord Rotterdam manje od 3.5 gola n",
-    3.75,
+    3.55,
     3.5
    ],
    [
     "2-",
     "2 & manje 3.5",
     "Como pobednik i Feyenoord Rotterdam manje od 3.5 g",
-    1.83,
+    2.02,
     3.5
    ],
    [
     "1+",
     "1 & vise 3.5",
     "Feyenoord Rotterdam pobednik i Feyenoord Rotterdam",
-    12.0,
+    11.0,
     3.5
    ],
    [
     "0+",
     "x & vise 3.5",
     "nerešeno i Feyenoord Rotterdam više od 3.5 gola na",
-    60.0,
+    65.0,
     3.5
    ],
    [
     "2+",
     "2 & vise 3.5",
     "Como pobednik i Feyenoord Rotterdam više od 3.5 go",
-    75.0,
+    90.0,
     3.5
    ]
   ]
@@ -3823,35 +4459,35 @@
     "1-",
     "1 & manje 4.5",
     "Feyenoord Rotterdam pobednik i Feyenoord Rotterdam",
-    3.5,
+    3.1,
     4.5
    ],
    [
     "0-",
     "x & manje 4.5",
     "nerešeno i Feyenoord Rotterdam manje od 4.5 gola n",
-    3.7,
+    3.5,
     4.5
    ],
    [
     "2-",
     "2 & manje 4.5",
     "Como pobednik i Feyenoord Rotterdam manje od 4.5 g",
-    1.83,
+    2.02,
     4.5
    ],
    [
     "1+",
     "1 & vise 4.5",
     "Feyenoord Rotterdam pobednik i Feyenoord Rotterdam",
-    28.0,
+    27.0,
     4.5
    ],
    [
     "0+",
     "x & vise 4.5",
     "nerešeno i Feyenoord Rotterdam više od 4.5 gola na",
-    100.0,
+    125.0,
     4.5
    ],
    [
@@ -3870,130 +4506,36 @@
     "1-",
     "1 & manje 0.5",
     "Feyenoord Rotterdam pobednik  i Como manje od 0.5 ",
-    7.4,
+    6.3,
     0.5
    ],
    [
     "0-",
     "x & manje 0.5",
     "nerešeno i Como manje od 0.5 gola na utakmici",
-    17.0,
+    14.0,
     0.5
    ],
    [
     "1+",
     "1 & vise 0.5",
     "Feyenoord Rotterdam pobednik  i Como više od 0.5 g",
-    4.8,
+    4.55,
     0.5
    ],
    [
     "0+",
     "x & vise 0.5",
     "nerešeno i Como više od 0.5 gola na utakmici",
-    4.2,
+    4.0,
     0.5
    ],
    [
     "2+",
     "2 & vise 0.5",
     "Como pobednik  i Como više od 0.5 gola na utakmici",
-    1.83,
+    2.02,
     0.5
-   ]
-  ]
- },
- "1X2 & ukupno golova Como (1.5)": {
-  "mecova": 1,
-  "primer": [
-   [
-    "1-",
-    "1 & manje 1.5",
-    "Feyenoord Rotterdam pobednik  i Como manje od 1.5 ",
-    4.1,
-    1.5
-   ],
-   [
-    "0-",
-    "x & manje 1.5",
-    "nerešeno i Como manje od 1.5 gola na utakmici",
-    5.9,
-    1.5
-   ],
-   [
-    "2-",
-    "2 & manje 1.5",
-    "Como pobednik  i Como manje od 1.5 gola na utakmic",
-    10.0,
-    1.5
-   ],
-   [
-    "1+",
-    "1 & vise 1.5",
-    "Feyenoord Rotterdam pobednik  i Como više od 1.5 g",
-    11.0,
-    1.5
-   ],
-   [
-    "0+",
-    "x & vise 1.5",
-    "nerešeno i Como više od 1.5 gola na utakmici",
-    7.1,
-    1.5
-   ],
-   [
-    "2+",
-    "2 & vise 1.5",
-    "Como pobednik  i Como više od 1.5 gola na utakmici",
-    2.05,
-    1.5
-   ]
-  ]
- },
- "1X2 & ukupno golova Como (2.5)": {
-  "mecova": 1,
-  "primer": [
-   [
-    "1-",
-    "1 & manje 2.5",
-    "Feyenoord Rotterdam pobednik  i Como manje od 2.5 ",
-    3.45,
-    2.5
-   ],
-   [
-    "0-",
-    "x & manje 2.5",
-    "nerešeno i Como manje od 2.5 gola na utakmici",
-    4.15,
-    2.5
-   ],
-   [
-    "2-",
-    "2 & manje 2.5",
-    "Como pobednik  i Como manje od 2.5 gola na utakmic",
-    3.9,
-    2.5
-   ],
-   [
-    "1+",
-    "1 & vise 2.5",
-    "Feyenoord Rotterdam pobednik  i Como više od 2.5 g",
-    33.0,
-    2.5
-   ],
-   [
-    "0+",
-    "x & vise 2.5",
-    "nerešeno i Como više od 2.5 gola na utakmici",
-    18.0,
-    2.5
-   ],
-   [
-    "2+",
-    "2 & vise 2.5",
-    "Como pobednik  i Como više od 2.5 gola na utakmici",
-    3.0,
-    2.5
    ]
   ]
  },
@@ -4004,84 +4546,84 @@
     "/1-",
     "manje 0.5",
     "AS Roma manje od 0.5 kornera",
-    20.0,
+    19.0,
     0.5
    ],
    [
     "/1-",
     "manje 1.5",
     "AS Roma manje od 1.5 kornera",
-    7.1,
+    6.7,
     1.5
    ],
    [
     "/1+",
     "vise 1.5",
     "AS Roma više od 1.5 kornera",
-    1.06,
+    1.07,
     1.5
    ],
    [
     "/1-",
     "manje 2.5",
     "AS Roma manje od 2.5 kornera",
-    3.75,
+    3.55,
     2.5
    ],
    [
     "/1+",
     "vise 2.5",
     "AS Roma više od 2.5 kornera",
-    1.23,
+    1.25,
     2.5
    ],
    [
     "/1-",
     "manje 3.5",
     "AS Roma manje od 3.5 kornera",
-    2.35,
+    2.25,
     3.5
    ],
    [
     "/1+",
     "vise 3.5",
     "AS Roma više od 3.5 kornera",
-    1.53,
+    1.57,
     3.5
    ],
    [
     "/1-",
     "manje 4.5",
     "AS Roma manje od 4.5 kornera",
-    1.71,
+    1.66,
     4.5
    ],
    [
     "/1+",
     "vise 4.5",
     "AS Roma više od 4.5 kornera",
-    2.02,
+    2.1,
     4.5
    ],
    [
     "/1-",
     "manje 5.5",
     "AS Roma manje od 5.5 kornera",
-    1.38,
+    1.35,
     5.5
    ],
    [
     "/1+",
     "vise 5.5",
     "AS Roma više od 5.5 kornera",
-    2.82,
+    2.95,
     5.5
    ],
    [
     "/1-",
     "manje 6.5",
     "AS Roma manje od 6.5 kornera",
-    1.2,
+    1.18,
     6.5
    ]
   ]
@@ -4093,7 +4635,7 @@
     "/2-",
     "manje 0.5",
     "Real Madrid će imati manje od 0.5 kornera",
-    39.0,
+    40.0,
     0.5
    ],
    [
@@ -4114,63 +4656,63 @@
     "/2-",
     "manje 2.5",
     "Real Madrid će imati manje od 2.5 kornera",
-    6.1,
+    6.4,
     2.5
    ],
    [
     "/2+",
     "vise 2.5",
     "Real Madrid će imati više od 2.5 kornera",
-    1.09,
+    1.08,
     2.5
    ],
    [
     "/2-",
     "manje 3.5",
     "Real Madrid će imati manje od 3.5 kornera",
-    3.6,
+    3.75,
     3.5
    ],
    [
     "/2+",
     "vise 3.5",
     "Real Madrid će imati više od 3.5 kornera",
-    1.25,
+    1.23,
     3.5
    ],
    [
     "/2-",
     "manje 4.5",
     "Real Madrid će imati manje od 4.5 kornera",
-    2.4,
+    2.47,
     4.5
    ],
    [
     "/2+",
     "vise 4.5",
     "Real Madrid će imati više od 4.5 kornera",
-    1.51,
+    1.48,
     4.5
    ],
    [
     "/2-",
     "manje 5.5",
     "Real Madrid će imati manje od 5.5 kornera",
-    1.78,
+    1.83,
     5.5
    ],
    [
     "/2+",
     "vise 5.5",
     "Real Madrid će imati više od 5.5 kornera",
-    1.92,
+    1.87,
     5.5
    ],
    [
     "/2-",
     "manje 6.5",
     "Real Madrid će imati manje od 6.5 kornera",
-    1.45,
+    1.48,
     6.5
    ]
   ]
@@ -4182,28 +4724,28 @@
     ".1-",
     "manje 1.5",
     "AS Roma će imati manje od 1.5 kartona na utakmici ",
-    2.55,
+    2.52,
     1.5
    ],
    [
     ".1+",
     "vise 1.5",
     "AS Roma će imati više od 1.5 kartona na utakmici (",
-    1.42,
+    1.43,
     1.5
    ],
    [
     ".1-",
     "manje 2.5",
     "AS Roma će imati manje od 2.5 kartona na utakmici ",
-    1.53,
+    1.52,
     2.5
    ],
    [
     ".1+",
     "vise 2.5",
     "AS Roma će imati više od 2.5 kartona na utakmici (",
-    2.3,
+    2.32,
     2.5
    ],
    [
@@ -4229,7 +4771,7 @@
     ".2-",
     "manje 0.5",
     "Real Madrid će imati manje od 0.5 kartona na utakm",
-    5.6,
+    5.55,
     0.5
    ],
    [
@@ -4243,21 +4785,21 @@
     ".2-",
     "manje 1.5",
     "Real Madrid će imati manje od 1.5 kartona na utakm",
-    2.35,
+    2.32,
     1.5
    ],
    [
     ".2+",
     "vise 1.5",
     "Real Madrid će imati više od 1.5 kartona na utakmi",
-    1.5,
+    1.51,
     1.5
    ],
    [
     ".2-",
     "manje 2.5",
     "Real Madrid će imati manje od 2.5 kartona na utakm",
-    1.44,
+    1.43,
     2.5
    ],
    [
@@ -4274,9 +4816,51 @@
   "primer": [
    [
     "*11-",
+    "manje 1.5",
+    "AS Roma će imati manje od 1.5 šuteva u okvir gola",
+    6.7,
+    1.5
+   ],
+   [
+    "*11+",
+    "vise 1.5",
+    "AS Roma će imati više od 1.5 šuteva u okvir gola",
+    1.04,
+    1.5
+   ],
+   [
+    "*11-",
+    "manje 2.5",
+    "AS Roma će imati manje od 2.5 šuteva u okvir gola",
+    3.7,
+    2.5
+   ],
+   [
+    "*11+",
+    "vise 2.5",
+    "AS Roma će imati više od 2.5 šuteva u okvir gola",
+    1.23,
+    2.5
+   ],
+   [
+    "*11-",
+    "manje 3.5",
+    "AS Roma će imati manje od 3.5 šuteva u okvir gola",
+    2.25,
+    3.5
+   ],
+   [
+    "*11+",
+    "vise 3.5",
+    "AS Roma će imati više od 3.5 šuteva u okvir gola",
+    1.58,
+    3.5
+   ],
+   [
+    "*11-",
     "manje 4.5",
     "AS Roma će imati manje od 4.5 šuteva u okvir gola",
-    1.6,
+    1.58,
     4.5
    ],
    [
@@ -4285,6 +4869,34 @@
     "AS Roma će imati više od 4.5 šuteva u okvir gola",
     2.2,
     4.5
+   ],
+   [
+    "*11-",
+    "manje 5.5",
+    "AS Roma će imati manje od 5.5 šuteva u okvir gola",
+    1.26,
+    5.5
+   ],
+   [
+    "*11+",
+    "vise 5.5",
+    "AS Roma će imati više od 5.5 šuteva u okvir gola",
+    3.15,
+    5.5
+   ],
+   [
+    "*11-",
+    "manje 6.5",
+    "AS Roma će imati manje od 6.5 šuteva u okvir gola",
+    1.11,
+    6.5
+   ],
+   [
+    "*11+",
+    "vise 6.5",
+    "AS Roma će imati više od 6.5 šuteva u okvir gola",
+    4.8,
+    6.5
    ]
   ]
  },
@@ -4293,17 +4905,87 @@
   "primer": [
    [
     "*12-",
+    "manje 2.5",
+    "Real Madrid će imati manje od 2.5 šuteva u okvir g",
+    6.6,
+    2.5
+   ],
+   [
+    "*12+",
+    "vise 2.5",
+    "Real Madrid će imati više od 2.5 šuteva u okvir go",
+    1.04,
+    2.5
+   ],
+   [
+    "*12-",
+    "manje 3.5",
+    "Real Madrid će imati manje od 3.5 šuteva u okvir g",
+    3.85,
+    3.5
+   ],
+   [
+    "*12+",
+    "vise 3.5",
+    "Real Madrid će imati više od 3.5 šuteva u okvir go",
+    1.17,
+    3.5
+   ],
+   [
+    "*12-",
+    "manje 4.5",
+    "Real Madrid će imati manje od 4.5 šuteva u okvir g",
+    2.55,
+    4.5
+   ],
+   [
+    "*12+",
+    "vise 4.5",
+    "Real Madrid će imati više od 4.5 šuteva u okvir go",
+    1.45,
+    4.5
+   ],
+   [
+    "*12-",
     "manje 5.5",
     "Real Madrid će imati manje od 5.5 šuteva u okvir g",
-    1.85,
+    1.82,
     5.5
    ],
    [
     "*12+",
     "vise 5.5",
     "Real Madrid će imati više od 5.5 šuteva u okvir go",
-    1.87,
+    1.88,
     5.5
+   ],
+   [
+    "*12-",
+    "manje 6.5",
+    "Real Madrid će imati manje od 6.5 šuteva u okvir g",
+    1.44,
+    6.5
+   ],
+   [
+    "*12+",
+    "vise 6.5",
+    "Real Madrid će imati više od 6.5 šuteva u okvir go",
+    2.6,
+    6.5
+   ],
+   [
+    "*12-",
+    "manje 7.5",
+    "Real Madrid će imati manje od 7.5 šuteva u okvir g",
+    1.2,
+    7.5
+   ],
+   [
+    "*12+",
+    "vise 7.5",
+    "Real Madrid će imati više od 7.5 šuteva u okvir go",
+    3.6,
+    7.5
    ]
   ]
  },
@@ -4312,17 +4994,87 @@
   "primer": [
    [
     "",
+    "manje 10.5",
+    "AS Roma manje od 10.5 šuteva,",
+    3.65,
+    10.5
+   ],
+   [
+    "",
+    "vise 10.5",
+    "AS Roma više od 10.5 šuteva",
+    1.24,
+    10.5
+   ],
+   [
+    "",
+    "manje 11.5",
+    "AS Roma manje od 11.5 šuteva,",
+    2.85,
+    11.5
+   ],
+   [
+    "",
+    "vise 11.5",
+    "AS Roma više od 11.5 šuteva",
+    1.37,
+    11.5
+   ],
+   [
+    "",
+    "manje 12.5",
+    "AS Roma manje od 12.5 šuteva,",
+    2.3,
+    12.5
+   ],
+   [
+    "",
+    "vise 12.5",
+    "AS Roma više od 12.5 šuteva",
+    1.55,
+    12.5
+   ],
+   [
+    "",
     "manje 13.5",
     "AS Roma manje od 13.5 šuteva,",
-    1.83,
+    1.92,
     13.5
    ],
    [
     "",
     "vise 13.5",
     "AS Roma više od 13.5 šuteva",
-    1.87,
+    1.8,
     13.5
+   ],
+   [
+    "",
+    "manje 14.5",
+    "AS Roma manje od 14.5 šuteva,",
+    1.64,
+    14.5
+   ],
+   [
+    "",
+    "vise 14.5",
+    "AS Roma više od 14.5 šuteva",
+    2.1,
+    14.5
+   ],
+   [
+    "",
+    "manje 15.5",
+    "AS Roma manje od 15.5 šuteva,",
+    1.44,
+    15.5
+   ],
+   [
+    "",
+    "vise 15.5",
+    "AS Roma više od 15.5 šuteva",
+    2.47,
+    15.5
    ]
   ]
  },
@@ -4331,17 +5083,87 @@
   "primer": [
    [
     "",
+    "manje 13.5",
+    "Real Madrid manje od 13.5 šuteva",
+    3.2,
+    13.5
+   ],
+   [
+    "",
+    "vise 13.5",
+    "Real Madrid više od 13.5 šuteva",
+    1.3,
+    13.5
+   ],
+   [
+    "",
+    "manje 14.5",
+    "Real Madrid manje od 14.5 šuteva",
+    2.57,
+    14.5
+   ],
+   [
+    "",
+    "vise 14.5",
+    "Real Madrid više od 14.5 šuteva",
+    1.44,
+    14.5
+   ],
+   [
+    "",
+    "manje 15.5",
+    "Real Madrid manje od 15.5 šuteva",
+    2.15,
+    15.5
+   ],
+   [
+    "",
+    "vise 15.5",
+    "Real Madrid više od 15.5 šuteva",
+    1.63,
+    15.5
+   ],
+   [
+    "",
     "manje 16.5",
     "Real Madrid manje od 16.5 šuteva",
-    1.76,
+    1.85,
     16.5
    ],
    [
     "",
     "vise 16.5",
     "Real Madrid više od 16.5 šuteva",
-    1.95,
+    1.87,
     16.5
+   ],
+   [
+    "",
+    "manje 17.5",
+    "Real Madrid manje od 17.5 šuteva",
+    1.6,
+    17.5
+   ],
+   [
+    "",
+    "vise 17.5",
+    "Real Madrid više od 17.5 šuteva",
+    2.15,
+    17.5
+   ],
+   [
+    "",
+    "manje 18.5",
+    "Real Madrid manje od 18.5 šuteva",
+    1.43,
+    18.5
+   ],
+   [
+    "",
+    "vise 18.5",
+    "Real Madrid više od 18.5 šuteva",
+    2.52,
+    18.5
    ]
   ]
  },
@@ -4352,14 +5174,14 @@
     "/*01-",
     "manje 12.5",
     "AS Roma manje od 12.5 faulova",
-    1.95,
+    2.05,
     12.5
    ],
    [
     "/*01+",
     "vise 12.5",
     "AS Roma više od 12.5 faulova",
-    1.76,
+    1.69,
     12.5
    ]
   ]
@@ -4369,17 +5191,17 @@
   "primer": [
    [
     "/*02-",
-    "manje 10.5",
-    "Real Madrid manje od 10.5 faulova",
-    1.95,
-    10.5
+    "manje 11.5",
+    "Real Madrid manje od 11.5 faulova",
+    1.69,
+    11.5
    ],
    [
     "/*02+",
-    "vise 10.5",
-    "Real Madrid više od 10.5 faulova",
-    1.76,
-    10.5
+    "vise 11.5",
+    "Real Madrid više od 11.5 faulova",
+    2.05,
+    11.5
    ]
   ]
  },
@@ -4659,39 +5481,27 @@
    ]
   ]
  },
- "Gian Piero Gasperini dobija karton": {
+ "Ukupno dodavanja AS Roma": {
   "mecova": 1,
   "primer": [
    [
     "",
-    "da",
-    "Gian Piero Gasperini će dobiti karton. Za mečeve k",
-    5.5,
-    15.0
+    "vise 510.5",
+    "AS Roma više od 510.5 dodavanja",
+    1.85,
+    510.5
    ]
   ]
  },
- "Jose Mourinho dobija karton": {
+ "Ukupno dodavanja Real Madrid": {
   "mecova": 1,
   "primer": [
    [
     "",
-    "da",
-    "Jose Mourinho će dobiti karton. Za mečeve koji ukl",
-    5.5,
-    15.0
-   ]
-  ]
- },
- "Gian Piero Gasperini & Jose Mourinho dobijaju karton": {
-  "mecova": 1,
-  "primer": [
-   [
-    "",
-    "da",
-    "Gian Piero Gasperini & Jose Mourinho će dobiti kar",
-    30.0,
-    15.0
+    "vise 575.5",
+    "Real Madrid više od 575.5 dodavanja",
+    1.85,
+    575.5
    ]
   ]
  },
@@ -4972,6 +5782,27 @@
   "primer": [
    [
     "*11-",
+    "manje 0.5",
+    "Slovan Bratislava će imati manje od 0.5 šuteva u o",
+    8.6,
+    0.5
+   ],
+   [
+    "*11-",
+    "manje 1.5",
+    "Slovan Bratislava će imati manje od 1.5 šuteva u o",
+    3.8,
+    1.5
+   ],
+   [
+    "*11+",
+    "vise 1.5",
+    "Slovan Bratislava će imati više od 1.5 šuteva u ok",
+    1.23,
+    1.5
+   ],
+   [
+    "*11-",
     "manje 2.5",
     "Slovan Bratislava će imati manje od 2.5 šuteva u o",
     2.07,
@@ -4983,6 +5814,48 @@
     "Slovan Bratislava će imati više od 2.5 šuteva u ok",
     1.67,
     2.5
+   ],
+   [
+    "*11-",
+    "manje 3.5",
+    "Slovan Bratislava će imati manje od 3.5 šuteva u o",
+    1.44,
+    3.5
+   ],
+   [
+    "*11+",
+    "vise 3.5",
+    "Slovan Bratislava će imati više od 3.5 šuteva u ok",
+    2.5,
+    3.5
+   ],
+   [
+    "*11-",
+    "manje 4.5",
+    "Slovan Bratislava će imati manje od 4.5 šuteva u o",
+    1.16,
+    4.5
+   ],
+   [
+    "*11+",
+    "vise 4.5",
+    "Slovan Bratislava će imati više od 4.5 šuteva u ok",
+    4.0,
+    4.5
+   ],
+   [
+    "*11-",
+    "manje 5.5",
+    "Slovan Bratislava će imati manje od 5.5 šuteva u o",
+    1.05,
+    5.5
+   ],
+   [
+    "*11+",
+    "vise 5.5",
+    "Slovan Bratislava će imati više od 5.5 šuteva u ok",
+    6.4,
+    5.5
    ]
   ]
  },
@@ -4991,9 +5864,51 @@
   "primer": [
    [
     "*12-",
+    "manje 4.5",
+    "Stuttgart će imati manje od 4.5 šuteva u okvir gol",
+    4.35,
+    4.5
+   ],
+   [
+    "*12+",
+    "vise 4.5",
+    "Stuttgart će imati više od 4.5 šuteva u okvir gola",
+    1.13,
+    4.5
+   ],
+   [
+    "*12-",
+    "manje 5.5",
+    "Stuttgart će imati manje od 5.5 šuteva u okvir gol",
+    3.0,
+    5.5
+   ],
+   [
+    "*12+",
+    "vise 5.5",
+    "Stuttgart će imati više od 5.5 šuteva u okvir gola",
+    1.34,
+    5.5
+   ],
+   [
+    "*12-",
+    "manje 6.5",
+    "Stuttgart će imati manje od 6.5 šuteva u okvir gol",
+    2.12,
+    6.5
+   ],
+   [
+    "*12+",
+    "vise 6.5",
+    "Stuttgart će imati više od 6.5 šuteva u okvir gola",
+    1.64,
+    6.5
+   ],
+   [
+    "*12-",
     "manje 7.5",
     "Stuttgart će imati manje od 7.5 šuteva u okvir gol",
-    1.65,
+    1.64,
     7.5
    ],
    [
@@ -5002,6 +5917,34 @@
     "Stuttgart će imati više od 7.5 šuteva u okvir gola",
     2.1,
     7.5
+   ],
+   [
+    "*12-",
+    "manje 8.5",
+    "Stuttgart će imati manje od 8.5 šuteva u okvir gol",
+    1.35,
+    8.5
+   ],
+   [
+    "*12+",
+    "vise 8.5",
+    "Stuttgart će imati više od 8.5 šuteva u okvir gola",
+    2.77,
+    8.5
+   ],
+   [
+    "*12-",
+    "manje 9.5",
+    "Stuttgart će imati manje od 9.5 šuteva u okvir gol",
+    1.18,
+    9.5
+   ],
+   [
+    "*12+",
+    "vise 9.5",
+    "Stuttgart će imati više od 9.5 šuteva u okvir gola",
+    3.8,
+    9.5
    ]
   ]
  },
@@ -5010,17 +5953,87 @@
   "primer": [
    [
     "",
+    "manje 6.5",
+    "Slovan Bratislava manje od 6.5 šuteva,",
+    4.0,
+    6.5
+   ],
+   [
+    "",
+    "vise 6.5",
+    "Slovan Bratislava više od 6.5 šuteva",
+    1.16,
+    6.5
+   ],
+   [
+    "",
+    "manje 7.5",
+    "Slovan Bratislava manje od 7.5 šuteva,",
+    3.1,
+    7.5
+   ],
+   [
+    "",
+    "vise 7.5",
+    "Slovan Bratislava više od 7.5 šuteva",
+    1.32,
+    7.5
+   ],
+   [
+    "",
+    "manje 8.5",
+    "Slovan Bratislava manje od 8.5 šuteva,",
+    2.37,
+    8.5
+   ],
+   [
+    "",
+    "vise 8.5",
+    "Slovan Bratislava više od 8.5 šuteva",
+    1.52,
+    8.5
+   ],
+   [
+    "",
     "manje 9.5",
     "Slovan Bratislava manje od 9.5 šuteva,",
-    1.95,
+    1.9,
     9.5
    ],
    [
     "",
     "vise 9.5",
     "Slovan Bratislava više od 9.5 šuteva",
-    1.77,
+    1.8,
     9.5
+   ],
+   [
+    "",
+    "manje 10.5",
+    "Slovan Bratislava manje od 10.5 šuteva,",
+    1.6,
+    10.5
+   ],
+   [
+    "",
+    "vise 10.5",
+    "Slovan Bratislava više od 10.5 šuteva",
+    2.2,
+    10.5
+   ],
+   [
+    "",
+    "manje 11.5",
+    "Slovan Bratislava manje od 11.5 šuteva,",
+    1.38,
+    11.5
+   ],
+   [
+    "",
+    "vise 11.5",
+    "Slovan Bratislava više od 11.5 šuteva",
+    2.67,
+    11.5
    ]
   ]
  },
@@ -5029,17 +6042,87 @@
   "primer": [
    [
     "",
+    "manje 15.5",
+    "Stuttgart manje od 15.5 šuteva",
+    3.35,
+    15.5
+   ],
+   [
+    "",
+    "vise 15.5",
+    "Stuttgart više od 15.5 šuteva",
+    1.28,
+    15.5
+   ],
+   [
+    "",
+    "manje 16.5",
+    "Stuttgart manje od 16.5 šuteva",
+    2.72,
+    16.5
+   ],
+   [
+    "",
+    "vise 16.5",
+    "Stuttgart više od 16.5 šuteva",
+    1.4,
+    16.5
+   ],
+   [
+    "",
+    "manje 17.5",
+    "Stuttgart manje od 17.5 šuteva",
+    2.27,
+    17.5
+   ],
+   [
+    "",
+    "vise 17.5",
+    "Stuttgart više od 17.5 šuteva",
+    1.56,
+    17.5
+   ],
+   [
+    "",
     "manje 18.5",
     "Stuttgart manje od 18.5 šuteva",
-    1.92,
+    1.95,
     18.5
    ],
    [
     "",
     "vise 18.5",
     "Stuttgart više od 18.5 šuteva",
-    1.78,
+    1.76,
     18.5
+   ],
+   [
+    "",
+    "manje 19.5",
+    "Stuttgart manje od 19.5 šuteva",
+    1.7,
+    19.5
+   ],
+   [
+    "",
+    "vise 19.5",
+    "Stuttgart više od 19.5 šuteva",
+    2.02,
+    19.5
+   ],
+   [
+    "",
+    "manje 20.5",
+    "Stuttgart manje od 20.5 šuteva",
+    1.51,
+    20.5
+   ],
+   [
+    "",
+    "vise 20.5",
+    "Stuttgart više od 20.5 šuteva",
+    2.32,
+    20.5
    ]
   ]
  },
@@ -5050,14 +6133,14 @@
     "/*01-",
     "manje 11.5",
     "Slovan Bratislava manje od 11.5 faulova",
-    1.77,
+    1.85,
     11.5
    ],
    [
     "/*01+",
     "vise 11.5",
     "Slovan Bratislava više od 11.5 faulova",
-    1.95,
+    1.85,
     11.5
    ]
   ]
@@ -5069,14 +6152,14 @@
     "/*02-",
     "manje 11.5",
     "Stuttgart manje od 11.5 faulova",
-    1.87,
+    1.95,
     11.5
    ],
    [
     "/*02+",
     "vise 11.5",
     "Stuttgart više od 11.5 faulova",
-    1.83,
+    1.76,
     11.5
    ]
   ]
@@ -5088,21 +6171,21 @@
     "",
     "1-2",
     "Slovan Bratislava 1-2 gola na utakmici",
-    1.75,
+    1.69,
     -2.0
    ],
    [
     "",
     "1-3",
     "Slovan Bratislava  1-3 gola na utakmici",
-    1.6,
+    1.51,
     -3.0
    ],
    [
     "",
     "2-3",
     "Slovan Bratislava 2-3 gola na utakmici",
-    3.85,
+    3.4,
     -3.0
    ]
   ]
@@ -5140,21 +6223,21 @@
     "12",
     "1-2",
     "Slovan Bratislava 1 ili 2 gola u svakom poluvremen",
-    5.85,
+    5.2,
     2.0
    ],
    [
     "13",
     "1-3",
     "Slovan Bratislava 1,2 ili 3 gola u svakom poluvrem",
-    5.6,
+    4.9,
     3.0
    ],
    [
     "23",
     "2-3",
     "Slovan Bratislava 2 ili 3 gola u svakom poluvremen",
-    55.0,
+    40.0,
     3.0
    ]
   ]
@@ -5192,7 +6275,7 @@
     "0",
     "0",
     "Slovan Bratislava ne daje gol",
-    2.4,
+    2.65,
     3.0
    ],
    [
@@ -5206,14 +6289,14 @@
     "2",
     "2",
     "Slovan Bratislava daje tačno 2 gola",
-    4.9,
+    4.45,
     3.0
    ],
    [
     "3",
     "3+",
     "Slovan Bratislava daje 3 ili više golova",
-    9.9,
+    8.3,
     3.0
    ]
   ]
@@ -5246,7 +6329,7 @@
     "3",
     "3+",
     "Stuttgart daje 3 ili više golova",
-    1.83,
+    1.82,
     3.0
    ]
   ]
@@ -5258,14 +6341,14 @@
     "1",
     "da",
     "Slovan Bratislava daje gol na utakmici",
-    1.57,
+    1.47,
     null
    ],
    [
     "2",
     "ne",
     "Slovan Bratislava ne daje gol na utakmici",
-    2.42,
+    2.7,
     null
    ]
   ]
@@ -5284,7 +6367,7 @@
     "2",
     "ne",
     "Stuttgart ne daje gol na utakmici",
-    11.0,
+    12.0,
     null
    ]
   ]
@@ -5296,7 +6379,7 @@
     "",
     "vise 0.5 & vise 1.5",
     "1. Poluvreme Slovan Bratislava više od 0.5 golova ",
-    4.55,
+    4.0,
     1.5
    ],
    [
@@ -5310,70 +6393,70 @@
     "",
     "manje 0.5 & vise 1.5",
     "1. Poluvreme Slovan Bratislava manje od 0.5 golova",
-    9.3,
+    8.5,
     1.5
    ],
    [
     "",
     "manje 0.5 & manje 1.5",
     "1. Poluvreme Slovan Bratislava manje od 0.5 golova",
-    1.59,
+    1.7,
     1.5
    ],
    [
     "",
     "vise 0.5 & vise 2.5",
     "1. Poluvreme Slovan Bratislava više od 0.5 golova ",
-    11.0,
+    8.6,
     2.5
    ],
    [
     "",
     "vise 0.5 & manje 2.5",
     "1. Poluvreme Slovan Bratislava više od 0.5 golova ",
-    3.1,
+    2.95,
     2.5
    ],
    [
     "",
     "manje 0.5 & vise 2.5",
     "1. Poluvreme Slovan Bratislava manje od 0.5 golova",
-    34.0,
+    29.0,
     2.5
    ],
    [
     "",
     "manje 0.5 & manje 2.5",
     "1. Poluvreme Slovan Bratislava manje od 0.5 golova",
-    1.46,
+    1.54,
     2.5
    ],
    [
     "",
     "vise 1.5 & vise 2.5",
     "1. Poluvreme Slovan Bratislava više od 1.5 golova ",
-    17.0,
+    14.0,
     2.5
    ],
    [
     "",
     "vise 1.5 & manje 2.5",
     "1. Poluvreme Slovan Bratislava više od 1.5 golova ",
-    16.0,
+    15.0,
     2.5
    ],
    [
     "",
     "manje 1.5 & vise 2.5",
     "1. Poluvreme Slovan Bratislava manje od 1.5 golova",
-    15.0,
+    12.0,
     2.5
    ],
    [
     "",
     "manje 1.5 & manje 2.5",
     "1. Poluvreme Slovan Bratislava manje od 1.5 golova",
-    1.07,
+    1.1,
     2.5
    ]
   ]
@@ -5385,7 +6468,7 @@
     "",
     "vise 0.5 & vise 1.5",
     "1. Poluvreme Stuttgart više od 0.5 golova i Stuttg",
-    1.48,
+    1.49,
     1.5
    ],
    [
@@ -5406,21 +6489,21 @@
     "",
     "manje 0.5 & manje 1.5",
     "1. Poluvreme Stuttgart manje od 0.5 golova i Stutt",
-    5.15,
+    5.1,
     1.5
    ],
    [
     "",
     "vise 0.5 & vise 2.5",
     "1. Poluvreme Stuttgart više od 0.5 golova i Stuttg",
-    1.97,
+    2.0,
     2.5
    ],
    [
     "",
     "vise 0.5 & manje 2.5",
     "1. Poluvreme Stuttgart više od 0.5 golova i Stuttg",
-    3.5,
+    3.45,
     2.5
    ],
    [
@@ -5434,14 +6517,14 @@
     "",
     "manje 0.5 & manje 2.5",
     "1. Poluvreme Stuttgart manje od 0.5 golova i Stutt",
-    3.75,
+    3.7,
     2.5
    ],
    [
     "",
     "vise 1.5 & vise 2.5",
     "1. Poluvreme Stuttgart više od 1.5 golova i Stuttg",
-    2.87,
+    2.9,
     2.5
    ],
    [
@@ -5462,7 +6545,7 @@
     "",
     "manje 1.5 & manje 2.5",
     "1. Poluvreme Stuttgart manje od 1.5 golova i Stutt",
-    2.15,
+    2.12,
     2.5
    ]
   ]
@@ -5474,84 +6557,84 @@
     "",
     "vise 0.5 & vise 0.5",
     "Slovan Bratislava daje više od 0.5 golova u 1. pol",
-    5.6,
+    4.85,
     2.0
    ],
    [
     "",
     "vise 0.5 & manje 0.5",
     "Slovan Bratislava daje više od 0.5 golova u 1. pol",
-    4.1,
+    4.0,
     2.0
    ],
    [
     "",
     "vise 0.5 & vise 1.5",
     "Slovan Bratislava daje više od 0.5 golova u 1. pol",
-    16.0,
+    13.0,
     2.0
    ],
    [
     "",
     "vise 0.5 & manje 1.5",
     "Slovan Bratislava daje više od 0.5 golova u 1. pol",
-    2.87,
+    2.7,
     2.0
    ],
    [
     "",
     "vise 0.5 & vise 2.5",
     "Slovan Bratislava daje više od 0.5 golova u 1. pol",
-    55.0,
+    45.0,
     2.0
    ],
    [
     "",
     "vise 0.5 & manje 2.5",
     "Slovan Bratislava daje više od 0.5 golova u 1. pol",
-    2.65,
+    2.45,
     2.0
    ],
    [
     "",
     "manje 0.5 & vise 0.5",
     "Slovan Bratislava daje manje od 0.5 golova u 1. po",
-    3.15,
+    3.05,
     2.0
    ],
    [
     "",
     "manje 0.5 & manje 0.5",
     "Slovan Bratislava daje manje od 0.5 golova u 1. po",
-    2.37,
+    2.65,
     2.0
    ],
    [
     "",
     "manje 0.5 & vise 1.5",
     "Slovan Bratislava daje manje od 0.5 golova u 1. po",
-    9.3,
+    8.5,
     2.0
    ],
    [
     "",
     "manje 0.5 & manje 1.5",
     "Slovan Bratislava daje manje od 0.5 golova u 1. po",
-    1.59,
+    1.7,
     2.0
    ],
    [
     "",
     "manje 0.5 & vise 2.5",
     "Slovan Bratislava daje manje od 0.5 golova u 1. po",
-    34.0,
+    29.0,
     2.0
    ],
    [
     "",
     "manje 0.5 & manje 2.5",
     "Slovan Bratislava daje manje od 0.5 golova u 1. po",
-    1.46,
+    1.54,
     2.0
    ]
   ]
@@ -5570,14 +6653,14 @@
     "",
     "vise 0.5 & manje 0.5",
     "Stuttgart daje više od 0.5 golova u 1. poluvremenu",
-    5.1,
+    5.0,
     2.0
    ],
    [
     "",
     "vise 0.5 & vise 1.5",
     "Stuttgart daje više od 0.5 golova u 1. poluvremenu",
-    2.8,
+    2.82,
     2.0
    ],
    [
@@ -5591,7 +6674,7 @@
     "",
     "vise 0.5 & vise 2.5",
     "Stuttgart daje više od 0.5 golova u 1. poluvremenu",
-    5.6,
+    5.65,
     2.0
    ],
    [
@@ -5605,7 +6688,7 @@
     "",
     "manje 0.5 & vise 0.5",
     "Stuttgart daje manje od 0.5 golova u 1. poluvremen",
-    3.8,
+    3.75,
     2.0
    ],
    [
@@ -5626,7 +6709,7 @@
     "",
     "manje 0.5 & manje 1.5",
     "Stuttgart daje manje od 0.5 golova u 1. poluvremen",
-    5.15,
+    5.1,
     2.0
    ],
    [
@@ -5640,7 +6723,7 @@
     "",
     "manje 0.5 & manje 2.5",
     "Stuttgart daje manje od 0.5 golova u 1. poluvremen",
-    3.75,
+    3.7,
     2.0
    ]
   ]
@@ -5652,35 +6735,35 @@
     "0-",
     "x & manje 0.5",
     "nerešeno i Slovan Bratislava manje od 0.5 gola na ",
-    20.0,
+    21.0,
     0.5
    ],
    [
     "2-",
     "2 & manje 0.5",
     "Stuttgart pobednik i Slovan Bratislava manje od 0.",
-    2.5,
+    2.75,
     0.5
    ],
    [
     "1+",
     "1 & vise 0.5",
     "Slovan Bratislava pobednik i Slovan Bratislava viš",
-    6.9,
+    6.2,
     0.5
    ],
    [
     "0+",
     "x & vise 0.5",
     "nerešeno i Slovan Bratislava više od 0.5 gola na u",
-    6.2,
+    5.8,
     0.5
    ],
    [
     "2+",
     "2 & vise 0.5",
     "Stuttgart pobednik i Slovan Bratislava više od 0.5",
-    2.35,
+    2.27,
     0.5
    ]
   ]
@@ -5692,7 +6775,7 @@
     "1-",
     "1 & manje 1.5",
     "Slovan Bratislava pobednik i Slovan Bratislava man",
-    20.0,
+    21.0,
     1.5
    ],
    [
@@ -5706,28 +6789,28 @@
     "2-",
     "2 & manje 1.5",
     "Stuttgart pobednik i Slovan Bratislava manje od 1.",
-    1.47,
+    1.56,
     1.5
    ],
    [
     "1+",
     "1 & vise 1.5",
     "Slovan Bratislava pobednik i Slovan Bratislava viš",
-    8.2,
+    7.3,
     1.5
    ],
    [
     "0+",
     "x & vise 1.5",
     "nerešeno i Slovan Bratislava više od 1.5 gola na u",
-    11.0,
+    9.6,
     1.5
    ],
    [
     "2+",
     "2 & vise 1.5",
     "Stuttgart pobednik i Slovan Bratislava više od 1.5",
-    6.7,
+    6.1,
     1.5
    ]
   ]
@@ -5739,42 +6822,42 @@
     "1-",
     "1 & manje 2.5",
     "Slovan Bratislava pobednik i Slovan Bratislava man",
-    9.6,
+    9.2,
     2.5
    ],
    [
     "0-",
     "x & manje 2.5",
     "nerešeno i Slovan Bratislava manje od 2.5 gola na ",
-    5.85,
+    5.65,
     2.5
    ],
    [
     "2-",
     "2 & manje 2.5",
     "Stuttgart pobednik i Slovan Bratislava manje od 2.",
-    1.3,
+    1.35,
     2.5
    ],
    [
     "1+",
     "1 & vise 2.5",
     "Slovan Bratislava pobednik i Slovan Bratislava viš",
-    15.0,
+    12.0,
     2.5
    ],
    [
     "0+",
     "x & vise 2.5",
     "nerešeno i Slovan Bratislava više od 2.5 gola na u",
-    30.0,
+    24.0,
     2.5
    ],
    [
     "2+",
     "2 & vise 2.5",
     "Stuttgart pobednik i Slovan Bratislava više od 2.5",
-    24.0,
+    21.0,
     2.5
    ]
   ]
@@ -5786,42 +6869,42 @@
     "1-",
     "1 & manje 3.5",
     "Slovan Bratislava pobednik i Slovan Bratislava man",
-    7.5,
+    7.0,
     3.5
    ],
    [
     "0-",
     "x & manje 3.5",
     "nerešeno i Slovan Bratislava manje od 3.5 gola na ",
-    5.45,
+    5.2,
     3.5
    ],
    [
     "2-",
     "2 & manje 3.5",
     "Stuttgart pobednik i Slovan Bratislava manje od 3.",
-    1.27,
+    1.31,
     3.5
    ],
    [
     "1+",
     "1 & vise 3.5",
     "Slovan Bratislava pobednik i Slovan Bratislava viš",
-    34.0,
+    26.0,
     3.5
    ],
    [
     "0+",
     "x & vise 3.5",
     "nerešeno i Slovan Bratislava više od 3.5 gola na u",
-    85.0,
+    75.0,
     3.5
    ],
    [
     "2+",
     "2 & vise 3.5",
     "Stuttgart pobednik i Slovan Bratislava više od 3.5",
-    85.0,
+    75.0,
     3.5
    ]
   ]
@@ -5833,28 +6916,28 @@
     "1-",
     "1 & manje 4.5",
     "Slovan Bratislava pobednik i Slovan Bratislava man",
-    7.0,
+    6.4,
     4.5
    ],
    [
     "0-",
     "x & manje 4.5",
     "nerešeno i Slovan Bratislava manje od 4.5 gola na ",
-    5.4,
+    5.1,
     4.5
    ],
    [
     "2-",
     "2 & manje 4.5",
     "Stuttgart pobednik i Slovan Bratislava manje od 4.",
-    1.27,
+    1.31,
     4.5
    ],
    [
     "1+",
     "1 & vise 4.5",
     "Slovan Bratislava pobednik i Slovan Bratislava viš",
-    80.0,
+    65.0,
     4.5
    ],
    [
@@ -5887,28 +6970,28 @@
     "0-",
     "x & manje 0.5",
     "nerešeno i Stuttgart manje od 0.5 gola na utakmici",
-    20.0,
+    21.0,
     0.5
    ],
    [
     "1+",
     "1 & vise 0.5",
     "Slovan Bratislava pobednik  i Stuttgart više od 0.",
-    9.8,
+    8.5,
     0.5
    ],
    [
     "0+",
     "x & vise 0.5",
     "nerešeno i Stuttgart više od 0.5 gola na utakmici",
-    6.2,
+    5.8,
     0.5
    ],
    [
     "2+",
     "2 & vise 0.5",
     "Stuttgart pobednik  i Stuttgart više od 0.5 gola n",
-    1.27,
+    1.31,
     0.5
    ]
   ]
@@ -5920,7 +7003,7 @@
     "1-",
     "1 & manje 1.5",
     "Slovan Bratislava pobednik  i Stuttgart manje od 1",
-    8.1,
+    7.5,
     1.5
    ],
    [
@@ -5934,28 +7017,28 @@
     "2-",
     "2 & manje 1.5",
     "Stuttgart pobednik  i Stuttgart manje od 1.5 gola ",
-    9.4,
+    10.0,
     1.5
    ],
    [
     "1+",
     "1 & vise 1.5",
     "Slovan Bratislava pobednik  i Stuttgart više od 1.",
-    22.0,
+    19.0,
     1.5
    ],
    [
     "0+",
     "x & vise 1.5",
     "nerešeno i Stuttgart više od 1.5 gola na utakmici",
-    11.0,
+    9.6,
     1.5
    ],
    [
     "2+",
     "2 & vise 1.5",
     "Stuttgart pobednik  i Stuttgart više od 1.5 gola n",
-    1.39,
+    1.42,
     1.5
    ]
   ]
@@ -5967,42 +7050,42 @@
     "1-",
     "1 & manje 2.5",
     "Slovan Bratislava pobednik  i Stuttgart manje od 2",
-    7.1,
+    6.5,
     2.5
    ],
    [
     "0-",
     "x & manje 2.5",
     "nerešeno i Stuttgart manje od 2.5 gola na utakmici",
-    5.85,
+    5.65,
     2.5
    ],
    [
     "2-",
     "2 & manje 2.5",
     "Stuttgart pobednik  i Stuttgart manje od 2.5 gola ",
-    3.45,
+    3.65,
     2.5
    ],
    [
     "1+",
     "1 & vise 2.5",
     "Slovan Bratislava pobednik  i Stuttgart više od 2.",
-    65.0,
+    55.0,
     2.5
    ],
    [
     "0+",
     "x & vise 2.5",
     "nerešeno i Stuttgart više od 2.5 gola na utakmici",
-    30.0,
+    24.0,
     2.5
    ],
    [
     "2+",
     "2 & vise 2.5",
     "Stuttgart pobednik  i Stuttgart više od 2.5 gola n",
-    1.85,
+    1.9,
     2.5
    ]
   ]
@@ -6014,42 +7097,42 @@
     "1-",
     "1 & manje 3.5",
     "Slovan Bratislava pobednik  i Stuttgart manje od 3",
-    6.9,
+    6.3,
     3.5
    ],
    [
     "0-",
     "x & manje 3.5",
     "nerešeno i Stuttgart manje od 3.5 gola na utakmici",
-    5.45,
+    5.2,
     3.5
    ],
    [
     "2-",
     "2 & manje 3.5",
     "Stuttgart pobednik  i Stuttgart manje od 3.5 gola ",
-    2.02,
+    2.1,
     3.5
    ],
    [
     "1+",
     "1 & vise 3.5",
     "Slovan Bratislava pobednik  i Stuttgart više od 3.",
-    125.0,
+    100.0,
     3.5
    ],
    [
     "0+",
     "x & vise 3.5",
     "nerešeno i Stuttgart više od 3.5 gola na utakmici",
-    85.0,
+    75.0,
     3.5
    ],
    [
     "2+",
     "2 & vise 3.5",
     "Stuttgart pobednik  i Stuttgart više od 3.5 gola n",
-    3.0,
+    3.05,
     3.5
    ]
   ]
@@ -6061,14 +7144,14 @@
     "/1-",
     "manje 0.5",
     "Betis manje od 0.5 kornera",
-    30.0,
+    33.0,
     0.5
    ],
    [
     "/1-",
     "manje 1.5",
     "Betis manje od 1.5 kornera",
-    9.9,
+    11.0,
     1.5
    ],
    [
@@ -6082,63 +7165,63 @@
     "/1-",
     "manje 2.5",
     "Betis manje od 2.5 kornera",
-    5.0,
+    5.45,
     2.5
    ],
    [
     "/1+",
     "vise 2.5",
     "Betis više od 2.5 kornera",
-    1.13,
+    1.12,
     2.5
    ],
    [
     "/1-",
     "manje 3.5",
     "Betis manje od 3.5 kornera",
-    3.05,
+    3.25,
     3.5
    ],
    [
     "/1+",
     "vise 3.5",
     "Betis više od 3.5 kornera",
-    1.33,
+    1.3,
     3.5
    ],
    [
     "/1-",
     "manje 4.5",
     "Betis manje od 4.5 kornera",
-    2.07,
+    2.2,
     4.5
    ],
    [
     "/1+",
     "vise 4.5",
     "Betis više od 4.5 kornera",
-    1.67,
+    1.6,
     4.5
    ],
    [
     "/1-",
     "manje 5.5",
     "Betis manje od 5.5 kornera",
-    1.6,
+    1.67,
     5.5
    ],
    [
     "/1+",
     "vise 5.5",
     "Betis više od 5.5 kornera",
-    2.2,
+    2.07,
     5.5
    ],
    [
     "/1-",
     "manje 6.5",
     "Betis manje od 6.5 kornera",
-    1.33,
+    1.38,
     6.5
    ]
   ]
@@ -6150,84 +7233,84 @@
     "/2-",
     "manje 0.5",
     "Porto će imati manje od 0.5 kornera",
-    20.0,
+    19.0,
     0.5
    ],
    [
     "/2-",
     "manje 1.5",
     "Porto će imati manje od 1.5 kornera",
-    7.3,
+    6.7,
     1.5
    ],
    [
     "/2+",
     "vise 1.5",
     "Porto će imati više od 1.5 kornera",
-    1.06,
+    1.07,
     1.5
    ],
    [
     "/2-",
     "manje 2.5",
     "Porto će imati manje od 2.5 kornera",
-    3.85,
+    3.55,
     2.5
    ],
    [
     "/2+",
     "vise 2.5",
     "Porto će imati više od 2.5 kornera",
-    1.22,
+    1.25,
     2.5
    ],
    [
     "/2-",
     "manje 3.5",
     "Porto će imati manje od 3.5 kornera",
-    2.4,
+    2.25,
     3.5
    ],
    [
     "/2+",
     "vise 3.5",
     "Porto će imati više od 3.5 kornera",
-    1.51,
+    1.57,
     3.5
    ],
    [
     "/2-",
     "manje 4.5",
     "Porto će imati manje od 4.5 kornera",
-    1.74,
+    1.66,
     4.5
    ],
    [
     "/2+",
     "vise 4.5",
     "Porto će imati više od 4.5 kornera",
-    1.97,
+    2.1,
     4.5
    ],
    [
     "/2-",
     "manje 5.5",
     "Porto će imati manje od 5.5 kornera",
-    1.4,
+    1.35,
     5.5
    ],
    [
     "/2+",
     "vise 5.5",
     "Porto će imati više od 5.5 kornera",
-    2.75,
+    2.95,
     5.5
    ],
    [
     "/2-",
     "manje 6.5",
     "Porto će imati manje od 6.5 kornera",
-    1.21,
+    1.18,
     6.5
    ]
   ]
@@ -6239,7 +7322,7 @@
     ".1-",
     "manje 1.5",
     "Betis će imati manje od 1.5 kartona na utakmici (u",
-    2.45,
+    2.42,
     1.5
    ],
    [
@@ -6260,14 +7343,14 @@
     ".1+",
     "vise 2.5",
     "Betis će imati više od 2.5 kartona na utakmici (uk",
-    2.37,
+    2.4,
     2.5
    ],
    [
     ".1-",
     "manje 3.5",
     "Betis će imati manje od 3.5 kartona na utakmici (u",
-    1.15,
+    1.14,
     3.5
    ],
    [
@@ -6300,7 +7383,7 @@
     ".2-",
     "manje 2.5",
     "Porto će imati manje od 2.5 kartona na utakmici (u",
-    1.56,
+    1.55,
     2.5
    ],
    [
@@ -6331,23 +7414,128 @@
   "primer": [
    [
     "*11-",
+    "manje 1.5",
+    "Betis će imati manje od 1.5 šuteva u okvir gola",
+    9.4,
+    1.5
+   ],
+   [
+    "*11-",
+    "manje 2.5",
+    "Betis će imati manje od 2.5 šuteva u okvir gola",
+    4.9,
+    2.5
+   ],
+   [
+    "*11+",
+    "vise 2.5",
+    "Betis će imati više od 2.5 šuteva u okvir gola",
+    1.1,
+    2.5
+   ],
+   [
+    "*11-",
+    "manje 3.5",
+    "Betis će imati manje od 3.5 šuteva u okvir gola",
+    3.0,
+    3.5
+   ],
+   [
+    "*11+",
+    "vise 3.5",
+    "Betis će imati više od 3.5 šuteva u okvir gola",
+    1.34,
+    3.5
+   ],
+   [
+    "*11-",
     "manje 4.5",
     "Betis će imati manje od 4.5 šuteva u okvir gola",
-    2.02,
+    2.0,
     4.5
    ],
    [
     "*11+",
     "vise 4.5",
     "Betis će imati više od 4.5 šuteva u okvir gola",
-    1.71,
+    1.72,
     4.5
+   ],
+   [
+    "*11-",
+    "manje 5.5",
+    "Betis će imati manje od 5.5 šuteva u okvir gola",
+    1.51,
+    5.5
+   ],
+   [
+    "*11+",
+    "vise 5.5",
+    "Betis će imati više od 5.5 šuteva u okvir gola",
+    2.37,
+    5.5
+   ],
+   [
+    "*11-",
+    "manje 6.5",
+    "Betis će imati manje od 6.5 šuteva u okvir gola",
+    1.24,
+    6.5
+   ],
+   [
+    "*11+",
+    "vise 6.5",
+    "Betis će imati više od 6.5 šuteva u okvir gola",
+    3.35,
+    6.5
+   ],
+   [
+    "*11-",
+    "manje 7.5",
+    "Betis će imati manje od 7.5 šuteva u okvir gola",
+    1.1,
+    7.5
    ]
   ]
  },
  "Porto ukupno šuteva u okvir gola": {
   "mecova": 1,
   "primer": [
+   [
+    "*12-",
+    "manje 0.5",
+    "Porto će imati manje od 0.5 šuteva u okvir gola",
+    14.0,
+    0.5
+   ],
+   [
+    "*12-",
+    "manje 1.5",
+    "Porto će imati manje od 1.5 šuteva u okvir gola",
+    5.9,
+    1.5
+   ],
+   [
+    "*12+",
+    "vise 1.5",
+    "Porto će imati više od 1.5 šuteva u okvir gola",
+    1.06,
+    1.5
+   ],
+   [
+    "*12-",
+    "manje 2.5",
+    "Porto će imati manje od 2.5 šuteva u okvir gola",
+    3.25,
+    2.5
+   ],
+   [
+    "*12+",
+    "vise 2.5",
+    "Porto će imati više od 2.5 šuteva u okvir gola",
+    1.29,
+    2.5
+   ],
    [
     "*12-",
     "manje 3.5",
@@ -6361,6 +7549,41 @@
     "Porto će imati više od 3.5 šuteva u okvir gola",
     1.7,
     3.5
+   ],
+   [
+    "*12-",
+    "manje 4.5",
+    "Porto će imati manje od 4.5 šuteva u okvir gola",
+    1.47,
+    4.5
+   ],
+   [
+    "*12+",
+    "vise 4.5",
+    "Porto će imati više od 4.5 šuteva u okvir gola",
+    2.42,
+    4.5
+   ],
+   [
+    "*12-",
+    "manje 5.5",
+    "Porto će imati manje od 5.5 šuteva u okvir gola",
+    1.2,
+    5.5
+   ],
+   [
+    "*12+",
+    "vise 5.5",
+    "Porto će imati više od 5.5 šuteva u okvir gola",
+    3.6,
+    5.5
+   ],
+   [
+    "*12-",
+    "manje 6.5",
+    "Porto će imati manje od 6.5 šuteva u okvir gola",
+    1.07,
+    6.5
    ]
   ]
  },
@@ -6369,17 +7592,87 @@
   "primer": [
    [
     "",
+    "manje 12.5",
+    "Betis manje od 12.5 šuteva,",
+    3.1,
+    12.5
+   ],
+   [
+    "",
+    "vise 12.5",
+    "Betis više od 12.5 šuteva",
+    1.32,
+    12.5
+   ],
+   [
+    "",
+    "manje 13.5",
+    "Betis manje od 13.5 šuteva,",
+    2.52,
+    13.5
+   ],
+   [
+    "",
+    "vise 13.5",
+    "Betis više od 13.5 šuteva",
+    1.47,
+    13.5
+   ],
+   [
+    "",
     "manje 14.5",
     "Betis manje od 14.5 šuteva,",
-    1.97,
+    2.1,
     14.5
    ],
    [
     "",
     "vise 14.5",
     "Betis više od 14.5 šuteva",
-    1.75,
+    1.66,
     14.5
+   ],
+   [
+    "",
+    "manje 15.5",
+    "Betis manje od 15.5 šuteva,",
+    1.78,
+    15.5
+   ],
+   [
+    "",
+    "vise 15.5",
+    "Betis više od 15.5 šuteva",
+    1.92,
+    15.5
+   ],
+   [
+    "",
+    "manje 16.5",
+    "Betis manje od 16.5 šuteva,",
+    1.57,
+    16.5
+   ],
+   [
+    "",
+    "vise 16.5",
+    "Betis više od 16.5 šuteva",
+    2.27,
+    16.5
+   ],
+   [
+    "",
+    "manje 17.5",
+    "Betis manje od 17.5 šuteva,",
+    1.39,
+    17.5
+   ],
+   [
+    "",
+    "vise 17.5",
+    "Betis više od 17.5 šuteva",
+    2.65,
+    17.5
    ]
   ]
  },
@@ -6388,17 +7681,87 @@
   "primer": [
    [
     "",
+    "manje 9.5",
+    "Porto manje od 9.5 šuteva",
+    3.15,
+    9.5
+   ],
+   [
+    "",
+    "vise 9.5",
+    "Porto više od 9.5 šuteva",
+    1.27,
+    9.5
+   ],
+   [
+    "",
+    "manje 10.5",
+    "Porto manje od 10.5 šuteva",
+    2.55,
+    10.5
+   ],
+   [
+    "",
+    "vise 10.5",
+    "Porto više od 10.5 šuteva",
+    1.46,
+    10.5
+   ],
+   [
+    "",
     "manje 11.5",
     "Porto manje od 11.5 šuteva",
-    1.92,
+    2.07,
     11.5
    ],
    [
     "",
     "vise 11.5",
     "Porto više od 11.5 šuteva",
-    1.78,
+    1.68,
     11.5
+   ],
+   [
+    "",
+    "manje 12.5",
+    "Porto manje od 12.5 šuteva",
+    1.74,
+    12.5
+   ],
+   [
+    "",
+    "vise 12.5",
+    "Porto više od 12.5 šuteva",
+    1.97,
+    12.5
+   ],
+   [
+    "",
+    "manje 13.5",
+    "Porto manje od 13.5 šuteva",
+    1.5,
+    13.5
+   ],
+   [
+    "",
+    "vise 13.5",
+    "Porto više od 13.5 šuteva",
+    2.35,
+    13.5
+   ],
+   [
+    "",
+    "manje 14.5",
+    "Porto manje od 14.5 šuteva",
+    1.33,
+    14.5
+   ],
+   [
+    "",
+    "vise 14.5",
+    "Porto više od 14.5 šuteva",
+    2.82,
+    14.5
    ]
   ]
  },
@@ -6572,7 +7935,7 @@
     "3",
     "3+",
     "Betis daje 3 ili više golova",
-    3.75,
+    3.8,
     3.0
    ]
   ]
@@ -6765,7 +8128,7 @@
     "",
     "manje 0.5 & manje 1.5",
     "1. Poluvreme Porto manje od 0.5 golova i Porto man",
-    1.92,
+    1.9,
     1.5
    ],
    [
@@ -6929,7 +8292,7 @@
     "",
     "vise 0.5 & manje 0.5",
     "Porto daje više od 0.5 golova u 1. poluvremenu i m",
-    3.9,
+    4.0,
     2.0
    ],
    [
@@ -6950,7 +8313,7 @@
     "",
     "vise 0.5 & vise 2.5",
     "Porto daje više od 0.5 golova u 1. poluvremenu i v",
-    30.0,
+    31.0,
     2.0
    ],
    [
@@ -6985,7 +8348,7 @@
     "",
     "manje 0.5 & manje 1.5",
     "Porto daje manje od 0.5 golova u 1. poluvremenu i ",
-    1.92,
+    1.9,
     2.0
    ],
    [
@@ -7032,7 +8395,7 @@
     "0+",
     "x & vise 0.5",
     "nerešeno i Betis više od 0.5 gola na utakmici",
-    4.2,
+    4.15,
     0.5
    ],
    [
@@ -7058,7 +8421,7 @@
     "0-",
     "x & manje 1.5",
     "nerešeno i Betis manje od 1.5 gola na utakmici",
-    4.65,
+    4.6,
     1.5
    ],
    [
@@ -7105,14 +8468,14 @@
     "0-",
     "x & manje 2.5",
     "nerešeno i Betis manje od 2.5 gola na utakmici",
-    3.6,
+    3.55,
     2.5
    ],
    [
     "2-",
     "2 & manje 2.5",
     "Porto pobednik i Betis manje od 2.5 gola na utakmi",
-    3.2,
+    3.25,
     2.5
    ],
    [
@@ -7166,7 +8529,7 @@
     "1+",
     "1 & vise 3.5",
     "Betis pobednik i Betis više od 3.5 gola na utakmic",
-    7.9,
+    8.0,
     3.5
    ],
    [
@@ -7192,14 +8555,14 @@
     "1-",
     "1 & manje 4.5",
     "Betis pobednik i Betis manje od 4.5 gola na utakmi",
-    2.07,
+    2.1,
     4.5
    ],
    [
     "0-",
     "x & manje 4.5",
     "nerešeno i Betis manje od 4.5 gola na utakmici",
-    3.4,
+    3.35,
     4.5
    ],
    [
@@ -7253,14 +8616,14 @@
     "1+",
     "1 & vise 0.5",
     "Betis pobednik  i Porto više od 0.5 gola na utakmi",
-    3.55,
+    3.6,
     0.5
    ],
    [
     "0+",
     "x & vise 0.5",
     "nerešeno i Porto više od 0.5 gola na utakmici",
-    4.2,
+    4.15,
     0.5
    ],
    [
@@ -7286,7 +8649,7 @@
     "0-",
     "x & manje 1.5",
     "nerešeno i Porto manje od 1.5 gola na utakmici",
-    4.65,
+    4.6,
     1.5
    ],
    [
@@ -7314,7 +8677,7 @@
     "2+",
     "2 & vise 1.5",
     "Porto pobednik  i Porto više od 1.5 gola na utakmi",
-    3.9,
+    4.0,
     1.5
    ]
   ]
@@ -7504,42 +8867,42 @@
     ".1-",
     "manje 0.5",
     "Bodo/Glimt će imati manje od 0.5 kartona na utakmi",
-    5.6,
+    5.4,
     0.5
    ],
    [
     ".1+",
     "vise 0.5",
     "Bodo/Glimt će imati više od 0.5 kartona na utakmic",
-    1.07,
+    1.08,
     0.5
    ],
    [
     ".1-",
     "manje 1.5",
     "Bodo/Glimt će imati manje od 1.5 kartona na utakmi",
-    2.35,
+    2.27,
     1.5
    ],
    [
     ".1+",
     "vise 1.5",
     "Bodo/Glimt će imati više od 1.5 kartona na utakmic",
-    1.5,
+    1.54,
     1.5
    ],
    [
     ".1-",
     "manje 2.5",
     "Bodo/Glimt će imati manje od 2.5 kartona na utakmi",
-    1.43,
+    1.4,
     2.5
    ],
    [
     ".1+",
     "vise 2.5",
     "Bodo/Glimt će imati više od 2.5 kartona na utakmic",
-    2.5,
+    2.6,
     2.5
    ]
   ]
@@ -7551,42 +8914,42 @@
     ".2-",
     "manje 0.5",
     "Borussia Dortmund će imati manje od 0.5 kartona na",
-    3.9,
+    4.1,
     0.5
    ],
    [
     ".2+",
     "vise 0.5",
     "Borussia Dortmund će imati više od 0.5 kartona na ",
-    1.17,
+    1.15,
     0.5
    ],
    [
     ".2-",
     "manje 1.5",
     "Borussia Dortmund će imati manje od 1.5 kartona na",
-    1.76,
+    1.82,
     1.5
    ],
    [
     ".2+",
     "vise 1.5",
     "Borussia Dortmund će imati više od 1.5 kartona na ",
-    1.95,
+    1.88,
     1.5
    ],
    [
     ".2-",
     "manje 2.5",
     "Borussia Dortmund će imati manje od 2.5 kartona na",
-    1.19,
+    1.22,
     2.5
    ],
    [
     ".2+",
     "vise 2.5",
     "Borussia Dortmund će imati više od 2.5 kartona na ",
-    3.65,
+    3.45,
     2.5
    ]
   ]
@@ -7596,17 +8959,87 @@
   "primer": [
    [
     "*11-",
+    "manje 1.5",
+    "Bodo/Glimt će imati manje od 1.5 šuteva u okvir go",
+    8.4,
+    1.5
+   ],
+   [
+    "*11-",
+    "manje 2.5",
+    "Bodo/Glimt će imati manje od 2.5 šuteva u okvir go",
+    4.65,
+    2.5
+   ],
+   [
+    "*11+",
+    "vise 2.5",
+    "Bodo/Glimt će imati više od 2.5 šuteva u okvir gol",
+    1.16,
+    2.5
+   ],
+   [
+    "*11-",
+    "manje 3.5",
+    "Bodo/Glimt će imati manje od 3.5 šuteva u okvir go",
+    2.7,
+    3.5
+   ],
+   [
+    "*11+",
+    "vise 3.5",
+    "Bodo/Glimt će imati više od 3.5 šuteva u okvir gol",
+    1.41,
+    3.5
+   ],
+   [
+    "*11-",
     "manje 4.5",
     "Bodo/Glimt će imati manje od 4.5 šuteva u okvir go",
-    1.7,
+    1.83,
     4.5
    ],
    [
     "*11+",
     "vise 4.5",
     "Bodo/Glimt će imati više od 4.5 šuteva u okvir gol",
-    2.02,
+    1.87,
     4.5
+   ],
+   [
+    "*11-",
+    "manje 5.5",
+    "Bodo/Glimt će imati manje od 5.5 šuteva u okvir go",
+    1.4,
+    5.5
+   ],
+   [
+    "*11+",
+    "vise 5.5",
+    "Bodo/Glimt će imati više od 5.5 šuteva u okvir gol",
+    2.6,
+    5.5
+   ],
+   [
+    "*11-",
+    "manje 6.5",
+    "Bodo/Glimt će imati manje od 6.5 šuteva u okvir go",
+    1.18,
+    6.5
+   ],
+   [
+    "*11+",
+    "vise 6.5",
+    "Bodo/Glimt će imati više od 6.5 šuteva u okvir gol",
+    3.8,
+    6.5
+   ],
+   [
+    "*11-",
+    "manje 7.5",
+    "Bodo/Glimt će imati manje od 7.5 šuteva u okvir go",
+    1.07,
+    7.5
    ]
   ]
  },
@@ -7615,17 +9048,87 @@
   "primer": [
    [
     "*12-",
+    "manje 2.5",
+    "Borussia Dortmund će imati manje od 2.5 šuteva u o",
+    5.65,
+    2.5
+   ],
+   [
+    "*12+",
+    "vise 2.5",
+    "Borussia Dortmund će imati više od 2.5 šuteva u ok",
+    1.07,
+    2.5
+   ],
+   [
+    "*12-",
+    "manje 3.5",
+    "Borussia Dortmund će imati manje od 3.5 šuteva u o",
+    3.45,
+    3.5
+   ],
+   [
+    "*12+",
+    "vise 3.5",
+    "Borussia Dortmund će imati više od 3.5 šuteva u ok",
+    1.26,
+    3.5
+   ],
+   [
+    "*12-",
+    "manje 4.5",
+    "Borussia Dortmund će imati manje od 4.5 šuteva u o",
+    2.25,
+    4.5
+   ],
+   [
+    "*12+",
+    "vise 4.5",
+    "Borussia Dortmund će imati više od 4.5 šuteva u ok",
+    1.58,
+    4.5
+   ],
+   [
+    "*12-",
     "manje 5.5",
     "Borussia Dortmund će imati manje od 5.5 šuteva u o",
-    1.68,
+    1.63,
     5.5
    ],
    [
     "*12+",
     "vise 5.5",
     "Borussia Dortmund će imati više od 5.5 šuteva u ok",
-    2.07,
+    2.1,
     5.5
+   ],
+   [
+    "*12-",
+    "manje 6.5",
+    "Borussia Dortmund će imati manje od 6.5 šuteva u o",
+    1.31,
+    6.5
+   ],
+   [
+    "*12+",
+    "vise 6.5",
+    "Borussia Dortmund će imati više od 6.5 šuteva u ok",
+    2.92,
+    6.5
+   ],
+   [
+    "*12-",
+    "manje 7.5",
+    "Borussia Dortmund će imati manje od 7.5 šuteva u o",
+    1.14,
+    7.5
+   ],
+   [
+    "*12+",
+    "vise 7.5",
+    "Borussia Dortmund će imati više od 7.5 šuteva u ok",
+    4.25,
+    7.5
    ]
   ]
  },
@@ -7634,17 +9137,87 @@
   "primer": [
    [
     "",
+    "manje 10.5",
+    "Bodo/Glimt manje od 10.5 šuteva,",
+    3.55,
+    10.5
+   ],
+   [
+    "",
+    "vise 10.5",
+    "Bodo/Glimt više od 10.5 šuteva",
+    1.25,
+    10.5
+   ],
+   [
+    "",
+    "manje 11.5",
+    "Bodo/Glimt manje od 11.5 šuteva,",
+    2.77,
+    11.5
+   ],
+   [
+    "",
+    "vise 11.5",
+    "Bodo/Glimt više od 11.5 šuteva",
+    1.39,
+    11.5
+   ],
+   [
+    "",
+    "manje 12.5",
+    "Bodo/Glimt manje od 12.5 šuteva,",
+    2.25,
+    12.5
+   ],
+   [
+    "",
+    "vise 12.5",
+    "Bodo/Glimt više od 12.5 šuteva",
+    1.58,
+    12.5
+   ],
+   [
+    "",
     "manje 13.5",
     "Bodo/Glimt manje od 13.5 šuteva,",
-    1.82,
+    1.88,
     13.5
    ],
    [
     "",
     "vise 13.5",
     "Bodo/Glimt više od 13.5 šuteva",
-    1.88,
+    1.82,
     13.5
+   ],
+   [
+    "",
+    "manje 14.5",
+    "Bodo/Glimt manje od 14.5 šuteva,",
+    1.61,
+    14.5
+   ],
+   [
+    "",
+    "vise 14.5",
+    "Bodo/Glimt više od 14.5 šuteva",
+    2.15,
+    14.5
+   ],
+   [
+    "",
+    "manje 15.5",
+    "Bodo/Glimt manje od 15.5 šuteva,",
+    1.42,
+    15.5
+   ],
+   [
+    "",
+    "vise 15.5",
+    "Bodo/Glimt više od 15.5 šuteva",
+    2.55,
+    15.5
    ]
   ]
  },
@@ -7653,17 +9226,87 @@
   "primer": [
    [
     "",
+    "manje 11.5",
+    "Borussia Dortmund manje od 11.5 šuteva",
+    3.25,
+    11.5
+   ],
+   [
+    "",
+    "vise 11.5",
+    "Borussia Dortmund više od 11.5 šuteva",
+    1.29,
+    11.5
+   ],
+   [
+    "",
+    "manje 12.5",
+    "Borussia Dortmund manje od 12.5 šuteva",
+    2.6,
+    12.5
+   ],
+   [
+    "",
+    "vise 12.5",
+    "Borussia Dortmund više od 12.5 šuteva",
+    1.44,
+    12.5
+   ],
+   [
+    "",
+    "manje 13.5",
+    "Borussia Dortmund manje od 13.5 šuteva",
+    2.12,
+    13.5
+   ],
+   [
+    "",
+    "vise 13.5",
+    "Borussia Dortmund više od 13.5 šuteva",
+    1.64,
+    13.5
+   ],
+   [
+    "",
     "manje 14.5",
     "Borussia Dortmund manje od 14.5 šuteva",
-    1.87,
+    1.8,
     14.5
    ],
    [
     "",
     "vise 14.5",
     "Borussia Dortmund više od 14.5 šuteva",
-    1.83,
+    1.9,
     14.5
+   ],
+   [
+    "",
+    "manje 15.5",
+    "Borussia Dortmund manje od 15.5 šuteva",
+    1.56,
+    15.5
+   ],
+   [
+    "",
+    "vise 15.5",
+    "Borussia Dortmund više od 15.5 šuteva",
+    2.22,
+    15.5
+   ],
+   [
+    "",
+    "manje 16.5",
+    "Borussia Dortmund manje od 16.5 šuteva",
+    1.39,
+    16.5
+   ],
+   [
+    "",
+    "vise 16.5",
+    "Borussia Dortmund više od 16.5 šuteva",
+    2.62,
+    16.5
    ]
   ]
  },
@@ -7672,17 +9315,17 @@
   "primer": [
    [
     "/*01-",
-    "manje 9.5",
-    "Bodo/Glimt manje od 9.5 faulova",
-    2.02,
-    9.5
+    "manje 10.5",
+    "Bodo/Glimt manje od 10.5 faulova",
+    1.75,
+    10.5
    ],
    [
     "/*01+",
-    "vise 9.5",
-    "Bodo/Glimt više od 9.5 faulova",
-    1.71,
-    9.5
+    "vise 10.5",
+    "Bodo/Glimt više od 10.5 faulova",
+    1.97,
+    10.5
    ]
   ]
  },
@@ -7693,7 +9336,7 @@
     "/*02-",
     "manje 11.5",
     "Borussia Dortmund manje od 11.5 faulova",
-    1.72,
+    1.73,
     11.5
    ],
    [
@@ -7738,7 +9381,7 @@
     "",
     "1-2",
     "Borussia Dortmund 1-2 gola na utakmici",
-    1.74,
+    1.71,
     -2.0
    ],
    [
@@ -7752,7 +9395,7 @@
     "",
     "2-3",
     "Borussia Dortmund 2-3 gola na utakmici",
-    2.07,
+    2.1,
     -3.0
    ]
   ]
@@ -7764,14 +9407,14 @@
     "12",
     "1-2",
     "Bodo/Glimt 1 ili 2 gola u svakom poluvremenu",
-    3.4,
+    3.35,
     2.0
    ],
    [
     "13",
     "1-3",
     "Bodo/Glimt 1,2 ili 3 gola u svakom poluvremenu",
-    2.95,
+    2.9,
     3.0
    ],
    [
@@ -7790,21 +9433,21 @@
     "12",
     "1-2",
     "Borussia Dortmund 1 ili 2 gola u svakom poluvremen",
-    2.92,
+    3.0,
     2.0
    ],
    [
     "13",
     "1-3",
     "Borussia Dortmund 1,2 ili 3 gola u svakom poluvrem",
-    2.42,
+    2.52,
     3.0
    ],
    [
     "23",
     "2-3",
     "Borussia Dortmund 2 ili 3 gola u svakom poluvremen",
-    11.0,
+    12.0,
     3.0
    ]
   ]
@@ -7816,14 +9459,14 @@
     "0",
     "0",
     "Bodo/Glimt ne daje gol",
-    4.6,
+    4.65,
     3.0
    ],
    [
     "1",
     "1",
     "Bodo/Glimt daje tačno 1 gol",
-    2.87,
+    2.9,
     3.0
    ],
    [
@@ -7837,7 +9480,7 @@
     "3",
     "3+",
     "Bodo/Glimt daje 3 ili više golova",
-    3.8,
+    3.75,
     3.0
    ]
   ]
@@ -7849,14 +9492,14 @@
     "0",
     "0",
     "Borussia Dortmund ne daje gol",
-    6.2,
+    5.8,
     3.0
    ],
    [
     "1",
     "1",
     "Borussia Dortmund daje tačno 1 gol",
-    3.3,
+    3.2,
     3.0
    ],
    [
@@ -7870,7 +9513,7 @@
     "3",
     "3+",
     "Borussia Dortmund daje 3 ili više golova",
-    2.82,
+    3.0,
     3.0
    ]
   ]
@@ -7882,14 +9525,14 @@
     "1",
     "da",
     "Bodo/Glimt daje gol na utakmici",
-    1.2,
+    1.19,
     null
    ],
    [
     "2",
     "ne",
     "Bodo/Glimt ne daje gol na utakmici",
-    4.65,
+    4.75,
     null
    ]
   ]
@@ -7901,14 +9544,14 @@
     "1",
     "da",
     "Borussia Dortmund daje gol na utakmici",
-    1.12,
+    1.13,
     null
    ],
    [
     "2",
     "ne",
     "Borussia Dortmund ne daje gol na utakmici",
-    6.4,
+    6.0,
     null
    ]
   ]
@@ -7920,14 +9563,14 @@
     "",
     "vise 0.5 & vise 1.5",
     "1. Poluvreme Bodo/Glimt više od 0.5 golova i Bodo/",
-    2.37,
+    2.35,
     1.5
    ],
    [
     "",
     "vise 0.5 & manje 1.5",
     "1. Poluvreme Bodo/Glimt više od 0.5 golova i Bodo/",
-    5.55,
+    5.6,
     1.5
    ],
    [
@@ -7941,14 +9584,14 @@
     "",
     "manje 0.5 & manje 1.5",
     "1. Poluvreme Bodo/Glimt manje od 0.5 golova i Bodo",
-    2.5,
+    2.52,
     1.5
    ],
    [
     "",
     "vise 0.5 & vise 2.5",
     "1. Poluvreme Bodo/Glimt više od 0.5 golova i Bodo/",
-    4.2,
+    4.15,
     2.5
    ],
    [
@@ -7969,14 +9612,14 @@
     "",
     "manje 0.5 & manje 2.5",
     "1. Poluvreme Bodo/Glimt manje od 0.5 golova i Bodo",
-    2.05,
+    2.07,
     2.5
    ],
    [
     "",
     "vise 1.5 & vise 2.5",
     "1. Poluvreme Bodo/Glimt više od 1.5 golova i Bodo/",
-    6.4,
+    6.3,
     2.5
    ],
    [
@@ -7990,7 +9633,7 @@
     "",
     "manje 1.5 & vise 2.5",
     "1. Poluvreme Bodo/Glimt manje od 1.5 golova i Bodo",
-    6.4,
+    6.3,
     2.5
    ],
    [
@@ -8009,63 +9652,63 @@
     "",
     "vise 0.5 & vise 1.5",
     "1. Poluvreme Borussia Dortmund više od 0.5 golova ",
-    1.95,
+    2.02,
     1.5
    ],
    [
     "",
     "vise 0.5 & manje 1.5",
     "1. Poluvreme Borussia Dortmund više od 0.5 golova ",
-    6.2,
+    6.0,
     1.5
    ],
    [
     "",
     "manje 0.5 & vise 1.5",
     "1. Poluvreme Borussia Dortmund manje od 0.5 golova",
-    5.9,
+    6.0,
     1.5
    ],
    [
     "",
     "manje 0.5 & manje 1.5",
     "1. Poluvreme Borussia Dortmund manje od 0.5 golova",
-    3.15,
+    3.0,
     1.5
    ],
    [
     "",
     "vise 0.5 & vise 2.5",
     "1. Poluvreme Borussia Dortmund više od 0.5 golova ",
-    3.1,
+    3.3,
     2.5
    ],
    [
     "",
     "vise 0.5 & manje 2.5",
     "1. Poluvreme Borussia Dortmund više od 0.5 golova ",
-    2.85,
+    2.82,
     2.5
    ],
    [
     "",
     "manje 0.5 & vise 2.5",
     "1. Poluvreme Borussia Dortmund manje od 0.5 golova",
-    13.0,
+    14.0,
     2.5
    ],
    [
     "",
     "manje 0.5 & manje 2.5",
     "1. Poluvreme Borussia Dortmund manje od 0.5 golova",
-    2.47,
+    2.37,
     2.5
    ],
    [
     "",
     "vise 1.5 & vise 2.5",
     "1. Poluvreme Borussia Dortmund više od 1.5 golova ",
-    4.75,
+    5.1,
     2.5
    ],
    [
@@ -8079,14 +9722,14 @@
     "",
     "manje 1.5 & vise 2.5",
     "1. Poluvreme Borussia Dortmund manje od 1.5 golova",
-    5.15,
+    5.4,
     2.5
    ],
    [
     "",
     "manje 1.5 & manje 2.5",
     "1. Poluvreme Borussia Dortmund manje od 1.5 golova",
-    1.52,
+    1.47,
     2.5
    ]
   ]
@@ -8098,7 +9741,7 @@
     "",
     "vise 0.5 & vise 0.5",
     "Bodo/Glimt daje više od 0.5 golova u 1. poluvremen",
-    2.82,
+    2.8,
     2.0
    ],
    [
@@ -8112,7 +9755,7 @@
     "",
     "vise 0.5 & vise 1.5",
     "Bodo/Glimt daje više od 0.5 golova u 1. poluvremen",
-    6.2,
+    6.1,
     2.0
    ],
    [
@@ -8147,7 +9790,7 @@
     "",
     "manje 0.5 & manje 0.5",
     "Bodo/Glimt daje manje od 0.5 golova u 1. poluvreme",
-    4.45,
+    4.5,
     2.0
    ],
    [
@@ -8161,7 +9804,7 @@
     "",
     "manje 0.5 & manje 1.5",
     "Bodo/Glimt daje manje od 0.5 golova u 1. poluvreme",
-    2.5,
+    2.52,
     2.0
    ],
    [
@@ -8175,7 +9818,7 @@
     "",
     "manje 0.5 & manje 2.5",
     "Bodo/Glimt daje manje od 0.5 golova u 1. poluvreme",
-    2.05,
+    2.07,
     2.0
    ]
   ]
@@ -8187,21 +9830,21 @@
     "",
     "vise 0.5 & vise 0.5",
     "Borussia Dortmund daje više od 0.5 golova u 1. pol",
-    2.3,
+    2.4,
     2.0
    ],
    [
     "",
     "vise 0.5 & manje 0.5",
     "Borussia Dortmund daje više od 0.5 golova u 1. pol",
-    4.2,
+    4.15,
     2.0
    ],
    [
     "",
     "vise 0.5 & vise 1.5",
     "Borussia Dortmund daje više od 0.5 golova u 1. pol",
-    4.6,
+    4.9,
     2.0
    ],
    [
@@ -8215,56 +9858,56 @@
     "",
     "vise 0.5 & vise 2.5",
     "Borussia Dortmund daje više od 0.5 golova u 1. pol",
-    11.0,
+    12.0,
     2.0
    ],
    [
     "",
     "vise 0.5 & manje 2.5",
     "Borussia Dortmund daje više od 0.5 golova u 1. pol",
-    1.74,
+    1.77,
     2.0
    ],
    [
     "",
     "manje 0.5 & vise 0.5",
     "Borussia Dortmund daje manje od 0.5 golova u 1. po",
-    3.15,
+    3.1,
     2.0
    ],
    [
     "",
     "manje 0.5 & manje 0.5",
     "Borussia Dortmund daje manje od 0.5 golova u 1. po",
-    5.9,
+    5.55,
     2.0
    ],
    [
     "",
     "manje 0.5 & vise 1.5",
     "Borussia Dortmund daje manje od 0.5 golova u 1. po",
-    5.9,
+    6.0,
     2.0
    ],
    [
     "",
     "manje 0.5 & manje 1.5",
     "Borussia Dortmund daje manje od 0.5 golova u 1. po",
-    3.15,
+    3.0,
     2.0
    ],
    [
     "",
     "manje 0.5 & vise 2.5",
     "Borussia Dortmund daje manje od 0.5 golova u 1. po",
-    13.0,
+    14.0,
     2.0
    ],
    [
     "",
     "manje 0.5 & manje 2.5",
     "Borussia Dortmund daje manje od 0.5 golova u 1. po",
-    2.47,
+    2.37,
     2.0
    ]
   ]
@@ -8276,21 +9919,21 @@
     "0-",
     "x & manje 0.5",
     "nerešeno i Bodo/Glimt manje od 0.5 gola na utakmic",
-    19.0,
+    18.0,
     0.5
    ],
    [
     "2-",
     "2 & manje 0.5",
     "Borussia Dortmund pobednik i Bodo/Glimt manje od 0",
-    5.0,
+    5.15,
     0.5
    ],
    [
     "1+",
     "1 & vise 0.5",
     "Bodo/Glimt pobednik i Bodo/Glimt više od 0.5 gola ",
-    2.85,
+    2.72,
     0.5
    ],
    [
@@ -8304,7 +9947,7 @@
     "2+",
     "2 & vise 0.5",
     "Borussia Dortmund pobednik i Bodo/Glimt više od 0.",
-    3.0,
+    3.15,
     0.5
    ]
   ]
@@ -8323,21 +9966,21 @@
     "0-",
     "x & manje 1.5",
     "nerešeno i Bodo/Glimt manje od 1.5 gola na utakmic",
-    6.2,
+    6.0,
     1.5
    ],
    [
     "2-",
     "2 & manje 1.5",
     "Borussia Dortmund pobednik i Bodo/Glimt manje od 1",
-    2.62,
+    2.7,
     1.5
    ],
    [
     "1+",
     "1 & vise 1.5",
     "Bodo/Glimt pobednik i Bodo/Glimt više od 1.5 gola ",
-    3.2,
+    3.1,
     1.5
    ],
    [
@@ -8351,7 +9994,7 @@
     "2+",
     "2 & vise 1.5",
     "Borussia Dortmund pobednik i Bodo/Glimt više od 1.",
-    6.7,
+    7.1,
     1.5
    ]
   ]
@@ -8363,42 +10006,42 @@
     "1-",
     "1 & manje 2.5",
     "Bodo/Glimt pobednik i Bodo/Glimt manje od 2.5 gola",
-    5.55,
+    5.3,
     2.5
    ],
    [
     "0-",
     "x & manje 2.5",
     "nerešeno i Bodo/Glimt manje od 2.5 gola na utakmic",
-    4.2,
+    4.1,
     2.5
    ],
    [
     "2-",
     "2 & manje 2.5",
     "Borussia Dortmund pobednik i Bodo/Glimt manje od 2",
-    2.15,
+    2.22,
     2.5
    ],
    [
     "1+",
     "1 & vise 2.5",
     "Bodo/Glimt pobednik i Bodo/Glimt više od 2.5 gola ",
-    4.7,
+    4.6,
     2.5
    ],
    [
     "0+",
     "x & vise 2.5",
     "nerešeno i Bodo/Glimt više od 2.5 gola na utakmici",
-    15.0,
+    16.0,
     2.5
    ],
    [
     "2+",
     "2 & vise 2.5",
     "Borussia Dortmund pobednik i Bodo/Glimt više od 2.",
-    20.0,
+    21.0,
     2.5
    ]
   ]
@@ -8410,28 +10053,28 @@
     "1-",
     "1 & manje 3.5",
     "Bodo/Glimt pobednik i Bodo/Glimt manje od 3.5 gola",
-    3.65,
+    3.5,
     3.5
    ],
    [
     "0-",
     "x & manje 3.5",
     "nerešeno i Bodo/Glimt manje od 3.5 gola na utakmic",
-    3.75,
+    3.65,
     3.5
    ],
    [
     "2-",
     "2 & manje 3.5",
     "Borussia Dortmund pobednik i Bodo/Glimt manje od 3",
-    2.05,
+    2.12,
     3.5
    ],
    [
     "1+",
     "1 & vise 3.5",
     "Bodo/Glimt pobednik i Bodo/Glimt više od 3.5 gola ",
-    8.5,
+    8.4,
     3.5
    ],
    [
@@ -8457,21 +10100,21 @@
     "1-",
     "1 & manje 4.5",
     "Bodo/Glimt pobednik i Bodo/Glimt manje od 4.5 gola",
-    3.05,
+    2.95,
     4.5
    ],
    [
     "0-",
     "x & manje 4.5",
     "nerešeno i Bodo/Glimt manje od 4.5 gola na utakmic",
-    3.65,
+    3.6,
     4.5
    ],
    [
     "2-",
     "2 & manje 4.5",
     "Borussia Dortmund pobednik i Bodo/Glimt manje od 4",
-    2.02,
+    2.12,
     4.5
    ],
    [
@@ -8511,77 +10154,77 @@
     "/1-",
     "manje 1.5",
     "Aston Villa manje od 1.5 kornera",
-    15.0,
+    17.0,
     1.5
    ],
    [
     "/1-",
     "manje 2.5",
     "Aston Villa manje od 2.5 kornera",
-    7.1,
+    7.8,
     2.5
    ],
    [
     "/1+",
     "vise 2.5",
     "Aston Villa više od 2.5 kornera",
-    1.06,
+    1.05,
     2.5
    ],
    [
     "/1-",
     "manje 3.5",
     "Aston Villa manje od 3.5 kornera",
-    4.15,
+    4.55,
     3.5
    ],
    [
     "/1+",
     "vise 3.5",
     "Aston Villa više od 3.5 kornera",
-    1.19,
+    1.16,
     3.5
    ],
    [
     "/1-",
     "manje 4.5",
     "Aston Villa manje od 4.5 kornera",
-    2.72,
+    2.92,
     4.5
    ],
    [
     "/1+",
     "vise 4.5",
     "Aston Villa više od 4.5 kornera",
-    1.4,
+    1.35,
     4.5
    ],
    [
     "/1-",
     "manje 5.5",
     "Aston Villa manje od 5.5 kornera",
-    1.97,
+    2.1,
     5.5
    ],
    [
     "/1+",
     "vise 5.5",
     "Aston Villa više od 5.5 kornera",
-    1.74,
+    1.66,
     5.5
    ],
    [
     "/1-",
     "manje 6.5",
     "Aston Villa manje od 6.5 kornera",
-    1.57,
+    1.64,
     6.5
    ],
    [
     "/1+",
     "vise 6.5",
     "Aston Villa više od 6.5 kornera",
-    2.27,
+    2.12,
     6.5
    ]
   ]
@@ -8593,84 +10236,84 @@
     "/2-",
     "manje 0.5",
     "Fenerbahce će imati manje od 0.5 kornera",
-    18.0,
+    16.0,
     0.5
    ],
    [
     "/2-",
     "manje 1.5",
     "Fenerbahce će imati manje od 1.5 kornera",
-    6.7,
+    6.0,
     1.5
    ],
    [
     "/2+",
     "vise 1.5",
     "Fenerbahce će imati više od 1.5 kornera",
-    1.08,
+    1.1,
     1.5
    ],
    [
     "/2-",
     "manje 2.5",
     "Fenerbahce će imati manje od 2.5 kornera",
-    3.5,
+    3.2,
     2.5
    ],
    [
     "/2+",
     "vise 2.5",
     "Fenerbahce će imati više od 2.5 kornera",
-    1.26,
+    1.3,
     2.5
    ],
    [
     "/2-",
     "manje 3.5",
     "Fenerbahce će imati manje od 3.5 kornera",
-    2.25,
+    2.07,
     3.5
    ],
    [
     "/2+",
     "vise 3.5",
     "Fenerbahce će imati više od 3.5 kornera",
-    1.58,
+    1.67,
     3.5
    ],
    [
     "/2-",
     "manje 4.5",
     "Fenerbahce će imati manje od 4.5 kornera",
-    1.65,
+    1.55,
     4.5
    ],
    [
     "/2+",
     "vise 4.5",
     "Fenerbahce će imati više od 4.5 kornera",
-    2.12,
+    2.3,
     4.5
    ],
    [
     "/2-",
     "manje 5.5",
     "Fenerbahce će imati manje od 5.5 kornera",
-    1.34,
+    1.29,
     5.5
    ],
    [
     "/2+",
     "vise 5.5",
     "Fenerbahce će imati više od 5.5 kornera",
-    3.0,
+    3.3,
     5.5
    ],
    [
     "/2-",
     "manje 6.5",
     "Fenerbahce će imati manje od 6.5 kornera",
-    1.18,
+    1.14,
     6.5
    ]
   ]
@@ -8774,6 +10417,48 @@
   "primer": [
    [
     "*11-",
+    "manje 2.5",
+    "Aston Villa će imati manje od 2.5 šuteva u okvir g",
+    7.7,
+    2.5
+   ],
+   [
+    "*11+",
+    "vise 2.5",
+    "Aston Villa će imati više od 2.5 šuteva u okvir go",
+    1.02,
+    2.5
+   ],
+   [
+    "*11-",
+    "manje 3.5",
+    "Aston Villa će imati manje od 3.5 šuteva u okvir g",
+    4.45,
+    3.5
+   ],
+   [
+    "*11+",
+    "vise 3.5",
+    "Aston Villa će imati više od 3.5 šuteva u okvir go",
+    1.13,
+    3.5
+   ],
+   [
+    "*11-",
+    "manje 4.5",
+    "Aston Villa će imati manje od 4.5 šuteva u okvir g",
+    2.82,
+    4.5
+   ],
+   [
+    "*11+",
+    "vise 4.5",
+    "Aston Villa će imati više od 4.5 šuteva u okvir go",
+    1.33,
+    4.5
+   ],
+   [
+    "*11-",
     "manje 5.5",
     "Aston Villa će imati manje od 5.5 šuteva u okvir g",
     2.02,
@@ -8785,12 +10470,75 @@
     "Aston Villa će imati više od 5.5 šuteva u okvir go",
     1.7,
     5.5
+   ],
+   [
+    "*11-",
+    "manje 6.5",
+    "Aston Villa će imati manje od 6.5 šuteva u okvir g",
+    1.56,
+    6.5
+   ],
+   [
+    "*11+",
+    "vise 6.5",
+    "Aston Villa će imati više od 6.5 šuteva u okvir go",
+    2.27,
+    6.5
+   ],
+   [
+    "*11-",
+    "manje 7.5",
+    "Aston Villa će imati manje od 7.5 šuteva u okvir g",
+    1.28,
+    7.5
+   ],
+   [
+    "*11+",
+    "vise 7.5",
+    "Aston Villa će imati više od 7.5 šuteva u okvir go",
+    3.1,
+    7.5
    ]
   ]
  },
  "Fenerbahce ukupno šuteva u okvir gola": {
   "mecova": 1,
   "primer": [
+   [
+    "*12-",
+    "manje 0.5",
+    "Fenerbahce će imati manje od 0.5 šuteva u okvir go",
+    14.0,
+    0.5
+   ],
+   [
+    "*12-",
+    "manje 1.5",
+    "Fenerbahce će imati manje od 1.5 šuteva u okvir go",
+    5.75,
+    1.5
+   ],
+   [
+    "*12+",
+    "vise 1.5",
+    "Fenerbahce će imati više od 1.5 šuteva u okvir gol",
+    1.07,
+    1.5
+   ],
+   [
+    "*12-",
+    "manje 2.5",
+    "Fenerbahce će imati manje od 2.5 šuteva u okvir go",
+    3.15,
+    2.5
+   ],
+   [
+    "*12+",
+    "vise 2.5",
+    "Fenerbahce će imati više od 2.5 šuteva u okvir gol",
+    1.31,
+    2.5
+   ],
    [
     "*12-",
     "manje 3.5",
@@ -8804,6 +10552,41 @@
     "Fenerbahce će imati više od 3.5 šuteva u okvir gol",
     1.74,
     3.5
+   ],
+   [
+    "*12-",
+    "manje 4.5",
+    "Fenerbahce će imati manje od 4.5 šuteva u okvir go",
+    1.44,
+    4.5
+   ],
+   [
+    "*12+",
+    "vise 4.5",
+    "Fenerbahce će imati više od 4.5 šuteva u okvir gol",
+    2.5,
+    4.5
+   ],
+   [
+    "*12-",
+    "manje 5.5",
+    "Fenerbahce će imati manje od 5.5 šuteva u okvir go",
+    1.19,
+    5.5
+   ],
+   [
+    "*12+",
+    "vise 5.5",
+    "Fenerbahce će imati više od 5.5 šuteva u okvir gol",
+    3.75,
+    5.5
+   ],
+   [
+    "*12-",
+    "manje 6.5",
+    "Fenerbahce će imati manje od 6.5 šuteva u okvir go",
+    1.07,
+    6.5
    ]
   ]
  },
@@ -8812,17 +10595,87 @@
   "primer": [
    [
     "",
+    "manje 13.5",
+    "Aston Villa manje od 13.5 šuteva,",
+    2.95,
+    13.5
+   ],
+   [
+    "",
+    "vise 13.5",
+    "Aston Villa više od 13.5 šuteva",
+    1.35,
+    13.5
+   ],
+   [
+    "",
+    "manje 14.5",
+    "Aston Villa manje od 14.5 šuteva,",
+    2.4,
+    14.5
+   ],
+   [
+    "",
+    "vise 14.5",
+    "Aston Villa više od 14.5 šuteva",
+    1.51,
+    14.5
+   ],
+   [
+    "",
     "manje 15.5",
     "Aston Villa manje od 15.5 šuteva,",
-    1.97,
+    2.02,
     15.5
    ],
    [
     "",
     "vise 15.5",
     "Aston Villa više od 15.5 šuteva",
-    1.75,
+    1.71,
     15.5
+   ],
+   [
+    "",
+    "manje 16.5",
+    "Aston Villa manje od 16.5 šuteva,",
+    1.73,
+    16.5
+   ],
+   [
+    "",
+    "vise 16.5",
+    "Aston Villa više od 16.5 šuteva",
+    1.97,
+    16.5
+   ],
+   [
+    "",
+    "manje 17.5",
+    "Aston Villa manje od 17.5 šuteva,",
+    1.52,
+    17.5
+   ],
+   [
+    "",
+    "vise 17.5",
+    "Aston Villa više od 17.5 šuteva",
+    2.3,
+    17.5
+   ],
+   [
+    "",
+    "manje 18.5",
+    "Aston Villa manje od 18.5 šuteva,",
+    1.37,
+    18.5
+   ],
+   [
+    "",
+    "vise 18.5",
+    "Aston Villa više od 18.5 šuteva",
+    2.7,
+    18.5
    ]
   ]
  },
@@ -8831,17 +10684,87 @@
   "primer": [
    [
     "",
+    "manje 8.5",
+    "Fenerbahce manje od 8.5 šuteva",
+    3.2,
+    8.5
+   ],
+   [
+    "",
+    "vise 8.5",
+    "Fenerbahce više od 8.5 šuteva",
+    1.26,
+    8.5
+   ],
+   [
+    "",
+    "manje 9.5",
+    "Fenerbahce manje od 9.5 šuteva",
+    2.55,
+    9.5
+   ],
+   [
+    "",
+    "vise 9.5",
+    "Fenerbahce više od 9.5 šuteva",
+    1.46,
+    9.5
+   ],
+   [
+    "",
     "manje 10.5",
     "Fenerbahce manje od 10.5 šuteva",
-    1.82,
+    2.05,
     10.5
    ],
    [
     "",
     "vise 10.5",
     "Fenerbahce više od 10.5 šuteva",
-    1.88,
+    1.69,
     10.5
+   ],
+   [
+    "",
+    "manje 11.5",
+    "Fenerbahce manje od 11.5 šuteva",
+    1.71,
+    11.5
+   ],
+   [
+    "",
+    "vise 11.5",
+    "Fenerbahce više od 11.5 šuteva",
+    2.02,
+    11.5
+   ],
+   [
+    "",
+    "manje 12.5",
+    "Fenerbahce manje od 12.5 šuteva",
+    1.47,
+    12.5
+   ],
+   [
+    "",
+    "vise 12.5",
+    "Fenerbahce više od 12.5 šuteva",
+    2.42,
+    12.5
+   ],
+   [
+    "",
+    "manje 13.5",
+    "Fenerbahce manje od 13.5 šuteva",
+    1.33,
+    13.5
+   ],
+   [
+    "",
+    "vise 13.5",
+    "Fenerbahce više od 13.5 šuteva",
+    3.05,
+    13.5
    ]
   ]
  },
@@ -8871,14 +10794,14 @@
     "/*02-",
     "manje 13.5",
     "Fenerbahce manje od 13.5 faulova",
-    1.73,
+    1.74,
     13.5
    ],
    [
     "/*02+",
     "vise 13.5",
     "Fenerbahce više od 13.5 faulova",
-    2.0,
+    1.97,
     13.5
    ]
   ]
@@ -9027,6 +10950,30 @@
    ]
   ]
  },
+ "Ukupno dodavanja Aston Villa": {
+  "mecova": 1,
+  "primer": [
+   [
+    "",
+    "vise 502.5",
+    "Aston Villa više od 502.5 dodavanja",
+    1.85,
+    502.5
+   ]
+  ]
+ },
+ "Ukupno dodavanja Fenerbahce": {
+  "mecova": 1,
+  "primer": [
+   [
+    "",
+    "vise 483.5",
+    "Fenerbahce više od 483.5 dodavanja",
+    1.85,
+    483.5
+   ]
+  ]
+ },
  "Unai Emery dobija karton": {
   "mecova": 1,
   "primer": [
@@ -9059,6 +11006,42 @@
     "da",
     "Unai Emery & İsmail Kartal će dobiti karton. Za me",
     25.0,
+    15.0
+   ]
+  ]
+ },
+ "Bilo koji igrač dobija karton u nadoknadi vremena ('90+) 2. poluvremena": {
+  "mecova": 1,
+  "primer": [
+   [
+    "",
+    "da",
+    "Bilo koji igrač će dobiti karton u nadoknadi vreme",
+    1.85,
+    2.0
+   ]
+  ]
+ },
+ "Oba tima izvode korner iz svakog ugla terena": {
+  "mecova": 1,
+  "primer": [
+   [
+    "",
+    "da",
+    "Oba tima će izvesti korner iz svakog ugla terena. ",
+    7.5,
+    15.0
+   ]
+  ]
+ },
+ "Strelac gola skida dres da proslavi": {
+  "mecova": 1,
+  "primer": [
+   [
+    "",
+    "da",
+    "Igrač koji postiže gol će skinuti dres da bi prosl",
+    4.5,
     15.0
    ]
   ]
@@ -9260,42 +11243,42 @@
     ".1-",
     "manje 0.5",
     "Shakhtar Donetsk će imati manje od 0.5 kartona na ",
-    4.45,
+    5.0,
     0.5
    ],
    [
     ".1+",
     "vise 0.5",
     "Shakhtar Donetsk će imati više od 0.5 kartona na u",
-    1.13,
+    1.1,
     0.5
    ],
    [
     ".1-",
     "manje 1.5",
     "Shakhtar Donetsk će imati manje od 1.5 kartona na ",
-    1.95,
+    2.12,
     1.5
    ],
    [
     ".1+",
     "vise 1.5",
     "Shakhtar Donetsk će imati više od 1.5 kartona na u",
-    1.75,
+    1.62,
     1.5
    ],
    [
     ".1-",
     "manje 2.5",
     "Shakhtar Donetsk će imati manje od 2.5 kartona na ",
-    1.27,
+    1.35,
     2.5
    ],
    [
     ".1+",
     "vise 2.5",
     "Shakhtar Donetsk će imati više od 2.5 kartona na u",
-    3.1,
+    2.77,
     2.5
    ]
   ]
@@ -9307,42 +11290,42 @@
     ".2-",
     "manje 1.5",
     "AEK Athens će imati manje od 1.5 kartona na utakmi",
-    3.0,
+    2.75,
     1.5
    ],
    [
     ".2+",
     "vise 1.5",
     "AEK Athens će imati više od 1.5 kartona na utakmic",
-    1.29,
+    1.36,
     1.5
    ],
    [
     ".2-",
     "manje 2.5",
     "AEK Athens će imati manje od 2.5 kartona na utakmi",
-    1.74,
+    1.62,
     2.5
    ],
    [
     ".2+",
     "vise 2.5",
     "AEK Athens će imati više od 2.5 kartona na utakmic",
-    1.97,
+    2.12,
     2.5
    ],
    [
     ".2-",
     "manje 3.5",
     "AEK Athens će imati manje od 3.5 kartona na utakmi",
-    1.25,
+    1.2,
     3.5
    ],
    [
     ".2+",
     "vise 3.5",
     "AEK Athens će imati više od 3.5 kartona na utakmic",
-    3.25,
+    3.6,
     3.5
    ]
   ]
@@ -9350,6 +11333,41 @@
  "Shakhtar Donetsk ukupno šuteva u okvir gola": {
   "mecova": 1,
   "primer": [
+   [
+    "*11-",
+    "manje 0.5",
+    "Shakhtar Donetsk će imati manje od 0.5 šuteva u ok",
+    15.0,
+    0.5
+   ],
+   [
+    "*11-",
+    "manje 1.5",
+    "Shakhtar Donetsk će imati manje od 1.5 šuteva u ok",
+    6.3,
+    1.5
+   ],
+   [
+    "*11+",
+    "vise 1.5",
+    "Shakhtar Donetsk će imati više od 1.5 šuteva u okv",
+    1.05,
+    1.5
+   ],
+   [
+    "*11-",
+    "manje 2.5",
+    "Shakhtar Donetsk će imati manje od 2.5 šuteva u ok",
+    3.5,
+    2.5
+   ],
+   [
+    "*11+",
+    "vise 2.5",
+    "Shakhtar Donetsk će imati više od 2.5 šuteva u okv",
+    1.26,
+    2.5
+   ],
    [
     "*11-",
     "manje 3.5",
@@ -9363,12 +11381,89 @@
     "Shakhtar Donetsk će imati više od 3.5 šuteva u okv",
     1.63,
     3.5
+   ],
+   [
+    "*11-",
+    "manje 4.5",
+    "Shakhtar Donetsk će imati manje od 4.5 šuteva u ok",
+    1.53,
+    4.5
+   ],
+   [
+    "*11+",
+    "vise 4.5",
+    "Shakhtar Donetsk će imati više od 4.5 šuteva u okv",
+    2.3,
+    4.5
+   ],
+   [
+    "*11-",
+    "manje 5.5",
+    "Shakhtar Donetsk će imati manje od 5.5 šuteva u ok",
+    1.23,
+    5.5
+   ],
+   [
+    "*11+",
+    "vise 5.5",
+    "Shakhtar Donetsk će imati više od 5.5 šuteva u okv",
+    3.35,
+    5.5
+   ],
+   [
+    "*11-",
+    "manje 6.5",
+    "Shakhtar Donetsk će imati manje od 6.5 šuteva u ok",
+    1.09,
+    6.5
    ]
   ]
  },
  "AEK Athens ukupno šuteva u okvir gola": {
   "mecova": 1,
   "primer": [
+   [
+    "*12-",
+    "manje 1.5",
+    "AEK Athens će imati manje od 1.5 šuteva u okvir go",
+    6.8,
+    1.5
+   ],
+   [
+    "*12+",
+    "vise 1.5",
+    "AEK Athens će imati više od 1.5 šuteva u okvir gol",
+    1.04,
+    1.5
+   ],
+   [
+    "*12-",
+    "manje 2.5",
+    "AEK Athens će imati manje od 2.5 šuteva u okvir go",
+    3.55,
+    2.5
+   ],
+   [
+    "*12+",
+    "vise 2.5",
+    "AEK Athens će imati više od 2.5 šuteva u okvir gol",
+    1.21,
+    2.5
+   ],
+   [
+    "*12-",
+    "manje 3.5",
+    "AEK Athens će imati manje od 3.5 šuteva u okvir go",
+    2.22,
+    3.5
+   ],
+   [
+    "*12+",
+    "vise 3.5",
+    "AEK Athens će imati više od 3.5 šuteva u okvir gol",
+    1.56,
+    3.5
+   ],
    [
     "*12-",
     "manje 4.5",
@@ -9382,12 +11477,82 @@
     "AEK Athens će imati više od 4.5 šuteva u okvir gol",
     2.17,
     4.5
+   ],
+   [
+    "*12-",
+    "manje 5.5",
+    "AEK Athens će imati manje od 5.5 šuteva u okvir go",
+    1.27,
+    5.5
+   ],
+   [
+    "*12+",
+    "vise 5.5",
+    "AEK Athens će imati više od 5.5 šuteva u okvir gol",
+    3.15,
+    5.5
+   ],
+   [
+    "*12-",
+    "manje 6.5",
+    "AEK Athens će imati manje od 6.5 šuteva u okvir go",
+    1.11,
+    6.5
+   ],
+   [
+    "*12+",
+    "vise 6.5",
+    "AEK Athens će imati više od 6.5 šuteva u okvir gol",
+    4.8,
+    6.5
    ]
   ]
  },
  "Ukupno šuteva Shakhtar Donetsk": {
   "mecova": 1,
   "primer": [
+   [
+    "",
+    "manje 8.5",
+    "Shakhtar Donetsk manje od 8.5 šuteva,",
+    3.75,
+    8.5
+   ],
+   [
+    "",
+    "vise 8.5",
+    "Shakhtar Donetsk više od 8.5 šuteva",
+    1.18,
+    8.5
+   ],
+   [
+    "",
+    "manje 9.5",
+    "Shakhtar Donetsk manje od 9.5 šuteva,",
+    3.0,
+    9.5
+   ],
+   [
+    "",
+    "vise 9.5",
+    "Shakhtar Donetsk više od 9.5 šuteva",
+    1.34,
+    9.5
+   ],
+   [
+    "",
+    "manje 10.5",
+    "Shakhtar Donetsk manje od 10.5 šuteva,",
+    2.35,
+    10.5
+   ],
+   [
+    "",
+    "vise 10.5",
+    "Shakhtar Donetsk više od 10.5 šuteva",
+    1.52,
+    10.5
+   ],
    [
     "",
     "manje 11.5",
@@ -9401,12 +11566,82 @@
     "Shakhtar Donetsk više od 11.5 šuteva",
     1.78,
     11.5
+   ],
+   [
+    "",
+    "manje 12.5",
+    "Shakhtar Donetsk manje od 12.5 šuteva,",
+    1.63,
+    12.5
+   ],
+   [
+    "",
+    "vise 12.5",
+    "Shakhtar Donetsk više od 12.5 šuteva",
+    2.1,
+    12.5
+   ],
+   [
+    "",
+    "manje 13.5",
+    "Shakhtar Donetsk manje od 13.5 šuteva,",
+    1.43,
+    13.5
+   ],
+   [
+    "",
+    "vise 13.5",
+    "Shakhtar Donetsk više od 13.5 šuteva",
+    2.52,
+    13.5
    ]
   ]
  },
  "Ukupno šuteva AEK Athens": {
   "mecova": 1,
   "primer": [
+   [
+    "",
+    "manje 8.5",
+    "AEK Athens manje od 8.5 šuteva",
+    3.45,
+    8.5
+   ],
+   [
+    "",
+    "vise 8.5",
+    "AEK Athens više od 8.5 šuteva",
+    1.26,
+    8.5
+   ],
+   [
+    "",
+    "manje 9.5",
+    "AEK Athens manje od 9.5 šuteva",
+    2.65,
+    9.5
+   ],
+   [
+    "",
+    "vise 9.5",
+    "AEK Athens više od 9.5 šuteva",
+    1.42,
+    9.5
+   ],
+   [
+    "",
+    "manje 10.5",
+    "AEK Athens manje od 10.5 šuteva",
+    2.1,
+    10.5
+   ],
+   [
+    "",
+    "vise 10.5",
+    "AEK Athens više od 10.5 šuteva",
+    1.63,
+    10.5
+   ],
    [
     "",
     "manje 11.5",
@@ -9420,6 +11655,34 @@
     "AEK Athens više od 11.5 šuteva",
     1.95,
     11.5
+   ],
+   [
+    "",
+    "manje 12.5",
+    "AEK Athens manje od 12.5 šuteva",
+    1.51,
+    12.5
+   ],
+   [
+    "",
+    "vise 12.5",
+    "AEK Athens više od 12.5 šuteva",
+    2.32,
+    12.5
+   ],
+   [
+    "",
+    "manje 13.5",
+    "AEK Athens manje od 13.5 šuteva",
+    1.34,
+    13.5
+   ],
+   [
+    "",
+    "vise 13.5",
+    "AEK Athens više od 13.5 šuteva",
+    2.82,
+    13.5
    ]
   ]
  },
@@ -9430,7 +11693,7 @@
     "/*01-",
     "manje 11.5",
     "Shakhtar Donetsk manje od 11.5 faulova",
-    1.68,
+    1.7,
     11.5
    ],
    [
@@ -9449,14 +11712,14 @@
     "/*02-",
     "manje 12.5",
     "AEK Athens manje od 12.5 faulova",
-    1.72,
+    1.7,
     12.5
    ],
    [
     "/*02+",
     "vise 12.5",
     "AEK Athens više od 12.5 faulova",
-    2.0,
+    2.05,
     12.5
    ]
   ]
@@ -9737,15 +12000,15 @@
    ]
   ]
  },
- "Arda Turan & Marko Nikolic dobijaju karton": {
+ "Ukupno dodavanja Shakhtar Donetsk": {
   "mecova": 1,
   "primer": [
    [
     "",
-    "da",
-    "Arda Turan & Marko Nikolic će dobiti karton. Za me",
-    15.0,
-    15.0
+    "vise 505.5",
+    "Shakhtar Donetsk više od 505.5 dodavanja",
+    1.85,
+    505.5
    ]
   ]
  },
@@ -9756,84 +12019,84 @@
     "/1-",
     "manje 0.5",
     "Manchester City manje od 0.5 kornera",
-    30.0,
+    34.0,
     0.5
    ],
    [
     "/1-",
     "manje 1.5",
     "Manchester City manje od 1.5 kornera",
-    9.9,
+    12.0,
     1.5
    ],
    [
     "/1+",
     "vise 1.5",
     "Manchester City više od 1.5 kornera",
-    1.03,
+    1.02,
     1.5
    ],
    [
     "/1-",
     "manje 2.5",
     "Manchester City manje od 2.5 kornera",
-    5.0,
+    5.5,
     2.5
    ],
    [
     "/1+",
     "vise 2.5",
     "Manchester City više od 2.5 kornera",
-    1.13,
+    1.11,
     2.5
    ],
    [
     "/1-",
     "manje 3.5",
     "Manchester City manje od 3.5 kornera",
-    3.05,
+    3.3,
     3.5
    ],
    [
     "/1+",
     "vise 3.5",
     "Manchester City više od 3.5 kornera",
-    1.33,
+    1.29,
     3.5
    ],
    [
     "/1-",
     "manje 4.5",
     "Manchester City manje od 4.5 kornera",
-    2.1,
+    2.22,
     4.5
    ],
    [
     "/1+",
     "vise 4.5",
     "Manchester City više od 4.5 kornera",
-    1.66,
+    1.58,
     4.5
    ],
    [
     "/1-",
     "manje 5.5",
     "Manchester City manje od 5.5 kornera",
-    1.6,
+    1.69,
     5.5
    ],
    [
     "/1+",
     "vise 5.5",
     "Manchester City više od 5.5 kornera",
-    2.2,
+    2.05,
     5.5
    ],
    [
     "/1-",
     "manje 6.5",
     "Manchester City manje od 6.5 kornera",
-    1.34,
+    1.39,
     6.5
    ]
   ]
@@ -9845,84 +12108,84 @@
     "/2-",
     "manje 0.5",
     "PSG će imati manje od 0.5 kornera",
-    19.0,
+    17.0,
     0.5
    ],
    [
     "/2-",
     "manje 1.5",
     "PSG će imati manje od 1.5 kornera",
-    6.9,
+    6.2,
     1.5
    ],
    [
     "/2+",
     "vise 1.5",
     "PSG će imati više od 1.5 kornera",
-    1.07,
+    1.09,
     1.5
    ],
    [
     "/2-",
     "manje 2.5",
     "PSG će imati manje od 2.5 kornera",
-    3.6,
+    3.3,
     2.5
    ],
    [
     "/2+",
     "vise 2.5",
     "PSG će imati više od 2.5 kornera",
-    1.24,
+    1.29,
     2.5
    ],
    [
     "/2-",
     "manje 3.5",
     "PSG će imati manje od 3.5 kornera",
-    2.3,
+    2.12,
     3.5
    ],
    [
     "/2+",
     "vise 3.5",
     "PSG će imati više od 3.5 kornera",
-    1.55,
+    1.64,
     3.5
    ],
    [
     "/2-",
     "manje 4.5",
     "PSG će imati manje od 4.5 kornera",
-    1.68,
+    1.58,
     4.5
    ],
    [
     "/2+",
     "vise 4.5",
     "PSG će imati više od 4.5 kornera",
-    2.07,
+    2.22,
     4.5
    ],
    [
     "/2-",
     "manje 5.5",
     "PSG će imati manje od 5.5 kornera",
-    1.36,
+    1.3,
     5.5
    ],
    [
     "/2+",
     "vise 5.5",
     "PSG će imati više od 5.5 kornera",
-    2.9,
+    3.2,
     5.5
    ],
    [
     "/2-",
     "manje 6.5",
     "PSG će imati manje od 6.5 kornera",
-    1.19,
+    1.15,
     6.5
    ]
   ]
@@ -9934,42 +12197,42 @@
     ".1-",
     "manje 0.5",
     "Manchester City će imati manje od 0.5 kartona na u",
-    4.1,
+    4.5,
     0.5
    ],
    [
     ".1+",
     "vise 0.5",
     "Manchester City će imati više od 0.5 kartona na ut",
-    1.15,
+    1.12,
     0.5
    ],
    [
     ".1-",
     "manje 1.5",
     "Manchester City će imati manje od 1.5 kartona na u",
-    1.82,
+    1.95,
     1.5
    ],
    [
     ".1+",
     "vise 1.5",
     "Manchester City će imati više od 1.5 kartona na ut",
-    1.88,
+    1.75,
     1.5
    ],
    [
     ".1-",
     "manje 2.5",
     "Manchester City će imati manje od 2.5 kartona na u",
-    1.22,
+    1.27,
     2.5
    ],
    [
     ".1+",
     "vise 2.5",
     "Manchester City će imati više od 2.5 kartona na ut",
-    3.5,
+    3.15,
     2.5
    ]
   ]
@@ -9981,42 +12244,42 @@
     ".2-",
     "manje 0.5",
     "PSG će imati manje od 0.5 kartona na utakmici (ukl",
-    5.15,
+    4.7,
     0.5
    ],
    [
     ".2+",
     "vise 0.5",
     "PSG će imati više od 0.5 kartona na utakmici (uklj",
-    1.09,
+    1.11,
     0.5
    ],
    [
     ".2-",
     "manje 1.5",
     "PSG će imati manje od 1.5 kartona na utakmici (ukl",
-    2.17,
+    2.02,
     1.5
    ],
    [
     ".2+",
     "vise 1.5",
     "PSG će imati više od 1.5 kartona na utakmici (uklj",
-    1.59,
+    1.69,
     1.5
    ],
    [
     ".2-",
     "manje 2.5",
     "PSG će imati manje od 2.5 kartona na utakmici (ukl",
-    1.36,
+    1.3,
     2.5
    ],
    [
     ".2+",
     "vise 2.5",
     "PSG će imati više od 2.5 kartona na utakmici (uklj",
-    2.72,
+    2.95,
     2.5
    ]
   ]
@@ -10026,17 +12289,87 @@
   "primer": [
    [
     "*11-",
+    "manje 2.5",
+    "Manchester City će imati manje od 2.5 šuteva u okv",
+    7.1,
+    2.5
+   ],
+   [
+    "*11+",
+    "vise 2.5",
+    "Manchester City će imati više od 2.5 šuteva u okvi",
+    1.03,
+    2.5
+   ],
+   [
+    "*11-",
+    "manje 3.5",
+    "Manchester City će imati manje od 3.5 šuteva u okv",
+    4.1,
+    3.5
+   ],
+   [
+    "*11+",
+    "vise 3.5",
+    "Manchester City će imati više od 3.5 šuteva u okvi",
+    1.15,
+    3.5
+   ],
+   [
+    "*11-",
+    "manje 4.5",
+    "Manchester City će imati manje od 4.5 šuteva u okv",
+    2.65,
+    4.5
+   ],
+   [
+    "*11+",
+    "vise 4.5",
+    "Manchester City će imati više od 4.5 šuteva u okvi",
+    1.39,
+    4.5
+   ],
+   [
+    "*11-",
     "manje 5.5",
     "Manchester City će imati manje od 5.5 šuteva u okv",
-    1.8,
+    1.92,
     5.5
    ],
    [
     "*11+",
     "vise 5.5",
     "Manchester City će imati više od 5.5 šuteva u okvi",
-    1.9,
+    1.8,
     5.5
+   ],
+   [
+    "*11-",
+    "manje 6.5",
+    "Manchester City će imati manje od 6.5 šuteva u okv",
+    1.47,
+    6.5
+   ],
+   [
+    "*11+",
+    "vise 6.5",
+    "Manchester City će imati više od 6.5 šuteva u okvi",
+    2.4,
+    6.5
+   ],
+   [
+    "*11-",
+    "manje 7.5",
+    "Manchester City će imati manje od 7.5 šuteva u okv",
+    1.24,
+    7.5
+   ],
+   [
+    "*11+",
+    "vise 7.5",
+    "Manchester City će imati više od 7.5 šuteva u okvi",
+    3.35,
+    7.5
    ]
   ]
  },
@@ -10045,17 +12378,87 @@
   "primer": [
    [
     "*12-",
+    "manje 1.5",
+    "PSG će imati manje od 1.5 šuteva u okvir gola",
+    9.2,
+    1.5
+   ],
+   [
+    "*12-",
+    "manje 2.5",
+    "PSG će imati manje od 2.5 šuteva u okvir gola",
+    4.75,
+    2.5
+   ],
+   [
+    "*12+",
+    "vise 2.5",
+    "PSG će imati više od 2.5 šuteva u okvir gola",
+    1.11,
+    2.5
+   ],
+   [
+    "*12-",
+    "manje 3.5",
+    "PSG će imati manje od 3.5 šuteva u okvir gola",
+    2.92,
+    3.5
+   ],
+   [
+    "*12+",
+    "vise 3.5",
+    "PSG će imati više od 3.5 šuteva u okvir gola",
+    1.35,
+    3.5
+   ],
+   [
+    "*12-",
     "manje 4.5",
     "PSG će imati manje od 4.5 šuteva u okvir gola",
-    2.0,
+    1.95,
     4.5
    ],
    [
     "*12+",
     "vise 4.5",
     "PSG će imati više od 4.5 šuteva u okvir gola",
-    1.73,
+    1.75,
     4.5
+   ],
+   [
+    "*12-",
+    "manje 5.5",
+    "PSG će imati manje od 5.5 šuteva u okvir gola",
+    1.49,
+    5.5
+   ],
+   [
+    "*12+",
+    "vise 5.5",
+    "PSG će imati više od 5.5 šuteva u okvir gola",
+    2.45,
+    5.5
+   ],
+   [
+    "*12-",
+    "manje 6.5",
+    "PSG će imati manje od 6.5 šuteva u okvir gola",
+    1.22,
+    6.5
+   ],
+   [
+    "*12+",
+    "vise 6.5",
+    "PSG će imati više od 6.5 šuteva u okvir gola",
+    3.45,
+    6.5
+   ],
+   [
+    "*12-",
+    "manje 7.5",
+    "PSG će imati manje od 7.5 šuteva u okvir gola",
+    1.09,
+    7.5
    ]
   ]
  },
@@ -10064,17 +12467,87 @@
   "primer": [
    [
     "",
+    "manje 12.5",
+    "Manchester City manje od 12.5 šuteva,",
+    3.0,
+    12.5
+   ],
+   [
+    "",
+    "vise 12.5",
+    "Manchester City više od 12.5 šuteva",
+    1.29,
+    12.5
+   ],
+   [
+    "",
+    "manje 13.5",
+    "Manchester City manje od 13.5 šuteva,",
+    2.47,
+    13.5
+   ],
+   [
+    "",
+    "vise 13.5",
+    "Manchester City više od 13.5 šuteva",
+    1.44,
+    13.5
+   ],
+   [
+    "",
     "manje 14.5",
     "Manchester City manje od 14.5 šuteva,",
-    1.9,
+    2.07,
     14.5
    ],
    [
     "",
     "vise 14.5",
     "Manchester City više od 14.5 šuteva",
-    1.82,
+    1.65,
     14.5
+   ],
+   [
+    "",
+    "manje 15.5",
+    "Manchester City manje od 15.5 šuteva,",
+    1.78,
+    15.5
+   ],
+   [
+    "",
+    "vise 15.5",
+    "Manchester City više od 15.5 šuteva",
+    1.92,
+    15.5
+   ],
+   [
+    "",
+    "manje 16.5",
+    "Manchester City manje od 16.5 šuteva,",
+    1.56,
+    16.5
+   ],
+   [
+    "",
+    "vise 16.5",
+    "Manchester City više od 16.5 šuteva",
+    2.25,
+    16.5
+   ],
+   [
+    "",
+    "manje 17.5",
+    "Manchester City manje od 17.5 šuteva,",
+    1.39,
+    17.5
+   ],
+   [
+    "",
+    "vise 17.5",
+    "Manchester City više od 17.5 šuteva",
+    2.62,
+    17.5
    ]
   ]
  },
@@ -10083,17 +12556,87 @@
   "primer": [
    [
     "",
+    "manje 10.5",
+    "PSG manje od 10.5 šuteva",
+    3.2,
+    10.5
+   ],
+   [
+    "",
+    "vise 10.5",
+    "PSG više od 10.5 šuteva",
+    1.26,
+    10.5
+   ],
+   [
+    "",
+    "manje 11.5",
+    "PSG manje od 11.5 šuteva",
+    2.62,
+    11.5
+   ],
+   [
+    "",
+    "vise 11.5",
+    "PSG više od 11.5 šuteva",
+    1.43,
+    11.5
+   ],
+   [
+    "",
     "manje 12.5",
     "PSG manje od 12.5 šuteva",
-    1.97,
+    2.15,
     12.5
    ],
    [
     "",
     "vise 12.5",
     "PSG više od 12.5 šuteva",
-    1.74,
+    1.63,
     12.5
+   ],
+   [
+    "",
+    "manje 13.5",
+    "PSG manje od 13.5 šuteva",
+    1.8,
+    13.5
+   ],
+   [
+    "",
+    "vise 13.5",
+    "PSG više od 13.5 šuteva",
+    1.9,
+    13.5
+   ],
+   [
+    "",
+    "manje 14.5",
+    "PSG manje od 14.5 šuteva",
+    1.57,
+    14.5
+   ],
+   [
+    "",
+    "vise 14.5",
+    "PSG više od 14.5 šuteva",
+    2.25,
+    14.5
+   ],
+   [
+    "",
+    "manje 15.5",
+    "PSG manje od 15.5 šuteva",
+    1.38,
+    15.5
+   ],
+   [
+    "",
+    "vise 15.5",
+    "PSG više od 15.5 šuteva",
+    2.67,
+    15.5
    ]
   ]
  },
@@ -10102,17 +12645,17 @@
   "primer": [
    [
     "/*01-",
-    "manje 10.5",
-    "Manchester City manje od 10.5 faulova",
-    2.02,
-    10.5
+    "manje 11.5",
+    "Manchester City manje od 11.5 faulova",
+    1.83,
+    11.5
    ],
    [
     "/*01+",
-    "vise 10.5",
-    "Manchester City više od 10.5 faulova",
-    1.7,
-    10.5
+    "vise 11.5",
+    "Manchester City više od 11.5 faulova",
+    1.87,
+    11.5
    ]
   ]
  },
@@ -10123,14 +12666,14 @@
     "/*02-",
     "manje 10.5",
     "PSG manje od 10.5 faulova",
-    1.69,
+    1.76,
     10.5
    ],
    [
     "/*02+",
     "vise 10.5",
     "PSG više od 10.5 faulova",
-    2.05,
+    1.95,
     10.5
    ]
   ]
@@ -10423,27 +12966,15 @@
    ]
   ]
  },
- "Enzo Maresca dobija karton": {
+ "Ukupno dodavanja Manchester City": {
   "mecova": 1,
   "primer": [
    [
     "",
-    "da",
-    "Enzo Maresca će dobiti karton. Za mečeve koji uklj",
-    5.0,
-    15.0
-   ]
-  ]
- },
- "Luis Enrique dobija karton": {
-  "mecova": 1,
-  "primer": [
-   [
-    "",
-    "da",
-    "Luis Enrique će dobiti karton. Za mečeve koji uklj",
-    5.0,
-    15.0
+    "vise 529.5",
+    "Manchester City više od 529.5 dodavanja",
+    1.85,
+    529.5
    ]
   ]
  }
