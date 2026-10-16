@@ -13,7 +13,7 @@
     "",
     "vise 0.5",
     "Više od 0.5 golova u 1. poluvremenu",
-    1.29,
+    1.28,
     0.5
    ],
    [
@@ -41,7 +41,7 @@
     "",
     "vise 2.5",
     "Više od 2.5 golova u 1. poluvremenu",
-    5.25,
+    5.2,
     2.5
    ],
    [
@@ -74,21 +74,21 @@
     "1",
     "nordsjalland",
     "Nordsjalland pobednik u 1. poluvremenu",
-    2.0,
+    1.97,
     1.0
    ],
    [
     "0",
     "nereseno",
     "1. poluvreme završava nerešeno",
-    2.52,
+    2.55,
     1.0
    ],
    [
     "2",
     "cska sofia fc",
     "CSKA Sofia FC pobednik u 1. poluvremenu",
-    5.15,
+    5.25,
     1.0
    ]
   ]
@@ -100,7 +100,7 @@
     "1",
     "1",
     "Nordsjalland pobednik u 1. poluvremenu ili na kraj",
-    1.37,
+    1.36,
     1.0
    ],
    [
@@ -114,7 +114,7 @@
     "2",
     "2",
     "CSKA Sofia FC pobednik u 1. poluvremenu ili na kra",
-    3.55,
+    3.65,
     1.0
    ]
   ]
@@ -126,7 +126,7 @@
     "",
     "1:0",
     "Biće ostvaren u bilo kom trenutku tokom regularnog",
-    1.45,
+    1.44,
     1.0
    ],
    [
@@ -147,7 +147,7 @@
     "",
     "0:1",
     "Biće ostvaren u bilo kom trenutku tokom regularnog",
-    2.9,
+    2.95,
     0.0
    ],
    [
@@ -161,21 +161,21 @@
     "",
     "3:0",
     "Biće ostvaren u bilo kom trenutku tokom regularnog",
-    4.4,
+    4.35,
     3.0
    ],
    [
     "",
     "3:1",
     "Biće ostvaren u bilo kom trenutku tokom regularnog",
-    5.3,
+    5.25,
     3.0
    ],
    [
     "",
     "1:2",
     "Biće ostvaren u bilo kom trenutku tokom regularnog",
-    6.1,
+    6.2,
     1.0
    ],
    [
@@ -189,21 +189,21 @@
     "",
     "0:2",
     "Biće ostvaren u bilo kom trenutku tokom regularnog",
-    8.4,
+    8.6,
     0.0
    ],
    [
     "",
     "4:0",
     "Biće ostvaren u bilo kom trenutku tokom regularnog",
-    8.7,
+    8.6,
     4.0
    ],
    [
     "",
     "4:1",
     "Biće ostvaren u bilo kom trenutku tokom regularnog",
-    9.9,
+    9.8,
     4.0
    ]
   ]
@@ -222,7 +222,7 @@
     "",
     "0:1, 0:2 ili 0:3",
     "Utakmica će završiti rezultatom 0:1, 0:2 ili 0:3",
-    10.0,
+    11.0,
     3.0
    ],
    [
@@ -264,7 +264,7 @@
     "",
     "2:3, 2:4, 3:4 ili 1:5",
     "Utakmica će završiti rezultatom 2:3, 2:4, 3:4 ili ",
-    33.0,
+    34.0,
     5.0
    ],
    [
@@ -311,21 +311,21 @@
     "",
     "1 & vise 1.5",
     "Nordsjalland pobednik utakmice i više od 1.5 gola ",
-    1.75,
+    1.74,
     1.5
    ],
    [
     "",
     "x & vise 1.5",
     "Nerešeno na kraju utakmice i više od 1.5 gola na u",
-    5.1,
+    5.0,
     1.5
    ],
    [
     "",
     "2 & vise 1.5",
     "CSKA Sofia FC pobednik utakmice i više od 1.5 gola",
-    6.1,
+    6.4,
     1.5
    ]
   ]
@@ -344,21 +344,21 @@
     "",
     "x & manje 2.5",
     "Nerešeno na kraju utakmice  i manje od 2.5 gola na",
-    5.5,
+    5.45,
     2.5
    ],
    [
     "",
     "2 & manje 2.5",
     "CSKA Sofia FC pobednik utakmice i manje od 2.5 gol",
-    9.5,
+    9.9,
     2.5
    ],
    [
     "",
     "1 & vise 2.5",
     "Nordsjalland pobednik utakmice i više od 2.5 gola ",
-    2.12,
+    2.1,
     2.5
    ],
    [
@@ -372,7 +372,7 @@
     "",
     "2 & vise 2.5",
     "CSKA Sofia FC pobednik utakmice i više od 2.5 gola",
-    7.1,
+    7.4,
     2.5
    ]
   ]
@@ -391,14 +391,14 @@
     "",
     "x & manje 3.5",
     "Nerešeno na kraju utakmice  i manje od 3.5 gola na",
-    5.5,
+    5.45,
     3.5
    ],
    [
     "",
     "2 & manje 3.5",
     "CSKA Sofia FC pobednik utakmice i manje od 3.5 gol",
-    6.2,
+    6.4,
     3.5
    ],
    [
@@ -438,14 +438,14 @@
     "",
     "x & manje 4.5",
     "Nerešeno na kraju utakmice  i manje od 4.5 gola na",
-    4.3,
+    4.25,
     4.5
    ],
    [
     "",
     "2 & manje 4.5",
     "CSKA Sofia FC pobednik utakmice i manje od 4.5 gol",
-    5.6,
+    5.8,
     4.5
    ],
    [
@@ -478,14 +478,14 @@
     "10-",
     "1x & manje od 1.5",
     "Nordsjalland će pobediti ili će biti nerešeno i bi",
-    4.5,
+    4.45,
     1.5
    ],
    [
     "10+",
     "1x & vise od 1.5",
     "Nordsjalland će pobediti ili će biti nerešeno i bi",
-    1.3,
+    1.29,
     1.5
    ],
    [
@@ -499,14 +499,14 @@
     "02+",
     "x2 & vise od 1.5",
     "Biće nerešeno ili CSKA Sofia FC će pobediti i biće",
-    2.77,
+    2.8,
     1.5
    ],
    [
     "12-",
     "12 & manje od 1.5",
     "Nordsjalland ili CSKA Sofia FC će pobediti i biće ",
-    4.5,
+    4.55,
     1.5
    ],
    [
@@ -525,14 +525,14 @@
     "10-",
     "1x & manje od 2.5",
     "Nordsjalland će pobediti ili će biti nerešeno i bi",
-    2.4,
+    2.37,
     2.5
    ],
    [
     "10+",
     "1x & vise od 2.5",
     "Nordsjalland će pobediti ili će biti nerešeno i bi",
-    1.74,
+    1.73,
     2.5
    ],
    [
@@ -546,14 +546,14 @@
     "02+",
     "x2 & vise od 2.5",
     "Biće nerešeno ili CSKA Sofia FC će pobediti i biće",
-    4.1,
+    4.2,
     2.5
    ],
    [
     "12-",
     "12 & manje od 2.5",
     "Nordsjalland ili CSKA Sofia FC će pobediti i biće ",
-    2.9,
+    2.92,
     2.5
    ],
    [
@@ -572,35 +572,35 @@
     "10-",
     "1x & manje od 3.5",
     "Nordsjalland će pobediti ili će biti nerešeno i bi",
-    1.7,
+    1.69,
     3.5
    ],
    [
     "10+",
     "1x & vise od 3.5",
     "Nordsjalland će pobediti ili će biti nerešeno i bi",
-    2.47,
+    2.45,
     3.5
    ],
    [
     "02-",
     "x2 & manje od 3.5",
     "Biće nerešeno ili CSKA Sofia FC će pobediti i biće",
-    2.92,
+    2.95,
     3.5
    ],
    [
     "02+",
     "x2 & vise od 3.5",
     "Biće nerešeno ili CSKA Sofia FC će pobediti i biće",
-    5.3,
+    5.35,
     3.5
    ],
    [
     "12-",
     "12 & manje od 3.5",
     "Nordsjalland ili CSKA Sofia FC će pobediti i biće ",
-    1.76,
+    1.77,
     3.5
    ],
    [
@@ -619,7 +619,7 @@
     "10-",
     "1x & manje od 4.5",
     "Nordsjalland će pobediti ili će biti nerešeno i bi",
-    1.34,
+    1.33,
     4.5
    ],
    [
@@ -633,14 +633,14 @@
     "02-",
     "x2 & manje od 4.5",
     "Biće nerešeno ili CSKA Sofia FC će pobediti i biće",
-    2.45,
+    2.47,
     4.5
    ],
    [
     "02+",
     "x2 & vise od 4.5",
     "Biće nerešeno ili CSKA Sofia FC će pobediti i biće",
-    9.6,
+    9.8,
     4.5
    ],
    [
@@ -666,21 +666,21 @@
     "10-",
     "1x & manje od 5.5",
     "Nordsjalland će pobediti ili će biti nerešeno i bi",
-    1.21,
+    1.2,
     5.5
    ],
    [
     "10+",
     "1x & vise od 5.5",
     "Nordsjalland će pobediti ili će biti nerešeno i bi",
-    6.2,
+    6.1,
     5.5
    ],
    [
     "02-",
     "x2 & manje od 5.5",
     "Biće nerešeno ili CSKA Sofia FC će pobediti i biće",
-    2.32,
+    2.35,
     5.5
    ],
    [
@@ -734,14 +734,14 @@
     "",
     "manje 0.5 & manje 1.5",
     "Manje od 0.5 golova u 1. poluvremenu & manje od 1.",
-    6.1,
+    6.2,
     1.5
    ],
    [
     "",
     "vise 0.5 & vise 2.5",
     "Više od 0.5 golova u 1. poluvremenu & više od 2.5 ",
-    1.74,
+    1.73,
     2.5
    ],
    [
@@ -769,7 +769,7 @@
     "",
     "vise 1.5 & vise 2.5",
     "Više od 1.5 golova u 1. poluvremenu & više od 2.5 ",
-    2.52,
+    2.5,
     2.5
    ],
    [
@@ -783,14 +783,14 @@
     "",
     "manje 1.5 & vise 2.5",
     "Manje od 1.5 golova u 1. poluvremenu & više od 2.5",
-    3.55,
+    3.6,
     2.5
    ],
    [
     "",
     "manje 1.5 & manje 2.5",
     "Manje od 1.5 golova u 1. poluvremenu & manje od 2.",
-    2.5,
+    2.52,
     2.5
    ]
   ]
@@ -816,7 +816,7 @@
     "0+1+",
     "vise 0.5 & vise 1.5",
     "Više od 0.5 golova u 1. poluvremenu & više od 1.5 ",
-    2.37,
+    2.35,
     2.0
    ],
    [
@@ -865,7 +865,7 @@
     "0-1-",
     "manje 0.5 & manje 1.5",
     "Manje od 0.5 golova u 1. poluvremenu & manje od 1.",
-    6.1,
+    6.2,
     2.0
    ],
    [
@@ -905,7 +905,7 @@
     "+1+2",
     "vise 1.5 ili vise 2.5",
     "Više 1.5 ili više 2.5",
-    1.7,
+    1.69,
     2.5
    ],
    [
@@ -947,7 +947,7 @@
     "-1+2",
     "manje 1.5 ili vise 2.5",
     "Manje 1.5 ili više 2.5",
-    1.35,
+    1.36,
     2.5
    ],
    [
@@ -987,14 +987,14 @@
     "0",
     "nereseno",
     "Nerešeno u barem jednom poluvremenu",
-    1.65,
+    1.66,
     null
    ],
    [
     "2",
     "cska sofia fc",
     "CSKA Sofia FC pobeđuje barem jedno poluvreme",
-    2.82,
+    2.85,
     null
    ]
   ]
@@ -1025,14 +1025,14 @@
     "1",
     "nordsjalland",
     "Nordsjalland pobeđuje, X vraća ulog",
-    1.2,
+    1.19,
     null
    ],
    [
     "2",
     "cska sofia fc",
     "CSKA Sofia FC pobeđuje, X vraća ulog",
-    4.0,
+    4.1,
     null
    ]
   ]
@@ -1077,7 +1077,7 @@
     "1",
     "1",
     "Utakmica će završiti sa 1 golom",
-    6.0,
+    6.1,
     6.0
    ],
    [
@@ -1098,14 +1098,14 @@
     "4",
     "4",
     "Utakmica će završiti sa 4 gola",
-    5.1,
+    5.0,
     6.0
    ],
    [
     "5",
     "5",
     "Utakmica će završiti sa 5 golova",
-    7.6,
+    7.7,
     6.0
    ],
    [
@@ -1131,14 +1131,14 @@
     "-1",
     "manje 2.5 & da",
     "Manje od 2.5 gola i oba tima daju gol",
-    7.4,
+    7.3,
     2.5
    ],
    [
     "+2",
     "vise 2.5 & ne",
     "Više od 2.5 gola i barem jedan tim ne daje gol",
-    5.55,
+    5.5,
     2.5
    ],
    [
@@ -1194,7 +1194,7 @@
     "+2",
     "vise 4.5 & ne",
     "Više od 4.5 gola i barem jedan tim ne daje gol",
-    21.0,
+    20.0,
     4.5
    ],
    [
@@ -1239,7 +1239,7 @@
     "10",
     "da/ne",
     "Oba tima daju gol u 1. poluvremenu i barem jedan t",
-    5.2,
+    5.25,
     2.0
    ],
    [
@@ -1279,42 +1279,42 @@
     "125",
     "1 & 2-5",
     "Nordsjalland pobednik i 2-5 golova",
-    2.0,
+    1.97,
     -5.0
    ],
    [
     "126",
     "1 & 2-6",
     "Nordsjalland pobednik i 2-6 golova",
-    1.85,
+    1.83,
     -6.0
    ],
    [
     "135",
     "1 & 3-5",
     "Nordsjalland pobednik i 3-5 golova",
-    2.5,
+    2.47,
     -5.0
    ],
    [
     "136",
     "1 & 3-6",
     "Nordsjalland pobednik i 3-6 golova",
-    2.27,
+    2.25,
     -6.0
    ],
    [
     "024",
     "x & 2-4",
     "Nerešeno i 2-4 gola",
-    5.4,
+    5.35,
     -4.0
    ],
    [
     "026",
     "x & 2-6",
     "Nerešeno i 2-6 gola",
-    5.1,
+    5.0,
     -6.0
    ],
    [
@@ -1328,21 +1328,21 @@
     "223",
     "2 & 2-3",
     "CSKA Sofia FC pobednik i 2-3 gola",
-    8.6,
+    8.9,
     -3.0
    ],
    [
     "224",
     "2 & 2-4",
     "CSKA Sofia FC pobednik i 2-4 gola",
-    7.5,
+    7.8,
     -4.0
    ],
    [
     "225",
     "2 & 2-5",
     "CSKA Sofia FC pobednik i 2-5 golova",
-    6.5,
+    6.7,
     -5.0
    ]
   ]
@@ -1361,14 +1361,14 @@
     "12",
     "1 & ne",
     "Nordsjalland pobednik i barem jedan tim ne daje go",
-    2.72,
+    2.7,
     1.0
    ],
    [
     "01",
     "x & da",
     "Nerešeno i oba tima daju gol",
-    5.1,
+    5.0,
     2.0
    ],
    [
@@ -1382,14 +1382,14 @@
     "21",
     "2 & da",
     "CSKA Sofia FC pobednik i oba tima daju gol",
-    7.8,
+    8.1,
     2.0
    ],
    [
     "22",
     "2 & ne",
     "CSKA Sofia FC pobednik i barem jedan tim ne daje g",
-    8.9,
+    9.2,
     2.0
    ]
   ]
@@ -1408,14 +1408,14 @@
     "0",
     "x & da",
     "Nerešeno i gol u oba poluvremena",
-    7.0,
+    6.9,
     2.0
    ],
    [
     "2",
     "2 & da",
     "CSKA Sofia FC pobednik i gol u oba poluvremena",
-    7.9,
+    8.1,
     2.0
    ]
   ]
@@ -1427,7 +1427,7 @@
     "1-",
     "1 ili manje 0.5",
     "Nordsjalland pobednik utakmice ili 1. poluvreme ma",
-    1.26,
+    1.25,
     0.5
    ],
    [
@@ -1455,7 +1455,7 @@
     "2-",
     "2 ili manje 0.5",
     "CSKA Sofia FC pobednik utakmice ili 1. poluvreme m",
-    2.42,
+    2.47,
     0.5
    ],
    [
@@ -1474,14 +1474,14 @@
     "1-",
     "1 ili manje 1.5",
     "Nordsjalland pobednik utakmice ili 1. poluvreme ma",
-    1.09,
+    1.08,
     1.5
    ],
    [
     "1+",
     "1 ili vise 1.5",
     "Nordsjalland pobednik utakmice ili 1. poluvreme vi",
-    1.27,
+    1.26,
     1.5
    ],
    [
@@ -1495,21 +1495,21 @@
     "0+",
     "x ili vise 1.5",
     "Nerešeno na kraju utakmice ili 1. poluvreme više o",
-    1.71,
+    1.7,
     1.5
    ],
    [
     "2-",
     "2 ili manje 1.5",
     "CSKA Sofia FC pobednik utakmice ili 1. poluvreme m",
-    1.43,
+    1.44,
     1.5
    ],
    [
     "2+",
     "2 ili vise 1.5",
     "CSKA Sofia FC pobednik utakmice ili 1. poluvreme v",
-    1.83,
+    1.85,
     1.5
    ]
   ]
@@ -1521,7 +1521,7 @@
     "1+",
     "1 ili vise 2.5",
     "Nordsjalland pobednik utakmice ili 1. poluvreme vi",
-    1.4,
+    1.39,
     2.5
    ],
    [
@@ -1549,7 +1549,7 @@
     "2+",
     "2 ili vise 2.5",
     "CSKA Sofia FC pobednik utakmice ili 1. poluvreme v",
-    2.92,
+    2.95,
     2.5
    ]
   ]
@@ -1561,7 +1561,7 @@
     "1+",
     "1 ili vise 3.5",
     "Nordsjalland pobednik utakmice ili 1. poluvreme vi",
-    1.46,
+    1.45,
     3.5
    ],
    [
@@ -1575,7 +1575,7 @@
     "0+",
     "x ili vise 3.5",
     "Nerešeno na kraju utakmice ili 1. poluvreme više o",
-    3.45,
+    3.4,
     3.5
    ],
    [
@@ -1589,7 +1589,7 @@
     "2+",
     "2 ili vise 3.5",
     "CSKA Sofia FC pobednik utakmice ili 1. poluvreme v",
-    4.0,
+    4.1,
     3.5
    ]
   ]
@@ -1601,21 +1601,21 @@
     "1+",
     "1 ili vise 4.5",
     "Nordsjalland pobednik utakmice ili 1. poluvreme vi",
-    1.48,
+    1.47,
     4.5
    ],
    [
     "0+",
     "x ili vise 4.5",
     "Nerešeno na kraju utakmice ili 1. poluvreme više o",
-    3.9,
+    3.85,
     4.5
    ],
    [
     "2+",
     "2 ili vise 4.5",
     "CSKA Sofia FC pobednik utakmice ili 1. poluvreme v",
-    4.65,
+    4.8,
     4.5
    ]
   ]
@@ -1627,42 +1627,42 @@
     "1023",
     "1x & 2-3",
     "Nordsjalland će pobediti ili će biti nerešeno i bi",
-    2.25,
+    2.22,
     -3.0
    ],
    [
     "1024",
     "1x & 2-4",
     "Nordsjalland će pobediti ili će biti nerešeno i bi",
-    1.66,
+    1.65,
     -4.0
    ],
    [
     "1025",
     "1x & 2-5",
     "Nordsjalland će pobediti ili će biti nerešeno i bi",
-    1.46,
+    1.44,
     -5.0
    ],
    [
     "1026",
     "1x & 2-6",
     "Nordsjalland će pobediti ili će biti nerešeno i bi",
-    1.36,
+    1.35,
     -6.0
    ],
    [
     "1035",
     "1x & 3-5",
     "Nordsjalland će pobediti ili će biti nerešeno i bi",
-    2.05,
+    2.02,
     -5.0
    ],
    [
     "1036",
     "1x & 3-6",
     "Nordsjalland će pobediti ili će biti nerešeno i bi",
-    1.85,
+    1.83,
     -6.0
    ],
    [
@@ -1683,28 +1683,28 @@
     "0225",
     "x2 & 2-5",
     "Biće nerešeno ili CSKA Sofia FC će pobediti i biće",
-    2.95,
+    3.0,
     -5.0
    ],
    [
     "0226",
     "x2 & 2-6",
     "Biće nerešeno ili CSKA Sofia FC će pobediti i biće",
-    2.82,
+    2.85,
     -6.0
    ],
    [
     "0235",
     "x2 & 3-5",
     "Biće nerešeno ili CSKA Sofia FC će pobediti i biće",
-    4.55,
+    4.6,
     -5.0
    ],
    [
     "0235",
     "x2 & 3-6",
     "Biće nerešeno ili CSKA Sofia FC će pobediti i biće",
-    4.25,
+    4.3,
     -6.0
    ]
   ]
@@ -1751,7 +1751,7 @@
     "022",
     "x2 & ne",
     "Biće nerešeno ili CSKA Sofia FC će pobediti i bare",
-    4.9,
+    5.0,
     2.0
    ]
   ]
@@ -1763,7 +1763,7 @@
     "101",
     "1x & da",
     "Nordsjalland će pobediti ili će biti nerešeno i bi",
-    1.66,
+    1.64,
     1.0
    ],
    [
@@ -1796,21 +1796,21 @@
     "",
     "1 & vise 0.5",
     "Nordsjalland pobednik utakmice i više od 0.5 gola ",
-    1.5,
+    1.49,
     0.5
    ],
    [
     "",
     "x & vise 0.5",
     "Nerešeno na kraju utakmice i više od 0.5 gola na u",
-    5.1,
+    5.0,
     0.5
    ],
    [
     "",
     "2 & vise 0.5",
     "CSKA Sofia FC pobednik utakmice i više od 0.5 gola",
-    4.8,
+    5.0,
     0.5
    ]
   ]
@@ -1862,7 +1862,7 @@
     "",
     "2-3",
     "CSKA Sofia FC 2-3 gola na utakmici",
-    3.7,
+    3.75,
     -3.0
    ]
   ]
@@ -1888,7 +1888,7 @@
     "23",
     "2-3",
     "Nordsjalland 2 ili 3 gola u svakom poluvremenu",
-    9.7,
+    9.6,
     3.0
    ]
   ]
@@ -1900,14 +1900,14 @@
     "12",
     "1-2",
     "CSKA Sofia FC 1 ili 2 gola u svakom poluvremenu",
-    5.7,
+    5.75,
     2.0
    ],
    [
     "13",
     "1-3",
     "CSKA Sofia FC 1,2 ili 3 gola u svakom poluvremenu",
-    5.4,
+    5.5,
     3.0
    ],
    [
@@ -1926,14 +1926,14 @@
     "0",
     "0",
     "Nordsjalland ne daje gol",
-    6.5,
+    6.6,
     3.0
    ],
    [
     "1",
     "1",
     "Nordsjalland daje tačno 1 gol",
-    3.45,
+    3.5,
     3.0
    ],
    [
@@ -1947,7 +1947,7 @@
     "3",
     "3+",
     "Nordsjalland daje 3 ili više golova",
-    2.65,
+    2.62,
     3.0
    ]
   ]
@@ -1959,28 +1959,28 @@
     "0",
     "0",
     "CSKA Sofia FC ne daje gol",
-    2.47,
+    2.45,
     3.0
    ],
    [
     "1",
     "1",
     "CSKA Sofia FC daje tačno 1 gol",
-    2.52,
+    2.5,
     3.0
    ],
    [
     "2",
     "2",
     "CSKA Sofia FC daje tačno 2 gola",
-    4.75,
+    4.8,
     3.0
    ],
    [
     "3",
     "3+",
     "CSKA Sofia FC daje 3 ili više golova",
-    9.3,
+    9.5,
     3.0
    ]
   ]
@@ -1999,7 +1999,7 @@
     "2",
     "ne",
     "Nordsjalland ne daje gol na utakmici",
-    6.8,
+    6.9,
     null
    ]
   ]
@@ -2011,14 +2011,14 @@
     "1",
     "da",
     "CSKA Sofia FC daje gol na utakmici",
-    1.53,
+    1.54,
     null
    ],
    [
     "2",
     "ne",
     "CSKA Sofia FC ne daje gol na utakmici",
-    2.52,
+    2.5,
     null
    ]
   ]
@@ -2030,7 +2030,7 @@
     "",
     "vise 0.5 & vise 1.5",
     "1. Poluvreme Nordsjalland više od 0.5 golova i Nor",
-    1.87,
+    1.85,
     1.5
    ],
    [
@@ -2051,14 +2051,14 @@
     "",
     "manje 0.5 & manje 1.5",
     "1. Poluvreme Nordsjalland manje od 0.5 golova i No",
-    3.35,
+    3.4,
     1.5
    ],
    [
     "",
     "vise 0.5 & vise 2.5",
     "1. Poluvreme Nordsjalland više od 0.5 golova i Nor",
-    2.9,
+    2.85,
     2.5
    ],
    [
@@ -2079,14 +2079,14 @@
     "",
     "manje 0.5 & manje 2.5",
     "1. Poluvreme Nordsjalland manje od 0.5 golova i No",
-    2.62,
+    2.65,
     2.5
    ],
    [
     "",
     "vise 1.5 & vise 2.5",
     "1. Poluvreme Nordsjalland više od 1.5 golova i Nor",
-    4.35,
+    4.3,
     2.5
    ],
    [
@@ -2107,7 +2107,7 @@
     "",
     "manje 1.5 & manje 2.5",
     "1. Poluvreme Nordsjalland manje od 1.5 golova i No",
-    1.58,
+    1.59,
     2.5
    ]
   ]
@@ -2119,7 +2119,7 @@
     "",
     "vise 0.5 & vise 1.5",
     "1. Poluvreme CSKA Sofia FC više od 0.5 golova i CS",
-    4.4,
+    4.45,
     1.5
    ],
    [
@@ -2133,14 +2133,14 @@
     "",
     "manje 0.5 & vise 1.5",
     "1. Poluvreme CSKA Sofia FC manje od 0.5 golova i C",
-    9.0,
+    9.1,
     1.5
    ],
    [
     "",
     "manje 0.5 & manje 1.5",
     "1. Poluvreme CSKA Sofia FC manje od 0.5 golova i C",
-    1.62,
+    1.61,
     1.5
    ],
    [
@@ -2161,14 +2161,14 @@
     "",
     "manje 0.5 & vise 2.5",
     "1. Poluvreme CSKA Sofia FC manje od 0.5 golova i C",
-    32.0,
+    33.0,
     2.5
    ],
    [
     "",
     "manje 0.5 & manje 2.5",
     "1. Poluvreme CSKA Sofia FC manje od 0.5 golova i C",
-    1.48,
+    1.47,
     2.5
    ],
    [
@@ -2182,7 +2182,7 @@
     "",
     "vise 1.5 & manje 2.5",
     "1. Poluvreme CSKA Sofia FC više od 1.5 golova i CS",
-    15.0,
+    16.0,
     2.5
    ],
    [
@@ -2196,7 +2196,7 @@
     "",
     "manje 1.5 & manje 2.5",
     "1. Poluvreme CSKA Sofia FC manje od 1.5 golova i C",
-    1.08,
+    1.07,
     2.5
    ]
   ]
@@ -2208,7 +2208,7 @@
     "",
     "vise 0.5 & vise 0.5",
     "Nordsjalland daje više od 0.5 golova u 1. poluvrem",
-    2.2,
+    2.17,
     2.0
    ],
    [
@@ -2222,28 +2222,28 @@
     "",
     "vise 0.5 & vise 1.5",
     "Nordsjalland daje više od 0.5 golova u 1. poluvrem",
-    4.25,
+    4.2,
     2.0
    ],
    [
     "",
     "vise 0.5 & manje 1.5",
     "Nordsjalland daje više od 0.5 golova u 1. poluvrem",
-    2.2,
+    2.17,
     2.0
    ],
    [
     "",
     "vise 0.5 & vise 2.5",
     "Nordsjalland daje više od 0.5 golova u 1. poluvrem",
-    9.6,
+    9.4,
     2.0
    ],
    [
     "",
     "vise 0.5 & manje 2.5",
     "Nordsjalland daje više od 0.5 golova u 1. poluvrem",
-    1.71,
+    1.7,
     2.0
    ],
    [
@@ -2257,7 +2257,7 @@
     "",
     "manje 0.5 & manje 0.5",
     "Nordsjalland daje manje od 0.5 golova u 1. poluvre",
-    6.3,
+    6.4,
     2.0
    ],
    [
@@ -2271,7 +2271,7 @@
     "",
     "manje 0.5 & manje 1.5",
     "Nordsjalland daje manje od 0.5 golova u 1. poluvre",
-    3.35,
+    3.4,
     2.0
    ],
    [
@@ -2285,7 +2285,7 @@
     "",
     "manje 0.5 & manje 2.5",
     "Nordsjalland daje manje od 0.5 golova u 1. poluvre",
-    2.62,
+    2.65,
     2.0
    ]
   ]
@@ -2297,7 +2297,7 @@
     "",
     "vise 0.5 & vise 0.5",
     "CSKA Sofia FC daje više od 0.5 golova u 1. poluvre",
-    5.4,
+    5.45,
     2.0
    ],
    [
@@ -2318,7 +2318,7 @@
     "",
     "vise 0.5 & manje 1.5",
     "CSKA Sofia FC daje više od 0.5 golova u 1. poluvre",
-    2.82,
+    2.85,
     2.0
    ],
    [
@@ -2332,7 +2332,7 @@
     "",
     "vise 0.5 & manje 2.5",
     "CSKA Sofia FC daje više od 0.5 golova u 1. poluvre",
-    2.6,
+    2.62,
     2.0
    ],
    [
@@ -2346,35 +2346,35 @@
     "",
     "manje 0.5 & manje 0.5",
     "CSKA Sofia FC daje manje od 0.5 golova u 1. poluvr",
-    2.45,
+    2.42,
     2.0
    ],
    [
     "",
     "manje 0.5 & vise 1.5",
     "CSKA Sofia FC daje manje od 0.5 golova u 1. poluvr",
-    9.0,
+    9.1,
     2.0
    ],
    [
     "",
     "manje 0.5 & manje 1.5",
     "CSKA Sofia FC daje manje od 0.5 golova u 1. poluvr",
-    1.62,
+    1.61,
     2.0
    ],
    [
     "",
     "manje 0.5 & vise 2.5",
     "CSKA Sofia FC daje manje od 0.5 golova u 1. poluvr",
-    32.0,
+    33.0,
     2.0
    ],
    [
     "",
     "manje 0.5 & manje 2.5",
     "CSKA Sofia FC daje manje od 0.5 golova u 1. poluvr",
-    1.48,
+    1.47,
     2.0
    ]
   ]
@@ -2393,28 +2393,28 @@
     "2-",
     "2 & manje 0.5",
     "CSKA Sofia FC pobednik i Nordsjalland manje od 0.5",
-    8.6,
+    8.8,
     0.5
    ],
    [
     "1+",
     "1 & vise 0.5",
     "Nordsjalland pobednik i Nordsjalland više od 0.5 g",
-    1.5,
+    1.49,
     0.5
    ],
    [
     "0+",
     "x & vise 0.5",
     "nerešeno i Nordsjalland više od 0.5 gola na utakmi",
-    5.1,
+    5.0,
     0.5
    ],
    [
     "2+",
     "2 & vise 0.5",
     "CSKA Sofia FC pobednik i Nordsjalland više od 0.5 ",
-    7.6,
+    7.9,
     0.5
    ]
   ]
@@ -2433,21 +2433,21 @@
     "0-",
     "x & manje 1.5",
     "nerešeno i Nordsjalland manje od 1.5 gola na utakm",
-    5.5,
+    5.45,
     1.5
    ],
    [
     "2-",
     "2 & manje 1.5",
     "CSKA Sofia FC pobednik i Nordsjalland manje od 1.5",
-    5.45,
+    5.65,
     1.5
    ],
    [
     "1+",
     "1 & vise 1.5",
     "Nordsjalland pobednik i Nordsjalland više od 1.5 g",
-    1.75,
+    1.74,
     1.5
    ],
    [
@@ -2461,7 +2461,7 @@
     "2+",
     "2 & vise 1.5",
     "CSKA Sofia FC pobednik i Nordsjalland više od 1.5 ",
-    20.0,
+    21.0,
     1.5
    ]
   ]
@@ -2480,21 +2480,21 @@
     "0-",
     "x & manje 2.5",
     "nerešeno i Nordsjalland manje od 2.5 gola na utakm",
-    4.3,
+    4.25,
     2.5
    ],
    [
     "2-",
     "2 & manje 2.5",
     "CSKA Sofia FC pobednik i Nordsjalland manje od 2.5",
-    4.9,
+    5.1,
     2.5
    ],
    [
     "1+",
     "1 & vise 2.5",
     "Nordsjalland pobednik i Nordsjalland više od 2.5 g",
-    2.7,
+    2.67,
     2.5
    ],
    [
@@ -2520,7 +2520,7 @@
     "1-",
     "1 & manje 3.5",
     "Nordsjalland pobednik i Nordsjalland manje od 3.5 ",
-    1.97,
+    1.95,
     3.5
    ],
    [
@@ -2534,7 +2534,7 @@
     "2-",
     "2 & manje 3.5",
     "CSKA Sofia FC pobednik i Nordsjalland manje od 3.5",
-    4.8,
+    5.0,
     3.5
    ],
    [
@@ -2567,21 +2567,21 @@
     "1-",
     "1 & manje 4.5",
     "Nordsjalland pobednik i Nordsjalland manje od 4.5 ",
-    1.65,
+    1.64,
     4.5
    ],
    [
     "0-",
     "x & manje 4.5",
     "nerešeno i Nordsjalland manje od 4.5 gola na utakm",
-    4.1,
+    4.0,
     4.5
    ],
    [
     "2-",
     "2 & manje 4.5",
     "CSKA Sofia FC pobednik i Nordsjalland manje od 4.5",
-    4.8,
+    5.0,
     4.5
    ],
    [
@@ -2614,7 +2614,7 @@
     "1-",
     "1 & manje 0.5",
     "Nordsjalland pobednik  i CSKA Sofia FC manje od 0.",
-    2.72,
+    2.7,
     0.5
    ],
    [
@@ -2635,14 +2635,14 @@
     "0+",
     "x & vise 0.5",
     "nerešeno i CSKA Sofia FC više od 0.5 gola na utakm",
-    5.1,
+    5.0,
     0.5
    ],
    [
     "2+",
     "2 & vise 0.5",
     "CSKA Sofia FC pobednik  i CSKA Sofia FC više od 0.",
-    4.8,
+    5.0,
     0.5
    ]
   ]
@@ -2654,14 +2654,14 @@
     "1-",
     "1 & manje 1.5",
     "Nordsjalland pobednik  i CSKA Sofia FC manje od 1.",
-    1.68,
+    1.67,
     1.5
    ],
    [
     "0-",
     "x & manje 1.5",
     "nerešeno i CSKA Sofia FC manje od 1.5 gola na utak",
-    5.5,
+    5.45,
     1.5
    ],
    [
@@ -2689,7 +2689,7 @@
     "2+",
     "2 & vise 1.5",
     "CSKA Sofia FC pobednik  i CSKA Sofia FC više od 1.",
-    6.1,
+    6.4,
     1.5
    ]
   ]
@@ -2701,21 +2701,21 @@
     "1-",
     "1 & manje 2.5",
     "Nordsjalland pobednik  i CSKA Sofia FC manje od 2.",
-    1.52,
+    1.51,
     2.5
    ],
    [
     "0-",
     "x & manje 2.5",
     "nerešeno i CSKA Sofia FC manje od 2.5 gola na utak",
-    4.3,
+    4.25,
     2.5
    ],
    [
     "2-",
     "2 & manje 2.5",
     "CSKA Sofia FC pobednik  i CSKA Sofia FC manje od 2",
-    6.5,
+    6.7,
     2.5
    ],
    [
@@ -2736,7 +2736,7 @@
     "2+",
     "2 & vise 2.5",
     "CSKA Sofia FC pobednik  i CSKA Sofia FC više od 2.",
-    11.0,
+    12.0,
     2.5
    ]
   ]
@@ -2748,7 +2748,7 @@
     "1-",
     "1 & manje 3.5",
     "Nordsjalland pobednik  i CSKA Sofia FC manje od 3.",
-    1.5,
+    1.49,
     3.5
    ],
    [
@@ -2762,7 +2762,7 @@
     "2-",
     "2 & manje 3.5",
     "CSKA Sofia FC pobednik  i CSKA Sofia FC manje od 3",
-    5.2,
+    5.4,
     3.5
    ],
    [
@@ -2783,7 +2783,7 @@
     "2+",
     "2 & vise 3.5",
     "CSKA Sofia FC pobednik  i CSKA Sofia FC više od 3.",
-    28.0,
+    29.0,
     3.5
    ]
   ]
@@ -2795,21 +2795,21 @@
     "1-",
     "1 & manje 4.5",
     "Nordsjalland pobednik  i CSKA Sofia FC manje od 4.",
-    1.5,
+    1.49,
     4.5
    ],
    [
     "0-",
     "x & manje 4.5",
     "nerešeno i CSKA Sofia FC manje od 4.5 gola na utak",
-    4.1,
+    4.0,
     4.5
    ],
    [
     "2-",
     "2 & manje 4.5",
     "CSKA Sofia FC pobednik  i CSKA Sofia FC manje od 4",
-    4.9,
+    5.1,
     4.5
    ],
    [
@@ -2830,7 +2830,7 @@
     "2+",
     "2 & vise 4.5",
     "CSKA Sofia FC pobednik  i CSKA Sofia FC više od 4.",
-    70.0,
+    75.0,
     4.5
    ]
   ]
@@ -2849,7 +2849,7 @@
     "2",
     "ne",
     "Nordsjalland ne pobeđuje bar jedno poluvreme",
-    3.4,
+    3.45,
     null
    ]
   ]
@@ -3900,21 +3900,21 @@
     "",
     "1-2",
     "Inter Escaldes 1-2 gola na utakmici",
-    1.76,
+    1.82,
     -2.0
    ],
    [
     "",
     "1-3",
     "Inter Escaldes  1-3 gola na utakmici",
-    1.62,
+    1.68,
     -3.0
    ],
    [
     "",
     "2-3",
     "Inter Escaldes 2-3 gola na utakmici",
-    4.0,
+    4.35,
     -3.0
    ]
   ]
@@ -3926,7 +3926,7 @@
     "",
     "1-2",
     "Universitatea Craiova 1-2 gola na utakmici",
-    1.64,
+    1.66,
     -2.0
    ],
    [
@@ -3940,7 +3940,7 @@
     "",
     "2-3",
     "Universitatea Craiova 2-3 gola na utakmici",
-    2.25,
+    2.2,
     -3.0
    ]
   ]
@@ -3952,21 +3952,21 @@
     "12",
     "1-2",
     "Inter Escaldes 1 ili 2 gola u svakom poluvremenu",
-    6.2,
+    6.7,
     2.0
    ],
    [
     "13",
     "1-3",
     "Inter Escaldes 1,2 ili 3 gola u svakom poluvremenu",
-    6.0,
+    6.5,
     3.0
    ],
    [
     "23",
     "2-3",
     "Inter Escaldes 2 ili 3 gola u svakom poluvremenu",
-    60.0,
+    65.0,
     3.0
    ]
   ]
@@ -3978,21 +3978,21 @@
     "12",
     "1-2",
     "Universitatea Craiova 1 ili 2 gola u svakom poluvr",
-    3.3,
+    3.15,
     2.0
    ],
    [
     "13",
     "1-3",
     "Universitatea Craiova 1,2 ili 3 gola u svakom polu",
-    2.85,
+    2.7,
     3.0
    ],
    [
     "23",
     "2-3",
     "Universitatea Craiova 2 ili 3 gola u svakom poluvr",
-    15.0,
+    14.0,
     3.0
    ]
   ]
@@ -4004,28 +4004,28 @@
     "0",
     "0",
     "Inter Escaldes ne daje gol",
-    2.32,
+    2.2,
     3.0
    ],
    [
     "1",
     "1",
     "Inter Escaldes daje tačno 1 gol",
-    2.5,
+    2.52,
     3.0
    ],
    [
     "2",
     "2",
     "Inter Escaldes daje tačno 2 gola",
-    5.1,
+    5.4,
     3.0
    ],
    [
     "3",
     "3+",
     "Inter Escaldes daje 3 ili više golova",
-    11.0,
+    12.0,
     3.0
    ]
   ]
@@ -4037,28 +4037,28 @@
     "0",
     "0",
     "Universitatea Craiova ne daje gol",
-    4.7,
+    5.1,
     3.0
    ],
    [
     "1",
     "1",
     "Universitatea Craiova daje tačno 1 gol",
-    2.9,
+    3.0,
     3.0
    ],
    [
     "2",
     "2",
     "Universitatea Craiova daje tačno 2 gola",
-    3.4,
+    3.35,
     3.0
    ],
    [
     "3",
     "3+",
     "Universitatea Craiova daje 3 ili više golova",
-    3.75,
+    3.4,
     3.0
    ]
   ]
@@ -4070,14 +4070,14 @@
     "1",
     "da",
     "Inter Escaldes daje gol na utakmici",
-    1.6,
+    1.66,
     null
    ],
    [
     "2",
     "ne",
     "Inter Escaldes ne daje gol na utakmici",
-    2.35,
+    2.22,
     null
    ]
   ]
@@ -4089,14 +4089,14 @@
     "1",
     "da",
     "Universitatea Craiova daje gol na utakmici",
-    1.19,
+    1.17,
     null
    ],
    [
     "2",
     "ne",
     "Universitatea Craiova ne daje gol na utakmici",
-    4.85,
+    5.2,
     null
    ]
   ]
@@ -4108,7 +4108,7 @@
     "",
     "vise 0.5 & vise 1.5",
     "1. Poluvreme Inter Escaldes više od 0.5 golova i I",
-    4.9,
+    5.25,
     1.5
    ],
    [
@@ -4122,49 +4122,49 @@
     "",
     "manje 0.5 & vise 1.5",
     "1. Poluvreme Inter Escaldes manje od 0.5 golova i ",
-    9.7,
+    10.0,
     1.5
    ],
    [
     "",
     "manje 0.5 & manje 1.5",
     "1. Poluvreme Inter Escaldes manje od 0.5 golova i ",
-    1.54,
+    1.5,
     1.5
    ],
    [
     "",
     "vise 0.5 & vise 2.5",
     "1. Poluvreme Inter Escaldes više od 0.5 golova i I",
-    12.0,
+    13.0,
     2.5
    ],
    [
     "",
     "vise 0.5 & manje 2.5",
     "1. Poluvreme Inter Escaldes više od 0.5 golova i I",
-    3.2,
+    3.25,
     2.5
    ],
    [
     "",
     "manje 0.5 & vise 2.5",
     "1. Poluvreme Inter Escaldes manje od 0.5 golova i ",
-    36.0,
+    40.0,
     2.5
    ],
    [
     "",
     "manje 0.5 & manje 2.5",
     "1. Poluvreme Inter Escaldes manje od 0.5 golova i ",
-    1.42,
+    1.39,
     2.5
    ],
    [
     "",
     "vise 1.5 & vise 2.5",
     "1. Poluvreme Inter Escaldes više od 1.5 golova i I",
-    18.0,
+    20.0,
     2.5
    ],
    [
@@ -4178,14 +4178,14 @@
     "",
     "manje 1.5 & vise 2.5",
     "1. Poluvreme Inter Escaldes manje od 1.5 golova i ",
-    16.0,
+    17.0,
     2.5
    ],
    [
     "",
     "manje 1.5 & manje 2.5",
     "1. Poluvreme Inter Escaldes manje od 1.5 golova i ",
-    1.06,
+    1.05,
     2.5
    ]
   ]
@@ -4197,42 +4197,42 @@
     "",
     "vise 0.5 & vise 1.5",
     "1. Poluvreme Universitatea Craiova više od 0.5 gol",
-    2.3,
+    2.17,
     1.5
    ],
    [
     "",
     "vise 0.5 & manje 1.5",
     "1. Poluvreme Universitatea Craiova više od 0.5 gol",
-    5.5,
+    5.65,
     1.5
    ],
    [
     "",
     "manje 0.5 & vise 1.5",
     "1. Poluvreme Universitatea Craiova manje od 0.5 go",
-    6.5,
+    6.3,
     1.5
    ],
    [
     "",
     "manje 0.5 & manje 1.5",
     "1. Poluvreme Universitatea Craiova manje od 0.5 go",
-    2.57,
+    2.72,
     1.5
    ],
    [
     "",
     "vise 0.5 & vise 2.5",
     "1. Poluvreme Universitatea Craiova više od 0.5 gol",
-    4.0,
+    3.7,
     2.5
    ],
    [
     "",
     "vise 0.5 & manje 2.5",
     "1. Poluvreme Universitatea Craiova više od 0.5 gol",
-    2.72,
+    2.75,
     2.5
    ],
    [
@@ -4246,14 +4246,14 @@
     "",
     "manje 0.5 & manje 2.5",
     "1. Poluvreme Universitatea Craiova manje od 0.5 go",
-    2.12,
+    2.22,
     2.5
    ],
    [
     "",
     "vise 1.5 & vise 2.5",
     "1. Poluvreme Universitatea Craiova više od 1.5 gol",
-    6.1,
+    5.6,
     2.5
    ],
    [
@@ -4267,14 +4267,14 @@
     "",
     "manje 1.5 & vise 2.5",
     "1. Poluvreme Universitatea Craiova manje od 1.5 go",
-    6.4,
+    6.0,
     2.5
    ],
    [
     "",
     "manje 1.5 & manje 2.5",
     "1. Poluvreme Universitatea Craiova manje od 1.5 go",
-    1.35,
+    1.39,
     2.5
    ]
   ]
@@ -4286,84 +4286,84 @@
     "",
     "vise 0.5 & vise 0.5",
     "Inter Escaldes daje više od 0.5 golova u 1. poluvr",
-    6.0,
+    6.4,
     2.0
    ],
    [
     "",
     "vise 0.5 & manje 0.5",
     "Inter Escaldes daje više od 0.5 golova u 1. poluvr",
-    4.2,
+    4.25,
     2.0
    ],
    [
     "",
     "vise 0.5 & vise 1.5",
     "Inter Escaldes daje više od 0.5 golova u 1. poluvr",
-    18.0,
+    20.0,
     2.0
    ],
    [
     "",
     "vise 0.5 & manje 1.5",
     "Inter Escaldes daje više od 0.5 golova u 1. poluvr",
-    2.95,
+    3.05,
     2.0
    ],
    [
     "",
     "vise 0.5 & vise 2.5",
     "Inter Escaldes daje više od 0.5 golova u 1. poluvr",
-    60.0,
+    70.0,
     2.0
    ],
    [
     "",
     "vise 0.5 & manje 2.5",
     "Inter Escaldes daje više od 0.5 golova u 1. poluvr",
-    2.77,
+    2.9,
     2.0
    ],
    [
     "",
     "manje 0.5 & vise 0.5",
     "Inter Escaldes daje manje od 0.5 golova u 1. poluv",
-    3.15,
+    3.2,
     2.0
    ],
    [
     "",
     "manje 0.5 & manje 0.5",
     "Inter Escaldes daje manje od 0.5 golova u 1. poluv",
-    2.3,
+    2.17,
     2.0
    ],
    [
     "",
     "manje 0.5 & vise 1.5",
     "Inter Escaldes daje manje od 0.5 golova u 1. poluv",
-    9.7,
+    10.0,
     2.0
    ],
    [
     "",
     "manje 0.5 & manje 1.5",
     "Inter Escaldes daje manje od 0.5 golova u 1. poluv",
-    1.54,
+    1.5,
     2.0
    ],
    [
     "",
     "manje 0.5 & vise 2.5",
     "Inter Escaldes daje manje od 0.5 golova u 1. poluv",
-    36.0,
+    40.0,
     2.0
    ],
    [
     "",
     "manje 0.5 & manje 2.5",
     "Inter Escaldes daje manje od 0.5 golova u 1. poluv",
-    1.42,
+    1.39,
     2.0
    ]
   ]
@@ -4375,70 +4375,70 @@
     "",
     "vise 0.5 & vise 0.5",
     "Universitatea Craiova daje više od 0.5 golova u 1.",
-    2.77,
+    2.6,
     2.0
    ],
    [
     "",
     "vise 0.5 & manje 0.5",
     "Universitatea Craiova daje više od 0.5 golova u 1.",
-    3.9,
+    4.0,
     2.0
    ],
    [
     "",
     "vise 0.5 & vise 1.5",
     "Universitatea Craiova daje više od 0.5 golova u 1.",
-    6.1,
+    5.55,
     2.0
    ],
    [
     "",
     "vise 0.5 & manje 1.5",
     "Universitatea Craiova daje više od 0.5 golova u 1.",
-    2.22,
+    2.2,
     2.0
    ],
    [
     "",
     "vise 0.5 & vise 2.5",
     "Universitatea Craiova daje više od 0.5 golova u 1.",
-    16.0,
+    14.0,
     2.0
    ],
    [
     "",
     "vise 0.5 & manje 2.5",
     "Universitatea Craiova daje više od 0.5 golova u 1.",
-    1.85,
+    1.8,
     2.0
    ],
    [
     "",
     "manje 0.5 & vise 0.5",
     "Universitatea Craiova daje manje od 0.5 golova u 1",
-    3.05,
+    3.1,
     2.0
    ],
    [
     "",
     "manje 0.5 & manje 0.5",
     "Universitatea Craiova daje manje od 0.5 golova u 1",
-    4.6,
+    5.0,
     2.0
    ],
    [
     "",
     "manje 0.5 & vise 1.5",
     "Universitatea Craiova daje manje od 0.5 golova u 1",
-    6.5,
+    6.3,
     2.0
    ],
    [
     "",
     "manje 0.5 & manje 1.5",
     "Universitatea Craiova daje manje od 0.5 golova u 1",
-    2.57,
+    2.72,
     2.0
    ],
    [
@@ -4452,7 +4452,7 @@
     "",
     "manje 0.5 & manje 2.5",
     "Universitatea Craiova daje manje od 0.5 golova u 1",
-    2.12,
+    2.22,
     2.0
    ]
   ]
@@ -4464,35 +4464,35 @@
     "0-",
     "x & manje 0.5",
     "nerešeno i Inter Escaldes manje od 0.5 gola na uta",
-    8.4,
+    8.7,
     0.5
    ],
    [
     "2-",
     "2 & manje 0.5",
     "Universitatea Craiova pobednik i Inter Escaldes ma",
-    2.77,
+    2.57,
     0.5
    ],
    [
     "1+",
     "1 & vise 0.5",
     "Inter Escaldes pobednik i Inter Escaldes više od 0",
-    4.35,
+    4.8,
     0.5
    ],
    [
     "0+",
     "x & vise 0.5",
     "nerešeno i Inter Escaldes više od 0.5 gola na utak",
-    4.5,
+    4.8,
     0.5
    ],
    [
     "2+",
     "2 & vise 0.5",
     "Universitatea Craiova pobednik i Inter Escaldes vi",
-    3.7,
+    3.55,
     0.5
    ]
   ]
@@ -4504,35 +4504,35 @@
     "1-",
     "1 & manje 1.5",
     "Inter Escaldes pobednik i Inter Escaldes manje od ",
-    10.0,
+    11.0,
     1.5
    ],
    [
     "0-",
     "x & manje 1.5",
     "nerešeno i Inter Escaldes manje od 1.5 gola na uta",
-    4.1,
+    4.35,
     1.5
    ],
    [
     "2-",
     "2 & manje 1.5",
     "Universitatea Craiova pobednik i Inter Escaldes ma",
-    1.83,
+    1.72,
     1.5
    ],
    [
     "1+",
     "1 & vise 1.5",
     "Inter Escaldes pobednik i Inter Escaldes više od 1",
-    6.0,
+    6.6,
     1.5
    ],
    [
     "0+",
     "x & vise 1.5",
     "nerešeno i Inter Escaldes više od 1.5 gola na utak",
-    11.0,
+    12.0,
     1.5
    ],
    [
@@ -4551,35 +4551,35 @@
     "1-",
     "1 & manje 2.5",
     "Inter Escaldes pobednik i Inter Escaldes manje od ",
-    5.55,
+    6.0,
     2.5
    ],
    [
     "0-",
     "x & manje 2.5",
     "nerešeno i Inter Escaldes manje od 2.5 gola na uta",
-    3.45,
+    3.65,
     2.5
    ],
    [
     "2-",
     "2 & manje 2.5",
     "Universitatea Craiova pobednik i Inter Escaldes ma",
-    1.71,
+    1.61,
     2.5
    ],
    [
     "1+",
     "1 & vise 2.5",
     "Inter Escaldes pobednik i Inter Escaldes više od 2",
-    12.0,
+    14.0,
     2.5
    ],
    [
     "0+",
     "x & vise 2.5",
     "nerešeno i Inter Escaldes više od 2.5 gola na utak",
-    40.0,
+    45.0,
     2.5
    ],
    [
@@ -4598,28 +4598,28 @@
     "1-",
     "1 & manje 3.5",
     "Inter Escaldes pobednik i Inter Escaldes manje od ",
-    4.6,
+    5.0,
     3.5
    ],
    [
     "0-",
     "x & manje 3.5",
     "nerešeno i Inter Escaldes manje od 3.5 gola na uta",
-    3.35,
+    3.55,
     3.5
    ],
    [
     "2-",
     "2 & manje 3.5",
     "Universitatea Craiova pobednik i Inter Escaldes ma",
-    1.7,
+    1.59,
     3.5
    ],
    [
     "1+",
     "1 & vise 3.5",
     "Inter Escaldes pobednik i Inter Escaldes više od 3",
-    32.0,
+    38.0,
     3.5
    ],
    [
@@ -4645,28 +4645,28 @@
     "1-",
     "1 & manje 4.5",
     "Inter Escaldes pobednik i Inter Escaldes manje od ",
-    4.4,
+    4.85,
     4.5
    ],
    [
     "0-",
     "x & manje 4.5",
     "nerešeno i Inter Escaldes manje od 4.5 gola na uta",
-    3.35,
+    3.5,
     4.5
    ],
    [
     "2-",
     "2 & manje 4.5",
     "Universitatea Craiova pobednik i Inter Escaldes ma",
-    1.7,
+    1.59,
     4.5
    ],
    [
     "1+",
     "1 & vise 4.5",
     "Inter Escaldes pobednik i Inter Escaldes više od 4",
-    80.0,
+    90.0,
     4.5
    ],
    [
@@ -4692,35 +4692,35 @@
     "1-",
     "1 & manje 0.5",
     "Inter Escaldes pobednik  i Universitatea Craiova m",
-    7.0,
+    7.6,
     0.5
    ],
    [
     "0-",
     "x & manje 0.5",
     "nerešeno i Universitatea Craiova manje od 0.5 gola",
-    8.4,
+    8.7,
     0.5
    ],
    [
     "1+",
     "1 & vise 0.5",
     "Inter Escaldes pobednik  i Universitatea Craiova v",
-    7.9,
+    8.5,
     0.5
    ],
    [
     "0+",
     "x & vise 0.5",
     "nerešeno i Universitatea Craiova više od 0.5 gola ",
-    4.5,
+    4.8,
     0.5
    ],
    [
     "2+",
     "2 & vise 0.5",
     "Universitatea Craiova pobednik  i Universitatea Cr",
-    1.7,
+    1.59,
     0.5
    ]
   ]
@@ -4732,42 +4732,42 @@
     "1-",
     "1 & manje 1.5",
     "Inter Escaldes pobednik  i Universitatea Craiova m",
-    4.75,
+    5.2,
     1.5
    ],
    [
     "0-",
     "x & manje 1.5",
     "nerešeno i Universitatea Craiova manje od 1.5 gola",
-    4.1,
+    4.35,
     1.5
    ],
    [
     "2-",
     "2 & manje 1.5",
     "Universitatea Craiova pobednik  i Universitatea Cr",
-    6.1,
+    6.0,
     1.5
    ],
    [
     "1+",
     "1 & vise 1.5",
     "Inter Escaldes pobednik  i Universitatea Craiova v",
-    24.0,
+    27.0,
     1.5
    ],
    [
     "0+",
     "x & vise 1.5",
     "nerešeno i Universitatea Craiova više od 1.5 gola ",
-    11.0,
+    12.0,
     1.5
    ],
    [
     "2+",
     "2 & vise 1.5",
     "Universitatea Craiova pobednik  i Universitatea Cr",
-    2.15,
+    2.0,
     1.5
    ]
   ]
@@ -4779,21 +4779,21 @@
     "1-",
     "1 & manje 2.5",
     "Inter Escaldes pobednik  i Universitatea Craiova m",
-    4.4,
+    4.85,
     2.5
    ],
    [
     "0-",
     "x & manje 2.5",
     "nerešeno i Universitatea Craiova manje od 2.5 gola",
-    3.45,
+    3.65,
     2.5
    ],
    [
     "2-",
     "2 & manje 2.5",
     "Universitatea Craiova pobednik  i Universitatea Cr",
-    2.75,
+    2.67,
     2.5
    ],
    [
@@ -4807,14 +4807,14 @@
     "0+",
     "x & vise 2.5",
     "nerešeno i Universitatea Craiova više od 2.5 gola ",
-    40.0,
+    45.0,
     2.5
    ],
    [
     "2+",
     "2 & vise 2.5",
     "Universitatea Craiova pobednik  i Universitatea Cr",
-    3.75,
+    3.4,
     2.5
    ]
   ]
@@ -4826,21 +4826,21 @@
     "1-",
     "1 & manje 3.5",
     "Inter Escaldes pobednik  i Universitatea Craiova m",
-    4.35,
+    4.8,
     3.5
    ],
    [
     "0-",
     "x & manje 3.5",
     "nerešeno i Universitatea Craiova manje od 3.5 gola",
-    3.35,
+    3.55,
     3.5
    ],
    [
     "2-",
     "2 & manje 3.5",
     "Universitatea Craiova pobednik  i Universitatea Cr",
-    2.0,
+    1.9,
     3.5
    ],
    [
@@ -4861,7 +4861,7 @@
     "2+",
     "2 & vise 3.5",
     "Universitatea Craiova pobednik  i Universitatea Cr",
-    7.7,
+    7.0,
     3.5
    ]
   ]
@@ -4873,21 +4873,21 @@
     "1-",
     "1 & manje 4.5",
     "Inter Escaldes pobednik  i Universitatea Craiova m",
-    4.35,
+    4.8,
     4.5
    ],
    [
     "0-",
     "x & manje 4.5",
     "nerešeno i Universitatea Craiova manje od 4.5 gola",
-    3.35,
+    3.5,
     4.5
    ],
    [
     "2-",
     "2 & manje 4.5",
     "Universitatea Craiova pobednik  i Universitatea Cr",
-    1.78,
+    1.69,
     4.5
    ],
    [
@@ -4901,7 +4901,7 @@
     "2+",
     "2 & vise 4.5",
     "Universitatea Craiova pobednik  i Universitatea Cr",
-    18.0,
+    16.0,
     4.5
    ]
   ]
@@ -4913,14 +4913,14 @@
     "1",
     "da",
     "Inter Escaldes pobeđuje bar jedno poluvreme",
-    2.65,
+    2.87,
     null
    ],
    [
     "2",
     "ne",
     "Inter Escaldes ne pobeđuje bar jedno poluvreme",
-    1.42,
+    1.37,
     null
    ]
   ]
@@ -8049,42 +8049,42 @@
     "",
     "1 & manje 5.5",
     "Jablonec pobednik utakmice i manje od 5.5 gola na ",
-    6.1,
+    6.2,
     5.5
    ],
    [
     "",
     "x & manje 5.5",
     "Nerešeno na kraju utakmice  i manje od 5.5 gola na",
-    4.5,
+    4.75,
     5.5
    ],
    [
     "",
     "2 & manje 5.5",
     "Brighton pobednik utakmice i manje od 5.5 gola na ",
-    1.62,
+    1.58,
     5.5
    ],
    [
     "",
     "1 & vise 5.5",
     "Jablonec pobednik utakmice i više od 5.5 gola na u",
-    40.0,
+    45.0,
     5.5
    ],
    [
     "",
     "x & vise 5.5",
     "Nerešeno na kraju utakmice i više od 5.5 gola na u",
-    29.0,
+    32.0,
     5.5
    ],
    [
     "",
     "2 & vise 5.5",
     "Brighton pobednik utakmice i više od 5.5 gola na u",
-    7.6,
+    7.5,
     5.5
    ]
   ]
@@ -8096,21 +8096,21 @@
     "",
     "1-2",
     "Jablonec 1-2 gola na utakmici",
-    1.73,
+    1.76,
     -2.0
    ],
    [
     "",
     "1-3",
     "Jablonec  1-3 gola na utakmici",
-    1.57,
+    1.61,
     -3.0
    ],
    [
     "",
     "2-3",
     "Jablonec 2-3 gola na utakmici",
-    3.75,
+    3.9,
     -3.0
    ]
   ]
@@ -8122,14 +8122,14 @@
     "",
     "1-2",
     "Brighton 1-2 gola na utakmici",
-    1.9,
+    1.92,
     -2.0
    ],
    [
     "",
     "1-3",
     "Brighton 1-3 gola na utakmici",
-    1.37,
+    1.38,
     -3.0
    ],
    [
@@ -8148,21 +8148,21 @@
     "12",
     "1-2",
     "Jablonec 1 ili 2 gola u svakom poluvremenu",
-    5.8,
+    6.0,
     2.0
    ],
    [
     "13",
     "1-3",
     "Jablonec 1,2 ili 3 gola u svakom poluvremenu",
-    5.55,
+    5.75,
     3.0
    ],
    [
     "23",
     "2-3",
     "Jablonec 2 ili 3 gola u svakom poluvremenu",
-    50.0,
+    55.0,
     3.0
    ]
   ]
@@ -8174,7 +8174,7 @@
     "12",
     "1-2",
     "Brighton 1 ili 2 gola u svakom poluvremenu",
-    2.72,
+    2.7,
     2.0
    ],
    [
@@ -8188,7 +8188,7 @@
     "23",
     "2-3",
     "Brighton 2 ili 3 gola u svakom poluvremenu",
-    8.0,
+    7.9,
     3.0
    ]
   ]
@@ -8200,28 +8200,28 @@
     "0",
     "0",
     "Jablonec ne daje gol",
-    2.45,
+    2.37,
     3.0
    ],
    [
     "1",
     "1",
     "Jablonec daje tačno 1 gol",
-    2.5,
+    2.52,
     3.0
    ],
    [
     "2",
     "2",
     "Jablonec daje tačno 2 gola",
-    4.8,
+    5.0,
     3.0
    ],
    [
     "3",
     "3+",
     "Jablonec daje 3 ili više golova",
-    9.7,
+    10.0,
     3.0
    ]
   ]
@@ -8233,28 +8233,28 @@
     "0",
     "0",
     "Brighton ne daje gol",
-    7.9,
+    8.0,
     3.0
    ],
    [
     "1",
     "1",
     "Brighton daje tačno 1 gol",
-    3.85,
+    3.9,
     3.0
    ],
    [
     "2",
     "2",
     "Brighton daje tačno 2 gola",
-    3.35,
+    3.4,
     3.0
    ],
    [
     "3",
     "3+",
     "Brighton daje 3 ili više golova",
-    2.3,
+    2.25,
     3.0
    ]
   ]
@@ -8266,14 +8266,14 @@
     "1",
     "da",
     "Jablonec daje gol na utakmici",
-    1.54,
+    1.58,
     null
    ],
    [
     "2",
     "ne",
     "Jablonec ne daje gol na utakmici",
-    2.5,
+    2.4,
     null
    ]
   ]
@@ -8292,7 +8292,7 @@
     "2",
     "ne",
     "Brighton ne daje gol na utakmici",
-    8.3,
+    8.5,
     null
    ]
   ]
@@ -8304,35 +8304,35 @@
     "",
     "vise 0.5 & vise 1.5",
     "1. Poluvreme Jablonec više od 0.5 golova i Jablone",
-    4.5,
+    4.65,
     1.5
    ],
    [
     "",
     "vise 0.5 & manje 1.5",
     "1. Poluvreme Jablonec više od 0.5 golova i Jablone",
-    5.0,
+    4.9,
     1.5
    ],
    [
     "",
     "manje 0.5 & vise 1.5",
     "1. Poluvreme Jablonec manje od 0.5 golova i Jablon",
-    9.1,
+    9.5,
     1.5
    ],
    [
     "",
     "manje 0.5 & manje 1.5",
     "1. Poluvreme Jablonec manje od 0.5 golova i Jablon",
-    1.6,
+    1.58,
     1.5
    ],
    [
     "",
     "vise 0.5 & vise 2.5",
     "1. Poluvreme Jablonec više od 0.5 golova i Jablone",
-    10.0,
+    11.0,
     2.5
    ],
    [
@@ -8346,14 +8346,14 @@
     "",
     "manje 0.5 & vise 2.5",
     "1. Poluvreme Jablonec manje od 0.5 golova i Jablon",
-    33.0,
+    35.0,
     2.5
    ],
    [
     "",
     "manje 0.5 & manje 2.5",
     "1. Poluvreme Jablonec manje od 0.5 golova i Jablon",
-    1.46,
+    1.45,
     2.5
    ],
    [
@@ -8374,7 +8374,7 @@
     "",
     "manje 1.5 & vise 2.5",
     "1. Poluvreme Jablonec manje od 1.5 golova i Jablon",
-    14.0,
+    15.0,
     2.5
    ],
    [
@@ -8393,14 +8393,14 @@
     "",
     "vise 0.5 & vise 1.5",
     "1. Poluvreme Brighton više od 0.5 golova i Brighto",
-    1.69,
+    1.67,
     1.5
    ],
    [
     "",
     "vise 0.5 & manje 1.5",
     "1. Poluvreme Brighton više od 0.5 golova i Brighto",
-    7.0,
+    7.1,
     1.5
    ],
    [
@@ -8414,14 +8414,14 @@
     "",
     "manje 0.5 & manje 1.5",
     "1. Poluvreme Brighton manje od 0.5 golova i Bright",
-    3.9,
+    4.0,
     1.5
    ],
    [
     "",
     "vise 0.5 & vise 2.5",
     "1. Poluvreme Brighton više od 0.5 golova i Brighto",
-    2.47,
+    2.42,
     2.5
    ],
    [
@@ -8442,14 +8442,14 @@
     "",
     "manje 0.5 & manje 2.5",
     "1. Poluvreme Brighton manje od 0.5 golova i Bright",
-    3.0,
+    3.05,
     2.5
    ],
    [
     "",
     "vise 1.5 & vise 2.5",
     "1. Poluvreme Brighton više od 1.5 golova i Brighto",
-    3.65,
+    3.6,
     2.5
    ],
    [
@@ -8463,14 +8463,14 @@
     "",
     "manje 1.5 & vise 2.5",
     "1. Poluvreme Brighton manje od 1.5 golova i Bright",
-    4.5,
+    4.4,
     2.5
    ],
    [
     "",
     "manje 1.5 & manje 2.5",
     "1. Poluvreme Brighton manje od 1.5 golova i Bright",
-    1.76,
+    1.78,
     2.5
    ]
   ]
@@ -8482,84 +8482,84 @@
     "",
     "vise 0.5 & vise 0.5",
     "Jablonec daje više od 0.5 golova u 1. poluvremenu ",
-    5.5,
+    5.7,
     2.0
    ],
    [
     "",
     "vise 0.5 & manje 0.5",
     "Jablonec daje više od 0.5 golova u 1. poluvremenu ",
-    4.15,
+    4.1,
     2.0
    ],
    [
     "",
     "vise 0.5 & vise 1.5",
     "Jablonec daje više od 0.5 golova u 1. poluvremenu ",
-    16.0,
+    17.0,
     2.0
    ],
    [
     "",
     "vise 0.5 & manje 1.5",
     "Jablonec daje više od 0.5 golova u 1. poluvremenu ",
-    2.85,
+    2.9,
     2.0
    ],
    [
     "",
     "vise 0.5 & vise 2.5",
     "Jablonec daje više od 0.5 golova u 1. poluvremenu ",
-    55.0,
+    60.0,
     2.0
    ],
    [
     "",
     "vise 0.5 & manje 2.5",
     "Jablonec daje više od 0.5 golova u 1. poluvremenu ",
-    2.65,
+    2.67,
     2.0
    ],
    [
     "",
     "manje 0.5 & vise 0.5",
     "Jablonec daje manje od 0.5 golova u 1. poluvremenu",
-    3.1,
+    3.15,
     2.0
    ],
    [
     "",
     "manje 0.5 & manje 0.5",
     "Jablonec daje manje od 0.5 golova u 1. poluvremenu",
-    2.42,
+    2.35,
     2.0
    ],
    [
     "",
     "manje 0.5 & vise 1.5",
     "Jablonec daje manje od 0.5 golova u 1. poluvremenu",
-    9.1,
+    9.5,
     2.0
    ],
    [
     "",
     "manje 0.5 & manje 1.5",
     "Jablonec daje manje od 0.5 golova u 1. poluvremenu",
-    1.6,
+    1.58,
     2.0
    ],
    [
     "",
     "manje 0.5 & vise 2.5",
     "Jablonec daje manje od 0.5 golova u 1. poluvremenu",
-    33.0,
+    35.0,
     2.0
    ],
    [
     "",
     "manje 0.5 & manje 2.5",
     "Jablonec daje manje od 0.5 golova u 1. poluvremenu",
-    1.46,
+    1.45,
     2.0
    ]
   ]
@@ -8571,35 +8571,35 @@
     "",
     "vise 0.5 & vise 0.5",
     "Brighton daje više od 0.5 golova u 1. poluvremenu ",
-    1.95,
+    1.92,
     2.0
    ],
    [
     "",
     "vise 0.5 & manje 0.5",
     "Brighton daje više od 0.5 golova u 1. poluvremenu ",
-    4.45,
+    4.5,
     2.0
    ],
    [
     "",
     "vise 0.5 & vise 1.5",
     "Brighton daje više od 0.5 golova u 1. poluvremenu ",
-    3.6,
+    3.55,
     2.0
    ],
    [
     "",
     "vise 0.5 & manje 1.5",
     "Brighton daje više od 0.5 golova u 1. poluvremenu ",
-    2.17,
+    2.2,
     2.0
    ],
    [
     "",
     "vise 0.5 & vise 2.5",
     "Brighton daje više od 0.5 golova u 1. poluvremenu ",
-    7.8,
+    7.6,
     2.0
    ],
    [
@@ -8620,7 +8620,7 @@
     "",
     "manje 0.5 & manje 0.5",
     "Brighton daje manje od 0.5 golova u 1. poluvremenu",
-    7.5,
+    7.7,
     2.0
    ],
    [
@@ -8634,7 +8634,7 @@
     "",
     "manje 0.5 & manje 1.5",
     "Brighton daje manje od 0.5 golova u 1. poluvremenu",
-    3.9,
+    4.0,
     2.0
    ],
    [
@@ -8648,7 +8648,7 @@
     "",
     "manje 0.5 & manje 2.5",
     "Brighton daje manje od 0.5 golova u 1. poluvremenu",
-    3.0,
+    3.05,
     2.0
    ]
   ]
@@ -8660,35 +8660,35 @@
     "0-",
     "x & manje 0.5",
     "nerešeno i Jablonec manje od 0.5 gola na utakmici",
-    14.0,
+    15.0,
     0.5
    ],
    [
     "2-",
     "2 & manje 0.5",
     "Brighton pobednik i Jablonec manje od 0.5 gola na ",
-    2.65,
+    2.55,
     0.5
    ],
    [
     "1+",
     "1 & vise 0.5",
     "Jablonec pobednik i Jablonec više od 0.5 gola na u",
-    5.75,
+    5.9,
     0.5
    ],
    [
     "0+",
     "x & vise 0.5",
     "nerešeno i Jablonec više od 0.5 gola na utakmici",
-    5.1,
+    5.4,
     0.5
    ],
    [
     "2+",
     "2 & vise 0.5",
     "Brighton pobednik i Jablonec više od 0.5 gola na u",
-    2.7,
+    2.67,
     0.5
    ]
   ]
@@ -8707,35 +8707,35 @@
     "0-",
     "x & manje 1.5",
     "nerešeno i Jablonec manje od 1.5 gola na utakmici",
-    5.85,
+    6.1,
     1.5
    ],
    [
     "2-",
     "2 & manje 1.5",
     "Brighton pobednik i Jablonec manje od 1.5 gola na ",
-    1.61,
+    1.55,
     1.5
    ],
    [
     "1+",
     "1 & vise 1.5",
     "Jablonec pobednik i Jablonec više od 1.5 gola na u",
-    7.1,
+    7.4,
     1.5
    ],
    [
     "0+",
     "x & vise 1.5",
     "nerešeno i Jablonec više od 1.5 gola na utakmici",
-    9.6,
+    10.0,
     1.5
    ],
    [
     "2+",
     "2 & vise 1.5",
     "Brighton pobednik i Jablonec više od 1.5 gola na u",
-    7.9,
+    8.1,
     1.5
    ]
   ]
@@ -8747,42 +8747,42 @@
     "1-",
     "1 & manje 2.5",
     "Jablonec pobednik i Jablonec manje od 2.5 gola na ",
-    7.8,
+    7.9,
     2.5
    ],
    [
     "0-",
     "x & manje 2.5",
     "nerešeno i Jablonec manje od 2.5 gola na utakmici",
-    4.5,
+    4.75,
     2.5
    ],
    [
     "2-",
     "2 & manje 2.5",
     "Brighton pobednik i Jablonec manje od 2.5 gola na ",
-    1.44,
+    1.4,
     2.5
    ],
    [
     "1+",
     "1 & vise 2.5",
     "Jablonec pobednik i Jablonec više od 2.5 gola na u",
-    13.0,
+    14.0,
     2.5
    ],
    [
     "0+",
     "x & vise 2.5",
     "nerešeno i Jablonec više od 2.5 gola na utakmici",
-    29.0,
+    32.0,
     2.5
    ],
    [
     "2+",
     "2 & vise 2.5",
     "Brighton pobednik i Jablonec više od 2.5 gola na u",
-    31.0,
+    33.0,
     2.5
    ]
   ]
@@ -8794,35 +8794,35 @@
     "1-",
     "1 & manje 3.5",
     "Jablonec pobednik i Jablonec manje od 3.5 gola na ",
-    6.2,
+    6.4,
     3.5
    ],
    [
     "0-",
     "x & manje 3.5",
     "nerešeno i Jablonec manje od 3.5 gola na utakmici",
-    4.25,
+    4.5,
     3.5
    ],
    [
     "2-",
     "2 & manje 3.5",
     "Brighton pobednik i Jablonec manje od 3.5 gola na ",
-    1.41,
+    1.38,
     3.5
    ],
    [
     "1+",
     "1 & vise 3.5",
     "Jablonec pobednik i Jablonec više od 3.5 gola na u",
-    31.0,
+    34.0,
     3.5
    ],
    [
     "0+",
     "x & vise 3.5",
     "nerešeno i Jablonec više od 3.5 gola na utakmici",
-    85.0,
+    90.0,
     3.5
    ],
    [
@@ -8841,28 +8841,28 @@
     "1-",
     "1 & manje 4.5",
     "Jablonec pobednik i Jablonec manje od 4.5 gola na ",
-    5.85,
+    6.0,
     4.5
    ],
    [
     "0-",
     "x & manje 4.5",
     "nerešeno i Jablonec manje od 4.5 gola na utakmici",
-    4.2,
+    4.45,
     4.5
    ],
    [
     "2-",
     "2 & manje 4.5",
     "Brighton pobednik i Jablonec manje od 4.5 gola na ",
-    1.41,
+    1.38,
     4.5
    ],
    [
     "1+",
     "1 & vise 4.5",
     "Jablonec pobednik i Jablonec više od 4.5 gola na u",
-    75.0,
+    80.0,
     4.5
    ],
    [
@@ -8895,28 +8895,28 @@
     "0-",
     "x & manje 0.5",
     "nerešeno i Brighton manje od 0.5 gola na utakmici",
-    14.0,
+    15.0,
     0.5
    ],
    [
     "1+",
     "1 & vise 0.5",
     "Jablonec pobednik  i Brighton više od 0.5 gola na ",
-    8.6,
+    8.9,
     0.5
    ],
    [
     "0+",
     "x & vise 0.5",
     "nerešeno i Brighton više od 0.5 gola na utakmici",
-    5.1,
+    5.4,
     0.5
    ],
    [
     "2+",
     "2 & vise 0.5",
     "Brighton pobednik  i Brighton više od 0.5 gola na ",
-    1.41,
+    1.38,
     0.5
    ]
   ]
@@ -8928,42 +8928,42 @@
     "1-",
     "1 & manje 1.5",
     "Jablonec pobednik  i Brighton manje od 1.5 gola na",
-    6.6,
+    6.8,
     1.5
    ],
    [
     "0-",
     "x & manje 1.5",
     "nerešeno i Brighton manje od 1.5 gola na utakmici",
-    5.85,
+    6.1,
     1.5
    ],
    [
     "2-",
     "2 & manje 1.5",
     "Brighton pobednik  i Brighton manje od 1.5 gola na",
-    7.9,
+    7.8,
     1.5
    ],
    [
     "1+",
     "1 & vise 1.5",
     "Jablonec pobednik  i Brighton više od 1.5 gola na ",
-    21.0,
+    22.0,
     1.5
    ],
    [
     "0+",
     "x & vise 1.5",
     "nerešeno i Brighton više od 1.5 gola na utakmici",
-    9.6,
+    10.0,
     1.5
    ],
    [
     "2+",
     "2 & vise 1.5",
     "Brighton pobednik  i Brighton više od 1.5 gola na ",
-    1.61,
+    1.56,
     1.5
    ]
   ]
@@ -8975,21 +8975,21 @@
     "1-",
     "1 & manje 2.5",
     "Jablonec pobednik  i Brighton manje od 2.5 gola na",
-    5.9,
+    6.0,
     2.5
    ],
    [
     "0-",
     "x & manje 2.5",
     "nerešeno i Brighton manje od 2.5 gola na utakmici",
-    4.5,
+    4.75,
     2.5
    ],
    [
     "2-",
     "2 & manje 2.5",
     "Brighton pobednik  i Brighton manje od 2.5 gola na",
-    3.1,
+    3.05,
     2.5
    ],
    [
@@ -9003,14 +9003,14 @@
     "0+",
     "x & vise 2.5",
     "nerešeno i Brighton više od 2.5 gola na utakmici",
-    29.0,
+    32.0,
     2.5
    ],
    [
     "2+",
     "2 & vise 2.5",
     "Brighton pobednik  i Brighton više od 2.5 gola na ",
-    2.35,
+    2.27,
     2.5
    ]
   ]
@@ -9022,21 +9022,21 @@
     "1-",
     "1 & manje 3.5",
     "Jablonec pobednik  i Brighton manje od 3.5 gola na",
-    5.75,
+    5.9,
     3.5
    ],
    [
     "0-",
     "x & manje 3.5",
     "nerešeno i Brighton manje od 3.5 gola na utakmici",
-    4.25,
+    4.5,
     3.5
    ],
    [
     "2-",
     "2 & manje 3.5",
     "Brighton pobednik  i Brighton manje od 3.5 gola na",
-    1.95,
+    1.92,
     3.5
    ],
    [
@@ -9050,14 +9050,14 @@
     "0+",
     "x & vise 3.5",
     "nerešeno i Brighton više od 3.5 gola na utakmici",
-    85.0,
+    90.0,
     3.5
    ],
    [
     "2+",
     "2 & vise 3.5",
     "Brighton pobednik  i Brighton više od 3.5 gola na ",
-    4.2,
+    4.0,
     3.5
    ]
   ]
@@ -9069,21 +9069,21 @@
     "1-",
     "1 & manje 4.5",
     "Jablonec pobednik  i Brighton manje od 4.5 gola na",
-    5.75,
+    5.9,
     4.5
    ],
    [
     "0-",
     "x & manje 4.5",
     "nerešeno i Brighton manje od 4.5 gola na utakmici",
-    4.2,
+    4.45,
     4.5
    ],
    [
     "2-",
     "2 & manje 4.5",
     "Brighton pobednik  i Brighton manje od 4.5 gola na",
-    1.6,
+    1.57,
     4.5
    ],
    [
@@ -9104,7 +9104,7 @@
     "2+",
     "2 & vise 4.5",
     "Brighton pobednik  i Brighton više od 4.5 gola na ",
-    8.1,
+    7.8,
     4.5
    ]
   ]
@@ -9116,14 +9116,14 @@
     "1",
     "da",
     "Jablonec pobeđuje bar jedno poluvreme",
-    3.1,
+    3.2,
     null
    ],
    [
     "2",
     "ne",
     "Jablonec ne pobeđuje bar jedno poluvreme",
-    1.32,
+    1.31,
     null
    ]
   ]
@@ -10200,21 +10200,21 @@
     "",
     "1-2",
     "Gent 1-2 gola na utakmici",
-    1.67,
+    1.71,
     -2.0
    ],
    [
     "",
     "1-3",
     "Gent 1-3 gola na utakmici",
-    1.49,
+    1.55,
     -3.0
    ],
    [
     "",
     "2-3",
     "Gent 2-3 gola na utakmici",
-    3.3,
+    3.65,
     -3.0
    ]
   ]
@@ -10252,21 +10252,21 @@
     "12",
     "1-2",
     "Gent 1 ili 2 gola u svakom poluvremenu",
-    5.1,
+    5.65,
     2.0
    ],
    [
     "13",
     "1-3",
     "Gent 1,2 ili 3 gola u svakom poluvremenu",
-    4.8,
+    5.35,
     3.0
    ],
    [
     "23",
     "2-3",
     "Gent 2 ili 3 gola u svakom poluvremenu",
-    40.0,
+    50.0,
     3.0
    ]
   ]
@@ -10285,7 +10285,7 @@
     "1",
     "1",
     "Braga daje tačno 1 gol",
-    2.95,
+    2.92,
     3.0
    ],
    [
@@ -10299,7 +10299,7 @@
     "3",
     "3+",
     "Braga daje 3 ili više golova",
-    3.6,
+    3.65,
     3.0
    ]
   ]
@@ -10311,7 +10311,7 @@
     "0",
     "0",
     "Gent ne daje gol",
-    2.75,
+    2.52,
     3.0
    ],
    [
@@ -10325,14 +10325,14 @@
     "2",
     "2",
     "Gent daje tačno 2 gola",
-    4.35,
+    4.7,
     3.0
    ],
    [
     "3",
     "3+",
     "Gent daje 3 ili više golova",
-    7.9,
+    9.2,
     3.0
    ]
   ]
@@ -10363,14 +10363,14 @@
     "1",
     "da",
     "Gent daje gol na utakmici",
-    1.45,
+    1.52,
     null
    ],
    [
     "2",
     "ne",
     "Gent ne daje gol na utakmici",
-    2.77,
+    2.55,
     null
    ]
   ]
@@ -10382,21 +10382,21 @@
     "",
     "vise 0.5 & vise 1.5",
     "1. Poluvreme Braga više od 0.5 golova i Braga više",
-    2.3,
+    2.27,
     1.5
    ],
    [
     "",
     "vise 0.5 & manje 1.5",
     "1. Poluvreme Braga više od 0.5 golova i Braga manj",
-    5.6,
+    5.55,
     1.5
    ],
    [
     "",
     "manje 0.5 & vise 1.5",
     "1. Poluvreme Braga manje od 0.5 golova i Braga viš",
-    6.3,
+    6.4,
     1.5
    ],
    [
@@ -10417,7 +10417,7 @@
     "",
     "vise 0.5 & manje 2.5",
     "1. Poluvreme Braga više od 0.5 golova i Braga manj",
-    2.75,
+    2.72,
     2.5
    ],
    [
@@ -10431,7 +10431,7 @@
     "",
     "manje 0.5 & manje 2.5",
     "1. Poluvreme Braga manje od 0.5 golova i Braga man",
-    2.12,
+    2.15,
     2.5
    ],
    [
@@ -10459,7 +10459,7 @@
     "",
     "manje 1.5 & manje 2.5",
     "1. Poluvreme Braga manje od 1.5 golova i Braga man",
-    1.35,
+    1.36,
     2.5
    ]
   ]
@@ -10471,7 +10471,7 @@
     "",
     "vise 0.5 & vise 1.5",
     "1. Poluvreme Gent više od 0.5 golova i Gent više o",
-    3.9,
+    4.35,
     1.5
    ],
    [
@@ -10485,70 +10485,70 @@
     "",
     "manje 0.5 & vise 1.5",
     "1. Poluvreme Gent manje od 0.5 golova i Gent više ",
-    8.3,
+    8.9,
     1.5
    ],
    [
     "",
     "manje 0.5 & manje 1.5",
     "1. Poluvreme Gent manje od 0.5 golova i Gent manje",
-    1.73,
+    1.63,
     1.5
    ],
    [
     "",
     "vise 0.5 & vise 2.5",
     "1. Poluvreme Gent više od 0.5 golova i Gent više o",
-    8.3,
+    9.9,
     2.5
    ],
    [
     "",
     "vise 0.5 & manje 2.5",
     "1. Poluvreme Gent više od 0.5 golova i Gent manje ",
-    2.92,
+    3.05,
     2.5
    ],
    [
     "",
     "manje 0.5 & vise 2.5",
     "1. Poluvreme Gent manje od 0.5 golova i Gent više ",
-    28.0,
+    32.0,
     2.5
    ],
    [
     "",
     "manje 0.5 & manje 2.5",
     "1. Poluvreme Gent manje od 0.5 golova i Gent manje",
-    1.56,
+    1.48,
     2.5
    ],
    [
     "",
     "vise 1.5 & vise 2.5",
     "1. Poluvreme Gent više od 1.5 golova i Gent više o",
-    13.0,
+    16.0,
     2.5
    ],
    [
     "",
     "vise 1.5 & manje 2.5",
     "1. Poluvreme Gent više od 1.5 golova i Gent manje ",
-    14.0,
+    15.0,
     2.5
    ],
    [
     "",
     "manje 1.5 & vise 2.5",
     "1. Poluvreme Gent manje od 1.5 golova i Gent više ",
-    12.0,
+    14.0,
     2.5
    ],
    [
     "",
     "manje 1.5 & manje 2.5",
     "1. Poluvreme Gent manje od 1.5 golova i Gent manje",
-    1.11,
+    1.08,
     2.5
    ]
   ]
@@ -10609,14 +10609,14 @@
     "",
     "manje 0.5 & manje 0.5",
     "Braga daje manje od 0.5 golova u 1. poluvremenu i ",
-    4.65,
+    4.7,
     2.0
    ],
    [
     "",
     "manje 0.5 & vise 1.5",
     "Braga daje manje od 0.5 golova u 1. poluvremenu i ",
-    6.3,
+    6.4,
     2.0
    ],
    [
@@ -10637,7 +10637,7 @@
     "",
     "manje 0.5 & manje 2.5",
     "Braga daje manje od 0.5 golova u 1. poluvremenu i ",
-    2.12,
+    2.15,
     2.0
    ]
   ]
@@ -10649,84 +10649,84 @@
     "",
     "vise 0.5 & vise 0.5",
     "Gent daje više od 0.5 golova u 1. poluvremenu i vi",
-    4.75,
+    5.35,
     2.0
    ],
    [
     "",
     "vise 0.5 & manje 0.5",
     "Gent daje više od 0.5 golova u 1. poluvremenu i ma",
-    4.0,
+    4.1,
     2.0
    ],
    [
     "",
     "vise 0.5 & vise 1.5",
     "Gent daje više od 0.5 golova u 1. poluvremenu i vi",
-    13.0,
+    15.0,
     2.0
    ],
    [
     "",
     "vise 0.5 & manje 1.5",
     "Gent daje više od 0.5 golova u 1. poluvremenu i ma",
-    2.67,
+    2.8,
     2.0
    ],
    [
     "",
     "vise 0.5 & vise 2.5",
     "Gent daje više od 0.5 golova u 1. poluvremenu i vi",
-    45.0,
+    50.0,
     2.0
    ],
    [
     "",
     "vise 0.5 & manje 2.5",
     "Gent daje više od 0.5 golova u 1. poluvremenu i ma",
-    2.42,
+    2.6,
     2.0
    ],
    [
     "",
     "manje 0.5 & vise 0.5",
     "Gent daje manje od 0.5 golova u 1. poluvremenu i v",
-    3.05,
+    3.1,
     2.0
    ],
    [
     "",
     "manje 0.5 & manje 0.5",
     "Gent daje manje od 0.5 golova u 1. poluvremenu i m",
-    2.7,
+    2.47,
     2.0
    ],
    [
     "",
     "manje 0.5 & vise 1.5",
     "Gent daje manje od 0.5 golova u 1. poluvremenu i v",
-    8.3,
+    8.9,
     2.0
    ],
    [
     "",
     "manje 0.5 & manje 1.5",
     "Gent daje manje od 0.5 golova u 1. poluvremenu i m",
-    1.73,
+    1.63,
     2.0
    ],
    [
     "",
     "manje 0.5 & vise 2.5",
     "Gent daje manje od 0.5 golova u 1. poluvremenu i v",
-    28.0,
+    32.0,
     2.0
    ],
    [
     "",
     "manje 0.5 & manje 2.5",
     "Gent daje manje od 0.5 golova u 1. poluvremenu i m",
-    1.56,
+    1.48,
     2.0
    ]
   ]
@@ -10738,35 +10738,35 @@
     "0-",
     "x & manje 0.5",
     "nerešeno i Braga manje od 0.5 gola na utakmici",
-    10.0,
+    9.2,
     0.5
    ],
    [
     "2-",
     "2 & manje 0.5",
     "Gent pobednik i Braga manje od 0.5 gola na utakmic",
-    6.5,
+    6.8,
     0.5
    ],
    [
     "1+",
     "1 & vise 0.5",
     "Braga pobednik i Braga više od 0.5 gola na utakmic",
-    1.8,
+    1.73,
     0.5
    ],
    [
     "0+",
     "x & vise 0.5",
     "nerešeno i Braga više od 0.5 gola na utakmici",
-    4.35,
+    4.45,
     0.5
    ],
    [
     "2+",
     "2 & vise 0.5",
     "Gent pobednik i Braga više od 0.5 gola na utakmici",
-    6.4,
+    7.1,
     0.5
    ]
   ]
@@ -10778,42 +10778,42 @@
     "1-",
     "1 & manje 1.5",
     "Braga pobednik i Braga manje od 1.5 gola na utakmi",
-    7.0,
+    6.6,
     1.5
    ],
    [
     "0-",
     "x & manje 1.5",
     "nerešeno i Braga manje od 1.5 gola na utakmici",
-    4.5,
+    4.35,
     1.5
    ],
    [
     "2-",
     "2 & manje 1.5",
     "Gent pobednik i Braga manje od 1.5 gola na utakmic",
-    4.15,
+    4.45,
     1.5
    ],
    [
     "1+",
     "1 & vise 1.5",
     "Braga pobednik i Braga više od 1.5 gola na utakmic",
-    2.2,
+    2.15,
     1.5
    ],
    [
     "0+",
     "x & vise 1.5",
     "nerešeno i Braga više od 1.5 gola na utakmici",
-    9.2,
+    10.0,
     1.5
    ],
    [
     "2+",
     "2 & vise 1.5",
     "Gent pobednik i Braga više od 1.5 gola na utakmici",
-    18.0,
+    21.0,
     1.5
    ]
   ]
@@ -10825,21 +10825,21 @@
     "1-",
     "1 & manje 2.5",
     "Braga pobednik i Braga manje od 2.5 gola na utakmi",
-    3.05,
+    2.9,
     2.5
    ],
    [
     "0-",
     "x & manje 2.5",
     "nerešeno i Braga manje od 2.5 gola na utakmici",
-    3.6,
+    3.55,
     2.5
    ],
    [
     "2-",
     "2 & manje 2.5",
     "Gent pobednik i Braga manje od 2.5 gola na utakmic",
-    3.75,
+    4.1,
     2.5
    ],
    [
@@ -10853,14 +10853,14 @@
     "0+",
     "x & vise 2.5",
     "nerešeno i Braga više od 2.5 gola na utakmici",
-    31.0,
+    35.0,
     2.5
    ],
    [
     "2+",
     "2 & vise 2.5",
     "Gent pobednik i Braga više od 2.5 gola na utakmici",
-    65.0,
+    75.0,
     2.5
    ]
   ]
@@ -10872,21 +10872,21 @@
     "1-",
     "1 & manje 3.5",
     "Braga pobednik i Braga manje od 3.5 gola na utakmi",
-    2.15,
+    2.07,
     3.5
    ],
    [
     "0-",
     "x & manje 3.5",
     "nerešeno i Braga manje od 3.5 gola na utakmici",
-    3.45,
+    3.4,
     3.5
    ],
    [
     "2-",
     "2 & manje 3.5",
     "Gent pobednik i Braga manje od 3.5 gola na utakmic",
-    3.7,
+    4.0,
     3.5
    ],
    [
@@ -10900,7 +10900,7 @@
     "0+",
     "x & vise 3.5",
     "nerešeno i Braga više od 3.5 gola na utakmici",
-    90.0,
+    100.0,
     3.5
    ],
    [
@@ -10919,7 +10919,7 @@
     "1-",
     "1 & manje 4.5",
     "Braga pobednik i Braga manje od 4.5 gola na utakmi",
-    1.9,
+    1.83,
     4.5
    ],
    [
@@ -10933,14 +10933,14 @@
     "2-",
     "2 & manje 4.5",
     "Gent pobednik i Braga manje od 4.5 gola na utakmic",
-    3.7,
+    4.0,
     4.5
    ],
    [
     "1+",
     "1 & vise 4.5",
     "Braga pobednik i Braga više od 4.5 gola na utakmic",
-    17.0,
+    18.0,
     4.5
    ],
    [
@@ -10966,35 +10966,35 @@
     "1-",
     "1 & manje 0.5",
     "Braga pobednik  i Gent manje od 0.5 gola na utakmi",
-    3.2,
+    2.95,
     0.5
    ],
    [
     "0-",
     "x & manje 0.5",
     "nerešeno i Gent manje od 0.5 gola na utakmici",
-    10.0,
+    9.2,
     0.5
    ],
    [
     "1+",
     "1 & vise 0.5",
     "Braga pobednik  i Gent više od 0.5 gola na utakmic",
-    3.5,
+    3.6,
     0.5
    ],
    [
     "0+",
     "x & vise 0.5",
     "nerešeno i Gent više od 0.5 gola na utakmici",
-    4.35,
+    4.45,
     0.5
    ],
    [
     "2+",
     "2 & vise 0.5",
     "Gent pobednik  i Gent više od 0.5 gola na utakmici",
-    3.7,
+    4.0,
     0.5
    ]
   ]
@@ -11006,14 +11006,14 @@
     "1-",
     "1 & manje 1.5",
     "Braga pobednik  i Gent manje od 1.5 gola na utakmi",
-    2.0,
+    1.9,
     1.5
    ],
    [
     "0-",
     "x & manje 1.5",
     "nerešeno i Gent manje od 1.5 gola na utakmici",
-    4.5,
+    4.35,
     1.5
    ],
    [
@@ -11027,21 +11027,21 @@
     "1+",
     "1 & vise 1.5",
     "Braga pobednik  i Gent više od 1.5 gola na utakmic",
-    11.0,
+    12.0,
     1.5
    ],
    [
     "0+",
     "x & vise 1.5",
     "nerešeno i Gent više od 1.5 gola na utakmici",
-    9.2,
+    10.0,
     1.5
    ],
    [
     "2+",
     "2 & vise 1.5",
     "Gent pobednik  i Gent više od 1.5 gola na utakmici",
-    4.8,
+    5.35,
     1.5
    ]
   ]
@@ -11053,42 +11053,42 @@
     "1-",
     "1 & manje 2.5",
     "Braga pobednik  i Gent manje od 2.5 gola na utakmi",
-    1.82,
+    1.75,
     2.5
    ],
    [
     "0-",
     "x & manje 2.5",
     "nerešeno i Gent manje od 2.5 gola na utakmici",
-    3.6,
+    3.55,
     2.5
    ],
    [
     "2-",
     "2 & manje 2.5",
     "Gent pobednik  i Gent manje od 2.5 gola na utakmic",
-    5.1,
+    5.35,
     2.5
    ],
    [
     "1+",
     "1 & vise 2.5",
     "Braga pobednik  i Gent više od 2.5 gola na utakmic",
-    45.0,
+    50.0,
     2.5
    ],
    [
     "0+",
     "x & vise 2.5",
     "nerešeno i Gent više od 2.5 gola na utakmici",
-    31.0,
+    35.0,
     2.5
    ],
    [
     "2+",
     "2 & vise 2.5",
     "Gent pobednik  i Gent više od 2.5 gola na utakmici",
-    8.7,
+    10.0,
     2.5
    ]
   ]
@@ -11100,21 +11100,21 @@
     "1-",
     "1 & manje 3.5",
     "Braga pobednik  i Gent manje od 3.5 gola na utakmi",
-    1.8,
+    1.73,
     3.5
    ],
    [
     "0-",
     "x & manje 3.5",
     "nerešeno i Gent manje od 3.5 gola na utakmici",
-    3.45,
+    3.4,
     3.5
    ],
    [
     "2-",
     "2 & manje 3.5",
     "Gent pobednik  i Gent manje od 3.5 gola na utakmic",
-    4.0,
+    4.3,
     3.5
    ],
    [
@@ -11128,14 +11128,14 @@
     "0+",
     "x & vise 3.5",
     "nerešeno i Gent više od 3.5 gola na utakmici",
-    90.0,
+    100.0,
     3.5
    ],
    [
     "2+",
     "2 & vise 3.5",
     "Gent pobednik  i Gent više od 3.5 gola na utakmici",
-    21.0,
+    26.0,
     3.5
    ]
   ]
@@ -11147,7 +11147,7 @@
     "1-",
     "1 & manje 4.5",
     "Braga pobednik  i Gent manje od 4.5 gola na utakmi",
-    1.8,
+    1.73,
     4.5
    ],
    [
@@ -11161,7 +11161,7 @@
     "2-",
     "2 & manje 4.5",
     "Gent pobednik  i Gent manje od 4.5 gola na utakmic",
-    3.75,
+    4.1,
     4.5
    ],
    [
@@ -11182,7 +11182,7 @@
     "2+",
     "2 & vise 4.5",
     "Gent pobednik  i Gent više od 4.5 gola na utakmici",
-    60.0,
+    70.0,
     4.5
    ]
   ]
@@ -11194,14 +11194,14 @@
     "1",
     "da",
     "Braga pobeđuje bar jedno poluvreme",
-    1.44,
+    1.41,
     null
    ],
    [
     "2",
     "ne",
     "Braga ne pobeđuje bar jedno poluvreme",
-    2.57,
+    2.7,
     null
    ]
   ]
@@ -11213,21 +11213,21 @@
     "",
     "1-2",
     "Midtjylland 1-2 gola na utakmici",
-    1.67,
+    1.72,
     -2.0
    ],
    [
     "",
     "1-3",
     "Midtjylland  1-3 gola na utakmici",
-    1.31,
+    1.32,
     -3.0
    ],
    [
     "",
     "2-3",
     "Midtjylland 2-3 gola na utakmici",
-    2.15,
+    2.1,
     -3.0
    ]
   ]
@@ -11239,21 +11239,21 @@
     "",
     "1-2",
     "Sint-Truiden 1-2 gola na utakmici",
-    1.62,
+    1.64,
     -2.0
    ],
    [
     "",
     "1-3",
     "Sint-Truiden 1-3 gola na utakmici",
-    1.41,
+    1.44,
     -3.0
    ],
    [
     "",
     "2-3",
     "Sint-Truiden 2-3 gola na utakmici",
-    2.87,
+    3.05,
     -3.0
    ]
   ]
@@ -11265,21 +11265,21 @@
     "12",
     "1-2",
     "Midtjylland 1 ili 2 gola u svakom poluvremenu",
-    3.1,
+    2.95,
     2.0
    ],
    [
     "13",
     "1-3",
     "Midtjylland 1,2 ili 3 gola u svakom poluvremenu",
-    2.65,
+    2.47,
     3.0
    ],
    [
     "23",
     "2-3",
     "Midtjylland 2 ili 3 gola u svakom poluvremenu",
-    13.0,
+    11.0,
     3.0
    ]
   ]
@@ -11291,21 +11291,21 @@
     "12",
     "1-2",
     "Sint-Truiden 1 ili 2 gola u svakom poluvremenu",
-    4.35,
+    4.7,
     2.0
    ],
    [
     "13",
     "1-3",
     "Sint-Truiden 1,2 ili 3 gola u svakom poluvremenu",
-    4.0,
+    4.35,
     3.0
    ],
    [
     "23",
     "2-3",
     "Sint-Truiden 2 ili 3 gola u svakom poluvremenu",
-    28.0,
+    34.0,
     3.0
    ]
   ]
@@ -11317,14 +11317,14 @@
     "0",
     "0",
     "Midtjylland ne daje gol",
-    5.45,
+    5.9,
     3.0
    ],
    [
     "1",
     "1",
     "Midtjylland daje tačno 1 gol",
-    3.05,
+    3.25,
     3.0
    ],
    [
@@ -11338,7 +11338,7 @@
     "3",
     "3+",
     "Midtjylland daje 3 ili više golova",
-    3.25,
+    2.92,
     3.0
    ]
   ]
@@ -11350,28 +11350,28 @@
     "0",
     "0",
     "Sint-Truiden ne daje gol",
-    3.2,
+    3.0,
     3.0
    ],
    [
     "1",
     "1",
     "Sint-Truiden daje tačno 1 gol",
-    2.55,
+    2.52,
     3.0
    ],
    [
     "2",
     "2",
     "Sint-Truiden daje tačno 2 gola",
-    3.9,
+    4.1,
     3.0
    ],
    [
     "3",
     "3+",
     "Sint-Truiden daje 3 ili više golova",
-    6.2,
+    6.9,
     3.0
    ]
   ]
@@ -11383,14 +11383,14 @@
     "1",
     "da",
     "Midtjylland daje gol na utakmici",
-    1.15,
+    1.13,
     null
    ],
    [
     "2",
     "ne",
     "Midtjylland ne daje gol na utakmici",
-    5.6,
+    6.1,
     null
    ]
   ]
@@ -11402,14 +11402,14 @@
     "1",
     "da",
     "Sint-Truiden daje gol na utakmici",
-    1.34,
+    1.39,
     null
    ],
    [
     "2",
     "ne",
     "Sint-Truiden ne daje gol na utakmici",
-    3.25,
+    3.05,
     null
    ]
   ]
@@ -11421,63 +11421,63 @@
     "",
     "vise 0.5 & vise 1.5",
     "1. Poluvreme Midtjylland više od 0.5 golova i Midt",
-    2.12,
+    1.97,
     1.5
    ],
    [
     "",
     "vise 0.5 & manje 1.5",
     "1. Poluvreme Midtjylland više od 0.5 golova i Midt",
-    5.7,
+    6.1,
     1.5
    ],
    [
     "",
     "manje 0.5 & vise 1.5",
     "1. Poluvreme Midtjylland manje od 0.5 golova i Mid",
-    6.3,
+    6.1,
     1.5
    ],
    [
     "",
     "manje 0.5 & manje 1.5",
     "1. Poluvreme Midtjylland manje od 0.5 golova i Mid",
-    2.82,
+    3.05,
     1.5
    ],
    [
     "",
     "vise 0.5 & vise 2.5",
     "1. Poluvreme Midtjylland više od 0.5 golova i Midt",
-    3.55,
+    3.2,
     2.5
    ],
    [
     "",
     "vise 0.5 & manje 2.5",
     "1. Poluvreme Midtjylland više od 0.5 golova i Midt",
-    2.72,
+    2.82,
     2.5
    ],
    [
     "",
     "manje 0.5 & vise 2.5",
     "1. Poluvreme Midtjylland manje od 0.5 golova i Mid",
-    15.0,
+    14.0,
     2.5
    ],
    [
     "",
     "manje 0.5 & manje 2.5",
     "1. Poluvreme Midtjylland manje od 0.5 golova i Mid",
-    2.3,
+    2.45,
     2.5
    ],
    [
     "",
     "vise 1.5 & vise 2.5",
     "1. Poluvreme Midtjylland više od 1.5 golova i Midt",
-    5.35,
+    4.85,
     2.5
    ],
    [
@@ -11491,14 +11491,14 @@
     "",
     "manje 1.5 & vise 2.5",
     "1. Poluvreme Midtjylland manje od 1.5 golova i Mid",
-    5.9,
+    5.3,
     2.5
    ],
    [
     "",
     "manje 1.5 & manje 2.5",
     "1. Poluvreme Midtjylland manje od 1.5 golova i Mid",
-    1.42,
+    1.49,
     2.5
    ]
   ]
@@ -11510,63 +11510,63 @@
     "",
     "vise 0.5 & vise 1.5",
     "1. Poluvreme Sint-Truiden više od 0.5 golova i Sin",
-    3.25,
+    3.55,
     1.5
    ],
    [
     "",
     "vise 0.5 & manje 1.5",
     "1. Poluvreme Sint-Truiden više od 0.5 golova i Sin",
-    5.1,
+    5.0,
     1.5
    ],
    [
     "",
     "manje 0.5 & vise 1.5",
     "1. Poluvreme Sint-Truiden manje od 0.5 golova i Si",
-    7.3,
+    7.8,
     1.5
    ],
    [
     "",
     "manje 0.5 & manje 1.5",
     "1. Poluvreme Sint-Truiden manje od 0.5 golova i Si",
-    1.92,
+    1.82,
     1.5
    ],
    [
     "",
     "vise 0.5 & vise 2.5",
     "1. Poluvreme Sint-Truiden više od 0.5 golova i Sin",
-    6.6,
+    7.4,
     2.5
    ],
    [
     "",
     "vise 0.5 & manje 2.5",
     "1. Poluvreme Sint-Truiden više od 0.5 golova i Sin",
-    2.87,
+    2.9,
     2.5
    ],
    [
     "",
     "manje 0.5 & vise 2.5",
     "1. Poluvreme Sint-Truiden manje od 0.5 golova i Si",
-    22.0,
+    24.0,
     2.5
    ],
    [
     "",
     "manje 0.5 & manje 2.5",
     "1. Poluvreme Sint-Truiden manje od 0.5 golova i Si",
-    1.68,
+    1.61,
     2.5
    ],
    [
     "",
     "vise 1.5 & vise 2.5",
     "1. Poluvreme Sint-Truiden više od 1.5 golova i Sin",
-    10.0,
+    12.0,
     2.5
    ],
    [
@@ -11580,14 +11580,14 @@
     "",
     "manje 1.5 & vise 2.5",
     "1. Poluvreme Sint-Truiden manje od 1.5 golova i Si",
-    9.0,
+    10.0,
     2.5
    ],
    [
     "",
     "manje 1.5 & manje 2.5",
     "1. Poluvreme Sint-Truiden manje od 1.5 golova i Si",
-    1.16,
+    1.13,
     2.5
    ]
   ]
@@ -11599,21 +11599,21 @@
     "",
     "vise 0.5 & vise 0.5",
     "Midtjylland daje više od 0.5 golova u 1. poluvreme",
-    2.52,
+    2.35,
     2.0
    ],
    [
     "",
     "vise 0.5 & manje 0.5",
     "Midtjylland daje više od 0.5 golova u 1. poluvreme",
-    4.0,
+    4.15,
     2.0
    ],
    [
     "",
     "vise 0.5 & vise 1.5",
     "Midtjylland daje više od 0.5 golova u 1. poluvreme",
-    5.4,
+    4.75,
     2.0
    ],
    [
@@ -11627,14 +11627,14 @@
     "",
     "vise 0.5 & vise 2.5",
     "Midtjylland daje više od 0.5 golova u 1. poluvreme",
-    14.0,
+    11.0,
     2.0
    ],
    [
     "",
     "vise 0.5 & manje 2.5",
     "Midtjylland daje više od 0.5 golova u 1. poluvreme",
-    1.77,
+    1.74,
     2.0
    ],
    [
@@ -11648,35 +11648,35 @@
     "",
     "manje 0.5 & manje 0.5",
     "Midtjylland daje manje od 0.5 golova u 1. poluvrem",
-    5.15,
+    5.7,
     2.0
    ],
    [
     "",
     "manje 0.5 & vise 1.5",
     "Midtjylland daje manje od 0.5 golova u 1. poluvrem",
-    6.3,
+    6.1,
     2.0
    ],
    [
     "",
     "manje 0.5 & manje 1.5",
     "Midtjylland daje manje od 0.5 golova u 1. poluvrem",
-    2.82,
+    3.05,
     2.0
    ],
    [
     "",
     "manje 0.5 & vise 2.5",
     "Midtjylland daje manje od 0.5 golova u 1. poluvrem",
-    15.0,
+    14.0,
     2.0
    ],
    [
     "",
     "manje 0.5 & manje 2.5",
     "Midtjylland daje manje od 0.5 golova u 1. poluvrem",
-    2.3,
+    2.45,
     2.0
    ]
   ]
@@ -11688,7 +11688,7 @@
     "",
     "vise 0.5 & vise 0.5",
     "Sint-Truiden daje više od 0.5 golova u 1. poluvrem",
-    3.9,
+    4.3,
     2.0
    ],
    [
@@ -11702,70 +11702,70 @@
     "",
     "vise 0.5 & vise 1.5",
     "Sint-Truiden daje više od 0.5 golova u 1. poluvrem",
-    9.6,
+    11.0,
     2.0
    ],
    [
     "",
     "vise 0.5 & manje 1.5",
     "Sint-Truiden daje više od 0.5 golova u 1. poluvrem",
-    2.52,
+    2.6,
     2.0
    ],
    [
     "",
     "vise 0.5 & vise 2.5",
     "Sint-Truiden daje više od 0.5 golova u 1. poluvrem",
-    29.0,
+    35.0,
     2.0
    ],
    [
     "",
     "vise 0.5 & manje 2.5",
     "Sint-Truiden daje više od 0.5 golova u 1. poluvrem",
-    2.25,
+    2.32,
     2.0
    ],
    [
     "",
     "manje 0.5 & vise 0.5",
     "Sint-Truiden daje manje od 0.5 golova u 1. poluvre",
-    2.9,
+    2.95,
     2.0
    ],
    [
     "",
     "manje 0.5 & manje 0.5",
     "Sint-Truiden daje manje od 0.5 golova u 1. poluvre",
-    3.2,
+    2.92,
     2.0
    ],
    [
     "",
     "manje 0.5 & vise 1.5",
     "Sint-Truiden daje manje od 0.5 golova u 1. poluvre",
-    7.3,
+    7.8,
     2.0
    ],
    [
     "",
     "manje 0.5 & manje 1.5",
     "Sint-Truiden daje manje od 0.5 golova u 1. poluvre",
-    1.92,
+    1.82,
     2.0
    ],
    [
     "",
     "manje 0.5 & vise 2.5",
     "Sint-Truiden daje manje od 0.5 golova u 1. poluvre",
-    22.0,
+    24.0,
     2.0
    ],
    [
     "",
     "manje 0.5 & manje 2.5",
     "Sint-Truiden daje manje od 0.5 golova u 1. poluvre",
-    1.68,
+    1.61,
     2.0
    ]
   ]
@@ -11777,35 +11777,35 @@
     "0-",
     "x & manje 0.5",
     "nerešeno i Midtjylland manje od 0.5 gola na utakmi",
-    12.0,
+    13.0,
     0.5
    ],
    [
     "2-",
     "2 & manje 0.5",
     "Sint-Truiden pobednik i Midtjylland manje od 0.5 g",
-    7.0,
+    7.6,
     0.5
    ],
    [
     "1+",
     "1 & vise 0.5",
     "Midtjylland pobednik i Midtjylland više od 0.5 gol",
-    1.85,
+    1.7,
     0.5
    ],
    [
     "0+",
     "x & vise 0.5",
     "nerešeno i Midtjylland više od 0.5 gola na utakmic",
-    4.0,
+    4.35,
     0.5
    ],
    [
     "2+",
     "2 & vise 0.5",
     "Sint-Truiden pobednik i Midtjylland više od 0.5 go",
-    5.65,
+    6.1,
     0.5
    ]
   ]
@@ -11817,42 +11817,42 @@
     "1-",
     "1 & manje 1.5",
     "Midtjylland pobednik i Midtjylland manje od 1.5 go",
-    8.3,
+    8.1,
     1.5
    ],
    [
     "0-",
     "x & manje 1.5",
     "nerešeno i Midtjylland manje od 1.5 gola na utakmi",
-    4.8,
+    5.15,
     1.5
    ],
    [
     "2-",
     "2 & manje 1.5",
     "Sint-Truiden pobednik i Midtjylland manje od 1.5 g",
-    4.2,
+    4.55,
     1.5
    ],
    [
     "1+",
     "1 & vise 1.5",
     "Midtjylland pobednik i Midtjylland više od 1.5 gol",
-    2.17,
+    1.97,
     1.5
    ],
    [
     "0+",
     "x & vise 1.5",
     "nerešeno i Midtjylland više od 1.5 gola na utakmic",
-    7.6,
+    8.2,
     1.5
    ],
    [
     "2+",
     "2 & vise 1.5",
     "Sint-Truiden pobednik i Midtjylland više od 1.5 go",
-    14.0,
+    15.0,
     1.5
    ]
   ]
@@ -11864,35 +11864,35 @@
     "1-",
     "1 & manje 2.5",
     "Midtjylland pobednik i Midtjylland manje od 2.5 go",
-    3.45,
+    3.3,
     2.5
    ],
    [
     "0-",
     "x & manje 2.5",
     "nerešeno i Midtjylland manje od 2.5 gola na utakmi",
-    3.6,
+    3.9,
     2.5
    ],
    [
     "2-",
     "2 & manje 2.5",
     "Sint-Truiden pobednik i Midtjylland manje od 2.5 g",
-    3.65,
+    4.0,
     2.5
    ],
    [
     "1+",
     "1 & vise 2.5",
     "Midtjylland pobednik i Midtjylland više od 2.5 gol",
-    3.45,
+    3.05,
     2.5
    ],
    [
     "0+",
     "x & vise 2.5",
     "nerešeno i Midtjylland više od 2.5 gola na utakmic",
-    22.0,
+    24.0,
     2.5
    ],
    [
@@ -11911,35 +11911,35 @@
     "1-",
     "1 & manje 3.5",
     "Midtjylland pobednik i Midtjylland manje od 3.5 go",
-    2.32,
+    2.2,
     3.5
    ],
    [
     "0-",
     "x & manje 3.5",
     "nerešeno i Midtjylland manje od 3.5 gola na utakmi",
-    3.35,
+    3.65,
     3.5
    ],
    [
     "2-",
     "2 & manje 3.5",
     "Sint-Truiden pobednik i Midtjylland manje od 3.5 g",
-    3.6,
+    3.9,
     3.5
    ],
    [
     "1+",
     "1 & vise 3.5",
     "Midtjylland pobednik i Midtjylland više od 3.5 gol",
-    6.7,
+    5.85,
     3.5
    ],
    [
     "0+",
     "x & vise 3.5",
     "nerešeno i Midtjylland više od 3.5 gola na utakmic",
-    75.0,
+    80.0,
     3.5
    ],
    [
@@ -11958,28 +11958,28 @@
     "1-",
     "1 & manje 4.5",
     "Midtjylland pobednik i Midtjylland manje od 4.5 go",
-    2.0,
+    1.85,
     4.5
    ],
    [
     "0-",
     "x & manje 4.5",
     "nerešeno i Midtjylland manje od 4.5 gola na utakmi",
-    3.35,
+    3.65,
     4.5
    ],
    [
     "2-",
     "2 & manje 4.5",
     "Sint-Truiden pobednik i Midtjylland manje od 4.5 g",
-    3.6,
+    3.9,
     4.5
    ],
    [
     "1+",
     "1 & vise 4.5",
     "Midtjylland pobednik i Midtjylland više od 4.5 gol",
-    15.0,
+    12.0,
     4.5
    ],
    [
@@ -12005,35 +12005,35 @@
     "1-",
     "1 & manje 0.5",
     "Midtjylland pobednik  i Sint-Truiden manje od 0.5 ",
-    3.7,
+    3.35,
     0.5
    ],
    [
     "0-",
     "x & manje 0.5",
     "nerešeno i Sint-Truiden manje od 0.5 gola na utakm",
-    12.0,
+    13.0,
     0.5
    ],
    [
     "1+",
     "1 & vise 0.5",
     "Midtjylland pobednik  i Sint-Truiden više od 0.5 g",
-    3.25,
+    3.05,
     0.5
    ],
    [
     "0+",
     "x & vise 0.5",
     "nerešeno i Sint-Truiden više od 0.5 gola na utakmi",
-    4.0,
+    4.35,
     0.5
    ],
    [
     "2+",
     "2 & vise 0.5",
     "Sint-Truiden pobednik  i Sint-Truiden više od 0.5 ",
-    3.6,
+    3.9,
     0.5
    ]
   ]
@@ -12045,42 +12045,42 @@
     "1-",
     "1 & manje 1.5",
     "Midtjylland pobednik  i Sint-Truiden manje od 1.5 ",
-    2.15,
+    1.97,
     1.5
    ],
    [
     "0-",
     "x & manje 1.5",
     "nerešeno i Sint-Truiden manje od 1.5 gola na utakm",
-    4.8,
+    5.15,
     1.5
    ],
    [
     "2-",
     "2 & manje 1.5",
     "Sint-Truiden pobednik  i Sint-Truiden manje od 1.5",
-    12.0,
+    13.0,
     1.5
    ],
    [
     "1+",
     "1 & vise 1.5",
     "Midtjylland pobednik  i Sint-Truiden više od 1.5 g",
-    8.6,
+    8.3,
     1.5
    ],
    [
     "0+",
     "x & vise 1.5",
     "nerešeno i Sint-Truiden više od 1.5 gola na utakmi",
-    7.6,
+    8.2,
     1.5
    ],
    [
     "2+",
     "2 & vise 1.5",
     "Sint-Truiden pobednik  i Sint-Truiden više od 1.5 ",
-    4.35,
+    4.8,
     1.5
    ]
   ]
@@ -12092,42 +12092,42 @@
     "1-",
     "1 & manje 2.5",
     "Midtjylland pobednik  i Sint-Truiden manje od 2.5 ",
-    1.9,
+    1.74,
     2.5
    ],
    [
     "0-",
     "x & manje 2.5",
     "nerešeno i Sint-Truiden manje od 2.5 gola na utakm",
-    3.6,
+    3.9,
     2.5
    ],
    [
     "2-",
     "2 & manje 2.5",
     "Sint-Truiden pobednik  i Sint-Truiden manje od 2.5",
-    5.5,
+    5.8,
     2.5
    ],
    [
     "1+",
     "1 & vise 2.5",
     "Midtjylland pobednik  i Sint-Truiden više od 2.5 g",
-    33.0,
+    32.0,
     2.5
    ],
    [
     "0+",
     "x & vise 2.5",
     "nerešeno i Sint-Truiden više od 2.5 gola na utakmi",
-    22.0,
+    24.0,
     2.5
    ],
    [
     "2+",
     "2 & vise 2.5",
     "Sint-Truiden pobednik  i Sint-Truiden više od 2.5 ",
-    7.3,
+    8.1,
     2.5
    ]
   ]
@@ -12139,21 +12139,21 @@
     "1-",
     "1 & manje 3.5",
     "Midtjylland pobednik  i Sint-Truiden manje od 3.5 ",
-    1.85,
+    1.7,
     3.5
    ],
    [
     "0-",
     "x & manje 3.5",
     "nerešeno i Sint-Truiden manje od 3.5 gola na utakm",
-    3.35,
+    3.65,
     3.5
    ],
    [
     "2-",
     "2 & manje 3.5",
     "Sint-Truiden pobednik  i Sint-Truiden manje od 3.5",
-    4.1,
+    4.4,
     3.5
    ],
    [
@@ -12167,14 +12167,14 @@
     "0+",
     "x & vise 3.5",
     "nerešeno i Sint-Truiden više od 3.5 gola na utakmi",
-    75.0,
+    80.0,
     3.5
    ],
    [
     "2+",
     "2 & vise 3.5",
     "Sint-Truiden pobednik  i Sint-Truiden više od 3.5 ",
-    16.0,
+    18.0,
     3.5
    ]
   ]
@@ -12186,21 +12186,21 @@
     "1-",
     "1 & manje 4.5",
     "Midtjylland pobednik  i Sint-Truiden manje od 4.5 ",
-    1.85,
+    1.7,
     4.5
    ],
    [
     "0-",
     "x & manje 4.5",
     "nerešeno i Sint-Truiden manje od 4.5 gola na utakm",
-    3.35,
+    3.65,
     4.5
    ],
    [
     "2-",
     "2 & manje 4.5",
     "Sint-Truiden pobednik  i Sint-Truiden manje od 4.5",
-    3.7,
+    4.0,
     4.5
    ],
    [
@@ -12221,7 +12221,7 @@
     "2+",
     "2 & vise 4.5",
     "Sint-Truiden pobednik  i Sint-Truiden više od 4.5 ",
-    40.0,
+    50.0,
     4.5
    ]
   ]
@@ -12233,14 +12233,14 @@
     "1",
     "da",
     "Midtjylland pobeđuje bar jedno poluvreme",
-    1.45,
+    1.37,
     null
    ],
    [
     "2",
     "ne",
     "Midtjylland ne pobeđuje bar jedno poluvreme",
-    2.55,
+    2.87,
     null
    ]
   ]

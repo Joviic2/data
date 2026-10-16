@@ -257,7 +257,7 @@
     "",
     "3:2, 4:2, 4:3 ili 5:1",
     "Utakmica će završiti rezultatom 3:2, 4:2, 4:3 ili ",
-    16.0,
+    17.0,
     1.0
    ],
    [
@@ -297,7 +297,7 @@
     "",
     "x & manje 1.5",
     "Nerešeno na kraju utakmice  i manje od 1.5 gola na",
-    13.0,
+    12.0,
     1.5
    ],
    [
@@ -405,7 +405,7 @@
     "",
     "1 & vise 3.5",
     "Angers pobednik utakmice i više od 3.5 gola na uta",
-    6.8,
+    6.9,
     3.5
    ],
    [
@@ -506,7 +506,7 @@
     "12-",
     "12 & manje od 2.5",
     "Angers ili Olympique Marseille će pobediti i biće ",
-    3.1,
+    3.15,
     2.5
    ],
    [
@@ -553,7 +553,7 @@
     "12-",
     "12 & manje od 3.5",
     "Angers ili Olympique Marseille će pobediti i biće ",
-    1.85,
+    1.87,
     3.5
    ],
    [
@@ -921,7 +921,7 @@
     "+2+1",
     "vise 2.5 ili vise 1.5",
     "Više 2.5 ili više 1.5",
-    1.57,
+    1.58,
     1.5
    ]
   ]
@@ -1218,7 +1218,7 @@
     "",
     "x & manje 0.5",
     "Nerešeno na kraju utakmice  i manje od 0.5 gola na",
-    13.0,
+    12.0,
     0.5
    ],
    [
@@ -1244,309 +1244,6 @@
    ]
   ]
  },
- "1X2 & raspon golova": {
-  "mecova": 14,
-  "primer": [
-   [
-    "123",
-    "1 & 2-3",
-    "Angers pobednik i 2-3 gola",
-    5.9,
-    -3.0
-   ],
-   [
-    "124",
-    "1 & 2-4",
-    "Angers pobednik i 2-4 gola",
-    4.8,
-    -4.0
-   ],
-   [
-    "125",
-    "1 & 2-5",
-    "Angers pobednik i 2-5 golova",
-    4.0,
-    -5.0
-   ],
-   [
-    "126",
-    "1 & 2-6",
-    "Angers pobednik i 2-6 golova",
-    3.8,
-    -6.0
-   ],
-   [
-    "135",
-    "1 & 3-5",
-    "Angers pobednik i 3-5 golova",
-    4.8,
-    -5.0
-   ],
-   [
-    "136",
-    "1 & 3-6",
-    "Angers pobednik i 3-6 golova",
-    4.5,
-    -6.0
-   ],
-   [
-    "024",
-    "x & 2-4",
-    "Nerešeno i 2-4 gola",
-    4.45,
-    -4.0
-   ],
-   [
-    "026",
-    "x & 2-6",
-    "Nerešeno i 2-6 gola",
-    4.1,
-    -6.0
-   ],
-   [
-    "046",
-    "x & 4-6",
-    "Nerešeno i 4-6 golova",
-    7.8,
-    -6.0
-   ],
-   [
-    "223",
-    "2 & 2-3",
-    "Olympique Marseille pobednik i 2-3 gola",
-    4.25,
-    -3.0
-   ],
-   [
-    "224",
-    "2 & 2-4",
-    "Olympique Marseille pobednik i 2-4 gola",
-    3.3,
-    -4.0
-   ],
-   [
-    "225",
-    "2 & 2-5",
-    "Olympique Marseille pobednik i 2-5 golova",
-    2.72,
-    -5.0
-   ]
-  ]
- },
- "1X2 & oba tima daju gol": {
-  "mecova": 14,
-  "primer": [
-   [
-    "11",
-    "1 & da",
-    "Angers pobednik i oba tima daju gol",
-    4.85,
-    1.0
-   ],
-   [
-    "12",
-    "1 & ne",
-    "Angers pobednik i barem jedan tim ne daje gol",
-    6.0,
-    1.0
-   ],
-   [
-    "01",
-    "x & da",
-    "Nerešeno i oba tima daju gol",
-    4.1,
-    2.0
-   ],
-   [
-    "02",
-    "x & ne",
-    "Nerešeno i barem jedan tim ne daje gol",
-    14.0,
-    2.0
-   ],
-   [
-    "21",
-    "2 & da",
-    "Olympique Marseille pobednik i oba tima daju gol",
-    3.45,
-    2.0
-   ],
-   [
-    "22",
-    "2 & ne",
-    "Olympique Marseille pobednik i barem jedan tim ne ",
-    4.1,
-    2.0
-   ]
-  ]
- },
- "1X2 & gol u oba poluvremena": {
-  "mecova": 14,
-  "primer": [
-   [
-    "1",
-    "1 & da",
-    "Angers pobednik i gol u oba poluvremena",
-    4.5,
-    1.0
-   ],
-   [
-    "0",
-    "x & da",
-    "Nerešeno i gol u oba poluvremena",
-    5.65,
-    2.0
-   ],
-   [
-    "2",
-    "2 & da",
-    "Olympique Marseille pobednik i gol u oba poluvreme",
-    3.0,
-    2.0
-   ]
-  ]
- },
- "1X2 ili 1. poluvreme ukupno golova (0.5)": {
-  "mecova": 14,
-  "primer": [
-   [
-    "1-",
-    "1 ili manje 0.5",
-    "Angers pobednik utakmice ili 1. poluvreme manje od",
-    1.92,
-    0.5
-   ],
-   [
-    "1+",
-    "1 ili vise 0.5",
-    "Angers pobednik utakmice ili 1. poluvreme više od ",
-    1.17,
-    0.5
-   ],
-   [
-    "0-",
-    "x ili manje 0.5",
-    "Nerešeno na kraju utakmice ili 1. poluvreme manje ",
-    2.2,
-    0.5
-   ],
-   [
-    "0+",
-    "x ili vise 0.5",
-    "Nerešeno na kraju utakmice ili 1. poluvreme više o",
-    1.14,
-    0.5
-   ],
-   [
-    "2-",
-    "2 ili manje 0.5",
-    "Olympique Marseille pobednik utakmice ili 1. poluv",
-    1.53,
-    0.5
-   ],
-   [
-    "2+",
-    "2 ili vise 0.5",
-    "Olympique Marseille pobednik utakmice ili 1. poluv",
-    1.13,
-    0.5
-   ]
-  ]
- },
- "1X2 ili 1. poluvreme ukupno golova (1.5)": {
-  "mecova": 14,
-  "primer": [
-   [
-    "1-",
-    "1 ili manje 1.5",
-    "Angers pobednik utakmice ili 1. poluvreme manje od",
-    1.32,
-    1.5
-   ],
-   [
-    "1+",
-    "1 ili vise 1.5",
-    "Angers pobednik utakmice ili 1. poluvreme više od ",
-    1.63,
-    1.5
-   ],
-   [
-    "0-",
-    "x ili manje 1.5",
-    "Nerešeno na kraju utakmice ili 1. poluvreme manje ",
-    1.39,
-    1.5
-   ],
-   [
-    "0+",
-    "x ili vise 1.5",
-    "Nerešeno na kraju utakmice ili 1. poluvreme više o",
-    1.64,
-    1.5
-   ],
-   [
-    "2-",
-    "2 ili manje 1.5",
-    "Olympique Marseille pobednik utakmice ili 1. poluv",
-    1.19,
-    1.5
-   ],
-   [
-    "2+",
-    "2 ili vise 1.5",
-    "Olympique Marseille pobednik utakmice ili 1. poluv",
-    1.43,
-    1.5
-   ]
-  ]
- },
- "1X2 ili 1. poluvreme ukupno golova (2.5)": {
-  "mecova": 14,
-  "primer": [
-   [
-    "1-",
-    "1 ili manje 2.5",
-    "Angers pobednik utakmice ili 1. poluvreme manje od",
-    1.08,
-    2.5
-   ],
-   [
-    "1+",
-    "1 ili vise 2.5",
-    "Angers pobednik utakmice ili 1. poluvreme više od ",
-    2.25,
-    2.5
-   ],
-   [
-    "0-",
-    "x ili manje 2.5",
-    "Nerešeno na kraju utakmice ili 1. poluvreme manje ",
-    1.1,
-    2.5
-   ],
-   [
-    "0+",
-    "x ili vise 2.5",
-    "Nerešeno na kraju utakmice ili 1. poluvreme više o",
-    2.37,
-    2.5
-   ],
-   [
-    "2-",
-    "2 ili manje 2.5",
-    "Olympique Marseille pobednik utakmice ili 1. poluv",
-    1.04,
-    2.5
-   ],
-   [
-    "2+",
-    "2 ili vise 2.5",
-    "Olympique Marseille pobednik utakmice ili 1. poluv",
-    1.74,
-    2.5
-   ]
-  ]
- },
  "Dupla šansa & ukupno golova (1.5)": {
   "mecova": 13,
   "primer": [
@@ -1554,7 +1251,7 @@
     "10-",
     "1x & manje od 1.5",
     "Le Havre će pobediti ili će biti nerešeno i biće m",
-    4.0,
+    4.1,
     1.5
    ],
    [
@@ -1575,7 +1272,7 @@
     "02+",
     "x2 & vise od 1.5",
     "Biće nerešeno ili Auxerre će pobediti i biće više ",
-    1.95,
+    1.92,
     1.5
    ],
    [
@@ -1589,34 +1286,8 @@
     "12+",
     "12 & vise od 1.5",
     "Le Havre ili Auxerre će pobediti i biće više od 1.",
-    1.59,
+    1.58,
     1.5
-   ]
-  ]
- },
- "1X2 ili 1. poluvreme ukupno golova (3.5)": {
-  "mecova": 12,
-  "primer": [
-   [
-    "1+",
-    "1 ili vise 3.5",
-    "Angers pobednik utakmice ili 1. poluvreme više od ",
-    2.7,
-    3.5
-   ],
-   [
-    "0+",
-    "x ili vise 3.5",
-    "Nerešeno na kraju utakmice ili 1. poluvreme više o",
-    3.0,
-    3.5
-   ],
-   [
-    "2+",
-    "2 ili vise 3.5",
-    "Olympique Marseille pobednik utakmice ili 1. poluv",
-    1.92,
-    3.5
    ]
   ]
  },
@@ -1781,6 +1452,448 @@
     "Više od  6.5 kartona na utakmici (uklj. i crvene k",
     4.65,
     6.5
+   ]
+  ]
+ },
+ "Ukupno šuteva u okvir gola": {
+  "mecova": 9,
+  "primer": [
+   [
+    "*1-",
+    "manje 8.5",
+    "Manje od 8.5 šuteva u okvir gola",
+    2.27,
+    8.5
+   ],
+   [
+    "*1+",
+    "vise 8.5",
+    "Više od 8.5 šuteva u okvir gola",
+    1.53,
+    8.5
+   ],
+   [
+    "*1-",
+    "manje 9.5",
+    "Manje od 9.5 šuteva u okvir gola",
+    1.78,
+    9.5
+   ],
+   [
+    "*1+",
+    "vise 9.5",
+    "Više od 9.5 šuteva u okvir gola",
+    1.92,
+    9.5
+   ],
+   [
+    "*1-",
+    "manje 10.5",
+    "Manje od 10.5 šuteva u okvir gola",
+    1.45,
+    10.5
+   ],
+   [
+    "*1+",
+    "vise 10.5",
+    "Više od 10.5 šuteva u okvir gola",
+    2.47,
+    10.5
+   ]
+  ]
+ },
+ "Ukupno šuteva": {
+  "mecova": 9,
+  "primer": [
+   [
+    "",
+    "manje 26.5",
+    "manje od 26.5 šuteva",
+    2.0,
+    26.5
+   ],
+   [
+    "",
+    "vise 26.5",
+    "više od 26.5 šuteva",
+    1.71,
+    26.5
+   ],
+   [
+    "",
+    "manje 27.5",
+    "manje od 27.5 šuteva",
+    1.75,
+    27.5
+   ],
+   [
+    "",
+    "vise 27.5",
+    "više od 27.5 šuteva",
+    1.95,
+    27.5
+   ],
+   [
+    "",
+    "manje 28.5",
+    "manje od 28.5 šuteva",
+    1.55,
+    28.5
+   ],
+   [
+    "",
+    "vise 28.5",
+    "više od 28.5 šuteva",
+    2.25,
+    28.5
+   ]
+  ]
+ },
+ "Ukupno faulova": {
+  "mecova": 9,
+  "primer": [
+   [
+    "/*0-",
+    "manje 22.5",
+    "manje od 22.5 faulova",
+    1.83,
+    22.5
+   ],
+   [
+    "/*0+",
+    "vise 22.5",
+    "više od 22.5 faulova",
+    1.88,
+    22.5
+   ]
+  ]
+ },
+ "1X2 & raspon golova": {
+  "mecova": 9,
+  "primer": [
+   [
+    "123",
+    "1 & 2-3",
+    "Angers pobednik i 2-3 gola",
+    4.75,
+    -3.0
+   ],
+   [
+    "124",
+    "1 & 2-4",
+    "Angers pobednik i 2-4 gola",
+    3.9,
+    -4.0
+   ],
+   [
+    "125",
+    "1 & 2-5",
+    "Angers pobednik i 2-5 golova",
+    3.45,
+    -5.0
+   ],
+   [
+    "126",
+    "1 & 2-6",
+    "Angers pobednik i 2-6 golova",
+    3.3,
+    -6.0
+   ],
+   [
+    "135",
+    "1 & 3-5",
+    "Angers pobednik i 3-5 golova",
+    4.4,
+    -5.0
+   ],
+   [
+    "136",
+    "1 & 3-6",
+    "Angers pobednik i 3-6 golova",
+    4.2,
+    -6.0
+   ],
+   [
+    "024",
+    "x & 2-4",
+    "Nerešeno i 2-4 gola",
+    4.3,
+    -4.0
+   ],
+   [
+    "026",
+    "x & 2-6",
+    "Nerešeno i 2-6 gola",
+    4.15,
+    -6.0
+   ],
+   [
+    "046",
+    "x & 4-6",
+    "Nerešeno i 4-6 golova",
+    9.7,
+    -6.0
+   ],
+   [
+    "223",
+    "2 & 2-3",
+    "Lorient pobednik i 2-3 gola",
+    4.9,
+    -3.0
+   ],
+   [
+    "224",
+    "2 & 2-4",
+    "Lorient pobednik i 2-4 gola",
+    4.1,
+    -4.0
+   ],
+   [
+    "225",
+    "2 & 2-5",
+    "Lorient pobednik i 2-5 golova",
+    3.6,
+    -5.0
+   ]
+  ]
+ },
+ "1X2 & oba tima daju gol": {
+  "mecova": 9,
+  "primer": [
+   [
+    "11",
+    "1 & da",
+    "Angers pobednik i oba tima daju gol",
+    4.85,
+    1.0
+   ],
+   [
+    "12",
+    "1 & ne",
+    "Angers pobednik i barem jedan tim ne daje gol",
+    4.15,
+    1.0
+   ],
+   [
+    "01",
+    "x & da",
+    "Nerešeno i oba tima daju gol",
+    4.1,
+    2.0
+   ],
+   [
+    "02",
+    "x & ne",
+    "Nerešeno i barem jedan tim ne daje gol",
+    8.4,
+    2.0
+   ],
+   [
+    "21",
+    "2 & da",
+    "Lorient pobednik i oba tima daju gol",
+    5.1,
+    2.0
+   ],
+   [
+    "22",
+    "2 & ne",
+    "Lorient pobednik i barem jedan tim ne daje gol",
+    4.35,
+    2.0
+   ]
+  ]
+ },
+ "1X2 & gol u oba poluvremena": {
+  "mecova": 9,
+  "primer": [
+   [
+    "1",
+    "1 & da",
+    "Angers pobednik i gol u oba poluvremena",
+    4.2,
+    1.0
+   ],
+   [
+    "0",
+    "x & da",
+    "Nerešeno i gol u oba poluvremena",
+    6.0,
+    2.0
+   ],
+   [
+    "2",
+    "2 & da",
+    "Lorient pobednik i gol u oba poluvremena",
+    4.45,
+    2.0
+   ]
+  ]
+ },
+ "1X2 ili 1. poluvreme ukupno golova (0.5)": {
+  "mecova": 9,
+  "primer": [
+   [
+    "1-",
+    "1 ili manje 0.5",
+    "Angers pobednik utakmice ili 1. poluvreme manje od",
+    1.57,
+    0.5
+   ],
+   [
+    "1+",
+    "1 ili vise 0.5",
+    "Angers pobednik utakmice ili 1. poluvreme više od ",
+    1.23,
+    0.5
+   ],
+   [
+    "0-",
+    "x ili manje 0.5",
+    "Nerešeno na kraju utakmice ili 1. poluvreme manje ",
+    1.9,
+    0.5
+   ],
+   [
+    "0+",
+    "x ili vise 0.5",
+    "Nerešeno na kraju utakmice ili 1. poluvreme više o",
+    1.19,
+    0.5
+   ],
+   [
+    "2-",
+    "2 ili manje 0.5",
+    "Lorient pobednik utakmice ili 1. poluvreme manje o",
+    1.61,
+    0.5
+   ],
+   [
+    "2+",
+    "2 ili vise 0.5",
+    "Lorient pobednik utakmice ili 1. poluvreme više od",
+    1.24,
+    0.5
+   ]
+  ]
+ },
+ "1X2 ili 1. poluvreme ukupno golova (1.5)": {
+  "mecova": 9,
+  "primer": [
+   [
+    "1-",
+    "1 ili manje 1.5",
+    "Angers pobednik utakmice ili 1. poluvreme manje od",
+    1.17,
+    1.5
+   ],
+   [
+    "1+",
+    "1 ili vise 1.5",
+    "Angers pobednik utakmice ili 1. poluvreme više od ",
+    1.68,
+    1.5
+   ],
+   [
+    "0-",
+    "x ili manje 1.5",
+    "Nerešeno na kraju utakmice ili 1. poluvreme manje ",
+    1.25,
+    1.5
+   ],
+   [
+    "0+",
+    "x ili vise 1.5",
+    "Nerešeno na kraju utakmice ili 1. poluvreme više o",
+    1.77,
+    1.5
+   ],
+   [
+    "2-",
+    "2 ili manje 1.5",
+    "Lorient pobednik utakmice ili 1. poluvreme manje o",
+    1.18,
+    1.5
+   ],
+   [
+    "2+",
+    "2 ili vise 1.5",
+    "Lorient pobednik utakmice ili 1. poluvreme više od",
+    1.72,
+    1.5
+   ]
+  ]
+ },
+ "1X2 ili 1. poluvreme ukupno golova (2.5)": {
+  "mecova": 9,
+  "primer": [
+   [
+    "1-",
+    "1 ili manje 2.5",
+    "Angers pobednik utakmice ili 1. poluvreme manje od",
+    1.03,
+    2.5
+   ],
+   [
+    "1+",
+    "1 ili vise 2.5",
+    "Angers pobednik utakmice ili 1. poluvreme više od ",
+    2.15,
+    2.5
+   ],
+   [
+    "0-",
+    "x ili manje 2.5",
+    "Nerešeno na kraju utakmice ili 1. poluvreme manje ",
+    1.05,
+    2.5
+   ],
+   [
+    "0+",
+    "x ili vise 2.5",
+    "Nerešeno na kraju utakmice ili 1. poluvreme više o",
+    2.45,
+    2.5
+   ],
+   [
+    "2-",
+    "2 ili manje 2.5",
+    "Lorient pobednik utakmice ili 1. poluvreme manje o",
+    1.03,
+    2.5
+   ],
+   [
+    "2+",
+    "2 ili vise 2.5",
+    "Lorient pobednik utakmice ili 1. poluvreme više od",
+    2.22,
+    2.5
+   ]
+  ]
+ },
+ "1X2 ili 1. poluvreme ukupno golova (3.5)": {
+  "mecova": 9,
+  "primer": [
+   [
+    "1+",
+    "1 ili vise 3.5",
+    "Angers pobednik utakmice ili 1. poluvreme više od ",
+    2.35,
+    3.5
+   ],
+   [
+    "0+",
+    "x ili vise 3.5",
+    "Nerešeno na kraju utakmice ili 1. poluvreme više o",
+    2.87,
+    3.5
+   ],
+   [
+    "2+",
+    "2 ili vise 3.5",
+    "Lorient pobednik utakmice ili 1. poluvreme više od",
+    2.47,
+    3.5
    ]
   ]
  },
@@ -1972,246 +2085,21 @@
    ]
   ]
  },
- "Ukupno šuteva u okvir gola": {
-  "mecova": 4,
-  "primer": [
-   [
-    "*1-",
-    "manje 5.5",
-    "Manje od 5.5 šuteva u okvir gola",
-    6.1,
-    5.5
-   ],
-   [
-    "*1+",
-    "vise 5.5",
-    "Više od 5.5 šuteva u okvir gola",
-    1.05,
-    5.5
-   ],
-   [
-    "*1-",
-    "manje 6.5",
-    "Manje od 6.5 šuteva u okvir gola",
-    4.0,
-    6.5
-   ],
-   [
-    "*1+",
-    "vise 6.5",
-    "Više od 6.5 šuteva u okvir gola",
-    1.16,
-    6.5
-   ],
-   [
-    "*1-",
-    "manje 7.5",
-    "Manje od 7.5 šuteva u okvir gola",
-    2.82,
-    7.5
-   ],
-   [
-    "*1+",
-    "vise 7.5",
-    "Više od 7.5 šuteva u okvir gola",
-    1.34,
-    7.5
-   ],
-   [
-    "*1-",
-    "manje 8.5",
-    "Manje od 8.5 šuteva u okvir gola",
-    2.12,
-    8.5
-   ],
-   [
-    "*1+",
-    "vise 8.5",
-    "Više od 8.5 šuteva u okvir gola",
-    1.63,
-    8.5
-   ],
-   [
-    "*1-",
-    "manje 9.5",
-    "Manje od 9.5 šuteva u okvir gola",
-    1.66,
-    9.5
-   ],
-   [
-    "*1+",
-    "vise 9.5",
-    "Više od 9.5 šuteva u okvir gola",
-    2.07,
-    9.5
-   ],
-   [
-    "*1-",
-    "manje 10.5",
-    "Manje od 10.5 šuteva u okvir gola",
-    1.37,
-    10.5
-   ],
-   [
-    "*1+",
-    "vise 10.5",
-    "Više od 10.5 šuteva u okvir gola",
-    2.7,
-    10.5
-   ]
-  ]
- },
- "Ukupno šuteva": {
-  "mecova": 4,
-  "primer": [
-   [
-    "",
-    "manje 23.5",
-    "manje od 23.5 šuteva",
-    3.25,
-    23.5
-   ],
-   [
-    "",
-    "vise 23.5",
-    "više od 23.5 šuteva",
-    1.25,
-    23.5
-   ],
-   [
-    "",
-    "manje 24.5",
-    "manje od 24.5 šuteva",
-    2.72,
-    24.5
-   ],
-   [
-    "",
-    "vise 24.5",
-    "više od 24.5 šuteva",
-    1.36,
-    24.5
-   ],
-   [
-    "",
-    "manje 25.5",
-    "manje od 25.5 šuteva",
-    2.32,
-    25.5
-   ],
-   [
-    "",
-    "vise 25.5",
-    "više od 25.5 šuteva",
-    1.51,
-    25.5
-   ],
-   [
-    "",
-    "manje 26.5",
-    "manje od 26.5 šuteva",
-    2.0,
-    26.5
-   ],
-   [
-    "",
-    "vise 26.5",
-    "više od 26.5 šuteva",
-    1.72,
-    26.5
-   ],
-   [
-    "",
-    "manje 27.5",
-    "manje od 27.5 šuteva",
-    1.74,
-    27.5
-   ],
-   [
-    "",
-    "vise 27.5",
-    "više od 27.5 šuteva",
-    1.97,
-    27.5
-   ],
-   [
-    "",
-    "manje 28.5",
-    "manje od 28.5 šuteva",
-    1.54,
-    28.5
-   ],
-   [
-    "",
-    "vise 28.5",
-    "više od 28.5 šuteva",
-    2.27,
-    28.5
-   ]
-  ]
- },
- "Ukupno faulova": {
-  "mecova": 4,
-  "primer": [
-   [
-    "/*0-",
-    "manje 24.5",
-    "manje od 24.5 faulova",
-    2.25,
-    24.5
-   ],
-   [
-    "/*0+",
-    "vise 24.5",
-    "više od 24.5 faulova",
-    1.55,
-    24.5
-   ],
-   [
-    "/*0-",
-    "manje 25.5",
-    "manje od 25.5 faulova",
-    1.95,
-    25.5
-   ],
-   [
-    "/*0+",
-    "vise 25.5",
-    "više od 25.5 faulova",
-    1.75,
-    25.5
-   ],
-   [
-    "/*0-",
-    "manje 26.5",
-    "manje od 26.5 faulova",
-    1.71,
-    26.5
-   ],
-   [
-    "/*0+",
-    "vise 26.5",
-    "više od 26.5 faulova",
-    2.0,
-    26.5
-   ]
-  ]
- },
  "Igrač postiže gol": {
-  "mecova": 3,
+  "mecova": 4,
   "primer": [
    [
     "",
     "ajase ueda",
     "Postiže gol",
-    2.22,
+    2.25,
     null
    ],
    [
     "",
     "olivier giroud",
     "Postiže gol",
-    2.47,
+    2.5,
     null
    ],
    [
@@ -2232,7 +2120,7 @@
     "",
     "hakon arnar haraldsson",
     "Postiže gol",
-    3.1,
+    3.15,
     null
    ],
    [
@@ -2246,28 +2134,28 @@
     "",
     "basar onal",
     "Postiže gol",
-    3.5,
-    null
-   ],
-   [
-    "",
-    "dilan bakva",
-    "Postiže gol",
-    3.65,
-    null
-   ],
-   [
-    "",
-    "mama balde",
-    "Postiže gol",
-    3.75,
+    3.35,
     null
    ],
    [
     "",
     "osame sahraoui",
     "Postiže gol",
-    3.75,
+    3.45,
+    null
+   ],
+   [
+    "",
+    "dilan bakva",
+    "Postiže gol",
+    3.55,
+    null
+   ],
+   [
+    "",
+    "mama balde",
+    "Postiže gol",
+    3.8,
     null
    ],
    [
@@ -2287,11 +2175,11 @@
   ]
  },
  "Igrač postiže 1. gol": {
-  "mecova": 3,
+  "mecova": 4,
   "primer": [
    [
     "",
-    "ajase ueda",
+    "ayase ueda",
     "Postiže 1. gol",
     5.0,
     1.0
@@ -2335,26 +2223,26 @@
     "",
     "basar onal",
     "Postiže 1. gol",
-    8.1,
+    7.8,
+    1.0
+   ],
+   [
+    "",
+    "osame sahraoui",
+    "Postiže 1. gol",
+    8.0,
     1.0
    ],
    [
     "",
     "dilan bakva",
     "Postiže 1. gol",
-    8.5,
+    8.2,
     1.0
    ],
    [
     "",
     "mama balde",
-    "Postiže 1. gol",
-    8.5,
-    1.0
-   ],
-   [
-    "",
-    "osame sahraoui",
     "Postiže 1. gol",
     8.5,
     1.0
@@ -2389,7 +2277,7 @@
     "",
     "x & manje 5.5",
     "Nerešeno na kraju utakmice  i manje od 5.5 gola na",
-    5.35,
+    5.3,
     5.5
    ],
    [
@@ -2455,7 +2343,7 @@
     "",
     "1-2",
     "Olympique Marseille 1-2 gola na utakmici",
-    1.66,
+    1.65,
     -2.0
    ],
    [
@@ -2815,7 +2703,7 @@
     "",
     "vise 0.5 & vise 0.5",
     "Angers daje više od 0.5 golova u 1. poluvremenu i ",
-    3.55,
+    3.6,
     2.0
    ],
    [
@@ -2993,7 +2881,7 @@
     "0-",
     "x & manje 0.5",
     "nerešeno i Angers manje od 0.5 gola na utakmici",
-    13.0,
+    12.0,
     0.5
    ],
    [
@@ -3174,7 +3062,7 @@
     "1-",
     "1 & manje 4.5",
     "Angers pobednik i Angers manje od 4.5 gola na utak",
-    3.1,
+    3.15,
     4.5
    ],
    [
@@ -3228,7 +3116,7 @@
     "0-",
     "x & manje 0.5",
     "nerešeno i Olympique Marseille manje od 0.5 gola n",
-    13.0,
+    12.0,
     0.5
    ],
    [
@@ -3348,100 +3236,6 @@
    ]
   ]
  },
- "1X2 & ukupno golova Olympique Marseille (3.5)": {
-  "mecova": 2,
-  "primer": [
-   [
-    "1-",
-    "1 & manje 3.5",
-    "Angers pobednik  i Olympique Marseille manje od 3.",
-    3.0,
-    3.5
-   ],
-   [
-    "0-",
-    "x & manje 3.5",
-    "nerešeno i Olympique Marseille manje od 3.5 gola n",
-    3.45,
-    3.5
-   ],
-   [
-    "2-",
-    "2 & manje 3.5",
-    "Olympique Marseille pobednik  i Olympique Marseill",
-    2.5,
-    3.5
-   ],
-   [
-    "1+",
-    "1 & vise 3.5",
-    "Angers pobednik  i Olympique Marseille više od 3.5",
-    100.0,
-    3.5
-   ],
-   [
-    "0+",
-    "x & vise 3.5",
-    "nerešeno i Olympique Marseille više od 3.5 gola na",
-    75.0,
-    3.5
-   ],
-   [
-    "2+",
-    "2 & vise 3.5",
-    "Olympique Marseille pobednik  i Olympique Marseill",
-    7.5,
-    3.5
-   ]
-  ]
- },
- "1X2 & ukupno golova Olympique Marseille (4.5)": {
-  "mecova": 2,
-  "primer": [
-   [
-    "1-",
-    "1 & manje 4.5",
-    "Angers pobednik  i Olympique Marseille manje od 4.",
-    3.0,
-    4.5
-   ],
-   [
-    "0-",
-    "x & manje 4.5",
-    "nerešeno i Olympique Marseille manje od 4.5 gola n",
-    3.4,
-    4.5
-   ],
-   [
-    "2-",
-    "2 & manje 4.5",
-    "Olympique Marseille pobednik  i Olympique Marseill",
-    2.17,
-    4.5
-   ],
-   [
-    "1+",
-    "1 & vise 4.5",
-    "Angers pobednik  i Olympique Marseille više od 4.5",
-    125.0,
-    4.5
-   ],
-   [
-    "0+",
-    "x & vise 4.5",
-    "nerešeno i Olympique Marseille više od 4.5 gola na",
-    125.0,
-    4.5
-   ],
-   [
-    "2+",
-    "2 & vise 4.5",
-    "Olympique Marseille pobednik  i Olympique Marseill",
-    17.0,
-    4.5
-   ]
-  ]
- },
  "Le Havre raspon golova": {
   "mecova": 2,
   "primer": [
@@ -3489,7 +3283,7 @@
     "",
     "2-3",
     "Auxerre 2-3 gola na utakmici",
-    2.95,
+    2.92,
     -3.0
    ]
   ]
@@ -3527,21 +3321,21 @@
     "12",
     "1-2",
     "Auxerre 1 ili 2 gola u svakom poluvremenu",
-    4.45,
+    4.4,
     2.0
    ],
    [
     "13",
     "1-3",
     "Auxerre 1,2 ili 3 gola u svakom poluvremenu",
-    4.15,
+    4.1,
     3.0
    ],
    [
     "23",
     "2-3",
     "Auxerre 2 ili 3 gola u svakom poluvremenu",
-    30.0,
+    29.0,
     3.0
    ]
   ]
@@ -3553,7 +3347,7 @@
     "0",
     "0",
     "Le Havre ne daje gol",
-    3.9,
+    4.0,
     3.0
    ],
    [
@@ -3586,7 +3380,7 @@
     "0",
     "0",
     "Auxerre ne daje gol",
-    3.15,
+    3.2,
     3.0
    ],
    [
@@ -3607,7 +3401,7 @@
     "3",
     "3+",
     "Auxerre daje 3 ili više golova",
-    6.4,
+    6.3,
     3.0
    ]
   ]
@@ -3638,14 +3432,14 @@
     "1",
     "da",
     "Auxerre daje gol na utakmici",
-    1.36,
+    1.35,
     null
    ],
    [
     "2",
     "ne",
     "Auxerre ne daje gol na utakmici",
-    3.2,
+    3.25,
     null
    ]
   ]
@@ -3746,7 +3540,7 @@
     "",
     "vise 0.5 & vise 1.5",
     "1. Poluvreme Auxerre više od 0.5 golova i Auxerre ",
-    3.35,
+    3.3,
     1.5
    ],
    [
@@ -3767,35 +3561,35 @@
     "",
     "manje 0.5 & manje 1.5",
     "1. Poluvreme Auxerre manje od 0.5 golova i Auxerre",
-    1.88,
+    1.9,
     1.5
    ],
    [
     "",
     "vise 0.5 & vise 2.5",
     "1. Poluvreme Auxerre više od 0.5 golova i Auxerre ",
-    6.8,
+    6.7,
     2.5
    ],
    [
     "",
     "vise 0.5 & manje 2.5",
     "1. Poluvreme Auxerre više od 0.5 golova i Auxerre ",
-    2.85,
+    2.82,
     2.5
    ],
    [
     "",
     "manje 0.5 & vise 2.5",
     "1. Poluvreme Auxerre manje od 0.5 golova i Auxerre",
-    23.0,
+    22.0,
     2.5
    ],
    [
     "",
     "manje 0.5 & manje 2.5",
     "1. Poluvreme Auxerre manje od 0.5 golova i Auxerre",
-    1.66,
+    1.67,
     2.5
    ],
    [
@@ -3816,7 +3610,7 @@
     "",
     "manje 1.5 & vise 2.5",
     "1. Poluvreme Auxerre manje od 1.5 golova i Auxerre",
-    9.6,
+    9.4,
     2.5
    ],
    [
@@ -3924,14 +3718,14 @@
     "",
     "vise 0.5 & vise 0.5",
     "Auxerre daje više od 0.5 golova u 1. poluvremenu i",
-    4.1,
+    4.0,
     2.0
    ],
    [
     "",
     "vise 0.5 & manje 0.5",
     "Auxerre daje više od 0.5 golova u 1. poluvremenu i",
-    4.0,
+    3.9,
     2.0
    ],
    [
@@ -3945,35 +3739,35 @@
     "",
     "vise 0.5 & manje 1.5",
     "Auxerre daje više od 0.5 golova u 1. poluvremenu i",
-    2.52,
+    2.5,
     2.0
    ],
    [
     "",
     "vise 0.5 & vise 2.5",
     "Auxerre daje više od 0.5 golova u 1. poluvremenu i",
-    32.0,
+    31.0,
     2.0
    ],
    [
     "",
     "vise 0.5 & manje 2.5",
     "Auxerre daje više od 0.5 golova u 1. poluvremenu i",
-    2.25,
+    2.22,
     2.0
    ],
    [
     "",
     "manje 0.5 & vise 0.5",
     "Auxerre daje manje od 0.5 golova u 1. poluvremenu ",
-    2.95,
+    3.0,
     2.0
    ],
    [
     "",
     "manje 0.5 & manje 0.5",
     "Auxerre daje manje od 0.5 golova u 1. poluvremenu ",
-    3.05,
+    3.1,
     2.0
    ],
    [
@@ -3987,21 +3781,21 @@
     "",
     "manje 0.5 & manje 1.5",
     "Auxerre daje manje od 0.5 golova u 1. poluvremenu ",
-    1.88,
+    1.9,
     2.0
    ],
    [
     "",
     "manje 0.5 & vise 2.5",
     "Auxerre daje manje od 0.5 golova u 1. poluvremenu ",
-    23.0,
+    22.0,
     2.0
    ],
    [
     "",
     "manje 0.5 & manje 2.5",
     "Auxerre daje manje od 0.5 golova u 1. poluvremenu ",
-    1.66,
+    1.67,
     2.0
    ]
   ]
@@ -4013,7 +3807,7 @@
     "0-",
     "x & manje 0.5",
     "nerešeno i Le Havre manje od 0.5 gola na utakmici",
-    9.1,
+    9.2,
     0.5
    ],
    [
@@ -4027,7 +3821,7 @@
     "1+",
     "1 & vise 0.5",
     "Le Havre pobednik i Le Havre više od 0.5 gola na u",
-    2.17,
+    2.2,
     0.5
    ],
    [
@@ -4041,7 +3835,7 @@
     "2+",
     "2 & vise 0.5",
     "Auxerre pobednik i Le Havre više od 0.5 gola na ut",
-    5.3,
+    5.25,
     0.5
    ]
   ]
@@ -4060,7 +3854,7 @@
     "0-",
     "x & manje 1.5",
     "nerešeno i Le Havre manje od 1.5 gola na utakmici",
-    4.1,
+    4.15,
     1.5
    ],
    [
@@ -4074,21 +3868,21 @@
     "1+",
     "1 & vise 1.5",
     "Le Havre pobednik i Le Havre više od 1.5 gola na u",
-    2.75,
+    2.77,
     1.5
    ],
    [
     "0+",
     "x & vise 1.5",
     "nerešeno i Le Havre više od 1.5 gola na utakmici",
-    8.7,
+    8.6,
     1.5
    ],
    [
     "2+",
     "2 & vise 1.5",
     "Auxerre pobednik i Le Havre više od 1.5 gola na ut",
-    16.0,
+    15.0,
     1.5
    ]
   ]
@@ -4114,7 +3908,7 @@
     "2-",
     "2 & manje 2.5",
     "Auxerre pobednik i Le Havre manje od 2.5 gola na u",
-    2.95,
+    2.92,
     2.5
    ],
    [
@@ -4128,7 +3922,7 @@
     "0+",
     "x & vise 2.5",
     "nerešeno i Le Havre više od 2.5 gola na utakmici",
-    30.0,
+    29.0,
     2.5
    ],
    [
@@ -4147,7 +3941,7 @@
     "1-",
     "1 & manje 3.5",
     "Le Havre pobednik i Le Havre manje od 3.5 gola na ",
-    2.5,
+    2.52,
     3.5
    ],
    [
@@ -4161,7 +3955,7 @@
     "2-",
     "2 & manje 3.5",
     "Auxerre pobednik i Le Havre manje od 3.5 gola na u",
-    2.92,
+    2.9,
     3.5
    ],
    [
@@ -4208,7 +4002,7 @@
     "2-",
     "2 & manje 4.5",
     "Auxerre pobednik i Le Havre manje od 4.5 gola na u",
-    2.92,
+    2.9,
     4.5
    ],
    [
@@ -4248,7 +4042,7 @@
     "0-",
     "x & manje 0.5",
     "nerešeno i Auxerre manje od 0.5 gola na utakmici",
-    9.1,
+    9.2,
     0.5
    ],
    [
@@ -4269,7 +4063,7 @@
     "2+",
     "2 & vise 0.5",
     "Auxerre pobednik  i Auxerre više od 0.5 gola na ut",
-    2.92,
+    2.9,
     0.5
    ]
   ]
@@ -4281,14 +4075,14 @@
     "1-",
     "1 & manje 1.5",
     "Le Havre pobednik  i Auxerre manje od 1.5 gola na ",
-    2.42,
+    2.45,
     1.5
    ],
    [
     "0-",
     "x & manje 1.5",
     "nerešeno i Auxerre manje od 1.5 gola na utakmici",
-    4.1,
+    4.15,
     1.5
    ],
    [
@@ -4302,163 +4096,22 @@
     "1+",
     "1 & vise 1.5",
     "Le Havre pobednik  i Auxerre više od 1.5 gola na u",
-    13.0,
+    12.0,
     1.5
    ],
    [
     "0+",
     "x & vise 1.5",
     "nerešeno i Auxerre više od 1.5 gola na utakmici",
-    8.7,
+    8.6,
     1.5
    ],
    [
     "2+",
     "2 & vise 1.5",
     "Auxerre pobednik  i Auxerre više od 1.5 gola na ut",
-    3.75,
+    3.7,
     1.5
-   ]
-  ]
- },
- "1X2 & ukupno golova Auxerre (2.5)": {
-  "mecova": 2,
-  "primer": [
-   [
-    "1-",
-    "1 & manje 2.5",
-    "Le Havre pobednik  i Auxerre manje od 2.5 gola na ",
-    2.22,
-    2.5
-   ],
-   [
-    "0-",
-    "x & manje 2.5",
-    "nerešeno i Auxerre manje od 2.5 gola na utakmici",
-    3.3,
-    2.5
-   ],
-   [
-    "2-",
-    "2 & manje 2.5",
-    "Auxerre pobednik  i Auxerre manje od 2.5 gola na u",
-    4.25,
-    2.5
-   ],
-   [
-    "1+",
-    "1 & vise 2.5",
-    "Le Havre pobednik  i Auxerre više od 2.5 gola na u",
-    50.0,
-    2.5
-   ],
-   [
-    "0+",
-    "x & vise 2.5",
-    "nerešeno i Auxerre više od 2.5 gola na utakmici",
-    30.0,
-    2.5
-   ],
-   [
-    "2+",
-    "2 & vise 2.5",
-    "Auxerre pobednik  i Auxerre više od 2.5 gola na ut",
-    6.8,
-    2.5
-   ]
-  ]
- },
- "1X2 & ukupno golova Auxerre (3.5)": {
-  "mecova": 2,
-  "primer": [
-   [
-    "1-",
-    "1 & manje 3.5",
-    "Le Havre pobednik  i Auxerre manje od 3.5 gola na ",
-    2.17,
-    3.5
-   ],
-   [
-    "0-",
-    "x & manje 3.5",
-    "nerešeno i Auxerre manje od 3.5 gola na utakmici",
-    3.15,
-    3.5
-   ],
-   [
-    "2-",
-    "2 & manje 3.5",
-    "Auxerre pobednik  i Auxerre manje od 3.5 gola na u",
-    3.25,
-    3.5
-   ],
-   [
-    "1+",
-    "1 & vise 3.5",
-    "Le Havre pobednik  i Auxerre više od 3.5 gola na u",
-    100.0,
-    3.5
-   ],
-   [
-    "0+",
-    "x & vise 3.5",
-    "nerešeno i Auxerre više od 3.5 gola na utakmici",
-    90.0,
-    3.5
-   ],
-   [
-    "2+",
-    "2 & vise 3.5",
-    "Auxerre pobednik  i Auxerre više od 3.5 gola na ut",
-    16.0,
-    3.5
-   ]
-  ]
- },
- "1X2 & ukupno golova Auxerre (4.5)": {
-  "mecova": 2,
-  "primer": [
-   [
-    "1-",
-    "1 & manje 4.5",
-    "Le Havre pobednik  i Auxerre manje od 4.5 gola na ",
-    2.17,
-    4.5
-   ],
-   [
-    "0-",
-    "x & manje 4.5",
-    "nerešeno i Auxerre manje od 4.5 gola na utakmici",
-    3.15,
-    4.5
-   ],
-   [
-    "2-",
-    "2 & manje 4.5",
-    "Auxerre pobednik  i Auxerre manje od 4.5 gola na u",
-    3.0,
-    4.5
-   ],
-   [
-    "1+",
-    "1 & vise 4.5",
-    "Le Havre pobednik  i Auxerre više od 4.5 gola na u",
-    125.0,
-    4.5
-   ],
-   [
-    "0+",
-    "x & vise 4.5",
-    "nerešeno i Auxerre više od 4.5 gola na utakmici",
-    125.0,
-    4.5
-   ],
-   [
-    "2+",
-    "2 & vise 4.5",
-    "Auxerre pobednik  i Auxerre više od 4.5 gola na ut",
-    40.0,
-    4.5
    ]
   ]
  },
@@ -4476,14 +4129,14 @@
     "",
     "1-3",
     "Le Mans  1-3 gola na utakmici",
-    1.37,
+    1.36,
     -3.0
    ],
    [
     "",
     "2-3",
     "Le Mans 2-3 gola na utakmici",
-    2.6,
+    2.57,
     -3.0
    ]
   ]
@@ -4495,21 +4148,21 @@
     "",
     "1-2",
     "Toulouse 1-2 gola na utakmici",
-    1.62,
+    1.64,
     -2.0
    ],
    [
     "",
     "1-3",
     "Toulouse 1-3 gola na utakmici",
-    1.33,
+    1.32,
     -3.0
    ],
    [
     "",
     "2-3",
     "Toulouse 2-3 gola na utakmici",
-    2.35,
+    2.27,
     -3.0
    ]
   ]
@@ -4521,21 +4174,21 @@
     "12",
     "1-2",
     "Le Mans 1 ili 2 gola u svakom poluvremenu",
-    3.9,
+    3.85,
     2.0
    ],
    [
     "13",
     "1-3",
     "Le Mans 1,2 ili 3 gola u svakom poluvremenu",
-    3.55,
+    3.5,
     3.0
    ],
    [
     "23",
     "2-3",
     "Le Mans 2 ili 3 gola u svakom poluvremenu",
-    22.0,
+    21.0,
     3.0
    ]
   ]
@@ -4547,21 +4200,21 @@
     "12",
     "1-2",
     "Toulouse 1 ili 2 gola u svakom poluvremenu",
-    3.45,
+    3.3,
     2.0
    ],
    [
     "13",
     "1-3",
     "Toulouse 1,2 ili 3 gola u svakom poluvremenu",
-    3.05,
+    2.9,
     3.0
    ],
    [
     "23",
     "2-3",
     "Toulouse 2 ili 3 gola u svakom poluvremenu",
-    17.0,
+    16.0,
     3.0
    ]
   ]
@@ -4573,28 +4226,28 @@
     "0",
     "0",
     "Le Mans ne daje gol",
-    3.7,
+    3.8,
     3.0
    ],
    [
     "1",
     "1",
     "Le Mans daje tačno 1 gol",
-    2.65,
+    2.67,
     3.0
    ],
    [
     "2",
     "2",
     "Le Mans daje tačno 2 gola",
-    3.7,
+    3.65,
     3.0
    ],
    [
     "3",
     "3+",
     "Le Mans daje 3 ili više golova",
-    5.1,
+    5.0,
     3.0
    ]
   ]
@@ -4606,28 +4259,28 @@
     "0",
     "0",
     "Toulouse ne daje gol",
-    4.4,
+    4.7,
     3.0
    ],
    [
     "1",
     "1",
     "Toulouse daje tačno 1 gol",
-    2.82,
+    2.9,
     3.0
    ],
    [
     "2",
     "2",
     "Toulouse daje tačno 2 gola",
-    3.45,
+    3.4,
     3.0
    ],
    [
     "3",
     "3+",
     "Toulouse daje 3 ili više golova",
-    4.15,
+    3.85,
     3.0
    ]
   ]
@@ -4639,14 +4292,14 @@
     "1",
     "da",
     "Le Mans daje gol na utakmici",
-    1.28,
+    1.27,
     null
    ],
    [
     "2",
     "ne",
     "Le Mans ne daje gol na utakmici",
-    3.75,
+    3.8,
     null
    ]
   ]
@@ -4658,14 +4311,14 @@
     "1",
     "da",
     "Toulouse daje gol na utakmici",
-    1.21,
+    1.19,
     null
    ],
    [
     "2",
     "ne",
     "Toulouse ne daje gol na utakmici",
-    4.5,
+    4.75,
     null
    ]
   ]
@@ -4677,7 +4330,7 @@
     "",
     "vise 0.5 & vise 1.5",
     "1. Poluvreme Le Mans više od 0.5 golova i Le Mans ",
-    2.87,
+    2.82,
     1.5
    ],
    [
@@ -4691,21 +4344,21 @@
     "",
     "manje 0.5 & vise 1.5",
     "1. Poluvreme Le Mans manje od 0.5 golova i Le Mans",
-    7.0,
+    6.9,
     1.5
    ],
    [
     "",
     "manje 0.5 & manje 1.5",
     "1. Poluvreme Le Mans manje od 0.5 golova i Le Mans",
-    2.1,
+    2.12,
     1.5
    ],
    [
     "",
     "vise 0.5 & vise 2.5",
     "1. Poluvreme Le Mans više od 0.5 golova i Le Mans ",
-    5.5,
+    5.4,
     2.5
    ],
    [
@@ -4719,21 +4372,21 @@
     "",
     "manje 0.5 & vise 2.5",
     "1. Poluvreme Le Mans manje od 0.5 golova i Le Mans",
-    20.0,
+    19.0,
     2.5
    ],
    [
     "",
     "manje 0.5 & manje 2.5",
     "1. Poluvreme Le Mans manje od 0.5 golova i Le Mans",
-    1.8,
+    1.83,
     2.5
    ],
    [
     "",
     "vise 1.5 & vise 2.5",
     "1. Poluvreme Le Mans više od 1.5 golova i Le Mans ",
-    8.3,
+    8.1,
     2.5
    ],
    [
@@ -4747,14 +4400,14 @@
     "",
     "manje 1.5 & vise 2.5",
     "1. Poluvreme Le Mans manje od 1.5 golova i Le Mans",
-    7.9,
+    7.8,
     2.5
    ],
    [
     "",
     "manje 1.5 & manje 2.5",
     "1. Poluvreme Le Mans manje od 1.5 golova i Le Mans",
-    1.21,
+    1.22,
     2.5
    ]
   ]
@@ -4766,35 +4419,35 @@
     "",
     "vise 0.5 & vise 1.5",
     "1. Poluvreme Toulouse više od 0.5 golova i Toulous",
-    2.47,
+    2.35,
     1.5
    ],
    [
     "",
     "vise 0.5 & manje 1.5",
     "1. Poluvreme Toulouse više od 0.5 golova i Toulous",
-    5.4,
+    5.5,
     1.5
    ],
    [
     "",
     "manje 0.5 & vise 1.5",
     "1. Poluvreme Toulouse manje od 0.5 golova i Toulou",
-    6.5,
+    6.4,
     1.5
    ],
    [
     "",
     "manje 0.5 & manje 1.5",
     "1. Poluvreme Toulouse manje od 0.5 golova i Toulou",
-    2.4,
+    2.52,
     1.5
    ],
    [
     "",
     "vise 0.5 & vise 2.5",
     "1. Poluvreme Toulouse više od 0.5 golova i Toulous",
-    4.5,
+    4.15,
     2.5
    ],
    [
@@ -4808,42 +4461,42 @@
     "",
     "manje 0.5 & vise 2.5",
     "1. Poluvreme Toulouse manje od 0.5 golova i Toulou",
-    17.0,
+    16.0,
     2.5
    ],
    [
     "",
     "manje 0.5 & manje 2.5",
     "1. Poluvreme Toulouse manje od 0.5 golova i Toulou",
-    2.0,
+    2.1,
     2.5
    ],
    [
     "",
     "vise 1.5 & vise 2.5",
     "1. Poluvreme Toulouse više od 1.5 golova i Toulous",
-    6.8,
+    6.3,
     2.5
    ],
    [
     "",
     "vise 1.5 & manje 2.5",
     "1. Poluvreme Toulouse više od 1.5 golova i Toulous",
-    12.0,
+    11.0,
     2.5
    ],
    [
     "",
     "manje 1.5 & vise 2.5",
     "1. Poluvreme Toulouse manje od 1.5 golova i Toulou",
-    6.8,
+    6.4,
     2.5
    ],
    [
     "",
     "manje 1.5 & manje 2.5",
     "1. Poluvreme Toulouse manje od 1.5 golova i Toulou",
-    1.29,
+    1.33,
     2.5
    ]
   ]
@@ -4855,7 +4508,7 @@
     "",
     "vise 0.5 & vise 0.5",
     "Le Mans daje više od 0.5 golova u 1. poluvremenu i",
-    3.45,
+    3.4,
     2.0
    ],
    [
@@ -4869,7 +4522,7 @@
     "",
     "vise 0.5 & vise 1.5",
     "Le Mans daje više od 0.5 golova u 1. poluvremenu i",
-    8.0,
+    7.9,
     2.0
    ],
    [
@@ -4904,35 +4557,35 @@
     "",
     "manje 0.5 & manje 0.5",
     "Le Mans daje manje od 0.5 golova u 1. poluvremenu ",
-    3.6,
+    3.65,
     2.0
    ],
    [
     "",
     "manje 0.5 & vise 1.5",
     "Le Mans daje manje od 0.5 golova u 1. poluvremenu ",
-    7.0,
+    6.9,
     2.0
    ],
    [
     "",
     "manje 0.5 & manje 1.5",
     "Le Mans daje manje od 0.5 golova u 1. poluvremenu ",
-    2.1,
+    2.12,
     2.0
    ],
    [
     "",
     "manje 0.5 & vise 2.5",
     "Le Mans daje manje od 0.5 golova u 1. poluvremenu ",
-    20.0,
+    19.0,
     2.0
    ],
    [
     "",
     "manje 0.5 & manje 2.5",
     "Le Mans daje manje od 0.5 golova u 1. poluvremenu ",
-    1.8,
+    1.83,
     2.0
    ]
   ]
@@ -4944,84 +4597,84 @@
     "",
     "vise 0.5 & vise 0.5",
     "Toulouse daje više od 0.5 golova u 1. poluvremenu ",
-    3.0,
+    2.8,
     2.0
    ],
    [
     "",
     "vise 0.5 & manje 0.5",
     "Toulouse daje više od 0.5 golova u 1. poluvremenu ",
-    3.9,
+    4.0,
     2.0
    ],
    [
     "",
     "vise 0.5 & vise 1.5",
     "Toulouse daje više od 0.5 golova u 1. poluvremenu ",
-    6.7,
+    6.2,
     2.0
    ],
    [
     "",
     "vise 0.5 & manje 1.5",
     "Toulouse daje više od 0.5 golova u 1. poluvremenu ",
-    2.27,
+    2.25,
     2.0
    ],
    [
     "",
     "vise 0.5 & vise 2.5",
     "Toulouse daje više od 0.5 golova u 1. poluvremenu ",
-    18.0,
+    16.0,
     2.0
    ],
    [
     "",
     "vise 0.5 & manje 2.5",
     "Toulouse daje više od 0.5 golova u 1. poluvremenu ",
-    1.92,
+    1.87,
     2.0
    ],
    [
     "",
     "manje 0.5 & vise 0.5",
     "Toulouse daje manje od 0.5 golova u 1. poluvremenu",
-    3.0,
+    3.05,
     2.0
    ],
    [
     "",
     "manje 0.5 & manje 0.5",
     "Toulouse daje manje od 0.5 golova u 1. poluvremenu",
-    4.25,
+    4.55,
     2.0
    ],
    [
     "",
     "manje 0.5 & vise 1.5",
     "Toulouse daje manje od 0.5 golova u 1. poluvremenu",
-    6.5,
+    6.4,
     2.0
    ],
    [
     "",
     "manje 0.5 & manje 1.5",
     "Toulouse daje manje od 0.5 golova u 1. poluvremenu",
-    2.4,
+    2.52,
     2.0
    ],
    [
     "",
     "manje 0.5 & vise 2.5",
     "Toulouse daje manje od 0.5 golova u 1. poluvremenu",
-    17.0,
+    16.0,
     2.0
    ],
    [
     "",
     "manje 0.5 & manje 2.5",
     "Toulouse daje manje od 0.5 golova u 1. poluvremenu",
-    2.0,
+    2.1,
     2.0
    ]
   ]
@@ -5033,7 +4686,7 @@
     "0-",
     "x & manje 0.5",
     "nerešeno i Le Mans manje od 0.5 gola na utakmici",
-    11.0,
+    12.0,
     0.5
    ],
    [
@@ -5047,7 +4700,7 @@
     "1+",
     "1 & vise 0.5",
     "Le Mans pobednik i Le Mans više od 0.5 gola na uta",
-    2.77,
+    2.85,
     0.5
    ],
    [
@@ -5061,7 +4714,7 @@
     "2+",
     "2 & vise 0.5",
     "Toulouse pobednik i Le Mans više od 0.5 gola na ut",
-    3.8,
+    3.6,
     0.5
    ]
   ]
@@ -5073,42 +4726,42 @@
     "1-",
     "1 & manje 1.5",
     "Le Mans pobednik i Le Mans manje od 1.5 gola na ut",
-    9.9,
+    11.0,
     1.5
    ],
    [
     "0-",
     "x & manje 1.5",
     "nerešeno i Le Mans manje od 1.5 gola na utakmici",
-    4.6,
+    4.8,
     1.5
    ],
    [
     "2-",
     "2 & manje 1.5",
     "Toulouse pobednik i Le Mans manje od 1.5 gola na u",
-    2.6,
+    2.52,
     1.5
    ],
    [
     "1+",
     "1 & vise 1.5",
     "Le Mans pobednik i Le Mans više od 1.5 gola na uta",
-    3.35,
+    3.4,
     1.5
    ],
    [
     "0+",
     "x & vise 1.5",
     "nerešeno i Le Mans više od 1.5 gola na utakmici",
-    7.6,
+    7.4,
     1.5
    ],
    [
     "2+",
     "2 & vise 1.5",
     "Toulouse pobednik i Le Mans više od 1.5 gola na ut",
-    10.0,
+    9.3,
     1.5
    ]
   ]
@@ -5120,21 +4773,21 @@
     "1-",
     "1 & manje 2.5",
     "Le Mans pobednik i Le Mans manje od 2.5 gola na ut",
-    4.45,
+    4.7,
     2.5
    ],
    [
     "0-",
     "x & manje 2.5",
     "nerešeno i Le Mans manje od 2.5 gola na utakmici",
-    3.45,
+    3.55,
     2.5
    ],
    [
     "2-",
     "2 & manje 2.5",
     "Toulouse pobednik i Le Mans manje od 2.5 gola na u",
-    2.27,
+    2.2,
     2.5
    ],
    [
@@ -5148,14 +4801,14 @@
     "0+",
     "x & vise 2.5",
     "nerešeno i Le Mans više od 2.5 gola na utakmici",
-    22.0,
+    21.0,
     2.5
    ],
    [
     "2+",
     "2 & vise 2.5",
     "Toulouse pobednik i Le Mans više od 2.5 gola na ut",
-    38.0,
+    34.0,
     2.5
    ]
   ]
@@ -5167,21 +4820,21 @@
     "1-",
     "1 & manje 3.5",
     "Le Mans pobednik i Le Mans manje od 3.5 gola na ut",
-    3.25,
+    3.35,
     3.5
    ],
    [
     "0-",
     "x & manje 3.5",
     "nerešeno i Le Mans manje od 3.5 gola na utakmici",
-    3.25,
+    3.3,
     3.5
    ],
    [
     "2-",
     "2 & manje 3.5",
     "Toulouse pobednik i Le Mans manje od 3.5 gola na u",
-    2.22,
+    2.15,
     3.5
    ],
    [
@@ -5195,7 +4848,7 @@
     "0+",
     "x & vise 3.5",
     "nerešeno i Le Mans više od 3.5 gola na utakmici",
-    75.0,
+    70.0,
     3.5
    ],
    [
@@ -5214,28 +4867,28 @@
     "1-",
     "1 & manje 4.5",
     "Le Mans pobednik i Le Mans manje od 4.5 gola na ut",
-    2.9,
+    3.0,
     4.5
    ],
    [
     "0-",
     "x & manje 4.5",
     "nerešeno i Le Mans manje od 4.5 gola na utakmici",
-    3.25,
+    3.3,
     4.5
    ],
    [
     "2-",
     "2 & manje 4.5",
     "Toulouse pobednik i Le Mans manje od 4.5 gola na u",
-    2.22,
+    2.15,
     4.5
    ],
    [
     "1+",
     "1 & vise 4.5",
     "Le Mans pobednik i Le Mans više od 4.5 gola na uta",
-    29.0,
+    28.0,
     4.5
    ],
    [
@@ -5261,14 +4914,14 @@
     "1-",
     "1 & manje 0.5",
     "Le Mans pobednik  i Toulouse manje od 0.5 gola na ",
-    5.45,
+    5.75,
     0.5
    ],
    [
     "0-",
     "x & manje 0.5",
     "nerešeno i Toulouse manje od 0.5 gola na utakmici",
-    11.0,
+    12.0,
     0.5
    ],
    [
@@ -5289,7 +4942,7 @@
     "2+",
     "2 & vise 0.5",
     "Toulouse pobednik  i Toulouse više od 0.5 gola na ",
-    2.22,
+    2.15,
     0.5
    ]
   ]
@@ -5301,42 +4954,42 @@
     "1-",
     "1 & manje 1.5",
     "Le Mans pobednik  i Toulouse manje od 1.5 gola na ",
-    3.2,
+    3.35,
     1.5
    ],
    [
     "0-",
     "x & manje 1.5",
     "nerešeno i Toulouse manje od 1.5 gola na utakmici",
-    4.6,
+    4.8,
     1.5
    ],
    [
     "2-",
     "2 & manje 1.5",
     "Toulouse pobednik  i Toulouse manje od 1.5 gola na",
-    8.6,
+    8.9,
     1.5
    ],
    [
     "1+",
     "1 & vise 1.5",
     "Le Mans pobednik  i Toulouse više od 1.5 gola na u",
-    12.0,
+    11.0,
     1.5
    ],
    [
     "0+",
     "x & vise 1.5",
     "nerešeno i Toulouse više od 1.5 gola na utakmici",
-    7.6,
+    7.4,
     1.5
    ],
    [
     "2+",
     "2 & vise 1.5",
     "Toulouse pobednik  i Toulouse više od 1.5 gola na ",
-    2.67,
+    2.55,
     1.5
    ]
   ]
@@ -5348,14 +5001,14 @@
     "1-",
     "1 & manje 2.5",
     "Le Mans pobednik  i Toulouse manje od 2.5 gola na ",
-    2.85,
+    2.92,
     2.5
    ],
    [
     "0-",
     "x & manje 2.5",
     "nerešeno i Toulouse manje od 2.5 gola na utakmici",
-    3.45,
+    3.55,
     2.5
    ],
    [
@@ -5369,21 +5022,21 @@
     "1+",
     "1 & vise 2.5",
     "Le Mans pobednik  i Toulouse više od 2.5 gola na u",
-    45.0,
+    40.0,
     2.5
    ],
    [
     "0+",
     "x & vise 2.5",
     "nerešeno i Toulouse više od 2.5 gola na utakmici",
-    22.0,
+    21.0,
     2.5
    ],
    [
     "2+",
     "2 & vise 2.5",
     "Toulouse pobednik  i Toulouse više od 2.5 gola na ",
-    4.45,
+    4.15,
     2.5
    ]
   ]
@@ -5435,7 +5088,7 @@
     "",
     "2-3",
     "Brest 2-3 gola na utakmici",
-    3.05,
+    3.1,
     -3.0
    ]
   ]
@@ -5461,7 +5114,7 @@
     "23",
     "2-3",
     "Lille 2 ili 3 gola u svakom poluvremenu",
-    13.0,
+    14.0,
     3.0
    ]
   ]
@@ -5480,7 +5133,7 @@
     "13",
     "1-3",
     "Brest 1,2 ili 3 gola u svakom poluvremenu",
-    4.35,
+    4.4,
     3.0
    ],
    [
@@ -5499,7 +5152,7 @@
     "0",
     "0",
     "Lille ne daje gol",
-    5.25,
+    5.2,
     3.0
    ],
    [
@@ -5532,7 +5185,7 @@
     "0",
     "0",
     "Brest ne daje gol",
-    3.0,
+    2.95,
     3.0
    ],
    [
@@ -5553,7 +5206,7 @@
     "3",
     "3+",
     "Brest daje 3 ili više golova",
-    7.0,
+    7.1,
     3.0
    ]
   ]
@@ -5572,7 +5225,7 @@
     "2",
     "ne",
     "Lille ne daje gol na utakmici",
-    5.3,
+    5.25,
     null
    ]
   ]
@@ -5584,7 +5237,7 @@
     "1",
     "da",
     "Brest daje gol na utakmici",
-    1.39,
+    1.4,
     null
    ],
    [
@@ -5603,14 +5256,14 @@
     "",
     "vise 0.5 & vise 1.5",
     "1. Poluvreme Lille više od 0.5 golova i Lille više",
-    2.17,
+    2.2,
     1.5
    ],
    [
     "",
     "vise 0.5 & manje 1.5",
     "1. Poluvreme Lille više od 0.5 golova i Lille manj",
-    5.75,
+    5.7,
     1.5
    ],
    [
@@ -5624,7 +5277,7 @@
     "",
     "manje 0.5 & manje 1.5",
     "1. Poluvreme Lille manje od 0.5 golova i Lille man",
-    2.75,
+    2.72,
     1.5
    ],
    [
@@ -5659,7 +5312,7 @@
     "",
     "vise 1.5 & vise 2.5",
     "1. Poluvreme Lille više od 1.5 golova i Lille više",
-    5.6,
+    5.65,
     2.5
    ],
    [
@@ -5680,7 +5333,7 @@
     "",
     "manje 1.5 & manje 2.5",
     "1. Poluvreme Lille manje od 1.5 golova i Lille man",
-    1.4,
+    1.39,
     2.5
    ]
   ]
@@ -5727,7 +5380,7 @@
     "",
     "vise 0.5 & manje 2.5",
     "1. Poluvreme Brest više od 0.5 golova i Brest manj",
-    2.87,
+    2.9,
     2.5
    ],
    [
@@ -5741,7 +5394,7 @@
     "",
     "manje 0.5 & manje 2.5",
     "1. Poluvreme Brest manje od 0.5 golova i Brest man",
-    1.62,
+    1.61,
     2.5
    ],
    [
@@ -5795,7 +5448,7 @@
     "",
     "vise 0.5 & vise 1.5",
     "Lille daje više od 0.5 golova u 1. poluvremenu i v",
-    5.5,
+    5.55,
     2.0
    ],
    [
@@ -5844,7 +5497,7 @@
     "",
     "manje 0.5 & manje 1.5",
     "Lille daje manje od 0.5 golova u 1. poluvremenu i ",
-    2.75,
+    2.72,
     2.0
    ],
    [
@@ -5870,7 +5523,7 @@
     "",
     "vise 0.5 & vise 0.5",
     "Brest daje više od 0.5 golova u 1. poluvremenu i v",
-    4.3,
+    4.35,
     2.0
    ],
    [
@@ -5891,7 +5544,7 @@
     "",
     "vise 0.5 & manje 1.5",
     "Brest daje više od 0.5 golova u 1. poluvremenu i m",
-    2.57,
+    2.6,
     2.0
    ],
    [
@@ -5919,7 +5572,7 @@
     "",
     "manje 0.5 & manje 0.5",
     "Brest daje manje od 0.5 golova u 1. poluvremenu i ",
-    2.92,
+    2.9,
     2.0
    ],
    [
@@ -5947,7 +5600,7 @@
     "",
     "manje 0.5 & manje 2.5",
     "Brest daje manje od 0.5 golova u 1. poluvremenu i ",
-    1.62,
+    1.61,
     2.0
    ]
   ]
@@ -5987,7 +5640,7 @@
     "2+",
     "2 & vise 0.5",
     "Brest pobednik i Lille više od 0.5 gola na utakmic",
-    5.9,
+    6.0,
     0.5
    ]
   ]
@@ -5999,14 +5652,14 @@
     "1-",
     "1 & manje 1.5",
     "Lille pobednik i Lille manje od 1.5 gola na utakmi",
-    7.7,
+    7.6,
     1.5
    ],
    [
     "0-",
     "x & manje 1.5",
     "nerešeno i Lille manje od 1.5 gola na utakmici",
-    4.8,
+    4.75,
     1.5
    ],
    [
@@ -6027,7 +5680,7 @@
     "0+",
     "x & vise 1.5",
     "nerešeno i Lille više od 1.5 gola na utakmici",
-    8.4,
+    8.5,
     1.5
    ],
    [
@@ -6114,7 +5767,7 @@
     "1+",
     "1 & vise 3.5",
     "Lille pobednik i Lille više od 3.5 gola na utakmic",
-    6.9,
+    7.0,
     3.5
    ],
    [
@@ -6147,7 +5800,7 @@
     "0-",
     "x & manje 4.5",
     "nerešeno i Lille manje od 4.5 gola na utakmici",
-    3.5,
+    3.45,
     4.5
    ],
    [
@@ -6201,7 +5854,7 @@
     "1+",
     "1 & vise 0.5",
     "Lille pobednik  i Brest više od 0.5 gola na utakmi",
-    3.3,
+    3.35,
     0.5
    ],
    [
@@ -6234,7 +5887,7 @@
     "",
     "1-3",
     "Lorient  1-3 gola na utakmici",
-    1.48,
+    1.47,
     -3.0
    ],
    [
@@ -6279,7 +5932,7 @@
     "12",
     "1-2",
     "Lorient 1 ili 2 gola u svakom poluvremenu",
-    5.0,
+    4.9,
     2.0
    ],
    [
@@ -6435,7 +6088,7 @@
     "",
     "vise 0.5 & vise 1.5",
     "1. Poluvreme Lorient više od 0.5 golova i Lorient ",
-    3.8,
+    3.75,
     1.5
    ],
    [
@@ -6456,7 +6109,7 @@
     "",
     "manje 0.5 & manje 1.5",
     "1. Poluvreme Lorient manje od 0.5 golova i Lorient",
-    1.75,
+    1.76,
     1.5
    ],
    [
@@ -6470,7 +6123,7 @@
     "",
     "vise 0.5 & manje 2.5",
     "1. Poluvreme Lorient više od 0.5 golova i Lorient ",
-    2.95,
+    2.92,
     2.5
    ],
    [
@@ -6524,14 +6177,14 @@
     "",
     "vise 0.5 & vise 1.5",
     "1. Poluvreme Monaco više od 0.5 golova i Monaco vi",
-    2.6,
+    2.57,
     1.5
    ],
    [
     "",
     "vise 0.5 & manje 1.5",
     "1. Poluvreme Monaco više od 0.5 golova i Monaco ma",
-    5.3,
+    5.25,
     1.5
    ],
    [
@@ -6676,7 +6329,7 @@
     "",
     "manje 0.5 & manje 1.5",
     "Lorient daje manje od 0.5 golova u 1. poluvremenu ",
-    1.75,
+    1.76,
     2.0
    ],
    [
@@ -6737,7 +6390,7 @@
     "",
     "vise 0.5 & manje 2.5",
     "Monaco daje više od 0.5 golova u 1. poluvremenu i ",
-    1.97,
+    1.95,
     2.0
    ],
    [
@@ -6791,14 +6444,14 @@
     "0-",
     "x & manje 0.5",
     "nerešeno i Lorient manje od 0.5 gola na utakmici",
-    8.8,
+    8.7,
     0.5
    ],
    [
     "2-",
     "2 & manje 0.5",
     "Monaco pobednik i Lorient manje od 0.5 gola na uta",
-    3.45,
+    3.5,
     0.5
    ],
    [
@@ -6812,7 +6465,7 @@
     "0+",
     "x & vise 0.5",
     "nerešeno i Lorient više od 0.5 gola na utakmici",
-    4.2,
+    4.15,
     0.5
    ],
    [
@@ -6831,7 +6484,7 @@
     "1-",
     "1 & manje 1.5",
     "Lorient pobednik i Lorient manje od 1.5 gola na ut",
-    8.8,
+    8.9,
     1.5
    ],
    [
@@ -6845,7 +6498,7 @@
     "2-",
     "2 & manje 1.5",
     "Monaco pobednik i Lorient manje od 1.5 gola na uta",
-    2.2,
+    2.22,
     1.5
    ],
    [
@@ -6859,7 +6512,7 @@
     "0+",
     "x & vise 1.5",
     "nerešeno i Lorient više od 1.5 gola na utakmici",
-    9.3,
+    9.2,
     1.5
    ],
    [
@@ -6878,14 +6531,14 @@
     "1-",
     "1 & manje 2.5",
     "Lorient pobednik i Lorient manje od 2.5 gola na ut",
-    4.5,
+    4.55,
     2.5
    ],
    [
     "0-",
     "x & manje 2.5",
     "nerešeno i Lorient manje od 2.5 gola na utakmici",
-    3.35,
+    3.3,
     2.5
    ],
    [
@@ -6899,7 +6552,7 @@
     "1+",
     "1 & vise 2.5",
     "Lorient pobednik i Lorient više od 2.5 gola na uta",
-    7.9,
+    8.0,
     2.5
    ],
    [
@@ -6972,14 +6625,14 @@
     "1-",
     "1 & manje 4.5",
     "Lorient pobednik i Lorient manje od 4.5 gola na ut",
-    3.3,
+    3.35,
     4.5
    ],
    [
     "0-",
     "x & manje 4.5",
     "nerešeno i Lorient manje od 4.5 gola na utakmici",
-    3.2,
+    3.15,
     4.5
    ],
    [
@@ -7026,21 +6679,21 @@
     "0-",
     "x & manje 0.5",
     "nerešeno i Monaco manje od 0.5 gola na utakmici",
-    8.8,
+    8.7,
     0.5
    ],
    [
     "1+",
     "1 & vise 0.5",
     "Lorient pobednik  i Monaco više od 0.5 gola na uta",
-    5.9,
+    6.0,
     0.5
    ],
    [
     "0+",
     "x & vise 0.5",
     "nerešeno i Monaco više od 0.5 gola na utakmici",
-    4.2,
+    4.15,
     0.5
    ],
    [
@@ -7087,156 +6740,15 @@
     "0+",
     "x & vise 1.5",
     "nerešeno i Monaco više od 1.5 gola na utakmici",
-    9.3,
+    9.2,
     1.5
    ],
    [
     "2+",
     "2 & vise 1.5",
     "Monaco pobednik  i Monaco više od 1.5 gola na utak",
-    2.52,
+    2.55,
     1.5
-   ]
-  ]
- },
- "1X2 & ukupno golova Monaco (2.5)": {
-  "mecova": 2,
-  "primer": [
-   [
-    "1-",
-    "1 & manje 2.5",
-    "Lorient pobednik  i Monaco manje od 2.5 gola na ut",
-    3.3,
-    2.5
-   ],
-   [
-    "0-",
-    "x & manje 2.5",
-    "nerešeno i Monaco manje od 2.5 gola na utakmici",
-    3.35,
-    2.5
-   ],
-   [
-    "2-",
-    "2 & manje 2.5",
-    "Monaco pobednik  i Monaco manje od 2.5 gola na uta",
-    3.15,
-    2.5
-   ],
-   [
-    "1+",
-    "1 & vise 2.5",
-    "Lorient pobednik  i Monaco više od 2.5 gola na uta",
-    65.0,
-    2.5
-   ],
-   [
-    "0+",
-    "x & vise 2.5",
-    "nerešeno i Monaco više od 2.5 gola na utakmici",
-    33.0,
-    2.5
-   ],
-   [
-    "2+",
-    "2 & vise 2.5",
-    "Monaco pobednik  i Monaco više od 2.5 gola na utak",
-    4.5,
-    2.5
-   ]
-  ]
- },
- "1X2 & ukupno golova Monaco (3.5)": {
-  "mecova": 2,
-  "primer": [
-   [
-    "1-",
-    "1 & manje 3.5",
-    "Lorient pobednik  i Monaco manje od 3.5 gola na ut",
-    3.25,
-    3.5
-   ],
-   [
-    "0-",
-    "x & manje 3.5",
-    "nerešeno i Monaco manje od 3.5 gola na utakmici",
-    3.2,
-    3.5
-   ],
-   [
-    "2-",
-    "2 & manje 3.5",
-    "Monaco pobednik  i Monaco manje od 3.5 gola na uta",
-    2.3,
-    3.5
-   ],
-   [
-    "1+",
-    "1 & vise 3.5",
-    "Lorient pobednik  i Monaco više od 3.5 gola na uta",
-    125.0,
-    3.5
-   ],
-   [
-    "0+",
-    "x & vise 3.5",
-    "nerešeno i Monaco više od 3.5 gola na utakmici",
-    100.0,
-    3.5
-   ],
-   [
-    "2+",
-    "2 & vise 3.5",
-    "Monaco pobednik  i Monaco više od 3.5 gola na utak",
-    9.5,
-    3.5
-   ]
-  ]
- },
- "1X2 & ukupno golova Monaco (4.5)": {
-  "mecova": 2,
-  "primer": [
-   [
-    "1-",
-    "1 & manje 4.5",
-    "Lorient pobednik  i Monaco manje od 4.5 gola na ut",
-    3.25,
-    4.5
-   ],
-   [
-    "0-",
-    "x & manje 4.5",
-    "nerešeno i Monaco manje od 4.5 gola na utakmici",
-    3.2,
-    4.5
-   ],
-   [
-    "2-",
-    "2 & manje 4.5",
-    "Monaco pobednik  i Monaco manje od 4.5 gola na uta",
-    2.07,
-    4.5
-   ],
-   [
-    "1+",
-    "1 & vise 4.5",
-    "Lorient pobednik  i Monaco više od 4.5 gola na uta",
-    125.0,
-    4.5
-   ],
-   [
-    "0+",
-    "x & vise 4.5",
-    "nerešeno i Monaco više od 4.5 gola na utakmici",
-    125.0,
-    4.5
-   ],
-   [
-    "2+",
-    "2 & vise 4.5",
-    "Monaco pobednik  i Monaco više od 4.5 gola na utak",
-    23.0,
-    4.5
    ]
   ]
  },
@@ -8072,194 +7584,6 @@
    ]
   ]
  },
- "1X2 & ukupno golova Nice (1.5)": {
-  "mecova": 2,
-  "primer": [
-   [
-    "1-",
-    "1 & manje 1.5",
-    "Olympique Lyon pobednik  i Nice manje od 1.5 gola ",
-    1.85,
-    1.5
-   ],
-   [
-    "0-",
-    "x & manje 1.5",
-    "nerešeno i Nice manje od 1.5 gola na utakmici",
-    5.1,
-    1.5
-   ],
-   [
-    "2-",
-    "2 & manje 1.5",
-    "Nice pobednik  i Nice manje od 1.5 gola na utakmic",
-    12.0,
-    1.5
-   ],
-   [
-    "1+",
-    "1 & vise 1.5",
-    "Olympique Lyon pobednik  i Nice više od 1.5 gola n",
-    8.9,
-    1.5
-   ],
-   [
-    "0+",
-    "x & vise 1.5",
-    "nerešeno i Nice više od 1.5 gola na utakmici",
-    9.0,
-    1.5
-   ],
-   [
-    "2+",
-    "2 & vise 1.5",
-    "Nice pobednik  i Nice više od 1.5 gola na utakmici",
-    5.25,
-    1.5
-   ]
-  ]
- },
- "1X2 & ukupno golova Nice (2.5)": {
-  "mecova": 2,
-  "primer": [
-   [
-    "1-",
-    "1 & manje 2.5",
-    "Olympique Lyon pobednik  i Nice manje od 2.5 gola ",
-    1.66,
-    2.5
-   ],
-   [
-    "0-",
-    "x & manje 2.5",
-    "nerešeno i Nice manje od 2.5 gola na utakmici",
-    4.0,
-    2.5
-   ],
-   [
-    "2-",
-    "2 & manje 2.5",
-    "Nice pobednik  i Nice manje od 2.5 gola na utakmic",
-    5.85,
-    2.5
-   ],
-   [
-    "1+",
-    "1 & vise 2.5",
-    "Olympique Lyon pobednik  i Nice više od 2.5 gola n",
-    37.0,
-    2.5
-   ],
-   [
-    "0+",
-    "x & vise 2.5",
-    "nerešeno i Nice više od 2.5 gola na utakmici",
-    28.0,
-    2.5
-   ],
-   [
-    "2+",
-    "2 & vise 2.5",
-    "Nice pobednik  i Nice više od 2.5 gola na utakmici",
-    9.2,
-    2.5
-   ]
-  ]
- },
- "1X2 & ukupno golova Nice (3.5)": {
-  "mecova": 2,
-  "primer": [
-   [
-    "1-",
-    "1 & manje 3.5",
-    "Olympique Lyon pobednik  i Nice manje od 3.5 gola ",
-    1.64,
-    3.5
-   ],
-   [
-    "0-",
-    "x & manje 3.5",
-    "nerešeno i Nice manje od 3.5 gola na utakmici",
-    3.75,
-    3.5
-   ],
-   [
-    "2-",
-    "2 & manje 3.5",
-    "Nice pobednik  i Nice manje od 3.5 gola na utakmic",
-    4.55,
-    3.5
-   ],
-   [
-    "1+",
-    "1 & vise 3.5",
-    "Olympique Lyon pobednik  i Nice više od 3.5 gola n",
-    100.0,
-    3.5
-   ],
-   [
-    "0+",
-    "x & vise 3.5",
-    "nerešeno i Nice više od 3.5 gola na utakmici",
-    85.0,
-    3.5
-   ],
-   [
-    "2+",
-    "2 & vise 3.5",
-    "Nice pobednik  i Nice više od 3.5 gola na utakmici",
-    22.0,
-    3.5
-   ]
-  ]
- },
- "1X2 & ukupno golova Nice (4.5)": {
-  "mecova": 2,
-  "primer": [
-   [
-    "1-",
-    "1 & manje 4.5",
-    "Olympique Lyon pobednik  i Nice manje od 4.5 gola ",
-    1.63,
-    4.5
-   ],
-   [
-    "0-",
-    "x & manje 4.5",
-    "nerešeno i Nice manje od 4.5 gola na utakmici",
-    3.75,
-    4.5
-   ],
-   [
-    "2-",
-    "2 & manje 4.5",
-    "Nice pobednik  i Nice manje od 4.5 gola na utakmic",
-    4.25,
-    4.5
-   ],
-   [
-    "1+",
-    "1 & vise 4.5",
-    "Olympique Lyon pobednik  i Nice više od 4.5 gola n",
-    125.0,
-    4.5
-   ],
-   [
-    "0+",
-    "x & vise 4.5",
-    "nerešeno i Nice više od 4.5 gola na utakmici",
-    125.0,
-    4.5
-   ],
-   [
-    "2+",
-    "2 & vise 4.5",
-    "Nice pobednik  i Nice više od 4.5 gola na utakmici",
-    60.0,
-    4.5
-   ]
-  ]
- },
  "Paris FC raspon golova": {
   "mecova": 2,
   "primer": [
@@ -8300,14 +7624,14 @@
     "",
     "1-3",
     "Rennes 1-3 gola na utakmici",
-    1.37,
+    1.36,
     -3.0
    ],
    [
     "",
     "2-3",
     "Rennes 2-3 gola na utakmici",
-    2.6,
+    2.57,
     -3.0
    ]
   ]
@@ -8345,7 +7669,7 @@
     "12",
     "1-2",
     "Rennes 1 ili 2 gola u svakom poluvremenu",
-    3.9,
+    3.85,
     2.0
    ],
    [
@@ -8359,7 +7683,7 @@
     "23",
     "2-3",
     "Rennes 2 ili 3 gola u svakom poluvremenu",
-    22.0,
+    21.0,
     3.0
    ]
   ]
@@ -8418,14 +7742,14 @@
     "2",
     "2",
     "Rennes daje tačno 2 gola",
-    3.7,
+    3.65,
     3.0
    ],
    [
     "3",
     "3+",
     "Rennes daje 3 ili više golova",
-    5.1,
+    5.0,
     3.0
    ]
   ]
@@ -8564,7 +7888,7 @@
     "",
     "vise 0.5 & vise 1.5",
     "1. Poluvreme Rennes više od 0.5 golova i Rennes vi",
-    2.85,
+    2.82,
     1.5
    ],
    [
@@ -8592,7 +7916,7 @@
     "",
     "vise 0.5 & vise 2.5",
     "1. Poluvreme Rennes više od 0.5 golova i Rennes vi",
-    5.45,
+    5.4,
     2.5
    ],
    [
@@ -8653,7 +7977,7 @@
     "",
     "vise 0.5 & vise 0.5",
     "Paris FC daje više od 0.5 golova u 1. poluvremenu ",
-    2.95,
+    2.92,
     2.0
    ],
    [
@@ -8688,7 +8012,7 @@
     "",
     "vise 0.5 & manje 2.5",
     "Paris FC daje više od 0.5 golova u 1. poluvremenu ",
-    1.92,
+    1.9,
     2.0
    ],
    [
@@ -8742,28 +8066,28 @@
     "",
     "vise 0.5 & vise 0.5",
     "Rennes daje više od 0.5 golova u 1. poluvremenu i ",
-    3.45,
+    3.4,
     2.0
    ],
    [
     "",
     "vise 0.5 & manje 0.5",
     "Rennes daje više od 0.5 golova u 1. poluvremenu i ",
-    3.9,
+    4.0,
     2.0
    ],
    [
     "",
     "vise 0.5 & vise 1.5",
     "Rennes daje više od 0.5 golova u 1. poluvremenu i ",
-    8.0,
+    7.9,
     2.0
    ],
    [
     "",
     "vise 0.5 & manje 1.5",
     "Rennes daje više od 0.5 golova u 1. poluvremenu i ",
-    2.37,
+    2.4,
     2.0
    ],
    [
@@ -8791,7 +8115,7 @@
     "",
     "manje 0.5 & manje 0.5",
     "Rennes daje manje od 0.5 golova u 1. poluvremenu i",
-    3.6,
+    3.65,
     2.0
    ],
    [
@@ -8845,7 +8169,7 @@
     "1+",
     "1 & vise 0.5",
     "Paris FC pobednik i Paris FC više od 0.5 gola na u",
-    2.2,
+    2.22,
     0.5
    ],
    [
@@ -8859,7 +8183,7 @@
     "2+",
     "2 & vise 0.5",
     "Rennes pobednik i Paris FC više od 0.5 gola na uta",
-    4.6,
+    4.55,
     0.5
    ]
   ]
@@ -8871,7 +8195,7 @@
     "1-",
     "1 & manje 1.5",
     "Paris FC pobednik i Paris FC manje od 1.5 gola na ",
-    8.6,
+    8.7,
     1.5
    ],
    [
@@ -8899,7 +8223,7 @@
     "0+",
     "x & vise 1.5",
     "nerešeno i Paris FC više od 1.5 gola na utakmici",
-    7.6,
+    7.5,
     1.5
    ],
    [
@@ -8939,7 +8263,7 @@
     "1+",
     "1 & vise 2.5",
     "Paris FC pobednik i Paris FC više od 2.5 gola na u",
-    4.35,
+    4.4,
     2.5
    ],
    [
@@ -8953,7 +8277,7 @@
     "2+",
     "2 & vise 2.5",
     "Rennes pobednik i Paris FC više od 2.5 gola na uta",
-    45.0,
+    40.0,
     2.5
    ]
   ]
@@ -8965,7 +8289,7 @@
     "1-",
     "1 & manje 3.5",
     "Paris FC pobednik i Paris FC manje od 3.5 gola na ",
-    2.65,
+    2.67,
     3.5
    ],
    [
@@ -9012,7 +8336,7 @@
     "1-",
     "1 & manje 4.5",
     "Paris FC pobednik i Paris FC manje od 4.5 gola na ",
-    2.32,
+    2.35,
     4.5
    ],
    [
@@ -9059,7 +8383,7 @@
     "1-",
     "1 & manje 0.5",
     "Paris FC pobednik  i Rennes manje od 0.5 gola na u",
-    4.4,
+    4.45,
     0.5
    ],
    [
@@ -9099,7 +8423,7 @@
     "1-",
     "1 & manje 1.5",
     "Paris FC pobednik  i Rennes manje od 1.5 gola na u",
-    2.57,
+    2.6,
     1.5
    ],
    [
@@ -9127,7 +8451,7 @@
     "0+",
     "x & vise 1.5",
     "nerešeno i Rennes više od 1.5 gola na utakmici",
-    7.6,
+    7.5,
     1.5
    ],
    [
@@ -9146,7 +8470,7 @@
     "1-",
     "1 & manje 2.5",
     "Paris FC pobednik  i Rennes manje od 2.5 gola na u",
-    2.25,
+    2.27,
     2.5
    ],
    [
@@ -9181,102 +8505,8 @@
     "2+",
     "2 & vise 2.5",
     "Rennes pobednik  i Rennes više od 2.5 gola na utak",
-    5.65,
+    5.6,
     2.5
-   ]
-  ]
- },
- "1X2 & ukupno golova Rennes (3.5)": {
-  "mecova": 2,
-  "primer": [
-   [
-    "1-",
-    "1 & manje 3.5",
-    "Paris FC pobednik  i Rennes manje od 3.5 gola na u",
-    2.22,
-    3.5
-   ],
-   [
-    "0-",
-    "x & manje 3.5",
-    "nerešeno i Rennes manje od 3.5 gola na utakmici",
-    3.3,
-    3.5
-   ],
-   [
-    "2-",
-    "2 & manje 3.5",
-    "Rennes pobednik  i Rennes manje od 3.5 gola na uta",
-    3.25,
-    3.5
-   ],
-   [
-    "1+",
-    "1 & vise 3.5",
-    "Paris FC pobednik  i Rennes više od 3.5 gola na ut",
-    100.0,
-    3.5
-   ],
-   [
-    "0+",
-    "x & vise 3.5",
-    "nerešeno i Rennes više od 3.5 gola na utakmici",
-    75.0,
-    3.5
-   ],
-   [
-    "2+",
-    "2 & vise 3.5",
-    "Rennes pobednik  i Rennes više od 3.5 gola na utak",
-    12.0,
-    3.5
-   ]
-  ]
- },
- "1X2 & ukupno golova Rennes (4.5)": {
-  "mecova": 2,
-  "primer": [
-   [
-    "1-",
-    "1 & manje 4.5",
-    "Paris FC pobednik  i Rennes manje od 4.5 gola na u",
-    2.2,
-    4.5
-   ],
-   [
-    "0-",
-    "x & manje 4.5",
-    "nerešeno i Rennes manje od 4.5 gola na utakmici",
-    3.25,
-    4.5
-   ],
-   [
-    "2-",
-    "2 & manje 4.5",
-    "Rennes pobednik  i Rennes manje od 4.5 gola na uta",
-    2.9,
-    4.5
-   ],
-   [
-    "1+",
-    "1 & vise 4.5",
-    "Paris FC pobednik  i Rennes više od 4.5 gola na ut",
-    125.0,
-    4.5
-   ],
-   [
-    "0+",
-    "x & vise 4.5",
-    "nerešeno i Rennes više od 4.5 gola na utakmici",
-    125.0,
-    4.5
-   ],
-   [
-    "2+",
-    "2 & vise 4.5",
-    "Rennes pobednik  i Rennes više od 4.5 gola na utak",
-    29.0,
-    4.5
    ]
   ]
  },
@@ -9530,7 +8760,7 @@
     "",
     "vise 0.5 & manje 2.5",
     "1. Poluvreme Strasbourg više od 0.5 golova i Stras",
-    2.92,
+    2.9,
     2.5
    ],
    [
@@ -9544,7 +8774,7 @@
     "",
     "manje 0.5 & manje 2.5",
     "1. Poluvreme Strasbourg manje od 0.5 golova i Stra",
-    1.57,
+    1.58,
     2.5
    ],
    [
@@ -9708,7 +8938,7 @@
     "",
     "vise 0.5 & manje 2.5",
     "Strasbourg daje više od 0.5 golova u 1. poluvremen",
-    2.4,
+    2.37,
     2.0
    ],
    [
@@ -9750,7 +8980,7 @@
     "",
     "manje 0.5 & manje 2.5",
     "Strasbourg daje manje od 0.5 golova u 1. poluvreme",
-    1.57,
+    1.58,
     2.0
    ]
   ]
@@ -9945,7 +9175,7 @@
     "0-",
     "x & manje 2.5",
     "nerešeno i Strasbourg manje od 2.5 gola na utakmic",
-    5.35,
+    5.3,
     2.5
    ],
    [
@@ -10006,7 +9236,7 @@
     "1+",
     "1 & vise 3.5",
     "Strasbourg pobednik i Strasbourg više od 3.5 gola ",
-    22.0,
+    23.0,
     3.5
    ],
    [
@@ -10301,7 +9531,7 @@
     "",
     "manje 0.5 & vise 1.5",
     "1. Poluvreme Troyes manje od 0.5 golova i Troyes v",
-    7.4,
+    7.5,
     1.5
    ],
    [
@@ -10521,7 +9751,7 @@
     "",
     "manje 0.5 & vise 1.5",
     "Troyes daje manje od 0.5 golova u 1. poluvremenu i",
-    7.4,
+    7.5,
     2.0
    ],
    [
@@ -11136,6 +10366,120 @@
    ]
   ]
  },
+ "Angers ukupno šuteva u okvir gola": {
+  "mecova": 1,
+  "primer": [
+   [
+    "*11-",
+    "manje 4.5",
+    "Angers će imati manje od 4.5 šuteva u okvir gola",
+    1.69,
+    4.5
+   ],
+   [
+    "*11+",
+    "vise 4.5",
+    "Angers će imati više od 4.5 šuteva u okvir gola",
+    2.02,
+    4.5
+   ]
+  ]
+ },
+ "Olympique Marseille ukupno šuteva u okvir gola": {
+  "mecova": 1,
+  "primer": [
+   [
+    "*12-",
+    "manje 4.5",
+    "Olympique Marseille će imati manje od 4.5 šuteva u",
+    2.07,
+    4.5
+   ],
+   [
+    "*12+",
+    "vise 4.5",
+    "Olympique Marseille će imati više od 4.5 šuteva u ",
+    1.66,
+    4.5
+   ]
+  ]
+ },
+ "Ukupno šuteva Angers": {
+  "mecova": 1,
+  "primer": [
+   [
+    "",
+    "manje 12.5",
+    "Angers manje od 12.5 šuteva,",
+    1.92,
+    12.5
+   ],
+   [
+    "",
+    "vise 12.5",
+    "Angers više od 12.5 šuteva",
+    1.78,
+    12.5
+   ]
+  ]
+ },
+ "Ukupno šuteva Olympique Marseille": {
+  "mecova": 1,
+  "primer": [
+   [
+    "",
+    "manje 13.5",
+    "Olympique Marseille manje od 13.5 šuteva",
+    2.0,
+    13.5
+   ],
+   [
+    "",
+    "vise 13.5",
+    "Olympique Marseille više od 13.5 šuteva",
+    1.73,
+    13.5
+   ]
+  ]
+ },
+ "Angers Ukupno faulova": {
+  "mecova": 1,
+  "primer": [
+   [
+    "/*01-",
+    "manje 10.5",
+    "Angers manje od 10.5 faulova",
+    1.92,
+    10.5
+   ],
+   [
+    "/*01+",
+    "vise 10.5",
+    "Angers više od 10.5 faulova",
+    1.72,
+    10.5
+   ]
+  ]
+ },
+ "Olympique Marseille Ukupno faulova": {
+  "mecova": 1,
+  "primer": [
+   [
+    "/*02-",
+    "manje 11.5",
+    "Olympique Marseille manje od 11.5 faulova",
+    1.78,
+    11.5
+   ],
+   [
+    "/*02+",
+    "vise 11.5",
+    "Olympique Marseille više od 11.5 faulova",
+    1.85,
+    11.5
+   ]
+  ]
+ },
  "Ukupno kornera Le Havre": {
   "mecova": 1,
   "primer": [
@@ -11408,6 +10752,120 @@
    ]
   ]
  },
+ "Le Havre ukupno šuteva u okvir gola": {
+  "mecova": 1,
+  "primer": [
+   [
+    "*11-",
+    "manje 4.5",
+    "Le Havre će imati manje od 4.5 šuteva u okvir gola",
+    1.85,
+    4.5
+   ],
+   [
+    "*11+",
+    "vise 4.5",
+    "Le Havre će imati više od 4.5 šuteva u okvir gola",
+    1.85,
+    4.5
+   ]
+  ]
+ },
+ "Auxerre ukupno šuteva u okvir gola": {
+  "mecova": 1,
+  "primer": [
+   [
+    "*12-",
+    "manje 3.5",
+    "Auxerre će imati manje od 3.5 šuteva u okvir gola",
+    2.07,
+    3.5
+   ],
+   [
+    "*12+",
+    "vise 3.5",
+    "Auxerre će imati više od 3.5 šuteva u okvir gola",
+    1.66,
+    3.5
+   ]
+  ]
+ },
+ "Ukupno šuteva Le Havre": {
+  "mecova": 1,
+  "primer": [
+   [
+    "",
+    "manje 13.5",
+    "Le Havre manje od 13.5 šuteva,",
+    1.76,
+    13.5
+   ],
+   [
+    "",
+    "vise 13.5",
+    "Le Havre više od 13.5 šuteva",
+    1.95,
+    13.5
+   ]
+  ]
+ },
+ "Ukupno šuteva Auxerre": {
+  "mecova": 1,
+  "primer": [
+   [
+    "",
+    "manje 11.5",
+    "Auxerre manje od 11.5 šuteva",
+    1.8,
+    11.5
+   ],
+   [
+    "",
+    "vise 11.5",
+    "Auxerre više od 11.5 šuteva",
+    1.92,
+    11.5
+   ]
+  ]
+ },
+ "Le Havre Ukupno faulova": {
+  "mecova": 1,
+  "primer": [
+   [
+    "/*01-",
+    "manje 11.5",
+    "Le Havre manje od 11.5 faulova",
+    1.9,
+    11.5
+   ],
+   [
+    "/*01+",
+    "vise 11.5",
+    "Le Havre više od 11.5 faulova",
+    1.74,
+    11.5
+   ]
+  ]
+ },
+ "Auxerre Ukupno faulova": {
+  "mecova": 1,
+  "primer": [
+   [
+    "/*02-",
+    "manje 12.5",
+    "Auxerre manje od 12.5 faulova",
+    1.87,
+    12.5
+   ],
+   [
+    "/*02+",
+    "vise 12.5",
+    "Auxerre više od 12.5 faulova",
+    1.78,
+    12.5
+   ]
+  ]
+ },
  "Ukupno kornera Le Mans": {
   "mecova": 1,
   "primer": [
@@ -11436,7 +10894,7 @@
     "/1-",
     "manje 2.5",
     "Le Mans manje od 2.5 kornera",
-    3.8,
+    3.85,
     2.5
    ],
    [
@@ -11464,21 +10922,21 @@
     "/1-",
     "manje 4.5",
     "Le Mans manje od 4.5 kornera",
-    1.73,
+    1.74,
     4.5
    ],
    [
     "/1+",
     "vise 4.5",
     "Le Mans više od 4.5 kornera",
-    2.0,
+    1.97,
     4.5
    ],
    [
     "/1-",
     "manje 5.5",
     "Le Mans manje od 5.5 kornera",
-    1.39,
+    1.4,
     5.5
    ],
    [
@@ -11504,14 +10962,14 @@
     "/2-",
     "manje 0.5",
     "Toulouse će imati manje od 0.5 kornera",
-    23.0,
+    24.0,
     0.5
    ],
    [
     "/2-",
     "manje 1.5",
     "Toulouse će imati manje od 1.5 kornera",
-    8.1,
+    8.3,
     1.5
    ],
    [
@@ -11525,7 +10983,7 @@
     "/2-",
     "manje 2.5",
     "Toulouse će imati manje od 2.5 kornera",
-    4.25,
+    4.3,
     2.5
    ],
    [
@@ -11539,49 +10997,49 @@
     "/2-",
     "manje 3.5",
     "Toulouse će imati manje od 3.5 kornera",
-    2.62,
+    2.65,
     3.5
    ],
    [
     "/2+",
     "vise 3.5",
     "Toulouse će imati više od 3.5 kornera",
-    1.43,
+    1.42,
     3.5
    ],
    [
     "/2-",
     "manje 4.5",
     "Toulouse će imati manje od 4.5 kornera",
-    1.85,
+    1.88,
     4.5
    ],
    [
     "/2+",
     "vise 4.5",
     "Toulouse će imati više od 4.5 kornera",
-    1.85,
+    1.83,
     4.5
    ],
    [
     "/2-",
     "manje 5.5",
     "Toulouse će imati manje od 5.5 kornera",
-    1.47,
+    1.48,
     5.5
    ],
    [
     "/2+",
     "vise 5.5",
     "Toulouse će imati više od 5.5 kornera",
-    2.52,
+    2.47,
     5.5
    ],
    [
     "/2-",
     "manje 6.5",
     "Toulouse će imati manje od 6.5 kornera",
-    1.25,
+    1.26,
     6.5
    ]
   ]
@@ -11593,42 +11051,42 @@
     ".1-",
     "manje 0.5",
     "Le Mans će imati manje od 0.5 kartona na utakmici ",
-    5.55,
+    5.15,
     0.5
    ],
    [
     ".1+",
     "vise 0.5",
     "Le Mans će imati više od 0.5 kartona na utakmici (",
-    1.07,
+    1.09,
     0.5
    ],
    [
     ".1-",
     "manje 1.5",
     "Le Mans će imati manje od 1.5 kartona na utakmici ",
-    2.32,
+    2.2,
     1.5
    ],
    [
     ".1+",
     "vise 1.5",
     "Le Mans će imati više od 1.5 kartona na utakmici (",
-    1.52,
+    1.58,
     1.5
    ],
    [
     ".1-",
     "manje 2.5",
     "Le Mans će imati manje od 2.5 kartona na utakmici ",
-    1.42,
+    1.38,
     2.5
    ],
    [
     ".1+",
     "vise 2.5",
     "Le Mans će imati više od 2.5 kartona na utakmici (",
-    2.55,
+    2.67,
     2.5
    ]
   ]
@@ -11640,42 +11098,42 @@
     ".2-",
     "manje 0.5",
     "Toulouse će imati manje od 0.5 kartona na utakmici",
-    5.25,
+    5.7,
     0.5
    ],
    [
     ".2+",
     "vise 0.5",
     "Toulouse će imati više od 0.5 kartona na utakmici ",
-    1.08,
+    1.07,
     0.5
    ],
    [
     ".2-",
     "manje 1.5",
     "Toulouse će imati manje od 1.5 kartona na utakmici",
-    2.22,
+    2.37,
     1.5
    ],
    [
     ".2+",
     "vise 1.5",
     "Toulouse će imati više od 1.5 kartona na utakmici ",
-    1.57,
+    1.49,
     1.5
    ],
    [
     ".2-",
     "manje 2.5",
     "Toulouse će imati manje od 2.5 kartona na utakmici",
-    1.37,
+    1.46,
     2.5
    ],
    [
     ".2+",
     "vise 2.5",
     "Toulouse će imati više od 2.5 kartona na utakmici ",
-    2.67,
+    2.45,
     2.5
    ]
   ]
@@ -11687,70 +11145,63 @@
     "*11-",
     "manje 1.5",
     "Le Mans će imati manje od 1.5 šuteva u okvir gola",
-    7.9,
-    1.5
-   ],
-   [
-    "*11+",
-    "vise 1.5",
-    "Le Mans će imati više od 1.5 šuteva u okvir gola",
-    1.02,
+    8.1,
     1.5
    ],
    [
     "*11-",
     "manje 2.5",
     "Le Mans će imati manje od 2.5 šuteva u okvir gola",
-    4.1,
+    4.2,
     2.5
    ],
    [
     "*11+",
     "vise 2.5",
     "Le Mans će imati više od 2.5 šuteva u okvir gola",
-    1.15,
+    1.14,
     2.5
    ],
    [
     "*11-",
     "manje 3.5",
     "Le Mans će imati manje od 3.5 šuteva u okvir gola",
-    2.5,
+    2.55,
     3.5
    ],
    [
     "*11+",
     "vise 3.5",
     "Le Mans će imati više od 3.5 šuteva u okvir gola",
-    1.44,
+    1.42,
     3.5
    ],
    [
     "*11-",
     "manje 4.5",
     "Le Mans će imati manje od 4.5 šuteva u okvir gola",
-    1.76,
+    1.8,
     4.5
    ],
    [
     "*11+",
     "vise 4.5",
     "Le Mans će imati više od 4.5 šuteva u okvir gola",
-    1.95,
+    1.92,
     4.5
    ],
    [
     "*11-",
     "manje 5.5",
     "Le Mans će imati manje od 5.5 šuteva u okvir gola",
-    1.36,
+    1.37,
     5.5
    ],
    [
     "*11+",
     "vise 5.5",
     "Le Mans će imati više od 5.5 šuteva u okvir gola",
-    2.75,
+    2.67,
     5.5
    ],
    [
@@ -11766,6 +11217,13 @@
     "Le Mans će imati više od 6.5 šuteva u okvir gola",
     4.0,
     6.5
+   ],
+   [
+    "*11-",
+    "manje 7.5",
+    "Le Mans će imati manje od 7.5 šuteva u okvir gola",
+    1.06,
+    7.5
    ]
   ]
  },
@@ -11776,84 +11234,84 @@
     "*12-",
     "manje 1.5",
     "Toulouse će imati manje od 1.5 šuteva u okvir gola",
-    8.3,
+    9.6,
     1.5
    ],
    [
     "*12-",
     "manje 2.5",
     "Toulouse će imati manje od 2.5 šuteva u okvir gola",
-    4.3,
+    5.0,
     2.5
    ],
    [
     "*12+",
     "vise 2.5",
     "Toulouse će imati više od 2.5 šuteva u okvir gola",
-    1.14,
+    1.1,
     2.5
    ],
    [
     "*12-",
     "manje 3.5",
     "Toulouse će imati manje od 3.5 šuteva u okvir gola",
-    2.6,
+    3.05,
     3.5
    ],
    [
     "*12+",
     "vise 3.5",
     "Toulouse će imati više od 3.5 šuteva u okvir gola",
-    1.4,
+    1.33,
     3.5
    ],
    [
     "*12-",
     "manje 4.5",
     "Toulouse će imati manje od 4.5 šuteva u okvir gola",
-    1.82,
+    2.02,
     4.5
    ],
    [
     "*12+",
     "vise 4.5",
     "Toulouse će imati više od 4.5 šuteva u okvir gola",
-    1.88,
+    1.69,
     4.5
    ],
    [
     "*12-",
     "manje 5.5",
     "Toulouse će imati manje od 5.5 šuteva u okvir gola",
-    1.39,
+    1.51,
     5.5
    ],
    [
     "*12+",
     "vise 5.5",
     "Toulouse će imati više od 5.5 šuteva u okvir gola",
-    2.62,
+    2.32,
     5.5
    ],
    [
     "*12-",
     "manje 6.5",
     "Toulouse će imati manje od 6.5 šuteva u okvir gola",
-    1.17,
+    1.24,
     6.5
    ],
    [
     "*12+",
     "vise 6.5",
     "Toulouse će imati više od 6.5 šuteva u okvir gola",
-    3.85,
+    3.3,
     6.5
    ],
    [
     "*12-",
     "manje 7.5",
     "Toulouse će imati manje od 7.5 šuteva u okvir gola",
-    1.06,
+    1.1,
     7.5
    ]
   ]
@@ -11863,87 +11321,87 @@
   "primer": [
    [
     "",
-    "manje 9.5",
-    "Le Mans manje od 9.5 šuteva,",
-    3.8,
-    9.5
-   ],
-   [
-    "",
-    "vise 9.5",
-    "Le Mans više od 9.5 šuteva",
-    1.18,
-    9.5
-   ],
-   [
-    "",
     "manje 10.5",
     "Le Mans manje od 10.5 šuteva,",
-    2.92,
+    3.2,
     10.5
    ],
    [
     "",
     "vise 10.5",
     "Le Mans više od 10.5 šuteva",
-    1.31,
+    1.3,
     10.5
    ],
    [
     "",
     "manje 11.5",
     "Le Mans manje od 11.5 šuteva,",
-    2.37,
+    2.47,
     11.5
    ],
    [
     "",
     "vise 11.5",
     "Le Mans više od 11.5 šuteva",
-    1.48,
+    1.44,
     11.5
    ],
    [
     "",
     "manje 12.5",
     "Le Mans manje od 12.5 šuteva,",
-    1.97,
+    2.07,
     12.5
    ],
    [
     "",
     "vise 12.5",
     "Le Mans više od 12.5 šuteva",
-    1.73,
+    1.67,
     12.5
    ],
    [
     "",
     "manje 13.5",
     "Le Mans manje od 13.5 šuteva,",
-    1.69,
+    1.75,
     13.5
    ],
    [
     "",
     "vise 13.5",
     "Le Mans više od 13.5 šuteva",
-    2.02,
+    1.97,
     13.5
    ],
    [
     "",
     "manje 14.5",
     "Le Mans manje od 14.5 šuteva,",
-    1.47,
+    1.52,
     14.5
    ],
    [
     "",
     "vise 14.5",
     "Le Mans više od 14.5 šuteva",
-    2.42,
+    2.32,
     14.5
+   ],
+   [
+    "",
+    "manje 15.5",
+    "Le Mans manje od 15.5 šuteva,",
+    1.35,
+    15.5
+   ],
+   [
+    "",
+    "vise 15.5",
+    "Le Mans više od 15.5 šuteva",
+    2.77,
+    15.5
    ]
   ]
  },
@@ -11952,87 +11410,87 @@
   "primer": [
    [
     "",
-    "manje 10.5",
-    "Toulouse manje od 10.5 šuteva",
-    3.5,
-    10.5
-   ],
-   [
-    "",
-    "vise 10.5",
-    "Toulouse više od 10.5 šuteva",
-    1.22,
-    10.5
-   ],
-   [
-    "",
     "manje 11.5",
     "Toulouse manje od 11.5 šuteva",
-    2.75,
+    3.25,
     11.5
    ],
    [
     "",
     "vise 11.5",
     "Toulouse više od 11.5 šuteva",
-    1.35,
+    1.29,
     11.5
    ],
    [
     "",
     "manje 12.5",
     "Toulouse manje od 12.5 šuteva",
-    2.27,
+    2.6,
     12.5
    ],
    [
     "",
     "vise 12.5",
     "Toulouse više od 12.5 šuteva",
-    1.54,
+    1.44,
     12.5
    ],
    [
     "",
     "manje 13.5",
     "Toulouse manje od 13.5 šuteva",
-    1.92,
+    2.12,
     13.5
    ],
    [
     "",
     "vise 13.5",
     "Toulouse više od 13.5 šuteva",
-    1.8,
+    1.63,
     13.5
    ],
    [
     "",
     "manje 14.5",
     "Toulouse manje od 14.5 šuteva",
-    1.64,
+    1.8,
     14.5
    ],
    [
     "",
     "vise 14.5",
     "Toulouse više od 14.5 šuteva",
-    2.1,
+    1.9,
     14.5
    ],
    [
     "",
     "manje 15.5",
     "Toulouse manje od 15.5 šuteva",
-    1.44,
+    1.56,
     15.5
    ],
    [
     "",
     "vise 15.5",
     "Toulouse više od 15.5 šuteva",
-    2.5,
+    2.22,
     15.5
+   ],
+   [
+    "",
+    "manje 16.5",
+    "Toulouse manje od 16.5 šuteva",
+    1.39,
+    16.5
+   ],
+   [
+    "",
+    "vise 16.5",
+    "Toulouse više od 16.5 šuteva",
+    2.62,
+    16.5
    ]
   ]
  },
@@ -12041,17 +11499,17 @@
   "primer": [
    [
     "/*01-",
-    "manje 13.5",
-    "Le Mans manje od 13.5 faulova",
-    1.74,
-    13.5
+    "manje 14.5",
+    "Le Mans manje od 14.5 faulova",
+    1.71,
+    14.5
    ],
    [
     "/*01+",
-    "vise 13.5",
-    "Le Mans više od 13.5 faulova",
-    1.97,
-    13.5
+    "vise 14.5",
+    "Le Mans više od 14.5 faulova",
+    2.0,
+    14.5
    ]
   ]
  },
@@ -12060,17 +11518,17 @@
   "primer": [
    [
     "/*02-",
-    "manje 12.5",
-    "Toulouse manje od 12.5 faulova",
-    1.85,
-    12.5
+    "manje 13.5",
+    "Toulouse manje od 13.5 faulova",
+    1.92,
+    13.5
    ],
    [
     "/*02+",
-    "vise 12.5",
-    "Toulouse više od 12.5 faulova",
-    1.85,
-    12.5
+    "vise 13.5",
+    "Toulouse više od 13.5 faulova",
+    1.8,
+    13.5
    ]
   ]
  },
@@ -12123,7 +11581,7 @@
     "/1-",
     "manje 4.5",
     "Lille manje od 4.5 kornera",
-    2.67,
+    2.65,
     4.5
    ],
    [
@@ -12151,7 +11609,7 @@
     "/1-",
     "manje 6.5",
     "Lille manje od 6.5 kornera",
-    1.55,
+    1.54,
     6.5
    ],
    [
@@ -12247,7 +11705,7 @@
     "/2+",
     "vise 5.5",
     "Brest će imati više od 5.5 kornera",
-    3.9,
+    3.85,
     5.5
    ]
   ]
@@ -12259,42 +11717,42 @@
     ".1-",
     "manje 0.5",
     "Lille će imati manje od 0.5 kartona na utakmici (u",
-    4.25,
+    4.0,
     0.5
    ],
    [
     ".1+",
     "vise 0.5",
     "Lille će imati više od 0.5 kartona na utakmici (uk",
-    1.14,
+    1.16,
     0.5
    ],
    [
     ".1-",
     "manje 1.5",
     "Lille će imati manje od 1.5 kartona na utakmici (u",
-    1.9,
+    1.78,
     1.5
    ],
    [
     ".1+",
     "vise 1.5",
     "Lille će imati više od 1.5 kartona na utakmici (uk",
-    1.82,
+    1.92,
     1.5
    ],
    [
     ".1-",
     "manje 2.5",
     "Lille će imati manje od 2.5 kartona na utakmici (u",
-    1.25,
+    1.21,
     2.5
    ],
    [
     ".1+",
     "vise 2.5",
     "Lille će imati više od 2.5 kartona na utakmici (uk",
-    3.25,
+    3.55,
     2.5
    ]
   ]
@@ -12304,45 +11762,45 @@
   "primer": [
    [
     ".2-",
+    "manje 0.5",
+    "Brest će imati manje od 0.5 kartona na utakmici (u",
+    5.5,
+    0.5
+   ],
+   [
+    ".2+",
+    "vise 0.5",
+    "Brest će imati više od 0.5 kartona na utakmici (uk",
+    1.07,
+    0.5
+   ],
+   [
+    ".2-",
     "manje 1.5",
     "Brest će imati manje od 1.5 kartona na utakmici (u",
-    2.45,
+    2.32,
     1.5
    ],
    [
     ".2+",
     "vise 1.5",
     "Brest će imati više od 1.5 kartona na utakmici (uk",
-    1.46,
+    1.52,
     1.5
    ],
    [
     ".2-",
     "manje 2.5",
     "Brest će imati manje od 2.5 kartona na utakmici (u",
-    1.48,
+    1.43,
     2.5
    ],
    [
     ".2+",
     "vise 2.5",
     "Brest će imati više od 2.5 kartona na utakmici (uk",
-    2.37,
+    2.52,
     2.5
-   ],
-   [
-    ".2-",
-    "manje 3.5",
-    "Brest će imati manje od 3.5 kartona na utakmici (u",
-    1.15,
-    3.5
-   ],
-   [
-    ".2+",
-    "vise 3.5",
-    "Brest će imati više od 3.5 kartona na utakmici (uk",
-    4.15,
-    3.5
    ]
   ]
  },
@@ -12351,17 +11809,17 @@
   "primer": [
    [
     "*11-",
-    "manje 5.5",
-    "Lille će imati manje od 5.5 šuteva u okvir gola",
-    1.61,
-    5.5
+    "manje 4.5",
+    "Lille će imati manje od 4.5 šuteva u okvir gola",
+    2.17,
+    4.5
    ],
    [
     "*11+",
-    "vise 5.5",
-    "Lille će imati više od 5.5 šuteva u okvir gola",
-    2.15,
-    5.5
+    "vise 4.5",
+    "Lille će imati više od 4.5 šuteva u okvir gola",
+    1.61,
+    4.5
    ]
   ]
  },
@@ -12372,14 +11830,14 @@
     "*12-",
     "manje 3.5",
     "Brest će imati manje od 3.5 šuteva u okvir gola",
-    1.92,
+    1.95,
     3.5
    ],
    [
     "*12+",
     "vise 3.5",
     "Brest će imati više od 3.5 šuteva u okvir gola",
-    1.8,
+    1.77,
     3.5
    ]
   ]
@@ -12429,14 +11887,14 @@
     "/*01-",
     "manje 10.5",
     "Lille manje od 10.5 faulova",
-    1.73,
+    1.85,
     10.5
    ],
    [
     "/*01+",
     "vise 10.5",
     "Lille više od 10.5 faulova",
-    1.92,
+    1.78,
     10.5
    ]
   ]
@@ -12448,14 +11906,14 @@
     "/*02-",
     "manje 13.5",
     "Brest manje od 13.5 faulova",
-    1.74,
+    1.69,
     13.5
    ],
    [
     "/*02+",
     "vise 13.5",
     "Brest više od 13.5 faulova",
-    1.9,
+    1.95,
     13.5
    ]
   ]
@@ -12467,7 +11925,7 @@
     "/1-",
     "manje 0.5",
     "Lorient manje od 0.5 kornera",
-    17.0,
+    16.0,
     0.5
    ],
    [
@@ -12495,7 +11953,7 @@
     "/1+",
     "vise 2.5",
     "Lorient više od 2.5 kornera",
-    1.29,
+    1.3,
     2.5
    ],
    [
@@ -12509,7 +11967,7 @@
     "/1+",
     "vise 3.5",
     "Lorient više od 3.5 kornera",
-    1.65,
+    1.66,
     3.5
    ],
    [
@@ -12523,7 +11981,7 @@
     "/1+",
     "vise 4.5",
     "Lorient više od 4.5 kornera",
-    2.25,
+    2.27,
     4.5
    ],
    [
@@ -12537,7 +11995,7 @@
     "/1+",
     "vise 5.5",
     "Lorient više od 5.5 kornera",
-    3.2,
+    3.25,
     5.5
    ],
    [
@@ -12556,14 +12014,14 @@
     "/2-",
     "manje 0.5",
     "Monaco će imati manje od 0.5 kornera",
-    28.0,
+    27.0,
     0.5
    ],
    [
     "/2-",
     "manje 1.5",
     "Monaco će imati manje od 1.5 kornera",
-    9.4,
+    9.3,
     1.5
    ],
    [
@@ -12577,7 +12035,7 @@
     "/2-",
     "manje 2.5",
     "Monaco će imati manje od 2.5 kornera",
-    4.8,
+    4.75,
     2.5
    ],
    [
@@ -12591,7 +12049,7 @@
     "/2-",
     "manje 3.5",
     "Monaco će imati manje od 3.5 kornera",
-    2.9,
+    2.87,
     3.5
    ],
    [
@@ -12605,28 +12063,28 @@
     "/2-",
     "manje 4.5",
     "Monaco će imati manje od 4.5 kornera",
-    2.02,
+    2.0,
     4.5
    ],
    [
     "/2+",
     "vise 4.5",
     "Monaco će imati više od 4.5 kornera",
-    1.71,
+    1.72,
     4.5
    ],
    [
     "/2-",
     "manje 5.5",
     "Monaco će imati manje od 5.5 kornera",
-    1.56,
+    1.55,
     5.5
    ],
    [
     "/2+",
     "vise 5.5",
     "Monaco će imati više od 5.5 kornera",
-    2.27,
+    2.3,
     5.5
    ],
    [
@@ -12732,6 +12190,120 @@
    ]
   ]
  },
+ "Lorient ukupno šuteva u okvir gola": {
+  "mecova": 1,
+  "primer": [
+   [
+    "*11-",
+    "manje 3.5",
+    "Lorient će imati manje od 3.5 šuteva u okvir gola",
+    1.85,
+    3.5
+   ],
+   [
+    "*11+",
+    "vise 3.5",
+    "Lorient će imati više od 3.5 šuteva u okvir gola",
+    1.85,
+    3.5
+   ]
+  ]
+ },
+ "Monaco ukupno šuteva u okvir gola": {
+  "mecova": 1,
+  "primer": [
+   [
+    "*12-",
+    "manje 4.5",
+    "Monaco će imati manje od 4.5 šuteva u okvir gola",
+    1.76,
+    4.5
+   ],
+   [
+    "*12+",
+    "vise 4.5",
+    "Monaco će imati više od 4.5 šuteva u okvir gola",
+    1.95,
+    4.5
+   ]
+  ]
+ },
+ "Ukupno šuteva Lorient": {
+  "mecova": 1,
+  "primer": [
+   [
+    "",
+    "manje 11.5",
+    "Lorient manje od 11.5 šuteva,",
+    1.82,
+    11.5
+   ],
+   [
+    "",
+    "vise 11.5",
+    "Lorient više od 11.5 šuteva",
+    1.88,
+    11.5
+   ]
+  ]
+ },
+ "Ukupno šuteva Monaco": {
+  "mecova": 1,
+  "primer": [
+   [
+    "",
+    "manje 12.5",
+    "Monaco manje od 12.5 šuteva",
+    1.85,
+    12.5
+   ],
+   [
+    "",
+    "vise 12.5",
+    "Monaco više od 12.5 šuteva",
+    1.85,
+    12.5
+   ]
+  ]
+ },
+ "Lorient Ukupno faulova": {
+  "mecova": 1,
+  "primer": [
+   [
+    "/*01-",
+    "manje 10.5",
+    "Lorient manje od 10.5 faulova",
+    1.78,
+    10.5
+   ],
+   [
+    "/*01+",
+    "vise 10.5",
+    "Lorient više od 10.5 faulova",
+    1.85,
+    10.5
+   ]
+  ]
+ },
+ "Monaco Ukupno faulova": {
+  "mecova": 1,
+  "primer": [
+   [
+    "/*02-",
+    "manje 13.5",
+    "Monaco manje od 13.5 faulova",
+    1.69,
+    13.5
+   ],
+   [
+    "/*02+",
+    "vise 13.5",
+    "Monaco više od 13.5 faulova",
+    1.95,
+    13.5
+   ]
+  ]
+ },
  "Ukupno kornera Olympique Lyon": {
   "mecova": 1,
   "primer": [
@@ -12767,7 +12339,7 @@
     "/1-",
     "manje 3.5",
     "Olympique Lyon manje od 3.5 kornera",
-    4.45,
+    4.4,
     3.5
    ],
    [
@@ -12781,7 +12353,7 @@
     "/1-",
     "manje 4.5",
     "Olympique Lyon manje od 4.5 kornera",
-    2.87,
+    2.85,
     4.5
    ],
    [
@@ -12795,7 +12367,7 @@
     "/1-",
     "manje 5.5",
     "Olympique Lyon manje od 5.5 kornera",
-    2.07,
+    2.05,
     5.5
    ],
    [
@@ -12835,7 +12407,7 @@
     "/2-",
     "manje 1.5",
     "Nice će imati manje od 1.5 kornera",
-    6.9,
+    7.0,
     1.5
    ],
    [
@@ -12863,21 +12435,21 @@
     "/2-",
     "manje 3.5",
     "Nice će imati manje od 3.5 kornera",
-    2.3,
+    2.32,
     3.5
    ],
    [
     "/2+",
     "vise 3.5",
     "Nice će imati više od 3.5 kornera",
-    1.55,
+    1.54,
     3.5
    ],
    [
     "/2-",
     "manje 4.5",
     "Nice će imati manje od 4.5 kornera",
-    1.68,
+    1.69,
     4.5
    ],
    [
@@ -12891,7 +12463,7 @@
     "/2-",
     "manje 5.5",
     "Nice će imati manje od 5.5 kornera",
-    1.36,
+    1.37,
     5.5
    ],
    [
@@ -13001,6 +12573,120 @@
     "Nice će imati više od 3.5 kartona na utakmici (ukl",
     3.5,
     3.5
+   ]
+  ]
+ },
+ "Olympique Lyon ukupno šuteva u okvir gola": {
+  "mecova": 1,
+  "primer": [
+   [
+    "*11-",
+    "manje 5.5",
+    "Olympique Lyon će imati manje od 5.5 šuteva u okvi",
+    1.77,
+    5.5
+   ],
+   [
+    "*11+",
+    "vise 5.5",
+    "Olympique Lyon će imati više od 5.5 šuteva u okvir",
+    1.95,
+    5.5
+   ]
+  ]
+ },
+ "Nice ukupno šuteva u okvir gola": {
+  "mecova": 1,
+  "primer": [
+   [
+    "*12-",
+    "manje 3.5",
+    "Nice će imati manje od 3.5 šuteva u okvir gola",
+    1.82,
+    3.5
+   ],
+   [
+    "*12+",
+    "vise 3.5",
+    "Nice će imati više od 3.5 šuteva u okvir gola",
+    1.9,
+    3.5
+   ]
+  ]
+ },
+ "Ukupno šuteva Olympique Lyon": {
+  "mecova": 1,
+  "primer": [
+   [
+    "",
+    "manje 15.5",
+    "Olympique Lyon manje od 15.5 šuteva,",
+    1.75,
+    15.5
+   ],
+   [
+    "",
+    "vise 15.5",
+    "Olympique Lyon više od 15.5 šuteva",
+    1.97,
+    15.5
+   ]
+  ]
+ },
+ "Ukupno šuteva Nice": {
+  "mecova": 1,
+  "primer": [
+   [
+    "",
+    "manje 10.5",
+    "Nice manje od 10.5 šuteva",
+    1.75,
+    10.5
+   ],
+   [
+    "",
+    "vise 10.5",
+    "Nice više od 10.5 šuteva",
+    1.95,
+    10.5
+   ]
+  ]
+ },
+ "Olympique Lyon Ukupno faulova": {
+  "mecova": 1,
+  "primer": [
+   [
+    "/*01-",
+    "manje 11.5",
+    "Olympique Lyon manje od 11.5 faulova",
+    1.68,
+    11.5
+   ],
+   [
+    "/*01+",
+    "vise 11.5",
+    "Olympique Lyon više od 11.5 faulova",
+    1.97,
+    11.5
+   ]
+  ]
+ },
+ "Nice Ukupno faulova": {
+  "mecova": 1,
+  "primer": [
+   [
+    "/*02-",
+    "manje 11.5",
+    "Nice manje od 11.5 faulova",
+    2.0,
+    11.5
+   ],
+   [
+    "/*02+",
+    "vise 11.5",
+    "Nice više od 11.5 faulova",
+    1.66,
+    11.5
    ]
   ]
  },
@@ -13276,6 +12962,120 @@
    ]
   ]
  },
+ "Paris FC ukupno šuteva u okvir gola": {
+  "mecova": 1,
+  "primer": [
+   [
+    "*11-",
+    "manje 4.5",
+    "Paris FC će imati manje od 4.5 šuteva u okvir gola",
+    1.9,
+    4.5
+   ],
+   [
+    "*11+",
+    "vise 4.5",
+    "Paris FC će imati više od 4.5 šuteva u okvir gola",
+    1.82,
+    4.5
+   ]
+  ]
+ },
+ "Rennes ukupno šuteva u okvir gola": {
+  "mecova": 1,
+  "primer": [
+   [
+    "*12-",
+    "manje 4.5",
+    "Rennes će imati manje od 4.5 šuteva u okvir gola",
+    1.76,
+    4.5
+   ],
+   [
+    "*12+",
+    "vise 4.5",
+    "Rennes će imati više od 4.5 šuteva u okvir gola",
+    1.95,
+    4.5
+   ]
+  ]
+ },
+ "Ukupno šuteva Paris FC": {
+  "mecova": 1,
+  "primer": [
+   [
+    "",
+    "manje 14.5",
+    "Paris FC manje od 14.5 šuteva,",
+    1.83,
+    14.5
+   ],
+   [
+    "",
+    "vise 14.5",
+    "Paris FC više od 14.5 šuteva",
+    1.87,
+    14.5
+   ]
+  ]
+ },
+ "Ukupno šuteva Rennes": {
+  "mecova": 1,
+  "primer": [
+   [
+    "",
+    "manje 12.5",
+    "Rennes manje od 12.5 šuteva",
+    1.83,
+    12.5
+   ],
+   [
+    "",
+    "vise 12.5",
+    "Rennes više od 12.5 šuteva",
+    1.88,
+    12.5
+   ]
+  ]
+ },
+ "Paris FC Ukupno faulova": {
+  "mecova": 1,
+  "primer": [
+   [
+    "/*01-",
+    "manje 11.5",
+    "Paris FC manje od 11.5 faulova",
+    1.8,
+    11.5
+   ],
+   [
+    "/*01+",
+    "vise 11.5",
+    "Paris FC više od 11.5 faulova",
+    1.85,
+    11.5
+   ]
+  ]
+ },
+ "Rennes Ukupno faulova": {
+  "mecova": 1,
+  "primer": [
+   [
+    "/*02-",
+    "manje 11.5",
+    "Rennes manje od 11.5 faulova",
+    1.87,
+    11.5
+   ],
+   [
+    "/*02+",
+    "vise 11.5",
+    "Rennes više od 11.5 faulova",
+    1.77,
+    11.5
+   ]
+  ]
+ },
  "Ukupno kornera Strasbourg": {
   "mecova": 1,
   "primer": [
@@ -13461,42 +13261,42 @@
     ".1-",
     "manje 0.5",
     "Strasbourg će imati manje od 0.5 kartona na utakmi",
-    4.55,
+    4.75,
     0.5
    ],
    [
     ".1+",
     "vise 0.5",
     "Strasbourg će imati više od 0.5 kartona na utakmic",
-    1.12,
+    1.11,
     0.5
    ],
    [
     ".1-",
     "manje 1.5",
     "Strasbourg će imati manje od 1.5 kartona na utakmi",
-    2.0,
+    2.05,
     1.5
    ],
    [
     ".1+",
     "vise 1.5",
     "Strasbourg će imati više od 1.5 kartona na utakmic",
-    1.72,
+    1.68,
     1.5
    ],
    [
     ".1-",
     "manje 2.5",
     "Strasbourg će imati manje od 2.5 kartona na utakmi",
-    1.29,
+    1.31,
     2.5
    ],
    [
     ".1+",
     "vise 2.5",
     "Strasbourg će imati više od 2.5 kartona na utakmic",
-    3.0,
+    2.9,
     2.5
    ]
   ]
@@ -13508,28 +13308,28 @@
     ".2-",
     "manje 0.5",
     "PSG će imati manje od 0.5 kartona na utakmici (ukl",
-    3.05,
+    3.0,
     0.5
    ],
    [
     ".2+",
     "vise 0.5",
     "PSG će imati više od 0.5 kartona na utakmici (uklj",
-    1.29,
+    1.3,
     0.5
    ],
    [
     ".2-",
     "manje 1.5",
     "PSG će imati manje od 1.5 kartona na utakmici (ukl",
-    1.48,
+    1.46,
     1.5
    ],
    [
     ".2+",
     "vise 1.5",
     "PSG će imati više od 1.5 kartona na utakmici (uklj",
-    2.4,
+    2.42,
     1.5
    ],
    [
@@ -13543,7 +13343,7 @@
     ".2+",
     "vise 2.5",
     "PSG će imati više od 2.5 kartona na utakmici (uklj",
-    4.9,
+    5.0,
     2.5
    ]
   ]
@@ -13574,7 +13374,7 @@
     "*12-",
     "manje 6.5",
     "PSG će imati manje od 6.5 šuteva u okvir gola",
-    1.97,
+    2.0,
     6.5
    ],
    [
@@ -13998,7 +13798,7 @@
     "",
     "manje 15.5",
     "Lens manje od 15.5 šuteva",
-    1.72,
+    1.73,
     15.5
    ],
    [
@@ -14064,6 +13864,147 @@
     "Angers ne pobeđuje bar jedno poluvreme",
     1.9,
     null
+   ]
+  ]
+ },
+ "1X2 & ukupno golova Auxerre (2.5)": {
+  "mecova": 1,
+  "primer": [
+   [
+    "1-",
+    "1 & manje 2.5",
+    "Auxerre pobednik i Auxerre manje od 2.5 gola na ut",
+    3.45,
+    2.5
+   ],
+   [
+    "0-",
+    "x & manje 2.5",
+    "nerešeno i Auxerre manje od 2.5 gola na utakmici",
+    3.45,
+    2.5
+   ],
+   [
+    "2-",
+    "2 & manje 2.5",
+    "Le Mans pobednik i Auxerre manje od 2.5 gola na ut",
+    3.1,
+    2.5
+   ],
+   [
+    "1+",
+    "1 & vise 2.5",
+    "Auxerre pobednik i Auxerre više od 2.5 gola na uta",
+    4.25,
+    2.5
+   ],
+   [
+    "0+",
+    "x & vise 2.5",
+    "nerešeno i Auxerre više od 2.5 gola na utakmici",
+    26.0,
+    2.5
+   ],
+   [
+    "2+",
+    "2 & vise 2.5",
+    "Le Mans pobednik i Auxerre više od 2.5 gola na uta",
+    50.0,
+    2.5
+   ]
+  ]
+ },
+ "1X2 & ukupno golova Auxerre (3.5)": {
+  "mecova": 1,
+  "primer": [
+   [
+    "1-",
+    "1 & manje 3.5",
+    "Auxerre pobednik i Auxerre manje od 3.5 gola na ut",
+    2.45,
+    3.5
+   ],
+   [
+    "0-",
+    "x & manje 3.5",
+    "nerešeno i Auxerre manje od 3.5 gola na utakmici",
+    3.3,
+    3.5
+   ],
+   [
+    "2-",
+    "2 & manje 3.5",
+    "Le Mans pobednik i Auxerre manje od 3.5 gola na ut",
+    3.05,
+    3.5
+   ],
+   [
+    "1+",
+    "1 & vise 3.5",
+    "Auxerre pobednik i Auxerre više od 3.5 gola na uta",
+    8.5,
+    3.5
+   ],
+   [
+    "0+",
+    "x & vise 3.5",
+    "nerešeno i Auxerre više od 3.5 gola na utakmici",
+    85.0,
+    3.5
+   ],
+   [
+    "2+",
+    "2 & vise 3.5",
+    "Le Mans pobednik i Auxerre više od 3.5 gola na uta",
+    100.0,
+    3.5
+   ]
+  ]
+ },
+ "1X2 & ukupno golova Auxerre (4.5)": {
+  "mecova": 1,
+  "primer": [
+   [
+    "1-",
+    "1 & manje 4.5",
+    "Auxerre pobednik i Auxerre manje od 4.5 gola na ut",
+    2.17,
+    4.5
+   ],
+   [
+    "0-",
+    "x & manje 4.5",
+    "nerešeno i Auxerre manje od 4.5 gola na utakmici",
+    3.25,
+    4.5
+   ],
+   [
+    "2-",
+    "2 & manje 4.5",
+    "Le Mans pobednik i Auxerre manje od 4.5 gola na ut",
+    3.05,
+    4.5
+   ],
+   [
+    "1+",
+    "1 & vise 4.5",
+    "Auxerre pobednik i Auxerre više od 4.5 gola na uta",
+    20.0,
+    4.5
+   ],
+   [
+    "0+",
+    "x & vise 4.5",
+    "nerešeno i Auxerre više od 4.5 gola na utakmici",
+    125.0,
+    4.5
+   ],
+   [
+    "2+",
+    "2 & vise 4.5",
+    "Le Mans pobednik i Auxerre više od 4.5 gola na uta",
+    125.0,
+    4.5
    ]
   ]
  },
@@ -14270,6 +14211,194 @@
     "2 & vise 4.5",
     "Nice pobednik i Brest više od 4.5 gola na utakmici",
     125.0,
+    4.5
+   ]
+  ]
+ },
+ "1X2 & ukupno golova Nice (1.5)": {
+  "mecova": 1,
+  "primer": [
+   [
+    "1-",
+    "1 & manje 1.5",
+    "Brest pobednik  i Nice manje od 1.5 gola na utakmi",
+    2.45,
+    1.5
+   ],
+   [
+    "0-",
+    "x & manje 1.5",
+    "nerešeno i Nice manje od 1.5 gola na utakmici",
+    4.65,
+    1.5
+   ],
+   [
+    "2-",
+    "2 & manje 1.5",
+    "Nice pobednik  i Nice manje od 1.5 gola na utakmic",
+    10.0,
+    1.5
+   ],
+   [
+    "1+",
+    "1 & vise 1.5",
+    "Brest pobednik  i Nice više od 1.5 gola na utakmic",
+    9.9,
+    1.5
+   ],
+   [
+    "0+",
+    "x & vise 1.5",
+    "nerešeno i Nice više od 1.5 gola na utakmici",
+    7.8,
+    1.5
+   ],
+   [
+    "2+",
+    "2 & vise 1.5",
+    "Nice pobednik  i Nice više od 1.5 gola na utakmici",
+    3.55,
+    1.5
+   ]
+  ]
+ },
+ "1X2 & ukupno golova Nice (2.5)": {
+  "mecova": 1,
+  "primer": [
+   [
+    "1-",
+    "1 & manje 2.5",
+    "Brest pobednik  i Nice manje od 2.5 gola na utakmi",
+    2.17,
+    2.5
+   ],
+   [
+    "0-",
+    "x & manje 2.5",
+    "nerešeno i Nice manje od 2.5 gola na utakmici",
+    3.55,
+    2.5
+   ],
+   [
+    "2-",
+    "2 & manje 2.5",
+    "Nice pobednik  i Nice manje od 2.5 gola na utakmic",
+    4.6,
+    2.5
+   ],
+   [
+    "1+",
+    "1 & vise 2.5",
+    "Brest pobednik  i Nice više od 2.5 gola na utakmic",
+    38.0,
+    2.5
+   ],
+   [
+    "0+",
+    "x & vise 2.5",
+    "nerešeno i Nice više od 2.5 gola na utakmici",
+    23.0,
+    2.5
+   ],
+   [
+    "2+",
+    "2 & vise 2.5",
+    "Nice pobednik  i Nice više od 2.5 gola na utakmici",
+    6.0,
+    2.5
+   ]
+  ]
+ },
+ "1X2 & ukupno golova Nice (3.5)": {
+  "mecova": 1,
+  "primer": [
+   [
+    "1-",
+    "1 & manje 3.5",
+    "Brest pobednik  i Nice manje od 3.5 gola na utakmi",
+    2.12,
+    3.5
+   ],
+   [
+    "0-",
+    "x & manje 3.5",
+    "nerešeno i Nice manje od 3.5 gola na utakmici",
+    3.3,
+    3.5
+   ],
+   [
+    "2-",
+    "2 & manje 3.5",
+    "Nice pobednik  i Nice manje od 3.5 gola na utakmic",
+    3.35,
+    3.5
+   ],
+   [
+    "1+",
+    "1 & vise 3.5",
+    "Brest pobednik  i Nice više od 3.5 gola na utakmic",
+    100.0,
+    3.5
+   ],
+   [
+    "0+",
+    "x & vise 3.5",
+    "nerešeno i Nice više od 3.5 gola na utakmici",
+    80.0,
+    3.5
+   ],
+   [
+    "2+",
+    "2 & vise 3.5",
+    "Nice pobednik  i Nice više od 3.5 gola na utakmici",
+    13.0,
+    3.5
+   ]
+  ]
+ },
+ "1X2 & ukupno golova Nice (4.5)": {
+  "mecova": 1,
+  "primer": [
+   [
+    "1-",
+    "1 & manje 4.5",
+    "Brest pobednik  i Nice manje od 4.5 gola na utakmi",
+    2.12,
+    4.5
+   ],
+   [
+    "0-",
+    "x & manje 4.5",
+    "nerešeno i Nice manje od 4.5 gola na utakmici",
+    3.3,
+    4.5
+   ],
+   [
+    "2-",
+    "2 & manje 4.5",
+    "Nice pobednik  i Nice manje od 4.5 gola na utakmic",
+    3.0,
+    4.5
+   ],
+   [
+    "1+",
+    "1 & vise 4.5",
+    "Brest pobednik  i Nice više od 4.5 gola na utakmic",
+    125.0,
+    4.5
+   ],
+   [
+    "0+",
+    "x & vise 4.5",
+    "nerešeno i Nice više od 4.5 gola na utakmici",
+    125.0,
+    4.5
+   ],
+   [
+    "2+",
+    "2 & vise 4.5",
+    "Nice pobednik  i Nice više od 4.5 gola na utakmici",
+    32.0,
     4.5
    ]
   ]
@@ -14540,6 +14669,100 @@
    ]
   ]
  },
+ "1X2 & ukupno golova Olympique Marseille (3.5)": {
+  "mecova": 1,
+  "primer": [
+   [
+    "1-",
+    "1 & manje 3.5",
+    "Olympique Marseille pobednik i Olympique Marseille",
+    2.05,
+    3.5
+   ],
+   [
+    "0-",
+    "x & manje 3.5",
+    "nerešeno i Olympique Marseille manje od 3.5 gola n",
+    3.9,
+    3.5
+   ],
+   [
+    "2-",
+    "2 & manje 3.5",
+    "Le Havre pobednik i Olympique Marseille manje od 3",
+    4.45,
+    3.5
+   ],
+   [
+    "1+",
+    "1 & vise 3.5",
+    "Olympique Marseille pobednik i Olympique Marseille",
+    5.25,
+    3.5
+   ],
+   [
+    "0+",
+    "x & vise 3.5",
+    "nerešeno i Olympique Marseille više od 3.5 gola na",
+    85.0,
+    3.5
+   ],
+   [
+    "2+",
+    "2 & vise 3.5",
+    "Le Havre pobednik i Olympique Marseille više od 3.",
+    125.0,
+    3.5
+   ]
+  ]
+ },
+ "1X2 & ukupno golova Olympique Marseille (4.5)": {
+  "mecova": 1,
+  "primer": [
+   [
+    "1-",
+    "1 & manje 4.5",
+    "Olympique Marseille pobednik i Olympique Marseille",
+    1.72,
+    4.5
+   ],
+   [
+    "0-",
+    "x & manje 4.5",
+    "nerešeno i Olympique Marseille manje od 4.5 gola n",
+    3.9,
+    4.5
+   ],
+   [
+    "2-",
+    "2 & manje 4.5",
+    "Le Havre pobednik i Olympique Marseille manje od 4",
+    4.45,
+    4.5
+   ],
+   [
+    "1+",
+    "1 & vise 4.5",
+    "Olympique Marseille pobednik i Olympique Marseille",
+    11.0,
+    4.5
+   ],
+   [
+    "0+",
+    "x & vise 4.5",
+    "nerešeno i Olympique Marseille više od 4.5 gola na",
+    125.0,
+    4.5
+   ],
+   [
+    "2+",
+    "2 & vise 4.5",
+    "Le Havre pobednik i Olympique Marseille više od 4.",
+    125.0,
+    4.5
+   ]
+  ]
+ },
  "Olympique Marseille pobeđuje bar jedno poluvreme": {
   "mecova": 1,
   "primer": [
@@ -14559,6 +14782,147 @@
    ]
   ]
  },
+ "1X2 & ukupno golova Monaco (2.5)": {
+  "mecova": 1,
+  "primer": [
+   [
+    "1-",
+    "1 & manje 2.5",
+    "Monaco pobednik i Monaco manje od 2.5 gola na utak",
+    3.45,
+    2.5
+   ],
+   [
+    "0-",
+    "x & manje 2.5",
+    "nerešeno i Monaco manje od 2.5 gola na utakmici",
+    3.5,
+    2.5
+   ],
+   [
+    "2-",
+    "2 & manje 2.5",
+    "Lille pobednik i Monaco manje od 2.5 gola na utakm",
+    3.2,
+    2.5
+   ],
+   [
+    "1+",
+    "1 & vise 2.5",
+    "Monaco pobednik i Monaco više od 2.5 gola na utakm",
+    4.0,
+    2.5
+   ],
+   [
+    "0+",
+    "x & vise 2.5",
+    "nerešeno i Monaco više od 2.5 gola na utakmici",
+    25.0,
+    2.5
+   ],
+   [
+    "2+",
+    "2 & vise 2.5",
+    "Lille pobednik i Monaco više od 2.5 gola na utakmi",
+    50.0,
+    2.5
+   ]
+  ]
+ },
+ "1X2 & ukupno golova Monaco (3.5)": {
+  "mecova": 1,
+  "primer": [
+   [
+    "1-",
+    "1 & manje 3.5",
+    "Monaco pobednik i Monaco manje od 3.5 gola na utak",
+    2.4,
+    3.5
+   ],
+   [
+    "0-",
+    "x & manje 3.5",
+    "nerešeno i Monaco manje od 3.5 gola na utakmici",
+    3.3,
+    3.5
+   ],
+   [
+    "2-",
+    "2 & manje 3.5",
+    "Lille pobednik i Monaco manje od 3.5 gola na utakm",
+    3.15,
+    3.5
+   ],
+   [
+    "1+",
+    "1 & vise 3.5",
+    "Monaco pobednik i Monaco više od 3.5 gola na utakm",
+    8.1,
+    3.5
+   ],
+   [
+    "0+",
+    "x & vise 3.5",
+    "nerešeno i Monaco više od 3.5 gola na utakmici",
+    80.0,
+    3.5
+   ],
+   [
+    "2+",
+    "2 & vise 3.5",
+    "Lille pobednik i Monaco više od 3.5 gola na utakmi",
+    100.0,
+    3.5
+   ]
+  ]
+ },
+ "1X2 & ukupno golova Monaco (4.5)": {
+  "mecova": 1,
+  "primer": [
+   [
+    "1-",
+    "1 & manje 4.5",
+    "Monaco pobednik i Monaco manje od 4.5 gola na utak",
+    2.12,
+    4.5
+   ],
+   [
+    "0-",
+    "x & manje 4.5",
+    "nerešeno i Monaco manje od 4.5 gola na utakmici",
+    3.3,
+    4.5
+   ],
+   [
+    "2-",
+    "2 & manje 4.5",
+    "Lille pobednik i Monaco manje od 4.5 gola na utakm",
+    3.15,
+    4.5
+   ],
+   [
+    "1+",
+    "1 & vise 4.5",
+    "Monaco pobednik i Monaco više od 4.5 gola na utakm",
+    19.0,
+    4.5
+   ],
+   [
+    "0+",
+    "x & vise 4.5",
+    "nerešeno i Monaco više od 4.5 gola na utakmici",
+    125.0,
+    4.5
+   ],
+   [
+    "2+",
+    "2 & vise 4.5",
+    "Lille pobednik i Monaco više od 4.5 gola na utakmi",
+    125.0,
+    4.5
+   ]
+  ]
+ },
  "Monaco pobeđuje bar jedno poluvreme": {
   "mecova": 1,
   "primer": [
@@ -14575,6 +14939,100 @@
     "Monaco ne pobeđuje bar jedno poluvreme",
     2.32,
     null
+   ]
+  ]
+ },
+ "1X2 & ukupno golova Rennes (3.5)": {
+  "mecova": 1,
+  "primer": [
+   [
+    "1-",
+    "1 & manje 3.5",
+    "Rennes pobednik i Rennes manje od 3.5 gola na utak",
+    2.2,
+    3.5
+   ],
+   [
+    "0-",
+    "x & manje 3.5",
+    "nerešeno i Rennes manje od 3.5 gola na utakmici",
+    4.1,
+    3.5
+   ],
+   [
+    "2-",
+    "2 & manje 3.5",
+    "Strasbourg pobednik i Rennes manje od 3.5 gola na ",
+    4.1,
+    3.5
+   ],
+   [
+    "1+",
+    "1 & vise 3.5",
+    "Rennes pobednik i Rennes više od 3.5 gola na utakm",
+    4.7,
+    3.5
+   ],
+   [
+    "0+",
+    "x & vise 3.5",
+    "nerešeno i Rennes više od 3.5 gola na utakmici",
+    70.0,
+    3.5
+   ],
+   [
+    "2+",
+    "2 & vise 3.5",
+    "Strasbourg pobednik i Rennes više od 3.5 gola na u",
+    100.0,
+    3.5
+   ]
+  ]
+ },
+ "1X2 & ukupno golova Rennes (4.5)": {
+  "mecova": 1,
+  "primer": [
+   [
+    "1-",
+    "1 & manje 4.5",
+    "Rennes pobednik i Rennes manje od 4.5 gola na utak",
+    1.8,
+    4.5
+   ],
+   [
+    "0-",
+    "x & manje 4.5",
+    "nerešeno i Rennes manje od 4.5 gola na utakmici",
+    4.0,
+    4.5
+   ],
+   [
+    "2-",
+    "2 & manje 4.5",
+    "Strasbourg pobednik i Rennes manje od 4.5 gola na ",
+    4.1,
+    4.5
+   ],
+   [
+    "1+",
+    "1 & vise 4.5",
+    "Rennes pobednik i Rennes više od 4.5 gola na utakm",
+    9.3,
+    4.5
+   ],
+   [
+    "0+",
+    "x & vise 4.5",
+    "nerešeno i Rennes više od 4.5 gola na utakmici",
+    125.0,
+    4.5
+   ],
+   [
+    "2+",
+    "2 & vise 4.5",
+    "Strasbourg pobednik i Rennes više od 4.5 gola na u",
+    125.0,
+    4.5
    ]
   ]
  },

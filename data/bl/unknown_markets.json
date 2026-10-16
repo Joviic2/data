@@ -1117,14 +1117,14 @@
     "12-",
     "12 & manje od 2.5",
     "Bayer Leverkusen ili Freiburg će pobediti i biće m",
-    3.35,
+    3.4,
     2.5
    ],
    [
     "12+",
     "12 & vise od 2.5",
     "Bayer Leverkusen ili Freiburg će pobediti i biće v",
-    1.55,
+    1.56,
     2.5
    ]
   ]
@@ -1192,7 +1192,7 @@
     "",
     "2:2",
     "Biće ostvaren u bilo kom trenutku tokom regularnog",
-    5.35,
+    5.3,
     2.0
    ],
    [
@@ -1213,7 +1213,7 @@
     "",
     "4:1",
     "Biće ostvaren u bilo kom trenutku tokom regularnog",
-    9.5,
+    9.6,
     4.0
    ]
   ]
@@ -1266,7 +1266,7 @@
   ]
  },
  "Dupla šansa & ukupno golova (1.5)": {
-  "mecova": 11,
+  "mecova": 12,
   "primer": [
    [
     "10-",
@@ -1293,7 +1293,7 @@
     "02+",
     "x2 & vise od 1.5",
     "Biće nerešeno ili Freiburg će pobediti i biće više",
-    2.27,
+    2.25,
     1.5
    ],
    [
@@ -1408,70 +1408,70 @@
     ".0-",
     "manje 1.5",
     "Manje od 1.5 kartona na utakmici (uklj. i crvene k",
-    4.65,
+    4.45,
     1.5
    ],
    [
     ".0+",
     "vise 1.5",
     "Više od  1.5 kartona na utakmici (uklj. i crvene k",
-    1.11,
+    1.13,
     1.5
    ],
    [
     ".0-",
     "manje 2.5",
     "Manje od 2.5 kartona na utakmici (uklj. i crvene k",
-    2.55,
+    2.47,
     2.5
    ],
    [
     ".0+",
     "vise 2.5",
     "Više od  2.5 kartona na utakmici (uklj. i crvene k",
-    1.42,
+    1.45,
     2.5
    ],
    [
     ".0-",
     "manje 3.5",
     "Manje od 3.5 kartona na utakmici (uklj. i crvene k",
-    1.72,
+    1.67,
     3.5
    ],
    [
     ".0+",
     "vise 3.5",
     "Više od  3.5 kartona na utakmici (uklj. i crvene k",
-    2.0,
+    2.05,
     3.5
    ],
    [
     ".0-",
     "manje 4.5",
     "Manje od 4.5 kartona na utakmici (uklj. i crvene k",
-    1.31,
+    1.29,
     4.5
    ],
    [
     ".0+",
     "vise 4.5",
     "Više od  4.5 kartona na utakmici (uklj. i crvene k",
-    2.92,
+    3.05,
     4.5
    ],
    [
     ".0-",
     "manje 5.5",
     "Manje od 5.5 kartona na utakmici (uklj. i crvene k",
-    1.12,
+    1.11,
     5.5
    ],
    [
     ".0+",
     "vise 5.5",
     "Više od  5.5 kartona na utakmici (uklj. i crvene k",
-    4.5,
+    4.7,
     5.5
    ]
   ]
@@ -1483,14 +1483,14 @@
     "*1-",
     "manje 11.5",
     "Manje od 11.5 šuteva u okvir gola",
-    2.12,
+    2.15,
     11.5
    ],
    [
     "*1+",
     "vise 11.5",
     "Više od 11.5 šuteva u okvir gola",
-    1.62,
+    1.63,
     11.5
    ],
    [
@@ -1530,14 +1530,14 @@
     "",
     "manje 31.5",
     "manje od 31.5 šuteva",
-    2.22,
+    2.25,
     31.5
    ],
    [
     "",
     "vise 31.5",
     "više od 31.5 šuteva",
-    1.56,
+    1.58,
     31.5
    ],
    [
@@ -2117,6 +2117,184 @@
     "Borussia Dortmund ili Eintracht Frankfurt će pobed",
     1.47,
     12.0
+   ]
+  ]
+ },
+ "Igrač postiže gol": {
+  "mecova": 3,
+  "primer": [
+   [
+    "",
+    "younes ebnoutalib",
+    "Postiže gol",
+    2.05,
+    null
+   ],
+   [
+    "",
+    "dzonatan burkardt",
+    "Postiže gol",
+    2.07,
+    null
+   ],
+   [
+    "",
+    "said el mala",
+    "Postiže gol",
+    2.3,
+    null
+   ],
+   [
+    "",
+    "can uzun",
+    "Postiže gol",
+    2.7,
+    null
+   ],
+   [
+    "",
+    "ayoube amaimouni",
+    "Postiže gol",
+    3.05,
+    null
+   ],
+   [
+    "",
+    "ritsu doan",
+    "Postiže gol",
+    3.15,
+    null
+   ],
+   [
+    "",
+    "marius bulter",
+    "Postiže gol",
+    3.2,
+    null
+   ],
+   [
+    "",
+    "ansgar knauff",
+    "Postiže gol",
+    3.3,
+    null
+   ],
+   [
+    "",
+    "luka valdsmidt",
+    "Postiže gol",
+    3.3,
+    null
+   ],
+   [
+    "",
+    "imad rondic",
+    "Postiže gol",
+    3.4,
+    null
+   ],
+   [
+    "",
+    "mikey moore",
+    "Postiže gol",
+    3.55,
+    null
+   ],
+   [
+    "",
+    "mario goce",
+    "Postiže gol",
+    3.6,
+    null
+   ]
+  ]
+ },
+ "Igrač postiže 1. gol": {
+  "mecova": 3,
+  "primer": [
+   [
+    "",
+    "dzonatan burkardt",
+    "Postiže 1. gol",
+    5.25,
+    1.0
+   ],
+   [
+    "",
+    "younes ebnoutalib",
+    "Postiže 1. gol",
+    5.25,
+    1.0
+   ],
+   [
+    "",
+    "said el mala",
+    "Postiže 1. gol",
+    6.7,
+    1.0
+   ],
+   [
+    "",
+    "can uzun",
+    "Postiže 1. gol",
+    7.0,
+    1.0
+   ],
+   [
+    "",
+    "ayoube amaimouni",
+    "Postiže 1. gol",
+    8.1,
+    1.0
+   ],
+   [
+    "",
+    "marius bulter",
+    "Postiže 1. gol",
+    8.5,
+    1.0
+   ],
+   [
+    "",
+    "ansgar knauff",
+    "Postiže 1. gol",
+    8.6,
+    1.0
+   ],
+   [
+    "",
+    "ritsu doan",
+    "Postiže 1. gol",
+    8.7,
+    1.0
+   ],
+   [
+    "",
+    "luka valdsmidt",
+    "Postiže 1. gol",
+    9.0,
+    1.0
+   ],
+   [
+    "",
+    "mario goce",
+    "Postiže 1. gol",
+    9.3,
+    1.0
+   ],
+   [
+    "",
+    "imad rondic",
+    "Postiže 1. gol",
+    9.4,
+    1.0
+   ],
+   [
+    "",
+    "mikey moore",
+    "Postiže 1. gol",
+    9.4,
+    1.0
    ]
   ]
  },
@@ -3060,7 +3238,7 @@
     "",
     "1-2",
     "Bayer Leverkusen 1-2 gola na utakmici",
-    1.8,
+    1.78,
     -2.0
    ],
    [
@@ -3185,7 +3363,7 @@
     "3",
     "3+",
     "Bayer Leverkusen daje 3 ili više golova",
-    2.65,
+    2.67,
     3.0
    ]
   ]
@@ -3317,7 +3495,7 @@
     "",
     "manje 0.5 & manje 2.5",
     "1. Poluvreme Bayer Leverkusen manje od 0.5 golova ",
-    2.6,
+    2.62,
     2.5
    ],
    [
@@ -3364,7 +3542,7 @@
     "",
     "vise 0.5 & manje 1.5",
     "1. Poluvreme Freiburg više od 0.5 golova i Freibur",
-    5.0,
+    5.1,
     1.5
    ],
    [
@@ -3385,7 +3563,7 @@
     "",
     "vise 0.5 & vise 2.5",
     "1. Poluvreme Freiburg više od 0.5 golova i Freibur",
-    6.5,
+    6.6,
     2.5
    ],
    [
@@ -3523,7 +3701,7 @@
     "",
     "manje 0.5 & manje 2.5",
     "Bayer Leverkusen daje manje od 0.5 golova u 1. pol",
-    2.6,
+    2.62,
     2.0
    ]
   ]
@@ -3535,21 +3713,21 @@
     "",
     "vise 0.5 & vise 0.5",
     "Freiburg daje više od 0.5 golova u 1. poluvremenu ",
-    3.9,
+    4.0,
     2.0
    ],
    [
     "",
     "vise 0.5 & manje 0.5",
     "Freiburg daje više od 0.5 golova u 1. poluvremenu ",
-    4.0,
+    3.9,
     2.0
    ],
    [
     "",
     "vise 0.5 & vise 1.5",
     "Freiburg daje više od 0.5 golova u 1. poluvremenu ",
-    9.7,
+    9.8,
     2.0
    ],
    [
@@ -3570,7 +3748,7 @@
     "",
     "vise 0.5 & manje 2.5",
     "Freiburg daje više od 0.5 golova u 1. poluvremenu ",
-    2.2,
+    2.22,
     2.0
    ],
    [
@@ -3591,7 +3769,7 @@
     "",
     "manje 0.5 & vise 1.5",
     "Freiburg daje manje od 0.5 golova u 1. poluvremenu",
-    7.4,
+    7.5,
     2.0
    ],
    [
@@ -3671,7 +3849,7 @@
     "0-",
     "x & manje 1.5",
     "nerešeno i Bayer Leverkusen manje od 1.5 gola na u",
-    5.8,
+    5.75,
     1.5
    ],
    [
@@ -3692,7 +3870,7 @@
     "0+",
     "x & vise 1.5",
     "nerešeno i Bayer Leverkusen više od 1.5 gola na ut",
-    7.9,
+    7.8,
     1.5
    ],
    [
@@ -3812,14 +3990,14 @@
     "0-",
     "x & manje 4.5",
     "nerešeno i Bayer Leverkusen manje od 4.5 gola na u",
-    3.85,
+    3.9,
     4.5
    ],
    [
     "2-",
     "2 & manje 4.5",
     "Freiburg pobednik i Bayer Leverkusen manje od 4.5 ",
-    3.85,
+    3.9,
     4.5
    ],
    [
@@ -3852,7 +4030,7 @@
     "1-",
     "1 & manje 0.5",
     "Bayer Leverkusen pobednik  i Freiburg manje od 0.5",
-    3.5,
+    3.55,
     0.5
    ],
    [
@@ -3892,14 +4070,14 @@
     "1-",
     "1 & manje 1.5",
     "Bayer Leverkusen pobednik  i Freiburg manje od 1.5",
-    1.97,
+    2.0,
     1.5
    ],
    [
     "0-",
     "x & manje 1.5",
     "nerešeno i Freiburg manje od 1.5 gola na utakmici",
-    5.8,
+    5.75,
     1.5
    ],
    [
@@ -3920,7 +4098,7 @@
     "0+",
     "x & vise 1.5",
     "nerešeno i Freiburg više od 1.5 gola na utakmici",
-    7.9,
+    7.8,
     1.5
    ],
    [
@@ -3932,184 +4110,6 @@
    ]
   ]
  },
- "Igrač postiže gol": {
-  "mecova": 2,
-  "primer": [
-   [
-    "",
-    "dzonatan burkardt",
-    "Postiže gol",
-    2.05,
-    null
-   ],
-   [
-    "",
-    "younes ebnoutalib",
-    "Postiže gol",
-    2.05,
-    null
-   ],
-   [
-    "",
-    "said el mala",
-    "Postiže gol",
-    2.3,
-    null
-   ],
-   [
-    "",
-    "can uzun",
-    "Postiže gol",
-    2.67,
-    null
-   ],
-   [
-    "",
-    "ayoube amaimouni",
-    "Postiže gol",
-    3.15,
-    null
-   ],
-   [
-    "",
-    "ritsu doan",
-    "Postiže gol",
-    3.2,
-    null
-   ],
-   [
-    "",
-    "luka valdsmidt",
-    "Postiže gol",
-    3.25,
-    null
-   ],
-   [
-    "",
-    "marius bulter",
-    "Postiže gol",
-    3.25,
-    null
-   ],
-   [
-    "",
-    "ansgar knauff",
-    "Postiže gol",
-    3.35,
-    null
-   ],
-   [
-    "",
-    "imad rondic",
-    "Postiže gol",
-    3.45,
-    null
-   ],
-   [
-    "",
-    "mikey moore",
-    "Postiže gol",
-    3.55,
-    null
-   ],
-   [
-    "",
-    "love arrhov",
-    "Postiže gol",
-    3.7,
-    null
-   ]
-  ]
- },
- "Igrač postiže 1. gol": {
-  "mecova": 2,
-  "primer": [
-   [
-    "",
-    "dzonatan burkardt",
-    "Postiže 1. gol",
-    5.25,
-    1.0
-   ],
-   [
-    "",
-    "younes ebnoutalib",
-    "Postiže 1. gol",
-    5.25,
-    1.0
-   ],
-   [
-    "",
-    "said el mala",
-    "Postiže 1. gol",
-    6.6,
-    1.0
-   ],
-   [
-    "",
-    "can uzun",
-    "Postiže 1. gol",
-    7.0,
-    1.0
-   ],
-   [
-    "",
-    "ritsu doan",
-    "Postiže 1. gol",
-    8.4,
-    1.0
-   ],
-   [
-    "",
-    "luka valdsmidt",
-    "Postiže 1. gol",
-    8.5,
-    1.0
-   ],
-   [
-    "",
-    "marius bulter",
-    "Postiže 1. gol",
-    8.5,
-    1.0
-   ],
-   [
-    "",
-    "ayoube amaimouni",
-    "Postiže 1. gol",
-    8.6,
-    1.0
-   ],
-   [
-    "",
-    "ansgar knauff",
-    "Postiže 1. gol",
-    8.9,
-    1.0
-   ],
-   [
-    "",
-    "imad rondic",
-    "Postiže 1. gol",
-    9.0,
-    1.0
-   ],
-   [
-    "",
-    "mikey moore",
-    "Postiže 1. gol",
-    9.4,
-    1.0
-   ],
-   [
-    "",
-    "love arrhov",
-    "Postiže 1. gol",
-    9.7,
-    1.0
-   ]
-  ]
- },
  "Eintracht Frankfurt raspon golova": {
   "mecova": 2,
   "primer": [
@@ -4117,7 +4117,7 @@
     "",
     "1-2",
     "Eintracht Frankfurt 1-2 gola na utakmici",
-    1.83,
+    1.85,
     -2.0
    ],
    [
@@ -4157,7 +4157,7 @@
     "",
     "2-3",
     "FC Koln 2-3 gola na utakmici",
-    2.4,
+    2.37,
     -3.0
    ]
   ]
@@ -4169,21 +4169,21 @@
     "12",
     "1-2",
     "Eintracht Frankfurt 1 ili 2 gola u svakom poluvrem",
-    2.8,
+    2.77,
     2.0
    ],
    [
     "13",
     "1-3",
     "Eintracht Frankfurt 1,2 ili 3 gola u svakom poluvr",
-    2.25,
+    2.22,
     3.0
    ],
    [
     "23",
     "2-3",
     "Eintracht Frankfurt 2 ili 3 gola u svakom poluvrem",
-    9.0,
+    8.8,
     3.0
    ]
   ]
@@ -4221,14 +4221,14 @@
     "0",
     "0",
     "Eintracht Frankfurt ne daje gol",
-    7.2,
+    7.4,
     3.0
    ],
    [
     "1",
     "1",
     "Eintracht Frankfurt daje tačno 1 gol",
-    3.65,
+    3.7,
     3.0
    ],
    [
@@ -4242,7 +4242,7 @@
     "3",
     "3+",
     "Eintracht Frankfurt daje 3 ili više golova",
-    2.5,
+    2.45,
     3.0
    ]
   ]
@@ -4294,7 +4294,7 @@
     "2",
     "ne",
     "Eintracht Frankfurt ne daje gol na utakmici",
-    7.4,
+    7.6,
     null
    ]
   ]
@@ -4313,7 +4313,7 @@
     "2",
     "ne",
     "FC Koln ne daje gol na utakmici",
-    4.3,
+    4.35,
     null
    ]
   ]
@@ -4325,7 +4325,7 @@
     "",
     "vise 0.5 & vise 1.5",
     "1. Poluvreme Eintracht Frankfurt više od 0.5 golov",
-    1.8,
+    1.78,
     1.5
    ],
    [
@@ -4339,21 +4339,21 @@
     "",
     "manje 0.5 & vise 1.5",
     "1. Poluvreme Eintracht Frankfurt manje od 0.5 golo",
-    5.85,
+    5.8,
     1.5
    ],
    [
     "",
     "manje 0.5 & manje 1.5",
     "1. Poluvreme Eintracht Frankfurt manje od 0.5 golo",
-    3.55,
+    3.6,
     1.5
    ],
    [
     "",
     "vise 0.5 & vise 2.5",
     "1. Poluvreme Eintracht Frankfurt više od 0.5 golov",
-    2.72,
+    2.67,
     2.5
    ],
    [
@@ -4367,14 +4367,14 @@
     "",
     "manje 0.5 & vise 2.5",
     "1. Poluvreme Eintracht Frankfurt manje od 0.5 golo",
-    13.0,
+    12.0,
     2.5
    ],
    [
     "",
     "manje 0.5 & manje 2.5",
     "1. Poluvreme Eintracht Frankfurt manje od 0.5 golo",
-    2.72,
+    2.77,
     2.5
    ],
    [
@@ -4395,14 +4395,14 @@
     "",
     "manje 1.5 & vise 2.5",
     "1. Poluvreme Eintracht Frankfurt manje od 1.5 golo",
-    4.7,
+    4.65,
     2.5
    ],
    [
     "",
     "manje 1.5 & manje 2.5",
     "1. Poluvreme Eintracht Frankfurt manje od 1.5 golo",
-    1.64,
+    1.66,
     2.5
    ]
   ]
@@ -4484,7 +4484,7 @@
     "",
     "manje 1.5 & vise 2.5",
     "1. Poluvreme FC Koln manje od 1.5 golova i FC Koln",
-    6.9,
+    6.8,
     2.5
    ],
    [
@@ -4503,21 +4503,21 @@
     "",
     "vise 0.5 & vise 0.5",
     "Eintracht Frankfurt daje više od 0.5 golova u 1. p",
-    2.1,
+    2.07,
     2.0
    ],
    [
     "",
     "vise 0.5 & manje 0.5",
     "Eintracht Frankfurt daje više od 0.5 golova u 1. p",
-    4.35,
+    4.4,
     2.0
    ],
    [
     "",
     "vise 0.5 & vise 1.5",
     "Eintracht Frankfurt daje više od 0.5 golova u 1. p",
-    4.0,
+    3.9,
     2.0
    ],
    [
@@ -4531,7 +4531,7 @@
     "",
     "vise 0.5 & vise 2.5",
     "Eintracht Frankfurt daje više od 0.5 golova u 1. p",
-    8.7,
+    8.5,
     2.0
    ],
    [
@@ -4552,35 +4552,35 @@
     "",
     "manje 0.5 & manje 0.5",
     "Eintracht Frankfurt daje manje od 0.5 golova u 1. ",
-    6.8,
+    6.9,
     2.0
    ],
    [
     "",
     "manje 0.5 & vise 1.5",
     "Eintracht Frankfurt daje manje od 0.5 golova u 1. ",
-    5.85,
+    5.8,
     2.0
    ],
    [
     "",
     "manje 0.5 & manje 1.5",
     "Eintracht Frankfurt daje manje od 0.5 golova u 1. ",
-    3.55,
+    3.6,
     2.0
    ],
    [
     "",
     "manje 0.5 & vise 2.5",
     "Eintracht Frankfurt daje manje od 0.5 golova u 1. ",
-    13.0,
+    12.0,
     2.0
    ],
    [
     "",
     "manje 0.5 & manje 2.5",
     "Eintracht Frankfurt daje manje od 0.5 golova u 1. ",
-    2.72,
+    2.77,
     2.0
    ]
   ]
@@ -4688,14 +4688,14 @@
     "2-",
     "2 & manje 0.5",
     "FC Koln pobednik i Eintracht Frankfurt manje od 0.",
-    8.0,
+    8.1,
     0.5
    ],
    [
     "1+",
     "1 & vise 0.5",
     "Eintracht Frankfurt pobednik i Eintracht Frankfurt",
-    1.82,
+    1.8,
     0.5
    ],
    [
@@ -4709,7 +4709,7 @@
     "2+",
     "2 & vise 0.5",
     "FC Koln pobednik i Eintracht Frankfurt više od 0.5",
-    4.5,
+    4.55,
     0.5
    ]
   ]
@@ -4728,21 +4728,21 @@
     "0-",
     "x & manje 1.5",
     "nerešeno i Eintracht Frankfurt manje od 1.5 gola n",
-    6.6,
+    6.7,
     1.5
    ],
    [
     "2-",
     "2 & manje 1.5",
     "FC Koln pobednik i Eintracht Frankfurt manje od 1.",
-    4.25,
+    4.3,
     1.5
    ],
    [
     "1+",
     "1 & vise 1.5",
     "Eintracht Frankfurt pobednik i Eintracht Frankfurt",
-    2.0,
+    1.97,
     1.5
    ],
    [
@@ -4775,28 +4775,28 @@
     "0-",
     "x & manje 2.5",
     "nerešeno i Eintracht Frankfurt manje od 2.5 gola n",
-    4.45,
+    4.5,
     2.5
    ],
    [
     "2-",
     "2 & manje 2.5",
     "FC Koln pobednik i Eintracht Frankfurt manje od 2.",
-    3.45,
+    3.5,
     2.5
    ],
    [
     "1+",
     "1 & vise 2.5",
     "Eintracht Frankfurt pobednik i Eintracht Frankfurt",
-    2.77,
+    2.75,
     2.5
    ],
    [
     "0+",
     "x & vise 2.5",
     "nerešeno i Eintracht Frankfurt više od 2.5 gola na",
-    16.0,
+    15.0,
     2.5
    ],
    [
@@ -4822,7 +4822,7 @@
     "0-",
     "x & manje 3.5",
     "nerešeno i Eintracht Frankfurt manje od 3.5 gola n",
-    3.9,
+    4.0,
     3.5
    ],
    [
@@ -4836,7 +4836,7 @@
     "1+",
     "1 & vise 3.5",
     "Eintracht Frankfurt pobednik i Eintracht Frankfurt",
-    4.85,
+    4.75,
     3.5
    ],
    [
@@ -4876,14 +4876,14 @@
     "2-",
     "2 & manje 4.5",
     "FC Koln pobednik i Eintracht Frankfurt manje od 4.",
-    3.25,
+    3.3,
     4.5
    ],
    [
     "1+",
     "1 & vise 4.5",
     "Eintracht Frankfurt pobednik i Eintracht Frankfurt",
-    9.4,
+    9.0,
     4.5
    ],
    [
@@ -4909,7 +4909,7 @@
     "",
     "1-2",
     "Union Berlin 1-2 gola na utakmici",
-    1.67,
+    1.66,
     -2.0
    ],
    [
@@ -4923,7 +4923,7 @@
     "",
     "2-3",
     "Union Berlin 2-3 gola na utakmici",
-    3.25,
+    3.2,
     -3.0
    ]
   ]
@@ -4935,7 +4935,7 @@
     "",
     "1-2",
     "Borussia Dortmund 1-2 gola na utakmici",
-    1.82,
+    1.83,
     -2.0
    ],
    [
@@ -4968,7 +4968,7 @@
     "13",
     "1-3",
     "Union Berlin 1,2 ili 3 gola u svakom poluvremenu",
-    4.65,
+    4.6,
     3.0
    ],
    [
@@ -4994,14 +4994,14 @@
     "13",
     "1-3",
     "Borussia Dortmund 1,2 ili 3 gola u svakom poluvrem",
-    2.27,
+    2.25,
     3.0
    ],
    [
     "23",
     "2-3",
     "Borussia Dortmund 2 ili 3 gola u svakom poluvremen",
-    9.1,
+    9.0,
     3.0
    ]
   ]
@@ -5013,7 +5013,7 @@
     "0",
     "0",
     "Union Berlin ne daje gol",
-    2.82,
+    2.85,
     3.0
    ],
    [
@@ -5027,7 +5027,7 @@
     "2",
     "2",
     "Union Berlin daje tačno 2 gola",
-    4.3,
+    4.25,
     3.0
    ],
    [
@@ -5046,7 +5046,7 @@
     "0",
     "0",
     "Borussia Dortmund ne daje gol",
-    7.0,
+    7.1,
     3.0
    ],
    [
@@ -5067,7 +5067,7 @@
     "3",
     "3+",
     "Borussia Dortmund daje 3 ili više golova",
-    2.55,
+    2.52,
     3.0
    ]
   ]
@@ -5079,14 +5079,14 @@
     "1",
     "da",
     "Union Berlin daje gol na utakmici",
-    1.43,
+    1.42,
     null
    ],
    [
     "2",
     "ne",
     "Union Berlin ne daje gol na utakmici",
-    2.85,
+    2.87,
     null
    ]
   ]
@@ -5105,7 +5105,7 @@
     "2",
     "ne",
     "Borussia Dortmund ne daje gol na utakmici",
-    7.2,
+    7.3,
     null
    ]
   ]
@@ -5131,7 +5131,7 @@
     "",
     "manje 0.5 & vise 1.5",
     "1. Poluvreme Union Berlin manje od 0.5 golova i Un",
-    8.1,
+    8.0,
     1.5
    ],
    [
@@ -5145,7 +5145,7 @@
     "",
     "vise 0.5 & vise 2.5",
     "1. Poluvreme Union Berlin više od 0.5 golova i Uni",
-    8.0,
+    7.9,
     2.5
    ],
    [
@@ -5166,7 +5166,7 @@
     "",
     "manje 0.5 & manje 2.5",
     "1. Poluvreme Union Berlin manje od 0.5 golova i Un",
-    1.57,
+    1.58,
     2.5
    ],
    [
@@ -5194,7 +5194,7 @@
     "",
     "manje 1.5 & manje 2.5",
     "1. Poluvreme Union Berlin manje od 1.5 golova i Un",
-    1.11,
+    1.12,
     2.5
    ]
   ]
@@ -5206,7 +5206,7 @@
     "",
     "vise 0.5 & vise 1.5",
     "1. Poluvreme Borussia Dortmund više od 0.5 golova ",
-    1.82,
+    1.8,
     1.5
    ],
    [
@@ -5234,14 +5234,14 @@
     "",
     "vise 0.5 & vise 2.5",
     "1. Poluvreme Borussia Dortmund više od 0.5 golova ",
-    2.75,
+    2.72,
     2.5
    ],
    [
     "",
     "vise 0.5 & manje 2.5",
     "1. Poluvreme Borussia Dortmund više od 0.5 golova ",
-    2.92,
+    2.95,
     2.5
    ],
    [
@@ -5255,14 +5255,14 @@
     "",
     "manje 0.5 & manje 2.5",
     "1. Poluvreme Borussia Dortmund manje od 0.5 golova",
-    2.7,
+    2.72,
     2.5
    ],
    [
     "",
     "vise 1.5 & vise 2.5",
     "1. Poluvreme Borussia Dortmund više od 1.5 golova ",
-    4.15,
+    4.1,
     2.5
    ],
    [
@@ -5276,7 +5276,7 @@
     "",
     "manje 1.5 & vise 2.5",
     "1. Poluvreme Borussia Dortmund manje od 1.5 golova",
-    4.8,
+    4.75,
     2.5
    ],
    [
@@ -5295,7 +5295,7 @@
     "",
     "vise 0.5 & vise 0.5",
     "Union Berlin daje više od 0.5 golova u 1. poluvrem",
-    4.6,
+    4.55,
     2.0
    ],
    [
@@ -5323,14 +5323,14 @@
     "",
     "vise 0.5 & vise 2.5",
     "Union Berlin daje više od 0.5 golova u 1. poluvrem",
-    40.0,
+    39.0,
     2.0
    ],
    [
     "",
     "vise 0.5 & manje 2.5",
     "Union Berlin daje više od 0.5 golova u 1. poluvrem",
-    2.4,
+    2.37,
     2.0
    ],
    [
@@ -5344,14 +5344,14 @@
     "",
     "manje 0.5 & manje 0.5",
     "Union Berlin daje manje od 0.5 golova u 1. poluvre",
-    2.77,
+    2.8,
     2.0
    ],
    [
     "",
     "manje 0.5 & vise 1.5",
     "Union Berlin daje manje od 0.5 golova u 1. poluvre",
-    8.1,
+    8.0,
     2.0
    ],
    [
@@ -5372,7 +5372,7 @@
     "",
     "manje 0.5 & manje 2.5",
     "Union Berlin daje manje od 0.5 golova u 1. poluvre",
-    1.57,
+    1.58,
     2.0
    ]
   ]
@@ -5384,7 +5384,7 @@
     "",
     "vise 0.5 & vise 0.5",
     "Borussia Dortmund daje više od 0.5 golova u 1. pol",
-    2.12,
+    2.1,
     2.0
    ],
    [
@@ -5398,7 +5398,7 @@
     "",
     "vise 0.5 & vise 1.5",
     "Borussia Dortmund daje više od 0.5 golova u 1. pol",
-    4.1,
+    4.0,
     2.0
    ],
    [
@@ -5412,7 +5412,7 @@
     "",
     "vise 0.5 & vise 2.5",
     "Borussia Dortmund daje više od 0.5 golova u 1. pol",
-    8.9,
+    8.8,
     2.0
    ],
    [
@@ -5426,14 +5426,14 @@
     "",
     "manje 0.5 & vise 0.5",
     "Borussia Dortmund daje manje od 0.5 golova u 1. po",
-    3.25,
+    3.3,
     2.0
    ],
    [
     "",
     "manje 0.5 & manje 0.5",
     "Borussia Dortmund daje manje od 0.5 golova u 1. po",
-    6.6,
+    6.7,
     2.0
    ],
    [
@@ -5461,7 +5461,7 @@
     "",
     "manje 0.5 & manje 2.5",
     "Borussia Dortmund daje manje od 0.5 golova u 1. po",
-    2.7,
+    2.72,
     2.0
    ]
   ]
@@ -5480,7 +5480,7 @@
     "2-",
     "2 & manje 0.5",
     "Borussia Dortmund pobednik i Union Berlin manje od",
-    3.05,
+    3.1,
     0.5
    ],
    [
@@ -5501,7 +5501,7 @@
     "2+",
     "2 & vise 0.5",
     "Borussia Dortmund pobednik i Union Berlin više od ",
-    2.77,
+    2.75,
     0.5
    ]
   ]
@@ -5520,7 +5520,7 @@
     "0-",
     "x & manje 1.5",
     "nerešeno i Union Berlin manje od 1.5 gola na utakm",
-    5.75,
+    5.8,
     1.5
    ],
    [
@@ -5548,7 +5548,7 @@
     "2+",
     "2 & vise 1.5",
     "Borussia Dortmund pobednik i Union Berlin više od ",
-    7.7,
+    7.6,
     1.5
    ]
   ]
@@ -5560,7 +5560,7 @@
     "1-",
     "1 & manje 2.5",
     "Union Berlin pobednik i Union Berlin manje od 2.5 ",
-    6.5,
+    6.6,
     2.5
    ],
    [
@@ -5588,14 +5588,14 @@
     "0+",
     "x & vise 2.5",
     "nerešeno i Union Berlin više od 2.5 gola na utakmi",
-    25.0,
+    24.0,
     2.5
    ],
    [
     "2+",
     "2 & vise 2.5",
     "Borussia Dortmund pobednik i Union Berlin više od ",
-    29.0,
+    28.0,
     2.5
    ]
   ]
@@ -5691,140 +5691,6 @@
     "Borussia Dortmund pobednik i Union Berlin više od ",
     125.0,
     4.5
-   ]
-  ]
- },
- "1X2 & ukupno golova Borussia Dortmund (0.5)": {
-  "mecova": 2,
-  "primer": [
-   [
-    "1-",
-    "1 & manje 0.5",
-    "Union Berlin pobednik  i Borussia Dortmund manje o",
-    8.7,
-    0.5
-   ],
-   [
-    "0-",
-    "x & manje 0.5",
-    "nerešeno i Borussia Dortmund manje od 0.5 gola na ",
-    15.0,
-    0.5
-   ],
-   [
-    "1+",
-    "1 & vise 0.5",
-    "Union Berlin pobednik  i Borussia Dortmund više od",
-    6.8,
-    0.5
-   ],
-   [
-    "0+",
-    "x & vise 0.5",
-    "nerešeno i Borussia Dortmund više od 0.5 gola na u",
-    4.75,
-    0.5
-   ],
-   [
-    "2+",
-    "2 & vise 0.5",
-    "Borussia Dortmund pobednik  i Borussia Dortmund vi",
-    1.54,
-    0.5
-   ]
-  ]
- },
- "1X2 & ukupno golova Borussia Dortmund (1.5)": {
-  "mecova": 2,
-  "primer": [
-   [
-    "1-",
-    "1 & manje 1.5",
-    "Union Berlin pobednik  i Borussia Dortmund manje o",
-    5.25,
-    1.5
-   ],
-   [
-    "0-",
-    "x & manje 1.5",
-    "nerešeno i Borussia Dortmund manje od 1.5 gola na ",
-    5.75,
-    1.5
-   ],
-   [
-    "2-",
-    "2 & manje 1.5",
-    "Borussia Dortmund pobednik  i Borussia Dortmund ma",
-    8.3,
-    1.5
-   ],
-   [
-    "1+",
-    "1 & vise 1.5",
-    "Union Berlin pobednik  i Borussia Dortmund više od",
-    16.0,
-    1.5
-   ],
-   [
-    "0+",
-    "x & vise 1.5",
-    "nerešeno i Borussia Dortmund više od 1.5 gola na u",
-    8.6,
-    1.5
-   ],
-   [
-    "2+",
-    "2 & vise 1.5",
-    "Borussia Dortmund pobednik  i Borussia Dortmund vi",
-    1.76,
-    1.5
-   ]
-  ]
- },
- "1X2 & ukupno golova Borussia Dortmund (2.5)": {
-  "mecova": 2,
-  "primer": [
-   [
-    "1-",
-    "1 & manje 2.5",
-    "Union Berlin pobednik  i Borussia Dortmund manje o",
-    4.6,
-    2.5
-   ],
-   [
-    "0-",
-    "x & manje 2.5",
-    "nerešeno i Borussia Dortmund manje od 2.5 gola na ",
-    4.35,
-    2.5
-   ],
-   [
-    "2-",
-    "2 & manje 2.5",
-    "Borussia Dortmund pobednik  i Borussia Dortmund ma",
-    3.25,
-    2.5
-   ],
-   [
-    "1+",
-    "1 & vise 2.5",
-    "Union Berlin pobednik  i Borussia Dortmund više od",
-    55.0,
-    2.5
-   ],
-   [
-    "0+",
-    "x & vise 2.5",
-    "nerešeno i Borussia Dortmund više od 2.5 gola na u",
-    25.0,
-    2.5
-   ],
-   [
-    "2+",
-    "2 & vise 2.5",
-    "Borussia Dortmund pobednik  i Borussia Dortmund vi",
-    2.62,
-    2.5
    ]
   ]
  },
@@ -6378,14 +6244,14 @@
     "",
     "1-3",
     "Paderborn 1-3 gola na utakmici",
-    1.42,
+    1.41,
     -3.0
    ],
    [
     "",
     "2-3",
     "Paderborn 2-3 gola na utakmici",
-    2.9,
+    2.87,
     -3.0
    ]
   ]
@@ -6423,14 +6289,14 @@
     "12",
     "1-2",
     "Paderborn 1 ili 2 gola u svakom poluvremenu",
-    4.4,
+    4.35,
     2.0
    ],
    [
     "13",
     "1-3",
     "Paderborn 1,2 ili 3 gola u svakom poluvremenu",
-    4.1,
+    4.0,
     3.0
    ],
    [
@@ -6449,7 +6315,7 @@
     "0",
     "0",
     "Werder Bremen ne daje gol",
-    6.0,
+    6.1,
     3.0
    ],
    [
@@ -6482,7 +6348,7 @@
     "0",
     "0",
     "Paderborn ne daje gol",
-    3.2,
+    3.25,
     3.0
    ],
    [
@@ -6496,14 +6362,14 @@
     "2",
     "2",
     "Paderborn daje tačno 2 gola",
-    4.0,
+    3.9,
     3.0
    ],
    [
     "3",
     "3+",
     "Paderborn daje 3 ili više golova",
-    6.3,
+    6.2,
     3.0
    ]
   ]
@@ -6522,7 +6388,7 @@
     "2",
     "ne",
     "Werder Bremen ne daje gol na utakmici",
-    6.1,
+    6.2,
     null
    ]
   ]
@@ -6534,7 +6400,7 @@
     "1",
     "da",
     "Paderborn daje gol na utakmici",
-    1.35,
+    1.34,
     null
    ],
    [
@@ -6553,7 +6419,7 @@
     "",
     "vise 0.5 & vise 1.5",
     "1. Poluvreme Werder Bremen više od 0.5 golova i We",
-    1.97,
+    2.0,
     1.5
    ],
    [
@@ -6602,14 +6468,14 @@
     "",
     "manje 0.5 & manje 2.5",
     "1. Poluvreme Werder Bremen manje od 0.5 golova i W",
-    2.45,
+    2.42,
     2.5
    ],
    [
     "",
     "vise 1.5 & vise 2.5",
     "1. Poluvreme Werder Bremen više od 1.5 golova i We",
-    4.85,
+    4.9,
     2.5
    ],
    [
@@ -6623,14 +6489,14 @@
     "",
     "manje 1.5 & vise 2.5",
     "1. Poluvreme Werder Bremen manje od 1.5 golova i W",
-    5.25,
+    5.3,
     2.5
    ],
    [
     "",
     "manje 1.5 & manje 2.5",
     "1. Poluvreme Werder Bremen manje od 1.5 golova i W",
-    1.5,
+    1.49,
     2.5
    ]
   ]
@@ -6642,7 +6508,7 @@
     "",
     "vise 0.5 & vise 1.5",
     "1. Poluvreme Paderborn više od 0.5 golova i Paderb",
-    3.3,
+    3.25,
     1.5
    ],
    [
@@ -6656,28 +6522,28 @@
     "",
     "manje 0.5 & vise 1.5",
     "1. Poluvreme Paderborn manje od 0.5 golova i Pader",
-    7.5,
+    7.4,
     1.5
    ],
    [
     "",
     "manje 0.5 & manje 1.5",
     "1. Poluvreme Paderborn manje od 0.5 golova i Pader",
-    1.9,
+    1.92,
     1.5
    ],
    [
     "",
     "vise 0.5 & vise 2.5",
     "1. Poluvreme Paderborn više od 0.5 golova i Paderb",
-    6.7,
+    6.6,
     2.5
    ],
    [
     "",
     "vise 0.5 & manje 2.5",
     "1. Poluvreme Paderborn više od 0.5 golova i Paderb",
-    2.85,
+    2.82,
     2.5
    ],
    [
@@ -6691,7 +6557,7 @@
     "",
     "manje 0.5 & manje 2.5",
     "1. Poluvreme Paderborn manje od 0.5 golova i Pader",
-    1.68,
+    1.69,
     2.5
    ],
    [
@@ -6712,7 +6578,7 @@
     "",
     "manje 1.5 & vise 2.5",
     "1. Poluvreme Paderborn manje od 1.5 golova i Pader",
-    9.3,
+    9.1,
     2.5
    ],
    [
@@ -6780,7 +6646,7 @@
     "",
     "manje 0.5 & manje 0.5",
     "Werder Bremen daje manje od 0.5 golova u 1. poluvr",
-    5.7,
+    5.65,
     2.0
    ],
    [
@@ -6808,7 +6674,7 @@
     "",
     "manje 0.5 & manje 2.5",
     "Werder Bremen daje manje od 0.5 golova u 1. poluvr",
-    2.45,
+    2.42,
     2.0
    ]
   ]
@@ -6834,14 +6700,14 @@
     "",
     "vise 0.5 & vise 1.5",
     "Paderborn daje više od 0.5 golova u 1. poluvremenu",
-    9.9,
+    9.7,
     2.0
    ],
    [
     "",
     "vise 0.5 & manje 1.5",
     "Paderborn daje više od 0.5 golova u 1. poluvremenu",
-    2.52,
+    2.5,
     2.0
    ],
    [
@@ -6869,21 +6735,21 @@
     "",
     "manje 0.5 & manje 0.5",
     "Paderborn daje manje od 0.5 golova u 1. poluvremen",
-    3.1,
+    3.15,
     2.0
    ],
    [
     "",
     "manje 0.5 & vise 1.5",
     "Paderborn daje manje od 0.5 golova u 1. poluvremen",
-    7.5,
+    7.4,
     2.0
    ],
    [
     "",
     "manje 0.5 & manje 1.5",
     "Paderborn daje manje od 0.5 golova u 1. poluvremen",
-    1.9,
+    1.92,
     2.0
    ],
    [
@@ -6897,7 +6763,7 @@
     "",
     "manje 0.5 & manje 2.5",
     "Paderborn daje manje od 0.5 golova u 1. poluvremen",
-    1.68,
+    1.69,
     2.0
    ]
   ]
@@ -6949,7 +6815,7 @@
     "1-",
     "1 & manje 1.5",
     "Werder Bremen pobednik i Werder Bremen manje od 1.",
-    8.5,
+    8.6,
     1.5
    ],
    [
@@ -6970,21 +6836,21 @@
     "1+",
     "1 & vise 1.5",
     "Werder Bremen pobednik i Werder Bremen više od 1.5",
-    2.0,
+    2.02,
     1.5
    ],
    [
     "0+",
     "x & vise 1.5",
     "nerešeno i Werder Bremen više od 1.5 gola na utakm",
-    8.0,
+    7.9,
     1.5
    ],
    [
     "2+",
     "2 & vise 1.5",
     "Paderborn pobednik i Werder Bremen više od 1.5 gol",
-    14.0,
+    13.0,
     1.5
    ]
   ]
@@ -7043,14 +6909,14 @@
     "1-",
     "1 & manje 3.5",
     "Werder Bremen pobednik i Werder Bremen manje od 3.",
-    2.25,
+    2.27,
     3.5
    ],
    [
     "0-",
     "x & manje 3.5",
     "nerešeno i Werder Bremen manje od 3.5 gola na utak",
-    3.75,
+    3.7,
     3.5
    ],
    [
@@ -7064,7 +6930,7 @@
     "1+",
     "1 & vise 3.5",
     "Werder Bremen pobednik i Werder Bremen više od 3.5",
-    5.8,
+    5.85,
     3.5
    ],
    [
@@ -7137,7 +7003,7 @@
     "1-",
     "1 & manje 0.5",
     "Werder Bremen pobednik  i Paderborn manje od 0.5 g",
-    3.55,
+    3.6,
     0.5
    ],
    [
@@ -7198,14 +7064,14 @@
     "1+",
     "1 & vise 1.5",
     "Werder Bremen pobednik  i Paderborn više od 1.5 go",
-    8.0,
+    7.9,
     1.5
    ],
    [
     "0+",
     "x & vise 1.5",
     "nerešeno i Paderborn više od 1.5 gola na utakmici",
-    8.0,
+    7.9,
     1.5
    ],
    [
@@ -7259,7 +7125,7 @@
     "2+",
     "2 & vise 2.5",
     "Paderborn pobednik  i Paderborn više od 2.5 gola n",
-    7.3,
+    7.2,
     2.5
    ]
   ]
@@ -7271,14 +7137,14 @@
     "1-",
     "1 & manje 3.5",
     "Werder Bremen pobednik  i Paderborn manje od 3.5 g",
-    1.74,
+    1.75,
     3.5
    ],
    [
     "0-",
     "x & manje 3.5",
     "nerešeno i Paderborn manje od 3.5 gola na utakmici",
-    3.75,
+    3.7,
     3.5
    ],
    [
@@ -7429,7 +7295,7 @@
     "1",
     "1",
     "Schalke daje tačno 1 gol",
-    2.7,
+    2.67,
     3.0
    ],
    [
@@ -7582,7 +7448,7 @@
     "",
     "vise 1.5 & vise 2.5",
     "1. Poluvreme Schalke više od 1.5 golova i Schalke ",
-    8.0,
+    8.1,
     2.5
    ],
    [
@@ -7643,14 +7509,14 @@
     "",
     "vise 0.5 & vise 2.5",
     "1. Poluvreme Mainz više od 0.5 golova i Mainz više",
-    4.25,
+    4.2,
     2.5
    ],
    [
     "",
     "vise 0.5 & manje 2.5",
     "1. Poluvreme Mainz više od 0.5 golova i Mainz manj",
-    2.75,
+    2.72,
     2.5
    ],
    [
@@ -7889,7 +7755,7 @@
     "2-",
     "2 & manje 0.5",
     "Mainz pobednik i Schalke manje od 0.5 gola na utak",
-    4.4,
+    4.45,
     0.5
    ],
    [
@@ -7929,7 +7795,7 @@
     "0-",
     "x & manje 1.5",
     "nerešeno i Schalke manje od 1.5 gola na utakmici",
-    4.85,
+    4.8,
     1.5
    ],
    [
@@ -7969,7 +7835,7 @@
     "1-",
     "1 & manje 2.5",
     "Schalke pobednik i Schalke manje od 2.5 gola na ut",
-    4.55,
+    4.6,
     2.5
    ],
    [
@@ -8023,7 +7889,7 @@
     "0-",
     "x & manje 3.5",
     "nerešeno i Schalke manje od 3.5 gola na utakmici",
-    3.4,
+    3.35,
     3.5
    ],
    [
@@ -8063,14 +7929,14 @@
     "1-",
     "1 & manje 4.5",
     "Schalke pobednik i Schalke manje od 4.5 gola na ut",
-    2.9,
+    2.92,
     4.5
    ],
    [
     "0-",
     "x & manje 4.5",
     "nerešeno i Schalke manje od 4.5 gola na utakmici",
-    3.35,
+    3.3,
     4.5
    ],
    [
@@ -8157,7 +8023,7 @@
     "0-",
     "x & manje 1.5",
     "nerešeno i Mainz manje od 1.5 gola na utakmici",
-    4.85,
+    4.8,
     1.5
    ],
    [
@@ -8185,7 +8051,7 @@
     "2+",
     "2 & vise 1.5",
     "Mainz pobednik  i Mainz više od 1.5 gola na utakmi",
-    2.57,
+    2.6,
     1.5
    ]
   ]
@@ -8303,7 +8169,7 @@
     "13",
     "1-3",
     "Elversberg 1,2 ili 3 gola u svakom poluvremenu",
-    2.82,
+    2.85,
     3.0
    ],
    [
@@ -8630,7 +8496,7 @@
     "",
     "vise 0.5 & vise 0.5",
     "Elversberg daje više od 0.5 golova u 1. poluvremen",
-    2.72,
+    2.75,
     2.0
    ],
    [
@@ -8876,7 +8742,7 @@
     "0+",
     "x & vise 1.5",
     "nerešeno i Elversberg više od 1.5 gola na utakmici",
-    6.7,
+    6.8,
     1.5
    ],
    [
@@ -9076,28 +8942,35 @@
     "/1-",
     "manje 2.5",
     "Bayern Munich manje od 2.5 kornera",
-    14.0,
+    13.0,
+    2.5
+   ],
+   [
+    "/1+",
+    "vise 2.5",
+    "Bayern Munich više od 2.5 kornera",
+    1.02,
     2.5
    ],
    [
     "/1-",
     "manje 3.5",
     "Bayern Munich manje od 3.5 kornera",
-    7.2,
+    7.1,
     3.5
    ],
    [
     "/1+",
     "vise 3.5",
     "Bayern Munich više od 3.5 kornera",
-    1.06,
+    1.07,
     3.5
    ],
    [
     "/1-",
     "manje 4.5",
     "Bayern Munich manje od 4.5 kornera",
-    4.5,
+    4.4,
     4.5
    ],
    [
@@ -9111,50 +8984,43 @@
     "/1-",
     "manje 5.5",
     "Bayern Munich manje od 5.5 kornera",
-    3.0,
+    2.95,
     5.5
    ],
    [
     "/1+",
     "vise 5.5",
     "Bayern Munich više od 5.5 kornera",
-    1.34,
+    1.35,
     5.5
    ],
    [
     "/1-",
     "manje 6.5",
     "Bayern Munich manje od 6.5 kornera",
-    2.2,
+    2.17,
     6.5
    ],
    [
     "/1+",
     "vise 6.5",
     "Bayern Munich više od 6.5 kornera",
-    1.6,
+    1.61,
     6.5
    ],
    [
     "/1-",
     "manje 7.5",
     "Bayern Munich manje od 7.5 kornera",
-    1.74,
+    1.72,
     7.5
    ],
    [
     "/1+",
     "vise 7.5",
     "Bayern Munich više od 7.5 kornera",
-    1.97,
+    2.0,
     7.5
-   ],
-   [
-    "/1-",
-    "manje 8.5",
-    "Bayern Munich manje od 8.5 kornera",
-    1.45,
-    8.5
    ]
   ]
  },
@@ -9165,7 +9031,7 @@
     "/2-",
     "manje 0.5",
     "RB Leipzig će imati manje od 0.5 kornera",
-    9.8,
+    10.0,
     0.5
    ],
    [
@@ -9179,7 +9045,7 @@
     "/2-",
     "manje 1.5",
     "RB Leipzig će imati manje od 1.5 kornera",
-    4.0,
+    4.1,
     1.5
    ],
    [
@@ -9193,42 +9059,42 @@
     "/2-",
     "manje 2.5",
     "RB Leipzig će imati manje od 2.5 kornera",
-    2.27,
+    2.32,
     2.5
    ],
    [
     "/2+",
     "vise 2.5",
     "RB Leipzig će imati više od 2.5 kornera",
-    1.56,
+    1.54,
     2.5
    ],
    [
     "/2-",
     "manje 3.5",
     "RB Leipzig će imati manje od 3.5 kornera",
-    1.61,
+    1.63,
     3.5
    ],
    [
     "/2+",
     "vise 3.5",
     "RB Leipzig će imati više od 3.5 kornera",
-    2.17,
+    2.15,
     3.5
    ],
    [
     "/2-",
     "manje 4.5",
     "RB Leipzig će imati manje od 4.5 kornera",
-    1.3,
+    1.31,
     4.5
    ],
    [
     "/2+",
     "vise 4.5",
     "RB Leipzig će imati više od 4.5 kornera",
-    3.25,
+    3.15,
     4.5
    ],
    [
@@ -9242,7 +9108,7 @@
     "/2+",
     "vise 5.5",
     "RB Leipzig će imati više od 5.5 kornera",
-    5.0,
+    4.85,
     5.5
    ]
   ]
@@ -9301,42 +9167,42 @@
     ".2-",
     "manje 0.5",
     "RB Leipzig će imati manje od 0.5 kartona na utakmi",
-    5.65,
+    5.35,
     0.5
    ],
    [
     ".2+",
     "vise 0.5",
     "RB Leipzig će imati više od 0.5 kartona na utakmic",
-    1.07,
+    1.08,
     0.5
    ],
    [
     ".2-",
     "manje 1.5",
     "RB Leipzig će imati manje od 1.5 kartona na utakmi",
-    2.35,
+    2.25,
     1.5
    ],
    [
     ".2+",
     "vise 1.5",
     "RB Leipzig će imati više od 1.5 kartona na utakmic",
-    1.5,
+    1.55,
     1.5
    ],
    [
     ".2-",
     "manje 2.5",
     "RB Leipzig će imati manje od 2.5 kartona na utakmi",
-    1.44,
+    1.39,
     2.5
    ],
    [
     ".2+",
     "vise 2.5",
     "RB Leipzig će imati više od 2.5 kartona na utakmic",
-    2.5,
+    2.62,
     2.5
    ]
   ]
@@ -9781,42 +9647,42 @@
     ".1-",
     "manje 0.5",
     "Bayer Leverkusen će imati manje od 0.5 kartona na ",
-    4.25,
+    3.85,
     0.5
    ],
    [
     ".1+",
     "vise 0.5",
     "Bayer Leverkusen će imati više od 0.5 kartona na u",
-    1.14,
+    1.17,
     0.5
    ],
    [
     ".1-",
     "manje 1.5",
     "Bayer Leverkusen će imati manje od 1.5 kartona na ",
-    1.88,
+    1.74,
     1.5
    ],
    [
     ".1+",
     "vise 1.5",
     "Bayer Leverkusen će imati više od 1.5 kartona na u",
-    1.82,
+    1.97,
     1.5
    ],
    [
     ".1-",
     "manje 2.5",
     "Bayer Leverkusen će imati manje od 2.5 kartona na ",
-    1.24,
+    1.19,
     2.5
    ],
    [
     ".1+",
     "vise 2.5",
     "Bayer Leverkusen će imati više od 2.5 kartona na u",
-    3.3,
+    3.7,
     2.5
    ]
   ]
@@ -9826,45 +9692,45 @@
   "primer": [
    [
     ".2-",
+    "manje 0.5",
+    "Freiburg će imati manje od 0.5 kartona na utakmici",
+    5.55,
+    0.5
+   ],
+   [
+    ".2+",
+    "vise 0.5",
+    "Freiburg će imati više od 0.5 kartona na utakmici ",
+    1.07,
+    0.5
+   ],
+   [
+    ".2-",
     "manje 1.5",
     "Freiburg će imati manje od 1.5 kartona na utakmici",
-    2.6,
+    2.32,
     1.5
    ],
    [
     ".2+",
     "vise 1.5",
     "Freiburg će imati više od 1.5 kartona na utakmici ",
-    1.4,
+    1.51,
     1.5
    ],
    [
     ".2-",
     "manje 2.5",
     "Freiburg će imati manje od 2.5 kartona na utakmici",
-    1.55,
+    1.42,
     2.5
    ],
    [
     ".2+",
     "vise 2.5",
     "Freiburg će imati više od 2.5 kartona na utakmici ",
-    2.25,
+    2.52,
     2.5
-   ],
-   [
-    ".2-",
-    "manje 3.5",
-    "Freiburg će imati manje od 3.5 kartona na utakmici",
-    1.17,
-    3.5
-   ],
-   [
-    ".2+",
-    "vise 3.5",
-    "Freiburg će imati više od 3.5 kartona na utakmici ",
-    3.85,
-    3.5
    ]
   ]
  },
@@ -9875,14 +9741,14 @@
     "*11-",
     "manje 5.5",
     "Bayer Leverkusen će imati manje od 5.5 šuteva u ok",
-    1.9,
+    1.92,
     5.5
    ],
    [
     "*11+",
     "vise 5.5",
     "Bayer Leverkusen će imati više od 5.5 šuteva u okv",
-    1.82,
+    1.78,
     5.5
    ]
   ]
@@ -9894,14 +9760,14 @@
     "*12-",
     "manje 3.5",
     "Freiburg će imati manje od 3.5 šuteva u okvir gola",
-    2.17,
+    2.15,
     3.5
    ],
    [
     "*12+",
     "vise 3.5",
     "Freiburg će imati više od 3.5 šuteva u okvir gola",
-    1.59,
+    1.62,
     3.5
    ]
   ]
@@ -9932,14 +9798,14 @@
     "",
     "manje 11.5",
     "Freiburg manje od 11.5 šuteva",
-    2.02,
+    1.9,
     11.5
    ],
    [
     "",
     "vise 11.5",
     "Freiburg više od 11.5 šuteva",
-    1.7,
+    1.8,
     11.5
    ]
   ]
@@ -9951,14 +9817,14 @@
     "/*01-",
     "manje 11.5",
     "Bayer Leverkusen manje od 11.5 faulova",
-    1.71,
+    1.75,
     11.5
    ],
    [
     "/*01+",
     "vise 11.5",
     "Bayer Leverkusen više od 11.5 faulova",
-    1.92,
+    1.97,
     11.5
    ]
   ]
@@ -9970,14 +9836,14 @@
     "/*02-",
     "manje 10.5",
     "Freiburg manje od 10.5 faulova",
-    1.85,
+    1.8,
     10.5
    ],
    [
     "/*02+",
     "vise 10.5",
     "Freiburg više od 10.5 faulova",
-    1.8,
+    1.83,
     10.5
    ]
   ]
@@ -9989,84 +9855,84 @@
     "/1-",
     "manje 0.5",
     "Eintracht Frankfurt manje od 0.5 kornera",
-    40.0,
+    45.0,
     0.5
    ],
    [
     "/1-",
     "manje 1.5",
     "Eintracht Frankfurt manje od 1.5 kornera",
-    13.0,
-    1.5
-   ],
-   [
-    "/1+",
-    "vise 1.5",
-    "Eintracht Frankfurt više od 1.5 kornera",
-    1.02,
+    15.0,
     1.5
    ],
    [
     "/1-",
     "manje 2.5",
     "Eintracht Frankfurt manje od 2.5 kornera",
-    6.2,
+    6.8,
     2.5
    ],
    [
     "/1+",
     "vise 2.5",
     "Eintracht Frankfurt više od 2.5 kornera",
-    1.09,
+    1.07,
     2.5
    ],
    [
     "/1-",
     "manje 3.5",
     "Eintracht Frankfurt manje od 3.5 kornera",
-    3.65,
+    4.0,
     3.5
    ],
    [
     "/1+",
     "vise 3.5",
     "Eintracht Frankfurt više od 3.5 kornera",
-    1.24,
+    1.21,
     3.5
    ],
    [
     "/1-",
     "manje 4.5",
     "Eintracht Frankfurt manje od 4.5 kornera",
-    2.42,
+    2.62,
     4.5
    ],
    [
     "/1+",
     "vise 4.5",
     "Eintracht Frankfurt više od 4.5 kornera",
-    1.49,
+    1.43,
     4.5
    ],
    [
     "/1-",
     "manje 5.5",
     "Eintracht Frankfurt manje od 5.5 kornera",
-    1.8,
+    1.92,
     5.5
    ],
    [
     "/1+",
     "vise 5.5",
     "Eintracht Frankfurt više od 5.5 kornera",
-    1.9,
+    1.8,
     5.5
    ],
    [
     "/1-",
     "manje 6.5",
     "Eintracht Frankfurt manje od 6.5 kornera",
-    1.46,
+    1.53,
+    6.5
+   ],
+   [
+    "/1+",
+    "vise 6.5",
+    "Eintracht Frankfurt više od 6.5 kornera",
+    2.35,
     6.5
    ]
   ]
@@ -10085,7 +9951,7 @@
     "/2-",
     "manje 1.5",
     "FC Koln će imati manje od 1.5 kornera",
-    7.8,
+    7.7,
     1.5
    ],
    [
@@ -10099,7 +9965,7 @@
     "/2-",
     "manje 2.5",
     "FC Koln će imati manje od 2.5 kornera",
-    4.1,
+    4.0,
     2.5
    ],
    [
@@ -10113,49 +9979,49 @@
     "/2-",
     "manje 3.5",
     "FC Koln će imati manje od 3.5 kornera",
-    2.55,
+    2.5,
     3.5
    ],
    [
     "/2+",
     "vise 3.5",
     "FC Koln će imati više od 3.5 kornera",
-    1.46,
+    1.47,
     3.5
    ],
    [
     "/2-",
     "manje 4.5",
     "FC Koln će imati manje od 4.5 kornera",
-    1.82,
+    1.8,
     4.5
    ],
    [
     "/2+",
     "vise 4.5",
     "FC Koln će imati više od 4.5 kornera",
-    1.9,
+    1.92,
     4.5
    ],
    [
     "/2-",
     "manje 5.5",
     "FC Koln će imati manje od 5.5 kornera",
-    1.44,
+    1.43,
     5.5
    ],
    [
     "/2+",
     "vise 5.5",
     "FC Koln će imati više od 5.5 kornera",
-    2.6,
+    2.62,
     5.5
    ],
    [
     "/2-",
     "manje 6.5",
     "FC Koln će imati manje od 6.5 kornera",
-    1.24,
+    1.23,
     6.5
    ]
   ]
@@ -10261,7 +10127,7 @@
     "*11-",
     "manje 2.5",
     "Eintracht Frankfurt će imati manje od 2.5 šuteva u",
-    7.7,
+    7.8,
     2.5
    ],
    [
@@ -10275,70 +10141,70 @@
     "*11-",
     "manje 3.5",
     "Eintracht Frankfurt će imati manje od 3.5 šuteva u",
-    4.45,
+    4.85,
     3.5
    ],
    [
     "*11+",
     "vise 3.5",
     "Eintracht Frankfurt će imati više od 3.5 šuteva u ",
-    1.13,
+    1.15,
     3.5
    ],
    [
     "*11-",
     "manje 4.5",
     "Eintracht Frankfurt će imati manje od 4.5 šuteva u",
-    2.82,
+    2.95,
     4.5
    ],
    [
     "*11+",
     "vise 4.5",
     "Eintracht Frankfurt će imati više od 4.5 šuteva u ",
-    1.34,
+    1.35,
     4.5
    ],
    [
     "*11-",
     "manje 5.5",
     "Eintracht Frankfurt će imati manje od 5.5 šuteva u",
-    2.02,
+    2.05,
     5.5
    ],
    [
     "*11+",
     "vise 5.5",
     "Eintracht Frankfurt će imati više od 5.5 šuteva u ",
-    1.7,
+    1.69,
     5.5
    ],
    [
     "*11-",
     "manje 6.5",
     "Eintracht Frankfurt će imati manje od 6.5 šuteva u",
-    1.54,
+    1.56,
     6.5
    ],
    [
     "*11+",
     "vise 6.5",
     "Eintracht Frankfurt će imati više od 6.5 šuteva u ",
-    2.27,
+    2.22,
     6.5
    ],
    [
     "*11-",
     "manje 7.5",
     "Eintracht Frankfurt će imati manje od 7.5 šuteva u",
-    1.28,
+    1.29,
     7.5
    ],
    [
     "*11+",
     "vise 7.5",
     "Eintracht Frankfurt će imati više od 7.5 šuteva u ",
-    3.1,
+    3.05,
     7.5
    ]
   ]
@@ -10350,14 +10216,14 @@
     "*12-",
     "manje 1.5",
     "FC Koln će imati manje od 1.5 šuteva u okvir gola",
-    8.9,
+    8.7,
     1.5
    ],
    [
     "*12-",
     "manje 2.5",
     "FC Koln će imati manje od 2.5 šuteva u okvir gola",
-    4.6,
+    4.5,
     2.5
    ],
    [
@@ -10371,56 +10237,56 @@
     "*12-",
     "manje 3.5",
     "FC Koln će imati manje od 3.5 šuteva u okvir gola",
-    2.75,
+    2.7,
     3.5
    ],
    [
     "*12+",
     "vise 3.5",
     "FC Koln će imati više od 3.5 šuteva u okvir gola",
-    1.35,
+    1.37,
     3.5
    ],
    [
     "*12-",
     "manje 4.5",
     "FC Koln će imati manje od 4.5 šuteva u okvir gola",
-    1.9,
+    1.88,
     4.5
    ],
    [
     "*12+",
     "vise 4.5",
     "FC Koln će imati više od 4.5 šuteva u okvir gola",
-    1.8,
+    1.82,
     4.5
    ],
    [
     "*12-",
     "manje 5.5",
     "FC Koln će imati manje od 5.5 šuteva u okvir gola",
-    1.44,
+    1.43,
     5.5
    ],
    [
     "*12+",
     "vise 5.5",
     "FC Koln će imati više od 5.5 šuteva u okvir gola",
-    2.47,
+    2.52,
     5.5
    ],
    [
     "*12-",
     "manje 6.5",
     "FC Koln će imati manje od 6.5 šuteva u okvir gola",
-    1.2,
+    1.19,
     6.5
    ],
    [
     "*12+",
     "vise 6.5",
     "FC Koln će imati više od 6.5 šuteva u okvir gola",
-    3.6,
+    3.65,
     6.5
    ],
    [
@@ -10439,84 +10305,84 @@
     "",
     "manje 13.5",
     "Eintracht Frankfurt manje od 13.5 šuteva,",
-    2.85,
+    3.25,
     13.5
    ],
    [
     "",
     "vise 13.5",
     "Eintracht Frankfurt više od 13.5 šuteva",
-    1.33,
+    1.25,
     13.5
    ],
    [
     "",
     "manje 14.5",
     "Eintracht Frankfurt manje od 14.5 šuteva,",
-    2.37,
+    2.65,
     14.5
    ],
    [
     "",
     "vise 14.5",
     "Eintracht Frankfurt više od 14.5 šuteva",
-    1.49,
+    1.38,
     14.5
    ],
    [
     "",
     "manje 15.5",
     "Eintracht Frankfurt manje od 15.5 šuteva,",
-    2.0,
+    2.25,
     15.5
    ],
    [
     "",
     "vise 15.5",
     "Eintracht Frankfurt više od 15.5 šuteva",
-    1.71,
+    1.56,
     15.5
    ],
    [
     "",
     "manje 16.5",
     "Eintracht Frankfurt manje od 16.5 šuteva,",
-    1.73,
+    1.92,
     16.5
    ],
    [
     "",
     "vise 16.5",
     "Eintracht Frankfurt više od 16.5 šuteva",
-    1.97,
+    1.78,
     16.5
    ],
    [
     "",
     "manje 17.5",
     "Eintracht Frankfurt manje od 17.5 šuteva,",
-    1.52,
+    1.67,
     17.5
    ],
    [
     "",
     "vise 17.5",
     "Eintracht Frankfurt više od 17.5 šuteva",
-    2.3,
+    2.07,
     17.5
    ],
    [
     "",
     "manje 18.5",
     "Eintracht Frankfurt manje od 18.5 šuteva,",
-    1.37,
+    1.48,
     18.5
    ],
    [
     "",
     "vise 18.5",
     "Eintracht Frankfurt više od 18.5 šuteva",
-    2.7,
+    2.4,
     18.5
    ]
   ]
@@ -10528,84 +10394,84 @@
     "",
     "manje 10.5",
     "FC Koln manje od 10.5 šuteva",
-    3.15,
+    3.4,
     10.5
    ],
    [
     "",
     "vise 10.5",
     "FC Koln više od 10.5 šuteva",
-    1.27,
+    1.23,
     10.5
    ],
    [
     "",
     "manje 11.5",
     "FC Koln manje od 11.5 šuteva",
-    2.52,
+    2.77,
     11.5
    ],
    [
     "",
     "vise 11.5",
     "FC Koln više od 11.5 šuteva",
-    1.42,
+    1.39,
     11.5
    ],
    [
     "",
     "manje 12.5",
     "FC Koln manje od 12.5 šuteva",
-    2.1,
+    2.25,
     12.5
    ],
    [
     "",
     "vise 12.5",
     "FC Koln više od 12.5 šuteva",
-    1.64,
+    1.57,
     12.5
    ],
    [
     "",
     "manje 13.5",
     "FC Koln manje od 13.5 šuteva",
-    1.78,
+    1.9,
     13.5
    ],
    [
     "",
     "vise 13.5",
     "FC Koln više od 13.5 šuteva",
-    1.92,
+    1.8,
     13.5
    ],
    [
     "",
     "manje 14.5",
     "FC Koln manje od 14.5 šuteva",
-    1.54,
+    1.63,
     14.5
    ],
    [
     "",
     "vise 14.5",
     "FC Koln više od 14.5 šuteva",
-    2.27,
+    2.15,
     14.5
    ],
    [
     "",
     "manje 15.5",
     "FC Koln manje od 15.5 šuteva",
-    1.37,
+    1.45,
     15.5
    ],
    [
     "",
     "vise 15.5",
     "FC Koln više od 15.5 šuteva",
-    2.7,
+    2.55,
     15.5
    ]
   ]
@@ -10617,14 +10483,14 @@
     "/*01-",
     "manje 11.5",
     "Eintracht Frankfurt manje od 11.5 faulova",
-    1.76,
+    1.87,
     11.5
    ],
    [
     "/*01+",
     "vise 11.5",
     "Eintracht Frankfurt više od 11.5 faulova",
-    1.95,
+    1.83,
     11.5
    ]
   ]
@@ -10636,14 +10502,14 @@
     "/*02-",
     "manje 10.5",
     "FC Koln manje od 10.5 faulova",
-    1.71,
+    1.85,
     10.5
    ],
    [
     "/*02+",
     "vise 10.5",
     "FC Koln više od 10.5 faulova",
-    2.0,
+    1.85,
     10.5
    ]
   ]
@@ -10662,7 +10528,7 @@
     "/1-",
     "manje 1.5",
     "Union Berlin manje od 1.5 kornera",
-    5.3,
+    5.4,
     1.5
    ],
    [
@@ -10676,7 +10542,7 @@
     "/1-",
     "manje 2.5",
     "Union Berlin manje od 2.5 kornera",
-    2.87,
+    2.92,
     2.5
    ],
    [
@@ -10697,21 +10563,21 @@
     "/1+",
     "vise 3.5",
     "Union Berlin više od 3.5 kornera",
-    1.8,
+    1.78,
     3.5
    ],
    [
     "/1-",
     "manje 4.5",
     "Union Berlin manje od 4.5 kornera",
-    1.47,
+    1.48,
     4.5
    ],
    [
     "/1+",
     "vise 4.5",
     "Union Berlin više od 4.5 kornera",
-    2.52,
+    2.5,
     4.5
    ],
    [
@@ -10725,7 +10591,7 @@
     "/1+",
     "vise 5.5",
     "Union Berlin više od 5.5 kornera",
-    3.7,
+    3.65,
     5.5
    ],
    [
@@ -10744,7 +10610,7 @@
     "/2-",
     "manje 0.5",
     "Borussia Dortmund će imati manje od 0.5 kornera",
-    40.0,
+    45.0,
     0.5
    ],
    [
@@ -10758,70 +10624,70 @@
     "/2-",
     "manje 2.5",
     "Borussia Dortmund će imati manje od 2.5 kornera",
-    6.5,
+    6.8,
     2.5
    ],
    [
     "/2+",
     "vise 2.5",
     "Borussia Dortmund će imati više od 2.5 kornera",
-    1.08,
+    1.07,
     2.5
    ],
    [
     "/2-",
     "manje 3.5",
     "Borussia Dortmund će imati manje od 3.5 kornera",
-    3.8,
+    4.0,
     3.5
    ],
    [
     "/2+",
     "vise 3.5",
     "Borussia Dortmund će imati više od 3.5 kornera",
-    1.22,
+    1.21,
     3.5
    ],
    [
     "/2-",
     "manje 4.5",
     "Borussia Dortmund će imati manje od 4.5 kornera",
-    2.52,
+    2.6,
     4.5
    ],
    [
     "/2+",
     "vise 4.5",
     "Borussia Dortmund će imati više od 4.5 kornera",
-    1.46,
+    1.44,
     4.5
    ],
    [
     "/2-",
     "manje 5.5",
     "Borussia Dortmund će imati manje od 5.5 kornera",
-    1.87,
+    1.9,
     5.5
    ],
    [
     "/2+",
     "vise 5.5",
     "Borussia Dortmund će imati više od 5.5 kornera",
-    1.85,
+    1.8,
     5.5
    ],
    [
     "/2-",
     "manje 6.5",
     "Borussia Dortmund će imati manje od 6.5 kornera",
-    1.5,
+    1.53,
     6.5
    ],
    [
     "/2+",
     "vise 6.5",
     "Borussia Dortmund će imati više od 6.5 kornera",
-    2.42,
+    2.35,
     6.5
    ]
   ]
@@ -10833,42 +10699,42 @@
     ".1-",
     "manje 0.5",
     "Union Berlin će imati manje od 0.5 kartona na utak",
-    4.7,
+    4.85,
     0.5
    ],
    [
     ".1+",
     "vise 0.5",
     "Union Berlin će imati više od 0.5 kartona na utakm",
-    1.11,
+    1.1,
     0.5
    ],
    [
     ".1-",
     "manje 1.5",
     "Union Berlin će imati manje od 1.5 kartona na utak",
-    2.02,
+    2.07,
     1.5
    ],
    [
     ".1+",
     "vise 1.5",
     "Union Berlin će imati više od 1.5 kartona na utakm",
-    1.69,
+    1.66,
     1.5
    ],
    [
     ".1-",
     "manje 2.5",
     "Union Berlin će imati manje od 2.5 kartona na utak",
-    1.3,
+    1.32,
     2.5
    ],
    [
     ".1+",
     "vise 2.5",
     "Union Berlin će imati više od 2.5 kartona na utakm",
-    2.95,
+    2.9,
     2.5
    ]
   ]
@@ -10880,7 +10746,7 @@
     ".2-",
     "manje 0.5",
     "Borussia Dortmund će imati manje od 0.5 kartona na",
-    4.7,
+    4.75,
     0.5
    ],
    [
@@ -10894,21 +10760,21 @@
     ".2-",
     "manje 1.5",
     "Borussia Dortmund će imati manje od 1.5 kartona na",
-    2.02,
+    2.05,
     1.5
    ],
    [
     ".2+",
     "vise 1.5",
     "Borussia Dortmund će imati više od 1.5 kartona na ",
-    1.69,
+    1.68,
     1.5
    ],
    [
     ".2-",
     "manje 2.5",
     "Borussia Dortmund će imati manje od 2.5 kartona na",
-    1.3,
+    1.31,
     2.5
    ],
    [
@@ -10927,14 +10793,14 @@
     "*11-",
     "manje 3.5",
     "Union Berlin će imati manje od 3.5 šuteva u okvir ",
-    1.92,
+    1.95,
     3.5
    ],
    [
     "*11+",
     "vise 3.5",
     "Union Berlin će imati više od 3.5 šuteva u okvir g",
-    1.78,
+    1.77,
     3.5
    ]
   ]
@@ -10953,7 +10819,7 @@
     "*12+",
     "vise 5.5",
     "Borussia Dortmund će imati više od 5.5 šuteva u ok",
-    1.65,
+    1.66,
     5.5
    ]
   ]
@@ -10972,7 +10838,7 @@
     "",
     "vise 11.5",
     "Union Berlin više od 11.5 šuteva",
-    1.75,
+    1.76,
     11.5
    ]
   ]
@@ -11003,7 +10869,7 @@
     "/*01-",
     "manje 11.5",
     "Union Berlin manje od 11.5 faulova",
-    1.67,
+    1.66,
     11.5
    ],
    [
@@ -11022,14 +10888,14 @@
     "/*02-",
     "manje 9.5",
     "Borussia Dortmund manje od 9.5 faulova",
-    2.0,
+    1.97,
     9.5
    ],
    [
     "/*02+",
     "vise 9.5",
     "Borussia Dortmund više od 9.5 faulova",
-    1.65,
+    1.67,
     9.5
    ]
   ]
@@ -11076,7 +10942,7 @@
     "/1-",
     "manje 3.5",
     "Hamburger manje od 3.5 kornera",
-    2.17,
+    2.2,
     3.5
    ],
    [
@@ -11090,7 +10956,7 @@
     "/1-",
     "manje 4.5",
     "Hamburger manje od 4.5 kornera",
-    1.61,
+    1.62,
     4.5
    ],
    [
@@ -11104,14 +10970,14 @@
     "/1-",
     "manje 5.5",
     "Hamburger manje od 5.5 kornera",
-    1.32,
+    1.33,
     5.5
    ],
    [
     "/1+",
     "vise 5.5",
     "Hamburger više od 5.5 kornera",
-    3.1,
+    3.05,
     5.5
    ],
    [
@@ -11186,14 +11052,14 @@
     "/2-",
     "manje 5.5",
     "Stuttgart će imati manje od 5.5 kornera",
-    1.95,
+    1.92,
     5.5
    ],
    [
     "/2+",
     "vise 5.5",
     "Stuttgart će imati više od 5.5 kornera",
-    1.77,
+    1.78,
     5.5
    ],
    [
@@ -11219,7 +11085,7 @@
     ".1-",
     "manje 0.5",
     "Hamburger će imati manje od 0.5 kartona na utakmic",
-    5.65,
+    5.55,
     0.5
    ],
    [
@@ -11233,28 +11099,28 @@
     ".1-",
     "manje 1.5",
     "Hamburger će imati manje od 1.5 kartona na utakmic",
-    2.35,
+    2.32,
     1.5
    ],
    [
     ".1+",
     "vise 1.5",
     "Hamburger će imati više od 1.5 kartona na utakmici",
-    1.5,
+    1.52,
     1.5
    ],
    [
     ".1-",
     "manje 2.5",
     "Hamburger će imati manje od 2.5 kartona na utakmic",
-    1.44,
+    1.42,
     2.5
    ],
    [
     ".1+",
     "vise 2.5",
     "Hamburger će imati više od 2.5 kartona na utakmici",
-    2.47,
+    2.52,
     2.5
    ]
   ]
@@ -11266,7 +11132,7 @@
     ".2-",
     "manje 0.5",
     "Stuttgart će imati manje od 0.5 kartona na utakmic",
-    5.65,
+    5.6,
     0.5
    ],
    [
@@ -11294,14 +11160,14 @@
     ".2-",
     "manje 2.5",
     "Stuttgart će imati manje od 2.5 kartona na utakmic",
-    1.44,
+    1.43,
     2.5
    ],
    [
     ".2+",
     "vise 2.5",
     "Stuttgart će imati više od 2.5 kartona na utakmici",
-    2.47,
+    2.5,
     2.5
    ]
   ]
@@ -11389,14 +11255,14 @@
     "/*01-",
     "manje 12.5",
     "Hamburger manje od 12.5 faulova",
-    1.72,
+    1.75,
     12.5
    ],
    [
     "/*01+",
     "vise 12.5",
     "Hamburger više od 12.5 faulova",
-    1.92,
+    1.97,
     12.5
    ]
   ]
@@ -11892,7 +11758,7 @@
     "/2-",
     "manje 1.5",
     "Paderborn će imati manje od 1.5 kornera",
-    5.8,
+    5.85,
     1.5
    ],
    [
@@ -11934,14 +11800,14 @@
     "/2-",
     "manje 4.5",
     "Paderborn će imati manje od 4.5 kornera",
-    1.53,
+    1.54,
     4.5
    ],
    [
     "/2+",
     "vise 4.5",
     "Paderborn će imati više od 4.5 kornera",
-    2.35,
+    2.32,
     4.5
    ],
    [
@@ -11955,7 +11821,7 @@
     "/2+",
     "vise 5.5",
     "Paderborn će imati više od 5.5 kornera",
-    3.4,
+    3.35,
     5.5
    ],
    [
@@ -11974,42 +11840,42 @@
     ".1-",
     "manje 0.5",
     "Werder Bremen će imati manje od 0.5 kartona na uta",
-    5.4,
+    5.1,
     0.5
    ],
    [
     ".1+",
     "vise 0.5",
     "Werder Bremen će imati više od 0.5 kartona na utak",
-    1.08,
+    1.09,
     0.5
    ],
    [
     ".1-",
     "manje 1.5",
     "Werder Bremen će imati manje od 1.5 kartona na uta",
-    2.27,
+    2.15,
     1.5
    ],
    [
     ".1+",
     "vise 1.5",
     "Werder Bremen će imati više od 1.5 kartona na utak",
-    1.54,
+    1.61,
     1.5
    ],
    [
     ".1-",
     "manje 2.5",
     "Werder Bremen će imati manje od 2.5 kartona na uta",
-    1.41,
+    1.34,
     2.5
    ],
    [
     ".1+",
     "vise 2.5",
     "Werder Bremen će imati više od 2.5 kartona na utak",
-    2.57,
+    2.8,
     2.5
    ]
   ]
@@ -12019,45 +11885,45 @@
   "primer": [
    [
     ".2-",
+    "manje 0.5",
+    "Paderborn će imati manje od 0.5 kartona na utakmic",
+    5.25,
+    0.5
+   ],
+   [
+    ".2+",
+    "vise 0.5",
+    "Paderborn će imati više od 0.5 kartona na utakmici",
+    1.08,
+    0.5
+   ],
+   [
+    ".2-",
     "manje 1.5",
     "Paderborn će imati manje od 1.5 kartona na utakmic",
-    2.42,
+    2.22,
     1.5
    ],
    [
     ".2+",
     "vise 1.5",
     "Paderborn će imati više od 1.5 kartona na utakmici",
-    1.47,
+    1.57,
     1.5
    ],
    [
     ".2-",
     "manje 2.5",
     "Paderborn će imati manje od 2.5 kartona na utakmic",
-    1.47,
+    1.37,
     2.5
    ],
    [
     ".2+",
     "vise 2.5",
     "Paderborn će imati više od 2.5 kartona na utakmici",
-    2.42,
+    2.7,
     2.5
-   ],
-   [
-    ".2-",
-    "manje 3.5",
-    "Paderborn će imati manje od 3.5 kartona na utakmic",
-    1.14,
-    3.5
-   ],
-   [
-    ".2+",
-    "vise 3.5",
-    "Paderborn će imati više od 3.5 kartona na utakmici",
-    4.25,
-    3.5
    ]
   ]
  },
@@ -12068,14 +11934,14 @@
     "*11-",
     "manje 5.5",
     "Werder Bremen će imati manje od 5.5 šuteva u okvir",
-    1.76,
+    1.87,
     5.5
    ],
    [
     "*11+",
     "vise 5.5",
     "Werder Bremen će imati više od 5.5 šuteva u okvir ",
-    1.95,
+    1.83,
     5.5
    ]
   ]
@@ -12087,14 +11953,14 @@
     "*12-",
     "manje 3.5",
     "Paderborn će imati manje od 3.5 šuteva u okvir gol",
-    2.12,
+    2.07,
     3.5
    ],
    [
     "*12+",
     "vise 3.5",
     "Paderborn će imati više od 3.5 šuteva u okvir gola",
-    1.63,
+    1.67,
     3.5
    ]
   ]
@@ -12106,14 +11972,14 @@
     "",
     "manje 16.5",
     "Werder Bremen manje od 16.5 šuteva,",
-    1.9,
+    1.95,
     16.5
    ],
    [
     "",
     "vise 16.5",
     "Werder Bremen više od 16.5 šuteva",
-    1.82,
+    1.76,
     16.5
    ]
   ]
@@ -12123,17 +11989,17 @@
   "primer": [
    [
     "",
-    "manje 11.5",
-    "Paderborn manje od 11.5 šuteva",
-    2.0,
-    11.5
+    "manje 12.5",
+    "Paderborn manje od 12.5 šuteva",
+    1.75,
+    12.5
    ],
    [
     "",
-    "vise 11.5",
-    "Paderborn više od 11.5 šuteva",
-    1.71,
-    11.5
+    "vise 12.5",
+    "Paderborn više od 12.5 šuteva",
+    1.95,
+    12.5
    ]
   ]
  },
@@ -12271,14 +12137,14 @@
     "/2-",
     "manje 0.5",
     "Mainz će imati manje od 0.5 kornera",
-    27.0,
+    28.0,
     0.5
    ],
    [
     "/2-",
     "manje 1.5",
     "Mainz će imati manje od 1.5 kornera",
-    9.1,
+    9.3,
     1.5
    ],
    [
@@ -12292,7 +12158,7 @@
     "/2-",
     "manje 2.5",
     "Mainz će imati manje od 2.5 kornera",
-    4.7,
+    4.8,
     2.5
    ],
    [
@@ -12306,49 +12172,49 @@
     "/2-",
     "manje 3.5",
     "Mainz će imati manje od 3.5 kornera",
-    2.85,
+    2.9,
     3.5
    ],
    [
     "/2+",
     "vise 3.5",
     "Mainz će imati više od 3.5 kornera",
-    1.37,
+    1.36,
     3.5
    ],
    [
     "/2-",
     "manje 4.5",
     "Mainz će imati manje od 4.5 kornera",
-    2.0,
+    2.02,
     4.5
    ],
    [
     "/2+",
     "vise 4.5",
     "Mainz će imati više od 4.5 kornera",
-    1.73,
+    1.71,
     4.5
    ],
    [
     "/2-",
     "manje 5.5",
     "Mainz će imati manje od 5.5 kornera",
-    1.54,
+    1.56,
     5.5
    ],
    [
     "/2+",
     "vise 5.5",
     "Mainz će imati više od 5.5 kornera",
-    2.32,
+    2.27,
     5.5
    ],
    [
     "/2-",
     "manje 6.5",
     "Mainz će imati manje od 6.5 kornera",
-    1.3,
+    1.31,
     6.5
    ]
   ]
@@ -12360,42 +12226,42 @@
     ".1-",
     "manje 0.5",
     "Schalke će imati manje od 0.5 kartona na utakmici ",
-    5.6,
+    5.8,
     0.5
    ],
    [
     ".1+",
     "vise 0.5",
     "Schalke će imati više od 0.5 kartona na utakmici (",
-    1.07,
+    1.06,
     0.5
    ],
    [
     ".1-",
     "manje 1.5",
     "Schalke će imati manje od 1.5 kartona na utakmici ",
-    2.32,
+    2.4,
     1.5
    ],
    [
     ".1+",
     "vise 1.5",
     "Schalke će imati više od 1.5 kartona na utakmici (",
-    1.51,
+    1.47,
     1.5
    ],
    [
     ".1-",
     "manje 2.5",
     "Schalke će imati manje od 2.5 kartona na utakmici ",
-    1.43,
+    1.47,
     2.5
    ],
    [
     ".1+",
     "vise 2.5",
     "Schalke će imati više od 2.5 kartona na utakmici (",
-    2.5,
+    2.42,
     2.5
    ]
   ]
@@ -12405,45 +12271,45 @@
   "primer": [
    [
     ".2-",
-    "manje 0.5",
-    "Mainz će imati manje od 0.5 kartona na utakmici (u",
-    5.75,
-    0.5
-   ],
-   [
-    ".2+",
-    "vise 0.5",
-    "Mainz će imati više od 0.5 kartona na utakmici (uk",
-    1.07,
-    0.5
-   ],
-   [
-    ".2-",
     "manje 1.5",
     "Mainz će imati manje od 1.5 kartona na utakmici (u",
-    2.4,
+    2.42,
     1.5
    ],
    [
     ".2+",
     "vise 1.5",
     "Mainz će imati više od 1.5 kartona na utakmici (uk",
-    1.48,
+    1.46,
     1.5
    ],
    [
     ".2-",
     "manje 2.5",
     "Mainz će imati manje od 2.5 kartona na utakmici (u",
-    1.46,
+    1.48,
     2.5
    ],
    [
     ".2+",
     "vise 2.5",
     "Mainz će imati više od 2.5 kartona na utakmici (uk",
-    2.45,
+    2.4,
     2.5
+   ],
+   [
+    ".2-",
+    "manje 3.5",
+    "Mainz će imati manje od 3.5 kartona na utakmici (u",
+    1.14,
+    3.5
+   ],
+   [
+    ".2+",
+    "vise 3.5",
+    "Mainz će imati više od 3.5 kartona na utakmici (uk",
+    4.2,
+    3.5
    ]
   ]
  },
@@ -12454,14 +12320,14 @@
     "*11-",
     "manje 4.5",
     "Schalke će imati manje od 4.5 šuteva u okvir gola",
-    1.78,
+    1.85,
     4.5
    ],
    [
     "*11+",
     "vise 4.5",
     "Schalke će imati više od 4.5 šuteva u okvir gola",
-    1.92,
+    1.85,
     4.5
    ]
   ]
@@ -12473,14 +12339,14 @@
     "*12-",
     "manje 4.5",
     "Mainz će imati manje od 4.5 šuteva u okvir gola",
-    2.05,
+    1.97,
     4.5
    ],
    [
     "*12+",
     "vise 4.5",
     "Mainz će imati više od 4.5 šuteva u okvir gola",
-    1.68,
+    1.74,
     4.5
    ]
   ]
@@ -12499,7 +12365,7 @@
     "",
     "vise 13.5",
     "Schalke više od 13.5 šuteva",
-    1.72,
+    1.71,
     13.5
    ]
   ]
@@ -12511,14 +12377,14 @@
     "",
     "manje 14.5",
     "Mainz manje od 14.5 šuteva",
-    1.78,
+    1.8,
     14.5
    ],
    [
     "",
     "vise 14.5",
     "Mainz više od 14.5 šuteva",
-    1.92,
+    1.9,
     14.5
    ]
   ]
@@ -12530,7 +12396,7 @@
     "/*01-",
     "manje 11.5",
     "Schalke manje od 11.5 faulova",
-    1.67,
+    1.66,
     11.5
    ],
    [
@@ -12549,14 +12415,14 @@
     "/*02-",
     "manje 11.5",
     "Mainz manje od 11.5 faulova",
-    1.8,
+    1.88,
     11.5
    ],
    [
     "/*02+",
     "vise 11.5",
     "Mainz više od 11.5 faulova",
-    1.83,
+    1.82,
     11.5
    ]
   ]
@@ -12650,14 +12516,14 @@
     "/1-",
     "manje 4.5",
     "Elversberg manje od 4.5 kornera",
-    2.12,
+    2.15,
     4.5
    ],
    [
     "/1+",
     "vise 4.5",
     "Elversberg više od 4.5 kornera",
-    1.64,
+    1.63,
     4.5
    ],
    [
@@ -12697,7 +12563,7 @@
     "/2-",
     "manje 1.5",
     "Augsburg će imati manje od 1.5 kornera",
-    8.4,
+    8.5,
     1.5
    ],
    [
@@ -12760,7 +12626,7 @@
     "/2+",
     "vise 5.5",
     "Augsburg će imati više od 5.5 kornera",
-    2.45,
+    2.42,
     5.5
    ],
    [
@@ -12779,14 +12645,14 @@
     ".1-",
     "manje 0.5",
     "Elversberg će imati manje od 0.5 kartona na utakmi",
-    5.5,
+    5.45,
     0.5
    ],
    [
     ".1+",
     "vise 0.5",
     "Elversberg će imati više od 0.5 kartona na utakmic",
-    1.07,
+    1.08,
     0.5
    ],
    [
@@ -12800,21 +12666,21 @@
     ".1+",
     "vise 1.5",
     "Elversberg će imati više od 1.5 kartona na utakmic",
-    1.52,
+    1.53,
     1.5
    ],
    [
     ".1-",
     "manje 2.5",
     "Elversberg će imati manje od 2.5 kartona na utakmi",
-    1.42,
+    1.41,
     2.5
    ],
    [
     ".1+",
     "vise 2.5",
     "Elversberg će imati više od 2.5 kartona na utakmic",
-    2.55,
+    2.57,
     2.5
    ]
   ]
@@ -12826,42 +12692,42 @@
     ".2-",
     "manje 0.5",
     "Augsburg će imati manje od 0.5 kartona na utakmici",
-    5.5,
+    5.3,
     0.5
    ],
    [
     ".2+",
     "vise 0.5",
     "Augsburg će imati više od 0.5 kartona na utakmici ",
-    1.07,
+    1.08,
     0.5
    ],
    [
     ".2-",
     "manje 1.5",
     "Augsburg će imati manje od 1.5 kartona na utakmici",
-    2.3,
+    2.22,
     1.5
    ],
    [
     ".2+",
     "vise 1.5",
     "Augsburg će imati više od 1.5 kartona na utakmici ",
-    1.52,
+    1.56,
     1.5
    ],
    [
     ".2-",
     "manje 2.5",
     "Augsburg će imati manje od 2.5 kartona na utakmici",
-    1.42,
+    1.39,
     2.5
    ],
    [
     ".2+",
     "vise 2.5",
     "Augsburg će imati više od 2.5 kartona na utakmici ",
-    2.55,
+    2.65,
     2.5
    ]
   ]
@@ -12977,6 +12843,140 @@
     "Augsburg više od 11.5 faulova",
     1.82,
     11.5
+   ]
+  ]
+ },
+ "1X2 & ukupno golova Borussia Dortmund (0.5)": {
+  "mecova": 1,
+  "primer": [
+   [
+    "0-",
+    "x & manje 0.5",
+    "nerešeno i Borussia Dortmund manje od 0.5 gola na ",
+    20.0,
+    0.5
+   ],
+   [
+    "2-",
+    "2 & manje 0.5",
+    "Eintracht Frankfurt pobednik i Borussia Dortmund m",
+    11.0,
+    0.5
+   ],
+   [
+    "1+",
+    "1 & vise 0.5",
+    "Borussia Dortmund pobednik i Borussia Dortmund viš",
+    1.44,
+    0.5
+   ],
+   [
+    "0+",
+    "x & vise 0.5",
+    "nerešeno i Borussia Dortmund više od 0.5 gola na u",
+    5.0,
+    0.5
+   ],
+   [
+    "2+",
+    "2 & vise 0.5",
+    "Eintracht Frankfurt pobednik i Borussia Dortmund v",
+    6.7,
+    0.5
+   ]
+  ]
+ },
+ "1X2 & ukupno golova Borussia Dortmund (1.5)": {
+  "mecova": 1,
+  "primer": [
+   [
+    "1-",
+    "1 & manje 1.5",
+    "Borussia Dortmund pobednik i Borussia Dortmund man",
+    11.0,
+    1.5
+   ],
+   [
+    "0-",
+    "x & manje 1.5",
+    "nerešeno i Borussia Dortmund manje od 1.5 gola na ",
+    7.2,
+    1.5
+   ],
+   [
+    "2-",
+    "2 & manje 1.5",
+    "Eintracht Frankfurt pobednik i Borussia Dortmund m",
+    6.1,
+    1.5
+   ],
+   [
+    "1+",
+    "1 & vise 1.5",
+    "Borussia Dortmund pobednik i Borussia Dortmund viš",
+    1.58,
+    1.5
+   ],
+   [
+    "0+",
+    "x & vise 1.5",
+    "nerešeno i Borussia Dortmund više od 1.5 gola na u",
+    8.1,
+    1.5
+   ],
+   [
+    "2+",
+    "2 & vise 1.5",
+    "Eintracht Frankfurt pobednik i Borussia Dortmund v",
+    14.0,
+    1.5
+   ]
+  ]
+ },
+ "1X2 & ukupno golova Borussia Dortmund (2.5)": {
+  "mecova": 1,
+  "primer": [
+   [
+    "1-",
+    "1 & manje 2.5",
+    "Borussia Dortmund pobednik i Borussia Dortmund man",
+    3.75,
+    2.5
+   ],
+   [
+    "0-",
+    "x & manje 2.5",
+    "nerešeno i Borussia Dortmund manje od 2.5 gola na ",
+    5.1,
+    2.5
+   ],
+   [
+    "2-",
+    "2 & manje 2.5",
+    "Eintracht Frankfurt pobednik i Borussia Dortmund m",
+    5.1,
+    2.5
+   ],
+   [
+    "1+",
+    "1 & vise 2.5",
+    "Borussia Dortmund pobednik i Borussia Dortmund viš",
+    2.15,
+    2.5
+   ],
+   [
+    "0+",
+    "x & vise 2.5",
+    "nerešeno i Borussia Dortmund više od 2.5 gola na u",
+    20.0,
+    2.5
+   ],
+   [
+    "2+",
+    "2 & vise 2.5",
+    "Eintracht Frankfurt pobednik i Borussia Dortmund v",
+    40.0,
+    2.5
    ]
   ]
  },
@@ -14293,14 +14293,14 @@
     "0+",
     "x & vise 0.5",
     "nerešeno i FC Koln više od 0.5 gola na utakmici",
-    4.15,
+    4.2,
     0.5
    ],
    [
     "2+",
     "2 & vise 0.5",
     "Schalke pobednik i FC Koln više od 0.5 gola na uta",
-    4.85,
+    4.8,
     0.5
    ]
   ]
@@ -14319,7 +14319,7 @@
     "0-",
     "x & manje 1.5",
     "nerešeno i FC Koln manje od 1.5 gola na utakmici",
-    5.15,
+    5.2,
     1.5
    ],
    [
@@ -14366,21 +14366,21 @@
     "0-",
     "x & manje 2.5",
     "nerešeno i FC Koln manje od 2.5 gola na utakmici",
-    3.8,
+    3.85,
     2.5
    ],
    [
     "2-",
     "2 & manje 2.5",
     "Schalke pobednik i FC Koln manje od 2.5 gola na ut",
-    3.15,
+    3.1,
     2.5
    ],
    [
     "1+",
     "1 & vise 2.5",
     "FC Koln pobednik i FC Koln više od 2.5 gola na uta",
-    3.6,
+    3.65,
     2.5
    ],
    [
@@ -14453,7 +14453,7 @@
     "1-",
     "1 & manje 4.5",
     "FC Koln pobednik i FC Koln manje od 4.5 gola na ut",
-    2.1,
+    2.12,
     4.5
    ],
    [
@@ -14533,7 +14533,7 @@
     "2-",
     "2 & manje 4.5",
     "Hamburger pobednik i Paderborn manje od 4.5 gola n",
-    2.65,
+    2.62,
     4.5
    ],
    [
@@ -14566,14 +14566,14 @@
     "1",
     "da",
     "Paderborn pobeđuje bar jedno poluvreme",
-    1.63,
+    1.64,
     null
    ],
    [
     "2",
     "ne",
     "Paderborn ne pobeđuje bar jedno poluvreme",
-    2.15,
+    2.12,
     null
    ]
   ]
