@@ -1,6 +1,6 @@
 {
  "1. poluvreme - ukupno golova": {
-  "mecova": 20,
+  "mecova": 21,
   "primer": [
    [
     "",
@@ -68,7 +68,7 @@
   ]
  },
  "1. poluvreme - 1X2": {
-  "mecova": 20,
+  "mecova": 21,
   "primer": [
    [
     "1",
@@ -88,19 +88,19 @@
     "2",
     "sunderland",
     "Sunderland pobednik u 1. poluvremenu",
-    3.8,
+    3.85,
     1.0
    ]
   ]
  },
  "Poluvreme ili kraj": {
-  "mecova": 20,
+  "mecova": 21,
   "primer": [
    [
     "1",
     "1",
     "Bournemouth pobednik u 1. poluvremenu ili na kraju",
-    1.74,
+    1.73,
     1.0
    ],
    [
@@ -114,13 +114,13 @@
     "2",
     "2",
     "Sunderland pobednik u 1. poluvremenu ili na kraju",
-    2.5,
+    2.52,
     1.0
    ]
   ]
  },
  "1X2 & ukupno golova (1.5)": {
-  "mecova": 20,
+  "mecova": 21,
   "primer": [
    [
     "",
@@ -147,7 +147,7 @@
     "",
     "1 & vise 1.5",
     "Bournemouth pobednik utakmice i više od 1.5 gola n",
-    2.5,
+    2.47,
     1.5
    ],
    [
@@ -161,19 +161,19 @@
     "",
     "2 & vise 1.5",
     "Sunderland pobednik utakmice i više od 1.5 gola na",
-    4.0,
+    4.1,
     1.5
    ]
   ]
  },
  "1X2 & ukupno golova (2.5)": {
-  "mecova": 20,
+  "mecova": 21,
   "primer": [
    [
     "",
     "1 & manje 2.5",
     "Bournemouth pobednik utakmice i manje od 2.5 gola ",
-    4.8,
+    4.75,
     2.5
    ],
    [
@@ -187,14 +187,14 @@
     "",
     "2 & manje 2.5",
     "Sunderland pobednik utakmice i manje od 2.5 gola n",
-    6.6,
+    6.7,
     2.5
    ],
    [
     "",
     "1 & vise 2.5",
     "Bournemouth pobednik utakmice i više od 2.5 gola n",
-    3.1,
+    3.05,
     2.5
    ],
    [
@@ -208,19 +208,19 @@
     "",
     "2 & vise 2.5",
     "Sunderland pobednik utakmice i više od 2.5 gola na",
-    4.85,
+    4.9,
     2.5
    ]
   ]
  },
  "1X2 & ukupno golova (3.5)": {
-  "mecova": 20,
+  "mecova": 21,
   "primer": [
    [
     "",
     "1 & manje 3.5",
     "Bournemouth pobednik utakmice i manje od 3.5 gola ",
-    2.95,
+    2.92,
     3.5
    ],
    [
@@ -234,14 +234,14 @@
     "",
     "2 & manje 3.5",
     "Sunderland pobednik utakmice i manje od 3.5 gola n",
-    4.25,
+    4.3,
     3.5
    ],
    [
     "",
     "1 & vise 3.5",
     "Bournemouth pobednik utakmice i više od 3.5 gola n",
-    5.2,
+    5.15,
     3.5
    ],
    [
@@ -255,19 +255,19 @@
     "",
     "2 & vise 3.5",
     "Sunderland pobednik utakmice i više od 3.5 gola na",
-    8.2,
+    8.3,
     3.5
    ]
   ]
  },
  "1X2 & ukupno golova (4.5)": {
-  "mecova": 20,
+  "mecova": 21,
   "primer": [
    [
     "",
     "1 & manje 4.5",
     "Bournemouth pobednik utakmice i manje od 4.5 gola ",
-    2.47,
+    2.45,
     4.5
    ],
    [
@@ -281,14 +281,14 @@
     "",
     "2 & manje 4.5",
     "Sunderland pobednik utakmice i manje od 4.5 gola n",
-    3.7,
+    3.75,
     4.5
    ],
    [
     "",
     "1 & vise 4.5",
     "Bournemouth pobednik utakmice i više od 4.5 gola n",
-    7.8,
+    7.7,
     4.5
    ],
    [
@@ -308,7 +308,7 @@
   ]
  },
  "Dupla šansa & ukupno golova (2.5)": {
-  "mecova": 20,
+  "mecova": 21,
   "primer": [
    [
     "10-",
@@ -321,7 +321,7 @@
     "10+",
     "1x & vise od 2.5",
     "Bournemouth će pobediti ili će biti nerešeno i bić",
-    2.27,
+    2.25,
     2.5
    ],
    [
@@ -355,13 +355,13 @@
   ]
  },
  "Dupla šansa & ukupno golova (3.5)": {
-  "mecova": 20,
+  "mecova": 21,
   "primer": [
    [
     "10-",
     "1x & manje od 3.5",
     "Bournemouth će pobediti ili će biti nerešeno i bić",
-    1.75,
+    1.74,
     3.5
    ],
    [
@@ -402,7 +402,7 @@
   ]
  },
  "Dupla šansa & ukupno golova (4.5)": {
-  "mecova": 20,
+  "mecova": 21,
   "primer": [
    [
     "10-",
@@ -415,7 +415,7 @@
     "10+",
     "1x & vise od 4.5",
     "Bournemouth će pobediti ili će biti nerešeno i bić",
-    5.45,
+    5.4,
     4.5
    ],
    [
@@ -429,7 +429,7 @@
     "02+",
     "x2 & vise od 4.5",
     "Biće nerešeno ili Sunderland će pobediti i biće vi",
-    7.2,
+    7.3,
     4.5
    ],
    [
@@ -449,13 +449,13 @@
   ]
  },
  "Dupla šansa & ukupno golova (5.5)": {
-  "mecova": 20,
+  "mecova": 21,
   "primer": [
    [
     "10-",
     "1x & manje od 5.5",
     "Bournemouth će pobediti ili će biti nerešeno i bić",
-    1.33,
+    1.32,
     5.5
    ],
    [
@@ -469,14 +469,14 @@
     "02-",
     "x2 & manje od 5.5",
     "Biće nerešeno ili Sunderland će pobediti i biće ma",
-    1.68,
+    1.69,
     5.5
    ],
    [
     "02+",
     "x2 & vise od 5.5",
     "Biće nerešeno ili Sunderland će pobediti i biće vi",
-    11.0,
+    12.0,
     5.5
    ],
    [
@@ -496,7 +496,7 @@
   ]
  },
  "1. poluvreme ukupno golova & Ukupno golova": {
-  "mecova": 20,
+  "mecova": 21,
   "primer": [
    [
     "",
@@ -585,7 +585,7 @@
   ]
  },
  "1. poluvreme ukupno golova & 2. poluvreme ukupno golova": {
-  "mecova": 20,
+  "mecova": 21,
   "primer": [
    [
     "0+0+",
@@ -674,7 +674,7 @@
   ]
  },
  "Pobednik bilo koje poluvreme": {
-  "mecova": 20,
+  "mecova": 21,
   "primer": [
    [
     "1",
@@ -700,7 +700,7 @@
   ]
  },
  "Gol u oba poluvremena": {
-  "mecova": 20,
+  "mecova": 21,
   "primer": [
    [
     "",
@@ -719,26 +719,26 @@
   ]
  },
  "Winner DNB": {
-  "mecova": 20,
+  "mecova": 21,
   "primer": [
    [
     "1",
     "bournemouth",
     "Bournemouth pobeđuje, X vraća ulog",
-    1.53,
+    1.51,
     null
    ],
    [
     "2",
     "sunderland",
     "Sunderland pobeđuje, X vraća ulog",
-    2.42,
+    2.45,
     null
    ]
   ]
  },
  "Raspon golova u svakom poluvremenu": {
-  "mecova": 20,
+  "mecova": 21,
   "primer": [
    [
     "12",
@@ -764,7 +764,7 @@
   ]
  },
  "Tačno golova": {
-  "mecova": 20,
+  "mecova": 21,
   "primer": [
    [
     "0",
@@ -818,7 +818,7 @@
   ]
  },
  "Ukupno golova & oba tima daju gol": {
-  "mecova": 20,
+  "mecova": 21,
   "primer": [
    [
     "+1",
@@ -901,13 +901,13 @@
     "-2",
     "manje 4.5 & ne",
     "Manje od 4.5 gola i barem jedan tim ne daje gol",
-    2.17,
+    2.15,
     4.5
    ]
   ]
  },
  "Oba tima daju po dva ili više golova": {
-  "mecova": 20,
+  "mecova": 21,
   "primer": [
    [
     "1",
@@ -926,7 +926,7 @@
   ]
  },
  "Oba tima daju gol 1.poluvreme/2.poluvreme": {
-  "mecova": 20,
+  "mecova": 21,
   "primer": [
    [
     "11",
@@ -953,26 +953,26 @@
     "00",
     "ne/ne",
     "Barem jedan tim neće dati gol u 1. poluvremenu i b",
-    1.68,
+    1.67,
     2.0
    ]
   ]
  },
  "Tačan rezultat u bilo kom trenutku": {
-  "mecova": 19,
+  "mecova": 20,
   "primer": [
    [
     "",
     "1:0",
     "Biće ostvaren u bilo kom trenutku tokom regularnog",
-    1.75,
+    1.74,
     1.0
    ],
    [
     "",
     "0:1",
     "Biće ostvaren u bilo kom trenutku tokom regularnog",
-    2.25,
+    2.27,
     0.0
    ],
    [
@@ -986,7 +986,7 @@
     "",
     "2:0",
     "Biće ostvaren u bilo kom trenutku tokom regularnog",
-    3.55,
+    3.5,
     2.0
    ],
    [
@@ -1000,14 +1000,14 @@
     "",
     "1:2",
     "Biće ostvaren u bilo kom trenutku tokom regularnog",
-    4.8,
+    4.85,
     1.0
    ],
    [
     "",
     "0:2",
     "Biće ostvaren u bilo kom trenutku tokom regularnog",
-    5.55,
+    5.6,
     0.0
    ],
    [
@@ -1028,7 +1028,7 @@
     "",
     "3:0",
     "Biće ostvaren u bilo kom trenutku tokom regularnog",
-    7.6,
+    7.5,
     3.0
    ],
    [
@@ -1048,27 +1048,27 @@
   ]
  },
  "Multirezultati": {
-  "mecova": 19,
+  "mecova": 20,
   "primer": [
    [
     "",
     "1:0, 2:0 ili 3:0",
     "Utakmica će završiti rezultatom 1-0, 2-0 ili 3-0.",
-    4.3,
+    4.25,
     -0.0
    ],
    [
     "",
     "0:1, 0:2 ili 0:3",
     "Utakmica će završiti rezultatom 0:1, 0:2 ili 0:3",
-    6.5,
+    6.6,
     3.0
    ],
    [
     "",
     "4:0, 5:0 ili 6:0",
     "Utakmica će završiti rezultatom 4:0, 5:0 ili 6:0",
-    35.0,
+    34.0,
     0.0
    ],
    [
@@ -1082,14 +1082,14 @@
     "",
     "2:1, 3:1 ili 4:1",
     "Utakmica će završiti rezultatom 2:1, 3:1 ili 4:1",
-    5.4,
+    5.35,
     1.0
    ],
    [
     "",
     "1:2, 1:3 ili 1:4",
     "Utakmica će završiti rezultatom 1:2, 1:3 ili 1:4",
-    7.8,
+    7.9,
     4.0
    ],
    [
@@ -1103,7 +1103,7 @@
     "",
     "2:3, 2:4, 3:4 ili 1:5",
     "Utakmica će završiti rezultatom 2:3, 2:4, 3:4 ili ",
-    22.0,
+    23.0,
     5.0
    ],
    [
@@ -1117,13 +1117,13 @@
     "",
     "gost pobeda, ostali",
     "Gostujući tim pobeđuje bilo kojim drugim rezultato",
-    125.0,
+    150.0,
     null
    ]
   ]
  },
  "1. poluvreme ukupno golova ili 2. poluvreme ukupno golova": {
-  "mecova": 19,
+  "mecova": 20,
   "primer": [
    [
     "+1+1",
@@ -1212,20 +1212,20 @@
   ]
  },
  "Dupla šansa & ukupno golova (1.5)": {
-  "mecova": 15,
+  "mecova": 16,
   "primer": [
    [
     "10-",
     "1x & manje od 1.5",
     "Bournemouth će pobediti ili će biti nerešeno i bić",
-    4.2,
+    4.15,
     1.5
    ],
    [
     "10+",
     "1x & vise od 1.5",
     "Bournemouth će pobediti ili će biti nerešeno i bić",
-    1.56,
+    1.55,
     1.5
    ],
    [
@@ -1239,7 +1239,7 @@
     "02+",
     "x2 & vise od 1.5",
     "Biće nerešeno ili Sunderland će pobediti i biće vi",
-    2.02,
+    2.05,
     1.5
    ],
    [
@@ -1272,7 +1272,7 @@
     "",
     "1 & vise 0.5",
     "Bournemouth pobednik utakmice i više od 0.5 gola n",
-    2.02,
+    2.0,
     0.5
    ],
    [
@@ -1286,7 +1286,7 @@
     "",
     "2 & vise 0.5",
     "Sunderland pobednik utakmice i više od 0.5 gola na",
-    3.15,
+    3.2,
     0.5
    ]
   ]
@@ -1297,85 +1297,85 @@
    [
     "123",
     "1 & 2-3",
-    "Nottingham Forest pobednik i 2-3 gola",
-    8.7,
+    "Tottenham pobednik i 2-3 gola",
+    3.15,
     -3.0
    ],
    [
     "124",
     "1 & 2-4",
-    "Nottingham Forest pobednik i 2-4 gola",
-    7.8,
+    "Tottenham pobednik i 2-4 gola",
+    2.3,
     -4.0
    ],
    [
     "125",
     "1 & 2-5",
-    "Nottingham Forest pobednik i 2-5 golova",
-    7.0,
+    "Tottenham pobednik i 2-5 golova",
+    1.9,
     -5.0
    ],
    [
     "126",
     "1 & 2-6",
-    "Nottingham Forest pobednik i 2-6 golova",
-    6.8,
+    "Tottenham pobednik i 2-6 golova",
+    1.76,
     -6.0
    ],
    [
     "135",
     "1 & 3-5",
-    "Nottingham Forest pobednik i 3-5 golova",
-    8.4,
+    "Tottenham pobednik i 3-5 golova",
+    2.37,
     -5.0
    ],
    [
     "136",
     "1 & 3-6",
-    "Nottingham Forest pobednik i 3-6 golova",
-    8.2,
+    "Tottenham pobednik i 3-6 golova",
+    2.15,
     -6.0
    ],
    [
     "024",
     "x & 2-4",
     "Nerešeno i 2-4 gola",
-    5.1,
+    5.6,
     -4.0
    ],
    [
     "026",
     "x & 2-6",
     "Nerešeno i 2-6 gola",
-    4.9,
+    5.3,
     -6.0
    ],
    [
     "046",
     "x & 4-6",
     "Nerešeno i 4-6 golova",
-    12.0,
+    11.0,
     -6.0
    ],
    [
     "223",
     "2 & 2-3",
-    "Arsenal pobednik i 2-3 gola",
-    3.15,
+    "Coventry City pobednik i 2-3 gola",
+    9.6,
     -3.0
    ],
    [
     "224",
     "2 & 2-4",
-    "Arsenal pobednik i 2-4 gola",
-    2.45,
+    "Coventry City pobednik i 2-4 gola",
+    8.3,
     -4.0
    ],
    [
     "225",
     "2 & 2-5",
-    "Arsenal pobednik i 2-5 golova",
-    2.12,
+    "Coventry City pobednik i 2-5 golova",
+    7.2,
     -5.0
    ]
   ]
@@ -1386,43 +1386,43 @@
    [
     "11",
     "1 & da",
-    "Nottingham Forest pobednik i oba tima daju gol",
-    9.0,
+    "Tottenham pobednik i oba tima daju gol",
+    2.85,
     1.0
    ],
    [
     "12",
     "1 & ne",
-    "Nottingham Forest pobednik i barem jedan tim ne da",
-    8.0,
+    "Tottenham pobednik i barem jedan tim ne daje gol",
+    2.6,
     1.0
    ],
    [
     "01",
     "x & da",
     "Nerešeno i oba tima daju gol",
-    4.85,
+    5.25,
     2.0
    ],
    [
     "02",
     "x & ne",
     "Nerešeno i barem jedan tim ne daje gol",
-    9.4,
+    15.0,
     2.0
    ],
    [
     "21",
     "2 & da",
-    "Arsenal pobednik i oba tima daju gol",
-    3.5,
+    "Coventry City pobednik i oba tima daju gol",
+    8.6,
     2.0
    ],
    [
     "22",
     "2 & ne",
-    "Arsenal pobednik i barem jedan tim ne daje gol",
-    2.55,
+    "Coventry City pobednik i barem jedan tim ne daje g",
+    10.0,
     2.0
    ]
   ]
@@ -1433,22 +1433,22 @@
    [
     "1",
     "1 & da",
-    "Nottingham Forest pobednik i gol u oba poluvremena",
-    8.8,
+    "Tottenham pobednik i gol u oba poluvremena",
+    2.05,
     1.0
    ],
    [
     "0",
     "x & da",
     "Nerešeno i gol u oba poluvremena",
-    7.0,
+    7.2,
     2.0
    ],
    [
     "2",
     "2 & da",
-    "Arsenal pobednik i gol u oba poluvremena",
-    2.5,
+    "Coventry City pobednik i gol u oba poluvremena",
+    8.7,
     2.0
    ]
   ]
@@ -1548,44 +1548,131 @@
    [
     "1-",
     "1 ili manje 0.5",
-    "Nottingham Forest pobednik utakmice ili 1. poluvre",
-    2.2,
+    "Tottenham pobednik utakmice ili 1. poluvreme manje",
+    1.23,
     0.5
    ],
    [
     "1+",
     "1 ili vise 0.5",
-    "Nottingham Forest pobednik utakmice ili 1. poluvre",
-    1.27,
+    "Tottenham pobednik utakmice ili 1. poluvreme više ",
+    1.08,
     0.5
    ],
    [
     "0-",
     "x ili manje 0.5",
     "Nerešeno na kraju utakmice ili 1. poluvreme manje ",
-    2.15,
+    2.5,
     0.5
    ],
    [
     "0+",
     "x ili vise 0.5",
     "Nerešeno na kraju utakmice ili 1. poluvreme više o",
-    1.18,
+    1.15,
     0.5
    ],
    [
     "2-",
     "2 ili manje 0.5",
-    "Arsenal pobednik utakmice ili 1. poluvreme manje o",
-    1.25,
+    "Coventry City pobednik utakmice ili 1. poluvreme m",
+    2.57,
     0.5
    ],
    [
     "2+",
     "2 ili vise 0.5",
-    "Arsenal pobednik utakmice ili 1. poluvreme više od",
-    1.13,
+    "Coventry City pobednik utakmice ili 1. poluvreme v",
+    1.2,
     0.5
+   ]
+  ]
+ },
+ "1X2 ili 1. poluvreme ukupno golova (1.5)": {
+  "mecova": 11,
+  "primer": [
+   [
+    "1-",
+    "1 ili manje 1.5",
+    "Tottenham pobednik utakmice ili 1. poluvreme manje",
+    1.07,
+    1.5
+   ],
+   [
+    "1+",
+    "1 ili vise 1.5",
+    "Tottenham pobednik utakmice ili 1. poluvreme više ",
+    1.23,
+    1.5
+   ],
+   [
+    "0-",
+    "x ili manje 1.5",
+    "Nerešeno na kraju utakmice ili 1. poluvreme manje ",
+    1.46,
+    1.5
+   ],
+   [
+    "0+",
+    "x ili vise 1.5",
+    "Nerešeno na kraju utakmice ili 1. poluvreme više o",
+    1.7,
+    1.5
+   ],
+   [
+    "2-",
+    "2 ili manje 1.5",
+    "Coventry City pobednik utakmice ili 1. poluvreme m",
+    1.47,
+    1.5
+   ],
+   [
+    "2+",
+    "2 ili vise 1.5",
+    "Coventry City pobednik utakmice ili 1. poluvreme v",
+    1.83,
+    1.5
+   ]
+  ]
+ },
+ "1X2 ili 1. poluvreme ukupno golova (2.5)": {
+  "mecova": 11,
+  "primer": [
+   [
+    "1+",
+    "1 ili vise 2.5",
+    "Tottenham pobednik utakmice ili 1. poluvreme više ",
+    1.35,
+    2.5
+   ],
+   [
+    "0-",
+    "x ili manje 2.5",
+    "Nerešeno na kraju utakmice ili 1. poluvreme manje ",
+    1.13,
+    2.5
+   ],
+   [
+    "0+",
+    "x ili vise 2.5",
+    "Nerešeno na kraju utakmice ili 1. poluvreme više o",
+    2.6,
+    2.5
+   ],
+   [
+    "2-",
+    "2 ili manje 2.5",
+    "Coventry City pobednik utakmice ili 1. poluvreme m",
+    1.12,
+    2.5
+   ],
+   [
+    "2+",
+    "2 ili vise 2.5",
+    "Coventry City pobednik utakmice ili 1. poluvreme v",
+    3.0,
+    2.5
    ]
   ]
  },
@@ -1664,95 +1751,8 @@
    ]
   ]
  },
- "1X2 ili 1. poluvreme ukupno golova (1.5)": {
-  "mecova": 10,
-  "primer": [
-   [
-    "1-",
-    "1 ili manje 1.5",
-    "Tottenham pobednik utakmice ili 1. poluvreme manje",
-    1.08,
-    1.5
-   ],
-   [
-    "1+",
-    "1 ili vise 1.5",
-    "Tottenham pobednik utakmice ili 1. poluvreme više ",
-    1.24,
-    1.5
-   ],
-   [
-    "0-",
-    "x ili manje 1.5",
-    "Nerešeno na kraju utakmice ili 1. poluvreme manje ",
-    1.46,
-    1.5
-   ],
-   [
-    "0+",
-    "x ili vise 1.5",
-    "Nerešeno na kraju utakmice ili 1. poluvreme više o",
-    1.7,
-    1.5
-   ],
-   [
-    "2-",
-    "2 ili manje 1.5",
-    "Coventry City pobednik utakmice ili 1. poluvreme m",
-    1.47,
-    1.5
-   ],
-   [
-    "2+",
-    "2 ili vise 1.5",
-    "Coventry City pobednik utakmice ili 1. poluvreme v",
-    1.83,
-    1.5
-   ]
-  ]
- },
- "1X2 ili 1. poluvreme ukupno golova (2.5)": {
-  "mecova": 10,
-  "primer": [
-   [
-    "1+",
-    "1 ili vise 2.5",
-    "Tottenham pobednik utakmice ili 1. poluvreme više ",
-    1.35,
-    2.5
-   ],
-   [
-    "0-",
-    "x ili manje 2.5",
-    "Nerešeno na kraju utakmice ili 1. poluvreme manje ",
-    1.13,
-    2.5
-   ],
-   [
-    "0+",
-    "x ili vise 2.5",
-    "Nerešeno na kraju utakmice ili 1. poluvreme više o",
-    2.6,
-    2.5
-   ],
-   [
-    "2-",
-    "2 ili manje 2.5",
-    "Coventry City pobednik utakmice ili 1. poluvreme m",
-    1.12,
-    2.5
-   ],
-   [
-    "2+",
-    "2 ili vise 2.5",
-    "Coventry City pobednik utakmice ili 1. poluvreme v",
-    3.0,
-    2.5
-   ]
-  ]
- },
  "1X2 ili 1. poluvreme ukupno golova (3.5)": {
-  "mecova": 9,
+  "mecova": 10,
   "primer": [
    [
     "1+",
@@ -1778,7 +1778,7 @@
   ]
  },
  "1X2 ili 1. poluvreme ukupno golova (4.5)": {
-  "mecova": 9,
+  "mecova": 10,
   "primer": [
    [
     "1+",
@@ -1804,7 +1804,7 @@
   ]
  },
  "Dupla šansa & raspon golova": {
-  "mecova": 9,
+  "mecova": 10,
   "primer": [
    [
     "1023",
@@ -1893,7 +1893,7 @@
   ]
  },
  "Dupla šansa & oba tima daju gol": {
-  "mecova": 9,
+  "mecova": 10,
   "primer": [
    [
     "101",
@@ -1940,7 +1940,7 @@
   ]
  },
  "Dupla šansa & gol u oba poluvremena": {
-  "mecova": 9,
+  "mecova": 10,
   "primer": [
    [
     "101",
@@ -1966,7 +1966,7 @@
   ]
  },
  "Ukupno šuteva u okvir gola": {
-  "mecova": 8,
+  "mecova": 9,
   "primer": [
    [
     "*1-",
@@ -2013,7 +2013,7 @@
   ]
  },
  "Ukupno šuteva": {
-  "mecova": 8,
+  "mecova": 9,
   "primer": [
    [
     "",
@@ -2040,7 +2040,7 @@
     "",
     "vise 25.5",
     "više od 25.5 šuteva",
-    1.74,
+    1.73,
     25.5
    ],
    [
@@ -2060,20 +2060,20 @@
   ]
  },
  "Ukupno faulova": {
-  "mecova": 8,
+  "mecova": 9,
   "primer": [
    [
     "/*0-",
     "manje 23.5",
     "manje od 23.5 faulova",
-    1.82,
+    1.8,
     23.5
    ],
    [
     "/*0+",
     "vise 23.5",
     "više od 23.5 faulova",
-    1.82,
+    1.83,
     23.5
    ]
   ]
@@ -2099,7 +2099,7 @@
     "",
     "daniel jebbison",
     "Postiže gol",
-    3.15,
+    3.1,
     null
    ],
    [
@@ -2141,6 +2141,13 @@
     "",
     "ben gannon-doak",
     "Postiže gol",
+    4.0,
+    null
+   ],
+   [
+    "",
+    "malick fofana",
+    "Postiže gol",
     4.1,
     null
    ],
@@ -2156,13 +2163,6 @@
     "chemsdine talbi",
     "Postiže gol",
     4.2,
-    null
-   ],
-   [
-    "",
-    "malick fofana",
-    "Postiže gol",
-    4.25,
     null
    ]
   ]
@@ -2228,14 +2228,21 @@
    ],
    [
     "",
-    "ben gannon-doak",
+    "malick fofana",
     "Postiže 1. gol",
-    9.1,
+    9.0,
     1.0
    ],
    [
     "",
     "timur tuterov",
+    "Postiže 1. gol",
+    9.0,
+    1.0
+   ],
+   [
+    "",
+    "ben gannon-doak",
     "Postiže 1. gol",
     9.1,
     1.0
@@ -2244,14 +2251,7 @@
     "",
     "chemsdine talbi",
     "Postiže 1. gol",
-    9.3,
-    1.0
-   ],
-   [
-    "",
-    "malick fofana",
-    "Postiže 1. gol",
-    9.5,
+    9.2,
     1.0
    ]
   ]
@@ -2263,21 +2263,21 @@
     "",
     "1 & manje 5.5",
     "Brentford pobednik utakmice i manje od 5.5 gola na",
-    2.5,
+    2.52,
     5.5
    ],
    [
     "",
     "x & manje 5.5",
     "Nerešeno na kraju utakmice  i manje od 5.5 gola na",
-    3.65,
+    3.6,
     5.5
    ],
    [
     "",
     "2 & manje 5.5",
     "Liverpool pobednik utakmice i manje od 5.5 gola na",
-    2.92,
+    2.9,
     5.5
    ],
    [
@@ -2329,6 +2329,32 @@
    ]
   ]
  },
+ "Sunderland raspon golova": {
+  "mecova": 2,
+  "primer": [
+   [
+    "",
+    "1-2",
+    "Sunderland 1-2 gola na utakmici",
+    1.64,
+    -2.0
+   ],
+   [
+    "",
+    "1-3",
+    "Sunderland 1-3 gola na utakmici",
+    1.44,
+    -3.0
+   ],
+   [
+    "",
+    "2-3",
+    "Sunderland 2-3 gola na utakmici",
+    3.0,
+    -3.0
+   ]
+  ]
+ },
  "Bournemouth raspon golova u svakom poluvremenu": {
   "mecova": 2,
   "primer": [
@@ -2336,7 +2362,7 @@
     "12",
     "1-2",
     "Bournemouth 1 ili 2 gola u svakom poluvremenu",
-    3.5,
+    3.45,
     2.0
    ],
    [
@@ -2351,6 +2377,32 @@
     "2-3",
     "Bournemouth 2 ili 3 gola u svakom poluvremenu",
     17.0,
+    3.0
+   ]
+  ]
+ },
+ "Sunderland raspon golova u svakom poluvremenu": {
+  "mecova": 2,
+  "primer": [
+   [
+    "12",
+    "1-2",
+    "Sunderland 1 ili 2 gola u svakom poluvremenu",
+    4.6,
+    2.0
+   ],
+   [
+    "13",
+    "1-3",
+    "Sunderland 1,2 ili 3 gola u svakom poluvremenu",
+    4.25,
+    3.0
+   ],
+   [
+    "23",
+    "2-3",
+    "Sunderland 2 ili 3 gola u svakom poluvremenu",
+    32.0,
     3.0
    ]
   ]
@@ -2376,14 +2428,47 @@
     "2",
     "2",
     "Bournemouth daje tačno 2 gola",
-    3.5,
+    3.45,
     3.0
    ],
    [
     "3",
     "3+",
     "Bournemouth daje 3 ili više golova",
-    4.15,
+    4.1,
+    3.0
+   ]
+  ]
+ },
+ "Sunderland tačno golova": {
+  "mecova": 2,
+  "primer": [
+   [
+    "0",
+    "0",
+    "Sunderland ne daje gol",
+    3.05,
+    3.0
+   ],
+   [
+    "1",
+    "1",
+    "Sunderland daje tačno 1 gol",
+    2.55,
+    3.0
+   ],
+   [
+    "2",
+    "2",
+    "Sunderland daje tačno 2 gola",
+    4.1,
+    3.0
+   ],
+   [
+    "3",
+    "3+",
+    "Sunderland daje 3 ili više golova",
+    6.7,
     3.0
    ]
   ]
@@ -2403,6 +2488,25 @@
     "ne",
     "Bournemouth ne daje gol na utakmici",
     4.45,
+    null
+   ]
+  ]
+ },
+ "Sunderland daje gol": {
+  "mecova": 2,
+  "primer": [
+   [
+    "1",
+    "da",
+    "Sunderland daje gol na utakmici",
+    1.38,
+    null
+   ],
+   [
+    "2",
+    "ne",
+    "Sunderland ne daje gol na utakmici",
+    3.1,
     null
    ]
   ]
@@ -2442,7 +2546,7 @@
     "",
     "vise 0.5 & vise 2.5",
     "1. Poluvreme Bournemouth više od 0.5 golova i Bour",
-    4.5,
+    4.45,
     2.5
    ],
    [
@@ -2496,6 +2600,95 @@
    ]
   ]
  },
+ "1. Poluvreme Sunderland Ukupno golova & Ukupno golova Sunderland": {
+  "mecova": 2,
+  "primer": [
+   [
+    "",
+    "vise 0.5 & vise 1.5",
+    "1. Poluvreme Sunderland više od 0.5 golova i Sunde",
+    3.45,
+    1.5
+   ],
+   [
+    "",
+    "vise 0.5 & manje 1.5",
+    "1. Poluvreme Sunderland više od 0.5 golova i Sunde",
+    5.0,
+    1.5
+   ],
+   [
+    "",
+    "manje 0.5 & vise 1.5",
+    "1. Poluvreme Sunderland manje od 0.5 golova i Sund",
+    7.7,
+    1.5
+   ],
+   [
+    "",
+    "manje 0.5 & manje 1.5",
+    "1. Poluvreme Sunderland manje od 0.5 golova i Sund",
+    1.85,
+    1.5
+   ],
+   [
+    "",
+    "vise 0.5 & vise 2.5",
+    "1. Poluvreme Sunderland više od 0.5 golova i Sunde",
+    7.2,
+    2.5
+   ],
+   [
+    "",
+    "vise 0.5 & manje 2.5",
+    "1. Poluvreme Sunderland više od 0.5 golova i Sunde",
+    2.87,
+    2.5
+   ],
+   [
+    "",
+    "manje 0.5 & vise 2.5",
+    "1. Poluvreme Sunderland manje od 0.5 golova i Sund",
+    24.0,
+    2.5
+   ],
+   [
+    "",
+    "manje 0.5 & manje 2.5",
+    "1. Poluvreme Sunderland manje od 0.5 golova i Sund",
+    1.63,
+    2.5
+   ],
+   [
+    "",
+    "vise 1.5 & vise 2.5",
+    "1. Poluvreme Sunderland više od 1.5 golova i Sunde",
+    11.0,
+    2.5
+   ],
+   [
+    "",
+    "vise 1.5 & manje 2.5",
+    "1. Poluvreme Sunderland više od 1.5 golova i Sunde",
+    14.0,
+    2.5
+   ],
+   [
+    "",
+    "manje 1.5 & vise 2.5",
+    "1. Poluvreme Sunderland manje od 1.5 golova i Sund",
+    10.0,
+    2.5
+   ],
+   [
+    "",
+    "manje 1.5 & manje 2.5",
+    "1. Poluvreme Sunderland manje od 1.5 golova i Sund",
+    1.14,
+    2.5
+   ]
+  ]
+ },
  "Bournemouth - 1. poluvreme ukupno golova & 2. poluvreme ukupno golova": {
   "mecova": 2,
   "primer": [
@@ -2503,7 +2696,7 @@
     "",
     "vise 0.5 & vise 0.5",
     "Bournemouth daje više od 0.5 golova u 1. poluvreme",
-    3.0,
+    2.95,
     2.0
    ],
    [
@@ -2552,7 +2745,7 @@
     "",
     "manje 0.5 & manje 0.5",
     "Bournemouth daje manje od 0.5 golova u 1. poluvrem",
-    4.2,
+    4.25,
     2.0
    ],
    [
@@ -2585,6 +2778,95 @@
    ]
   ]
  },
+ "Sunderland - 1. poluvreme ukupno golova & 2. poluvreme ukupno golova": {
+  "mecova": 2,
+  "primer": [
+   [
+    "",
+    "vise 0.5 & vise 0.5",
+    "Sunderland daje više od 0.5 golova u 1. poluvremen",
+    4.2,
+    2.0
+   ],
+   [
+    "",
+    "vise 0.5 & manje 0.5",
+    "Sunderland daje više od 0.5 golova u 1. poluvremen",
+    4.0,
+    2.0
+   ],
+   [
+    "",
+    "vise 0.5 & vise 1.5",
+    "Sunderland daje više od 0.5 golova u 1. poluvremen",
+    11.0,
+    2.0
+   ],
+   [
+    "",
+    "vise 0.5 & manje 1.5",
+    "Sunderland daje više od 0.5 golova u 1. poluvremen",
+    2.55,
+    2.0
+   ],
+   [
+    "",
+    "vise 0.5 & vise 2.5",
+    "Sunderland daje više od 0.5 golova u 1. poluvremen",
+    34.0,
+    2.0
+   ],
+   [
+    "",
+    "vise 0.5 & manje 2.5",
+    "Sunderland daje više od 0.5 golova u 1. poluvremen",
+    2.3,
+    2.0
+   ],
+   [
+    "",
+    "manje 0.5 & vise 0.5",
+    "Sunderland daje manje od 0.5 golova u 1. poluvreme",
+    3.0,
+    2.0
+   ],
+   [
+    "",
+    "manje 0.5 & manje 0.5",
+    "Sunderland daje manje od 0.5 golova u 1. poluvreme",
+    3.0,
+    2.0
+   ],
+   [
+    "",
+    "manje 0.5 & vise 1.5",
+    "Sunderland daje manje od 0.5 golova u 1. poluvreme",
+    7.7,
+    2.0
+   ],
+   [
+    "",
+    "manje 0.5 & manje 1.5",
+    "Sunderland daje manje od 0.5 golova u 1. poluvreme",
+    1.85,
+    2.0
+   ],
+   [
+    "",
+    "manje 0.5 & vise 2.5",
+    "Sunderland daje manje od 0.5 golova u 1. poluvreme",
+    24.0,
+    2.0
+   ],
+   [
+    "",
+    "manje 0.5 & manje 2.5",
+    "Sunderland daje manje od 0.5 golova u 1. poluvreme",
+    1.63,
+    2.0
+   ]
+  ]
+ },
  "1X2 & ukupno golova Bournemouth (0.5)": {
   "mecova": 2,
   "primer": [
@@ -2599,14 +2881,14 @@
     "2-",
     "2 & manje 0.5",
     "Sunderland pobednik i Bournemouth manje od 0.5 gol",
-    5.7,
+    5.75,
     0.5
    ],
    [
     "1+",
     "1 & vise 0.5",
     "Bournemouth pobednik i Bournemouth više od 0.5 gol",
-    2.02,
+    2.0,
     0.5
    ],
    [
@@ -2620,7 +2902,7 @@
     "2+",
     "2 & vise 0.5",
     "Sunderland pobednik i Bournemouth više od 0.5 gola",
-    5.5,
+    5.55,
     0.5
    ]
   ]
@@ -2646,14 +2928,14 @@
     "2-",
     "2 & manje 1.5",
     "Sunderland pobednik i Bournemouth manje od 1.5 gol",
-    3.55,
+    3.6,
     1.5
    ],
    [
     "1+",
     "1 & vise 1.5",
     "Bournemouth pobednik i Bournemouth više od 1.5 gol",
-    2.5,
+    2.47,
     1.5
    ],
    [
@@ -2667,7 +2949,7 @@
     "2+",
     "2 & vise 1.5",
     "Sunderland pobednik i Bournemouth više od 1.5 gola",
-    15.0,
+    16.0,
     1.5
    ]
   ]
@@ -2693,14 +2975,14 @@
     "2-",
     "2 & manje 2.5",
     "Sunderland pobednik i Bournemouth manje od 2.5 gol",
-    3.2,
+    3.25,
     2.5
    ],
    [
     "1+",
     "1 & vise 2.5",
     "Bournemouth pobednik i Bournemouth više od 2.5 gol",
-    4.3,
+    4.25,
     2.5
    ],
    [
@@ -2726,7 +3008,7 @@
     "1-",
     "1 & manje 3.5",
     "Bournemouth pobednik i Bournemouth manje od 3.5 go",
-    2.4,
+    2.37,
     3.5
    ],
    [
@@ -2740,14 +3022,14 @@
     "2-",
     "2 & manje 3.5",
     "Sunderland pobednik i Bournemouth manje od 3.5 gol",
-    3.15,
+    3.2,
     3.5
    ],
    [
     "1+",
     "1 & vise 3.5",
     "Bournemouth pobednik i Bournemouth više od 3.5 gol",
-    8.8,
+    8.7,
     3.5
    ],
    [
@@ -2773,7 +3055,7 @@
     "1-",
     "1 & manje 4.5",
     "Bournemouth pobednik i Bournemouth manje od 4.5 go",
-    2.12,
+    2.1,
     4.5
    ],
    [
@@ -2787,7 +3069,7 @@
     "2-",
     "2 & manje 4.5",
     "Sunderland pobednik i Bournemouth manje od 4.5 gol",
-    3.15,
+    3.2,
     4.5
    ],
    [
@@ -2872,7 +3154,7 @@
     "12",
     "1-2",
     "Brentford 1 ili 2 gola u svakom poluvremenu",
-    3.35,
+    3.4,
     2.0
    ],
    [
@@ -2905,7 +3187,7 @@
     "13",
     "1-3",
     "Liverpool 1,2 ili 3 gola u svakom poluvremenu",
-    3.3,
+    3.25,
     3.0
    ],
    [
@@ -2924,14 +3206,14 @@
     "0",
     "0",
     "Brentford ne daje gol",
-    4.55,
+    4.6,
     3.0
    ],
    [
     "1",
     "1",
     "Brentford daje tačno 1 gol",
-    2.85,
+    2.87,
     3.0
    ],
    [
@@ -2957,14 +3239,14 @@
     "0",
     "0",
     "Liverpool ne daje gol",
-    4.0,
+    4.1,
     3.0
    ],
    [
     "1",
     "1",
     "Liverpool daje tačno 1 gol",
-    2.72,
+    2.75,
     3.0
    ],
    [
@@ -2990,14 +3272,14 @@
     "1",
     "da",
     "Brentford daje gol na utakmici",
-    1.19,
+    1.2,
     null
    ],
    [
     "2",
     "ne",
     "Brentford ne daje gol na utakmici",
-    4.75,
+    4.7,
     null
    ]
   ]
@@ -3016,7 +3298,7 @@
     "2",
     "ne",
     "Liverpool ne daje gol na utakmici",
-    4.1,
+    4.15,
     null
    ]
   ]
@@ -3028,14 +3310,14 @@
     "",
     "vise 0.5 & vise 1.5",
     "1. Poluvreme Brentford više od 0.5 golova i Brentf",
-    2.37,
+    2.4,
     1.5
    ],
    [
     "",
     "vise 0.5 & manje 1.5",
     "1. Poluvreme Brentford više od 0.5 golova i Brentf",
-    5.5,
+    5.45,
     1.5
    ],
    [
@@ -3049,7 +3331,7 @@
     "",
     "manje 0.5 & manje 1.5",
     "1. Poluvreme Brentford manje od 0.5 golova i Brent",
-    2.5,
+    2.47,
     1.5
    ],
    [
@@ -3063,28 +3345,28 @@
     "",
     "vise 0.5 & manje 2.5",
     "1. Poluvreme Brentford više od 0.5 golova i Brentf",
-    2.75,
+    2.72,
     2.5
    ],
    [
     "",
     "manje 0.5 & vise 2.5",
     "1. Poluvreme Brentford manje od 0.5 golova i Brent",
-    16.0,
+    17.0,
     2.5
    ],
    [
     "",
     "manje 0.5 & manje 2.5",
     "1. Poluvreme Brentford manje od 0.5 golova i Brent",
-    2.07,
+    2.05,
     2.5
    ],
    [
     "",
     "vise 1.5 & vise 2.5",
     "1. Poluvreme Brentford više od 1.5 golova i Brentf",
-    6.4,
+    6.5,
     2.5
    ],
    [
@@ -3117,7 +3399,7 @@
     "",
     "vise 0.5 & vise 1.5",
     "1. Poluvreme Liverpool više od 0.5 golova i Liverp",
-    2.65,
+    2.62,
     1.5
    ],
    [
@@ -3138,14 +3420,14 @@
     "",
     "manje 0.5 & manje 1.5",
     "1. Poluvreme Liverpool manje od 0.5 golova i Liver",
-    2.25,
+    2.27,
     1.5
    ],
    [
     "",
     "vise 0.5 & vise 2.5",
     "1. Poluvreme Liverpool više od 0.5 golova i Liverp",
-    4.9,
+    4.85,
     2.5
    ],
    [
@@ -3166,14 +3448,14 @@
     "",
     "manje 0.5 & manje 2.5",
     "1. Poluvreme Liverpool manje od 0.5 golova i Liver",
-    1.9,
+    1.92,
     2.5
    ],
    [
     "",
     "vise 1.5 & vise 2.5",
     "1. Poluvreme Liverpool više od 1.5 golova i Liverp",
-    7.5,
+    7.4,
     2.5
    ],
    [
@@ -3194,7 +3476,7 @@
     "",
     "manje 1.5 & manje 2.5",
     "1. Poluvreme Liverpool manje od 1.5 golova i Liver",
-    1.25,
+    1.26,
     2.5
    ]
   ]
@@ -3206,7 +3488,7 @@
     "",
     "vise 0.5 & vise 0.5",
     "Brentford daje više od 0.5 golova u 1. poluvremenu",
-    2.85,
+    2.87,
     2.0
    ],
    [
@@ -3255,7 +3537,7 @@
     "",
     "manje 0.5 & manje 0.5",
     "Brentford daje manje od 0.5 golova u 1. poluvremen",
-    4.45,
+    4.4,
     2.0
    ],
    [
@@ -3269,21 +3551,21 @@
     "",
     "manje 0.5 & manje 1.5",
     "Brentford daje manje od 0.5 golova u 1. poluvremen",
-    2.5,
+    2.47,
     2.0
    ],
    [
     "",
     "manje 0.5 & vise 2.5",
     "Brentford daje manje od 0.5 golova u 1. poluvremen",
-    16.0,
+    17.0,
     2.0
    ],
    [
     "",
     "manje 0.5 & manje 2.5",
     "Brentford daje manje od 0.5 golova u 1. poluvremen",
-    2.07,
+    2.05,
     2.0
    ]
   ]
@@ -3295,7 +3577,7 @@
     "",
     "vise 0.5 & vise 0.5",
     "Liverpool daje više od 0.5 golova u 1. poluvremenu",
-    3.2,
+    3.15,
     2.0
    ],
    [
@@ -3309,7 +3591,7 @@
     "",
     "vise 0.5 & vise 1.5",
     "Liverpool daje više od 0.5 golova u 1. poluvremenu",
-    7.3,
+    7.2,
     2.0
    ],
    [
@@ -3323,7 +3605,7 @@
     "",
     "vise 0.5 & vise 2.5",
     "Liverpool daje više od 0.5 golova u 1. poluvremenu",
-    20.0,
+    19.0,
     2.0
    ],
    [
@@ -3344,7 +3626,7 @@
     "",
     "manje 0.5 & manje 0.5",
     "Liverpool daje manje od 0.5 golova u 1. poluvremen",
-    3.9,
+    4.0,
     2.0
    ],
    [
@@ -3358,7 +3640,7 @@
     "",
     "manje 0.5 & manje 1.5",
     "Liverpool daje manje od 0.5 golova u 1. poluvremen",
-    2.25,
+    2.27,
     2.0
    ],
    [
@@ -3372,7 +3654,7 @@
     "",
     "manje 0.5 & manje 2.5",
     "Liverpool daje manje od 0.5 golova u 1. poluvremen",
-    1.9,
+    1.92,
     2.0
    ]
   ]
@@ -3391,21 +3673,21 @@
     "2-",
     "2 & manje 0.5",
     "Liverpool pobednik i Brentford manje od 0.5 gola n",
-    5.5,
+    5.45,
     0.5
    ],
    [
     "1+",
     "1 & vise 0.5",
     "Brentford pobednik i Brentford više od 0.5 gola na",
-    2.25,
+    2.27,
     0.5
    ],
    [
     "0+",
     "x & vise 0.5",
     "nerešeno i Brentford više od 0.5 gola na utakmici",
-    4.0,
+    3.9,
     0.5
    ],
    [
@@ -3424,14 +3706,14 @@
     "1-",
     "1 & manje 1.5",
     "Brentford pobednik i Brentford manje od 1.5 gola n",
-    9.4,
+    9.5,
     1.5
    ],
    [
     "0-",
     "x & manje 1.5",
     "nerešeno i Brentford manje od 1.5 gola na utakmici",
-    5.0,
+    4.9,
     1.5
    ],
    [
@@ -3445,21 +3727,21 @@
     "1+",
     "1 & vise 1.5",
     "Brentford pobednik i Brentford više od 1.5 gola na",
-    2.65,
+    2.7,
     1.5
    ],
    [
     "0+",
     "x & vise 1.5",
     "nerešeno i Brentford više od 1.5 gola na utakmici",
-    7.3,
+    7.2,
     1.5
    ],
    [
     "2+",
     "2 & vise 1.5",
     "Liverpool pobednik i Brentford više od 1.5 gola na",
-    11.0,
+    10.0,
     1.5
    ]
   ]
@@ -3478,21 +3760,21 @@
     "0-",
     "x & manje 2.5",
     "nerešeno i Brentford manje od 2.5 gola na utakmici",
-    3.65,
+    3.6,
     2.5
    ],
    [
     "2-",
     "2 & manje 2.5",
     "Liverpool pobednik i Brentford manje od 2.5 gola n",
-    2.75,
+    2.72,
     2.5
    ],
    [
     "1+",
     "1 & vise 2.5",
     "Brentford pobednik i Brentford više od 2.5 gola na",
-    4.25,
+    4.3,
     2.5
    ],
    [
@@ -3506,7 +3788,7 @@
     "2+",
     "2 & vise 2.5",
     "Liverpool pobednik i Brentford više od 2.5 gola na",
-    37.0,
+    36.0,
     2.5
    ]
   ]
@@ -3518,28 +3800,28 @@
     "1-",
     "1 & manje 3.5",
     "Brentford pobednik i Brentford manje od 3.5 gola n",
-    2.75,
+    2.77,
     3.5
    ],
    [
     "0-",
     "x & manje 3.5",
     "nerešeno i Brentford manje od 3.5 gola na utakmici",
-    3.4,
+    3.35,
     3.5
    ],
    [
     "2-",
     "2 & manje 3.5",
     "Liverpool pobednik i Brentford manje od 3.5 gola n",
-    2.67,
+    2.65,
     3.5
    ],
    [
     "1+",
     "1 & vise 3.5",
     "Brentford pobednik i Brentford više od 3.5 gola na",
-    8.3,
+    8.4,
     3.5
    ],
    [
@@ -3565,28 +3847,28 @@
     "1-",
     "1 & manje 4.5",
     "Brentford pobednik i Brentford manje od 4.5 gola n",
-    2.37,
+    2.42,
     4.5
    ],
    [
     "0-",
     "x & manje 4.5",
     "nerešeno i Brentford manje od 4.5 gola na utakmici",
-    3.35,
+    3.3,
     4.5
    ],
    [
     "2-",
     "2 & manje 4.5",
     "Liverpool pobednik i Brentford manje od 4.5 gola n",
-    2.67,
+    2.65,
     4.5
    ],
    [
     "1+",
     "1 & vise 4.5",
     "Brentford pobednik i Brentford više od 4.5 gola na",
-    19.0,
+    20.0,
     4.5
    ],
    [
@@ -3612,7 +3894,7 @@
     "1-",
     "1 & manje 0.5",
     "Brentford pobednik  i Liverpool manje od 0.5 gola ",
-    4.7,
+    4.75,
     0.5
    ],
    [
@@ -3626,14 +3908,14 @@
     "1+",
     "1 & vise 0.5",
     "Brentford pobednik  i Liverpool više od 0.5 gola n",
-    3.65,
+    3.7,
     0.5
    ],
    [
     "0+",
     "x & vise 0.5",
     "nerešeno i Liverpool više od 0.5 gola na utakmici",
-    4.0,
+    3.9,
     0.5
    ],
    [
@@ -3652,14 +3934,14 @@
     "1-",
     "1 & manje 1.5",
     "Brentford pobednik  i Liverpool manje od 1.5 gola ",
-    2.67,
+    2.7,
     1.5
    ],
    [
     "0-",
     "x & manje 1.5",
     "nerešeno i Liverpool manje od 1.5 gola na utakmici",
-    5.0,
+    4.9,
     1.5
    ],
    [
@@ -3680,7 +3962,7 @@
     "0+",
     "x & vise 1.5",
     "nerešeno i Liverpool više od 1.5 gola na utakmici",
-    7.3,
+    7.2,
     1.5
    ],
    [
@@ -3699,21 +3981,21 @@
     "1-",
     "1 & manje 2.5",
     "Brentford pobednik  i Liverpool manje od 2.5 gola ",
-    2.3,
+    2.35,
     2.5
    ],
    [
     "0-",
     "x & manje 2.5",
     "nerešeno i Liverpool manje od 2.5 gola na utakmici",
-    3.65,
+    3.6,
     2.5
    ],
    [
     "2-",
     "2 & manje 2.5",
     "Liverpool pobednik  i Liverpool manje od 2.5 gola ",
-    4.55,
+    4.5,
     2.5
    ],
    [
@@ -3746,21 +4028,21 @@
     "",
     "1-2",
     "Brighton 1-2 gola na utakmici",
-    1.82,
+    1.83,
     -2.0
    ],
    [
     "",
     "1-3",
     "Brighton  1-3 gola na utakmici",
-    1.34,
+    1.35,
     -3.0
    ],
    [
     "",
     "2-3",
     "Brighton 2-3 gola na utakmici",
-    2.05,
+    2.02,
     -3.0
    ]
   ]
@@ -3779,14 +4061,14 @@
     "",
     "1-3",
     "Crystal Palace 1-3 gola na utakmici",
-    1.53,
+    1.52,
     -3.0
    ],
    [
     "",
     "2-3",
     "Crystal Palace 2-3 gola na utakmici",
-    3.55,
+    3.5,
     -3.0
    ]
   ]
@@ -3798,21 +4080,21 @@
     "12",
     "1-2",
     "Brighton 1 ili 2 gola u svakom poluvremenu",
-    2.82,
+    2.8,
     2.0
    ],
    [
     "13",
     "1-3",
     "Brighton 1,2 ili 3 gola u svakom poluvremenu",
-    2.3,
+    2.27,
     3.0
    ],
    [
     "23",
     "2-3",
     "Brighton 2 ili 3 gola u svakom poluvremenu",
-    9.4,
+    9.1,
     3.0
    ]
   ]
@@ -3824,14 +4106,14 @@
     "12",
     "1-2",
     "Crystal Palace 1 ili 2 gola u svakom poluvremenu",
-    5.4,
+    5.3,
     2.0
    ],
    [
     "13",
     "1-3",
     "Crystal Palace 1,2 ili 3 gola u svakom poluvremenu",
-    5.1,
+    5.0,
     3.0
    ],
    [
@@ -3850,14 +4132,14 @@
     "0",
     "0",
     "Brighton ne daje gol",
-    6.9,
+    7.0,
     3.0
    ],
    [
     "1",
     "1",
     "Brighton daje tačno 1 gol",
-    3.55,
+    3.6,
     3.0
    ],
    [
@@ -3871,7 +4153,7 @@
     "3",
     "3+",
     "Brighton daje 3 ili više golova",
-    2.6,
+    2.55,
     3.0
    ]
   ]
@@ -3883,7 +4165,7 @@
     "0",
     "0",
     "Crystal Palace ne daje gol",
-    2.62,
+    2.65,
     3.0
    ],
    [
@@ -3897,14 +4179,14 @@
     "2",
     "2",
     "Crystal Palace daje tačno 2 gola",
-    4.6,
+    4.55,
     3.0
    ],
    [
     "3",
     "3+",
     "Crystal Palace daje 3 ili više golova",
-    8.8,
+    8.6,
     3.0
    ]
   ]
@@ -3923,7 +4205,7 @@
     "2",
     "ne",
     "Brighton ne daje gol na utakmici",
-    7.0,
+    7.2,
     null
    ]
   ]
@@ -3935,14 +4217,14 @@
     "1",
     "da",
     "Crystal Palace daje gol na utakmici",
-    1.49,
+    1.48,
     null
    ],
    [
     "2",
     "ne",
     "Crystal Palace ne daje gol na utakmici",
-    2.62,
+    2.67,
     null
    ]
   ]
@@ -3954,14 +4236,14 @@
     "",
     "vise 0.5 & vise 1.5",
     "1. Poluvreme Brighton više od 0.5 golova i Brighto",
-    1.83,
+    1.8,
     1.5
    ],
    [
     "",
     "vise 0.5 & manje 1.5",
     "1. Poluvreme Brighton više od 0.5 golova i Brighto",
-    6.5,
+    6.6,
     1.5
    ],
    [
@@ -3975,14 +4257,14 @@
     "",
     "manje 0.5 & manje 1.5",
     "1. Poluvreme Brighton manje od 0.5 golova i Bright",
-    3.45,
+    3.5,
     1.5
    ],
    [
     "",
     "vise 0.5 & vise 2.5",
     "1. Poluvreme Brighton više od 0.5 golova i Brighto",
-    2.8,
+    2.75,
     2.5
    ],
    [
@@ -4003,14 +4285,14 @@
     "",
     "manje 0.5 & manje 2.5",
     "1. Poluvreme Brighton manje od 0.5 golova i Bright",
-    2.67,
+    2.72,
     2.5
    ],
    [
     "",
     "vise 1.5 & vise 2.5",
     "1. Poluvreme Brighton više od 1.5 golova i Brighto",
-    4.25,
+    4.15,
     2.5
    ],
    [
@@ -4024,14 +4306,14 @@
     "",
     "manje 1.5 & vise 2.5",
     "1. Poluvreme Brighton manje od 1.5 golova i Bright",
-    4.85,
+    4.8,
     2.5
    ],
    [
     "",
     "manje 1.5 & manje 2.5",
     "1. Poluvreme Brighton manje od 1.5 golova i Bright",
-    1.61,
+    1.63,
     2.5
    ]
   ]
@@ -4043,7 +4325,7 @@
     "",
     "vise 0.5 & vise 1.5",
     "1. Poluvreme Crystal Palace više od 0.5 golova i C",
-    4.15,
+    4.1,
     1.5
    ],
    [
@@ -4057,21 +4339,21 @@
     "",
     "manje 0.5 & vise 1.5",
     "1. Poluvreme Crystal Palace manje od 0.5 golova i ",
-    8.6,
+    8.5,
     1.5
    ],
    [
     "",
     "manje 0.5 & manje 1.5",
     "1. Poluvreme Crystal Palace manje od 0.5 golova i ",
-    1.67,
+    1.68,
     1.5
    ],
    [
     "",
     "vise 0.5 & vise 2.5",
     "1. Poluvreme Crystal Palace više od 0.5 golova i C",
-    9.1,
+    8.9,
     2.5
    ],
    [
@@ -4085,21 +4367,21 @@
     "",
     "manje 0.5 & vise 2.5",
     "1. Poluvreme Crystal Palace manje od 0.5 golova i ",
-    30.0,
+    29.0,
     2.5
    ],
    [
     "",
     "manje 0.5 & manje 2.5",
     "1. Poluvreme Crystal Palace manje od 0.5 golova i ",
-    1.51,
+    1.52,
     2.5
    ],
    [
     "",
     "vise 1.5 & vise 2.5",
     "1. Poluvreme Crystal Palace više od 1.5 golova i C",
-    15.0,
+    14.0,
     2.5
    ],
    [
@@ -4132,21 +4414,21 @@
     "",
     "vise 0.5 & vise 0.5",
     "Brighton daje više od 0.5 golova u 1. poluvremenu ",
-    2.15,
+    2.12,
     2.0
    ],
    [
     "",
     "vise 0.5 & manje 0.5",
     "Brighton daje više od 0.5 golova u 1. poluvremenu ",
-    4.3,
+    4.35,
     2.0
    ],
    [
     "",
     "vise 0.5 & vise 1.5",
     "Brighton daje više od 0.5 golova u 1. poluvremenu ",
-    4.15,
+    4.1,
     2.0
    ],
    [
@@ -4160,28 +4442,28 @@
     "",
     "vise 0.5 & vise 2.5",
     "Brighton daje više od 0.5 golova u 1. poluvremenu ",
-    9.2,
+    8.9,
     2.0
    ],
    [
     "",
     "vise 0.5 & manje 2.5",
     "Brighton daje više od 0.5 golova u 1. poluvremenu ",
-    1.7,
+    1.69,
     2.0
    ],
    [
     "",
     "manje 0.5 & vise 0.5",
     "Brighton daje manje od 0.5 golova u 1. poluvremenu",
-    3.25,
+    3.3,
     2.0
    ],
    [
     "",
     "manje 0.5 & manje 0.5",
     "Brighton daje manje od 0.5 golova u 1. poluvremenu",
-    6.5,
+    6.7,
     2.0
    ],
    [
@@ -4195,7 +4477,7 @@
     "",
     "manje 0.5 & manje 1.5",
     "Brighton daje manje od 0.5 golova u 1. poluvremenu",
-    3.45,
+    3.5,
     2.0
    ],
    [
@@ -4209,7 +4491,7 @@
     "",
     "manje 0.5 & manje 2.5",
     "Brighton daje manje od 0.5 golova u 1. poluvremenu",
-    2.67,
+    2.72,
     2.0
    ]
   ]
@@ -4221,7 +4503,7 @@
     "",
     "vise 0.5 & vise 0.5",
     "Crystal Palace daje više od 0.5 golova u 1. poluvr",
-    5.1,
+    5.0,
     2.0
    ],
    [
@@ -4242,21 +4524,21 @@
     "",
     "vise 0.5 & manje 1.5",
     "Crystal Palace daje više od 0.5 golova u 1. poluvr",
-    2.75,
+    2.72,
     2.0
    ],
    [
     "",
     "vise 0.5 & vise 2.5",
     "Crystal Palace daje više od 0.5 golova u 1. poluvr",
-    50.0,
+    45.0,
     2.0
    ],
    [
     "",
     "vise 0.5 & manje 2.5",
     "Crystal Palace daje više od 0.5 golova u 1. poluvr",
-    2.52,
+    2.5,
     2.0
    ],
    [
@@ -4270,35 +4552,35 @@
     "",
     "manje 0.5 & manje 0.5",
     "Crystal Palace daje manje od 0.5 golova u 1. poluv",
-    2.57,
+    2.6,
     2.0
    ],
    [
     "",
     "manje 0.5 & vise 1.5",
     "Crystal Palace daje manje od 0.5 golova u 1. poluv",
-    8.6,
+    8.5,
     2.0
    ],
    [
     "",
     "manje 0.5 & manje 1.5",
     "Crystal Palace daje manje od 0.5 golova u 1. poluv",
-    1.67,
+    1.68,
     2.0
    ],
    [
     "",
     "manje 0.5 & vise 2.5",
     "Crystal Palace daje manje od 0.5 golova u 1. poluv",
-    30.0,
+    29.0,
     2.0
    ],
    [
     "",
     "manje 0.5 & manje 2.5",
     "Crystal Palace daje manje od 0.5 golova u 1. poluv",
-    1.51,
+    1.52,
     2.0
    ]
   ]
@@ -4310,21 +4592,21 @@
     "0-",
     "x & manje 0.5",
     "nerešeno i Brighton manje od 0.5 gola na utakmici",
-    13.0,
+    14.0,
     0.5
    ],
    [
     "2-",
     "2 & manje 0.5",
     "Crystal Palace pobednik i Brighton manje od 0.5 go",
-    8.8,
+    9.0,
     0.5
    ],
    [
     "1+",
     "1 & vise 0.5",
     "Brighton pobednik i Brighton više od 0.5 gola na u",
-    1.51,
+    1.5,
     0.5
    ],
    [
@@ -4350,42 +4632,42 @@
     "1-",
     "1 & manje 1.5",
     "Brighton pobednik i Brighton manje od 1.5 gola na ",
-    7.7,
+    7.9,
     1.5
    ],
    [
     "0-",
     "x & manje 1.5",
     "nerešeno i Brighton manje od 1.5 gola na utakmici",
-    5.6,
+    5.65,
     1.5
    ],
    [
     "2-",
     "2 & manje 1.5",
     "Crystal Palace pobednik i Brighton manje od 1.5 go",
-    5.5,
+    5.55,
     1.5
    ],
    [
     "1+",
     "1 & vise 1.5",
     "Brighton pobednik i Brighton više od 1.5 gola na u",
-    1.74,
+    1.73,
     1.5
    ],
    [
     "0+",
     "x & vise 1.5",
     "nerešeno i Brighton više od 1.5 gola na utakmici",
-    9.4,
+    9.2,
     1.5
    ],
    [
     "2+",
     "2 & vise 1.5",
     "Crystal Palace pobednik i Brighton više od 1.5 gol",
-    19.0,
+    18.0,
     1.5
    ]
   ]
@@ -4397,14 +4679,14 @@
     "1-",
     "1 & manje 2.5",
     "Brighton pobednik i Brighton manje od 2.5 gola na ",
-    3.1,
+    3.15,
     2.5
    ],
    [
     "0-",
     "x & manje 2.5",
     "nerešeno i Brighton manje od 2.5 gola na utakmici",
-    4.3,
+    4.35,
     2.5
    ],
    [
@@ -4418,7 +4700,7 @@
     "1+",
     "1 & vise 2.5",
     "Brighton pobednik i Brighton više od 2.5 gola na u",
-    2.65,
+    2.6,
     2.5
    ],
    [
@@ -4432,7 +4714,7 @@
     "2+",
     "2 & vise 2.5",
     "Crystal Palace pobednik i Brighton više od 2.5 gol",
-    65.0,
+    60.0,
     2.5
    ]
   ]
@@ -4444,7 +4726,7 @@
     "1-",
     "1 & manje 3.5",
     "Brighton pobednik i Brighton manje od 3.5 gola na ",
-    2.0,
+    2.02,
     3.5
    ],
    [
@@ -4465,7 +4747,7 @@
     "1+",
     "1 & vise 3.5",
     "Brighton pobednik i Brighton više od 3.5 gola na u",
-    4.9,
+    4.75,
     3.5
    ],
    [
@@ -4498,21 +4780,21 @@
     "0-",
     "x & manje 4.5",
     "nerešeno i Brighton manje od 4.5 gola na utakmici",
-    4.0,
+    4.1,
     4.5
    ],
    [
     "2-",
     "2 & manje 4.5",
     "Crystal Palace pobednik i Brighton manje od 4.5 go",
-    4.75,
+    4.8,
     4.5
    ],
    [
     "1+",
     "1 & vise 4.5",
     "Brighton pobednik i Brighton više od 4.5 gola na u",
-    9.8,
+    9.5,
     4.5
    ],
    [
@@ -4538,21 +4820,21 @@
     "1-",
     "1 & manje 0.5",
     "Brighton pobednik  i Crystal Palace manje od 0.5 g",
-    2.85,
+    2.87,
     0.5
    ],
    [
     "0-",
     "x & manje 0.5",
     "nerešeno i Crystal Palace manje od 0.5 gola na uta",
-    13.0,
+    14.0,
     0.5
    ],
    [
     "1+",
     "1 & vise 0.5",
     "Brighton pobednik  i Crystal Palace više od 0.5 go",
-    2.85,
+    2.8,
     0.5
    ],
    [
@@ -4566,7 +4848,7 @@
     "2+",
     "2 & vise 0.5",
     "Crystal Palace pobednik  i Crystal Palace više od ",
-    4.75,
+    4.8,
     0.5
    ]
   ]
@@ -4585,7 +4867,7 @@
     "0-",
     "x & manje 1.5",
     "nerešeno i Crystal Palace manje od 1.5 gola na uta",
-    5.6,
+    5.65,
     1.5
    ],
    [
@@ -4599,14 +4881,14 @@
     "1+",
     "1 & vise 1.5",
     "Brighton pobednik  i Crystal Palace više od 1.5 go",
-    8.3,
+    8.1,
     1.5
    ],
    [
     "0+",
     "x & vise 1.5",
     "nerešeno i Crystal Palace više od 1.5 gola na utak",
-    9.4,
+    9.2,
     1.5
    ],
    [
@@ -4615,6 +4897,53 @@
     "Crystal Palace pobednik  i Crystal Palace više od ",
     6.0,
     1.5
+   ]
+  ]
+ },
+ "1X2 & ukupno golova Crystal Palace (2.5)": {
+  "mecova": 2,
+  "primer": [
+   [
+    "1-",
+    "1 & manje 2.5",
+    "Brighton pobednik  i Crystal Palace manje od 2.5 g",
+    1.53,
+    2.5
+   ],
+   [
+    "0-",
+    "x & manje 2.5",
+    "nerešeno i Crystal Palace manje od 2.5 gola na uta",
+    4.35,
+    2.5
+   ],
+   [
+    "2-",
+    "2 & manje 2.5",
+    "Crystal Palace pobednik  i Crystal Palace manje od",
+    6.7,
+    2.5
+   ],
+   [
+    "1+",
+    "1 & vise 2.5",
+    "Brighton pobednik  i Crystal Palace više od 2.5 go",
+    32.0,
+    2.5
+   ],
+   [
+    "0+",
+    "x & vise 2.5",
+    "nerešeno i Crystal Palace više od 2.5 gola na utak",
+    28.0,
+    2.5
+   ],
+   [
+    "2+",
+    "2 & vise 2.5",
+    "Crystal Palace pobednik  i Crystal Palace više od ",
+    11.0,
+    2.5
    ]
   ]
  },
@@ -4632,14 +4961,14 @@
     "",
     "1-3",
     "Everton  1-3 gola na utakmici",
-    1.38,
+    1.39,
     -3.0
    ],
    [
     "",
     "2-3",
     "Everton 2-3 gola na utakmici",
-    2.7,
+    2.75,
     -3.0
    ]
   ]
@@ -4651,14 +4980,14 @@
     "",
     "1-2",
     "Chelsea 1-2 gola na utakmici",
-    1.63,
+    1.64,
     -2.0
    ],
    [
     "",
     "1-3",
     "Chelsea 1-3 gola na utakmici",
-    1.32,
+    1.33,
     -3.0
    ],
    [
@@ -4677,14 +5006,14 @@
     "12",
     "1-2",
     "Everton 1 ili 2 gola u svakom poluvremenu",
-    4.1,
+    4.15,
     2.0
    ],
    [
     "13",
     "1-3",
     "Everton 1,2 ili 3 gola u svakom poluvremenu",
-    3.75,
+    3.8,
     3.0
    ],
    [
@@ -4703,7 +5032,7 @@
     "12",
     "1-2",
     "Chelsea 1 ili 2 gola u svakom poluvremenu",
-    3.35,
+    3.4,
     2.0
    ],
    [
@@ -4743,14 +5072,14 @@
     "2",
     "2",
     "Everton daje tačno 2 gola",
-    3.75,
+    3.8,
     3.0
    ],
    [
     "3",
     "3+",
     "Everton daje 3 ili više golova",
-    5.5,
+    5.65,
     3.0
    ]
   ]
@@ -4776,14 +5105,14 @@
     "2",
     "2",
     "Chelsea daje tačno 2 gola",
-    3.4,
+    3.45,
     3.0
    ],
    [
     "3",
     "3+",
     "Chelsea daje 3 ili više golova",
-    3.85,
+    3.9,
     3.0
    ]
   ]
@@ -4802,7 +5131,7 @@
     "2",
     "ne",
     "Everton ne daje gol na utakmici",
-    3.5,
+    3.45,
     null
    ]
   ]
@@ -4854,14 +5183,14 @@
     "",
     "manje 0.5 & manje 1.5",
     "1. Poluvreme Everton manje od 0.5 golova i Everton",
-    2.02,
+    2.0,
     1.5
    ],
    [
     "",
     "vise 0.5 & vise 2.5",
     "1. Poluvreme Everton više od 0.5 golova i Everton ",
-    6.0,
+    6.1,
     2.5
    ],
    [
@@ -4882,14 +5211,14 @@
     "",
     "manje 0.5 & manje 2.5",
     "1. Poluvreme Everton manje od 0.5 golova i Everton",
-    1.75,
+    1.74,
     2.5
    ],
    [
     "",
     "vise 1.5 & vise 2.5",
     "1. Poluvreme Everton više od 1.5 golova i Everton ",
-    9.0,
+    9.2,
     2.5
    ],
    [
@@ -4903,14 +5232,14 @@
     "",
     "manje 1.5 & vise 2.5",
     "1. Poluvreme Everton manje od 1.5 golova i Everton",
-    8.4,
+    8.5,
     2.5
    ],
    [
     "",
     "manje 1.5 & manje 2.5",
     "1. Poluvreme Everton manje od 1.5 golova i Everton",
-    1.19,
+    1.18,
     2.5
    ]
   ]
@@ -4922,7 +5251,7 @@
     "",
     "vise 0.5 & vise 1.5",
     "1. Poluvreme Chelsea više od 0.5 golova i Chelsea ",
-    2.37,
+    2.4,
     1.5
    ],
    [
@@ -4950,7 +5279,7 @@
     "",
     "vise 0.5 & vise 2.5",
     "1. Poluvreme Chelsea više od 0.5 golova i Chelsea ",
-    4.25,
+    4.3,
     2.5
    ],
    [
@@ -4964,28 +5293,28 @@
     "",
     "manje 0.5 & vise 2.5",
     "1. Poluvreme Chelsea manje od 0.5 golova i Chelsea",
-    16.0,
+    17.0,
     2.5
    ],
    [
     "",
     "manje 0.5 & manje 2.5",
     "1. Poluvreme Chelsea manje od 0.5 golova i Chelsea",
-    2.07,
+    2.05,
     2.5
    ],
    [
     "",
     "vise 1.5 & vise 2.5",
     "1. Poluvreme Chelsea više od 1.5 golova i Chelsea ",
-    6.4,
+    6.5,
     2.5
    ],
    [
     "",
     "vise 1.5 & manje 2.5",
     "1. Poluvreme Chelsea više od 1.5 golova i Chelsea ",
-    11.0,
+    12.0,
     2.5
    ],
    [
@@ -4999,7 +5328,7 @@
     "",
     "manje 1.5 & manje 2.5",
     "1. Poluvreme Chelsea manje od 1.5 golova i Chelsea",
-    1.32,
+    1.31,
     2.5
    ]
   ]
@@ -5011,21 +5340,21 @@
     "",
     "vise 0.5 & vise 0.5",
     "Everton daje više od 0.5 golova u 1. poluvremenu i",
-    3.7,
+    3.75,
     2.0
    ],
    [
     "",
     "vise 0.5 & manje 0.5",
     "Everton daje više od 0.5 golova u 1. poluvremenu i",
-    4.0,
+    3.9,
     2.0
    ],
    [
     "",
     "vise 0.5 & vise 1.5",
     "Everton daje više od 0.5 golova u 1. poluvremenu i",
-    8.7,
+    8.9,
     2.0
    ],
    [
@@ -5074,7 +5403,7 @@
     "",
     "manje 0.5 & manje 1.5",
     "Everton daje manje od 0.5 golova u 1. poluvremenu ",
-    2.02,
+    2.0,
     2.0
    ],
    [
@@ -5088,7 +5417,7 @@
     "",
     "manje 0.5 & manje 2.5",
     "Everton daje manje od 0.5 golova u 1. poluvremenu ",
-    1.75,
+    1.74,
     2.0
    ]
   ]
@@ -5100,7 +5429,7 @@
     "",
     "vise 0.5 & vise 0.5",
     "Chelsea daje više od 0.5 golova u 1. poluvremenu i",
-    2.85,
+    2.87,
     2.0
    ],
    [
@@ -5114,14 +5443,14 @@
     "",
     "vise 0.5 & vise 1.5",
     "Chelsea daje više od 0.5 golova u 1. poluvremenu i",
-    6.3,
+    6.4,
     2.0
    ],
    [
     "",
     "vise 0.5 & manje 1.5",
     "Chelsea daje više od 0.5 golova u 1. poluvremenu i",
-    2.25,
+    2.27,
     2.0
    ],
    [
@@ -5135,7 +5464,7 @@
     "",
     "vise 0.5 & manje 2.5",
     "Chelsea daje više od 0.5 golova u 1. poluvremenu i",
-    1.88,
+    1.9,
     2.0
    ],
    [
@@ -5170,14 +5499,14 @@
     "",
     "manje 0.5 & vise 2.5",
     "Chelsea daje manje od 0.5 golova u 1. poluvremenu ",
-    16.0,
+    17.0,
     2.0
    ],
    [
     "",
     "manje 0.5 & manje 2.5",
     "Chelsea daje manje od 0.5 golova u 1. poluvremenu ",
-    2.07,
+    2.05,
     2.0
    ]
   ]
@@ -5189,14 +5518,14 @@
     "0-",
     "x & manje 0.5",
     "nerešeno i Everton manje od 0.5 gola na utakmici",
-    12.0,
+    11.0,
     0.5
    ],
    [
     "2-",
     "2 & manje 0.5",
     "Chelsea pobednik i Everton manje od 0.5 gola na ut",
-    4.1,
+    4.0,
     0.5
    ],
    [
@@ -5210,7 +5539,7 @@
     "0+",
     "x & vise 0.5",
     "nerešeno i Everton više od 0.5 gola na utakmici",
-    4.1,
+    4.15,
     0.5
    ],
    [
@@ -5229,42 +5558,42 @@
     "1-",
     "1 & manje 1.5",
     "Everton pobednik i Everton manje od 1.5 gola na ut",
-    9.9,
+    9.8,
     1.5
    ],
    [
     "0-",
     "x & manje 1.5",
     "nerešeno i Everton manje od 1.5 gola na utakmici",
-    4.75,
+    4.7,
     1.5
    ],
    [
     "2-",
     "2 & manje 1.5",
     "Chelsea pobednik i Everton manje od 1.5 gola na ut",
-    2.4,
+    2.37,
     1.5
    ],
    [
     "1+",
     "1 & vise 1.5",
     "Everton pobednik i Everton više od 1.5 gola na uta",
-    3.6,
+    3.65,
     1.5
    ],
    [
     "0+",
     "x & vise 1.5",
     "nerešeno i Everton više od 1.5 gola na utakmici",
-    8.0,
+    8.1,
     1.5
    ],
    [
     "2+",
     "2 & vise 1.5",
     "Chelsea pobednik i Everton više od 1.5 gola na uta",
-    9.9,
+    10.0,
     1.5
    ]
   ]
@@ -5297,7 +5626,7 @@
     "1+",
     "1 & vise 2.5",
     "Everton pobednik i Everton više od 2.5 gola na uta",
-    6.1,
+    6.2,
     2.5
    ],
    [
@@ -5311,7 +5640,7 @@
     "2+",
     "2 & vise 2.5",
     "Chelsea pobednik i Everton više od 2.5 gola na uta",
-    38.0,
+    39.0,
     2.5
    ]
   ]
@@ -5344,7 +5673,7 @@
     "1+",
     "1 & vise 3.5",
     "Everton pobednik i Everton više od 3.5 gola na uta",
-    13.0,
+    14.0,
     3.5
    ],
    [
@@ -5370,7 +5699,7 @@
     "1-",
     "1 & manje 4.5",
     "Everton pobednik i Everton manje od 4.5 gola na ut",
-    3.0,
+    3.05,
     4.5
    ],
    [
@@ -5391,7 +5720,7 @@
     "1+",
     "1 & vise 4.5",
     "Everton pobednik i Everton više od 4.5 gola na uta",
-    34.0,
+    35.0,
     4.5
    ],
    [
@@ -5424,21 +5753,21 @@
     "0-",
     "x & manje 0.5",
     "nerešeno i Chelsea manje od 0.5 gola na utakmici",
-    12.0,
+    11.0,
     0.5
    ],
    [
     "1+",
     "1 & vise 0.5",
     "Everton pobednik  i Chelsea više od 0.5 gola na ut",
-    4.85,
+    4.9,
     0.5
    ],
    [
     "0+",
     "x & vise 0.5",
     "nerešeno i Chelsea više od 0.5 gola na utakmici",
-    4.1,
+    4.15,
     0.5
    ],
    [
@@ -5542,7 +5871,7 @@
     "13",
     "1-3",
     "Hull City 1,2 ili 3 gola u svakom poluvremenu",
-    5.0,
+    5.1,
     3.0
    ],
    [
@@ -5594,7 +5923,7 @@
     "0",
     "0",
     "Hull City ne daje gol",
-    2.65,
+    2.62,
     3.0
    ],
    [
@@ -5634,7 +5963,7 @@
     "2",
     "ne",
     "Fulham ne daje gol na utakmici",
-    5.45,
+    5.5,
     null
    ]
   ]
@@ -5646,7 +5975,7 @@
     "1",
     "da",
     "Hull City daje gol na utakmici",
-    1.49,
+    1.48,
     null
    ],
    [
@@ -5714,14 +6043,14 @@
     "",
     "manje 0.5 & manje 2.5",
     "1. Poluvreme Fulham manje od 0.5 golova i Fulham m",
-    2.27,
+    2.3,
     2.5
    ],
    [
     "",
     "vise 1.5 & vise 2.5",
     "1. Poluvreme Fulham više od 1.5 golova i Fulham vi",
-    5.4,
+    5.35,
     2.5
    ],
    [
@@ -5735,7 +6064,7 @@
     "",
     "manje 1.5 & vise 2.5",
     "1. Poluvreme Fulham manje od 1.5 golova i Fulham v",
-    5.75,
+    5.7,
     2.5
    ],
    [
@@ -5857,7 +6186,7 @@
     "",
     "vise 0.5 & vise 1.5",
     "Fulham daje više od 0.5 golova u 1. poluvremenu i ",
-    5.3,
+    5.25,
     2.0
    ],
    [
@@ -5878,7 +6207,7 @@
     "",
     "vise 0.5 & manje 2.5",
     "Fulham daje više od 0.5 golova u 1. poluvremenu i ",
-    1.8,
+    1.78,
     2.0
    ],
    [
@@ -5920,7 +6249,7 @@
     "",
     "manje 0.5 & manje 2.5",
     "Fulham daje manje od 0.5 golova u 1. poluvremenu i",
-    2.27,
+    2.3,
     2.0
    ]
   ]
@@ -6035,7 +6364,7 @@
     "1+",
     "1 & vise 0.5",
     "Fulham pobednik i Fulham više od 0.5 gola na utakm",
-    1.68,
+    1.67,
     0.5
    ],
    [
@@ -6049,7 +6378,7 @@
     "2+",
     "2 & vise 0.5",
     "Hull City pobednik i Fulham više od 0.5 gola na ut",
-    6.9,
+    6.8,
     0.5
    ]
   ]
@@ -6075,7 +6404,7 @@
     "2-",
     "2 & manje 1.5",
     "Hull City pobednik i Fulham manje od 1.5 gola na u",
-    4.6,
+    4.55,
     1.5
    ],
    [
@@ -6089,7 +6418,7 @@
     "0+",
     "x & vise 1.5",
     "nerešeno i Fulham više od 1.5 gola na utakmici",
-    9.5,
+    9.6,
     1.5
    ],
    [
@@ -6115,7 +6444,7 @@
     "0-",
     "x & manje 2.5",
     "nerešeno i Fulham manje od 2.5 gola na utakmici",
-    3.75,
+    3.8,
     2.5
    ],
    [
@@ -6162,7 +6491,7 @@
     "0-",
     "x & manje 3.5",
     "nerešeno i Fulham manje od 3.5 gola na utakmici",
-    3.6,
+    3.65,
     3.5
    ],
    [
@@ -6317,15 +6646,41 @@
     "0+",
     "x & vise 1.5",
     "nerešeno i Hull City više od 1.5 gola na utakmici",
-    9.5,
+    9.6,
     1.5
    ],
    [
     "2+",
     "2 & vise 1.5",
     "Hull City pobednik  i Hull City više od 1.5 gola n",
-    5.3,
+    5.25,
     1.5
+   ]
+  ]
+ },
+ "Leeds United raspon golova": {
+  "mecova": 2,
+  "primer": [
+   [
+    "",
+    "1-2",
+    "Leeds United 1-2 gola na utakmici",
+    1.62,
+    -2.0
+   ],
+   [
+    "",
+    "1-3",
+    "Leeds United  1-3 gola na utakmici",
+    1.33,
+    -3.0
+   ],
+   [
+    "",
+    "2-3",
+    "Leeds United 2-3 gola na utakmici",
+    2.35,
+    -3.0
    ]
   ]
  },
@@ -6336,22 +6691,48 @@
     "",
     "1-2",
     "Manchester United 1-2 gola na utakmici",
-    1.61,
+    1.62,
     -2.0
    ],
    [
     "",
     "1-3",
     "Manchester United 1-3 gola na utakmici",
-    1.35,
+    1.36,
     -3.0
    ],
    [
     "",
     "2-3",
     "Manchester United 2-3 gola na utakmici",
-    2.52,
+    2.55,
     -3.0
+   ]
+  ]
+ },
+ "Leeds United raspon golova u svakom poluvremenu": {
+  "mecova": 2,
+  "primer": [
+   [
+    "12",
+    "1-2",
+    "Leeds United 1 ili 2 gola u svakom poluvremenu",
+    3.5,
+    2.0
+   ],
+   [
+    "13",
+    "1-3",
+    "Leeds United 1,2 ili 3 gola u svakom poluvremenu",
+    3.1,
+    3.0
+   ],
+   [
+    "23",
+    "2-3",
+    "Leeds United 2 ili 3 gola u svakom poluvremenu",
+    17.0,
+    3.0
    ]
   ]
  },
@@ -6369,7 +6750,7 @@
     "13",
     "1-3",
     "Manchester United 1,2 ili 3 gola u svakom poluvrem",
-    3.45,
+    3.4,
     3.0
    ],
    [
@@ -6381,6 +6762,39 @@
    ]
   ]
  },
+ "Leeds United tačno golova": {
+  "mecova": 2,
+  "primer": [
+   [
+    "0",
+    "0",
+    "Leeds United ne daje gol",
+    4.4,
+    3.0
+   ],
+   [
+    "1",
+    "1",
+    "Leeds United daje tačno 1 gol",
+    2.82,
+    3.0
+   ],
+   [
+    "2",
+    "2",
+    "Leeds United daje tačno 2 gola",
+    3.45,
+    3.0
+   ],
+   [
+    "3",
+    "3+",
+    "Leeds United daje 3 ili više golova",
+    4.15,
+    3.0
+   ]
+  ]
+ },
  "Manchester United tačno golova": {
   "mecova": 2,
   "primer": [
@@ -6388,29 +6802,48 @@
     "0",
     "0",
     "Manchester United ne daje gol",
-    3.8,
+    3.85,
     3.0
    ],
    [
     "1",
     "1",
     "Manchester United daje tačno 1 gol",
-    2.67,
+    2.7,
     3.0
    ],
    [
     "2",
     "2",
     "Manchester United daje tačno 2 gola",
-    3.6,
+    3.65,
     3.0
    ],
    [
     "3",
     "3+",
     "Manchester United daje 3 ili više golova",
-    4.8,
+    4.85,
     3.0
+   ]
+  ]
+ },
+ "Leeds United daje gol": {
+  "mecova": 2,
+  "primer": [
+   [
+    "1",
+    "da",
+    "Leeds United daje gol na utakmici",
+    1.21,
+    null
+   ],
+   [
+    "2",
+    "ne",
+    "Leeds United ne daje gol na utakmici",
+    4.45,
+    null
    ]
   ]
  },
@@ -6433,6 +6866,95 @@
    ]
   ]
  },
+ "1. Poluvreme Leeds United Ukupno golova & Ukupno golova Leeds United": {
+  "mecova": 2,
+  "primer": [
+   [
+    "",
+    "vise 0.5 & vise 1.5",
+    "1. Poluvreme Leeds United više od 0.5 golova i Lee",
+    2.5,
+    1.5
+   ],
+   [
+    "",
+    "vise 0.5 & manje 1.5",
+    "1. Poluvreme Leeds United više od 0.5 golova i Lee",
+    5.4,
+    1.5
+   ],
+   [
+    "",
+    "manje 0.5 & vise 1.5",
+    "1. Poluvreme Leeds United manje od 0.5 golova i Le",
+    6.5,
+    1.5
+   ],
+   [
+    "",
+    "manje 0.5 & manje 1.5",
+    "1. Poluvreme Leeds United manje od 0.5 golova i Le",
+    2.4,
+    1.5
+   ],
+   [
+    "",
+    "vise 0.5 & vise 2.5",
+    "1. Poluvreme Leeds United više od 0.5 golova i Lee",
+    4.5,
+    2.5
+   ],
+   [
+    "",
+    "vise 0.5 & manje 2.5",
+    "1. Poluvreme Leeds United više od 0.5 golova i Lee",
+    2.72,
+    2.5
+   ],
+   [
+    "",
+    "manje 0.5 & vise 2.5",
+    "1. Poluvreme Leeds United manje od 0.5 golova i Le",
+    17.0,
+    2.5
+   ],
+   [
+    "",
+    "manje 0.5 & manje 2.5",
+    "1. Poluvreme Leeds United manje od 0.5 golova i Le",
+    2.0,
+    2.5
+   ],
+   [
+    "",
+    "vise 1.5 & vise 2.5",
+    "1. Poluvreme Leeds United više od 1.5 golova i Lee",
+    6.8,
+    2.5
+   ],
+   [
+    "",
+    "vise 1.5 & manje 2.5",
+    "1. Poluvreme Leeds United više od 1.5 golova i Lee",
+    12.0,
+    2.5
+   ],
+   [
+    "",
+    "manje 1.5 & vise 2.5",
+    "1. Poluvreme Leeds United manje od 1.5 golova i Le",
+    6.8,
+    2.5
+   ],
+   [
+    "",
+    "manje 1.5 & manje 2.5",
+    "1. Poluvreme Leeds United manje od 1.5 golova i Le",
+    1.29,
+    2.5
+   ]
+  ]
+ },
  "1. Poluvreme Manchester United Ukupno golova & Ukupno golova Manchester United": {
   "mecova": 2,
   "primer": [
@@ -6447,21 +6969,21 @@
     "",
     "vise 0.5 & manje 1.5",
     "1. Poluvreme Manchester United više od 0.5 golova ",
-    5.25,
+    5.2,
     1.5
    ],
    [
     "",
     "manje 0.5 & vise 1.5",
     "1. Poluvreme Manchester United manje od 0.5 golova",
-    6.8,
+    6.9,
     1.5
    ],
    [
     "",
     "manje 0.5 & manje 1.5",
     "1. Poluvreme Manchester United manje od 0.5 golova",
-    2.15,
+    2.17,
     1.5
    ],
    [
@@ -6519,6 +7041,95 @@
     "1. Poluvreme Manchester United manje od 1.5 golova",
     1.23,
     2.5
+   ]
+  ]
+ },
+ "Leeds United - 1. poluvreme ukupno golova & 2. poluvreme ukupno golova": {
+  "mecova": 2,
+  "primer": [
+   [
+    "",
+    "vise 0.5 & vise 0.5",
+    "Leeds United daje više od 0.5 golova u 1. poluvrem",
+    3.0,
+    2.0
+   ],
+   [
+    "",
+    "vise 0.5 & manje 0.5",
+    "Leeds United daje više od 0.5 golova u 1. poluvrem",
+    3.9,
+    2.0
+   ],
+   [
+    "",
+    "vise 0.5 & vise 1.5",
+    "Leeds United daje više od 0.5 golova u 1. poluvrem",
+    6.7,
+    2.0
+   ],
+   [
+    "",
+    "vise 0.5 & manje 1.5",
+    "Leeds United daje više od 0.5 golova u 1. poluvrem",
+    2.27,
+    2.0
+   ],
+   [
+    "",
+    "vise 0.5 & vise 2.5",
+    "Leeds United daje više od 0.5 golova u 1. poluvrem",
+    18.0,
+    2.0
+   ],
+   [
+    "",
+    "vise 0.5 & manje 2.5",
+    "Leeds United daje više od 0.5 golova u 1. poluvrem",
+    1.92,
+    2.0
+   ],
+   [
+    "",
+    "manje 0.5 & vise 0.5",
+    "Leeds United daje manje od 0.5 golova u 1. poluvre",
+    3.0,
+    2.0
+   ],
+   [
+    "",
+    "manje 0.5 & manje 0.5",
+    "Leeds United daje manje od 0.5 golova u 1. poluvre",
+    4.2,
+    2.0
+   ],
+   [
+    "",
+    "manje 0.5 & vise 1.5",
+    "Leeds United daje manje od 0.5 golova u 1. poluvre",
+    6.5,
+    2.0
+   ],
+   [
+    "",
+    "manje 0.5 & manje 1.5",
+    "Leeds United daje manje od 0.5 golova u 1. poluvre",
+    2.4,
+    2.0
+   ],
+   [
+    "",
+    "manje 0.5 & vise 2.5",
+    "Leeds United daje manje od 0.5 golova u 1. poluvre",
+    17.0,
+    2.0
+   ],
+   [
+    "",
+    "manje 0.5 & manje 2.5",
+    "Leeds United daje manje od 0.5 golova u 1. poluvre",
+    2.0,
+    2.0
    ]
   ]
  },
@@ -6585,14 +7196,14 @@
     "",
     "manje 0.5 & vise 1.5",
     "Manchester United daje manje od 0.5 golova u 1. po",
-    6.8,
+    6.9,
     2.0
    ],
    [
     "",
     "manje 0.5 & manje 1.5",
     "Manchester United daje manje od 0.5 golova u 1. po",
-    2.15,
+    2.17,
     2.0
    ],
    [
@@ -6608,6 +7219,234 @@
     "Manchester United daje manje od 0.5 golova u 1. po",
     1.85,
     2.0
+   ]
+  ]
+ },
+ "1X2 & ukupno golova Leeds United (0.5)": {
+  "mecova": 2,
+  "primer": [
+   [
+    "0-",
+    "x & manje 0.5",
+    "nerešeno i Leeds United manje od 0.5 gola na utakm",
+    12.0,
+    0.5
+   ],
+   [
+    "2-",
+    "2 & manje 0.5",
+    "Manchester United pobednik i Leeds United manje od",
+    5.3,
+    0.5
+   ],
+   [
+    "1+",
+    "1 & vise 0.5",
+    "Leeds United pobednik i Leeds United više od 0.5 g",
+    2.27,
+    0.5
+   ],
+   [
+    "0+",
+    "x & vise 0.5",
+    "nerešeno i Leeds United više od 0.5 gola na utakmi",
+    3.9,
+    0.5
+   ],
+   [
+    "2+",
+    "2 & vise 0.5",
+    "Manchester United pobednik i Leeds United više od ",
+    4.45,
+    0.5
+   ]
+  ]
+ },
+ "1X2 & ukupno golova Leeds United (1.5)": {
+  "mecova": 2,
+  "primer": [
+   [
+    "1-",
+    "1 & manje 1.5",
+    "Leeds United pobednik i Leeds United manje od 1.5 ",
+    8.8,
+    1.5
+   ],
+   [
+    "0-",
+    "x & manje 1.5",
+    "nerešeno i Leeds United manje od 1.5 gola na utakm",
+    4.7,
+    1.5
+   ],
+   [
+    "2-",
+    "2 & manje 1.5",
+    "Manchester United pobednik i Leeds United manje od",
+    3.15,
+    1.5
+   ],
+   [
+    "1+",
+    "1 & vise 1.5",
+    "Leeds United pobednik i Leeds United više od 1.5 g",
+    2.72,
+    1.5
+   ],
+   [
+    "0+",
+    "x & vise 1.5",
+    "nerešeno i Leeds United više od 1.5 gola na utakmi",
+    7.6,
+    1.5
+   ],
+   [
+    "2+",
+    "2 & vise 1.5",
+    "Manchester United pobednik i Leeds United više od ",
+    11.0,
+    1.5
+   ]
+  ]
+ },
+ "1X2 & ukupno golova Leeds United (2.5)": {
+  "mecova": 2,
+  "primer": [
+   [
+    "1-",
+    "1 & manje 2.5",
+    "Leeds United pobednik i Leeds United manje od 2.5 ",
+    3.85,
+    2.5
+   ],
+   [
+    "0-",
+    "x & manje 2.5",
+    "nerešeno i Leeds United manje od 2.5 gola na utakm",
+    3.5,
+    2.5
+   ],
+   [
+    "2-",
+    "2 & manje 2.5",
+    "Manchester United pobednik i Leeds United manje od",
+    2.75,
+    2.5
+   ],
+   [
+    "1+",
+    "1 & vise 2.5",
+    "Leeds United pobednik i Leeds United više od 2.5 g",
+    4.5,
+    2.5
+   ],
+   [
+    "0+",
+    "x & vise 2.5",
+    "nerešeno i Leeds United više od 2.5 gola na utakmi",
+    22.0,
+    2.5
+   ],
+   [
+    "2+",
+    "2 & vise 2.5",
+    "Manchester United pobednik i Leeds United više od ",
+    40.0,
+    2.5
+   ]
+  ]
+ },
+ "1X2 & ukupno golova Leeds United (3.5)": {
+  "mecova": 2,
+  "primer": [
+   [
+    "1-",
+    "1 & manje 3.5",
+    "Leeds United pobednik i Leeds United manje od 3.5 ",
+    2.7,
+    3.5
+   ],
+   [
+    "0-",
+    "x & manje 3.5",
+    "nerešeno i Leeds United manje od 3.5 gola na utakm",
+    3.3,
+    3.5
+   ],
+   [
+    "2-",
+    "2 & manje 3.5",
+    "Manchester United pobednik i Leeds United manje od",
+    2.7,
+    3.5
+   ],
+   [
+    "1+",
+    "1 & vise 3.5",
+    "Leeds United pobednik i Leeds United više od 3.5 g",
+    9.0,
+    3.5
+   ],
+   [
+    "0+",
+    "x & vise 3.5",
+    "nerešeno i Leeds United više od 3.5 gola na utakmi",
+    75.0,
+    3.5
+   ],
+   [
+    "2+",
+    "2 & vise 3.5",
+    "Manchester United pobednik i Leeds United više od ",
+    100.0,
+    3.5
+   ]
+  ]
+ },
+ "1X2 & ukupno golova Leeds United (4.5)": {
+  "mecova": 2,
+  "primer": [
+   [
+    "1-",
+    "1 & manje 4.5",
+    "Leeds United pobednik i Leeds United manje od 4.5 ",
+    2.37,
+    4.5
+   ],
+   [
+    "0-",
+    "x & manje 4.5",
+    "nerešeno i Leeds United manje od 4.5 gola na utakm",
+    3.3,
+    4.5
+   ],
+   [
+    "2-",
+    "2 & manje 4.5",
+    "Manchester United pobednik i Leeds United manje od",
+    2.67,
+    4.5
+   ],
+   [
+    "1+",
+    "1 & vise 4.5",
+    "Leeds United pobednik i Leeds United više od 4.5 g",
+    21.0,
+    4.5
+   ],
+   [
+    "0+",
+    "x & vise 4.5",
+    "nerešeno i Leeds United više od 4.5 gola na utakmi",
+    125.0,
+    4.5
+   ],
+   [
+    "2+",
+    "2 & vise 4.5",
+    "Manchester United pobednik i Leeds United više od ",
+    125.0,
+    4.5
    ]
   ]
  },
@@ -6672,7 +7511,7 @@
     "",
     "2-3",
     "Manchester City 2-3 gola na utakmici",
-    2.02,
+    2.05,
     -3.0
    ]
   ]
@@ -6684,21 +7523,21 @@
     "",
     "1-2",
     "Ipswich 1-2 gola na utakmici",
-    1.83,
+    1.87,
     -2.0
    ],
    [
     "",
     "1-3",
     "Ipswich 1-3 gola na utakmici",
-    1.69,
+    1.73,
     -3.0
    ],
    [
     "",
     "2-3",
     "Ipswich 2-3 gola na utakmici",
-    4.4,
+    4.6,
     -3.0
    ]
   ]
@@ -6717,14 +7556,14 @@
     "13",
     "1-3",
     "Manchester City 1,2 ili 3 gola u svakom poluvremen",
-    1.9,
+    1.92,
     3.0
    ],
    [
     "23",
     "2-3",
     "Manchester City 2 ili 3 gola u svakom poluvremenu",
-    6.1,
+    6.2,
     3.0
    ]
   ]
@@ -6736,21 +7575,21 @@
     "12",
     "1-2",
     "Ipswich 1 ili 2 gola u svakom poluvremenu",
-    6.6,
+    6.9,
     2.0
    ],
    [
     "13",
     "1-3",
     "Ipswich 1,2 ili 3 gola u svakom poluvremenu",
-    6.4,
+    6.6,
     3.0
    ],
    [
     "23",
     "2-3",
     "Ipswich 2 ili 3 gola u svakom poluvremenu",
-    65.0,
+    70.0,
     3.0
    ]
   ]
@@ -6783,7 +7622,7 @@
     "3",
     "3+",
     "Manchester City daje 3 ili više golova",
-    1.82,
+    1.83,
     3.0
    ]
   ]
@@ -6795,28 +7634,28 @@
     "0",
     "0",
     "Ipswich ne daje gol",
-    2.17,
+    2.15,
     3.0
    ],
    [
     "1",
     "1",
     "Ipswich daje tačno 1 gol",
-    2.55,
+    2.57,
     3.0
    ],
    [
     "2",
     "2",
     "Ipswich daje tačno 2 gola",
-    5.45,
+    5.65,
     3.0
    ],
    [
     "3",
     "3+",
     "Ipswich daje 3 ili više golova",
-    13.0,
+    14.0,
     3.0
    ]
   ]
@@ -6828,14 +7667,14 @@
     "1",
     "da",
     "Manchester City daje gol na utakmici",
-    1.04,
+    1.05,
     null
    ],
    [
     "2",
     "ne",
     "Manchester City ne daje gol na utakmici",
-    12.0,
+    11.0,
     null
    ]
   ]
@@ -6847,14 +7686,14 @@
     "1",
     "da",
     "Ipswich daje gol na utakmici",
-    1.69,
+    1.71,
     null
    ],
    [
     "2",
     "ne",
     "Ipswich ne daje gol na utakmici",
-    2.2,
+    2.15,
     null
    ]
   ]
@@ -6866,14 +7705,14 @@
     "",
     "vise 0.5 & vise 1.5",
     "1. Poluvreme Manchester City više od 0.5 golova i ",
-    1.47,
+    1.48,
     1.5
    ],
    [
     "",
     "vise 0.5 & manje 1.5",
     "1. Poluvreme Manchester City više od 0.5 golova i ",
-    8.5,
+    8.4,
     1.5
    ],
    [
@@ -6887,14 +7726,14 @@
     "",
     "manje 0.5 & manje 1.5",
     "1. Poluvreme Manchester City manje od 0.5 golova i",
-    5.2,
+    5.1,
     1.5
    ],
    [
     "",
     "vise 0.5 & vise 2.5",
     "1. Poluvreme Manchester City više od 0.5 golova i ",
-    1.95,
+    1.97,
     2.5
    ],
    [
@@ -6915,14 +7754,14 @@
     "",
     "manje 0.5 & manje 2.5",
     "1. Poluvreme Manchester City manje od 0.5 golova i",
-    3.8,
+    3.75,
     2.5
    ],
    [
     "",
     "vise 1.5 & vise 2.5",
     "1. Poluvreme Manchester City više od 1.5 golova i ",
-    2.85,
+    2.87,
     2.5
    ],
    [
@@ -6936,14 +7775,14 @@
     "",
     "manje 1.5 & vise 2.5",
     "1. Poluvreme Manchester City manje od 1.5 golova i",
-    3.85,
+    3.9,
     2.5
    ],
    [
     "",
     "manje 1.5 & manje 2.5",
     "1. Poluvreme Manchester City manje od 1.5 golova i",
-    2.17,
+    2.15,
     2.5
    ]
   ]
@@ -6955,7 +7794,7 @@
     "",
     "vise 0.5 & vise 1.5",
     "1. Poluvreme Ipswich više od 0.5 golova i Ipswich ",
-    5.15,
+    5.4,
     1.5
    ],
    [
@@ -6969,28 +7808,28 @@
     "",
     "manje 0.5 & vise 1.5",
     "1. Poluvreme Ipswich manje od 0.5 golova i Ipswich",
-    10.0,
+    11.0,
     1.5
    ],
    [
     "",
     "manje 0.5 & manje 1.5",
     "1. Poluvreme Ipswich manje od 0.5 golova i Ipswich",
-    1.51,
+    1.48,
     1.5
    ],
    [
     "",
     "vise 0.5 & vise 2.5",
     "1. Poluvreme Ipswich više od 0.5 golova i Ipswich ",
-    13.0,
+    14.0,
     2.5
    ],
    [
     "",
     "vise 0.5 & manje 2.5",
     "1. Poluvreme Ipswich više od 0.5 golova i Ipswich ",
-    3.25,
+    3.3,
     2.5
    ],
    [
@@ -7004,14 +7843,14 @@
     "",
     "manje 0.5 & manje 2.5",
     "1. Poluvreme Ipswich manje od 0.5 golova i Ipswich",
-    1.4,
+    1.38,
     2.5
    ],
    [
     "",
     "vise 1.5 & vise 2.5",
     "1. Poluvreme Ipswich više od 1.5 golova i Ipswich ",
-    20.0,
+    21.0,
     2.5
    ],
    [
@@ -7025,7 +7864,7 @@
     "",
     "manje 1.5 & vise 2.5",
     "1. Poluvreme Ipswich manje od 1.5 golova i Ipswich",
-    17.0,
+    18.0,
     2.5
    ],
    [
@@ -7044,7 +7883,7 @@
     "",
     "vise 0.5 & vise 0.5",
     "Manchester City daje više od 0.5 golova u 1. poluv",
-    1.66,
+    1.68,
     2.0
    ],
    [
@@ -7058,7 +7897,7 @@
     "",
     "vise 0.5 & vise 1.5",
     "Manchester City daje više od 0.5 golova u 1. poluv",
-    2.75,
+    2.8,
     2.0
    ],
    [
@@ -7072,14 +7911,14 @@
     "",
     "vise 0.5 & vise 2.5",
     "Manchester City daje više od 0.5 golova u 1. poluv",
-    5.5,
+    5.6,
     2.0
    ],
    [
     "",
     "vise 0.5 & manje 2.5",
     "Manchester City daje više od 0.5 golova u 1. poluv",
-    1.62,
+    1.63,
     2.0
    ],
    [
@@ -7093,7 +7932,7 @@
     "",
     "manje 0.5 & manje 0.5",
     "Manchester City daje manje od 0.5 golova u 1. polu",
-    11.0,
+    10.0,
     2.0
    ],
    [
@@ -7107,7 +7946,7 @@
     "",
     "manje 0.5 & manje 1.5",
     "Manchester City daje manje od 0.5 golova u 1. polu",
-    5.2,
+    5.1,
     2.0
    ],
    [
@@ -7121,7 +7960,7 @@
     "",
     "manje 0.5 & manje 2.5",
     "Manchester City daje manje od 0.5 golova u 1. polu",
-    3.8,
+    3.75,
     2.0
    ]
   ]
@@ -7133,70 +7972,70 @@
     "",
     "vise 0.5 & vise 0.5",
     "Ipswich daje više od 0.5 golova u 1. poluvremenu i",
-    6.3,
+    6.6,
     2.0
    ],
    [
     "",
     "vise 0.5 & manje 0.5",
     "Ipswich daje više od 0.5 golova u 1. poluvremenu i",
-    4.2,
+    4.25,
     2.0
    ],
    [
     "",
     "vise 0.5 & vise 1.5",
     "Ipswich daje više od 0.5 golova u 1. poluvremenu i",
-    20.0,
+    21.0,
     2.0
    ],
    [
     "",
     "vise 0.5 & manje 1.5",
     "Ipswich daje više od 0.5 golova u 1. poluvremenu i",
-    3.05,
+    3.1,
     2.0
    ],
    [
     "",
     "vise 0.5 & vise 2.5",
     "Ipswich daje više od 0.5 golova u 1. poluvremenu i",
-    65.0,
+    70.0,
     2.0
    ],
    [
     "",
     "vise 0.5 & manje 2.5",
     "Ipswich daje više od 0.5 golova u 1. poluvremenu i",
-    2.85,
+    2.92,
     2.0
    ],
    [
     "",
     "manje 0.5 & vise 0.5",
     "Ipswich daje manje od 0.5 golova u 1. poluvremenu ",
-    3.25,
+    3.3,
     2.0
    ],
    [
     "",
     "manje 0.5 & manje 0.5",
     "Ipswich daje manje od 0.5 golova u 1. poluvremenu ",
-    2.17,
+    2.12,
     2.0
    ],
    [
     "",
     "manje 0.5 & vise 1.5",
     "Ipswich daje manje od 0.5 golova u 1. poluvremenu ",
-    10.0,
+    11.0,
     2.0
    ],
    [
     "",
     "manje 0.5 & manje 1.5",
     "Ipswich daje manje od 0.5 golova u 1. poluvremenu ",
-    1.51,
+    1.48,
     2.0
    ],
    [
@@ -7210,7 +8049,7 @@
     "",
     "manje 0.5 & manje 2.5",
     "Ipswich daje manje od 0.5 golova u 1. poluvremenu ",
-    1.4,
+    1.38,
     2.0
    ]
   ]
@@ -7222,7 +8061,7 @@
     "0-",
     "x & manje 0.5",
     "nerešeno i Manchester City manje od 0.5 gola na ut",
-    19.0,
+    18.0,
     0.5
    ],
    [
@@ -7243,14 +8082,14 @@
     "0+",
     "x & vise 0.5",
     "nerešeno i Manchester City više od 0.5 gola na uta",
-    6.7,
+    6.8,
     0.5
    ],
    [
     "2+",
     "2 & vise 0.5",
     "Ipswich pobednik i Manchester City više od 0.5 gol",
-    11.0,
+    12.0,
     0.5
    ]
   ]
@@ -7262,21 +8101,21 @@
     "1-",
     "1 & manje 1.5",
     "Manchester City pobednik i Manchester City manje o",
-    8.7,
+    8.5,
     1.5
    ],
    [
     "0-",
     "x & manje 1.5",
     "nerešeno i Manchester City manje od 1.5 gola na ut",
-    7.8,
+    7.7,
     1.5
    ],
    [
     "2-",
     "2 & manje 1.5",
     "Ipswich pobednik i Manchester City manje od 1.5 go",
-    8.8,
+    8.9,
     1.5
    ],
    [
@@ -7297,7 +8136,7 @@
     "2+",
     "2 & vise 1.5",
     "Ipswich pobednik i Manchester City više od 1.5 gol",
-    27.0,
+    29.0,
     1.5
    ]
   ]
@@ -7309,21 +8148,21 @@
     "1-",
     "1 & manje 2.5",
     "Manchester City pobednik i Manchester City manje o",
-    3.25,
+    3.2,
     2.5
    ],
    [
     "0-",
     "x & manje 2.5",
     "nerešeno i Manchester City manje od 2.5 gola na ut",
-    6.1,
+    6.0,
     2.5
    ],
    [
     "2-",
     "2 & manje 2.5",
     "Ipswich pobednik i Manchester City manje od 2.5 go",
-    7.8,
+    8.0,
     2.5
    ],
    [
@@ -7337,14 +8176,14 @@
     "0+",
     "x & vise 2.5",
     "nerešeno i Manchester City više od 2.5 gola na uta",
-    36.0,
+    38.0,
     2.5
    ],
    [
     "2+",
     "2 & vise 2.5",
     "Ipswich pobednik i Manchester City više od 2.5 gol",
-    75.0,
+    80.0,
     2.5
    ]
   ]
@@ -7356,7 +8195,7 @@
     "1-",
     "1 & manje 3.5",
     "Manchester City pobednik i Manchester City manje o",
-    1.95,
+    1.92,
     3.5
    ],
    [
@@ -7370,21 +8209,21 @@
     "2-",
     "2 & manje 3.5",
     "Ipswich pobednik i Manchester City manje od 3.5 go",
-    7.6,
+    7.8,
     3.5
    ],
    [
     "1+",
     "1 & vise 3.5",
     "Manchester City pobednik i Manchester City više od",
-    2.95,
+    3.0,
     3.5
    ],
    [
     "0+",
     "x & vise 3.5",
     "nerešeno i Manchester City više od 3.5 gola na uta",
-    90.0,
+    100.0,
     3.5
    ],
    [
@@ -7403,7 +8242,7 @@
     "1-",
     "1 & manje 4.5",
     "Manchester City pobednik i Manchester City manje o",
-    1.5,
+    1.49,
     4.5
    ],
    [
@@ -7417,14 +8256,14 @@
     "2-",
     "2 & manje 4.5",
     "Ipswich pobednik i Manchester City manje od 4.5 go",
-    7.6,
+    7.8,
     4.5
    ],
    [
     "1+",
     "1 & vise 4.5",
     "Manchester City pobednik i Manchester City više od",
-    5.35,
+    5.45,
     4.5
    ],
    [
@@ -7450,35 +8289,35 @@
     "1-",
     "1 & manje 0.5",
     "Manchester City pobednik  i Ipswich manje od 0.5 g",
-    2.27,
+    2.22,
     0.5
    ],
    [
     "0-",
     "x & manje 0.5",
     "nerešeno i Ipswich manje od 0.5 gola na utakmici",
-    19.0,
+    18.0,
     0.5
    ],
    [
     "1+",
     "1 & vise 0.5",
     "Manchester City pobednik  i Ipswich više od 0.5 go",
-    2.42,
+    2.47,
     0.5
    ],
    [
     "0+",
     "x & vise 0.5",
     "nerešeno i Ipswich više od 0.5 gola na utakmici",
-    6.7,
+    6.8,
     0.5
    ],
    [
     "2+",
     "2 & vise 0.5",
     "Ipswich pobednik  i Ipswich više od 0.5 gola na ut",
-    7.6,
+    7.8,
     0.5
    ]
   ]
@@ -7490,14 +8329,14 @@
     "1-",
     "1 & manje 1.5",
     "Manchester City pobednik  i Ipswich manje od 1.5 g",
-    1.39,
+    1.38,
     1.5
    ],
    [
     "0-",
     "x & manje 1.5",
     "nerešeno i Ipswich manje od 1.5 gola na utakmici",
-    7.8,
+    7.7,
     1.5
    ],
    [
@@ -7511,7 +8350,7 @@
     "1+",
     "1 & vise 1.5",
     "Manchester City pobednik  i Ipswich više od 1.5 go",
-    7.4,
+    7.7,
     1.5
    ],
    [
@@ -7525,7 +8364,7 @@
     "2+",
     "2 & vise 1.5",
     "Ipswich pobednik  i Ipswich više od 1.5 gola na ut",
-    9.5,
+    9.9,
     1.5
    ]
   ]
@@ -7596,7 +8435,7 @@
     "13",
     "1-3",
     "Newcastle 1,2 ili 3 gola u svakom poluvremenu",
-    2.9,
+    2.92,
     3.0
    ],
    [
@@ -7641,14 +8480,14 @@
     "0",
     "0",
     "Newcastle ne daje gol",
-    4.8,
+    4.7,
     3.0
    ],
    [
     "1",
     "1",
     "Newcastle daje tačno 1 gol",
-    2.92,
+    2.9,
     3.0
    ],
    [
@@ -7662,7 +8501,7 @@
     "3",
     "3+",
     "Newcastle daje 3 ili više golova",
-    3.75,
+    3.85,
     3.0
    ]
   ]
@@ -7674,7 +8513,7 @@
     "0",
     "0",
     "Aston Villa ne daje gol",
-    3.8,
+    3.85,
     3.0
    ],
    [
@@ -7695,7 +8534,7 @@
     "3",
     "3+",
     "Aston Villa daje 3 ili više golova",
-    4.9,
+    4.85,
     3.0
    ]
   ]
@@ -7714,7 +8553,7 @@
     "2",
     "ne",
     "Newcastle ne daje gol na utakmici",
-    4.85,
+    4.75,
     null
    ]
   ]
@@ -7726,14 +8565,14 @@
     "1",
     "da",
     "Aston Villa daje gol na utakmici",
-    1.27,
+    1.26,
     null
    ],
    [
     "2",
     "ne",
     "Aston Villa ne daje gol na utakmici",
-    3.85,
+    3.9,
     null
    ]
   ]
@@ -7745,7 +8584,7 @@
     "",
     "vise 0.5 & vise 1.5",
     "1. Poluvreme Newcastle više od 0.5 golova i Newcas",
-    2.35,
+    2.37,
     1.5
    ],
    [
@@ -7766,14 +8605,14 @@
     "",
     "manje 0.5 & manje 1.5",
     "1. Poluvreme Newcastle manje od 0.5 golova i Newca",
-    2.52,
+    2.5,
     1.5
    ],
    [
     "",
     "vise 0.5 & vise 2.5",
     "1. Poluvreme Newcastle više od 0.5 golova i Newcas",
-    4.15,
+    4.2,
     2.5
    ],
    [
@@ -7801,7 +8640,7 @@
     "",
     "vise 1.5 & vise 2.5",
     "1. Poluvreme Newcastle više od 1.5 golova i Newcas",
-    6.3,
+    6.4,
     2.5
    ],
    [
@@ -7841,14 +8680,14 @@
     "",
     "vise 0.5 & manje 1.5",
     "1. Poluvreme Aston Villa više od 0.5 golova i Asto",
-    5.2,
+    5.25,
     1.5
    ],
    [
     "",
     "manje 0.5 & vise 1.5",
     "1. Poluvreme Aston Villa manje od 0.5 golova i Ast",
-    6.9,
+    6.8,
     1.5
    ],
    [
@@ -7986,7 +8825,7 @@
     "",
     "manje 0.5 & manje 1.5",
     "Newcastle daje manje od 0.5 golova u 1. poluvremen",
-    2.52,
+    2.5,
     2.0
    ],
    [
@@ -8068,7 +8907,7 @@
     "",
     "manje 0.5 & vise 1.5",
     "Aston Villa daje manje od 0.5 golova u 1. poluvrem",
-    6.9,
+    6.8,
     2.0
    ],
    [
@@ -8296,7 +9135,7 @@
     "2-",
     "2 & manje 4.5",
     "Aston Villa pobednik i Newcastle manje od 4.5 gola",
-    2.8,
+    2.77,
     4.5
    ],
    [
@@ -8329,7 +9168,7 @@
     "1-",
     "1 & manje 0.5",
     "Newcastle pobednik  i Aston Villa manje od 0.5 gol",
-    4.4,
+    4.45,
     0.5
    ],
    [
@@ -8343,7 +9182,7 @@
     "1+",
     "1 & vise 0.5",
     "Newcastle pobednik  i Aston Villa više od 0.5 gola",
-    3.55,
+    3.6,
     0.5
    ],
    [
@@ -8357,7 +9196,7 @@
     "2+",
     "2 & vise 0.5",
     "Aston Villa pobednik  i Aston Villa više od 0.5 go",
-    2.82,
+    2.77,
     0.5
    ]
   ]
@@ -8369,21 +9208,21 @@
     "",
     "1-2",
     "Nottingham Forest 1-2 gola na utakmici",
-    1.82,
+    1.83,
     -2.0
    ],
    [
     "",
     "1-3",
     "Nottingham Forest  1-3 gola na utakmici",
-    1.69,
+    1.7,
     -3.0
    ],
    [
     "",
     "2-3",
     "Nottingham Forest 2-3 gola na utakmici",
-    4.4,
+    4.45,
     -3.0
    ]
   ]
@@ -8487,7 +9326,7 @@
     "2",
     "2",
     "Nottingham Forest daje tačno 2 gola",
-    5.45,
+    5.55,
     3.0
    ],
    [
@@ -8539,14 +9378,14 @@
     "1",
     "da",
     "Nottingham Forest daje gol na utakmici",
-    1.67,
+    1.68,
     null
    ],
    [
     "2",
     "ne",
     "Nottingham Forest ne daje gol na utakmici",
-    2.22,
+    2.2,
     null
    ]
   ]
@@ -8558,14 +9397,14 @@
     "1",
     "da",
     "Arsenal daje gol na utakmici",
-    1.15,
+    1.16,
     null
    ],
    [
     "2",
     "ne",
     "Arsenal ne daje gol na utakmici",
-    5.5,
+    5.4,
     null
    ]
   ]
@@ -8584,14 +9423,14 @@
     "",
     "vise 0.5 & manje 1.5",
     "1. Poluvreme Nottingham Forest više od 0.5 golova ",
-    5.0,
+    4.9,
     1.5
    ],
    [
     "",
     "manje 0.5 & vise 1.5",
     "1. Poluvreme Nottingham Forest manje od 0.5 golova",
-    10.0,
+    11.0,
     1.5
    ],
    [
@@ -8687,14 +9526,14 @@
     "",
     "manje 0.5 & manje 1.5",
     "1. Poluvreme Arsenal manje od 0.5 golova i Arsenal",
-    2.8,
+    2.82,
     1.5
    ],
    [
     "",
     "vise 0.5 & vise 2.5",
     "1. Poluvreme Arsenal više od 0.5 golova i Arsenal ",
-    3.6,
+    3.55,
     2.5
    ],
    [
@@ -8722,7 +9561,7 @@
     "",
     "vise 1.5 & vise 2.5",
     "1. Poluvreme Arsenal više od 1.5 golova i Arsenal ",
-    5.4,
+    5.35,
     2.5
    ],
    [
@@ -8736,14 +9575,14 @@
     "",
     "manje 1.5 & vise 2.5",
     "1. Poluvreme Arsenal manje od 1.5 golova i Arsenal",
-    5.85,
+    5.8,
     2.5
    ],
    [
     "",
     "manje 1.5 & manje 2.5",
     "1. Poluvreme Arsenal manje od 1.5 golova i Arsenal",
-    1.41,
+    1.42,
     2.5
    ]
   ]
@@ -8755,14 +9594,14 @@
     "",
     "vise 0.5 & vise 0.5",
     "Nottingham Forest daje više od 0.5 golova u 1. pol",
-    6.4,
+    6.5,
     2.0
    ],
    [
     "",
     "vise 0.5 & manje 0.5",
     "Nottingham Forest daje više od 0.5 golova u 1. pol",
-    4.25,
+    4.2,
     2.0
    ],
    [
@@ -8811,7 +9650,7 @@
     "",
     "manje 0.5 & vise 1.5",
     "Nottingham Forest daje manje od 0.5 golova u 1. po",
-    10.0,
+    11.0,
     2.0
    ],
    [
@@ -8844,7 +9683,7 @@
     "",
     "vise 0.5 & vise 0.5",
     "Arsenal daje više od 0.5 golova u 1. poluvremenu i",
-    2.55,
+    2.52,
     2.0
    ],
    [
@@ -8893,7 +9732,7 @@
     "",
     "manje 0.5 & manje 0.5",
     "Arsenal daje manje od 0.5 golova u 1. poluvremenu ",
-    5.1,
+    5.15,
     2.0
    ],
    [
@@ -8907,7 +9746,7 @@
     "",
     "manje 0.5 & manje 1.5",
     "Arsenal daje manje od 0.5 golova u 1. poluvremenu ",
-    2.8,
+    2.82,
     2.0
    ],
    [
@@ -8940,21 +9779,21 @@
     "2-",
     "2 & manje 0.5",
     "Arsenal pobednik i Nottingham Forest manje od 0.5 ",
-    2.55,
+    2.52,
     0.5
    ],
    [
     "1+",
     "1 & vise 0.5",
     "Nottingham Forest pobednik i Nottingham Forest viš",
-    4.85,
+    4.9,
     0.5
    ],
    [
     "0+",
     "x & vise 0.5",
     "nerešeno i Nottingham Forest više od 0.5 gola na u",
-    4.85,
+    4.9,
     0.5
    ],
    [
@@ -8987,14 +9826,14 @@
     "2-",
     "2 & manje 1.5",
     "Arsenal pobednik i Nottingham Forest manje od 1.5 ",
-    1.7,
+    1.68,
     1.5
    ],
    [
     "1+",
     "1 & vise 1.5",
     "Nottingham Forest pobednik i Nottingham Forest viš",
-    6.7,
+    6.8,
     1.5
    ],
    [
@@ -9008,7 +9847,7 @@
     "2+",
     "2 & vise 1.5",
     "Arsenal pobednik i Nottingham Forest više od 1.5 g",
-    12.0,
+    13.0,
     1.5
    ]
   ]
@@ -9020,21 +9859,21 @@
     "1-",
     "1 & manje 2.5",
     "Nottingham Forest pobednik i Nottingham Forest man",
-    6.1,
+    6.2,
     2.5
    ],
    [
     "0-",
     "x & manje 2.5",
     "nerešeno i Nottingham Forest manje od 2.5 gola na ",
-    3.7,
+    3.75,
     2.5
    ],
    [
     "2-",
     "2 & manje 2.5",
     "Arsenal pobednik i Nottingham Forest manje od 2.5 ",
-    1.58,
+    1.57,
     2.5
    ],
    [
@@ -9067,28 +9906,28 @@
     "1-",
     "1 & manje 3.5",
     "Nottingham Forest pobednik i Nottingham Forest man",
-    5.15,
+    5.2,
     3.5
    ],
    [
     "0-",
     "x & manje 3.5",
     "nerešeno i Nottingham Forest manje od 3.5 gola na ",
-    3.6,
+    3.65,
     3.5
    ],
    [
     "2-",
     "2 & manje 3.5",
     "Arsenal pobednik i Nottingham Forest manje od 3.5 ",
-    1.57,
+    1.56,
     3.5
    ],
    [
     "1+",
     "1 & vise 3.5",
     "Nottingham Forest pobednik i Nottingham Forest viš",
-    39.0,
+    40.0,
     3.5
    ],
    [
@@ -9114,21 +9953,21 @@
     "1-",
     "1 & manje 4.5",
     "Nottingham Forest pobednik i Nottingham Forest man",
-    4.9,
+    5.0,
     4.5
    ],
    [
     "0-",
     "x & manje 4.5",
     "nerešeno i Nottingham Forest manje od 4.5 gola na ",
-    3.6,
+    3.65,
     4.5
    ],
    [
     "2-",
     "2 & manje 4.5",
     "Arsenal pobednik i Nottingham Forest manje od 4.5 ",
-    1.57,
+    1.56,
     4.5
    ],
    [
@@ -9154,227 +9993,6 @@
    ]
   ]
  },
- "1X2 & ukupno golova Arsenal (0.5)": {
-  "mecova": 2,
-  "primer": [
-   [
-    "1-",
-    "1 & manje 0.5",
-    "Nottingham Forest pobednik  i Arsenal manje od 0.5",
-    7.8,
-    0.5
-   ],
-   [
-    "0-",
-    "x & manje 0.5",
-    "nerešeno i Arsenal manje od 0.5 gola na utakmici",
-    9.0,
-    0.5
-   ],
-   [
-    "1+",
-    "1 & vise 0.5",
-    "Nottingham Forest pobednik  i Arsenal više od 0.5 ",
-    8.6,
-    0.5
-   ],
-   [
-    "0+",
-    "x & vise 0.5",
-    "nerešeno i Arsenal više od 0.5 gola na utakmici",
-    4.85,
-    0.5
-   ],
-   [
-    "2+",
-    "2 & vise 0.5",
-    "Arsenal pobednik  i Arsenal više od 0.5 gola na ut",
-    1.57,
-    0.5
-   ]
-  ]
- },
- "1X2 & ukupno golova Arsenal (1.5)": {
-  "mecova": 2,
-  "primer": [
-   [
-    "1-",
-    "1 & manje 1.5",
-    "Nottingham Forest pobednik  i Arsenal manje od 1.5",
-    5.3,
-    1.5
-   ],
-   [
-    "0-",
-    "x & manje 1.5",
-    "nerešeno i Arsenal manje od 1.5 gola na utakmici",
-    4.45,
-    1.5
-   ],
-   [
-    "2-",
-    "2 & manje 1.5",
-    "Arsenal pobednik  i Arsenal manje od 1.5 gola na u",
-    6.1,
-    1.5
-   ],
-   [
-    "1+",
-    "1 & vise 1.5",
-    "Nottingham Forest pobednik  i Arsenal više od 1.5 ",
-    27.0,
-    1.5
-   ],
-   [
-    "0+",
-    "x & vise 1.5",
-    "nerešeno i Arsenal više od 1.5 gola na utakmici",
-    12.0,
-    1.5
-   ],
-   [
-    "2+",
-    "2 & vise 1.5",
-    "Arsenal pobednik  i Arsenal više od 1.5 gola na ut",
-    1.95,
-    1.5
-   ]
-  ]
- },
- "1X2 & ukupno golova Arsenal (2.5)": {
-  "mecova": 2,
-  "primer": [
-   [
-    "1-",
-    "1 & manje 2.5",
-    "Nottingham Forest pobednik  i Arsenal manje od 2.5",
-    4.9,
-    2.5
-   ],
-   [
-    "0-",
-    "x & manje 2.5",
-    "nerešeno i Arsenal manje od 2.5 gola na utakmici",
-    3.7,
-    2.5
-   ],
-   [
-    "2-",
-    "2 & manje 2.5",
-    "Arsenal pobednik  i Arsenal manje od 2.5 gola na u",
-    2.67,
-    2.5
-   ],
-   [
-    "1+",
-    "1 & vise 2.5",
-    "Nottingham Forest pobednik  i Arsenal više od 2.5 ",
-    85.0,
-    2.5
-   ],
-   [
-    "0+",
-    "x & vise 2.5",
-    "nerešeno i Arsenal više od 2.5 gola na utakmici",
-    45.0,
-    2.5
-   ],
-   [
-    "2+",
-    "2 & vise 2.5",
-    "Arsenal pobednik  i Arsenal više od 2.5 gola na ut",
-    3.3,
-    2.5
-   ]
-  ]
- },
- "1X2 & ukupno golova Arsenal (3.5)": {
-  "mecova": 2,
-  "primer": [
-   [
-    "1-",
-    "1 & manje 3.5",
-    "Nottingham Forest pobednik  i Arsenal manje od 3.5",
-    4.9,
-    3.5
-   ],
-   [
-    "0-",
-    "x & manje 3.5",
-    "nerešeno i Arsenal manje od 3.5 gola na utakmici",
-    3.6,
-    3.5
-   ],
-   [
-    "2-",
-    "2 & manje 3.5",
-    "Arsenal pobednik  i Arsenal manje od 3.5 gola na u",
-    1.9,
-    3.5
-   ],
-   [
-    "1+",
-    "1 & vise 3.5",
-    "Nottingham Forest pobednik  i Arsenal više od 3.5 ",
-    125.0,
-    3.5
-   ],
-   [
-    "0+",
-    "x & vise 3.5",
-    "nerešeno i Arsenal više od 3.5 gola na utakmici",
-    100.0,
-    3.5
-   ],
-   [
-    "2+",
-    "2 & vise 3.5",
-    "Arsenal pobednik  i Arsenal više od 3.5 gola na ut",
-    6.7,
-    3.5
-   ]
-  ]
- },
- "1X2 & ukupno golova Arsenal (4.5)": {
-  "mecova": 2,
-  "primer": [
-   [
-    "1-",
-    "1 & manje 4.5",
-    "Nottingham Forest pobednik  i Arsenal manje od 4.5",
-    4.9,
-    4.5
-   ],
-   [
-    "0-",
-    "x & manje 4.5",
-    "nerešeno i Arsenal manje od 4.5 gola na utakmici",
-    3.6,
-    4.5
-   ],
-   [
-    "2-",
-    "2 & manje 4.5",
-    "Arsenal pobednik  i Arsenal manje od 4.5 gola na u",
-    1.66,
-    4.5
-   ],
-   [
-    "0+",
-    "x & vise 4.5",
-    "nerešeno i Arsenal više od 4.5 gola na utakmici",
-    125.0,
-    4.5
-   ],
-   [
-    "2+",
-    "2 & vise 4.5",
-    "Arsenal pobednik  i Arsenal više od 4.5 gola na ut",
-    15.0,
-    4.5
-   ]
-  ]
- },
  "Tottenham raspon golova": {
   "mecova": 2,
   "primer": [
@@ -9389,7 +10007,7 @@
     "",
     "1-3",
     "Tottenham  1-3 gola na utakmici",
-    1.35,
+    1.36,
     -3.0
    ],
    [
@@ -9408,14 +10026,14 @@
     "",
     "1-2",
     "Coventry City 1-2 gola na utakmici",
-    1.75,
+    1.76,
     -2.0
    ],
    [
     "",
     "1-3",
     "Coventry City 1-3 gola na utakmici",
-    1.6,
+    1.61,
     -3.0
    ],
    [
@@ -9434,21 +10052,21 @@
     "12",
     "1-2",
     "Tottenham 1 ili 2 gola u svakom poluvremenu",
-    2.8,
+    2.77,
     2.0
    ],
    [
     "13",
     "1-3",
     "Tottenham 1,2 ili 3 gola u svakom poluvremenu",
-    2.25,
+    2.22,
     3.0
    ],
    [
     "23",
     "2-3",
     "Tottenham 2 ili 3 gola u svakom poluvremenu",
-    8.9,
+    8.8,
     3.0
    ]
   ]
@@ -9460,14 +10078,14 @@
     "12",
     "1-2",
     "Coventry City 1 ili 2 gola u svakom poluvremenu",
-    5.9,
+    6.0,
     2.0
    ],
    [
     "13",
     "1-3",
     "Coventry City 1,2 ili 3 gola u svakom poluvremenu",
-    5.65,
+    5.7,
     3.0
    ],
    [
@@ -9486,7 +10104,7 @@
     "0",
     "0",
     "Tottenham ne daje gol",
-    7.1,
+    7.2,
     3.0
    ],
    [
@@ -9507,7 +10125,7 @@
     "3",
     "3+",
     "Tottenham daje 3 ili više golova",
-    2.5,
+    2.47,
     3.0
    ]
   ]
@@ -9519,7 +10137,7 @@
     "0",
     "0",
     "Coventry City ne daje gol",
-    2.42,
+    2.4,
     3.0
    ],
    [
@@ -9533,7 +10151,7 @@
     "2",
     "2",
     "Coventry City daje tačno 2 gola",
-    4.9,
+    5.0,
     3.0
    ],
    [
@@ -9552,14 +10170,14 @@
     "1",
     "da",
     "Tottenham daje gol na utakmici",
-    1.1,
+    1.09,
     null
    ],
    [
     "2",
     "ne",
     "Tottenham ne daje gol na utakmici",
-    7.3,
+    7.4,
     null
    ]
   ]
@@ -9571,14 +10189,14 @@
     "1",
     "da",
     "Coventry City daje gol na utakmici",
-    1.56,
+    1.57,
     null
    ],
    [
     "2",
     "ne",
     "Coventry City ne daje gol na utakmici",
-    2.45,
+    2.42,
     null
    ]
   ]
@@ -9590,14 +10208,14 @@
     "",
     "vise 0.5 & vise 1.5",
     "1. Poluvreme Tottenham više od 0.5 golova i Totten",
-    1.8,
+    1.78,
     1.5
    ],
    [
     "",
     "vise 0.5 & manje 1.5",
     "1. Poluvreme Tottenham više od 0.5 golova i Totten",
-    6.6,
+    6.7,
     1.5
    ],
    [
@@ -9611,14 +10229,14 @@
     "",
     "manje 0.5 & manje 1.5",
     "1. Poluvreme Tottenham manje od 0.5 golova i Totte",
-    3.55,
+    3.6,
     1.5
    ],
    [
     "",
     "vise 0.5 & vise 2.5",
     "1. Poluvreme Tottenham više od 0.5 golova i Totten",
-    2.72,
+    2.67,
     2.5
    ],
    [
@@ -9639,14 +10257,14 @@
     "",
     "manje 0.5 & manje 2.5",
     "1. Poluvreme Tottenham manje od 0.5 golova i Totte",
-    2.75,
+    2.77,
     2.5
    ],
    [
     "",
     "vise 1.5 & vise 2.5",
     "1. Poluvreme Tottenham više od 1.5 golova i Totten",
-    4.1,
+    4.0,
     2.5
    ],
    [
@@ -9660,14 +10278,14 @@
     "",
     "manje 1.5 & vise 2.5",
     "1. Poluvreme Tottenham manje od 1.5 golova i Totte",
-    4.75,
+    4.7,
     2.5
    ],
    [
     "",
     "manje 1.5 & manje 2.5",
     "1. Poluvreme Tottenham manje od 1.5 golova i Totte",
-    1.64,
+    1.66,
     2.5
    ]
   ]
@@ -9693,7 +10311,7 @@
     "",
     "manje 0.5 & vise 1.5",
     "1. Poluvreme Coventry City manje od 0.5 golova i C",
-    9.3,
+    9.4,
     1.5
    ],
    [
@@ -9789,7 +10407,7 @@
     "",
     "vise 0.5 & manje 1.5",
     "Tottenham daje više od 0.5 golova u 1. poluvremenu",
-    2.2,
+    2.17,
     2.0
    ],
    [
@@ -9864,7 +10482,7 @@
     "",
     "vise 0.5 & manje 0.5",
     "Coventry City daje više od 0.5 golova u 1. poluvre",
-    4.15,
+    4.1,
     2.0
    ],
    [
@@ -9913,7 +10531,7 @@
     "",
     "manje 0.5 & vise 1.5",
     "Coventry City daje manje od 0.5 golova u 1. poluvr",
-    9.3,
+    9.4,
     2.0
    ],
    [
@@ -9953,28 +10571,28 @@
     "2-",
     "2 & manje 0.5",
     "Coventry City pobednik i Tottenham manje od 0.5 go",
-    9.4,
+    9.6,
     0.5
    ],
    [
     "1+",
     "1 & vise 0.5",
     "Tottenham pobednik i Tottenham više od 0.5 gola na",
-    1.44,
+    1.43,
     0.5
    ],
    [
     "0+",
     "x & vise 0.5",
     "nerešeno i Tottenham više od 0.5 gola na utakmici",
-    5.2,
+    5.25,
     0.5
    ],
    [
     "2+",
     "2 & vise 0.5",
     "Coventry City pobednik i Tottenham više od 0.5 gol",
-    8.1,
+    8.3,
     0.5
    ]
   ]
@@ -9993,7 +10611,7 @@
     "0-",
     "x & manje 1.5",
     "nerešeno i Tottenham manje od 1.5 gola na utakmici",
-    5.7,
+    5.75,
     1.5
    ],
    [
@@ -10014,14 +10632,14 @@
     "0+",
     "x & vise 1.5",
     "nerešeno i Tottenham više od 1.5 gola na utakmici",
-    10.0,
+    11.0,
     1.5
    ],
    [
     "2+",
     "2 & vise 1.5",
     "Coventry City pobednik i Tottenham više od 1.5 gol",
-    21.0,
+    22.0,
     1.5
    ]
   ]
@@ -10047,7 +10665,7 @@
     "2-",
     "2 & manje 2.5",
     "Coventry City pobednik i Tottenham manje od 2.5 go",
-    5.4,
+    5.45,
     2.5
    ],
    [
@@ -10087,14 +10705,14 @@
     "0-",
     "x & manje 3.5",
     "nerešeno i Tottenham manje od 3.5 gola na utakmici",
-    4.25,
+    4.3,
     3.5
    ],
    [
     "2-",
     "2 & manje 3.5",
     "Coventry City pobednik i Tottenham manje od 3.5 go",
-    5.3,
+    5.35,
     3.5
    ],
    [
@@ -10134,21 +10752,21 @@
     "0-",
     "x & manje 4.5",
     "nerešeno i Tottenham manje od 4.5 gola na utakmici",
-    4.25,
+    4.3,
     4.5
    ],
    [
     "2-",
     "2 & manje 4.5",
     "Coventry City pobednik i Tottenham manje od 4.5 go",
-    5.3,
+    5.35,
     4.5
    ],
    [
     "1+",
     "1 & vise 4.5",
     "Tottenham pobednik i Tottenham više od 4.5 gola na",
-    9.1,
+    9.0,
     4.5
    ],
    [
@@ -10174,7 +10792,7 @@
     "1-",
     "1 & manje 0.5",
     "Tottenham pobednik  i Coventry City manje od 0.5 g",
-    2.62,
+    2.6,
     0.5
    ],
    [
@@ -10195,14 +10813,14 @@
     "0+",
     "x & vise 0.5",
     "nerešeno i Coventry City više od 0.5 gola na utakm",
-    5.2,
+    5.25,
     0.5
    ],
    [
     "2+",
     "2 & vise 0.5",
     "Coventry City pobednik  i Coventry City više od 0.",
-    5.2,
+    5.35,
     0.5
    ]
   ]
@@ -10221,7 +10839,7 @@
     "0-",
     "x & manje 1.5",
     "nerešeno i Coventry City manje od 1.5 gola na utak",
-    5.7,
+    5.75,
     1.5
    ],
    [
@@ -10242,7 +10860,7 @@
     "0+",
     "x & vise 1.5",
     "nerešeno i Coventry City više od 1.5 gola na utakm",
-    10.0,
+    11.0,
     1.5
    ],
    [
@@ -10261,21 +10879,21 @@
     "1-",
     "1 & manje 2.5",
     "Tottenham pobednik  i Coventry City manje od 2.5 g",
-    1.46,
+    1.45,
     2.5
    ],
    [
     "0-",
     "x & manje 2.5",
     "nerešeno i Coventry City manje od 2.5 gola na utak",
-    4.55,
+    4.5,
     2.5
    ],
    [
     "2-",
     "2 & manje 2.5",
     "Coventry City pobednik  i Coventry City manje od 2",
-    7.0,
+    7.1,
     2.5
    ],
    [
@@ -10308,21 +10926,21 @@
     "1-",
     "1 & manje 3.5",
     "Tottenham pobednik  i Coventry City manje od 3.5 g",
-    1.44,
+    1.43,
     3.5
    ],
    [
     "0-",
     "x & manje 3.5",
     "nerešeno i Coventry City manje od 3.5 gola na utak",
-    4.25,
+    4.3,
     3.5
    ],
    [
     "2-",
     "2 & manje 3.5",
     "Coventry City pobednik  i Coventry City manje od 3",
-    5.7,
+    5.75,
     3.5
    ],
    [
@@ -10343,7 +10961,7 @@
     "2+",
     "2 & vise 3.5",
     "Coventry City pobednik  i Coventry City više od 3.",
-    31.0,
+    32.0,
     3.5
    ]
   ]
@@ -10355,14 +10973,14 @@
     "1-",
     "1 & manje 4.5",
     "Tottenham pobednik  i Coventry City manje od 4.5 g",
-    1.44,
+    1.43,
     4.5
    ],
    [
     "0-",
     "x & manje 4.5",
     "nerešeno i Coventry City manje od 4.5 gola na utak",
-    4.25,
+    4.3,
     4.5
    ],
    [
@@ -10416,7 +11034,7 @@
     "/1-",
     "manje 2.5",
     "Bournemouth manje od 2.5 kornera",
-    6.5,
+    6.4,
     2.5
    ],
    [
@@ -10430,21 +11048,21 @@
     "/1-",
     "manje 3.5",
     "Bournemouth manje od 3.5 kornera",
-    3.8,
+    3.75,
     3.5
    ],
    [
     "/1+",
     "vise 3.5",
     "Bournemouth više od 3.5 kornera",
-    1.22,
+    1.23,
     3.5
    ],
    [
     "/1-",
     "manje 4.5",
     "Bournemouth manje od 4.5 kornera",
-    2.52,
+    2.5,
     4.5
    ],
    [
@@ -10472,7 +11090,7 @@
     "/1-",
     "manje 6.5",
     "Bournemouth manje od 6.5 kornera",
-    1.49,
+    1.48,
     6.5
    ],
    [
@@ -10498,7 +11116,7 @@
     "/2-",
     "manje 1.5",
     "Sunderland će imati manje od 1.5 kornera",
-    5.9,
+    6.0,
     1.5
    ],
    [
@@ -10512,14 +11130,14 @@
     "/2-",
     "manje 2.5",
     "Sunderland će imati manje od 2.5 kornera",
-    3.15,
+    3.2,
     2.5
    ],
    [
     "/2+",
     "vise 2.5",
     "Sunderland će imati više od 2.5 kornera",
-    1.31,
+    1.3,
     2.5
    ],
    [
@@ -10533,28 +11151,28 @@
     "/2+",
     "vise 3.5",
     "Sunderland će imati više od 3.5 kornera",
-    1.68,
+    1.67,
     3.5
    ],
    [
     "/2-",
     "manje 4.5",
     "Sunderland će imati manje od 4.5 kornera",
-    1.55,
+    1.56,
     4.5
    ],
    [
     "/2+",
     "vise 4.5",
     "Sunderland će imati više od 4.5 kornera",
-    2.3,
+    2.27,
     4.5
    ],
    [
     "/2-",
     "manje 5.5",
     "Sunderland će imati manje od 5.5 kornera",
-    1.28,
+    1.29,
     5.5
    ],
    [
@@ -10731,14 +11349,14 @@
     "",
     "manje 10.5",
     "Sunderland manje od 10.5 šuteva",
-    1.9,
+    1.92,
     10.5
    ],
    [
     "",
     "vise 10.5",
     "Sunderland više od 10.5 šuteva",
-    1.8,
+    1.78,
     10.5
    ]
   ]
@@ -10757,7 +11375,7 @@
     "/*01+",
     "vise 11.5",
     "Bournemouth više od 11.5 faulova",
-    1.68,
+    1.69,
     11.5
    ]
   ]
@@ -10778,288 +11396,6 @@
     "Sunderland više od 11.5 faulova",
     1.88,
     11.5
-   ]
-  ]
- },
- "Sunderland raspon golova": {
-  "mecova": 1,
-  "primer": [
-   [
-    "",
-    "1-2",
-    "Sunderland 1-2 gola na utakmici",
-    1.64,
-    -2.0
-   ],
-   [
-    "",
-    "1-3",
-    "Sunderland 1-3 gola na utakmici",
-    1.43,
-    -3.0
-   ],
-   [
-    "",
-    "2-3",
-    "Sunderland 2-3 gola na utakmici",
-    3.0,
-    -3.0
-   ]
-  ]
- },
- "Sunderland raspon golova u svakom poluvremenu": {
-  "mecova": 1,
-  "primer": [
-   [
-    "12",
-    "1-2",
-    "Sunderland 1 ili 2 gola u svakom poluvremenu",
-    4.55,
-    2.0
-   ],
-   [
-    "13",
-    "1-3",
-    "Sunderland 1,2 ili 3 gola u svakom poluvremenu",
-    4.25,
-    3.0
-   ],
-   [
-    "23",
-    "2-3",
-    "Sunderland 2 ili 3 gola u svakom poluvremenu",
-    32.0,
-    3.0
-   ]
-  ]
- },
- "Sunderland tačno golova": {
-  "mecova": 1,
-  "primer": [
-   [
-    "0",
-    "0",
-    "Sunderland ne daje gol",
-    3.1,
-    3.0
-   ],
-   [
-    "1",
-    "1",
-    "Sunderland daje tačno 1 gol",
-    2.55,
-    3.0
-   ],
-   [
-    "2",
-    "2",
-    "Sunderland daje tačno 2 gola",
-    4.1,
-    3.0
-   ],
-   [
-    "3",
-    "3+",
-    "Sunderland daje 3 ili više golova",
-    6.6,
-    3.0
-   ]
-  ]
- },
- "Sunderland daje gol": {
-  "mecova": 1,
-  "primer": [
-   [
-    "1",
-    "da",
-    "Sunderland daje gol na utakmici",
-    1.37,
-    null
-   ],
-   [
-    "2",
-    "ne",
-    "Sunderland ne daje gol na utakmici",
-    3.15,
-    null
-   ]
-  ]
- },
- "1. Poluvreme Sunderland Ukupno golova & Ukupno golova Sunderland": {
-  "mecova": 1,
-  "primer": [
-   [
-    "",
-    "vise 0.5 & vise 1.5",
-    "1. Poluvreme Sunderland više od 0.5 golova i Sunde",
-    3.45,
-    1.5
-   ],
-   [
-    "",
-    "vise 0.5 & manje 1.5",
-    "1. Poluvreme Sunderland više od 0.5 golova i Sunde",
-    5.0,
-    1.5
-   ],
-   [
-    "",
-    "manje 0.5 & vise 1.5",
-    "1. Poluvreme Sunderland manje od 0.5 golova i Sund",
-    7.7,
-    1.5
-   ],
-   [
-    "",
-    "manje 0.5 & manje 1.5",
-    "1. Poluvreme Sunderland manje od 0.5 golova i Sund",
-    1.85,
-    1.5
-   ],
-   [
-    "",
-    "vise 0.5 & vise 2.5",
-    "1. Poluvreme Sunderland više od 0.5 golova i Sunde",
-    7.1,
-    2.5
-   ],
-   [
-    "",
-    "vise 0.5 & manje 2.5",
-    "1. Poluvreme Sunderland više od 0.5 golova i Sunde",
-    2.87,
-    2.5
-   ],
-   [
-    "",
-    "manje 0.5 & vise 2.5",
-    "1. Poluvreme Sunderland manje od 0.5 golova i Sund",
-    23.0,
-    2.5
-   ],
-   [
-    "",
-    "manje 0.5 & manje 2.5",
-    "1. Poluvreme Sunderland manje od 0.5 golova i Sund",
-    1.64,
-    2.5
-   ],
-   [
-    "",
-    "vise 1.5 & vise 2.5",
-    "1. Poluvreme Sunderland više od 1.5 golova i Sunde",
-    11.0,
-    2.5
-   ],
-   [
-    "",
-    "vise 1.5 & manje 2.5",
-    "1. Poluvreme Sunderland više od 1.5 golova i Sunde",
-    14.0,
-    2.5
-   ],
-   [
-    "",
-    "manje 1.5 & vise 2.5",
-    "1. Poluvreme Sunderland manje od 1.5 golova i Sund",
-    9.9,
-    2.5
-   ],
-   [
-    "",
-    "manje 1.5 & manje 2.5",
-    "1. Poluvreme Sunderland manje od 1.5 golova i Sund",
-    1.14,
-    2.5
-   ]
-  ]
- },
- "Sunderland - 1. poluvreme ukupno golova & 2. poluvreme ukupno golova": {
-  "mecova": 1,
-  "primer": [
-   [
-    "",
-    "vise 0.5 & vise 0.5",
-    "Sunderland daje više od 0.5 golova u 1. poluvremen",
-    4.2,
-    2.0
-   ],
-   [
-    "",
-    "vise 0.5 & manje 0.5",
-    "Sunderland daje više od 0.5 golova u 1. poluvremen",
-    4.0,
-    2.0
-   ],
-   [
-    "",
-    "vise 0.5 & vise 1.5",
-    "Sunderland daje više od 0.5 golova u 1. poluvremen",
-    11.0,
-    2.0
-   ],
-   [
-    "",
-    "vise 0.5 & manje 1.5",
-    "Sunderland daje više od 0.5 golova u 1. poluvremen",
-    2.55,
-    2.0
-   ],
-   [
-    "",
-    "vise 0.5 & vise 2.5",
-    "Sunderland daje više od 0.5 golova u 1. poluvremen",
-    33.0,
-    2.0
-   ],
-   [
-    "",
-    "vise 0.5 & manje 2.5",
-    "Sunderland daje više od 0.5 golova u 1. poluvremen",
-    2.27,
-    2.0
-   ],
-   [
-    "",
-    "manje 0.5 & vise 0.5",
-    "Sunderland daje manje od 0.5 golova u 1. poluvreme",
-    2.95,
-    2.0
-   ],
-   [
-    "",
-    "manje 0.5 & manje 0.5",
-    "Sunderland daje manje od 0.5 golova u 1. poluvreme",
-    3.0,
-    2.0
-   ],
-   [
-    "",
-    "manje 0.5 & vise 1.5",
-    "Sunderland daje manje od 0.5 golova u 1. poluvreme",
-    7.7,
-    2.0
-   ],
-   [
-    "",
-    "manje 0.5 & manje 1.5",
-    "Sunderland daje manje od 0.5 golova u 1. poluvreme",
-    1.85,
-    2.0
-   ],
-   [
-    "",
-    "manje 0.5 & vise 2.5",
-    "Sunderland daje manje od 0.5 golova u 1. poluvreme",
-    23.0,
-    2.0
-   ],
-   [
-    "",
-    "manje 0.5 & manje 2.5",
-    "Sunderland daje manje od 0.5 golova u 1. poluvreme",
-    1.64,
-    2.0
    ]
   ]
  },
@@ -11119,28 +11455,28 @@
     "/1-",
     "manje 4.5",
     "Brentford manje od 4.5 kornera",
-    1.97,
+    2.0,
     4.5
    ],
    [
     "/1+",
     "vise 4.5",
     "Brentford više od 4.5 kornera",
-    1.74,
+    1.73,
     4.5
    ],
    [
     "/1-",
     "manje 5.5",
     "Brentford manje od 5.5 kornera",
-    1.54,
+    1.55,
     5.5
    ],
    [
     "/1+",
     "vise 5.5",
     "Brentford više od 5.5 kornera",
-    2.32,
+    2.3,
     5.5
    ],
    [
@@ -11159,14 +11495,14 @@
     "/2-",
     "manje 0.5",
     "Liverpool će imati manje od 0.5 kornera",
-    33.0,
+    31.0,
     0.5
    ],
    [
     "/2-",
     "manje 1.5",
     "Liverpool će imati manje od 1.5 kornera",
-    11.0,
+    10.0,
     1.5
    ],
    [
@@ -11180,7 +11516,7 @@
     "/2-",
     "manje 2.5",
     "Liverpool će imati manje od 2.5 kornera",
-    5.4,
+    5.25,
     2.5
    ],
    [
@@ -11194,49 +11530,49 @@
     "/2-",
     "manje 3.5",
     "Liverpool će imati manje od 3.5 kornera",
-    3.2,
+    3.15,
     3.5
    ],
    [
     "/2+",
     "vise 3.5",
     "Liverpool će imati više od 3.5 kornera",
-    1.3,
+    1.31,
     3.5
    ],
    [
     "/2-",
     "manje 4.5",
     "Liverpool će imati manje od 4.5 kornera",
-    2.2,
+    2.15,
     4.5
    ],
    [
     "/2+",
     "vise 4.5",
     "Liverpool će imati više od 4.5 kornera",
-    1.6,
+    1.63,
     4.5
    ],
    [
     "/2-",
     "manje 5.5",
     "Liverpool će imati manje od 5.5 kornera",
-    1.66,
+    1.64,
     5.5
    ],
    [
     "/2+",
     "vise 5.5",
     "Liverpool će imati više od 5.5 kornera",
-    2.1,
+    2.12,
     5.5
    ],
    [
     "/2-",
     "manje 6.5",
     "Liverpool će imati manje od 6.5 kornera",
-    1.37,
+    1.36,
     6.5
    ]
   ]
@@ -11248,42 +11584,42 @@
     ".1-",
     "manje 1.5",
     "Brentford će imati manje od 1.5 kartona na utakmic",
-    2.6,
+    2.57,
     1.5
    ],
    [
     ".1+",
     "vise 1.5",
     "Brentford će imati više od 1.5 kartona na utakmici",
-    1.4,
+    1.41,
     1.5
    ],
    [
     ".1-",
     "manje 2.5",
     "Brentford će imati manje od 2.5 kartona na utakmic",
-    1.55,
+    1.54,
     2.5
    ],
    [
     ".1+",
     "vise 2.5",
     "Brentford će imati više od 2.5 kartona na utakmici",
-    2.25,
+    2.27,
     2.5
    ],
    [
     ".1-",
     "manje 3.5",
     "Brentford će imati manje od 3.5 kartona na utakmic",
-    1.17,
+    1.16,
     3.5
    ],
    [
     ".1+",
     "vise 3.5",
     "Brentford će imati više od 3.5 kartona na utakmici",
-    3.9,
+    4.0,
     3.5
    ]
   ]
@@ -11293,45 +11629,45 @@
   "primer": [
    [
     ".2-",
+    "manje 0.5",
+    "Liverpool će imati manje od 0.5 kartona na utakmic",
+    5.85,
+    0.5
+   ],
+   [
+    ".2+",
+    "vise 0.5",
+    "Liverpool će imati više od 0.5 kartona na utakmici",
+    1.06,
+    0.5
+   ],
+   [
+    ".2-",
     "manje 1.5",
     "Liverpool će imati manje od 1.5 kartona na utakmic",
-    2.45,
+    2.42,
     1.5
    ],
    [
     ".2+",
     "vise 1.5",
     "Liverpool će imati više od 1.5 kartona na utakmici",
-    1.46,
+    1.47,
     1.5
    ],
    [
     ".2-",
     "manje 2.5",
     "Liverpool će imati manje od 2.5 kartona na utakmic",
-    1.48,
+    1.47,
     2.5
    ],
    [
     ".2+",
     "vise 2.5",
     "Liverpool će imati više od 2.5 kartona na utakmici",
-    2.4,
+    2.42,
     2.5
-   ],
-   [
-    ".2-",
-    "manje 3.5",
-    "Liverpool će imati manje od 3.5 kartona na utakmic",
-    1.14,
-    3.5
-   ],
-   [
-    ".2+",
-    "vise 3.5",
-    "Liverpool će imati više od 3.5 kartona na utakmici",
-    4.25,
-    3.5
    ]
   ]
  },
@@ -11342,14 +11678,14 @@
     "*11-",
     "manje 4.5",
     "Brentford će imati manje od 4.5 šuteva u okvir gol",
-    1.72,
+    1.7,
     4.5
    ],
    [
     "*11+",
     "vise 4.5",
     "Brentford će imati više od 4.5 šuteva u okvir gola",
-    2.0,
+    2.02,
     4.5
    ]
   ]
@@ -11361,14 +11697,14 @@
     "*12-",
     "manje 4.5",
     "Liverpool će imati manje od 4.5 šuteva u okvir gol",
-    1.87,
+    1.85,
     4.5
    ],
    [
     "*12+",
     "vise 4.5",
     "Liverpool će imati više od 4.5 šuteva u okvir gola",
-    1.83,
+    1.85,
     4.5
    ]
   ]
@@ -11454,13 +11790,6 @@
   "primer": [
    [
     "/1-",
-    "manje 0.5",
-    "Brighton manje od 0.5 kornera",
-    50.0,
-    0.5
-   ],
-   [
-    "/1-",
     "manje 1.5",
     "Brighton manje od 1.5 kornera",
     17.0,
@@ -11470,71 +11799,78 @@
     "/1-",
     "manje 2.5",
     "Brighton manje od 2.5 kornera",
-    7.6,
+    7.9,
     2.5
    ],
    [
     "/1+",
     "vise 2.5",
     "Brighton više od 2.5 kornera",
-    1.06,
+    1.05,
     2.5
    ],
    [
     "/1-",
     "manje 3.5",
     "Brighton manje od 3.5 kornera",
-    4.4,
+    4.6,
     3.5
    ],
    [
     "/1+",
     "vise 3.5",
     "Brighton više od 3.5 kornera",
-    1.17,
+    1.16,
     3.5
    ],
    [
     "/1-",
     "manje 4.5",
     "Brighton manje od 4.5 kornera",
-    2.87,
+    2.95,
     4.5
    ],
    [
     "/1+",
     "vise 4.5",
     "Brighton više od 4.5 kornera",
-    1.37,
+    1.35,
     4.5
    ],
    [
     "/1-",
     "manje 5.5",
     "Brighton manje od 5.5 kornera",
-    2.07,
+    2.12,
     5.5
    ],
    [
     "/1+",
     "vise 5.5",
     "Brighton više od 5.5 kornera",
-    1.68,
+    1.65,
     5.5
    ],
    [
     "/1-",
     "manje 6.5",
     "Brighton manje od 6.5 kornera",
-    1.62,
+    1.65,
     6.5
    ],
    [
     "/1+",
     "vise 6.5",
     "Brighton više od 6.5 kornera",
-    2.17,
+    2.1,
     6.5
+   ],
+   [
+    "/1-",
+    "manje 7.5",
+    "Brighton manje od 7.5 kornera",
+    1.38,
+    7.5
    ]
   ]
  },
@@ -11545,7 +11881,7 @@
     "/2-",
     "manje 0.5",
     "Crystal Palace će imati manje od 0.5 kornera",
-    12.0,
+    13.0,
     0.5
    ],
    [
@@ -11608,21 +11944,21 @@
     "/2+",
     "vise 4.5",
     "Crystal Palace će imati više od 4.5 kornera",
-    2.7,
+    2.67,
     4.5
    ],
    [
     "/2-",
     "manje 5.5",
     "Crystal Palace će imati manje od 5.5 kornera",
-    1.2,
+    1.21,
     5.5
    ],
    [
     "/2+",
     "vise 5.5",
     "Crystal Palace će imati više od 5.5 kornera",
-    4.1,
+    4.0,
     5.5
    ]
   ]
@@ -11634,7 +11970,7 @@
     ".1-",
     "manje 0.5",
     "Brighton će imati manje od 0.5 kartona na utakmici",
-    5.0,
+    4.9,
     0.5
    ],
    [
@@ -11648,28 +11984,28 @@
     ".1-",
     "manje 1.5",
     "Brighton će imati manje od 1.5 kartona na utakmici",
-    2.12,
+    2.1,
     1.5
    ],
    [
     ".1+",
     "vise 1.5",
     "Brighton će imati više od 1.5 kartona na utakmici ",
-    1.62,
+    1.65,
     1.5
    ],
    [
     ".1-",
     "manje 2.5",
     "Brighton će imati manje od 2.5 kartona na utakmici",
-    1.34,
+    1.32,
     2.5
    ],
    [
     ".1+",
     "vise 2.5",
     "Brighton će imati više od 2.5 kartona na utakmici ",
-    2.8,
+    2.87,
     2.5
    ]
   ]
@@ -11681,42 +12017,42 @@
     ".2-",
     "manje 1.5",
     "Crystal Palace će imati manje od 1.5 kartona na ut",
-    2.95,
+    2.85,
     1.5
    ],
    [
     ".2+",
     "vise 1.5",
     "Crystal Palace će imati više od 1.5 kartona na uta",
-    1.31,
+    1.33,
     1.5
    ],
    [
     ".2-",
     "manje 2.5",
     "Crystal Palace će imati manje od 2.5 kartona na ut",
-    1.7,
+    1.66,
     2.5
    ],
    [
     ".2+",
     "vise 2.5",
     "Crystal Palace će imati više od 2.5 kartona na uta",
-    2.02,
+    2.07,
     2.5
    ],
    [
     ".2-",
     "manje 3.5",
     "Crystal Palace će imati manje od 3.5 kartona na ut",
-    1.23,
+    1.22,
     3.5
    ],
    [
     ".2+",
     "vise 3.5",
     "Crystal Palace će imati više od 3.5 kartona na uta",
-    3.35,
+    3.5,
     3.5
    ]
   ]
@@ -11802,17 +12138,17 @@
   "primer": [
    [
     "/*01-",
-    "manje 11.5",
-    "Brighton manje od 11.5 faulova",
-    1.69,
-    11.5
+    "manje 10.5",
+    "Brighton manje od 10.5 faulova",
+    2.0,
+    10.5
    ],
    [
     "/*01+",
-    "vise 11.5",
-    "Brighton više od 11.5 faulova",
-    1.95,
-    11.5
+    "vise 10.5",
+    "Brighton više od 10.5 faulova",
+    1.66,
+    10.5
    ]
   ]
  },
@@ -11863,7 +12199,7 @@
     "/1-",
     "manje 2.5",
     "Everton manje od 2.5 kornera",
-    4.55,
+    4.5,
     2.5
    ],
    [
@@ -11877,42 +12213,42 @@
     "/1-",
     "manje 3.5",
     "Everton manje od 3.5 kornera",
-    2.77,
+    2.75,
     3.5
    ],
    [
     "/1+",
     "vise 3.5",
     "Everton više od 3.5 kornera",
-    1.39,
+    1.4,
     3.5
    ],
    [
     "/1-",
     "manje 4.5",
     "Everton manje od 4.5 kornera",
-    1.95,
+    1.92,
     4.5
    ],
    [
     "/1+",
     "vise 4.5",
     "Everton više od 4.5 kornera",
-    1.77,
+    1.78,
     4.5
    ],
    [
     "/1-",
     "manje 5.5",
     "Everton manje od 5.5 kornera",
-    1.52,
+    1.51,
     5.5
    ],
    [
     "/1+",
     "vise 5.5",
     "Everton više od 5.5 kornera",
-    2.37,
+    2.4,
     5.5
    ],
    [
@@ -11931,7 +12267,7 @@
     "/2-",
     "manje 0.5",
     "Chelsea će imati manje od 0.5 kornera",
-    31.0,
+    32.0,
     0.5
    ],
    [
@@ -12020,7 +12356,7 @@
     ".1-",
     "manje 0.5",
     "Everton će imati manje od 0.5 kartona na utakmici ",
-    5.85,
+    5.8,
     0.5
    ],
    [
@@ -12034,14 +12370,14 @@
     ".1-",
     "manje 1.5",
     "Everton će imati manje od 1.5 kartona na utakmici ",
-    2.42,
+    2.4,
     1.5
    ],
    [
     ".1+",
     "vise 1.5",
     "Everton će imati više od 1.5 kartona na utakmici (",
-    1.47,
+    1.48,
     1.5
    ],
    [
@@ -12055,7 +12391,7 @@
     ".1+",
     "vise 2.5",
     "Everton će imati više od 2.5 kartona na utakmici (",
-    2.42,
+    2.45,
     2.5
    ]
   ]
@@ -12067,7 +12403,7 @@
     ".2-",
     "manje 0.5",
     "Chelsea će imati manje od 0.5 kartona na utakmici ",
-    5.5,
+    5.55,
     0.5
    ],
    [
@@ -12081,7 +12417,7 @@
     ".2-",
     "manje 1.5",
     "Chelsea će imati manje od 1.5 kartona na utakmici ",
-    2.3,
+    2.32,
     1.5
    ],
    [
@@ -12095,14 +12431,14 @@
     ".2-",
     "manje 2.5",
     "Chelsea će imati manje od 2.5 kartona na utakmici ",
-    1.41,
+    1.42,
     2.5
    ],
    [
     ".2+",
     "vise 2.5",
     "Chelsea će imati više od 2.5 kartona na utakmici (",
-    2.57,
+    2.55,
     2.5
    ]
   ]
@@ -12114,14 +12450,14 @@
     "*11-",
     "manje 4.5",
     "Everton će imati manje od 4.5 šuteva u okvir gola",
-    1.63,
+    1.64,
     4.5
    ],
    [
     "*11+",
     "vise 4.5",
     "Everton će imati više od 4.5 šuteva u okvir gola",
-    2.12,
+    2.1,
     4.5
    ]
   ]
@@ -12133,14 +12469,14 @@
     "*12-",
     "manje 4.5",
     "Chelsea će imati manje od 4.5 šuteva u okvir gola",
-    1.87,
+    1.88,
     4.5
    ],
    [
     "*12+",
     "vise 4.5",
     "Chelsea će imati više od 4.5 šuteva u okvir gola",
-    1.83,
+    1.82,
     4.5
    ]
   ]
@@ -12324,7 +12660,7 @@
     "/2-",
     "manje 1.5",
     "Hull City će imati manje od 1.5 kornera",
-    5.35,
+    5.4,
     1.5
    ],
    [
@@ -12338,7 +12674,7 @@
     "/2-",
     "manje 2.5",
     "Hull City će imati manje od 2.5 kornera",
-    2.9,
+    2.92,
     2.5
    ],
    [
@@ -12352,28 +12688,28 @@
     "/2-",
     "manje 3.5",
     "Hull City će imati manje od 3.5 kornera",
-    1.92,
+    1.95,
     3.5
    ],
    [
     "/2+",
     "vise 3.5",
     "Hull City će imati više od 3.5 kornera",
-    1.78,
+    1.77,
     3.5
    ],
    [
     "/2-",
     "manje 4.5",
     "Hull City će imati manje od 4.5 kornera",
-    1.47,
+    1.48,
     4.5
    ],
    [
     "/2+",
     "vise 4.5",
     "Hull City će imati više od 4.5 kornera",
-    2.5,
+    2.47,
     4.5
    ],
    [
@@ -12387,14 +12723,14 @@
     "/2+",
     "vise 5.5",
     "Hull City će imati više od 5.5 kornera",
-    3.7,
+    3.65,
     5.5
    ],
    [
     "/2-",
     "manje 6.5",
     "Hull City će imati manje od 6.5 kornera",
-    1.11,
+    1.12,
     6.5
    ]
   ]
@@ -12406,42 +12742,42 @@
     ".1-",
     "manje 0.5",
     "Fulham će imati manje od 0.5 kartona na utakmici (",
-    3.7,
+    3.65,
     0.5
    ],
    [
     ".1+",
     "vise 0.5",
     "Fulham će imati više od 0.5 kartona na utakmici (u",
-    1.19,
+    1.2,
     0.5
    ],
    [
     ".1-",
     "manje 1.5",
     "Fulham će imati manje od 1.5 kartona na utakmici (",
-    1.68,
+    1.66,
     1.5
    ],
    [
     ".1+",
     "vise 1.5",
     "Fulham će imati više od 1.5 kartona na utakmici (u",
-    2.05,
+    2.07,
     1.5
    ],
    [
     ".1-",
     "manje 2.5",
     "Fulham će imati manje od 2.5 kartona na utakmici (",
-    1.17,
+    1.16,
     2.5
    ],
    [
     ".1+",
     "vise 2.5",
     "Fulham će imati više od 2.5 kartona na utakmici (u",
-    3.9,
+    4.0,
     2.5
    ]
   ]
@@ -12453,7 +12789,7 @@
     ".2-",
     "manje 1.5",
     "Hull City će imati manje od 1.5 kartona na utakmic",
-    3.75,
+    3.8,
     1.5
    ],
    [
@@ -12467,14 +12803,14 @@
     ".2-",
     "manje 2.5",
     "Hull City će imati manje od 2.5 kartona na utakmic",
-    2.05,
+    2.07,
     2.5
    ],
    [
     ".2+",
     "vise 2.5",
     "Hull City će imati više od 2.5 kartona na utakmici",
-    1.67,
+    1.66,
     2.5
    ],
    [
@@ -12614,84 +12950,84 @@
     "/1-",
     "manje 0.5",
     "Leeds United manje od 0.5 kornera",
-    24.0,
+    25.0,
     0.5
    ],
    [
     "/1-",
     "manje 1.5",
     "Leeds United manje od 1.5 kornera",
-    8.3,
+    8.5,
     1.5
    ],
    [
     "/1+",
     "vise 1.5",
     "Leeds United više od 1.5 kornera",
-    1.05,
+    1.04,
     1.5
    ],
    [
     "/1-",
     "manje 2.5",
     "Leeds United manje od 2.5 kornera",
-    4.25,
+    4.45,
     2.5
    ],
    [
     "/1+",
     "vise 2.5",
     "Leeds United više od 2.5 kornera",
-    1.18,
+    1.17,
     2.5
    ],
    [
     "/1-",
     "manje 3.5",
     "Leeds United manje od 3.5 kornera",
-    2.62,
+    2.72,
     3.5
    ],
    [
     "/1+",
     "vise 3.5",
     "Leeds United više od 3.5 kornera",
-    1.43,
+    1.4,
     3.5
    ],
    [
     "/1-",
     "manje 4.5",
     "Leeds United manje od 4.5 kornera",
-    1.85,
+    1.92,
     4.5
    ],
    [
     "/1+",
     "vise 4.5",
     "Leeds United više od 4.5 kornera",
-    1.85,
+    1.8,
     4.5
    ],
    [
     "/1-",
     "manje 5.5",
     "Leeds United manje od 5.5 kornera",
-    1.47,
+    1.5,
     5.5
    ],
    [
     "/1+",
     "vise 5.5",
     "Leeds United više od 5.5 kornera",
-    2.52,
+    2.42,
     5.5
    ],
    [
     "/1-",
     "manje 6.5",
     "Leeds United manje od 6.5 kornera",
-    1.25,
+    1.27,
     6.5
    ]
   ]
@@ -12703,14 +13039,14 @@
     "/2-",
     "manje 0.5",
     "Manchester United će imati manje od 0.5 kornera",
-    28.0,
+    29.0,
     0.5
    ],
    [
     "/2-",
     "manje 1.5",
     "Manchester United će imati manje od 1.5 kornera",
-    9.5,
+    9.6,
     1.5
    ],
    [
@@ -12759,14 +13095,14 @@
     "/2+",
     "vise 4.5",
     "Manchester United će imati više od 4.5 kornera",
-    1.7,
+    1.69,
     4.5
    ],
    [
     "/2-",
     "manje 5.5",
     "Manchester United će imati manje od 5.5 kornera",
-    1.57,
+    1.58,
     5.5
    ],
    [
@@ -12792,42 +13128,42 @@
     ".1-",
     "manje 1.5",
     "Leeds United će imati manje od 1.5 kartona na utak",
-    2.77,
+    2.7,
     1.5
    ],
    [
     ".1+",
     "vise 1.5",
     "Leeds United će imati više od 1.5 kartona na utakm",
-    1.35,
+    1.37,
     1.5
    ],
    [
     ".1-",
     "manje 2.5",
     "Leeds United će imati manje od 2.5 kartona na utak",
-    1.63,
+    1.59,
     2.5
    ],
    [
     ".1+",
     "vise 2.5",
     "Leeds United će imati više od 2.5 kartona na utakm",
-    2.1,
+    2.17,
     2.5
    ],
    [
     ".1-",
     "manje 3.5",
     "Leeds United će imati manje od 3.5 kartona na utak",
-    1.21,
+    1.19,
     3.5
    ],
    [
     ".1+",
     "vise 3.5",
     "Leeds United će imati više od 3.5 kartona na utakm",
-    3.55,
+    3.7,
     3.5
    ]
   ]
@@ -12839,42 +13175,42 @@
     ".2-",
     "manje 1.5",
     "Manchester United će imati manje od 1.5 kartona na",
-    2.6,
+    2.75,
     1.5
    ],
    [
     ".2+",
     "vise 1.5",
     "Manchester United će imati više od 1.5 kartona na ",
-    1.4,
+    1.36,
     1.5
    ],
    [
     ".2-",
     "manje 2.5",
     "Manchester United će imati manje od 2.5 kartona na",
-    1.55,
+    1.61,
     2.5
    ],
    [
     ".2+",
     "vise 2.5",
     "Manchester United će imati više od 2.5 kartona na ",
-    2.25,
+    2.15,
     2.5
    ],
    [
     ".2-",
     "manje 3.5",
     "Manchester United će imati manje od 3.5 kartona na",
-    1.17,
+    1.2,
     3.5
    ],
    [
     ".2+",
     "vise 3.5",
     "Manchester United će imati više od 3.5 kartona na ",
-    3.9,
+    3.65,
     3.5
    ]
   ]
@@ -12993,516 +13329,6 @@
    ]
   ]
  },
- "Leeds United raspon golova": {
-  "mecova": 1,
-  "primer": [
-   [
-    "",
-    "1-2",
-    "Leeds United 1-2 gola na utakmici",
-    1.62,
-    -2.0
-   ],
-   [
-    "",
-    "1-3",
-    "Leeds United  1-3 gola na utakmici",
-    1.33,
-    -3.0
-   ],
-   [
-    "",
-    "2-3",
-    "Leeds United 2-3 gola na utakmici",
-    2.35,
-    -3.0
-   ]
-  ]
- },
- "Leeds United raspon golova u svakom poluvremenu": {
-  "mecova": 1,
-  "primer": [
-   [
-    "12",
-    "1-2",
-    "Leeds United 1 ili 2 gola u svakom poluvremenu",
-    3.5,
-    2.0
-   ],
-   [
-    "13",
-    "1-3",
-    "Leeds United 1,2 ili 3 gola u svakom poluvremenu",
-    3.05,
-    3.0
-   ],
-   [
-    "23",
-    "2-3",
-    "Leeds United 2 ili 3 gola u svakom poluvremenu",
-    17.0,
-    3.0
-   ]
-  ]
- },
- "Leeds United tačno golova": {
-  "mecova": 1,
-  "primer": [
-   [
-    "0",
-    "0",
-    "Leeds United ne daje gol",
-    4.35,
-    3.0
-   ],
-   [
-    "1",
-    "1",
-    "Leeds United daje tačno 1 gol",
-    2.8,
-    3.0
-   ],
-   [
-    "2",
-    "2",
-    "Leeds United daje tačno 2 gola",
-    3.45,
-    3.0
-   ],
-   [
-    "3",
-    "3+",
-    "Leeds United daje 3 ili više golova",
-    4.1,
-    3.0
-   ]
-  ]
- },
- "Leeds United daje gol": {
-  "mecova": 1,
-  "primer": [
-   [
-    "1",
-    "da",
-    "Leeds United daje gol na utakmici",
-    1.21,
-    null
-   ],
-   [
-    "2",
-    "ne",
-    "Leeds United ne daje gol na utakmici",
-    4.45,
-    null
-   ]
-  ]
- },
- "1. Poluvreme Leeds United Ukupno golova & Ukupno golova Leeds United": {
-  "mecova": 1,
-  "primer": [
-   [
-    "",
-    "vise 0.5 & vise 1.5",
-    "1. Poluvreme Leeds United više od 0.5 golova i Lee",
-    2.47,
-    1.5
-   ],
-   [
-    "",
-    "vise 0.5 & manje 1.5",
-    "1. Poluvreme Leeds United više od 0.5 golova i Lee",
-    5.35,
-    1.5
-   ],
-   [
-    "",
-    "manje 0.5 & vise 1.5",
-    "1. Poluvreme Leeds United manje od 0.5 golova i Le",
-    6.6,
-    1.5
-   ],
-   [
-    "",
-    "manje 0.5 & manje 1.5",
-    "1. Poluvreme Leeds United manje od 0.5 golova i Le",
-    2.4,
-    1.5
-   ],
-   [
-    "",
-    "vise 0.5 & vise 2.5",
-    "1. Poluvreme Leeds United više od 0.5 golova i Lee",
-    4.5,
-    2.5
-   ],
-   [
-    "",
-    "vise 0.5 & manje 2.5",
-    "1. Poluvreme Leeds United više od 0.5 golova i Lee",
-    2.72,
-    2.5
-   ],
-   [
-    "",
-    "manje 0.5 & vise 2.5",
-    "1. Poluvreme Leeds United manje od 0.5 golova i Le",
-    17.0,
-    2.5
-   ],
-   [
-    "",
-    "manje 0.5 & manje 2.5",
-    "1. Poluvreme Leeds United manje od 0.5 golova i Le",
-    2.0,
-    2.5
-   ],
-   [
-    "",
-    "vise 1.5 & vise 2.5",
-    "1. Poluvreme Leeds United više od 1.5 golova i Lee",
-    6.8,
-    2.5
-   ],
-   [
-    "",
-    "vise 1.5 & manje 2.5",
-    "1. Poluvreme Leeds United više od 1.5 golova i Lee",
-    12.0,
-    2.5
-   ],
-   [
-    "",
-    "manje 1.5 & vise 2.5",
-    "1. Poluvreme Leeds United manje od 1.5 golova i Le",
-    6.8,
-    2.5
-   ],
-   [
-    "",
-    "manje 1.5 & manje 2.5",
-    "1. Poluvreme Leeds United manje od 1.5 golova i Le",
-    1.29,
-    2.5
-   ]
-  ]
- },
- "Leeds United - 1. poluvreme ukupno golova & 2. poluvreme ukupno golova": {
-  "mecova": 1,
-  "primer": [
-   [
-    "",
-    "vise 0.5 & vise 0.5",
-    "Leeds United daje više od 0.5 golova u 1. poluvrem",
-    3.0,
-    2.0
-   ],
-   [
-    "",
-    "vise 0.5 & manje 0.5",
-    "Leeds United daje više od 0.5 golova u 1. poluvrem",
-    3.9,
-    2.0
-   ],
-   [
-    "",
-    "vise 0.5 & vise 1.5",
-    "Leeds United daje više od 0.5 golova u 1. poluvrem",
-    6.7,
-    2.0
-   ],
-   [
-    "",
-    "vise 0.5 & manje 1.5",
-    "Leeds United daje više od 0.5 golova u 1. poluvrem",
-    2.27,
-    2.0
-   ],
-   [
-    "",
-    "vise 0.5 & vise 2.5",
-    "Leeds United daje više od 0.5 golova u 1. poluvrem",
-    18.0,
-    2.0
-   ],
-   [
-    "",
-    "vise 0.5 & manje 2.5",
-    "Leeds United daje više od 0.5 golova u 1. poluvrem",
-    1.92,
-    2.0
-   ],
-   [
-    "",
-    "manje 0.5 & vise 0.5",
-    "Leeds United daje manje od 0.5 golova u 1. poluvre",
-    3.0,
-    2.0
-   ],
-   [
-    "",
-    "manje 0.5 & manje 0.5",
-    "Leeds United daje manje od 0.5 golova u 1. poluvre",
-    4.2,
-    2.0
-   ],
-   [
-    "",
-    "manje 0.5 & vise 1.5",
-    "Leeds United daje manje od 0.5 golova u 1. poluvre",
-    6.6,
-    2.0
-   ],
-   [
-    "",
-    "manje 0.5 & manje 1.5",
-    "Leeds United daje manje od 0.5 golova u 1. poluvre",
-    2.4,
-    2.0
-   ],
-   [
-    "",
-    "manje 0.5 & vise 2.5",
-    "Leeds United daje manje od 0.5 golova u 1. poluvre",
-    17.0,
-    2.0
-   ],
-   [
-    "",
-    "manje 0.5 & manje 2.5",
-    "Leeds United daje manje od 0.5 golova u 1. poluvre",
-    2.0,
-    2.0
-   ]
-  ]
- },
- "1X2 & ukupno golova Leeds United (0.5)": {
-  "mecova": 1,
-  "primer": [
-   [
-    "0-",
-    "x & manje 0.5",
-    "nerešeno i Leeds United manje od 0.5 gola na utakm",
-    12.0,
-    0.5
-   ],
-   [
-    "2-",
-    "2 & manje 0.5",
-    "Manchester United pobednik i Leeds United manje od",
-    5.3,
-    0.5
-   ],
-   [
-    "1+",
-    "1 & vise 0.5",
-    "Leeds United pobednik i Leeds United više od 0.5 g",
-    2.27,
-    0.5
-   ],
-   [
-    "0+",
-    "x & vise 0.5",
-    "nerešeno i Leeds United više od 0.5 gola na utakmi",
-    3.9,
-    0.5
-   ],
-   [
-    "2+",
-    "2 & vise 0.5",
-    "Manchester United pobednik i Leeds United više od ",
-    4.45,
-    0.5
-   ]
-  ]
- },
- "1X2 & ukupno golova Leeds United (1.5)": {
-  "mecova": 1,
-  "primer": [
-   [
-    "1-",
-    "1 & manje 1.5",
-    "Leeds United pobednik i Leeds United manje od 1.5 ",
-    8.8,
-    1.5
-   ],
-   [
-    "0-",
-    "x & manje 1.5",
-    "nerešeno i Leeds United manje od 1.5 gola na utakm",
-    4.7,
-    1.5
-   ],
-   [
-    "2-",
-    "2 & manje 1.5",
-    "Manchester United pobednik i Leeds United manje od",
-    3.15,
-    1.5
-   ],
-   [
-    "1+",
-    "1 & vise 1.5",
-    "Leeds United pobednik i Leeds United više od 1.5 g",
-    2.72,
-    1.5
-   ],
-   [
-    "0+",
-    "x & vise 1.5",
-    "nerešeno i Leeds United više od 1.5 gola na utakmi",
-    7.5,
-    1.5
-   ],
-   [
-    "2+",
-    "2 & vise 1.5",
-    "Manchester United pobednik i Leeds United više od ",
-    11.0,
-    1.5
-   ]
-  ]
- },
- "1X2 & ukupno golova Leeds United (2.5)": {
-  "mecova": 1,
-  "primer": [
-   [
-    "1-",
-    "1 & manje 2.5",
-    "Leeds United pobednik i Leeds United manje od 2.5 ",
-    3.85,
-    2.5
-   ],
-   [
-    "0-",
-    "x & manje 2.5",
-    "nerešeno i Leeds United manje od 2.5 gola na utakm",
-    3.5,
-    2.5
-   ],
-   [
-    "2-",
-    "2 & manje 2.5",
-    "Manchester United pobednik i Leeds United manje od",
-    2.75,
-    2.5
-   ],
-   [
-    "1+",
-    "1 & vise 2.5",
-    "Leeds United pobednik i Leeds United više od 2.5 g",
-    4.5,
-    2.5
-   ],
-   [
-    "0+",
-    "x & vise 2.5",
-    "nerešeno i Leeds United više od 2.5 gola na utakmi",
-    22.0,
-    2.5
-   ],
-   [
-    "2+",
-    "2 & vise 2.5",
-    "Manchester United pobednik i Leeds United više od ",
-    40.0,
-    2.5
-   ]
-  ]
- },
- "1X2 & ukupno golova Leeds United (3.5)": {
-  "mecova": 1,
-  "primer": [
-   [
-    "1-",
-    "1 & manje 3.5",
-    "Leeds United pobednik i Leeds United manje od 3.5 ",
-    2.72,
-    3.5
-   ],
-   [
-    "0-",
-    "x & manje 3.5",
-    "nerešeno i Leeds United manje od 3.5 gola na utakm",
-    3.3,
-    3.5
-   ],
-   [
-    "2-",
-    "2 & manje 3.5",
-    "Manchester United pobednik i Leeds United manje od",
-    2.67,
-    3.5
-   ],
-   [
-    "1+",
-    "1 & vise 3.5",
-    "Leeds United pobednik i Leeds United više od 3.5 g",
-    9.0,
-    3.5
-   ],
-   [
-    "0+",
-    "x & vise 3.5",
-    "nerešeno i Leeds United više od 3.5 gola na utakmi",
-    75.0,
-    3.5
-   ],
-   [
-    "2+",
-    "2 & vise 3.5",
-    "Manchester United pobednik i Leeds United više od ",
-    100.0,
-    3.5
-   ]
-  ]
- },
- "1X2 & ukupno golova Leeds United (4.5)": {
-  "mecova": 1,
-  "primer": [
-   [
-    "1-",
-    "1 & manje 4.5",
-    "Leeds United pobednik i Leeds United manje od 4.5 ",
-    2.4,
-    4.5
-   ],
-   [
-    "0-",
-    "x & manje 4.5",
-    "nerešeno i Leeds United manje od 4.5 gola na utakm",
-    3.25,
-    4.5
-   ],
-   [
-    "2-",
-    "2 & manje 4.5",
-    "Manchester United pobednik i Leeds United manje od",
-    2.67,
-    4.5
-   ],
-   [
-    "1+",
-    "1 & vise 4.5",
-    "Leeds United pobednik i Leeds United više od 4.5 g",
-    21.0,
-    4.5
-   ],
-   [
-    "0+",
-    "x & vise 4.5",
-    "nerešeno i Leeds United više od 4.5 gola na utakmi",
-    125.0,
-    4.5
-   ],
-   [
-    "2+",
-    "2 & vise 4.5",
-    "Manchester United pobednik i Leeds United više od ",
-    125.0,
-    4.5
-   ]
-  ]
- },
  "Ukupno kornera Manchester City": {
   "mecova": 1,
   "primer": [
@@ -13545,14 +13371,14 @@
     "/1-",
     "manje 5.5",
     "Manchester City manje od 5.5 kornera",
-    3.1,
+    3.15,
     5.5
    ],
    [
     "/1+",
     "vise 5.5",
     "Manchester City više od 5.5 kornera",
-    1.32,
+    1.31,
     5.5
    ],
    [
@@ -13566,7 +13392,7 @@
     "/1+",
     "vise 6.5",
     "Manchester City više od 6.5 kornera",
-    1.57,
+    1.56,
     6.5
    ],
    [
@@ -13688,42 +13514,42 @@
     ".1-",
     "manje 0.5",
     "Manchester City će imati manje od 0.5 kartona na u",
-    2.55,
+    2.62,
     0.5
    ],
    [
     ".1+",
     "vise 0.5",
     "Manchester City će imati više od 0.5 kartona na ut",
-    1.41,
+    1.39,
     0.5
    ],
    [
     ".1-",
     "manje 1.5",
     "Manchester City će imati manje od 1.5 kartona na u",
-    1.31,
+    1.33,
     1.5
    ],
    [
     ".1+",
     "vise 1.5",
     "Manchester City će imati više od 1.5 kartona na ut",
-    2.95,
+    2.82,
     1.5
    ],
    [
     ".1-",
     "manje 2.5",
     "Manchester City će imati manje od 2.5 kartona na u",
-    1.04,
+    1.05,
     2.5
    ],
    [
     ".1+",
     "vise 2.5",
     "Manchester City će imati više od 2.5 kartona na ut",
-    6.5,
+    6.2,
     2.5
    ]
   ]
@@ -13735,42 +13561,42 @@
     ".2-",
     "manje 0.5",
     "Ipswich će imati manje od 0.5 kartona na utakmici ",
-    5.85,
+    5.6,
     0.5
    ],
    [
     ".2+",
     "vise 0.5",
     "Ipswich će imati više od 0.5 kartona na utakmici (",
-    1.06,
+    1.07,
     0.5
    ],
    [
     ".2-",
     "manje 1.5",
     "Ipswich će imati manje od 1.5 kartona na utakmici ",
-    2.42,
+    2.32,
     1.5
    ],
    [
     ".2+",
     "vise 1.5",
     "Ipswich će imati više od 1.5 kartona na utakmici (",
-    1.47,
+    1.51,
     1.5
    ],
    [
     ".2-",
     "manje 2.5",
     "Ipswich će imati manje od 2.5 kartona na utakmici ",
-    1.46,
+    1.42,
     2.5
    ],
    [
     ".2+",
     "vise 2.5",
     "Ipswich će imati više od 2.5 kartona na utakmici (",
-    2.45,
+    2.52,
     2.5
    ]
   ]
@@ -13780,17 +13606,17 @@
   "primer": [
    [
     "*11-",
-    "manje 6.5",
-    "Manchester City će imati manje od 6.5 šuteva u okv",
-    2.1,
-    6.5
+    "manje 7.5",
+    "Manchester City će imati manje od 7.5 šuteva u okv",
+    1.66,
+    7.5
    ],
    [
     "*11+",
-    "vise 6.5",
-    "Manchester City će imati više od 6.5 šuteva u okvi",
-    1.63,
-    6.5
+    "vise 7.5",
+    "Manchester City će imati više od 7.5 šuteva u okvi",
+    2.07,
+    7.5
    ]
   ]
  },
@@ -13799,17 +13625,17 @@
   "primer": [
    [
     "*12-",
-    "manje 2.5",
-    "Ipswich će imati manje od 2.5 šuteva u okvir gola",
-    2.15,
-    2.5
+    "manje 3.5",
+    "Ipswich će imati manje od 3.5 šuteva u okvir gola",
+    1.55,
+    3.5
    ],
    [
     "*12+",
-    "vise 2.5",
-    "Ipswich će imati više od 2.5 šuteva u okvir gola",
-    1.6,
-    2.5
+    "vise 3.5",
+    "Ipswich će imati više od 3.5 šuteva u okvir gola",
+    2.25,
+    3.5
    ]
   ]
  },
@@ -13827,7 +13653,7 @@
     "",
     "vise 19.5",
     "Manchester City više od 19.5 šuteva",
-    1.77,
+    1.76,
     19.5
    ]
   ]
@@ -13839,14 +13665,14 @@
     "",
     "manje 8.5",
     "Ipswich manje od 8.5 šuteva",
-    1.83,
+    1.82,
     8.5
    ],
    [
     "",
     "vise 8.5",
     "Ipswich više od 8.5 šuteva",
-    1.87,
+    1.88,
     8.5
    ]
   ]
@@ -13858,14 +13684,14 @@
     "/*01-",
     "manje 8.5",
     "Manchester City manje od 8.5 faulova",
-    2.07,
+    2.02,
     8.5
    ],
    [
     "/*01+",
     "vise 8.5",
     "Manchester City više od 8.5 faulova",
-    1.67,
+    1.63,
     8.5
    ]
   ]
@@ -13896,7 +13722,7 @@
     "/1-",
     "manje 0.5",
     "Newcastle manje od 0.5 kornera",
-    40.0,
+    39.0,
     0.5
    ],
    [
@@ -13992,14 +13818,14 @@
     "/2-",
     "manje 1.5",
     "Aston Villa će imati manje od 1.5 kornera",
-    7.6,
+    7.7,
     1.5
    ],
    [
     "/2+",
     "vise 1.5",
     "Aston Villa će imati više od 1.5 kornera",
-    1.06,
+    1.05,
     1.5
    ],
    [
@@ -14074,42 +13900,42 @@
     ".1-",
     "manje 0.5",
     "Newcastle će imati manje od 0.5 kartona na utakmic",
-    4.25,
+    5.0,
     0.5
    ],
    [
     ".1+",
     "vise 0.5",
     "Newcastle će imati više od 0.5 kartona na utakmici",
-    1.14,
+    1.1,
     0.5
    ],
    [
     ".1-",
     "manje 1.5",
     "Newcastle će imati manje od 1.5 kartona na utakmic",
-    1.88,
+    2.12,
     1.5
    ],
    [
     ".1+",
     "vise 1.5",
     "Newcastle će imati više od 1.5 kartona na utakmici",
-    1.82,
+    1.62,
     1.5
    ],
    [
     ".1-",
     "manje 2.5",
     "Newcastle će imati manje od 2.5 kartona na utakmic",
-    1.24,
+    1.34,
     2.5
    ],
    [
     ".1+",
     "vise 2.5",
     "Newcastle će imati više od 2.5 kartona na utakmici",
-    3.3,
+    2.8,
     2.5
    ]
   ]
@@ -14142,7 +13968,7 @@
     ".2+",
     "vise 2.5",
     "Aston Villa će imati više od 2.5 kartona na utakmi",
-    2.2,
+    2.22,
     2.5
    ],
    [
@@ -14175,7 +14001,7 @@
     "*11+",
     "vise 4.5",
     "Newcastle će imati više od 4.5 šuteva u okvir gola",
-    1.74,
+    1.73,
     4.5
    ]
   ]
@@ -14263,14 +14089,14 @@
     "/*02-",
     "manje 10.5",
     "Aston Villa manje od 10.5 faulova",
-    1.83,
+    1.82,
     10.5
    ],
    [
     "/*02+",
     "vise 10.5",
     "Aston Villa više od 10.5 faulova",
-    1.8,
+    1.82,
     10.5
    ]
   ]
@@ -14280,73 +14106,87 @@
   "primer": [
    [
     "/1-",
+    "manje 0.5",
+    "Nottingham Forest manje od 0.5 kornera",
+    14.0,
+    0.5
+   ],
+   [
+    "/1-",
     "manje 1.5",
     "Nottingham Forest manje od 1.5 kornera",
-    5.55,
+    5.35,
     1.5
    ],
    [
     "/1+",
     "vise 1.5",
     "Nottingham Forest više od 1.5 kornera",
-    1.11,
+    1.12,
     1.5
    ],
    [
     "/1-",
     "manje 2.5",
     "Nottingham Forest manje od 2.5 kornera",
-    3.0,
+    2.9,
     2.5
    ],
    [
     "/1+",
     "vise 2.5",
     "Nottingham Forest više od 2.5 kornera",
-    1.34,
+    1.36,
     2.5
    ],
    [
     "/1-",
     "manje 3.5",
     "Nottingham Forest manje od 3.5 kornera",
-    1.97,
+    1.92,
     3.5
    ],
    [
     "/1+",
     "vise 3.5",
     "Nottingham Forest više od 3.5 kornera",
-    1.75,
+    1.78,
     3.5
    ],
    [
     "/1-",
     "manje 4.5",
     "Nottingham Forest manje od 4.5 kornera",
-    1.5,
+    1.47,
     4.5
    ],
    [
     "/1+",
     "vise 4.5",
     "Nottingham Forest više od 4.5 kornera",
-    2.42,
+    2.5,
     4.5
    ],
    [
     "/1-",
     "manje 5.5",
     "Nottingham Forest manje od 5.5 kornera",
-    1.25,
+    1.24,
     5.5
    ],
    [
     "/1+",
     "vise 5.5",
     "Nottingham Forest više od 5.5 kornera",
-    3.55,
+    3.7,
     5.5
+   ],
+   [
+    "/1-",
+    "manje 6.5",
+    "Nottingham Forest manje od 6.5 kornera",
+    1.11,
+    6.5
    ]
   ]
  },
@@ -14355,73 +14195,87 @@
   "primer": [
    [
     "/2-",
+    "manje 0.5",
+    "Arsenal će imati manje od 0.5 kornera",
+    40.0,
+    0.5
+   ],
+   [
+    "/2-",
+    "manje 1.5",
+    "Arsenal će imati manje od 1.5 kornera",
+    13.0,
+    1.5
+   ],
+   [
+    "/2+",
+    "vise 1.5",
+    "Arsenal će imati više od 1.5 kornera",
+    1.02,
+    1.5
+   ],
+   [
+    "/2-",
+    "manje 2.5",
+    "Arsenal će imati manje od 2.5 kornera",
+    6.2,
+    2.5
+   ],
+   [
+    "/2+",
+    "vise 2.5",
+    "Arsenal će imati više od 2.5 kornera",
+    1.09,
+    2.5
+   ],
+   [
+    "/2-",
     "manje 3.5",
     "Arsenal će imati manje od 3.5 kornera",
-    3.6,
+    3.65,
     3.5
    ],
    [
     "/2+",
     "vise 3.5",
     "Arsenal će imati više od 3.5 kornera",
-    1.25,
+    1.24,
     3.5
    ],
    [
     "/2-",
     "manje 4.5",
     "Arsenal će imati manje od 4.5 kornera",
-    2.4,
+    2.45,
     4.5
    ],
    [
     "/2+",
     "vise 4.5",
     "Arsenal će imati više od 4.5 kornera",
-    1.51,
+    1.49,
     4.5
    ],
    [
     "/2-",
     "manje 5.5",
     "Arsenal će imati manje od 5.5 kornera",
-    1.78,
+    1.82,
     5.5
    ],
    [
     "/2+",
     "vise 5.5",
     "Arsenal će imati više od 5.5 kornera",
-    1.92,
+    1.9,
     5.5
    ],
    [
     "/2-",
     "manje 6.5",
     "Arsenal će imati manje od 6.5 kornera",
-    1.45,
+    1.46,
     6.5
-   ],
-   [
-    "/2+",
-    "vise 6.5",
-    "Arsenal će imati više od 6.5 kornera",
-    2.57,
-    6.5
-   ],
-   [
-    "/2-",
-    "manje 7.5",
-    "Arsenal će imati manje od 7.5 kornera",
-    1.24,
-    7.5
-   ],
-   [
-    "/2+",
-    "vise 7.5",
-    "Arsenal će imati više od 7.5 kornera",
-    3.65,
-    7.5
    ]
   ]
  },
@@ -14430,17 +14284,45 @@
   "primer": [
    [
     ".1-",
+    "manje 0.5",
+    "Nottingham Forest će imati manje od 0.5 kartona na",
+    5.15,
+    0.5
+   ],
+   [
+    ".1+",
+    "vise 0.5",
+    "Nottingham Forest će imati više od 0.5 kartona na ",
+    1.09,
+    0.5
+   ],
+   [
+    ".1-",
     "manje 1.5",
     "Nottingham Forest će imati manje od 1.5 kartona na",
-    2.22,
+    2.17,
     1.5
    ],
    [
     ".1+",
     "vise 1.5",
     "Nottingham Forest će imati više od 1.5 kartona na ",
-    1.56,
+    1.59,
     1.5
+   ],
+   [
+    ".1-",
+    "manje 2.5",
+    "Nottingham Forest će imati manje od 2.5 kartona na",
+    1.36,
+    2.5
+   ],
+   [
+    ".1+",
+    "vise 2.5",
+    "Nottingham Forest će imati više od 2.5 kartona na ",
+    2.75,
+    2.5
    ]
   ]
  },
@@ -14449,17 +14331,159 @@
   "primer": [
    [
     ".2-",
+    "manje 0.5",
+    "Arsenal će imati manje od 0.5 kartona na utakmici ",
+    3.8,
+    0.5
+   ],
+   [
+    ".2+",
+    "vise 0.5",
+    "Arsenal će imati više od 0.5 kartona na utakmici (",
+    1.18,
+    0.5
+   ],
+   [
+    ".2-",
     "manje 1.5",
     "Arsenal će imati manje od 1.5 kartona na utakmici ",
-    1.65,
+    1.72,
     1.5
    ],
    [
     ".2+",
     "vise 1.5",
     "Arsenal će imati više od 1.5 kartona na utakmici (",
-    2.1,
+    2.0,
     1.5
+   ],
+   [
+    ".2-",
+    "manje 2.5",
+    "Arsenal će imati manje od 2.5 kartona na utakmici ",
+    1.18,
+    2.5
+   ],
+   [
+    ".2+",
+    "vise 2.5",
+    "Arsenal će imati više od 2.5 kartona na utakmici (",
+    3.8,
+    2.5
+   ]
+  ]
+ },
+ "Nottingham Forest ukupno šuteva u okvir gola": {
+  "mecova": 1,
+  "primer": [
+   [
+    "*11-",
+    "manje 2.5",
+    "Nottingham Forest će imati manje od 2.5 šuteva u o",
+    2.17,
+    2.5
+   ],
+   [
+    "*11+",
+    "vise 2.5",
+    "Nottingham Forest će imati više od 2.5 šuteva u ok",
+    1.59,
+    2.5
+   ]
+  ]
+ },
+ "Arsenal ukupno šuteva u okvir gola": {
+  "mecova": 1,
+  "primer": [
+   [
+    "*12-",
+    "manje 4.5",
+    "Arsenal će imati manje od 4.5 šuteva u okvir gola",
+    1.88,
+    4.5
+   ],
+   [
+    "*12+",
+    "vise 4.5",
+    "Arsenal će imati više od 4.5 šuteva u okvir gola",
+    1.82,
+    4.5
+   ]
+  ]
+ },
+ "Ukupno šuteva Nottingham Forest": {
+  "mecova": 1,
+  "primer": [
+   [
+    "",
+    "manje 10.5",
+    "Nottingham Forest manje od 10.5 šuteva,",
+    1.74,
+    10.5
+   ],
+   [
+    "",
+    "vise 10.5",
+    "Nottingham Forest više od 10.5 šuteva",
+    1.97,
+    10.5
+   ]
+  ]
+ },
+ "Ukupno šuteva Arsenal": {
+  "mecova": 1,
+  "primer": [
+   [
+    "",
+    "manje 14.5",
+    "Arsenal manje od 14.5 šuteva",
+    1.88,
+    14.5
+   ],
+   [
+    "",
+    "vise 14.5",
+    "Arsenal više od 14.5 šuteva",
+    1.83,
+    14.5
+   ]
+  ]
+ },
+ "Nottingham Forest Ukupno faulova": {
+  "mecova": 1,
+  "primer": [
+   [
+    "/*01-",
+    "manje 12.5",
+    "Nottingham Forest manje od 12.5 faulova",
+    1.83,
+    12.5
+   ],
+   [
+    "/*01+",
+    "vise 12.5",
+    "Nottingham Forest više od 12.5 faulova",
+    1.8,
+    12.5
+   ]
+  ]
+ },
+ "Arsenal Ukupno faulova": {
+  "mecova": 1,
+  "primer": [
+   [
+    "/*02-",
+    "manje 10.5",
+    "Arsenal manje od 10.5 faulova",
+    1.77,
+    10.5
+   ],
+   [
+    "/*02+",
+    "vise 10.5",
+    "Arsenal više od 10.5 faulova",
+    1.87,
+    10.5
    ]
   ]
  },
@@ -14545,70 +14569,70 @@
     "/2-",
     "manje 1.5",
     "Coventry City će imati manje od 1.5 kornera",
-    5.3,
+    5.5,
     1.5
    ],
    [
     "/2+",
     "vise 1.5",
     "Coventry City će imati više od 1.5 kornera",
-    1.12,
+    1.11,
     1.5
    ],
    [
     "/2-",
     "manje 2.5",
     "Coventry City će imati manje od 2.5 kornera",
-    2.9,
+    3.0,
     2.5
    ],
    [
     "/2+",
     "vise 2.5",
     "Coventry City će imati više od 2.5 kornera",
-    1.36,
+    1.34,
     2.5
    ],
    [
     "/2-",
     "manje 3.5",
     "Coventry City će imati manje od 3.5 kornera",
-    1.92,
+    1.97,
     3.5
    ],
    [
     "/2+",
     "vise 3.5",
     "Coventry City će imati više od 3.5 kornera",
-    1.8,
+    1.75,
     3.5
    ],
    [
     "/2-",
     "manje 4.5",
     "Coventry City će imati manje od 4.5 kornera",
-    1.47,
+    1.49,
     4.5
    ],
    [
     "/2+",
     "vise 4.5",
     "Coventry City će imati više od 4.5 kornera",
-    2.5,
+    2.45,
     4.5
    ],
    [
     "/2-",
     "manje 5.5",
     "Coventry City će imati manje od 5.5 kornera",
-    1.24,
+    1.25,
     5.5
    ],
    [
     "/2+",
     "vise 5.5",
     "Coventry City će imati više od 5.5 kornera",
-    3.7,
+    3.55,
     5.5
    ]
   ]
@@ -14620,14 +14644,14 @@
     ".1-",
     "manje 1.5",
     "Tottenham će imati manje od 1.5 kartona na utakmic",
-    1.62,
+    1.67,
     1.5
    ],
    [
     ".1+",
     "vise 1.5",
     "Tottenham će imati više od 1.5 kartona na utakmici",
-    2.12,
+    2.05,
     1.5
    ]
   ]
@@ -14639,15 +14663,236 @@
     ".2-",
     "manje 1.5",
     "Coventry City će imati manje od 1.5 kartona na uta",
-    2.27,
+    2.25,
     1.5
    ],
    [
     ".2+",
     "vise 1.5",
     "Coventry City će imati više od 1.5 kartona na utak",
-    1.54,
+    1.55,
     1.5
+   ]
+  ]
+ },
+ "1X2 & ukupno golova Arsenal (0.5)": {
+  "mecova": 1,
+  "primer": [
+   [
+    "0-",
+    "x & manje 0.5",
+    "nerešeno i Arsenal manje od 0.5 gola na utakmici",
+    10.0,
+    0.5
+   ],
+   [
+    "2-",
+    "2 & manje 0.5",
+    "Everton pobednik i Arsenal manje od 0.5 gola na ut",
+    10.0,
+    0.5
+   ],
+   [
+    "1+",
+    "1 & vise 0.5",
+    "Arsenal pobednik i Arsenal više od 0.5 gola na uta",
+    1.34,
+    0.5
+   ],
+   [
+    "0+",
+    "x & vise 0.5",
+    "nerešeno i Arsenal više od 0.5 gola na utakmici",
+    6.0,
+    0.5
+   ],
+   [
+    "2+",
+    "2 & vise 0.5",
+    "Everton pobednik i Arsenal više od 0.5 gola na uta",
+    12.0,
+    0.5
+   ]
+  ]
+ },
+ "1X2 & ukupno golova Arsenal (1.5)": {
+  "mecova": 1,
+  "primer": [
+   [
+    "1-",
+    "1 & manje 1.5",
+    "Arsenal pobednik i Arsenal manje od 1.5 gola na ut",
+    5.9,
+    1.5
+   ],
+   [
+    "0-",
+    "x & manje 1.5",
+    "nerešeno i Arsenal manje od 1.5 gola na utakmici",
+    5.25,
+    1.5
+   ],
+   [
+    "2-",
+    "2 & manje 1.5",
+    "Everton pobednik i Arsenal manje od 1.5 gola na ut",
+    7.2,
+    1.5
+   ],
+   [
+    "1+",
+    "1 & vise 1.5",
+    "Arsenal pobednik i Arsenal više od 1.5 gola na uta",
+    1.63,
+    1.5
+   ],
+   [
+    "0+",
+    "x & vise 1.5",
+    "nerešeno i Arsenal više od 1.5 gola na utakmici",
+    15.0,
+    1.5
+   ],
+   [
+    "2+",
+    "2 & vise 1.5",
+    "Everton pobednik i Arsenal više od 1.5 gola na uta",
+    39.0,
+    1.5
+   ]
+  ]
+ },
+ "1X2 & ukupno golova Arsenal (2.5)": {
+  "mecova": 1,
+  "primer": [
+   [
+    "1-",
+    "1 & manje 2.5",
+    "Arsenal pobednik i Arsenal manje od 2.5 gola na ut",
+    2.5,
+    2.5
+   ],
+   [
+    "0-",
+    "x & manje 2.5",
+    "nerešeno i Arsenal manje od 2.5 gola na utakmici",
+    4.5,
+    2.5
+   ],
+   [
+    "2-",
+    "2 & manje 2.5",
+    "Everton pobednik i Arsenal manje od 2.5 gola na ut",
+    6.8,
+    2.5
+   ],
+   [
+    "1+",
+    "1 & vise 2.5",
+    "Arsenal pobednik i Arsenal više od 2.5 gola na uta",
+    2.6,
+    2.5
+   ],
+   [
+    "0+",
+    "x & vise 2.5",
+    "nerešeno i Arsenal više od 2.5 gola na utakmici",
+    55.0,
+    2.5
+   ],
+   [
+    "2+",
+    "2 & vise 2.5",
+    "Everton pobednik i Arsenal više od 2.5 gola na uta",
+    100.0,
+    2.5
+   ]
+  ]
+ },
+ "1X2 & ukupno golova Arsenal (3.5)": {
+  "mecova": 1,
+  "primer": [
+   [
+    "1-",
+    "1 & manje 3.5",
+    "Arsenal pobednik i Arsenal manje od 3.5 gola na ut",
+    1.72,
+    3.5
+   ],
+   [
+    "0-",
+    "x & manje 3.5",
+    "nerešeno i Arsenal manje od 3.5 gola na utakmici",
+    4.4,
+    3.5
+   ],
+   [
+    "2-",
+    "2 & manje 3.5",
+    "Everton pobednik i Arsenal manje od 3.5 gola na ut",
+    6.7,
+    3.5
+   ],
+   [
+    "1+",
+    "1 & vise 3.5",
+    "Arsenal pobednik i Arsenal više od 3.5 gola na uta",
+    5.0,
+    3.5
+   ],
+   [
+    "0+",
+    "x & vise 3.5",
+    "nerešeno i Arsenal više od 3.5 gola na utakmici",
+    125.0,
+    3.5
+   ],
+   [
+    "2+",
+    "2 & vise 3.5",
+    "Everton pobednik i Arsenal više od 3.5 gola na uta",
+    125.0,
+    3.5
+   ]
+  ]
+ },
+ "1X2 & ukupno golova Arsenal (4.5)": {
+  "mecova": 1,
+  "primer": [
+   [
+    "1-",
+    "1 & manje 4.5",
+    "Arsenal pobednik i Arsenal manje od 4.5 gola na ut",
+    1.47,
+    4.5
+   ],
+   [
+    "0-",
+    "x & manje 4.5",
+    "nerešeno i Arsenal manje od 4.5 gola na utakmici",
+    4.4,
+    4.5
+   ],
+   [
+    "2-",
+    "2 & manje 4.5",
+    "Everton pobednik i Arsenal manje od 4.5 gola na ut",
+    6.7,
+    4.5
+   ],
+   [
+    "1+",
+    "1 & vise 4.5",
+    "Arsenal pobednik i Arsenal više od 4.5 gola na uta",
+    10.0,
+    4.5
+   ],
+   [
+    "0+",
+    "x & vise 4.5",
+    "nerešeno i Arsenal više od 4.5 gola na utakmici",
+    125.0,
+    4.5
    ]
   ]
  },
@@ -14684,21 +14929,21 @@
     "0-",
     "x & manje 1.5",
     "nerešeno i Aston Villa manje od 1.5 gola na utakmi",
-    5.3,
+    5.25,
     1.5
    ],
    [
     "2-",
     "2 & manje 1.5",
     "Manchester City pobednik i Aston Villa manje od 1.",
-    1.92,
+    1.95,
     1.5
    ],
    [
     "1+",
     "1 & vise 1.5",
     "Aston Villa pobednik i Aston Villa više od 1.5 gol",
-    5.0,
+    4.9,
     1.5
    ],
    [
@@ -14759,7 +15004,7 @@
     "2+",
     "2 & vise 2.5",
     "Manchester City pobednik i Aston Villa više od 2.5",
-    31.0,
+    32.0,
     2.5
    ]
   ]
@@ -14771,21 +15016,21 @@
     "1-",
     "1 & manje 3.5",
     "Aston Villa pobednik i Aston Villa manje od 3.5 go",
-    4.5,
+    4.45,
     3.5
    ],
    [
     "0-",
     "x & manje 3.5",
     "nerešeno i Aston Villa manje od 3.5 gola na utakmi",
-    3.75,
+    3.7,
     3.5
    ],
    [
     "2-",
     "2 & manje 3.5",
     "Manchester City pobednik i Aston Villa manje od 3.",
-    1.67,
+    1.68,
     3.5
    ],
    [
@@ -14806,7 +15051,7 @@
     "2+",
     "2 & vise 3.5",
     "Manchester City pobednik i Aston Villa više od 3.5",
-    90.0,
+    100.0,
     3.5
    ]
   ]
@@ -14832,7 +15077,7 @@
     "2-",
     "2 & manje 4.5",
     "Manchester City pobednik i Aston Villa manje od 4.",
-    1.67,
+    1.68,
     4.5
    ],
    [
@@ -14884,35 +15129,35 @@
     "1-",
     "1 & manje 1.5",
     "Chelsea pobednik i Chelsea manje od 1.5 gola na ut",
-    8.3,
+    8.2,
     1.5
    ],
    [
     "0-",
     "x & manje 1.5",
     "nerešeno i Chelsea manje od 1.5 gola na utakmici",
-    5.2,
+    5.15,
     1.5
    ],
    [
     "2-",
     "2 & manje 1.5",
     "Tottenham pobednik i Chelsea manje od 1.5 gola na ",
-    4.15,
+    4.2,
     1.5
    ],
    [
     "1+",
     "1 & vise 1.5",
     "Chelsea pobednik i Chelsea više od 1.5 gola na uta",
-    2.1,
+    2.07,
     1.5
    ],
    [
     "0+",
     "x & vise 1.5",
     "nerešeno i Chelsea više od 1.5 gola na utakmici",
-    8.0,
+    8.1,
     1.5
    ],
    [
@@ -14945,7 +15190,7 @@
     "2-",
     "2 & manje 2.5",
     "Tottenham pobednik i Chelsea manje od 2.5 gola na ",
-    3.6,
+    3.7,
     2.5
    ],
    [
@@ -14978,7 +15223,7 @@
     "1-",
     "1 & manje 3.5",
     "Chelsea pobednik i Chelsea manje od 3.5 gola na ut",
-    2.27,
+    2.25,
     3.5
    ],
    [
@@ -14992,14 +15237,14 @@
     "2-",
     "2 & manje 3.5",
     "Tottenham pobednik i Chelsea manje od 3.5 gola na ",
-    3.55,
+    3.6,
     3.5
    ],
    [
     "1+",
     "1 & vise 3.5",
     "Chelsea pobednik i Chelsea više od 3.5 gola na uta",
-    6.3,
+    6.2,
     3.5
    ],
    [
@@ -15025,7 +15270,7 @@
     "1-",
     "1 & manje 4.5",
     "Chelsea pobednik i Chelsea manje od 4.5 gola na ut",
-    1.95,
+    1.92,
     4.5
    ],
    [
@@ -15039,14 +15284,14 @@
     "2-",
     "2 & manje 4.5",
     "Tottenham pobednik i Chelsea manje od 4.5 gola na ",
-    3.5,
+    3.6,
     4.5
    ],
    [
     "1+",
     "1 & vise 4.5",
     "Chelsea pobednik i Chelsea više od 4.5 gola na uta",
-    14.0,
+    13.0,
     4.5
    ],
    [
@@ -15072,14 +15317,14 @@
     "1",
     "da",
     "Chelsea pobeđuje bar jedno poluvreme",
-    1.42,
+    1.41,
     null
    ],
    [
     "2",
     "ne",
     "Chelsea ne pobeđuje bar jedno poluvreme",
-    2.67,
+    2.7,
     null
    ]
   ]
@@ -15098,55 +15343,8 @@
     "2",
     "ne",
     "Coventry City ne pobeđuje bar jedno poluvreme",
-    1.83,
+    1.82,
     null
-   ]
-  ]
- },
- "1X2 & ukupno golova Crystal Palace (2.5)": {
-  "mecova": 1,
-  "primer": [
-   [
-    "1-",
-    "1 & manje 2.5",
-    "Crystal Palace pobednik i Crystal Palace manje od ",
-    4.25,
-    2.5
-   ],
-   [
-    "0-",
-    "x & manje 2.5",
-    "nerešeno i Crystal Palace manje od 2.5 gola na uta",
-    3.5,
-    2.5
-   ],
-   [
-    "2-",
-    "2 & manje 2.5",
-    "Newcastle pobednik i Crystal Palace manje od 2.5 g",
-    2.47,
-    2.5
-   ],
-   [
-    "1+",
-    "1 & vise 2.5",
-    "Crystal Palace pobednik i Crystal Palace više od 2",
-    5.0,
-    2.5
-   ],
-   [
-    "0+",
-    "x & vise 2.5",
-    "nerešeno i Crystal Palace više od 2.5 gola na utak",
-    21.0,
-    2.5
-   ],
-   [
-    "2+",
-    "2 & vise 2.5",
-    "Newcastle pobednik i Crystal Palace više od 2.5 go",
-    37.0,
-    2.5
    ]
   ]
  },
@@ -15171,7 +15369,7 @@
     "2-",
     "2 & manje 3.5",
     "Newcastle pobednik i Crystal Palace manje od 3.5 g",
-    2.42,
+    2.4,
     3.5
    ],
    [
@@ -15185,7 +15383,7 @@
     "0+",
     "x & vise 3.5",
     "nerešeno i Crystal Palace više od 3.5 gola na utak",
-    70.0,
+    75.0,
     3.5
    ],
    [
@@ -15204,21 +15402,21 @@
     "1-",
     "1 & manje 4.5",
     "Crystal Palace pobednik i Crystal Palace manje od ",
-    2.65,
+    2.67,
     4.5
    ],
    [
     "0-",
     "x & manje 4.5",
     "nerešeno i Crystal Palace manje od 4.5 gola na uta",
-    3.25,
+    3.3,
     4.5
    ],
    [
     "2-",
     "2 & manje 4.5",
     "Newcastle pobednik i Crystal Palace manje od 4.5 g",
-    2.4,
+    2.37,
     4.5
    ],
    [
@@ -15251,7 +15449,7 @@
     "1",
     "da",
     "Crystal Palace pobeđuje bar jedno poluvreme",
-    1.76,
+    1.77,
     null
    ],
    [
@@ -15270,14 +15468,14 @@
     "1-",
     "1 & manje 2.5",
     "Hull City pobednik i Hull City manje od 2.5 gola n",
-    5.65,
+    5.6,
     2.5
    ],
    [
     "0-",
     "x & manje 2.5",
     "nerešeno i Hull City manje od 2.5 gola na utakmici",
-    3.75,
+    3.8,
     2.5
    ],
    [
@@ -15298,7 +15496,7 @@
     "0+",
     "x & vise 2.5",
     "nerešeno i Hull City više od 2.5 gola na utakmici",
-    30.0,
+    31.0,
     2.5
    ],
    [
@@ -15324,7 +15522,7 @@
     "0-",
     "x & manje 3.5",
     "nerešeno i Hull City manje od 3.5 gola na utakmici",
-    3.6,
+    3.65,
     3.5
    ],
    [
@@ -15430,7 +15628,7 @@
     "1-",
     "1 & manje 2.5",
     "Ipswich pobednik i Ipswich manje od 2.5 gola na ut",
-    4.25,
+    4.3,
     2.5
    ],
    [
@@ -15444,14 +15642,14 @@
     "2-",
     "2 & manje 2.5",
     "Nottingham Forest pobednik i Ipswich manje od 2.5 ",
-    2.22,
+    2.2,
     2.5
    ],
    [
     "1+",
     "1 & vise 2.5",
     "Ipswich pobednik i Ipswich više od 2.5 gola na uta",
-    6.3,
+    6.4,
     2.5
    ],
    [
@@ -15477,7 +15675,7 @@
     "1-",
     "1 & manje 3.5",
     "Ipswich pobednik i Ipswich manje od 3.5 gola na ut",
-    3.2,
+    3.25,
     3.5
    ],
    [
@@ -15491,21 +15689,21 @@
     "2-",
     "2 & manje 3.5",
     "Nottingham Forest pobednik i Ipswich manje od 3.5 ",
-    2.2,
+    2.17,
     3.5
    ],
    [
     "1+",
     "1 & vise 3.5",
     "Ipswich pobednik i Ipswich više od 3.5 gola na uta",
-    14.0,
+    15.0,
     3.5
    ],
    [
     "0+",
     "x & vise 3.5",
     "nerešeno i Ipswich više od 3.5 gola na utakmici",
-    85.0,
+    90.0,
     3.5
    ],
    [
@@ -15578,7 +15776,7 @@
     "2",
     "ne",
     "Ipswich ne pobeđuje bar jedno poluvreme",
-    1.77,
+    1.76,
     null
    ]
   ]
@@ -15597,7 +15795,7 @@
     "0-",
     "x & manje 3.5",
     "nerešeno i Liverpool manje od 3.5 gola na utakmici",
-    3.45,
+    3.5,
     3.5
    ],
    [
@@ -15703,35 +15901,35 @@
     "1-",
     "1 & manje 1.5",
     "Manchester United pobednik i Manchester United man",
-    9.5,
+    9.4,
     1.5
    ],
    [
     "0-",
     "x & manje 1.5",
     "nerešeno i Manchester United manje od 1.5 gola na ",
-    5.65,
+    5.7,
     1.5
    ],
    [
     "2-",
     "2 & manje 1.5",
     "Bournemouth pobednik i Manchester United manje od ",
-    4.3,
+    4.35,
     1.5
    ],
    [
     "1+",
     "1 & vise 1.5",
     "Manchester United pobednik i Manchester United viš",
-    2.02,
+    1.97,
     1.5
    ],
    [
     "0+",
     "x & vise 1.5",
     "nerešeno i Manchester United više od 1.5 gola na u",
-    7.3,
+    7.5,
     1.5
    ],
    [
@@ -15757,28 +15955,28 @@
     "0-",
     "x & manje 2.5",
     "nerešeno i Manchester United manje od 2.5 gola na ",
-    4.0,
+    4.1,
     2.5
    ],
    [
     "2-",
     "2 & manje 2.5",
     "Bournemouth pobednik i Manchester United manje od ",
-    3.65,
+    3.7,
     2.5
    ],
    [
     "1+",
     "1 & vise 2.5",
     "Manchester United pobednik i Manchester United viš",
-    3.0,
+    2.95,
     2.5
    ],
    [
     "0+",
     "x & vise 2.5",
     "nerešeno i Manchester United više od 2.5 gola na u",
-    19.0,
+    20.0,
     2.5
    ],
    [
@@ -15797,28 +15995,28 @@
     "1-",
     "1 & manje 3.5",
     "Manchester United pobednik i Manchester United man",
-    2.37,
+    2.35,
     3.5
    ],
    [
     "0-",
     "x & manje 3.5",
     "nerešeno i Manchester United manje od 3.5 gola na ",
-    3.7,
+    3.75,
     3.5
    ],
    [
     "2-",
     "2 & manje 3.5",
     "Bournemouth pobednik i Manchester United manje od ",
-    3.55,
+    3.6,
     3.5
    ],
    [
     "1+",
     "1 & vise 3.5",
     "Manchester United pobednik i Manchester United viš",
-    5.5,
+    5.4,
     3.5
    ],
    [
@@ -15851,14 +16049,14 @@
     "0-",
     "x & manje 4.5",
     "nerešeno i Manchester United manje od 4.5 gola na ",
-    3.65,
+    3.7,
     4.5
    ],
    [
     "2-",
     "2 & manje 4.5",
     "Bournemouth pobednik i Manchester United manje od ",
-    3.55,
+    3.6,
     4.5
    ],
    [
@@ -15891,14 +16089,261 @@
     "1",
     "da",
     "Manchester United pobeđuje bar jedno poluvreme",
-    1.39,
+    1.38,
     null
    ],
    [
     "2",
     "ne",
     "Manchester United ne pobeđuje bar jedno poluvreme",
-    2.77,
+    2.8,
+    null
+   ]
+  ]
+ },
+ "1X2 & ukupno golova Sunderland (0.5)": {
+  "mecova": 1,
+  "primer": [
+   [
+    "0-",
+    "x & manje 0.5",
+    "nerešeno i Sunderland manje od 0.5 gola na utakmic",
+    8.0,
+    0.5
+   ],
+   [
+    "2-",
+    "2 & manje 0.5",
+    "Leeds United pobednik i Sunderland manje od 0.5 go",
+    4.0,
+    0.5
+   ],
+   [
+    "1+",
+    "1 & vise 0.5",
+    "Sunderland pobednik i Sunderland više od 0.5 gola ",
+    2.67,
+    0.5
+   ],
+   [
+    "0+",
+    "x & vise 0.5",
+    "nerešeno i Sunderland više od 0.5 gola na utakmici",
+    4.15,
+    0.5
+   ],
+   [
+    "2+",
+    "2 & vise 0.5",
+    "Leeds United pobednik i Sunderland više od 0.5 gol",
+    4.8,
+    0.5
+   ]
+  ]
+ },
+ "1X2 & ukupno golova Sunderland (1.5)": {
+  "mecova": 1,
+  "primer": [
+   [
+    "1-",
+    "1 & manje 1.5",
+    "Sunderland pobednik i Sunderland manje od 1.5 gola",
+    7.4,
+    1.5
+   ],
+   [
+    "0-",
+    "x & manje 1.5",
+    "nerešeno i Sunderland manje od 1.5 gola na utakmic",
+    3.85,
+    1.5
+   ],
+   [
+    "2-",
+    "2 & manje 1.5",
+    "Leeds United pobednik i Sunderland manje od 1.5 go",
+    2.6,
+    1.5
+   ],
+   [
+    "1+",
+    "1 & vise 1.5",
+    "Sunderland pobednik i Sunderland više od 1.5 gola ",
+    3.6,
+    1.5
+   ],
+   [
+    "0+",
+    "x & vise 1.5",
+    "nerešeno i Sunderland više od 1.5 gola na utakmici",
+    9.9,
+    1.5
+   ],
+   [
+    "2+",
+    "2 & vise 1.5",
+    "Leeds United pobednik i Sunderland više od 1.5 gol",
+    16.0,
+    1.5
+   ]
+  ]
+ },
+ "1X2 & ukupno golova Sunderland (2.5)": {
+  "mecova": 1,
+  "primer": [
+   [
+    "1-",
+    "1 & manje 2.5",
+    "Sunderland pobednik i Sunderland manje od 2.5 gola",
+    3.75,
+    2.5
+   ],
+   [
+    "0-",
+    "x & manje 2.5",
+    "nerešeno i Sunderland manje od 2.5 gola na utakmic",
+    3.2,
+    2.5
+   ],
+   [
+    "2-",
+    "2 & manje 2.5",
+    "Leeds United pobednik i Sunderland manje od 2.5 go",
+    2.4,
+    2.5
+   ],
+   [
+    "1+",
+    "1 & vise 2.5",
+    "Sunderland pobednik i Sunderland više od 2.5 gola ",
+    6.8,
+    2.5
+   ],
+   [
+    "0+",
+    "x & vise 2.5",
+    "nerešeno i Sunderland više od 2.5 gola na utakmici",
+    37.0,
+    2.5
+   ],
+   [
+    "2+",
+    "2 & vise 2.5",
+    "Leeds United pobednik i Sunderland više od 2.5 gol",
+    65.0,
+    2.5
+   ]
+  ]
+ },
+ "1X2 & ukupno golova Sunderland (3.5)": {
+  "mecova": 1,
+  "primer": [
+   [
+    "1-",
+    "1 & manje 3.5",
+    "Sunderland pobednik i Sunderland manje od 3.5 gola",
+    2.95,
+    3.5
+   ],
+   [
+    "0-",
+    "x & manje 3.5",
+    "nerešeno i Sunderland manje od 3.5 gola na utakmic",
+    3.1,
+    3.5
+   ],
+   [
+    "2-",
+    "2 & manje 3.5",
+    "Leeds United pobednik i Sunderland manje od 3.5 go",
+    2.37,
+    3.5
+   ],
+   [
+    "1+",
+    "1 & vise 3.5",
+    "Sunderland pobednik i Sunderland više od 3.5 gola ",
+    16.0,
+    3.5
+   ],
+   [
+    "0+",
+    "x & vise 3.5",
+    "nerešeno i Sunderland više od 3.5 gola na utakmici",
+    100.0,
+    3.5
+   ],
+   [
+    "2+",
+    "2 & vise 3.5",
+    "Leeds United pobednik i Sunderland više od 3.5 gol",
+    125.0,
+    3.5
+   ]
+  ]
+ },
+ "1X2 & ukupno golova Sunderland (4.5)": {
+  "mecova": 1,
+  "primer": [
+   [
+    "1-",
+    "1 & manje 4.5",
+    "Sunderland pobednik i Sunderland manje od 4.5 gola",
+    2.72,
+    4.5
+   ],
+   [
+    "0-",
+    "x & manje 4.5",
+    "nerešeno i Sunderland manje od 4.5 gola na utakmic",
+    3.1,
+    4.5
+   ],
+   [
+    "2-",
+    "2 & manje 4.5",
+    "Leeds United pobednik i Sunderland manje od 4.5 go",
+    2.37,
+    4.5
+   ],
+   [
+    "1+",
+    "1 & vise 4.5",
+    "Sunderland pobednik i Sunderland više od 4.5 gola ",
+    45.0,
+    4.5
+   ],
+   [
+    "0+",
+    "x & vise 4.5",
+    "nerešeno i Sunderland više od 4.5 gola na utakmici",
+    125.0,
+    4.5
+   ],
+   [
+    "2+",
+    "2 & vise 4.5",
+    "Leeds United pobednik i Sunderland više od 4.5 gol",
+    125.0,
+    4.5
+   ]
+  ]
+ },
+ "Sunderland pobeđuje bar jedno poluvreme": {
+  "mecova": 1,
+  "primer": [
+   [
+    "1",
+    "da",
+    "Sunderland pobeđuje bar jedno poluvreme",
+    1.92,
+    null
+   ],
+   [
+    "2",
+    "ne",
+    "Sunderland ne pobeđuje bar jedno poluvreme",
+    1.8,
     null
    ]
   ]
@@ -15910,21 +16355,21 @@
     "12",
     "1-2",
     "Malut United 1 ili 2 gola u svakom poluvremenu",
-    3.85,
+    4.0,
     2.0
    ],
    [
     "13",
     "1-3",
     "Malut United 1,2 ili 3 gola u svakom poluvremenu",
-    3.45,
+    3.7,
     3.0
    ],
    [
     "23",
     "2-3",
     "Malut United 2 ili 3 gola u svakom poluvremenu",
-    21.0,
+    24.0,
     3.0
    ]
   ]
@@ -15936,21 +16381,21 @@
     "12",
     "1-2",
     "Bali United 1 ili 2 gola u svakom poluvremenu",
-    3.45,
+    3.1,
     2.0
    ],
    [
     "13",
     "1-3",
     "Bali United 1,2 ili 3 gola u svakom poluvremenu",
-    3.0,
+    2.67,
     3.0
    ],
    [
     "23",
     "2-3",
     "Bali United 2 ili 3 gola u svakom poluvremenu",
-    17.0,
+    13.0,
     3.0
    ]
   ]
@@ -15962,14 +16407,14 @@
     "1",
     "da",
     "Malut United daje gol na utakmici",
-    1.24,
+    1.27,
     null
    ],
    [
     "2",
     "ne",
     "Malut United ne daje gol na utakmici",
-    3.6,
+    3.4,
     null
    ]
   ]
@@ -15981,14 +16426,14 @@
     "1",
     "da",
     "Bali United daje gol na utakmici",
-    1.18,
+    1.14,
     null
    ],
    [
     "2",
     "ne",
     "Bali United ne daje gol na utakmici",
-    4.3,
+    4.9,
     null
    ]
   ]
@@ -16000,7 +16445,7 @@
     "",
     "vise 0.5 & vise 0.5",
     "Malut United daje više od 0.5 golova u 1. poluvrem",
-    3.4,
+    3.6,
     2.0
    ],
    [
@@ -16014,28 +16459,28 @@
     "",
     "vise 0.5 & vise 1.5",
     "Malut United daje više od 0.5 golova u 1. poluvrem",
-    7.9,
+    8.5,
     2.0
    ],
    [
     "",
     "vise 0.5 & manje 1.5",
     "Malut United daje više od 0.5 golova u 1. poluvrem",
-    2.4,
+    2.42,
     2.0
    ],
    [
     "",
     "vise 0.5 & vise 2.5",
     "Malut United daje više od 0.5 golova u 1. poluvrem",
-    22.0,
+    25.0,
     2.0
    ],
    [
     "",
     "vise 0.5 & manje 2.5",
     "Malut United daje više od 0.5 golova u 1. poluvrem",
-    2.07,
+    2.12,
     2.0
    ],
    [
@@ -16049,35 +16494,35 @@
     "",
     "manje 0.5 & manje 0.5",
     "Malut United daje manje od 0.5 golova u 1. poluvre",
-    3.65,
+    3.45,
     2.0
    ],
    [
     "",
     "manje 0.5 & vise 1.5",
     "Malut United daje manje od 0.5 golova u 1. poluvre",
-    6.9,
+    7.1,
     2.0
    ],
    [
     "",
     "manje 0.5 & manje 1.5",
     "Malut United daje manje od 0.5 golova u 1. poluvre",
-    2.12,
+    2.05,
     2.0
    ],
    [
     "",
     "manje 0.5 & vise 2.5",
     "Malut United daje manje od 0.5 golova u 1. poluvre",
-    19.0,
+    20.0,
     2.0
    ],
    [
     "",
     "manje 0.5 & manje 2.5",
     "Malut United daje manje od 0.5 golova u 1. poluvre",
-    1.82,
+    1.76,
     2.0
    ]
   ]
@@ -16089,84 +16534,84 @@
     "",
     "vise 0.5 & vise 0.5",
     "Bali United daje više od 0.5 golova u 1. poluvreme",
-    2.92,
+    2.55,
     2.0
    ],
    [
     "",
     "vise 0.5 & manje 0.5",
     "Bali United daje više od 0.5 golova u 1. poluvreme",
-    4.0,
+    4.1,
     2.0
    ],
    [
     "",
     "vise 0.5 & vise 1.5",
     "Bali United daje više od 0.5 golova u 1. poluvreme",
-    6.5,
+    5.4,
     2.0
    ],
    [
     "",
     "vise 0.5 & manje 1.5",
     "Bali United daje više od 0.5 golova u 1. poluvreme",
-    2.27,
+    2.22,
     2.0
    ],
    [
     "",
     "vise 0.5 & vise 2.5",
     "Bali United daje više od 0.5 golova u 1. poluvreme",
-    17.0,
+    13.0,
     2.0
    ],
    [
     "",
     "vise 0.5 & manje 2.5",
     "Bali United daje više od 0.5 golova u 1. poluvreme",
-    1.9,
+    1.8,
     2.0
    ],
    [
     "",
     "manje 0.5 & vise 0.5",
     "Bali United daje manje od 0.5 golova u 1. poluvrem",
-    3.0,
+    3.05,
     2.0
    ],
    [
     "",
     "manje 0.5 & manje 0.5",
     "Bali United daje manje od 0.5 golova u 1. poluvrem",
-    4.3,
+    5.1,
     2.0
    ],
    [
     "",
     "manje 0.5 & vise 1.5",
     "Bali United daje manje od 0.5 golova u 1. poluvrem",
-    6.5,
+    6.2,
     2.0
    ],
    [
     "",
     "manje 0.5 & manje 1.5",
     "Bali United daje manje od 0.5 golova u 1. poluvrem",
-    2.42,
+    2.77,
     2.0
    ],
    [
     "",
     "manje 0.5 & vise 2.5",
     "Bali United daje manje od 0.5 golova u 1. poluvrem",
-    17.0,
+    15.0,
     2.0
    ],
    [
     "",
     "manje 0.5 & manje 2.5",
     "Bali United daje manje od 0.5 golova u 1. poluvrem",
-    2.02,
+    2.25,
     2.0
    ]
   ]
@@ -16178,14 +16623,14 @@
     "",
     "da",
     "Malut United daje gol u oba poluvremena",
-    3.4,
+    3.6,
     null
    ],
    [
     "",
     "ne",
     "Malut United ne daje gol u oba poluvremena",
-    1.27,
+    1.25,
     null
    ]
   ]
@@ -16197,14 +16642,14 @@
     "",
     "da",
     "Bali United daje gol u oba poluvremena",
-    2.92,
+    2.6,
     null
    ],
    [
     "",
     "ne",
     "Bali United ne daje gol u oba poluvremena",
-    1.35,
+    1.44,
     null
    ]
   ]
@@ -16216,14 +16661,14 @@
     "",
     "da",
     "Malut United pobeđuje u oba poluvremena",
-    8.9,
+    11.0,
     null
    ],
    [
     "",
     "ne",
     "Malut United neće pobediti barem u jednom poluvrem",
-    1.04,
+    1.03,
     null
    ]
   ]
@@ -16235,14 +16680,14 @@
     "",
     "da",
     "Bali United pobeđuje u oba poluvremena",
-    6.8,
+    5.45,
     null
    ],
    [
     "",
     "ne",
     "Bali United neće pobediti barem u jednom poluvreme",
-    1.07,
+    1.11,
     null
    ]
   ]
@@ -16254,14 +16699,14 @@
     "",
     "da",
     "Malut United će postići uzastopne golove tokom meč",
-    2.82,
+    3.05,
     null
    ],
    [
     "",
     "ne",
     "Malut United neće postići uzastopne golove tokom m",
-    1.38,
+    1.33,
     null
    ]
   ]
@@ -16273,14 +16718,14 @@
     "",
     "da",
     "Bali United će postići uzastopne golove tokom meča",
-    2.37,
+    2.07,
     null
    ],
    [
     "",
     "ne",
     "Bali United neće postići uzastopne golove tokom me",
-    1.51,
+    1.67,
     null
    ]
   ]
@@ -16292,14 +16737,14 @@
     "",
     "da",
     "Malut United će voditi bilo kada tokom meča",
-    1.77,
+    1.88,
     null
    ],
    [
     "",
     "ne",
     "Malut United neće voditi nijednog trenutka tokom m",
-    1.95,
+    1.82,
     null
    ]
   ]
@@ -16311,14 +16756,14 @@
     "",
     "da",
     "Bali United će voditi bilo kada tokom meča",
-    1.57,
+    1.44,
     null
    ],
    [
     "",
     "ne",
     "Bali United neće voditi nijednog trenutka tokom me",
-    2.27,
+    2.57,
     null
    ]
   ]
@@ -16349,14 +16794,14 @@
     "",
     "da",
     "Bali United će pobediti nakon što bude gubio u meč",
-    8.9,
+    8.0,
     null
    ],
    [
     "",
     "ne",
     "Bali United neće pobediti nakon što bude gubio u m",
-    1.04,
+    1.05,
     null
    ]
   ]
@@ -16368,21 +16813,21 @@
     "1",
     "malut united",
     "Postiže 1. gol",
-    2.07,
+    2.25,
     1.0
    ],
    [
     "0",
     "niko",
     "Nijedan tim neće dati 1. gol",
-    13.0,
+    15.0,
     1.0
    ],
    [
     "2",
     "bali united",
     "Postiže 1. gol",
-    1.83,
+    1.7,
     1.0
    ]
   ]
@@ -16401,7 +16846,7 @@
     "0",
     "isto",
     "Isti broj golova u oba poluvremena",
-    3.6,
+    3.65,
     null
    ],
    [
@@ -16420,14 +16865,14 @@
     "",
     "1/1 & manje 1.5",
     "Malut United pobeđuje i u 1. poluvremenu i na kraj",
-    18.0,
+    21.0,
     1.5
    ],
    [
     "",
     "1/1 & vise 1.5",
     "Malut United pobeđuje i u 1. poluvremenu i na kraj",
-    5.0,
+    5.85,
     1.5
    ],
    [
@@ -16441,35 +16886,35 @@
     "",
     "1/2 & vise 1.5",
     "Malut United pobeđuje u 1. poluvremenu, a Bali Uni",
-    18.0,
+    16.0,
     1.5
    ],
    [
     "",
     "x/1 & manje 1.5",
     "Nerešeno u 1. poluvremenu, a Malut United pobeđuje",
-    15.0,
+    17.0,
     1.5
    ],
    [
     "",
     "x/1 & vise 1.5",
     "Nerešeno u 1. poluvremenu, a Malut United pobeđuje",
-    8.5,
+    9.5,
     1.5
    ],
    [
     "",
     "x/x & manje 1.5",
     "Nerešeno i u 1. poluvremenu i na kraju utakmice & ",
-    12.0,
+    13.0,
     1.5
    ],
    [
     "",
     "x/x & vise 1.5",
     "Nerešeno i u 1. poluvremenu i na kraju utakmice & ",
-    7.5,
+    7.9,
     1.5
    ],
    [
@@ -16483,21 +16928,21 @@
     "",
     "x/2 & vise 1.5",
     "Nerešeno u 1. poluvremenu, a Bali United pobeđuje ",
-    7.3,
+    6.6,
     1.5
    ],
    [
     "",
     "2/1 & vise 1.5",
     "Bali United pobeđuje u 1. poluvremenu, a Malut Uni",
-    20.0,
+    21.0,
     1.5
    ],
    [
     "",
     "2/x & vise 1.5",
     "Bali United pobeđuje u 1. poluvremenu, a nerešeno ",
-    10.0,
+    11.0,
     1.5
    ]
   ]
@@ -16509,21 +16954,21 @@
     "",
     "1/1 & manje 2.5",
     "Malut United pobeđuje i u 1. poluvremenu i na kraj",
-    10.0,
+    12.0,
     2.5
    ],
    [
     "",
     "1/1 & vise 2.5",
     "Malut United pobeđuje i u 1. poluvremenu i na kraj",
-    6.0,
+    6.8,
     2.5
    ],
    [
     "",
     "1/x & manje 2.5",
     "Malut United pobeđuje u 1. poluvremenu, a nerešeno",
-    18.0,
+    19.0,
     2.5
    ],
    [
@@ -16537,28 +16982,28 @@
     "",
     "1/2 & vise 2.5",
     "Malut United pobeđuje u 1. poluvremenu, a Bali Uni",
-    18.0,
+    16.0,
     2.5
    ],
    [
     "",
     "x/1 & manje 2.5",
     "Nerešeno u 1. poluvremenu, a Malut United pobeđuje",
-    12.0,
+    14.0,
     2.5
    ],
    [
     "",
     "x/1 & vise 2.5",
     "Nerešeno u 1. poluvremenu, a Malut United pobeđuje",
-    10.0,
+    11.0,
     2.5
    ],
    [
     "",
     "x/x & manje 2.5",
     "Nerešeno i u 1. poluvremenu i na kraju utakmice & ",
-    6.7,
+    7.2,
     2.5
    ],
    [
@@ -16579,14 +17024,14 @@
     "",
     "x/2 & vise 2.5",
     "Nerešeno u 1. poluvremenu, a Bali United pobeđuje ",
-    8.5,
+    7.7,
     2.5
    ],
    [
     "",
     "2/1 & vise 2.5",
     "Bali United pobeđuje u 1. poluvremenu, a Malut Uni",
-    20.0,
+    21.0,
     2.5
    ]
   ]
@@ -16598,21 +17043,21 @@
     "",
     "1/1 & manje 3.5",
     "Malut United pobeđuje i u 1. poluvremenu i na kraj",
-    6.5,
+    7.5,
     3.5
    ],
    [
     "",
     "1/1 & vise 3.5",
     "Malut United pobeđuje i u 1. poluvremenu i na kraj",
-    8.8,
+    10.0,
     3.5
    ],
    [
     "",
     "1/x & manje 3.5",
     "Malut United pobeđuje u 1. poluvremenu, a nerešeno",
-    18.0,
+    19.0,
     3.5
    ],
    [
@@ -16626,35 +17071,35 @@
     "",
     "1/2 & manje 3.5",
     "Malut United pobeđuje u 1. poluvremenu, a Bali Uni",
-    32.0,
+    31.0,
     3.5
    ],
    [
     "",
     "1/2 & vise 3.5",
     "Malut United pobeđuje u 1. poluvremenu, a Bali Uni",
-    26.0,
+    23.0,
     3.5
    ],
    [
     "",
     "x/1 & manje 3.5",
     "Nerešeno u 1. poluvremenu, a Malut United pobeđuje",
-    8.0,
+    9.1,
     3.5
    ],
    [
     "",
     "x/1 & vise 3.5",
     "Nerešeno u 1. poluvremenu, a Malut United pobeđuje",
-    18.0,
+    19.0,
     3.5
    ],
    [
     "",
     "x/x & manje 3.5",
     "Nerešeno i u 1. poluvremenu i na kraju utakmice & ",
-    6.7,
+    7.2,
     3.5
    ],
    [
@@ -16668,14 +17113,14 @@
     "",
     "x/2 & manje 3.5",
     "Nerešeno u 1. poluvremenu, a Bali United pobeđuje ",
-    7.1,
+    6.8,
     3.5
    ],
    [
     "",
     "x/2 & vise 3.5",
     "Nerešeno u 1. poluvremenu, a Bali United pobeđuje ",
-    15.0,
+    13.0,
     3.5
    ]
   ]
@@ -16687,63 +17132,63 @@
     "",
     "1/1 & manje 4.5",
     "Malut United pobeđuje i u 1. poluvremenu i na kraj",
-    5.45,
+    6.4,
     4.5
    ],
    [
     "",
     "1/1 & vise 4.5",
     "Malut United pobeđuje i u 1. poluvremenu i na kraj",
-    13.0,
+    15.0,
     4.5
    ],
    [
     "",
     "1/x & manje 4.5",
     "Malut United pobeđuje u 1. poluvremenu, a nerešeno",
-    12.0,
+    13.0,
     4.5
    ],
    [
     "",
     "1/x & vise 4.5",
     "Malut United pobeđuje u 1. poluvremenu, a nerešeno",
-    50.0,
+    45.0,
     4.5
    ],
    [
     "",
     "1/2 & manje 4.5",
     "Malut United pobeđuje u 1. poluvremenu, a Bali Uni",
-    26.0,
+    25.0,
     4.5
    ],
    [
     "",
     "1/2 & vise 4.5",
     "Malut United pobeđuje u 1. poluvremenu, a Bali Uni",
-    32.0,
+    28.0,
     4.5
    ],
    [
     "",
     "x/1 & manje 4.5",
     "Nerešeno u 1. poluvremenu, a Malut United pobeđuje",
-    7.4,
+    8.3,
     4.5
    ],
    [
     "",
     "x/1 & vise 4.5",
     "Nerešeno u 1. poluvremenu, a Malut United pobeđuje",
-    24.0,
+    26.0,
     4.5
    ],
    [
     "",
     "x/x & manje 4.5",
     "Nerešeno i u 1. poluvremenu i na kraju utakmice & ",
-    5.75,
+    6.1,
     4.5
    ],
    [
@@ -16757,14 +17202,14 @@
     "",
     "x/2 & manje 4.5",
     "Nerešeno u 1. poluvremenu, a Bali United pobeđuje ",
-    6.4,
+    6.1,
     4.5
    ],
    [
     "",
     "x/2 & vise 4.5",
     "Nerešeno u 1. poluvremenu, a Bali United pobeđuje ",
-    21.0,
+    18.0,
     4.5
    ]
   ]
@@ -16776,63 +17221,63 @@
     "",
     "1/1 & manje 5.5",
     "Malut United pobeđuje i u 1. poluvremenu i na kraj",
-    4.8,
+    5.6,
     5.5
    ],
    [
     "",
     "1/1 & vise 5.5",
     "Malut United pobeđuje i u 1. poluvremenu i na kraj",
-    24.0,
+    27.0,
     5.5
    ],
    [
     "",
     "1/x & manje 5.5",
     "Malut United pobeđuje u 1. poluvremenu, a nerešeno",
-    12.0,
+    13.0,
     5.5
    ],
    [
     "",
     "1/x & vise 5.5",
     "Malut United pobeđuje u 1. poluvremenu, a nerešeno",
-    50.0,
+    45.0,
     5.5
    ],
    [
     "",
     "1/2 & manje 5.5",
     "Malut United pobeđuje u 1. poluvremenu, a Bali Uni",
-    20.0,
+    19.0,
     5.5
    ],
    [
     "",
     "1/2 & vise 5.5",
     "Malut United pobeđuje u 1. poluvremenu, a Bali Uni",
-    60.0,
+    50.0,
     5.5
    ],
    [
     "",
     "x/1 & manje 5.5",
     "Nerešeno u 1. poluvremenu, a Malut United pobeđuje",
-    6.8,
+    7.6,
     5.5
    ],
    [
     "",
     "x/1 & vise 5.5",
     "Nerešeno u 1. poluvremenu, a Malut United pobeđuje",
-    50.0,
+    55.0,
     5.5
    ],
    [
     "",
     "x/x & manje 5.5",
     "Nerešeno i u 1. poluvremenu i na kraju utakmice & ",
-    5.75,
+    6.1,
     5.5
    ],
    [
@@ -16846,14 +17291,14 @@
     "",
     "x/2 & manje 5.5",
     "Nerešeno u 1. poluvremenu, a Bali United pobeđuje ",
-    5.85,
+    5.5,
     5.5
    ],
    [
     "",
     "x/2 & vise 5.5",
     "Nerešeno u 1. poluvremenu, a Bali United pobeđuje ",
-    45.0,
+    36.0,
     5.5
    ]
   ]
@@ -16865,84 +17310,84 @@
     "",
     "1/1 ili x/1",
     "Malut United/Malut United ili Nerešeno/Malut Unite",
-    2.95,
+    3.4,
     1.0
    ],
    [
     "",
     "1/1 ili x/x",
     "Malut United/Malut United ili Nerešeno/Nerešeno",
-    2.7,
+    3.05,
     1.0
    ],
    [
     "",
     "1/1 ili x/2",
     "Malut United/Malut United ili Nerešeno/Bali United",
-    2.72,
+    2.87,
     2.0
    ],
    [
     "",
     "1/1 ili 1/x",
     "Malut United/Malut United ili Malut United/Nerešen",
-    3.55,
+    4.0,
     1.0
    ],
    [
     "",
     "1/1 ili 1/2",
     "Malut United/Malut United ili Malut United/Bali Un",
-    3.9,
+    4.4,
     2.0
    ],
    [
     "",
     "1/1 ili 2/1",
     "Malut United/Malut United ili Bali United/Malut Un",
-    4.0,
+    4.6,
     1.0
    ],
    [
     "",
     "1/1 ili 2/x",
     "Malut United/Malut United ili Bali United/Nerešeno",
-    3.5,
+    3.9,
     2.0
    ],
    [
     "",
     "1/1 ili 2/2",
     "Malut United/Malut United ili Bali United/Bali Uni",
-    2.12,
+    2.05,
     2.0
    ],
    [
     "",
     "1/x ili x/1",
     "Malut United/Nerešeno ili Nerešeno/Malut United",
-    4.75,
+    5.2,
     1.0
    ],
    [
     "",
     "1/x ili x/x",
     "Malut United/Nerešeno ili Nerešeno/Nerešeno",
-    4.15,
+    4.45,
     1.0
    ],
    [
     "",
     "1/x ili x/2",
     "Malut United/Nerešeno ili Nerešeno/Bali United",
-    4.25,
+    4.0,
     2.0
    ],
    [
     "",
     "1/x ili 2/1",
     "Malut United/Nerešeno ili Bali United/Malut United",
-    8.5,
+    8.9,
     1.0
    ]
   ]
@@ -16954,21 +17399,21 @@
     "10",
     "1x",
     "Malut United će pobediti ili će biti nerešeno u 1.",
-    1.37,
+    1.46,
     1.0
    ],
    [
     "12",
     "12",
     "Malut United ili Bali United će pobediti u 1. polu",
-    1.51,
+    1.47,
     1.0
    ],
    [
     "02",
     "x2",
     "Biće nerešeno ili Bali United će pobediti u 1. pol",
-    1.27,
+    1.22,
     1.0
    ]
   ]
@@ -16980,14 +17425,14 @@
     "1",
     "da",
     "Oba tima daju gol u 1. poluvremenu",
-    3.55,
+    3.4,
     1.0
    ],
    [
     "2",
     "ne",
     "Barem jedan tim ne daje gol u 1. poluvremenu",
-    1.25,
+    1.27,
     1.0
    ]
   ]
@@ -16999,14 +17444,14 @@
     "1",
     "da",
     "Malut United daje gol u 1. poluvremenu",
-    1.97,
+    2.05,
     1.0
    ],
    [
     "2",
     "ne",
     "Malut United ne daje gol u 1. poluvremenu",
-    1.74,
+    1.69,
     1.0
    ]
   ]
@@ -17018,14 +17463,14 @@
     "1",
     "da",
     "Bali United daje gol u 1. poluvremenu",
-    1.8,
+    1.69,
     1.0
    ],
    [
     "2",
     "ne",
     "Bali United ne daje gol u 1. poluvremenu",
-    1.9,
+    2.05,
     1.0
    ]
   ]
@@ -17037,14 +17482,14 @@
     "",
     "manje 0.5",
     "1. Poluvreme - Malut United manje od 0.5 golova",
-    1.74,
+    1.69,
     0.5
    ],
    [
     "",
     "vise od 0.5",
     "1. Poluvreme - Malut United više od 0.5 golova",
-    1.97,
+    2.05,
     0.5
    ]
   ]
@@ -17056,14 +17501,14 @@
     "",
     "manje 0.5",
     "1. poluvreme - Bali United manje od 0.5 golova",
-    1.9,
+    2.05,
     0.5
    ],
    [
     "",
     "vise 0.5",
     "1. poluvreme - Bali United više od 0.5 golova",
-    1.8,
+    1.69,
     0.5
    ]
   ]
@@ -17082,14 +17527,14 @@
     "",
     "1-3",
     "1. poluvreme 1-3 gola",
-    1.37,
+    1.36,
     -3.0
    ],
    [
     "",
     "2-3",
     "1. poluvreme 2-3 gola",
-    2.6,
+    2.52,
     -3.0
    ]
   ]
@@ -17099,45 +17544,66 @@
   "primer": [
    [
     "",
+    "malut united (-1.5)",
+    "1. poluvreme - Malut United pobeđuje uz hendikep (",
+    9.6,
+    -1.5
+   ],
+   [
+    "",
+    "bali united (1.5)",
+    "1. poluvreme - Bali United pobeđuje uz hendikep (1",
+    1.03,
+    -1.5
+   ],
+   [
+    "",
     "malut united (-0.5)",
     "1. poluvreme - Malut United pobeđuje uz hendikep (",
-    3.15,
+    3.4,
     -0.5
    ],
    [
     "",
     "bali united (0.5)",
     "1. poluvreme - Bali United pobeđuje uz hendikep (0",
-    1.3,
+    1.25,
     -0.5
    ],
    [
     "",
     "malut united (0.5)",
     "1. poluvreme - Malut United pobeđuje uz hendikep (",
-    1.4,
+    1.49,
     0.5
    ],
    [
     "",
     "bali united (-0.5)",
     "1. poluvreme - Bali United pobeđuje uz hendikep (-",
-    2.67,
+    2.37,
     0.5
    ],
    [
     "",
     "malut united (1.5)",
     "1. poluvreme - Malut United pobeđuje uz hendikep (",
-    1.06,
+    1.09,
     1.5
    ],
    [
     "",
     "bali united (-1.5)",
     "1. poluvreme - Bali United pobeđuje uz hendikep (-",
-    6.9,
+    5.9,
     1.5
+   ],
+   [
+    "",
+    "bali united (-2.5)",
+    "1. poluvreme - Bali United pobeđuje uz hendikep (-",
+    16.0,
+    2.5
    ]
   ]
  },
@@ -17148,21 +17614,21 @@
     "1",
     "malut united",
     "Postiže 1. gol u 1. poluvremenu",
-    2.6,
+    2.8,
     1.0
    ],
    [
     "0",
     "niko",
     "Nijedan tim neće postići 1. gol u 1. poluvremenu",
-    3.3,
+    3.5,
     1.0
    ],
    [
     "2",
     "bali united",
     "Postiže 1. gol u 1. poluvremenu",
-    2.3,
+    2.1,
     1.0
    ]
   ]
